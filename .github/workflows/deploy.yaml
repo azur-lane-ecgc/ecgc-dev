@@ -1,0 +1,14 @@
+name: Build & Deploy Vue
+on: [push]
+jobs:
+  build_vue:
+    runs-on: ubuntu-latest
+    name: Build Vue
+    steps:
+    - uses: actions/checkout@v4
+    - id: Build-Vue
+      uses: xRealNeon/VuePagesAction@1.0.1
+      with:
+        username: 'samheart564'
+        reponame: 'test_ecgc_2'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
