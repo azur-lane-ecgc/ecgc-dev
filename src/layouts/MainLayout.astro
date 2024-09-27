@@ -1,0 +1,76 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../styles/home_page.css"
+import "../styles/fontawesome/css/fontawesome.css"
+import "../styles/fontawesome/css/brands.css"
+import "../styles/fontawesome/css/solid.css"
+
+interface Props {
+  title: string
+  metaUrl?: string | null
+  metaImage?: string | null
+  metaDescription: string
+}
+
+const { title, metaUrl, metaImage, metaDescription } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <!-- for google search -->
+  <meta
+    name="google-site-verification"
+    content="haSqOW7yYrOiz_6U0wAqWSb7IBGh10_KZ8cNkRJXyhQ"
+  />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} - ECGC</title>
+  <meta name="description" content={metaDescription} />
+  <meta name="og:title" content={title} />
+  <meta
+    name="og:url"
+    content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
+  />
+  {metaImage && <meta name="og:image" content={`/images/${metaImage}`} />}
+  <meta name="og:description" content={metaDescription} />
+
+  <link rel="icon" type="image/x-icon" href="images/misc/SiteIcon.ico" />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800"
+    rel="stylesheet"
+  />
+
+  <>
+    <noscript>Your browser does not support JavaScript!</noscript>
+  </>
+
+  <body>
+    <slot />
+  </body><footer class="footer">
+    <div class="container-fluid pb-1 pt-1 overflow-auto">
+      <div class="row">
+        <div class="col" style="text-align: left;">
+          <h6 class="title footer-style-two">
+            Media taken from
+            <a
+              href="https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki"
+              target="_blank"
+              rel="noopener noreferrer">Azur Lane English Wiki</a
+            >.
+          </h6>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h6 class="title footer-style">
+            © <script type="text/javascript" is:inline>
+              document.write(new Date().getFullYear())
+            </script>, coded by samheart564
+          </h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="bootstrap/dist/js/bootstrap.bundle.min.js?url"></script>
+</html>
