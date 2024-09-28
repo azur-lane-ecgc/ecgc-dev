@@ -1,8 +1,22 @@
-import React, { useState } from "react"
-import "./styles.css"
+import React, { useState, useEffect, useRef } from "react"
+
+interface DropdownItem {
+  name: string
+  href: string
+}
+
+interface NavbarPage {
+  name: string
+  href?: string
+  icon: string
+  isDropdown?: boolean
+  dropdownItems?: DropdownItem[]
+  external?: boolean
+  hiddenOnLarge?: boolean
+}
 
 // Define all the pages and their structure in a constant array
-const navbarPages = [
+const navbarPages: NavbarPage[] = [
   { name: "Newbie Tips", href: "newbie_tips", icon: "fa-lightbulb" },
   {
     name: "Gameplay",
@@ -56,110 +70,219 @@ interface NavbarProps {
   activePage?: string | null
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ activePage }) => {
-  const [isNavCollapsed, setIsNavCollapsed] = useState(true)
-  const [activeDropdown, setActiveDropdown] = useState("")
+interface NavItemProps {
+  page: NavbarPage
+  activePage: string | null
+}
 
-  const toggleNavCollapse = () => {
+const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [])
+
+  if (page.isDropdown) {
+    return (
+      <div className="relative group" ref={dropdownRef}>
+        <button
+          className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white
+            ${
+              activePage === page.name.toLowerCase()
+                ? "bg-white/15"
+                : "hover:bg-white/15"
+            } transition-colors duration-200`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <i className={`fas ${page.icon} mr-2`}></i>
+          <span className="mr-1">{page.name}</span>
+          <i
+            className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
+          ></i>
+        </button>
+        {isOpen && (
+          <div className="absolute left-0 mt-2 min-w-fit rounded-md shadow-lg bg-[#222a42] ring-1 ring-black ring-opacity-5 z-50">
+            <div
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="options-menu"
+              className="whitespace-nowrap py-1"
+            >
+              {page.dropdownItems?.map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.href}
+                  className={`block px-3 py-1 text-[1rem]
+                    ${
+                      activePage === item.href
+                        ? "bg-white/15"
+                        : "hover:bg-white/15 hover:text-cyan-400"
+                    } transition-colors duration-200`}
+                  role="menuitem"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  return (
+    <a
+      href={page.href}
+      className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white
+        ${
+          activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
+        } transition-colors duration-200`}
+      target={page.external ? "_blank" : "_self"}
+      rel="noopener noreferrer"
+    >
+      <i className={`fas ${page.icon} ${page.hiddenOnLarge ? "" : "mr-2"}`}></i>
+      <span className={`${page.hiddenOnLarge ? "hidden" : ""}`}>
+        {page.name}
+      </span>
+    </a>
+  )
+}
+
+interface MobileNavItemProps {
+  page: NavbarPage
+  activePage: string | null
+  activeDropdown: string
+  toggleDropdown: (dropdown: string) => void
+}
+
+const MobileNavItem: React.FC<MobileNavItemProps> = ({
+  page,
+  activePage,
+  activeDropdown,
+  toggleDropdown,
+}) => {
+  if (page.isDropdown) {
+    return (
+      <div>
+        <button
+          className={`w-full text-left px-3 py-2 rounded-md text-base font-medium text-white
+            ${
+              activePage === page.name.toLowerCase()
+                ? "bg-white/15"
+                : "hover:bg-white/15"
+            } transition-colors duration-200`}
+          onClick={() => toggleDropdown(page.name.toLowerCase())}
+        >
+          <i className={`fas ${page.icon} mr-2`}></i>
+          {page.name}
+          <i className="fas fa-chevron-down float-right mt-1 text-xs"></i>
+        </button>
+        {activeDropdown === page.name.toLowerCase() && (
+          <div className="pl-4">
+            {page.dropdownItems?.map((item, idx) => (
+              <a
+                key={idx}
+                href={item.href}
+                className={`block px-3 py-2 rounded-md text-base font-medium text-white
+                  ${
+                    activePage === item.href
+                      ? "bg-white/15"
+                      : "hover:bg-white/15 hover:text-cyan-400"
+                  } transition-colors duration-200`}
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  return (
+    <a
+      href={page.href}
+      className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white
+        ${
+          activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
+        } transition-colors duration-200`}
+      target={page.external ? "_blank" : "_self"}
+      rel="noopener noreferrer"
+    >
+      <i className={`fas ${page.icon} mr-2`}></i>
+      {page.name}
+    </a>
+  )
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState<boolean>(true)
+  const [activeDropdown, setActiveDropdown] = useState<string>("")
+
+  const toggleNavCollapse = (): void => {
     setIsNavCollapsed(!isNavCollapsed)
   }
 
-  const toggleDropdown = (dropdown: string) => {
+  const toggleDropdown = (dropdown: string): void => {
     setActiveDropdown(activeDropdown === dropdown ? "" : dropdown)
   }
 
   return (
-    <nav
-      className="navbar sticky-top navbar-expand-lg navbar-dark"
-      style={{ backgroundColor: "#222a42" }}
-    >
-      <div className="container col-12 col-sm-9">
-        {/* Title */}
-        <a
-          className="navbar-brand nav-logo-custom py-0"
-          href="./"
-          target="_self"
-          rel="noopener noreferrer"
-        >
-          <img src="images/misc/SiteIcon.png" width="40" alt="ECGC" />
-        </a>
-
-        {/* Expand Button */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={toggleNavCollapse}
-          aria-controls="navbarNavDropdown"
-          aria-expanded={!isNavCollapsed}
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        {/* Navbar Items */}
-        <div
-          className={`collapse navbar-collapse ${!isNavCollapsed ? "show" : ""}`}
-          id="navbarNavDropdown"
-        >
-          <ul className="navbar-nav ms-auto md-0 fs-6 nav-pills">
-            {navbarPages.map((page, index) => {
-              if (page.isDropdown) {
-                // Render dropdown
-                return (
-                  <li className="nav-item dropdown" key={index}>
-                    <a
-                      className={`nav-link dropdown-toggle nav-logo-custom ${activePage === page.name.toLowerCase() ? "active" : ""}`}
-                      role="button"
-                      aria-expanded={activeDropdown === page.name.toLowerCase()}
-                      onClick={() => toggleDropdown(page.name.toLowerCase())}
-                    >
-                      <i className={`fa ${page.icon} nav-logo-custom`}></i>{" "}
-                      <span>{page.name + " "}</span>
-                    </a>
-                    <ul
-                      className={`dropdown-menu dropdown-menu-dark ${activeDropdown === page.name.toLowerCase() ? "show" : ""}`}
-                      style={{ backgroundColor: "#222a42", border: "none" }}
-                    >
-                      {page.dropdownItems?.map((dropdownItem, idx) => (
-                        <li key={idx}>
-                          <a
-                            className={`dropdown-item custom-nav-hover ${activePage === dropdownItem.href ? "active" : ""}`}
-                            href={dropdownItem.href}
-                            target="_self"
-                            rel="noopener noreferrer"
-                          >
-                            {dropdownItem.name}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                )
-              }
-
-              // Render regular navbar item
-              return (
-                <li className="nav-item" key={index}>
-                  <a
-                    href={page.href}
-                    className={`nav-link nav-logo-custom ${activePage === page.href ? "active" : ""}`}
-                    rel="noopener noreferrer"
-                    target={page.external ? "_blank" : "_self"}
-                    title={page.name}
-                  >
-                    <i className={`fa ${page.icon} nav-logo-custom`}></i>{" "}
-                    <span
-                      className={`${page.hiddenOnLarge ? "d-lg-none" : ""}`}
-                    >
-                      {page.name}
-                    </span>
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
+    <nav className="z-50 sticky top-0 bg-[#222a42] text-white">
+      <div className="container mx-auto px-4 py-2">
+        <div className="flex items-center justify-between h-[40px]">
+          <a
+            href="./"
+            className="flex items-center text-white hover:bg-white/15 transition-colors duration-200"
+          >
+            <img
+              src="images/misc/SiteIcon.png"
+              width="40"
+              alt="ECGC"
+              className="mr-2"
+            />
+          </a>
+          <div className="hidden lg:flex items-center">
+            {navbarPages.map((page, index) => (
+              <NavItem key={index} page={page} activePage={activePage} />
+            ))}
+          </div>
+          <button
+            className="lg:hidden text-white focus:outline-none hover:bg-white/15 p-2 rounded transition-colors duration-200"
+            onClick={toggleNavCollapse}
+          >
+            <i className="fas fa-bars text-xl"></i>
+          </button>
         </div>
       </div>
+      {!isNavCollapsed && (
+        <div className="lg:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            {navbarPages.map((page, index) => (
+              <MobileNavItem
+                key={index}
+                page={page}
+                activePage={activePage}
+                activeDropdown={activeDropdown}
+                toggleDropdown={toggleDropdown}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
