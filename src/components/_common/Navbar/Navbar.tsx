@@ -107,7 +107,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
             } transition-colors duration-200`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <i className={`fas ${page.icon} mr-2`}></i>
+          <i className={`fas ${page.icon} mr-1`}></i>
           <span className="mr-1">{page.name}</span>
           <i
             className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
@@ -146,7 +146,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
   return (
     <a
       href={page.href}
-      className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white
+      className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white no-underline
         ${
           activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
         } transition-colors duration-200`}
@@ -164,7 +164,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
 interface MobileNavItemProps {
   page: NavbarPage
   activePage: string | null
-  activeDropdown: string
+  activeDropdown: string | null
   toggleDropdown: (dropdown: string) => void
 }
 
@@ -186,7 +186,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
             } transition-colors duration-200`}
           onClick={() => toggleDropdown(page.name.toLowerCase())}
         >
-          <i className={`fas ${page.icon} mr-2`}></i>
+          <i className={`fas ${page.icon} mr-1`}></i>
           {page.name}
           <i className="fas fa-chevron-down float-right mt-1 text-xs"></i>
         </button>
@@ -196,7 +196,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
               <a
                 key={idx}
                 href={item.href}
-                className={`block px-3 py-2 rounded-md text-base font-medium text-white
+                className={`block px-3 py-2 rounded-md text-base font-medium
                   ${
                     activePage === item.href
                       ? "bg-white/15"
@@ -215,30 +215,41 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
   return (
     <a
       href={page.href}
-      className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white
+      className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white no-underline
         ${
           activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
         } transition-colors duration-200`}
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >
-      <i className={`fas ${page.icon} mr-2`}></i>
+      <i className={`fas ${page.icon} mr-1`}></i>
       {page.name}
     </a>
   )
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
-  const [isNavCollapsed, setIsNavCollapsed] = useState<boolean>(true)
-  const [activeDropdown, setActiveDropdown] = useState<string>("")
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true)
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const dropdownRef = useRef<HTMLDivElement | null>(null)
 
-  const toggleNavCollapse = (): void => {
+  const toggleNavCollapse = () => {
     setIsNavCollapsed(!isNavCollapsed)
   }
 
-  const toggleDropdown = (dropdown: string): void => {
-    setActiveDropdown(activeDropdown === dropdown ? "" : dropdown)
+  const toggleDropdown = (index: string) => {
+    setActiveDropdown(activeDropdown === index ? null : index)
   }
+
+  useEffect(() => {
+    if (dropdownRef.current) {
+      if (!isNavCollapsed) {
+        dropdownRef.current.style.maxHeight = `${dropdownRef.current.scrollHeight}px`
+      } else {
+        dropdownRef.current.style.maxHeight = "0px"
+      }
+    }
+  }, [isNavCollapsed])
 
   return (
     <nav className="z-50 sticky top-0 bg-[#222a42] text-white">
@@ -246,7 +257,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
         <div className="flex items-center justify-between h-[40px]">
           <a
             href="./"
-            className="flex items-center text-white hover:bg-white/15 transition-colors duration-200"
+            className="flex items-center text-white hover:bg-white/15"
           >
             <img
               src="images/misc/SiteIcon.png"
@@ -261,28 +272,30 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
             ))}
           </div>
           <button
-            className="lg:hidden text-white focus:outline-none hover:bg-white/15 p-2 rounded transition-colors duration-200"
+            className="lg:hidden text-white focus:outline-none hover:bg-white/15 p-2 rounded hover:shadow-lg flex items-center justify-center transition-all duration-300 ease-in-out"
             onClick={toggleNavCollapse}
           >
             <i className="fas fa-bars text-xl"></i>
           </button>
         </div>
       </div>
-      {!isNavCollapsed && (
-        <div className="lg:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            {navbarPages.map((page, index) => (
-              <MobileNavItem
-                key={index}
-                page={page}
-                activePage={activePage}
-                activeDropdown={activeDropdown}
-                toggleDropdown={toggleDropdown}
-              />
-            ))}
-          </div>
+      <div
+        ref={dropdownRef}
+        className="lg:hidden overflow-hidden transition-all duration-300 ease-in-out"
+        style={{ maxHeight: "0px" }}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          {navbarPages.map((page, index) => (
+            <MobileNavItem
+              key={index}
+              page={page}
+              activePage={activePage}
+              activeDropdown={activeDropdown}
+              toggleDropdown={toggleDropdown}
+            />
+          ))}
         </div>
-      )}
+      </div>
     </nav>
   )
 }
