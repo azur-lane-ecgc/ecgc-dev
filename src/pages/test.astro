@@ -1,0 +1,137 @@
+---
+import { Navbar } from "@components/_common/Navbar"
+import { GuideDescriptions } from "@components/Homepage/GuideDescriptions"
+import HR from "@components/_common/HR.astro"
+
+import NoBootstrap from "@layouts/NoBootstrap.astro"
+---
+
+<NoBootstrap
+  title='Azur Lane English Community Guide Compendium'
+  metaDescription='Contains guides about the mobile game Azur Lane! Developed by samheart564.'
+>
+  <div class='index-page'>
+    <!-- Navbar -->
+    <Navbar client:load />
+
+    <!-- Content -->
+    <div class='wrapper index-style'>
+      <!-- Animation Stuff -->
+      <div class='page-header header-filter page-header-style'>
+        <div class='squares square1'></div>
+        <div class='squares square2'></div>
+        <div class='squares square3'></div>
+        <div class='squares square4'></div>
+        <div class='squares square5'></div>
+        <div class='squares square6'></div>
+        <div class='squares square7'></div>
+        <div class='page-header-container-style container'>
+          <div class='content-center width-100p'>
+            <h1 class='title'>AZUR LANE'S EN COMMUNITY GUIDE COMPENDIUM</h1>
+            <h3 class='d-none d-sm-block title-caption'>
+              Created And Supported By #Gameplay-Help And A bunch of AL
+              Guidemakers From Various Servers
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class='main'>
+        <div class='section section-basic'>
+          <img
+            alt='...'
+            class='path home-page-pattern'
+            src='images/misc/pattern1.png'
+          />
+
+          <div class='container'>
+            <!-- Home Screen Buttons -->
+            <div
+              class='container overflow-auto'
+              role='group'
+              aria-label='Links'
+            >
+              <div class='row'>
+                <div class='col-md mb-3'>
+                  <a
+                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
+                    href='changelog'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <p class='nospace fs-5 d-lg-none'>
+                      <b
+                        ><i class='fa fa-clock-rotate-left nav-logo-custom'></i>
+                        Changelog</b
+                      >
+                    </p>
+                    <p class='nospace fs-4 d-none d-lg-block'>
+                      <b
+                        ><i class='fa fa-clock-rotate-left nav-logo-custom'></i>
+                        Changelog</b
+                      >
+                    </p>
+                  </a>
+                </div>
+                <div class='col-md mb-3'>
+                  <a
+                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
+                    href='contributors'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <p class='nospace fs-5 d-lg-none'>
+                      <b
+                        ><i class='fa fa-user-pen nav-logo-custom'></i> Contributors</b
+                      >
+                    </p>
+                    <p class='nospace fs-4 d-none d-lg-block'>
+                      <b
+                        ><i class='fa fa-user-pen nav-logo-custom'></i> Contributors</b
+                      >
+                    </p>
+                  </a>
+                </div>
+                <div class='col-md mb-3'>
+                  <a
+                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
+                    href='https://discord.gg/wKJKxq5WQt'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <p class='nospace fs-5 d-lg-none'>
+                      <b
+                        ><i class='fa-brands fa-discord nav-logo-custom'></i> Discord</b
+                      >
+                    </p>
+                    <p class='nospace fs-4 d-none d-lg-block'>
+                      <b
+                        ><i class='fa-brands fa-discord nav-logo-custom'></i> Discord</b
+                      >
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <br />
+
+            <h2>Introduction</h2><HR />
+            <p>
+              Welcome to the EN Community Guide Compendium for Azur Lane,
+              developed by <b>@samheart564</b>, with resources made by various
+              authors!
+            </p>
+            <br />
+
+            <h2>Guides</h2><HR />
+
+            <GuideDescriptions />
+
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</NoBootstrap>
