@@ -1,0 +1,16 @@
+.nav-logo-custom, .nav-logo-custom > a {
+  color: #fff!important;
+}
+
+.nav-logo-custom:hover {
+  background-color: hsla(0, 0%, 100%, 0.15);
+}
+
+a.nav-logo-custom.show {
+  background-color: hsla(0, 0%, 100%, 0.15)!important;
+}
+
+a.custom-nav-hover:hover {
+  background-color: hsla(0, 0%, 100%, 0.15)!important;
+  color: cyan;
+}

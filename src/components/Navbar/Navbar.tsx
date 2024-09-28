@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import "./styles.css"
 
 interface NavbarProps {
   activePage?: string | null
@@ -107,14 +108,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage }) => {
                 return (
                   <li className="nav-item dropdown" key={index}>
                     <a
-                      href=""
                       className={`nav-link dropdown-toggle nav-logo-custom ${activePage === page.name.toLowerCase() ? "active" : ""}`}
                       role="button"
                       aria-expanded={activeDropdown === page.name.toLowerCase()}
                       onClick={() => toggleDropdown(page.name.toLowerCase())}
                     >
                       <i className={`fa ${page.icon} nav-logo-custom`}></i>{" "}
-                      <span>{page.name}</span>
+                      <span>{page.name + " "}</span>
                     </a>
                     <ul
                       className={`dropdown-menu dropdown-menu-dark ${activeDropdown === page.name.toLowerCase() ? "show" : ""}`}
