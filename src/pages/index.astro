@@ -1,240 +1,32 @@
 ---
+import { Navbar } from "@components/Navbar"
+
 import MainLayout from "../layouts/MainLayout.astro"
 ---
 
 <MainLayout
-  title="Azur Lane English Community Guide Compendium"
-  metaDescription="Contains guides about the mobile game Azur Lane! Developed by samheart564."
+  title='Azur Lane English Community Guide Compendium'
+  metaDescription='Contains guides about the mobile game Azur Lane! Developed by samheart564.'
 >
-  <div class="index-page">
+  <div class='index-page'>
     <!-- Navbar -->
-    <nav
-      class="navbar sticky-top navbar-expand-lg navbar-dark"
-      style="background-color: #222a42;"
-    >
-      <div class="container col-12 col-sm-9">
-        <!-- Title -->
-        <a
-          class="navbar-brand nav-logo-custom py-0"
-          href="./"
-          target="_self"
-          rel="noopener noreferrer"
-        >
-          <img src="images/misc/SiteIcon.png" width="40 px" alt="ECGC" />
-        </a>
-        <!-- Expand Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Items inside Navbar -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto md-0 fs-6 nav-pills">
-            <li class="nav-item">
-              <a
-                href="newbie_tips"
-                class="nav-link nav-logo-custom"
-                rel="noopener noreferrer"
-                target="_self"
-                title="Newbie Tips"
-              >
-                <i class="fa fa-lightbulb nav-logo-custom"></i>
-                <span>Newbie Tips</span>
-              </a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle nav-logo-custom"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa fa-ship nav-logo-custom"></i>
-                <span>Gameplay</span>
-              </a>
-
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="navbarDarkDropdownMenuLink"
-                style="background-color: #222a42; border: none"
-              >
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="early_ship_recommendations"
-                    target="_self"
-                    rel="noopener noreferrer">Early Ship Recommendations</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="equipment"
-                    target="_self"
-                    rel="noopener noreferrer">Equipment</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="farming"
-                    target="_self"
-                    rel="noopener noreferrer">Farming</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="fleetbuilding"
-                    target="_self"
-                    rel="noopener noreferrer">Fleetbuilding</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="fleet_technology"
-                    target="_self"
-                    rel="noopener noreferrer">Fleet Technology</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="research"
-                    target="_self"
-                    rel="noopener noreferrer">Research</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="samvaluation"
-                    target="_self"
-                    rel="noopener noreferrer">Samvaluations</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle nav-logo-custom"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa fa-gem nav-logo-custom"></i>
-                <span>Resource</span>
-              </a>
-
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="navbarDarkDropdownMenuLink"
-                style="background-color: #222a42; border: none"
-              >
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="common_resource"
-                    target="_self"
-                    rel="noopener noreferrer">Common Resources</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item custom-nav-hover"
-                    href="shop_priority"
-                    target="_self"
-                    rel="noopener noreferrer">Shop Priority</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a
-                href="tools"
-                class="nav-link nav-logo-custom"
-                rel="noopener noreferrer"
-                target="_self"
-                title="Tools"
-              >
-                <i class="fa fa-wrench nav-logo-custom"></i>
-                <span>Tools</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                href="changelog"
-                class="nav-link nav-logo-custom"
-                rel="noopener noreferrer"
-                target="_self"
-                title="Changelog"
-              >
-                <i class="fa fa-clock-rotate-left nav-logo-custom"></i>
-                <span class="d-lg-none">Changelog</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                href="contributors"
-                class="nav-link nav-logo-custom"
-                rel="noopener noreferrer"
-                target="_self"
-                title="Contributors"
-              >
-                <i class="fa fa-user-pen nav-logo-custom"></i>
-                <span class="d-lg-none">Contributors</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                href="https://discord.gg/wKJKxq5WQt"
-                class="nav-link nav-logo-custom"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Join our Discord Server!"
-              >
-                <i class="fa-brands fa-discord nav-logo-custom"></i>
-                <span class="d-lg-none">Discord</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar client:load />
 
     <!-- Content -->
-    <div class="wrapper index-style">
+    <div class='wrapper index-style'>
       <!-- Animation Stuff -->
-      <div class="page-header header-filter page-header-style">
-        <div class="squares square1"></div>
-        <div class="squares square2"></div>
-        <div class="squares square3"></div>
-        <div class="squares square4"></div>
-        <div class="squares square5"></div>
-        <div class="squares square6"></div>
-        <div class="squares square7"></div>
-        <div class="page-header-container-style container">
-          <div class="content-center width-100p">
-            <h1 class="title">AZUR LANE'S EN COMMUNITY GUIDE COMPENDIUM</h1>
-            <h3 class="d-none d-sm-block title-caption">
+      <div class='page-header header-filter page-header-style'>
+        <div class='squares square1'></div>
+        <div class='squares square2'></div>
+        <div class='squares square3'></div>
+        <div class='squares square4'></div>
+        <div class='squares square5'></div>
+        <div class='squares square6'></div>
+        <div class='squares square7'></div>
+        <div class='page-header-container-style container'>
+          <div class='content-center width-100p'>
+            <h1 class='title'>AZUR LANE'S EN COMMUNITY GUIDE COMPENDIUM</h1>
+            <h3 class='d-none d-sm-block title-caption'>
               Created And Supported By #Gameplay-Help And A bunch of AL
               Guidemakers From Various Servers
             </h3>
@@ -243,76 +35,77 @@ import MainLayout from "../layouts/MainLayout.astro"
       </div>
 
       <!-- Main Content -->
-      <div class="main">
-        <div class="section section-basic">
+      <div class='main'>
+        <div class='section section-basic'>
           <img
-            alt="..."
-            class="path home-page-pattern"
-            src="images/misc/pattern1.png"          />
+            alt='...'
+            class='path home-page-pattern'
+            src='images/misc/pattern1.png'
+          />
 
-          <div class="container">
+          <div class='container'>
             <!-- Home Screen Buttons -->
             <div
-              class="container overflow-auto"
-              role="group"
-              aria-label="Links"
+              class='container overflow-auto'
+              role='group'
+              aria-label='Links'
             >
-              <div class="row">
-                <div class="col-md mb-3">
+              <div class='row'>
+                <div class='col-md mb-3'>
                   <a
-                    class="btn btn-lg btn-outline-primary w-100 secondary-button-hover"
-                    href="changelog"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
+                    href='changelog'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
-                    <p class="nospace fs-5 d-lg-none">
+                    <p class='nospace fs-5 d-lg-none'>
                       <b
-                        ><i class="fa fa-clock-rotate-left nav-logo-custom"></i>
+                        ><i class='fa fa-clock-rotate-left nav-logo-custom'></i>
                         Changelog</b
                       >
                     </p>
-                    <p class="nospace fs-4 d-none d-lg-block">
+                    <p class='nospace fs-4 d-none d-lg-block'>
                       <b
-                        ><i class="fa fa-clock-rotate-left nav-logo-custom"></i>
+                        ><i class='fa fa-clock-rotate-left nav-logo-custom'></i>
                         Changelog</b
                       >
                     </p>
                   </a>
                 </div>
-                <div class="col-md mb-3">
+                <div class='col-md mb-3'>
                   <a
-                    class="btn btn-lg btn-outline-primary w-100 secondary-button-hover"
-                    href="contributors"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
+                    href='contributors'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
-                    <p class="nospace fs-5 d-lg-none">
+                    <p class='nospace fs-5 d-lg-none'>
                       <b
-                        ><i class="fa fa-user-pen nav-logo-custom"></i> Contributors</b
+                        ><i class='fa fa-user-pen nav-logo-custom'></i> Contributors</b
                       >
                     </p>
-                    <p class="nospace fs-4 d-none d-lg-block">
+                    <p class='nospace fs-4 d-none d-lg-block'>
                       <b
-                        ><i class="fa fa-user-pen nav-logo-custom"></i> Contributors</b
+                        ><i class='fa fa-user-pen nav-logo-custom'></i> Contributors</b
                       >
                     </p>
                   </a>
                 </div>
-                <div class="col-md mb-3">
+                <div class='col-md mb-3'>
                   <a
-                    class="btn btn-lg btn-outline-primary w-100 secondary-button-hover"
-                    href="https://discord.gg/wKJKxq5WQt"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
+                    href='https://discord.gg/wKJKxq5WQt'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
-                    <p class="nospace fs-5 d-lg-none">
+                    <p class='nospace fs-5 d-lg-none'>
                       <b
-                        ><i class="fa-brands fa-discord nav-logo-custom"></i> Discord</b
+                        ><i class='fa-brands fa-discord nav-logo-custom'></i> Discord</b
                       >
                     </p>
-                    <p class="nospace fs-4 d-none d-lg-block">
+                    <p class='nospace fs-4 d-none d-lg-block'>
                       <b
-                        ><i class="fa-brands fa-discord nav-logo-custom"></i> Discord</b
+                        ><i class='fa-brands fa-discord nav-logo-custom'></i> Discord</b
                       >
                     </p>
                   </a>
@@ -321,7 +114,7 @@ import MainLayout from "../layouts/MainLayout.astro"
             </div>
             <br />
 
-            <h2>Introduction</h2><hr class="custom-hr" />
+            <h2>Introduction</h2><hr class='custom-hr' />
             <p>
               Welcome to the EN Community Guide Compendium for Azur Lane,
               developed by <b>@samheart564</b>, with resources made by various
@@ -329,32 +122,33 @@ import MainLayout from "../layouts/MainLayout.astro"
             </p>
             <br />
 
-            <h2>Guides</h2><hr class="custom-hr" />
+            <h2>Guides</h2><hr class='custom-hr' />
 
             <!-- Guide Icons Only -->
-            <div id="images" class="d-sm-none">
-              <div class="row">
+            <div id='images' class='d-sm-none'>
+              <div class='row'>
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
                   <a
-                    href="common_resource"
-                    target="_self"
-                    rel="noopener noreferrer"
+                    href='common_resource'
+                    target='_self'
+                    rel='noopener noreferrer'
                   >
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/common_resource_cover.jpg"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/common_resource_cover.jpg'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Common Resource Guide
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     6/9/2024
                     <br />
                     Revision 1.1.5
@@ -362,26 +156,27 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
                   <a
-                    href="early_ship_recommendations"
-                    target="_self"
-                    rel="noopener noreferrer"
+                    href='early_ship_recommendations'
+                    target='_self'
+                    rel='noopener noreferrer'
                   >
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/early_ship_recs_cover.png"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/early_ship_recs_cover.png'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Early Ship Recommendations
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     11/24/2023
                     <br />
                     Revision 1.1.4
@@ -389,22 +184,23 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
-                  <a href="equipment" target="_self" rel="noopener noreferrer">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
+                  <a href='equipment' target='_self' rel='noopener noreferrer'>
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/equip_cover.png"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/equip_cover.png'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Equipment Guide
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     9/5/2024
                     <br />
                     Revision 1.15.0
@@ -412,22 +208,23 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
-                  <a href="farming" target="_self" rel="noopener noreferrer">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
+                  <a href='farming' target='_self' rel='noopener noreferrer'>
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/farming_guide_cover.jpg"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/farming_guide_cover.jpg'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Farming Guide
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     9/5/2024
                     <br />
                     Revision 1.1.1
@@ -435,26 +232,27 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
                   <a
-                    href="fleetbuilding"
-                    target="_self"
-                    rel="noopener noreferrer"
+                    href='fleetbuilding'
+                    target='_self'
+                    rel='noopener noreferrer'
                   >
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/fleetbuilding_guide_cover.png"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/fleetbuilding_guide_cover.png'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Fleetbuilding Guide
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     9/5/2024
                     <br />
                     Revision 1.12.0
@@ -462,26 +260,27 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
                   <a
-                    href="fleet_technology"
-                    target="_self"
-                    rel="noopener noreferrer"
+                    href='fleet_technology'
+                    target='_self'
+                    rel='noopener noreferrer'
                   >
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/No-Cover.jpg"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/No-Cover.jpg'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Fleet Technology Guide
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     9/5/2024
                     <br />
                     Revision 1.1.1
@@ -489,26 +288,27 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
                   <a
-                    href="newbie_tips"
-                    target="_self"
-                    rel="noopener noreferrer"
+                    href='newbie_tips'
+                    target='_self'
+                    rel='noopener noreferrer'
                   >
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/No-Cover.jpg"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/No-Cover.jpg'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Newbie Tips
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Riceist, Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     9/5/2024
                     <br />
                     Revision 1.1.4
@@ -516,22 +316,23 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
-                  <a href="research" target="_self" rel="noopener noreferrer">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
+                  <a href='research' target='_self' rel='noopener noreferrer'>
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/research_guide_cover.jpg"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/research_guide_cover.jpg'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Research Guide
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     9/5/2024
                     <br />
                     Revision 1.5.1
@@ -539,26 +340,27 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
                   <a
-                    href="samvaluation"
-                    target="_self"
-                    rel="noopener noreferrer"
+                    href='samvaluation'
+                    target='_self'
+                    rel='noopener noreferrer'
                   >
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/No-Cover.jpg"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/No-Cover.jpg'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Samvaluations
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     9/5/2024
                     <br />
                     Revision 1.12.0
@@ -566,26 +368,27 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </div>
 
                 <!-- Guide Cell -->
-                <div class="mt-5 mt-sm-0 col-6 col-md-3 text-align-center">
+                <div class='mt-5 mt-sm-0 col-6 col-md-3 text-align-center'>
                   <a
-                    href="shop_priority"
-                    target="_self"
-                    rel="noopener noreferrer"
+                    href='shop_priority'
+                    target='_self'
+                    rel='noopener noreferrer'
                   >
                     <img
-                      class="img-fluid rounded shadow-lg width-150px height-200px"
-                      src="images/misc/No-Cover.jpg"                    />
+                      class='img-fluid rounded shadow-lg width-150px height-200px'
+                      src='images/misc/No-Cover.jpg'
+                    />
                     <div
-                      class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                      class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                     >
                       Shop Priority Guide
                     </div>
                   </a>
-                  <small class="d-block mb-4 gridcell-details-style">
-                    <i class="fa fa-pencil-alt"></i>
+                  <small class='d-block mb-4 gridcell-details-style'>
+                    <i class='fa fa-pencil-alt'></i>
                     Riceist, Samheart564
                     <br />
-                    <i class="fa fa-sync"></i>
+                    <i class='fa fa-sync'></i>
                     9/5/2024
                     <br />
                     Revision 1.7.1
@@ -595,52 +398,53 @@ import MainLayout from "../layouts/MainLayout.astro"
             </div>
 
             <!-- Elongated Guide Descriptions -->
-            <div id="images" class="d-none d-sm-block">
-              <div class="row">
+            <div id='images' class='d-none d-sm-block'>
+              <div class='row'>
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="common_resource"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='common_resource'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/common_resource_cover.jpg"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/common_resource_cover.jpg'
+                        />
                       </a>
                     </div>
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="common_resource"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='common_resource'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Common Resource Guide
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         6/9/2024
                         <br />
                         Revision 1.1.5
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>
                           Goes over Common Resources in Azur Lane, how to
@@ -654,40 +458,41 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="early_ship_recommendations"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='early_ship_recommendations'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/early_ship_recs_cover.png"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/early_ship_recs_cover.png'
+                        />
                       </a>
                     </div>
-                    <div class="col">
-                      <div class="text-wrap">
+                    <div class='col'>
+                      <div class='text-wrap'>
                         <a
-                          href="early_ship_recommendations"
-                          target="_self"
-                          rel="noopener noreferrer"
+                          href='early_ship_recommendations'
+                          target='_self'
+                          rel='noopener noreferrer'
                         >
                           <div
-                            class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                            class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                           >
                             Early Ship Recommendations Guide
                           </div>
                         </a>
                         <small
-                          class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                          class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                         >
-                          <i class="fa fa-pencil-alt"></i>
+                          <i class='fa fa-pencil-alt'></i>
                           Samheart564
                           <br />
-                          <i class="fa fa-sync"></i>
+                          <i class='fa fa-sync'></i>
                           11/24/2023
                           <br />
                           Revision 1.1.4
@@ -695,9 +500,9 @@ import MainLayout from "../layouts/MainLayout.astro"
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>
                           Goes over easily accessible good ships in Azur Lane
@@ -710,49 +515,50 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="equipment"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='equipment'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/equip_cover.png"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/equip_cover.png'
+                        />
                       </a>
                     </div>
 
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="equipment"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='equipment'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Equipment Guide
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         9/5/2024
                         <br />
                         Revision 1.15.0
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>
                           Goes over the optimal equipment to use in Azur Lane,
@@ -765,49 +571,50 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="farming"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='farming'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/farming_guide_cover.jpg"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/farming_guide_cover.jpg'
+                        />
                       </a>
                     </div>
 
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="farming"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='farming'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Farming Guide
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         9/5/2024
                         <br />
                         Revision 1.1.1
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>Goes over the optimal ways to farm in Azur Lane.</p>
                       </div>
@@ -817,55 +624,56 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="fleetbuilding"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='fleetbuilding'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/fleetbuilding_guide_cover.png"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/fleetbuilding_guide_cover.png'
+                        />
                       </a>
                     </div>
 
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="fleetbuilding"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='fleetbuilding'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Fleetbuilding Guide
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         9/5/2024
                         <br />
                         Revision 1.12.0
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>
                           Goes over how to make fleets for both Campaign and <a
-                            href="https://azurlane.koumakan.jp/wiki/Operation Siren"
-                            target="_blank"
-                            rel="noopener noreferrer">Operation Siren</a
+                            href='https://azurlane.koumakan.jp/wiki/Operation Siren'
+                            target='_blank'
+                            rel='noopener noreferrer'>Operation Siren</a
                           > in Azur Lane.
                         </p>
                       </div>
@@ -875,55 +683,56 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="fleet_technology"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='fleet_technology'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/No-Cover.jpg"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/No-Cover.jpg'
+                        />
                       </a>
                     </div>
 
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="fleet_technology"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='fleet_technology'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Fleet Technology Guide
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         9/5/2024
                         <br />
                         Revision 1.1.1
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>
                           Goes over the <a
-                            href="https://azurlane.koumakan.jp/wiki/Fleet_Technology"
-                            target="_blank"
-                            rel="noopener noreferrer">Fleet Technology</a
+                            href='https://azurlane.koumakan.jp/wiki/Fleet_Technology'
+                            target='_blank'
+                            rel='noopener noreferrer'>Fleet Technology</a
                           > mechanics and how to get Tech Points in Azur Lane.
                         </p>
                       </div>
@@ -933,49 +742,50 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="newbie_tips"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='newbie_tips'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/No-Cover.jpg"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/No-Cover.jpg'
+                        />
                       </a>
                     </div>
 
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="newbie_tips"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='newbie_tips'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Newbie Tips
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Riceist, Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         9/5/2024
                         <br />
                         Revision 1.1.4
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>
                           Goes over basic advice and mistakes to avoid for new
@@ -988,55 +798,56 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="research"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='research'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/research_guide_cover.jpg"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/research_guide_cover.jpg'
+                        />
                       </a>
                     </div>
 
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="research"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='research'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Research Guide
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         9/5/2024
                         <br />
                         Revision 1.5.1
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>
                           Goes over the <a
-                            href="https://azurlane.koumakan.jp/wiki/Research"
-                            target="_blank"
-                            rel="noopener noreferrer">Research</a
+                            href='https://azurlane.koumakan.jp/wiki/Research'
+                            target='_blank'
+                            rel='noopener noreferrer'>Research</a
                           > mechanics in Azur Lane, including optimal Research Projects
                           to take, and how Catchup / Coin-up work.
                         </p>
@@ -1047,49 +858,50 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="samvaluation"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='samvaluation'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/No-Cover.jpg"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/No-Cover.jpg'
+                        />
                       </a>
                     </div>
 
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="samvaluation"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='samvaluation'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Samvaluations
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         9/5/2024
                         <br />
                         Revision 1.12.0
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>Compiled list of all my ship reviews!</p>
                       </div>
@@ -1099,49 +911,50 @@ import MainLayout from "../layouts/MainLayout.astro"
 
                 <!-- Guide Container -->
                 <div
-                  class="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+                  class='mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12'
                 >
-                  <div class="row mt-1">
-                    <div class="col-auto">
+                  <div class='row mt-1'>
+                    <div class='col-auto'>
                       <a
-                        href="shop_priority"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='shop_priority'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <img
-                          class="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
-                          src="images/misc/No-Cover.jpg"                        />
+                          class='img-fluid rounded shadow-lg height-100px d-inline-block align-bottom'
+                          src='images/misc/No-Cover.jpg'
+                        />
                       </a>
                     </div>
 
-                    <div class="col text-wrap">
+                    <div class='col text-wrap'>
                       <a
-                        href="shop_priority"
-                        target="_self"
-                        rel="noopener noreferrer"
+                        href='shop_priority'
+                        target='_self'
+                        rel='noopener noreferrer'
                       >
                         <div
-                          class="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title"
+                          class='d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title'
                         >
                           Shop Priority Guide
                         </div>
                       </a>
                       <small
-                        class="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;"
+                        class='d-block mb-4 mod-gridcell-details-style text-align-left margin-0;'
                       >
-                        <i class="fa fa-pencil-alt"></i>
+                        <i class='fa fa-pencil-alt'></i>
                         Riceist, Samheart564
                         <br />
-                        <i class="fa fa-sync"></i>
+                        <i class='fa fa-sync'></i>
                         9/5/2024
                         <br />
                         Revision 1.7.1
                       </small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="guide-text">
+                  <div class='row'>
+                    <div class='col'>
+                      <div class='guide-text'>
                         <br />
                         <p>
                           Goes over all the permanent shops in Azur Lane, and
