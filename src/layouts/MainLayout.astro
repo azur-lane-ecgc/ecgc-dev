@@ -6,6 +6,8 @@ import "@styles/fontawesome/css/brands.css"
 import "@styles/fontawesome/css/solid.css"
 import "@styles/poppins_font.css"
 
+import Footer from "@components/Footer.astro"
+
 interface Props {
   title: string
   metaUrl?: string | null
@@ -44,29 +46,8 @@ const { title, metaUrl, metaImage, metaDescription } = Astro.props
 
   <body>
     <slot />
-  </body><footer class='footer'>
-    <div class='container-fluid pb-1 pt-1 overflow-auto'>
-      <div class='row'>
-        <div class='col' style='text-align: left;'>
-          <h6 class='title footer-style-two'>
-            Media taken from
-            <a
-              href='https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki'
-              target='_blank'
-              rel='noopener noreferrer'>Azur Lane English Wiki</a
-            >.
-          </h6>
-        </div>
-        <div class='col' style='text-align: right;'>
-          <h6 class='title footer-style'>
-            © <script type='text/javascript' is:inline>
-              document.write(new Date().getFullYear())
-            </script>, coded by samheart564
-          </h6>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  </body>
+  
+  <Footer />
   <script src='bootstrap/dist/js/bootstrap.bundle.min.js?url'></script>
 </html>

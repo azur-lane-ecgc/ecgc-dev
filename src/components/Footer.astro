@@ -1,0 +1,50 @@
+---
+// no props
+---
+
+<style>
+  .footer {
+    border: none !important;
+    box-shadow: 0 -1px 7px 0 #333;
+    background: none;
+    background-color: #222a42 !important;
+    position: relative;
+    z-index: 1019;
+  }
+
+  .footer-style {
+    padding: 4px;
+    margin: 8px;
+    float: right;
+  }
+
+  .footer-style-two {
+    padding: 4px;
+    margin: 8px;
+    float: left;
+  }
+</style>
+
+<footer class='footer'>
+  <div class='container-fluid pb-1 pt-1 overflow-auto'>
+    <div class='row'>
+      <div class='col' style='text-align: left;'>
+        <h6 class='title footer-style-two'>
+          Media taken from
+          <a
+            href='https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki'
+            target='_blank'
+            rel='noopener noreferrer'>Azur Lane English Wiki</a
+          >.
+        </h6>
+      </div>
+      <div class='col' style='text-align: right;'>
+        <h6 class='title footer-style'>
+          © <script type='text/javascript' is:inline>
+            document.write(new Date().getFullYear())
+          </script>, coded by samheart564
+        </h6>
+      </div>
+    </div>
+  </div>
+</footer>
