@@ -15,9 +15,9 @@ import NoBootstrap from "@layouts/NoBootstrap.astro"
     <Navbar client:load />
 
     <!-- Content -->
-    <div class='wrapper index-style'>
+    <div class='index-style'>
       <!-- Animation Stuff -->
-      <div class='page-header header-filter page-header-style'>
+      <div class='page-header header-filter page-header-style overflow-hidden'>
         <div class='squares square1'></div>
         <div class='squares square2'></div>
         <div class='squares square3'></div>
@@ -25,98 +25,71 @@ import NoBootstrap from "@layouts/NoBootstrap.astro"
         <div class='squares square5'></div>
         <div class='squares square6'></div>
         <div class='squares square7'></div>
-        <div class='page-header-container-style container'>
-          <div class='content-center width-100p'>
-            <h1 class='title'>AZUR LANE'S EN COMMUNITY GUIDE COMPENDIUM</h1>
-            <h3 class='d-none d-sm-block title-caption'>
-              Created And Supported By #Gameplay-Help And A bunch of AL
-              Guidemakers From Various Servers
-            </h3>
-          </div>
+        <div
+          class='container flex flex-col items-center justify-center text-center mx-auto top-[80px] px-[30px]'
+        >
+          <h1 class='title'>AZUR LANE'S EN COMMUNITY GUIDE COMPENDIUM</h1>
+          <h3 class='hidden sm:block title-caption'>
+            Created And Supported By #Gameplay-Help And A bunch of AL
+            Guidemakers From Various Servers
+          </h3>
         </div>
       </div>
 
-      <!-- Main Content -->
-      <div class='main'>
-        <div class='section section-basic'>
-          <img
-            alt='...'
-            class='path home-page-pattern'
-            src='images/misc/pattern1.png'
-          />
+      <div class='section section-basic'>
+        <img
+          alt='...'
+          class='home-page-pattern'
+          src='images/misc/pattern1.png'
+        />
 
-          <div class='container'>
+        <!-- Main Content -->
+        <div class='container mx-auto px-[0.75rem]'>
+          <div class='my-8'>
             <!-- Home Screen Buttons -->
-            <div
-              class='container overflow-auto'
-              role='group'
-              aria-label='Links'
-            >
-              <div class='row'>
-                <div class='col-md mb-3'>
-                  <a
-                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
-                    href='changelog'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <p class='nospace fs-5 d-lg-none'>
-                      <b
-                        ><i class='fa fa-clock-rotate-left nav-logo-custom'></i>
-                        Changelog</b
-                      >
-                    </p>
-                    <p class='nospace fs-4 d-none d-lg-block'>
-                      <b
-                        ><i class='fa fa-clock-rotate-left nav-logo-custom'></i>
-                        Changelog</b
-                      >
-                    </p>
-                  </a>
-                </div>
-                <div class='col-md mb-3'>
-                  <a
-                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
-                    href='contributors'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <p class='nospace fs-5 d-lg-none'>
-                      <b
-                        ><i class='fa fa-user-pen nav-logo-custom'></i> Contributors</b
-                      >
-                    </p>
-                    <p class='nospace fs-4 d-none d-lg-block'>
-                      <b
-                        ><i class='fa fa-user-pen nav-logo-custom'></i> Contributors</b
-                      >
-                    </p>
-                  </a>
-                </div>
-                <div class='col-md mb-3'>
-                  <a
-                    class='btn btn-lg btn-outline-primary w-100 secondary-button-hover'
-                    href='https://discord.gg/wKJKxq5WQt'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <p class='nospace fs-5 d-lg-none'>
-                      <b
-                        ><i class='fa-brands fa-discord nav-logo-custom'></i> Discord</b
-                      >
-                    </p>
-                    <p class='nospace fs-4 d-none d-lg-block'>
-                      <b
-                        ><i class='fa-brands fa-discord nav-logo-custom'></i> Discord</b
-                      >
-                    </p>
-                  </a>
-                </div>
+            <div class='flex flex-col md:flex-row justify-center md:gap-8'>
+              <div class='w-full md:w-1/3 mb-3 flex justify-center'>
+                <a
+                  class='flex items-center justify-center w-full py-3 text-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg transition'
+                  href='changelog'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <b>
+                    <i class='fa fa-clock-rotate-left nav-logo-custom'></i> Changelog
+                  </b>
+                </a>
+              </div>
+              <div class='w-full md:w-1/3 mb-3 flex justify-center'>
+                <a
+                  class='flex items-center justify-center w-full py-3 text-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg transition'
+                  href='contributors'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <b>
+                    <i class='fa fa-user-pen nav-logo-custom'></i> Contributors
+                  </b>
+                </a>
+              </div>
+              <div class='w-full md:w-1/3 mb-3 flex justify-center'>
+                <a
+                  class='flex items-center justify-center w-full py-3 text-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg transition'
+                  href='https://discord.gg/wKJKxq5WQt'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <b>
+                    <i class='fa-brands fa-discord nav-logo-custom'></i> Discord
+                  </b>
+                </a>
               </div>
             </div>
+
             <br />
 
-            <h2>Introduction</h2><HR />
+            <h2 class='text-2xl'>Introduction</h2>
+            <HR />
             <p>
               Welcome to the EN Community Guide Compendium for Azur Lane,
               developed by <b>@samheart564</b>, with resources made by various
@@ -124,10 +97,10 @@ import NoBootstrap from "@layouts/NoBootstrap.astro"
             </p>
             <br />
 
-            <h2>Guides</h2><HR />
+            <h2 class='text-2xl'>Guides</h2>
+            <HR />
 
             <GuideDescriptions />
-
             <br />
           </div>
         </div>

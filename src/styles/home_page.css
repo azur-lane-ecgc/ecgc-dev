@@ -362,6 +362,9 @@ img {
   overflow-clip-margin: content-box;
   overflow: clip;
   pointer-events: none;
+  position: absolute;
+  opacity: 0.02;
+  right: -200px;
 }
 
 .icon-note {
@@ -553,15 +556,6 @@ div.shipRowContainer {
 
 .section-basic {
   overflow: hidden;
-}
-
-.path {
-  position: absolute;
-  opacity: 0.02;
-}
-
-.section-basic img.path {
-  right: -400px;
 }
 
 .index-style {
