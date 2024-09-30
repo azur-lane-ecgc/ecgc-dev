@@ -1,6 +1,7 @@
 ---
 import { Navbar } from "@components/_common/Navbar"
 import { GuideDescriptions } from "@components/Homepage/GuideDescriptions"
+import HomepageButtons from "@components/Homepage/HomepageButtons.astro"
 import HR from "@components/_common/HR.astro"
 
 import NoBootstrap from "@layouts/NoBootstrap.astro"
@@ -19,7 +20,7 @@ import NoBootstrap from "@layouts/NoBootstrap.astro"
       <!-- Animation Stuff -->
       <div class='page-header header-filter page-header-style overflow-hidden'>
         <div class='squares square1'></div>
-        <div class='squares square2'></div>
+        <div class='squares square2 hidden md:block'></div>
         <div class='squares square3'></div>
         <div class='squares square4'></div>
         <div class='squares square5'></div>
@@ -28,11 +29,13 @@ import NoBootstrap from "@layouts/NoBootstrap.astro"
         <div
           class='container flex flex-col items-center justify-center text-center mx-auto top-[80px] px-[30px]'
         >
-          <h1 class='title'>AZUR LANE'S EN COMMUNITY GUIDE COMPENDIUM</h1>
-          <h3 class='hidden sm:block title-caption'>
-            Created And Supported By #Gameplay-Help And A bunch of AL
-            Guidemakers From Various Servers
-          </h3>
+          <div class='content-center w-[100%]'>
+            <h1 class='title'>AZUR LANE'S EN COMMUNITY GUIDE COMPENDIUM</h1>
+            <h3 class='hidden sm:block title-caption'>
+              Created And Supported By #Gameplay-Help And A bunch of AL
+              Guidemakers From Various Servers
+            </h3>
+          </div>
         </div>
       </div>
 
@@ -45,49 +48,11 @@ import NoBootstrap from "@layouts/NoBootstrap.astro"
 
         <!-- Main Content -->
         <div class='container mx-auto px-[0.75rem]'>
-          <!-- Home Screen Buttons -->
-          <div class='flex flex-col md:flex-row justify-center md:gap-8'>
-            <div class='w-full md:w-1/3 mb-3 flex justify-center'>
-              <a
-                class='flex items-center justify-center w-full py-3 text-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg transition'
-                href='changelog'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <b>
-                  <i class='fa fa-clock-rotate-left nav-logo-custom'></i> Changelog
-                </b>
-              </a>
-            </div>
-            <div class='w-full md:w-1/3 mb-3 flex justify-center'>
-              <a
-                class='flex items-center justify-center w-full py-3 text-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg transition'
-                href='contributors'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <b>
-                  <i class='fa fa-user-pen nav-logo-custom'></i> Contributors
-                </b>
-              </a>
-            </div>
-            <div class='w-full md:w-1/3 mb-3 flex justify-center'>
-              <a
-                class='flex items-center justify-center w-full py-3 text-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-lg transition'
-                href='https://discord.gg/wKJKxq5WQt'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <b>
-                  <i class='fa-brands fa-discord nav-logo-custom'></i> Discord
-                </b>
-              </a>
-            </div>
-          </div>
+          <HomepageButtons />
 
           <br />
 
-          <h2 class='text-2xl'>Introduction</h2>
+          <h2 class='text-3xl'>Introduction</h2>
           <HR />
           <p>
             Welcome to the EN Community Guide Compendium for Azur Lane,
@@ -96,7 +61,7 @@ import NoBootstrap from "@layouts/NoBootstrap.astro"
           </p>
           <br />
 
-          <h2 class='text-2xl'>Guides</h2>
+          <h2 class='text-3xl'>Guides</h2>
           <HR />
 
           <GuideDescriptions />
