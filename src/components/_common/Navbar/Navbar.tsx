@@ -256,7 +256,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
   }, [isNavCollapsed, activeDropdown])
 
   return (
-    <nav className="z-1020 sticky top-0 bg-[#222a42] text-white">
+    <nav className="z-[999] sticky top-0 bg-[#222a42] text-white">
       <div className="container mx-auto py-2">
         <div className="flex items-center justify-between h-[40px]">
           <a
