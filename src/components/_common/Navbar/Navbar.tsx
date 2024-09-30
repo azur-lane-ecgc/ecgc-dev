@@ -14,8 +14,6 @@ interface NavbarPage {
   external?: boolean
   hiddenOnLarge?: boolean
 }
-
-// Define all the pages and their structure in a constant array
 const navbarPages: NavbarPage[] = [
   { name: "Newbie Tips", href: "newbie_tips", icon: "fa-lightbulb" },
   {
@@ -66,15 +64,10 @@ const navbarPages: NavbarPage[] = [
   },
 ]
 
-interface NavbarProps {
-  activePage?: string | null
-}
-
 interface NavItemProps {
   page: NavbarPage
   activePage: string | null
 }
-
 const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
@@ -108,10 +101,12 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
           onClick={() => setIsOpen(!isOpen)}
         >
           <i className={`fas ${page.icon} mr-1`}></i>
-          <span className="mr-1">{page.name}</span>
-          <i
-            className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
-          ></i>
+          <span>
+            {page.name}{" "}
+            <i
+              className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
+            ></i>
+          </span>
         </button>
         {isOpen && (
           <div className="absolute left-0 mt-2 min-w-fit rounded-md shadow-lg bg-[#222a42] ring-1 ring-black ring-opacity-5 z-50">
@@ -167,13 +162,14 @@ interface MobileNavItemProps {
   activeDropdown: string | null
   toggleDropdown: (dropdown: string) => void
 }
-
 const MobileNavItem: React.FC<MobileNavItemProps> = ({
   page,
   activePage,
   activeDropdown,
   toggleDropdown,
 }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+
   if (page.isDropdown) {
     return (
       <div>
@@ -183,12 +179,19 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
               activePage === page.name.toLowerCase()
                 ? "bg-white/15"
                 : "hover:bg-white/15"
-            } transition-colors duration-200`}
-          onClick={() => toggleDropdown(page.name.toLowerCase())}
+            } transition-max-height duration-300 ease-in-out`}
+          onClick={() => {
+            toggleDropdown(page.name.toLowerCase())
+            setIsOpen(!isOpen)
+          }}
         >
           <i className={`fas ${page.icon} mr-1`}></i>
-          {page.name}
-          <i className="fas fa-chevron-down float-right mt-1 text-xs"></i>
+          <span>
+            {page.name}{" "}
+            <i
+              className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
+            ></i>
+          </span>
         </button>
         {activeDropdown === page.name.toLowerCase() && (
           <div className="pl-4">
@@ -201,7 +204,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
                     activePage === item.href
                       ? "bg-white/15"
                       : "hover:bg-white/15 hover:text-cyan-400"
-                  } transition-colors duration-200`}
+                  } transition-max-height duration-300 ease-in-out`}
               >
                 {item.name}
               </a>
@@ -218,7 +221,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
       className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white no-underline
         ${
           activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
-        } transition-colors duration-200`}
+        } transition-max-height duration-300 ease-in-out`}
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >
@@ -228,6 +231,9 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
   )
 }
 
+interface NavbarProps {
+  activePage?: string | null
+}
 export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
@@ -243,17 +249,15 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
 
   useEffect(() => {
     if (dropdownRef.current) {
-      if (!isNavCollapsed) {
-        dropdownRef.current.style.maxHeight = `${dropdownRef.current.scrollHeight}px`
-      } else {
-        dropdownRef.current.style.maxHeight = "0px"
-      }
+      dropdownRef.current.style.maxHeight = isNavCollapsed
+        ? "0px"
+        : `${dropdownRef.current.scrollHeight}px`
     }
-  }, [isNavCollapsed])
+  }, [isNavCollapsed, activeDropdown])
 
   return (
-    <nav className="z-50 sticky top-0 bg-[#222a42] text-white">
-      <div className="container mx-auto px-4 py-2">
+    <nav className="z-1020 sticky top-0 bg-[#222a42] text-white">
+      <div className="container mx-auto py-2">
         <div className="flex items-center justify-between h-[40px]">
           <a
             href="./"
@@ -266,23 +270,28 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
               className="mr-2"
             />
           </a>
+          {/* Desktop Nav Items */}
           <div className="hidden lg:flex items-center">
             {navbarPages.map((page, index) => (
               <NavItem key={index} page={page} activePage={activePage} />
             ))}
           </div>
+          {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-white focus:outline-none hover:bg-white/15 p-2 rounded hover:shadow-lg flex items-center justify-center transition-all duration-300 ease-in-out"
+            className="lg:hidden text-white focus:outline-none hover:bg-white/15 p-2 rounded hover:shadow-lg flex items-center justify-center"
             onClick={toggleNavCollapse}
           >
             <i className="fas fa-bars text-xl"></i>
           </button>
         </div>
       </div>
+
+      {/* Mobile Dropdown Menu */}
       <div
         ref={dropdownRef}
-        className="lg:hidden overflow-hidden transition-all duration-300 ease-in-out"
-        style={{ maxHeight: "0px" }}
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isNavCollapsed ? "max-h-0" : "max-h-screen"
+        }`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navbarPages.map((page, index) => (
