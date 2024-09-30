@@ -2,7 +2,15 @@
 const tailwindConfig = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        sm: "576px",
+        md: "768px",
+        lg: "992px",
+        xl: "1200px",
+        "2xl": "1400px",
+      },
+    },
   },
   corePlugins: {
     container: false,
