@@ -33,6 +33,9 @@ const tailwindConfig = {
           "@screen xl": {
             maxWidth: "1140px",
           },
+          "@screen 2xl": {
+            maxWidth: "1320px",
+          },
         },
       })
     },
