@@ -164,42 +164,46 @@ const guides: Guide[] = [
 
 export const GuideDescriptions: React.FC = () => {
   return (
-    <div id="images" className="d-none d-sm-block">
-      <div className="row">
+    <div id="images" className="hidden sm:block">
+      <div className="flex flex-wrap -mx-3">
         {guides.map((guide, index) => (
           <div
             key={index}
-            className="mt-3 mt-sm-0 text-align-left gridcell-list-style col-12 col-sm-12"
+            className="w-full px-3 mt-3 sm:mt-0 text-left gridcell-list-style"
           >
-            <div className="row mt-1">
-              <div className="col-auto">
+            <div className="flex mt-1">
+              <div className="flex-shrink-0">
                 <a href={guide.link} target="_self" rel="noopener noreferrer">
                   <img
-                    className="img-fluid rounded shadow-lg height-100px d-inline-block align-bottom"
+                    className="h-[100px] rounded shadow-lg object-cover"
                     src={guide.image}
                     alt={`${guide.title} cover`}
                   />
                 </a>
               </div>
-              <div className="col text-wrap">
+              <div className="ml-4 flex-grow">
                 <a href={guide.link} target="_self" rel="noopener noreferrer">
-                  <div className="d-block text-uppercase font-weight-bold mb-4 guide-title gridcell-title">
+                  <div className="text-sm font-bold uppercase mb-4 guide-title">
                     {guide.title}
                   </div>
                 </a>
-                <small className="d-block mb-4 mod-gridcell-details-style text-align-left margin-0;">
-                  <i className="fa fa-pencil-alt" /> {guide.author} <br />
-                  <i className="fa fa-sync" /> {guide.date} <br />
-                  Revision {guide.revision}
-                </small>
+                <div className="text-xs mb-4 text-gray-600 mod-gridcell-details-style">
+                  <div>
+                    <i className="fas fa-pencil-alt mr-1" />
+                    &#8201;{guide.author}
+                  </div>
+                  <div>
+                    <i className="fas fa-sync mr-1" />
+                    &#8201;{guide.date}
+                  </div>
+                  <div>Revision {guide.revision}</div>
+                </div>
               </div>
             </div>
-            <div className="row">
-              <div className="col">
-                <div className="guide-text">
-                  <br />
-                  <p>{guide.description}</p>
-                </div>
+            <div className="mt-2">
+              <div className="guide-text">
+                <br />
+                <p>{guide.description}</p>
               </div>
             </div>
           </div>
