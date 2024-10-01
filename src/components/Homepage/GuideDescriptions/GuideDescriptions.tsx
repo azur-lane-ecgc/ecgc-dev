@@ -172,7 +172,7 @@ export const GuideDescriptions: React.FC = () => {
             className="w-full px-3 mt-3 sm:mt-0 text-left gridcell-list-style"
           >
             <div className="flex mt-1">
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 w-[80px]">
                 <a href={guide.link} target="_self" rel="noopener noreferrer">
                   <img
                     className="h-[100px] rounded shadow-lg object-cover"
@@ -181,7 +181,7 @@ export const GuideDescriptions: React.FC = () => {
                   />
                 </a>
               </div>
-              <div className="ml-4 flex-grow">
+              <div className="ml-4 flex-grow mt-1">
                 <a href={guide.link} target="_self" rel="noopener noreferrer">
                   <div className="text-sm font-bold uppercase mb-4 guide-title">
                     {guide.title}
