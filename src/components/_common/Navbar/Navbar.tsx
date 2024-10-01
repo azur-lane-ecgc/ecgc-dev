@@ -293,7 +293,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
           isNavCollapsed ? "max-h-0" : "max-h-screen"
         }`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="container mx-auto pt-2 pb-3 space-y-1">
           {navbarPages.map((page, index) => (
             <MobileNavItem
               key={index}
