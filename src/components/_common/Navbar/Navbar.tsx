@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react"
 
+import "./styles.css"
+
 interface DropdownItem {
   name: string
   href: string
@@ -141,7 +143,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
   return (
     <a
       href={page.href}
-      className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white no-underline
+      className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium
         ${
           activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
         } transition-colors duration-200`}
@@ -199,7 +201,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
               <a
                 key={idx}
                 href={item.href}
-                className={`block px-3 py-2 rounded-md text-base font-medium
+                className={`block px-3 py-2 rounded-md text-base font-normal
                   ${
                     activePage === item.href
                       ? "bg-white/15"
@@ -218,7 +220,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
   return (
     <a
       href={page.href}
-      className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white no-underline
+      className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium no-underline
         ${
           activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
         } transition-max-height duration-300 ease-in-out`}
