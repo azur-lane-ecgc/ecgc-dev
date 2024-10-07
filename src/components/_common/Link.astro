@@ -1,0 +1,33 @@
+---
+const { title, src } = Astro.props
+---
+
+<style>
+  a:link {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+</style>
+
+<a rel='noopener noreferrer' target='_self' href=`${src}` title=`${title}`>
+  <slot />
+</a>
