@@ -16,9 +16,14 @@ a.custom-nav-hover:hover {
   color: cyan;
 } */
 
-a.navbar-link {
+.navbar-link {
   color: white !important;
 }
-a.navbar-link:hover {
+.navbar-link:hover {
   text-decoration: none !important;
+  background-color: rgb(255 255 255 / 0.15) !important;
+}
+
+.navbar-active {
+  background-color: #0d6efd !important;
 }

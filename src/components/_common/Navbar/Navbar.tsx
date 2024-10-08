@@ -94,11 +94,9 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
     return (
       <div className="relative group" ref={dropdownRef}>
         <button
-          className={`flex items-center px-3 py-2 rounded-md text-base font-medium text-white
+          className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium text-white
             ${
-              activePage === page.name.toLowerCase()
-                ? "bg-white/15"
-                : "hover:bg-white/15"
+              activePage === page.href ? "navbar-active" : ""
             } transition-colors duration-200`}
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -143,9 +141,9 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
   return (
     <a
       href={page.href}
-      className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium
+      className={`navbar-link flex items-center px-2 py-2 rounded-md text-base font-medium min-h-[40px]
         ${
-          activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
+          activePage === page.href ? "navbar-active" : ""
         } transition-colors duration-200`}
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
@@ -176,11 +174,9 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
     return (
       <div>
         <button
-          className={`w-full text-left px-3 py-2 rounded-md text-base font-medium text-white
+          className={`navbar-link w-full text-left px-3 py-2 rounded-md text-base font-medium text-white
             ${
-              activePage === page.name.toLowerCase()
-                ? "bg-white/15"
-                : "hover:bg-white/15"
+              activePage === page.href ? "navbar-active" : ""
             } transition-max-height duration-300 ease-in-out`}
           onClick={() => {
             toggleDropdown(page.name.toLowerCase())
@@ -222,7 +218,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
       href={page.href}
       className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium no-underline
         ${
-          activePage === page.href ? "bg-white/15" : "hover:bg-white/15"
+          activePage === page.href ? "navbar-active" : ""
         } transition-max-height duration-300 ease-in-out`}
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
@@ -236,7 +232,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
 interface NavbarProps {
   activePage?: string | null
 }
-export const Navbar: React.FC<NavbarProps> = ({ activePage = null }) => {
+export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const dropdownRef = useRef<HTMLDivElement | null>(null)
