@@ -2,9 +2,21 @@
 // no props
 ---
 
-<style>
-  /* animated squares */
-  .index-page .squares {
+<!-- animated squares -->
+<style is:global>
+  @keyframes move-left-right {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+
+  .squares {
     background: linear-gradient(0deg, #3358f4, #1d8cf8);
     position: absolute;
     transition: 0.5s ease-out;
@@ -12,7 +24,7 @@
     border-radius: 20%;
   }
 
-  .index-page .squares.square1 {
+  .squares.square1 {
     animation: move-left-right 4s infinite;
     height: 300px;
     width: 300px;
@@ -21,7 +33,7 @@
     top: -21%;
   }
 
-  .index-page .squares.square2 {
+  .squares.square2 {
     animation: move-left-right 6s infinite;
     height: 400px;
     width: 400px;
@@ -30,7 +42,7 @@
     top: -12%;
   }
 
-  .index-page .squares.square3 {
+  .squares.square3 {
     animation: move-left-right 5s infinite;
     height: 200px;
     width: 200px;
@@ -39,7 +51,7 @@
     bottom: 0%;
   }
 
-  .index-page .squares.square4 {
+  .squares.square4 {
     animation: move-left-right 10s infinite;
     height: 100px;
     width: 100px;
@@ -48,7 +60,7 @@
     top: 70%;
   }
 
-  .index-page .squares.square5 {
+  .squares.square5 {
     animation: move-left-right 6s infinite;
     height: 250px;
     width: 250px;
@@ -57,7 +69,7 @@
     bottom: 29%;
   }
 
-  .index-page .squares.square6 {
+  .squares.square6 {
     animation: move-left-right 9s infinite;
     height: 80px;
     width: 80px;
@@ -66,7 +78,7 @@
     top: 35%;
   }
 
-  .index-page .squares.square7 {
+  .squares.square7 {
     animation: move-left-right 3s infinite;
     height: 300px;
     width: 300px;
@@ -74,7 +86,9 @@
     right: -5%;
     bottom: 0%;
   }
+</style>
 
+<style>
   .page-header-style {
     height: 400px !important;
     min-height: 400px !important;
@@ -117,18 +131,6 @@
     color: #fff;
     padding: 0 15px;
     max-width: 880px;
-  }
-
-  @keyframes move-left-right {
-    0% {
-      transform: translateX(-10px);
-    }
-    50% {
-      transform: translateX(10px);
-    }
-    100% {
-      transform: translateX(-10px);
-    }
   }
 
   .title {
