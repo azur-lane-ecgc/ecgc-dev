@@ -1,14 +1,13 @@
 ---
 import { Navbar } from "@components/_common/Navbar"
-import ChangelogContent from "@components/Changelog/ChangelogContent.astro"
 
-import MainLayout from "@layouts/MainLayout.astro"
+import GuidePageLayout from "@layouts/GuidePageLayout.astro"
 ---
 
-<MainLayout title="Changelog" metaDescription="ECGC Changelog">
+<GuidePageLayout title="Changelog" metaDescription="ECGC Changelog">
   <Navbar activePage={"changelog"} client:load />
 
   <div>
     <p>TESTING YAY</p>
   </div>
-</MainLayout>
+</GuidePageLayout>

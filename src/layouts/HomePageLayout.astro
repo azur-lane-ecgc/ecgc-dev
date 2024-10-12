@@ -18,26 +18,26 @@ const { title, metaUrl, metaImage, metaDescription } = Astro.props
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang="en">
   <!-- for google search -->
   <meta
-    name='google-site-verification'
-    content='haSqOW7yYrOiz_6U0wAqWSb7IBGh10_KZ8cNkRJXyhQ'
+    name="google-site-verification"
+    content="haSqOW7yYrOiz_6U0wAqWSb7IBGh10_KZ8cNkRJXyhQ"
   />
 
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title} - ECGC</title>
-  <meta name='description' content={metaDescription} />
-  <meta name='og:title' content={title} />
+  <meta name="description" content={metaDescription} />
+  <meta name="og:title" content={title} />
   <meta
-    name='og:url'
+    name="og:url"
     content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
   />
-  {metaImage && <meta name='og:image' content={`/images/${metaImage}`} />}
-  <meta name='og:description' content={metaDescription} />
+  {metaImage && <meta name="og:image" content={`/images/${metaImage}`} />}
+  <meta name="og:description" content={metaDescription} />
 
-  <link rel='icon' type='image/x-icon' href='images/misc/SiteIcon.ico' />
+  <link rel="icon" type="image/x-icon" href="images/misc/SiteIcon.ico" />
 
   <>
     <noscript>Your browser does not support JavaScript!</noscript>
@@ -46,5 +46,4 @@ const { title, metaUrl, metaImage, metaDescription } = Astro.props
   <body>
     <slot />
   </body><Footer />
-  <script src='bootstrap/dist/js/bootstrap.bundle.min.js?url'></script>
 </html>
