@@ -1,0 +1,174 @@
+---
+// no props
+---
+
+<style>
+  /* animated squares */
+  .index-page .squares {
+    background: linear-gradient(0deg, #3358f4, #1d8cf8);
+    position: absolute;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    border-radius: 20%;
+  }
+
+  .index-page .squares.square1 {
+    animation: move-left-right 4s infinite;
+    height: 300px;
+    width: 300px;
+    opacity: 0.5;
+    left: 3%;
+    top: -21%;
+  }
+
+  .index-page .squares.square2 {
+    animation: move-left-right 6s infinite;
+    height: 400px;
+    width: 400px;
+    opacity: 0.4;
+    right: -5%;
+    top: -12%;
+  }
+
+  .index-page .squares.square3 {
+    animation: move-left-right 5s infinite;
+    height: 200px;
+    width: 200px;
+    opacity: 0.1;
+    left: -5%;
+    bottom: 0%;
+  }
+
+  .index-page .squares.square4 {
+    animation: move-left-right 10s infinite;
+    height: 100px;
+    width: 100px;
+    opacity: 0.9;
+    right: 27%;
+    top: 70%;
+  }
+
+  .index-page .squares.square5 {
+    animation: move-left-right 6s infinite;
+    height: 250px;
+    width: 250px;
+    opacity: 0.1;
+    left: 32%;
+    bottom: 29%;
+  }
+
+  .index-page .squares.square6 {
+    animation: move-left-right 9s infinite;
+    height: 80px;
+    width: 80px;
+    opacity: 0.8;
+    left: 10%;
+    top: 35%;
+  }
+
+  .index-page .squares.square7 {
+    animation: move-left-right 3s infinite;
+    height: 300px;
+    width: 300px;
+    opacity: 0.1;
+    right: -5%;
+    bottom: 0%;
+  }
+
+  .page-header-style {
+    height: 400px !important;
+    min-height: 400px !important;
+    max-height: 400px !important;
+    overflow: hidden !important;
+  }
+
+  .page-header {
+    min-height: 100vh;
+    max-height: 999px;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-filter .container {
+    z-index: 2;
+    position: relative;
+  }
+
+  .page-header .container {
+    height: 100%;
+    color: #fff;
+  }
+
+  .page-header-container-style {
+    top: 80px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .page-header .content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 0 15px;
+    max-width: 880px;
+  }
+
+  @keyframes move-left-right {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 2.0625rem;
+    line-height: 1.05;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #fff !important;
+  }
+
+  .title-caption {
+    color: #fff !important;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    line-height: 1.4em;
+    font-size: 1.4375rem;
+    margin-top: 0;
+  }
+</style>
+
+<!-- Animation Stuff -->
+<div class="page-header header-filter page-header-style overflow-hidden">
+  <div class="squares square1"></div>
+  <div class="squares square2 hidden md:block"></div>
+  <div class="squares square3"></div>
+  <div class="squares square4"></div>
+  <div class="squares square5"></div>
+  <div class="squares square6"></div>
+  <div class="squares square7"></div>
+  <div
+    class="container flex flex-col items-center justify-center text-center mx-auto top-[80px] px-[30px]"
+  >
+    <div class="content-center w-[100%]">
+      <h1 class="title">AZUR LANE'S EN COMMUNITY GUIDE COMPENDIUM</h1>
+      <h3 class="hidden sm:block title-caption">
+        Created And Supported By #Gameplay-Help And A bunch of AL Guidemakers
+        From Various Servers
+      </h3>
+    </div>
+  </div>
+</div>
