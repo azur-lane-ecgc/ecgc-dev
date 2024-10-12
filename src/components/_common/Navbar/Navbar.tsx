@@ -88,7 +88,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
     }
-  }, [])
+  }, [isOpen])
 
   if (page.isDropdown) {
     return (
