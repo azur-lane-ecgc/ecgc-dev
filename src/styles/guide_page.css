@@ -7,21 +7,39 @@ body {
   background-color: #121212;
 }
 
-.guide-content-body {
-  background-color: #1b1b1b;
-  border: 2px solid #252525;
-}
-
-h1 {
-  color: hsla(0, 0%, 100%, 0.9);
-  text-align: center;
-}
-
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
   color: hsla(0, 0%, 100%, 0.9);
+}
+
+.h1,
+.h2,
+h1,
+h2 {
+  font-size: min(2rem, calc(1.325rem + 0.9vw)) !important;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+.guide-content-body {
+  background-color: #1b1b1b;
+  border: 2px solid #252525;
 }
 
 h4.farming_guide {
@@ -49,10 +67,6 @@ hr.custom-hr {
   --border-color: #dee2e6;
 
   border-top: var(--border-width) var(--border-style) var(--border-color) !important;
-}
-
-.navbar {
-  font-family: "Poppins", sans-serif;
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -133,18 +147,40 @@ a.none {
 p {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: medium;
-}
-
-p.nospace {
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 ul {
   font-size: large;
+  padding-left: 2rem;
+  display: block;
+  list-style-type: disc;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* padding-inline-start: 40px; */
+  unicode-bidi: isolate;
 }
 
 li {
   color: hsla(0, 0%, 100%, 0.9);
+}
+
+:root {
+  --level-1: disc; /* Solid circle */
+  --level-2: circle; /* Empty circle */
+  --level-3: square; /* Square */
+}
+
+ul {
+  list-style-type: var(--level-1);
+}
+
+ul ul {
+  list-style-type: var(--level-2);
+}
+
+ul ul ul {
+  list-style-type: var(--level-3);
 }
 
 a:link {
@@ -169,6 +205,11 @@ a:active {
   color: green;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.container {
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
 }
 
 /* For Table Links */
