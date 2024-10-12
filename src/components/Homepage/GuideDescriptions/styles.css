@@ -1,0 +1,52 @@
+.gridcell-title {
+  margin-right: 5px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  margin-left: 0;
+}
+
+.mod-gridcell-details-style {
+  width: max-content;
+  text-align: left;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.gridcell-details-style {
+  width: max-content;
+  margin: auto;
+  text-align: left;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.gridcell-details-style-2 {
+  width: max-content;
+  margin: auto;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.gridcell-list-style {
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.15);
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.guide-title {
+  margin-bottom: 5px !important;
+}
+
+.guide-text p {
+  color: hsla(0, 0%, 100%, 0.8);
+  margin-bottom: 5px;
+  font-weight: 300;
+  margin-top: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
