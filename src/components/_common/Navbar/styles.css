@@ -16,6 +16,10 @@ a.custom-nav-hover:hover {
   color: cyan;
 } */
 
+nav {
+  font-family: "Poppins", sans-serif;
+}
+
 .navbar-link {
   color: white !important;
 }
