@@ -1,5 +1,5 @@
 ---
-const { isRetrofit, ship } = Astro.props
+const { page } = Astro.props
 ---
 
 <!-- <style>
@@ -30,9 +30,8 @@ const { isRetrofit, ship } = Astro.props
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href={`https://azurlane.koumakan.jp/wiki/${ship.replace(" ", "_")}`}
-  title={ship}
+  href={`https://azurlane.koumakan.jp/wiki/${page.replace(" ", "_")}`}
+  title={page}
 >
-  {ship}
-  {isRetrofit ? "(Retrofit)" : ""}
+  <slot />
 </a>
