@@ -2,7 +2,7 @@
 // no props
 ---
 
-<!-- animated squares -->
+<!-- animation -->
 <style is:global>
   @keyframes move-left-right {
     0% {
@@ -15,7 +15,11 @@
       transform: translateX(-10px);
     }
   }
+</style>
 
+<!-- static styles -->
+<style>
+  /* squares */
   .squares {
     background: linear-gradient(0deg, #3358f4, #1d8cf8);
     position: absolute;
@@ -86,10 +90,7 @@
     right: -5%;
     bottom: 0%;
   }
-</style>
 
-<!-- static styles -->
-<style>
   .page-header-style {
     height: 400px !important;
     min-height: 400px !important;
