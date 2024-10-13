@@ -68,7 +68,7 @@ const navbarPages: NavbarPage[] = [
 
 interface NavItemProps {
   page: NavbarPage
-  activePage: string | null
+  activePage?: string | null
 }
 const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -158,8 +158,8 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
 
 interface MobileNavItemProps {
   page: NavbarPage
-  activePage: string | null
-  activeDropdown: string | null
+  activePage?: string | null
+  activeDropdown?: string | null
   toggleDropdown: (dropdown: string) => void
 }
 const MobileNavItem: React.FC<MobileNavItemProps> = ({
