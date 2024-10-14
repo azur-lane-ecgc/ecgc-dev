@@ -1,12 +1,14 @@
 ---
 import GuidePageLayout from "@layouts/guides/GuidePageLayout.astro"
 
-import { Navbar } from "@components/_common/Navbar"
 import Changelog2023Content from "@components/Changelog/Changelog2023Content.astro"
 ---
 
-<GuidePageLayout title="Changelog" metaDescription="ECGC Changelog">
-  <Navbar activePage="changelog" client:load />
+<GuidePageLayout
+  title="Changelog"
+  activePage="changelog"
+  metaDescription="ECGC Changelog"
+>
   <div
     class="container guide-content-body custom-sidenav-shift custom-sidenav-collapse mx-auto max-w-[100%] md:max-w-[75%]"
   >
