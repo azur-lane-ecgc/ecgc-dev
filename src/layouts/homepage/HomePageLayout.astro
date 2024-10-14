@@ -5,10 +5,12 @@ import "@styles/fontawesome/css/brands.css"
 import "@styles/fontawesome/css/solid.css"
 import "@styles/poppins_font.css"
 
+import { Navbar } from "@components/_common/Navbar"
 import Footer from "@components/_common/Footer.astro"
 
 interface Props {
   title: string
+  activePage?: string
   metaUrl?: string
   metaImage?: string
   metaDescription: string
@@ -43,6 +45,7 @@ const { title, metaUrl, metaImage, metaDescription } = Astro.props
     <noscript>Your browser does not support JavaScript!</noscript>
   </>
 
+  <Navbar client:load />
   <body>
     <slot />
   </body><Footer />

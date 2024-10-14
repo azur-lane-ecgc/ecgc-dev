@@ -1,7 +1,6 @@
 ---
 import HomePageLayout from "@layouts/homepage/HomePageLayout.astro"
 
-import { Navbar } from "@components/_common/Navbar"
 import HR from "@components/_common/HR.astro"
 import { GuideDescriptions } from "@components/Homepage/GuideDescriptions"
 import HomepageButtons from "@components/Homepage/HomepageButtons.astro"
@@ -35,42 +34,32 @@ import HomePageHeading from "@components/Homepage/HomePageHeading.astro"
   title="Azur Lane English Community Guide Compendium"
   metaDescription="Contains guides about the mobile game Azur Lane! Developed by samheart564."
 >
-  <div class="index-page">
-    <!-- Navbar -->
-    <Navbar client:load />
+  <!-- Content -->
+  <div class="index-page min-h-[100vh]">
+    <HomePageHeading />
 
-    <!-- Content -->
-    <div class="min-h-[100vh]">
-      <HomePageHeading />
+    <div class="p-[0px] pt-[70px] relative overflow-hidden">
+      <img alt="..." class="home-page-pattern" src="images/misc/pattern1.png" />
 
-      <div class="p-[0px] pt-[70px] relative overflow-hidden">
-        <img
-          alt="..."
-          class="home-page-pattern"
-          src="images/misc/pattern1.png"
-        />
+      <!-- Main Content -->
+      <div class="container mx-auto px-[0.75rem]">
+        <HomepageButtons />
 
-        <!-- Main Content -->
-        <div class="container mx-auto px-[0.75rem]">
-          <HomepageButtons />
+        <br />
 
-          <br />
+        <h2 class="text-3xl">Introduction</h2>
+        <HR />
+        <p>
+          Welcome to the EN Community Guide Compendium for Azur Lane, developed
+          by <b>@samheart564</b>, with resources made by various authors!
+        </p>
+        <br />
 
-          <h2 class="text-3xl">Introduction</h2>
-          <HR />
-          <p>
-            Welcome to the EN Community Guide Compendium for Azur Lane,
-            developed by <b>@samheart564</b>, with resources made by various
-            authors!
-          </p>
-          <br />
+        <h2 class="text-3xl">Guides</h2>
+        <HR />
 
-          <h2 class="text-3xl">Guides</h2>
-          <HR />
-
-          <GuideDescriptions />
-          <br />
-        </div>
+        <GuideDescriptions />
+        <br />
       </div>
     </div>
   </div>
