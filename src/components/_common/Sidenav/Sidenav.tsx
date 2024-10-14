@@ -9,34 +9,28 @@ interface SidenavProps {
 }
 
 export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
+  const [isToggle, setToggle] = useState(false)
+  const [isSidenavCollapse, setSidenavCollapse] = useState(false)
+  const [isMainCollapse, setMainCollapse] = useState(false)
+
   const toggleFunction = () => {
-    var sidenav = document.getElementById("sidenav")
-    var sidenavButton = document.getElementById("sidenavButton")
     var main = document.getElementById("main")
 
     if (window.innerWidth >= 1000) {
-      sidenav?.classList.toggle("custom-sidenav-collapse")
-      sidenavButton?.classList.toggle("custom-sidenav-collapse")
       main?.classList.toggle("custom-sidenav-collapse")
+      setSidenavCollapse((isSidenavCollapse) => !isSidenavCollapse)
+      setMainCollapse((isMainCollapse) => !isMainCollapse)
 
-      if (
-        sidenav?.classList.contains("toggle") &&
-        sidenav?.classList.contains("custom-sidenav-collapse")
-      ) {
-        sidenav?.classList.remove("toggle")
-        sidenavButton?.classList.remove("toggle")
+      if (isToggle && isSidenavCollapse) {
+        setToggle((isToggle) => !isToggle)
       }
     } else {
-      sidenav?.classList.toggle("toggle")
-      sidenavButton?.classList.toggle("toggle")
+      setToggle((isToggle) => !isToggle)
 
-      if (
-        sidenav?.classList.contains("custom-sidenav-collapse") &&
-        sidenav?.classList.contains("toggle")
-      ) {
-        sidenav?.classList.remove("custom-sidenav-collapse")
-        sidenavButton?.classList.remove("custom-sidenav-collapse")
+      if (isToggle && isSidenavCollapse) {
         main?.classList.remove("custom-sidenav-collapse")
+        setSidenavCollapse((isSidenavCollapse) => !isSidenavCollapse)
+        setMainCollapse((isMainCollapse) => !isMainCollapse)
       }
     }
   }
@@ -52,7 +46,7 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
       {/* <!-- Table of Contents (SideNav) --> */}
       <button
         id="sidenavButton"
-        className="btn custom-sidenav-button z-30"
+        className={`btn custom-sidenav-button z-30 ${isToggle ? "toggle" : ""} ${isSidenavCollapse ? "custom-sidenav-collapse" : ""}`}
         onClick={toggleFunction}
       >
         <i id="sidenavToggleUp" className="fa fa-angle-double-up"></i>
@@ -60,7 +54,10 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
         <span className="btn-text hidden md:inline"> Table of Contents</span>
       </button>
 
-      <div id="sidenav" className="sidenav overflow-auto">
+      <div
+        id="sidenav"
+        className={`sidenav overflow-auto ${isToggle ? "toggle" : ""} ${isSidenavCollapse ? "custom-sidenav-collapse" : ""}`}
+      >
         <div className="container m-auto">
           <span className="block md:hidden sidenav-header">
             <h2 className="text-center">Table of Contents</h2>

@@ -54,6 +54,15 @@ const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
 </div>
 <Footer />
 
-<script>
-  // filler
-</script>
+<style is:global>
+  @media screen and (min-width: 1000px) and (max-width: 1820px) {
+    #main.custom-sidenav-shift {
+      margin-left: 250px;
+      transition: 0.5s;
+    }
+
+    #main.custom-sidenav-shift.custom-sidenav-collapse {
+      margin-left: 12.5vw;
+    }
+  }
+</style>

@@ -58,6 +58,19 @@
   border: 2px solid gray;
   color: hsla(0, 0%, 100%, 0.9);
 }
+.custom-sidenav-button.toggle {
+  left: 250px;
+  border: 2px solid pink;
+  background-color: #363636;
+  color: hsla(0, 0%, 100%, 0.9);
+}
+.custom-sidenav-button.toggle > #sidenavToggleUp {
+  display: none;
+}
+
+.custom-sidenav-button.toggle > #sidenavToggleDown {
+  display: inline-block;
+}
 
 .custom-sidenav-button:hover {
   border: 2px solid pink;
@@ -65,23 +78,8 @@
   color: hsla(0, 0%, 100%, 0.9);
 }
 
-.custom-sidenav-button.toggle {
-  left: 250px;
-  border: 2px solid pink;
-  background-color: #363636;
-  color: hsla(0, 0%, 100%, 0.9);
-}
-
 #sidenavToggleDown {
   display: none;
-}
-
-.custom-sidenav-button.toggle > #sidenavToggleUp {
-  display: none;
-}
-
-.custom-sidenav-button.toggle > #sidenavToggleDown {
-  display: inline-block;
 }
 
 /* container-sm-9 is 75% width so breakpoint * 0.25 >= 250 */
