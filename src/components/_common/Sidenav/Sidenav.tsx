@@ -15,7 +15,7 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
   const toggleFunction = () => {
     var main = document.getElementById("main")
 
-    if (window.innerWidth >= 1000) {
+    if (window.innerWidth >= 1016) {
       main?.classList.toggle("custom-sidenav-collapse")
       setSidenavCollapse((isSidenavCollapse) => !isSidenavCollapse)
 
@@ -33,7 +33,7 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
   }
 
   const smToggleFunction = () => {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 1016) {
       toggleFunction()
     }
   }
