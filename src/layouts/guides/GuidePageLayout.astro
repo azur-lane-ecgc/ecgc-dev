@@ -47,6 +47,11 @@ const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
 
   <Navbar activePage={activePage} client:load />
   <body>
-    <slot />
-  </body><Footer />
+    <div
+      class="container guide-content-body custom-sidenav-shift custom-sidenav-collapse mx-auto max-w-[100%] md:max-w-[75%]"
+    >
+      <slot />
+    </div>
+    <Footer />
+  </body>
 </html>
