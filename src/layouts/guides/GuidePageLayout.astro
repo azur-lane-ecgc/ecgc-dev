@@ -12,12 +12,14 @@ import Footer from "@components/_common/Footer.astro"
 interface Props {
   title: string
   activePage?: string
+  tocID?: string
   metaUrl?: string
   metaImage?: string
   metaDescription: string
 }
 
-const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
+const { title, activePage, tocID, metaUrl, metaImage, metaDescription } =
+  Astro.props
 ---
 
 <!-- for google search -->
@@ -45,7 +47,7 @@ const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
 </>
 
 <Navbar activePage={activePage} client:load />
-<Sidenav client:load />
+<Sidenav page={tocID} client:load />
 <div
   id="main"
   class="container guide-content-body custom-sidenav-shift mx-auto max-w-[100%] md:max-w-[75%]"

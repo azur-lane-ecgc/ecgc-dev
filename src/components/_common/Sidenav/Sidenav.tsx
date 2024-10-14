@@ -11,7 +11,6 @@ interface SidenavProps {
 export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
   const [isToggle, setToggle] = useState(false)
   const [isSidenavCollapse, setSidenavCollapse] = useState(false)
-  const [isMainCollapse, setMainCollapse] = useState(false)
 
   const toggleFunction = () => {
     var main = document.getElementById("main")
@@ -19,7 +18,6 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
     if (window.innerWidth >= 1000) {
       main?.classList.toggle("custom-sidenav-collapse")
       setSidenavCollapse((isSidenavCollapse) => !isSidenavCollapse)
-      setMainCollapse((isMainCollapse) => !isMainCollapse)
 
       if (isToggle && isSidenavCollapse) {
         setToggle((isToggle) => !isToggle)
@@ -30,7 +28,6 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
       if (isToggle && isSidenavCollapse) {
         main?.classList.remove("custom-sidenav-collapse")
         setSidenavCollapse((isSidenavCollapse) => !isSidenavCollapse)
-        setMainCollapse((isMainCollapse) => !isMainCollapse)
       }
     }
   }
