@@ -44,6 +44,11 @@ a:active {
   text-decoration: underline;
 }
 
+.container {
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+}
+
 /* Contributor Page */
 
 h3.contributor-title-custom {
