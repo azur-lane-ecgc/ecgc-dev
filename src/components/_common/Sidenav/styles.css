@@ -83,7 +83,7 @@
 }
 
 /* container-sm-9 is 75% width so breakpoint * 0.25 >= 250 */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1016px) {
   .sidenav-header {
     display: inline !important;
   }
