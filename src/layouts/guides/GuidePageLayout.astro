@@ -19,39 +19,32 @@ interface Props {
 const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
 ---
 
-<!doctype html>
-<html lang="en">
-  <!-- for google search -->
-  <meta
-    name="google-site-verification"
-    content="haSqOW7yYrOiz_6U0wAqWSb7IBGh10_KZ8cNkRJXyhQ"
-  />
+<!-- for google search -->
+<meta
+  name="google-site-verification"
+  content="haSqOW7yYrOiz_6U0wAqWSb7IBGh10_KZ8cNkRJXyhQ"
+/>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} - ECGC</title>
-  <meta name="description" content={metaDescription} />
-  <meta name="og:title" content={title} />
-  <meta
-    name="og:url"
-    content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
-  />
-  {metaImage && <meta name="og:image" content={`/images/${metaImage}`} />}
-  <meta name="og:description" content={metaDescription} />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{title} - ECGC</title>
+<meta name="description" content={metaDescription} />
+<meta name="og:title" content={title} />
+<meta
+  name="og:url"
+  content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
+/>
+{metaImage && <meta name="og:image" content={`/images/${metaImage}`} />}
+<meta name="og:description" content={metaDescription} />
 
-  <link rel="icon" type="image/x-icon" href="images/misc/SiteIcon.ico" />
+<link rel="icon" type="image/x-icon" href="images/misc/SiteIcon.ico" />
 
-  <>
-    <noscript>Your browser does not support JavaScript!</noscript>
-  </>
+<noscript>Your browser does not support JavaScript!</noscript>
 
-  <Navbar activePage={activePage} client:load />
-  <body>
-    <div
-      class="container guide-content-body custom-sidenav-shift custom-sidenav-collapse mx-auto max-w-[100%] md:max-w-[75%]"
-    >
-      <slot />
-    </div>
-    <Footer />
-  </body>
-</html>
+<Navbar activePage={activePage} client:load />
+<div
+  class="container guide-content-body custom-sidenav-shift custom-sidenav-collapse mx-auto max-w-[100%] md:max-w-[75%]"
+>
+  <slot />
+</div>
+<Footer />
