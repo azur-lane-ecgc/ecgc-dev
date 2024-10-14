@@ -119,7 +119,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
               {page.dropdownItems?.map((item, idx) => (
                 <a
                   key={idx}
-                  href={`./${item.href}`}
+                  href={item.href}
                   className={`block px-3 py-1 text-[1rem]
                     ${
                       activePage === item.href
@@ -140,7 +140,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
 
   return (
     <a
-      href={`./${page.href}`}
+      href={page.href}
       className={`navbar-link flex items-center px-2 py-2 rounded-md text-base font-medium min-h-[40px]
         ${
           activePage === page.href ? "navbar-active" : ""
@@ -196,7 +196,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
             {page.dropdownItems?.map((item, idx) => (
               <a
                 key={idx}
-                href={`./${item.href}`}
+                href={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-normal
                   ${
                     activePage === item.href
@@ -215,7 +215,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
 
   return (
     <a
-      href={`./${page.href}`}
+      href={page.href}
       className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium no-underline
         ${
           activePage === page.href ? "navbar-active" : ""
@@ -262,7 +262,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
             className="flex items-center text-white hover:bg-white/15"
           >
             <img
-              src="./images/misc/SiteIcon.png"
+              src="images/misc/SiteIcon.png"
               width="40"
               alt="ECGC"
               className="mr-2"

@@ -25,7 +25,7 @@ const guides: Guide[] = [
       </>
     ),
     link: "common_resource",
-    image: "./images/misc/common_resource_cover.jpg",
+    image: "images/misc/common_resource_cover.jpg",
   },
   {
     title: "Early Ship Recommendations",
@@ -39,7 +39,7 @@ const guides: Guide[] = [
       </>
     ),
     link: "early_ship_recommendations",
-    image: "./images/misc/early_ship_recs_cover.png",
+    image: "images/misc/early_ship_recs_cover.png",
   },
   {
     title: "Equipment Guide",
@@ -53,7 +53,7 @@ const guides: Guide[] = [
       </>
     ),
     link: "equipment",
-    image: "./images/misc/equipment_guide_cover.png",
+    image: "images/misc/equipment_guide_cover.png",
   },
   {
     title: "Farming Guide",
@@ -62,7 +62,7 @@ const guides: Guide[] = [
     revision: "1.1.1",
     description: <>Goes over the optimal ways to farm in Azur Lane.</>,
     link: "farming",
-    image: "./images/misc/farming_guide_cover.jpg",
+    image: "images/misc/farming_guide_cover.jpg",
   },
   {
     title: "Fleetbuilding Guide",
@@ -83,7 +83,7 @@ const guides: Guide[] = [
       </>
     ),
     link: "fleetbuilding",
-    image: "./images/misc/fleetbuilding_guide_cover.png",
+    image: "images/misc/fleetbuilding_guide_cover.png",
   },
   {
     title: "Fleet Technology Guide",
@@ -104,7 +104,7 @@ const guides: Guide[] = [
       </>
     ),
     link: "fleet_technology",
-    image: "./images/misc/no_cover.jpg",
+    image: "images/misc/no_cover.jpg",
   },
   {
     title: "Newbie Tips",
@@ -115,7 +115,7 @@ const guides: Guide[] = [
       <>Goes over basic advice and mistakes to avoid for new players!</>
     ),
     link: "newbie_tips",
-    image: "./images/misc/no_cover.jpg",
+    image: "images/misc/no_cover.jpg",
   },
   {
     title: "Research Guide",
@@ -137,7 +137,7 @@ const guides: Guide[] = [
       </>
     ),
     link: "research",
-    image: "./images/misc/research_guide_cover.jpg",
+    image: "images/misc/research_guide_cover.jpg",
   },
   {
     title: "Samvaluations",
@@ -146,7 +146,7 @@ const guides: Guide[] = [
     revision: "1.12.0",
     description: <>Compiled list of all my ship reviews!</>,
     link: "samvaluation",
-    image: "./images/misc/no_cover.jpg",
+    image: "images/misc/no_cover.jpg",
   },
   {
     title: "Shop Priority Guide",
@@ -160,7 +160,7 @@ const guides: Guide[] = [
       </>
     ),
     link: "shop_priority",
-    image: "./images/misc/no_cover.jpg",
+    image: "images/misc/no_cover.jpg",
   },
 ]
 
