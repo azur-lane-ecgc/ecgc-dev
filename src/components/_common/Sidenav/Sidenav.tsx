@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 
 import { HR } from "@components/_common/HR"
+import { TocLink } from "./TocLink"
+import globalTOC from "./TocContent.json"
 
 import "./styles.css"
 
@@ -11,6 +13,8 @@ interface SidenavProps {
 export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
   const [isToggle, setToggle] = useState(false)
   const [isSidenavCollapse, setSidenavCollapse] = useState(false)
+
+  const TocContent = globalTOC.find((file) => file.fileName === page)?.toc || []
 
   const toggleFunction = () => {
     var main = document.getElementById("main")
@@ -61,7 +65,30 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
             <HR />
           </span>
           <div className="toc">
-            <p>Filler</p>
+            <ol>
+              {TocContent.map((tocLink) => (
+                <li key={tocLink.id}>
+                  <TocLink id={tocLink.id} level={1} onClick={smToggleFunction}>
+                    {tocLink.content}
+                  </TocLink>
+                  {tocLink.subheadings.length > 0 && (
+                    <ol>
+                      {tocLink.subheadings.map((tocLinkSubheading) => (
+                        <li key={tocLinkSubheading.id}>
+                          <TocLink
+                            id={tocLinkSubheading.id}
+                            level={2}
+                            onClick={smToggleFunction}
+                          >
+                            {tocLinkSubheading.content}
+                          </TocLink>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </div>

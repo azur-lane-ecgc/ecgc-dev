@@ -8,7 +8,7 @@ export const inputFiles = [
     path: "src/components/Changelog/Changelog2023Content.astro",
   },
   {
-    name: "farming",
+    name: "Farming",
     path: "dev_tools/farming.html",
   },
 ]
