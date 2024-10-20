@@ -3,7 +3,7 @@ import fs from "fs"
 import { inputFiles } from "./_inputFiles.js"
 
 // Function to replace the specific link format
-function replaceWikiLinks(content) {
+const replaceWikiLinks = (content) => {
   // Match the link structure, preserving newlines and spaces
   const regex =
     /<a\s*\n\s*rel="noopener noreferrer"\s*\n\s*target="_blank"\s*\n\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n\s*>/g
@@ -15,7 +15,7 @@ function replaceWikiLinks(content) {
 }
 
 // Main function to process the file
-async function processFile(inputFilePath, outputFilePath) {
+const processFile = async (inputFilePath, outputFilePath) => {
   try {
     // Read the file content
     const data = await fs.promises.readFile(inputFilePath, "utf8")
