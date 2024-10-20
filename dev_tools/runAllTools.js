@@ -56,7 +56,7 @@ const runAllScripts = async () => {
       }
     }
 
-    console.log("All scripts completed.")
+    console.log("All devtools completed.")
   } catch (error) {
     console.error("Error processing scripts:", error)
     process.exit(1)
