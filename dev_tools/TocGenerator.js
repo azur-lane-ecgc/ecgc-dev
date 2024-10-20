@@ -23,39 +23,44 @@ const initializeJsonFile = async () => {
 const extractHeadings = (content) => {
   const headings = []
 
-  // Regex for <h2> and <h3> that captures the 'id' attribute and the inner text, ignoring other attributes
-  const h2Regex = /<h2[^>]*\sid="([^"]+)"[^>]*>([^<]+)<\/h2>/g
-  const h3Regex = /<h3[^>]*\sid="([^"]+)"[^>]*>([^<]+)<\/h3>/g
+  // Find all h2 and h3 matches first
+  const h2Matches = [
+    ...content.matchAll(/<h2[^>]*\sid="([^"]+)"[^>]*>([^<]+)<\/h2>/g),
+  ]
+  const h3Matches = [
+    ...content.matchAll(/<h3[^>]*\sid="([^"]+)"[^>]*>([^<]+)<\/h3>/g),
+  ]
 
-  let matchH2
+  // Process each h2 heading
+  for (let i = 0; i < h2Matches.length; i++) {
+    const h2Match = h2Matches[i]
+    const h2Content = h2Match[2].trim()
 
-  while ((matchH2 = h2Regex.exec(content)) !== null) {
-    const h2Content = matchH2[2].trim()
-
-    // Skip <h2> if the content is exactly "Introduction"
+    // Skip if content is "Introduction"
     if (h2Content === "Introduction") {
       continue
     }
 
     const h2 = {
-      id: matchH2[1], // Capture 'id' attribute
-      content: h2Content, // Capture inner text of <h2>
-      subheadings: [], // Initialize subheadings
+      id: h2Match[1],
+      content: h2Content,
+      subheadings: [],
     }
 
-    // Reset h3 regex index for each h2
-    h3Regex.lastIndex = h2Regex.lastIndex
+    // Find the next h2's position (or end of content if this is the last h2)
+    const nextH2Position =
+      i < h2Matches.length - 1 ? h2Matches[i + 1].index : content.length
 
-    let matchH3
-    while ((matchH3 = h3Regex.exec(content)) !== null) {
-      // Ensure the <h3> belongs to the current <h2> (appears after it but before the next <h2>)
-      if (matchH3.index > h2Regex.lastIndex) break
+    // Get all h3s between current h2 and next h2
+    const h3sForThisSection = h3Matches.filter((h3Match) => {
+      return h3Match.index > h2Match.index && h3Match.index < nextH2Position
+    })
 
-      h2.subheadings.push({
-        id: matchH3[1], // Capture 'id' attribute
-        content: matchH3[2].trim(), // Capture inner text of <h3>
-      })
-    }
+    // Add all matching h3s to the subheadings
+    h2.subheadings = h3sForThisSection.map((h3Match) => ({
+      id: h3Match[1],
+      content: h3Match[2].trim(),
+    }))
 
     headings.push(h2)
   }
