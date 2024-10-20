@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 import { HR } from "@components/_common/HR"
 import { TocLink } from "./TocLink"
 import globalTOC from "./TocContent.json"
+import type { TocLinkType } from "./types"
 
 import "./styles.css"
 
@@ -14,7 +15,8 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
   const [isToggle, setToggle] = useState(false)
   const [isSidenavCollapse, setSidenavCollapse] = useState(false)
 
-  const TocContent = globalTOC.find((file) => file.fileName === page)?.toc || []
+  const TocContent: TocLinkType[] =
+    globalTOC.find((file) => file.fileName === page)?.toc || []
 
   const toggleFunction = () => {
     var main = document.getElementById("main")
