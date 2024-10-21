@@ -1,6 +1,6 @@
 import fs from "fs"
 
-import { inputFiles } from "./_inputFiles.js"
+import { pageInfo } from "../src/components/_common/PageInfo/pageInfo.js"
 
 // Function to replace the specific link format
 const replaceWikiLinks = (content) => {
@@ -9,7 +9,7 @@ const replaceWikiLinks = (content) => {
     /<a\s*\n\s*rel="noopener noreferrer"\s*\n\s*target="_blank"\s*\n\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n\s*>/g
 
   // Replace the link format with the WikiLink component
-  return content.replace(regex, (match, hrefTitle, title, linkContent) => {
+  return content.replace(regex, (match="", hrefTitle, title="", linkContent) => {
     return `<WikiLink page="${hrefTitle.replace(/_/g, " ")}">${linkContent.trim()}</WikiLink>`
   })
 }
@@ -32,9 +32,9 @@ const processFile = async (inputFilePath, outputFilePath) => {
 }
 
 export const replaceLinks = () => {
-  for (const file of inputFiles) {
-    const inputFilePath = file.path
-    const outputFilePath = file.path
+  for (const page of pageInfo) {
+    const inputFilePath = page.path
+    const outputFilePath = page.path
 
     processFile(inputFilePath, outputFilePath)
   }

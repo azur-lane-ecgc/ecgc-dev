@@ -2,7 +2,7 @@ import fs from "fs"
 import path from "path"
 
 // Input array of objects with {name, path} structure
-import { inputFiles } from "./_inputFiles.js"
+import { pageInfo } from "../src/components/_common/PageInfo/pageInfo.js"
 
 // Path to the output JSON file
 const outputFilePath = path.join(
@@ -72,13 +72,13 @@ const extractHeadings = (content) => {
 const processFiles = async () => {
   const tocData = []
 
-  for (const file of inputFiles) {
+  for (const page of pageInfo) {
     try {
-      const content = await fs.promises.readFile(file.path, "utf8")
+      const content = await fs.promises.readFile(page.path, "utf8")
       const fileHeadings = extractHeadings(content)
 
       tocData.push({
-        fileName: file.name,
+        fileName: page.name,
         toc: fileHeadings,
       })
     } catch (error) {
