@@ -38,8 +38,13 @@ const { title, activePage, tocID, metaUrl, metaImage, metaDescription } =
   content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
 />
 {
-  metaImage && (
+  metaImage ? (
     <meta name="og:image" content={`/test_ecgc_2/images/${metaImage}`} />
+  ) : (
+    <meta
+      name="og:image"
+      content="https://samheart564.github.io/ECGC/images/misc/No-Cover.jpg"
+    />
   )
 }
 <meta name="og:description" content={metaDescription} />
