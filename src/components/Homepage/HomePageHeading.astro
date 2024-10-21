@@ -1,96 +1,10 @@
 ---
+import AnimatedSquares from "@components/_common/AnimatedSquares.astro"
+
 // no props
 ---
 
-<!-- animation -->
-<style is:global>
-  @keyframes move-left-right {
-    0% {
-      transform: translateX(-10px);
-    }
-    50% {
-      transform: translateX(10px);
-    }
-    100% {
-      transform: translateX(-10px);
-    }
-  }
-</style>
-
-<!-- static styles -->
 <style>
-  /* squares */
-  .squares {
-    background: linear-gradient(0deg, #3358f4, #1d8cf8);
-    position: absolute;
-    transition: 0.5s ease-out;
-    overflow: hidden;
-    border-radius: 20%;
-  }
-
-  .squares.square1 {
-    animation: move-left-right 4s infinite;
-    height: 300px;
-    width: 300px;
-    opacity: 0.5;
-    left: 3%;
-    top: -21%;
-  }
-
-  .squares.square2 {
-    animation: move-left-right 6s infinite;
-    height: 400px;
-    width: 400px;
-    opacity: 0.4;
-    right: -5%;
-    top: -12%;
-  }
-
-  .squares.square3 {
-    animation: move-left-right 5s infinite;
-    height: 200px;
-    width: 200px;
-    opacity: 0.1;
-    left: -5%;
-    bottom: 0%;
-  }
-
-  .squares.square4 {
-    animation: move-left-right 10s infinite;
-    height: 100px;
-    width: 100px;
-    opacity: 0.9;
-    right: 27%;
-    top: 70%;
-  }
-
-  .squares.square5 {
-    animation: move-left-right 6s infinite;
-    height: 250px;
-    width: 250px;
-    opacity: 0.1;
-    left: 32%;
-    bottom: 29%;
-  }
-
-  .squares.square6 {
-    animation: move-left-right 9s infinite;
-    height: 80px;
-    width: 80px;
-    opacity: 0.8;
-    left: 10%;
-    top: 35%;
-  }
-
-  .squares.square7 {
-    animation: move-left-right 3s infinite;
-    height: 300px;
-    width: 300px;
-    opacity: 0.1;
-    right: -5%;
-    bottom: 0%;
-  }
-
   .page-header-style {
     height: 400px !important;
     min-height: 400px !important;
@@ -157,13 +71,7 @@
 
 <!-- Animation Stuff -->
 <div class="page-header header-filter page-header-style overflow-hidden">
-  <div class="squares square1"></div>
-  <div class="squares square2 hidden md:block"></div>
-  <div class="squares square3"></div>
-  <div class="squares square4"></div>
-  <div class="squares square5"></div>
-  <div class="squares square6"></div>
-  <div class="squares square7"></div>
+  <AnimatedSquares />
   <div
     class="container flex flex-col items-center justify-center text-center mx-auto top-[80px] px-[30px]"
   >
