@@ -10,7 +10,7 @@ const exec = promisify(execCallback)
 const scriptsDirectory = "./dev_tools"
 
 // User-specified array of files to exclude
-const excludedFiles = ["_inputFiles.js", "runAllTools.js"]
+const excludedFiles = ["_pageInfo.js", "runAllTools.js"]
 
 // Helper function to run a script
 const runScript = async (fileName) => {

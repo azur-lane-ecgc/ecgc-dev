@@ -2,12 +2,12 @@ import fs from "fs"
 import path from "path"
 
 // Input array of objects with {name, path} structure
-import { pageInfo } from "../src/components/_common/PageInfo/pageInfo.js"
+import { pageInfo } from "./_pageInfo.js"
 
 // Path to the output JSON file
 const outputFilePath = path.join(
   process.cwd(),
-  "src/components/_common/Sidenav/TocContent.json",
+  "./src/components/_common/Sidenav/TocContent.json",
 )
 
 // Function to clear or create a fresh JSON file at the start
