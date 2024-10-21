@@ -10,12 +10,16 @@ import ContributorTile from "@components/Contributors/ContributorTile.astro"
 <style>
   h3.contributor-title-custom {
     line-height: 1.4em;
-    font-size: 2rem;
     font-weight: 500;
     color: hsla(0, 0%, 100%, 0.8);
     margin-top: 1rem;
     text-decoration: underline;
-    z-index: 9999;
+    z-index: 999;
+  }
+
+  .main {
+    position: relative;
+    width: 100%;
   }
 </style>
 
@@ -29,32 +33,35 @@ import ContributorTile from "@components/Contributors/ContributorTile.astro"
   <div class="index-page min-h-[100vh] relative overflow-hidden">
     <!-- Animation Stuff -->
     <AnimatedSquares />
+    <div class="main">
+      <div class="container mx-auto">
+        <h3
+          class="mb-10 contributor-title-custom text-center text-3xl md:text-4xl"
+        >
+          ECGC Contributors
+        </h3>
 
-    <div class="container mx-auto">
-      <h3 class="mb-10 contributor-title-custom text-center">
-        ECGC Contributors
-      </h3>
+        <div
+          class="mb-5 mx-auto text-center flex flex-wrap justify-center gap-4"
+        >
+          <ContributorTile
+            name="Samheart564"
+            discord="samheart564"
+            position="Lead Developer, Guide Writer, Editor"
+            description="Too much work, not enough time."
+            imageSrc="images/contributor_icons/samheart564_icon.jpg"
+            kofiLink="https://ko-fi.com/samheart564"
+          />
 
-      <div class="mb-5 mx-auto text-center flex flex-wrap justify-center gap-4">
-        <ContributorTile
-          name="Samheart564"
-          discord="samheart564"
-          position="Lead Developer, Guide Writer, Editor"
-          description="Too much work, not enough time."
-          imageSrc="images/contributor_icons/samheart564_icon.jpg"
-          kofiLink="https://ko-fi.com/samheart564"
-        />
-
-        <ContributorTile
-          name="Riceist"
-          discord="riceist"
-          position="Guide Writer"
-          description="I hate this game."
-          imageSrc="images/contributor_icons/riceist_icon.png"
-        />
+          <ContributorTile
+            name="Riceist"
+            discord="riceist"
+            position="Guide Writer"
+            description="I hate this game."
+            imageSrc="images/contributor_icons/riceist_icon.png"
+          />
+        </div>
       </div>
     </div>
-
-    <AnimatedSquares />
   </div>
 </HomePageLayout>
