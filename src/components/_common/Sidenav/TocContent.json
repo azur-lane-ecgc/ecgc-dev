@@ -133,5 +133,97 @@
         "subheadings": []
       }
     ]
+  },
+  {
+    "fileName": "Newbie Tips",
+    "toc": [
+      {
+        "id": "avoid_yt_guides",
+        "content": "Avoid YouTube Guides",
+        "subheadings": []
+      },
+      {
+        "id": "mail",
+        "content": "Mail is a Bank!",
+        "subheadings": []
+      },
+      {
+        "id": "permanent_ur",
+        "content": "Permanent URs are a TRAP!",
+        "subheadings": []
+      },
+      {
+        "id": "basic_fleetbuilding",
+        "content": "Basic Fleetbuilding",
+        "subheadings": [
+          {
+            "id": "fleet_positionings",
+            "content": "Fleet Positionings"
+          },
+          {
+            "id": "faction_fleets",
+            "content": "Faction Fleets SUCK"
+          }
+        ]
+      },
+      {
+        "id": "push_campaign",
+        "content": "Push Campaign",
+        "subheadings": [
+          {
+            "id": "3-4",
+            "content": "Do not farm 3-4"
+          }
+        ]
+      },
+      {
+        "id": "out_of_ammo",
+        "content": "My fleet is out of ammo!!!!",
+        "subheadings": []
+      },
+      {
+        "id": "gear",
+        "content": "Gear",
+        "subheadings": [
+          {
+            "id": "avoid_farming_gear",
+            "content": "Avoid Farming Gear"
+          },
+          {
+            "id": "gear_rarity",
+            "content": "Gold Gear =/= Good"
+          },
+          {
+            "id": "situational_gear",
+            "content": "Gearing is situational"
+          }
+        ]
+      },
+      {
+        "id": "upgradable_resources",
+        "content": "Upgradable Resources",
+        "subheadings": []
+      },
+      {
+        "id": "combat_data_packs",
+        "content": "Grind Shipyard EXP MANUALLY",
+        "subheadings": []
+      },
+      {
+        "id": "gacha",
+        "content": "Gacha",
+        "subheadings": []
+      },
+      {
+        "id": "rerolling",
+        "content": "Rerolling",
+        "subheadings": []
+      },
+      {
+        "id": "shops",
+        "content": "Shop Priority",
+        "subheadings": []
+      }
+    ]
   }
 ]
