@@ -186,21 +186,6 @@ a.in_hover:active {
   border-color: #cdcdcd !important;
 }
 
-/* Page Title */
-
-.title-subheading {
-  font-size: inherit;
-}
-
-.title-subheading > span.author-name {
-  color: rgb(250, 212, 117);
-}
-
-.title-subheading > span.version-number,
-.title-subheading > .last-updated {
-  color: cyan;
-}
-
 /* Tables */
 table.width_one {
   min-width: 1150px !important;
