@@ -66,32 +66,38 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
             <h2 className="text-center">Table of Contents</h2>
             <HR />
           </span>
-          <div className="toc">
-            <ol>
-              {TocContent.map((tocLink) => (
-                <li key={tocLink.id}>
-                  <TocLink id={tocLink.id} level={1} onClick={smToggleFunction}>
-                    {tocLink.content}
-                  </TocLink>
-                  {tocLink.subheadings.length > 0 && (
-                    <ol>
-                      {tocLink.subheadings.map((tocLinkSubheading) => (
-                        <li key={tocLinkSubheading.id}>
-                          <TocLink
-                            id={tocLinkSubheading.id}
-                            level={2}
-                            onClick={smToggleFunction}
-                          >
-                            {tocLinkSubheading.content}
-                          </TocLink>
-                        </li>
-                      ))}
-                    </ol>
-                  )}
-                </li>
-              ))}
-            </ol>
-          </div>
+          {TocContent.length > 0 && (
+            <div className="toc">
+              <ol>
+                {TocContent.map((tocLink) => (
+                  <li key={tocLink.id}>
+                    <TocLink
+                      id={tocLink.id}
+                      level={1}
+                      onClick={smToggleFunction}
+                    >
+                      {tocLink.content}
+                    </TocLink>
+                    {tocLink.subheadings.length > 0 && (
+                      <ol>
+                        {tocLink.subheadings.map((tocLinkSubheading) => (
+                          <li key={tocLinkSubheading.id}>
+                            <TocLink
+                              id={tocLinkSubheading.id}
+                              level={2}
+                              onClick={smToggleFunction}
+                            >
+                              {tocLinkSubheading.content}
+                            </TocLink>
+                          </li>
+                        ))}
+                      </ol>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
         </div>
       </div>
     </>
