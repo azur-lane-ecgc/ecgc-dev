@@ -187,6 +187,11 @@
         "subheadings": []
       },
       {
+        "id": "limit_breaks",
+        "content": "Limit Breaks",
+        "subheadings": []
+      },
+      {
         "id": "gear",
         "content": "Gear",
         "subheadings": [
@@ -222,6 +227,11 @@
       {
         "id": "rerolling",
         "content": "Rerolling",
+        "subheadings": []
+      },
+      {
+        "id": "hard_mode_cheese",
+        "content": "Hard Mode Cheese",
         "subheadings": []
       },
       {
