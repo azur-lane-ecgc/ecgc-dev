@@ -6,7 +6,7 @@ import { pageInfo } from "./_pageInfo.js"
 const replaceWikiLinks = (content) => {
   // Match the link structure, preserving newlines and spaces
   const regex =
-    /<a\s*\n\s*rel="noopener noreferrer"\s*\n\s*target="_blank"\s*\n\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n\s*>/g
+    /<a\s*\n\s*rel="noopener noreferrer"\s*\n\s*target="_blank"\s*\n\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
 
   // Replace the link format with the WikiLink component
   return content.replace(
