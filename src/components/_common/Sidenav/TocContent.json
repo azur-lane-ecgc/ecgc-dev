@@ -153,6 +153,11 @@
         "subheadings": []
       },
       {
+        "id": "guild_shop",
+        "content": "Guild Shop",
+        "subheadings": []
+      },
+      {
         "id": "basic_fleetbuilding",
         "content": "Basic Fleetbuilding",
         "subheadings": [
