@@ -3,7 +3,7 @@ import GuideHeading from "@components/_common/GuideHeading.astro"
 import { HR } from "@components/_common/HR"
 import WikiLink from "@components/_common/WikiLink.astro"
 
-import { ShipCell } from "@components/_common/ItemCell"
+import { ItemContainer, ItemCell, ShipCell } from "@components/_common/ItemCell"
 ---
 
 <GuideHeading title="Newbie Tips" />
@@ -545,165 +545,63 @@ import { ShipCell } from "@components/_common/ItemCell"
         <!-- image cell -->
         <td>
           <!-- Ship Row -->
-          <div class="modifiedShipRowContainer">
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Triple_406mm_(16%22/45_Mk_6)#Type_3-0"
-                  title="Triple 406mm Mk 6 Main Gun Mount"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-3 border-radius-0">
-                      <img
-                        src="images/equipment/triple_406_mk6_uss.png"
-                        alt="Triple 406mm Mk 6 Main Gun Mount"
-                      />
-                    </div>
-                    <!-- ship name -->
-                    Triple 406 Mk 6
-                  </div>
-                </a>
-              </div>
-            </div>
+          <ItemContainer>
+            <ItemCell
+              item="Triple 406 Mk 6"
+              wikiLink="Triple_406mm_(16%22/45_Mk_6)#Type_3-0"
+              itemImg="equipment/triple_406_mk6_uss.png"
+              rarity={3}
+              inGroup={true}
+            />
 
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Twin_410mm_(3rd_Year_Type)#Type_3-0"
-                  title="Twin 410mm Naval Gun Mount"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-3 border-radius-0">
-                      <img
-                        src="images/equipment/twin_410_ijn.png"
-                        alt="Twin 410mm Naval Gun Mount"
-                      />
-                    </div>
-                    <!-- ship name -->
-                    Twin 410mm
-                  </div>
-                </a>
-              </div>
-            </div>
+            <ItemCell
+              item="Twin 410mm"
+              wikiLink="Twin_410mm_(3rd_Year_Type)#Type_3-0"
+              itemImg="equipment/twin_410_ijn.png"
+              rarity={3}
+              inGroup={true}
+            />
 
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Curtiss_SB2C_Helldiver#Type_3-0"
-                  title="SB2C Helldiver"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-3 border-radius-0">
-                      <img
-                        src="images/equipment/sb2c_helldiver.png"
-                        alt="SB2C Helldiver"
-                      />
-                    </div>
-                    <!-- ship name -->
-                    SB2C Helldiver
-                  </div>
-                </a>
-              </div>
-            </div>
+            <ItemCell
+              item="SB2C Helldiver"
+              wikiLink="Curtiss_SB2C_Helldiver#Type_3-0"
+              itemImg="equipment/sb2c_helldiver.png"
+              rarity={3}
+              inGroup={true}
+            />
 
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Vought_F4U_Corsair#Type_3-0"
-                  title="F4U Corsair"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-3 border-radius-0">
-                      <img
-                        src="images/equipment/f4u_corsair.png"
-                        alt="F4U Corsair"
-                      />
-                    </div>
-                    <!-- ship name -->
-                    F4U Corsair
-                  </div>
-                </a>
-              </div>
-            </div>
+            <ItemCell
+              item="F4U Corsair"
+              wikiLink="Vought_F4U_Corsair#Type_3-0"
+              itemImg="equipment/f4u_corsair.png"
+              rarity={3}
+              inGroup={true}
+            />
 
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Nakajima_B6N_Tenzan#Type_3-0"
-                  title="Tenzan"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-3 border-radius-0">
-                      <img src="images/equipment/tenzan.png" alt="Tenzan" />
-                    </div>
-                    <!-- ship name -->
-                    Tenzan
-                  </div>
-                </a>
-              </div>
-            </div>
+            <ItemCell
+              item="Tenzan"
+              wikiLink="Nakajima_B6N_Tenzan#Type_3-0"
+              itemImg="equipment/tenzan.png"
+              rarity={3}
+              inGroup={true}
+            />
 
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Twin_150mm_(TbtsK_C/36)#Type_3-0"
-                  title="Twin 150mm TbtsK C/36 Main Gun Mount"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-3 border-radius-0">
-                      <img
-                        src="images/equipment/twin_150_tbtsk_kms.png"
-                        alt="Twin 150mm TbtsK C/36 Main Gun Mount"
-                      />
-                    </div>
-                    <!-- ship name -->
-                    Twin 150mm TbtsK C/36
-                  </div>
-                </a>
-              </div>
-            </div>
+            <ItemCell
+              item="Twin 150mm TbtsK C/36"
+              wikiLink="Twin_150mm_(TbtsK_C/36)#Type_3-0"
+              itemImg="equipment/twin_150_tbtsk_kms.png"
+              rarity={3}
+              inGroup={true}
+            />
 
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Repair_Toolkit#Type_3-0"
-                  title="Repair Toolkit"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-3 border-radius-0">
-                      <img
-                        src="images/equipment/repair_toolkit.png"
-                        alt="Repair Toolkit"
-                      />
-                    </div>
-                    <!-- ship name -->
-                    Repair Toolkit
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+            <ItemCell
+              item="Repair Toolkit"
+              wikiLink="Repair_Toolkit#Type_3-0"
+              itemImg="equipment/repair_toolkit.png"
+              rarity={3}
+              inGroup={true}
+            />
+          </ItemContainer>
         </td>
       </tr>
 
@@ -713,54 +611,23 @@ import { ShipCell } from "@components/_common/ItemCell"
 
         <!-- image cell -->
         <td>
-          <!-- Ship Row -->
-          <div class="modifiedShipRowContainer">
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Hydraulic_Steering_Gear#Type_3-0"
-                  title="Hydraulic Steering Gear"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-2 border-radius-0">
-                      <img
-                        src="images/equipment/blue_rudder.png"
-                        alt="Hydraulic Steering Gear"
-                      />
-                    </div>
-                    <!-- ship name -->
-                    Hydraulic Steering Gear
-                  </div>
-                </a>
-              </div>
-            </div>
+          <ItemContainer>
+            <ItemCell
+              item="Hydraulic Steering Gear"
+              wikiLink="Hydraulic_Steering_Gear#Type_3-0"
+              itemImg="equipment/blue_rudder.png"
+              rarity={2}
+              inGroup={true}
+            />
 
-            <!-- Ship Cell -->
-            <div class="modifiedShipRowCell">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Naval Camouflage#Type_3-0"
-                  title="Naval Camouflage"
-                >
-                  <div class="enlargement">
-                    <div class="icon rarity-2 border-radius-0">
-                      <img
-                        src="images/equipment/naval_camo.png"
-                        alt="Naval Camouflage"
-                      />
-                    </div>
-                    <!-- ship name -->
-                    Naval Camouflage
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+            <ItemCell
+              item="Naval Camouflage"
+              wikiLink="Naval_Camouflage#Type_3-0"
+              itemImg="equipment/naval_camo.png"
+              rarity={2}
+              inGroup={true}
+            />
+          </ItemContainer>
         </td>
       </tr>
     </table>
@@ -876,8 +743,8 @@ import { ShipCell } from "@components/_common/ItemCell"
     <table
       class="table table-sm table-dark table-bordered text-center border-secondary align-middle ship_table"
     >
-      <col width="20%" />
-      <col width="20%" />
+      <col width="15%" />
+      <col width="15%" />
       <col />
       <tr class="ship_table_head">
         <th>Base Material</th>
@@ -887,62 +754,25 @@ import { ShipCell } from "@components/_common/ItemCell"
 
       <tr>
         <td>
-          <!-- Item Row -->
-          <div class="justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Dockyard#Retrofit"
-                  title="T1 Retrofit Blueprint"
-                >
-                  <div class="icon rarity-2 border-radius-0">
-                    <img
-                      src="images/materials/unknown_t1_bp.png"
-                      alt="T1 Retrofit Blueprint"
-                    />
-                  </div>
-                  <!-- Item Name -->
-                  T1 Retrofit Blueprint
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x6</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T1 Retrofit Blueprint"
+            wikiLink="Dockyard#Retrofit"
+            itemImg="materials/unknown_t1_bp.png"
+            rarity={2}
+            descriptionNote="Amount: <b>x6</b>"
+            largeDescNote={true}
+          />
         </td>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Dockyard#Retrofit"
-                  title="T2 Retrofit Blueprint"
-                >
-                  <div class="icon rarity-3 border-radius-0">
-                    <img
-                      src="images/materials/unknown_t2_bp.png"
-                      alt="T2 Retrofit Blueprint"
-                    />
-                  </div>
-                  <!-- Item Name -->
-                  T2 Retrofit Blueprint
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x1</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T2 Retrofit Blueprint"
+            wikiLink="Dockyard#Retrofit"
+            itemImg="materials/unknown_t2_bp.png"
+            rarity={3}
+            descriptionNote="Amount: <b>x1</b>"
+            largeDescNote={true}
+          />
         </td>
-
         <td>
           <p class="px-1 py-1">Craft as many times as needed.</p>
         </td>
@@ -950,56 +780,25 @@ import { ShipCell } from "@components/_common/ItemCell"
 
       <tr>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Equipment#Nation-specific_boxes"
-                  title="T1 Tech Box"
-                >
-                  <div class="icon rarity-1 border-radius-0">
-                    <img src="images/materials/t1_box.png" alt="T1 Tech Box" />
-                  </div>
-                  <!-- Item Name -->
-                  T1 Tech Box
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x5</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T1 Tech Box"
+            wikiLink="Equipment#Nation-specific_boxes"
+            itemImg="materials/t1_box.png"
+            rarity={1}
+            descriptionNote="Amount: <b>x5</b>"
+            largeDescNote={true}
+          />
         </td>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Equipment#Nation-specific_boxes"
-                  title="T2 Tech Box"
-                >
-                  <div class="icon rarity-2 border-radius-0">
-                    <img src="images/materials/t2_box.png" alt="T2 Tech Box" />
-                  </div>
-                  <!-- Item Name -->
-                  T2 Tech Box
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x1</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T2 Tech Box"
+            wikiLink="Equipment#Nation-specific_boxes"
+            itemImg="materials/t2_box.png"
+            rarity={2}
+            descriptionNote="Amount: <b>x1</b>"
+            largeDescNote={true}
+          />
         </td>
-
         <td rowspan="2">
           <p class="px-1 py-1">
             Always craft up. Never open T1 / T2 Tech Boxes; only open T3 or
@@ -1010,115 +809,48 @@ import { ShipCell } from "@components/_common/ItemCell"
 
       <tr>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Equipment#Nation-specific_boxes"
-                  title="T2 Tech Box"
-                >
-                  <div class="icon rarity-2 border-radius-0">
-                    <img src="images/materials/t2_box.png" alt="T2 Tech Box" />
-                  </div>
-                  <!-- Item Name -->
-                  T2 Tech Box
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x5</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T2 Tech Box"
+            wikiLink="Equipment#Nation-specific_boxes"
+            itemImg="materials/t2_box.png"
+            rarity={2}
+            descriptionNote="Amount: <b>x5</b>"
+            largeDescNote={true}
+          />
         </td>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Equipment#Nation-specific_boxes"
-                  title="T3 Tech Box"
-                >
-                  <div class="icon rarity-3 border-radius-0">
-                    <img src="images/materials/t3_box.png" alt="T3 Tech Box" />
-                  </div>
-                  <!-- Item Name -->
-                  T3 Tech Box
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x1</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T3 Tech Box"
+            wikiLink="Equipment#Nation-specific_boxes"
+            itemImg="materials/t3_box.png"
+            rarity={3}
+            descriptionNote="Amount: <b>x1</b>"
+            largeDescNote={true}
+          />
         </td>
       </tr>
 
       <tr>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class"
-                  title="T1 Skill Book"
-                >
-                  <div class="icon rarity-2 border-radius-0">
-                    <img
-                      src="images/materials/unknown_t2_book.png"
-                      alt="T1 Skill Book"
-                    />
-                  </div>
-                  <!-- Item Name -->
-                  T1 Skill Book
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x6</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T1 Skill Book"
+            wikiLink="Living_Area#Tactical_Class"
+            itemImg="materials/unknown_t2_book.png"
+            rarity={2}
+            descriptionNote="Amount: <b>x6</b>"
+            largeDescNote={true}
+          />
         </td>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class"
-                  title="T2 Skill Book"
-                >
-                  <div class="icon rarity-3 border-radius-0">
-                    <img
-                      src="images/materials/unknown_t2_book.png"
-                      alt="T2 Skill Book"
-                    />
-                  </div>
-                  <!-- Item Name -->
-                  T2 Skill Book
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x1</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T2 Skill Book"
+            wikiLink="Living_Area#Tactical_Class"
+            itemImg="materials/unknown_t2_book.png"
+            rarity={3}
+            descriptionNote="Amount: <b>x1</b>"
+            largeDescNote={true}
+          />
         </td>
-
         <td rowspan="2">
           <p class="px-1 py-1">
             Upgrading these to higher rarity causes a loss in total exp gained
@@ -1131,121 +863,48 @@ import { ShipCell } from "@components/_common/ItemCell"
 
       <tr>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class"
-                  title="T2 Skill Book"
-                >
-                  <div class="icon rarity-3 border-radius-0">
-                    <img
-                      src="images/materials/unknown_t2_book.png"
-                      alt="T2 Skill Book"
-                    />
-                  </div>
-                  <!-- Item Name -->
-                  T2 Skill Book
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x4</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T2 Skill Book"
+            wikiLink="Living_Area#Tactical_Class"
+            itemImg="materials/unknown_t2_book.png"
+            rarity={3}
+            descriptionNote="Amount: <b>x4</b>"
+            largeDescNote={true}
+          />
         </td>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class"
-                  title="T3 Skill Book"
-                >
-                  <div class="icon rarity-4 border-radius-0">
-                    <img
-                      src="images/materials/unknown_t3_book.png"
-                      alt="T3 Skill Book"
-                    />
-                  </div>
-                  <!-- Item Name -->
-                  T3 Skill Book
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x1</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T3 Skill Book"
+            wikiLink="Living_Area#Tactical_Class"
+            itemImg="materials/unknown_t3_book.png"
+            rarity={4}
+            descriptionNote="Amount: <b>x1</b>"
+            largeDescNote={true}
+          />
         </td>
       </tr>
 
       <tr>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Gear_Lab#Material_uses"
-                  title="T2 Ordinance Testing Report"
-                >
-                  <div class="icon rarity-4 border-radius-0">
-                    <img
-                      src="images/materials/t2_ordinance_report.png"
-                      alt="T2 Ordinance Testing Report"
-                    />
-                  </div>
-                  <!-- Item Name -->
-                  T2 Ordinance Testing Report
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x8</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T2 Ordinance Testing Report"
+            wikiLink="Gear_Lab#Material_uses"
+            itemImg="materials/t2_ordinance_report.png"
+            rarity={4}
+            descriptionNote="Amount: <b>x8</b>"
+            largeDescNote={true}
+          />
         </td>
         <td>
-          <!-- Item Row -->
-          <div class="modifiedShipRowContainer justify-center">
-            <!-- Item Cell -->
-            <div class="modifiedShipRowCell px-0 py-0">
-              <div class="icon-note-helper">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Gear_Lab#Material_uses"
-                  title="T3 Ordinance Testing Report"
-                >
-                  <div class="icon rarity-5 border-radius-0">
-                    <img
-                      src="images/materials/t3_ordinance_report.png"
-                      alt="T3 Ordinance Testing Report"
-                    />
-                  </div>
-                  <!-- Item Name -->
-                  T3 Ordinance Testing Report
-                </a>
-              </div>
-              <div class="description-note" style="font-size: larger">
-                <p class="nospace">Amount: <b>x1</b></p>
-              </div>
-            </div>
-          </div>
+          <ItemCell
+            item="T3 Ordinance Testing Report"
+            wikiLink="Gear_Lab#Material_uses"
+            itemImg="materials/t3_ordinance_report.png"
+            rarity={5}
+            descriptionNote="Amount: <b>x1</b>"
+            largeDescNote={true}
+          />
         </td>
-
         <td>
           <p class="px-1 py-1">
             These are very scarce resources and should only be crafted up as

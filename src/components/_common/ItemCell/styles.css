@@ -37,3 +37,13 @@
   font-size: smaller !important;
   margin-bottom: 0px;
 }
+
+.description-note.larger > p,
+.description-note.larger > a {
+  font-size: 13.5px !important;
+}
+
+.shipRowCell:hover {
+  border: 1px solid orange;
+  background-color: #3b444bb9;
+}

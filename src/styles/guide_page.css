@@ -186,6 +186,23 @@ a.in_hover:active {
   border-color: #cdcdcd !important;
 }
 
+/* icon formatting */
+.icon {
+  overflow: hidden;
+  margin: 6px auto;
+  width: 60px;
+  padding: 2px;
+  box-shadow: 0 10px 25px 0 #000;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.2857rem;
+  vertical-align: middle;
+  border-style: none;
+}
+
 /* Tables */
 
 .table {
@@ -408,58 +425,6 @@ img {
   border-style: none;
 }
 
-/* Ship Row Containers */
-
-div.shipRowContainer {
-  margin: 20px 10px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.shipRowContainer > div {
-  border: 1px solid grey;
-  padding: 10px;
-  width: 120px;
-  min-height: 90px;
-}
-
-.shipRowCell {
-  flex: 0 0 auto;
-  max-width: 100%;
-  word-wrap: normal;
-  font-size: smaller;
-}
-
-.shipRowCell:hover {
-  border: 1px solid orange;
-  background-color: #3b444bb9;
-}
-
-.location-note {
-  border-top: 1px solid grey;
-  margin-top: 3px;
-  padding-top: 3px;
-}
-
-.location-note > p {
-  font-size: smaller !important;
-  margin-bottom: 0px;
-}
-
-.description-note {
-  border-top: 1px solid grey;
-  margin-top: 3px;
-  padding-top: 3px;
-  /* font-size: smaller!important; */
-}
-
-.description-note > p,
-.description-note > a {
-  font-size: smaller !important;
-  margin-bottom: 0px;
-}
-
 /* Carousel */
 
 .carousel-caption > p {
@@ -545,14 +510,6 @@ iframe.custom-iframe {
   width: 100%;
   margin: 2px;
 }
-
-.shiprowcontainerfont > * .shipRowCell {
-  font-size: 13px;
-}
-
-/* .shiprowcontainerfont * {
-  font-size: 14px;
-} */
 
 .shop {
   display: flex;
