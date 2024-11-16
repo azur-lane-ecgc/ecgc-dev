@@ -1,35 +1,39 @@
 .carousel {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .carousel-inner {
   position: relative;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
+/* images themselves */
 .slide {
-  border-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 0.5);
   padding: min(20px, 1%);
+  border-radius: 20px;
   position: relative;
   display: none;
   float: left;
   width: 100%;
   margin-right: -100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+  max-height: 400px;
 }
 
+.slide > img {
+  margin: auto;
+}
+
+/* transitions */
 .slide-next,
 .slide-prev,
 .slide.active {
-  display: block !important;
+  display: block;
+  transition: transform 0.6s ease-in-out;
 }
 
 .active.slide-end,
@@ -42,11 +46,7 @@
   transform: translateX(-100%);
 }
 
-img.slide {
-  object-fit: contain;
-  max-height: 400px;
-}
-
+/* side indicators */
 .arrow {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
@@ -56,6 +56,9 @@ img.slide {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  top: 0;
+  bottom: 0;
+  transition: opacity 0.15s ease;
 }
 
 .arrow:hover {
@@ -69,6 +72,8 @@ img.slide {
 .arrow.fa-chevron-right {
   right: 0.6rem;
 }
+
+/* bottom indicators  */
 
 .indicators {
   position: absolute;
@@ -106,6 +111,7 @@ img.slide {
   opacity: 1;
 }
 
+/* play pause button */
 .cycleToggle {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);

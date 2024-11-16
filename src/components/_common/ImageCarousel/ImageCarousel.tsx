@@ -17,8 +17,36 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
   const [slide, setSlide] = useState(0)
   const [play, setPlay] = useState(true)
 
-  const slideChange = (newIndex: number) => {
-    setSlide((slide + newIndex + data.length) % data.length)
+  // State variables for animation classes
+  const [isSlideStart, setIsSlideStart] = useState(false)
+  const [isSlideEnd, setIsSlideEnd] = useState(false)
+  const [isSlidePrev, setIsSlidePrev] = useState(false)
+  const [isSlideNext, setIsSlideNext] = useState(false)
+
+  const slideRight = () => {
+    const nextSlide = (slide + 1) % data.length
+
+    setIsSlideStart(true)
+    setIsSlideNext(true)
+
+    setTimeout(() => {
+      setSlide(nextSlide)
+      setIsSlideStart(false)
+      setIsSlideNext(false)
+    }, 600)
+  }
+
+  const slideLeft = () => {
+    const nextSlide = (slide - 1 + data.length) % data.length
+
+    setIsSlideEnd(true)
+    setIsSlidePrev(true)
+
+    setTimeout(() => {
+      setSlide(nextSlide)
+      setIsSlideEnd(false)
+      setIsSlidePrev(false)
+    }, 600)
   }
 
   return (
@@ -26,12 +54,19 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
       <div className="carousel">
         <div className="carousel-inner">
           {data.map((item, index) => (
-            <img
-              className={`slide ${slide === index ? "active" : ""}`}
-              src={item.src}
-              alt={item.alt || item.caption}
+            <div
+              className={`slide ${slide === index ? "active" : ""}
+                ${isSlidePrev && slide === (index - 1 + data.length) % data.length ? "slide-prev" : ""}
+                ${isSlideNext && slide === (index + 1) % data.length ? "slide-next" : ""}
+                ${isSlideStart && slide === index ? "slide-start" : ""}
+                ${isSlideStart && slide === (index + 1) % data.length ? "slide-start" : ""}
+                ${isSlideEnd && slide === index ? "slide-end" : ""}
+                ${isSlideEnd && slide === (index - 1 + data.length) % data.length ? "slide-end" : ""}
+              `}
               key={index}
-            />
+            >
+              <img src={item.src} alt={item.alt || item.caption} key={index} />
+            </div>
           ))}
         </div>
         {!isOneElement && (
@@ -40,13 +75,10 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
               className={`cycleToggle fa-solid ${play ? "fa-play" : "fa-pause"}`}
               onClick={() => setPlay((prev) => !prev)}
             />
+            <i className="arrow fa-solid fa-chevron-left" onClick={slideLeft} />
             <i
-              className="fa-solid fa-chevron-left arrow"
-              onClick={() => slideChange(-1)}
-            />
-            <i
-              className="fa-solid fa-chevron-right arrow"
-              onClick={() => slideChange(1)}
+              className="arrow fa-solid fa-chevron-right"
+              onClick={slideRight}
             />
             <span className="indicators">
               {data.map((_, index) => {

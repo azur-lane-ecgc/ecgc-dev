@@ -1,0 +1,62 @@
+---
+import GuidePageLayout from "@layouts/guides/GuidePageLayout.astro"
+import GuideHeading from "@components/_common/GuideHeading.astro"
+import { HR } from "@components/_common/HR"
+import WikiLink from "@components/_common/WikiLink.astro"
+
+import { ImageCarousel } from "@components/_common/ImageCarousel"
+
+const data = [
+  {
+    src: "images/newbie_tips/starter_fleet.png",
+    alt: "11-1 Oil-Cap Example",
+    caption: "Starter Fleet Example",
+  },
+  {
+    src: "images/fleetbuilding_guide/BBFleet.png",
+    alt: "11-1 Oil-Cap Example",
+    caption: "Starter Fleet Example",
+  },
+]
+---
+
+<GuidePageLayout
+  title="Newbie Tips"
+  activePage="Newbie Tips"
+  tocID="Newbie Tips"
+  metaUrl="newbie_tips"
+  metaDescription="Goes over basic advice and mistakes to avoid for new players!"
+>
+  <GuideHeading title="Newbie Tips" />
+
+  <h2 id="avoid_yt_guides">Avoid YouTube Guides</h2>
+  <HR />
+  <p>
+    A majority of YouTube guides are often outdated, contain misinformation,
+    and/or clickbait for views (or all of the above). Your best sources of
+    information will come from Azur Lane Discord Servers, and/or people who
+    actually play the game. Good Discord servers for help are Azur Lane
+    Official, English Community Tier List, and English Community Guide
+    Compendium.
+  </p>
+  <br />
+
+  <h2 id="mail">Mail is a Bank!</h2>
+  <HR />
+  <p>
+    When you claim Mail Rewards, all Oil and Coin rewards are stored inside Mail
+    Storage. The Mail Storage caps are 600K for Oil and 1.8M for Coins
+    respectively.
+    <b>Leave ALL Oil / Coins inside Mail Storage until you need it</b>. This
+    helps prevent your
+    <WikiLink page="Living Area#Canteen and Merchant"
+      >Canteen and Merchant</WikiLink
+    >
+    from filling up. You can withdraw from the Mail Storage as needed.
+  </p>
+  <br />
+
+  <ImageCarousel data={data} client:load />
+
+  <br />
+</GuidePageLayout>
