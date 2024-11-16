@@ -13,9 +13,9 @@ interface ImageCarouselProps {
 }
 
 export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
-  let isOneElement = data.length <= 1
-
+  const isOneElement = data.length <= 1
   const [slide, setSlide] = useState(0)
+  const [play, setPlay] = useState(true)
 
   const slideChange = (newIndex: number) => {
     setSlide((slide + newIndex + data.length) % data.length)
@@ -24,38 +24,44 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
   return (
     <div className="container">
       <div className="carousel">
+        <div className="carousel-inner">
+          {data.map((item, index) => (
+            <img
+              className={`slide ${slide === index ? "active" : ""}`}
+              src={item.src}
+              alt={item.alt || item.caption}
+              key={index}
+            />
+          ))}
+        </div>
         {!isOneElement && (
-          <i
-            className="fa-solid fa-chevron-left arrow"
-            onClick={() => slideChange(-1)}
-          />
-        )}
-        {data.map((item, index) => (
-          <img
-            className={slide === index ? "slide" : "hidden"}
-            src={item.src}
-            alt={item.alt || item.caption}
-            key={index}
-          />
-        ))}
-        {!isOneElement && (
-          <i
-            className="fa-solid fa-chevron-right arrow"
-            onClick={() => slideChange(1)}
-          />
-        )}
-        {!isOneElement && (
-          <span className="indicators">
-            {data.map((_, index) => {
-              return (
-                <button
-                  key={index}
-                  onClick={() => setSlide(index)}
-                  className={slide === index ? "indicator active" : "indicator"}
-                ></button>
-              )
-            })}
-          </span>
+          <>
+            <i
+              className={`cycleToggle fa-solid ${play ? "fa-play" : "fa-pause"}`}
+              onClick={() => setPlay((prev) => !prev)}
+            />
+            <i
+              className="fa-solid fa-chevron-left arrow"
+              onClick={() => slideChange(-1)}
+            />
+            <i
+              className="fa-solid fa-chevron-right arrow"
+              onClick={() => slideChange(1)}
+            />
+            <span className="indicators">
+              {data.map((_, index) => {
+                return (
+                  <button
+                    key={index}
+                    onClick={() => setSlide(index)}
+                    className={
+                      slide === index ? "indicator active" : "indicator"
+                    }
+                  ></button>
+                )
+              })}
+            </span>
+          </>
         )}
       </div>
     </div>
