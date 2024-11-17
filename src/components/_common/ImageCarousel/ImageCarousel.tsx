@@ -36,7 +36,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
       {!isOneElement && (
         <>
           <i
-            className={`cycleToggle fa-solid ${play ? "fa-pause" : "fa-play"}`}
+            className={`cycle-toggle fa-solid ${play ? "fa-pause" : "fa-play"}`}
             onClick={() => setPlay((prev) => !prev)}
           />
           <i
