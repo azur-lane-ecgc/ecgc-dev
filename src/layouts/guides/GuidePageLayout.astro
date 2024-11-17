@@ -59,8 +59,8 @@ const { title, activePage, tocID, metaUrl, metaImage, metaDescription } =
   <noscript>Your browser does not support JavaScript!</noscript>
 </>
 
-<Navbar activePage={activePage} client:load />
-<Sidenav page={tocID} client:load />
+<Navbar activePage={activePage} client:idle />
+<Sidenav page={tocID} client:idle />
 <div
   id="main"
   class="container guide-content-body custom-sidenav-shift mx-auto max-w-[100%] md:max-w-[75%]"
