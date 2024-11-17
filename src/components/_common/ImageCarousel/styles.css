@@ -1,11 +1,12 @@
+/* carousel containers */
 .carousel {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #000;
-  overflow: hidden;
+
+  --icon-font-size: 1.5rem;
 }
 
 .carousel-inner {
@@ -13,61 +14,71 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  display: flex;
 }
 
-/* slide styling */
+/* images themselves */
 .slide {
+  border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   padding: min(20px, 1%);
-  flex: 1 0 100%;
+  display: block !important;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+
+  /* animation */
   opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   visibility: hidden;
-  position: absolute;
   transition:
-    opacity 1s ease,
-    visibility 1s ease;
+    opacity 0.6s ease-in-out,
+    visibility 0.6s ease-in-out;
 }
 
 .slide.active {
   opacity: 1;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
   visibility: visible;
-  position: relative;
 }
 
-/* images within slide */
-.carousel-image {
+img.slide {
   object-fit: contain;
-  width: 100%;
   max-height: 400px;
 }
 
 @media (max-width: 1140px) {
-  .carousel-image {
+  img.slide {
     max-height: 300px;
   }
 }
 
 @media (max-width: 960px) {
-  .carousel-image {
+  img.slide {
     max-height: 250px;
   }
 }
 
 @media (max-width: 720px) {
-  .carousel-image {
+  img.slide {
     max-height: 250px;
   }
 }
 
 @media (max-width: 540px) {
-  .carousel-image {
+  img.slide {
     max-height: 200px;
+  }
+
+  .carousel {
+    --icon-font-size: 1.2rem;
   }
 }
 
 @media (max-width: 440px) {
-  .carousel-image {
+  img.slide {
     max-height: 150px;
   }
 }
@@ -81,7 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: var(--icon-font-size);
 }
 
 .arrow:hover {
@@ -97,7 +108,6 @@
 }
 
 /* bottom indicators  */
-
 .indicators {
   position: absolute;
   right: 0;
@@ -143,7 +153,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: var(--icon-font-size);
   left: 0.6rem;
   top: 0.6rem;
 }
