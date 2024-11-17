@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import "./styles.css"
 
@@ -20,6 +20,17 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
   const slideChange = (newIndex: number) => {
     setSlide((slide + newIndex + data.length) % data.length)
   }
+
+  // automatic looping
+  useEffect(() => {
+    if (play) {
+      const interval = setInterval(() => {
+        slideChange(1)
+      }, 6000)
+
+      return () => clearInterval(interval)
+    }
+  }, [play, slide])
 
   return (
     <div className="carousel">
