@@ -41,6 +41,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
           <div className="pl-4">
             {page.dropdownItems?.map((item, idx) => (
               <a
+                aria-label={item.href}
                 key={idx}
                 href={`/test_ecgc_2/${item.href}`}
                 className={`block px-3 py-2 rounded-md text-base font-normal
@@ -61,6 +62,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
 
   return (
     <a
+      aria-label={page.href}
       href={`/test_ecgc_2/${page.href}`}
       className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium no-underline
           ${

@@ -34,9 +34,14 @@ export const ItemCell: React.FC<ItemCellProps> = ({
           target="_blank"
           href={`https://azurlane.koumakan.jp/wiki/${wikiLink}`}
           title={item}
+          aria-label={item}
         >
           <div className={`icon rarity-${rarity} border-radius-0`}>
-            <img src={`/test_ecgc_2/images/${itemImg}`} alt={`${item}`} />
+            <img
+              loading="lazy"
+              src={`/test_ecgc_2/images/${itemImg}`}
+              alt={`${item}`}
+            />
           </div>
           {item}
         </a>

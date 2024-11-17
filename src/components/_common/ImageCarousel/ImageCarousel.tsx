@@ -58,6 +58,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
         {data.map((item, index) => (
           <div className={`slide ${slide === index ? "active" : ""}`}>
             <img
+              loading="lazy"
               className="carousel-image"
               key={index}
               src={item.src}

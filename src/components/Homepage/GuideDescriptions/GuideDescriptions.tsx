@@ -21,6 +21,7 @@ export const GuideDescriptions: React.FC = () => {
                 <div className="flex-shrink-0 w-[80px]">
                   <a href={guide.link} target="_self" rel="noopener noreferrer">
                     <img
+                      loading="lazy"
                       className="h-[100px] rounded shadow-lg object-cover"
                       src={guide.image}
                       alt={`${guide.title} cover`}
@@ -78,6 +79,7 @@ export const GuideDescriptions: React.FC = () => {
                 className="block"
               >
                 <img
+                  loading="lazy"
                   className="w-[150px] h-[200px] mx-auto rounded shadow-lg object-cover"
                   src={guide.image}
                   alt={guide.title}

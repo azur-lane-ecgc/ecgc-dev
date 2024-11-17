@@ -69,6 +69,7 @@ const { name, discord, position, description, imageSrc, kofiLink } = Astro.props
   class="contributor-tile relative text-center w-[300px] sm:max-w-[350px] md:max-w-[400px]"
 >
   <img
+    loading="lazy"
     src={imageSrc}
     alt={`${name}'s icon`}
     class="rounded-full shadow-lg w-[150px] h-[150px]"

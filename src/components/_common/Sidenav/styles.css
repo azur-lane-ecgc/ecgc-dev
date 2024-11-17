@@ -47,6 +47,10 @@
   left: 0;
 }
 
+#sidenavToggleDown {
+  display: none;
+}
+
 .custom-sidenav-button {
   transform: rotate(90deg);
   position: fixed;
@@ -76,10 +80,6 @@
   border: 2px solid pink;
   background-color: #363636;
   color: hsla(0, 0%, 100%, 0.9);
-}
-
-#sidenavToggleDown {
-  display: none;
 }
 
 /* container-sm-9 is 75% width so breakpoint * 0.25 >= 250 */
