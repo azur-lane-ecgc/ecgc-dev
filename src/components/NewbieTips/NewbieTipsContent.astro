@@ -4,6 +4,7 @@ import { HR } from "@components/_common/HR"
 import WikiLink from "@components/_common/WikiLink.astro"
 
 import { ItemContainer, ItemCell, ShipCell } from "@components/_common/ItemCell"
+import { ImageCarousel } from "@components/_common/ImageCarousel"
 ---
 
 <GuideHeading title="Newbie Tips" />
@@ -230,23 +231,15 @@ import { ItemContainer, ItemCell, ShipCell } from "@components/_common/ItemCell"
     ship available as filler.
   </p>
 
-  <div class="container">
-    <div id="starterFleetCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            class="d-block w-100"
-            src="/test_ecgc_2/images/newbie_tips/starter_fleet.png"
-            alt="11-1 Oil-Cap Example"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <p>Example starting fleet.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br />
+  <ImageCarousel
+    client:visible={{ rootMargin: "100px" }}
+    data={[
+      {
+        src: "/test_ecgc_2/images/newbie_tips/starter_fleet.png",
+        caption: "Example starting fleet.",
+      },
+    ]}
+  />
 
   <p>
     Other items to buy in
