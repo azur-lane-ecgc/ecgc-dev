@@ -44,7 +44,7 @@ export const GuideDescriptions: React.FC = () => {
                               {index < guide.authors.length - 1 ? ", " : ""}
                             </span>
                           ))
-                        : null}
+                        : false}
                     </div>
 
                     <div>
@@ -96,7 +96,7 @@ export const GuideDescriptions: React.FC = () => {
                           {index < guide.authors.length - 1 ? ", " : ""}
                         </span>
                       ))
-                    : null}
+                    : false}
                 </div>
                 <div>
                   <i className="fas fa-sync mr-1" />

@@ -46,7 +46,7 @@ const currPage = pageInfo.find((page) => page.title === title)
                   {index < currPage.authors.length - 1 ? ", " : ""}
                 </span>
               ))
-            : null}
+            : false}
         </span>
         <br />
         <b>Current Version</b>:{" "}
@@ -54,7 +54,9 @@ const currPage = pageInfo.find((page) => page.title === title)
         <b>Last Updated</b>:{" "}
         <span class="last-updated">{formatDate(currPage.lastUpdated)}</span>
       </p>
-    ) : null
+    ) : (
+      false
+    )
   }
 
   <slot />
