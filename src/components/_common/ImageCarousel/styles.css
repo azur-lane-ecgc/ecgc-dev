@@ -27,20 +27,8 @@
   transition: transform 0.6s ease-in-out;
 }
 
-.slide-next,
-.slide-prev,
 .slide.active {
   display: block !important;
-}
-
-.active.slide-end,
-.slide-next:not(.slide-start) {
-  transform: translateX(100%);
-}
-
-.active.slide-start,
-.slide-prev:not(.slide-end) {
-  transform: translateX(-100%);
 }
 
 img.slide {
