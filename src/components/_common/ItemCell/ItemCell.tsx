@@ -36,7 +36,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
           title={item}
         >
           <div className={`icon rarity-${rarity} border-radius-0`}>
-            <img src={`images/${itemImg}`} alt={`${item}`} />
+            <img src={`/test_ecgc_2/images/${itemImg}`} alt={`${item}`} />
           </div>
           {item}
         </a>
