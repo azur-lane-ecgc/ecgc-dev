@@ -86,6 +86,16 @@
 }
 
 /* img caption */
+.carousel-caption {
+  position: absolute;
+  right: 10%;
+  bottom: 1rem;
+  left: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
 
 /* side arrows */
 .arrow {
@@ -111,8 +121,8 @@
   right: 0.6rem;
 }
 
-/* play pause button */
-.cycle-toggle {
+/* top row controls */
+.toggle {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
   z-index: 1;
@@ -121,12 +131,21 @@
   justify-content: center;
   align-items: center;
   font-size: var(--icon-font-size);
+}
+
+.toggle:hover {
+  cursor: pointer;
+}
+
+/* play pause button */
+.toggle.cycle {
   left: 0.6rem;
   top: 0.6rem;
 }
 
-.cycle-toggle:hover {
-  cursor: pointer;
+.toggle.cc {
+  right: 1rem;
+  top: 0.6rem;
 }
 
 /* bottom indicators  */
