@@ -56,11 +56,13 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
     <div className="carousel">
       <div className="carousel-inner">
         {data.map((item, index) => (
-          <div className={`slide ${slide === index ? "active" : ""}`}>
+          <div
+            className={`slide ${slide === index ? "active" : ""}`}
+            key={index}
+          >
             <img
               loading="lazy"
               className="carousel-image"
-              key={index}
               src={item.src}
               alt={item.alt || item.caption}
             />
@@ -96,17 +98,13 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
           />
           {data.length <= 5 && (
             <span className="indicators">
-              {data.map((_, index) => {
-                return (
-                  <span
-                    key={index}
-                    onClick={() => setSlide(index)}
-                    className={
-                      slide === index ? "indicator active" : "indicator"
-                    }
-                  ></span>
-                )
-              })}
+              {data.map((_, index) => (
+                <span
+                  key={index}
+                  onClick={() => setSlide(index)}
+                  className={slide === index ? "indicator active" : "indicator"}
+                ></span>
+              ))}
             </span>
           )}
         </>
