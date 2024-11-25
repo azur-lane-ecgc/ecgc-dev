@@ -8,7 +8,8 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "devtools": "node dev_tools/runAllTools.js",
-    "start": "npm run devtools && npm run build && start http://localhost:4321/test_ecgc_2/ && astro dev"
+    "start": "npm run devtools && npm run build && start http://localhost:4321/test_ecgc_2/ && astro dev",
+    "rebuild": "npm ci && npm run build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
