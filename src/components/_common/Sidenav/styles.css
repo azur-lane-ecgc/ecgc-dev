@@ -62,12 +62,22 @@
   border: 2px solid gray;
   color: hsla(0, 0%, 100%, 0.9);
 }
+
 .custom-sidenav-button.toggle {
   left: 250px;
   border: 2px solid pink;
   background-color: #363636;
   color: hsla(0, 0%, 100%, 0.9);
 }
+
+span.sidenav-btn-text {
+  color: black;
+  font-family: inherit;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  line-height: 1.2em;
+}
+
 .custom-sidenav-button.toggle > #sidenavToggleUp {
   display: none;
 }
