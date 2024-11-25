@@ -2,14 +2,15 @@ import "./styles.css"
 
 interface TableInfoProps {
   colName: string
-  colWidth: string
+  colWidth?: string
+  limiter?: boolean
 }
 
-interface ShipTableProps {
+interface ItemTableProps {
   tableInfo: TableInfoProps[]
 }
 
-export const ShipTable: React.FC<React.PropsWithChildren<ShipTableProps>> = ({
+export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
   tableInfo,
   children,
 }) => {
@@ -18,15 +19,21 @@ export const ShipTable: React.FC<React.PropsWithChildren<ShipTableProps>> = ({
       <table className="table table-sm table-dark table-bordered text-center border-secondary align-middle">
         <colgroup>
           {tableInfo.map((col, index) => (
-            <col key={index} width={col.colWidth} />
+            <col key={index} width={col.colWidth ? col.colWidth : ""} />
           ))}
         </colgroup>
 
         <thead>
           <tr>
-            {tableInfo.map((col, index) => (
-              <th key={index}>{col.colName}</th>
-            ))}
+            {tableInfo.map((col, index) =>
+              col.limiter ? (
+                <th className="ship_table_limiter" key={index}>
+                  {col.colName}
+                </th>
+              ) : (
+                <th key={index}>{col.colName}</th>
+              ),
+            )}
           </tr>
         </thead>
 

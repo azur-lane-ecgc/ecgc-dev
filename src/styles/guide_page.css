@@ -213,6 +213,10 @@ img {
   background-color: #212529;
 }
 
+.table-responsive {
+  overflow-x: auto;
+}
+
 .table > :not(caption) > * > * {
   color: #fff;
 }
@@ -319,8 +323,7 @@ td:hover span.normal {
 }
 
 th.ship_table_limiter {
-  min-width: 150px;
-  width: 15%;
+  min-width: 125px;
 }
 
 th.ss_table_limiter {
