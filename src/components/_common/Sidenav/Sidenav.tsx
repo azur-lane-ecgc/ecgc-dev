@@ -54,6 +54,11 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
 
   return (
     <>
+      {/* <!-- Overlay --> */}
+      {isToggle && window.innerWidth < 1016 && (
+        <div className="overlay visible" onClick={toggleFunction}></div>
+      )}
+
       {/* <!-- Table of Contents (SideNav) --> */}
       <button
         id="sidenavButton"
