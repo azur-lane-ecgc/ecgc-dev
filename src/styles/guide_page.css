@@ -7,6 +7,10 @@ body {
   background-color: #121212;
 }
 
+#main {
+  padding-top: 5px;
+}
+
 p {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: medium;
