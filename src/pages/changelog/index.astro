@@ -1,0 +1,8 @@
+---
+import { getStaticPaths } from "./[year].astro"
+
+const paths = await getStaticPaths()
+const latestYear = paths[paths.length - 1].params.year
+
+return Astro.redirect(`/test_ecgc_2/changelog/${latestYear}`)
+---

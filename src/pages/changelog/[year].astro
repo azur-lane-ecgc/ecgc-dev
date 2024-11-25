@@ -1,0 +1,83 @@
+---
+import GuidePageLayout from "@layouts/guides/GuidePageLayout.astro"
+import GuideHeading from "@components/_common/GuideHeading.astro"
+const {
+  year,
+  isLatestYear,
+  hasPreviousYear,
+  hasNextYear,
+  previousYear,
+  nextYear,
+} = Astro.props
+
+const changelogComponents = await Astro.glob("../../components/Changelog/*")
+
+export async function getStaticPaths() {
+  const years = [2023, 2024]
+
+  return years.map((year) => ({
+    params: { year: year.toString() },
+    props: {
+      year,
+      isLatestYear: year === Math.max(...years),
+      hasPreviousYear: years.includes(year - 1),
+      hasNextYear: years.includes(year + 1),
+      previousYear: year - 1,
+      nextYear: year + 1,
+    },
+  }))
+}
+
+const ChangelogContent = changelogComponents.find((component) =>
+  component.file.includes(`Changelog${year}Content`)
+)?.default
+---
+
+<GuidePageLayout
+  title="Changelog"
+  activePage="changelog"
+  tocID={`Changelog${year}`}
+  metaUrl={isLatestYear ? "changelog" : `changelog${year}`}
+  metaDescription="ECGC Changelog"
+>
+  <GuideHeading title={`Changelog (${year})`}>
+    <p>
+      {
+        hasPreviousYear && (
+          <span>
+            &lt;&lt;{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_self"
+              href={`/test_ecgc_2/changelog/${previousYear}`}
+            >
+              {previousYear}
+            </a>
+          </span>
+        )
+      }
+      {hasPreviousYear && hasNextYear && " | "}
+      {
+        hasNextYear && (
+          <span>
+            <a
+              rel="noopener noreferrer"
+              target="_self"
+              href={`/test_ecgc_2/changelog/${nextYear}`}
+            >
+              {nextYear}
+            </a>{" "}
+            &gt;&gt;
+          </span>
+        )
+      }
+    </p>
+  </GuideHeading>
+  {
+    ChangelogContent ? (
+      <ChangelogContent />
+    ) : (
+      <p>No content found for year {year}</p>
+    )
+  }
+</GuidePageLayout>
