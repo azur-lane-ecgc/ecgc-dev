@@ -84,13 +84,14 @@
   color: hsla(0, 0%, 100%, 0.9);
 }
 
+.sidenav-header > h2 {
+  font-size: min(1.65rem, calc(1.325rem + 0.9vw)) !important;
+}
+
 /* container-sm-9 is 75% width so breakpoint * 0.25 >= 250 */
 @media screen and (min-width: 1016px) {
   .sidenav-header {
     display: inline !important;
-  }
-  .sidenav-header > h2 {
-    font-size: 1.65rem !important;
   }
 
   .sidenav {
