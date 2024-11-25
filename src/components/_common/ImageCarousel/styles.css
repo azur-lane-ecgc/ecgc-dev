@@ -122,7 +122,7 @@
 }
 
 /* top row controls */
-.toggle {
+.carousel-toggle {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
   z-index: 1;
@@ -133,17 +133,17 @@
   font-size: var(--icon-font-size);
 }
 
-.toggle:hover {
+.carousel-toggle:hover {
   cursor: pointer;
 }
 
 /* play pause button */
-.toggle.cycle {
+.carousel-toggle.cycle {
   left: 0.6rem;
   top: 0.6rem;
 }
 
-.toggle.cc {
+.carousel-toggle.cc {
   right: 1rem;
   top: 0.6rem;
 }
