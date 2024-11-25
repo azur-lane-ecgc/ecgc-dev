@@ -3,7 +3,6 @@ import { useState } from "react"
 import { HR } from "@components/_common/HR"
 import { TocLink } from "./TocLink"
 import globalTOC from "./TocContent.json"
-import type { TocLinkType } from "./types"
 
 import "./styles.css"
 
@@ -11,11 +10,20 @@ interface SidenavProps {
   page?: string
 }
 
+interface TocContentType {
+  id: string
+  content: string
+  subheadings: {
+    id: string
+    content: string
+  }[]
+}
+
 export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
   const [isToggle, setToggle] = useState(false)
   const [isSidenavCollapse, setSidenavCollapse] = useState(false)
 
-  const TocContent: TocLinkType[] =
+  const TocContent: TocContentType[] =
     globalTOC.find((file) => file.fileName === page)?.toc || []
 
   const toggleFunction = () => {
