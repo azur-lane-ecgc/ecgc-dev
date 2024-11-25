@@ -1,6 +1,6 @@
 export const pageInfo = [
   {
-    name: "Changelog",
+    name: "Changelog2024",
     path: "src/components/Changelog/Changelog2024Content.astro",
   },
   {
