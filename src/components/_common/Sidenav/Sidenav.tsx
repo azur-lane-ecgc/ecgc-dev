@@ -55,6 +55,7 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
         <i id="sidenavToggleUp" className="fa fa-angle-double-up"></i>
         <i id="sidenavToggleDown" className="fa fa-angle-double-down"></i>
         <span className="sidenav-btn-text hidden md:inline">
+          {" "}
           Table of Contents
         </span>
       </button>

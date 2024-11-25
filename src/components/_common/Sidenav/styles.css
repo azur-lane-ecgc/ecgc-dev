@@ -70,14 +70,6 @@
   color: hsla(0, 0%, 100%, 0.9);
 }
 
-span.sidenav-btn-text {
-  color: black;
-  font-family: inherit;
-  font-weight: bold !important;
-  font-size: 12px !important;
-  line-height: 1.2em;
-}
-
 .custom-sidenav-button.toggle > #sidenavToggleUp {
   display: none;
 }
@@ -107,7 +99,7 @@ span.sidenav-btn-text {
   .custom-sidenav-button {
     left: 250px;
   }
-  .custom-sidenav-button > .btn-text {
+  .custom-sidenav-button > .sidenav-btn-text {
     display: none !important;
   }
   #sidenavToggleUp {
@@ -123,7 +115,7 @@ span.sidenav-btn-text {
   .custom-sidenav-button.custom-sidenav-collapse {
     left: 0;
   }
-  .custom-sidenav-button.custom-sidenav-collapse > .btn-text {
+  .custom-sidenav-button.custom-sidenav-collapse > .sidenav-btn-text {
     display: inline !important;
   }
   .custom-sidenav-button.custom-sidenav-collapse > #sidenavToggleUp {
