@@ -1,20 +1,8 @@
 ---
 import GuidePageLayout from "@layouts/guides/GuidePageLayout.astro"
 import GuideHeading from "@components/_common/GuideHeading.astro"
-const {
-  year,
-  isLatestYear,
-  hasPreviousYear,
-  hasNextYear,
-  previousYear,
-  nextYear,
-} = Astro.props
 
-const changelogComponents = await Astro.glob("../../components/Changelog/*")
-const ChangelogContent = changelogComponents.find((component) =>
-  component.file.includes(`Changelog${year}Content`)
-)?.default
-
+// dynamic routing
 export async function getStaticPaths() {
   const years = [2023, 2024]
 
@@ -30,6 +18,19 @@ export async function getStaticPaths() {
     },
   }))
 }
+const {
+  year,
+  isLatestYear,
+  hasPreviousYear,
+  hasNextYear,
+  previousYear,
+  nextYear,
+} = Astro.props
+
+const changelogComponents = await Astro.glob("../../components/Changelog/*")
+const ChangelogContent = changelogComponents.find((component) =>
+  component.file.includes(`Changelog${year}Content`)
+)?.default
 ---
 
 <GuidePageLayout
@@ -76,7 +77,7 @@ export async function getStaticPaths() {
     ChangelogContent ? (
       <ChangelogContent />
     ) : (
-      <p>No content found for year {year}</p>
+      <p>ERROR. MESSAGE DEVELOPER ASAP</p>
     )
   }
 </GuidePageLayout>
