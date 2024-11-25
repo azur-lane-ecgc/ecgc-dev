@@ -10,7 +10,7 @@ export async function getStaticPaths() {
     params: { year: year.toString() },
     props: {
       year,
-      isLatestYear: year === Math.max(...years),
+      isLatestYear: year === years[years.length - 1],
       hasPreviousYear: years.includes(year - 1),
       hasNextYear: years.includes(year + 1),
       previousYear: year - 1,
