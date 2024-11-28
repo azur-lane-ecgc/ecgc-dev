@@ -10,6 +10,10 @@ const tailwindConfig = {
         xl: "1200px",
         "2xl": "1400px",
       },
+      colors: {
+        "ecgc-primary": "#121212",
+        "ecgc-secondary": "#1b1b1b",
+      },
     },
   },
   corePlugins: {

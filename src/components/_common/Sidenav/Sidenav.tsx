@@ -62,7 +62,7 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
       {/* <!-- Table of Contents (SideNav) --> */}
       <button
         id="sidenavButton"
-        className={`btn custom-sidenav-button z-30 ${isToggle ? "toggle" : ""} ${isSidenavCollapse ? "custom-sidenav-collapse" : ""}`}
+        className={`btn custom-sidenav-button ${isToggle ? "toggle" : ""} ${isSidenavCollapse ? "custom-sidenav-collapse" : ""}`}
         onClick={toggleFunction}
       >
         <i id="sidenavToggleUp" className="fa fa-angle-double-up"></i>

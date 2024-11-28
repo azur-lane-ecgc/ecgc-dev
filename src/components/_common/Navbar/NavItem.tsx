@@ -45,7 +45,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
           </span>
         </button>
         {isOpen && (
-          <div className="absolute left-0 mt-2 min-w-fit rounded-md shadow-lg bg-[#222a42] ring-1 ring-black ring-opacity-5 z-50">
+          <div className="absolute left-0 mt-2 min-w-fit rounded-md shadow-lg bg-[#222a42] ring-1 ring-black ring-opacity-5 z-[70]">
             <div
               role="menu"
               aria-orientation="vertical"

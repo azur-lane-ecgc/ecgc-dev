@@ -26,7 +26,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
 }) => {
   const itemCell = (
     <div
-      className={`${hasBorder ? "border border-gray-400" : ""} modifiedShipRowCell`}
+      className={`${hasBorder ? "border border-gray-400" : ""} modifiedShipRowCell text-center`}
     >
       <div className="relative">
         <a
