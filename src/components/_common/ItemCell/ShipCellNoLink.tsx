@@ -1,24 +1,10 @@
+import type { ShipCellProps } from "./ShipCell"
+
 import "./styles.css"
 
-interface ItemCellProps {
-  item: string
-  wikiLink: string
-  itemImg: string
-
-  rarity: number
-  
-  iconNote?: string
-  descriptionNote?: string
-  largeDescNote?: boolean
-
-  inGroup?: boolean
-  hasBorder?: boolean
-}
-
-export const ItemCell: React.FC<ItemCellProps> = ({
-  item = "",
-  wikiLink,
-  itemImg,
+export const ShipCellNoLink: React.FC<ShipCellProps> = ({
+  ship = "",
+  isKai = false,
   rarity = 1,
   iconNote = "",
   descriptionNote = "",
@@ -26,26 +12,22 @@ export const ItemCell: React.FC<ItemCellProps> = ({
   inGroup = false,
   hasBorder = false,
 }) => {
+  const itemImg = `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`
+
   const itemCell = (
     <div
       className={`${hasBorder ? "border border-gray-400" : ""} modifiedShipRowCell text-center`}
     >
       <div className="relative">
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href={`https://azurlane.koumakan.jp/wiki/${wikiLink}`}
-          title={item}
-          aria-label={item}
-        >
+        <a className="fake-modal-link" aria-label={ship} onClick={() => false}>
           <div className={`icon rarity-${rarity} border-radius-0`}>
             <img
               loading="lazy"
               src={`/test_ecgc_2/images/${itemImg}`}
-              alt={`${item}`}
+              alt={`${ship}`}
             />
           </div>
-          {item}
+          {ship}
         </a>
         {!!iconNote && (
           <div className="icon-note">
@@ -53,11 +35,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
           </div>
         )}
         {!!descriptionNote && (
-          <div
-            className={`description-note 
-              ${largeDescNote ? "larger" : ""}
-            `}
-          >
+          <div className={`description-note ${largeDescNote ? "larger" : ""}`}>
             <p dangerouslySetInnerHTML={{ __html: descriptionNote }}></p>
           </div>
         )}

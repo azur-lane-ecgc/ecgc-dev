@@ -1,12 +1,14 @@
 import { ItemCell } from "./ItemCell"
 import "./styles.css"
 
-interface ShipCellProps {
+export interface ShipCellProps {
   ship: string
   isKai?: boolean
   rarity: number
+
   iconNote?: string
   descriptionNote?: string
+  largeDescNote?: boolean
 
   inGroup?: boolean
   hasBorder?: boolean
@@ -18,6 +20,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
   rarity = 1,
   iconNote = "",
   descriptionNote = "",
+  largeDescNote = false,
   inGroup = false,
   hasBorder = false,
 }) => {
@@ -29,6 +32,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
       rarity={rarity}
       iconNote={iconNote}
       descriptionNote={descriptionNote}
+      largeDescNote={largeDescNote}
       inGroup={inGroup}
       hasBorder={hasBorder}
     />
