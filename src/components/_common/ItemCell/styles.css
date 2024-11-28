@@ -47,3 +47,33 @@
   border: 1px solid orange;
   background-color: #3b444bb9;
 }
+
+/* fake link for styling */
+
+.fake-modal-link.none {
+  color: auto;
+}
+
+.fake-modal-link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.fake-modal-link:visited {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.fake-modal-link:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.fake-modal-link:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
