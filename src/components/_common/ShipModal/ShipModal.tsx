@@ -21,7 +21,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({ children, ship }) => {
       {/* Modal */}
       {open && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-[60]">
-          <div className="bg-ecgc-secondary rounded-lg shadow-lg w-3/4 max-w-lg p-6 relative">
+          <div className="custom-sidenav-shift custom-sidenav-collapse bg-ecgc-secondary rounded-lg shadow-lg w-3/4 max-w-lg p-6 relative">
             {/* Close button */}
             <button
               onClick={handleClose}
@@ -31,7 +31,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({ children, ship }) => {
               <i className="fa-solid fa-xmark"></i>
             </button>
             {/* Modal content */}
-            <div className="container mx-auto">
+            <div className="container mx-auto text-center">
               <p>{ship} is really good trust me bro</p>
             </div>
           </div>
