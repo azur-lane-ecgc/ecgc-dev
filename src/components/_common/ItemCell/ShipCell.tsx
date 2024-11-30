@@ -26,7 +26,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
 }) => {
   return (
     <ItemCell
-      item={ship}
+      item={`${ship} ${isKai ? "(Retrofit)" : ""}`}
       wikiLink={ship}
       itemImg={`ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`}
       rarity={rarity}
