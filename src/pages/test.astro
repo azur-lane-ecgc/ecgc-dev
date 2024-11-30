@@ -76,7 +76,13 @@ const data = [
   </ShipModal>
 
   <ItemContainer>
-    <ShipCell ship="Unicorn" rarity={3} hasBorder={true} />
-    <ShipCell ship="Unicorn" rarity={3} hasBorder={true} />
+    <ShipCell
+      ship="Unicorn"
+      isKai={true}
+      rarity={3}
+      hasBorder={true}
+      inGroup={true}
+    />
+    <ShipCell ship="Unicorn" rarity={3} hasBorder={true} inGroup={true} />
   </ItemContainer>
 </GuidePageLayout>
