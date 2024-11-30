@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { ModalContent } from "./ModalContent"
 
 interface ShipModalProps {
   ship: string
@@ -31,9 +32,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({ children, ship }) => {
               <i className="fa-solid fa-xmark"></i>
             </button>
             {/* Modal content */}
-            <div className="container mx-auto text-center">
-              <p>{ship} is really good trust me bro</p>
-            </div>
+            <ModalContent ship={ship} />
           </div>
         </div>
       )}
