@@ -20,9 +20,11 @@ export const ItemCell: React.FC<ItemCellProps> = ({
   wikiLink,
   itemImg,
   rarity = 1,
+
   iconNote = "",
   descriptionNote = "",
   largeDescNote = false,
+  
   inGroup = false,
   hasBorder = false,
 }) => {

@@ -6,9 +6,11 @@ export const ShipCellNoLink: React.FC<ShipCellProps> = ({
   ship = "",
   isKai = false,
   rarity = 1,
+
   iconNote = "",
   descriptionNote = "",
   largeDescNote = false,
+  
   inGroup = false,
   hasBorder = false,
 }) => {
