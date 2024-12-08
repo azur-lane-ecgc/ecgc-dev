@@ -10,4 +10,5 @@ export default defineConfig({
   integrations: [react(), tailwind()],
   base: "/test_ecgc_2/",
   output: "static",
+  trailingSlash: "ignore",
 })
