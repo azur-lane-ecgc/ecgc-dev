@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ModalContent } from "./ModalContent"
 
 interface ShipModalProps {
@@ -8,9 +8,21 @@ interface ShipModalProps {
 
 export const ShipModal: React.FC<ShipModalProps> = ({ children, ship }) => {
   const [open, setOpen] = useState(false)
+  const [shift, setShift] = useState(false)
 
   const handleOpen = () => setOpen(true)
-  const handleClose = () => setOpen(false)
+  const handleClose = () => {
+    setOpen(false)
+    setShift(false)
+  }
+
+  useEffect(() => {
+    const sidenav = document.getElementById("sidenav")
+
+    if (sidenav && !sidenav.classList.contains("custom-sidenav-collapse")) {
+      setShift(true)
+    }
+  }, [open])
 
   return (
     <>
@@ -21,12 +33,18 @@ export const ShipModal: React.FC<ShipModalProps> = ({ children, ship }) => {
 
       {/* Modal */}
       {open && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-[60]">
-          <div className="custom-sidenav-shift custom-sidenav-collapse bg-ecgc-secondary rounded-lg shadow-lg w-3/4 max-w-lg p-6 relative">
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-[60]"
+          onClick={handleClose}
+        >
+          <div
+            id="shipModal"
+            className={`bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-6 relative z-[61] ${shift ? "custom-sidenav-shift" : ""}`}
+          >
             {/* Close button */}
             <button
               onClick={handleClose}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-300"
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-300 text-xl"
               aria-label="Close"
             >
               <i className="fa-solid fa-xmark"></i>
