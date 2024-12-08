@@ -6,12 +6,14 @@ const replaceWikiLinks = (content) => {
   const regex =
     /<a\s*\n\s*rel="noopener noreferrer"\s*\n\s*target="_blank"\s*\n\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
 
-  return content.replace(
-    regex,
-    (match = "", hrefTitle, title = "", linkContent) => {
-      return `<WikiLink page="${hrefTitle.replace(/_/g, " ")}">${linkContent.trim()}</WikiLink>`
-    },
-  )
+  return content.replace(regex, (match, hrefTitle, title, linkContent) => {
+    if (match || title) {
+      {
+        false //compiler hopefully optimizes this out
+      }
+    }
+    return `<WikiLink page="${hrefTitle.replace(/_/g, " ")}">${linkContent.trim()}</WikiLink>`
+  })
 }
 
 const processFile = async (inputFilePath, outputFilePath) => {
