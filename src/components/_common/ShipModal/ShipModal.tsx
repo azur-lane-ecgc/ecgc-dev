@@ -8,22 +8,11 @@ interface ShipModalProps {
 
 export const ShipModal: React.FC<ShipModalProps> = ({ children, ship }) => {
   const [open, setOpen] = useState(false)
-  const [shift, setShift] = useState(true)
 
   const handleOpen = () => setOpen(true)
   const handleClose = () => {
     setOpen(false)
   }
-
-  useEffect(() => {
-    const sidenav = document.getElementById("sidenav")
-
-    if (sidenav && !sidenav.classList.contains("custom-sidenav-collapse")) {
-      setShift(true)
-    } else {
-      setShift(false)
-    }
-  }, [open])
 
   return (
     <>
@@ -39,8 +28,8 @@ export const ShipModal: React.FC<ShipModalProps> = ({ children, ship }) => {
           onClick={handleClose}
         >
           <div
-            id="shipModal"
-            className={`bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-6 relative ${shift ? "custom-sidenav-shift" : ""}`}
+            id={`shipModal${ship}`}
+            className={`bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative`}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
