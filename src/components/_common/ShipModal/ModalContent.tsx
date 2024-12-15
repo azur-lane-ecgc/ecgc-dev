@@ -12,7 +12,7 @@ export const ModalContent: React.FC<ModalContentProps> = ({
   rarity,
 }) => {
   return (
-    <div className="container mx-auto text-center">
+    <div className="mx-auto text-center">
       <h1 className="mb-0">Unicorn (Retrofit)</h1>
       <a href="https://azurlane.koumakan.jp/wiki/Category:Ships">Base Game</a>
 
