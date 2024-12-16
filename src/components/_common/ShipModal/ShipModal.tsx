@@ -35,7 +35,8 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
     return
   }, [open])
 
-  const location = "Ashen Simulacrum"
+  const location = ""
+  const parsedLocation = location.replaceAll(" ", "_")
   const isKai = true
   const rarity = 4
   const shipImg = `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`
@@ -73,6 +74,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
           role="dialog"
           tabIndex={-1}
         >
+          {/* Inner Modal Content */}
           <div
             id={`shipModal${ship}`}
             className={modalStyle}
@@ -85,11 +87,20 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
               className={closeButtonStyle}
               aria-label="Close"
             >
-              <i className="fa-solid fa-xmark"></i>
+              <i className="fa-solid fa-xmark" />
             </button>
 
-            {/* Modal content */}
-            <div id={`modalContent${ship}`} className="mx-auto text-center">
+            {/* Tags */}
+            <div className={`absolute top-2 left-2 text-xl bg-[#212529]`}>
+              <p> HMS | CVL | Healer</p>
+            </div>
+
+            {/* Internal Content */}
+            <div
+              id={`innerModalContent${ship}`}
+              className="mx-auto text-center"
+            >
+              {/* Heading */}
               <h1 className="mb-0">
                 <a
                   className={shipLinkStyle}
@@ -100,11 +111,13 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
                   {isKai ? ship + " (Retrofit)" : ship}
                 </a>
               </h1>
-              {location ? (
+
+              {/* Event / Location */}
+              {!!location ? (
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href={`https://azurlane.koumakan.jp/wiki/${location.replaceAll(" ", "_")}`}
+                  href={`https://azurlane.koumakan.jp/wiki/${parsedLocation}`}
                 >
                   {location}
                 </a>
@@ -117,17 +130,24 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
                   Base Game
                 </a>
               )}
-
               <HR />
 
+              {/* Flexbox for Icon + Samvaluation */}
               <div className={shipIconContainerStyle}>
                 {/* Ship Icon */}
                 <div className={`rarity-${rarity} ${shipIconStyle}`}>
-                  <img
-                    loading="lazy"
-                    src={`/test_ecgc_2/images/ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`}
-                    alt={`${ship}`}
-                  />
+                  <a
+                    className={shipLinkStyle}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
+                  >
+                    <img
+                      loading="lazy"
+                      src={`/test_ecgc_2/images/ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`}
+                      alt={`${ship}`}
+                    />
+                  </a>
                 </div>
 
                 {/* Samvaluation */}
