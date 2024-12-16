@@ -12,6 +12,7 @@ export interface ShipCellProps {
 
   inGroup?: boolean
   hasBorder?: boolean
+  hover?: boolean
 }
 
 export const ShipCell: React.FC<ShipCellProps> = ({
@@ -23,6 +24,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
   largeDescNote = false,
   inGroup = false,
   hasBorder = false,
+  hover = false,
 }) => {
   return (
     <ItemCell
@@ -35,6 +37,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
       largeDescNote={largeDescNote}
       inGroup={inGroup}
       hasBorder={hasBorder}
+      hover={hover}
     />
   )
 }

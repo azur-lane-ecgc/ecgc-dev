@@ -13,6 +13,7 @@ interface ItemCellProps {
 
   inGroup?: boolean
   hasBorder?: boolean
+  hover?: boolean
 }
 
 export const ItemCell: React.FC<ItemCellProps> = ({
@@ -27,10 +28,11 @@ export const ItemCell: React.FC<ItemCellProps> = ({
 
   inGroup = false,
   hasBorder = false,
+  hover = false,
 }) => {
   const itemCell = (
     <div
-      className={`${hasBorder ? "border border-gray-400" : ""} modifiedShipRowCell text-center`}
+      className={`${hasBorder && "border border-gray-400"} ${hover && `shipCellHover`} modifiedShipRowCell text-center`}
     >
       <div className="relative">
         <a
