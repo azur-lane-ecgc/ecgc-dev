@@ -56,7 +56,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
             className="lg:hidden text-white focus:outline-none hover:bg-white/15 p-2 rounded hover:shadow-lg flex items-center justify-center"
             onClick={toggleNavCollapse}
           >
-            <i className="fas fa-bars text-xl"></i>
+            <i className="fas fa-bars text-xl" />
           </button>
         </div>
       </div>

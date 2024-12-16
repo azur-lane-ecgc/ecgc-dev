@@ -29,12 +29,12 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
             setIsOpen(!isOpen)
           }}
         >
-          <i className={`fas ${page.icon} mr-1`}></i>
+          <i className={`fas ${page.icon} mr-1`} />
           <span>
             {page.name}{" "}
             <i
               className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
-            ></i>
+            />
           </span>
         </button>
         {activeDropdown === page.name.toLowerCase() && (
@@ -71,7 +71,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >
-      <i className={`fas ${page.icon} mr-1`}></i>
+      <i className={`fas ${page.icon} mr-1`} />
       {page.name}
     </a>
   )

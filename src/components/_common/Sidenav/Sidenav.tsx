@@ -65,8 +65,8 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
         className={`btn custom-sidenav-button ${isToggle ? "toggle" : ""} ${isSidenavCollapse ? "custom-sidenav-collapse" : ""}`}
         onClick={toggleFunction}
       >
-        <i id="sidenavToggleUp" className="fa fa-angle-double-up"></i>
-        <i id="sidenavToggleDown" className="fa fa-angle-double-down"></i>
+        <i id="sidenavToggleUp" className="fa fa-angle-double-up" />
+        <i id="sidenavToggleDown" className="fa fa-angle-double-down" />
         <span className="sidenav-btn-text hidden md:inline">
           {" "}
           Table of Contents

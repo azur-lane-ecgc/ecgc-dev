@@ -36,12 +36,12 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
               } transition-colors duration-200`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <i className={`fas ${page.icon} mr-1`}></i>
+          <i className={`fas ${page.icon} mr-1`} />
           <span>
             {page.name}{" "}
             <i
               className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
-            ></i>
+            />
           </span>
         </button>
         {isOpen && (
@@ -86,7 +86,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >
-      <i className={`fas ${page.icon} ${page.hiddenOnLarge ? "" : "mr-2"}`}></i>
+      <i className={`fas ${page.icon} ${page.hiddenOnLarge ? "" : "mr-2"}`} />
       <span className={`${page.hiddenOnLarge ? "hidden" : ""}`}>
         {page.name}
       </span>
