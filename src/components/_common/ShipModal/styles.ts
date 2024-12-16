@@ -1,5 +1,5 @@
 export const modalTriggerStyle =
-  "border border-gray-400 modifiedShipRowCell text-center cursor-pointer"
+  "border border-gray-400 modifiedShipRowCell text-center cursor-pointer hover:border hover:border-[rgb(255,165,0)] hover:bg-[#3b444bb9]"
 
 export const modalOverlayStyle =
   "h-[100%] w-[100%] fixed inset-0 bg-black bg-opacity-40 z-[99] overflow-y-auto"
@@ -13,4 +13,7 @@ export const closeButtonStyle =
 export const shipIconContainerStyle =
   "flex flex-col sm:flex-row justify-center items-center gap-4 mt-5"
 export const shipIconStyle =
-  "overflow-hidden my-1.5 min-w-fit w-fit p-0.5 shadow-[0_10px_25px_0_rgba(0,0,0,1)] h-auto border-radius-0 "
+  "overflow-hidden my-1.5 min-w-fit w-fit p-0.5 shadow-[0_10px_25px_0_rgba(0,0,0,1)] h-auto border-radius-0"
+
+export const shipLinkStyle =
+  "text-white bg-transparent no-underline visited:text-white visited:bg-transparent hover:text-[hsla(0,0%,100%,0.75)] hover:bg-transparent hover:underline active:text-red-500 active:bg-transparent active:underline"

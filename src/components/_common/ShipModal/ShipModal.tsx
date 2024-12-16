@@ -1,19 +1,24 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {
   closeButtonStyle,
-  ModalContainerStyle,
-  ModalStyle,
+  modalOverlayStyle,
   shipIconContainerStyle,
   shipIconStyle,
   modalTriggerStyle,
+  modalStyle,
+  shipLinkStyle,
 } from "./styles"
+
+import { HR } from "@components/_common/HR"
+
+import { ItemTable } from "../ItemTable"
+import { ShipCell } from "../ItemCell"
 
 interface ShipModalProps {
   ship: string
-  isKai?: boolean
 }
 
-export const ShipModal: React.FC<ShipModalProps> = ({ ship, isKai = true }) => {
+export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
   const [open, setOpen] = useState(false)
 
   const handleOpen = () => setOpen(true)
@@ -21,14 +26,29 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship, isKai = true }) => {
     setOpen(false)
   }
 
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("overflow-hidden")
+    } else {
+      document.body.classList.remove("overflow-hidden")
+    }
+    return
+  }, [open])
+
+  const location = "Ashen Simulacrum"
+  const isKai = true
   const rarity = 4
   const shipImg = `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`
-  const samvaluationText = `<p>Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload which helps a lot with mobbing, and also gains backline healing capabilities as well. Her healing amount is also high as well. Overall, she is the best healer in the game, surpassing <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a>.</p>`
+  const samvaluationText = `Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload which helps a lot with mobbing, and also gains backline healing capabilities as well. Her healing amount is also high as well. Overall, she is the best healer in the game, surpassing <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a>.`
 
   return (
     <>
       {/* Trigger "button" */}
-      <div className={modalTriggerStyle} onClick={handleOpen}>
+      <div
+        id={`modalTrigger${ship}`}
+        className={modalTriggerStyle}
+        onClick={handleOpen}
+      >
         <div className="relative">
           <div className="fake-modal-link">
             <div className={`icon rarity-${rarity} border-radius-0`}>
@@ -45,11 +65,19 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship, isKai = true }) => {
 
       {/* Modal */}
       {open && (
-        <div className={ModalContainerStyle} onClick={handleClose}>
+        <div
+          id={`modalOverlay${ship}`}
+          className={modalOverlayStyle}
+          onClick={handleClose}
+          aria-modal="true"
+          role="dialog"
+          tabIndex={-1}
+        >
           <div
             id={`shipModal${ship}`}
-            className={ModalStyle}
+            className={modalStyle}
             onClick={(e) => e.stopPropagation()}
+            role="document"
           >
             {/* Close button */}
             <button
@@ -61,11 +89,36 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship, isKai = true }) => {
             </button>
 
             {/* Modal content */}
-            <div className="mx-auto text-center">
-              <h1 className="mb-0">Unicorn (Retrofit)</h1>
-              <a href="https://azurlane.koumakan.jp/wiki/Category:Ships">
-                Base Game
-              </a>
+            <div id={`modalContent${ship}`} className="mx-auto text-center">
+              <h1 className="mb-0">
+                <a
+                  className={shipLinkStyle}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
+                >
+                  {isKai ? ship + " (Retrofit)" : ship}
+                </a>
+              </h1>
+              {location ? (
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={`https://azurlane.koumakan.jp/wiki/${location.replaceAll(" ", "_")}`}
+                >
+                  {location}
+                </a>
+              ) : (
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://azurlane.koumakan.jp/wiki/Category:Ships"
+                >
+                  Base Game
+                </a>
+              )}
+
+              <HR />
 
               <div className={shipIconContainerStyle}>
                 {/* Ship Icon */}
@@ -78,13 +131,39 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship, isKai = true }) => {
                 </div>
 
                 {/* Samvaluation */}
-                <div>
-                  <p dangerouslySetInnerHTML={{ __html: samvaluationText }}></p>
+                <div className="text-sm">
+                  <h3 className="text-xl underline">Samvaluation</h3>
+                  <span
+                    className="leading-normal text-[hsla(0,0%,100%,0.75)]"
+                    dangerouslySetInnerHTML={{ __html: samvaluationText }}
+                  ></span>
                 </div>
               </div>
-              <br />
+              <HR />
 
-              <p>MORE CONTENT YAY</p>
+              {/* Equip Table */}
+              <ItemTable
+                tableInfo={[
+                  { colName: "Ship", colWidth: "22%" },
+                  { colName: "Location", colWidth: "25%" },
+                  { colName: "Description", colWidth: "53%", limiter: true },
+                ]}
+              >
+                <tr>
+                  <td>
+                    <ShipCell ship="Unicorn" rarity={3} />
+                  </td>
+
+                  <td>Guild Shop - Elite Ship</td>
+
+                  <td>
+                    <p>
+                      Unicorn is the best healer in the game.{" "}
+                      <b>Retrofit as soon as possible!</b>
+                    </p>
+                  </td>
+                </tr>
+              </ItemTable>
             </div>
           </div>
         </div>
