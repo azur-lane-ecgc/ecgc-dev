@@ -1,9 +1,9 @@
 export const modalTriggerStyle =
   "border border-gray-400 modifiedShipRowCell text-center cursor-pointer"
 
-export const ModalContainerStyle =
-  "fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-[60]"
-export const ModalStyle =
+export const modalOverlayStyle =
+  "fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-[100] overflow-y-auto"
+export const modalStyle =
   "bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative"
 
 export const closeButtonStyle =
