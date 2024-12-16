@@ -9,5 +9,6 @@ const { page } = Astro.props
   rel="noopener noreferrer"
   target="_blank"
   href={`https://azurlane.koumakan.jp/wiki/${page.replace(" ", "_")}`}
-  title={page}><slot /></a
+  title={page}
+  aria-label={page}><slot /></a
 >

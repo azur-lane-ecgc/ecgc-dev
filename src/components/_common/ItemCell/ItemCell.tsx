@@ -6,7 +6,7 @@ interface ItemCellProps {
   itemImg: string
 
   rarity: number
-  
+
   iconNote?: string
   descriptionNote?: string
   largeDescNote?: boolean
@@ -24,7 +24,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
   iconNote = "",
   descriptionNote = "",
   largeDescNote = false,
-  
+
   inGroup = false,
   hasBorder = false,
 }) => {
@@ -36,7 +36,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href={`https://azurlane.koumakan.jp/wiki/${wikiLink}`}
+          href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
           title={item}
           aria-label={item}
         >
