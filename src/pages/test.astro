@@ -5,11 +5,7 @@ import { HR } from "@components/_common/HR"
 import WikiLink from "@components/_common/WikiLink.astro"
 
 import { ImageCarousel } from "@components/_common/ImageCarousel"
-import {
-  ShipCell,
-  ShipCellNoLink,
-  ItemContainer,
-} from "@components/_common/ItemCell"
+import { ShipCell, ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
 
 const data = [
@@ -72,8 +68,7 @@ const data = [
   <br />
   <ItemContainer>
     <ShipModal ship="Unicorn" client:visible />
-
-    <ShipModal ship="Unicorn" client:visible isKai={false} />
+    <ShipModal ship="Unicorn" client:visible />
   </ItemContainer>
 
   <ItemContainer>
