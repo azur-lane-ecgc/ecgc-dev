@@ -1,4 +1,12 @@
 import { useState } from "react"
+import {
+  closeButtonStyle,
+  ModalContainerStyle,
+  ModalStyle,
+  shipIconContainerStyle,
+  shipIconStyle,
+  modalTriggerStyle,
+} from "./styles"
 
 interface ShipModalProps {
   ship: string
@@ -20,10 +28,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship, isKai = true }) => {
   return (
     <>
       {/* Trigger "button" */}
-      <div
-        className={`border border-gray-400 modifiedShipRowCell text-center cursor-pointer`}
-        onClick={handleOpen}
-      >
+      <div className={modalTriggerStyle} onClick={handleOpen}>
         <div className="relative">
           <div className="fake-modal-link">
             <div className={`icon rarity-${rarity} border-radius-0`}>
@@ -40,19 +45,16 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship, isKai = true }) => {
 
       {/* Modal */}
       {open && (
-        <div
-          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-[60]"
-          onClick={handleClose}
-        >
+        <div className={ModalContainerStyle} onClick={handleClose}>
           <div
             id={`shipModal${ship}`}
-            className={`bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative`}
+            className={ModalStyle}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
             <button
               onClick={handleClose}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-300 text-xl"
+              className={closeButtonStyle}
               aria-label="Close"
             >
               <i className="fa-solid fa-xmark"></i>
@@ -65,11 +67,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship, isKai = true }) => {
                 Base Game
               </a>
 
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-5">
+              <div className={shipIconContainerStyle}>
                 {/* Ship Icon */}
-                <div
-                  className={`overflow-hidden my-1.5 min-w-fit w-fit p-0.5 shadow-[0_10px_25px_0_rgba(0,0,0,1)] h-auto rarity-${rarity} border-radius-0 `}
-                >
+                <div className={`rarity-${rarity} ${shipIconStyle}`}>
                   <img
                     loading="lazy"
                     src={`/test_ecgc_2/images/ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`}
