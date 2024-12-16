@@ -22,51 +22,55 @@ const { title, activePage, tocID, metaUrl, metaImage, metaDescription } =
   Astro.props
 ---
 
-<!-- for google search -->
-<meta
-  name="google-site-verification"
-  content="haSqOW7yYrOiz_6U0wAqWSb7IBGh10_KZ8cNkRJXyhQ"
-/>
+<head>
+  <!-- for google search -->
+  <meta
+    name="google-site-verification"
+    content="haSqOW7yYrOiz_6U0wAqWSb7IBGh10_KZ8cNkRJXyhQ"
+  />
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{title} - ECGC</title>
-<meta name="description" content={metaDescription} />
-<meta name="og:title" content={title} />
-<meta
-  name="og:url"
-  content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
-/>
-{
-  metaImage ? (
-    <meta name="og:image" content={`/test_ecgc_2/images/${metaImage}`} />
-  ) : (
-    <meta
-      name="og:image"
-      content="https://samheart564.github.io/ECGC/images/misc/No-Cover.jpg"
-    />
-  )
-}
-<meta name="og:description" content={metaDescription} />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} - ECGC</title>
+  <meta name="description" content={metaDescription} />
+  <meta name="og:title" content={title} />
+  <meta
+    name="og:url"
+    content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
+  />
+  {
+    metaImage ? (
+      <meta name="og:image" content={`/test_ecgc_2/images/${metaImage}`} />
+    ) : (
+      <meta
+        name="og:image"
+        content="https://samheart564.github.io/ECGC/images/misc/No-Cover.jpg"
+      />
+    )
+  }
+  <meta name="og:description" content={metaDescription} />
 
-<link
-  rel="icon"
-  type="image/x-icon"
-  href="/test_ecgc_2/images/misc/SiteIcon.ico"
-/>
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="/test_ecgc_2/images/misc/SiteIcon.ico"
+  />
 
-<>
-  <noscript>Your browser does not support JavaScript!</noscript>
-</>
+  <>
+    <noscript>Your browser does not support JavaScript!</noscript>
+  </>
+</head>
 
-<Navbar activePage={activePage} client:idle />
-<Sidenav page={tocID} client:idle />
-<div
-  id="main"
-  class="container guide-content-body custom-sidenav-shift mx-auto max-w-[100%] md:max-w-[75%]"
->
-  <slot />
-</div>
+<body>
+  <Navbar activePage={activePage} client:idle />
+  <Sidenav page={tocID} client:idle />
+  <div
+    id="main"
+    class="container guide-content-body custom-sidenav-shift mx-auto max-w-[100%] md:max-w-[75%] overflow-y-hidden"
+  >
+    <slot />
+  </div>
+</body>
 <Footer />
 
 <style is:global>
