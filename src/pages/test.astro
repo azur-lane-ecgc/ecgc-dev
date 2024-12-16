@@ -70,10 +70,11 @@ const data = [
   <ImageCarousel data={data} client:visible />
 
   <br />
+  <ItemContainer>
+    <ShipModal ship="Unicorn" client:visible />
 
-  <ShipModal ship="Unicorn" client:visible>
-    <ShipCellNoLink ship="Unicorn" rarity={3} />
-  </ShipModal>
+    <ShipModal ship="Unicorn" client:visible isKai={false} />
+  </ItemContainer>
 
   <ItemContainer>
     <ShipCell

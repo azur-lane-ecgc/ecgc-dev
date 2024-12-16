@@ -43,6 +43,7 @@
   font-size: 13.5px !important;
 }
 
+.modifiedShipRowCell:hover,
 .shipRowCell:hover {
   border: 1px solid orange;
   background-color: #3b444bb9;
