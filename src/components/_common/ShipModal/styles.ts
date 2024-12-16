@@ -2,9 +2,10 @@ export const modalTriggerStyle =
   "border border-gray-400 modifiedShipRowCell text-center cursor-pointer"
 
 export const modalOverlayStyle =
-  "fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-[100] overflow-y-auto"
+  "h-[100%] w-[100%] fixed inset-0 bg-black bg-opacity-40 z-[99] overflow-y-auto"
+
 export const modalStyle =
-  "bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative"
+  "bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative my-[1.75rem] mx-auto"
 
 export const closeButtonStyle =
   "absolute top-2 right-2 text-gray-500 hover:text-gray-300 text-xl"
