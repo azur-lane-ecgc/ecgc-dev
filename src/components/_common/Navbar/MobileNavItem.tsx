@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import type { NavbarPage } from "./navbarPages"
 
@@ -16,14 +16,18 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
+  useEffect(() => {
+    if (activeDropdown != page.name.toLowerCase()) {
+      setIsOpen(false)
+    }
+  }, [activeDropdown])
+
   if (page.isDropdown) {
     return (
-      <div className="transition-all duration-300 ease-in-out">
+      <>
         <button
           className={`navbar-link w-full text-left px-3 py-2 rounded-md text-base font-medium text-white
-              ${
-                activePage === page.href ? "navbar-active" : ""
-              } transition-all duration-300 ease-in-out`}
+              ${activePage === page.href ? "navbar-active" : ""} `}
           onClick={() => {
             toggleDropdown(page.name.toLowerCase())
             setIsOpen(!isOpen)
@@ -49,14 +53,14 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
                       activePage === item.href
                         ? "bg-white/15"
                         : "hover:bg-white/15 hover:text-cyan-400"
-                    } transition-all duration-300 ease-in-out`}
+                    }`}
               >
                 {item.name}
               </a>
             ))}
           </div>
         )}
-      </div>
+      </>
     )
   }
 
@@ -65,9 +69,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
       aria-label={page.href}
       href={`/test_ecgc_2/${page.href}`}
       className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium no-underline
-          ${
-            activePage === page.href ? "navbar-active" : ""
-          } transition-all duration-300 ease-in-out`}
+          ${activePage === page.href ? "navbar-active" : ""} `}
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >
