@@ -4,7 +4,7 @@ export const modalTriggerStyle =
 export const modalOverlayStyle =
   "h-[100%] w-[100%] fixed inset-0 bg-black bg-opacity-40 z-[99] overflow-y-auto"
 export const modalStyle =
-  "bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative my-[1.75rem] mx-auto"
+  "bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative my-[1.75rem] mx-auto min-w-[300px] overflow-auto"
 
 export const closeButtonStyle =
   "absolute top-2 right-2 text-gray-500 hover:text-gray-300 text-xl sm:text-2xl"
