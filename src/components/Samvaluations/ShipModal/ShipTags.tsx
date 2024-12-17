@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { RoleIcons } from "./RoleIcon"
+import { RoleIcons } from "./RoleIcons"
 
 interface ShipTags {
   hullType: string
@@ -11,15 +11,11 @@ interface ShipTags {
 export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
   const [roleDropdownOpen, setRoleDropdown] = useState(false)
 
-  const toggleDropdown = () => {
-    setRoleDropdown(!roleDropdownOpen)
-  }
-
   return (
     <>
       {/* Small Screen Tag Trigger */}
       <button
-        onClick={toggleDropdown}
+        onClick={() => setRoleDropdown(!roleDropdownOpen)}
         className="absolute top-2 left-2 text-base flex items-center space-x-2  text-cyan-400 hover:text-green-600 md:hidden"
       >
         <span>Tags</span>

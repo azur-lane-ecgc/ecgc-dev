@@ -15,7 +15,7 @@ import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 import { ShipCell } from "@components/_common/ItemCell"
-import { RoleIcons } from "./RoleIcon"
+
 import { ShipTags } from "./ShipTags"
 
 interface TriggerProps {
