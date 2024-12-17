@@ -140,7 +140,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
             {/* Internal Content */}
             <div
               id={`innerModalContent${ship}`}
-              className="mx-auto text-center"
+              className="mx-auto text-center pt-1"
             >
               {/* Heading */}
               <h1 className="mb-0">
