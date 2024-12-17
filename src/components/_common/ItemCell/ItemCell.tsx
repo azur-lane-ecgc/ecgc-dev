@@ -32,7 +32,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
 }) => {
   const itemCell = (
     <div
-      className={`${hasBorder && "border border-gray-400"} ${hover && `shipCellHover`} modifiedShipRowCell text-center`}
+      className={`border ${hasBorder ? "border-gray-400" : "border-transparent"} ${hover && `shipCellHover`} modifiedShipRowCell text-center`}
     >
       <div className="relative">
         <a
