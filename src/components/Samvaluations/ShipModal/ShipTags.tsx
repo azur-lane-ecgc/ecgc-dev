@@ -20,11 +20,11 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       {/* Small Screen Tag Trigger */}
       <button
         onClick={toggleDropdown}
-        className="absolute top-2 left-2 text-sm sm:text-base flex items-center space-x-2  text-cyan-400 hover:text-green-600 md:hidden"
+        className="absolute top-2 left-2 text-base flex items-center space-x-2  text-cyan-400 hover:text-green-600 md:hidden"
       >
         <span>Tags</span>
         <i
-          className={`fa-solid ${roleDropdownOpen ? "fa-angle-up" : "fa-angle-down"}`}
+          className={`fa-solid translate-y-[1px] ${roleDropdownOpen ? "fa-angle-up" : "fa-angle-down"}`}
         />
       </button>
       {/* Tags (Smaller Screen) */}
