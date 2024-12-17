@@ -67,8 +67,32 @@ const data = [
 
   <br />
   <ItemContainer>
-    <ShipModal ship="Unicorn" client:visible />
-    <ShipModal ship="Unicorn" client:visible />
+    <ShipModal
+      client:visible
+      ship="Unicorn"
+      trigger={{
+        iconNote: "CVL",
+        descriptionNote: "Really good ship",
+        largeDescNote: false,
+        hasBorder: false,
+      }}
+    />
+    <ShipModal
+      client:visible
+      ship="Unicorn"
+      trigger={{
+        iconNote: "CVL",
+        largeDescNote: false,
+        hasBorder: false,
+      }}
+    />
+    <ShipCell
+      ship="Unicorn"
+      rarity={3}
+      hasBorder={true}
+      inGroup={true}
+      hover={true}
+    />
   </ItemContainer>
 
   <ItemContainer>
