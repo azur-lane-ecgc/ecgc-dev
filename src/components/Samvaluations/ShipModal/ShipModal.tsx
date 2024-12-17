@@ -119,7 +119,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
           role="dialog"
           tabIndex={-1}
         >
-          {/* Inner Modal Content */}
+          {/* Modal Window */}
           <div
             id={`shipModal${ship}`}
             className={modalStyle}
@@ -182,6 +182,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     className={shipLinkStyle}
                     rel="noopener noreferrer"
                     target="_blank"
+                    title={ship}
                     href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
                   >
                     <img
@@ -226,6 +227,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   </td>
                 </tr>
               </ItemTable>
+              <HR />
             </div>
           </div>
         </div>
