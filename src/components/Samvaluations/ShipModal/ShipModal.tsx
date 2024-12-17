@@ -11,8 +11,8 @@ import {
 
 import { HR } from "@components/_common/HR"
 
-import { ItemTable } from "../ItemTable"
-import { ShipCell } from "../ItemCell"
+import { ItemTable } from "@components/_common/ItemTable"
+import { ShipCell } from "@components/_common/ItemCell"
 
 interface ShipModalProps {
   ship: string
