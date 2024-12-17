@@ -7,19 +7,50 @@ import {
   modalTriggerStyle,
   modalStyle,
   shipLinkStyle,
+  tagContainerStyle,
 } from "./styles"
+
+import "@components/_common/ItemCell/styles.css"
 
 import { HR } from "@components/_common/HR"
 
 import { ItemTable } from "@components/_common/ItemTable"
 import { ShipCell } from "@components/_common/ItemCell"
+import { RoleIcons } from "./RoleIcon"
+
+interface TriggerProps {
+  iconNote?: string
+  descriptionNote?: string
+  largeDescNote?: boolean
+  hasBorder?: boolean
+}
 
 interface ShipModalProps {
   ship: string
+  trigger?: TriggerProps
 }
 
-export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
+/**
+ * ShipModal component that displays a modal with information about a ship.
+ *
+ * @component
+ *
+ * @param {ShipModalProps} props - The props for configuring the ship modal.
+ * @param {string} props.ship - The ship's name.
+ * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)
+ *
+ * @returns {React.JSX.Element} The Ship Modal itself.
+ */
+export const ShipModal: React.FC<ShipModalProps> = ({
+  ship,
+  trigger,
+}: ShipModalProps): React.JSX.Element => {
   const [open, setOpen] = useState(false)
+  const [roleDropdownOpen, setRoleDropdown] = useState(false)
+
+  const toggleDropdown = () => {
+    setRoleDropdown(!roleDropdownOpen)
+  }
 
   const handleOpen = () => setOpen(true)
   const handleClose = () => {
@@ -41,13 +72,16 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
   const rarity = 4
   const shipImg = `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`
   const samvaluationText = `Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload which helps a lot with mobbing, and also gains backline healing capabilities as well. Her healing amount is also high as well. Overall, she is the best healer in the game, surpassing <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a>.`
+  const faction = "HMS"
+  const hullType = "CVL"
+  const roles = ["Healer", "Healer", "Healer"]
 
   return (
     <>
       {/* Trigger "button" */}
       <div
         id={`modalTrigger${ship}`}
-        className={modalTriggerStyle}
+        className={`${modalTriggerStyle} ${!!trigger?.hasBorder ? "border-gray-400" : "border-transparent"}`}
         onClick={handleOpen}
       >
         <div className="relative">
@@ -61,6 +95,22 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
             </div>
             {`${ship} ${isKai ? "(Retrofit)" : ""}`}
           </div>
+          {!!trigger?.iconNote && (
+            <div className="icon-note">
+              <p>{trigger.iconNote}</p>
+            </div>
+          )}
+          {!!trigger?.descriptionNote && (
+            <div
+              className={`description-note 
+              ${trigger.largeDescNote ? "larger" : ""}
+            `}
+            >
+              <p
+                dangerouslySetInnerHTML={{ __html: trigger.descriptionNote }}
+              ></p>
+            </div>
+          )}
         </div>
       </div>
 
@@ -90,9 +140,74 @@ export const ShipModal: React.FC<ShipModalProps> = ({ ship }) => {
               <i className="fa-solid fa-xmark" />
             </button>
 
-            {/* Tags */}
-            <div className={`absolute top-2 left-2 text-xl bg-[#212529]`}>
-              <p> HMS | CVL | Healer</p>
+            {/* Small Screen Tag Trigger */}
+            <button
+              onClick={toggleDropdown}
+              className="absolute top-2 left-2 text-sm sm:text-base flex items-center space-x-2  text-cyan-400 hover:text-green-600 md:hidden"
+            >
+              <span>Tags</span>
+              <i
+                className={`fa-solid ${roleDropdownOpen ? "fa-angle-up" : "fa-angle-down"}`}
+              />
+            </button>
+
+            {/* Tags (Smaller Screen) */}
+
+            {roleDropdownOpen && (
+              <div className="relative md:hidden text-center">
+                <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
+                  <img
+                    loading="lazy"
+                    src={`/test_ecgc_2/images/faction/${faction}.png`}
+                    alt={`${ship}`}
+                    className="absolute top-0 left-0 w-full h-auto translate-y-[1px]"
+                  />
+                </span>
+                <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
+                  <img
+                    loading="lazy"
+                    src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
+                    alt={`${ship}`}
+                    className="w-full h-auto translate-y-1/2"
+                  />
+                </span>
+                {roles.map((role) => (
+                  <span
+                    key={role}
+                    className="w-[40px] h-[40px] overflow-hidden relative inline-block"
+                  >
+                    {RoleIcons[role]}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* Tags (Larger Screen) */}
+            <div className="absolute top-0 left-0 transform translate-x-0 hidden md:inline-block">
+              <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
+                <img
+                  loading="lazy"
+                  src={`/test_ecgc_2/images/faction/${faction}.png`}
+                  alt={`${ship}`}
+                  className="absolute top-0 left-0 w-full h-auto translate-y-[1px]"
+                />
+              </span>
+              <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
+                <img
+                  loading="lazy"
+                  src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
+                  alt={`${ship}`}
+                  className="w-full h-auto translate-y-1/2"
+                />
+              </span>
+              {roles.map((role) => (
+                <span
+                  key={role}
+                  className="w-[40px] h-[40px] overflow-hidden relative inline-block"
+                >
+                  {RoleIcons[role]}
+                </span>
+              ))}
             </div>
 
             {/* Internal Content */}
