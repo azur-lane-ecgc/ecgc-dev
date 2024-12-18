@@ -21,6 +21,8 @@ import {
   modalTriggerStyle,
   modalStyle,
   shipLinkStyle,
+  letterRankColor,
+  numberRankColor,
 } from "./styles"
 import { ShipTags } from "./ShipTags"
 
@@ -250,9 +252,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <div className="text-sm">
                   <h3 className="text-xl underline">Samvaluation</h3>
                   <span
-                    className="leading-normal text-[hsla(0,0%,100%,0.75)]"
+                    className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]"
                     dangerouslySetInnerHTML={{ __html: samvaluationText }}
-                  ></span>
+                  />
                 </div>
               </div>
               <HR />
@@ -268,7 +270,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   ]}
                 >
                   {slots.map((slot, index) => (
-                    <tr key={index}>
+                    <tr key={index} className="text-base *:text-base">
                       <td>{index + 1}</td>
                       <td>
                         {slot.type.map((type, typeIndex) => {
@@ -292,13 +294,13 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       <td
                         className={`${slot.preload ? "bg-[#98fb98]" : "bg-[#f08080]"}`}
                       >
-                        <span className="text-xl text-black">
+                        <span className="text-2xl text-black">
                           {slot.preload ? "\u2713" : "\u2717"}
                         </span>
                       </td>
                     </tr>
                   ))}
-                  <tr>
+                  <tr className="*:text-base">
                     <td>
                       <b>Augments</b>
                     </td>
@@ -349,23 +351,41 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       { colName: "W15 Boss", colWidth: "5%" },
                     ]}
                   >
-                    <tr>
-                      <td>{rankings.hardarbiter ?? "\u200B"}</td>
-                      <td>
+                    <tr className="*:text-base">
+                      <td
+                        className={`${rankings.hardarbiter && letterRankColor(rankings.hardarbiter)} !text-black font-semibold`}
+                      >
+                        {rankings.hardarbiter ?? "\u200B"}
+                      </td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).meta && letterRankColor((rankings as MainFleetRankingProps).meta)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).meta ?? "\u200B"}
                       </td>
-                      <td>{rankings.cm ?? "\u200B"}</td>
-                      <td>
+                      <td
+                        className={`${rankings.cm && letterRankColor(rankings.cm)} !text-black font-semibold`}
+                      >
+                        {rankings.cm ?? "\u200B"}
+                      </td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).w14mob && letterRankColor((rankings as MainFleetRankingProps).w14mob)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).w14mob ?? "\u200B"}
                       </td>
-                      <td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).w14boss && letterRankColor((rankings as MainFleetRankingProps).w14boss)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).w14boss ??
                           "\u200B"}
                       </td>
-                      <td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).w15mob && letterRankColor((rankings as MainFleetRankingProps).w15mob)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).w15mob ?? "\u200B"}
                       </td>
-                      <td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).w15boss && letterRankColor((rankings as MainFleetRankingProps).w15boss)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).w15boss ??
                           "\u200B"}
                       </td>
@@ -383,14 +403,30 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       { colName: "Flag Req", colWidth: "5%" },
                     ]}
                   >
-                    <tr>
-                      <td>
+                    <tr className="*:text-base">
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).ex && letterRankColor((rankings as MainFleetRankingProps).ex)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).ex ?? "\u200B"}
                       </td>
-                      <td>{rankings.consistency ?? "\u200B"}</td>
-                      <td>{rankings.fleetreq ?? "\u200B"}</td>
-                      <td>{rankings.gearreq ?? "\u200B"}</td>
-                      <td>
+                      <td
+                        className={`${rankings.consistency && numberRankColor(rankings.consistency)} !text-black font-semibold`}
+                      >
+                        {rankings.consistency ?? "\u200B"}
+                      </td>
+                      <td
+                        className={`${rankings.fleetreq && numberRankColor(rankings.fleetreq)} !text-black font-semibold`}
+                      >
+                        {rankings.fleetreq ?? "\u200B"}
+                      </td>
+                      <td
+                        className={`${rankings.gearreq && numberRankColor(rankings.gearreq)} !text-black font-semibold`}
+                      >
+                        {rankings.gearreq ?? "\u200B"}
+                      </td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).flagreq && numberRankColor((rankings as MainFleetRankingProps).flagreq || "")} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).flagreq ??
                           "\u200B"}
                       </td>
@@ -409,18 +445,38 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       { colName: "Off. Buff", colWidth: "5%" },
                     ]}
                   >
-                    <tr>
-                      <td>{rankings.lightdmg ?? "\u200B"}</td>
-                      <td>{rankings.mediumdmg ?? "\u200B"}</td>
-                      <td>{rankings.heavydmg ?? "\u200B"}</td>
-                      <td>
+                    <tr className="*:text-base">
+                      <td
+                        className={`${rankings.lightdmg && numberRankColor(rankings.lightdmg)} !text-black font-semibold`}
+                      >
+                        {rankings.lightdmg ?? "\u200B"}
+                      </td>
+                      <td
+                        className={`${rankings.mediumdmg && numberRankColor(rankings.mediumdmg)} !text-black font-semibold`}
+                      >
+                        {rankings.mediumdmg ?? "\u200B"}
+                      </td>
+                      <td
+                        className={`${rankings.heavydmg && numberRankColor(rankings.heavydmg)} !text-black font-semibold`}
+                      >
+                        {rankings.heavydmg ?? "\u200B"}
+                      </td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).aoedmg && numberRankColor((rankings as MainFleetRankingProps).aoedmg)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).aoedmg ?? "\u200B"}
                       </td>
-                      <td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).dmguptime && numberRankColor((rankings as MainFleetRankingProps).dmguptime)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).dmguptime ??
                           "\u200B"}
                       </td>
-                      <td>{rankings.offensivebuff ?? "\u200B"}</td>
+                      <td
+                        className={`${rankings.offensivebuff && numberRankColor(rankings.offensivebuff)} !text-black font-semibold`}
+                      >
+                        {rankings.offensivebuff ?? "\u200B"}
+                      </td>
                     </tr>
                   </ItemTable>
                   <br />
@@ -435,23 +491,33 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       { colName: "VG Survival", colWidth: "5%" },
                     ]}
                   >
-                    <tr>
-                      <td>
+                    <tr className="*:text-base">
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).selfsurvival && numberRankColor((rankings as MainFleetRankingProps).selfsurvival)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).selfsurvival ??
                           "\u200B"}
                       </td>
-                      <td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).aa && numberRankColor((rankings as MainFleetRankingProps).aa)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).aa ?? "\u200B"}
                       </td>
-                      <td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).rammers && numberRankColor((rankings as MainFleetRankingProps).rammers)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).rammers ??
                           "\u200B"}
                       </td>
-                      <td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).othermain && numberRankColor((rankings as MainFleetRankingProps).othermain)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).othermain ??
                           "\u200B"}
                       </td>
-                      <td>
+                      <td
+                        className={`${(rankings as MainFleetRankingProps).vgsurvival && numberRankColor((rankings as MainFleetRankingProps).vgsurvival)} !text-black font-semibold`}
+                      >
                         {(rankings as MainFleetRankingProps).vgsurvival ??
                           "\u200B"}
                       </td>

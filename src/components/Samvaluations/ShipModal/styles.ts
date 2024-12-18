@@ -19,3 +19,39 @@ export const shipIconContainerStyle =
   "flex flex-col sm:flex-row justify-center items-center gap-4 mt-5"
 export const shipIconStyle =
   "overflow-hidden my-1.5 min-w-fit w-fit p-0.5 shadow-[0_10px_25px_0_rgba(0,0,0,1)] h-auto border-radius-0"
+
+// rank color helper functions
+export const letterRankColor = (rank: string | null | undefined): string => {
+  const getLetterRankColor: { [key: string]: string } = {
+    SS: "bg-red-500",
+    S: "bg-red-400",
+    A: "bg-orange-400",
+    B: "bg-orange-300",
+    C: "bg-orange-200",
+    D: "bg-gray-400",
+    "": "",
+  }
+
+  return (rank && getLetterRankColor[rank]) || ""
+}
+
+export const numberRankColor = (
+  rank: number | string | null | undefined,
+): string => {
+  const getNumberRankColor: { [key: string]: string } = {
+    "-5": "bg-yellow-500",
+    "-4": "bg-yellow-400",
+    "-3": "bg-yellow-300",
+    "-2": "bg-yellow-200",
+    "-1": "bg-yellow-100",
+    "": "",
+    "1": "bg-red-100",
+    "2": "bg-red-200",
+    "3": "bg-red-300",
+    "4": "bg-red-400",
+    "5": "bg-red-500",
+    "6": "bg-red-600",
+  }
+
+  return (rank && getNumberRankColor[rank]) || ""
+}
