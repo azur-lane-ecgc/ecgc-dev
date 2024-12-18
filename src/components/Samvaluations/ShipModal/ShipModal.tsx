@@ -528,15 +528,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               {rankings.notes && (
                 <>
                   <HR />
-                  <h3 className="underline">Notes</h3>
-                  <p className="text-sm">{rankings.notes}</p>
-                  {/* <ItemTable
-                    tableInfo={[{ colName: "Notes", colWidth: "100%" }]}
-                  >
-                    <tr>
-                      <td>{rankings.notes}</td>
-                    </tr>
-                  </ItemTable> */}
+                  <h3 className="text-xl underline">Notes</h3>
+                  <p className="text-[14.5px] leading-normal">
+                    {rankings.notes}
+                  </p>
                 </>
               )}
             </div>
