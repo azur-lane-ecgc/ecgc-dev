@@ -86,6 +86,8 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const hullType = "CVL"
   const roles = ["Healer"].slice(0, 5)
   const isMainFleet = true
+  const rankings: MainFleetRankingProps | VanguardFleetRankingProps =
+    shipRankingParse(isMainFleet, ship)
 
   const slots: SlotProps[] = [
     {
@@ -119,9 +121,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
       preload: false,
     },
   ]
-
-  const rankings: MainFleetRankingProps | VanguardFleetRankingProps =
-    shipRankingParse(isMainFleet, ship)
+  const augments = ["Scepter", "Hunting Bow"]
 
   return (
     <>
@@ -295,6 +295,25 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       </td>
                     </tr>
                   ))}
+                  <tr>
+                    <td>
+                      <b>Augments</b>
+                    </td>
+                    <td colSpan={4}>
+                      {augments.map((augment, augIndex) => (
+                        <span key={augIndex}>
+                          {augIndex > 0 && ", "}
+                          <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(" ", "_")}`}
+                          >
+                            {augment}
+                          </a>
+                        </span>
+                      ))}
+                    </td>
+                  </tr>
                 </ItemTable>
               </div>
               <HR />
