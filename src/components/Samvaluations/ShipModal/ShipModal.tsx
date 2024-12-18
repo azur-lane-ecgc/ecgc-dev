@@ -37,7 +37,6 @@ interface SlotProps {
   type: string[]
   efficiency: number
   mounts: number
-  preload: boolean
 }
 
 interface ShipModalProps {
@@ -128,35 +127,35 @@ export const ShipModal: React.FC<ShipModalProps> = ({
         type: ["Fighter"],
         efficiency: 1.45,
         mounts: 4,
-        preload: true,
       },
       {
         type: ["Torpedo Bomber"],
         efficiency: 1.35,
         mounts: 3,
-        preload: true,
       },
       {
         type: ["AA Gun"],
         efficiency: 0.8,
         mounts: 1,
-        preload: false,
       },
       {
         type: ["Auxiliary", "ASW Plane"],
         efficiency: 1,
         mounts: 1,
-        preload: false,
       },
       {
         type: ["Auxiliary", "ASW Plane"],
         efficiency: 1,
         mounts: 1,
-        preload: false,
       },
     ],
     [],
   )
+
+  const fastLoad = (
+    <span className="text-green-400">1 Preloaded Airstrike.</span>
+  )
+
   const augments = useMemo(() => ["Scepter", "Hunting Bow"], [])
 
   return (
@@ -297,7 +296,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     { colName: "Equipment", colWidth: "55%", limiter: true },
                     { colName: "Efficiency", colWidth: "15%" },
                     { colName: "Mounts", colWidth: "10%" },
-                    { colName: "Preload", colWidth: "10%" },
                   ]}
                 >
                   {slots.map((slot, index) => (
@@ -322,13 +320,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       </td>
                       <td>{slot.efficiency * 100}%</td>
                       <td>{slot.mounts}</td>
-                      <td
-                        className={`${slot.preload ? "bg-[#98fb98]" : "bg-[#f08080]"}`}
-                      >
-                        <span className="text-2xl text-black">
-                          {slot.preload ? "\u2713" : "\u2717"}
-                        </span>
-                      </td>
                     </tr>
                   ))}
                   <tr className="*:text-base">
@@ -350,6 +341,14 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       ))}
                     </td>
                   </tr>
+                  {!!fastLoad && (
+                    <tr className="*:text-base">
+                      <td>
+                        <b>Preload</b>
+                      </td>
+                      <td colSpan={4}>{fastLoad}</td>
+                    </tr>
+                  )}
                 </ItemTable>
               </div>
               <HR />
