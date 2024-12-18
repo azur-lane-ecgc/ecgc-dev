@@ -19,10 +19,10 @@ import { ShipCell } from "@components/_common/ItemCell"
 import { ShipTags } from "./ShipTags"
 
 interface TriggerProps {
-  iconNote?: string
-  descriptionNote?: string
-  largeDescNote?: boolean
-  hasBorder?: boolean
+  iconNote?: string | null
+  descriptionNote?: string | null
+  largeDescNote?: boolean | null
+  hasBorder?: boolean | null
 }
 
 interface ShipModalProps {
