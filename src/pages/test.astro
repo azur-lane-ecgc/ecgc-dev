@@ -72,7 +72,7 @@ const data = [
       data="Unicorn"
       trigger={{
         iconNote: "CVL",
-        descriptionNote: "Really good ship",
+        descriptionNote: "Really good ship Really good ship",
         largeDescNote: false,
         hasBorder: false,
       }}
@@ -85,6 +85,23 @@ const data = [
         descriptionNote: null,
         largeDescNote: false,
         hasBorder: false,
+      }}
+    />
+    <ShipCell
+      ship="Unicorn"
+      rarity={3}
+      hasBorder={true}
+      inGroup={true}
+      hover={true}
+    />
+    <ShipModal
+      client:visible
+      data="Unicorn"
+      trigger={{
+        iconNote: "CVL",
+        descriptionNote: "Best Healer",
+        largeDescNote: false,
+        hasBorder: true,
       }}
     />
     <ShipCell

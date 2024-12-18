@@ -81,7 +81,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const isKai = true
   const rarity = 4
   const shipImg = `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`
-  const samvaluationText = `Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload, which helps a lot with mobbing. In addition, she also gains backline healing capabilities, although it's only on her first airstrike. Her healing amount is very high and consistent compared to other ships. Overall, she is the best healer in the game, surpassing <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a>.`
+  const samvaluationText = `Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload, which helps a lot with mobbing. In addition, she also gains Main Fleet healing capabilities, although it's only on her first airstrike. Her healing amount is very high and consistent compared to other ships. Overall, she is the best healer in the game, surpassing <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a>.`
   const faction = "HMS"
   const hullType = "CVL"
   const roles = ["Healer"].slice(0, 5)
