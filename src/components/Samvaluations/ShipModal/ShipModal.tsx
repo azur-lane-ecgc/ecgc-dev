@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 
 import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
@@ -83,50 +83,81 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const parsedLocation = location.replaceAll(" ", "_")
   const isKai = true
   const rarity = 4
-  const shipImg = `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`
-  const samvaluationText = `Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload, which helps a lot with mobbing. In addition, she also gains Main Fleet healing capabilities, although it's only on her first airstrike. Her healing amount is very high and consistent compared to other ships. Overall, she is the best healer in the game, surpassing <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a>.`
+  const shipImg = useMemo(
+    () => `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`,
+    [],
+  )
+  const samvaluationText = useMemo(
+    () => (
+      <>
+        Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing
+        skills. She gains a preload, which helps a lot with mobbing. In
+        addition, she also gains Main Fleet healing capabilities, although it's
+        only on her first airstrike. Her healing amount is very high and
+        consistent compared to other ships. Overall, she is the best healer in
+        the game, surpassing{" "}
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Perseus"
+          title="Perseus"
+        >
+          Perseus
+        </a>
+        .
+      </>
+    ),
+    [],
+  )
+
   const faction = "HMS"
   const hullType = "CVL"
-  const roles = ["Healer"].slice(0, 5)
+  const roles = useMemo(() => ["Healer"].slice(0, 5), [])
   const isMainFleet = true
   const rankings:
     | MainFleetRankingProps
     | VanguardFleetRankingProps
-    | SSFleetRankingProps = shipRankingParse(isMainFleet, ship)
+    | SSFleetRankingProps = useMemo(
+    () => shipRankingParse(isMainFleet, ship),
+    [],
+  )
 
-  const slots: SlotProps[] = [
-    {
-      type: ["Fighter"],
-      efficiency: 1.45,
-      mounts: 4,
-      preload: true,
-    },
-    {
-      type: ["Torpedo Bomber"],
-      efficiency: 1.35,
-      mounts: 3,
-      preload: true,
-    },
-    {
-      type: ["AA Gun"],
-      efficiency: 0.8,
-      mounts: 1,
-      preload: false,
-    },
-    {
-      type: ["Auxiliary", "ASW Plane"],
-      efficiency: 1,
-      mounts: 1,
-      preload: false,
-    },
-    {
-      type: ["Auxiliary", "ASW Plane"],
-      efficiency: 1,
-      mounts: 1,
-      preload: false,
-    },
-  ]
-  const augments = ["Scepter", "Hunting Bow"]
+  const slots: SlotProps[] = useMemo(
+    () => [
+      {
+        type: ["Fighter"],
+        efficiency: 1.45,
+        mounts: 4,
+        preload: true,
+      },
+      {
+        type: ["Torpedo Bomber"],
+        efficiency: 1.35,
+        mounts: 3,
+        preload: true,
+      },
+      {
+        type: ["AA Gun"],
+        efficiency: 0.8,
+        mounts: 1,
+        preload: false,
+      },
+      {
+        type: ["Auxiliary", "ASW Plane"],
+        efficiency: 1,
+        mounts: 1,
+        preload: false,
+      },
+      {
+        type: ["Auxiliary", "ASW Plane"],
+        efficiency: 1,
+        mounts: 1,
+        preload: false,
+      },
+    ],
+    [],
+  )
+  const augments = useMemo(() => ["Scepter", "Hunting Bow"], [])
 
   return (
     <>
@@ -159,8 +190,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
             `}
             >
               <p
+                onClick={(e) => e.stopPropagation()}
                 dangerouslySetInnerHTML={{ __html: trigger.descriptionNote }}
-              ></p>
+              />
             </div>
           )}
         </div>
@@ -251,10 +283,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 {/* Samvaluation */}
                 <div className="text-sm">
                   <h3 className="text-xl underline">Samvaluation</h3>
-                  <span
-                    className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]"
-                    dangerouslySetInnerHTML={{ __html: samvaluationText }}
-                  />
+                  <span className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]">
+                    {samvaluationText}
+                  </span>
                 </div>
               </div>
               <HR />
