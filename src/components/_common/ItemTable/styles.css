@@ -2,7 +2,6 @@
 
 .table {
   width: 100%;
-  margin-bottom: 1rem;
   caption-side: bottom;
   border-collapse: collapse;
   background-color: #212529;
@@ -171,4 +170,3 @@ table.tool_table {
 td > h5.custom-margin {
   margin: 10px !important;
 }
-
