@@ -64,3 +64,23 @@ export interface VanguardFleetRankingProps {
   asw?: number
   defensivebuff?: number
 }
+
+export interface SSFleetRankingProps {
+  notes?: string
+
+  // Rank
+  hardarbiter: string
+  cm: string
+  campaign: string
+
+  // Usage
+  consistency?: number
+  fleetreq?: number
+  gearreq?: number
+
+  // Offense
+  lightdmg: number
+  mediumdmg: number
+  heavydmg: number
+  offensivebuff?: number
+}

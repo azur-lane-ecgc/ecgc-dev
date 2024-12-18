@@ -8,6 +8,7 @@ import { parseEquipHref } from "@utils/shipDataParse"
 import {
   shipRankingParse,
   type MainFleetRankingProps,
+  type SSFleetRankingProps,
   type VanguardFleetRankingProps,
 } from "@utils/shipRankingParse"
 import { formatDate } from "@utils/formatDate"
@@ -86,8 +87,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const hullType = "CVL"
   const roles = ["Healer"].slice(0, 5)
   const isMainFleet = true
-  const rankings: MainFleetRankingProps | VanguardFleetRankingProps =
-    shipRankingParse(isMainFleet, ship)
+  const rankings:
+    | MainFleetRankingProps
+    | VanguardFleetRankingProps
+    | SSFleetRankingProps = shipRankingParse(isMainFleet, ship)
 
   const slots: SlotProps[] = [
     {
@@ -348,12 +351,24 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   >
                     <tr>
                       <td>{rankings.hardarbiter ?? "\u200B"}</td>
-                      <td>{rankings.meta ?? "\u200B"}</td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).meta ?? "\u200B"}
+                      </td>
                       <td>{rankings.cm ?? "\u200B"}</td>
-                      <td>{rankings.w14mob ?? "\u200B"}</td>
-                      <td>{rankings.w14boss ?? "\u200B"}</td>
-                      <td>{rankings.w15mob ?? "\u200B"}</td>
-                      <td>{rankings.w15boss ?? "\u200B"}</td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).w14mob ?? "\u200B"}
+                      </td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).w14boss ??
+                          "\u200B"}
+                      </td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).w15mob ?? "\u200B"}
+                      </td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).w15boss ??
+                          "\u200B"}
+                      </td>
                     </tr>
                   </ItemTable>
                   <br />
@@ -369,7 +384,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     ]}
                   >
                     <tr>
-                      <td>{rankings.ex ?? "\u200B"}</td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).ex ?? "\u200B"}
+                      </td>
                       <td>{rankings.consistency ?? "\u200B"}</td>
                       <td>{rankings.fleetreq ?? "\u200B"}</td>
                       <td>{rankings.gearreq ?? "\u200B"}</td>
@@ -396,7 +413,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       <td>{rankings.lightdmg ?? "\u200B"}</td>
                       <td>{rankings.mediumdmg ?? "\u200B"}</td>
                       <td>{rankings.heavydmg ?? "\u200B"}</td>
-                      <td>{rankings.aoedmg ?? "\u200B"}</td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).aoedmg ?? "\u200B"}
+                      </td>
                       <td>
                         {(rankings as MainFleetRankingProps).dmguptime ??
                           "\u200B"}
@@ -417,8 +436,13 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     ]}
                   >
                     <tr>
-                      <td>{rankings.selfsurvival ?? "\u200B"}</td>
-                      <td>{rankings.aa ?? "\u200B"}</td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).selfsurvival ??
+                          "\u200B"}
+                      </td>
+                      <td>
+                        {(rankings as MainFleetRankingProps).aa ?? "\u200B"}
+                      </td>
                       <td>
                         {(rankings as MainFleetRankingProps).rammers ??
                           "\u200B"}

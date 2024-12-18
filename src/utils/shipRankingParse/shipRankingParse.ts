@@ -1,10 +1,15 @@
-import type { MainFleetRankingProps, VanguardFleetRankingProps } from "./types"
+import type {
+  MainFleetRankingProps,
+  SSFleetRankingProps,
+  VanguardFleetRankingProps,
+} from "./types"
 
 export const shipRankingParse = (
   isMainFleet: boolean,
   ship: string,
-): VanguardFleetRankingProps | MainFleetRankingProps => {
-  isMainFleet && isMainFleet
+  isSSFleet?: boolean,
+): VanguardFleetRankingProps | MainFleetRankingProps | SSFleetRankingProps => {
+  isMainFleet && isSSFleet
   ship + " "
 
   const ranking = {
