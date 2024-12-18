@@ -1,4 +1,17 @@
 import { useEffect, useState } from "react"
+
+import "@components/_common/ItemCell/styles.css"
+import { HR } from "@components/_common/HR"
+import { ItemTable } from "@components/_common/ItemTable"
+
+import { parseEquipHref } from "@utils/shipDataParse"
+import {
+  shipRankingParse,
+  type MainFleetRankingProps,
+  type VanguardFleetRankingProps,
+} from "@utils/shipRankingParse"
+import { formatDate } from "@utils/formatDate"
+
 import {
   closeButtonStyle,
   modalOverlayStyle,
@@ -7,22 +20,8 @@ import {
   modalTriggerStyle,
   modalStyle,
   shipLinkStyle,
-  // tagContainerStyle,
 } from "./styles"
-
-import "@components/_common/ItemCell/styles.css"
-
-import { HR } from "@components/_common/HR"
-import { ItemTable } from "@components/_common/ItemTable"
-import { parseEquipHref } from "@utils/shipDataParse"
-import {
-  shipRankingParse,
-  type MainFleetRankingProps,
-  type VanguardFleetRankingProps,
-} from "@utils/shipRankingParse"
 import { ShipTags } from "./ShipTags"
-import { pageInfo } from "@components/_common/PageInfo"
-import { formatDate } from "@utils/formatDate"
 
 interface TriggerProps {
   iconNote?: string | null
@@ -43,10 +42,7 @@ interface ShipModalProps {
   trigger?: TriggerProps
 }
 
-const lastUpdated = formatDate(
-  pageInfo.find((page) => page.title === "Samvaluations")
-    ?.lastUpdated as string,
-)
+const lastUpdated = formatDate("12/12/2024")
 
 /**
  * ShipModal component that displays a modal with information about a ship.
