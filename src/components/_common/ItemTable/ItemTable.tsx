@@ -25,15 +25,14 @@ export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
 
         <thead>
           <tr>
-            {tableInfo.map((col, index) =>
-              col.limiter ? (
-                <th className="ship_table_limiter" key={index}>
-                  {col.colName}
-                </th>
-              ) : (
-                <th key={index}>{col.colName}</th>
-              ),
-            )}
+            {tableInfo.map((col, index) => (
+              <th
+                key={index}
+                className={`${col?.limiter && "ship_table_limiter"} px-1`}
+              >
+                {col.colName}
+              </th>
+            ))}
           </tr>
         </thead>
 
