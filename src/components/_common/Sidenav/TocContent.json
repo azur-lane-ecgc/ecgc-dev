@@ -240,5 +240,167 @@
         "subheadings": []
       }
     ]
+  },
+  {
+    "fileName": "Equipment",
+    "toc": [
+      {
+        "id": "legend",
+        "content": "Legend",
+        "subheadings": [
+          {
+            "id": "ship_types",
+            "content": "Ship Type Abbreviations"
+          },
+          {
+            "id": "ammo_types",
+            "content": "Ammo Type Abbreviations"
+          },
+          {
+            "id": "glossary",
+            "content": "Guide Glossary"
+          }
+        ]
+      },
+      {
+        "id": "priority_guides",
+        "content": "Priority Guides",
+        "subheadings": [
+          {
+            "id": "gear_lab",
+            "content": "Gear Lab Priority"
+          },
+          {
+            "id": "plus13",
+            "content": "+13 Priority"
+          }
+        ]
+      },
+      {
+        "id": "bb_guns",
+        "content": "BB / BC / BBV Guns",
+        "subheadings": []
+      },
+      {
+        "id": "bb_auxiliary",
+        "content": "BB / BC / BBV Auxiliary",
+        "subheadings": []
+      },
+      {
+        "id": "main_fleet_secondary_guns",
+        "content": "Main Fleet Secondary Guns",
+        "subheadings": []
+      },
+      {
+        "id": "cb_guns",
+        "content": "CB Guns",
+        "subheadings": []
+      },
+      {
+        "id": "ca_guns",
+        "content": "CA Guns",
+        "subheadings": []
+      },
+      {
+        "id": "cl_guns",
+        "content": "CL Guns",
+        "subheadings": []
+      },
+      {
+        "id": "cruiser_auxiliary",
+        "content": "CB / CA / CL Auxiliary",
+        "subheadings": []
+      },
+      {
+        "id": "dd_guns",
+        "content": "DD Guns",
+        "subheadings": []
+      },
+      {
+        "id": "dd_auxiliary",
+        "content": "DD Auxiliary",
+        "subheadings": []
+      },
+      {
+        "id": "surface_torpedoes",
+        "content": "Surface Torpedoes",
+        "subheadings": []
+      },
+      {
+        "id": "aa_guns",
+        "content": "AA Guns",
+        "subheadings": []
+      },
+      {
+        "id": "aa_range_chart",
+        "content": "AA Range Chart",
+        "subheadings": []
+      },
+      {
+        "id": "fighters",
+        "content": "Fighters",
+        "subheadings": []
+      },
+      {
+        "id": "dive_bombers",
+        "content": "Dive Bombers",
+        "subheadings": []
+      },
+      {
+        "id": "torpedo_bombers",
+        "content": "Torpedo Bombers",
+        "subheadings": []
+      },
+      {
+        "id": "cv_auxiliary",
+        "content": "CV / CVL Auxiliary",
+        "subheadings": []
+      },
+      {
+        "id": "ss_torpedo",
+        "content": "SS Torpedoes",
+        "subheadings": []
+      },
+      {
+        "id": "ss_auxiliary",
+        "content": "SS Auxiliary",
+        "subheadings": []
+      },
+      {
+        "id": "ix_guns",
+        "content": "IX Guns",
+        "subheadings": []
+      },
+      {
+        "id": "ix_auxiliary",
+        "content": "IX Auxiliary",
+        "subheadings": []
+      },
+      {
+        "id": "recon_planes",
+        "content": "Recon Planes",
+        "subheadings": []
+      },
+      {
+        "id": "asw_equipment",
+        "content": "ASW Equipment",
+        "subheadings": []
+      },
+      {
+        "id": "ae_auxiliary",
+        "content": "AE Auxiliary",
+        "subheadings": []
+      },
+      {
+        "id": "ar_auxiliary",
+        "content": "AR Auxiliary",
+        "subheadings": []
+      },
+      {
+        "id": "cosmetic_auxiliary",
+        "content": "Cosmetic Auxiliary",
+        "subheadings": []
+      }
+    ]
   }
 ]

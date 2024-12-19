@@ -11,4 +11,8 @@ export const pageInfo = [
     name: "Newbie Tips",
     path: "src/components/NewbieTips/NewbieTipsContent.astro",
   },
+  {
+    name: "Equipment",
+    path: "src/components/Equipment/EquipmentContent.astro",
+  },
 ]
