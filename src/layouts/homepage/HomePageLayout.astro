@@ -48,9 +48,11 @@ const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
     href="/test_ecgc_2/images/misc/SiteIcon.ico"
   />
 
-  <>
-    <noscript>Your browser does not support JavaScript!</noscript>
-  </>
+  <span data-astro-transition-persist="someId2">
+    <noscript data-astro-transition-persist="someId2"
+      >Your browser does not support JavaScript!
+    </noscript>
+  </span>
 </head>
 
 <body>

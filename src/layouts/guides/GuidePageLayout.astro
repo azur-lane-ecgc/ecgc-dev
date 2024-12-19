@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from "astro:transitions"
+
 import "@styles/guide_page.css"
 import "@styles/fontawesome/css/fontawesome.css"
 import "@styles/fontawesome/css/brands.css"
@@ -55,15 +57,16 @@ const { title, activePage, tocID, metaUrl, metaImage, metaDescription } =
     type="image/x-icon"
     href="/test_ecgc_2/images/misc/SiteIcon.ico"
   />
+  <span data-astro-transition-persist="someId">
+    <noscript> Your browser does not support JavaScript! </noscript>
+  </span>
 
-  <>
-    <noscript>Your browser does not support JavaScript!</noscript>
-  </>
+  <ClientRouter />
 </head>
 
 <body>
-  <Navbar activePage={activePage} client:idle />
-  <Sidenav page={tocID} client:idle />
+  <Navbar activePage={activePage} client:load />
+  <Sidenav page={tocID} client:load />
   <div
     id="main"
     class="container guide-content-body custom-sidenav-shift mx-auto max-w-[100%] md:max-w-[75%] overflow-y-hidden"
