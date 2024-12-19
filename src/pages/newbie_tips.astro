@@ -1,6 +1,7 @@
 ---
 import GuidePageLayout from "@layouts/guides/GuidePageLayout.astro"
 
+import GuideHeading from "@components/_common/GuideHeading.astro"
 import NewbieTipsContent from "@components/NewbieTips/NewbieTipsContent.astro"
 ---
 
@@ -11,5 +12,6 @@ import NewbieTipsContent from "@components/NewbieTips/NewbieTipsContent.astro"
   metaUrl="newbie_tips"
   metaDescription="Goes over basic advice and mistakes to avoid for new players!"
 >
+  <GuideHeading title="Newbie Tips" />
   <NewbieTipsContent />
 </GuidePageLayout>
