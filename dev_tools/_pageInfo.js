@@ -15,4 +15,8 @@ export const pageInfo = [
     name: "Equipment",
     path: "src/components/Equipment/EquipmentContent.astro",
   },
+  {
+    name: "Early Ship Recommendations",
+    path: "src/components/EarlyShipRecsContent.astro",
+  },
 ]
