@@ -1,17 +1,740 @@
 ---
-// no imports for now
+import { ItemTable } from "@components/_common/ItemTable"
+import { ItemCell, ShipCell } from "@components/_common/ItemCell"
+import WikiLink from "@components/_common/WikiLink.astro"
 ---
 
 <h2 id="introduction">Introduction</h2>
 <hr class="custom-hr" />
-<p>
-  Here are some good ships players can get extremely early on in Azur Lane!
-  <p>
-    <p class="fw-bold fst-italic">
-      See the <a href="/test_ecgc_2/shop_priority" target="_self" rel="noopener noreferrer"
-        >Shop Priority Guide</a
-      > for more detailed shop information.
-    </p>
-    <br />
-  </p>
+<p>Here are some good ships players can get extremely early on in Azur Lane!</p>
+<p class="italic font-bold">
+  See the <a
+    href="/test_ecgc_2/shop_priority"
+    target="_self"
+    rel="noopener noreferrer"
+  >
+    Shop Priority Guide
+  </a>
+  for more detailed shop information.
 </p>
+<br />
+
+<h2 id="starter">Starter Ships</h2>
+<hr class="custom-hr" />
+<p>
+  <b>You only need to level 1 starter ship</b>; no need to focus on all 3 at the
+  start of the game. They are all fairly equal in strength.
+</p>
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "22%" },
+    { colName: "Location", colWidth: "25%" },
+    { colName: "Description", colWidth: "53%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <ShipCell ship="Javelin" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="List of Ship Drops">Map Drop</WikiLink>
+        <br />
+        (all stages except Chapter 1)
+      </p>
+    </td>
+    <td>
+      <p>
+        Great DD option, especially once fully maxed. <b
+          >Retrofit as soon as possible!</b
+        >
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ShipCell ship="Laffey" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="List of Ship Drops">Map Drop</WikiLink>
+        <br />
+        (all stages except Chapter 1)
+      </p>
+    </td>
+    <td>
+      <p>
+        Great DD option, especially once fully maxed. <b
+          >Retrofit as soon as possible!</b
+        >
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ShipCell ship="Z23" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="List of Ship Drops">Map Drop</WikiLink>
+        <br />
+        (all stages except Chapter 1)
+      </p>
+    </td>
+    <td>
+      <p>
+        Great DD option, especially once fully maxed. <b
+          >Retrofit as soon as possible!</b
+        >
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+<br />
+
+<h2 id="guild_shop">
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Shops#Guild_Shop">Guild Shop</a
+  >
+</h2>
+<hr class="custom-hr" />
+<p>
+  <i>
+    See also: <a
+      href="/test_ecgc_2/shop_priority#guild"
+      target="_self"
+      rel="noopener noreferrer">Guild Shop (Shop Priority Guide)</a
+    >
+  </i>
+</p>
+<p>
+  <b>Notes</b>:
+  <i>
+    <ul>
+      <li>
+        <p>
+          You can refresh the Guild Shop using Guild Coins, <b
+            >DO NOT USE GEMS TO REFRESH SHOPS!</b
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          Retrofit all ships EXCEPT <WikiLink page="Helena">Helena</WikiLink>,
+          whenever possible. Helena Retrofit is lower priority compared to other
+          retrofits listed.
+        </p>
+      </li>
+    </ul>
+  </i>
+</p>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "22%" },
+    { colName: "Location", colWidth: "25%" },
+    { colName: "Description", colWidth: "53%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <ShipCell ship="Unicorn" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="Shops#Guild Shop">Guild Shop - Elite Ship</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Unicorn is the best healer in the game. <b
+          >Retrofit as soon as possible!</b
+        >
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ShipCell ship="Helena" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="Shops#Guild Shop">Guild Shop - Elite Ship</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Helena is a decent damage-dealer early on, and her support capabilities
+        are top-tier for bosses.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ShipCell ship="Portland" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="Shops#Guild Shop">Guild Shop - Rare Ship</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Portland is a great tank for mid-late game. <b
+          >Retrofit as soon as possible!</b
+        >
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ShipCell ship="Pennsylvania" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="Shops#Guild Shop">Guild Shop - Rare Ship</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>She is your best easily-accessible BB.</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+<br />
+
+<h2 id="medal_shop">
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Shops#Medal_Shop">Medal Shop</a
+  >
+</h2>
+<hr class="custom-hr" />
+<p>
+  <i>
+    See also: <a
+      href="/test_ecgc_2/shop_priority#medal"
+      target="_self"
+      rel="noopener noreferrer">Medal Shop (Shop Priority Guide)</a
+    >
+  </i>
+</p>
+<p>
+  <b>Notes</b>:
+  <i>
+    <ul>
+      <li>
+        <p>
+          The other ships not listed here are mainly for collection purposes, or
+          are sidegrades to cheaper ships listed in this guide.
+        </p>
+      </li>
+      <li>
+        <p>
+          Get one of the below ships from <WikiLink
+            page="Beginner Rewards#Exam-0">Beginner Rewards</WikiLink
+          >, and the other from <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://azurlane.koumakan.jp/wiki/Shops#Medal_Shop"
+            >Medal Shop</a
+          >. Duplicates are fine since they save bulins!
+        </p>
+      </li>
+    </ul>
+  </i>
+</p>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "22%" },
+    { colName: "Location", colWidth: "25%" },
+    { colName: "Description", colWidth: "53%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <ShipCell ship="Enterprise" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="Shops#Medal Shop">Medal Shop - CV</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Amazing damage-oriented CV.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ShipCell ship="Hood" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="Shops#Medal Shop">Medal Shop - BB</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Great flagship-oriented BC, suitable for any content. <i
+          >Unique Augment is a great improvement over base Hood, but it is not
+          necessary until much later in the game.</i
+        >
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+<br />
+
+<h2 id="core_data_shop">
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
+    >Core Data Shop</a
+  >
+</h2>
+<hr class="custom-hr" />
+<p>
+  <i>
+    See also: <a
+      href="/test_ecgc_2/shop_priority#core_data"
+      target="_self"
+      rel="noopener noreferrer">Core Data Shop (Shop Priority Guide)</a
+    >
+  </i>
+</p>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "22%" },
+    { colName: "Location", colWidth: "25%" },
+    { colName: "Description", colWidth: "53%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <ShipCell ship="Independence" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="Shops#Core Exchange">Core Data Shop</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>Post-Retrofit</b>: Amazing support-oriented CV with great damage.
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+<br />
+
+<h2 id="map_drops">Map Drops</h2>
+<hr class="custom-hr" />
+<p>
+  <b>Notes</b>:
+  <i>
+    <ul>
+      <li>
+        <p>
+          Only the earliest drop location is listed. Go to the ship's wiki page
+          for multiple drop locations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Retrofit all ships <b>EXCEPT</b> Yamashiro and Fusou, whenever possible.
+        </p>
+      </li>
+    </ul>
+  </i>
+</p>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "11%", colSpan: 2 },
+    { colName: "Location", colWidth: "25%" },
+    { colName: "Description", colWidth: "53%", limiter: true },
+  ]}
+>
+  <tr>
+    <td colspan="2">
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Leander"
+          title="Leander"
+        >
+          <div class="enlargement">
+            <div class="icon rarity-1 border-radius-0">
+              <img src="images/ship_icons/LeanderIcon.png" alt="Leander" />
+            </div>
+            Leander
+          </div>
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="1-4">1-4</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Easily accessible CL with a great price-to-performance ratio.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/London"
+          title="London"
+        >
+          <div class="enlargement">
+            <div class="icon rarity-3 border-radius-0">
+              <img src="images/ship_icons/LondonIcon.png" alt="London" />
+            </div>
+            London
+          </div>
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shropshire"
+          title="Shropshire"
+        >
+          <div class="enlargement">
+            <div class="icon rarity-2 border-radius-0">
+              <img
+                src="images/ship_icons/ShropshireIcon.png"
+                alt="Shropshire"
+              />
+            </div>
+            Shropshire
+          </div>
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="2-1">2-1</WikiLink> (London) /
+        <br />
+        <WikiLink page="4-2">4-2</WikiLink> (Shropshire)
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>Post-Retrofit</b>: Frail, but have great damage.
+        <br />
+        Really need retrofit, are bad without them.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Nevada"
+          title="Nevada"
+        >
+          <div class="enlargement">
+            <div class="icon rarity-1 border-radius-0">
+              <img src="images/ship_icons/NevadaIcon.png" alt="Nevada" />
+            </div>
+            Nevada
+          </div>
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Oklahoma"
+          title="Oklahoma"
+        >
+          <div class="enlargement">
+            <div class="icon rarity-1 border-radius-0">
+              <img src="images/ship_icons/OklahomaIcon.png" alt="Oklahoma" />
+            </div>
+            Oklahoma
+          </div>
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="2-2">2-2</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Have an amazing price-to-performance ratio, especially early-mid game.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Nelson"
+          title="Nelson"
+        >
+          <div class="enlargement">
+            <div class="icon rarity-3 border-radius-0">
+              <img src="images/ship_icons/NelsonIcon.png" alt="Nelson" />
+            </div>
+            Nelson
+          </div>
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="2-3">2-3</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>Post-Retrofit</b>: Has a great barrage and good main gun damage.
+        Without retrofit, she is meh.
+        <br />
+        <i
+          >Also available through <WikiLink page="Beginner Rewards#Exam-0">Beginner Rewards</WikiLink>.</i
+        >
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Ranger"
+          title="Ranger"
+        >
+          <div class="enlargement">
+            <div class="icon rarity-1 border-radius-0">
+              <img src="images/ship_icons/RangerIcon.png" alt="Ranger" />
+            </div>
+            Ranger
+          </div>
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="3-1">3-1</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Has an amazing price-to-performance ratio, especially early-mid game.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Langley"
+          title="Langley"
+        >
+          <div class="icon rarity-1 border-radius-0">
+            <img src="images/ship_icons/LangleyIcon.png" alt="Langley" />
+          </div>
+          Langley
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="3-1">3-1</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Has great AA for a carrier, as well as decent damage for the price.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Hiryuu"
+          title="Hiryuu"
+        >
+          <div class="icon rarity-3 border-radius-0">
+            <img src="images/ship_icons/HiryuuIcon.png" alt="Hiryuu" />
+          </div>
+          Hiryuu
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Souryuu"
+          title="Souryuu"
+        >
+          <div class="icon rarity-3 border-radius-0">
+            <img src="images/ship_icons/SouryuuIcon.png" alt="Souryuu" />
+          </div>
+          Souryuu
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="3-1">3-1</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Great damage-oriented CVs, with the drawback that they both need to be
+        in the same fleet
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Saratoga"
+          title="Saratoga"
+        >
+          <div class="icon rarity-3 border-radius-0">
+            <img src="images/ship_icons/SaratogaIcon.png" alt="Saratoga" />
+          </div>
+          Saratoga
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="4-1">4-1</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Amazing mobbing CV with great damage and consistent damage output
+        compared to other CVs.
+        <br />
+        Really wants Unique Augment Module & Retrofit, is average without them.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Juneau"
+          title="Juneau"
+        >
+          <div class="icon rarity-2 border-radius-0">
+            <img src="images/ship_icons/JuneauIcon.png" alt="Juneau" />
+          </div>
+          Juneau
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="5-2">5-2</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>Post-Retrofit</b>: Has amazing AA along with solid damage.
+        <br />
+        Really needs retrofit, is bad without it.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <p>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Ark_Royal"
+          title="Ark Royal"
+        >
+          <div class="icon rarity-3 border-radius-0">
+            <img src="images/ship_icons/Ark RoyalIcon.png" alt="Ark Royal" />
+          </div>
+          Ark Royal
+        </a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <WikiLink page="6-3">6-3</WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Great support-oriented CV with great damage as well.</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+<br />
+
+<h2 id="research">Research (PR/DR) Ships</h2>
+<hr class="custom-hr" />
+<p>
+  <i>
+    Main Article: <a
+      rel="noopener noreferrer"
+      target="_self"
+      href="/test_ecgc_2/research">Research Guide</a
+    ></i
+  >
+</p>
+<br />
