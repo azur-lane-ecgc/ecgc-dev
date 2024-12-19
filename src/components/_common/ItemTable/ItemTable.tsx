@@ -3,6 +3,7 @@ import "./styles.css"
 interface TableInfoProps {
   colName: string
   colWidth?: string
+  colSpan?: number
   limiter?: boolean
 }
 
@@ -28,6 +29,7 @@ export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
             {tableInfo.map((col, index) => (
               <th
                 key={index}
+                colSpan={col?.colSpan || 1}
                 className={`${col?.limiter && "ship_table_limiter"} px-1`}
               >
                 {col.colName}
