@@ -22,12 +22,16 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
     }
   }, [activeDropdown])
 
+  const dropdownActive =
+    page.isDropdown &&
+    page.dropdownItems?.find((item) => item.href === activePage)
+
   if (page.isDropdown) {
     return (
       <>
         <button
           className={`navbar-link w-full text-left px-3 py-2 rounded-md text-base font-medium text-white
-              ${activePage === page.href ? "navbar-active" : ""} `}
+              ${dropdownActive ? "navbar-active" : ""} `}
           onClick={() => {
             toggleDropdown(page.name.toLowerCase())
             setIsOpen(!isOpen)
@@ -49,11 +53,9 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
                 key={idx}
                 href={`/test_ecgc_2/${item.href}`}
                 className={`block px-3 py-2 rounded-md text-base font-normal
-                    ${
-                      activePage === item.href
-                        ? "bg-white/15"
-                        : "hover:bg-white/15 hover:text-cyan-400"
-                    }`}
+                  ${
+                    activePage === item.href ? "navbar-active !text-white" : ""
+                  } hover:!bg-white/15 hover:text-cyan-400 transition-colors duration-200`}
               >
                 {item.name}
               </a>

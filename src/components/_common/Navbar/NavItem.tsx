@@ -10,6 +10,10 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
+  const dropdownActive =
+    page.isDropdown &&
+    page.dropdownItems?.find((item) => item.href === activePage)
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -32,7 +36,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
         <button
           className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium text-white
               ${
-                activePage === page.href ? "navbar-active" : ""
+                dropdownActive ? "navbar-active" : ""
               } transition-colors duration-200`}
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -58,11 +62,11 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
                   key={idx}
                   href={`/test_ecgc_2/${item.href}`}
                   className={`block px-3 py-1 text-[1rem]
-                      ${
-                        activePage === item.href
-                          ? "bg-white/15"
-                          : "hover:bg-white/15 hover:text-cyan-400"
-                      } transition-colors duration-200`}
+                    ${
+                      activePage === item.href
+                        ? "navbar-active !text-white"
+                        : ""
+                    } hover:!bg-white/15 hover:text-cyan-400 transition-colors duration-200`}
                   role="menuitem"
                 >
                   {item.name}
