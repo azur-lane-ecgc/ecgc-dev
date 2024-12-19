@@ -19,9 +19,20 @@ export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
     <div className="table-responsive">
       <table className="table table-sm table-dark table-bordered text-center border-secondary align-middle">
         <colgroup>
-          {tableInfo.map((col, index) => (
-            <col key={index} width={col.colWidth ? col.colWidth : ""} />
-          ))}
+          {tableInfo.map((col, index) =>
+            col.colSpan ? (
+              Array(col.colSpan)
+                .fill(null)
+                .map((_, i) => (
+                  <col
+                    key={`${index}-${i}`}
+                    width={col.colWidth ? col.colWidth : ""}
+                  />
+                ))
+            ) : (
+              <col key={index} width={col.colWidth ? col.colWidth : ""} />
+            ),
+          )}
         </colgroup>
 
         <thead>
