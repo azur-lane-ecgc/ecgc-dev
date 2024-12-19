@@ -17,6 +17,6 @@ export const pageInfo = [
   },
   {
     name: "Early Ship Recommendations",
-    path: "src/components/EarlyShipRecsContent.astro",
+    path: "src/components/EarlyShipRecs/EarlyShipRecsContent.astro",
   },
 ]
