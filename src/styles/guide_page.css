@@ -52,6 +52,11 @@ h2 {
   font-size: min(2rem, calc(1.325rem + 0.9vw)) !important;
 }
 
+.h3,
+h3 {
+  font-size: max(1.3rem + 0.6vw, 1.17em);
+}
+
 h5 {
   font-size: 1.25rem;
 }
