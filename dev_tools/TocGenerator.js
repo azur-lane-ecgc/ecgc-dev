@@ -88,7 +88,11 @@ const processFiles = async () => {
 
   await fs.promises.writeFile(
     outputFilePath,
-    JSON.stringify(tocData, null, 2),
+    JSON.stringify(
+      tocData.sort((a, b) => a.fileName.localeCompare(b.fileName)),
+      null,
+      2,
+    ),
     "utf8",
   )
   console.log(`Table of Contents saved to ${outputFilePath}`)
