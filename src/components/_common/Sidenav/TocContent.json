@@ -400,6 +400,11 @@
         "id": "cosmetic_auxiliary",
         "content": "Cosmetic Auxiliary",
         "subheadings": []
+      },
+      {
+        "id": "augment_module",
+        "content": "Augment Modules",
+        "subheadings": []
       }
     ]
   }
