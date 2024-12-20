@@ -166,23 +166,6 @@ a.in_hover:active {
   text-decoration: underline;
 }
 
-/* icon formatting */
-.icon {
-  overflow: hidden;
-  margin: 6px auto;
-  width: 60px;
-  padding: 2px;
-  box-shadow: 0 10px 25px 0 #000;
-  height: auto;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 0.2857rem;
-  vertical-align: middle;
-  border-style: none;
-}
-
 /* Item Rarities */
 .rarity-5 {
   background: linear-gradient(
@@ -237,15 +220,6 @@ img {
 }
 
 /* Images */
-
-.icon {
-  overflow: hidden;
-  margin: 6px auto;
-  width: 60px;
-  padding: 2px;
-  box-shadow: 0 10px 25px 0 #000;
-  height: auto;
-}
 
 img {
   max-width: 100%;
