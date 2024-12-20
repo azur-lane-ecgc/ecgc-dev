@@ -11,5 +11,7 @@ const { page, title } = Astro.props
   target="_blank"
   href={`https://azurlane.koumakan.jp/wiki/${page.replaceAll(" ", "_")}`}
   title={title || page}
-  aria-label={page}><slot /></a
+  aria-label={page}
 >
+  <slot />
+</a>
