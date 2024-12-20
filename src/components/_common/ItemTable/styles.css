@@ -170,3 +170,174 @@ table.tool_table {
 td > h5.custom-margin {
   margin: 10px !important;
 }
+
+/* Tables */
+
+/* .table {
+  width: 100%;
+  margin-bottom: 1rem;
+  caption-side: bottom;
+  border-collapse: collapse;
+  background-color: #212529;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table > :not(caption) > * > * {
+  color: #fff;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-width: 0px 1px;
+}
+
+.table-bordered > :not(caption) > * {
+  border-width: 1px 0px;
+}
+
+.table-sm > :not(caption) > * > * {
+  padding: 0.25rem 0.25rem;
+}
+
+.border-secondary {
+  border-color: rgba(108, 117, 125, 1) !important;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit !important;
+  border-style: solid !important;
+}
+
+table.width_one {
+  min-width: 1150px !important;
+}
+
+table.width_two {
+  min-width: 576px !important;
+}
+
+td {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 14px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+td.mark {
+  font-size: xx-large;
+  font-weight: 500;
+  color: black;
+}
+
+td.found {
+  background-color: palegreen;
+}
+
+td.not_found {
+  background-color: lightcoral;
+}
+
+td.rng {
+  background-color: lemonchiffon;
+}
+
+
+td.found:hover {
+  background-color: #52b352;
+  color: black;
+}
+
+td.not_found:hover {
+  color: black;
+  background-color: #c75e5e;
+}
+
+td.rng:hover {
+  color: black;
+  background-color: rgba(199, 193, 136, 0.9);
+}
+
+td span.location {
+  display: none;
+}
+
+span.location > p {
+  margin: 0 !important;
+}
+
+td span.normal {
+  display: inline;
+}
+
+td:hover span.location {
+  display: inline;
+}
+
+td:hover span.normal {
+  display: none;
+}
+
+th.ship_table_limiter {
+  min-width: 125px;
+}
+
+th.ss_table_limiter {
+  min-width: 150px;
+  width: 45%;
+}
+
+th.support_table_limiter {
+  min-width: 150px;
+  width: 30%;
+}
+
+th.support_type_limiter {
+  min-width: 50px;
+  width: 10%;
+}
+
+tr > td.support_type {
+  vertical-align: middle !important;
+}
+
+tr > td.ss_type {
+  vertical-align: middle !important;
+  justify-content: center !important;
+}
+
+table.ship_table > tr.ship_table_head {
+  vertical-align: middle !important;
+}
+
+table.ship_table > tr.ship_table_content > td {
+  vertical-align: top !important;
+}
+
+td > p {
+  margin-bottom: 0;
+}
+
+tbody.table-group-divider {
+  --custom_color: 248, 249, 250;
+  --custom_opacity: 1;
+
+  border-top-color: rgba(var(--custom_color), var(--custom_opacity));
+}
+
+table.tool_table {
+  padding: 5px;
+}
+
+td > h5.custom-margin {
+  margin: 10px !important;
+}
+*/
