@@ -415,6 +415,36 @@
             "content": "For Drop Ships / For Gear"
           }
         ]
+      },
+      {
+        "id": "farming_opsi",
+        "content": "Farming Operation Siren",
+        "subheadings": [
+          {
+            "id": "opsi_fleetbuilding",
+            "content": "Operation Siren Fleetbuilding"
+          },
+          {
+            "id": "bare_minimum",
+            "content": "The Bare Minimum"
+          },
+          {
+            "id": "opsi_shops",
+            "content": "Shops"
+          },
+          {
+            "id": "opsi_star_farming",
+            "content": "Star Farming"
+          },
+          {
+            "id": "opsi_ap_drain",
+            "content": "Excess AP Drain (Cat Node Farming)"
+          },
+          {
+            "id": "opsi_image_guides",
+            "content": "Operation Siren Image Guides"
+          }
+        ]
       }
     ]
   },
