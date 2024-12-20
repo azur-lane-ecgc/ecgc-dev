@@ -365,6 +365,54 @@
           {
             "id": "for_gear_campaign",
             "content": "For Gear"
+          },
+          {
+            "id": "for_exp_campaign",
+            "content": "For Ship EXP, PR Grinding, Commander Level EXP, Coins, and Upgrade Parts"
+          },
+          {
+            "id": "for_coggies",
+            "content": "For Cognitive Chips and Augment Module Stones"
+          },
+          {
+            "id": "for_retrofit_bps",
+            "content": "For Retrofit Blueprints"
+          },
+          {
+            "id": "for_drop_ships_campaign",
+            "content": "For Drop Ships"
+          }
+        ]
+      },
+      {
+        "id": "war_archives",
+        "content": "Farming War Archives",
+        "subheadings": [
+          {
+            "id": "for_gear_wa",
+            "content": "For Gear"
+          },
+          {
+            "id": "for_drop_ships_wa",
+            "content": "For Drop Ships"
+          }
+        ]
+      },
+      {
+        "id": "events",
+        "content": "Farming Events",
+        "subheadings": [
+          {
+            "id": "for_event_currency",
+            "content": "For Event Currency"
+          },
+          {
+            "id": "event_shop_priority",
+            "content": "Event Shop Priority"
+          },
+          {
+            "id": "for_drop_ship_and_gear",
+            "content": "For Drop Ships / For Gear"
           }
         ]
       }
