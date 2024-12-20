@@ -2,6 +2,8 @@ import fs from "fs"
 
 import { pageInfo } from "./_pageInfo.js"
 
+const hardCodedPaths = ["src/components/Equipment/AugmentModules.astro"]
+
 const replaceWikiLinks = (content) => {
   const regex =
     /<a\s*\n\s*rel="noopener noreferrer"\s*\n\s*target="_blank"\s*\n\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
@@ -45,10 +47,11 @@ const processFile = async (inputFilePath, outputFilePath) => {
 
 export const replaceLinks = () => {
   for (const page of pageInfo) {
-    const inputFilePath = page.path
-    const outputFilePath = page.path
+    processFile(page.path, page.path)
+  }
 
-    processFile(inputFilePath, outputFilePath)
+  for (const path of hardCodedPaths) {
+    processFile(path, path)
   }
 }
 
