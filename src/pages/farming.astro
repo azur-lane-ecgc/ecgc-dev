@@ -1,0 +1,18 @@
+---
+import GuidePageLayout from "@layouts/guides/GuidePageLayout.astro"
+
+import GuideHeading from "@components/_common/GuideHeading.astro"
+import FarmingGuideContent from "@components/Farming/FarmingGuideContent.astro"
+---
+
+<GuidePageLayout
+  title="Farming Guide"
+  activePage="farming"
+  tocID="Farming"
+  metaUrl="farming"
+  metaDescription="Goes over basic advice and mistakes to avoid for new players!"
+>
+  <GuideHeading title="Farming Guide" />
+
+  <FarmingGuideContent />
+</GuidePageLayout>
