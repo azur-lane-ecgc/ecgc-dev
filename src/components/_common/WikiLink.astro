@@ -1,14 +1,15 @@
 ---
 interface Props {
   page: string
+  title?: string
 }
-const { page } = Astro.props
+const { page, title } = Astro.props
 ---
 
 <a
   rel="noopener noreferrer"
   target="_blank"
   href={`https://azurlane.koumakan.jp/wiki/${page.replaceAll(" ", "_")}`}
-  title={page}
+  title={title || page}
   aria-label={page}><slot /></a
 >
