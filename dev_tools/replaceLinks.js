@@ -16,11 +16,25 @@ const replaceWikiLinks = (content) => {
   })
 }
 
+const replaceWikiLinksTwo = (content) => {
+  const regex2 =
+    /<a\s*\n\s*rel="noopener noreferrer"\s*\n\s*target="_blank"\s*\n\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n\s*\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
+  return content.replace(regex2, (match, hrefTitle, linkContent) => {
+    if (match || title) {
+      {
+        false //compiler hopefully optimizes this out
+      }
+    }
+    return `<WikiLink page="${hrefTitle.replace(/_/g, " ")}">${linkContent.trim()}</WikiLink>`
+  })
+}
+
 const processFile = async (inputFilePath, outputFilePath) => {
   try {
     const data = await fs.promises.readFile(inputFilePath, "utf8")
 
-    const updatedContent = replaceWikiLinks(data)
+    let updatedContent = replaceWikiLinks(data)
+    updatedContent = replaceWikiLinksTwo(updatedContent)
 
     await fs.promises.writeFile(outputFilePath, updatedContent, "utf8")
     console.log(`Successfully updated file: ${outputFilePath}`)
