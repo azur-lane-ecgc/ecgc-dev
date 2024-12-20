@@ -1,6 +1,7 @@
 ---
 import { ItemCell } from "@components/_common/ItemCell"
 import { ItemTable } from "@components/_common/ItemTable"
+import WikiLink from "@components/_common/WikiLink.astro"
 ---
 
 <style>
@@ -13,10 +14,8 @@ import { ItemTable } from "@components/_common/ItemTable"
 <p>
   <i
     >See also:
-    <a
-      href="https://azurlane.koumakan.jp/wiki/Augmentation#Equipment_(Augment_Modules)"
-      target="_blank"
-      rel="noopener noreferrer">Equipment (Augment Modules)</a
+    <WikiLink page="Augmentation#Equipment (Augment Modules)" title="Augmentation"
+      >Equipment (Augment Modules)</WikiLink
     ></i
   >
 </p>
@@ -30,22 +29,11 @@ import { ItemTable } from "@components/_common/ItemTable"
     <p>
       <i
         >On
-        <b
-          ><a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/U-557">U-557</a
-          ></b
-        >
+        <b><WikiLink page="U-557">U-557</WikiLink></b>
         and
-        <b
-          ><a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Minneapolis">Minneapolis</a
-          ></b
-        >, their Unique Augments are sidegrades to Universal Augments, so there
-        is no need to craft them.</i
+        <b><WikiLink page="Minneapolis">Minneapolis</WikiLink></b>, their Unique
+        Augments are sidegrades to Universal Augments, so there is no need to
+        craft them.</i
       >
     </p>
   </li>
@@ -99,21 +87,11 @@ import { ItemTable } from "@components/_common/ItemTable"
     </td>
     <td>
       <p>
-        Offensive-oriented CL augment. Not much difference between <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Crossbow"
+        Offensive-oriented CL augment. Not much difference between <WikiLink
+          page="Crossbow">Crossbow</WikiLink
         >
-          Crossbow
-        </a>
         and
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Sword"
-        >
-          Sword
-        </a>
+        <WikiLink page="Sword">Sword</WikiLink>
         in practice.
       </p>
     </td>
@@ -128,15 +106,9 @@ import { ItemTable } from "@components/_common/ItemTable"
       </td>
       <td>
         <p>
-          Defensive-oriented CL augment. Not much difference between <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Crossbow">Crossbow</a
-          > and <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Sword">Sword</a
-          > in practice.
+          Defensive-oriented CL augment. Not much difference between <WikiLink
+            page="Crossbow">Crossbow</WikiLink
+          > and <WikiLink page="Sword">Sword</WikiLink> in practice.
         </p>
       </td>
     </tr>
@@ -163,11 +135,8 @@ import { ItemTable } from "@components/_common/ItemTable"
       </td>
       <td>
         <p>
-          Better than <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Greatsword">Greatsword</a
-          > if you need the ACC stat, otherwise it's enhance fodder.
+          Better than <WikiLink page="Greatsword">Greatsword</WikiLink> if you need
+          the ACC stat, otherwise it's enhance fodder.
         </p>
       </td>
     </tr>
@@ -194,11 +163,7 @@ import { ItemTable } from "@components/_common/ItemTable"
       </td>
       <td>
         <p>
-          Outperforms <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Officer's_Sword"
-            >Officer's Sword</a
+          Outperforms <WikiLink page="Officer's Sword">Officer's Sword</WikiLink
           > in the following cases (do your own research for breakpoints): against
           Heavy Armor bosses, against certain low-Evasion bosses, and/or when equipped
           on high-ACC ships.
@@ -217,15 +182,10 @@ import { ItemTable } from "@components/_common/ItemTable"
       </td>
       <td>
         <p>
-          Always equip at least one per fleet. Not much difference between <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Scepter">Scepter</a
-          > and <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Hunting_Bow">Hunting Bow</a
-          > in practice. <b><i>Equip to all CV / CVL in Chapter 14</i></b>.
+          Always equip at least one per fleet. Not much difference between <WikiLink
+            page="Scepter">Scepter</WikiLink
+          > and <WikiLink page="Hunting Bow">Hunting Bow</WikiLink> in practice.
+          <b><i>Equip to all CV / CVL in Chapter 14</i></b>.
         </p>
       </td>
     </tr>
@@ -240,19 +200,11 @@ import { ItemTable } from "@components/_common/ItemTable"
       </td>
       <td>
         <p>
-          Equip to all CV / CVL that aren't using <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Scepter">Scepter</a
-          >. Not much difference between <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Scepter">Scepter</a
-          > and <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Hunting_Bow">Hunting Bow</a
-          > in practice.
+          Equip to all CV / CVL that aren't using <WikiLink page="Scepter"
+            >Scepter</WikiLink
+          >. Not much difference between <WikiLink page="Scepter"
+            >Scepter</WikiLink
+          > and <WikiLink page="Hunting Bow">Hunting Bow</WikiLink> in practice.
         </p>
       </td>
     </tr>
