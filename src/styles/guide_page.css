@@ -64,6 +64,7 @@ h5 {
 h4.farming_guide {
   color: hsla(0, 0%, 100%, 0.6) !important;
   text-decoration: underline;
+  font-size: calc(1.275rem + 0.3vw);
 }
 
 /* links */
