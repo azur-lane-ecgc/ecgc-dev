@@ -1,0 +1,810 @@
+---
+import { HR } from "@components/_common/HR"
+import WikiLink from "@components/_common/WikiLink.astro"
+
+import { ItemContainer, ItemCell, ShipCell } from "@components/_common/ItemCell"
+import { ItemTable } from "@components/_common/ItemTable"
+import { ImageCarousel } from "@components/_common/ImageCarousel"
+---
+
+<h2 id="introduction">Introduction</h2>
+<hr class="custom-hr" />
+<p>
+  Like in all gacha games, a grind is necessary for progression, whether than be
+  for new ships, gear, experience, or materials. This guide hopes to give all
+  players a comprehensive overview of farming in Azur Lane.
+</p>
+<br />
+
+<h2 id="terminology">Terminology</h2>
+<hr class="custom-hr" />
+<p>Below are definitions of common Azur Lane terminology when farming:</p>
+<ul>
+  <li>
+    <p>
+      <b>
+        <WikiLink page="Oil_Cost#Fuel_Cost_Limit">Oil-Cap</WikiLink>
+      </b>
+      (cost-limit) - Limits the amount of oil spent per battle.
+    </p>
+    <ul>
+      <li>
+        <p>
+          Locations: Campaign stages <b>9-1 and higher</b>; Events & War
+          Archives <b>Chapter D, or highest SP stage.</b>
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <b>X:Y</b> - Number of Main Fleet Ships : Number of Vanguard Fleet ships.
+    </p>
+  </li>
+</ul>
+
+<ImageCarousel
+  client:visible={{ rootMargin: "100px" }}
+  data={[
+    {
+      src: "/test_ecgc_2/images/farming_guide/1-1_fleet_example.png",
+      caption:
+        "Example of a 1:1 Fleet. Ships that are max level aren't necessary for most farming.",
+      alt: "1:1 Fleet Example",
+    },
+    {
+      src: "/test_ecgc_2/images/farming_guide/3-3_fleet_example.png",
+      caption:
+        "Example of a 3:3 Fleet. Ships that are max level aren't necessary for most farming.",
+      alt: "3:3 Fleet Example",
+    },
+  ]}
+/>
+<br />
+
+<h2 id="fleetbuilding_for_farming">Fleetbuilding for Farming</h2>
+<hr class="custom-hr" />
+<p>
+  <i>
+    See also: <a rel="noopener noreferrer" target="_blank" href="fleetbuilding"
+      >Fleetbuilding Guide</a
+    >
+  </i>
+</p>
+
+<h3 id="initial_considerations">Initial Considerations</h3>
+<p>Consider:</p>
+<ul>
+  <li>
+    <p>
+      Does this ship need levels for any reason? (For use in harder content,
+      fleet technology, secretary missions, etc.)
+    </p>
+  </li>
+  <li>
+    <p>
+      Does this ship need affinity for any reason? (Oaths, affinity stat boosts,
+      secretary missions, etc.)
+    </p>
+  </li>
+</ul>
+<p>
+  Try to avoid using ships that are max level, as they serve no benefits to
+  leeching the exp.
+</p>
+<ul>
+  <li>
+    <p>
+      Ships that are capped due to <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening"
+        >Cognitive Awakening</a
+      >
+      are fine to use, as any EXP overflow will carry over to subsequent levels (up
+      to 3,000,000 EXP).
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="helpful_ship_qualities">Helpful Ship Qualities</h3>
+<ul>
+  <li>
+    <p>
+      <b>Healers</b> (ex.
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Unicorn">Unicorn</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Perseus">Perseus</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Ryuuhou">Ryuuhou</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Shouhou">Shouhou</a
+      >, etc.)
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Preloaders / Fast-Loaders</b> (ex.
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Richelieu">Richelieu</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Aquila">Aquila</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Independence"
+        >Independence (Retrofit)</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Vittorio_Veneto"
+        >Vittorio Veneto</a
+      >, etc.)
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Self-Heals</b> (ex.
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Neptune">Neptune</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Minneapolis">Minneapolis</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Phoenix">Phoenix (Retrofit)</a
+      >, etc.)
+    </p>
+  </li>
+</ul>
+<p>
+  <i
+    >Note: Some ships (ex. Unicorn) fall into multiple categories. READ SKILLS
+    FOR MORE INFORMATION!</i
+  >
+</p>
+<p>Remember:</p>
+<ul>
+  <li>
+    <p>
+      <b
+        >Do NOT choose ships for farming fleets based off of ONLY these
+        qualities.</b
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          These ships <i>help</i>; they are not mandatory for efficient farming.
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <b
+        >Do NOT use oil cost as a consideration when determining what ships to
+        use.</b
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          Investing in ships that have a purpose for future content, whether
+          that be through leveling them or through their fleet technology
+          bonuses, is better in the long run.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<br />
+
+<h2 id="farming_methods">Farming Methods (Campaign, Events, War Archives)</h2>
+<hr class="custom-hr" />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "100px" }}
+  data={[
+    {
+      src: "/test_ecgc_2/images/farming_guide/Oil_cap_tutorial_image.png",
+      caption:
+        "The oil-cap can be visible on this menu for all supported stages, as well as on the wiki page for the stage.",
+      alt: "11-1 Oil-Cap Example",
+    },
+  ]}
+/>
+<br />
+
+<ul>
+  <li>
+    <p>
+      If the stage has an <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Oil_Cost#Fuel_Cost_Limit"
+        >Oil-Cap</a
+      >: Use a <b>3:3</b>
+      fleet.
+    </p>
+  </li>
+  <li>
+    <p>
+      If the stage doesn't have an <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Oil_Cost#Fuel_Cost_Limit"
+        >Oil-Cap</a
+      >: Use a <b>1:1</b>
+      fleet.
+      <ul>
+        <li>
+          <p>
+            If the stage is a campaign Hard Mode stage, using a full fleet is
+            fine due to the difficulty of the stages and their rewards. It is
+            not worth compromising on the Core Data to save oil.
+          </p>
+        </li>
+        <li>
+          <p>If you are farming Commander Levels, NEVER use a 1:1 fleet.</p>
+        </li>
+      </ul>
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="for_gear_campaign">For Gear</h3>
+<h4 class="farming_guide">Stages:</h4>
+
+<p>
+  Farming stages specifically for gear is not useful. You are better off trying
+  to brute force stages with <WikiLink
+    page="Combat#Level Advantage & Threat Level">Level Advantage</WikiLink
+  >, as you acquire gear from other sources (<WikiLink page="Gear Lab"
+    >Gear Lab</WikiLink
+  >, <WikiLink page="Research">Research</WikiLink>, etc.).
+</p>
+<br />
+
+<h3 id="for_exp_campaign">
+  For Ship EXP, PR Grinding, Commander Level EXP, Coins, and Upgrade Parts
+</h3>
+<h4 class="farming_guide">Stages:</h4>
+<ul>
+  <li>
+    <p>Before Chapter 9: <b>Highest stage you can do safely</b>.</p>
+  </li>
+  <li>
+    <p>Before Chapter 11: <b>9-1</b>.</p>
+  </li>
+  <li>
+    <p>In Chapter 11: <b>11-1</b>.</p>
+  </li>
+  <li>
+    <p>After Chapter 11: <b>12-1</b> (or higher).</p>
+    <ul>
+      <li>
+        <p>
+          12-1 and above are significantly better than any stage under them.
+          This is because they have a chance to drop <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening"
+            >Cognitive Chips</a
+          > and <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://azurlane.koumakan.jp/wiki/Augmentation"
+            >Augmentation</a
+          > Materials in addition to everything else.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h4 class="farming_guide">Notes:</h4>
+<ul>
+  <li>
+    <p>Farming Coins before Chapter 9 in Campaign is not advised</p>
+  </li>
+  <li>
+    <p>T3 Upgrade Parts drop from Chapter 6 onward.</p>
+  </li>
+</ul>
+<br />
+
+<h3 id="for_coggies">
+  For <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening"
+    >Cognitive Chips</a
+  > and <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Augmentation#Crafting_and_Enhancing"
+    >Augment Module Stones</a
+  >
+</h3>
+<h4 class="farming_guide">Stages:</h4>
+<ul>
+  <li>
+    <p>
+      Chapter 14 &gt; Chapter 13 &gt; Chapter 12 for these resources, in terms
+      of oil efficiency.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="for_retrofit_bps">For Retrofit Blueprints</h3>
+<p>
+  Grind the highest hard mode stage that you can do, that also drops the print
+  type that you need. Double-check the stage drops to make sure you are grinding
+  the right stage! <b
+    >The higher the better, due to the stage dropping more Core Data!</b
+  >
+</p>
+<br />
+
+<h3 id="for_drop_ships_campaign">For Drop Ships</h3>
+<p>
+  <i>
+    Main Article: <a
+      rel="noopener noreferrer"
+      target="_blank"
+      href="early_ship_recommendations">Early Ship Recommendations Guide</a
+    >
+  </i>
+</p>
+<h4 class="farming_guide">Stages:</h4>
+<p>
+  Farm the stage the ship drops on. For a list of notable drop-only ships, see
+  the table below.
+</p>
+<ul>
+  <li>
+    <p>
+      Ships listed below are ships that <b>only</b> drop from a few specific stages
+      and/or are build only.
+    </p>
+  </li>
+  <li>
+    <p>Chapter 14 and Chapter 15 stages are omitted when possible.</p>
+  </li>
+  <li>
+    <p>
+      If a ship isn't listed below, check their wiki page for drop locations.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Consult a ship tierlist for information about ship viability!</b>
+      <i
+        >All ships besides <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Yuudachi"
+          >Yuudachi (Retrofit)</a
+        > are sidegrades to other easily accessible options, or outright worse than
+        other easily accessible options.</i
+      >
+    </p>
+  </li>
+</ul>
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "25%", colSpan: 2 },
+    { colName: "Location", colWidth: "50%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <ShipCell ship="Akagi" rarity={4} />
+    </td>
+    <td>
+      <ShipCell ship="Kaga" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="3-4">3-4</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Myoukou" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="5-1">5-1</WikiLink>,
+        <WikiLink page="10-1">10-1</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Yuudachi" rarity={5} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="6-4">6-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Isuzu" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="7-3">7-3</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Houshou" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="7-4">7-4</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Inazuma" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="8-1">8-1</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Ikazuchi" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="8-2">8-2</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Maya" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="8-4">8-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ShipCell ship="Jenkins" rarity={2} />
+    </td>
+    <td>
+      <ShipCell ship="Radford" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="9-2">9-2</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Nicholas" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="9-3">9-3</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Niizuki" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="9-4">9-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Honolulu" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="10-2">10-2</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="St. Louis" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="10-3">10-3</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Jintsuu" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="10-4">10-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Agano" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="11-2">11-2</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Sendai" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="11-3">11-3</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Columbia" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="11-4">11-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Hiyou" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="12-2">12-2</WikiLink>,
+        <WikiLink page="13-2">13-2</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Junyou" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="12-3">12-3</WikiLink>,
+        <WikiLink page="13-3">13-3</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Choukai" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="12-4">12-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Dewey" rarity={2} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="13-3">13-3</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Bunker Hill" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="13-4">13-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ShipCell ship="Denver" rarity={3} />
+    </td>
+    <td>
+      <ShipCell ship="West Virginia" rarity={3} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="14-2">14-2</WikiLink>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="New Orleans" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="14-4">14-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <ShipCell ship="Houston II" rarity={4} />
+    </td>
+    <td>
+      <p>
+        <WikiLink page="15-4">15-4</WikiLink> (Boss-only)
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h2 id="war_archives">Farming War Archives</h2>
+<hr class="custom-hr" />
+<h3 id="for_gear_wa">For Gear</h3>
+<p>There is no gear worth farming in War Archives</p>
+<br />
+
+<h3 id="for_drop_ships_wa">For Drop Ships</h3>
+<p>
+  <i>
+    Main Article: <a
+      rel="noopener noreferrer"
+      target="_blank"
+      href="https://azurlane.koumakan.jp/wiki/War_Archives">War Archives</a
+    >
+  </i>
+</p>
+<h4 class="farming_guide">Stages:</h4>
+<p>
+  Check the <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/War_Archives">War Archives</a
+  > wiki page for a list of drop-only ships and their locations.
+</p>
+<br />
+
+<h2 id="events">Farming Events</h2>
+<hr class="custom-hr" />
+<h3 id="for_event_currency">For Event Currency</h3>
+<h4 class="farming_guide">Stages:</h4>
+<ul>
+  <li>
+    <p>
+      SP (once daily) &gt; D3 &gt; D1 &gt; D2 &gt; C2 &gt; B3 &gt; Highest stage
+      doable.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h4 class="farming_guide">Currency Thresholds:</h4>
+<ul>
+  <li>
+    <p>
+      If you have enough time: Aim for about <b>55,000</b>
+      <WikiLink page="Shops#Event_Shop" title="Event Currency"
+        ><img
+          src="images/materials/InvolutedSealPt.png"
+          width="25px"
+          alt="Event Currency"
+          class="inline-block"
+        />
+      </WikiLink>, that should get you everything relevant from the event.
+    </p>
+  </li>
+  <li>
+    <p>
+      If you are in a time crunch: Aim for about <b>18,000 - 20,000</b>
+      <WikiLink page="Shops#Event_Shop" title="Event Currency"
+        ><img
+          src="images/materials/InvolutedSealPt.png"
+          width="25px"
+          alt="Event Currency"
+          class="inline-block"
+        />
+      </WikiLink>, that will get you the Event Ships (Shop + Point Milestone),
+      and the Event Gear (if there is any).
+    </p>
+  </li>
+</ul>
+<p>See the table below for more detailed information.</p>
+<br />
+
+<h3 id="event_shop_priority">Event Shop Priority</h3>
+<p>
+  <i>
+    Main Article: <a
+      href="shop_priority#event"
+      target="_self"
+      rel="noopener noreferrer">Event Shop Priority</a
+    >
+  </i>
+</p>
+<br />
+
+<h3 id="for_drop_ship_and_gear">For Drop Ships / For Gear</h3>
+<h4 class="farming_guide">Stages:</h4>
+<ul>
+  <li>
+    <p>Farm the stage needed for the ship / gear.</p>
+  </li>
+</ul>
+<br />
