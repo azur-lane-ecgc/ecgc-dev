@@ -97,6 +97,14 @@
   text-align: center;
 }
 
+.carousel-caption > p {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px 3px #555;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
 /* side arrows */
 .arrow {
   position: absolute;
