@@ -337,6 +337,40 @@
     ]
   },
   {
+    "fileName": "Farming Guide",
+    "toc": [
+      {
+        "id": "terminology",
+        "content": "Terminology",
+        "subheadings": []
+      },
+      {
+        "id": "fleetbuilding_for_farming",
+        "content": "Fleetbuilding for Farming",
+        "subheadings": [
+          {
+            "id": "initial_considerations",
+            "content": "Initial Considerations"
+          },
+          {
+            "id": "helpful_ship_qualities",
+            "content": "Helpful Ship Qualities"
+          }
+        ]
+      },
+      {
+        "id": "farming_methods",
+        "content": "Farming Methods (Campaign, Events, War Archives)",
+        "subheadings": [
+          {
+            "id": "for_gear_campaign",
+            "content": "For Gear"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "fileName": "Newbie Tips",
     "toc": [
       {
