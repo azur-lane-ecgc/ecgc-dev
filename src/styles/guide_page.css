@@ -66,13 +66,6 @@ h4.farming_guide {
   text-decoration: underline;
 }
 
-h6,
-.h6 {
-  font-size: 0.75rem;
-  color: hsla(0, 0%, 100%, 0.9);
-  text-transform: uppercase;
-}
-
 /* links */
 a.none {
   color: auto;
