@@ -554,5 +554,91 @@
         "subheadings": []
       }
     ]
+  },
+  {
+    "fileName": "Research Guide",
+    "toc": [
+      {
+        "id": "fleet_technology",
+        "content": "Fleet Technology",
+        "subheadings": []
+      },
+      {
+        "id": "shipyard",
+        "content": "Shipyard",
+        "subheadings": [
+          {
+            "id": "coin-up",
+            "content": "Coin-up"
+          },
+          {
+            "id": "shipyard_priority",
+            "content": "Recommended Development Order"
+          },
+          {
+            "id": "shipyard_priority_by_season",
+            "content": "Shipyard Priority by Season"
+          }
+        ]
+      },
+      {
+        "id": "research_academy",
+        "content": "Research Academy",
+        "subheadings": [
+          {
+            "id": "research_purpose",
+            "content": "Purpose of Research"
+          },
+          {
+            "id": "research_focus",
+            "content": "Research Focus"
+          },
+          {
+            "id": "catch-up",
+            "content": "Catch-up"
+          }
+        ]
+      },
+      {
+        "id": "research_project_priority",
+        "content": "Optimal Research Academy Projects",
+        "subheadings": [
+          {
+            "id": "s_tier",
+            "content": "S-Tier Projects"
+          },
+          {
+            "id": "a_tier",
+            "content": "A-Tier Projects"
+          },
+          {
+            "id": "b_tier",
+            "content": "B-Tier Projects"
+          },
+          {
+            "id": "c_tier",
+            "content": "C-Tier Projects"
+          }
+        ]
+      },
+      {
+        "id": "protocore",
+        "content": "Protocore",
+        "subheadings": [
+          {
+            "id": "protocore_spending",
+            "content": "Protocore Spending"
+          },
+          {
+            "id": "protocore_income",
+            "content": "Protocore Income"
+          },
+          {
+            "id": "optimizing_protocore",
+            "content": "Optimizing Protocore"
+          }
+        ]
+      }
+    ]
   }
 ]
