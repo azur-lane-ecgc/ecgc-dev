@@ -13,6 +13,7 @@ export interface ShipCellProps {
   inGroup?: boolean
   hasBorder?: boolean
   hover?: boolean
+  caption?: boolean
 }
 
 export const ShipCell: React.FC<ShipCellProps> = ({
@@ -25,6 +26,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
   inGroup = false,
   hasBorder = false,
   hover = false,
+  caption = true,
 }) => {
   return (
     <ItemCell
@@ -38,6 +40,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
       inGroup={inGroup}
       hasBorder={hasBorder}
       hover={hover}
+      caption={caption}
     />
   )
 }
