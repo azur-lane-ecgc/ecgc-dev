@@ -6,6 +6,52 @@ import { ImageCarousel } from "@components/_common/ImageCarousel"
 import WikiLink from "@components/_common/WikiLink.astro"
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const catchupToggleFunction = () => {
+      const content = document.getElementById("catchupToggleContent")
+      const icon = document.getElementById("catchupToggle")
+      if (content && icon) {
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden")
+          content.setAttribute("aria-hidden", "false")
+          icon.classList.remove("fa-angle-down")
+          icon.classList.add("fa-angle-up")
+        } else {
+          content.classList.add("hidden")
+          content.setAttribute("aria-hidden", "true")
+          icon.classList.remove("fa-angle-up")
+          icon.classList.add("fa-angle-down")
+        }
+      }
+    }
+
+    document
+      ?.getElementById("catchupButton")
+      ?.addEventListener("click", catchupToggleFunction)
+  })
+</script>
+
+<style>
+  .catchup-button {
+    font-size: 1rem;
+    background-color: transparent;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    transition:
+      color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+  }
+
+  .catchup-button:hover {
+    background-color: #ffc107;
+    color: black;
+  }
+</style>
+
 <h2 id="introduction">Introduction</h2>
 <HR />
 <p>
@@ -1426,32 +1472,6 @@ import WikiLink from "@components/_common/WikiLink.astro"
 </ItemTable>
 <br />
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const catchupToggleFunction = () => {
-      const content = document.getElementById("catchupToggleContent")
-      const icon = document.getElementById("catchupToggle")
-      if (content && icon) {
-        if (content.classList.contains("hidden")) {
-          content.classList.remove("hidden")
-          content.setAttribute("aria-hidden", "false")
-          icon.classList.remove("fa-angle-down")
-          icon.classList.add("fa-angle-up")
-        } else {
-          content.classList.add("hidden")
-          content.setAttribute("aria-hidden", "true")
-          icon.classList.remove("fa-angle-up")
-          icon.classList.add("fa-angle-down")
-        }
-      }
-    }
-
-    document
-      ?.getElementById("catchupButton")
-      ?.addEventListener("click", catchupToggleFunction)
-  })
-</script>
-
 <h3 id="catch-up_min_max" class="flex">
   PR Catch-up Min-Maxing
 
@@ -1459,7 +1479,7 @@ import WikiLink from "@components/_common/WikiLink.astro"
 
   <button
     id="catchupButton"
-    class="btn btn-outline-warning"
+    class="catchup-button"
     onclick="catchupToggleFunction()"
     role="button"
   >
@@ -1510,16 +1530,16 @@ import WikiLink from "@components/_common/WikiLink.astro"
         While your valuable (PR4, PR5, DR) Catch-up prints are slowly trickling
         in, obtain and develop the ship from Step 2 using coins until the ship
         is development level 30. This entire process should take about 50 days
-        or less, assuming you are spending 3000 <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Shops"
+        or less, assuming you are spending 3000 <WikiLink
+          page="Shops"
+          title="Shops"
           ><img
-            class="rarity-1"
+            loading="lazy"
+            class="rarity-1 inline-block"
             src="images/materials/coin.png"
             width="25px"
             alt="Coin"
-          /></a
+          /></WikiLink
         > Coins daily.
       </p>
       <ul>
@@ -1555,17 +1575,19 @@ import WikiLink from "@components/_common/WikiLink.astro"
     </li>
     <li>
       <p>
-        Convert all prints of that ship into <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
+        Convert all prints of that ship into <WikiLink
+          page="Shops#Prototype_Shop"
+          title="Protocore"
           ><img
-            class="rarity-4"
+            loading="lazy"
+            class="rarity-4 inline-block"
             src="images/materials/protocore.png"
             width="25px"
             alt="Prototype Core"
-          /></a
-        > Prototype Core in the <WikiLink page="Shops#Blueprint Analysis">Prototype Shop</WikiLink>. This should take about 2 months to convert all the prints.
+          /></WikiLink
+        > Prototype Core in the <WikiLink page="Shops#Blueprint Analysis"
+          >Prototype Shop</WikiLink
+        >. This should take about 2 months to convert all the prints.
       </p>
       <ul>
         <li>
@@ -1578,16 +1600,16 @@ import WikiLink from "@components/_common/WikiLink.astro"
     </li>
     <li>
       <p>
-        Repeat these steps until all desired Catch-up prints are converted into <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
+        Repeat these steps until all desired Catch-up prints are converted into <WikiLink
+          page="Shops#Prototype_Shop"
+          title="Protocore"
           ><img
-            class="rarity-4"
+            loading="lazy"
+            class="rarity-4 inline-block"
             src="images/materials/protocore.png"
             width="25px"
             alt="Prototype Core"
-          /></a
+          /></WikiLink
         > Prototype Core.
       </p>
     </li>
