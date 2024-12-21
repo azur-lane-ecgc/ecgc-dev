@@ -1,0 +1,1706 @@
+---
+import { HR } from "@components/_common/HR"
+import { ItemCell, ShipCell } from "@components/_common/ItemCell"
+import { ItemTable } from "@components/_common/ItemTable"
+import { ImageCarousel } from "@components/_common/ImageCarousel"
+import WikiLink from "@components/_common/WikiLink.astro"
+---
+
+<h2 id="introduction">Introduction</h2>
+<hr class="custom-hr" />
+<p>
+  Research is one of the most confusing aspects about Azur Lane. This guide
+  hopes to give players a comprehensive overview of the <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Fleet_Technology"
+    title="Fleet Technology">Fleet Technology</a
+  >,
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Research_Academy"
+    title="Research Academy">Research Academy</a
+  >, and <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+    title="Shipyard">Shipyard</a
+  > tabs of the <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Research"
+    title="Research">Lab</a
+  >.
+</p>
+<br />
+
+<h2 id="fleet_technology">Fleet Technology</h2>
+<hr class="custom-hr" />
+<p>
+  <i>
+    Main Article: <a
+      rel="noopener noreferrer"
+      target="_blank"
+      href="fleet_technology"
+      title="Fleet Technology Guide">Fleet Technology Guide</a
+    >
+  </i>
+</p>
+<br />
+
+<h2 id="shipyard">Shipyard</h2>
+<hr class="custom-hr" />
+<ul>
+  <li>
+    <p>
+      <i>
+        See the <a href="fleetbuilding" target="_self" rel="noopener noreferrer"
+          >Fleetbuilding Guide</a
+        >
+        to see how ships fit into your fleet.</i
+      >
+    </p>
+  </li>
+</ul>
+<br />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "100px" }}
+  data={[
+    {
+      src: "/test_ecgc_2/images/research_guide/shipyard_window.png",
+      caption: "Shipyard UI",
+      alt: "Shipyard UI",
+    },
+  ]}
+/>
+<br />
+
+<p>
+  This is where you unlock and develop <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+    title="Shipyard">Shipyard</a
+  > ships.
+</p>
+<br />
+
+<h3 id="coin-up">Coin-up</h3>
+<p>
+  All PR1, PR2/DR2, PR3/DR3, and PR4 ships can have their prints be bought with
+  coins! PR and DR Coin-up are seperate. See <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Research#Enhancing"
+    title="Enhancing With Coins">this wiki page</a
+  > for more information.
+</p>
+<br />
+
+<h3 id="shipyard_priority">Recommended Development Order</h3>
+
+<h5>High Priority:</h5>
+<ul>
+  <li>
+    <p>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Friedrich_der_Große"
+        title="Friedrich der Große">Friedrich der Große</a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Anchorage"
+        title="Anchorage">Anchorage</a
+      >
+    </p>
+  </li>
+</ul>
+<p>
+  Unfortunately, it is very unrealistic to start with the High Priority targets.
+  Therefore, here are other priorities to focus on.
+</p>
+<br />
+
+<h5>Other Priorities:</h5>
+<ul>
+  <li>
+    <p>
+      <h5>
+        <a href="#coin-up" rel="noopener noreferrer" target="_self">Coin-up</a> ships.
+      </h5>
+    </p>
+    <ul>
+      <li>
+        <p>
+          Any PR1, PR2, PR3, and PR4 ship can be enhanced efficiently through <a
+            href="#coin-up"
+            rel="noopener noreferrer"
+            target="_self">Coin-up</a
+          >, making them good to start with.
+        </p>
+      </li>
+      <li>
+        <p>
+          <i
+            >If you need <a
+              href="#tech_points"
+              target="_self"
+              rel="noopener noreferrer">Tech Points</a
+            > for <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://azurlane.koumakan.jp/wiki/Friedrich_der_Große"
+              title="Friedrich der Große">Friedrich der Große</a
+            >, pick <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://azurlane.koumakan.jp/wiki/Roon"
+              title="Roon">Roon</a
+            >. Otherwise, it doesn't matter who is selected.</i
+          >
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <h5>Ships you have a lot of blueprints for.</h5>
+    </p>
+    <ul>
+      <li>
+        <p>
+          <b
+            ><a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+              title="Shipyard">Shipyard</a
+            > ships are useless at lower Development Levels!</b
+          >
+          Therefore, focusing ships you have a lot of blueprints for is best, as
+          you can use them faster compared to other ships.
+        </p>
+      </li>
+      <li>
+        <p>
+          Ships you have selected for your <a
+            href="#catch-up"
+            target="_self"
+            rel="noopener noreferrer">Catch-up</a
+          > fall into this category.
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <h5>
+        Ships for <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Beginner_Rewards#Development_(PR)"
+          >Beginner Rewards</a
+        >.
+      </h5>
+    </p>
+    <ul>
+      <li>
+        <p>
+          You need 1 ship each from PR1-PR5 due to <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://azurlane.koumakan.jp/wiki/Beginner_Rewards#Development_(PR)"
+            >Beginner Rewards</a
+          >. DR ships count for this as well.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<br />
+
+<h3 id="shipyard_priority_by_season">Shipyard Priority by Season</h3>
+<ul>
+  <li>
+    <p>
+      PR1: <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Izumo"
+        title="Izumo">Izumo</a
+      > &gt;= <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Ibuki"
+        title="Ibuki">Ibuki</a
+      > =
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Roon"
+        title="Roon">Roon</a
+      > &gt;
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Saint_Louis"
+        title="Saint Louis">Saint Louis</a
+      > =
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Monarch"
+        title="Monarch">Monarch</a
+      > &gt; rest
+    </p>
+  </li>
+  <li>
+    <p>
+      PR2: <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Kitakaze"
+        title="Kitakaze">Kitakaze</a
+      > =
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Gascogne"
+        title="Gascogne">Gascogne</a
+      > &gt; rest
+    </p>
+  </li>
+  <li>
+    <p>
+      PR3: <b
+        ><a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Cheshire"
+          title="Cheshire">Cheshire</a
+        ></b
+      > &gt;
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Odin"
+        title="Odin">Odin</a
+      > &gt;
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Mainz"
+        title="Mainz">Mainz</a
+      > &gt; rest
+    </p>
+  </li>
+  <li>
+    <p>
+      PR4: <b
+        ><a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Anchorage"
+          title="Anchorage">Anchorage</a
+        ></b
+      > &gt;=
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/August_von_Parseval"
+        title="August von Parseval">August von Parseval</a
+      > &gt;=
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Marco_Polo"
+        title="Marco Polo">Marco Polo</a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      PR5: <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Harbin"
+        title="Harbin">Harbin</a
+      > =
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Chkalov"
+        title="Chkalov">Chkalov</a
+      > &gt;
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Prinz_Rupprecht"
+        title="Prinz Rupprecht">Prinz Rupprecht</a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      PR6: <b
+        ><a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shimanto"
+          title="Shimanto">Shimanto</a
+        ></b
+      > &gt;
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Felix_Schultz"
+        title="Felix Schultz">Felix Schultz</a
+      > =
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Flandre"
+        title="Flandre">Flandre</a
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i>PR6 Catch-up is not released yet.</i>
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      PR7: <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Halford"
+        title="Halford">Halford</a
+      > =
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Bayard"
+        title="Bayard">Bayard</a
+      > =
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Daisen"
+        title="Daisen">Daisen</a
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i>PR7 Catch-up is not released yet.</i>
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      DRs: <b
+        ><a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Friedrich_der_Große"
+          title="Friedrich der Große">Friedrich der Große</a
+        ></b
+      > &gt;
+      <!-- <b
+        ><a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Azuma"
+          title="Azuma">Azuma</a
+        ></b
+      > &gt;
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Plymouth"
+        title="Plymouth">Plymouth</a
+      > &gt;
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Ägir"
+        title="Ägir">Ägir</a
+      > &gt;  -->
+      rest
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i
+            >Since FdG has coin-up, she is the highest priority to acquire.
+            Azuma and Drake also have coin-up, but they are worse value compared
+            to FdG.</i
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <i
+            ><b>Get all other DRs at your own pace.</b> Since they take forever to
+            max, there is no rush.</i
+          >
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<br />
+
+<h5>Notes:</h5>
+<ul>
+  <li>
+    <p>
+      Bolded ships are the recommended <a
+        rel="noopener noreferrer"
+        target="_self"
+        href="#catch-up"
+        title="Catch-up">Catch-up</a
+      > selections for that season.
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i
+            >If a ship is not listed, but has a Catch-up (ex. <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://azurlane.koumakan.jp/wiki/Drake"
+              title="Drake">Drake</a
+            >), do it last.</i
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <i
+            >For PR Catch-up Min-Maxing, read <a
+              rel="noopener noreferrer"
+              target="_self"
+              href="#protocore"
+              title="Prototype Core">Protocore</a
+            > for more information.</i
+          >
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<br />
+
+<h2 id="research_academy">Research Academy</h2>
+<hr class="custom-hr" />
+<p>
+  <i>
+    See also: <a
+      rel="noopener noreferrer"
+      target="_blank"
+      href="https://azurlane.koumakan.jp/wiki/Research_Academy"
+      title="Research Academy">Research Academy</a
+    >
+  </i>
+</p>
+<br />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "100px" }}
+  data={[
+    {
+      src: "/test_ecgc_2/images/research_guide/research_project_window.png",
+      caption: "Research Academy UI",
+      alt: "Research Academy UI",
+    },
+    {
+      src: "/test_ecgc_2/images/research_guide/research_focus_window.png",
+      caption: "Research Focus UI",
+      alt: "Research Focus UI",
+    },
+  ]}
+/>
+<br />
+
+<h3>Research Focus and Catch-up are seperate!!!</h3>
+<p>
+  Notice in the <b>"Research Focus UI"</b> image, "Research Focus" is listed seperately!
+  Read the below sections for more information.
+</p>
+<br />
+
+<h3 id="research_purpose">Purpose of Research</h3>
+<p>
+  To get <b>PR / DR Blueprints</b> to use in <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+    title="Shipyard">Shipyard</a
+  >, as well as
+  <b>Equipment Designs</b> to <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Design_(Craft)"
+    title="Design (Craft)">craft</a
+  > into gear.
+</p>
+<br />
+
+<h3 id="research_focus">Research Focus</h3>
+<p>
+  When a season is focused, <b>at least 3</b> out of the 5 available Research Projects
+  will be from that season.
+</p>
+<br />
+
+<h5>Research Focus Optimization:</h5>
+<p>
+  Select any season PR5 or higher unless you know what you are doing. They have
+  the best ships and gear.
+</p>
+<ul>
+  <li>
+    <p>
+      <b>PR6</b> is slightly worse than the other 2 options (PR5, PR7) due to having
+      similar ships but worse gear. Still fine to set as a focus, however.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h5>Why not PR1, PR2, PR3, PR4?</h5>
+<ul>
+  <li>
+    <p>
+      All the PR ships in PR1, PR2, PR3, PR4 can have their ship blueprints
+      bought with coins directly, instead of having to research for them.
+    </p>
+  </li>
+  <li>
+    <p>
+      All the DR ships in DR2 and DR3 can have their ship blueprints bought with
+      coins directly, instead of having to research for them.
+    </p>
+  </li>
+  <li>
+    <p>
+      All the gear in PR1, PR2, PR3, PR4 (and most later seasons) are found in
+      the <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Prototype_Shop"
+        title="Prototype Shop">Prototype Shop</a
+      > and/or the <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Gear_Lab"
+        title="Gear Lab">Gear Lab</a
+      >.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="catch-up">Catch-up</h3>
+<p>
+  When a ship is selected for catch-up, every research you complete will always
+  give a minimum of 1
+  <b>additional</b> print that is for the catch-up ship selected.
+</p>
+<br />
+
+<h5>What you get from Catch-up:</h5>
+<ul>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 6 PR1 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 4 PR2 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 4 PR3 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 3 PR4 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 3 PR5 ships.
+    </p>
+  </li>
+  <ul>
+    <li>
+      <p>
+        <i
+          >It's recommended that all 300 prints are for the same ship, until the
+          ship reaches Development Level 30.</i
+        >
+      </p>
+    </li>
+  </ul>
+  <li>
+    <p>
+      150 (DR) prints for <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Friedrich_der_Große"
+        title="Friedrich der Große">Friedrich der Große</a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Azuma"
+        title="Azuma">Azuma</a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Drake"
+        title="Drake">Drake</a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Ägir"
+        title="Ägir">Ägir</a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Hakuryuu"
+        title="Hakuryuu">Hakuryuu</a
+      >
+    </p>
+  </li>
+</ul>
+<p>
+  You can only do one catch-up at a time, but there is no time limit. <i
+    >It is recommended to do the PR catch-ups before the DR catch-ups.</i
+  >
+</p>
+<br />
+
+<p>
+  <b>Recommended Catch-up selections:</b> See <a
+    rel="noopener noreferrer"
+    target="_self"
+    href="#shipyard_priority_by_season"
+    title="Shipyard Priority">this section</a
+  > for more information.
+</p>
+<p>
+  <b>For PR Catch-up Min-Maxing:</b> See <a
+    rel="noopener noreferrer"
+    target="_self"
+    href="#catch-up_min_max"
+    title="Catch-up Min-Max">this section</a
+  > for more information.
+</p>
+<br />
+
+<h2 id="research_project_priority">Optimal Research Academy Projects</h2>
+<hr class="custom-hr" />
+<p>
+  <b>Notes:</b>
+</p>
+<ul>
+  <li>
+    <p>
+      <i>Projects <b>ARE</b> rated within a tier!</i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >For D researches, Rainbow Ship Blueprints > Gold Ship Blueprints,
+        regardless of the research length / rarity color.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Only spend cubes on research if you have a large (400+ cubes or higher)
+        surplus, and are willing to risk your gacha chances.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Avoid taking H-type or D-type projects once all ships in that season
+        are maxed. The protocore gained is not worth it.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p><i>Always have a research running at all times, even if it's bad!</i></p>
+  </li>
+</ul>
+<br />
+
+<h3 id="s_tier">S-Tier Projects</h3>
+<ItemTable
+  tableInfo={[
+    { colName: "Name", colWidth: "25%" },
+    { colName: "Associated Names", colWidth: "30%" },
+    { colName: "Length", colWidth: "20%" },
+    { colName: "Rewards", colWidth: "25%" },
+  ]}
+>
+  <tr>
+    <td class="rarity-5">
+      <p class="!text-black">
+        <b>D-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Soul Forming, D-UL, Rainbow-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="!text-black">
+        <b>D-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Soul Forming, D-UL, Gold-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="!text-black">
+        <b>Q-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>30 min Rigging Analysis, Q-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="!text-black">
+        <b>H-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>30 min H, H-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Ship Prints, Cognitive Chips</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="a_tier">A-Tier Projects</h3>
+<ItemTable
+  tableInfo={[
+    { colName: "Name", colWidth: "20%" },
+    { colName: "Associated Names", colWidth: "30%" },
+    { colName: "Length", colWidth: "20%" },
+    { colName: "Rewards", colWidth: "30%" },
+  ]}
+>
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>H-387-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue H, 1 Hour H</p>
+    </td>
+    <td>
+      <p>1 Hour</p>
+    </td>
+    <td>
+      <p>Ship Prints, Cognitive Chips</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>D-7XX-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue D, Blue Face, 2.5 Hour Face</p>
+    </td>
+    <td>
+      <p>2.5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="!text-black">
+        <b>D-3XX-MI</b>
+        <br />
+        <b>Medium Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple D, Purple Face, 5 Hour Face</p>
+    </td>
+    <td>
+      <p>5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="!text-black">
+        <b>D-4XX-RF</b>
+        <br />
+        <b>Large Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Gold D, Gold Face, 8 Hour Face</p>
+    </td>
+    <td>
+      <p>8 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="!text-black">
+        <b>Q-0XX-MI</b>
+        <br />
+        <b>Medium Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple Q, 4 Hour Q</p>
+    </td>
+    <td>
+      <p>4 Hours</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="b_tier">B-Tier Projects</h3>
+<ItemTable
+  tableInfo={[
+    { colName: "Name", colWidth: "20%" },
+    { colName: "Associated Names", colWidth: "30%" },
+    { colName: "Length", colWidth: "20%" },
+    { colName: "Rewards", colWidth: "30%" },
+  ]}
+>
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>Q-3XX-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 1 Hour Q, 1 Hour Q</p>
+    </td>
+    <td>
+      <p>1 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>Q-2XX-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 2 Hour Q, 2 Hour Q</p>
+    </td>
+    <td>
+      <p>2 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="!text-black">
+        <b>G-531-MI</b>
+        <br />
+        <b>Medium Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple G, 4 Hour G</p>
+    </td>
+    <td>
+      <p>4 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="!text-black">
+        <b>E-315-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple 2 Hour E, 2 Hour E</p>
+    </td>
+    <td>
+      <p>2 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>E-031-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 2 Hour E, 2 Hour E</p>
+    </td>
+    <td>
+      <p>2 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>G-412-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 1.5 Hour G, 1.5 Hour G</p>
+    </td>
+    <td>
+      <p>1.5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>G-236-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 2.5 Hour G, 2.5 Hour G</p>
+    </td>
+    <td>
+      <p>2.5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="c_tier">C-Tier Projects</h3>
+<p>
+  <b>Everything else</b> falls into this category. If you are forced to pick one
+  due to all the options being terrible, pick the shortest option <i
+    >that doesn't cost cubes</i
+  >, regardless of if the ships in the season are maxed or not. Save your
+  refresh button for times like these.
+</p>
+<br />
+
+<h2 id="protocore">Protocore</h2>
+<hr class="custom-hr" />
+<p>
+  Protocore is a resource used to buy goods in the <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Prototype_Shop"
+    title="Prototype Shop">Prototype Shop</a
+  >.
+</p>
+<br />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "100px" }}
+  data={[
+    {
+      src: "images/research_guide/prototype_shop_window.png",
+      caption: "Prototype Shop UI",
+      alt: "Prototype Shop UI",
+    },
+    {
+      src: "images/research_guide/protocore_conversion_window.png",
+      caption: "Protocore Conversion UI",
+      alt: "Protocore Conversion UI",
+    },
+  ]}
+/>
+<br />
+
+<h3 id="protocore_spending">Protocore Spending</h3>
+<p><b>Notes:</b></p>
+<ul>
+  <li>
+    <p>
+      <i
+        >See <a
+          rel="noopener noreferrer"
+          target="_self"
+          href="equipment"
+          title="Equipment and Misc.">Equipment and Misc.</a
+        > for a more general priority chart.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        You can only purchase <b>20</b> Gold Rarity prints per season, per month.
+        Be sure to double check your existing print counts, and print-income estimates,
+        before spending Prototype Core here.
+      </i>
+    </p>
+  </li>
+</ul>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Gear", colWidth: "15%", limiter: true },
+    { colName: "Season", colWidth: "15%", limiter: true },
+    { colName: "Recommended Quantity", colWidth: "15%", limiter: true },
+    { colName: "Cost (in Protocore)", colWidth: "15%", limiter: true },
+    { colName: "Description", colWidth: "40%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <ItemCell
+        item="Triple 406mm/50 Main Gun Mount"
+        wikiLink="Triple_406mm_(Mle_1938_Prototype)"
+        itemImg="equipment/triple_406_mle.png"
+        rarity={4}
+        caption={false}
+      />
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Triple_406mm_(Mle_1938_Prototype)"
+        title="Triple 406mm/50 Main Gun Mount"
+      >
+        Triple 406mm/50 Main Gun Mount
+      </a>
+    </td>
+    <td><p>PR3</p></td>
+    <td><p>3 Equipment<br />(75 Prints)</p></td>
+    <td>
+      <p>
+        1125 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            src="/test_ecgc_2/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Best 20s reload AP BB gun.</p>
+      <p style="font-size:small">
+        <i>Found under "Prototype Weapon Blueprint - Series 3."</i>
+      </p>
+      <p>
+        <i
+          >Craftable in <a href="https://azurlane.koumakan.jp/wiki/Gear_Lab"
+            >Gear Lab.</a
+          ></i
+        >
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype BF-109G"
+        wikiLink="Messerschmitt_Bf_109G_(Carrier-based_Prototype)"
+        itemImg="equipment/bf109g.png"
+        rarity={4}
+        caption={false}
+      />
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Messerschmitt_Bf_109G_(Carrier-based_Prototype)"
+        title="Prototype BF-109G"
+      >
+        Prototype BF-109G
+      </a>
+    </td>
+    <td><p>PR4</p></td>
+    <td><p>3 Equipment<br />(75 Prints)</p></td>
+    <td>
+      <p>
+        1125 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            src="/test_ecgc_2/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Top fighter against Light or Medium Armor bosses.</p>
+      <p style="font-size:small">
+        <i>Found under "Prototype Weapon Blueprint - Series 4."</i>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Tenrai"
+        wikiLink="Nakajima_J5N_Tenrai_(Dive_Bomber_Prototype)"
+        itemImg="equipment/tenrai.png"
+        rarity={5}
+        caption={false}
+      />
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Nakajima_J5N_Tenrai_(Dive_Bomber_Prototype)"
+        title="Prototype Tenrai"
+      >
+        Prototype Tenrai
+      </a>
+    </td>
+    <td><p>PR4</p></td>
+    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>
+        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            src="/test_ecgc_2/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Best General-Use Dive Bomber.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Twin 457mm Mk A Main Gun Mount"
+        wikiLink="Twin_457mm_(Mark_A_Prototype)"
+        itemImg="equipment/twin_457.png"
+        rarity={5}
+        caption={false}
+      />
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Twin 457mm (Mark A Prototype)"
+        title="Twin 457mm (Mark A Prototype)"
+        >Prototype Twin 457mm Mk A Main Gun Mount</a
+      >
+    </td>
+    <td><p>PR2</p></td>
+    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>
+        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            src="/test_ecgc_2/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Best 18s AP BB Gun, also really good when Mobbing.<br /><i
+          >Craftable in <a href="https://azurlane.koumakan.jp/wiki/Gear_Lab"
+            >Gear Lab.</a
+          ></i
+        >
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Quadruple 152mm Main Gun Mount"
+        wikiLink="Prototype_Quadruple_152mm_Main_Gun_Mount"
+        itemImg="equipment/quad_152.png"
+        rarity={5}
+        caption={false}
+      />
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Prototype Quadruple 152mm Main Gun Mount"
+        title="Prototype Quadruple 152mm Main Gun Mount"
+      >
+        Prototype Quadruple 152mm Main Gun Mount
+      </a>
+    </td>
+    <td><p>PR5</p></td>
+    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>
+        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            src="/test_ecgc_2/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Best General-Use CL Gun.</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="protocore_income">Protocore Income</h3>
+<p><b>Notes:</b></p>
+<ul>
+  <li>
+    <p>
+      <i
+        >See <a
+          rel="noopener noreferrer"
+          target="_self"
+          href="common_resource"
+          title="Common Resource Guide">Common Resource Guide</a
+        > for a more general resource-income chart.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      1 Combat Data Pack <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Prototype_Shop"
+        ><img
+          class="rarity-4 inline-block"
+          src="images/materials/combat_data_pack.png"
+          width="25px"
+          alt="Combat Data Pack"
+        /></a
+      > -&gt; 2 Protocore <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Prototype Shop"
+        ><img
+          class="rarity-4 inline-block"
+          src="images/materials/protocore.png"
+          width="25px"
+          alt="Prototype Core"
+        /></a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      1 PR Print <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+        ><img
+          class="rarity-4 inline-block"
+          src="images/materials/pr6_bp.png"
+          width="25px"
+          alt="PR Blueprint"
+        /></a
+      > -&gt; 5 Protocore <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Core"
+        ><img
+          class="rarity-4 inline-block"
+          src="images/materials/protocore.png"
+          width="25px"
+          alt="Prototype Core"
+        /></a
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      1 DR Print <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+        ><img
+          class="rarity-5 inline-block"
+          src="images/materials/pr6_bp.png"
+          width="25px"
+          alt="PR Blueprint"
+        /></a
+      > -&gt; 20 Protocore <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Core"
+        ><img
+          class="rarity-4 inline-block"
+          src="images/materials/protocore.png"
+          width="25px"
+          alt="Prototype Core"
+        /></a
+      >
+    </p>
+  </li>
+</ul>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Method", colWidth: "25%", limiter: true },
+    { colName: "Income (in Protocore)", colWidth: "20%", limiter: true },
+    { colName: "Total Income", colWidth: "10%", limiter: true },
+    { colName: "Notes", colWidth: "45%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <p>
+        <b
+          ><a href="https://azurlane.koumakan.jp/wiki/Cruise Missions"
+            >Cruise Missions</a
+          ></b
+        >
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>200</b>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Core"
+          ><img
+            class="rarity-4 inline-block"
+            src="images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></a
+        > / 2 Months
+      </p>
+    </td>
+    <td>
+      <p>-</p>
+    </td>
+    <td>
+      <p>
+        Obtained by converting <img
+          class="rarity-4 inline-block"
+          src="images/materials/combat_data_pack.png"
+          width="25px"
+          alt="Combat Data Pack"
+        />.
+        <br />
+        Only repeatable source of Prototype Core.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        <b
+          ><a
+            href="https://azurlane.koumakan.jp/wiki/Beginner_Rewards#Development_(PR)"
+            >Beginner Rewards</a
+          ></b
+        >
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>800</b>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Core"
+          ><img
+            class="rarity-4 inline-block"
+            src="images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></a
+        > / PR Season
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>4800</b>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Core"
+          ><img
+            class="rarity-4 inline-block"
+            src="images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></a
+        >
+      </p>
+    </td>
+    <td>
+      <p>
+        Obtained by converting <img
+          class="rarity-4 inline-block"
+          src="images/materials/combat_data_pack.png"
+          width="25px"
+          alt="Combat Data Pack"
+        />.
+        <br />
+        Once per season (PR1 twice, PR2, PR3, PR4, PR5).
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p><b><a href="#catch-up_min_max">PR Catch-up Minmaxing**</a></b></p>
+    </td>
+    <td>
+      <p>
+        <b>1500</b>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Core"
+          ><img
+            class="rarity-4 inline-block"
+            src="images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></a
+        > / PR Catch-up
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>3000</b>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Core"
+          ><img
+            class="rarity-4 inline-block"
+            src="images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></a
+        >
+      </p>
+    </td>
+    <td>
+      <p>
+        Obtained by converting <img
+          class="rarity-5 inline-block"
+          src="images/materials/pr6_bp.png"
+          width="25px"
+          alt="PR Blueprint"
+        />.
+        <br />
+        Only converted 2 PR Catch-ups worth of prints. See <a
+          href="#catch-up_min_max">this section</a
+        > for more information about PR Catch-up Min-Maxing.
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="optimizing_protocore">Optimizing Protocore</h3>
+<p>
+  Ideally, the total Protocore income is <b>5000</b>
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
+    ><img
+      class="rarity-4 inline-block"
+      src="images/materials/protocore.png"
+      width="25px"
+      alt="Prototype Core"
+    /></a
+  > from the methods listed above.
+</p>
+<ul>
+  <li>
+    <p>
+      High Priority Purchases (<b>4125</b>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
+        ><img
+          class="rarity-4 inline-block"
+          src="images/materials/protocore.png"
+          width="25px"
+          alt="Prototype Core"
+        /></a
+      >): <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Triple_406mm_(Mle_1938_Prototype)"
+        title="Triple 406mm/50 Main Gun Mount">Triple 406mm/50 Main Gun Mount</a
+      > (x3),
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Nakajima_J5N_Tenrai_(Dive_Bomber_Prototype)"
+        title="Prototype Tenrai">Prototype Tenrai</a
+      >.
+    </p>
+  </li>
+  <li>
+    <p>
+      With the rest of your currency, you can consider buying some of the other
+      gear listed <a
+        rel="noopener noreferrer"
+        target="_self"
+        href="#protocore_spending">above</a
+      >.
+    </p>
+  </li>
+</ul>
+<br />
