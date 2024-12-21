@@ -634,6 +634,10 @@
             "content": "Protocore Income"
           },
           {
+            "id": "catch-up_min_max",
+            "content": "PR Catch-up Min-Maxing"
+          },
+          {
             "id": "optimizing_protocore",
             "content": "Optimizing Protocore"
           }

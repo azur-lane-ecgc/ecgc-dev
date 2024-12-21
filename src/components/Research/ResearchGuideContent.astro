@@ -128,7 +128,7 @@ import WikiLink from "@components/_common/WikiLink.astro"
         <p>
           <i
             >If you need <a
-              href="#tech_points"
+              href="/test_ecgc_2/fleet_technology"
               target="_self"
               rel="noopener noreferrer">Tech Points</a
             > for <WikiLink
@@ -332,8 +332,8 @@ import WikiLink from "@components/_common/WikiLink.astro"
             >For PR Catch-up Min-Maxing, read <a
               rel="noopener noreferrer"
               target="_self"
-              href="#protocore"
-              title="Prototype Core">Protocore</a
+              href="#catch-up_min_max"
+              title="Catch-up Min-Max">this section</a
             > for more information.</i
           >
         </p>
@@ -1365,7 +1365,16 @@ import WikiLink from "@components/_common/WikiLink.astro"
 
   <tr>
     <td>
-      <p><b><a href="#catch-up_min_max">PR Catch-up Minmaxing**</a></b></p>
+      <p>
+        <b
+          ><a
+            rel="noopener noreferrer"
+            target="_self"
+            href="#catch-up_min_max"
+            title="Catch-up Min-Max">PR Catch-up Minmaxing**</a
+          ></b
+        >
+      </p>
     </td>
     <td>
       <p>
@@ -1406,12 +1415,184 @@ import WikiLink from "@components/_common/WikiLink.astro"
         />.
         <br />
         Only converted 2 PR Catch-ups worth of prints. See <a
-          href="#catch-up_min_max">this section</a
+          rel="noopener noreferrer"
+          target="_self"
+          href="#catch-up_min_max"
+          title="Catch-up Min-Max">this section</a
         > for more information about PR Catch-up Min-Maxing.
       </p>
     </td>
   </tr>
 </ItemTable>
+<br />
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const catchupToggleFunction = () => {
+      const content = document.getElementById("catchupToggleContent")
+      const icon = document.getElementById("catchupToggle")
+      if (content && icon) {
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden")
+          content.setAttribute("aria-hidden", "false")
+          icon.classList.remove("fa-angle-down")
+          icon.classList.add("fa-angle-up")
+        } else {
+          content.classList.add("hidden")
+          content.setAttribute("aria-hidden", "true")
+          icon.classList.remove("fa-angle-up")
+          icon.classList.add("fa-angle-down")
+        }
+      }
+    }
+
+    document
+      ?.getElementById("catchupButton")
+      ?.addEventListener("click", catchupToggleFunction)
+  })
+</script>
+
+<h3 id="catch-up_min_max" class="flex">
+  PR Catch-up Min-Maxing
+
+  <span class="mx-1"></span>
+
+  <button
+    id="catchupButton"
+    class="btn btn-outline-warning"
+    onclick="catchupToggleFunction()"
+    role="button"
+  >
+    <i id="catchupToggle" class="fa fa-angle-down"></i>
+  </button>
+</h3>
+<ul>
+  <li>
+    <p>
+      <i><b>This is NOT necessary</b>. You will be fine if you don't do this.</i
+      >
+    </p>
+  </li>
+</ul>
+
+<div id="catchupToggleContent" class="hidden" aria-hidden="true">
+  <p>
+    This method involves manipulating Research to allow you to convert all the
+    Catch-up prints from a season into Prototype Core. <i
+      >This is only recommended for PR1 and PR2. <b
+        >Do NOT do this with any of the DR Catch-ups!</b
+      ></i
+    >
+  </p>
+  <ol>
+    <li>
+      <p>Set your Catch-up to PR4, PR5, or any DR ship.</p>
+      <ul>
+        <li>
+          <p>
+            See <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="#shipyard_priority">Shipyard Priority</a
+            > for more information.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Research a PR ship that is of the same season that you want to convert
+        Catch-up prints for. Any PR ship works.
+      </p>
+    </li>
+    <li>
+      <p>
+        While your valuable (PR4, PR5, DR) Catch-up prints are slowly trickling
+        in, obtain and develop the ship from Step 2 using coins until the ship
+        is development level 30. This entire process should take about 50 days
+        or less, assuming you are spending 3000 <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops"
+          ><img
+            class="rarity-1"
+            src="images/materials/coin.png"
+            width="25px"
+            alt="Coin"
+          /></a
+        > Coins daily.
+      </p>
+      <ul>
+        <li>
+          <p>
+            After the ship is obtained, feel free to go back and develop a ship
+            from a different, less-valuable (PR1, PR2) Catch-up season, or a
+            different ship from any season. Always have a ship being developed
+            at all times!
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        After the ship from Step 2 is Development Level 30, set your Catch-up to
+        that ship.
+      </p>
+      <ul>
+        <li>
+          <p>
+            If you are not finished with the valuable (PR4, PR5, DR) Catch-up
+            prints, it is fine to remain on the valuable Catch-up and come back
+            to this step later.
+          </p>
+        </li>
+        <li>
+          <p>
+            You do <b>NOT</b> need to focus on Fate Simulation for this ship.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Convert all prints of that ship into <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
+          ><img
+            class="rarity-4"
+            src="images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></a
+        > Prototype Core in the <WikiLink page="Shops#Blueprint Analysis">Prototype Shop</WikiLink>. This should take about 2 months to convert all the prints.
+      </p>
+      <ul>
+        <li>
+          <p>
+            While these prints are trickling in, feel free to continue
+            developing more PR/DR ships on the side.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Repeat these steps until all desired Catch-up prints are converted into <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
+          ><img
+            class="rarity-4"
+            src="images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></a
+        > Prototype Core.
+      </p>
+    </li>
+  </ol>
+</div>
 <br />
 
 <h3 id="optimizing_protocore">Optimizing Protocore</h3>
