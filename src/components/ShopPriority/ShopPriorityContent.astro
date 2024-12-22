@@ -1,0 +1,461 @@
+---
+import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
+---
+
+<h2 id="introduction">Introduction</h2>
+<hr class="custom-hr" />
+<p>
+  Goes over all the permanent shops in Azur Lane, and what to obtain from them!
+</p>
+<br />
+
+<h2 id="notes">Notes:</h2>
+<hr class="custom-hr" />
+<ul>
+  <li>
+    <p>
+      For the full shop list, see
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
+        title="Core Data">this wiki page</a
+      >.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b
+        >To view Resource Income, see the
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="common_resource"
+          title="Common Resource Guide">Common Resource Guide</a
+        >.</b
+      >
+    </p>
+  </li>
+  <li>
+    <p>All times listed are in Azur Lane EN Server time (UTC-7).</p>
+  </li>
+  <li>
+    <p>
+      Never refresh a shop using
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/gem.png"
+        width="25px"
+        alt="Gems"
+      />. It is not worth it.
+    </p>
+  </li>
+  <li>
+    <p>To view the wiki page for a specific item, click on its image.</p>
+  </li>
+  <li>
+    <p>
+      <b
+        >If you already have enough of an item, feel free to skip it in
+        subsequent months</b
+      >. There is no point in buying extra items you will never use.
+    </p>
+  </li>
+  <li>
+    <p><b>Key:</b></p>
+    <ul>
+      <li>
+        <p>
+          <b style="color: lightcoral">Red Outline:</b> - Highly recommended purchase,
+          very general use.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b style="color: palegreen">Green Outline:</b> - Really good in specific
+          scenarios; niche; only good on a few ships.
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      Items are ordered from left to right, top to bottom. Depending on your
+      situation, items marked with a
+      <b style="color: palegreen">Green</b> outline could be
+      <u>higher or lower</u> priority than listed.
+    </p>
+  </li>
+  <li>
+    <h5>The tables are scrollable horizontally!!</h5>
+  </li>
+  <li>
+    <h5>You can click images to open in a new tab!!</h5>
+  </li>
+</ul>
+<br />
+
+<h2 id="supply">Supply Shops</h2>
+<hr class="custom-hr" />
+
+<h3 id="coin">
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Shops#General_Shop"
+    title="Munitions Shop">Shop</a
+  >
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/coin.png"
+        width="25px"
+        alt="Coin"
+      />
+    </p>
+  </li>
+  <li>
+    <p>
+      Reset: Daily at <b>00:00</b>, <b>12:00</b>, <b>18:00</b> (UTC-7).
+    </p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p>
+      <i>
+        <b
+          >Never buy items in this shop using
+          <img
+            loading="lazy"
+            class="inline-block"
+            src="images/materials/gem.png"
+            width="25px"
+            alt="Gems"
+          />. It is not worth it, regardless of how low the price is.</b
+        >
+      </i>
+    </p>
+  </li>
+</ul>
+
+<ItemContainer>
+  <ItemCell
+    item="Wisdom Cube"
+    wikiLink="Construction"
+    itemImg="materials/wisdom_cube.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="Tech Boxes"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/t4_box.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Eagle Union > Rest<br />New Players Only."
+  />
+
+  <ItemCell
+    item="Iris Tech Box"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/iris_tech_box.png"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="For <a href='https://azurlane.koumakan.jp/wiki/Gear_Lab' target='_blank' rel='noopener noreferrer' title='Gear Lab'>Gear Lab</a> prerequisites."
+  />
+
+  <ItemCell
+    item="T3 Skill Books"
+    wikiLink="Living_Area#Tactical_Class"
+    itemImg="materials/unknown_t3_book.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+
+  <ItemCell
+    item="T3 Plates"
+    wikiLink="Equipment#Upgrade_(Enhance)"
+    itemImg="materials/unknown_t3_plate.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="General > Main Gun / Aircraft."
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="Full Course"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/full_course.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+
+  <ItemCell
+    item="Royal Gourmet"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/royal_gourmet.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+
+  <ItemCell
+    item="Naval Curry"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/naval_curry.png"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+</ItemContainer>
+<br />
+
+<h3 id="merit">
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Shops#Merit_Shop"
+    title="Merit Shop">Merit Shop</a
+  >
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/merit.png"
+        width="25px"
+        alt="Merit"
+      />
+    </p>
+  </li>
+  <li>
+    <p>Reset: Daily at <b>00:00</b> (UTC-7).</p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p>
+      <i
+        >Some ships in this shop could be necessary for
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Fleet_Technology"
+          title="Fleet Technology">Fleet Technology</a
+        >
+        purposes, see the
+        <a href="research#tech_points" target="_self" rel="noopener noreferrer"
+          >Research Guide</a
+        >
+        for more details.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Do NOT buy duplicate ship copies here; it is more expensive than buying
+        a Prototype Bulin MKII (Gold Bulin).</i
+      >
+    </p>
+  </li>
+</ul>
+
+<ItemContainer>
+  <ItemCell
+    item="Prototype Bulin MKII"
+    wikiLink="Dockyard#Limit_Break"
+    itemImg="materials/gold_bulin.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+
+  <ItemCell
+    item="Wisdom Cube"
+    wikiLink="Construction"
+    itemImg="materials/wisdom_cube.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ShipCell
+    ship="Eldridge"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if you have her Retrofit item."
+  />
+
+  <ItemCell
+    item="Tech Boxes"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/t4_box.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Eagle Union > Rest<br />New Players Only."
+  />
+
+  <ItemCell
+    item="Iris Orthodoxy Gear Development Pack"
+    altItemName="Iris Tech Box"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/iris_tech_box.png"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="For <a href='https://azurlane.koumakan.jp/wiki/Gear_Lab' target='_blank' rel='noopener noreferrer' title='Gear Lab'>Gear Lab</a> prerequisites."
+  />
+
+  <ItemCell
+    item="Universal Bulin"
+    wikiLink="Dockyard#Limit_Break"
+    itemImg="materials/purple_bulin.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if needed."
+  />
+</ItemContainer>
+<br />
+
+<h3 id="guild">
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+    href="https://azurlane.koumakan.jp/wiki/Shops#Guild_Shop"
+    title="Guild Shop">Guild Shop</a
+  >
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/guild_coin.png"
+        width="25px"
+        alt="Guild Coin"
+      />
+    </p>
+  </li>
+  <li>
+    <p>
+      Reset: Monday and Friday at <b>00:00</b> (UTC-7). In addition, you get <b
+        >1</b
+      > manual refresh for 50
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/guild_coin.png"
+        width="25px"
+        alt="Guild Coin"
+      />
+      between resets.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p>
+      <i
+        >Some ships in this shop could be necessary for
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Fleet_Technology"
+          title="Fleet Technology">Fleet Technology</a
+        >
+        purposes, see the
+        <a href="research#tech_points" target="_self" rel="noopener noreferrer"
+          >Research Guide</a
+        >
+        for more details.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <b
+          >Buying duplicate ship copies here for
+          <a
+            href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break"
+            rel="noopener noreferrer"
+            target="_blank">Limit Breaks</a
+          >
+          is fine!</b
+        >
+      </i>
+    </p>
+  </li>
+</ul>
