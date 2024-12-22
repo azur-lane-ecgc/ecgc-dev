@@ -1,5 +1,6 @@
 ---
 import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
+import WikiLink from "@components/_common/WikiLink.astro"
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -15,11 +16,8 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
   <li>
     <p>
       For the full shop list, see
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
-        title="Core Data">this wiki page</a
+      <WikiLink page="Shops#Core Exchange" title="Core Data"
+        >this wiki page</WikiLink
       >.
     </p>
   </li>
@@ -30,7 +28,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="common_resource"
+          href="/test_ecgc_2/common_resource"
           title="Common Resource Guide">Common Resource Guide</a
         >.</b
       >
@@ -45,7 +43,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/gem.png"
+        src="/test_ecgc_2/images/materials/gem.png"
         width="25px"
         alt="Gems"
       />. It is not worth it.
@@ -100,12 +98,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 <hr class="custom-hr" />
 
 <h3 id="coin">
-  <a
-    rel="noopener noreferrer"
-    target="_blank"
-    href="https://azurlane.koumakan.jp/wiki/Shops#General_Shop"
-    title="Munitions Shop">Shop</a
-  >
+  <WikiLink page="Shops#General Shop" title="Munitions Shop">Shop</WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -118,7 +111,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/coin.png"
+        src="/test_ecgc_2/images/materials/coin.png"
         width="25px"
         alt="Coin"
       />
@@ -142,7 +135,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
           <img
             loading="lazy"
             class="inline-block"
-            src="images/materials/gem.png"
+            src="/test_ecgc_2/images/materials/gem.png"
             width="25px"
             alt="Gems"
           />. It is not worth it, regardless of how low the price is.</b
@@ -246,12 +239,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 <br />
 
 <h3 id="merit">
-  <a
-    rel="noopener noreferrer"
-    target="_blank"
-    href="https://azurlane.koumakan.jp/wiki/Shops#Merit_Shop"
-    title="Merit Shop">Merit Shop</a
-  >
+  <WikiLink page="Shops#Merit Shop" title="Merit Shop">Merit Shop</WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -264,7 +252,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/merit.png"
+        src="/test_ecgc_2/images/materials/merit.png"
         width="25px"
         alt="Merit"
       />
@@ -282,14 +270,11 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     <p>
       <i
         >Some ships in this shop could be necessary for
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Fleet_Technology"
-          title="Fleet Technology">Fleet Technology</a
+        <WikiLink page="Fleet Technology" title="Fleet Technology"
+          >Fleet Technology</WikiLink
         >
         purposes, see the
-        <a href="research#tech_points" target="_self" rel="noopener noreferrer"
+        <a href="/test_ecgc_2/research#tech_points" target="_self" rel="noopener noreferrer"
           >Research Guide</a
         >
         for more details.</i
@@ -381,12 +366,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 <br />
 
 <h3 id="guild">
-  <a
-    rel="noopener noreferrer"
-    target="_blank"
-    href="https://azurlane.koumakan.jp/wiki/Shops#Guild_Shop"
-    title="Guild Shop">Guild Shop</a
-  >
+  <WikiLink page="Shops#Guild Shop" title="Guild Shop">Guild Shop</WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -399,7 +379,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/guild_coin.png"
+        src="/test_ecgc_2/images/materials/guild_coin.png"
         width="25px"
         alt="Guild Coin"
       />
@@ -413,7 +393,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/guild_coin.png"
+        src="/test_ecgc_2/images/materials/guild_coin.png"
         width="25px"
         alt="Guild Coin"
       />
@@ -429,14 +409,11 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     <p>
       <i
         >Some ships in this shop could be necessary for
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Fleet_Technology"
-          title="Fleet Technology">Fleet Technology</a
+        <WikiLink page="Fleet Technology" title="Fleet Technology"
+          >Fleet Technology</WikiLink
         >
         purposes, see the
-        <a href="research#tech_points" target="_self" rel="noopener noreferrer"
+        <a href="/test_ecgc_2/research#tech_points" target="_self" rel="noopener noreferrer"
           >Research Guide</a
         >
         for more details.</i
@@ -448,11 +425,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <i>
         <b
           >Buying duplicate ship copies here for
-          <a
-            href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break"
-            rel="noopener noreferrer"
-            target="_blank">Limit Breaks</a
-          >
+          <WikiLink page="Dockyard#Limit Break">Limit Breaks</WikiLink>
           is fine!</b
         >
       </i>
@@ -623,11 +596,8 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 <hr class="custom-hr" />
 
 <h3 id="core_data">
-  <a
-    rel="noopener noreferrer"
-    target="_blank"
-    href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange"
-    title="Core Data Shop">Core Data Shop</a
+  <WikiLink page="Shops#Core Exchange" title="Core Data Shop"
+    >Core Data Shop</WikiLink
   >
 </h3>
 
@@ -641,7 +611,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/core_data.png"
+        src="/test_ecgc_2/images/materials/core_data.png"
         width="25px"
         alt="Core Data"
       />
@@ -657,20 +627,15 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="images/equip_misc/Core_Data_Priority.jpeg"
+  href="/test_ecgc_2/images/equip_misc/Core_Data_Priority.jpeg"
   title="Core Data Shop"
 >
-  <img class="equip_misc_img" src="images/equip_misc/Core_Data_Priority.jpeg" />
+  <img class="equip_misc_img" src="/test_ecgc_2/images/equip_misc/Core_Data_Priority.jpeg" />
 </a>
 <br />
 
 <h3 id="medal">
-  <a
-    rel="noopener noreferrer"
-    target="_blank"
-    href="https://azurlane.koumakan.jp/wiki/Shops#Medal_Shop"
-    title="Medal Shop">Medal Shop</a
-  >
+  <WikiLink page="Shops#Medal Shop" title="Medal Shop">Medal Shop</WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -683,7 +648,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/medal.png"
+        src="/test_ecgc_2/images/materials/medal.png"
         width="25px"
         alt="Medal of Honor"
       />
@@ -701,11 +666,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     <p class="fs-5">
       <i>
         <b
-          ><a
-            href="https://azurlane.koumakan.jp/wiki/Requisition"
-            rel="noopener noreferrer"
-            target="_blank">Requisition</a
-          >
+          ><WikiLink page="Requisition">Requisition</WikiLink>
           is NOT worth it!</b
         >
       </i>
@@ -715,14 +676,11 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     <p>
       <i
         >Some ships in this shop could be necessary for
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Fleet_Technology"
-          title="Fleet Technology">Fleet Technology</a
+        <WikiLink page="Fleet Technology" title="Fleet Technology"
+          >Fleet Technology</WikiLink
         >
         purposes, see the
-        <a href="research#tech_points" target="_self" rel="noopener noreferrer"
+        <a href="/test_ecgc_2/research#tech_points" target="_self" rel="noopener noreferrer"
           >Research Guide</a
         >
         for more details.</i
@@ -733,7 +691,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     <p>
       <i
         >For information regarding ship viability, see the
-        <a href="fleetbuilding" rel="noopener noreferrer" target="_self"
+        <a href="/test_ecgc_2/fleetbuilding" rel="noopener noreferrer" target="_self"
           >Fleetbuilding Guide</a
         >
         or the
@@ -750,11 +708,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <i>
         <b
           >Buying duplicate ship copies here for
-          <a
-            href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break"
-            rel="noopener noreferrer"
-            target="_blank">Limit Breaks</a
-          >
+          <WikiLink page="Dockyard#Limit Break">Limit Breaks</WikiLink>
           is fine!</b
         >
       </i>
@@ -921,11 +875,8 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 <br />
 
 <h3 id="protocore">
-  <a
-    rel="noopener noreferrer"
-    target="_blank"
-    href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Shop"
-    title="Prototype Shop">Prototype Shop</a
+  <WikiLink page="Shops#Prototype Shop" title="Prototype Shop"
+    >Prototype Shop</WikiLink
   >
 </h3>
 
@@ -939,7 +890,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/protocore.png"
+        src="/test_ecgc_2/images/materials/protocore.png"
         width="25px"
         alt="Prototype Core"
       />
@@ -954,28 +905,25 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 <h4>Priority:</h4>
 <p>
   <i>
-    See also: <a href="research#protocore_spending">Protocore Spending</a>
+    See also: <a href="/test_ecgc_2/research#protocore_spending">Protocore Spending</a>
   </i>
 </p>
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="images/equip_misc/Prototype_Core_Priority.jpeg"
+  href="/test_ecgc_2/images/equip_misc/Prototype_Core_Priority.jpeg"
   title="Prototype Core Priority"
 >
   <img
     class="equip_misc_img"
-    src="images/equip_misc/Prototype_Core_Priority.jpeg"
+    src="/test_ecgc_2/images/equip_misc/Prototype_Core_Priority.jpeg"
   />
 </a>
 <br />
 
 <h3 id="voucher">
-  <a
-    rel="noopener noreferrer"
-    target="_blank"
-    href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Exchange_Shop"
-    title="Exchange Shop">Operation Siren Exchange Shop</a
+  <WikiLink page="Operation Siren#Exchange Shop" title="Exchange Shop"
+    >Operation Siren Exchange Shop</WikiLink
   >
 </h3>
 
@@ -989,7 +937,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/opsi_voucher.png"
+        src="/test_ecgc_2/images/materials/opsi_voucher.png"
         width="25px"
         alt="OpSi Voucher"
       />
@@ -1016,7 +964,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
         <img
           loading="lazy"
           class="inline-block"
-          src="images/materials/opsi_voucher.png"
+          src="/test_ecgc_2/images/materials/opsi_voucher.png"
           width="25px"
           alt="OpSi Voucher"
         />
@@ -1109,7 +1057,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     hasBorder={true}
     hover={true}
     className="niche-priority"
-    descriptionNote={`5000 <img loading="lazy" class="inline-block" src="images/materials/oil.png" width="25px" alt="Oil" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Explorable" title="Explorable Zone">Explorable Zones</a>.`}
+    descriptionNote={`5000 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/oil.png" width="25px" alt="Oil" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <WikiLink page="Operation Siren#Explorable" title="Explorable Zone">Explorable Zones</WikiLink>.`}
   />
   <ItemCell
     item="Hidden Zone Data Logger"
@@ -1120,7 +1068,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     hasBorder={true}
     hover={true}
     className="niche-priority"
-    descriptionNote={`1000 <img loading="lazy" class="inline-block" src="images/materials/opsi_voucher.png" width="25px" alt="OpSi Voucher" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Hidden" title="Hidden Zone">Hidden Zones</a>.`}
+    descriptionNote={`1000 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/opsi_voucher.png" width="25px" alt="OpSi Voucher" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <WikiLink page="Operation Siren#Hidden" title="Hidden Zone">Hidden Zones</WikiLink>.`}
   />
 </ItemContainer>
 <br />
@@ -1129,11 +1077,8 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 <hr class="custom-hr" />
 
 <h3 id="major_event">
-  <a
-    rel="noopener noreferrer"
-    target="_blank"
-    href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop"
-    title="Major Event Shop">Major Event Shop</a
+  <WikiLink page="Shops#Event Shop" title="Major Event Shop"
+    >Major Event Shop</WikiLink
   >
 </h3>
 
@@ -1149,7 +1094,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
       <img
         loading="lazy"
         class="inline-block"
-        src="images/materials/InvolutedSealPt.png"
+        src="/test_ecgc_2/images/materials/InvolutedSealPt.png"
         width="25px"
         alt="Event Currency"
         title="Event Currency"
@@ -1177,19 +1122,15 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     <p>
       <i
         >Most Events take <b>~100,000</b>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop"
-          title="Event Currency"
-          ><img
+        <WikiLink page="Shops#Event_Shop" title="Event Currency">
+          <img
             loading="lazy"
             class="inline-block"
-            src="images/materials/InvolutedSealPt.png"
+            src="/test_ecgc_2/images/materials/InvolutedSealPt.png"
             width="25px"
             alt="Event Currency"
-          /></a
-        >
+          />
+        </WikiLink>
         to clear out the entire shop (assuming 1 copy of the Event Ship).</i
       >
     </p>
@@ -1217,7 +1158,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     hasBorder={true}
     hover={true}
     className="high-priority"
-    descriptionNote={`<p> 8000 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> (1 Copy)</p>`}
+    descriptionNote={`<p> 8000 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> (1 Copy)</p>`}
   />
 
   <ItemCell
@@ -1229,7 +1170,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     hasBorder={true}
     hover={true}
     className="high-priority"
-    descriptionNote={`<p> 10000 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p> 10000 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1241,7 +1182,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     hasBorder={true}
     hover={true}
     className="niche-priority"
-    descriptionNote={`<p> 4800 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> USS > Rest<br />New Players Only.</p>`}
+    descriptionNote={`<p> 4800 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> USS > Rest<br />New Players Only.</p>`}
   />
 
   <ItemCell
@@ -1253,7 +1194,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     hasBorder={true}
     hover={true}
     className="niche-priority"
-    descriptionNote={`<p> 1500 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> Only if needed.</p>`}
+    descriptionNote={`<p> 1500 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> Only if needed.</p>`}
   />
 </ItemContainer>
 
@@ -1266,7 +1207,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>3000 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>3000 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1277,7 +1218,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>5000 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>5000 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1288,7 +1229,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>10000 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>10000 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1299,7 +1240,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>15000 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>15000 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
   />
 </ItemContainer>
 
@@ -1312,7 +1253,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /><br />General > Main Gun / Aircraft.</p>`}
+    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /><br />General > Main Gun / Aircraft.</p>`}
   />
 
   <ItemCell
@@ -1323,7 +1264,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>2500 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>2500 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1334,7 +1275,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>2250 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>2250 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1345,7 +1286,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /><br />Only if needed.</p>`}
+    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="/test_ecgc_2/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /><br />Only if needed.</p>`}
   />
 </ItemContainer>
 <br />
