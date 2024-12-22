@@ -2,6 +2,7 @@ import "./styles.css"
 
 interface ItemCellProps {
   item: string
+  altItemName?: string
   wikiLink: string
   itemImg: string
 
@@ -21,6 +22,7 @@ interface ItemCellProps {
 
 export const ItemCell: React.FC<ItemCellProps> = ({
   item = "",
+  altItemName = "",
   wikiLink,
   itemImg,
   rarity = 1,
@@ -55,7 +57,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
               alt={`${item}`}
             />
           </div>
-          {caption && item}
+          {caption && (altItemName || item)}
         </a>
         {!!iconNote && (
           <div className="icon-note">
