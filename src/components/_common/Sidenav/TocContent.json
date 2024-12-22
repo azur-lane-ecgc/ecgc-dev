@@ -644,5 +644,64 @@
         ]
       }
     ]
+  },
+  {
+    "fileName": "Shop Priority Guide",
+    "toc": [
+      {
+        "id": "supply",
+        "content": "Supply Shops",
+        "subheadings": [
+          {
+            "id": "coin",
+            "content": "Shop"
+          },
+          {
+            "id": "merit",
+            "content": "Merit Shop"
+          },
+          {
+            "id": "guild",
+            "content": "Guild Shop"
+          },
+          {
+            "id": "other",
+            "content": "META & Prize Shops"
+          }
+        ]
+      },
+      {
+        "id": "monthly",
+        "content": "Monthly Shops",
+        "subheadings": [
+          {
+            "id": "core_data",
+            "content": "Core Data Shop"
+          },
+          {
+            "id": "medal",
+            "content": "Medal Shop"
+          },
+          {
+            "id": "protocore",
+            "content": "Prototype Shop"
+          },
+          {
+            "id": "voucher",
+            "content": "Operation Siren Exchange Shop"
+          }
+        ]
+      },
+      {
+        "id": "event",
+        "content": "Event Shops",
+        "subheadings": [
+          {
+            "id": "major_event",
+            "content": "Major Event Shop"
+          }
+        ]
+      }
+    ]
   }
 ]

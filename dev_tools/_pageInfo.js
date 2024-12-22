@@ -27,4 +27,8 @@ export const pageInfo = [
     name: "Research Guide",
     path: "src/components/Research/ResearchGuideContent.astro",
   },
+  {
+    name: "Shop Priority Guide",
+    path: "src/components/ShopPriority/ShopPriorityContent.astro",
+  },
 ]
