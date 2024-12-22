@@ -14,19 +14,25 @@ export interface ShipCellProps {
   hasBorder?: boolean
   hover?: boolean
   caption?: boolean
+
+  className?: string
 }
 
 export const ShipCell: React.FC<ShipCellProps> = ({
   ship = "",
   isKai = false,
   rarity = 1,
+
   iconNote = "",
   descriptionNote = "",
   largeDescNote = false,
+
   inGroup = false,
   hasBorder = false,
   hover = false,
   caption = true,
+
+  className = "",
 }) => {
   return (
     <ItemCell
@@ -41,6 +47,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
       hasBorder={hasBorder}
       hover={hover}
       caption={caption}
+      className={className}
     />
   )
 }
