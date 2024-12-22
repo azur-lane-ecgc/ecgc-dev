@@ -13,7 +13,7 @@ export const tagContainerStyle =
   "absolute top-0 left-1/2 sm:left-0 transform -translate-x-1/2 sm:translate-x-0"
 
 export const shipLinkStyle =
-  "text-white bg-transparent no-underline visited:text-white visited:bg-transparent hover:text-[hsla(0,0%,100%,0.75)] hover:bg-transparent hover:underline active:text-red-500 active:bg-transparent active:underline"
+  "!text-white bg-transparent no-underline visited:text-white visited:bg-transparent hover:!text-[hsla(0,0%,100%,0.75)] hover:!bg-transparent !hover:underline active:text-red-500 active:bg-transparent active:underline"
 
 export const shipIconContainerStyle =
   "flex flex-col sm:flex-row justify-center items-center gap-4 mt-5"
