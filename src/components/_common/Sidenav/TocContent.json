@@ -650,7 +650,7 @@
     "toc": [
       {
         "id": "supply",
-        "content": "Supply Shops",
+        "content": "Supply",
         "subheadings": [
           {
             "id": "coin",
@@ -672,7 +672,7 @@
       },
       {
         "id": "monthly",
-        "content": "Monthly Shops",
+        "content": "Monthly",
         "subheadings": [
           {
             "id": "core_data",
@@ -694,7 +694,7 @@
       },
       {
         "id": "event",
-        "content": "Event Shops",
+        "content": "Event",
         "subheadings": [
           {
             "id": "major_event",
