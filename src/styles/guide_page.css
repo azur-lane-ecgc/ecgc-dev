@@ -209,7 +209,7 @@ a.in_hover:active {
   border-color: #cdcdcd !important;
 }
 
-/* skill names */
+/* Ship Skills */
 .red_skill {
   background-color: #fba5bb;
   color: black;
@@ -232,7 +232,6 @@ a.in_hover:active {
 }
 
 /* Images */
-
 img {
   max-width: 100%;
   border-radius: 0.2857rem;
@@ -241,247 +240,11 @@ img {
 }
 
 /* iframe */
-
-iframe.custom-iframe {
+iframe {
   width: 100%;
   height: 1000px !important;
   overflow-x: scroll;
   border: none;
   zoom: 0.75;
   margin-bottom: 2em;
-}
-
-/* Shop Priority */
-
-.shop-column-heading-container {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.priority-heading-filler {
-  width: 25px;
-  border: 1px solid grey;
-  height: 25px;
-  margin: none;
-}
-
-.shop-column-heading-1 {
-  border: 1px solid grey;
-  text-align: center;
-  width: 301.5px;
-  height: 25px;
-  margin: none;
-}
-
-.shop-column-heading-2 {
-  border: 1px solid grey;
-  text-align: center;
-  width: 603px;
-  height: 25px;
-  margin: none;
-}
-
-.shop-column-heading-3 {
-  border: 1px solid grey;
-  text-align: center;
-  width: 904px;
-  height: 25px;
-  margin: none;
-}
-
-.overarcing-container {
-  width: 100%;
-  margin: 2px;
-}
-
-.shop {
-  display: flex;
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  align-self: center;
-}
-
-.shop-priority-message {
-  /* border: 1px solid grey; */
-  border-right: 0;
-  writing-mode: vertical-lr;
-  text-align: center;
-  width: 25px;
-  margin-right: 5px;
-}
-
-.larger-font > p {
-  font-size: 25px !important;
-}
-
-.large-font > p {
-  font-size: 20px !important;
-}
-
-.shop-priority-message > p {
-  margin: 0;
-}
-
-.shop-container {
-  display: flex;
-  justify-content: center;
-
-  @media screen and (max-width: 568px) {
-    justify-content: flex-start;
-  }
-
-  flex-wrap: wrap;
-  flex-direction: row;
-  overflow: auto;
-  /* border: 1px solid grey; */
-  width: 100%;
-}
-
-.shop-item-cell {
-  /* external cell borders */
-  border: 1px solid grey;
-  width: 300px;
-  padding: 0px;
-  /* overflow: auto; */
-}
-
-/* .shop-item-cell-filler {
-  external cell borders
-  border: 1px solid grey;
-  width: 300px;
-  height: 174px;
-  padding: 0px;
-} */
-
-.shop-item-cell > * b {
-  color: hsla(0, 0%, 100%, 0.9);
-}
-
-.shop-item-heading {
-  margin: 0 !important;
-  /* border between heading and rest of content */
-  border-bottom: 1px solid grey;
-  overflow: hidden;
-  height: 22px;
-}
-
-.shop-item-heading > p {
-  margin: 1px !important;
-  text-align: center;
-  font-size: 13px;
-}
-
-.shop-item-body {
-  display: flex;
-  align-items: flex-start;
-  width: 300px;
-  overflow: hidden;
-}
-
-.shop-item-images {
-  width: 75px;
-  height: 150px;
-  /* border between images & desc */
-  border-right: 1px solid grey;
-}
-
-.shop-item-description {
-  width: 225px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 2px;
-  height: 150px;
-  overflow: hidden;
-}
-
-.shop-item-description > p {
-  margin: 0 !important;
-  font-size: 11px;
-}
-
-.shop-item-description > .desc-buff {
-  margin-bottom: 5px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.shop-item-icon {
-  overflow: hidden;
-  width: 75px;
-  padding: 2px;
-  height: 75px;
-  /* border between icon and faction */
-  border-bottom: 1px solid grey;
-}
-
-.shop-item-icon-faction {
-  overflow: hidden;
-  max-width: 75px;
-  padding: 2px;
-  max-height: 75px;
-  width: auto;
-  height: auto;
-  margin: auto !important;
-  text-align: center;
-}
-
-.shop-item-icon-faction > img {
-  width: 60px;
-  max-height: 75px;
-}
-
-.shop-item-icon-faction-de {
-  overflow: hidden;
-  width: 75px;
-  padding: 2px;
-  margin-top: 10px;
-  height: 75px;
-  margin: auto !important;
-  text-align: center;
-}
-
-.high-priority {
-  border: 2px solid red !important;
-}
-
-.shop-item-cell.high-priority {
-  /* external cell borders */
-  border: 2px solid red;
-
-  .shop-item-icon {
-    border-bottom: 2px solid red;
-  }
-
-  .shop-item-images {
-    border-right: 2px solid red;
-  }
-
-  .shop-item-heading {
-    border-bottom: 2px solid red;
-  }
-}
-
-.niche-priority {
-  border: 2px solid palegreen !important;
-}
-
-.shop-item-cell.niche-priority {
-  /* external cell borders */
-  border: 2px solid palegreen;
-
-  .shop-item-icon {
-    border-bottom: 2px solid palegreen;
-  }
-
-  .shop-item-images {
-    border-right: 2px solid palegreen;
-  }
-
-  .shop-item-heading {
-    border-bottom: 2px solid palegreen;
-  }
 }

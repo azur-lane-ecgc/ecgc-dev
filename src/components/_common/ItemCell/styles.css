@@ -58,8 +58,16 @@
   background-color: #3b444bb9;
 }
 
-/* fake link for styling */
+/* cell */
+.high-priority {
+  border: 2px solid red !important;
+}
 
+.niche-priority {
+  border: 2px solid palegreen !important;
+}
+
+/* fake link for styling */
 .fake-modal-link.none {
   color: auto;
 }
