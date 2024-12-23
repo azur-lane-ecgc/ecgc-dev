@@ -5,6 +5,9 @@ import WikiLink from "@components/_common/WikiLink.astro"
 import { ItemContainer, ItemCell, ShipCell } from "@components/_common/ItemCell"
 import { ItemTable } from "@components/_common/ItemTable"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
+
+// images
+import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 ---
 
 <h2 id="avoid_yt_guides">Avoid YouTube Guides</h2>
@@ -235,7 +238,7 @@ import { ImageCarousel } from "@components/_common/ImageCarousel"
   client:visible={{ rootMargin: "100px" }}
   data={[
     {
-      src: "/test_ecgc_2/images/newbie_tips/starter_fleet.png",
+      src: StarterFleet.src,
       caption: "Example starting fleet.",
     },
   ]}
