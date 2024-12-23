@@ -3,7 +3,7 @@ interface PageInfoItem {
   lastUpdated: string
   title: string
   revision: string
-  description: JSX.Element
+  description: React.ReactNode
   link: string
   image: string
 }
