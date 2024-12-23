@@ -12,9 +12,9 @@ import { pageInfo } from "@components/_common/PageInfo"
 import { Sidenav } from "@components/_common/Sidenav"
 import Footer from "@components/_common/Footer.astro"
 
-
 interface Props {
   title: string
+  metaTitle?: string
   activePage?: string
   tocID?: string
   metaUrl?: string
@@ -22,8 +22,15 @@ interface Props {
   metaDescription: string
 }
 
-const { title, activePage, tocID, metaUrl, metaImage, metaDescription } =
-  Astro.props
+const {
+  title,
+  metaTitle,
+  activePage,
+  tocID,
+  metaUrl,
+  metaImage,
+  metaDescription,
+} = Astro.props
 ---
 
 <head>
@@ -35,7 +42,7 @@ const { title, activePage, tocID, metaUrl, metaImage, metaDescription } =
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} - ECGC</title>
+  <title>{metaTitle || title} - ECGC</title>
   <meta name="description" content={metaDescription} />
   <meta name="og:title" content={title} />
   <meta
