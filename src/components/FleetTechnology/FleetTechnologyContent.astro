@@ -1,6 +1,11 @@
 ---
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
+
+//images
+
+import FleetTechWindow from "@assets/research_guide/fleet_technology_window.png"
+import FactionTechWindow from "@assets/research_guide/faction_tech_window.png"
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -22,12 +27,12 @@ import { ImageCarousel } from "@components/_common/ImageCarousel"
   client:visible={{ rootMargin: "100px" }}
   data={[
     {
-      src: "/test_ecgc_2/images/research_guide/fleet_technology_window.png",
+      src: FleetTechWindow.src,
       caption: "Fleet Technology UI",
       alt: "Fleet Technology UI",
     },
     {
-      src: "/test_ecgc_2/images/research_guide/faction_tech_window.png",
+      src: FactionTechWindow.src,
       caption: "Faction Technology UI",
       alt: "Faction Technology UI",
     },
@@ -82,4 +87,3 @@ import { ImageCarousel } from "@components/_common/ImageCarousel"
 <hr class="custom-hr" />
 <br />
 <h3>Point Thresholds:</h3>
-

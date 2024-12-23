@@ -4,6 +4,13 @@ import { ItemCell } from "@components/_common/ItemCell"
 import { ItemTable } from "@components/_common/ItemTable"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
 import WikiLink from "@components/_common/WikiLink.astro"
+
+//images
+import ProtocoreShop from "@assets/research_guide/prototype_shop_window.png"
+import ProtocoreConversion from "@assets/research_guide/protocore_conversion_window.png"
+import ResearchFocus from "@assets/research_guide/research_focus_window.png"
+import ResearchProject from "@assets/research_guide/research_project_window.png"
+import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
 ---
 
 <script>
@@ -103,7 +110,7 @@ import WikiLink from "@components/_common/WikiLink.astro"
   client:visible={{ rootMargin: "100px" }}
   data={[
     {
-      src: "/test_ecgc_2/images/research_guide/shipyard_window.png",
+      src: ShipyardWindow.src,
       caption: "Shipyard UI",
       alt: "Shipyard UI",
     },
@@ -404,12 +411,12 @@ import WikiLink from "@components/_common/WikiLink.astro"
   client:visible={{ rootMargin: "100px" }}
   data={[
     {
-      src: "/test_ecgc_2/images/research_guide/research_project_window.png",
+      src: ResearchProject.src,
       caption: "Research Academy UI",
       alt: "Research Academy UI",
     },
     {
-      src: "/test_ecgc_2/images/research_guide/research_focus_window.png",
+      src: ResearchFocus.src,
       caption: "Research Focus UI",
       alt: "Research Focus UI",
     },
@@ -988,12 +995,12 @@ import WikiLink from "@components/_common/WikiLink.astro"
   client:visible={{ rootMargin: "100px" }}
   data={[
     {
-      src: "/test_ecgc_2/images/research_guide/prototype_shop_window.png",
+      src: ProtocoreShop.src,
       caption: "Prototype Shop UI",
       alt: "Prototype Shop UI",
     },
     {
-      src: "/test_ecgc_2/images/research_guide/protocore_conversion_window.png",
+      src: ProtocoreConversion.src,
       caption: "Protocore Conversion UI",
       alt: "Protocore Conversion UI",
     },
