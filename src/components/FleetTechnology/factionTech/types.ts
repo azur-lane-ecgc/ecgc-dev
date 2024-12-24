@@ -7,6 +7,7 @@ export interface FleetTechData {
   }[]
   data: {
     ship: string
+    rarity: number
     location: {
       event: string
       stages: string[]

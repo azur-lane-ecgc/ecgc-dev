@@ -15,6 +15,7 @@ const FFNFTechPoints: FleetTechData = {
   data: [
     {
       ship: "Béarn",
+      rarity: 4,
       location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 56,
@@ -22,6 +23,7 @@ const FFNFTechPoints: FleetTechData = {
     },
     {
       ship: "Le Téméraire",
+      rarity: 4,
       location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 42,
@@ -29,6 +31,7 @@ const FFNFTechPoints: FleetTechData = {
     },
     {
       ship: "L'Opiniâtre",
+      rarity: 4,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Max Limit Break",
       techPoints: 42,
@@ -36,6 +39,7 @@ const FFNFTechPoints: FleetTechData = {
     },
     {
       ship: "Champagne",
+      rarity: 5,
       location: [{ event: "Shipyard", stages: ["PR3"] }],
       investment: "Collection",
       techPoints: 48,
@@ -43,6 +47,7 @@ const FFNFTechPoints: FleetTechData = {
     },
     {
       ship: "Saint Louis",
+      rarity: 5,
       location: [{ event: "Shipyard", stages: ["PR1"] }],
       investment: "Collection",
       techPoints: 34,
@@ -50,6 +55,7 @@ const FFNFTechPoints: FleetTechData = {
     },
     {
       ship: "Le Triomphant",
+      rarity: 5,
       location: [
         { event: "Medal Shop", stages: ["DD"] },
         { event: "Iris of Light and Dark", stages: ["B3", "D3*"] },
@@ -60,6 +66,7 @@ const FFNFTechPoints: FleetTechData = {
     },
     {
       ship: "Jeanne d'Arc",
+      rarity: 5,
       location: [{ event: "Skybound Oratorio", stages: ["B3", "D3*"] }],
       investment: "Collection",
       techPoints: 14,

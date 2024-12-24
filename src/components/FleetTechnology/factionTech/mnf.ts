@@ -13,6 +13,7 @@ const MNFTechPoints: FleetTechData = {
   data: [
     {
       ship: "La Galissonnière",
+      rarity: 3,
       location: [{ event: "Merit Shop", stages: ["5,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 48,
@@ -20,6 +21,7 @@ const MNFTechPoints: FleetTechData = {
     },
     {
       ship: "Le Mars",
+      rarity: 2,
       location: [
         {
           event: "Iris of Light and Dark",
@@ -33,6 +35,7 @@ const MNFTechPoints: FleetTechData = {
     },
     {
       ship: "Gascogne",
+      rarity: 4,
       location: [{ event: "Shipyard", stages: ["PR2"] }],
       investment: "Collection",
       techPoints: 44,
@@ -40,6 +43,7 @@ const MNFTechPoints: FleetTechData = {
     },
     {
       ship: "Jean Bart",
+      rarity: 4,
       location: [{ event: "Medal Shop", stages: ["BB"] }],
       investment: "Collection",
       techPoints: 40,
@@ -47,6 +51,7 @@ const MNFTechPoints: FleetTechData = {
     },
     {
       ship: "Le Malin",
+      rarity: 4,
       location: [{ event: "Medal Shop", stages: ["DD"] }],
       investment: "Collection",
       techPoints: 22,

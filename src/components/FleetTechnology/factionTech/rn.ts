@@ -22,6 +22,7 @@ const RNTechPoints: FleetTechData = {
   data: [
     {
       ship: "Littorio",
+      rarity: 4,
       location: [
         { event: "Merit Shop", stages: ["20,000 Merit"] },
         { event: "Empyreal Tragicomedy", stages: ["B3", "D3*"] },
@@ -32,6 +33,7 @@ const RNTechPoints: FleetTechData = {
     },
     {
       ship: "Conte di Cavour",
+      rarity: 2,
       location: [
         { event: "Merit Shop", stages: ["5,000 Merit"] },
         { event: "Empyreal Tragicomedy", stages: ["Chapters B", "D"] },
@@ -42,6 +44,7 @@ const RNTechPoints: FleetTechData = {
     },
     {
       ship: "Trento",
+      rarity: 2,
       location: [{ event: "Merit Shop", stages: ["5,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 48,
@@ -49,6 +52,7 @@ const RNTechPoints: FleetTechData = {
     },
     {
       ship: "Carabiniere",
+      rarity: 3,
       location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 42,
@@ -56,6 +60,7 @@ const RNTechPoints: FleetTechData = {
     },
     {
       ship: "Torricelli",
+      rarity: 3,
       location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 30,
@@ -63,6 +68,7 @@ const RNTechPoints: FleetTechData = {
     },
     {
       ship: "Marco Polo",
+      rarity: 4,
       location: [{ event: "Shipyard", stages: ["PR4"] }],
       investment: "Collection",
       techPoints: 48,
@@ -70,6 +76,7 @@ const RNTechPoints: FleetTechData = {
     },
     {
       ship: "Duca degli Abruzzi",
+      rarity: 4,
       location: [{ event: "Daedalian Hymn", stages: ["B3", "D3*"] }],
       investment: "Collection",
       techPoints: 24,

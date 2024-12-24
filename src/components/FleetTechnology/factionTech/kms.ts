@@ -17,6 +17,7 @@ const KMSTechPoints: FleetTechData = {
   data: [
     {
       ship: "Gneisenau",
+      rarity: 3,
       location: [
         { event: "Divergent Chessboard", stages: ["B2", "D2", "D3", "D4"] },
         {
@@ -30,6 +31,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Scharnhorst",
+      rarity: 3,
       location: [
         { event: "Divergent Chessboard", stages: ["B3", "D2", "D3", "D4"] },
         {
@@ -43,6 +45,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Admiral Hipper",
+      rarity: 3,
       location: [
         { event: "Guild Shop", stages: ["Elite Ship"] },
         { event: "Divergent Chessboard", stages: ["A4", "C4", "D1"] },
@@ -53,6 +56,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Admiral Graf Spee",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Max Limit Break",
       techPoints: 56,
@@ -60,6 +64,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Deutschland",
+      rarity: 3,
       location: [
         {
           event: "Divergent Chessboard",
@@ -72,6 +77,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z35",
+      rarity: 3,
       location: [{ event: "Divergent Chessboard", stages: ["B4", "D4"] }],
       investment: "Max Limit Break",
       techPoints: 48,
@@ -79,6 +85,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z23",
+      rarity: 3,
       location: [
         { event: "Map Drop", stages: ["all stages except Chapter 1"] },
       ],
@@ -88,6 +95,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z24",
+      rarity: 3,
       location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 42,
@@ -95,6 +103,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z25",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Max Limit Break",
       techPoints: 42,
@@ -102,6 +111,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z1",
+      rarity: 3,
       location: [
         { event: "Map Drop", stages: ["5-1", "8-2", "9-4"] },
         {
@@ -119,6 +129,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Leipzig",
+      rarity: 2,
       location: [
         { event: "Memento (Collections)", stages: ["Königsberg Class"] },
       ],
@@ -128,6 +139,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Odin",
+      rarity: 4,
       location: [{ event: "Shipyard", stages: ["PR3"] }],
       investment: "Collection",
       techPoints: 48,
@@ -135,6 +147,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Bismarck",
+      rarity: 4,
       location: [{ event: "Medal Shop", stages: ["BB"] }],
       investment: "Collection",
       techPoints: 40,
@@ -142,6 +155,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Tirpitz",
+      rarity: 4,
       location: [{ event: "Medal Shop", stages: ["BB"] }],
       investment: "Collection",
       techPoints: 40,
@@ -149,6 +163,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Roon",
+      rarity: 4,
       location: [{ event: "Shipyard", stages: ["PR1"] }],
       investment: "Collection",
       techPoints: 38,
@@ -156,6 +171,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Mainz",
+      rarity: 4,
       location: [{ event: "Shipyard", stages: ["PR3"] }],
       investment: "Collection",
       techPoints: 30,
@@ -163,6 +179,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Prinz Eugen",
+      rarity: 4,
       location: [
         { event: "Medal Shop", stages: ["CA"] },
         { event: "New Player 7-day Login Campaign", stages: [] },
@@ -173,6 +190,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z46",
+      rarity: 4,
       location: [
         { event: "Medal Shop", stages: ["DD"] },
         { event: "Divergent Chessboard", stages: ["B4", "D4*"] },
@@ -183,6 +201,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "U-96",
+      rarity: 4,
       location: [{ event: "Medal Shop", stages: ["SS"] }],
       investment: "Collection",
       techPoints: 12,
@@ -190,6 +209,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "U-37",
+      rarity: 4,
       location: [
         { event: "Merit Shop", stages: ["20,000 Merit"] },
         { event: "Inverted Orthant", stages: ["B3", "D3*"] },
@@ -200,6 +220,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "U-556",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Collection",
       techPoints: 8,
@@ -207,6 +228,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "U-557",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Collection",
       techPoints: 8,
@@ -214,6 +236,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z19",
+      rarity: 2,
       location: [
         {
           event: "Divergent Chessboard",
@@ -226,6 +249,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "U-73",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Collection",
       techPoints: 6,
@@ -233,6 +257,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Königsberg",
+      rarity: 1,
       location: [{ event: "Map Drop", stages: ["check ship page"] }],
       investment: "Collection",
       techPoints: 6,
@@ -240,6 +265,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Köln",
+      rarity: 1,
       location: [{ event: "Map Drop", stages: ["check ship page"] }],
       investment: "Collection",
       techPoints: 6,
@@ -247,6 +273,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Karlsruhe",
+      rarity: 1,
       location: [{ event: "Map Drop", stages: ["check ship page"] }],
       investment: "Collection",
       techPoints: 6,
@@ -254,6 +281,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z20",
+      rarity: 1,
       location: [
         { event: "Divergent Chessboard", stages: ["all maps except A1"] },
       ],
@@ -263,6 +291,7 @@ const KMSTechPoints: FleetTechData = {
     },
     {
       ship: "Z21",
+      rarity: 1,
       location: [
         { event: "Divergent Chessboard", stages: ["all maps except A1"] },
       ],

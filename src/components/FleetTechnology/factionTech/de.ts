@@ -35,6 +35,7 @@ const DETechPoints: FleetTechData = {
   data: [
     {
       ship: "Ning Hai",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Max Limit Break",
       techPoints: 36,
@@ -42,6 +43,7 @@ const DETechPoints: FleetTechData = {
     },
     {
       ship: "Ping Hai",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Max Limit Break",
       techPoints: 36,
@@ -49,6 +51,7 @@ const DETechPoints: FleetTechData = {
     },
     {
       ship: "Chang Chun",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Max Limit Break",
       techPoints: 32,
@@ -56,6 +59,7 @@ const DETechPoints: FleetTechData = {
     },
     {
       ship: "Tai Yuan",
+      rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
       investment: "Max Limit Break",
       techPoints: 32,
@@ -63,6 +67,7 @@ const DETechPoints: FleetTechData = {
     },
     {
       ship: "An Shan",
+      rarity: 3,
       location: [
         { event: "Lunar New Year", stages: ["An Shan's Drawing Book"] },
       ],
@@ -72,6 +77,7 @@ const DETechPoints: FleetTechData = {
     },
     {
       ship: "Fu Shun",
+      rarity: 3,
       location: [
         { event: "Lunar New Year", stages: ["Fu Shun's Great Adventure"] },
       ],

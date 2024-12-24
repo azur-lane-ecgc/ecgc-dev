@@ -17,6 +17,7 @@ const NPTechPoints: FleetTechData = {
   data: [
     {
       ship: "Tallinn",
+      rarity: 4,
       location: [{ event: "Khorovod of Dawn's Rime", stages: ["B3", "D3*"] }],
       investment: "Max Limit Break",
       techPoints: 84,
@@ -24,6 +25,7 @@ const NPTechPoints: FleetTechData = {
     },
     {
       ship: "Gangut",
+      rarity: 3,
       location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 84,
@@ -31,6 +33,7 @@ const NPTechPoints: FleetTechData = {
     },
     {
       ship: "Chapayev",
+      rarity: 4,
       location: [{ event: "Northern Overture", stages: ["B3", "D3*"] }],
       investment: "Max Limit Break",
       techPoints: 72,
@@ -38,6 +41,7 @@ const NPTechPoints: FleetTechData = {
     },
     {
       ship: "Minsk",
+      rarity: 3,
       location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 36,
@@ -45,6 +49,7 @@ const NPTechPoints: FleetTechData = {
     },
     {
       ship: "Gromky",
+      rarity: 3,
       location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
       investment: "Max Limit Break",
       techPoints: 32,
@@ -52,6 +57,7 @@ const NPTechPoints: FleetTechData = {
     },
     {
       ship: "Chkalov",
+      rarity: 4,
       location: [{ event: "Shipyard", stages: ["PR5"] }],
       investment: "Collection",
       techPoints: 38,
