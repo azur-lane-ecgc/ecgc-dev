@@ -33,7 +33,7 @@ const NPTechPoints: FleetTechData = {
             `8,000 <img
             loading="lazy"
             class="inline-block"
-            src="images/materials/merit.png"
+            src="/test_ecgc_2/images/materials/merit.png"
             width="20px"
             alt="Merit"
           />`,
@@ -62,7 +62,7 @@ const NPTechPoints: FleetTechData = {
             `8,000 <img
             loading="lazy"
             class="inline-block"
-            src="images/materials/merit.png"
+            src="/test_ecgc_2/images/materials/merit.png"
             width="20px"
             alt="Merit"
           />`,
@@ -83,7 +83,7 @@ const NPTechPoints: FleetTechData = {
             `8,000 <img
             loading="lazy"
             class="inline-block"
-            src="images/materials/merit.png"
+            src="/test_ecgc_2/images/materials/merit.png"
             width="20px"
             alt="Merit"
           />`,
