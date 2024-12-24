@@ -449,6 +449,46 @@
     ]
   },
   {
+    "fileName": "Fleet Technology Guide",
+    "toc": [
+      {
+        "id": "acquisition",
+        "content": "Acquiring Tech Points",
+        "subheadings": []
+      },
+      {
+        "id": "kms",
+        "content": "Iron Blood (KMS)",
+        "subheadings": []
+      },
+      {
+        "id": "de",
+        "content": "Dragon Empery (DE)",
+        "subheadings": []
+      },
+      {
+        "id": "np",
+        "content": "Northern Parliament (NP)",
+        "subheadings": []
+      },
+      {
+        "id": "rn",
+        "content": "Sardegna Empire (RN)",
+        "subheadings": []
+      },
+      {
+        "id": "ffnf",
+        "content": "Iris Libre (FFNF)",
+        "subheadings": []
+      },
+      {
+        "id": "mnf",
+        "content": "Vichya Dominion (MNF)",
+        "subheadings": []
+      }
+    ]
+  },
+  {
     "fileName": "Newbie Tips",
     "toc": [
       {
