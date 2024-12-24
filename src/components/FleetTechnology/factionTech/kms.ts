@@ -96,7 +96,20 @@ const KMSTechPoints: FleetTechData = {
     {
       ship: "Z24",
       rarity: 3,
-      location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="/test_ecgc_2/images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
+      ],
       investment: "Max Limit Break",
       techPoints: 42,
       isShipyard: false,
@@ -131,7 +144,7 @@ const KMSTechPoints: FleetTechData = {
       ship: "Leipzig",
       rarity: 2,
       location: [
-        { event: "Memento (Collections)", stages: ["Königsberg Class"] },
+        { event: "Collection", stages: ["Königsberg Class"] },
       ],
       investment: "Max Limit Break",
       techPoints: 32,
@@ -211,7 +224,18 @@ const KMSTechPoints: FleetTechData = {
       ship: "U-37",
       rarity: 4,
       location: [
-        { event: "Merit Shop", stages: ["20,000 Merit"] },
+        {
+          event: "Merit Shop",
+          stages: [
+            `20,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="/test_ecgc_2/images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
         { event: "Inverted Orthant", stages: ["B3", "D3*"] },
       ],
       investment: "Collection",
