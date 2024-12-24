@@ -27,6 +27,7 @@ const tableInfo = [
 
 interface FleetTechTableProps {
   faction: string
+  excludeShipyard?: boolean | null | undefined
 }
 
 type SortOrder = "asc" | "desc" | null
@@ -36,7 +37,10 @@ type SortConfig = {
   order: SortOrder
 }
 
-export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
+export const FleetTechTable: React.FC<FleetTechTableProps> = ({
+  faction,
+  excludeShipyard = true,
+}) => {
   const [sortConfig, setSortConfig] = useState<SortConfig>({
     column: "investment",
     order: "desc",
@@ -49,8 +53,8 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
     if (!factionData?.data) return 0
 
     return factionData.data
-      .filter(
-        (obj: { techPoints: number; isShipyard?: boolean }) => !obj.isShipyard,
+      .filter((obj: { techPoints: number; isShipyard?: boolean }) =>
+        excludeShipyard ? !obj.isShipyard : true,
       )
       .reduce(
         (
@@ -62,7 +66,7 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
         ) => sum + (obj.techPoints || 0),
         0,
       )
-  }, [faction])
+  }, [faction, excludeShipyard])
 
   // sort function
   const handleSort = (columnKey: string) => {
@@ -123,19 +127,27 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
   return (
     factionData && (
       <>
-        <p>
-          You get <b>{totalTechPoints} Tech Points TOTAL</b> following this
-          table (excluding{" "}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
-            title="Shipyard"
-          >
-            Shipyard
-          </a>
-          ).
-        </p>
+        {excludeShipyard ? (
+          <p>
+            You get <b>{totalTechPoints} Tech Points TOTAL</b> following this
+            table (excluding{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+              title="Shipyard"
+            >
+              Shipyard
+            </a>
+            ).
+          </p>
+        ) : (
+          <p>
+            You get <b>{totalTechPoints} Tech Points TOTAL</b> following this
+            table.
+          </p>
+        )}
+
         <div className="table-responsive">
           <table className="table table-sm table-dark table-bordered text-center border-secondary align-middle">
             <colgroup>
@@ -153,7 +165,7 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
                     onClick={() => handleSort(col.key)}
                   >
                     <div className="flex cursor-pointer">
-                      <span className="flex-1 text-center align-middle justify-center pr-2 w-full">
+                      <span className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full">
                         {col.colName}
                       </span>
                       <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
