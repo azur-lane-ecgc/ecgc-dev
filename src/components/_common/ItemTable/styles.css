@@ -59,6 +59,11 @@ td {
   overflow: hidden;
 }
 
+td > p {
+  margin-bottom: 0;
+}
+
+/* common resource */
 td.mark {
   font-size: xx-large;
   font-weight: 500;
@@ -116,6 +121,8 @@ td:hover span.normal {
   display: none;
 }
 
+/* fleetbuilding */
+
 th.ship_table_limiter {
   min-width: 125px;
 }
@@ -150,10 +157,6 @@ table.ship_table > tr.ship_table_head {
 
 table.ship_table > tr.ship_table_content > td {
   vertical-align: top !important;
-}
-
-td > p {
-  margin-bottom: 0;
 }
 
 tbody.table-group-divider {
