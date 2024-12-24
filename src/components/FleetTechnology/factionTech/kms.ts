@@ -144,7 +144,7 @@ const KMSTechPoints: FleetTechData = {
       ship: "Leipzig",
       rarity: 2,
       location: [
-        { event: "Collection", stages: ["Königsberg Class"] },
+        { event: "Memento (Collections)", stages: ["Königsberg Class"] },
       ],
       investment: "Max Limit Break",
       techPoints: 32,
