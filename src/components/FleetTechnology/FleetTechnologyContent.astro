@@ -1,6 +1,7 @@
 ---
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
+import { FleetTechTable } from "./FleetTechTable"
 
 //images
 
@@ -90,4 +91,65 @@ import PointThresholds from "./PointThresholds.astro"
 
 <h3>Point Thresholds:</h3>
 <PointThresholds faction="KMS" />
+<br />
+
+<p class="font-bold text-[1.25rem]">Notes:</p>
+<ul>
+  <li>
+    <p>
+      <i
+        ><a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Z46"
+          title="Z46">Z46</a
+        >
+        is <u>guaranteed</u> after your 60th
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Divergent_Chessboard_Rerun"
+          title="Divergent Chessboard Rerun">Divergent Chessboard</a
+        >
+        D4 clear.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        ><a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/U-37"
+          title="U-37">U-37</a
+        >
+        is <u>guaranteed</u> after your 60th
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Inverted Orthant"
+          title="Inverted Orthant">Inverted Orthant</a
+        >
+        D3 clear.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >You get <b>804 Tech Points TOTAL</b> following this table (excluding
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+          title="Shipyard">Shipyard</a
+        >).</i
+      >
+    </p>
+  </li>
+</ul>
+<br />
+
+<FleetTechTable faction="KMS" />
 <br />
