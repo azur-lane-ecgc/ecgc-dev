@@ -38,8 +38,8 @@ type SortConfig = {
 
 export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
   const [sortConfig, setSortConfig] = useState<SortConfig>({
-    column: null,
-    order: null,
+    column: "investment",
+    order: "desc",
   })
 
   const factionData = allFactionData.find((data) => data.faction === faction)
@@ -62,7 +62,7 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
         ) => sum + (obj.techPoints || 0),
         0,
       )
-  }, [factionData])
+  }, [faction])
 
   // sort function
   const handleSort = (columnKey: string) => {
