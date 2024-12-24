@@ -24,15 +24,17 @@ const factionData = allFactionData.find(
 {
   factionData ? (
     <ul>
-      {factionData.thresholds.map(({ ship, techPoints, note }) => (
-        <li>
-          <p class="!italic">
-            <WikiLink page={ship}>{ship}</WikiLink>
-            {` - ${techPoints}`}
-            {note && ` (${note})`}
-          </p>
-        </li>
-      ))}
+      {factionData.thresholds
+        .sort((a, b) => a.techPoints - b.techPoints)
+        .map(({ ship, techPoints, note }) => (
+          <li>
+            <p class="!italic">
+              <WikiLink page={ship}>{ship}</WikiLink>
+              {` - ${techPoints}`}
+              {note && ` (${note})`}
+            </p>
+          </li>
+        ))}
     </ul>
   ) : (
     <p>Faction {faction} has no point thresholds currently.</p>
