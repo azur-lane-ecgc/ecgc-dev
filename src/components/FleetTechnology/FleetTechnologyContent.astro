@@ -1,6 +1,7 @@
 ---
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
+import WikiLink from "@components/_common/WikiLink.astro"
 import { FleetTechTable } from "./FleetTechTable"
 
 //images
@@ -85,7 +86,7 @@ import PointThresholds from "./PointThresholds.astro"
 </p>
 <br />
 
-<h2 id="kms">Iron Blood (KMS)</h2>
+<h2 id="kms"><WikiLink page="Iron Blood">Iron Blood (KMS)</WikiLink></h2>
 <hr class="custom-hr" />
 <br />
 
@@ -135,21 +136,439 @@ import PointThresholds from "./PointThresholds.astro"
       >
     </p>
   </li>
+</ul>
+<br />
+
+<FleetTechTable client:visible={{ rootMargin: "100px" }} faction="KMS" />
+<br />
+
+<h2 id="de"><WikiLink page="Dragon Empery">Dragon Empery (DE)</WikiLink></h2>
+<hr class="custom-hr" />
+<br />
+
+<h3>Point Thresholds:</h3>
+<PointThresholds faction="DE" />
+<br />
+
+<p class="font-bold text-[1.25rem]">Notes:</p>
+<ul>
   <li>
     <p>
-      <i
-        >You get <b>804 Tech Points TOTAL</b> following this table (excluding
+      <i>
+        Due to how few guaranteed
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
-          title="Shipyard">Shipyard</a
-        >).</i
-      >
+          href="https://azurlane.koumakan.jp/wiki/Dragon_Empery"
+          title="Dragon Empery">Dragon Empery</a
+        >
+        ships exist permanently outside <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Construction"
+          title="Construction">Construction</a
+        >, it is preferable to wait until a Lunar New Year event for
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/An_Shan"
+          title="An Shan">An Shan</a
+        >
+        and
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Fu_Shun"
+          title="Fu Shun">Fu Shun</a
+        >, or wait until you get more DE ships from
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Construction"
+          title="Construction">Light Construction</a
+        >, instead of leveling ships to level 120.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        To obtain
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Harbin"
+          title="Harbin">Harbin</a
+        >
+        without
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Construction"
+          title="Construction">Construction</a
+        >
+        or Events, Level 120
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Chang_Chun"
+          title="Chang Chun">Chang Chun</a
+        >
+        AND Level 120
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Tai_Yuan"
+          title="Tai Yuan">Tai Yuan</a
+        >
+        are required.
+      </i>
     </p>
   </li>
 </ul>
 <br />
 
-<FleetTechTable faction="KMS" />
+<FleetTechTable
+  client:visible={{ rootMargin: "100px" }}
+  faction="DE"
+  excludeShipyard={false}
+/>
+<br />
+
+<h2 id="np">
+  <WikiLink page="Northern Parliament">Northern Parliament (NP)</WikiLink>
+</h2>
+<hr class="custom-hr" />
+<br />
+
+<h3>Point Thresholds:</h3>
+<PointThresholds faction="NP" />
+<br />
+
+<p class="font-bold text-[1.25rem]">Notes:</p>
+<ul>
+  <li>
+    <p>
+      <i>
+        Due to how few guaranteed
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Northern_Parliament"
+          title="Northern Parliament">Northern Parliament</a
+        >
+        ships exist permanently outside
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Construction"
+          title="Construction">Construction</a
+        >, it is fine to wait until a Russian Event is active, instead of
+        speedrunning any of the ships needing them.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Chapayev"
+          title="Chapayev">Chapayev</a
+        >
+        is <u>guaranteed</u> after your 60th
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Northern_Overture"
+          title="Northern Overture">Northern Overture</a
+        > D3 clear.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Tallinn"
+          title="Tallinn">Tallinn</a
+        >
+        is <u>guaranteed</u> after your 60th
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Khorovod_of_Dawn's_Rime"
+          title="Khorovod of Dawn's Rime">Khorovod of Dawn's Rime</a
+        > D3 clear.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        It costs 24,000 <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Merit_Shop"
+          title="Merit"
+        >
+          <img
+            loading="lazy"
+            class="inline-block"
+            src="images/materials/merit.png"
+            width="20px"
+            alt="Merit"
+          />
+        </a> to acquire all ships here.
+      </i>
+    </p>
+  </li>
+</ul>
+<br />
+
+<FleetTechTable
+  client:visible={{ rootMargin: "100px" }}
+  faction="NP"
+  excludeShipyard={false}
+/>
+<br />
+
+<h2 id="rn">
+  <WikiLink page="Sardegna Empire">Sardegna Empire (RN)</WikiLink>
+</h2>
+<hr class="custom-hr" />
+<br />
+
+<h3>Point Thresholds:</h3>
+<PointThresholds faction="RN" />
+<br />
+
+<p class="font-bold text-[1.25rem]">Notes:</p>
+<ul>
+  <li>
+    <p>
+      <i>
+        Due to how few guaranteed
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Sardegna_Empire"
+          title="Sardegna Empire"
+        >
+          Sardegna Empire
+        </a>
+        ships exist permanently outside
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Construction"
+          title="Construction"
+        >
+          Construction</a
+        >, it is fine to wait until an Italian Event is active, instead of
+        speedrunning
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Chkalov"
+          title="Chkalov"
+        >
+          Chkalov
+        </a>.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Littorio"
+          title="Littorio"
+        >
+          Littorio
+        </a>
+        is <u>guaranteed</u> after your 60th
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Empyreal_Tragicomedy"
+          title="Empyreal Tragicomedy"
+        >
+          Empyreal Tragicomedy
+        </a> D3 clear.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Duca_degli_Abruzzi"
+          title="Duca degli Abruzzi"
+        >
+          Duca degli Abruzzi
+        </a>
+        is <u>guaranteed</u> after your 60th
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Daedalian_Hymn"
+          title="Daedalian Hymn"
+        >
+          Daedalian Hymn
+        </a> D3 clear.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        It costs 46,000
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Shops#Merit_Shop"
+          title="Merit"
+        >
+          <img
+            loading="lazy"
+            class="inline-block"
+            src="images/materials/merit.png"
+            width="20px"
+            alt="Merit"
+          />
+        </a> to acquire all ships here.
+      </i>
+    </p>
+  </li>
+</ul>
+<br />
+
+<FleetTechTable client:visible={{ rootMargin: "100px" }} faction="RN" />
+<br />
+
+<h2 id="ffnf"><WikiLink page="Iris Libre">Iris Libre (FFNF)</WikiLink></h2>
+<hr class="custom-hr" />
+<br />
+
+<h3>Point Thresholds:</h3>
+<PointThresholds faction="FFNF" />
+<br />
+
+<p class="font-bold text-[1.25rem]">Notes:</p>
+<ul>
+  <li>
+    <p>
+      <i>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Le_Triomphant"
+          title="Le Triomphant"
+        >
+          Le Triomphant
+        </a>
+        is <u>guaranteed</u> after your 60th
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Iris_of_Light_and_Dark_Rerun"
+          title="Iris of Light and Dark"
+        >
+          Iris of Light and Dark
+        </a>
+        D3 clear.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Jeanne_d'Arc"
+          title="Jeanne d'Arc"
+        >
+          Jeanne d'Arc
+        </a>
+        is <u>guaranteed</u> after your 60th
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Skybound_Oratorio"
+          title="Skybound Oratorio"
+        >
+          Skybound Oratorio
+        </a>
+        D3 clear.
+      </i>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <i>
+        Development Level 30 (Max Limit Break)
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Saint_Louis"
+          title="Saint Louis"
+        >
+          Saint Louis
+        </a>
+        gives an additional 70 Tech Points, which can help alleviate other requirements.
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        Development Level 30 (Max Limit Break)
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Champagne"
+          title="Champagne"
+        >
+          Champagne
+        </a>
+        gives an additional 96 Tech Points, which can help alleviate other requirements.
+      </i>
+    </p>
+  </li>
+</ul>
+
+<br />
+
+<FleetTechTable
+  client:visible={{ rootMargin: "100px" }}
+  faction="FFNF"
+  excludeShipyard={false}
+/>
+<br />
+
+<h2 id="ffnf">
+  <WikiLink page="Vichya Dominion">Vichya Dominion (MNF)</WikiLink>
+</h2>
+<hr class="custom-hr" />
+<br />
+
+<h3>Point Thresholds:</h3>
+<PointThresholds faction="MNF" />
+<br />
+
+<FleetTechTable
+  client:visible={{ rootMargin: "100px" }}
+  faction="MNF"
+  excludeShipyard={false}
+/>
 <br />
