@@ -14,7 +14,20 @@ const MNFTechPoints: FleetTechData = {
     {
       ship: "La Galissonnière",
       rarity: 3,
-      location: [{ event: "Merit Shop", stages: ["5,000 Merit"] }],
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `5,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
+      ],
       investment: "Max Limit Break",
       techPoints: 48,
       isShipyard: false,
@@ -27,7 +40,18 @@ const MNFTechPoints: FleetTechData = {
           event: "Iris of Light and Dark",
           stages: ["A3", "B2", "C3", "D2", "D3"],
         },
-        { event: "Core Data Shop", stages: ["1,000 Core Data"] },
+        {
+          event: "Core Data Shop",
+          stages: [
+            `1,000 <img
+          loading="lazy"
+          class="inline-block"
+          src="images/materials/core_data.png"
+          width="20px"
+          alt="Core Data"
+        />`,
+          ],
+        },
       ],
       investment: "Max Limit Break",
       techPoints: 26,

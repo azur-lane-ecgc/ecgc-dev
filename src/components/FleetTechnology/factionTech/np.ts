@@ -26,7 +26,20 @@ const NPTechPoints: FleetTechData = {
     {
       ship: "Gangut",
       rarity: 3,
-      location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+            loading="lazy"
+            class="inline-block"
+            src="images/materials/merit.png"
+            width="20px"
+            alt="Merit"
+          />`,
+          ],
+        },
+      ],
       investment: "Max Limit Break",
       techPoints: 84,
       isShipyard: false,
@@ -42,7 +55,20 @@ const NPTechPoints: FleetTechData = {
     {
       ship: "Minsk",
       rarity: 3,
-      location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+            loading="lazy"
+            class="inline-block"
+            src="images/materials/merit.png"
+            width="20px"
+            alt="Merit"
+          />`,
+          ],
+        },
+      ],
       investment: "Max Limit Break",
       techPoints: 36,
       isShipyard: false,
@@ -50,7 +76,20 @@ const NPTechPoints: FleetTechData = {
     {
       ship: "Gromky",
       rarity: 3,
-      location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+            loading="lazy"
+            class="inline-block"
+            src="images/materials/merit.png"
+            width="20px"
+            alt="Merit"
+          />`,
+          ],
+        },
+      ],
       investment: "Max Limit Break",
       techPoints: 32,
       isShipyard: false,

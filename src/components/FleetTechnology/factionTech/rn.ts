@@ -24,7 +24,18 @@ const RNTechPoints: FleetTechData = {
       ship: "Littorio",
       rarity: 4,
       location: [
-        { event: "Merit Shop", stages: ["20,000 Merit"] },
+        {
+          event: "Merit Shop",
+          stages: [
+            `20,000 <img
+          loading="lazy"
+          class="inline-block"
+          src="images/materials/merit.png"
+          width="20px"
+          alt="Merit"
+        />`,
+          ],
+        },
         { event: "Empyreal Tragicomedy", stages: ["B3", "D3*"] },
       ],
       investment: "Max Limit Break",
@@ -35,7 +46,18 @@ const RNTechPoints: FleetTechData = {
       ship: "Conte di Cavour",
       rarity: 2,
       location: [
-        { event: "Merit Shop", stages: ["5,000 Merit"] },
+        {
+          event: "Merit Shop",
+          stages: [
+            `5,000 <img
+          loading="lazy"
+          class="inline-block"
+          src="images/materials/merit.png"
+          width="20px"
+          alt="Merit"
+        />`,
+          ],
+        },
         { event: "Empyreal Tragicomedy", stages: ["Chapters B", "D"] },
       ],
       investment: "Max Limit Break",
@@ -45,7 +67,20 @@ const RNTechPoints: FleetTechData = {
     {
       ship: "Trento",
       rarity: 2,
-      location: [{ event: "Merit Shop", stages: ["5,000 Merit"] }],
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `5,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
+      ],
       investment: "Max Limit Break",
       techPoints: 48,
       isShipyard: false,
@@ -53,7 +88,20 @@ const RNTechPoints: FleetTechData = {
     {
       ship: "Carabiniere",
       rarity: 3,
-      location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
+      ],
       investment: "Max Limit Break",
       techPoints: 42,
       isShipyard: false,
@@ -61,7 +109,20 @@ const RNTechPoints: FleetTechData = {
     {
       ship: "Torricelli",
       rarity: 3,
-      location: [{ event: "Merit Shop", stages: ["8,000 Merit"] }],
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
+      ],
       investment: "Max Limit Break",
       techPoints: 30,
       isShipyard: false,
