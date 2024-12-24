@@ -1,6 +1,6 @@
 import type { FleetTechData } from "./types"
 
-export const KMSTechPoints: FleetTechData = {
+const KMSTechPoints: FleetTechData = {
   faction: "KMS",
   thresholds: [
     { ship: "Gascogne", techPoints: 420, note: "+USS Points" },
@@ -272,3 +272,5 @@ export const KMSTechPoints: FleetTechData = {
     },
   ],
 }
+
+export default KMSTechPoints
