@@ -1,0 +1,37 @@
+---
+import WikiLink from "@components/_common/WikiLink.astro"
+
+import type { FleetTechData } from "./factionTech/types"
+
+interface Props {
+  faction: string
+}
+
+const { faction } = Astro.props
+
+const allFactionData = Object.values(
+  import.meta.glob("./factionTech/*.ts", { eager: true, import: "default" })
+) as FleetTechData[]
+
+const factionData = allFactionData.find(
+  (data) => data.faction.toLowerCase() === faction.toLowerCase()
+)
+---
+
+{
+  factionData ? (
+    <ul>
+      {factionData.thresholds.map(({ ship, techPoints, note }) => (
+        <li>
+          <p class="!italic">
+            <WikiLink page={ship}>{ship}</WikiLink>
+            {` - ${techPoints}`}
+            {note && ` (${note})`}
+          </p>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p>Faction {faction} has no point thresholds currently.</p>
+  )
+}
