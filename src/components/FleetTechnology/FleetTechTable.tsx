@@ -1,5 +1,6 @@
-import { ShipCell } from "@components/_common/ItemCell"
+import { useMemo, useState } from "react"
 
+import { ShipCell } from "@components/_common/ItemCell"
 import type { FleetTechData } from "./factionTech/types"
 import { parseLocation } from "./parseLocation"
 
@@ -12,29 +13,112 @@ const allFactionData = Object.values(
 
 import "@components/_common/ItemTable/styles.css"
 
+const tableInfo = [
+  { colName: "Ship", colWidth: "15%", key: "ship" },
+  { colName: "Location", colWidth: "50%", limiter: true, key: "location" },
+  { colName: "Investment", colWidth: "17.5%", key: "investment" },
+  {
+    colName: "Tech Points",
+    colWidth: "17.5%",
+    limiter: true,
+    key: "techPoints",
+  },
+]
+
 interface FleetTechTableProps {
   faction: string
 }
 
+type SortOrder = "asc" | "desc" | null
+
+type SortConfig = {
+  column: string | null
+  order: SortOrder
+}
+
 export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
-  const tableInfo = [
-    { colName: "Ship", colWidth: "15%" },
-    { colName: "Location", colWidth: "50%", limiter: true },
-    { colName: "Investment", colWidth: "17.5%" },
-    { colName: "Tech Points", colWidth: "17.5%", limiter: true },
-  ]
+  const [sortConfig, setSortConfig] = useState<SortConfig>({
+    column: null,
+    order: null,
+  })
+
   const factionData = allFactionData.find((data) => data.faction === faction)
 
-  const totalTechPoints =
-    factionData?.data
+  //cache total tech points
+  const totalTechPoints = useMemo(() => {
+    if (!factionData?.data) return 0
+
+    return factionData.data
       .filter(
         (obj: { techPoints: number; isShipyard?: boolean }) => !obj.isShipyard,
       )
       .reduce(
-        (sum: number, obj: { techPoints: number }) =>
-          sum + (obj.techPoints || 0),
+        (
+          sum: number,
+          obj: {
+            techPoints: number
+            isShipyard?: boolean
+          },
+        ) => sum + (obj.techPoints || 0),
         0,
-      ) || null
+      )
+  }, [factionData])
+
+  // sort function
+  const handleSort = (columnKey: string) => {
+    setSortConfig((prevConfig) => {
+      if (prevConfig.column === columnKey) {
+        const nextOrder =
+          prevConfig.order === "asc"
+            ? "desc"
+            : prevConfig.order === "desc"
+              ? null
+              : "asc"
+        return { column: nextOrder ? columnKey : null, order: nextOrder }
+      }
+      return { column: columnKey, order: "asc" }
+    })
+  }
+
+  // sorted data
+  const sortedData = useMemo(() => {
+    if (!factionData || !sortConfig.column || !sortConfig.order) {
+      return factionData?.data || []
+    }
+
+    const sorted = [...factionData.data]
+
+    sorted.sort((a, b) => {
+      const { column, order } = sortConfig
+
+      // tech point numeric sort
+      if (column === "techPoints") {
+        return order === "asc"
+          ? a.techPoints - b.techPoints
+          : b.techPoints - a.techPoints
+      }
+
+      // location sorting
+      if (column === "location") {
+        const aEvent = a.location[0]?.event || ""
+        const bEvent = b.location[0]?.event || ""
+        return order === "asc"
+          ? aEvent.localeCompare(bEvent)
+          : bEvent.localeCompare(aEvent)
+      }
+
+      // default sort
+      if (column === "ship" || column === "investment") {
+        return order === "asc"
+          ? a[column].localeCompare(b[column])
+          : b[column].localeCompare(a[column])
+      }
+
+      return 0
+    })
+
+    return sorted
+  }, [factionData, sortConfig])
 
   return (
     factionData && (
@@ -66,14 +150,31 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
                   <th
                     key={index}
                     className={`${col?.limiter && "ship_table_limiter"} px-1 relative`}
+                    onClick={() => handleSort(col.key)}
                   >
-                    <div className="flex">
+                    <div className="flex cursor-pointer">
                       <span className="flex-1 text-center align-middle justify-center pr-2 w-full">
                         {col.colName}
                       </span>
                       <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
-                        <i className="fa fa-caret-up text-sm"></i>
-                        <i className="fa fa-caret-down text-sm"></i>
+                        <i
+                          className={`fa fa-caret-up text-sm ${
+                            sortConfig.column === col.key
+                              ? sortConfig.order === "asc"
+                                ? "text-cyan-300"
+                                : "invisible"
+                              : ""
+                          }`}
+                        ></i>
+                        <i
+                          className={`fa fa-caret-down text-sm ${
+                            sortConfig.column === col.key
+                              ? sortConfig.order === "desc"
+                                ? "text-cyan-300"
+                                : "invisible"
+                              : ""
+                          }`}
+                        ></i>
                       </div>
                     </div>
                   </th>
@@ -82,7 +183,7 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({ faction }) => {
             </thead>
 
             <tbody>
-              {factionData.data.map((row, index) => (
+              {sortedData.map((row, index) => (
                 <tr key={index}>
                   <td className="!py-2">
                     <ShipCell
