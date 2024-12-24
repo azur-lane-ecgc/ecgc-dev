@@ -1,6 +1,6 @@
 import type { FleetTechData } from "./types"
 
-export const NPTechPoints: FleetTechData = {
+const NPTechPoints: FleetTechData = {
   faction: "NP",
   thresholds: [
     {
@@ -59,3 +59,5 @@ export const NPTechPoints: FleetTechData = {
     },
   ],
 }
+
+export default NPTechPoints
