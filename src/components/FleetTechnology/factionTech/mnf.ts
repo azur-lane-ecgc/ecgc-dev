@@ -7,7 +7,7 @@ const MNFTechPoints: FleetTechData = {
     {
       ship: "Flandre",
       techPoints: 180,
-      note: "+KMS",
+      note: "+KMS Points",
     },
   ],
   data: [
