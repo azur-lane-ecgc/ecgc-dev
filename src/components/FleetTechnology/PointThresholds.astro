@@ -10,7 +10,10 @@ interface Props {
 const { faction } = Astro.props
 
 const allFactionData = Object.values(
-  import.meta.glob("./factionTech/*.ts", { eager: true, import: "default" })
+  import.meta.glob("./factionTech/!(types).ts", {
+    eager: true,
+    import: "default",
+  })
 ) as FleetTechData[]
 
 const factionData = allFactionData.find(
