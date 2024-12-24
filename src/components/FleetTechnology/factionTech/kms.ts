@@ -182,7 +182,7 @@ const KMSTechPoints: FleetTechData = {
       rarity: 4,
       location: [
         { event: "Medal Shop", stages: ["CA"] },
-        { event: "New Player 7-day Login Campaign", stages: [] },
+        { event: "Beginner Rewards", stages: ["8-Day Login Reward"] },
       ],
       investment: "Collection",
       techPoints: 28,
