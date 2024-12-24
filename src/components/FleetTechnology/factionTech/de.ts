@@ -7,30 +7,6 @@ const DETechPoints: FleetTechData = {
       ship: "Harbin",
       techPoints: 160,
     },
-    {
-      ship: "Ning Hai",
-      techPoints: 36,
-    },
-    {
-      ship: "Ping Hai",
-      techPoints: 36,
-    },
-    {
-      ship: "Chang Chun",
-      techPoints: 32,
-    },
-    {
-      ship: "Tai Yuan",
-      techPoints: 32,
-    },
-    {
-      ship: "An Shan",
-      techPoints: 32,
-    },
-    {
-      ship: "Fu Shun",
-      techPoints: 10,
-    },
   ],
   data: [
     {
