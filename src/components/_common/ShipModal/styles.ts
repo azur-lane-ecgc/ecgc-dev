@@ -16,9 +16,9 @@ export const shipLinkStyle =
   "!text-white bg-transparent no-underline visited:text-white visited:bg-transparent hover:!text-[hsla(0,0%,100%,0.75)] hover:!bg-transparent !hover:underline active:text-red-500 active:bg-transparent active:underline"
 
 export const shipIconContainerStyle =
-  "flex flex-col sm:flex-row justify-center items-center gap-4 mt-5"
+  "flex flex-col sm:flex-row items-center gap-4 mt-5"
 export const shipIconStyle =
-  "overflow-hidden my-1.5 min-w-fit w-fit p-0.5 shadow-[0_10px_25px_0_rgba(0,0,0,1)] h-auto border-radius-0"
+  "overflow-hidden mr-1 my-1.5 min-w-fit w-fit p-0.5 shadow-[0_10px_25px_0_rgba(0,0,0,1)] h-auto border-radius-0"
 
 // rank color helper functions
 export const letterRankColor = (rank: string | null | undefined): string => {

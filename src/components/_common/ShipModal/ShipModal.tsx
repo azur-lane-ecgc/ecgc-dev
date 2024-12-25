@@ -281,7 +281,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 
                 {/* Samvaluation */}
                 <div className="text-sm">
-                  <h3 className="text-xl underline">Samvaluation</h3>
                   <span className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]">
                     {samvaluationText}
                   </span>
