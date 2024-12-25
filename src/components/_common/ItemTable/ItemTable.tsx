@@ -9,10 +9,12 @@ interface TableInfoProps {
 
 interface ItemTableProps {
   tableInfo: TableInfoProps[]
+  active?: boolean
 }
 
 export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
   tableInfo,
+  active = false,
   children,
 }) => {
   return (
@@ -36,7 +38,7 @@ export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
         </colgroup>
 
         <thead>
-          <tr>
+          <tr className={`${active ? "bg-[#373b3e]" : ""}`}>
             {tableInfo.map((col, index) => (
               <th
                 key={index}
