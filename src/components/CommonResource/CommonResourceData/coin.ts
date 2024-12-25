@@ -31,7 +31,7 @@ const CoinData: ResourceProps = {
       locations: [
         {
           name: "Login Rewards",
-          wikiLink: "Daily Login Rewards",
+          wikiLink: "Missions#Login Rewards",
           quantity: { amount: 4800, timeFrame: "monthly" },
         },
         {
