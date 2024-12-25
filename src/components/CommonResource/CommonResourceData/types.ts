@@ -2,7 +2,7 @@ export interface LocationProps {
   found: boolean
   locations?: {
     name: string
-    wikiLink: string | null
+    wikiLink: string
     quantity: {
       amount: number | "RNG"
       timeFrame:
@@ -27,7 +27,7 @@ export interface ResourceProps {
   rarity: number
   image: string
   wikiLink: string
-  drops?: {
+  drops: {
     academy?: LocationProps
     missions?: LocationProps
     dailyRaid?: LocationProps
