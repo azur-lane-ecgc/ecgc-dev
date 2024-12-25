@@ -1,5 +1,5 @@
 interface LocationLinksProps {
-  locations: {
+  locations?: {
     name: string
     wikiLink: string
     quantity: {
@@ -26,15 +26,16 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
     <div className={className}>
       {locations &&
         locations.map((location, index) => (
-          <div key={index} className="text-[13px] leading-normal">
+          <div key={index} className="text-[12px] leading-normal">
             <a
               rel="noopener noreferrer"
               target="_blank"
               href={`https://azurlane.koumakan.jp/wiki/${location.wikiLink.replaceAll(" ", "_")}`}
+              className="font-bold !text-[#0047ab] bg-transparent no-underline hover:!text-[aqua] hover:underline active:!text-[aqua] active:underline"
             >
               {location.name}
             </a>{" "}
-            <span>
+            <span className="text-black font-semibold">
               {location.notes && `(${location.notes})`} -{" "}
               {location.quantity.amount}{" "}
               {location.quantity.timeFrame &&
