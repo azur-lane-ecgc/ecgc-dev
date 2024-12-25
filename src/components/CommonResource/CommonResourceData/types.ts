@@ -14,6 +14,7 @@ export interface LocationProps {
         | "bimonthly"
         | null
     }
+    notes?: string
   }[]
   checkMark: {
     color: "red" | "green" | "sand"

@@ -68,9 +68,10 @@ const CoinData: ResourceProps = {
       found: true,
       locations: [
         {
-          name: "Cruise Missions (Free)",
+          name: "Cruise Missions",
           wikiLink: "Cruise_Missions#Rewards",
           quantity: { amount: 24000, timeFrame: "monthly" },
+          notes: "Free",
         },
       ],
       checkMark: {
@@ -90,6 +91,7 @@ const CoinData: ResourceProps = {
           name: "Event Chapter D",
           wikiLink: "Events",
           quantity: { amount: "RNG", timeFrame: null },
+          notes: "Clearing Rewards",
         },
       ],
       checkMark: {
