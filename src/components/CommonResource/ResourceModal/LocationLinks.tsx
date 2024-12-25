@@ -3,8 +3,8 @@ interface LocationLinksProps {
     name: string
     wikiLink: string
     quantity: {
-      amount: number | "RNG"
-      timeFrame:
+      amount?: number | "RNG" | null
+      timeFrame?:
         | "one-time"
         | "daily"
         | "weekly"
@@ -23,7 +23,7 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
   className = "",
 }) => {
   return (
-    <div className={className}>
+    <div className={`${className} hidden group-hover:block`}>
       {locations &&
         locations.map((location, index) => (
           <div key={index} className="text-[12px] leading-normal">
@@ -36,17 +36,21 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
               {location.name}
             </a>{" "}
             <span className="text-black font-semibold">
-              {location.notes && `(${location.notes})`} -{" "}
-              {location.quantity.amount}{" "}
+              {location.notes && `(${location.notes})`}
+              {location.quantity.amount && ` - ${location.quantity.amount}`}
               {location.quantity.timeFrame &&
                 location.quantity.timeFrame !== null &&
                 location.quantity.amount !== "RNG" && (
                   <>
+                    {" "}
                     /{" "}
                     {location.quantity.timeFrame.charAt(0).toUpperCase() +
                       location.quantity.timeFrame
                         .slice(1)
-                        .replace("Bimonthly", "2 Months")}
+                        .replace(/Daily/g, "Day")
+                        .replace(/Weekly/g, "Week")
+                        .replace(/Monthly/g, "Month")
+                        .replace(/Bimonthly/g, "2 Months")}
                   </>
                 )}
             </span>
