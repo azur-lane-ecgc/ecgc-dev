@@ -15,15 +15,15 @@ import {
 
 import type { ResourceProps } from "../CommonResourceData/types"
 
-import CoinData from "../CommonResourceData/coin"
+import { ResourceData } from "../CommonResourceData"
 
 interface ResourceModalProps {
-  item: ResourceProps
+  name: string
   trigger?: TriggerProps
 }
 
 export const ResourceModal: React.FC<ResourceModalProps> = ({
-  item,
+  name,
   trigger,
 }): React.JSX.Element => {
   const [open, setOpen] = useState(false)
@@ -42,12 +42,14 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
     return
   }, [open])
 
-  const name = item.name
-  const rarity = item.rarity
-  const imgUrl = item.image
+  const item = ResourceData.find((item) => name === item.name)
+  name = (item?.name || "") + "s"
+  const rarity = item?.rarity || ""
+  const imgUrl = item?.image || ""
+  const wikiLink = item?.wikiLink || ""
 
   if (trigger) {
-    trigger.descriptionNote = String(CoinData.total?.monthly)
+    trigger.descriptionNote = String(item?.total?.monthly || "")
   }
 
   return (
@@ -130,12 +132,12 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                     rel="noopener noreferrer"
                     target="_blank"
                     title={name}
-                    href={`https://azurlane.koumakan.jp/wiki/${item.wikiLink.replaceAll(" ", "_")}`}
+                    href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
                   >
                     <img
                       loading="lazy"
                       src={`/test_ecgc_2/images/${imgUrl}`}
-                      alt={`${item.name}`}
+                      alt={`${item?.name}`}
                     />
                   </a>
                 </div>
@@ -147,7 +149,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   className={`${shipLinkStyle}`}
                   rel="noopener noreferrer"
                   target="_blank"
-                  href={`https://azurlane.koumakan.jp/wiki/${item.wikiLink.replaceAll(" ", "_")}`}
+                  href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
                 >
                   {name}
                 </a>
