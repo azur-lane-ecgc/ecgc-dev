@@ -39,18 +39,15 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
               {location.notes && `(${location.notes})`}
               {location.quantity.amount && ` - ${location.quantity.amount}`}
               {location.quantity.timeFrame &&
-                location.quantity.timeFrame !== null &&
                 location.quantity.amount !== "RNG" && (
                   <>
                     {" "}
                     /{" "}
-                    {location.quantity.timeFrame.charAt(0).toUpperCase() +
-                      location.quantity.timeFrame
-                        .slice(1)
-                        .replace(/Daily/g, "Day")
-                        .replace(/Weekly/g, "Week")
-                        .replace(/Monthly/g, "Month")
-                        .replace(/Bimonthly/g, "2 Months")}
+                    {location.quantity.timeFrame
+                      .replace("daily", "Day")
+                      .replace("weekly", "Week")
+                      .replace("bimonthly", "2 Months")
+                      .replace("monthly", "Month")}
                   </>
                 )}
             </span>
