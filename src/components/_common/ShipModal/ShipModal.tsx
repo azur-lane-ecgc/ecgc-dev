@@ -26,7 +26,7 @@ import {
 } from "./styles"
 import { ShipTags } from "./ShipTags"
 
-interface TriggerProps {
+export interface TriggerProps {
   iconNote?: string | null
   descriptionNote?: string | null
   largeDescNote?: boolean | null
