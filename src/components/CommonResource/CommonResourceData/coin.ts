@@ -70,7 +70,7 @@ const CoinData: ResourceProps = {
         {
           name: "Cruise Missions",
           wikiLink: "Cruise_Missions#Rewards",
-          quantity: { amount: 24000, timeFrame: "monthly" },
+          quantity: { amount: 24000, timeFrame: "bimonthly" },
           notes: "Free",
         },
       ],
