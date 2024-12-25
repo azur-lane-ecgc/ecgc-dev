@@ -9,7 +9,7 @@ export const getCellColor = (color: string | undefined | null) => {
       colorClass = "!bg-[palegreen] hover:!bg-[#52b352]"
       break
     case "sand":
-      colorClass = "!bg-[lemonchiffon] hover:!bg-[#f1e1b3]"
+      colorClass = "!bg-[lemonchiffon] hover:!bg-[rgba(199,193,136,0.9)]"
       break
     default:
       colorClass = "!bg-[lightcoral] hover:!bg-[#c75e5e]"
