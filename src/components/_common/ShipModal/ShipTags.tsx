@@ -22,8 +22,8 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
           className={`fa-solid translate-y-[1px] ${roleDropdownOpen ? "fa-angle-up" : "fa-angle-down"}`}
         />
       </button>
+      
       {/* Tags (Smaller Screen) */}
-
       <div
         className={`${
           roleDropdownOpen ? "max-h-[500px] border" : "max-h-0 border-0"
