@@ -133,7 +133,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 </a>
               </h1>
               <h6 className="sm:hidden mt-1 underline underline-offset-2">
-                Scroll on Tables!
+                Tables are scrollable horizontally!
               </h6>
 
               <div
