@@ -13,7 +13,7 @@ export const getTotalGuaranteed = (
 
   if (resource.drops) {
     for (const key in resource.drops) {
-      const location: LocationProps =
+      const location: LocationProps | undefined =
         resource.drops[key as keyof ResourceProps["drops"]]
 
       if (location && location.found && location.locations) {
