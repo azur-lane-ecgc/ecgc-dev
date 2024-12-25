@@ -1,15 +1,9 @@
 import { useMemo, useState } from "react"
 
 import { ShipCell } from "@components/_common/ItemCell"
-import type { FleetTechData } from "./factionTech/types"
-import { parseLocation } from "./parseLocation"
 
-const allFactionData = Object.values(
-  import.meta.glob("./factionTech/!(types).ts", {
-    eager: true,
-    import: "default",
-  }),
-) as FleetTechData[]
+import { allFactionData } from "./factionTech"
+import { parseLocation } from "./parseLocation"
 
 import "@components/_common/ItemTable/styles.css"
 
