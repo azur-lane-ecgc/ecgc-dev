@@ -15,11 +15,15 @@ interface LocationLinksProps {
     }
     notes?: string
   }[]
+  className?: string
 }
 
-export const LocationLinks: React.FC<LocationLinksProps> = ({ locations }) => {
+export const LocationLinks: React.FC<LocationLinksProps> = ({
+  locations,
+  className = "",
+}) => {
   return (
-    <>
+    <div className={className}>
       {locations &&
         locations.map((location, index) => (
           <div key={index} className="text-[13px] leading-normal">
@@ -47,6 +51,6 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({ locations }) => {
             </span>
           </div>
         ))}
-    </>
+    </div>
   )
 }
