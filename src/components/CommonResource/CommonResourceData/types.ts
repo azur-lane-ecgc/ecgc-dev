@@ -15,6 +15,10 @@ export interface LocationProps {
         | null
     }
   }[]
+  checkMark: {
+    color: "red" | "green" | "sand"
+    mark: "check" | "x"
+  }
 }
 
 export interface ResourceProps {

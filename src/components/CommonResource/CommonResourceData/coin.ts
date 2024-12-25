@@ -21,10 +21,19 @@ const CoinData: ResourceProps = {
           quantity: { amount: "RNG", timeFrame: null },
         },
       ],
+      checkMark: {
+        color: "green",
+        mark: "check",
+      },
     },
     missions: {
       found: true,
       locations: [
+        {
+          name: "Login Rewards",
+          wikiLink: "Daily Login Rewards",
+          quantity: { amount: 4800, timeFrame: "monthly" },
+        },
         {
           name: "Daily Missions",
           wikiLink: "Missions#Daily_Missions",
@@ -35,12 +44,11 @@ const CoinData: ResourceProps = {
           wikiLink: "Missions#Weekly_Missions",
           quantity: { amount: 14000, timeFrame: "weekly" },
         },
-        {
-          name: "Monthly Login",
-          wikiLink: "",
-          quantity: { amount: 4800, timeFrame: "monthly" },
-        },
       ],
+      checkMark: {
+        color: "green",
+        mark: "check",
+      },
     },
     dailyRaid: {
       found: true,
@@ -51,6 +59,10 @@ const CoinData: ResourceProps = {
           quantity: { amount: "RNG", timeFrame: "daily" },
         },
       ],
+      checkMark: {
+        color: "green",
+        mark: "check",
+      },
     },
     cruisePass: {
       found: true,
@@ -61,6 +73,10 @@ const CoinData: ResourceProps = {
           quantity: { amount: 24000, timeFrame: "monthly" },
         },
       ],
+      checkMark: {
+        color: "green",
+        mark: "check",
+      },
     },
     mapDrop: {
       found: true,
@@ -68,14 +84,18 @@ const CoinData: ResourceProps = {
         {
           name: "Campaign Chapters 9+",
           wikiLink: "Campaign",
-          quantity: { amount: "RNG", timeFrame: "one-time" },
+          quantity: { amount: "RNG", timeFrame: null },
         },
         {
           name: "Event Chapter D",
           wikiLink: "Events",
-          quantity: { amount: "RNG", timeFrame: "one-time" },
+          quantity: { amount: "RNG", timeFrame: null },
         },
       ],
+      checkMark: {
+        color: "green",
+        mark: "check",
+      },
     },
     opsi: {
       found: true,
@@ -86,6 +106,10 @@ const CoinData: ResourceProps = {
           quantity: { amount: 10000, timeFrame: "monthly" },
         },
       ],
+      checkMark: {
+        color: "green",
+        mark: "check",
+      },
     },
     shops: {
       found: true,
@@ -93,9 +117,13 @@ const CoinData: ResourceProps = {
         {
           name: "Limited Event Shop",
           wikiLink: "Shops#Event_Shop",
-          quantity: { amount: "RNG", timeFrame: "monthly" },
+          quantity: { amount: "RNG", timeFrame: null },
         },
       ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
     },
   },
   total: {
