@@ -8,8 +8,6 @@ import { ImageCarousel } from "@components/_common/ImageCarousel"
 import { ShipCell, ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
 
-import { ResourceModal } from "@components/CommonResource/ResourceModal"
-
 const data = [
   {
     src: "/test_ecgc_2/images/fleetbuilding_guide/BBFleet.png",
@@ -107,17 +105,6 @@ const data = [
       hasBorder={true}
       inGroup={true}
       hover={true}
-    />
-
-    <ResourceModal
-      client:visible
-      name="Coin"
-      trigger={{
-        iconNote: "CVL",
-        descriptionNote: `<a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a> is cute.`,
-        largeDescNote: false,
-        hasBorder: true,
-      }}
     />
   </ItemContainer>
 
