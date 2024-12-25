@@ -46,6 +46,7 @@ export interface ResourceProps {
     medalShop?: LocationProps
     prototypeShop?: LocationProps
     eventShop?: LocationProps
+    metaShop?: LocationProps
   }
   total: {
     bimonthly: number

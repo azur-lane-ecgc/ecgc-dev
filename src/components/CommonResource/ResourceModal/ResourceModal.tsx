@@ -15,15 +15,13 @@ import {
 
 import type { ResourceProps } from "../CommonResourceData/types"
 
-import { ResourceData } from "../CommonResourceData"
-
 interface ResourceModalProps {
-  name: string
+  item: ResourceProps
   trigger?: TriggerProps
 }
 
 export const ResourceModal: React.FC<ResourceModalProps> = ({
-  name,
+  item,
   trigger,
 }): React.JSX.Element => {
   const [open, setOpen] = useState(false)
@@ -42,17 +40,10 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
     return
   }, [open])
 
-  const item = ResourceData.find(
-    (item) => name.toLowerCase() === item.name.toLowerCase(),
-  )!
-  name = item.name + "s"
+  const name = item.name + "s"
   const rarity = item.rarity
   const imgUrl = item.image
   const wikiLink = item.wikiLink
-
-  if (trigger) {
-    trigger.descriptionNote = String(item.total.monthly || "")
-  }
 
   return (
     <>
@@ -156,9 +147,128 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   {name}
                 </a>
               </h1>
+              <h6 className="sm:hidden mt-3"> Scroll on Tables!</h6>
               <HR />
 
-              {/* Location */}
+              {/* Totals */}
+              <h4 className="text-left ml-1 mb-3">Total</h4>
+              <ItemTable
+                tableInfo={[
+                  { colName: "Daily", colWidth: "25%", limiter: true },
+                  { colName: "Weekly", colWidth: "25%", limiter: true },
+                  { colName: "Monthly", colWidth: "25%", limiter: true },
+                  {
+                    colName: "Bimonthly",
+                    colWidth: "25%",
+                    limiter: true,
+                  },
+                ]}
+                active={true}
+              >
+                <tr>
+                  <td className=" font-bold">
+                    <span className="!text-yellow-400">{item.total.daily}</span>{" "}
+                    / Day
+                  </td>
+                  <td className=" font-bold">
+                    <span className="!text-yellow-400">
+                      {item.total.weekly}
+                    </span>{" "}
+                    / Week
+                  </td>
+                  <td className=" font-bold">
+                    <span className="!text-yellow-400">
+                      {item.total.monthly}
+                    </span>{" "}
+                    / Month
+                  </td>
+                  <td className=" font-bold">
+                    <span className="!text-yellow-400">
+                      {item.total.bimonthly}
+                    </span>{" "}
+                    / 2 Months
+                  </td>
+                </tr>
+              </ItemTable>
+              <HR />
+
+              {/* Dailies */}
+              <h4 className="text-left ml-1 mb-3">Daily</h4>
+              <ItemTable
+                tableInfo={[
+                  { colName: "Academy", colWidth: "25%", limiter: true },
+                  { colName: "Missions", colWidth: "25%", limiter: true },
+                  { colName: "Daily Raid", colWidth: "25%", limiter: true },
+                  { colName: "Cruise Pass", colWidth: "25%", limiter: true },
+                ]}
+                active={true}
+              >
+                <tr className="h-[120px] min-h-[120px]">
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                </tr>
+              </ItemTable>
+              <HR />
+
+              {/* Farming */}
+              <h4 className="text-left ml-1 mb-3">Farming</h4>
+              <ItemTable
+                tableInfo={[
+                  { colName: "Campaign", colWidth: "25%", limiter: true },
+                  { colName: "Hard Mode", colWidth: "25%", limiter: true },
+                  { colName: "Event", colWidth: "25%", limiter: true },
+                  { colName: "OPSI", colWidth: "25%", limiter: true },
+                ]}
+                active={true}
+              >
+                <tr className="h-[120px] min-h-[120px]">
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                </tr>
+              </ItemTable>
+              <HR />
+
+              {/* Shops 1 */}
+              <h4 className="text-left ml-1 mb-3">Shops</h4>
+              <ItemTable
+                tableInfo={[
+                  { colName: "General", colWidth: "25%", limiter: true },
+                  { colName: "Core Data", colWidth: "25%", limiter: true },
+                  { colName: "Guild", colWidth: "25%", limiter: true },
+                  { colName: "Merit", colWidth: "25%", limiter: true },
+                ]}
+                active={true}
+              >
+                <tr className="h-[120px] min-h-[120px]">
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                </tr>
+              </ItemTable>
+              <br />
+
+              {/* Shops 2 */}
+              <ItemTable
+                tableInfo={[
+                  { colName: "Medal", colWidth: "25%", limiter: true },
+                  { colName: "Prototype", colWidth: "25%", limiter: true },
+                  { colName: "Event", colWidth: "25%", limiter: true },
+                  { colName: "META", colWidth: "25%", limiter: true },
+                ]}
+                active={true}
+              >
+                <tr className="h-[120px] min-h-[120px]">
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                </tr>
+              </ItemTable>
             </div>
           </div>
         </div>
