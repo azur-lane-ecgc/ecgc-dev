@@ -79,14 +79,24 @@ const CoinData: ResourceProps = {
         mark: "check",
       },
     },
-    mapDrop: {
+    campaignDrop: {
       found: true,
       locations: [
         {
           name: "Campaign Chapters 9+",
           wikiLink: "Campaign",
           quantity: { amount: "RNG", timeFrame: null },
+          notes: "Clearing Rewards",
         },
+      ],
+      checkMark: {
+        color: "green",
+        mark: "check",
+      },
+    },
+    eventDrop: {
+      found: true,
+      locations: [
         {
           name: "Event Chapter D",
           wikiLink: "Events",
@@ -113,7 +123,7 @@ const CoinData: ResourceProps = {
         mark: "check",
       },
     },
-    shops: {
+    eventShop: {
       found: true,
       locations: [
         {
@@ -129,6 +139,7 @@ const CoinData: ResourceProps = {
     },
   },
   total: {
+    bimonthly: 0,
     monthly: 0,
     weekly: 0,
     daily: 0,

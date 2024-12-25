@@ -32,11 +32,23 @@ export interface ResourceProps {
     missions?: LocationProps
     dailyRaid?: LocationProps
     cruisePass?: LocationProps
-    mapDrop?: LocationProps
+
+    campaignDrop?: LocationProps
+    hardModeDrop?: LocationProps
+    eventDrop?: LocationProps
     opsi?: LocationProps
-    shops?: LocationProps
+
+    generalShop?: LocationProps
+    coreDataShop?: LocationProps
+    guildShop?: LocationProps
+    meritShop?: LocationProps
+
+    medalShop?: LocationProps
+    prototypeShop?: LocationProps
+    eventShop?: LocationProps
   }
   total: {
+    bimonthly: number
     monthly: number
     weekly: number
     daily: number
