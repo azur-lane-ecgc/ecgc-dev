@@ -42,14 +42,16 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
     return
   }, [open])
 
-  const item = ResourceData.find((item) => name === item.name)
-  name = (item?.name || "") + "s"
-  const rarity = item?.rarity || ""
-  const imgUrl = item?.image || ""
-  const wikiLink = item?.wikiLink || ""
+  const item = ResourceData.find(
+    (item) => name.toLowerCase() === item.name.toLowerCase(),
+  )!
+  name = item.name + "s"
+  const rarity = item.rarity
+  const imgUrl = item.image
+  const wikiLink = item.wikiLink
 
   if (trigger) {
-    trigger.descriptionNote = String(item?.total?.monthly || "")
+    trigger.descriptionNote = String(item.total.monthly || "")
   }
 
   return (
@@ -137,7 +139,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                     <img
                       loading="lazy"
                       src={`/test_ecgc_2/images/${imgUrl}`}
-                      alt={`${item?.name}`}
+                      alt={`${item.name}`}
                     />
                   </a>
                 </div>

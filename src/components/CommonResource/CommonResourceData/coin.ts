@@ -98,6 +98,11 @@ const CoinData: ResourceProps = {
       ],
     },
   },
+  total: {
+    monthly: 0,
+    weekly: 0,
+    daily: 0,
+  },
 }
 
 CoinData.total = getTotalGuaranteed(CoinData)

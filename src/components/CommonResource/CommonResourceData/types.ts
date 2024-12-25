@@ -31,7 +31,7 @@ export interface ResourceProps {
     opsi?: LocationProps
     shops?: LocationProps
   }
-  total?: {
+  total: {
     monthly: number
     weekly: number
     daily: number
