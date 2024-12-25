@@ -12,6 +12,7 @@ export interface LocationProps {
         | "twice-monthly"
         | "monthly"
         | "bimonthly"
+        | "cycle"
         | null
     }
     notes?: string

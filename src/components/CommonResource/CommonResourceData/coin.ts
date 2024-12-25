@@ -129,7 +129,7 @@ const CoinData: ResourceProps = {
         {
           name: "Limited Event Shop",
           wikiLink: "Shops#Event_Shop",
-          quantity: { amount: "RNG", timeFrame: null },
+          quantity: { amount: 10000, timeFrame: "cycle" },
         },
       ],
       checkMark: {

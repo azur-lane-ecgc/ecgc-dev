@@ -11,6 +11,7 @@ interface LocationLinksProps {
         | "twice-monthly"
         | "monthly"
         | "bimonthly"
+        | "cycle"
         | null
     }
     notes?: string
@@ -47,7 +48,8 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
                       .replace("daily", "Day")
                       .replace("weekly", "Week")
                       .replace("bimonthly", "2 Months")
-                      .replace("monthly", "Month")}
+                      .replace("monthly", "Month")
+                      .replace("cycle", "Cycle")}
                   </>
                 )}
             </span>
