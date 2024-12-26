@@ -24,7 +24,7 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
   className = "",
 }) => {
   return (
-    <div className={`${className} hidden group-hover:block`}>
+    <div className={`${className}`}>
       {locations &&
         locations.map((location, index) => (
           <div key={index} className="text-[12px] leading-normal">
