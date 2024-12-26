@@ -9,6 +9,7 @@ import T1EXPDataPackData from "./t1exp"
 import HEPData from "./hep"
 import CognitiveChipData from "./cogchip"
 import CognitiveArrayData from "./cogarray"
+import UniversalBulinData from "./purplebulin"
 
 export {
   CoinData,
@@ -22,4 +23,5 @@ export {
   HEPData,
   CognitiveChipData,
   CognitiveArrayData,
+  UniversalBulinData
 }
