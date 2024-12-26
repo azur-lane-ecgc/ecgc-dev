@@ -29,7 +29,10 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
   return (
     <div className={`${className}`}>
       {locations.map((location, index) => (
-        <div key={index} className="text-[12px] md:text-[12.5px] lg:text-[13px] leading-normal">
+        <div
+          key={index}
+          className="text-[12px] md:text-[12.5px] lg:text-[13px] leading-normal"
+        >
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -42,6 +45,7 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
             {location.notes && `(${location.notes})`}
             {location.quantity.amount && ` - ${location.quantity.amount}`}
             {location.quantity.timeFrame &&
+              location.quantity.timeFrame !== "one-time" &&
               location.quantity.amount !== "RNG" && (
                 <>
                   {" "}
