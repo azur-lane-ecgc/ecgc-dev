@@ -59,7 +59,6 @@ const CoreData: ResourceProps = {
         this Wiki page
       </a> 
       for lower Chapter drop information.
-    </span>
   `,
 }
 
