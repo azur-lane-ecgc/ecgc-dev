@@ -18,6 +18,7 @@ import {
   CognitiveChipData,
   CognitiveArrayData,
 } from "./CommonResourceData"
+import { ItemTable } from "@components/_common/ItemTable"
 
 const coin = CoinData
 const oil = OilData
@@ -424,3 +425,35 @@ const cogarray = CognitiveArrayData
     }}
   />
 </ItemContainer>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Daily", colWidth: "25%", limiter: true },
+    { colName: "Weekly", colWidth: "25%", limiter: true },
+    { colName: "Monthly", colWidth: "25%", limiter: true },
+    {
+      colName: "Bimonthly",
+      colWidth: "25%",
+      limiter: true,
+    },
+  ]}
+>
+  <tr>
+    <td class="flex justify-center">
+      <ResourceModal
+        client:visible
+        item={cogarray}
+        trigger={{
+          descriptionNote: `${cogarray.total.monthly} / Month`,
+          largeDescNote: true,
+          hasBorder: false,
+        }}
+      />
+    </td>
+    <td>test</td>
+    <td>test</td>
+    <td>test</td>
+  </tr>
+</ItemTable>
+<br />
