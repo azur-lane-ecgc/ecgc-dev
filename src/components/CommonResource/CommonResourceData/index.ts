@@ -8,6 +8,7 @@ import WisdomCubeData from "./cube"
 import T1EXPDataPackData from "./t1exp"
 import HEPData from "./hep"
 import CognitiveChipData from "./cogchip"
+import CognitiveArrayData from "./cogarray"
 
 export {
   CoinData,
@@ -20,4 +21,5 @@ export {
   T1EXPDataPackData,
   HEPData,
   CognitiveChipData,
+  CognitiveArrayData,
 }

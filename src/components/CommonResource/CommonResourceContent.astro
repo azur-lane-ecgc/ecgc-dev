@@ -16,6 +16,7 @@ import {
   T1EXPDataPackData,
   HEPData,
   CognitiveChipData,
+  CognitiveArrayData,
 } from "./CommonResourceData"
 
 const coin = CoinData
@@ -28,6 +29,7 @@ const cube = WisdomCubeData
 const t1exp = T1EXPDataPackData
 const hep = HEPData
 const cogchip = CognitiveChipData
+const cogarray = CognitiveArrayData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -409,6 +411,16 @@ const cogchip = CognitiveChipData
       descriptionNote: `${cogchip.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={cogarray}
+    trigger={{
+      descriptionNote: `${cogarray.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: false,
     }}
   />
 </ItemContainer>
