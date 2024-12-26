@@ -20,6 +20,10 @@ import {
   UniversalBulinData,
   PrototypeBulinData,
   SpecializedBulinData,
+  T1PlateData,
+  T2PlateData,
+  T3PlateData,
+  T4PlateData,
 } from "./CommonResourceData"
 import { ItemTable } from "@components/_common/ItemTable"
 
@@ -30,13 +34,21 @@ const guildtoken = GuildTokenData
 const metacrystal = CrystalFragmentData
 const protocore = PrototypeCoreData
 const cube = WisdomCubeData
+
 const t1exp = T1EXPDataPackData
 const hep = HEPData
+
 const cogchip = CognitiveChipData
 const cogarray = CognitiveArrayData
+
 const purplebulin = UniversalBulinData
 const goldbulin = PrototypeBulinData
 const rainbowbulin = SpecializedBulinData
+
+const t1plate = T1PlateData
+const t2plate = T2PlateData
+const t3plate = T3PlateData
+const t4plate = T4PlateData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -456,6 +468,46 @@ const rainbowbulin = SpecializedBulinData
     item={rainbowbulin}
     trigger={{
       descriptionNote: `${rainbowbulin.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t1plate}
+    trigger={{
+      descriptionNote: `${t1plate.total.monthly}`,
+      largeDescNote: true,
+      hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t2plate}
+    trigger={{
+      descriptionNote: `${t2plate.total.monthly}`,
+      largeDescNote: true,
+      hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t3plate}
+    trigger={{
+      descriptionNote: `${t3plate.total.monthly}`,
+      largeDescNote: true,
+      hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t4plate}
+    trigger={{
+      descriptionNote: `${t4plate.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: true,
     }}

@@ -5,13 +5,21 @@ import GuildTokenData from "./guildToken"
 import CrystalFragmentData from "./crystalFragment"
 import PrototypeCoreData from "./protocore"
 import WisdomCubeData from "./cube"
+
 import T1EXPDataPackData from "./t1exp"
 import HEPData from "./hep"
+
 import CognitiveChipData from "./cogchip"
 import CognitiveArrayData from "./cogarray"
+
 import UniversalBulinData from "./purplebulin"
 import PrototypeBulinData from "./goldbulin"
 import SpecializedBulinData from "./rainbowbulin"
+
+import T1PlateData from "./t1plate"
+import T2PlateData from "./t2plate"
+import T3PlateData from "./t3plate"
+import T4PlateData from "./t4plate"
 
 export {
   CoinData,
@@ -28,4 +36,8 @@ export {
   UniversalBulinData,
   PrototypeBulinData,
   SpecializedBulinData,
+  T1PlateData,
+  T2PlateData,
+  T3PlateData,
+  T4PlateData,
 }
