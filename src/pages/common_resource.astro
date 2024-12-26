@@ -12,6 +12,9 @@ import { ResourceData } from "@components/CommonResource/CommonResourceData"
 const coin = ResourceData.find(
   (item) => item.name.toLowerCase() === "Coin".toLowerCase()
 )!
+const oil = ResourceData.find(
+  (item) => item.name.toLowerCase() === "Oil".toLowerCase()
+)!
 ---
 
 <GuidePageLayout
@@ -357,6 +360,16 @@ const coin = ResourceData.find(
       item={coin}
       trigger={{
         descriptionNote: `${coin.total.bimonthly} ${coin.name} / 2 Months`,
+        largeDescNote: true,
+        hasBorder: true,
+      }}
+    />
+
+    <ResourceModal
+      client:visible
+      item={oil}
+      trigger={{
+        descriptionNote: `${oil.total.bimonthly} ${oil.name} / 2 Months`,
         largeDescNote: true,
         hasBorder: true,
       }}
