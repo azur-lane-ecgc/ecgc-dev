@@ -7,6 +7,7 @@ import PrototypeCoreData from "./protocore"
 import WisdomCubeData from "./cube"
 import T1EXPDataPackData from "./t1exp"
 import HEPData from "./hep"
+import CognitiveChipData from "./cogchip"
 
 export {
   CoinData,
@@ -18,4 +19,5 @@ export {
   WisdomCubeData,
   T1EXPDataPackData,
   HEPData,
+  CognitiveChipData,
 }
