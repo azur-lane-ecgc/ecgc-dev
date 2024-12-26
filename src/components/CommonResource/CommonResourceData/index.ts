@@ -6,6 +6,7 @@ import CrystalFragmentData from "./crystalFragment"
 import PrototypeCoreData from "./protocore"
 import WisdomCubeData from "./cube"
 import T1EXPDataPackData from "./t1exp"
+import HEPData from "./hep"
 
 export {
   CoinData,
@@ -16,4 +17,5 @@ export {
   PrototypeCoreData,
   WisdomCubeData,
   T1EXPDataPackData,
+  HEPData,
 }
