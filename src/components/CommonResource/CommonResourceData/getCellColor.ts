@@ -11,9 +11,6 @@ export const getCellColor = (color: string | undefined | null) => {
     case "sand":
       colorClass += "!bg-[lemonchiffon]/95 hover:!bg-[rgba(199,193,136,0.9)]"
       break
-    case "optimal":
-      colorClass += "!bg-purple-300 hover:!bg-purple-400"
-      break
     default:
       colorClass += "!bg-[lightcoral] hover:!bg-[#c75e5e]"
   }

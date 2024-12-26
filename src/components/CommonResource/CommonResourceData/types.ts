@@ -17,8 +17,11 @@ export interface LocationProps {
     }
     notes?: string
   }[]
-  color: "red" | "green" | "sand" | "optimal"
-  mark: "check" | "x"
+  checkMark: {
+    color: "red" | "green" | "sand"
+    mark: "check" | "x"
+    optimal?: boolean
+  }
 }
 
 export interface ResourceProps {

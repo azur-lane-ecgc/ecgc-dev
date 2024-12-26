@@ -213,20 +213,24 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 active={true}
               >
                 <tr className="h-[150px] min-h-[150px]">
-                  <td className={getCellColor(drops.academy?.color)}>
-                    <Mark mark={drops.academy?.mark} />
+                  <td className={getCellColor(drops.academy?.checkMark.color)}>
+                    <Mark mark={drops.academy?.checkMark} />
                     <LocationLinks locations={drops.academy?.locations} />
                   </td>
-                  <td className={getCellColor(drops.missions?.color)}>
-                    <Mark mark={drops.missions?.mark} />
+                  <td className={getCellColor(drops.missions?.checkMark.color)}>
+                    <Mark mark={drops.missions?.checkMark} />
                     <LocationLinks locations={drops.missions?.locations} />
                   </td>
-                  <td className={getCellColor(drops.dailyRaid?.color)}>
-                    <Mark mark={drops.dailyRaid?.mark} />
+                  <td
+                    className={getCellColor(drops.dailyRaid?.checkMark.color)}
+                  >
+                    <Mark mark={drops.dailyRaid?.checkMark} />
                     <LocationLinks locations={drops.dailyRaid?.locations} />
                   </td>
-                  <td className={getCellColor(drops.cruisePass?.color)}>
-                    <Mark mark={drops.cruisePass?.mark} />
+                  <td
+                    className={getCellColor(drops.cruisePass?.checkMark.color)}
+                  >
+                    <Mark mark={drops.cruisePass?.checkMark} />
                     <LocationLinks locations={drops.cruisePass?.locations} />
                   </td>
                 </tr>
@@ -245,20 +249,30 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 active={true}
               >
                 <tr className="h-[150px] min-h-[150px]">
-                  <td className={getCellColor(drops.campaignDrop?.color)}>
-                    <Mark mark={drops.campaignDrop?.mark} />
+                  <td
+                    className={getCellColor(
+                      drops.campaignDrop?.checkMark.color,
+                    )}
+                  >
+                    <Mark mark={drops.campaignDrop?.checkMark} />
                     <LocationLinks locations={drops.campaignDrop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.hardModeDrop?.color)}>
-                    <Mark mark={drops.hardModeDrop?.mark} />
+                  <td
+                    className={getCellColor(
+                      drops.hardModeDrop?.checkMark.color,
+                    )}
+                  >
+                    <Mark mark={drops.hardModeDrop?.checkMark} />
                     <LocationLinks locations={drops.hardModeDrop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.eventDrop?.color)}>
-                    <Mark mark={drops.eventDrop?.mark} />
+                  <td
+                    className={getCellColor(drops.eventDrop?.checkMark.color)}
+                  >
+                    <Mark mark={drops.eventDrop?.checkMark} />
                     <LocationLinks locations={drops.eventDrop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.opsi?.color)}>
-                    <Mark mark={drops.opsi?.mark} />
+                  <td className={getCellColor(drops.opsi?.checkMark.color)}>
+                    <Mark mark={drops.opsi?.checkMark} />
                     <LocationLinks locations={drops.opsi?.locations} />
                   </td>
                 </tr>
@@ -277,20 +291,30 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 active={true}
               >
                 <tr className="h-[150px] min-h-[150px]">
-                  <td className={getCellColor(drops.generalShop?.color)}>
-                    <Mark mark={drops.generalShop?.mark} />
+                  <td
+                    className={getCellColor(drops.generalShop?.checkMark.color)}
+                  >
+                    <Mark mark={drops.generalShop?.checkMark} />
                     <LocationLinks locations={drops.generalShop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.coreDataShop?.color)}>
-                    <Mark mark={drops.coreDataShop?.mark} />
+                  <td
+                    className={getCellColor(
+                      drops.coreDataShop?.checkMark.color,
+                    )}
+                  >
+                    <Mark mark={drops.coreDataShop?.checkMark} />
                     <LocationLinks locations={drops.coreDataShop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.guildShop?.color)}>
-                    <Mark mark={drops.guildShop?.mark} />
+                  <td
+                    className={getCellColor(drops.guildShop?.checkMark.color)}
+                  >
+                    <Mark mark={drops.guildShop?.checkMark} />
                     <LocationLinks locations={drops.guildShop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.meritShop?.color)}>
-                    <Mark mark={drops.meritShop?.mark} />
+                  <td
+                    className={getCellColor(drops.meritShop?.checkMark.color)}
+                  >
+                    <Mark mark={drops.meritShop?.checkMark} />
                     <LocationLinks locations={drops.meritShop?.locations} />
                   </td>
                 </tr>
@@ -308,20 +332,28 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 active={true}
               >
                 <tr className="h-[150px] min-h-[150px]">
-                  <td className={getCellColor(drops.medalShop?.color)}>
-                    <Mark mark={drops.medalShop?.mark} />
+                  <td
+                    className={getCellColor(drops.medalShop?.checkMark.color)}
+                  >
+                    <Mark mark={drops.medalShop?.checkMark} />
                     <LocationLinks locations={drops.medalShop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.prototypeShop?.color)}>
-                    <Mark mark={drops.prototypeShop?.mark} />
+                  <td
+                    className={getCellColor(
+                      drops.prototypeShop?.checkMark.color,
+                    )}
+                  >
+                    <Mark mark={drops.prototypeShop?.checkMark} />
                     <LocationLinks locations={drops.prototypeShop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.eventShop?.color)}>
-                    <Mark mark={drops.eventShop?.mark} />
+                  <td
+                    className={getCellColor(drops.eventShop?.checkMark.color)}
+                  >
+                    <Mark mark={drops.eventShop?.checkMark} />
                     <LocationLinks locations={drops.eventShop?.locations} />
                   </td>
-                  <td className={getCellColor(drops.metaShop?.color)}>
-                    <Mark mark={drops.metaShop?.mark} />
+                  <td className={getCellColor(drops.metaShop?.checkMark.color)}>
+                    <Mark mark={drops.metaShop?.checkMark} />
                     <LocationLinks locations={drops.metaShop?.locations} />
                   </td>
                 </tr>
