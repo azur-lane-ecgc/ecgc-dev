@@ -200,6 +200,13 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   </ItemTable>
                 </div>
               </div>
+
+              {item.notes && (
+                <p
+                  dangerouslySetInnerHTML={{ __html: `Note: ${item.notes}` }}
+                  className="!text-sm mt-3"
+                ></p>
+              )}
               <HR />
 
               <h4 className="text-left ml-1 mb-3">Daily</h4>
