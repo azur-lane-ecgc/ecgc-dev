@@ -123,7 +123,7 @@ const T4PlateData: ResourceProps = {
     monthly: 0,
     bimonthly: 0,
   },
-  notes: "Total Income is likely way higher due to OpSi RNG.",
+  notes: "Total income is likely way higher due to OpSi RNG.",
 }
 
 T4PlateData.total = getTotalGuaranteed(T4PlateData)
