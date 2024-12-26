@@ -10,12 +10,14 @@ import {
   CoreData,
   OilData,
   GuildTokenData,
+  CrystalFragmentData,
 } from "./CommonResourceData"
 
 const coin = CoinData
 const oil = OilData
 const coredata = CoreData
 const guildtoken = GuildTokenData
+const metacrystal = CrystalFragmentData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -208,7 +210,8 @@ const guildtoken = GuildTokenData
   </li>
   <li>
     <p>
-      <b style="color: lemonchiffon">Sand:</b> &#x2713; - Source spawining or item dropping is random. / X - One-Time drop only.
+      <b style="color: lemonchiffon">Sand:</b> &#x2713; - Source spawining or item
+      dropping is random. / X - One-Time drop only.
     </p>
   </li>
   <li>
@@ -303,7 +306,7 @@ const guildtoken = GuildTokenData
     client:visible
     item={coin}
     trigger={{
-      descriptionNote: `${coin.total.monthly} ${coin.plural || coin.name + "s"} / Month`,
+      descriptionNote: `${coin.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: false,
     }}
@@ -313,7 +316,7 @@ const guildtoken = GuildTokenData
     client:visible
     item={oil}
     trigger={{
-      descriptionNote: `${oil.total.monthly} ${oil.plural || oil.name + "s"} / Month`,
+      descriptionNote: `${oil.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: true,
     }}
@@ -323,7 +326,7 @@ const guildtoken = GuildTokenData
     client:visible
     item={coredata}
     trigger={{
-      descriptionNote: `${coredata.total.monthly} ${coredata.plural || coredata.name + "s"} / Month`,
+      descriptionNote: `${coredata.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: false,
     }}
@@ -333,9 +336,19 @@ const guildtoken = GuildTokenData
     client:visible
     item={guildtoken}
     trigger={{
-      descriptionNote: `${guildtoken.total.monthly} ${guildtoken.plural || guildtoken.name + "s"} / Month`,
+      descriptionNote: `${guildtoken.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={metacrystal}
+    trigger={{
+      descriptionNote: `${metacrystal.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: false,
     }}
   />
 </ItemContainer>
