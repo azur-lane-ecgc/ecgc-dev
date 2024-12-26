@@ -62,6 +62,7 @@ const CoinData: ResourceProps = {
       checkMark: {
         color: "green",
         mark: "check",
+        optimal: true,
       },
     },
     cruisePass: {
@@ -92,6 +93,7 @@ const CoinData: ResourceProps = {
       checkMark: {
         color: "green",
         mark: "check",
+        optimal: true,
       },
     },
     eventDrop: {
@@ -107,6 +109,7 @@ const CoinData: ResourceProps = {
       checkMark: {
         color: "green",
         mark: "check",
+        optimal: true,
       },
     },
     opsi: {
