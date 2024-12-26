@@ -111,10 +111,10 @@ const CognitiveChipData: ResourceProps = {
     },
   },
   total: {
-    daily: 210,
+    daily: 0,
     weekly: 0,
-    monthly: 1000,
-    bimonthly: 400,
+    monthly: 0,
+    bimonthly: 0,
   },
   notes: "Cognitive Chip commissions unlock once any ship reaches Lv.100.",
 }

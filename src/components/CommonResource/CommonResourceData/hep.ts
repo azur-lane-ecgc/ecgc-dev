@@ -38,8 +38,8 @@ const HEPData: ResourceProps = {
   },
   total: {
     daily: 0,
-    weekly: 10,
-    monthly: 30,
+    weekly: 0,
+    monthly: 0,
     bimonthly: 0,
   },
   notes: "Usually given via Mail after Server Maintenance.",
