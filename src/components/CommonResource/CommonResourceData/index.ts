@@ -11,6 +11,7 @@ import CognitiveChipData from "./cogchip"
 import CognitiveArrayData from "./cogarray"
 import UniversalBulinData from "./purplebulin"
 import PrototypeBulinData from "./goldbulin"
+import SpecializedBulinData from "./rainbowbulin"
 
 export {
   CoinData,
@@ -26,4 +27,5 @@ export {
   CognitiveArrayData,
   UniversalBulinData,
   PrototypeBulinData,
+  SpecializedBulinData,
 }

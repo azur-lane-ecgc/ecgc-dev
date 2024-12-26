@@ -19,6 +19,7 @@ import {
   CognitiveArrayData,
   UniversalBulinData,
   PrototypeBulinData,
+  SpecializedBulinData,
 } from "./CommonResourceData"
 import { ItemTable } from "@components/_common/ItemTable"
 
@@ -35,6 +36,7 @@ const cogchip = CognitiveChipData
 const cogarray = CognitiveArrayData
 const purplebulin = UniversalBulinData
 const goldbulin = PrototypeBulinData
+const rainbowbulin = SpecializedBulinData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -446,6 +448,16 @@ const goldbulin = PrototypeBulinData
       descriptionNote: `${goldbulin.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={rainbowbulin}
+    trigger={{
+      descriptionNote: `${rainbowbulin.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: true,
     }}
   />
 </ItemContainer>
