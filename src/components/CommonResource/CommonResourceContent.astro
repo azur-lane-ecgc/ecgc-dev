@@ -1,5 +1,321 @@
 ---
+import { HR } from "@components/_common/HR"
+import WikiLink from "@components/_common/WikiLink.astro"
 
+import { ItemContainer } from "@components/_common/ItemCell"
+
+import { ResourceModal } from "@components/CommonResource/ResourceModal"
+import { CoinData, CoreData, OilData } from "./CommonResourceData"
+
+const coin = CoinData
+const oil = OilData
+const coredata = CoreData
 ---
 
-<span>test</span>
+<h2 id="introduction">Introduction</h2>
+<hr class="custom-hr" />
+<p>
+  Comprehensive list of common resources, how to acquire them, and how much of
+  each resource you can acquire in a reasonable time frame of playing Azur Lane!
+</p>
+<br />
+
+<h2 id="terminology">Terminology</h2>
+<HR />
+<ul>
+  <li>
+    <p>
+      <b>Academy:</b> Includes anything related to
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Living_Area#Canteen_and_Merchant"
+        >Merchant</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Living_Area#Canteen_and_Merchant"
+        >Oil Canteen</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Living_Area#Lecture_Hall"
+        >Lecture Hall</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Commissions">Commissions</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Guild">Guilds</a
+      >.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Missions:</b> Includes <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Missions#Login_Rewards"
+        >Login Rewards</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Missions#Daily_Missions"
+        >Daily Missions</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Missions#Weekly_Missions"
+        >Weekly Missions</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Beginner_Rewards"
+        >Beginner Rewards</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Missions#One-Time_Missions"
+        >One-Time Missions</a
+      >
+      (not including Secretary Quests).
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Daily Raid:</b> Includes all stages listed
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Daily Raid">here</a
+      >.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Cruise Pass:</b> Includes anything to do with the FREE
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Cruise Missions"
+        >Cruise Missions</a
+      >.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Map Drop:</b> Reward upon completion of
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Category:Campaign">Campaign</a
+      >
+      (including Clearing Rewards),
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Combat#Hard_Mode">Hard Mode</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Events">Limited Event</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/War Archives">War Archive</a
+      >
+      Stages.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>OPSI:</b> Reward from
+      <a
+        href="https://azurlane.koumakan.jp/wiki/Operation Siren"
+        rel="noopener noreferrer"
+        target="_blank">Operation Siren</a
+      >.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Shops: </b> Includes rewards (NO GEM SPENDING) from
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Shops">Munitions Shops</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Akashi's_Shop">Akashi's Shops</a
+      >, and
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop"
+        >Limited Event Shops</a
+      >
+    </p>
+    <ul>
+      <li>
+        <p>Operation Siren Exchange Shop is counted under OPSI.</p>
+      </li>
+      <li>
+        <p>Guild Shop is counted here!</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p style="font-size: larger">
+      <b>Tables are scrollable horizontally!</b>
+    </p>
+  </li>
+</ul>
+<br />
+
+<h2 id="glossary">Glossary</h2>
+<HR />
+<ul>
+  <li>
+    <p>
+      <b style="color: palegreen">Green:</b> &#x2713; - Guaranteed drop from this
+      source. / &#x2055; - Optimal farming location(s).
+    </p>
+  </li>
+  <li>
+    <p>
+      <b style="color: lemonchiffon">Sand:</b> &#x2713; - Randomly can drop from
+      this source. / X - One-Time drop only.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b style="color: lightcoral">Red:</b> &#x2713; - Not recommended to farm this
+      resource from this source. / X - Cannot drop from this source.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>The highest color will be signified, when applicable.</b>
+    </p>
+  </li>
+</ul>
+<br />
+
+<h2 id="calculations">Calculations</h2>
+<hr class="custom-hr" />
+<ul>
+  <li>
+    <p>
+      This guide assumes you have
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Living_Area#Canteen_and_Merchant"
+        >Merchant</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Living_Area#Canteen_and_Merchant"
+        >Oil Canteen</a
+      >,
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Living_Area#Lecture_Hall"
+        >Lecture Hall</a
+      >, and all
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://azurlane.koumakan.jp/wiki/Daily_Raid">Daily Raids</a
+      >
+      to their maximum level.
+    </p>
+  </li>
+  <li>
+    <p>
+      Quantities are only listed if the resource is in high-demand, guaranteed,
+      and/or as I deem fit.
+    </p>
+    <ul>
+      <li>
+        <p>
+          Quantities assume a player has not spent money and/or gems on these
+          resources.
+        </p>
+      </li>
+      <li>
+        <p>
+          Only <b>guaranteed</b> drops are considered. You can get a lot more of
+          these resources than listed depending on your RNG in commissions, shop
+          rotations, map drops, etc.
+        </p>
+      </li>
+      <li>
+        <p>
+          Weeks are assumed to be 7 Days, Months are assumed to be 30 Days, and
+          Months are assumed to be 4 Weeks long. This means quantities listed
+          will be slightly underestimated due to how the calendar works.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Monthly</b> and <b>Bimonthly</b> are calculated seperately from each
+          other. Bimonthly quantities aren't used in Monthly calculations. Daily
+          and Weekly quantities are based on Monthly.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<br />
+
+<h2 id="renewable">Renewable Resources</h2>
+<hr class="custom-hr" />
+
+<ItemContainer>
+  <ResourceModal
+    client:visible
+    item={coin}
+    trigger={{
+      descriptionNote: `${coin.total.monthly} ${coin.name} / Month`,
+      largeDescNote: true,
+      hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={oil}
+    trigger={{
+      descriptionNote: `${oil.total.monthly} ${oil.name} / Month`,
+      largeDescNote: true,
+      hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={coredata}
+    trigger={{
+      descriptionNote: `${coredata.total.monthly} ${coredata.name} / Month`,
+      largeDescNote: true,
+      hasBorder: false,
+    }}
+  />
+</ItemContainer>
