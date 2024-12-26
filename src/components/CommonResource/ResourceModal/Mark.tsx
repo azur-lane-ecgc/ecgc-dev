@@ -11,7 +11,7 @@ export const Mark: React.FC<MarkProps> = ({ mark, className = "" }) => (
   <div
     className={`${className} ${
       !!mark
-        ? "absolute top-0 left-1 !text-base sm:text-lg md:!text-xl"
+        ? "absolute top-0 left-1 !text-sm sm:text-base md:!text-lg"
         : "!text-3xl block"
     } font-bold !text-black`}
   >
