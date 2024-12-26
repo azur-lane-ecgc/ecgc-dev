@@ -31,9 +31,10 @@ const PrototypeBulinData: ResourceProps = {
       found: true,
       locations: [
         {
-          name: "X-4 Stages (3-Star Reward)",
+          name: "X-4 Stages",
           wikiLink: "Campaign",
-          quantity: { amount: 1, timeFrame: "one-time" },
+          quantity: { amount: 1, timeFrame: "stage" },
+          notes: "3-Star Reward",
         },
       ],
       checkMark: {

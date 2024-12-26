@@ -34,7 +34,7 @@ const UniversalBulinData: ResourceProps = {
         {
           name: "X-2 Stages (3-Star Reward)",
           wikiLink: "Campaign",
-          quantity: { amount: 1, timeFrame: "one-time" },
+          quantity: { amount: 1, timeFrame: "stage" },
         },
       ],
       checkMark: {

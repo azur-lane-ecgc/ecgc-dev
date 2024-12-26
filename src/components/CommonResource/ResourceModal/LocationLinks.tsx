@@ -55,7 +55,8 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
                     .replace("weekly", "Week")
                     .replace("bimonthly", "2 Months")
                     .replace("monthly", "Month")
-                    .replace("cycle", "Cycle")}
+                    .replace("cycle", "Cycle")
+                    .replace("stage", "Stage")}
                 </>
               )}
           </span>
