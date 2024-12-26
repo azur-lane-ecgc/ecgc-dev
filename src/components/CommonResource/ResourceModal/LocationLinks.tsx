@@ -32,7 +32,7 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
               rel="noopener noreferrer"
               target="_blank"
               href={`https://azurlane.koumakan.jp/wiki/${location.wikiLink.replaceAll(" ", "_")}`}
-              className="font-bold !text-[#0047ab] bg-transparent no-underline hover:!text-[aqua] hover:underline active:!text-[aqua] active:underline"
+              className="font-bold !text-[#0047ab] bg-transparent no-underline hover:!text-[#3c5679] hover:underline active:!text-[#3c5679] active:underline"
             >
               {location.name}
             </a>{" "}

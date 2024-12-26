@@ -1,15 +1,18 @@
 export const getCellColor = (color: string | undefined | null) => {
-  let colorClass = "group "
+  let colorClass = "relative "
 
   switch (color) {
     case "red":
-      colorClass += "!bg-[lightcoral]/90 hover:!bg-[#c75e5e]"
+      colorClass += "!bg-[lightcoral] hover:!bg-[#c75e5e]"
       break
     case "green":
-      colorClass += "!bg-[palegreen]/90 hover:!bg-[#52b352]"
+      colorClass += "!bg-[palegreen]/90 hover:!bg-[#5bc95b]"
       break
     case "sand":
       colorClass += "!bg-[lemonchiffon]/95 hover:!bg-[rgba(199,193,136,0.9)]"
+      break
+    case "optimal":
+      colorClass += "!bg-purple-300 hover:!bg-purple-400"
       break
     default:
       colorClass += "!bg-[lightcoral] hover:!bg-[#c75e5e]"

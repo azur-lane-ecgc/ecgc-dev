@@ -1,23 +1,16 @@
 interface MarkProps {
-  mark?: {
-    mark: "check" | "x" | undefined | null
-    color: "red" | "green" | "sand"
-  }
+  mark: "check" | "x" | undefined | null
   className?: string
 }
 
-export const Mark: React.FC<MarkProps> = ({ mark, className = "" }) => {
-  if (mark === undefined || mark === null) {
-    return (
-      <div className={`${className} !text-4xl font-bold text-black block`}>
-        {"\u2717"}
-      </div>
-    )
-  }
-
-  return (
-    <div className={`${className} !text-4xl font-bold text-black hidden`}>
-      {mark.mark === "check" ? "\u2713" : "\u2717"}
-    </div>
-  )
-}
+export const Mark: React.FC<MarkProps> = ({ mark, className = "" }) => (
+  <div
+    className={`${className} ${
+      mark
+        ? "absolute top-0 left-1 !text-base sm:text-lg md:!text-xl"
+        : "!text-4xl block"
+    } font-bold text-black`}
+  >
+    {mark === "check" ? "\u2713" : "\u2717"}
+  </div>
+)
