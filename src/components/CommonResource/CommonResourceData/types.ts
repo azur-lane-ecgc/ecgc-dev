@@ -26,6 +26,7 @@ export interface LocationProps {
 
 export interface ResourceProps {
   name: string
+  plural?: string
   rarity: number
   image: string
   wikiLink: string
@@ -56,4 +57,5 @@ export interface ResourceProps {
     weekly: number
     daily: number
   }
+  notes?: string
 }

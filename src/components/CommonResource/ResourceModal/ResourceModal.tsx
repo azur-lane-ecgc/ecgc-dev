@@ -45,7 +45,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
     return
   }, [open])
 
-  const name = item.name + "s"
+  const name = item.plural || item.name + "s"
   const rarity = item.rarity
   const imgUrl = item.image
   const wikiLink = item.wikiLink
