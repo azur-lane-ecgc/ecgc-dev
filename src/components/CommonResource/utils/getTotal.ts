@@ -47,7 +47,7 @@ export const getTotalGuaranteed = (
 
   return {
     bimonthly: bimonthlyTotal,
-    monthly: monthlyTotal,
+    monthly: monthlyTotal || Math.floor(bimonthlyTotal / 2),
     weekly: Math.floor(monthlyTotal / 4),
     daily: Math.floor(monthlyTotal / 30),
   }
