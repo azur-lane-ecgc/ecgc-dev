@@ -12,6 +12,7 @@ import {
   GuildTokenData,
   CrystalFragmentData,
   PrototypeCoreData,
+  WisdomCubeData,
 } from "./CommonResourceData"
 
 const coin = CoinData
@@ -20,6 +21,7 @@ const coredata = CoreData
 const guildtoken = GuildTokenData
 const metacrystal = CrystalFragmentData
 const protocore = PrototypeCoreData
+const cube = WisdomCubeData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -361,6 +363,16 @@ const protocore = PrototypeCoreData
       descriptionNote: `${protocore.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={cube}
+    trigger={{
+      descriptionNote: `${cube.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: false,
     }}
   />
 </ItemContainer>
