@@ -291,9 +291,9 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               <ItemTable
                 tableInfo={[
                   { colName: "General", colWidth: "25%", limiter: true },
-                  { colName: "Core Data", colWidth: "25%", limiter: true },
-                  { colName: "Guild", colWidth: "25%", limiter: true },
                   { colName: "Merit", colWidth: "25%", limiter: true },
+                  { colName: "Guild", colWidth: "25%", limiter: true },
+                  { colName: "META", colWidth: "25%", limiter: true },
                 ]}
                 active={true}
               >
@@ -305,12 +305,10 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                     <LocationLinks locations={drops.generalShop?.locations} />
                   </td>
                   <td
-                    className={getCellColor(
-                      drops.coreDataShop?.checkMark.color,
-                    )}
+                    className={getCellColor(drops.meritShop?.checkMark.color)}
                   >
-                    <Mark mark={drops.coreDataShop?.checkMark} />
-                    <LocationLinks locations={drops.coreDataShop?.locations} />
+                    <Mark mark={drops.meritShop?.checkMark} />
+                    <LocationLinks locations={drops.meritShop?.locations} />
                   </td>
                   <td
                     className={getCellColor(drops.guildShop?.checkMark.color)}
@@ -318,11 +316,9 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                     <Mark mark={drops.guildShop?.checkMark} />
                     <LocationLinks locations={drops.guildShop?.locations} />
                   </td>
-                  <td
-                    className={getCellColor(drops.meritShop?.checkMark.color)}
-                  >
-                    <Mark mark={drops.meritShop?.checkMark} />
-                    <LocationLinks locations={drops.meritShop?.locations} />
+                  <td className={getCellColor(drops.metaShop?.checkMark.color)}>
+                    <Mark mark={drops.metaShop?.checkMark} />
+                    <LocationLinks locations={drops.metaShop?.locations} />
                   </td>
                 </tr>
               </ItemTable>
@@ -331,14 +327,22 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               {/* Shops 2 */}
               <ItemTable
                 tableInfo={[
+                  { colName: "Core Data", colWidth: "25%", limiter: true },
                   { colName: "Medal", colWidth: "25%", limiter: true },
                   { colName: "Prototype", colWidth: "25%", limiter: true },
                   { colName: "Event", colWidth: "25%", limiter: true },
-                  { colName: "META", colWidth: "25%", limiter: true },
                 ]}
                 active={true}
               >
                 <tr className="h-[175px] min-h-[175px]">
+                  <td
+                    className={getCellColor(
+                      drops.coreDataShop?.checkMark.color,
+                    )}
+                  >
+                    <Mark mark={drops.coreDataShop?.checkMark} />
+                    <LocationLinks locations={drops.coreDataShop?.locations} />
+                  </td>
                   <td
                     className={getCellColor(drops.medalShop?.checkMark.color)}
                   >
@@ -358,10 +362,6 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   >
                     <Mark mark={drops.eventShop?.checkMark} />
                     <LocationLinks locations={drops.eventShop?.locations} />
-                  </td>
-                  <td className={getCellColor(drops.metaShop?.checkMark.color)}>
-                    <Mark mark={drops.metaShop?.checkMark} />
-                    <LocationLinks locations={drops.metaShop?.locations} />
                   </td>
                 </tr>
               </ItemTable>
