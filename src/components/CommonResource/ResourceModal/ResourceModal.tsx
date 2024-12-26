@@ -15,7 +15,7 @@ import {
 } from "@components/_common/ShipModal/styles"
 
 import type { ResourceProps } from "../CommonResourceData/types"
-import { getCellColor } from "../CommonResourceData/getCellColor"
+import { getCellColor } from "../utils/getCellColor"
 
 import { LocationLinks } from "./LocationLinks"
 import { Mark } from "./Mark"

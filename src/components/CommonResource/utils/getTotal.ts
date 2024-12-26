@@ -1,4 +1,4 @@
-import type { LocationProps, ResourceProps } from "./types"
+import type { LocationProps, ResourceProps } from "../CommonResourceData/types"
 
 export const getTotalGuaranteed = (
   resource: ResourceProps,
