@@ -5,11 +5,17 @@ import WikiLink from "@components/_common/WikiLink.astro"
 import { ItemContainer } from "@components/_common/ItemCell"
 
 import { ResourceModal } from "@components/CommonResource/ResourceModal"
-import { CoinData, CoreData, OilData } from "./CommonResourceData"
+import {
+  CoinData,
+  CoreData,
+  OilData,
+  GuildTokenData,
+} from "./CommonResourceData"
 
 const coin = CoinData
 const oil = OilData
 const coredata = CoreData
+const guildtoken = GuildTokenData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -180,6 +186,11 @@ const coredata = CoreData
   </li>
   <li>
     <p style="font-size: larger">
+      <b>Click on a cell for more information!</b>
+    </p>
+  </li>
+  <li>
+    <p style="font-size: larger">
       <b>Tables are scrollable horizontally!</b>
     </p>
   </li>
@@ -293,7 +304,7 @@ const coredata = CoreData
     client:visible
     item={coin}
     trigger={{
-      descriptionNote: `${coin.total.monthly} ${coin.name} / Month`,
+      descriptionNote: `${coin.total.monthly} ${coin.plural || coin.name + "s"} / Month`,
       largeDescNote: true,
       hasBorder: false,
     }}
@@ -303,7 +314,7 @@ const coredata = CoreData
     client:visible
     item={oil}
     trigger={{
-      descriptionNote: `${oil.total.monthly} ${oil.name} / Month`,
+      descriptionNote: `${oil.total.monthly} ${oil.plural || oil.name + "s"} / Month`,
       largeDescNote: true,
       hasBorder: true,
     }}
@@ -313,9 +324,19 @@ const coredata = CoreData
     client:visible
     item={coredata}
     trigger={{
-      descriptionNote: `${coredata.total.monthly} ${coredata.name} / Month`,
+      descriptionNote: `${coredata.total.monthly} ${coredata.plural || coredata.name + "s"} / Month`,
       largeDescNote: true,
       hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={guildtoken}
+    trigger={{
+      descriptionNote: `${guildtoken.total.monthly} ${guildtoken.plural || guildtoken.name + "s"} / Month`,
+      largeDescNote: true,
+      hasBorder: true,
     }}
   />
 </ItemContainer>
