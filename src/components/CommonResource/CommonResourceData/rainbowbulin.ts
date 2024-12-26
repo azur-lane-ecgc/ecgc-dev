@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const SpecializedBulinData: ResourceProps = {
   name: "Specialized Bulin Custom MKIII",
+  plural: "Specialized Bulin Custom MKIII",
   rarity: 5,
   image: "materials/rainbow_bulin.png",
   wikiLink: "Dockyard#Limit_Break",
@@ -72,6 +73,7 @@ const SpecializedBulinData: ResourceProps = {
     monthly: 0,
     bimonthly: 0,
   },
+  notes: `Assuming <b>6</b> new UR Ships per Year, you need <b>24</b> bulins to MLB all of them.`,
 }
 
 SpecializedBulinData.total = getTotalGuaranteed(SpecializedBulinData)
