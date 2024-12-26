@@ -73,7 +73,13 @@ const SpecializedBulinData: ResourceProps = {
     monthly: 0,
     bimonthly: 0,
   },
-  notes: `Assuming <b>6</b> new UR Ships per Year, you need <b>24</b> bulins to MLB all of them.`,
+  notes: `Assuming <b>6</b> new UR Ships per Year, you need <b>24</b> bulins to MLB all of them.<br><a
+        href="https://azurlane.koumakan.jp/wiki/Prototype_Shop"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Prototype Shop
+      </a> has no purchase limit.`,
 }
 
 SpecializedBulinData.total = getTotalGuaranteed(SpecializedBulinData)
