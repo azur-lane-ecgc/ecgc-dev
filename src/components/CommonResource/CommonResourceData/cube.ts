@@ -61,6 +61,37 @@ const WisdomCubeData: ResourceProps = {
         mark: "check",
       },
     },
+    generalShop: {
+      found: true,
+      locations: [
+        {
+          name: "General Shop",
+          wikiLink: "Shops#General Shop",
+          quantity: { amount: 1, timeFrame: "cycle" },
+          notes: "RNG",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
+
+    meritShop: {
+      found: true,
+      locations: [
+        {
+          name: "Merit Shop",
+          wikiLink: "Shops#Merit Shop",
+          quantity: { amount: 1, timeFrame: "cycle" },
+          notes: "RNG",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
   },
   total: {
     daily: 0,
