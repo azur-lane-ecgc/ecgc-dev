@@ -12,6 +12,7 @@ interface LocationLinksProps {
         | "monthly"
         | "bimonthly"
         | "cycle"
+        | "stage"
         | null
     }
     notes?: string

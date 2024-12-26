@@ -53,10 +53,10 @@ export interface ResourceProps {
     metaShop?: LocationProps
   }
   total: {
-    bimonthly: number
-    monthly: number
-    weekly: number
-    daily: number
+    bimonthly: number | "N/A"
+    monthly: number | "N/A"
+    weekly: number | "N/A"
+    daily: number | "N/A"
   }
   notes?: string
 }

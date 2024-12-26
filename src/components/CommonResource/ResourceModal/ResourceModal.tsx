@@ -175,26 +175,26 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                       <td className=" font-bold">
                         <span className="!text-yellow-400">
                           {item.total.daily}
-                        </span>{" "}
-                        / Day
+                        </span>
+                        {item.total.daily !== "N/A" && " / Day"}
                       </td>
                       <td className=" font-bold">
                         <span className="!text-yellow-400">
                           {item.total.weekly}
-                        </span>{" "}
-                        / Week
+                        </span>
+                        {item.total.weekly !== "N/A" && " / Week"}
                       </td>
                       <td className=" font-bold">
                         <span className="!text-yellow-400">
                           {item.total.monthly}
-                        </span>{" "}
-                        / Month
+                        </span>
+                        {item.total.monthly !== "N/A" && " / Month"}
                       </td>
                       <td className=" font-bold">
                         <span className="!text-yellow-400">
                           {item.total.bimonthly}
-                        </span>{" "}
-                        / 2 Months
+                        </span>
+                        {item.total.bimonthly !== "N/A" && " / 2 Months"}
                       </td>
                     </tr>
                   </ItemTable>
