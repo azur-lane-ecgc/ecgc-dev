@@ -5,6 +5,7 @@ import GuildTokenData from "./guildToken"
 import CrystalFragmentData from "./crystalFragment"
 import PrototypeCoreData from "./protocore"
 import WisdomCubeData from "./cube"
+import T1EXPDataPackData from "./t1exp"
 
 export {
   CoinData,
@@ -14,4 +15,5 @@ export {
   CrystalFragmentData,
   PrototypeCoreData,
   WisdomCubeData,
+  T1EXPDataPackData,
 }

@@ -13,6 +13,7 @@ import {
   CrystalFragmentData,
   PrototypeCoreData,
   WisdomCubeData,
+  T1EXPDataPackData,
 } from "./CommonResourceData"
 
 const coin = CoinData
@@ -22,6 +23,7 @@ const guildtoken = GuildTokenData
 const metacrystal = CrystalFragmentData
 const protocore = PrototypeCoreData
 const cube = WisdomCubeData
+const t1exp = T1EXPDataPackData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -373,6 +375,16 @@ const cube = WisdomCubeData
       descriptionNote: `${cube.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t1exp}
+    trigger={{
+      descriptionNote: `${t1exp.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: true,
     }}
   />
 </ItemContainer>
