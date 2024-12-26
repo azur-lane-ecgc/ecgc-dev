@@ -65,10 +65,10 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               <img
                 loading="lazy"
                 src={`/test_ecgc_2/images/${imgUrl}`}
-                alt={`${name}`}
+                alt={`${item.name}`}
               />
             </div>
-            {`${name}`}
+            {`${item.name}`}
           </div>
           {!!trigger?.iconNote && (
             <div className="icon-note">
