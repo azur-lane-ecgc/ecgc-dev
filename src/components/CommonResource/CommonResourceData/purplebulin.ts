@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const UniversalBulinData: ResourceProps = {
   name: "Universal Bulin",
+  plural: "Universal Bulin",
   rarity: 3,
   image: "materials/purple_bulin.png",
   wikiLink: "Dockyard#Limit_Break",
@@ -92,7 +93,7 @@ const UniversalBulinData: ResourceProps = {
     monthly: 0,
     bimonthly: 0,
   },
-  notes: "Only buy as much as you need."
+  notes: "Only buy as much as you need.",
 }
 
 UniversalBulinData.total = getTotalGuaranteed(UniversalBulinData)
