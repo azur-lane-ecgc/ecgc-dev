@@ -10,6 +10,7 @@ import HEPData from "./hep"
 import CognitiveChipData from "./cogchip"
 import CognitiveArrayData from "./cogarray"
 import UniversalBulinData from "./purplebulin"
+import PrototypeBulinData from "./goldbulin"
 
 export {
   CoinData,
@@ -23,5 +24,6 @@ export {
   HEPData,
   CognitiveChipData,
   CognitiveArrayData,
-  UniversalBulinData
+  UniversalBulinData,
+  PrototypeBulinData,
 }
