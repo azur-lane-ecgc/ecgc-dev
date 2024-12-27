@@ -146,12 +146,161 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 Tables are scrollable horizontally!
               </h6>
 
-              {typeof imgUrl === "string" && typeof rarity === "number" ? (
-                <div
-                  className={
-                    "flex flex-col md:flex-row items-center gap-4 mt-5"
-                  }
-                >
+              {(Array.isArray(imgUrl) && Array.isArray(rarity)) ||
+              (item.total.oneTime && item.total.oneTime !== "N/A") ? (
+                <>
+                  {/* Item Icon */}
+                  <div
+                    className={`mt-5 w-full gap-4 flex flex-row flex-wrap justify-center`}
+                  >
+                    {Array.isArray(imgUrl) && Array.isArray(rarity) ? (
+                      imgUrl.map((url, index) => (
+                        <div
+                          key={index}
+                          className={`rarity-${rarity[index]} ${shipIconStyle}`}
+                        >
+                          <a
+                            className={shipLinkStyle}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            title={name}
+                            href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+                          >
+                            <img
+                              loading="lazy"
+                              src={`/test_ecgc_2/images/${url}`}
+                              alt={`${name} - Image ${index + 1}`}
+                            />
+                          </a>
+                        </div>
+                      ))
+                    ) : (
+                      <div className={`rarity-${rarity} ${shipIconStyle}`}>
+                        <a
+                          className={shipLinkStyle}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          title={name}
+                          href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+                        >
+                          <img
+                            loading="lazy"
+                            src={`/test_ecgc_2/images/${imgUrl}`}
+                            alt={`${name}`}
+                          />
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                  <br />
+
+                  {/* Total */}
+                  <div className="w-full">
+                    {item.total.oneTime === "N/A" || !item.total.oneTime ? (
+                      <ItemTable
+                        tableInfo={[
+                          { colName: "Daily", colWidth: "25%", limiter: true },
+                          { colName: "Weekly", colWidth: "25%", limiter: true },
+                          {
+                            colName: "Monthly",
+                            colWidth: "25%",
+                            limiter: true,
+                          },
+                          {
+                            colName: "Bimonthly",
+                            colWidth: "25%",
+                            limiter: true,
+                          },
+                        ]}
+                        active={true}
+                      >
+                        <tr>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.daily}
+                            </span>
+                            {item.total.daily !== "N/A" && " / Day"}
+                          </td>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.weekly}
+                            </span>
+                            {item.total.weekly !== "N/A" && " / Week"}
+                          </td>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.monthly}
+                            </span>
+                            {item.total.monthly !== "N/A" && " / Month"}
+                          </td>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.bimonthly}
+                            </span>
+                            {item.total.bimonthly !== "N/A" && " / 2 Months"}
+                          </td>
+                        </tr>
+                      </ItemTable>
+                    ) : (
+                      <ItemTable
+                        tableInfo={[
+                          { colName: "Daily", colWidth: "20%", limiter: true },
+                          { colName: "Weekly", colWidth: "20%", limiter: true },
+                          {
+                            colName: "Monthly",
+                            colWidth: "20%",
+                            limiter: true,
+                          },
+                          {
+                            colName: "Bimonthly",
+                            colWidth: "20%",
+                            limiter: true,
+                          },
+                          {
+                            colName: "One-Time",
+                            colWidth: "20%",
+                            limiter: true,
+                          },
+                        ]}
+                        active={true}
+                      >
+                        <tr>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.daily}
+                            </span>
+                            {item.total.daily !== "N/A" && " / Day"}
+                          </td>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.weekly}
+                            </span>
+                            {item.total.weekly !== "N/A" && " / Week"}
+                          </td>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.monthly}
+                            </span>
+                            {item.total.monthly !== "N/A" && " / Month"}
+                          </td>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.bimonthly}
+                            </span>
+                            {item.total.bimonthly !== "N/A" && " / 2 Months"}
+                          </td>
+                          <td className="font-bold">
+                            <span className="!text-yellow-400">
+                              {item.total.oneTime}
+                            </span>
+                          </td>
+                        </tr>
+                      </ItemTable>
+                    )}
+                  </div>
+                </>
+              ) : (
+                <div className="flex flex-col md:flex-row items-center gap-4 mt-5">
                   {/* Item Icon */}
                   <div className={`rarity-${rarity} ${shipIconStyle}`}>
                     <a
@@ -185,25 +334,25 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                       active={true}
                     >
                       <tr>
-                        <td className=" font-bold">
+                        <td className="font-bold">
                           <span className="!text-yellow-400">
                             {item.total.daily}
                           </span>
                           {item.total.daily !== "N/A" && " / Day"}
                         </td>
-                        <td className=" font-bold">
+                        <td className="font-bold">
                           <span className="!text-yellow-400">
                             {item.total.weekly}
                           </span>
                           {item.total.weekly !== "N/A" && " / Week"}
                         </td>
-                        <td className=" font-bold">
+                        <td className="font-bold">
                           <span className="!text-yellow-400">
                             {item.total.monthly}
                           </span>
                           {item.total.monthly !== "N/A" && " / Month"}
                         </td>
-                        <td className=" font-bold">
+                        <td className="font-bold">
                           <span className="!text-yellow-400">
                             {item.total.bimonthly}
                           </span>
@@ -213,78 +362,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                     </ItemTable>
                   </div>
                 </div>
-              ) : Array.isArray(imgUrl) && Array.isArray(rarity) ? (
-                <>
-                  {/* Item Icon */}
-                  <div className="mt-5 w-full gap-4 flex flex-row flex-wrap justify-center">
-                    {imgUrl?.map((url, index) => (
-                      <div
-                        key={index}
-                        className={`rarity-${rarity[index]} ${shipIconStyle}`}
-                      >
-                        <a
-                          className={shipLinkStyle}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                          title={name}
-                          href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
-                        >
-                          <img
-                            loading="lazy"
-                            src={`/test_ecgc_2/images/${url}`}
-                            alt={`${name} - Image ${index + 1}`}
-                          />
-                        </a>
-                      </div>
-                    ))}
-                  </div>
-                  <br />
-
-                  {/* Totals */}
-                  <div className="w-full">
-                    <ItemTable
-                      tableInfo={[
-                        { colName: "Daily", colWidth: "25%", limiter: true },
-                        { colName: "Weekly", colWidth: "25%", limiter: true },
-                        { colName: "Monthly", colWidth: "25%", limiter: true },
-                        {
-                          colName: "Bimonthly",
-                          colWidth: "25%",
-                          limiter: true,
-                        },
-                      ]}
-                      active={true}
-                    >
-                      <tr>
-                        <td className=" font-bold">
-                          <span className="!text-yellow-400">
-                            {item.total.daily}
-                          </span>
-                          {item.total.daily !== "N/A" && " / Day"}
-                        </td>
-                        <td className=" font-bold">
-                          <span className="!text-yellow-400">
-                            {item.total.weekly}
-                          </span>
-                          {item.total.weekly !== "N/A" && " / Week"}
-                        </td>
-                        <td className=" font-bold">
-                          <span className="!text-yellow-400">
-                            {item.total.monthly}
-                          </span>
-                          {item.total.monthly !== "N/A" && " / Month"}
-                        </td>
-                        <td className=" font-bold">
-                          <span className="!text-yellow-400">
-                            {item.total.bimonthly}
-                          </span>
-                          {item.total.bimonthly !== "N/A" && " / 2 Months"}
-                        </td>
-                      </tr>
-                    </ItemTable>
-                  </div>
-                </>
-              ) : null}
+              )}
 
               {item.notes && (
                 <p

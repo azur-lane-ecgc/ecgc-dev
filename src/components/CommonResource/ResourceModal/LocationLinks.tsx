@@ -12,7 +12,7 @@ interface LocationLinksProps {
         | "monthly"
         | "bimonthly"
         | "cycle"
-        | "stage"
+        | "chapter"
         | null
     }
     notes?: string
@@ -57,7 +57,7 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
                     .replace("bimonthly", "2 Months")
                     .replace("monthly", "Month")
                     .replace("cycle", "Cycle")
-                    .replace("stage", "Stage")}
+                    .replace("chapter", "Chapter")}
                 </>
               )}
           </span>

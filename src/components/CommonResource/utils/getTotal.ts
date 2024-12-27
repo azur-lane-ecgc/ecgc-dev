@@ -1,15 +1,19 @@
 import type { LocationProps, ResourceProps } from "../CommonResourceData/types"
 
+const numChapters = 15
+
 export const getTotalGuaranteed = (
   resource: ResourceProps,
 ): {
-  bimonthly: number
-  monthly: number
-  weekly: number
-  daily: number
+  bimonthly: number | "N/A"
+  monthly: number | "N/A"
+  weekly: number | "N/A"
+  daily: number | "N/A"
+  oneTime?: number | "N/A"
 } => {
   let monthlyTotal = 0
   let bimonthlyTotal = 0
+  let oneTimeTotal = 0
 
   if (resource.drops) {
     for (const key in resource.drops) {
@@ -36,6 +40,11 @@ export const getTotalGuaranteed = (
               case "bimonthly":
                 bimonthlyTotal += amount
                 break
+              case "one-time":
+                oneTimeTotal += amount
+                break
+              case "chapter":
+                oneTimeTotal += amount * numChapters
               default:
                 break
             }
@@ -50,5 +59,6 @@ export const getTotalGuaranteed = (
     monthly: monthlyTotal || Math.floor(bimonthlyTotal / 2),
     weekly: Math.floor(monthlyTotal / 4),
     daily: Math.floor(monthlyTotal / 30),
+    oneTime: oneTimeTotal || "N/A",
   }
 }

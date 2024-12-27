@@ -13,7 +13,7 @@ export interface LocationProps {
         | "monthly"
         | "bimonthly"
         | "cycle"
-        | "stage"
+        | "chapter"
         | null
     }
     notes?: string
@@ -57,6 +57,7 @@ export interface ResourceProps {
     monthly: number | "N/A"
     weekly: number | "N/A"
     daily: number | "N/A"
+    oneTime?: number | "N/A"
   }
   notes?: string
 }
