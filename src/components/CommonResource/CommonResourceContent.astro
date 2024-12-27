@@ -26,6 +26,8 @@ import {
   T4PlateData,
   AugmentModuleCoreData,
   AugmentModuleEXPData,
+  T1AugmentConversionData,
+  T2AugmentConversionData,
 } from "./CommonResourceData"
 import { ItemTable } from "@components/_common/ItemTable"
 
@@ -54,6 +56,8 @@ const t4plate = T4PlateData
 
 const augcore = AugmentModuleCoreData
 const augexp = AugmentModuleEXPData
+const t1augconversion = T1AugmentConversionData
+const t2augconversion = T2AugmentConversionData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -535,6 +539,26 @@ const augexp = AugmentModuleEXPData
       descriptionNote: `${augexp.total.monthly} / Month`,
       largeDescNote: true,
       hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t1augconversion}
+    trigger={{
+      descriptionNote: `${t1augconversion.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t2augconversion}
+    trigger={{
+      descriptionNote: `${t2augconversion.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: false,
     }}
   />
 </ItemContainer>
