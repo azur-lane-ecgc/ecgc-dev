@@ -32,9 +32,10 @@ const UniversalBulinData: ResourceProps = {
       found: true,
       locations: [
         {
-          name: "X-2 Stages (3-Star Reward)",
+          name: "X-2 Stages",
           wikiLink: "Campaign",
           quantity: { amount: 1, timeFrame: "stage" },
+          notes: "3-Star Reward",
         },
       ],
       checkMark: {
