@@ -14,7 +14,6 @@ export default defineConfig({
       CSS: false,
       HTML: false,
       JavaScript: false,
-      Exclude: [/SiteIcon.ico/],
     }),
   ],
   base: "/test_ecgc_2/",
