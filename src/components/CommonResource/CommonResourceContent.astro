@@ -28,6 +28,9 @@ import {
   AugmentModuleEXPData,
   T1AugmentConversionData,
   T2AugmentConversionData,
+  T1RetrofitPrintData,
+  T2RetrofitPrintData,
+  T3RetrofitPrintData,
 } from "./CommonResourceData"
 import { ItemTable } from "@components/_common/ItemTable"
 
@@ -58,6 +61,10 @@ const augcore = AugmentModuleCoreData
 const augexp = AugmentModuleEXPData
 const t1augconversion = T1AugmentConversionData
 const t2augconversion = T2AugmentConversionData
+
+const t1retrofit = T1RetrofitPrintData
+const t2retrofit = T2RetrofitPrintData
+const t3retrofit = T3RetrofitPrintData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -557,6 +564,36 @@ const t2augconversion = T2AugmentConversionData
     item={t2augconversion}
     trigger={{
       descriptionNote: `${t2augconversion.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t1retrofit}
+    trigger={{
+      descriptionNote: `${t1retrofit.total.monthly}`,
+      largeDescNote: true,
+      hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t2retrofit}
+    trigger={{
+      descriptionNote: `${t2retrofit.total.monthly}`,
+      largeDescNote: true,
+      hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t3retrofit}
+    trigger={{
+      descriptionNote: `${t3retrofit.total.monthly}`,
       largeDescNote: true,
       hasBorder: false,
     }}

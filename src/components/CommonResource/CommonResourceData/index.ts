@@ -26,6 +26,10 @@ import AugmentModuleEXPData from "./augmentmodulestone"
 import T1AugmentConversionData from "./t1augconversion"
 import T2AugmentConversionData from "./t2augconversion"
 
+import T1RetrofitPrintData from "./t1retrofit"
+import T2RetrofitPrintData from "./t2retrofit"
+import T3RetrofitPrintData from "./t3retrofit"
+
 export {
   CoinData,
   OilData,
@@ -49,4 +53,7 @@ export {
   AugmentModuleEXPData,
   T1AugmentConversionData,
   T2AugmentConversionData,
+  T1RetrofitPrintData,
+  T2RetrofitPrintData,
+  T3RetrofitPrintData,
 }
