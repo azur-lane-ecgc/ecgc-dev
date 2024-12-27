@@ -135,6 +135,36 @@
     ]
   },
   {
+    "fileName": "Common Resource Guide",
+    "toc": [
+      {
+        "id": "terminology",
+        "content": "Terminology",
+        "subheadings": []
+      },
+      {
+        "id": "glossary",
+        "content": "Glossary",
+        "subheadings": []
+      },
+      {
+        "id": "calculations",
+        "content": "Calculations",
+        "subheadings": []
+      },
+      {
+        "id": "renewable",
+        "content": "Renewable Resources",
+        "subheadings": []
+      },
+      {
+        "id": "finite",
+        "content": "(Almost) Finite Resources",
+        "subheadings": []
+      }
+    ]
+  },
+  {
     "fileName": "Early Ship Recommendations",
     "toc": [
       {

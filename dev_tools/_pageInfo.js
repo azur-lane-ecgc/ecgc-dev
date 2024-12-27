@@ -8,6 +8,10 @@ export const pageInfo = [
     path: "src/components/Changelog/Changelog2024Content.astro",
   },
   {
+    name: "Common Resource Guide",
+    path: "src/components/CommonResource/CommonResourceContent.astro",
+  },
+  {
     name: "Early Ship Recommendations",
     path: "src/components/EarlyShipRecs/EarlyShipRecsContent.astro",
   },
