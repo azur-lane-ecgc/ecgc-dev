@@ -1,6 +1,7 @@
 interface DropdownItem {
   name: string
   href: string
+  external?: boolean
 }
 
 export interface NavbarPage {
