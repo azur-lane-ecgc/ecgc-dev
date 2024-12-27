@@ -77,7 +77,7 @@ const T1PlateData: ResourceProps = {
         },
       ],
       checkMark: {
-        color: "green",
+        color: "sand",
         mark: "check",
       },
     },

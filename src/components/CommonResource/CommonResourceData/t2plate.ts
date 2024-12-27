@@ -91,7 +91,7 @@ const T2PlateData: ResourceProps = {
         },
       ],
       checkMark: {
-        color: "green",
+        color: "sand",
         mark: "check",
       },
     },
@@ -105,7 +105,7 @@ const T2PlateData: ResourceProps = {
         },
       ],
       checkMark: {
-        color: "green",
+        color: "sand",
         mark: "check",
       },
     },

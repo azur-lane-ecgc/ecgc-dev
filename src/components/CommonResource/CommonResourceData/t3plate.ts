@@ -106,7 +106,7 @@ const T3PlateData: ResourceProps = {
         },
       ],
       checkMark: {
-        color: "green",
+        color: "sand",
         mark: "check",
       },
     },
@@ -120,7 +120,7 @@ const T3PlateData: ResourceProps = {
         },
       ],
       checkMark: {
-        color: "green",
+        color: "sand",
         mark: "check",
       },
     },
