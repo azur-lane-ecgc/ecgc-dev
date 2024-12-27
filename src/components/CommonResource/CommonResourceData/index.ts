@@ -30,6 +30,13 @@ import T1RetrofitPrintData from "./t1retrofit"
 import T2RetrofitPrintData from "./t2retrofit"
 import T3RetrofitPrintData from "./t3retrofit"
 
+import T1SkillBookData from "./t1skillbook"
+import T2SkillBookData from "./t2skillbook"
+import T3SkillBookData from "./t3skillbook"
+import T4SkillBookData from "./t4skillbook"
+
+import GemData from "./gem"
+
 export {
   CoinData,
   OilData,
@@ -56,4 +63,9 @@ export {
   T1RetrofitPrintData,
   T2RetrofitPrintData,
   T3RetrofitPrintData,
+  T1SkillBookData,
+  T2SkillBookData,
+  T3SkillBookData,
+  T4SkillBookData,
+  GemData,
 }

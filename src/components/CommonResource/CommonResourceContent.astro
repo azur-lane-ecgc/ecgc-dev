@@ -35,6 +35,7 @@ import {
   T2SkillBookData,
   T3SkillBookData,
   T4SkillBookData,
+  GemData,
 } from "./CommonResourceData"
 import { ItemTable } from "@components/_common/ItemTable"
 
@@ -649,6 +650,21 @@ const t4skillbook = T4SkillBookData
   />
 </ItemContainer>
 <br />
+
+<h2 id="finite">(Almost) Finite Resources</h2>
+<hr class="custom-hr" />
+
+<ItemContainer>
+  <ResourceModal
+    client:visible
+    item={GemData}
+    trigger={{
+      descriptionNote: `${GemData.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: true,
+    }}
+  />
+</ItemContainer>
 
 <ItemTable
   tableInfo={[
