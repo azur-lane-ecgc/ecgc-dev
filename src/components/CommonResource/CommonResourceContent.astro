@@ -31,6 +31,10 @@ import {
   T1RetrofitPrintData,
   T2RetrofitPrintData,
   T3RetrofitPrintData,
+  T1SkillBookData,
+  T2SkillBookData,
+  T3SkillBookData,
+  T4SkillBookData,
 } from "./CommonResourceData"
 import { ItemTable } from "@components/_common/ItemTable"
 
@@ -598,20 +602,62 @@ const t3retrofit = T3RetrofitPrintData
       hasBorder: false,
     }}
   />
+
+  <ResourceModal
+    client:visible
+    item={t1skillbook}
+    trigger={{
+      descriptionNote: `${t1skillbook.total.monthly}`,
+      largeDescNote: true,
+      hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t2skillbook}
+    trigger={{
+      descriptionNote: `${t2skillbook.total.monthly}`,
+      largeDescNote: true,
+      hasBorder: false,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t3skillbook}
+    trigger={{
+      descriptionNote: `${t3skillbook.total.monthly}`,
+      largeDescNote: true,
+      hasBorder: true,
+    }}
+  />
+
+  <ResourceModal
+    client:visible
+    item={t4skillbook}
+    trigger={{
+      descriptionNote: `${t4skillbook.total.monthly} / Month`,
+      largeDescNote: true,
+      hasBorder: false,
+    }}
+  />
 </ItemContainer>
 <br />
 
 <ItemTable
   tableInfo={[
-    { colName: "Daily", colWidth: "25%", limiter: true },
-    { colName: "Weekly", colWidth: "25%", limiter: true },
-    { colName: "Monthly", colWidth: "25%", limiter: true },
+    { colName: "Item", colWidth: "8%", limiter: true },
+    { colName: "Daily", colWidth: "23%", limiter: true },
+    { colName: "Weekly", colWidth: "23%", limiter: true },
+    { colName: "Monthly", colWidth: "23%", limiter: true },
     {
       colName: "Bimonthly",
-      colWidth: "25%",
+      colWidth: "23%",
       limiter: true,
     },
   ]}
+  active={true}
 >
   <tr>
     <td class="flex justify-center">
@@ -625,6 +671,7 @@ const t3retrofit = T3RetrofitPrintData
         }}
       />
     </td>
+    <td>test</td>
     <td>test</td>
     <td>test</td>
     <td>test</td>
