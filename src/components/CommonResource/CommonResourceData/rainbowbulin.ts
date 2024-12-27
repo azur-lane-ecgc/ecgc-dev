@@ -14,7 +14,7 @@ const SpecializedBulinData: ResourceProps = {
         {
           name: "Bulin Support Plan",
           wikiLink: "Beginner_Rewards#Bulin_Support_Plan",
-          quantity: { amount: 1, timeFrame: "one-time" },
+          quantity: { amount: 1.5, timeFrame: "one-time" },
         },
       ],
       checkMark: {

@@ -7,6 +7,21 @@ const CognitiveArrayData: ResourceProps = {
   image: "materials/cognitive_array.png",
   wikiLink: "Dockyard#Cognitive_Awakening",
   drops: {
+    missions: {
+      found: true,
+      locations: [
+        {
+          name: "Missions - Side",
+          wikiLink: "Beginner_Rewards#Side_Quests",
+          quantity: { amount: 1150, timeFrame: "one-time" },
+          notes: "Total Rewards",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "x",
+      },
+    },
     dailyRaid: {
       found: true,
       locations: [

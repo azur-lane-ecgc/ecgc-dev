@@ -29,6 +29,12 @@ const T1EXPDataPackData: ResourceProps = {
           wikiLink: "Akashi's Shop#Packs",
           quantity: { amount: 20, timeFrame: "weekly" },
         },
+        {
+          name: "Missions - Side",
+          wikiLink: "Beginner_Rewards#Side_Quests",
+          quantity: { amount: 900, timeFrame: "one-time" },
+          notes: "Total Rewards",
+        },
       ],
       checkMark: {
         color: "green",

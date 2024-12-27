@@ -21,6 +21,21 @@ const CognitiveChipData: ResourceProps = {
         mark: "check",
       },
     },
+    missions: {
+      found: true,
+      locations: [
+        {
+          name: "Missions - Side",
+          wikiLink: "Beginner_Rewards#Side_Quests",
+          quantity: { amount: 4200, timeFrame: "one-time" },
+          notes: "Total Rewards",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "x",
+      },
+    },
     dailyRaid: {
       found: true,
       locations: [

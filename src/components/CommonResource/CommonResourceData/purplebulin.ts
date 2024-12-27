@@ -21,6 +21,12 @@ const UniversalBulinData: ResourceProps = {
           wikiLink: "Missions#Weekly_Missions",
           quantity: { amount: 3, timeFrame: "weekly" },
         },
+        {
+          name: "Level-Up Rewards",
+          wikiLink: "Beginner_Rewards#Level-Up",
+          quantity: { amount: 2, timeFrame: "one-time" },
+          notes: "Lv.20, Lv.30"
+        },
       ],
       checkMark: {
         color: "green",
@@ -34,7 +40,7 @@ const UniversalBulinData: ResourceProps = {
         {
           name: "X-2 Stages",
           wikiLink: "Campaign",
-          quantity: { amount: 1, timeFrame: "stage" },
+          quantity: { amount: 1, timeFrame: "chapter" },
           notes: "3-Star Reward",
         },
       ],
