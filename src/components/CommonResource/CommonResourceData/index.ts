@@ -21,6 +21,9 @@ import T2PlateData from "./t2plate"
 import T3PlateData from "./t3plate"
 import T4PlateData from "./t4plate"
 
+import AugmentModuleCoreData from "./augmentcore"
+import AugmentModuleEXPData from "./augmentmodulestone"
+
 export {
   CoinData,
   OilData,
@@ -40,4 +43,6 @@ export {
   T2PlateData,
   T3PlateData,
   T4PlateData,
+  AugmentModuleCoreData,
+  AugmentModuleEXPData,
 }
