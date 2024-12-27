@@ -6,6 +6,20 @@ const T2RetrofitPrintData: ResourceProps = {
   image: "materials/unknown_t2_bp.png",
   wikiLink: "Dockyard#Retrofit",
   drops: {
+    academy: {
+      found: true,
+      locations: [
+        {
+          name: "Commissions",
+          wikiLink: "Commissions",
+          quantity: { amount: "RNG", timeFrame: null },
+        },
+      ],
+      checkMark: {
+        color: "red",
+        mark: "check",
+      },
+    },
     hardModeDrop: {
       found: true,
       locations: [
