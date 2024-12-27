@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 
 import "@components/_common/ItemCell/styles.css"
 
@@ -51,6 +51,14 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
   const wikiLink = item.wikiLink
   const drops = item.drops
 
+  const rarityValue = useMemo(() => {
+    if (Array.isArray(rarity) && Array.isArray(imgUrl)) {
+      const randomIndex = Math.floor(Math.random() * rarity.length)
+      return { rarity: rarity[randomIndex], imgUrl: imgUrl[randomIndex] }
+    }
+    return { rarity, imgUrl }
+  }, [rarity, imgUrl])
+
   return (
     <>
       {/* Trigger "button" */}
@@ -61,10 +69,12 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
       >
         <div className="relative">
           <div className="fake-modal-link">
-            <div className={`icon rarity-${rarity} border-radius-0`}>
+            <div
+              className={`icon rarity-${rarityValue?.rarity} border-radius-0`}
+            >
               <img
                 loading="lazy"
-                src={`/test_ecgc_2/images/${imgUrl}`}
+                src={`/test_ecgc_2/images/${rarityValue.imgUrl}`}
                 alt={`${item.name}`}
               />
             </div>
@@ -136,70 +146,144 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 Tables are scrollable horizontally!
               </h6>
 
-              <div
-                className={"flex flex-col md:flex-row items-center gap-4 mt-5"}
-              >
-                {/* Item Icon */}
-                <div className={`rarity-${rarity} ${shipIconStyle}`}>
-                  <a
-                    className={shipLinkStyle}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    title={name}
-                    href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
-                  >
-                    <img
-                      loading="lazy"
-                      src={`/test_ecgc_2/images/${imgUrl}`}
-                      alt={`${name}`}
-                    />
-                  </a>
-                </div>
+              {typeof imgUrl === "string" && typeof rarity === "number" ? (
+                <div
+                  className={
+                    "flex flex-col md:flex-row items-center gap-4 mt-5"
+                  }
+                >
+                  {/* Item Icon */}
+                  <div className={`rarity-${rarity} ${shipIconStyle}`}>
+                    <a
+                      className={shipLinkStyle}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      title={name}
+                      href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+                    >
+                      <img
+                        loading="lazy"
+                        src={`/test_ecgc_2/images/${imgUrl}`}
+                        alt={`${name}`}
+                      />
+                    </a>
+                  </div>
 
-                {/* Totals */}
-                <div className="w-full">
-                  <ItemTable
-                    tableInfo={[
-                      { colName: "Daily", colWidth: "25%", limiter: true },
-                      { colName: "Weekly", colWidth: "25%", limiter: true },
-                      { colName: "Monthly", colWidth: "25%", limiter: true },
-                      {
-                        colName: "Bimonthly",
-                        colWidth: "25%",
-                        limiter: true,
-                      },
-                    ]}
-                    active={true}
-                  >
-                    <tr>
-                      <td className=" font-bold">
-                        <span className="!text-yellow-400">
-                          {item.total.daily}
-                        </span>
-                        {item.total.daily !== "N/A" && " / Day"}
-                      </td>
-                      <td className=" font-bold">
-                        <span className="!text-yellow-400">
-                          {item.total.weekly}
-                        </span>
-                        {item.total.weekly !== "N/A" && " / Week"}
-                      </td>
-                      <td className=" font-bold">
-                        <span className="!text-yellow-400">
-                          {item.total.monthly}
-                        </span>
-                        {item.total.monthly !== "N/A" && " / Month"}
-                      </td>
-                      <td className=" font-bold">
-                        <span className="!text-yellow-400">
-                          {item.total.bimonthly}
-                        </span>
-                        {item.total.bimonthly !== "N/A" && " / 2 Months"}
-                      </td>
-                    </tr>
-                  </ItemTable>
+                  {/* Totals */}
+                  <div className="w-full">
+                    <ItemTable
+                      tableInfo={[
+                        { colName: "Daily", colWidth: "25%", limiter: true },
+                        { colName: "Weekly", colWidth: "25%", limiter: true },
+                        { colName: "Monthly", colWidth: "25%", limiter: true },
+                        {
+                          colName: "Bimonthly",
+                          colWidth: "25%",
+                          limiter: true,
+                        },
+                      ]}
+                      active={true}
+                    >
+                      <tr>
+                        <td className=" font-bold">
+                          <span className="!text-yellow-400">
+                            {item.total.daily}
+                          </span>
+                          {item.total.daily !== "N/A" && " / Day"}
+                        </td>
+                        <td className=" font-bold">
+                          <span className="!text-yellow-400">
+                            {item.total.weekly}
+                          </span>
+                          {item.total.weekly !== "N/A" && " / Week"}
+                        </td>
+                        <td className=" font-bold">
+                          <span className="!text-yellow-400">
+                            {item.total.monthly}
+                          </span>
+                          {item.total.monthly !== "N/A" && " / Month"}
+                        </td>
+                        <td className=" font-bold">
+                          <span className="!text-yellow-400">
+                            {item.total.bimonthly}
+                          </span>
+                          {item.total.bimonthly !== "N/A" && " / 2 Months"}
+                        </td>
+                      </tr>
+                    </ItemTable>
+                  </div>
                 </div>
-              </div>
+              ) : Array.isArray(imgUrl) && Array.isArray(rarity) ? (
+                <>
+                  {/* Item Icon */}
+                  <div className="flex">
+                    {imgUrl?.map((url, index) => (
+                      <div
+                        key={index}
+                        className={`rarity-${rarity[index]} ${shipIconStyle}`}
+                      >
+                        <a
+                          className={shipLinkStyle}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          title={name}
+                          href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+                        >
+                          <img
+                            loading="lazy"
+                            src={`/test_ecgc_2/images/${url}`}
+                            alt={`${name} - Image ${index + 1}`}
+                          />
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Totals */}
+                  <div className="w-full">
+                    <ItemTable
+                      tableInfo={[
+                        { colName: "Daily", colWidth: "25%", limiter: true },
+                        { colName: "Weekly", colWidth: "25%", limiter: true },
+                        { colName: "Monthly", colWidth: "25%", limiter: true },
+                        {
+                          colName: "Bimonthly",
+                          colWidth: "25%",
+                          limiter: true,
+                        },
+                      ]}
+                      active={true}
+                    >
+                      <tr>
+                        <td className=" font-bold">
+                          <span className="!text-yellow-400">
+                            {item.total.daily}
+                          </span>
+                          {item.total.daily !== "N/A" && " / Day"}
+                        </td>
+                        <td className=" font-bold">
+                          <span className="!text-yellow-400">
+                            {item.total.weekly}
+                          </span>
+                          {item.total.weekly !== "N/A" && " / Week"}
+                        </td>
+                        <td className=" font-bold">
+                          <span className="!text-yellow-400">
+                            {item.total.monthly}
+                          </span>
+                          {item.total.monthly !== "N/A" && " / Month"}
+                        </td>
+                        <td className=" font-bold">
+                          <span className="!text-yellow-400">
+                            {item.total.bimonthly}
+                          </span>
+                          {item.total.bimonthly !== "N/A" && " / 2 Months"}
+                        </td>
+                      </tr>
+                    </ItemTable>
+                  </div>
+                </>
+              ) : null}
 
               {item.notes && (
                 <p
