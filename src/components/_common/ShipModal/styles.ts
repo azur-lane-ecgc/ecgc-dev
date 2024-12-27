@@ -18,7 +18,7 @@ export const shipLinkStyle =
 export const shipIconContainerStyle =
   "flex flex-col sm:flex-row items-center gap-4 mt-5"
 export const shipIconStyle =
-  "overflow-hidden mr-1 my-1.5 min-w-fit w-fit p-0.5 shadow-[0_10px_25px_0_rgba(0,0,0,1)] h-auto border-radius-0"
+  "overflow-hidden mr-1 my-1.5 w-[96px] min-w-[96px] sm:min-w-fit sm:w-fit p-0.5 shadow-[0_10px_25px_0_rgba(0,0,0,1)] h-auto border-radius-0"
 
 // rank color helper functions
 export const letterRankColor = (rank: string | null | undefined): string => {

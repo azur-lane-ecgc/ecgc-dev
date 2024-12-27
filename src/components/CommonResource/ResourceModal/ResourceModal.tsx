@@ -216,7 +216,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               ) : Array.isArray(imgUrl) && Array.isArray(rarity) ? (
                 <>
                   {/* Item Icon */}
-                  <div className="flex">
+                  <div className="mt-5 w-full gap-4 flex flex-row flex-wrap justify-center">
                     {imgUrl?.map((url, index) => (
                       <div
                         key={index}
@@ -238,6 +238,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                       </div>
                     ))}
                   </div>
+                  <br />
 
                   {/* Totals */}
                   <div className="w-full">
