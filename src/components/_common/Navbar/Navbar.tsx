@@ -72,7 +72,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
               className="flex items-center text-white hover:bg-white/15"
             >
               <img
-                loading="lazy"
                 src="/test_ecgc_2/images/misc/SiteIcon.png"
                 width="40"
                 alt="ECGC"
