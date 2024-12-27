@@ -74,6 +74,7 @@ const T1PlateData: ResourceProps = {
           name: "General Shop",
           wikiLink: "https://azurlane.koumakan.jp/wiki/Shops#General_Shop",
           quantity: { amount: 5, timeFrame: "cycle" },
+          notes: "RNG",
         },
       ],
       checkMark: {

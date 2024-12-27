@@ -103,6 +103,7 @@ const T3PlateData: ResourceProps = {
           name: "General Shop",
           wikiLink: "https://azurlane.koumakan.jp/wiki/Shops#General_Shop",
           quantity: { amount: 5, timeFrame: "cycle" },
+          notes: "RNG",
         },
       ],
       checkMark: {
@@ -117,6 +118,7 @@ const T3PlateData: ResourceProps = {
           name: "Guild Shop",
           wikiLink: "https://azurlane.koumakan.jp/wiki/Shops#Guild_Shop",
           quantity: { amount: 5, timeFrame: "cycle" },
+          notes: "RNG",
         },
       ],
       checkMark: {
