@@ -31,7 +31,9 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
 }): React.JSX.Element => {
   const [open, setOpen] = useState(false)
 
-  const handleOpen = () => setOpen(true)
+  const handleOpen = () => {
+    setOpen(true)
+  }
   const handleClose = () => {
     setOpen(false)
   }
@@ -66,6 +68,15 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
         id={`modalTrigger${name}`}
         className={`${modalTriggerStyle} ${!!trigger?.hasBorder ? "border-gray-400" : "border-transparent"}`}
         onClick={handleOpen}
+        tabIndex={0}
+        role="button"
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            handleOpen()
+            e.preventDefault()
+          }
+        }}
+        aria-label={`Open modal for ${name}`}
       >
         <div className="relative">
           <div className="fake-modal-link">
@@ -109,6 +120,13 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
           aria-modal="true"
           role="dialog"
           tabIndex={-1}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") {
+              handleClose()
+              e.preventDefault()
+            }
+          }}
+          aria-label={`Close modal for ${name}`}
         >
           {/* Modal Window */}
           <div
