@@ -53,14 +53,6 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
   const wikiLink = item.wikiLink
   const drops = item.drops
 
-  const rarityValue = useMemo(() => {
-    if (Array.isArray(rarity) && Array.isArray(imgUrl)) {
-      const randomIndex = Math.floor(Math.random() * rarity.length)
-      return { rarity: rarity[randomIndex], imgUrl: imgUrl[randomIndex] }
-    }
-    return { rarity, imgUrl }
-  }, [rarity, imgUrl])
-
   return (
     <>
       {/* Trigger "button" */}
@@ -81,11 +73,11 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
         <div className="relative">
           <div className="fake-modal-link">
             <div
-              className={`icon rarity-${rarityValue?.rarity} border-radius-0`}
+              className={`icon rarity-${Array.isArray(rarity) ? rarity[1] : rarity} border-radius-0`}
             >
               <img
                 loading="lazy"
-                src={`/test_ecgc_2/images/${rarityValue.imgUrl}`}
+                src={`/test_ecgc_2/images/${Array.isArray(imgUrl) ? imgUrl[1] : imgUrl}`}
                 alt={`${item.name}`}
               />
             </div>
