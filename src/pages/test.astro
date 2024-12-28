@@ -67,13 +67,20 @@ const data = [
     options={[
       "Currency",
       "Consumable",
-      "Cognitive",
+      "Cognitive Awakening",
       "Bulin",
       "Gear Upgrade",
       "Augmentation",
       "Skill Books",
       "Retrofit",
     ]}
+    client:visible
+  />
+
+  <ComboBoxWrapper
+    title="Timeframe"
+    options={["Daily", "Weekly", "Monthly", "Bimonthly", "One-Time"]}
+    initialOption="Monthly"
     client:visible
   />
 
