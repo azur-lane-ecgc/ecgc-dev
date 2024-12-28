@@ -16,6 +16,8 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   const [input, setInput] = useState<string>("")
   const [selected, setSelected] = useState<string | null>(null)
   const [showOptions, setShowOptions] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+  const [shouldRenderMobile, setShouldRenderMobile] = useState(false)
 
   const wrapperRef = useRef<HTMLDivElement | null>(null)
   const inputRef = useRef<HTMLInputElement | null>(null)
@@ -37,8 +39,16 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   }, [])
 
   useEffect(() => {
-    if (showOptions && inputRef.current) {
-      inputRef.current.focus()
+    if (showOptions) {
+      setShouldRenderMobile(true)
+      setTimeout(() => setIsVisible(true), 10)
+      if (inputRef.current) {
+        inputRef.current.focus()
+      }
+    } else {
+      setIsVisible(false)
+      const timer = setTimeout(() => setShouldRenderMobile(false), 300)
+      return () => clearTimeout(timer)
     }
   }, [showOptions])
 
@@ -73,7 +83,6 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   return (
     <div ref={wrapperRef} className={className}>
       {/* combobox button */}
-
       <p className="mb-1 font-bold text-fuchsia-400">{title}</p>
       <button
         id={`${title}_input`}
@@ -131,25 +140,34 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       )}
 
       {/* Combobox menu (mobile) */}
-      {showOptions && (
+      {shouldRenderMobile && (
         <div className="block sm:hidden fixed inset-0 z-[80]">
           {/* Overlay with fade animation */}
           <div
-            className="fixed inset-0 bg-black"
-            style={{
-              opacity: showOptions ? 0.5 : 0,
-            }}
+            className={`fixed inset-0 bg-black transition-all duration-300 ease-in-out ${
+              isVisible ? "opacity-50" : "opacity-0"
+            }`}
             onClick={() => setShowOptions(false)}
           />
 
           {/* Close message */}
-          <span className="fixed top-[5px] left-1/2 transform -translate-x-1/2 py-2 font-bold text-fuchsia-400 bg-transparent w-full text-center z-30 pointer-events-none">
+          <span
+            className={`fixed top-[7px] left-1/2 transform -translate-x-1/2 py-2 font-bold text-fuchsia-400 bg-transparent w-full text-center z-30 pointer-events-none transition-all duration-300 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
+            }`}
+          >
             Click Outside to Exit
           </span>
 
           {/* Bottom menu with slide animation */}
           <div
-            className={`absolute bottom-0 left-0 w-full bg-[#212529] rounded-t-xl`}
+            className={`absolute bottom-0 left-0 w-full bg-[#212529] rounded-t-xl transform transition-all duration-300 ease-in-out ${
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-full opacity-0"
+            }`}
           >
             <input
               ref={inputRef}
