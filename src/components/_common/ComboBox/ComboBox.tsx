@@ -118,7 +118,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             placeholder={`Search ${title.toLowerCase()}...`}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="pl-1 py-1 w-full border-transparent focus:outline-none bg-[#444d55] text-gray-200 rounded-t-xl"
+            className="pl-2 py-1 w-full border-transparent focus:outline-none bg-[#444d55] text-gray-200 rounded-t-xl"
           />
           <div className="max-h-72 overflow-auto px-1 my-1">
             {filteredOptions.length === 0 ? (
@@ -181,9 +181,9 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
               placeholder={`Search ${title.toLowerCase()}...`}
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className="pl-1 py-3 w-full border-transparent focus:outline-none bg-[#444d55] text-gray-200 rounded-t-xl"
+              className="pl-2 py-3 w-full border-transparent focus:outline-none bg-[#444d55] text-gray-200 rounded-t-xl"
             />
-            <div className="max-h-72 overflow-auto px-1 py-2">
+            <div className="h-72 max-h-72 overflow-auto px-1 py-2">
               {filteredOptions.length === 0 ? (
                 <div className="flex items-center justify-center text-gray-300 cursor-default p-1 italic text-sm h-[50px] mx-auto my-auto rounded-md">
                   Nothing found.
