@@ -157,12 +157,7 @@
       },
       {
         "id": "renewable",
-        "content": "Renewable Resources",
-        "subheadings": []
-      },
-      {
-        "id": "finite",
-        "content": "(Almost) Finite Resources",
+        "content": "Resource Data",
         "subheadings": []
       }
     ]
