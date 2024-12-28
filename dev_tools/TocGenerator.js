@@ -41,7 +41,7 @@ const extractHeadings = (content) => {
     const h2Match = h2Matches[i]
     const h2Content = h2Match.values[2].trim()
 
-    if (h2Content === "Introduction" || h2Content?.includes("Notes")) {
+    if (h2Content === "Introduction") {
       continue
     }
 
