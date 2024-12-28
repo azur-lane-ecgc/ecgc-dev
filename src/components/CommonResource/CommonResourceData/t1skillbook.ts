@@ -73,6 +73,7 @@ const T1SkillBookData: ResourceProps = {
     monthly: "N/A",
     weekly: "N/A",
     daily: "N/A",
+    oneTime: "N/A",
   },
   notes: "<b>Not a concern.</b>",
 }

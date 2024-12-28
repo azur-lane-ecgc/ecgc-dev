@@ -119,6 +119,7 @@ const T3SkillBookData: ResourceProps = {
     monthly: "N/A",
     weekly: "N/A",
     daily: "N/A",
+    oneTime: "N/A",
   },
   notes: "<b>Offensive Skill Books might be a concern, rest aren't.</b>",
 }

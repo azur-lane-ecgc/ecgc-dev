@@ -161,6 +161,7 @@ const T3PlateData: ResourceProps = {
     monthly: "N/A",
     weekly: "N/A",
     daily: "N/A",
+    oneTime: "N/A",
   },
   notes: "<b>General Plates might be a concern, rest aren't.</b>",
 }

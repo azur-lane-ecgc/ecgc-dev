@@ -57,6 +57,7 @@ const T3RetrofitPrintData: ResourceProps = {
     monthly: "N/A",
     weekly: "N/A",
     daily: "N/A",
+    oneTime: "N/A",
   },
   notes: "<b>Cruiser Prints might be a concern, rest aren't.</b>",
 }
