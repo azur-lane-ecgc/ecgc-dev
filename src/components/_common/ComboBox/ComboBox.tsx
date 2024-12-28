@@ -42,11 +42,20 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
     }
   }, [showOptions])
 
-  const filteredOptions = input
-    ? options.filter((item) =>
-        item.toLowerCase().startsWith(input.toLowerCase()),
-      )
-    : options
+  const filteredOptions = (() => {
+    const baseOptions = input
+      ? options.filter((item) =>
+          item.toLowerCase().startsWith(input.toLowerCase()),
+        )
+      : options
+
+    // selected item moved to top
+    if (selected && baseOptions.includes(selected)) {
+      return [selected, ...baseOptions.filter((item) => item !== selected)]
+    }
+
+    return baseOptions
+  })()
 
   const handleSelect = (name: string) => {
     const newSelected = selected === name ? null : name
@@ -99,7 +108,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             onChange={(e) => setInput(e.target.value)}
             className="pl-1 py-1 w-full border-transparent focus:outline-none bg-[#444d55] text-gray-200 rounded-t-xl"
           />
-          <div className="max-h-72 overflow-auto px-1 mt-1">
+          <div className="max-h-72 overflow-auto px-1 my-1">
             {filteredOptions.length === 0 ? (
               <div className="flex items-center justify-center text-gray-300 cursor-default p-1 italic text-sm h-[50px] mx-auto my-auto rounded-md">
                 Nothing found.
@@ -107,15 +116,15 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             ) : (
               filteredOptions.map((item, index) => (
                 <div
-                  className="text-gray-300 font-semibold cursor-pointer hover:bg-[#444d55] p-1 h-[32px] rounded-md flex justify-between"
                   key={index}
                   onClick={() => handleSelect(item)}
+                  className={`${
+                    selected === item ? "text-orange-400" : "text-gray-300"
+                  } font-semibold cursor-pointer hover:bg-[#444d55] p-1 h-[32px] rounded-md flex justify-between`}
                 >
                   {item}
-                  {selected === item ? (
+                  {selected === item && (
                     <span className="text-cyan-400">{"\u2713"}</span>
-                  ) : (
-                    false
                   )}
                 </div>
               ))
