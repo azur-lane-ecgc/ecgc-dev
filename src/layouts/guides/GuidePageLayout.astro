@@ -43,29 +43,37 @@ const {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{metaTitle || title} - ECGC</title>
-  <meta name="description" content={metaDescription} />
-  <meta name="og:title" content={title} />
-  <meta
-    name="og:url"
-    content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
-  />
-  <meta
-    name="og:image"
-    content={metaImage
-      ? `/test_ecgc_2/images/${metaImage}`
-      : pageInfo.find((page) => page.title === title)?.image ||
-        "/test_ecgc_2/images/misc/no_cover.jpg"}
-  />
 
-  <meta name="og:description" content={metaDescription} />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Azur Lane ECGC",
+      "url": "https://samheart564.github.io/test_ecgc_2",
+      "image": "https://samheart564.github.io/test_ecgc_2/images/misc/SiteIcon.png"
+    }
+  </script>
+
+  <meta name="description" content={metaDescription} />
+  <meta property="og:title" content={title} />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:url"
+    content={`https://samheart564.github.io/test_ecgc_2${metaUrl ? `/${metaUrl}` : ""}`}
+  />
+  <meta
+    property="og:image"
+    content={`https://samheart564.github.io${metaImage ? `/test_ecgc_2/images/${metaImage}` : "/test_ecgc_2/images/misc/no_cover.jpg"}`}
+  />
+  <meta property="og:description" content={metaDescription} />
 
   <link
     rel="icon"
     type="image/x-icon"
-    href="/test_ecgc_2/images/misc/SiteIcon.ico"
+    href="https://samheart564.github.io/test_ecgc_2/images/misc/SiteIcon.ico"
   />
   <span data-astro-transition-persist="someId">
-    <noscript> Your browser does not support JavaScript! </noscript>
+    <noscript>Your browser does not support JavaScript!</noscript>
   </span>
 
   <ClientRouter />

@@ -30,14 +30,23 @@ const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title} - ECGC</title>
   <meta name="description" content={metaDescription} />
-  <meta name="og:title" content={title} />
+  <meta property="og:title" content={title} />
+  <meta property="og:type" content="website" />
   <meta
-    name="og:url"
+    property="og:url"
     content={`https://samheart564.github.io/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
   />
   {
-    metaImage && (
-      <meta name="og:image" content={`/test_ecgc_2/images/${metaImage}`} />
+    metaImage ? (
+      <meta
+        property="og:image"
+        content={`https://samheart564.github.io/test_ecgc_2/images/${metaImage}`}
+      />
+    ) : (
+      <meta
+        property="og:image"
+        content="https://samheart564.github.io/test_ecgc_2/images/misc/SiteIcon.png"
+      />
     )
   }
   <meta name="og:description" content={metaDescription} />
@@ -47,6 +56,16 @@ const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
     type="image/x-icon"
     href="/test_ecgc_2/images/misc/SiteIcon.ico"
   />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Azur Lane ECGC",
+      "url": "https://samheart564.github.io/test_ecgc_2",
+      "image": "https://samheart564.github.io/test_ecgc_2/images/misc/SiteIcon.png"
+    }
+  </script>
 
   <span data-astro-transition-persist="someId2">
     <noscript data-astro-transition-persist="someId2"
