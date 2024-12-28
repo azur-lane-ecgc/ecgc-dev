@@ -3,78 +3,8 @@ import { HR } from "@components/_common/HR"
 import WikiLink from "@components/_common/WikiLink.astro"
 
 import { ItemContainer } from "@components/_common/ItemCell"
-
+import { FiniteResourceData, InfiniteResourceData } from "./CommonResourceData"
 import { ResourceModal } from "@components/CommonResource/ResourceModal"
-import {
-  CoinData,
-  CoreData,
-  OilData,
-  GuildTokenData,
-  CrystalFragmentData,
-  PrototypeCoreData,
-  WisdomCubeData,
-  T1EXPDataPackData,
-  HEPData,
-  CognitiveChipData,
-  CognitiveArrayData,
-  UniversalBulinData,
-  PrototypeBulinData,
-  SpecializedBulinData,
-  T1PlateData,
-  T2PlateData,
-  T3PlateData,
-  T4PlateData,
-  AugmentModuleCoreData,
-  AugmentModuleEXPData,
-  T1AugmentConversionData,
-  T2AugmentConversionData,
-  T1RetrofitPrintData,
-  T2RetrofitPrintData,
-  T3RetrofitPrintData,
-  T1SkillBookData,
-  T2SkillBookData,
-  T3SkillBookData,
-  T4SkillBookData,
-  GemData,
-} from "./CommonResourceData"
-import { ItemTable } from "@components/_common/ItemTable"
-
-const coin = CoinData
-const oil = OilData
-const coredata = CoreData
-const guildtoken = GuildTokenData
-const metacrystal = CrystalFragmentData
-const protocore = PrototypeCoreData
-const cube = WisdomCubeData
-
-const t1exp = T1EXPDataPackData
-const hep = HEPData
-
-const cogchip = CognitiveChipData
-const cogarray = CognitiveArrayData
-
-const purplebulin = UniversalBulinData
-const goldbulin = PrototypeBulinData
-const rainbowbulin = SpecializedBulinData
-
-const t1plate = T1PlateData
-const t2plate = T2PlateData
-const t3plate = T3PlateData
-const t4plate = T4PlateData
-
-const augcore = AugmentModuleCoreData
-const augexp = AugmentModuleEXPData
-const t1augconversion = T1AugmentConversionData
-const t2augconversion = T2AugmentConversionData
-
-const t1retrofit = T1RetrofitPrintData
-const t2retrofit = T2RetrofitPrintData
-const t3retrofit = T3RetrofitPrintData
-
-const t1skillbook = T1SkillBookData
-const t2skillbook = T2SkillBookData
-const t3skillbook = T3SkillBookData
-const t4skillbook = T4SkillBookData
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -85,8 +15,10 @@ const t4skillbook = T4SkillBookData
 </p>
 <br />
 
-<h2 id="terminology">Terminology</h2>
+<h2 id="notes">Notes</h2>
 <HR />
+
+<h3 id="terminology">Terminology</h3>
 <ul>
   <li>
     <p>
@@ -168,8 +100,7 @@ const t4skillbook = T4SkillBookData
 </ul>
 <br />
 
-<h2 id="glossary">Glossary</h2>
-<HR />
+<h3 id="glossary">Glossary</h3>
 <ul>
   <li>
     <p>
@@ -197,8 +128,7 @@ const t4skillbook = T4SkillBookData
 </ul>
 <br />
 
-<h2 id="calculations">Calculations</h2>
-<HR />
+<h3 id="prerequisites">Prerequisites</h3>
 <ul>
   <li>
     <p>
@@ -250,297 +180,23 @@ const t4skillbook = T4SkillBookData
 
 <h2 id="renewable">Renewable Resources</h2>
 <HR />
-
 <ItemContainer>
-  <ResourceModal
-    client:visible
-    item={coin}
-    trigger={{
-      descriptionNote: `${coin.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={oil}
-    trigger={{
-      descriptionNote: `${oil.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={coredata}
-    trigger={{
-      descriptionNote: `${coredata.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={guildtoken}
-    trigger={{
-      descriptionNote: `${guildtoken.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={metacrystal}
-    trigger={{
-      descriptionNote: `${metacrystal.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={protocore}
-    trigger={{
-      descriptionNote: `${protocore.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={cube}
-    trigger={{
-      descriptionNote: `${cube.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t1exp}
-    trigger={{
-      descriptionNote: `${t1exp.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={hep}
-    trigger={{
-      descriptionNote: `${hep.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={cogchip}
-    trigger={{
-      descriptionNote: `${cogchip.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={cogarray}
-    trigger={{
-      descriptionNote: `${cogarray.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={purplebulin}
-    trigger={{
-      descriptionNote: `${purplebulin.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={goldbulin}
-    trigger={{
-      descriptionNote: `${goldbulin.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={rainbowbulin}
-    trigger={{
-      descriptionNote: `${rainbowbulin.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t1plate}
-    trigger={{
-      descriptionNote: `${t1plate.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t2plate}
-    trigger={{
-      descriptionNote: `${t2plate.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t3plate}
-    trigger={{
-      descriptionNote: `${t3plate.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t4plate}
-    trigger={{
-      descriptionNote: `${t4plate.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={augcore}
-    trigger={{
-      descriptionNote: `${augcore.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={augexp}
-    trigger={{
-      descriptionNote: `${augexp.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t1augconversion}
-    trigger={{
-      descriptionNote: `${t1augconversion.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t2augconversion}
-    trigger={{
-      descriptionNote: `${t2augconversion.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t1retrofit}
-    trigger={{
-      descriptionNote: `${t1retrofit.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t2retrofit}
-    trigger={{
-      descriptionNote: `${t2retrofit.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t3retrofit}
-    trigger={{
-      descriptionNote: `${t3retrofit.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t1skillbook}
-    trigger={{
-      descriptionNote: `${t1skillbook.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t2skillbook}
-    trigger={{
-      descriptionNote: `${t2skillbook.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t3skillbook}
-    trigger={{
-      descriptionNote: `${t3skillbook.total.monthly}`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-
-  <ResourceModal
-    client:visible
-    item={t4skillbook}
-    trigger={{
-      descriptionNote: `${t4skillbook.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: false,
-    }}
-  />
+  {
+    InfiniteResourceData.map((item, index) => (
+      <ResourceModal
+        client:visible
+        item={item}
+        trigger={{
+          descriptionNote:
+            item.total.monthly === "N/A"
+              ? `${item.total.monthly}`
+              : `${item.total.monthly} / Month`,
+          largeDescNote: true,
+          hasBorder: true,
+        }}
+      />
+    ))
+  }
 </ItemContainer>
 <br />
 
@@ -548,47 +204,21 @@ const t4skillbook = T4SkillBookData
 <HR />
 
 <ItemContainer>
-  <ResourceModal
-    client:visible
-    item={GemData}
-    trigger={{
-      descriptionNote: `${GemData.total.monthly} / Month`,
-      largeDescNote: true,
-      hasBorder: true,
-    }}
-  />
-</ItemContainer>
-
-<ItemTable
-  tableInfo={[
-    { colName: "Item", colWidth: "8%", limiter: true },
-    { colName: "Daily", colWidth: "23%", limiter: true },
-    { colName: "Weekly", colWidth: "23%", limiter: true },
-    { colName: "Monthly", colWidth: "23%", limiter: true },
-    {
-      colName: "Bimonthly",
-      colWidth: "23%",
-      limiter: true,
-    },
-  ]}
-  active={true}
->
-  <tr>
-    <td class="flex justify-center">
+  {
+    FiniteResourceData.map((item, index) => (
       <ResourceModal
         client:visible
-        item={cogarray}
+        item={item}
         trigger={{
-          descriptionNote: `${cogarray.total.monthly} / Month`,
+          descriptionNote:
+            item.total.monthly === "N/A"
+              ? `${item.total.monthly}`
+              : `${item.total.monthly} / Month`,
           largeDescNote: true,
-          hasBorder: false,
+          hasBorder: true,
         }}
       />
-    </td>
-    <td>test</td>
-    <td>test</td>
-    <td>test</td>
-    <td>test</td>
-  </tr>
-</ItemTable>
+    ))
+  }
+</ItemContainer>
 <br />

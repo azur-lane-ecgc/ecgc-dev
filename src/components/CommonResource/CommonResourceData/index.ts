@@ -1,3 +1,5 @@
+import type { ResourceProps } from "./types"
+
 import CoinData from "./coin"
 import OilData from "./oil"
 import CoreData from "./coreData"
@@ -37,7 +39,7 @@ import T4SkillBookData from "./t4skillbook"
 
 import GemData from "./gem"
 
-export {
+export const InfiniteResourceData: ResourceProps[] = [
   CoinData,
   OilData,
   CoreData,
@@ -67,5 +69,6 @@ export {
   T2SkillBookData,
   T3SkillBookData,
   T4SkillBookData,
-  GemData,
-}
+]
+
+export const FiniteResourceData: ResourceProps[] = [GemData]
