@@ -4,7 +4,7 @@ import type { ResourceProps } from "./types"
 const UniversalBulinData: ResourceProps = {
   name: "Universal Bulin",
   plural: "Universal Bulin",
-  category: "Currency",
+  category: "Bulin",
   rarity: 3,
   image: "materials/purple_bulin.png",
   wikiLink: "Dockyard#Limit_Break",
