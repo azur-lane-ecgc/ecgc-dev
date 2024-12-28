@@ -94,11 +94,11 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       <p className="mb-1 font-bold text-fuchsia-400">{title}</p>
       <button
         id={`${title}_input`}
-        className="px-1 py-2 w-52 max-w-52 bg-[#212529] border border-green-800 rounded-md shadow-lg"
+        className={`px-1 py-2 w-48 max-w-48 ${showOptions ? "bg-[#2e343a]" : "bg-[#212529]"} hover:bg-[#394047] border border-green-800 rounded-md shadow-lg`}
         onClick={() => setShowOptions((prev) => !prev)}
       >
         <div className="flex">
-          <span className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full mb-0 font-bold text-orange-400">
+          <span className="flex-1 text-center align-middle justify-center w-full mb-0 font-bold text-orange-400">
             {selected || title + "..."}
           </span>
           <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
@@ -113,7 +113,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
 
       {/* combobox menu (desktop) */}
       {showOptions && (
-        <div className="hidden sm:block absolute bg-[#212529] border border-gray-500 shadow-md mt-1 w-52 max-w-52 z-10 rounded-xl">
+        <div className="hidden sm:block absolute bg-[#212529] border border-gray-500 shadow-md mt-1 w-48 max-w-48 z-10 rounded-xl">
           <input
             ref={inputRef}
             type="text"
