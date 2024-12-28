@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const GemData: ResourceProps = {
   name: "Gem",
+  category: "Currency",
   rarity: 3,
   image: "materials/gem.png",
   wikiLink: "Akashi's_Shop#Gems",

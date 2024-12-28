@@ -28,6 +28,7 @@ export interface LocationProps {
 export interface ResourceProps {
   name: string
   plural?: string
+  category: string
   rarity: number | number[]
   image: string | string[]
   wikiLink: string

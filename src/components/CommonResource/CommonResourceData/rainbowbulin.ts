@@ -4,6 +4,7 @@ import type { ResourceProps } from "./types"
 const SpecializedBulinData: ResourceProps = {
   name: "Specialized Bulin Custom MKIII",
   plural: "Specialized Bulin Custom MKIII",
+  category: "Bulin",
   rarity: 5,
   image: "materials/rainbow_bulin.png",
   wikiLink: "Dockyard#Limit_Break",

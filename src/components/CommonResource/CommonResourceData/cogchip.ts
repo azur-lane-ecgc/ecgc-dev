@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const CognitiveChipData: ResourceProps = {
   name: "Cognitive Chip",
+  category: "Cognitive Awakening",
   rarity: 4,
   image: "materials/cognitive_chip.png",
   wikiLink: "Dockyard#Cognitive_Awakening",

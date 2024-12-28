@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const CrystalFragmentData: ResourceProps = {
   name: "Crystal Fragment",
+  category: "Currency",
   rarity: 4,
   image: "materials/crystal_fragment.png",
   wikiLink: "Shops#META_Shop",

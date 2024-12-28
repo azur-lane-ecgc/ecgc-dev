@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const T2AugmentConversionData: ResourceProps = {
   name: "T2 Augment Conversion",
+  category: "Augmentation",
   rarity: 4,
   image: "materials/t2_augment_conversion.png",
   wikiLink: "Augmentation#Convertion",

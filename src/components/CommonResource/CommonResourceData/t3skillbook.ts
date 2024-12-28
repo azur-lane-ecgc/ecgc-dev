@@ -2,6 +2,7 @@ import type { ResourceProps } from "./types"
 
 const T3SkillBookData: ResourceProps = {
   name: "T3 Skill Book",
+  category: "Skill Book",
   rarity: 4,
   image: "materials/unknown_t3_book.png",
   wikiLink: "https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class",

@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const AugmentModuleCoreData: ResourceProps = {
   name: "Augment Module Core",
+  category: "Augmentation",
   rarity: 4,
   image: "materials/augment_module_core.png",
   wikiLink: "Augmentation#Crafting_and_Enhancing",

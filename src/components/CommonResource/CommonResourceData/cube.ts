@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const WisdomCubeData: ResourceProps = {
   name: "Wisdom Cube",
+  category: "Currency",
   rarity: 4,
   image: "materials/wisdom_cube.png",
   wikiLink: "Construction",

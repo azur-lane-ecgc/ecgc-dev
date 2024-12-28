@@ -4,6 +4,7 @@ import type { ResourceProps } from "./types"
 const AugmentModuleEXPData: ResourceProps = {
   name: "Augment Module EXP",
   plural: "Augment Module EXP",
+  category: "Augmentation",
   rarity: [2, 3, 4],
   image: [
     "materials/t1_augment_enhance.png",

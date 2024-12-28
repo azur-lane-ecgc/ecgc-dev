@@ -4,6 +4,7 @@ import type { ResourceProps } from "./types"
 const CoreData: ResourceProps = {
   name: "Core Data",
   plural: "Core Data",
+  category: "Currency",
   rarity: 2,
   image: "materials/core_data.png",
   wikiLink: "Shops#Core_Exchange",

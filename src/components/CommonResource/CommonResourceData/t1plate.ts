@@ -2,6 +2,7 @@ import type { ResourceProps } from "./types"
 
 const T1PlateData: ResourceProps = {
   name: "T1 Plate",
+  category: "Gear Enhance",
   rarity: 1,
   image: "materials/unknown_t1_plate.png",
   wikiLink: "Equipment#Upgrade_(Enhance)",

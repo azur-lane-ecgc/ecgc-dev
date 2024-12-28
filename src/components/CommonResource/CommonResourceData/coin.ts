@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const CoinData: ResourceProps = {
   name: "Coin",
+  category: "Currency",
   rarity: 1,
   image: "materials/coin.png",
   wikiLink: "Shops",

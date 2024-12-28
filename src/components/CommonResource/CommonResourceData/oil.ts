@@ -4,6 +4,7 @@ import type { ResourceProps } from "./types"
 const OilData: ResourceProps = {
   name: "Oil",
   plural: "Oil",
+  category: "Currency",
   rarity: 1,
   image: "materials/oil.png",
   wikiLink: "Oil_Cost",

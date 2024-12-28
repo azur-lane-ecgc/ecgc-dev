@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const HEPData: ResourceProps = {
   name: "High-Efficiency Combat Logistics Plan",
+  category: "Consumable",
   rarity: 3,
   image: "materials/high_efficiency_plan.png",
   wikiLink: "Combat#High-Efficiency_Combat_Logistics_Plan",

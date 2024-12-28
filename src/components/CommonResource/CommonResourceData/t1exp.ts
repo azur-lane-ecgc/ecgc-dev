@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const T1EXPDataPackData: ResourceProps = {
   name: "T1 EXP Data Pack",
+  category: "Consumable",
   rarity: 2,
   image: "materials/t1_exp_pack.png",
   wikiLink: "Experience#Ship_XP",

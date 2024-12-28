@@ -4,6 +4,7 @@ import type { ResourceProps } from "./types"
 const PrototypeBulinData: ResourceProps = {
   name: "Prototype Bulin MKII",
   plural: "Prototype Bulin MKII",
+  category: "Bulin",
   rarity: 4,
   image: "materials/gold_bulin.png",
   wikiLink: "Dockyard#Limit_Break",

@@ -2,6 +2,7 @@ import type { ResourceProps } from "./types"
 
 const T3RetrofitPrintData: ResourceProps = {
   name: "T3 Retrofit Blueprint",
+  category: "Retrofit",
   rarity: 4,
   image: "materials/unknown_t3_bp.png",
   wikiLink: "Dockyard#Retrofit",

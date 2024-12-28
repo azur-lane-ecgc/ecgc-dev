@@ -3,6 +3,7 @@ import type { ResourceProps } from "./types"
 
 const GuildTokenData: ResourceProps = {
   name: "Guild Token",
+  category: "Currency",
   rarity: 2,
   image: "materials/guild_token.png",
   wikiLink: "Guild",

@@ -4,6 +4,7 @@ import type { ResourceProps } from "./types"
 const UniversalBulinData: ResourceProps = {
   name: "Universal Bulin",
   plural: "Universal Bulin",
+  category: "Currency",
   rarity: 3,
   image: "materials/purple_bulin.png",
   wikiLink: "Dockyard#Limit_Break",
@@ -25,7 +26,7 @@ const UniversalBulinData: ResourceProps = {
           name: "Level-Up Rewards",
           wikiLink: "Beginner_Rewards#Level-Up",
           quantity: { amount: 2, timeFrame: "one-time" },
-          notes: "Lv.20, Lv.30"
+          notes: "Lv.20, Lv.30",
         },
       ],
       checkMark: {

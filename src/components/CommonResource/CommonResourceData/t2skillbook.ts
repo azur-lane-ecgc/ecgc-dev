@@ -2,6 +2,7 @@ import type { ResourceProps } from "./types"
 
 const T2SkillBookData: ResourceProps = {
   name: "T2 Skill Book",
+  category: "Skill Book",
   rarity: 3,
   image: "materials/unknown_t2_book.png",
   wikiLink: "https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class",
@@ -74,7 +75,7 @@ const T2SkillBookData: ResourceProps = {
           name: "Medal Shop",
           wikiLink: "https://azurlane.koumakan.jp/wiki/Shops#Medal_Shop",
           quantity: { amount: 18, timeFrame: "monthly" },
-          notes: "6 Each"
+          notes: "6 Each",
         },
       ],
       checkMark: {
