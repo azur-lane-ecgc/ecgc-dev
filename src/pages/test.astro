@@ -7,7 +7,7 @@ import WikiLink from "@components/_common/WikiLink.astro"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
 import { ShipCell, ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
-import { ComboBox } from "@components/_common/ComboBox"
+import { ComboBoxWrapper } from "@components/_common/ComboBox"
 
 const data = [
   {
@@ -62,9 +62,18 @@ const data = [
   <ImageCarousel data={data} client:visible />
   <br />
 
-  <ComboBox
-    title="testing"
-    options={["unicorn", "laffey", "leipzig"]}
+  <ComboBoxWrapper
+    title="Category"
+    options={[
+      "Currency",
+      "Consumable",
+      "Cognitive",
+      "Bulin",
+      "Gear Upgrade",
+      "Augmentation",
+      "Skill Books",
+      "Retrofit",
+    ]}
     client:visible
   />
 
