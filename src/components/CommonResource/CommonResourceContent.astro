@@ -182,7 +182,7 @@ import { ResourceModal } from "@components/CommonResource/ResourceModal"
 <HR />
 <ItemContainer>
   {
-    InfiniteResourceData.map((item, index) => (
+    InfiniteResourceData.map((item, _) => (
       <ResourceModal
         client:visible
         item={item}
@@ -205,7 +205,7 @@ import { ResourceModal } from "@components/CommonResource/ResourceModal"
 
 <ItemContainer>
   {
-    FiniteResourceData.map((item, index) => (
+    FiniteResourceData.map((item, _) => (
       <ResourceModal
         client:visible
         item={item}

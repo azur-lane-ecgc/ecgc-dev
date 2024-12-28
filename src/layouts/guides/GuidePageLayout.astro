@@ -44,7 +44,7 @@ const {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{metaTitle || title} - ECGC</title>
 
-  <script type="application/ld+json">
+  <script is:inline type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
@@ -63,7 +63,7 @@ const {
   />
   <meta
     property="og:image"
-    content={`https://samheart564.github.io${metaImage ? `/test_ecgc_2/images/${metaImage}` : "/test_ecgc_2/images/misc/no_cover.jpg"}`}
+    content={`https://samheart564.github.io${metaImage ? `/test_ecgc_2/images/${metaImage}` : pageInfo.find((page) => page.title === title)?.image ? pageInfo.find((page) => page.title === title)?.image : "/test_ecgc_2/images/misc/no_cover.jpg"}`}
   />
   <meta property="og:description" content={metaDescription} />
 
