@@ -2,9 +2,7 @@
 import { HR } from "@components/_common/HR"
 import WikiLink from "@components/_common/WikiLink.astro"
 
-import { ItemContainer } from "@components/_common/ItemCell"
-import { FiniteResourceData, InfiniteResourceData } from "./CommonResourceData"
-import { ResourceModal } from "@components/CommonResource/ResourceModal"
+import { CommonResourceModalFilter } from "./ModalFilter"
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -178,47 +176,8 @@ import { ResourceModal } from "@components/CommonResource/ResourceModal"
 </ul>
 <br />
 
-<h2 id="renewable">Renewable Resources</h2>
-<HR />
-<ItemContainer>
-  {
-    InfiniteResourceData.map((item, _) => (
-      <ResourceModal
-        client:visible
-        item={item}
-        trigger={{
-          descriptionNote:
-            item.total.monthly === "N/A"
-              ? `${item.total.monthly}`
-              : `${item.total.monthly} / Month`,
-          largeDescNote: true,
-          hasBorder: true,
-        }}
-      />
-    ))
-  }
-</ItemContainer>
-<br />
-
-<h2 id="finite">(Almost) Finite Resources</h2>
+<h2 id="renewable">Resource Data</h2>
 <HR />
 
-<ItemContainer>
-  {
-    FiniteResourceData.map((item, _) => (
-      <ResourceModal
-        client:visible
-        item={item}
-        trigger={{
-          descriptionNote:
-            item.total.monthly === "N/A"
-              ? `${item.total.monthly}`
-              : `${item.total.monthly} / Month`,
-          largeDescNote: true,
-          hasBorder: true,
-        }}
-      />
-    ))
-  }
-</ItemContainer>
+<CommonResourceModalFilter client:visible />
 <br />
