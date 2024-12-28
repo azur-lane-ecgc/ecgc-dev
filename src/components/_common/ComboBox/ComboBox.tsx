@@ -122,7 +122,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             onChange={(e) => setInput(e.target.value)}
             className="pl-2 py-1 w-full border-transparent focus:outline-none bg-[#444d55] text-gray-200 rounded-t-xl"
           />
-          <div className="max-h-[11.5rem] overflow-auto px-1 my-1">
+          <div className="max-h-64 overflow-auto px-1 my-1">
             {filteredOptions.length === 0 ? (
               <div className="flex items-center justify-center text-gray-300 cursor-default p-1 italic text-sm h-[50px] mx-auto my-auto rounded-md">
                 Nothing found.
