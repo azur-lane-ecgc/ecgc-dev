@@ -33,7 +33,9 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   }, [])
 
   const filteredOptions = input
-    ? options.filter((item) => item.toLowerCase().includes(input.toLowerCase()))
+    ? options.filter((item) =>
+        item.toLowerCase().startsWith(input.toLowerCase()),
+      )
     : options
 
   const handleSelect = (name: string) => {
@@ -54,6 +56,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onFocus={() => setShowOptions(true)}
+        className="pl-1"
       />
       {showOptions && (
         <ul>
