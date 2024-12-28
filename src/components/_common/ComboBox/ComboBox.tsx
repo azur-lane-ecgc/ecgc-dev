@@ -3,16 +3,18 @@ import { useState, useRef, useEffect } from "react"
 export interface ComboBoxProps {
   className?: string
   title: string
-  initialOption?: string
   options: string[]
+  initialOption?: string
+  forceSelect?: boolean
   onSelect?: (option: string | null) => void
 }
 
 export const ComboBox: React.FC<ComboBoxProps> = ({
+  className,
   title,
   options,
   initialOption,
-  className,
+  forceSelect,
   onSelect,
 }) => {
   const [input, setInput] = useState<string>("")
@@ -74,7 +76,8 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   })()
 
   const handleSelect = (name: string) => {
-    const newSelected = selected === name ? null : name
+    const newSelected =
+      forceSelect && selected === name ? name : selected === name ? null : name
 
     setSelected(newSelected)
     setInput("")
@@ -82,7 +85,6 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       onSelect(newSelected)
     }
 
-    console.log("child selected option", newSelected)
     setShowOptions(false)
   }
 
@@ -92,7 +94,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       <p className="mb-1 font-bold text-fuchsia-400">{title}</p>
       <button
         id={`${title}_input`}
-        className="px-1 py-2 w-52 max-w-52 bg-[#212529] border-white rounded-md"
+        className="px-1 py-2 w-52 max-w-52 bg-[#212529] border border-green-800 rounded-md shadow-lg"
         onClick={() => setShowOptions((prev) => !prev)}
       >
         <div className="flex">
@@ -120,7 +122,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             onChange={(e) => setInput(e.target.value)}
             className="pl-2 py-1 w-full border-transparent focus:outline-none bg-[#444d55] text-gray-200 rounded-t-xl"
           />
-          <div className="max-h-72 overflow-auto px-1 my-1">
+          <div className="max-h-[11.5rem] overflow-auto px-1 my-1">
             {filteredOptions.length === 0 ? (
               <div className="flex items-center justify-center text-gray-300 cursor-default p-1 italic text-sm h-[50px] mx-auto my-auto rounded-md">
                 Nothing found.
