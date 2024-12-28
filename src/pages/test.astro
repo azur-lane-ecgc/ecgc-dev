@@ -7,7 +7,7 @@ import WikiLink from "@components/_common/WikiLink.astro"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
 import { ShipCell, ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
-import { ComboBoxWrapper } from "@components/_common/ComboBox"
+import { ComboBox } from "@components/_common/ComboBox"
 
 const data = [
   {
@@ -61,28 +61,6 @@ const data = [
 
   <ImageCarousel data={data} client:visible />
   <br />
-
-  <ComboBoxWrapper
-    title="Category"
-    options={[
-      "Currency",
-      "Consumable",
-      "Cognitive Awakening",
-      "Bulin",
-      "Gear Upgrade",
-      "Augmentation",
-      "Skill Books",
-      "Retrofit",
-    ]}
-    client:visible
-  />
-
-  <ComboBoxWrapper
-    title="Timeframe"
-    options={["Daily", "Weekly", "Monthly", "Bimonthly", "One-Time"]}
-    initialOption="Monthly"
-    client:visible
-  />
 
   <br />
   <ItemContainer>
