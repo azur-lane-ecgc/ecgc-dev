@@ -73,33 +73,30 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   return (
     <div ref={wrapperRef} className={className}>
       {/* combobox button */}
-      <div
-        className="cursor-pointer"
+
+      <p className="mb-1 font-bold text-fuchsia-400">{title}</p>
+      <button
+        id={`${title}_input`}
+        className="px-1 py-2 w-40 max-w-40 bg-[#212529] border-white rounded-md"
         onClick={() => setShowOptions((prev) => !prev)}
       >
-        <p className="mb-1 font-bold text-fuchsia-400">{title}</p>
-        <button
-          id={`${title}_input`}
-          className="px-1 py-2 w-40 max-w-40 bg-[#212529] border-white rounded-md"
-        >
-          <div className="flex">
-            <span className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full mb-0 font-bold text-orange-400">
-              {selected || title + "..."}
-            </span>
-            <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
-              {showOptions ? (
-                <i className="fa fa-caret-up text-sm text-cyan-300"></i>
-              ) : (
-                <i className="fa fa-caret-down text-sm text-cyan-300"></i>
-              )}
-            </div>
+        <div className="flex">
+          <span className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full mb-0 font-bold text-orange-400">
+            {selected || title + "..."}
+          </span>
+          <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
+            {showOptions ? (
+              <i className="fa fa-caret-up text-sm text-cyan-300"></i>
+            ) : (
+              <i className="fa fa-caret-down text-sm text-cyan-300"></i>
+            )}
           </div>
-        </button>
-      </div>
+        </div>
+      </button>
 
       {/* combobox menu (desktop) */}
       {showOptions && (
-        <div className="hidden md:block absolute bg-[#212529] border border-gray-500 shadow-md mt-1 w-40 z-10 rounded-xl">
+        <div className="hidden sm:block absolute bg-[#212529] border border-gray-500 shadow-md mt-1 w-40 z-10 rounded-xl">
           <input
             ref={inputRef}
             type="text"
@@ -120,7 +117,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
                   onClick={() => handleSelect(item)}
                   className={`${
                     selected === item ? "text-orange-400" : "text-gray-300"
-                  } font-semibold cursor-pointer hover:bg-[#444d55] p-1 h-[32px] rounded-md flex justify-between`}
+                  } font-semibold cursor-pointer hover:bg-[#444d55] p-1 h-[32px] rounded-md flex justify-between items-center`}
                 >
                   {item}
                   {selected === item && (
@@ -129,6 +126,61 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
                 </div>
               ))
             )}
+          </div>
+        </div>
+      )}
+
+      {/* Combobox menu (mobile) */}
+      {showOptions && (
+        <div className="block sm:hidden fixed inset-0 z-[80]">
+          {/* Overlay with fade animation */}
+          <div
+            className="fixed inset-0 bg-black"
+            style={{
+              opacity: showOptions ? 0.5 : 0,
+            }}
+            onClick={() => setShowOptions(false)}
+          />
+
+          {/* Close message */}
+          <span className="fixed top-[5px] left-1/2 transform -translate-x-1/2 py-2 font-bold text-fuchsia-400 bg-transparent w-full text-center z-30 pointer-events-none">
+            Click Outside to Exit
+          </span>
+
+          {/* Bottom menu with slide animation */}
+          <div
+            className={`absolute bottom-0 left-0 w-full bg-[#212529] rounded-t-xl`}
+          >
+            <input
+              ref={inputRef}
+              type="text"
+              placeholder={`Search ${title.toLowerCase()}...`}
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              className="pl-1 py-3 w-full border-transparent focus:outline-none bg-[#444d55] text-gray-200 rounded-t-xl"
+            />
+            <div className="max-h-72 overflow-auto px-1 py-2">
+              {filteredOptions.length === 0 ? (
+                <div className="flex items-center justify-center text-gray-300 cursor-default p-1 italic text-sm h-[50px] mx-auto my-auto rounded-md">
+                  Nothing found.
+                </div>
+              ) : (
+                filteredOptions.map((item, index) => (
+                  <div
+                    key={index}
+                    onClick={() => handleSelect(item)}
+                    className={`${
+                      selected === item ? "text-orange-400" : "text-gray-300"
+                    } font-semibold cursor-pointer hover:bg-[#444d55] p-3 h-[40px] rounded-md flex justify-between items-center`}
+                  >
+                    {item}
+                    {selected === item && (
+                      <span className="text-cyan-400">{"\u2713"}</span>
+                    )}
+                  </div>
+                ))
+              )}
+            </div>
           </div>
         </div>
       )}
