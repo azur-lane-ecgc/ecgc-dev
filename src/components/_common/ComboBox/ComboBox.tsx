@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react"
 export interface ComboBoxProps {
   className?: string
   title: string
+  initialOption?: string
   options: string[]
   onSelect?: (option: string | null) => void
 }
@@ -10,11 +11,12 @@ export interface ComboBoxProps {
 export const ComboBox: React.FC<ComboBoxProps> = ({
   title,
   options,
+  initialOption,
   className,
   onSelect,
 }) => {
   const [input, setInput] = useState<string>("")
-  const [selected, setSelected] = useState<string | null>(null)
+  const [selected, setSelected] = useState<string | null>(initialOption || null)
   const [showOptions, setShowOptions] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const [shouldRenderMobile, setShouldRenderMobile] = useState(false)
@@ -23,6 +25,10 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   const inputRef = useRef<HTMLInputElement | null>(null)
 
   useEffect(() => {
+    if (initialOption && onSelect) {
+      onSelect(initialOption)
+    }
+
     const handleClickOutside = (event: MouseEvent) => {
       if (
         wrapperRef.current &&
@@ -86,7 +92,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       <p className="mb-1 font-bold text-fuchsia-400">{title}</p>
       <button
         id={`${title}_input`}
-        className="px-1 py-2 w-40 max-w-40 bg-[#212529] border-white rounded-md"
+        className="px-1 py-2 w-52 max-w-52 bg-[#212529] border-white rounded-md"
         onClick={() => setShowOptions((prev) => !prev)}
       >
         <div className="flex">
@@ -105,7 +111,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
 
       {/* combobox menu (desktop) */}
       {showOptions && (
-        <div className="hidden sm:block absolute bg-[#212529] border border-gray-500 shadow-md mt-1 w-40 z-10 rounded-xl">
+        <div className="hidden sm:block absolute bg-[#212529] border border-gray-500 shadow-md mt-1 w-52 max-w-52 z-10 rounded-xl">
           <input
             ref={inputRef}
             type="text"
