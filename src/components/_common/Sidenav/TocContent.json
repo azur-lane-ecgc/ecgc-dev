@@ -143,6 +143,20 @@
         "subheadings": []
       },
       {
+        "id": "notes",
+        "content": "Notes",
+        "subheadings": [
+          {
+            "id": "glossary",
+            "content": "Glossary"
+          },
+          {
+            "id": "prerequisites",
+            "content": "Prerequisites"
+          }
+        ]
+      },
+      {
         "id": "terminology",
         "content": "Terminology",
         "subheadings": [
@@ -157,20 +171,6 @@
           {
             "id": "shops",
             "content": "Shops"
-          }
-        ]
-      },
-      {
-        "id": "notes",
-        "content": "Notes",
-        "subheadings": [
-          {
-            "id": "glossary",
-            "content": "Glossary"
-          },
-          {
-            "id": "prerequisites",
-            "content": "Prerequisites"
           }
         ]
       }
