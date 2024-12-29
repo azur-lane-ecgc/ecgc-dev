@@ -5,7 +5,7 @@ import { exec as execCallback } from "child_process"
 
 const exec = promisify(execCallback)
 const scriptsDirectory = "./dev_tools"
-const excludedFiles = ["_pageInfo.js", "runAllTools.js"]
+const excludedFiles = ["_pageInfo.js", "runAllTools.js", "index.js", "imgur.py"]
 
 const runScript = async (fileName) => {
   try {

@@ -1,0 +1,8 @@
+1. Open git bash from gsheets2img
+
+2 . Run the following commands:
+
+nvm on
+    npm install
+    npm start
+nvm off 

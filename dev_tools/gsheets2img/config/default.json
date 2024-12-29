@@ -1,0 +1,10 @@
+{
+  "gsheets2img": {
+    "baseUrl": "https://docs.google.com/spreadsheets/d/",
+    "sheetID": "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM",
+    "outputDir": "../../public/images/equip_misc/",
+    "includeSheets": [],
+    "excludeSheets": ["(WiP) SS RLD Chart", "Copy of BB Guns", "(WiP) OpSi Image Guide Pt4", "Ammo Modifiers Chart", "(WiP) Rikka Specific Guide"],
+    "concurrency": 5
+  }
+}
