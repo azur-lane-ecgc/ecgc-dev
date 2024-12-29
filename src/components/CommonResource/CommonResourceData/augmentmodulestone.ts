@@ -64,7 +64,7 @@ const AugmentModuleEXPData: ResourceProps = {
         {
           name: "Event Point Milestone",
           wikiLink: "Events",
-          quantity: { amount: 6e3, timeFrame: "cycle" },
+          quantity: { amount: 11e3, timeFrame: "cycle" },
           notes: "45000 Points",
         },
       ],
