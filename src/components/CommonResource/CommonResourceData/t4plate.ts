@@ -71,6 +71,21 @@ const T4PlateData: ResourceProps = {
         mark: "check",
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 20, timeFrame: "cycle" },
+          notes: "55000 Points",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     opsi: {
       found: true,
       locations: [
