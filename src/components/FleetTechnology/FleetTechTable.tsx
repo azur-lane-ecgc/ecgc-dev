@@ -3,7 +3,7 @@ import { useMemo, useState } from "react"
 import { ShipCell } from "@components/_common/ItemCell"
 
 import { allFactionData } from "./factionTech"
-import { parseLocation } from "./parseLocation"
+import { parseLocation } from "@utils/parseLocation"
 
 import "@components/_common/ItemTable/styles.css"
 
