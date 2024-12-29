@@ -22,3 +22,5 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+dev_tools/automated_imgur_upload/config/config.json

@@ -1,0 +1,266 @@
+{
+  "(WiP)_OilPSA": {
+    "type": "image",
+    "title": "(WiP) Oil PSA",
+    "description": "",
+    "path": "public/images/equip_misc/(WiP)_OilPSA.jpeg"
+  },
+  "(WiP)_Rikka_Specific_Guide": {
+    "type": "image",
+    "title": "(WiP) Rikka Specific Guide",
+    "description": "",
+    "path": "public/images/equip_misc/(WiP)_Rikka_Specific_Guide.jpeg"
+  },
+  "+13_Priority": {
+    "type": "image",
+    "title": "+13 Priority",
+    "description": "",
+    "path": "public/images/equip_misc/+13_Priority.jpeg"
+  },
+  "AA_Guns": {
+    "type": "image",
+    "title": "AA Guns",
+    "description": "",
+    "path": "public/images/equip_misc/AA_Guns.jpeg"
+  },
+  "AA_Range_Chart": {
+    "type": "image",
+    "title": "AA Range Chart",
+    "description": "",
+    "path": "public/images/equip_misc/AA_Range_Chart.jpeg"
+  },
+  "AE_Auxes": {
+    "type": "image",
+    "title": "AE Auxes",
+    "description": "",
+    "path": "public/images/equip_misc/AE_Auxes.jpeg"
+  },
+  "AR_Auxes": {
+    "type": "image",
+    "title": "AR Auxes",
+    "description": "",
+    "path": "public/images/equip_misc/AR_Auxes.jpeg"
+  },
+  "ASW_Equips": {
+    "type": "image",
+    "title": "ASW Equips",
+    "description": "",
+    "path": "public/images/equip_misc/ASW_Equips.jpeg"
+  },
+  "BB_BC_BBV_Auxes": {
+    "type": "image",
+    "title": "BB / BC / BBV Auxes",
+    "description": "",
+    "path": "public/images/equip_misc/BB_BC_BBV_Auxes.jpeg"
+  },
+  "BB_BC_BBV_Guns": {
+    "type": "image",
+    "title": "BB / BC / BBV Guns",
+    "description": "",
+    "path": "public/images/equip_misc/BB_BC_BBV_Guns.jpeg"
+  },
+  "Buildrates": {
+    "type": "image",
+    "title": "Buildrates",
+    "description": "",
+    "path": "public/images/equip_misc/Buildrates.jpeg"
+  },
+  "CA_Guns": {
+    "type": "image",
+    "title": "CA Guns",
+    "description": "",
+    "path": "public/images/equip_misc/CA_Guns.jpeg"
+  },
+  "CB_CA_CL_Auxes": {
+    "type": "image",
+    "title": "CB / CA / CL Auxes",
+    "description": "",
+    "path": "public/images/equip_misc/CB_CA_CL_Auxes.jpeg"
+  },
+  "CB_Guns": {
+    "type": "image",
+    "title": "CB Guns",
+    "description": "",
+    "path": "public/images/equip_misc/CB_Guns.jpeg"
+  },
+  "CL_Guns": {
+    "type": "image",
+    "title": "CL Guns",
+    "description": "",
+    "path": "public/images/equip_misc/CL_Guns.jpeg"
+  },
+  "Core_Data_Priority": {
+    "type": "image",
+    "title": "Core Data Priority",
+    "description": "",
+    "path": "public/images/equip_misc/Core_Data_Priority.jpeg"
+  },
+  "Cosmetic_Decorative_Auxes": {
+    "type": "image",
+    "title": "Cosmetic Decorative Aux",
+    "description": "",
+    "path": "public/images/equip_misc/Cosmetic_Decorative_Auxes.jpeg"
+  },
+  "Cover_Page": {
+    "type": "image",
+    "title": "Cover Page",
+    "description": "Continuation of Nerezza's Gameplay Picture Guides.\n\nLink to Azur Lane English Community Guide Compendium (preferred): https://samheart564.github.io/ECGC/equipment\nGoogle Sheets Link (if Imgur is wonky):\nhttps://docs.google.com/spreadsheets/d/1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM/edit?gid=1859764162#gid=1859764162\n\n",
+    "path": "public/images/equip_important/Cover_Page.jpg"
+  },
+  "Cross-fleet_Effects": {
+    "type": "image",
+    "title": "Cross-fleet Effects",
+    "description": "",
+    "path": "public/images/equip_misc/Cross-fleet_Effects.jpeg"
+  },
+  "CV_CVL_Auxes": {
+    "type": "image",
+    "title": "CV / CVL Auxes",
+    "description": "",
+    "path": "public/images/equip_misc/CV_CVL_Auxes.jpeg"
+  },
+  "DD_Auxes": {
+    "type": "image",
+    "title": "DD Auxes",
+    "description": "",
+    "path": "public/images/equip_misc/DD_Auxes.jpeg"
+  },
+  "DD_Guns": {
+    "type": "image",
+    "title": "DD Guns",
+    "description": "",
+    "path": "public/images/equip_misc/DD_Guns.jpeg"
+  },
+  "Dive_Bombers": {
+    "type": "image",
+    "title": "Dive Bombers",
+    "description": "",
+    "path": "public/images/equip_misc/Dive_Bombers.jpeg"
+  },
+  "Experience_Chart_(EN_JP)": {
+    "type": "image",
+    "title": "Experience Chart (EN JP)",
+    "description": "",
+    "path": "public/images/equip_misc/Experience_Chart_(EN_JP).jpeg"
+  },
+  "Fighters": {
+    "type": "image",
+    "title": "Fighters",
+    "description": "",
+    "path": "public/images/equip_misc/Fighters.jpeg"
+  },
+  "Gear_Lab_Priority": {
+    "type": "image",
+    "title": "Gear Lab Priority",
+    "description": "",
+    "path": "public/images/equip_misc/Gear_Lab_Priority.jpeg"
+  },
+  "Gen._Ammo_Overview": {
+    "type": "image",
+    "title": "Gen. Ammo Overview",
+    "description": "",
+    "path": "public/images/equip_misc/Gen._Ammo_Overview.jpeg"
+  },
+  "Glossary": {
+    "type": "image",
+    "title": "Glossary",
+    "description": "",
+    "path": "public/images/equip_misc/Glossary.jpeg"
+  },
+  "Hard_Mode_Req_Help": {
+    "type": "image",
+    "title": "Hard Mode Req Help",
+    "description": "",
+    "path": "public/images/equip_misc/Hard_Mode_Req_Help.jpeg"
+  },
+  "Historical_Note": {
+    "type": "image",
+    "title": "Hard Mode Req Help",
+    "description": "Changelog:\nhttps://samheart564.github.io/ECGC/changelog\n\nYOU CAN CTRL+F TO FIND IMAGES NOW! MAKE SURE ALL ARE LOADED IN FIRST.",
+    "path": "public/images/equip_important/Historical_Note.png"
+  },
+  "IX_Auxes": {
+    "type": "image",
+    "title": "IX Auxes",
+    "description": "",
+    "path": "public/images/equip_misc/IX_Auxes.jpeg"
+  },
+  "IX_Guns": {
+    "type": "image",
+    "title": "IX Guns",
+    "description": "",
+    "path": "public/images/equip_misc/IX_Guns.jpeg"
+  },
+  "Main_Fleet_Aux_Guns": {
+    "type": "image",
+    "title": "Main Fleet Aux Guns",
+    "description": "",
+    "path": "public/images/equip_misc/Main_Fleet_Aux_Guns.jpeg"
+  },
+  "OpSi_Image_Guide_Pt1": {
+    "type": "image",
+    "title": "OpSi Image Guide Pt1",
+    "description": "",
+    "path": "public/images/equip_misc/OpSi_Image_Guide_Pt1.jpeg"
+  },
+  "OpSi_Image_Guide_Pt2": {
+    "type": "image",
+    "title": "OpSi Image Guide Pt2",
+    "description": "",
+    "path": "public/images/equip_misc/OpSi_Image_Guide_Pt2.jpeg"
+  },
+  "OpSi_Image_Guide_Pt3": {
+    "type": "image",
+    "title": "OpSi Image Guide Pt3",
+    "description": "",
+    "path": "public/images/equip_misc/OpSi_Image_Guide_Pt3.jpeg"
+  },
+  "Prototype_Core_Priority": {
+    "type": "image",
+    "title": "Prototype Core Priority",
+    "description": "",
+    "path": "public/images/equip_misc/Prototype_Core_Priority.jpeg"
+  },
+  "Recon_Planes": {
+    "type": "image",
+    "title": "Recon Planes",
+    "description": "",
+    "path": "public/images/equip_misc/Recon_Planes.jpeg"
+  },
+  "Ship_Type_Abbrev.": {
+    "type": "image",
+    "title": "Ship Type Abbrev.",
+    "description": "",
+    "path": "public/images/equip_misc/Ship_Type_Abbrev..jpeg"
+  },
+  "SS_Auxes": {
+    "type": "image",
+    "title": "SS Auxes",
+    "description": "",
+    "path": "public/images/equip_misc/SS_Auxes.jpeg"
+  },
+  "SS_Torpedoes": {
+    "type": "image",
+    "title": "SS Torpedoes",
+    "description": "",
+    "path": "public/images/equip_misc/SS_Torpedoes.jpeg"
+  },
+  "Surface_Torpedoes": {
+    "type": "image",
+    "title": "Surface Torpedoes",
+    "description": "",
+    "path": "public/images/equip_misc/Surface_Torpedoes.jpeg"
+  },
+  "Title_Page": {
+    "type": "image",
+    "title": "Title Page",
+    "description": "",
+    "path": "public/images/equip_misc/Title_Page.jpeg"
+  },
+  "Torpedo_Bombers": {
+    "type": "image",
+    "title": "Torpedo Bombers",
+    "description": "",
+    "path": "public/images/equip_misc/Torpedo_Bombers.jpeg"
+  }
+}
