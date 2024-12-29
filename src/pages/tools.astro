@@ -1,0 +1,20 @@
+---
+import GuidePageLayout from "@layouts/guides/GuidePageLayout.astro"
+import GuideHeading from "@components/_common/GuideHeading.astro"
+
+import ToolsContent from "@components/Tools/ToolsContent.astro"
+---
+
+<GuidePageLayout
+  title="Azur Lane Tools"
+  metaTitle="Tools"
+  activePage="tools"
+  tocID={null}
+  metaUrl="tools"
+  metaDescription="Goes over basic advice and mistakes to avoid for new players!"
+>
+  <GuideHeading title="Azur Lane Tools" />
+  <br />
+
+  <ToolsContent />
+</GuidePageLayout>

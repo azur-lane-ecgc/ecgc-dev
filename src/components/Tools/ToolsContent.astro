@@ -1,0 +1,35 @@
+---
+import { HR } from "@components/_common/HR"
+import WikiLink from "@components/_common/WikiLink.astro"
+
+import { ToolTableFilters } from "./ToolTableFilters"
+import { ToolTable } from "./ToolTable"
+---
+
+<h2 id="introduction">Introduction</h2>
+<hr class="custom-hr" />
+<p>
+  Helpful Tools to enhance your Azur Lane Experience! <i
+    >Most of these tools are unaffilated with ECGC. To contact their respective
+    authors, go to their websites.</i
+  >
+</p>
+<br />
+
+<!-- <h2 id="informational">Informational</h2>
+<hr class="custom-hr" />
+<ToolTable category={"info"} />
+<br />
+
+<h2 id="fun">Fun</h2>
+<hr class="custom-hr" />
+<ToolTable category={"fun"} />
+<br />
+
+<h2 id="data">Data-Oriented</h2>
+<hr class="custom-hr" />
+<ToolTable category={"data"} />
+<br /> -->
+
+<ToolTableFilters client:visible={{ rootMargin: "100px" }} />
+<br />
