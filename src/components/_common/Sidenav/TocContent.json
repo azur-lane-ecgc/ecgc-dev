@@ -138,13 +138,32 @@
     "fileName": "Common Resource Guide",
     "toc": [
       {
+        "id": "renewable",
+        "content": "Resource Data",
+        "subheadings": []
+      },
+      {
+        "id": "terminology",
+        "content": "Terminology",
+        "subheadings": [
+          {
+            "id": "daily",
+            "content": "Daily"
+          },
+          {
+            "id": "farming",
+            "content": "Farming"
+          },
+          {
+            "id": "shops",
+            "content": "Shops"
+          }
+        ]
+      },
+      {
         "id": "notes",
         "content": "Notes",
         "subheadings": [
-          {
-            "id": "terminology",
-            "content": "Terminology"
-          },
           {
             "id": "glossary",
             "content": "Glossary"
@@ -154,11 +173,6 @@
             "content": "Prerequisites"
           }
         ]
-      },
-      {
-        "id": "renewable",
-        "content": "Resource Data",
-        "subheadings": []
       }
     ]
   },
