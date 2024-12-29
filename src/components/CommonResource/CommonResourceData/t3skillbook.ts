@@ -67,6 +67,21 @@ const T3SkillBookData: ResourceProps = {
         mark: "check",
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 8, timeFrame: "cycle" },
+          notes: "1100 Points; 2 Each + 2 Random",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     generalShop: {
       found: true,
       locations: [

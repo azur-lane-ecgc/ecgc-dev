@@ -22,6 +22,21 @@ const T3RetrofitPrintData: ResourceProps = {
         optimal: true,
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 9, timeFrame: "cycle" },
+          notes: "13000 Points; 1 Each + 5 Random",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     guildShop: {
       found: true,
       locations: [

@@ -37,6 +37,21 @@ const AugmentModuleCoreData: ResourceProps = {
         mark: "check",
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 5, timeFrame: "cycle" },
+          notes: "25000 Points",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     opsi: {
       found: true,
       locations: [

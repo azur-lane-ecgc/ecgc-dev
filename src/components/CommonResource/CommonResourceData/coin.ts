@@ -106,6 +106,12 @@ const CoinData: ResourceProps = {
           quantity: { amount: "RNG", timeFrame: null },
           notes: "Clearing Rewards",
         },
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 1e3, timeFrame: "cycle" },
+          notes: "3000 Points",
+        },
       ],
       checkMark: {
         color: "green",

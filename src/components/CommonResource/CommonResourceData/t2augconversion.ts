@@ -22,6 +22,21 @@ const T2AugmentConversionData: ResourceProps = {
         mark: "check",
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 5, timeFrame: "cycle" },
+          notes: "17500 Points",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     eventShop: {
       found: true,
       locations: [

@@ -36,6 +36,21 @@ const T2RetrofitPrintData: ResourceProps = {
         optimal: true,
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 4, timeFrame: "cycle" },
+          notes: "2500 Points; 1 Each",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     guildShop: {
       found: true,
       locations: [

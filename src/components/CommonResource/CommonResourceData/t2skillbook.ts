@@ -38,6 +38,21 @@ const T2SkillBookData: ResourceProps = {
         optimal: true,
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 5, timeFrame: "cycle" },
+          notes: "100 Points",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     generalShop: {
       found: true,
       locations: [

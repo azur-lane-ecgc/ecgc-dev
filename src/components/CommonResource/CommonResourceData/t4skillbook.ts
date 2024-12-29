@@ -40,6 +40,21 @@ const T4SkillBookData: ResourceProps = {
         mark: "check",
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 2, timeFrame: "cycle" },
+          notes: "70000 Points; Random",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     opsi: {
       found: true,
       locations: [

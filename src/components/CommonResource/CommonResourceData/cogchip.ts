@@ -81,6 +81,21 @@ const CognitiveChipData: ResourceProps = {
         mark: "check",
       },
     },
+    eventDrop: {
+      found: true,
+      locations: [
+        {
+          name: "Event Point Milestone",
+          wikiLink: "Events",
+          quantity: { amount: 1900, timeFrame: "cycle" },
+          notes: "12000 Points",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "check",
+      },
+    },
     coreDataShop: {
       found: true,
       locations: [
