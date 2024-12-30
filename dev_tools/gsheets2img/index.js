@@ -7,7 +7,6 @@ import { finished } from "node:stream/promises"
 import config from "config"
 import decompress from "decompress"
 import { firefox } from "playwright"
-import { file } from "astro/loaders"
 
 async function download(sheetID) {
   const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
