@@ -25,6 +25,7 @@ import {
   numberRankColor,
 } from "./styles"
 import { ShipTags } from "./ShipTags"
+import { parseLocation } from "@utils/parseLocation"
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -40,7 +41,7 @@ interface SlotProps {
 }
 
 interface ShipModalProps {
-  data: string
+  id?: number
   trigger?: TriggerProps
 }
 
@@ -52,13 +53,13 @@ const lastUpdated = formatDate("12/12/2024")
  * @component
  *
  * @param {ShipModalProps} props - The props for configuring the ship modal.
- * @param {string} props.data - The ship's name.
+ * @param {string} props.id - The ship's unique id.
  * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)
  *
  * @returns {React.JSX.Element} The Ship Modal itself.
  */
 export const ShipModal: React.FC<ShipModalProps> = ({
-  data,
+  id,
   trigger,
 }: ShipModalProps): React.JSX.Element => {
   const [open, setOpen] = useState(false)
@@ -79,43 +80,16 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     return
   }, [open])
 
-  const ship = data
-  const location = ""
-  const parsedLocation = location.replaceAll(" ", "_")
-  const isKai = true
-  const rarity = 4
-  const shipImg = useMemo(
-    () => `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`,
-    [],
-  )
-  const samvaluationText = useMemo(
-    () => (
-      <>
-        Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing
-        skills. She gains a preload, which helps a lot with mobbing. In
-        addition, she also gains Main Fleet healing capabilities, although it's
-        only on her first airstrike. Her healing amount is very high and
-        consistent compared to other ships. Overall, she is the best healer in
-        the game, surpassing{" "}
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Perseus"
-          title="Perseus"
-        >
-          Perseus
-        </a>
-        .
-      </>
-    ),
-    [],
-  )
-
+  // mrlar (input is ID)
+  const ship = "Unicorn"
   const faction = "HMS"
   const hull = 6
   const hullType = "CVL"
-  const roles = useMemo(() => ["Healer"].slice(0, 5), [])
-
+  let rarity = 4
+  const isKai = true
+  if (!isKai) {
+    rarity--
+  }
   const slots: SlotProps[] = useMemo(
     () => [
       {
@@ -146,12 +120,52 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     ],
     [],
   )
+  const augments = useMemo(() => {
+    const uniqueAugment = ""
+    const normalAugments = ["Scepter", "Hunting Bow"]
 
+    if (!!uniqueAugment) {
+      return [uniqueAugment, ...normalAugments]
+    }
+
+    return normalAugments
+  }, [])
+
+  // me
+  const shipImg = useMemo(
+    () => `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`,
+    [],
+  )
+  const location = parseLocation("")
+  const samvaluationText = useMemo(
+    () => (
+      <>
+        Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing
+        skills. She gains a preload, which helps a lot with mobbing. In
+        addition, she also gains Main Fleet healing capabilities, although it's
+        only on her first airstrike. Her healing amount is very high and
+        consistent compared to other ships. Overall, she is the best healer in
+        the game, surpassing{" "}
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://azurlane.koumakan.jp/wiki/Perseus"
+          title="Perseus"
+        >
+          Perseus
+        </a>
+        .
+      </>
+    ),
+    [],
+  )
+  const roles = useMemo(() => ["Healer"].slice(0, 5), [])
   const fastLoad = (
     <span className="text-green-400">1 Preloaded Airstrike.</span>
   )
 
-  const augments = useMemo(() => ["Scepter", "Hunting Bow"], [])
+  //mebot
+  const eHP = 1234
 
   return (
     <>
@@ -257,7 +271,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href={`https://azurlane.koumakan.jp/wiki/${parsedLocation}`}
+                  href={`https://azurlane.koumakan.jp/wiki/${location}`}
                 >
                   {location}
                 </a>
@@ -293,7 +307,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 {/* Samvaluation */}
                 <div className="text-sm">
                   <span className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]">
-                    {samvaluationText}
+                    {!!samvaluationText ? samvaluationText : "N/A"}
                   </span>
                 </div>
               </div>
@@ -377,8 +391,18 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <b>Last Updated</b>:{" "}
                 <span className="text-[#00ffff]">{lastUpdated}</span>
               </p>
-
               <ShipRankingParse ship={ship} hull={hull} />
+              <span className="text-lg leading-normal text-[hsla(0,0%,100%,0.75)]">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://docs.google.com/spreadsheets/d/1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
+                  title="eHP Chart"
+                >
+                  eHP
+                </a>
+                : <b className="text-cyan-400">{eHP}</b>
+              </span>
             </div>
           </div>
         </div>
