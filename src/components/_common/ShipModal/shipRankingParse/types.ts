@@ -71,12 +71,12 @@ export interface SSFleetRankingProps {
   // Rank
   hardarbiter: string
   cm: string
-  campaign: string
+  campaign?: string
 
   // Usage
   consistency?: number
   fleetreq?: number
-  gearreq?: number
+  flagreq?: number
 
   // Offense
   lightdmg: number
