@@ -7,6 +7,8 @@ import { ItemTable } from "@components/_common/ItemTable"
 import { parseEquipHref } from "@utils/shipDataParse"
 import { ShipRankingParse } from "@components/_common/ShipModal/shipRankingParse"
 import { formatDate } from "@utils/formatDate"
+import { parseLocation } from "@utils/parseLocation"
+
 
 import {
   closeButtonStyle,
@@ -18,7 +20,6 @@ import {
   shipLinkStyle,
 } from "./styles"
 import { ShipTags } from "./ShipTags"
-import { parseLocation } from "@utils/parseLocation"
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -34,7 +35,7 @@ interface SlotProps {
 }
 
 interface ShipModalProps {
-  id?: number
+  mrLarData?: number
   trigger?: TriggerProps
 }
 
@@ -52,7 +53,7 @@ const lastUpdated = formatDate("12/12/2024")
  * @returns {React.JSX.Element} The Ship Modal itself.
  */
 export const ShipModal: React.FC<ShipModalProps> = ({
-  id,
+  mrLarData,
   trigger,
 }: ShipModalProps): React.JSX.Element => {
   const [open, setOpen] = useState(false)
