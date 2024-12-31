@@ -5,12 +5,7 @@ import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 
 import { parseEquipHref } from "@utils/shipDataParse"
-import {
-  ShipRankingParse,
-  type MainFleetRankingProps,
-  type SSFleetRankingProps,
-  type VanguardFleetRankingProps,
-} from "@components/_common/ShipModal/shipRankingParse"
+import { ShipRankingParse } from "@components/_common/ShipModal/shipRankingParse"
 import { formatDate } from "@utils/formatDate"
 
 import {
@@ -21,8 +16,6 @@ import {
   modalTriggerStyle,
   modalStyle,
   shipLinkStyle,
-  letterRankColor,
-  numberRankColor,
 } from "./styles"
 import { ShipTags } from "./ShipTags"
 import { parseLocation } from "@utils/parseLocation"
