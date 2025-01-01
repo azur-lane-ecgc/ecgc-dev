@@ -14,7 +14,7 @@ import augments from "@data/data/augments.json"
 const augmentData = augments as Record<number, AugmentData>
 
 import { ShipRankings } from "./ShipRankings"
-import type { SlotProps } from "./utils"
+
 import {
   parseEquipHref,
   shipHullTypeParse,
@@ -100,7 +100,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     () => shipLimitBreakBonusParse(mrLarData?.specific_buff),
     [mrLarData],
   )
-  const slots: SlotProps[] = useMemo(
+  const slots = useMemo(
     () =>
       shipSlotParse(
         mrLarData.slots[mrLarData.slots.length - 1],
