@@ -87,7 +87,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }, [open])
 
   // mrlar (input is ID)
-  const id = mrLarData.id
   const ship = mrLarData.name
   const faction = useMemo(() => shipFactionParse(mrLarData.nation), [mrLarData])
   const hull = mrLarData.hull
