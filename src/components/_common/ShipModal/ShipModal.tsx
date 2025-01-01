@@ -4,11 +4,12 @@ import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 
-import { parseEquipHref } from "@utils/shipDataParse"
-import { ShipRankingParse } from "@components/_common/ShipModal/shipRankingParse"
 import { formatDate } from "@utils/formatDate"
 import { parseLocation } from "@utils/parseLocation"
 
+import { hullTypeParse } from "./utils"
+import { parseEquipHref } from "./utils"
+import { ShipRankingParse } from "./utils"
 
 import {
   closeButtonStyle,
@@ -20,6 +21,13 @@ import {
   shipLinkStyle,
 } from "./styles"
 import { ShipTags } from "./ShipTags"
+
+import type { ShipData } from "@data/types/ships"
+import shipData from "@data/data/ships.json"
+
+const ships = shipData as Record<number, ShipData>
+
+const mrLarData = ships[142]
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -35,7 +43,7 @@ interface SlotProps {
 }
 
 interface ShipModalProps {
-  mrLarData?: number
+  mrLarData?: ShipData
   trigger?: TriggerProps
 }
 
@@ -53,7 +61,6 @@ const lastUpdated = formatDate("12/12/2024")
  * @returns {React.JSX.Element} The Ship Modal itself.
  */
 export const ShipModal: React.FC<ShipModalProps> = ({
-  mrLarData,
   trigger,
 }: ShipModalProps): React.JSX.Element => {
   const [open, setOpen] = useState(false)
@@ -75,12 +82,12 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }, [open])
 
   // mrlar (input is ID)
-  const ship = "Unicorn"
+  const ship = mrLarData.name
   const faction = "HMS"
-  const hull = 6
-  const hullType = "CVL"
-  let rarity = 4
-  const isKai = true
+  const hull = mrLarData.hull
+  const hullType = hullTypeParse(hull)
+  let rarity = mrLarData.rarity
+  const isKai = mrLarData.hasOwnProperty("retro")
   if (!isKai) {
     rarity--
   }
