@@ -14,12 +14,15 @@ import augments from "@data/data/augments.json"
 const augmentData = augments as Record<number, AugmentData>
 
 import { ShipRankings } from "./ShipRankings"
+import type { SlotProps } from "./utils"
 import {
   parseEquipHref,
   shipHullTypeParse,
   shipFactionParse,
   shipDefaultAugmentParse,
   shipLimitBreakBonusParse,
+  shipSlotParse,
+  shipNameParse,
 } from "./utils"
 
 import {
@@ -38,12 +41,6 @@ export interface TriggerProps {
   descriptionNote?: string | null
   largeDescNote?: boolean | null
   hasBorder?: boolean | null
-}
-
-interface SlotProps {
-  type: string[]
-  efficiency: number
-  mounts: number
 }
 
 interface ShipModalProps {
@@ -86,46 +83,30 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     return
   }, [open])
 
-  // mrlar (input is ID)
-  const ship = mrLarData.name
-  const faction = useMemo(() => shipFactionParse(mrLarData.nation), [mrLarData])
-  const hull = mrLarData.hull
-  const hullType = useMemo(() => shipHullTypeParse(hull), [hull])
+  // mrlar
+  const ship = shipNameParse(mrLarData.id) ?? mrLarData.name
+  const faction = useMemo(
+    () => shipFactionParse(mrLarData.nation),
+    [mrLarData.nation],
+  )
   let rarity = mrLarData.rarity
   const isKai = mrLarData.hasOwnProperty("retro")
   if (!isKai) {
     rarity--
   }
-  const limitBreakBonus = shipLimitBreakBonusParse(mrLarData?.specific_buff)
-  const slots: SlotProps[] = useMemo(
-    () => [
-      {
-        type: ["Fighter"],
-        efficiency: 1.45,
-        mounts: 4,
-      },
-      {
-        type: ["Torpedo Bomber"],
-        efficiency: 1.35,
-        mounts: 3,
-      },
-      {
-        type: ["AA Gun"],
-        efficiency: 0.8,
-        mounts: 1,
-      },
-      {
-        type: ["Auxiliary", "ASW Plane"],
-        efficiency: 1,
-        mounts: 1,
-      },
-      {
-        type: ["Auxiliary", "ASW Plane"],
-        efficiency: 1,
-        mounts: 1,
-      },
-    ],
+  const hull = mrLarData?.retro?.hull ?? mrLarData.hull
+  const hullType = useMemo(() => shipHullTypeParse(hull), [hull])
+  const limitBreakBonus = useMemo(
+    () => shipLimitBreakBonusParse(mrLarData?.specific_buff),
     [mrLarData],
+  )
+  const slots: SlotProps[] = useMemo(
+    () =>
+      shipSlotParse(
+        mrLarData.slots[mrLarData.slots.length - 1],
+        mrLarData.retro,
+      ),
+    [mrLarData.slots],
   )
   const augments = useMemo(() => {
     const uniqueAugment = mrLarData?.unique_aug
@@ -324,85 +305,86 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <HR />
 
               {/* Equip Table */}
-              <div>
-                <ItemTable
-                  tableInfo={[
-                    { colName: "Slot", colWidth: "10%" },
-                    { colName: "Equipment", colWidth: "55%", limiter: true },
-                    { colName: "Efficiency", colWidth: "15%" },
-                    { colName: "Mounts", colWidth: "10%" },
-                  ]}
-                >
-                  {slots.map((slot, index) => (
-                    <tr key={index} className="text-base *:text-base">
-                      <td>{index + 1}</td>
-                      <td>
-                        {slot.type.map((type, typeIndex) => {
-                          const equipHref = parseEquipHref(hullType, type)
-                          return (
-                            <span key={typeIndex}>
-                              {typeIndex > 0 && ", "}
-                              <a
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                href={`/test_ecgc_2/equipment#${equipHref}`}
-                              >
-                                {type}
-                              </a>
-                            </span>
-                          )
-                        })}
-                      </td>
-                      <td>{slot.efficiency * 100}%</td>
-                      <td>{slot.mounts}</td>
-                    </tr>
-                  ))}
+
+              <ItemTable
+                tableInfo={[
+                  { colName: "Slot", colWidth: "10%" },
+                  { colName: "Equipment", colWidth: "55%", limiter: true },
+                  { colName: "Efficiency", colWidth: "15%" },
+                  { colName: "Mounts", colWidth: "10%" },
+                ]}
+              >
+                {slots.map((slot, index) => (
+                  <tr key={index} className="text-base *:text-base">
+                    <td>{index + 1}</td>
+                    <td>
+                      {slot.type.map((type, typeIndex) => {
+                        const equipHref = parseEquipHref(hullType, type)
+                        return (
+                          <span key={typeIndex}>
+                            {typeIndex > 0 && ", "}
+                            <a
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              href={`/test_ecgc_2/equipment#${equipHref}`}
+                            >
+                              {type}
+                            </a>
+                          </span>
+                        )
+                      })}
+                    </td>
+                    <td>{Math.round(slot.efficiency * 100)}%</td>
+                    <td>{Math.round(slot.mounts)}</td>
+                  </tr>
+                ))}
+                <tr className="*:text-base">
+                  <td>
+                    <b>Augments</b>
+                  </td>
+                  <td colSpan={4}>
+                    {augments.map((augment, augIndex) => (
+                      <span key={augIndex}>
+                        {augIndex > 0 && ", "}
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(" ", "_")}`}
+                        >
+                          {augment}
+                        </a>
+                      </span>
+                    ))}
+                  </td>
+                </tr>
+                {!!fastLoad && (
                   <tr className="*:text-base">
                     <td>
-                      <b>Augments</b>
+                      <b>Preload</b>
                     </td>
                     <td colSpan={4}>
-                      {augments.map((augment, augIndex) => (
-                        <span key={augIndex}>
-                          {augIndex > 0 && ", "}
-                          <a
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(" ", "_")}`}
-                          >
-                            {augment}
-                          </a>
-                        </span>
-                      ))}
+                      <span className="text-green-400 font-semibold">
+                        {fastLoad}
+                      </span>
                     </td>
                   </tr>
-                  {!!fastLoad && (
-                    <tr className="*:text-base">
-                      <td>
-                        <b>Preload</b>
-                      </td>
-                      <td colSpan={4}>
-                        <span className="text-green-400 font-semibold">
-                          {fastLoad}
-                        </span>
-                      </td>
-                    </tr>
-                  )}
-                  {!!limitBreakBonus && (
-                    <tr className="*:text-base">
-                      <td>
-                        <b>MLB Bonus</b>
-                      </td>
-                      <td colSpan={4}>
-                        <span className="text-fuchsia-400 font-semibold">
-                          {limitBreakBonus}
-                        </span>
-                      </td>
-                    </tr>
-                  )}
-                </ItemTable>
-              </div>
+                )}
+                {!!limitBreakBonus && (
+                  <tr className="*:text-base">
+                    <td>
+                      <b>MLB Bonus</b>
+                    </td>
+                    <td colSpan={4}>
+                      <span className="text-fuchsia-400 font-semibold">
+                        {limitBreakBonus}
+                      </span>
+                    </td>
+                  </tr>
+                )}
+              </ItemTable>
               <HR />
+
+              {/* End Game Rankings */}
               <h3 className="text-xl">
                 <a
                   href="https://docs.google.com/spreadsheets/d/13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0/edit?gid=0#gid=0"
@@ -418,8 +400,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <b>Last Updated</b>:{" "}
                 <span className="text-[#00ffff]">{lastUpdated}</span>
               </p>
-
-              {/* End Game Rankings */}
               <ShipRankings ship={ship} hull={hull} />
 
               {/* EHP */}
