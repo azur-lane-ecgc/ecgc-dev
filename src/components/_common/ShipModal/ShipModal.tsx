@@ -23,6 +23,7 @@ import {
   shipLimitBreakBonusParse,
   shipSlotParse,
   shipNameParse,
+  shipRarityParse,
 } from "./utils"
 
 import {
@@ -84,15 +85,15 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }, [open])
 
   // mrlar
-  const ship = shipNameParse(mrLarData.id) ?? mrLarData.name
+  const ship = shipNameParse(mrLarData.id, mrLarData.name)
   const faction = useMemo(
     () => shipFactionParse(mrLarData.nation),
     [mrLarData.nation],
   )
-  let rarity = mrLarData.rarity
+  let rarity = shipRarityParse(mrLarData.rarity)
   const isKai = mrLarData.hasOwnProperty("retro")
-  if (!isKai) {
-    rarity--
+  if (isKai) {
+    rarity++
   }
   const hull = mrLarData?.retro?.hull ?? mrLarData.hull
   const hullType = useMemo(() => shipHullTypeParse(hull), [hull])
