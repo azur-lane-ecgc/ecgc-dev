@@ -15,10 +15,13 @@ export const parseEquipHref = (
       return "ca_guns"
     case "bb gun":
       return "bb_guns"
+
+    case "surface torpedo":
+      return "surface_torpedoes"
     case "torpedo":
       return "surface_torpedoes"
 
-    case "timed fuze aa guns":
+    case "timed fuze aa gun":
       return "aa_guns"
     case "fuze aa gun":
       return "aa_guns"
@@ -67,6 +70,8 @@ export const parseEquipHref = (
     case "sub torpedo":
       return "ss_torpedo"
 
+    case "asw equipment":
+      return "asw_equipment"
     case "depth charge":
       return "asw_equipment"
     case "asw bomber":
@@ -75,6 +80,11 @@ export const parseEquipHref = (
       return "asw_equipment"
     case "asw heli":
       return "asw_equipment"
+    case "asw helicopter":
+      return "asw_equipment"
+
+    case "cargo":
+      return "ae_auxiliary"
 
     case "missile":
       return "surface_torpedoes"

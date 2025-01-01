@@ -2,4 +2,6 @@ export * from "./shipHullTypeParse"
 export * from "./shipEquipParse"
 export * from "./shipFactionParse"
 export * from "./shipDefaultAugmentParse"
-export * from './shipLimitBreakBonusParse'
+export * from "./shipLimitBreakBonusParse"
+export * from "./shipSlotParse"
+export * from "./shipNameParse"
