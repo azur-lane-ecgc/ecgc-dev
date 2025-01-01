@@ -7,12 +7,19 @@ import { ItemTable } from "@components/_common/ItemTable"
 import { formatDate } from "@utils/formatDate"
 import { parseLocation } from "@utils/parseLocation"
 
+import type { ShipData } from "@data/types/ships"
+
+import type { AugmentData } from "@data/types/augments"
+import augments from "@data/data/augments.json"
+const augmentData = augments as Record<number, AugmentData>
+
 import { ShipRankings } from "./ShipRankings"
 import {
   parseEquipHref,
   shipHullTypeParse,
   shipFactionParse,
   shipDefaultAugmentParse,
+  shipLimitBreakBonusParse,
 } from "./utils"
 
 import {
@@ -25,8 +32,6 @@ import {
   shipLinkStyle,
 } from "./styles"
 import { ShipTags } from "./ShipTags"
-
-import type { ShipData } from "@data/types/ships"
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -92,6 +97,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   if (!isKai) {
     rarity--
   }
+  const limitBreakBonus = shipLimitBreakBonusParse(mrLarData?.specific_buff)
   const slots: SlotProps[] = useMemo(
     () => [
       {
@@ -120,10 +126,13 @@ export const ShipModal: React.FC<ShipModalProps> = ({
         mounts: 1,
       },
     ],
-    [],
+    [mrLarData],
   )
   const augments = useMemo(() => {
-    const uniqueAugment = ""
+    const uniqueAugment = mrLarData?.unique_aug
+      ? augmentData[mrLarData.unique_aug].name
+      : ""
+
     const normalAugments = shipDefaultAugmentParse(hull)
 
     if (!!uniqueAugment) {
@@ -162,9 +171,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     [],
   )
   const roles = useMemo(() => ["Healer"].slice(0, 5), [])
-  const fastLoad = (
-    <span className="text-green-400">1 Preloaded Airstrike.</span>
-  )
+  const fastLoad = "1 Preloaded Airstrike"
 
   //mebot
   const eHP = 1234
@@ -268,6 +275,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   {isKai ? ship + " (Retrofit)" : ship}
                 </a>
               </h1>
+
               {/* Event / Location */}
               {!!location ? (
                 <a
@@ -287,6 +295,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 </a>
               )}
               <HR />
+
               {/* Flexbox for Icon + Samvaluation */}
               <div className={shipIconContainerStyle}>
                 {/* Ship Icon */}
@@ -314,6 +323,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 </div>
               </div>
               <HR />
+
               {/* Equip Table */}
               <div>
                 <ItemTable
@@ -372,7 +382,23 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       <td>
                         <b>Preload</b>
                       </td>
-                      <td colSpan={4}>{fastLoad}</td>
+                      <td colSpan={4}>
+                        <span className="text-green-400 font-semibold">
+                          {fastLoad}
+                        </span>
+                      </td>
+                    </tr>
+                  )}
+                  {!!limitBreakBonus && (
+                    <tr className="*:text-base">
+                      <td>
+                        <b>MLB Bonus</b>
+                      </td>
+                      <td colSpan={4}>
+                        <span className="text-fuchsia-400 font-semibold">
+                          {limitBreakBonus}
+                        </span>
+                      </td>
                     </tr>
                   )}
                 </ItemTable>
@@ -393,7 +419,11 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <b>Last Updated</b>:{" "}
                 <span className="text-[#00ffff]">{lastUpdated}</span>
               </p>
+
+              {/* End Game Rankings */}
               <ShipRankings ship={ship} hull={hull} />
+
+              {/* EHP */}
               <span className="text-lg leading-normal text-[hsla(0,0%,100%,0.75)]">
                 <a
                   rel="noopener noreferrer"
