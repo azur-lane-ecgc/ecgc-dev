@@ -7,8 +7,13 @@ import { ItemTable } from "@components/_common/ItemTable"
 import { formatDate } from "@utils/formatDate"
 import { parseLocation } from "@utils/parseLocation"
 
-import { ShipRankings } from "./utils"
-import { parseEquipHref, shipHullTypeParse, shipFactionParse } from "./utils"
+import { ShipRankings } from "./ShipRankings"
+import {
+  parseEquipHref,
+  shipHullTypeParse,
+  shipFactionParse,
+  shipDefaultAugmentParse,
+} from "./utils"
 
 import {
   closeButtonStyle,
@@ -49,7 +54,7 @@ const lastUpdated = formatDate("12/12/2024")
  * @component
  *
  * @param {ShipModalProps} props - The props for configuring the ship modal.
- * @param {string} props.id - The ship's unique id.
+ * @param {ShipData} props.mrLarData - ShipData from MrLar's Azur Lane Data
  * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)
  *
  * @returns {React.JSX.Element} The Ship Modal itself.
@@ -77,10 +82,11 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }, [open])
 
   // mrlar (input is ID)
+  const id = mrLarData.id
   const ship = mrLarData.name
-  const faction = shipFactionParse(mrLarData.nation)
+  const faction = useMemo(() => shipFactionParse(mrLarData.nation), [mrLarData])
   const hull = mrLarData.hull
-  const hullType = shipHullTypeParse(hull)
+  const hullType = useMemo(() => shipHullTypeParse(hull), [hull])
   let rarity = mrLarData.rarity
   const isKai = mrLarData.hasOwnProperty("retro")
   if (!isKai) {
@@ -118,14 +124,14 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   )
   const augments = useMemo(() => {
     const uniqueAugment = ""
-    const normalAugments = ["Scepter", "Hunting Bow"]
+    const normalAugments = shipDefaultAugmentParse(hull)
 
     if (!!uniqueAugment) {
       return [uniqueAugment, ...normalAugments]
     }
 
     return normalAugments
-  }, [])
+  }, [hull])
 
   // me
   const shipImg = useMemo(
