@@ -3,6 +3,9 @@ export const shipNameParse = (id: number, name: string): string => {
     case 557:
       return "Enterprise (Royal Navy)"
 
+    case 10001:
+      return "Neptune (Neptunia)"
+
     case 10057:
       return "Ookami Mio"
 
