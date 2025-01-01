@@ -5,7 +5,7 @@ import { HR } from "@components/_common/HR"
 import WikiLink from "@components/_common/WikiLink.astro"
 
 import { ImageCarousel } from "@components/_common/ImageCarousel"
-import { ShipCell, ItemContainer } from "@components/_common/ItemCell"
+import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
 
 import type { ShipData } from "@data/types/ships"
@@ -85,18 +85,11 @@ const data = [
       client:visible
       mrLarData={mrLarData}
       trigger={{
-        iconNote: "CVL",
+        iconNote: null,
         descriptionNote: null,
         largeDescNote: false,
         hasBorder: false,
       }}
-    />
-    <ShipCell
-      ship="Unicorn"
-      rarity={3}
-      hasBorder={true}
-      inGroup={true}
-      hover={true}
     />
     <ShipModal
       client:visible
@@ -108,32 +101,26 @@ const data = [
         hasBorder: true,
       }}
     />
-    <ShipCell
-      ship="Unicorn"
-      rarity={3}
-      hasBorder={true}
-      inGroup={true}
-      hover={true}
-    />
   </ItemContainer>
 
   <ItemContainer>
-    <ShipCell
-      ship="Unicorn"
-      isKai={true}
-      rarity={3}
-      hasBorder={true}
-      inGroup={true}
-      hover={false}
-    />
-    <ShipCell
-      ship="Argus"
-      rarity={3}
-      hasBorder={true}
-      inGroup={false}
-      hover={true}
-      iconNote="CVL"
-      descriptionNote="testing yay"
-    />
+    {
+      Object.keys(ships).map((key) => {
+        const ship = ships[parseInt(key, 10)]
+        if (!ship) return false
+        return (
+          <ShipModal
+            client:visible
+            mrLarData={ship}
+            trigger={{
+              iconNote: null,
+              descriptionNote: null,
+              largeDescNote: false,
+              hasBorder: true,
+            }}
+          />
+        )
+      })
+    }
   </ItemContainer>
 </GuidePageLayout>
