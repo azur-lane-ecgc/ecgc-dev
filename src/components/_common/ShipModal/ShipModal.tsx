@@ -7,9 +7,8 @@ import { ItemTable } from "@components/_common/ItemTable"
 import { formatDate } from "@utils/formatDate"
 import { parseLocation } from "@utils/parseLocation"
 
-import { hullTypeParse } from "./utils"
-import { parseEquipHref } from "./utils"
-import { ShipRankingParse } from "./utils"
+import { ShipRankings } from "./utils"
+import { parseEquipHref, shipHullTypeParse, shipFactionParse } from "./utils"
 
 import {
   closeButtonStyle,
@@ -23,11 +22,6 @@ import {
 import { ShipTags } from "./ShipTags"
 
 import type { ShipData } from "@data/types/ships"
-import shipData from "@data/data/ships.json"
-
-const ships = shipData as Record<number, ShipData>
-
-const mrLarData = ships[142]
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -43,7 +37,7 @@ interface SlotProps {
 }
 
 interface ShipModalProps {
-  mrLarData?: ShipData
+  mrLarData: ShipData
   trigger?: TriggerProps
 }
 
@@ -61,6 +55,7 @@ const lastUpdated = formatDate("12/12/2024")
  * @returns {React.JSX.Element} The Ship Modal itself.
  */
 export const ShipModal: React.FC<ShipModalProps> = ({
+  mrLarData,
   trigger,
 }: ShipModalProps): React.JSX.Element => {
   const [open, setOpen] = useState(false)
@@ -83,9 +78,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 
   // mrlar (input is ID)
   const ship = mrLarData.name
-  const faction = "HMS"
+  const faction = shipFactionParse(mrLarData.nation)
   const hull = mrLarData.hull
-  const hullType = hullTypeParse(hull)
+  const hullType = shipHullTypeParse(hull)
   let rarity = mrLarData.rarity
   const isKai = mrLarData.hasOwnProperty("retro")
   if (!isKai) {
@@ -392,7 +387,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <b>Last Updated</b>:{" "}
                 <span className="text-[#00ffff]">{lastUpdated}</span>
               </p>
-              <ShipRankingParse ship={ship} hull={hull} />
+              <ShipRankings ship={ship} hull={hull} />
               <span className="text-lg leading-normal text-[hsla(0,0%,100%,0.75)]">
                 <a
                   rel="noopener noreferrer"

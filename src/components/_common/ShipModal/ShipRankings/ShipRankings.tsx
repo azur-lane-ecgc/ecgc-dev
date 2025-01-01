@@ -11,15 +11,12 @@ import type {
   VanguardFleetRankingProps,
 } from "./types"
 
-interface ShipRankingParseTypes {
+interface ShipRankingTypes {
   ship: string
   hull: number
 }
 
-export const ShipRankingParse: React.FC<ShipRankingParseTypes> = ({
-  ship,
-  hull,
-}) => {
+export const ShipRankings: React.FC<ShipRankingTypes> = ({ ship, hull }) => {
   ship + " "
 
   const isMainFleet: boolean = [4, 5, 6, 7, 10, 12, 13, 24].includes(hull)
