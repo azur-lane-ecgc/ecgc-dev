@@ -13,6 +13,7 @@ import type { AugmentData } from "@data/types/augments"
 import augments from "@data/data/augments.json"
 const augmentData = augments as Record<number, AugmentData>
 
+import { ShipTags } from "./ShipTags"
 import { ShipRankings } from "./ShipRankings"
 
 import {
@@ -24,6 +25,7 @@ import {
   shipSlotParse,
   shipNameParse,
   shipRarityParse,
+  shipImageParse,
 } from "./utils"
 
 import {
@@ -35,7 +37,6 @@ import {
   modalStyle,
   shipLinkStyle,
 } from "./styles"
-import { ShipTags } from "./ShipTags"
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -124,10 +125,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }, [hull])
 
   // me
-  const shipImg = useMemo(
-    () => `ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`,
-    [],
-  )
+  const shipImg = useMemo(() => shipImageParse(ship, isKai), [])
   const location = parseLocation("")
   const samvaluationText = useMemo(
     () => (
@@ -177,11 +175,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
         <div className="relative">
           <div className="fake-modal-link">
             <div className={`icon rarity-${rarity} border-radius-0`}>
-              <img
-                loading="lazy"
-                src={`/test_ecgc_2/images/${shipImg}`}
-                alt={`${ship}`}
-              />
+              <img loading="lazy" src={`${shipImg}`} alt={`${ship}`} />
             </div>
             {`${ship} ${isKai ? "(Retrofit)" : ""}`}
           </div>
@@ -288,11 +282,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     title={ship}
                     href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
                   >
-                    <img
-                      loading="lazy"
-                      src={`/test_ecgc_2/images/ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`}
-                      alt={`${ship}`}
-                    />
+                    <img loading="lazy" src={`${shipImg}`} alt={`${ship}`} />
                   </a>
                 </div>
 
@@ -306,7 +296,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <HR />
 
               {/* Equip Table */}
-
               <ItemTable
                 tableInfo={[
                   { colName: "Slot", colWidth: "10%" },
