@@ -5,6 +5,7 @@ interface ItemCellProps {
   altItemName?: string
   wikiLink: string
   itemImg: string
+  imgOverride?: boolean
 
   rarity: number
 
@@ -25,6 +26,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
   altItemName = "",
   wikiLink,
   itemImg,
+  imgOverride = false,
   rarity = 1,
 
   iconNote = "",
@@ -53,7 +55,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
           <div className={`icon rarity-${rarity} border-radius-0`}>
             <img
               loading="lazy"
-              src={`/test_ecgc_2/images/${itemImg}`}
+              src={!imgOverride ? `/test_ecgc_2/images/${itemImg}` : itemImg}
               alt={`${item}`}
             />
           </div>

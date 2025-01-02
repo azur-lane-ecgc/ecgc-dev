@@ -1,3 +1,7 @@
+import { useMemo } from "react"
+
+import { shipImageParse } from "../ShipModal/utils"
+
 import { ItemCell } from "./ItemCell"
 import "./styles.css"
 
@@ -34,11 +38,14 @@ export const ShipCell: React.FC<ShipCellProps> = ({
 
   className = "",
 }) => {
+  const shipImg = useMemo(() => shipImageParse(ship, isKai), [])
+
   return (
     <ItemCell
       item={`${ship} ${isKai ? "(Retrofit)" : ""}`}
       wikiLink={ship}
-      itemImg={`ship_icons/${isKai ? ship + "Kai" : ship}Icon.png`}
+      itemImg={shipImg}
+      imgOverride={true}
       rarity={rarity}
       iconNote={iconNote}
       descriptionNote={descriptionNote}
