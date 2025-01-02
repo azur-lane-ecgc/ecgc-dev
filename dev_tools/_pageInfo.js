@@ -39,4 +39,8 @@ export const pageInfo = [
     name: "Shop Priority Guide",
     path: "src/components/ShopPriority/ShopPriorityContent.astro",
   },
+  {
+    name: "Samvaluations",
+    path: "src/components/Samvaluations/SamvaluationContent.astro",
+  },
 ]
