@@ -17,7 +17,8 @@ export const shipSamvaluationParse = (ship: string): SamvaluationProps => {
         name: "Base Game",
         href: "https://azurlane.koumakan.jp/wiki/Category:Ships",
       },
-      evaluation: "N/A",
+      evaluation:
+        "N/A. Come back when this ship gets an augment or gets good :)",
     }
   )
 }

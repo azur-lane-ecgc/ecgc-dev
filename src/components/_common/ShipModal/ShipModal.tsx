@@ -238,6 +238,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   rel="noopener noreferrer"
                   target="_blank"
                   href={location.href}
+                  title={location.name}
                 >
                   {location.name}
                 </a>
@@ -260,10 +261,11 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 </div>
 
                 {/* Samvaluation */}
-                <div className="text-sm">
-                  <span className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]">
-                    {!!samvaluationText ? samvaluationText : "N/A"}
-                  </span>
+                <div className="text-sm w-full">
+                  <span
+                    className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]"
+                    dangerouslySetInnerHTML={{ __html: samvaluationText }}
+                  />
                 </div>
               </div>
               <HR />

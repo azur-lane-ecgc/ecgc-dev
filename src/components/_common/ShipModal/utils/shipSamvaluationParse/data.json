@@ -1,4 +1,536 @@
 {
+  "Laffey": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Laffey (Retrofit) is a damage-oriented DD with good stats and skills. Her personal damage is very balanced between Main Gun, Torpedo, and skill barrages, and further augmented by her self-buffs. Her bulk is also fine due to her Augment module providing a self-heal. Overall, she is a good ship."
+  },
+  "Prinz Eugen": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Prinz Eugen is a tank-oriented CA with great stats and meh skills. Her bulk is very high compared to other tank CAs, but her damage is very very low compared to other tank CAs. Her Augment Module armor break is nice, but doesn't fix her abysmal damage output. Overall, she is a good ship, but is outclassed by other easily accessible options in most situations."
+  },
+  "Belfast": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Belfast is a damage-oriented CL with good stats and skills. Her personal damage is hindered by 1 MGM, but her self-buffs are enough to bring it up to acceptable levels. She also has a smokescreen, which can situationally be useful. She is ideally equipped with an HE CL gun to take full advantage of her self-buff. Overall, she is a good ship."
+  },
+  "Arizona": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Arizona is a support-oriented BB with meh stats and skills. Her personal damage is pretty underwhelming, and her healing is too RNG to support a full fleet, even with her Augment module. Collection only."
+  },
+  "I-58": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "I-58 is a damage-oriented SS with average stats and great skills. Her personal damage is pretty good for an Elite SS due to her self-buffs. Her buff to other IJN SS is nice, but not needed for her viability. Overall, she is a good SS, especially for newer players, but worse than all the relevant SR SS options."
+  },
+  "Jean Bart": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Jean Bart is an off-flag damage-oriented BB with great stats and meh skills. Her Skill 2 self-buff is reliant on using a bad BB gun, and the Augment module doesn't fix it. She also has a preload, but only MGM+1 to compensate for it. Her Augment module barrage is also mediocre at best, but it is free damage. Overall, she is a good ship."
+  },
+  "Glorious": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Glorious is a damage-oriented CV with bad stats and skills. Her augment granted her a 20% cooldown reduction on her first airstrike, which mitigates her slow reload somewhat. Her self-damage is also pretty bad due to 7 planes and average efficiencies. Collection only."
+  },
+  "Graf Zeppelin": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Graf Zeppelin is a damage-oriented CV with great stats and skills. Her personal damage is pretty good, with her Augment module giving her a carpet-bomb style on-strike barrage, improving her clearing capabilities. She is ideally sortied with an KMS equipment to take full advantage of her self-buffs. Her damage-reduction support to other KMS ships is nice, but not necessary for her to be good. Overall, she is a great ship."
+  },
+  "Ayanami": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Ayanami (Retrofit) is a damage-oriented DD with great stats and skills. Her Main Gun damage is really awful, but her Torpedo damage is among the best in the game, especially when combined with her self-buffs. She is ideally equipped with a fast-firing Main Gun to trigger her skill and All-out-Assault barrage faster for maximum uptime. Overall, she is a great ship, but susceptible to the deficiencies of Torpedo targetting on auto-battle."
+  },
+  "Vampire": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Vampire is a damage-oriented DD with bad stats and skills. The heal she provides is not worth the damage loss from using this ship over other options, even with the Augment module enhancing the heal. Collection only."
+  },
+  "Karlsruhe": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Karlsruhe (Retrofit) is a damage-oriented CL with bad stats and skills. Her personal damage is awful, even with her Augment Module, due to only 1 MGM and no good barrages. Collection only."
+  },
+  "Montpelier": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Montpelier is a damage-oriented CL with great stats and skills. She is a very balanced ship, with a great combination of damage, bulk, and AA granted by her skills and Augment Module. She also can buff other CL/CA/CB in the fleet from her Skill 1, however supporting other CL/CA/CB is not required for her to be good. She is ideally sortied with a <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Improved_Hydraulic_Rudder\" title=\"Improved Hydraulic Rudder\" >High Performance Hydraulic Steering Gear</a > for maximum bulk as well as her skill requirement. Overall, she is a great ship."
+  },
+  "Illustrious": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Illustrious is a support-oriented CV with good stats and skills. Her personal damage is good, with 8 planes and an on-strike rocket barrage. Her support is also good, granting a large shield based on her own max HP to the Vanguard Fleet, and some minor healing along with it. Overall, she is a good ship."
+  },
+  "U-557": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "U-557 is a damage-oriented SS with meh stats and skills. Her personal damage is meh, and her Augment Module trades damage potential for consistency compared to the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Dagger\" title=\"Dagger\" >Dagger</a >. Collection only."
+  },
+  "Le Téméraire": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Le Téméraire is a damage-oriented DD with meh stats and skills. Her personal damage is meh due to an aimed barrage from her Skill 1, but even that isn't 100% guarenteed. Her self-buffs help, but don't bring her up to standard. Collection only."
+  },
+  "Taihou": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Taihou is a damage-oriented CV with great stats and skills. She has great personal damage due to her 8 plane loadout, and multiple on-strike barrages, with a 3rd one possible if RNG favors it. One of the barrages offers support to the rest of your Main Fleet as well. She is also very tanky due to possessing Heavy Armor as a CV. Overall, she is a great ship."
+  },
+  "Hood": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Hood is a flagship-oriented BC with good stats and amazing skills. Her barrage is very strong, and has a 100% proc rate, making her a great damage option. She also provides a Reload buff to all Main Fleet ships upon her barrage triggering. Overall, she is a great ship."
+  },
+  "Albacore": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Albacore is a damage-oriented SS with great stats and skills. Her personal damage is pretty good for an SR SS, and is further amplified by her DoT and barrages. Overall, she is a great ship; best utilized alongside Archerfish."
+  },
+  "Z23": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Z23 (Retrofit) is a damage-oriented DD with good stats and skills. Her personal damage is great due to her stats and self-buffs, and her AoA requirement halved. Her bulk is decent, but nothing special. Overall, she is a good ship."
+  },
+  "Wichita": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Wichita is a damage-oriented CA with good stats and skills. Her personal damage is really high, especially for Elite/SR ships. However, her bulk is frail even with her Augment module. She also offers a FP buff to other CL/CA/CB in the fleet. Overall, she is a good ship."
+  },
+  "Nagara": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Nagara is a damage-oriented CL with bad stats and skills. Collection only."
+  },
+  "Maya": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Maya is an AA-oriented CA with good stats and skills. Her AA is very high due to an additional AA gun mount from her Augment, and a massive AA self-buff. Her personal damage is also decent now with double Torpedo launches from her Augment module skill upgrade. Her bulk is also good due to her Evasion and Evasion Rate buffs, and stats. Overall, she is a good ship."
+  },
+  "Sims": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Sims (Retrofit) is a damage-oriented DD with meh stats and skills. Her damage is very meh, and her support, while good, is not worth using her for over other damage-oriented options. Collection only."
+  },
+  "Javelin": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Javelin (Retrofit) is a damage-oriented DD with good stats and skills. Her bulk is pretty good, especially for a DD. Her damage is very good due to her Augment module barrage, and she has great mixed damage from her Main Guns and Torpedoes as well. Overall, she is a good ship."
+  },
+  "Kagerou": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Kagerou (Retrofit) is a support-oriented DD with good stats and skills. She has good Torpedo buffs for the Vanguard Fleet, and her own Torpedo damage is pretty good as well. Overall, she is a good ship."
+  },
+  "Minneapolis": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Minneapolis is a mob-tank oriented CA with great stats and skills. Her personal damage is pretty good due to MGM+1 CA guns and her self-buffs when she sinks an enemy. She has average bulk with her base stats, but her Skill 2 further enhances her bulk (and the Vanguard Fleet's bulk with her Augment module). Her Augment Module isn't that amazing, and is a sidegrade to the default Elite Augment modules. Overall, she is a great ship, but can be redundant with other easily accessible options."
+  },
+  "Tirpitz": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Tirpitz is an off-flag damage-oriented BB with meh stats and skills. Her personal damage is very lackluster, and is only brought up to good levels when paired with Bismarck (which isn't worth building your fleet around). Collection only."
+  },
+  "Edinburgh": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Edinburgh is a damage-oriented CL with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "Émile Bertin": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Émile Bertin (Retrofit) is a damage-oriented CL with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "Gneisenau": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Gneisenau is an off-flag damage-oriented BC with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "Kawakaze": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Kawakaze is a damage-oriented DD with great stats and skills. With her Augment module, she has great personal damage against all armor types due to her Skill 2 and her Augment module barrage. Her bulk is also decent as well due to the Augment module. Overall, she is a great ship."
+  },
+  "Littorio": {
+    "event": {
+      "name": "Empyreal Tragicomedy",
+      "href": "https://azurlane.koumakan.jp/wiki/Empyreal_Tragicomedy"
+    },
+    "evaluation": "Littorio is a flagship-oriented BB with great stats and skills. She doesn't have many self-buffs compared to other BBs, and 130% Main Gun efficiency hinders her shelling damage. Her barrage is still pretty good, however. Overall, she is a great ship."
+  },
+  "Z46": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Z46 is a damage-oriented DD with great stats and skills. Her personal damage is really good due to her self-buffs and AoA. She is ideally equipped with an AP main gun to take full advantage of her self-buffs. Overall, she is a great ship."
+  },
+  "Saratoga": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Saratoga (Retrofit) is a damage-oriented CV with great stats and amazing skills. Her personal damage is very good due to great on-strike damage, her on-strike barrage with DoT, and a desynced 10s barrage that also does good damage. Her Vanguard Fleet support is nice, but not necessary for her to be good. Overall, she is a great ship."
+  },
+  "L'Opiniâtre": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "L'Opiniâtre is a damage-oriented DD with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "Mutsuki": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Mutsuki (Retrofit) is a damage-oriented DD with very bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "Prince of Wales": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Prince of Wales is a off-flag support-oriented BB with good stats and great skills. Her skills buff both USS and HMS ships, as well as giving her great self-buffs when sortied with USS or HMS ships. Overall, she is a great ship."
+  },
+  "Houston": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Houston is a damage-oriented CA with meh stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "Algérie": {
+    "event": {
+      "name": "Skybound Oratorio",
+      "href": "https://azurlane.koumakan.jp/wiki/Skybound_Oratorio"
+    },
+    "evaluation": "Algérie is a damage-oriented CA with great stats and meh skills. Her damage output is good due to her skill barrage having a proc change on every Main Gun shot. Her bulk is fine, but not enough to tank any hard content reliably. Overall, she is a good ship."
+  },
+  "Surcouf": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Surcouf is a damage-oriented SS with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "South Dakota": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "South Dakota is a support-oriented BB with meh stats and skills. She can redirect damage dealt to the Main Fleet to herself, but that has very niche usage, and generally isn't worth using her for, over an option that can outdamage the enemy instead. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "Z2": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Z2 is a damage-oriented DD with meh stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "U-47": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "U-47 is a damage-oriented SS with great stats and skills. Ignore her \"Lone Wolf\" skill. She has great damage, especially against single-target enemies, due to her Skill 1. She also has no faction restrictions or requirements like some other SS. Overall, she is a great ship."
+  },
+  "Suffolk": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Suffolk (Retrofit) is a damage-oriented CA with meh stats and skills. She has great damage for an Elite ship, but her bulk is very frail, even with her self heal. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only."
+  },
+  "Mogami": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Mogami (Retrofit) is a damage-oriented CA with great stats and skills. Her personal damage is pretty good due to MGM+1 CA guns, as well as her self-buffs. Her Augment module adds to her bulk, making her pretty tanky for an off-tank. Overall, she is a great ship."
+  },
+  "Victorious": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Victorious is a damage-oriented CV with good stats and meh skills. Her personal damage is alright, but nothing special due to minor self-buffs and the unrealiability of her Skill 2. Her Reload stat is also low for a CV. Overall, she is a good ship, but can be a sidegrade to more easily accessible options."
+  },
+  "Fusou": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Fusou (Retrofit) is a flagship-oriented BB with good stats and skills. Her Augment Module makes her Retrofit more viable, due to her barrage being good. Her personal damage is decent due to good self-buffs and stats, especially for a lower rarity ship. The cost to get this investment can be a bit steep, however. Overall, she is a good ship, but can be a sidegrade to more easily accessible options."
+  },
+  "Takao": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Takao is a mob-tank oriented CA with good stats and skills. Her personal damage is decent, thanks to her Augment Module granting her a barrage every 10s that is good. In addition, her bulk is also good due to her high luck and +EVA Rate from her AoA. Overall, she is a good ship, but can be a sidegrade to more easily accessible options."
+  },
+  "McCall": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "McCall is a damage-oriented DD with bad stats and skills. Collection only."
+  },
+  "Shangri-La": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Shangri-La is a damage-oriented CV with great stats and skills. Her personal damage is very good due to her damage ramping self-buffs, as well as an on-strike barrage (which is unfortunately RNG). Overall, she is a great ship."
+  },
+  "Z1": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Z1 is a damage-oriented DD with good stats and skills. Her buffs are only for KMS DDs, which makes them very niche. Her personal damage is alright, but nothing special. Overall, she is a good ship, but can be a sidegrade/downgrade to more easily accessible options."
+  },
+  "Fortune": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Fortune (Retrofit) is a damage-oriented DD with bad stats and skills. Collection only"
+  },
+  "Königsberg": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Königsberg is a damage-oriented CL with bad stats and skills. Collection only."
+  },
+  "King George V": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "King George V is a flagship damage-oriented BB with good stats and skills. Her barrage is timed, which gives her more spread out damage when mobbing. Using the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Quadruple_356mm_Main_Gun_Mount\" title=\"Quadruple 356mm Main Gun Mount\" >Quadruple 356mm Main Gun Mount</a > gives her an almost preload, but is not recommended due to the gun being awful otherwise. Her Augment Module removes this requirement in exchange for losing her self-buffs when sortied with Royal Navy ships, which is an alright tradeoff but nothing special. Overall, she is a good ship, but can be a sidegrade to more easily accessible options."
+  },
+  "Z18": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Z18 is a damage-oriented DD with bad stats and skills. Collection only."
+  },
+  "Ping Hai": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Ping Hai (Retrofit) is a tank-oriented CL with good stats and skills. Her bulk when paired with Yat Sen is exceptional; one of the highest in the game. Their AoA becomes both aimed and can ignore shields, which is a great buff. Her personal damage becomes even better when sortied with Yat Sen; however, she loses a lot of bulk as a tradeoff. Overall, she is a great ship, but can be a sidegrade to more easily accessible options."
+  },
+  "Ning Hai": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Ning Hai (Retrofit) is a tank-oriented CL with good stats and skills. Her bulk when paired with Yat Sen is exceptional; one of the highest in the game. Their AoA becomes both aimed and can ignore shields, which is a great buff. Her personal damage becomes even better when sortied with Yat Sen; however, she loses a lot of bulk as a tradeoff. Overall, she is a great ship, but can be a sidegrade to more easily accessible options."
+  },
+  "Nicholas": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Nicholas (Retrofit) is a damage-oriented DD with good stats and great skills. Her personal damage is good due to having good FP and a lot of self-buffs, but only 1 MGM and lackluster barrages hurt her potential. Her bulk is nothing special as well. Overall, she is a good ship, but can be a sidegrade to more easily accessible options."
+  },
+  "Dido": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Dido is a damage-oriented CL with great stats and great skills. Her personal damage is amazing when sortied with at least 1 other HMS ship, due to her AoA barrage being very strong and self-buffs. Her Skill 2 can buff Queen Elizabeth or Queen Elizabeth META, but this isn't required for her to be good. With her Augment, she herself can get those buffs and increased Main Gun CRIT Rate, but since her Main Gun damage is not that massive, it isn't necessary for her to be viable. Her Augment also drastically increases her AoA damage. Overall, she is a great ship."
+  },
+  "I-19": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "I-19 is a damage-oriented SS with good stats and skills. Her personal damage is high, due to having a high TRP stat, as well as multiple barrages that enable torpedo pierce. However, her mounts having imbalanced efficiencies can hurt her consistency if torpedoes whiff. Her Skill 2 decreasing torpedo speed is very good when using magnetic torpedoes. Overall, she is a good ship."
+  },
+  "Sendai": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Sendai (Retrofit) is a support-oriented CL with good stats and skills. Her Skill 1 buffs the TRP stat of all DDs and CLs in your fleet, which is a solid boost. In addition, it significantly increases her survaviblity with her Augment Module. Her Skill 2 flares are practically useless, as they are both RNG and are hard to sync with other ships, despite the effect being very good. Overall, she is a good ship, but can be a sidegrade to more easily accessible options."
+  },
+  "Le Mars": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Le Mars (Retrofit) is a damage-oriented DD with meh stats and skills. Her Skill 1 is very RNG, and building fleets around FFNF or MNF Vanguard Ships is worse than using a union of multiple good ships. The barrage from Skill 1 is a nice bit of damage, but not enough to justify her slot in the fleet. Her Skill 2 is even more RNG than her Skill 1, and only adds to her middling bulk. Collection only."
+  },
+  "Comet": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Comet (Retrofit) is a damage-oriented DD with meh stats and skills. Her Skill 1 barrage is servicable, but that's her only form of damage, making her overall damage mediocre. Her torpedo buff to other DDs is nice, but not that important. Her Skill 2 smokescreen is unreliable due to how smokescreens work. Overall, she is a mediocre ship."
+  },
+  "North Carolina": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "North Carolina is a support-oriented BB with good stats and skills. Her personal damage is very mediocre due to no self-buffs, and a mediocre barrage from her augment-improved Skill 1. Her Augment Module grants her a 5% HP heal to all Vanguard Fleet ships every 10s whenever she fires a Timed Fuze AA Gun, drastically increasing her support value. Even so, she still cannot solo sustain a full fleet in difficult content. Overall, she is a good ship, but worse than <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Unicorn\" title=\"Unicorn\" >Unicorn (Retrofit)</a > for general use."
+  },
+  "Scharnhorst": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Scharnhorst is a damage-oriented BB with bad stats and skills. Her Augment Module duplicates her barrage but with your flagship's scaling, which doesn't add enough to make her relevant. Collection only."
+  },
+  "San Diego": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "San Diego (Retrofit) is a damage-oriented AND AA-oriented CL with amazing stats and skills. Her personal damage is very high with MGM+1 DD Guns and great barrages (Skill 1 with Augment, Skill 2, and AoA). In particular, her Skill 1 barrage can ignore shields and is triggered individually per Main Gun, making its frequency very fast. You always want to equip her with a fast-firing and high damage DD Gun; never give her a CL gun. In addition, her ASW stat is one of the highest amongst vanguard ships, allowing her to act as a ASW carry. Her AA stat is very high, and when paired with her Skill 1 and very high AA gun efficiency, allows her to act as an AA carry for the fleet. Her bulk is also solid as well, especially with her Augment Module skill. Overall, she is an amazing ship, if a bit expensive to max fully."
+  },
+  "Le Malin": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Le Malin is a damage-oriented DD with good stats and skills. Her personal damage is fine, but nothing spectacular with only 1 MGM and a good AoA. Her Skill 1 gives a great debuff, but the activation condition is hard to achieve before the enemy dies, and the duration of the debuff is low too. The barrage that it triggers is good, but nothing amazing as well. The stack based on killing enemies is also hard to achieve, since the other 5 ships in the fleet can easily kill steal from her. Her Skill 2 is basically useless since it debuffs her as the battle goes on. Overall, she is a good ship, but can be a sidegrade / downgrade to other easily-accessible options."
+  },
+  "Jamaica": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Jamaica is a damage-oriented CL with bad stats and skill. Collection only."
+  },
+  "Spence": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Spence is a damage-oriented DD with bad stats and a good skill. Her Skill 1 barrage is good, but it isn't enough to save her. Collection only."
+  },
+  "Centaur": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Centaur is a support-oriented CVL with great stats and skills. Her personal damage is good with 8 planes. Her reload stat is on the higher end for CVs, allowing her support to be easily syncable without much effort. Her Skill 1 barrage applies a slow to enemies hit, and her Skill 2 buffs your Main Fleet. She is ideally sortied with 2 more HMS ships, but that is not necessary for her to be good. Overall, she is a great ship."
+  },
+  "Leipzig": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Leipzig (Retrofit) is a support-oriented CL with good damage and skills. Her personal damage is good, despite only 1 MGM, due to her self buffs, good Torpedoes and the Skill 1 barrage. Her support is also good, but only works on CB / CA / CLs. Overall, she is a good ship, but can be a sidegrade / downgrade to other easily accessible options."
+  },
+  "Long Island": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Long Island (Retrofit) is a damage-oriented CVL with bad stats and skills. Collection only."
+  },
+  "U-96": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "U-96 is a damage / support oriented SS with great stats and skills. Her personal damage is great, especially with her self-buffs to TRP and TRP Crit Rate. She should be sortied in a full SS fleet due to her Skill 1 improving her barrage. Her Skill 2 both buffs other KMS SS and self-buffs herself, incentivizing her to be played in a Wolfpack SS fleet. Overall, she is a great ship, best used in a KMS Wolfpack SS fleet."
+  },
+  "Exeter": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Exeter (Retrofit) is a damage-oriented CA with good stats and meh skills. Her personal damage is good, especially against Medium Armor, due to her barrage and self-buffs. However, only 1 MGM drags her personal damage down. Her Skill 1 procs at the start of the battle and has a decent barrage attached to it, but only has a 60% trigger rate for the rest of the battle, which isn't good enough since it's uptime isn't long enough to justify the RNG involved. Her Skill 2 is nice, but also has an unreliable trigger rate. Overall, she is a meh ship, and can be a sidegrade / downgrade to other easily accessible options."
+  },
+  "Dunkerque": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Dunkerque is a flagship-oriented BC with meh stats and good skills. Her stats are mediocre, and she has a preloaded Main Gun Mount in exchange for only having MGM+1, which isn't a good enough tradeoff. Her Skill 1 is great, but only a 70% chance for the effects to trigger hurts her. Overall, she is a meh ship, and is a sidegrade / downgrade to other easily accessible options."
+  },
+  "Shiranui": {
+    "event": {
+      "name": "Base Game",
+      "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
+    },
+    "evaluation": "Shiranui is a damage-oriented DD with bad stats and skills. Her Augment Module barrage adds some damage but it is not enough. Collection only."
+  },
   "Baltimore": {
     "event": {
       "name": "Ashen Simulacrum",
@@ -68,13 +600,6 @@
       "href": "https://azurlane.koumakan.jp/wiki/Empyreal_Tragicomedy"
     },
     "evaluation": "Formidable is a support / damage-oriented CV with great stats and skills. As a support, she offers a timestop that other ships can take advantage of to improve their geometric accuracy against bosses. As a damage-dealer, when equipped with the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Fairey_Albacore\" title=\"Fairey Albacore\" >Fairey Albacore</a > Torpedo Bomber, she has great screen-wide barrages on airstrike, which along with her loadout help clear out enemy waves well. Overall, she is a great ship."
-  },
-  "Littorio": {
-    "event": {
-      "name": "Empyreal Tragicomedy",
-      "href": "https://azurlane.koumakan.jp/wiki/Empyreal_Tragicomedy"
-    },
-    "evaluation": "Littorio is a flagship-oriented BB with great stats and skills. She doesn't have many self-buffs compared to other BBs, and 130% Main Gun efficiency hinders her shelling damage. Her barrage is still pretty good, however. Overall, she is a great ship."
   },
   "Pola": {
     "event": {
@@ -348,13 +873,6 @@
       "href": "https://azurlane.koumakan.jp/wiki/Skybound_Oratorio"
     },
     "evaluation": "Richelieu is a flagship-oriented BB with great stats and skills. She buffs all French ships in your fleet, however she is fine without buffing anyone but herself. Her barrage is alright, and her preload helps frontload her damage output. Only MGM+1 hurts her in longer fights. Overall, she is a great ship."
-  },
-  "Algérie": {
-    "event": {
-      "name": "Skybound Oratorio",
-      "href": "https://azurlane.koumakan.jp/wiki/Skybound_Oratorio"
-    },
-    "evaluation": "Algérie is a damage-oriented CA with great stats and meh skills. Her damage output is good due to her skill barrage having a proc change on every Main Gun shot. Her bulk is fine, but not enough to tank any hard content reliably. Overall, she is a good ship."
   },
   "Le Terrible": {
     "event": {
