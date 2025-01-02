@@ -7,7 +7,6 @@ import { ItemTable } from "@components/_common/ItemTable"
 import { formatDate } from "@utils/formatDate"
 
 import type { ShipData } from "@data/types/ships"
-
 import type { AugmentData } from "@data/types/augments"
 import augments from "@data/data/augments.json"
 const augmentData = augments as Record<number, AugmentData>
@@ -24,6 +23,7 @@ import {
   shipNameParse,
   shipRarityParse,
   shipImageParse,
+  shipSamvaluationParse,
 } from "./utils"
 
 import {
@@ -35,7 +35,6 @@ import {
   modalStyle,
   shipLinkStyle,
 } from "./styles"
-import { shipSamvaluationParse } from "./utils/shipSamvaluationParse/shipSamvaluationParse"
 
 export interface TriggerProps {
   iconNote?: string | null
