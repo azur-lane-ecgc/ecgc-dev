@@ -7,8 +7,12 @@ from googleapiclient.discovery import build
 # Constants
 SERVICE_ACCOUNT_FILE = "dev_tools/end_game_al_rankings/credentials.json"
 SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
-SHEET_NAMES = ["VG (no img)"]
-OUTPUT_PATHS = ["dev_tools/end_game_al_rankings/output.json"]  # Array of explicit output paths
+SHEET_NAMES = ["VG (no img)", "MAIN (no img)", "subs (no img)"]
+OUTPUT_PATHS = [
+    "src/components/_common/ShipModal/ShipRankings/data/vg.json",
+    "src/components/_common/ShipModal/ShipRankings/data/main.json",
+    "src/components/_common/ShipModal/ShipRankings/data/ss.json",
+]
 
 # Authenticate and initialize the Sheets API
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -33,7 +37,7 @@ def process_sheet(sheet_name):
     """Process a sheet and return structured data"""
     # Get headers first
     headers = get_headers(sheet_name)
-    
+
     # Get content (row 3 onwards)
     result = (
         service.spreadsheets()
@@ -50,7 +54,7 @@ def process_sheet(sheet_name):
             continue
 
         key = row[0].strip()  # Column C value as the key, trimmed
-        
+
         # Create object with header-value pairs
         # Skip first value (which was the key from column C)
         row_data = {}
@@ -72,11 +76,11 @@ if __name__ == "__main__":
     for sheet_name, output_path in zip(SHEET_NAMES, OUTPUT_PATHS):
         # Create directory if it doesn't exist
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        
+
         sheet_data = process_sheet(sheet_name)
-        
+
         # Write the data to a JSON file
         with open(output_path, "w", encoding="utf-8") as json_file:
             json.dump(sheet_data, json_file, indent=4, ensure_ascii=False)
-        
+
         print(f"Data from sheet '{sheet_name}' has been written to {output_path}")
