@@ -42,7 +42,7 @@ def process_sheet(sheet_name):
     result = (
         service.spreadsheets()
         .values()
-        .get(spreadsheetId=SPREADSHEET_ID, range=f"{sheet_name}!C3:Z")
+        .get(spreadsheetId=SPREADSHEET_ID, range=f"{sheet_name}!C3:AA")
         .execute()
     )
 

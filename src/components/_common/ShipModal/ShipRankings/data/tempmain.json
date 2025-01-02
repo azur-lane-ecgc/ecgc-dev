@@ -85,7 +85,11 @@
         "Heavy Dmg": "6",
         "AoE Dmg": "5",
         "Dmg Uptime": "",
-        "Offense Buff": "2"
+        "Offense Buff": "2",
+        "Self Survival": "",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Bismarck Zwei": {
         "Notes": "Groups up and \"freezes\" bosses. Not tiered here, but can bring Certificate in mob for third star.",
@@ -323,7 +327,11 @@
         "Heavy Dmg": "5",
         "AoE Dmg": "4",
         "Dmg Uptime": "",
-        "Offense Buff": "1"
+        "Offense Buff": "1",
+        "Self Survival": "",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Enterprise": {
         "Notes": "",
@@ -627,7 +635,8 @@
         "Offense Buff": "",
         "Self Survival": "",
         "AA": "",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Flandre": {
         "Notes": "",
@@ -675,7 +684,8 @@
         "Offense Buff": "",
         "Self Survival": "",
         "AA": "-1",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Gneisenau META": {
         "Notes": "Pick a KMS CL gun with 45 FP.",
@@ -1066,7 +1076,10 @@
         "AoE Dmg": "4",
         "Dmg Uptime": "",
         "Offense Buff": "2",
-        "Self Survival": "1"
+        "Self Survival": "1",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Shinano (with Haku and/or AmagiCV)": {
         "Notes": "Requires 3 IJN ships.",
@@ -1088,7 +1101,10 @@
         "AoE Dmg": "4",
         "Dmg Uptime": "",
         "Offense Buff": "3",
-        "Self Survival": "1"
+        "Self Survival": "1",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Souryuu META": {
         "Notes": "IJN plane is easy to include.",
@@ -1134,7 +1150,8 @@
         "Offense Buff": "1",
         "Self Survival": "",
         "AA": "",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Theseus": {
         "Notes": "",
@@ -2201,7 +2218,12 @@
         "Medium Dmg": "2",
         "Heavy Dmg": "2",
         "AoE Dmg": "2",
-        "Dmg Uptime": "1"
+        "Dmg Uptime": "1",
+        "Offense Buff": "",
+        "Self Survival": "",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Vittorio Veneto": {
         "Notes": "Assumed to be with multiple RN 🍕 ships.",
@@ -2225,7 +2247,8 @@
         "Offense Buff": "2",
         "Self Survival": "",
         "AA": "",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Warspite": {
         "Notes": "The fake UR.",
@@ -2380,7 +2403,12 @@
         "Medium Dmg": "1",
         "Heavy Dmg": "1",
         "AoE Dmg": "1",
-        "Dmg Uptime": "1"
+        "Dmg Uptime": "1",
+        "Offense Buff": "",
+        "Self Survival": "",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Alabama": {
         "Notes": "Needs mob ramp up in a sortie.",
@@ -2594,7 +2622,8 @@
         "Offense Buff": "",
         "Self Survival": "",
         "AA": "",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Arizona META": {
         "Notes": "Has a large timeable one-time debuff for EX if you left her at level 1 for some reason.",
@@ -2965,7 +2994,12 @@
         "Medium Dmg": "2",
         "Heavy Dmg": "2",
         "AoE Dmg": "2",
-        "Dmg Uptime": "1"
+        "Dmg Uptime": "1",
+        "Offense Buff": "",
+        "Self Survival": "",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Chitose": {
         "Notes": "Requires an IJN CVL. Needs to launch airstrike before other main fleet ships.",
@@ -3102,7 +3136,8 @@
         "Offense Buff": "",
         "Self Survival": "",
         "AA": "",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Eagle": {
         "Notes": "",
@@ -3576,7 +3611,8 @@
         "Offense Buff": "",
         "Self Survival": "",
         "AA": "",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Hermes": {
         "Notes": "",
@@ -3839,7 +3875,13 @@
         "Light Dmg": "1",
         "Medium Dmg": "2",
         "Heavy Dmg": "1",
-        "AoE Dmg": "1"
+        "AoE Dmg": "1",
+        "Dmg Uptime": "",
+        "Offense Buff": "",
+        "Self Survival": "",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Iori Minase": {
         "Notes": "",
@@ -4679,7 +4721,8 @@
         "Offense Buff": "",
         "Self Survival": "",
         "AA": "1",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Nyotengu": {
         "Notes": "",
@@ -4763,7 +4806,10 @@
         "AoE Dmg": "1",
         "Dmg Uptime": "",
         "Offense Buff": "",
-        "Self Survival": "1"
+        "Self Survival": "1",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Pennsylvania": {
         "Notes": "",
@@ -4904,7 +4950,8 @@
         "Offense Buff": "2",
         "Self Survival": "",
         "AA": "",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Ranger": {
         "Notes": "Good luck, SKK",
@@ -5246,7 +5293,10 @@
         "AoE Dmg": "1",
         "Dmg Uptime": "",
         "Offense Buff": "1",
-        "Self Survival": "-2"
+        "Self Survival": "-2",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Shoukaku (with Zuikaku)": {
         "Notes": "Requires Zuikaku. Needs to launch airstrike before other main fleet ships.",
@@ -5342,7 +5392,8 @@
         "Offense Buff": "",
         "Self Survival": "",
         "AA": "",
-        "Rammers": "1"
+        "Rammers": "1",
+        "Other Main": ""
     },
     "Sovetskaya Rossiya": {
         "Notes": "Prefers multiple SN or ROC ships.",
@@ -5881,7 +5932,11 @@
         "Heavy Dmg": "1",
         "AoE Dmg": "1",
         "Dmg Uptime": "1",
-        "Offense Buff": "1"
+        "Offense Buff": "1",
+        "Self Survival": "",
+        "AA": "",
+        "Rammers": "",
+        "Other Main": ""
     },
     "Zeppy": {
         "Notes": "Strongly prefers many KMS ships.",

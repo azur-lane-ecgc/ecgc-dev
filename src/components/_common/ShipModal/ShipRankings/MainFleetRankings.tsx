@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import { ItemTable } from "@components/_common/ItemTable"
 import { HR } from "@components/_common/HR"
 import {
@@ -8,10 +10,12 @@ import {
 import type { ShipRankingTypes, MainFleetRankingProps } from "./types"
 
 export const MainFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
+  const [index, setIndex] = useState<number>(0)
+
   ship + " "
 
   // Unicorn
-  const ranking: MainFleetRankingProps = {
+  const ranking1: MainFleetRankingProps = {
     notes: "The best primary healer as of 2024.",
 
     hardarbiter: "D",
@@ -32,6 +36,31 @@ export const MainFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
     othermain: 1,
     vgsurvival: 5,
   }
+
+  const ranking2: MainFleetRankingProps = {
+    notes: "The best primary healer as of 2024.",
+
+    hardarbiter: "D",
+    meta: "D",
+    cm: "C",
+    w14mob: "SS",
+    w14boss: "D",
+    w15mob: "S",
+    w15boss: "B",
+    ex: "D",
+
+    lightdmg: 1,
+    mediumdmg: 1,
+    heavydmg: 1,
+    aoedmg: 1,
+    dmguptime: 1,
+    selfsurvival: -1,
+    othermain: 1,
+    vgsurvival: 5,
+  }
+
+  const rankingArray = [ranking1, ranking2]
+  const ranking = rankingArray[index]
 
   return (
     <>
