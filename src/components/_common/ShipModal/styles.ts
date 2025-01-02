@@ -32,7 +32,7 @@ export const letterRankColor = (rank: string | null | undefined): string => {
     "": "",
   }
 
-  return (rank && getLetterRankColor[rank]) || ""
+  return (rank && getLetterRankColor[rank.replaceAll(/\*/g, "")]) || ""
 }
 
 export const numberRankColor = (
