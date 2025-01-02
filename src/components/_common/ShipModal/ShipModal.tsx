@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useMemo, useState } from "react"
 
 import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
@@ -73,19 +73,17 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 
   const handleOpen = () => {
     setOpen(true)
-  }
-  const handleClose = () => {
-    setOpen(false)
+    if (!document.body.classList.contains("overflow-hidden")) {
+      document.body.classList.add("overflow-hidden")
+    }
   }
 
-  useEffect(() => {
-    if (open) {
-      document.body.classList.add("overflow-hidden")
-    } else {
+  const handleClose = () => {
+    setOpen(false)
+    if (document.body.classList.contains("overflow-hidden")) {
       document.body.classList.remove("overflow-hidden")
     }
-    return
-  }, [open])
+  }
 
   // mrlar
   const ship = shipNameParse(mrLarData.id, mrLarData.name)
