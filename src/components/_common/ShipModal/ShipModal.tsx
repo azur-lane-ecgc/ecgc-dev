@@ -14,7 +14,6 @@ const augmentData = augments as Record<number, AugmentData>
 
 import { ShipTags } from "./ShipTags"
 import { ShipRankings } from "./ShipRankings"
-
 import {
   parseEquipHref,
   shipHullTypeParse,
