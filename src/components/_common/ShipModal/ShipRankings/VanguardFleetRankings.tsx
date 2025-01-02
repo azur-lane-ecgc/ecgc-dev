@@ -7,6 +7,11 @@ import {
 
 import type { ShipRankingTypes, VanguardFleetRankingProps } from "./types"
 
+import { convertToVanguardFleetRanking } from "./data"
+
+const VGFleetData: Record<string, VanguardFleetRankingProps> =
+  convertToVanguardFleetRanking()
+
 export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
   ship + " "
 

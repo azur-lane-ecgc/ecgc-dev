@@ -6,6 +6,10 @@ import {
 } from "@components/_common/ShipModal/styles"
 
 import type { ShipRankingTypes, SSFleetRankingProps } from "./types"
+import { convertToSSFleetRanking } from "./data"
+
+const SSFleetData: Record<string, SSFleetRankingProps> =
+  convertToSSFleetRanking()
 
 export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
   ship + " "
