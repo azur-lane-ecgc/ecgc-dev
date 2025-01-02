@@ -119,7 +119,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
       return [uniqueAugment, ...normalAugments]
     }
 
-    return normalAugments
+    return normalAugments.length <= 0 ? null : normalAugments
   }, [hull])
   const shipImg = useMemo(() => shipImageParse(ship, isKai), [])
 
@@ -307,20 +307,33 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     <b>Augments</b>
                   </td>
                   <td colSpan={4}>
-                    {augments.map((augment, augIndex) => (
-                      <span key={augIndex}>
-                        {augIndex > 0 && ", "}
+                    {augments ? (
+                      augments.map((augment, augIndex) => (
+                        <span key={augIndex}>
+                          {augIndex > 0 && ", "}
+                          <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(" ", "_")}`}
+                          >
+                            {augment}
+                          </a>
+                        </span>
+                      ))
+                    ) : (
+                      <span>
                         <a
                           rel="noopener noreferrer"
                           target="_blank"
-                          href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(" ", "_")}`}
+                          href={`https://azurlane.koumakan.jp/wiki/Augmentation`}
                         >
-                          {augment}
+                          N/A
                         </a>
                       </span>
-                    ))}
+                    )}
                   </td>
                 </tr>
+
                 {!!fastLoad && (
                   <tr className="*:text-base">
                     <td>

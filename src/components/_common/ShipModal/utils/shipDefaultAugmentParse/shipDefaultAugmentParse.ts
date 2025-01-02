@@ -4,6 +4,8 @@ export const shipDefaultAugmentParse = (hull: number): string[] => {
       return ["Dual Swords", "Hammer"]
     case 2:
       return ["Crossbow", "Sword"]
+    case 12:
+      return ["Crossbow"]
     case 3:
     case 18:
     case 19:
