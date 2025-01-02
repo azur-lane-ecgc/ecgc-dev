@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 import "@components/_common/ItemCell/styles.css"
 
@@ -33,19 +33,17 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
 
   const handleOpen = () => {
     setOpen(true)
-  }
-  const handleClose = () => {
-    setOpen(false)
+    if (!document.body.classList.contains("overflow-hidden")) {
+      document.body.classList.add("overflow-hidden")
+    }
   }
 
-  useEffect(() => {
-    if (open) {
-      document.body.classList.add("overflow-hidden")
-    } else {
+  const handleClose = () => {
+    setOpen(false)
+    if (document.body.classList.contains("overflow-hidden")) {
       document.body.classList.remove("overflow-hidden")
     }
-    return
-  }, [open])
+  }
 
   const name = item.plural || item.name + "s"
   const rarity = item.rarity
