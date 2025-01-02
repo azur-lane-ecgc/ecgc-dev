@@ -102,25 +102,4 @@ const data = [
       }}
     />
   </ItemContainer>
-
-  <ItemContainer>
-    {
-      Object.keys(ships).map((key) => {
-        const ship = ships[parseInt(key, 10)]
-        if (!ship) return false
-        return (
-          <ShipModal
-            client:visible
-            mrLarData={ship}
-            trigger={{
-              iconNote: null,
-              descriptionNote: null,
-              largeDescNote: false,
-              hasBorder: true,
-            }}
-          />
-        )
-      })
-    }
-  </ItemContainer>
 </GuidePageLayout>
