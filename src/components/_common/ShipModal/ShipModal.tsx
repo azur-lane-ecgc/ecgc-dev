@@ -5,7 +5,6 @@ import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 
 import { formatDate } from "@utils/formatDate"
-import { parseLocation } from "@utils/parseLocation"
 
 import type { ShipData } from "@data/types/ships"
 
@@ -37,6 +36,7 @@ import {
   modalStyle,
   shipLinkStyle,
 } from "./styles"
+import { shipSamvaluationParse } from "./utils/shipSamvaluationParse/shipSamvaluationParse"
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -123,32 +123,13 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 
     return normalAugments
   }, [hull])
+  const shipImg = useMemo(() => shipImageParse(ship, isKai), [])
 
   // me
-  const shipImg = useMemo(() => shipImageParse(ship, isKai), [])
-  const location = parseLocation("")
-  const samvaluationText = useMemo(
-    () => (
-      <>
-        Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing
-        skills. She gains a preload, which helps a lot with mobbing. In
-        addition, she also gains Main Fleet healing capabilities, although it's
-        only on her first airstrike. Her healing amount is very high and
-        consistent compared to other ships. Overall, she is the best healer in
-        the game, surpassing{" "}
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://azurlane.koumakan.jp/wiki/Perseus"
-          title="Perseus"
-        >
-          Perseus
-        </a>
-        .
-      </>
-    ),
-    [],
-  )
+  const samvaluationData = useMemo(() => shipSamvaluationParse(ship), [ship])
+  const location = samvaluationData.event
+  const samvaluationText = samvaluationData.evaluation
+
   const roles = useMemo(() => ["Healer"].slice(0, 5), [])
   const fastLoad = "1 Preloaded Airstrike"
 
@@ -252,21 +233,13 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               </h1>
 
               {/* Event / Location */}
-              {!!location ? (
+              {!!location && (
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href={`https://azurlane.koumakan.jp/wiki/${location}`}
+                  href={location.href}
                 >
-                  {location}
-                </a>
-              ) : (
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://azurlane.koumakan.jp/wiki/Category:Ships"
-                >
-                  Base Game
+                  {location.name}
                 </a>
               )}
               <HR />
