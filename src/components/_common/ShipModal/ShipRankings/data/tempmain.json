@@ -89,7 +89,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Bismarck Zwei": {
         "Notes": "Groups up and \"freezes\" bosses. Not tiered here, but can bring Certificate in mob for third star.",
@@ -331,7 +332,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Enterprise": {
         "Notes": "",
@@ -636,7 +638,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "3"
     },
     "Flandre": {
         "Notes": "",
@@ -685,7 +688,8 @@
         "Self Survival": "",
         "AA": "-1",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "2"
     },
     "Gneisenau META": {
         "Notes": "Pick a KMS CL gun with 45 FP.",
@@ -963,7 +967,8 @@
         "Self Survival": "1",
         "AA": "",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Repulse META": {
         "Notes": "Requires an HMS gear, easy to do.",
@@ -1079,7 +1084,8 @@
         "Self Survival": "1",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Shinano (with Haku and/or AmagiCV)": {
         "Notes": "Requires 3 IJN ships.",
@@ -1104,7 +1110,8 @@
         "Self Survival": "1",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Souryuu META": {
         "Notes": "IJN plane is easy to include.",
@@ -1151,7 +1158,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Theseus": {
         "Notes": "",
@@ -1531,7 +1539,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Hood": {
         "Notes": "",
@@ -2223,7 +2232,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Vittorio Veneto": {
         "Notes": "Assumed to be with multiple RN 🍕 ships.",
@@ -2248,7 +2258,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Warspite": {
         "Notes": "The fake UR.",
@@ -2408,7 +2419,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Alabama": {
         "Notes": "Needs mob ramp up in a sortie.",
@@ -2457,7 +2469,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": "2"
+        "Other Main": "2",
+        "VG Survival": "1"
     },
     "Amagi-chan": {
         "Notes": "",
@@ -2573,7 +2586,8 @@
         "Self Survival": "",
         "AA": "1",
         "Rammers": "",
-        "Other Main": "3"
+        "Other Main": "3",
+        "VG Survival": "3"
     },
     "Argus": {
         "Notes": "Budget Independence.",
@@ -2623,7 +2637,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "2"
     },
     "Arizona META": {
         "Notes": "Has a large timeable one-time debuff for EX if you left her at level 1 for some reason.",
@@ -2999,7 +3014,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Chitose": {
         "Notes": "Requires an IJN CVL. Needs to launch airstrike before other main fleet ships.",
@@ -3137,7 +3153,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Eagle": {
         "Notes": "",
@@ -3293,7 +3310,8 @@
         "Self Survival": "-1",
         "AA": "",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Fusou": {
         "Notes": "",
@@ -3544,7 +3562,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Green Heart": {
         "Notes": "",
@@ -3612,7 +3631,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Hermes": {
         "Notes": "",
@@ -3881,7 +3901,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "3"
     },
     "Iori Minase": {
         "Notes": "",
@@ -4148,7 +4169,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "5"
     },
     "Kongou": {
         "Notes": "",
@@ -4722,7 +4744,8 @@
         "Self Survival": "",
         "AA": "1",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "3"
     },
     "Nyotengu": {
         "Notes": "",
@@ -4809,7 +4832,8 @@
         "Self Survival": "1",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "4"
     },
     "Pennsylvania": {
         "Notes": "",
@@ -4858,7 +4882,8 @@
         "Self Survival": "-1",
         "AA": "",
         "Rammers": "",
-        "Other Main": "2"
+        "Other Main": "2",
+        "VG Survival": "5"
     },
     "Poltava": {
         "Notes": "",
@@ -4951,7 +4976,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Ranger": {
         "Notes": "Good luck, SKK",
@@ -5119,7 +5145,8 @@
         "Self Survival": "-1",
         "AA": "",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "4"
     },
     "Ryuujou": {
         "Notes": "",
@@ -5252,7 +5279,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Shinano-chan": {
         "Notes": "",
@@ -5296,7 +5324,8 @@
         "Self Survival": "-2",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "4"
     },
     "Shoukaku (with Zuikaku)": {
         "Notes": "Requires Zuikaku. Needs to launch airstrike before other main fleet ships.",
@@ -5321,7 +5350,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Shoukaku (without Zuikaku)": {
         "Notes": "Misses out on 30% AVI. Needs to launch airstrike before other main fleet ships.",
@@ -5346,7 +5376,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Souryuu": {
         "Notes": "Requires a Hiryuu.",
@@ -5393,7 +5424,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "1",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Sovetskaya Rossiya": {
         "Notes": "Prefers multiple SN or ROC ships.",
@@ -5690,7 +5722,8 @@
         "Self Survival": "-1",
         "AA": "",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "5"
     },
     "Uruuru": {
         "Notes": "Requires Saraana.",
@@ -5804,7 +5837,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": "2"
+        "Other Main": "2",
+        "VG Survival": "3"
     },
     "Wasp": {
         "Notes": "Lowest power CV for filling requirements.",
@@ -5936,7 +5970,8 @@
         "Self Survival": "",
         "AA": "",
         "Rammers": "",
-        "Other Main": ""
+        "Other Main": "",
+        "VG Survival": "1"
     },
     "Zeppy": {
         "Notes": "Strongly prefers many KMS ships.",
@@ -5980,7 +6015,8 @@
         "Self Survival": "-2",
         "AA": "",
         "Rammers": "",
-        "Other Main": "2"
+        "Other Main": "2",
+        "VG Survival": "4"
     },
     "Akashi": {
         "Notes": "Minor heals both inside and outside battle, and +1 ammo is very nice for mob.",
@@ -6005,7 +6041,8 @@
         "Self Survival": "-2",
         "AA": "2",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Hwah Jah": {
         "Notes": "Yeah.",
@@ -6052,7 +6089,8 @@
         "Self Survival": "-2",
         "AA": "2",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     },
     "Vestal META": {
         "Notes": "Minor heals both inside and outside battle, and +1 ammo is very nice for mob.",
@@ -6077,6 +6115,7 @@
         "Self Survival": "-2",
         "AA": "2",
         "Rammers": "",
-        "Other Main": "1"
+        "Other Main": "1",
+        "VG Survival": "1"
     }
 }
