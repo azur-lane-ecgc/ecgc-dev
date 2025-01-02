@@ -25,7 +25,7 @@ def get_headers(sheet_name):
     result = (
         service.spreadsheets()
         .values()
-        .get(spreadsheetId=SPREADSHEET_ID, range=f"{sheet_name}!D2:Z2")
+        .get(spreadsheetId=SPREADSHEET_ID, range=f"{sheet_name}!D2:AA2")
         .execute()
     )
     # Trim whitespace from headers
