@@ -5,7 +5,7 @@ import { exec as execCallback } from "child_process"
 
 const exec = promisify(execCallback)
 const scriptsDirectory = "./dev_tools"
-const excludedFiles = ["_pageInfo.js", "runAllTools.js", "index.js", "imgur.py"]
+const excludedFiles = ["_pageInfo.js", "runAllTools.js", "index.js", "imgur.py", "samvaluationparser.js"]
 
 const runScript = async (fileName) => {
   try {
@@ -46,6 +46,7 @@ const runAllScripts = async () => {
     }
 
     console.log("All devtools completed.")
+    console.log(scriptFiles)
   } catch (error) {
     console.error("Error processing scripts:", error)
     process.exit(1)
