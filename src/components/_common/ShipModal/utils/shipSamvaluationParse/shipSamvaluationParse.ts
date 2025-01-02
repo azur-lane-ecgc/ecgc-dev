@@ -11,14 +11,17 @@ interface SamvaluationProps {
 const samvaluationData = data as Record<string, SamvaluationProps>
 
 export const shipSamvaluationParse = (ship: string): SamvaluationProps => {
-  return (
-    samvaluationData[ship] ?? {
-      event: {
-        name: "Base Game",
-        href: "https://azurlane.koumakan.jp/wiki/Category:Ships",
-      },
-      evaluation:
-        "N/A. Come back when this ship gets an augment or gets good :)",
-    }
-  )
+  const shipData = samvaluationData[ship] ?? {}
+
+  return {
+    event: {
+      name: shipData.event?.name ?? "Base Game",
+      href:
+        shipData.event?.href ??
+        "https://azurlane.koumakan.jp/wiki/Category:Ships",
+    },
+    evaluation:
+      shipData.evaluation?.trim() ??
+      "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+  }
 }
