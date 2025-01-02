@@ -9,9 +9,9 @@ SERVICE_ACCOUNT_FILE = "dev_tools/end_game_al_rankings/credentials.json"
 SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 SHEET_NAMES = ["VG (no img)", "MAIN (no img)", "subs (no img)"]
 OUTPUT_PATHS = [
-    "src/components/_common/ShipModal/ShipRankings/data/vg.json",
-    "src/components/_common/ShipModal/ShipRankings/data/main.json",
-    "src/components/_common/ShipModal/ShipRankings/data/ss.json",
+    "src/components/_common/ShipModal/ShipRankings/data/tempvg.json",
+    "src/components/_common/ShipModal/ShipRankings/data/tempmain.json",
+    "src/components/_common/ShipModal/ShipRankings/data/tempss.json",
 ]
 
 # Authenticate and initialize the Sheets API
