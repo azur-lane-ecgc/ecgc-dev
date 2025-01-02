@@ -1,3 +1,7 @@
+export interface ShipRankingTypes {
+  ship: string
+}
+
 export interface MainFleetRankingProps {
   notes?: string
 

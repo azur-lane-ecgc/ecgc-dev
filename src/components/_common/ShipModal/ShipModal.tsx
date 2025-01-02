@@ -12,7 +12,11 @@ import augments from "@data/data/augments.json"
 const augmentData = augments as Record<number, AugmentData>
 
 import { ShipTags } from "./ShipTags"
-import { ShipRankings } from "./ShipRankings"
+import {
+  MainFleetRanking,
+  VanguardFleetRanking,
+  SSFleetRanking,
+} from "./ShipRankings"
 import {
   parseEquipHref,
   shipHullTypeParse,
@@ -96,6 +100,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }
   const hull = mrLarData?.retro?.hull ?? mrLarData.hull
   const hullType = useMemo(() => shipHullTypeParse(hull), [hull])
+  const isMainFleet: boolean = [4, 5, 6, 7, 10, 12, 13, 24].includes(hull)
+  const isSSFleet: boolean = [8, 17, 22].includes(hull)
+  const isVanguardFleet: boolean = !isMainFleet && !isSSFleet
+
   const limitBreakBonus = useMemo(
     () => shipLimitBreakBonusParse(mrLarData?.specific_buff),
     [mrLarData],
@@ -377,7 +385,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <b>Last Updated</b>:{" "}
                 <span className="text-[#00ffff]">{lastUpdated}</span>
               </p>
-              <ShipRankings ship={ship} hull={hull} />
+
+              {isMainFleet && <MainFleetRanking ship={ship} />}
+              {isVanguardFleet && <VanguardFleetRanking ship={ship} />}
+              {isSSFleet && <SSFleetRanking ship={ship} />}
 
               {/* EHP */}
               <span className="text-lg leading-normal text-[hsla(0,0%,100%,0.75)]">
