@@ -213,6 +213,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <i className="fa-solid fa-xmark" />
             </button>
 
+            {/* Role Tags */}
             <ShipTags hullType={hullType} faction={faction} roles={roles} />
 
             {/* Internal Content */}
