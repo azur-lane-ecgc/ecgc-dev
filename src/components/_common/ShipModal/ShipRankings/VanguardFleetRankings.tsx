@@ -11,14 +11,14 @@ import type { ShipRankingTypes, VanguardFleetRankingProps } from "./types"
 
 import { convertToVanguardFleetRanking } from "./data"
 
-const VGFleetData: Record<string, VanguardFleetRankingProps> =
+const VGFleetData: Record<string, VanguardFleetRankingProps[]> =
   convertToVanguardFleetRanking()
 
 export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
-  const [index, setIndex] = useState<number>(0)
+  const [rankingIndex, setRankingIndex] = useState<number>(0)
 
   // obtain rankings from data
-  const ranking: VanguardFleetRankingProps = VGFleetData[ship]
+  const ranking: VanguardFleetRankingProps = VGFleetData[ship][0]
 
   return (
     <>

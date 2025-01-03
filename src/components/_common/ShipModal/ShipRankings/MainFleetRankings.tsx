@@ -10,14 +10,14 @@ import {
 import type { ShipRankingTypes, MainFleetRankingProps } from "./types"
 import { convertToMainFleetRanking } from "./data"
 
-const MainFleetData: Record<string, MainFleetRankingProps> =
+const MainFleetData: Record<string, MainFleetRankingProps[]> =
   convertToMainFleetRanking()
 
 export const MainFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
-  const [index, setIndex] = useState<number>(0)
+  const [rankingIndex, setRankingIndex] = useState<number>(0)
 
   // obtain rankings from data
-  const ranking: MainFleetRankingProps = MainFleetData[ship]
+  const ranking: MainFleetRankingProps = MainFleetData[ship][0]
 
   return (
     <>

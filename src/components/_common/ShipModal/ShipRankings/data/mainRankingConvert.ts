@@ -32,16 +32,21 @@ interface SheetMainFleetData {
 
 export const convertToMainFleetRanking = (): Record<
   string,
-  MainFleetRankingProps
+  MainFleetRankingProps[]
 > => {
   const MainFleetData: SheetMainFleetData = tempMainData
 
-  const convertedData: Record<string, MainFleetRankingProps> = {}
+  const convertedData: Record<string, MainFleetRankingProps[]> = {}
 
-  for (const fleetName in MainFleetData) {
-    const fleet = MainFleetData[fleetName]
+  for (const fleetKey in MainFleetData) {
+    const fleet = MainFleetData[fleetKey]
 
-    convertedData[fleetName.replaceAll(/\u00B5/g, "\u03BC")] = {
+    const match = fleetKey.match(/^(.*?)\s*(?:\((.*?)\))?$/)
+    const shipName = match?.[1]?.trim() || fleetKey
+    const nameNote = match?.[2]?.trim() || ""
+
+    const ranking: MainFleetRankingProps = {
+      nameNote,
       notes: fleet.Notes,
 
       hardarbiter: fleet["Hard Arbiter"],
@@ -86,6 +91,16 @@ export const convertToMainFleetRanking = (): Record<
       vgsurvival: fleet["VG Survival"]
         ? parseInt(fleet["VG Survival"])
         : undefined,
+    }
+
+    if (!convertedData[shipName]) {
+      convertedData[shipName] = []
+    }
+
+    if (nameNote === "") {
+      convertedData[shipName].unshift(ranking)
+    } else {
+      convertedData[shipName].push(ranking)
     }
   }
 

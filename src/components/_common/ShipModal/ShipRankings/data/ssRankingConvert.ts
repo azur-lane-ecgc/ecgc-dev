@@ -19,16 +19,21 @@ interface SheetSSFleetData {
 
 export const convertToSSFleetRanking = (): Record<
   string,
-  SSFleetRankingProps
+  SSFleetRankingProps[]
 > => {
   const SSFleetData: SheetSSFleetData = tempSSdata
 
-  const convertedData: Record<string, SSFleetRankingProps> = {}
+  const convertedData: Record<string, SSFleetRankingProps[]> = {}
 
-  for (const fleetName in SSFleetData) {
-    const fleet = SSFleetData[fleetName]
+  for (const fleetKey in SSFleetData) {
+    const fleet = SSFleetData[fleetKey]
 
-    convertedData[fleetName.replaceAll(/\u00B5/g, "\u03BC")] = {
+    const match = fleetKey.match(/^(.*?)\s*(?:\((.*?)\))?$/)
+    const shipName = match?.[1]?.trim() || fleetKey
+    const nameNote = match?.[2]?.trim() || ""
+
+    const ranking: SSFleetRankingProps = {
+      nameNote,
       notes: fleet.Notes,
       hardarbiter: fleet["Hard Arbiter"],
       cm: fleet.CM,
@@ -46,6 +51,16 @@ export const convertToSSFleetRanking = (): Record<
       offensivebuff: fleet["Offense Buff"]
         ? parseInt(fleet["Offense Buff"])
         : undefined,
+    }
+
+    if (!convertedData[shipName]) {
+      convertedData[shipName] = []
+    }
+
+    if (nameNote === "") {
+      convertedData[shipName].unshift(ranking)
+    } else {
+      convertedData[shipName].push(ranking)
     }
   }
 

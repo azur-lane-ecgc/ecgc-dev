@@ -10,14 +10,14 @@ import {
 import type { ShipRankingTypes, SSFleetRankingProps } from "./types"
 import { convertToSSFleetRanking } from "./data"
 
-const SSFleetData: Record<string, SSFleetRankingProps> =
+const SSFleetData: Record<string, SSFleetRankingProps[]> =
   convertToSSFleetRanking()
 
 export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
-  const [index, setIndex] = useState<number>(0)
+  const [rankingIndex, setRankingIndex] = useState<number>(0)
 
   // obtain rankings from data
-  const ranking: SSFleetRankingProps = SSFleetData[ship]
+  const ranking: SSFleetRankingProps = SSFleetData[ship][0]
 
   return (
     <>
