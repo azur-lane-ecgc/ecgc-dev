@@ -142,9 +142,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const roles = useMemo(() => ["Healer"].slice(0, 5), [])
   const fastLoad = samvaluationData?.preload ?? ""
 
-  //mebot
-  const eHP = 1234
-
   return (
     <>
       {/* Trigger "button" */}
