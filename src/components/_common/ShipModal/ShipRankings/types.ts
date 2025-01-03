@@ -4,6 +4,7 @@ export interface ShipRankingTypes {
 
 export interface MainFleetRankingProps {
   notes?: string
+  nameNote?: string
 
   // Rank
   hardarbiter: string
@@ -39,6 +40,7 @@ export interface MainFleetRankingProps {
 
 export interface VanguardFleetRankingProps {
   notes?: string
+  nameNote?: string
 
   // Rank
   hardarbiter: string
@@ -71,6 +73,7 @@ export interface VanguardFleetRankingProps {
 
 export interface SSFleetRankingProps {
   notes?: string
+  nameNote?: string
 
   // Rank
   hardarbiter: string
