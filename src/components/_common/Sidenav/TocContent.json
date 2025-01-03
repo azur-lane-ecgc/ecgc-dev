@@ -731,12 +731,26 @@
     "fileName": "Samvaluations",
     "toc": [
       {
-        "id": "Notes",
+        "id": "third_party",
+        "content": "Third-Party Tools",
+        "subheadings": [
+          {
+            "id": "suchiguma",
+            "content": "Rankings for End Game Azur Lane"
+          },
+          {
+            "id": "mebot",
+            "content": "EHP V3"
+          }
+        ]
+      },
+      {
+        "id": "notes",
         "content": "Notes",
         "subheadings": []
       },
       {
-        "id": "Evaluations",
+        "id": "evaluations",
         "content": "Evaluations",
         "subheadings": []
       }
