@@ -135,7 +135,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const samvaluationText = samvaluationData.evaluation
 
   const roles = useMemo(() => ["Healer"].slice(0, 5), [])
-  const fastLoad = "1 Preloaded Airstrike"
+  const fastLoad = samvaluationData?.preload ?? ""
 
   //mebot
   const eHP = 1234
@@ -269,7 +269,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <div className="text-sm w-full">
                   <span
                     className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]"
-                    dangerouslySetInnerHTML={{ __html: samvaluationText }}
+                    dangerouslySetInnerHTML={{ __html: samvaluationText! }}
                   />
                 </div>
               </div>
