@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import { ItemTable } from "@components/_common/ItemTable"
 import { HR } from "@components/_common/HR"
 import {
@@ -12,25 +14,10 @@ const SSFleetData: Record<string, SSFleetRankingProps> =
   convertToSSFleetRanking()
 
 export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
-  ship + " "
+  const [index, setIndex] = useState<number>(0)
 
-  // Flasher
-  const ranking: SSFleetRankingProps = {
-    notes: "Absolutely requires flag if not with Gato-class (Albacore).",
-
-    hardarbiter: "S",
-    cm: "S",
-    campaign: "S",
-
-    consistency: -2,
-    fleetreq: -1,
-    flagreq: -3,
-
-    lightdmg: 2,
-    mediumdmg: 4,
-    heavydmg: 5,
-    offensivebuff: 2,
-  }
+  // obtain rankings from data
+  const ranking: SSFleetRankingProps = SSFleetData[ship]
 
   return (
     <>

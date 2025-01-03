@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import { ItemTable } from "@components/_common/ItemTable"
 import { HR } from "@components/_common/HR"
 import {
@@ -13,31 +15,10 @@ const VGFleetData: Record<string, VanguardFleetRankingProps> =
   convertToVanguardFleetRanking()
 
 export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
-  ship + " "
+  const [index, setIndex] = useState<number>(0)
 
-  // Agir
-  const ranking: VanguardFleetRankingProps = {
-    notes: "Tank with armor break for any boss and inconsistent slow.",
-
-    hardarbiter: "S",
-    meta: "S",
-    cm: "S",
-    w14mob: "A",
-    w14boss: "SS",
-    w15mob: "B",
-    w15boss: "B",
-    ex: "D",
-
-    gearreq: -1,
-
-    lightdmg: 1,
-    mediumdmg: 3,
-    heavydmg: 2,
-    aoedmg: 2,
-    offensivebuff: 2,
-
-    selfsurvival: 5,
-  }
+  // obtain rankings from data
+  const ranking: VanguardFleetRankingProps = VGFleetData[ship]
 
   return (
     <>
