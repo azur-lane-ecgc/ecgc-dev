@@ -67,6 +67,20 @@ def process_sheet(sheet_name):
     return data_dict
 
 
+# Priority levels for sorting
+priority_order = {"SS": 0, "S": 1, "A": 2, "B": 3, "C": 4, "D": 5}
+
+
+# Function to extract the priority value from "W14 Boss" or fallback to "Campaign"
+def get_priority_with_fallback(entry):
+    w14_boss = entry.get("W14 Boss", "").strip("*")  # Check "W14 Boss" property
+    campaign = entry.get("Campaign", "").strip("*")  # Fallback to "Campaign" property
+    value = (
+        w14_boss if w14_boss else campaign
+    )  # Use "W14 Boss" if it exists; otherwise, "Campaign"
+    return priority_order.get(value, float("inf"))  # Default to infinity if not found
+
+
 # Main logic to process sheets and save as separate JSON files
 if __name__ == "__main__":
     # Ensure we have matching output paths for each sheet
@@ -79,8 +93,13 @@ if __name__ == "__main__":
 
         sheet_data = process_sheet(sheet_name)
 
+        # Sorting the dictionary based on the "W14 Boss" or "Campaign" property
+        sorted_sheet_data = dict(
+            sorted(sheet_data.items(), key=lambda x: get_priority_with_fallback(x[1]))
+        )
+
         # Write the data to a JSON file
         with open(output_path, "w", encoding="utf-8") as json_file:
-            json.dump(sheet_data, json_file, indent=4, ensure_ascii=False)
+            json.dump(sorted_sheet_data, json_file, indent=4, ensure_ascii=False)
 
         print(f"Data from sheet '{sheet_name}' has been written to {output_path}")
