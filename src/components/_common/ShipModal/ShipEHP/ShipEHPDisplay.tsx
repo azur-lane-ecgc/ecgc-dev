@@ -17,6 +17,48 @@ interface ShipEHPDisplayProps {
   ship: string
 }
 
+const getEHPColor = (totalEHP: number): string => {
+  let totalEHPColor = "#FFFFFF"
+  if (totalEHP !== 100) {
+    if (totalEHP > 100) {
+      const ratio = Math.min((totalEHP - 100) / 30, 1)
+      totalEHPColor = `rgb(
+                  ${Math.round(255 - 151 * ratio)},
+                  ${Math.round(255 - 114 * ratio)},
+                  ${Math.round(255 - 55 * ratio)})`
+    } else {
+      const ratio = Math.min(Math.max((totalEHP - 70) / 30, 0), 1)
+      totalEHPColor = `rgb(
+                  ${Math.round(230 + (255 - 230) * ratio)},
+                  ${Math.round(124 + (255 - 124) * ratio)},
+                  ${Math.round(115 + (255 - 115) * ratio)})`
+    }
+  }
+
+  return totalEHPColor
+}
+
+const getSTDColor = (std: number): string => {
+  let stdColor = "#FFFFFF"
+  if (std !== 30) {
+    if (std < 30) {
+      const ratio = Math.min(Math.max((std - 20) / 10, 0), 1)
+      stdColor = `rgb(
+        ${Math.round(94 + (255 - 94) * ratio)},
+        ${Math.round(141 + (255 - 141) * ratio)},
+        ${Math.round(200 + (255 - 200) * ratio)})`
+    } else {
+      const ratio = Math.min(Math.max((std - 30) / 10, 0), 1)
+      stdColor = `rgb(
+        ${Math.round(255 - (255 - 230) * ratio)},
+        ${Math.round(255 - (255 - 124) * ratio)},
+        ${Math.round(255 - (255 - 115) * ratio)})`
+    }
+  }
+
+  return stdColor
+}
+
 export const ShipEHPDisplay: React.FC<ShipEHPDisplayProps> = ({ ship }) => {
   const shipEHP = shipEHPData[ship]
 
@@ -38,28 +80,40 @@ export const ShipEHPDisplay: React.FC<ShipEHPDisplayProps> = ({ ship }) => {
           <b>Last Updated</b>:{" "}
           <span className="text-[#00ffff]">{formatDate(ehpUpdateDate)}</span>
         </p>
+
         <ItemTable
           tableInfo={[
-            { colName: "Ship", colWidth: "60%", active: true, limiter: true },
+            { colName: "Ship", colWidth: "60%", active: true },
             { colName: "Total EHP", colWidth: "20%", limiter: true },
             { colName: "3 STD (ABS)", colWidth: "20%", limiter: true },
           ]}
         >
-          {shipEHP.map((ehpItem) => (
-            <tr>
-              <td>
-                <span className="text-base text-cyan-300 font-bold">
-                  {ehpItem.name}
-                </span>
-              </td>
-              <td>
-                <span>{ehpItem.totalEHP}</span>
-              </td>
-              <td>
-                <span>{ehpItem.std}</span>
-              </td>
-            </tr>
-          ))}
+          {shipEHP.map((ehpItem) => {
+            const totalEHP = Number(ehpItem.totalEHP.replace("%", "").trim())
+            const std = Number(ehpItem.std.replace("%", "").trim())
+
+            return (
+              <tr key={ehpItem.name}>
+                <td className="hover:!bg-gray-800">
+                  <span className="text-base text-lime-400/90 font-bold">
+                    {ehpItem.name}
+                  </span>
+                </td>
+                <td
+                  style={{ backgroundColor: getEHPColor(totalEHP) }}
+                  className="!text-black !font-bold"
+                >
+                  <span>{totalEHP}%</span>
+                </td>
+                <td
+                  style={{ backgroundColor: getSTDColor(std) }}
+                  className="!text-black !font-bold"
+                >
+                  <span>{std}%</span>
+                </td>
+              </tr>
+            )
+          })}
         </ItemTable>
         <HR />
       </>
