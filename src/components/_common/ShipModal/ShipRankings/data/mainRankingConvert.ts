@@ -41,7 +41,7 @@ export const convertToMainFleetRanking = (): Record<
   for (const fleetName in MainFleetData) {
     const fleet = MainFleetData[fleetName]
 
-    convertedData[fleetName] = {
+    convertedData[fleetName.replaceAll(/\u00B5/g, "\u03BC")] = {
       notes: fleet.Notes,
 
       hardarbiter: fleet["Hard Arbiter"],
@@ -74,7 +74,7 @@ export const convertToMainFleetRanking = (): Record<
       offensivebuff: fleet["Offense Buff"]
         ? parseInt(fleet["Offense Buff"])
         : undefined,
-        
+
       selfsurvival: fleet["Self Survival"]
         ? parseInt(fleet["Self Survival"])
         : undefined,

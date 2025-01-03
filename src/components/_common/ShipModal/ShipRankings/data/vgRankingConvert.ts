@@ -39,9 +39,9 @@ export const convertToVanguardFleetRanking = (): Record<
   for (const fleetName in VanguardFleetData) {
     const fleet = VanguardFleetData[fleetName]
 
-    convertedData[fleetName] = {
+    convertedData[fleetName.replaceAll(/\u00B5/g, "\u03BC")] = {
       notes: fleet.Notes,
-      
+
       hardarbiter: fleet["Hard Arbiter"],
       meta: fleet.META,
       cm: fleet.CM,

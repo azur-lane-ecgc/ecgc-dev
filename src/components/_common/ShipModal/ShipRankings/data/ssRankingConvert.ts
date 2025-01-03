@@ -28,7 +28,7 @@ export const convertToSSFleetRanking = (): Record<
   for (const fleetName in SSFleetData) {
     const fleet = SSFleetData[fleetName]
 
-    convertedData[fleetName] = {
+    convertedData[fleetName.replaceAll(/\u00B5/g, "\u03BC")] = {
       notes: fleet.Notes,
       hardarbiter: fleet["Hard Arbiter"],
       cm: fleet.CM,
