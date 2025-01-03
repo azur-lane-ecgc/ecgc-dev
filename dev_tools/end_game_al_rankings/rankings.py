@@ -5,7 +5,7 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 # Constants
-SERVICE_ACCOUNT_FILE = "dev_tools/end_game_al_rankings/credentials.json"
+SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
 SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 SHEET_NAMES = ["VG (no img)", "MAIN (no img)", "subs (no img)"]
 OUTPUT_PATHS = [
