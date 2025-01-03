@@ -75,7 +75,7 @@ const ships = shipData as Record<number, ShipData>
       return (
         <ShipModal
           client:visible
-          mrLarData={ship}
+          id={ship.id}
           trigger={{
             iconNote: null,
             descriptionNote: null,

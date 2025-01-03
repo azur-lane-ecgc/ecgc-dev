@@ -7,6 +7,9 @@ import { ItemTable } from "@components/_common/ItemTable"
 import { formatDate } from "@utils/formatDate"
 
 import type { ShipData } from "@data/types/ships"
+import shipData from "@data/data/ships.json"
+const ships = shipData as Record<number, ShipData>
+
 import type { AugmentData } from "@data/types/augments"
 import augments from "@data/data/augments.json"
 const augmentData = augments as Record<number, AugmentData>
@@ -48,7 +51,7 @@ export interface TriggerProps {
 }
 
 interface ShipModalProps {
-  mrLarData: ShipData
+  id: number
   trigger?: TriggerProps
 }
 
@@ -60,13 +63,13 @@ const lastUpdated = formatDate("12/12/2024")
  * @component
  *
  * @param {ShipModalProps} props - The props for configuring the ship modal.
- * @param {ShipData} props.mrLarData - ShipData from MrLar's Azur Lane Data
+ * @param {number} props.id - Azur Lane ID of the ship
  * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)
  *
  * @returns {React.JSX.Element} The Ship Modal itself.
  */
 export const ShipModal: React.FC<ShipModalProps> = ({
-  mrLarData,
+  id,
   trigger,
 }: ShipModalProps): React.JSX.Element => {
   const [open, setOpen] = useState(false)
@@ -86,6 +89,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }
 
   // mrlar
+  const mrLarData = ships[id]
   const ship = shipNameParse(mrLarData.id, mrLarData.name)
   const faction = useMemo(
     () => shipFactionParse(mrLarData.nation),
