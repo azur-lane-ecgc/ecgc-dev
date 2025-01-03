@@ -371,16 +371,16 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               </ItemTable>
               <HR />
 
-              {/* End Game Rankings */}
+              {/* Rankings for End Game Azur Lane */}
               <h3 className="text-xl">
                 <a
                   href="https://docs.google.com/spreadsheets/d/13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0/edit?gid=0#gid=0"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="by Suchiguma and his team"
-                  aria-label="End Game Azur Lane Rankings (by Suchiguma)"
+                  aria-label="Rankings for End Game Azur Lane (by Suchiguma)"
                 >
-                  End Game Azur Lane Rankings
+                  Rankings for End Game Azur Lane
                 </a>
               </h3>
               <p className="text-sm">
