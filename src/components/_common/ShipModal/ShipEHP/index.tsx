@@ -1,1 +1,1 @@
-export * from "./ShipEHP"
+export * from "./ShipEHPDisplay"

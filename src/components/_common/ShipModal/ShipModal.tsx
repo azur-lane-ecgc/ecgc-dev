@@ -3,6 +3,7 @@ import { useMemo, useState } from "react"
 import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
+import { endGameRankingsUpdateDate } from "@components/_common/Constants"
 
 import { formatDate } from "@utils/formatDate"
 
@@ -42,7 +43,7 @@ import {
   modalStyle,
   shipLinkStyle,
 } from "./styles"
-import { ShipEHP } from "./ShipEHP"
+import { ShipEHPDisplay } from "./ShipEHP"
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -55,8 +56,6 @@ interface ShipModalProps {
   id: number
   trigger?: TriggerProps
 }
-
-const lastUpdated = formatDate("12/12/2024")
 
 /**
  * ShipModal component that displays a modal with information about a ship.
@@ -278,20 +277,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <HR />
 
               {/* EHP */}
-              <h3 className="text-xl">
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="by Mebot"
-                  aria-label="EHP V3 by Mebot"
-                >
-                  EHP V3
-                </a>
-              </h3>
-
-              <ShipEHP ship={ship} />
-              <HR />
+              <ShipEHPDisplay ship={ship} />
 
               {/* Equip Table */}
               <ItemTable
@@ -399,7 +385,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               </h3>
               <p className="text-sm">
                 <b>Last Updated</b>:{" "}
-                <span className="text-[#00ffff]">{lastUpdated}</span>
+                <span className="text-[#00ffff]">
+                  {formatDate(endGameRankingsUpdateDate)}
+                </span>
               </p>
 
               {isMainFleet && <MainFleetRanking ship={ship} />}
