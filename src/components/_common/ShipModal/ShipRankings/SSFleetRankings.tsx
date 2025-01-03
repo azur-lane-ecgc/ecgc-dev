@@ -111,9 +111,9 @@ export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
           </tr>
         </ItemTable>
       </div>
+      <HR />
       {ranking.notes && (
         <>
-          <HR />
           <h3 className="text-xl underline">Notes</h3>
           <p className="text-[14.5px] leading-normal">{ranking.notes}</p>
         </>
