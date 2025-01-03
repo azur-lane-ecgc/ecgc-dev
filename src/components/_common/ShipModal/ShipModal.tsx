@@ -42,6 +42,7 @@ import {
   modalStyle,
   shipLinkStyle,
 } from "./styles"
+import { ShipEHP } from "./ShipEHP"
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -279,6 +280,22 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               </div>
               <HR />
 
+              {/* EHP */}
+              <h3 className="text-xl">
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="by Mebot"
+                  aria-label="EHP V3 by Mebot"
+                >
+                  EHP V3
+                </a>
+              </h3>
+
+              <ShipEHP ship={ship} />
+              <HR />
+
               {/* Equip Table */}
               <ItemTable
                 tableInfo={[
@@ -378,7 +395,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   target="_blank"
                   rel="noopener noreferrer"
                   title="by Suchiguma and his team"
-                  aria-label="End Game Azur Lane Rankings"
+                  aria-label="End Game Azur Lane Rankings (by Suchiguma)"
                 >
                   End Game Azur Lane Rankings
                 </a>
@@ -391,19 +408,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               {isMainFleet && <MainFleetRanking ship={ship} />}
               {isVanguardFleet && <VanguardFleetRanking ship={ship} />}
               {isSSFleet && <SSFleetRanking ship={ship} />}
-
-              {/* EHP */}
-              <span className="text-lg leading-normal text-[hsla(0,0%,100%,0.75)]">
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://docs.google.com/spreadsheets/d/1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
-                  title="eHP Chart"
-                >
-                  eHP
-                </a>
-                : <b className="text-cyan-400">{eHP}</b>
-              </span>
             </div>
           </div>
         </div>
