@@ -39,7 +39,8 @@
       "name": "Base Game",
       "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
     },
-    "evaluation": "Jean Bart is an off-flag damage-oriented BB with great stats and meh skills. Her Skill 2 self-buff is reliant on using a bad BB gun, and the Augment module doesn't fix it. She also has a preload, but only MGM+1 to compensate for it. Her Augment module barrage is also mediocre at best, but it is free damage. Overall, she is a good ship."
+    "evaluation": "Jean Bart is an off-flag damage-oriented BB with great stats and meh skills. Her Skill 2 self-buff is reliant on using a bad BB gun, and the Augment module doesn't fix it. She also has a preload, but only MGM+1 to compensate for it. Her Augment module barrage is also mediocre at best, but it is free damage. Overall, she is a good ship.",
+    "preload": "1 Preloaded Salvo."
   },
   "Glorious": {
     "event": {
@@ -256,7 +257,8 @@
       "name": "Base Game",
       "href": "https://azurlane.koumakan.jp/wiki/Category:Ships"
     },
-    "evaluation": "Prince of Wales is a off-flag support-oriented BB with good stats and great skills. Her skills buff both USS and HMS ships, as well as giving her great self-buffs when sortied with USS or HMS ships. Overall, she is a great ship."
+    "evaluation": "Prince of Wales is a off-flag support-oriented BB with good stats and great skills. Her skills buff both USS and HMS ships, as well as giving her great self-buffs when sortied with USS or HMS ships. Overall, she is a great ship.",
+    "preload": "85% 1st Salvo Cooldown Reduction (3 HMS / USS ships)."
   },
   "Houston": {
     "event": {
@@ -655,14 +657,16 @@
       "name": "Passionate Polaris",
       "href": "https://azurlane.koumakan.jp/wiki/Passionate_Polaris"
     },
-    "evaluation": "Akagi µ is a damage-oriented CV with great stats and skills. Her first-strike cooldown reduction allows her to be offset from traditional BBs and CVs. She is ideally sortied with other µ ships for her self-buffs. Overall, she is a great ship."
+    "evaluation": "Akagi µ is a damage-oriented CV with great stats and skills. Her first-strike cooldown reduction allows her to be offset from traditional BBs and CVs. She is ideally sortied with other µ ships for her self-buffs. Overall, she is a great ship.",
+    "preload": "40% 1st Airstrike Cooldown Reduction."
   },
   "Gascogne µ": {
     "event": {
       "name": "Passionate Polaris",
       "href": "https://azurlane.koumakan.jp/wiki/Passionate_Polaris"
     },
-    "evaluation": "Gascogne µ is an off-flag damage-oriented BB with great stats and meh skills. Due to her ammo changing abilities, you want to equip a BB gun with high raw damage. Her barrages are meh, and her ammo change doesn't allow her to specialize for bosses. Only MGM+1 hurts her damage output compared to other BBs. Her first shot cooldown reduction is nice for desyncing, but not relevant for bosses. Overall she is a good ship."
+    "evaluation": "Gascogne µ is an off-flag damage-oriented BB with great stats and meh skills. Due to her ammo changing abilities, you want to equip a BB gun with high raw damage. Her barrages are meh, and her ammo change doesn't allow her to specialize for bosses. Only MGM+1 hurts her damage output compared to other BBs. Her first shot cooldown reduction is nice for desyncing, but not relevant for bosses. Overall she is a good ship.",
+    "preload": "25% 1st Salvo Cooldown Reduction."
   },
   "Admiral Hipper µ": {
     "event": {
@@ -844,7 +848,8 @@
       "name": "Microlayer Medley",
       "href": "https://azurlane.koumakan.jp/wiki/Microlayer_Medley"
     },
-    "evaluation": "Casablanca is a support-oriented CVL with meh stats and great skills. Her personal damage is really bad; however she does have fast airstrikes to help mitigate it. Her fleet support for other CV / CVLs is really good, however. Overall, she is a good ship; outclassed by <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Independence\" title=\"Independence\" >Independence (Retrofit)</a >."
+    "evaluation": "Casablanca is a support-oriented CVL with meh stats and great skills. Her personal damage is really bad; however she does have fast airstrikes to help mitigate it. Her fleet support for other CV / CVLs is really good, however. Overall, she is a good ship; outclassed by <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Independence\" title=\"Independence\" >Independence (Retrofit)</a >.",
+    "preload": "25% 1st Airstrike Cooldown Reduction."
   },
   "Marblehead": {
     "event": {
@@ -872,7 +877,8 @@
       "name": "Skybound Oratorio",
       "href": "https://azurlane.koumakan.jp/wiki/Skybound_Oratorio"
     },
-    "evaluation": "Richelieu is a flagship-oriented BB with great stats and skills. She buffs all French ships in your fleet, however she is fine without buffing anyone but herself. Her barrage is alright, and her preload helps frontload her damage output. Only MGM+1 hurts her in longer fights. Overall, she is a great ship."
+    "evaluation": "Richelieu is a flagship-oriented BB with great stats and skills. She buffs all French ships in your fleet, however she is fine without buffing anyone but herself. Her barrage is alright, and her preload helps frontload her damage output. Only MGM+1 hurts her in longer fights. Overall, she is a great ship.",
+    "preload": "1 Preloaded Salvo."
   },
   "Le Terrible": {
     "event": {
@@ -928,7 +934,8 @@
       "name": "Aurora Noctis",
       "href": "https://azurlane.koumakan.jp/wiki/Aurora_Noctis"
     },
-    "evaluation": "Perseus is a healer oriented CVL with meh stats and great skills. Her damage is heavily frontloaded due to 2 preloaded airstrikes at the start of the battle. Her personal damage is really bad due to low efficiencies, AVI stat, and 6 planes. In addition, she contributes nothing else to the battle outside of her frontloaded damage and healing due to her airstrikes taking almost twice as long as other CVLs. However, her healing is really good, and heals both the Vanguard and Main Fleets. Her Skill 2 barrage does not have enough damage to subvert her deficiencies. Overall, she is an amazing healer, but redundant due to the existance of Unicorn (Retrofit)."
+    "evaluation": "Perseus is a healer oriented CVL with meh stats and great skills. Her damage is heavily frontloaded due to 2 preloaded airstrikes at the start of the battle. Her personal damage is really bad due to low efficiencies, AVI stat, and 6 planes. In addition, she contributes nothing else to the battle outside of her frontloaded damage and healing due to her airstrikes taking almost twice as long as other CVLs. However, her healing is really good, and heals both the Vanguard and Main Fleets. Her Skill 2 barrage does not have enough damage to subvert her deficiencies. Overall, she is an amazing healer, but redundant due to the existance of Unicorn (Retrofit).",
+    "preload": "2 Preloaded Airstrikes."
   },
   "Hermione": {
     "event": {
@@ -1201,7 +1208,8 @@
       "name": "Daedalian Hymn",
       "href": "https://azurlane.koumakan.jp/wiki/Daedalian_Hymn"
     },
-    "evaluation": "Aquila is a damage / support oriented CV with great stats and skills. Her per-strike damage is good due to her 8 plane loadout and on-strike barrage. Depending on the equip in her 2nd slot, she can change modes between damage and support. In damage mode, she gains a preload and multiple offensive buffs. In support mode, she grants healing and shield support for the fleet. Overall, she is a great ship regardless of what mode she is in."
+    "evaluation": "Aquila is a damage / support oriented CV with great stats and skills. Her per-strike damage is good due to her 8 plane loadout and on-strike barrage. Depending on the equip in her 2nd slot, she can change modes between damage and support. In damage mode, she gains a preload and multiple offensive buffs. In support mode, she grants healing and shield support for the fleet. Overall, she is a great ship regardless of what mode she is in.",
+    "preload": "1 Preloaded Airstrike (Dive Bomber)."
   },
   "Duca degli Abruzzi": {
     "event": {
@@ -1215,7 +1223,8 @@
       "name": "Daedalian Hymn",
       "href": "https://azurlane.koumakan.jp/wiki/Daedalian_Hymn"
     },
-    "evaluation": "Vittorio Veneto is an off-flag damage-oriented BB with great stats and skills. Her personal damage is high due to multiple self-buffs, good efficiencies, and a great timed barrage. She can reduce her first Main Gun salvo based on the number of other RN ships in the fleet, but that is not necessary for her to be good. The buff from using AP Guns or having RN ships from her Skill 3 is nice, but not necessary for her to be good. Overall, she is a great ship."
+    "evaluation": "Vittorio Veneto is an off-flag damage-oriented BB with great stats and skills. Her personal damage is high due to multiple self-buffs, good efficiencies, and a great timed barrage. She can reduce her first Main Gun salvo based on the number of other RN ships in the fleet, but that is not necessary for her to be good. The buff from using AP Guns or having RN ships from her Skill 3 is nice, but not necessary for her to be good. Overall, she is a great ship.",
+    "preload": "80% 1st Salvo Cooldown Reduction (+40% per additional RN ship, max 80%)."
   },
   "Libeccio": {
     "event": {
@@ -1285,7 +1294,8 @@
       "name": "Mirror Involution",
       "href": "https://azurlane.koumakan.jp/wiki/Mirror_Involution"
     },
-    "evaluation": "Independence (Retrofit) is a support-oriented CV with great stats and skills. Her personal damage is really good due to an 8 plane loadaout and an on-strike barrage. She also buffs CVs both inside and outside of your fleet, and gets a self-cooldown reduction on her first airstrike. Overall, she is an amazing CV."
+    "evaluation": "Independence (Retrofit) is a support-oriented CV with great stats and skills. Her personal damage is really good due to an 8 plane loadaout and an on-strike barrage. She also buffs CVs both inside and outside of your fleet, and gets a self-cooldown reduction on her first airstrike. Overall, she is an amazing CV.",
+    "preload": "25% 1st Airstrike Cooldown Reduction."
   },
   "Shimakaze": {
     "event": {
@@ -1341,7 +1351,8 @@
       "name": "Tower of Transcendence",
       "href": "https://azurlane.koumakan.jp/wiki/Tower_of_Transcendence"
     },
-    "evaluation": "Ulrich von Hutten is an off-flag damage-oriented BB with amazing stats and skills. Her personal damage is very high due to great shelling damage along with her self-buffs. When she is placed off-flag, she fires twice as fast, but deals less damage per volley; overall, this is a slight increase from using her at Flagship, due to more overall damage percent and more barrage procs. Her barrage is nice, but it is not worth to sync the slow it provides with anything. Her buff when equipped with an HE Main Gun is nice, but AP is still preferred against Medium/Heavy armored enemies. Her crossfleet is very nice defense for your other fleets, but is not necessary for her to be good. Overall, she is an amazing BB."
+    "evaluation": "Ulrich von Hutten is an off-flag damage-oriented BB with amazing stats and skills. Her personal damage is very high due to great shelling damage along with her self-buffs. When she is placed off-flag, she fires twice as fast, but deals less damage per volley; overall, this is a slight increase from using her at Flagship, due to more overall damage percent and more barrage procs. Her barrage is nice, but it is not worth to sync the slow it provides with anything. Her buff when equipped with an HE Main Gun is nice, but AP is still preferred against Medium/Heavy armored enemies. Her crossfleet is very nice defense for your other fleets, but is not necessary for her to be good. Overall, she is an amazing BB.",
+    "preload": "50% All Salvo Cooldown Reduction (Off-Flag)."
   },
   "Magdeburg": {
     "event": {
@@ -1453,7 +1464,8 @@
       "name": "Virtual Tower",
       "href": "https://azurlane.koumakan.jp/wiki/Virtual_Tower"
     },
-    "evaluation": "Impero is a damage-oriented CV with great stats and skills. Her personal damage is good due to her 8 plane loadout, and a (unfortunately not 100%) timed barrage. Her first skill gives her a reduced reload for her first airstrike when equipping a fighter, allowing her to desync with the rest of your Main Fleet. However, due to her low reload stat relative to other Main Fleet ships, she will eventually catch up after a few airstrikes. Her Dive Bomber mode is not useful due to the damage bonus only applying to 1 airstrike overall, and making her slow reload even slower. Her Skill 2 is effectively useless, as the HP is just being transferred around instead of outright healing. Overall, she is a great ship."
+    "evaluation": "Impero is a damage-oriented CV with great stats and skills. Her personal damage is good due to her 8 plane loadout, and a (unfortunately not 100%) timed barrage. Her first skill gives her a reduced reload for her first airstrike when equipping a fighter, allowing her to desync with the rest of your Main Fleet. However, due to her low reload stat relative to other Main Fleet ships, she will eventually catch up after a few airstrikes. Her Dive Bomber mode is not useful due to the damage bonus only applying to 1 airstrike overall, and making her slow reload even slower. Her Skill 2 is effectively useless, as the HP is just being transferred around instead of outright healing. Overall, she is a great ship.",
+    "preload": "40% 1st Airstrike Cooldown Reduction. (Fighter in Slot 1)"
   },
   "Pompeo Magno": {
     "event": {
@@ -1488,7 +1500,8 @@
       "name": "Rondo at Rainbow's End",
       "href": "https://azurlane.koumakan.jp/wiki/Rondo_at_Rainbow's_End"
     },
-    "evaluation": "Seydlitz is an off-flag damage-oriented BC with great stats and skills. She can off-flag if needed. You want her to have a high % of health as possible, although the damage redistribution goes against that. Main gun salvo reduction is great in mobbing, and she can give other SMS BB/BC the same reduction. Damage output is also fairly solid, making her great in bosses. Overall seems great; nothing exceptional, but she has great damage and the first salvo cooldown reduction. Typical event SSR. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >."
+    "evaluation": "Seydlitz is an off-flag damage-oriented BC with great stats and skills. She can off-flag if needed. You want her to have a high % of health as possible, although the damage redistribution goes against that. Main gun salvo reduction is great in mobbing, and she can give other SMS BB/BC the same reduction. Damage output is also fairly solid, making her great in bosses. Overall seems great; nothing exceptional, but she has great damage and the first salvo cooldown reduction. Typical event SSR. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
+    "preload": "80% 1st Salvo Cooldown Reduction (HP% Based)."
   },
   "Elbing": {
     "event": {
@@ -1558,7 +1571,8 @@
       "name": "Pledge of the Radiant Court",
       "href": "https://azurlane.koumakan.jp/wiki/Pledge_of_the_Radiant_Court"
     },
-    "evaluation": "Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload which helps a lot with mobbing, and also gains backline healing capabilities as well. Her healing amount is also high as well. Overall, she is the best healer in the game, surpassing <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Perseus\" title=\"Perseus\" >Perseus</a >."
+    "evaluation": "Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload which helps a lot with mobbing, and also gains backline healing capabilities as well. Her healing amount is also high as well. Overall, she is the best healer in the game, surpassing <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Perseus\" title=\"Perseus\" >Perseus</a >.",
+    "preload": "1 Preloaded Airstrike."
   },
   "Little Cheshire": {
     "event": {
@@ -1593,7 +1607,8 @@
       "name": "Aquilifer's Ballade",
       "href": "https://azurlane.koumakan.jp/wiki/Aquilifer's_Ballade"
     },
-    "evaluation": "Roma is a great BB, with great stats and skills. Barrage is solid, and doesn't require flagship position; the failed proc benefits are decent as well. She is guarenteed max critical damage/rate stacks at 30s into the battle, which is early enough to be relevant especially versus a boss. The sonar part of her skill is useless. The fast load from sortieing with 3 Italians is nice if you can fulfil the requirements, but it is not mandatory for her to be great. Overall, she is a great off-flag BB; typical event SR."
+    "evaluation": "Roma is a great off-flag damage-oriented BB, with great stats and skills. Barrage is solid, and doesn't require flagship position; the failed proc benefits are decent as well. She is guarenteed max critical damage/rate stacks at 30s into the battle, which is early enough to be relevant especially versus a boss. The sonar part of her skill is useless. The fast load from sortieing with 3 Italians is nice if you can fulfil the requirements, but it is not mandatory for her to be great. Overall, she is a great off-flag BB; typical event SR.",
+    "preload": "30% 1st Salvo Cooldown Reduction (2 additional RN ships)."
   },
   "Giuseppe Garibaldi": {
     "event": {
@@ -1831,7 +1846,8 @@
       "name": "Revelations of Dust",
       "href": "https://azurlane.koumakan.jp/wiki/Revelations_of_Dust"
     },
-    "evaluation": "Argus is a support-oriented CVL with average stats but amazing skills. She buffs carriers inside and outside of the fleet, and has a self airstrike cooldown reduction for damage desyncing. Her personal damage is very mediocre however, especially if the barrage does not proc. Solid ship all around."
+    "evaluation": "Argus is a support-oriented CVL with average stats but amazing skills. She buffs carriers inside and outside of the fleet, and has a self airstrike cooldown reduction for damage desyncing. Her personal damage is very mediocre however, especially if the barrage does not proc. Solid ship all around.",
+    "preload": "25% 1st Airstrike Cooldown Reduction."
   },
   "Hero": {
     "event": {
@@ -1943,7 +1959,8 @@
       "name": "Anthem of Remembrance",
       "href": "https://azurlane.koumakan.jp/wiki/Anthem_of_Remembrance"
     },
-    "evaluation": "Clemenceau is an off-flag damage-oriented BB with great stats and skills. She trades 1 Main Gun Mount for a preloaded shot, which is nice for short fights, but hinders her damage output in longer fights. She is ideally sortied with French equipment in order to increase her barrage proc rate. Her self-buffs from having French ships in the fleet are not worth building around. Overall, she is a good BB."
+    "evaluation": "Clemenceau is an off-flag damage-oriented BB with great stats and skills. She trades 1 Main Gun Mount for a preloaded shot, which is nice for short fights, but hinders her damage output in longer fights. She is ideally sortied with French equipment in order to increase her barrage proc rate. Her self-buffs from having French ships in the fleet are not worth building around. Overall, she is a good BB.",
+    "preload": "1 Preloaded Salvo."
   },
   "Guichen": {
     "event": {
@@ -2034,7 +2051,8 @@
       "name": "Tempesta and the Fountain of Youth",
       "href": "https://azurlane.koumakan.jp/wiki/Tempesta_and_the_Fountain_of_Youth"
     },
-    "evaluation": "São Martinho is an off-flag oriented IXM with great stats and great skills. Her damage is heavily hindered by her equipment options, but is still good despite that, due to MGM+5 and good barrages and self-buffs. In addition, she even has a almost-Preloaded Main Gun, helping clear mob fights faster. Her Tempesta Faction buff is nice, but not necessary to take advantage of for her viability. Her bulk against AVI damage is very bad, due to having 0 base AA stat. Overall, she is a great ship."
+    "evaluation": "São Martinho is an off-flag oriented IXM with great stats and great skills. Her damage is heavily hindered by her equipment options, but is still good despite that, due to MGM+5 and good barrages and self-buffs. In addition, she even has a almost-Preloaded Main Gun, helping clear mob fights faster. Her Tempesta Faction buff is nice, but not necessary to take advantage of for her viability. Her bulk against AVI damage is very bad, due to having 0 base AA stat. Overall, she is a great ship.",
+    "preload": "80% 1st Salvo Cooldown Reduction (1 additional MOT ship)."
   },
   "Golden Hind": {
     "event": {
@@ -2237,7 +2255,8 @@
       "name": "Heart-Linking Harmony",
       "href": "https://azurlane.koumakan.jp/wiki/Heart-Linking_Harmony"
     },
-    "evaluation": "Formidable μ is a damage-oriented CV with great stats and good skills. Her personal damage is pretty good with 8 planes, an AVI self-buff, and a good skill barrage from her Skill 3. Her Skill 1 grants her a preloaded airstrike, but only if there are other μ ships in the fleet, making it somewhat difficult to build around since most μ ships are not good. Her Skill 2 is niche since it's impossible to sync up the stop with other Main Fleets ships, and its not a 100% proc chance. Overall, she is a good ship, but can be a sidegrade to more easily accessible options if she doesn't have a preload."
+    "evaluation": "Formidable μ is a damage-oriented CV with great stats and good skills. Her personal damage is pretty good with 8 planes, an AVI self-buff, and a good skill barrage from her Skill 3. Her Skill 1 grants her a preloaded airstrike, but only if there are other μ ships in the fleet, making it somewhat difficult to build around since most μ ships are not good. Her Skill 2 is niche since it's impossible to sync up the stop with other Main Fleets ships, and its not a 100% proc chance. Overall, she is a good ship, but can be a sidegrade to more easily accessible options if she doesn't have a preload.",
+    "preload": "1 Preloaded Airstrike (conditionally)."
   },
   "Prinz Eugen µ": {
     "event": {
@@ -2279,7 +2298,8 @@
       "name": "Light of the Martyrium",
       "href": "https://azurlane.koumakan.jp/wiki/Light_of_the_Martyrium"
     },
-    "evaluation": "Alsace is an off-flag damage-oriented BB with amazing stats and skills. Her personal damage is very high with MGM+2 BB Guns, and an aimed barrage as well. She has a preloaded Main Gun, which helps both when mobbing and bossing to deal with early wave enemies. Her increase to Main Gun capacity is nice for avoiding delays, but overall irrelevant in most content. Her Skill 1 inflicts a nice debuff to enemies, although due to its random targetting its more useful against single-target bosses. Her Skill 2 improves her Skill 1 to last for longer, but the extension isn't as useful since it already syncs with the Main Fleet; sortieing her with FFNF/MNF ships isn't necessary for this condition. Her Skill 3 barrage does no damage, and the heal can only trigger once per battle, making it only useful for the CRIT Rate buffs. Her crossfleet is nice, but not necessary for her viability. Overall, she is an amazing ship."
+    "evaluation": "Alsace is an off-flag damage-oriented BB with amazing stats and skills. Her personal damage is very high with MGM+2 BB Guns, and an aimed barrage as well. She has a preloaded Main Gun, which helps both when mobbing and bossing to deal with early wave enemies. Her increase to Main Gun capacity is nice for avoiding delays, but overall irrelevant in most content. Her Skill 1 inflicts a nice debuff to enemies, although due to its random targetting its more useful against single-target bosses. Her Skill 2 improves her Skill 1 to last for longer, but the extension isn't as useful since it already syncs with the Main Fleet; sortieing her with FFNF/MNF ships isn't necessary for this condition. Her Skill 3 barrage does no damage, and the heal can only trigger once per battle, making it only useful for the CRIT Rate buffs. Her crossfleet is nice, but not necessary for her viability. Overall, she is an amazing ship.",
+    "preload": "1 Preloaded Salvo."
   },
   "Mogador": {
     "event": {
@@ -2293,7 +2313,8 @@
       "name": "Light of the Martyrium",
       "href": "https://azurlane.koumakan.jp/wiki/Light_of_the_Martyrium"
     },
-    "evaluation": "Béarn META is a damage-oriented CV with great stats and skills. Her Skill 1 gives her a 70% on-strike barrage, with a guaranteed trigger every 2 launches, which is good but not ideal. Her Skill 2 tornado isn't really relevant due to the 3 activation limit per battle, as well as it dealing almost no damage. Her Skill 3 can improve her Skill 1 barrage based on whether a CL gun or Dive Bomber is equipped in slot 3. In addition, her Skill 3 grants her a fast-load, which can be improved even further when equipped with a Dive Bomber. Due to this, equipping a Dive Bomber in slot 3 is generally preferred, due to the improved fast-load, Béarn META having better AVI scaling compared to FP scaling, and the barrage not getting blocked by shields. Overall, she is a great ship."
+    "evaluation": "Béarn META is a damage-oriented CV with great stats and skills. Her Skill 1 gives her a 70% on-strike barrage, with a guaranteed trigger every 2 launches, which is good but not ideal. Her Skill 2 tornado isn't really relevant due to the 3 activation limit per battle, as well as it dealing almost no damage. Her Skill 3 can improve her Skill 1 barrage based on whether a CL gun or Dive Bomber is equipped in slot 3. In addition, her Skill 3 grants her a fast-load, which can be improved even further when equipped with a Dive Bomber. Due to this, equipping a Dive Bomber in slot 3 is generally preferred, due to the improved fast-load, Béarn META having better AVI scaling compared to FP scaling, and the barrage not getting blocked by shields. Overall, she is a great ship.",
+    "preload": "50% 1st Airstrike Cooldown Reduction (20% initially, +30% if Dive Bomber in Slot 3)."
   },
   "Brennus": {
     "event": {
@@ -2363,7 +2384,8 @@
       "name": "Interlude of Illusions",
       "href": "https://azurlane.koumakan.jp/wiki/Interlude_of_Illusions"
     },
-    "evaluation": "Strasbourg is an off-flag damage-oriented BC with good stats and skills. Her personal damage is good since she has decent self-buffs MGM+1 BB Guns, a preloaded Main Gun, and a cooldown reduction 2nd shot too. However, her barrage requirements are annoying to satisfy since you need 2 other MNF ships in the fleet to guarantee it. Her support to other MNF ships is nice, but not necessary for her to be viable. Her stats are on the lower side for a gold BB as well. Overall, she is a great ship."
+    "evaluation": "Strasbourg is an off-flag damage-oriented BC with good stats and skills. Her personal damage is good since she has decent self-buffs MGM+1 BB Guns, a preloaded Main Gun, and a cooldown reduction 2nd shot too. However, her barrage requirements are annoying to satisfy since you need 2 other MNF ships in the fleet to guarantee it. Her support to other MNF ships is nice, but not necessary for her to be viable. Her stats are on the lower side for a gold BB as well. Overall, she is a great ship.",
+    "preload": "1 Preloaded Salvo."
   },
   "L'Audacieux": {
     "event": {
@@ -2545,7 +2567,8 @@
       "name": "Research (Series 3)",
       "href": "https://azurlane.koumakan.jp/wiki/Research#Series_3"
     },
-    "evaluation": "Champagne is an off-flag damage-oriented BB with good stats and skills. Her personal damage is good, despite only 1 MGM, due to her preloaded BB shot as well as drastically reduced Main Gun cooldown. Her barrages are nice, but nothing special. She can be a bit frailer than other BBs due to being Medium armor as well as having damage-redirection from the flagship. Her Main Gun ammo choice should be based on the enemy armor types, not her Skill 2. Overall, she is a good ship, but can be a sidegrade to more easily available options."
+    "evaluation": "Champagne is an off-flag damage-oriented BB with good stats and skills. Her personal damage is good, despite only 1 MGM, due to her preloaded BB shot as well as drastically reduced Main Gun cooldown. Her barrages are nice, but nothing special. She can be a bit frailer than other BBs due to being Medium armor as well as having damage-redirection from the flagship. Her Main Gun ammo choice should be based on the enemy armor types, not her Skill 2. Overall, she is a good ship, but can be a sidegrade to more easily available options.",
+    "preload": "1 Preloaded Salvo."
   },
   "Ägir": {
     "event": {
@@ -2650,7 +2673,8 @@
       "name": "Research (Series 6)",
       "href": "https://azurlane.koumakan.jp/wiki/Research#Series_6"
     },
-    "evaluation": "Flandre is an amazing off-flag damage-oriented BB with great stats, skills, and a preloaded main gun to boot. Her Skill 1 gives her a timed, 100% chance, priority target barrage, which does a lot of damage, and is improved by her Fate Simulation. The marking effect from her Skill 1 is nice, but not necessary to play around for her to be good. Her Skill 2 is defensive-focused only, which is not useful for the majority of content. Overall, she is a amazing ship, but can be worse than UR BBs for some content."
+    "evaluation": "Flandre is an amazing off-flag damage-oriented BB with great stats, skills, and a preloaded main gun to boot. Her Skill 1 gives her a timed, 100% chance, priority target barrage, which does a lot of damage, and is improved by her Fate Simulation. The marking effect from her Skill 1 is nice, but not necessary to play around for her to be good. Her Skill 2 is defensive-focused only, which is not useful for the majority of content. Overall, she is a amazing ship, but can be worse than UR BBs for some content.",
+    "preload": "1 Preloaded Salvo."
   },
   "Admiral Nakhimov": {
     "event": {
@@ -2741,7 +2765,8 @@
       "name": "META Showdown",
       "href": "https://azurlane.koumakan.jp/wiki/META_Showdown"
     },
-    "evaluation": "Renown META is a great mobbing-oriented off-flag BC with solid stats. Her barrages have a nice pattern but are pretty underwhelming in base power. Due to her skill, she effectively gets a free salvo compared to the average BB/BC, which is always nice. Shields for the vanguard are always welcome as well. Overall, she seems solid; nothing exceptional but not bad either."
+    "evaluation": "Renown META is a great mobbing-oriented off-flag BC with solid stats. Her barrages have a nice pattern but are pretty underwhelming in base power. Due to her skill, she effectively gets a free salvo compared to the average BB/BC, which is always nice. Shields for the vanguard are always welcome as well. Overall, she seems solid; nothing exceptional but not bad either.",
+    "preload": "50% 1st & 2nd Salvo Cooldown Reduction."
   },
   "Arizona META": {
     "event": {
@@ -2951,7 +2976,8 @@
       "name": "Vacation Lane (Dead or Alive)",
       "href": "https://azurlane.koumakan.jp/wiki/Vacation_Lane"
     },
-    "evaluation": "Luna is a damage-oriented CVL with good stats and interesting skills. Due to her nature of being fast loaded, she is much better in mob fleets when compared to boss fleets. Only 6 total planes hurts her overall damage output, so after her first two launches her worth is reduced. Do NOT run an ASW plane in her slot 3, it is useless. Needs more testing."
+    "evaluation": "Luna is a damage-oriented CVL with good stats and interesting skills. Due to her nature of being fast loaded, she is much better in mob fleets when compared to boss fleets. Only 6 total planes hurts her overall damage output, so after her first two launches her worth is reduced. Do NOT run an ASW plane in her slot 3, it is useless. Needs more testing.",
+    "preload": "50% 1st & 2nd Airstrike Cooldown Reduction."
   },
   "Tamaki": {
     "event": {
@@ -2993,7 +3019,8 @@
       "name": "Azur Anthem (iDOLM@STER)",
       "href": "https://azurlane.koumakan.jp/wiki/Azur_Anthem"
     },
-    "evaluation": "Chihaya Kisaragi is a damage-oriented CV with great stats and skills. She has a first-strike cooldown reduction, allowing her to desync her damage from the rest of your Main Fleet easily. She has 8 planes, and that combined with her on-strike barrage makes her damage really good. Overall, she is a great ship."
+    "evaluation": "Chihaya Kisaragi is a damage-oriented CV with great stats and skills. She has a first-strike cooldown reduction, allowing her to desync her damage from the rest of your Main Fleet easily. She has 8 planes, and that combined with her on-strike barrage makes her damage really good. Overall, she is a great ship.",
+    "preload": "30% 1st Airstrike Cooldown Reduction."
   },
   "Haruka Amami": {
     "event": {
@@ -3042,7 +3069,8 @@
       "name": "World-Spanning Arclight (SSSS Gridman Universe)",
       "href": "https://azurlane.koumakan.jp/wiki/World-Spanning_Arclight"
     },
-    "evaluation": "Chise Asukagawa is a damage-oriented CV with great stats and skills. She has great personal damage with 8 planes and good stats, as well as an on-strike barrage. She also offers additional damage and support on her 1st (preloaded!) and 3rd airstrikes, which are nice to have. The Augment interaction between her and Rikka is not worth using them together for. Overall, she is a great ship."
+    "evaluation": "Chise Asukagawa is a damage-oriented CV with great stats and skills. She has great personal damage with 8 planes and good stats, as well as an on-strike barrage. She also offers additional damage and support on her 1st (preloaded!) and 3rd airstrikes, which are nice to have. The Augment interaction between her and Rikka is not worth using them together for. Overall, she is a great ship.",
+    "preload": "1 Preloaded Airstrike."
   },
   "Princess Hime": {
     "event": {
@@ -3182,6 +3210,10 @@
       "name": "The Ninja Scrolls: Azur Flash (Senran Kagura)",
       "href": "https://azurlane.koumakan.jp/wiki/The_Ninja_Scrolls:_Azur_Flash"
     },
-    "evaluation": "Murasaki is a damage-oriented CVL with good stats and skills. She only has 6 planes, but her barrages are good, making her personal damage good. In addition, she has a fast-load, and inflicts DoT on enemies hit by her barrage, further adding to her utility. Overall, she is a good ship, but can be a sidegrade to more easily accessible options."
+    "evaluation": "Murasaki is a damage-oriented CVL with good stats and skills. She only has 6 planes, but her barrages are good, making her personal damage good. In addition, she has a fast-load, and inflicts DoT on enemies hit by her barrage, further adding to her utility. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
+    "preload": "45% 1st Airstrike Cooldown Reduction."
+  },
+  "Amagi": {
+    "preload": "45% 1st Salvo Cooldown Reduction (3 additional IJN ships)."
   }
 }
