@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
@@ -18,11 +19,30 @@ credentials = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes
 service = build("sheets", "v4", credentials=credentials)
 
 
+import re
+
+
 def extract_base_name(ship_name):
-    """Extract base ship name by removing notes in parentheses."""
-    if "(" in ship_name:
-        return ship_name.split("(")[0].strip()
-    return ship_name.strip()
+    """Extract base ship name by removing notes in parentheses unless the note contains specific phrases."""
+    # Regular expression to find text within parentheses
+    match = re.search(r"\((.*?)\)", ship_name)
+
+    if match:
+        note = match.group(1)
+
+        # If note contains specific phrases, return the name without modification
+        if any(
+            phrase in note
+            for phrase in ["Venus Vacation", "Senran Kagura", "Neptunia", "Royal Navy"]
+        ):
+            return ship_name.strip()
+
+        # Otherwise, remove the note from the name
+        base_name = ship_name[: match.start()].strip()
+    else:
+        base_name = ship_name.strip()
+
+    return base_name.strip()
 
 
 def process_sheet(sheet_name):
