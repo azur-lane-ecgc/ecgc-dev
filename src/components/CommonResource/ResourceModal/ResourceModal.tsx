@@ -220,7 +220,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                             limiter: true,
                           },
                         ]}
-                        active={true}
+                        allActive={true}
                       >
                         <tr>
                           <td className="font-bold">
@@ -270,7 +270,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                             limiter: true,
                           },
                         ]}
-                        active={true}
+                        allActive={true}
                       >
                         <tr>
                           <td className="font-bold">
@@ -339,7 +339,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                           limiter: true,
                         },
                       ]}
-                      active={true}
+                      allActive={true}
                     >
                       <tr>
                         <td className="font-bold">
@@ -388,7 +388,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   { colName: "Daily Raid", colWidth: "25%", limiter: true },
                   { colName: "Cruise Pass", colWidth: "25%", limiter: true },
                 ]}
-                active={true}
+                allActive={true}
               >
                 <tr className="h-[175px] min-h-[175px]">
                   <td className={getCellColor(drops.academy?.checkMark.color)}>
@@ -424,7 +424,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   { colName: "Event", colWidth: "25%", limiter: true },
                   { colName: "OPSI", colWidth: "25%", limiter: true },
                 ]}
-                active={true}
+                allActive={true}
               >
                 <tr className="h-[175px] min-h-[175px]">
                   <td
@@ -466,7 +466,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   { colName: "Guild", colWidth: "25%", limiter: true },
                   { colName: "META", colWidth: "25%", limiter: true },
                 ]}
-                active={true}
+                allActive={true}
               >
                 <tr className="h-[175px] min-h-[175px]">
                   <td
@@ -503,7 +503,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   { colName: "Prototype", colWidth: "25%", limiter: true },
                   { colName: "Event", colWidth: "25%", limiter: true },
                 ]}
-                active={true}
+                allActive={true}
               >
                 <tr className="h-[175px] min-h-[175px]">
                   <td

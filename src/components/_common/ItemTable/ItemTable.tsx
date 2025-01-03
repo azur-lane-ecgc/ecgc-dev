@@ -5,16 +5,17 @@ interface TableInfoProps {
   colWidth?: string
   colSpan?: number
   limiter?: boolean
+  active?: boolean
 }
 
 interface ItemTableProps {
   tableInfo: TableInfoProps[]
-  active?: boolean
+  allActive?: boolean
 }
 
 export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
   tableInfo,
-  active = false,
+  allActive = false,
   children,
 }) => {
   return (
@@ -38,12 +39,12 @@ export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
         </colgroup>
 
         <thead>
-          <tr className={`${active ? "bg-[#373b3e]" : ""}`}>
+          <tr className={`${allActive ? "bg-[#373b3e]" : ""}`}>
             {tableInfo.map((col, index) => (
               <th
                 key={index}
                 colSpan={col?.colSpan || 1}
-                className={`${col?.limiter && "ship_table_limiter"} px-1`}
+                className={`${col.active && "bg-[#373b3e]"} ${col?.limiter && "ship_table_limiter"} px-1`}
               >
                 {col.colName}
               </th>
