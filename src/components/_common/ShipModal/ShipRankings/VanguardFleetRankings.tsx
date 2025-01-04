@@ -28,8 +28,10 @@ export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
         {rankings.map((ranking, index) => (
           <button
             key={index}
-            className={`px-4 py-2 border rounded ${
-              rankingIndex === index ? "bg-blue-500 text-white" : "bg-gray-200"
+            className={`px-4 py-2 border rounded font-semibold ${
+              rankingIndex === index
+                ? "bg-fuchsia-600/60 text-white"
+                : "bg-gray-300/85"
             }`}
             onClick={() => setRankingIndex(index)}
           >
