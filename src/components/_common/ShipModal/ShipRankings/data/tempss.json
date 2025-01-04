@@ -1,29 +1,4 @@
 {
-    "Fishpack": {
-        "Notes": "Flasher plus two of (Albacore, Homura, Archerfish).",
-        "Hard Arbiter": "S",
-        "CM": "S",
-        "Campaign": "S",
-        "Consistency": "-1",
-        "Fleet Req.": "",
-        "Flag Req.": "",
-        "Light Dmg": "2",
-        "Medium Dmg": "4",
-        "Heavy Dmg": "5"
-    },
-    "Flasher": {
-        "Notes": "Absolutely requires flag if not with Gato-class (Albacore).",
-        "Hard Arbiter": "S",
-        "CM": "S",
-        "Campaign": "S",
-        "Consistency": "-2",
-        "Fleet Req.": "-1",
-        "Flag Req.": "-3",
-        "Light Dmg": "2",
-        "Medium Dmg": "4",
-        "Heavy Dmg": "5",
-        "Offense Buff": "2"
-    },
     "Albacore": {
         "Notes": "Bonus against DD, CL, and CV.",
         "Hard Arbiter": "A",
@@ -46,6 +21,31 @@
         "Flag Req.": "-2",
         "Light Dmg": "1",
         "Medium Dmg": "3",
+        "Heavy Dmg": "5",
+        "Offense Buff": "2"
+    },
+    "Fishpack": {
+        "Notes": "Flasher plus two of (Albacore, Homura, Archerfish).",
+        "Hard Arbiter": "S",
+        "CM": "S",
+        "Campaign": "S",
+        "Consistency": "-1",
+        "Fleet Req.": "",
+        "Flag Req.": "",
+        "Light Dmg": "2",
+        "Medium Dmg": "4",
+        "Heavy Dmg": "5"
+    },
+    "Flasher": {
+        "Notes": "Absolutely requires flag if not with Gato-class (Albacore).",
+        "Hard Arbiter": "S",
+        "CM": "S",
+        "Campaign": "S",
+        "Consistency": "-2",
+        "Fleet Req.": "-1",
+        "Flag Req.": "-3",
+        "Light Dmg": "2",
+        "Medium Dmg": "4",
         "Heavy Dmg": "5",
         "Offense Buff": "2"
     },
@@ -158,55 +158,6 @@
         "Medium Dmg": "3",
         "Heavy Dmg": "4"
     },
-    "U-47": {
-        "Notes": "Ignore the Lone Wolf skill.",
-        "Hard Arbiter": "A",
-        "CM": "A",
-        "Campaign": "B",
-        "Consistency": "",
-        "Fleet Req.": "",
-        "Flag Req.": "-3",
-        "Light Dmg": "1",
-        "Medium Dmg": "3",
-        "Heavy Dmg": "4"
-    },
-    "I-168": {
-        "Notes": "Bonus against carriers.",
-        "Hard Arbiter": "B",
-        "CM": "B",
-        "Campaign": "B",
-        "Consistency": "",
-        "Fleet Req.": "",
-        "Flag Req.": "-2",
-        "Light Dmg": "1",
-        "Medium Dmg": "2",
-        "Heavy Dmg": "3"
-    },
-    "IJN Subs": {
-        "Notes": "I-19 plus two of (I-13, I-168, I-58). Maybe plus one tier if buffed by Amagi(CV)?",
-        "Hard Arbiter": "B",
-        "CM": "B",
-        "Campaign": "B",
-        "Consistency": "",
-        "Fleet Req.": "",
-        "Flag Req.": "",
-        "Light Dmg": "1",
-        "Medium Dmg": "2",
-        "Heavy Dmg": "3"
-    },
-    "U-101": {
-        "Notes": "Requires KMS wolfpack. Do not use Pressure-Resistant Hull. Buffs wolfpack against DDs and CLs.",
-        "Hard Arbiter": "B",
-        "CM": "B",
-        "Campaign": "B",
-        "Consistency": "",
-        "Fleet Req.": "-2",
-        "Flag Req.": "0",
-        "Light Dmg": "1",
-        "Medium Dmg": "2",
-        "Heavy Dmg": "3",
-        "Offense Buff": "1"
-    },
     "Albacore μ": {
         "Notes": "Armor breaks once.",
         "Hard Arbiter": "C",
@@ -231,6 +182,18 @@
         "Medium Dmg": "2",
         "Heavy Dmg": "2"
     },
+    "I-168": {
+        "Notes": "Bonus against carriers.",
+        "Hard Arbiter": "B",
+        "CM": "B",
+        "Campaign": "B",
+        "Consistency": "",
+        "Fleet Req.": "",
+        "Flag Req.": "-2",
+        "Light Dmg": "1",
+        "Medium Dmg": "2",
+        "Heavy Dmg": "3"
+    },
     "I-58": {
         "Notes": "Buffs IJN subs. Bonus against CAs and CBs.",
         "Hard Arbiter": "C",
@@ -243,6 +206,18 @@
         "Medium Dmg": "1",
         "Heavy Dmg": "2",
         "Offense Buff": "1"
+    },
+    "IJN Subs": {
+        "Notes": "I-19 plus two of (I-13, I-168, I-58). Maybe plus one tier if buffed by Amagi(CV)?",
+        "Hard Arbiter": "B",
+        "CM": "B",
+        "Campaign": "B",
+        "Consistency": "",
+        "Fleet Req.": "",
+        "Flag Req.": "",
+        "Light Dmg": "1",
+        "Medium Dmg": "2",
+        "Heavy Dmg": "3"
     },
     "Nautilus": {
         "Notes": "Short debuff window to time with your main fleet.",
@@ -257,17 +232,30 @@
         "Heavy Dmg": "2",
         "Offense Buff": "1"
     },
-    "Homura": {
-        "Notes": "100% geo hit barrage = consistently good. Must not use unique augment for campaign.",
-        "Hard Arbiter": "S",
-        "CM": "S",
-        "Campaign": "C",
+    "U-101": {
+        "Notes": "Requires KMS wolfpack. Do not use Pressure-Resistant Hull. Buffs wolfpack against DDs and CLs.",
+        "Hard Arbiter": "B",
+        "CM": "B",
+        "Campaign": "B",
+        "Consistency": "",
+        "Fleet Req.": "-2",
+        "Flag Req.": "0",
+        "Light Dmg": "1",
+        "Medium Dmg": "2",
+        "Heavy Dmg": "3",
+        "Offense Buff": "1"
+    },
+    "U-47": {
+        "Notes": "Ignore the Lone Wolf skill.",
+        "Hard Arbiter": "A",
+        "CM": "A",
+        "Campaign": "B",
         "Consistency": "",
         "Fleet Req.": "",
-        "Flag Req.": "-2",
-        "Light Dmg": "2",
-        "Medium Dmg": "4",
-        "Heavy Dmg": "5"
+        "Flag Req.": "-3",
+        "Light Dmg": "1",
+        "Medium Dmg": "3",
+        "Heavy Dmg": "4"
     },
     "Amity": {
         "Notes": "Buffs fleet as long as she gets hit. IXs are not suitable for use against high-damage enemies.",
@@ -281,69 +269,6 @@
         "Medium Dmg": "2",
         "Heavy Dmg": "1",
         "Offense Buff": "3"
-    },
-    "Royal Fortune": {
-        "Notes": "Can slow boss if put in middle position. IXs are not suitable for use against high-damage enemies.",
-        "Hard Arbiter": "A*",
-        "CM": "S*",
-        "Campaign": "C",
-        "Consistency": "",
-        "Fleet Req.": "",
-        "Flag Req.": "-2",
-        "Light Dmg": "3",
-        "Medium Dmg": "2",
-        "Heavy Dmg": "1",
-        "Offense Buff": "1"
-    },
-    "Mary Celeste": {
-        "Notes": "IXs are not suitable for use against high-damage enemies.",
-        "Hard Arbiter": "B*",
-        "CM": "A*",
-        "Campaign": "C",
-        "Consistency": "",
-        "Fleet Req.": "",
-        "Flag Req.": "0",
-        "Light Dmg": "3",
-        "Medium Dmg": "2",
-        "Heavy Dmg": "1"
-    },
-    "Tempestack": {
-        "Notes": "Royal Fortune, Amity, Mary Celeste. ONLY good against light armor.",
-        "Hard Arbiter": "A*",
-        "CM": "A*",
-        "Campaign": "C",
-        "Consistency": "",
-        "Fleet Req.": "",
-        "Flag Req.": "",
-        "Light Dmg": "3",
-        "Medium Dmg": "2",
-        "Heavy Dmg": "1",
-        "Offense Buff": "1"
-    },
-    "Minato Aqua": {
-        "Notes": "Has bad oxyreload and surface time. Stays 8 units further right, which is good. Only good for burst damage.",
-        "Hard Arbiter": "B",
-        "CM": "B",
-        "Campaign": "C",
-        "Consistency": "-1",
-        "Fleet Req.": "-2",
-        "Flag Req.": "-3",
-        "Light Dmg": "1",
-        "Medium Dmg": "2",
-        "Heavy Dmg": "3"
-    },
-    "I-13": {
-        "Notes": "Requires manual summon timing.",
-        "Hard Arbiter": "B",
-        "CM": "C",
-        "Campaign": "C",
-        "Consistency": "",
-        "Fleet Req.": "",
-        "Flag Req.": "-2",
-        "Light Dmg": "1",
-        "Medium Dmg": "1",
-        "Heavy Dmg": "2",
-        "Offense Buff": "1"
     },
     "Bluegill": {
         "Notes": "Bonus against DDs and CLs.",
@@ -381,6 +306,81 @@
         "Medium Dmg": "1",
         "Heavy Dmg": "2"
     },
+    "Homura": {
+        "Notes": "100% geo hit barrage = consistently good. Must not use unique augment for campaign.",
+        "Hard Arbiter": "S",
+        "CM": "S",
+        "Campaign": "C",
+        "Consistency": "",
+        "Fleet Req.": "",
+        "Flag Req.": "-2",
+        "Light Dmg": "2",
+        "Medium Dmg": "4",
+        "Heavy Dmg": "5"
+    },
+    "I-13": {
+        "Notes": "Requires manual summon timing.",
+        "Hard Arbiter": "B",
+        "CM": "C",
+        "Campaign": "C",
+        "Consistency": "",
+        "Fleet Req.": "",
+        "Flag Req.": "-2",
+        "Light Dmg": "1",
+        "Medium Dmg": "1",
+        "Heavy Dmg": "2",
+        "Offense Buff": "1"
+    },
+    "Mary Celeste": {
+        "Notes": "IXs are not suitable for use against high-damage enemies.",
+        "Hard Arbiter": "B*",
+        "CM": "A*",
+        "Campaign": "C",
+        "Consistency": "",
+        "Fleet Req.": "",
+        "Flag Req.": "0",
+        "Light Dmg": "3",
+        "Medium Dmg": "2",
+        "Heavy Dmg": "1"
+    },
+    "Minato Aqua": {
+        "Notes": "Has bad oxyreload and surface time. Stays 8 units further right, which is good. Only good for burst damage.",
+        "Hard Arbiter": "B",
+        "CM": "B",
+        "Campaign": "C",
+        "Consistency": "-1",
+        "Fleet Req.": "-2",
+        "Flag Req.": "-3",
+        "Light Dmg": "1",
+        "Medium Dmg": "2",
+        "Heavy Dmg": "3"
+    },
+    "Royal Fortune": {
+        "Notes": "Can slow boss if put in middle position. IXs are not suitable for use against high-damage enemies.",
+        "Hard Arbiter": "A*",
+        "CM": "S*",
+        "Campaign": "C",
+        "Consistency": "",
+        "Fleet Req.": "",
+        "Flag Req.": "-2",
+        "Light Dmg": "3",
+        "Medium Dmg": "2",
+        "Heavy Dmg": "1",
+        "Offense Buff": "1"
+    },
+    "Tempestack": {
+        "Notes": "Royal Fortune, Amity, Mary Celeste. ONLY good against light armor.",
+        "Hard Arbiter": "A*",
+        "CM": "A*",
+        "Campaign": "C",
+        "Consistency": "",
+        "Fleet Req.": "",
+        "Flag Req.": "",
+        "Light Dmg": "3",
+        "Medium Dmg": "2",
+        "Heavy Dmg": "1",
+        "Offense Buff": "1"
+    },
     "U-522": {
         "Notes": "Requires KMS wolfpack.",
         "Hard Arbiter": "D",
@@ -388,6 +388,18 @@
         "Campaign": "C",
         "Consistency": "",
         "Fleet Req.": "-2",
+        "Flag Req.": "-2",
+        "Light Dmg": "1",
+        "Medium Dmg": "1",
+        "Heavy Dmg": "2"
+    },
+    "Ami Futami": {
+        "Notes": "Bad.",
+        "Hard Arbiter": "D",
+        "CM": "D",
+        "Campaign": "D",
+        "Consistency": "-1",
+        "Fleet Req.": "",
         "Flag Req.": "-2",
         "Light Dmg": "1",
         "Medium Dmg": "1",
@@ -405,42 +417,6 @@
         "Medium Dmg": "1",
         "Heavy Dmg": "1",
         "Offense Buff": "1"
-    },
-    "U-31": {
-        "Notes": "Requires KMS wolfpack. Has bad oxyreload.",
-        "Hard Arbiter": "C",
-        "CM": "C",
-        "Campaign": "D",
-        "Consistency": "",
-        "Fleet Req.": "-2",
-        "Flag Req.": "-2",
-        "Light Dmg": "1",
-        "Medium Dmg": "1",
-        "Heavy Dmg": "2"
-    },
-    "U-73": {
-        "Notes": "Requires KMS wolfpack. Has bad oxyreload. Bonus against carriers.",
-        "Hard Arbiter": "C",
-        "CM": "C",
-        "Campaign": "D",
-        "Consistency": "",
-        "Fleet Req.": "-2",
-        "Flag Req.": "-2",
-        "Light Dmg": "1",
-        "Medium Dmg": "2",
-        "Heavy Dmg": "2"
-    },
-    "Ami Futami": {
-        "Notes": "Bad.",
-        "Hard Arbiter": "D",
-        "CM": "D",
-        "Campaign": "D",
-        "Consistency": "-1",
-        "Fleet Req.": "",
-        "Flag Req.": "-2",
-        "Light Dmg": "1",
-        "Medium Dmg": "1",
-        "Heavy Dmg": "2"
     },
     "I-25": {
         "Notes": "Has abysmal oxyreload.",
@@ -538,6 +514,18 @@
         "Medium Dmg": "1",
         "Heavy Dmg": "2"
     },
+    "U-31": {
+        "Notes": "Requires KMS wolfpack. Has bad oxyreload.",
+        "Hard Arbiter": "C",
+        "CM": "C",
+        "Campaign": "D",
+        "Consistency": "",
+        "Fleet Req.": "-2",
+        "Flag Req.": "-2",
+        "Light Dmg": "1",
+        "Medium Dmg": "1",
+        "Heavy Dmg": "2"
+    },
     "U-410": {
         "Notes": "Requires KMS wolfpack. Has bad oxyreload. Bonus against CLs.",
         "Hard Arbiter": "D",
@@ -572,6 +560,18 @@
         "Flag Req.": "-1",
         "Light Dmg": "1",
         "Medium Dmg": "1",
+        "Heavy Dmg": "2"
+    },
+    "U-73": {
+        "Notes": "Requires KMS wolfpack. Has bad oxyreload. Bonus against carriers.",
+        "Hard Arbiter": "C",
+        "CM": "C",
+        "Campaign": "D",
+        "Consistency": "",
+        "Fleet Req.": "-2",
+        "Flag Req.": "-2",
+        "Light Dmg": "1",
+        "Medium Dmg": "2",
         "Heavy Dmg": "2"
     },
     "Whydah": {

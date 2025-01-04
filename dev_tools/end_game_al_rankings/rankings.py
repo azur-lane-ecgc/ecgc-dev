@@ -93,9 +93,16 @@ if __name__ == "__main__":
 
         sheet_data = process_sheet(sheet_name)
 
-        # Sorting the dictionary based on the "W14 Boss" or "Campaign" property
+        # Sorting the dictionary based on the "W14 Boss" or "Campaign" property,
+        # and using the key alphabetically for tiebreaker
         sorted_sheet_data = dict(
-            sorted(sheet_data.items(), key=lambda x: get_priority_with_fallback(x[1]))
+            sorted(
+                sheet_data.items(),
+                key=lambda x: (
+                    get_priority_with_fallback(x[1]),
+                    x[0].lower(),
+                ),  # Alphabetical by key for tie-breaking
+            )
         )
 
         # Write the data to a JSON file
