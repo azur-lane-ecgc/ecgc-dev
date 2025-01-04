@@ -1,5 +1,6 @@
 import type { SSFleetRankingProps } from "../types"
 import tempSSdata from "./tempss.json"
+import { parseFleetKey } from "./parseFleetKey"
 
 interface SheetSSFleetData {
   [key: string]: {
@@ -28,9 +29,7 @@ export const convertToSSFleetRanking = (): Record<
   for (const fleetKey in SSFleetData) {
     const fleet = SSFleetData[fleetKey]
 
-    const match = fleetKey.match(/^(.*?)\s*(?:\((.*?)\))?$/)
-    const shipName = match?.[1]?.trim() || fleetKey
-    const nameNote = match?.[2]?.trim() || ""
+    const { shipName, nameNote } = parseFleetKey(fleetKey)
 
     const ranking: SSFleetRankingProps = {
       nameNote,

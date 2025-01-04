@@ -1,5 +1,6 @@
 import type { MainFleetRankingProps } from "../types"
 import tempMainData from "./tempmain.json"
+import { parseFleetKey } from "./parseFleetKey"
 
 interface SheetMainFleetData {
   [key: string]: {
@@ -41,9 +42,7 @@ export const convertToMainFleetRanking = (): Record<
   for (const fleetKey in MainFleetData) {
     const fleet = MainFleetData[fleetKey]
 
-    const match = fleetKey.match(/^(.*?)\s*(?:\((.*?)\))?$/)
-    const shipName = match?.[1]?.trim() || fleetKey
-    const nameNote = match?.[2]?.trim() || ""
+    const { shipName, nameNote } = parseFleetKey(fleetKey)
 
     const ranking: MainFleetRankingProps = {
       nameNote,

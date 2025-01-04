@@ -1,5 +1,6 @@
 import type { VanguardFleetRankingProps } from "../types"
 import tempVGdata from "./tempvg.json"
+import { parseFleetKey } from "./parseFleetKey"
 
 interface SheetVanguardFleetData {
   [key: string]: {
@@ -39,9 +40,7 @@ export const convertToVanguardFleetRanking = (): Record<
   for (const fleetKey in VanguardFleetData) {
     const fleet = VanguardFleetData[fleetKey]
 
-    const match = fleetKey.match(/^(.*?)\s*(?:\((.*?)\))?$/)
-    const shipName = match?.[1]?.trim() || fleetKey
-    const nameNote = match?.[2]?.trim() || ""
+    const { shipName, nameNote } = parseFleetKey(fleetKey)
 
     const ranking: VanguardFleetRankingProps = {
       nameNote,
