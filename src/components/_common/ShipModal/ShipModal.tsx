@@ -66,7 +66,7 @@ interface ShipModalProps {
  * @param {number} props.id - Azur Lane ID of the ship
  * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)
  *
- * @returns {React.JSX.Element} The Ship Modal itself.
+ * @returns {React.ReactNode} The Ship Modal itself.
  */
 export const ShipModal: React.FC<ShipModalProps> = ({
   id,
