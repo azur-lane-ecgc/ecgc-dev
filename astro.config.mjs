@@ -10,11 +10,7 @@ export default defineConfig({
   integrations: [
     tailwind(),
     react(),
-    (await import("@playform/compress")).default({
-      CSS: false,
-      HTML: false,
-      JavaScript: false,
-    }),
+    (await import("@playform/compress")).default(),
   ],
   base: "/test_ecgc_2/",
   output: "static",
