@@ -142,7 +142,7 @@ const ships = shipData as Record<number, ShipData>
       if (!ship) return false
       return (
         <ShipModal
-          client:visible
+        client:visible={{ rootMargin: "20px" }}
           id={ship.id}
           trigger={{
             iconNote: null,
