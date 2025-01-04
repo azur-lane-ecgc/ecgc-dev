@@ -22,6 +22,10 @@ export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
     [ship],
   )
 
+  if (!!!rankings) {
+    return <p>This ship doesn't have rankings currently. Come back later!</p>
+  }
+
   const ranking = rankings[rankingIndex]
 
   return (
