@@ -71,7 +71,7 @@ interface ShipModalProps {
 export const ShipModal: React.FC<ShipModalProps> = ({
   id,
   trigger,
-}: ShipModalProps): React.JSX.Element => {
+}: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
 
   const handleOpen = () => {
