@@ -30,3 +30,9 @@ const hullMap: Record<number, string> = {
 export const shipHullTypeParse = (hull: number): string => {
   return hullMap[hull] ?? "Unknown"
 }
+
+export const shipFleetTypeParse = (hull: number): "main" | "ss" | "vg" => {
+  if ([4, 5, 6, 7, 10, 12, 13, 24].includes(hull)) return "main"
+  if ([8, 17, 22].includes(hull)) return "ss"
+  return "vg"
+}

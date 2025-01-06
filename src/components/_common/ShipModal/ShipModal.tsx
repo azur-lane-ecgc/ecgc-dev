@@ -103,9 +103,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }
   const hull = mrLarData?.retro?.hull ?? mrLarData.hull
   const hullType = shipHullTypeParse(hull)
-  const isMainFleet: boolean = [4, 5, 6, 7, 10, 12, 13, 24].includes(hull)
-  const isSSFleet: boolean = [8, 17, 22].includes(hull)
-  const isVanguardFleet: boolean = !isMainFleet && !isSSFleet
+  const fleetType: "main" | "ss" | "vg" = shipFleetTypeParse(hull)
 
   const limitBreakBonus = shipLimitBreakBonusParse(mrLarData?.specific_buff)
   const slots = shipSlotParse(
@@ -385,9 +383,18 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 </span>
               </p>
 
-              {isMainFleet && <MainFleetRanking ship={ship} />}
-              {isVanguardFleet && <VanguardFleetRanking ship={ship} />}
-              {isSSFleet && <SSFleetRanking ship={ship} />}
+              {(() => {
+                switch (fleetType) {
+                  case "main":
+                    return <MainFleetRanking ship={ship} />
+                  case "ss":
+                    return <SSFleetRanking ship={ship} />
+                  case "vg":
+                    return <VanguardFleetRanking ship={ship} />
+                  default:
+                    return false
+                }
+              })()}
             </div>
           </div>
         </div>
