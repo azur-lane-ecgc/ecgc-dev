@@ -8,12 +8,15 @@ import { endGameRankingsUpdateDate } from "@components/_common/Constants"
 import { formatDate } from "@utils/formatDate"
 
 import type { ShipData } from "@data/types/ships"
-import shipData from "@data/data/ships.json"
-const ships = shipData as Record<number, ShipData>
-
 import type { AugmentData } from "@data/types/augments"
-import augments from "@data/data/augments.json"
-const augmentData = augments as Record<number, AugmentData>
+
+const ships: Record<number, ShipData> = (await import(
+  "@data/data/ships.json"
+).then((module) => module.default)) as Record<number, ShipData>
+
+const augmentData: Record<number, AugmentData> = (await import(
+  "@data/data/augments.json"
+).then((module) => module.default)) as Record<number, AugmentData>
 
 import { ShipTags } from "./ShipTags"
 import {
@@ -91,33 +94,25 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   // mrlar
   const mrLarData = ships[id]
   const ship = shipNameParse(mrLarData.id, mrLarData.name)
-  const faction = useMemo(
-    () => shipFactionParse(mrLarData.nation),
-    [mrLarData.nation],
-  )
+  const faction = shipFactionParse(mrLarData.nation)
+
   let rarity = shipRarityParse(mrLarData.rarity)
   const isKai = mrLarData.hasOwnProperty("retro")
   if (isKai) {
     rarity++
   }
   const hull = mrLarData?.retro?.hull ?? mrLarData.hull
-  const hullType = useMemo(() => shipHullTypeParse(hull), [hull])
+  const hullType = shipHullTypeParse(hull)
   const isMainFleet: boolean = [4, 5, 6, 7, 10, 12, 13, 24].includes(hull)
   const isSSFleet: boolean = [8, 17, 22].includes(hull)
   const isVanguardFleet: boolean = !isMainFleet && !isSSFleet
 
-  const limitBreakBonus = useMemo(
-    () => shipLimitBreakBonusParse(mrLarData?.specific_buff),
-    [mrLarData],
+  const limitBreakBonus = shipLimitBreakBonusParse(mrLarData?.specific_buff)
+  const slots = shipSlotParse(
+    mrLarData.slots[mrLarData.slots.length - 1],
+    mrLarData.retro,
   )
-  const slots = useMemo(
-    () =>
-      shipSlotParse(
-        mrLarData.slots[mrLarData.slots.length - 1],
-        mrLarData.retro,
-      ),
-    [mrLarData.slots],
-  )
+
   const augments = useMemo(() => {
     const uniqueAugment = mrLarData?.unique_aug
       ? augmentData[mrLarData.unique_aug].name
@@ -131,10 +126,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 
     return normalAugments.length <= 0 ? null : normalAugments
   }, [hull])
-  const shipImg = useMemo(() => shipImageParse(ship, isKai), [])
+  const shipImg = shipImageParse(ship, isKai)
 
   // me
-  const samvaluationData = useMemo(() => shipSamvaluationParse(ship), [ship])
+  const samvaluationData = shipSamvaluationParse(ship)
   const location = samvaluationData.event
   const samvaluationText = samvaluationData.evaluation
 
