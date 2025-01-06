@@ -10,11 +10,12 @@
     "build": "npm run submodule && astro check && astro build",
     "devtools": "python3 dev_tools/ehp_parsing/ehp.py && python3 dev_tools/end_game_al_rankings/rankings.py && node dev_tools/runAllTools.js",
     "start": "npm run devtools && npm run build && start http://localhost:4321/test_ecgc_2/ && astro dev",
-    "rebuild": "npm ci && npm run build"
+    "rebuild": "npm ci && npm install"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^4.1.2",
+    "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.4",
     "@playform/compress": "^0.1.6",
     "@types/react": "^19.0.2",
