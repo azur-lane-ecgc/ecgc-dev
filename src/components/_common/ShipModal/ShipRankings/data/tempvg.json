@@ -1482,7 +1482,7 @@
         "Self Survival": "2"
     },
     "Voroshilov": {
-        "Notes": "Tankiness requires enemy airplanes. Weak slow and small FP buff.",
+        "Notes": "Tankiness requires enemy planes. Weak slow and small FP buff. Explicitly say that she's not assumed to be with Nakhi.",
         "Hard Arbiter": "D",
         "META": "D",
         "CM": "D",
@@ -3360,7 +3360,7 @@
         "Self Survival": "3"
     },
     "Duisburg": {
-        "Notes": "Only usable in W14 because her summons can block rammers (but not as well as Momo's flowers)",
+        "Notes": "Only usable in W14 because her summons can block rammers (but not as well as Momo's flowers). They're fragile though.",
         "Hard Arbiter": "D",
         "META": "D",
         "CM": "D",
@@ -3372,7 +3372,7 @@
         "Consistency": "",
         "Fleet Req.": "",
         "Gear Req.": "",
-        "Light Dmg": "1",
+        "Light Dmg": "2",
         "Medium Dmg": "1",
         "Heavy Dmg": "1",
         "AoE Dmg": "1",
