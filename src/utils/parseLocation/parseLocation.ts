@@ -14,5 +14,25 @@ export const parseLocation = (location: string) => {
     location = "List of Ship Drops"
   }
 
+  // Permanent UR ships
+  else if (location === "Permanent Ultra Rare Pity") {
+    location = "Building#UR_Ships_Construction"
+  }
+
+  // Shipyard
+  else if (location.match(/Shipyard \(PR(\d+)\)/)) {
+    location = location.replace(/Shipyard \(PR(\d+)\)/, "Research#Series_$1")
+  }
+
+  // Login Rewards
+  else if (location === "Login Reward") {
+    location = "Missions#Login_Rewards"
+  }
+
+  // Dossier Analysis
+  else if (location.match(/Dossier/)) {
+    location = "META_Showdown#Dossier_Analysis"
+  }
+
   return location.replaceAll(" ", "_")
 }
