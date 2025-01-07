@@ -39,7 +39,6 @@ import {
   shipImageParse,
   shipSamvaluationParse,
   shipFleetTypeParse,
-  shipLocationParse,
 } from "./utils"
 
 import {
