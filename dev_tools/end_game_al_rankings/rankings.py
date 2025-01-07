@@ -1,5 +1,7 @@
 import json
 import os
+import re
+from datetime import datetime
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
@@ -13,6 +15,8 @@ OUTPUT_PATHS = [
     "src/components/_common/ShipModal/ShipRankings/data/tempmain.json",
     "src/components/_common/ShipModal/ShipRankings/data/tempss.json",
 ]
+CHANGELONG_SHEET_NAME = "Changelog"
+END_GAME_RANKINGS_PATH = "src/components/_common/Constants/lastUpdated.ts"
 
 # Authenticate and initialize the Sheets API
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -81,6 +85,41 @@ def get_priority_with_fallback(entry):
     return priority_order.get(value, float("inf"))  # Default to infinity if not found
 
 
+def get_changelog_date():
+    """Fetch date from Changelog sheet (A2) and return it in MM/DD/YY format"""
+    result = (
+        service.spreadsheets()
+        .values()
+        .get(spreadsheetId=SPREADSHEET_ID, range=f"{CHANGELONG_SHEET_NAME}!A2")
+        .execute()
+    )
+    date_str = result.get("values", [[None]])[0][0]
+    if date_str:
+        # Convert YYYY/MM/DD to MM/DD/YY
+        try:
+            date_obj = datetime.strptime(date_str, "%Y/%m/%d")
+            return date_obj.strftime("%m/%d/%Y")
+        except ValueError:
+            raise ValueError(f"Invalid date format in Changelog: {date_str}")
+    return None
+
+
+def update_end_game_rankings_update_date(new_date):
+    """Update the endGameRankingsUpdateDate in the Constants file"""
+    with open(END_GAME_RANKINGS_PATH, "r", encoding="utf-8") as file:
+        content = file.read()
+
+    # Use a regex to find the line containing endGameRankingsUpdateDate and replace the date
+    updated_content = re.sub(
+        r'export const endGameRankingsUpdateDate = "\d{2}/\d{2}/\d{4}"',
+        f'export const endGameRankingsUpdateDate = "{new_date}"',
+        content,
+    )
+
+    with open(END_GAME_RANKINGS_PATH, "w", encoding="utf-8") as file:
+        file.write(updated_content)
+
+
 # Main logic to process sheets and save as separate JSON files
 if __name__ == "__main__":
     # Ensure we have matching output paths for each sheet
@@ -110,3 +149,10 @@ if __name__ == "__main__":
             json.dump(sorted_sheet_data, json_file, indent=4, ensure_ascii=False)
 
         print(f"Data from sheet '{sheet_name}' has been written to {output_path}")
+
+    changelog_date = get_changelog_date()
+    if changelog_date:
+        update_end_game_rankings_update_date(changelog_date)
+        print(f"Updated endGameRankingsUpdateDate to {changelog_date}")
+    else:
+        print("Changelog date is not available, skipping update.")
