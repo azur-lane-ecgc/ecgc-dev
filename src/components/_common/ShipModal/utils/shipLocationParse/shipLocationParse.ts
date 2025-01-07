@@ -6,69 +6,48 @@ const shipDropData: Record<number, ShipDropData> = (await import(
   "@data/data/ship_drops.json"
 ).then((module) => module.default)) as Record<number, ShipDropData>
 
-const excludedEvents = ["Opposite-Colored"]
+const excludedEvents = ["Opposite-Colored", "Royal Maids Battle Royale"]
+const exceptionShips = ["Formidable", "Mary Celeste"]
 
-interface shipLocation {
+export interface shipLocation {
   name: string
   href: string
 }
 
-export const otherLocationsParse = (
-  name: string,
-  id: number,
-): shipLocation | null => {
-  switch (id) {
-    case 0:
-      name = "Guild Shop"
-      break
-    case 1:
-      name = "Medal Shop"
-      break
-    case 2:
-      name = "Core Data Shop"
-      break
-    case 3:
-      name = "Merit Shop"
-      break
-    case 4:
-      name = "Requisition"
-      break
-    case 5: // Protocore Shop
-      return null
-    case 6:
-      name = "Permanent Ultra Rare Pity"
-      break
-    case 7: // Weekly Missions
-      return null
-    case 8:
-      name = "Login Reward"
-      break
-    case 9: // Returnee Rewards
-      name = "Akashi's Homecoming Campaign"
-    case 10:
-      name = "Memento (Collections)"
-      break
-    case 11:
-      name = "Cruise Pass"
-      break
-    case 12:
-      name = "META Shop"
-      break
-    case 13:
-      name = "META Showdown"
-      break
-    case 14:
-      name = "Dossier Analysis"
-      break
-    case 15:
-      name = `Shipyard (PR${shipSeriesMap[name]})`
-      break
-    default:
-      return {
-        name: "IF YOU SEE THIS, DM THE WEBSITE DEVELOPER",
-        href: "Category:Ships",
-      }
+export interface ShipLocationData {
+  events: shipLocation[]
+  other: shipLocation[]
+  construction: shipLocation[]
+  permanent: shipLocation[]
+}
+
+const OTHER_LOCATIONS: Record<number, string | null> = {
+  0: "Guild Shop",
+  1: "Medal Shop",
+  2: "Core Data Shop",
+  3: "Merit Shop",
+  4: "Requisition",
+  5: null, // Protocore Shop
+  6: "Permanent Ultra Rare Pity",
+  7: null, // Weekly Missions
+  8: "Login Reward",
+  9: "Akashi's Homecoming Campaign", // Returnee Rewards
+  10: "Memento (Collections)",
+  11: "Cruise Pass",
+  12: "META Shop",
+  13: "META Showdown",
+  14: "Dossier Analysis",
+  15: "Shipyard",
+}
+
+const parseOtherLocation = (name: string, id: number): shipLocation | null => {
+  if (id === 15) {
+    name = `Shipyard (PR${shipSeriesMap[name]})`
+  } else {
+    name = OTHER_LOCATIONS[id] || "IF YOU SEE THIS, DM THE WEBSITE DEVELOPER"
   }
+
+  if (!name) return null
 
   return {
     name,
@@ -76,16 +55,55 @@ export const otherLocationsParse = (
   }
 }
 
+const parseConstruction = (dropData: ShipDropData): shipLocation[] => {
+  const categories = []
+  if (dropData?.light) categories.push("Light")
+  if (dropData?.heavy) categories.push("Heavy")
+  if (dropData?.special) categories.push("Special")
+
+  return categories.length > 0
+    ? [
+        {
+          name: `Construction (${categories.join(", ")})`,
+          href: "Construction",
+        },
+      ]
+    : []
+}
+
+const parseEvents = (name: string, events: string[]): shipLocation[] => {
+  const filteredEvents = events.filter(
+    (event) => !excludedEvents.includes(event),
+  )
+
+  if (filteredEvents.length === 0) return []
+
+  // Hard-coded exceptions
+  if (exceptionShips.includes(name)) {
+    return filteredEvents.map((event) => ({
+      name: event.replace(/Rerun/g, "").trim(),
+      href: parseLocation(event),
+    }))
+  }
+
+  // Rest of ships
+  return [
+    {
+      name: filteredEvents[0].replace(/Rerun/g, "").trim(),
+      href: parseLocation(filteredEvents[0]),
+    },
+  ]
+}
+
 export const shipLocationParse = (
   name: string,
   id: number,
-): {
-  events?: shipLocation[]
-  other?: shipLocation[]
-  permanent: shipLocation[]
-} => {
+): ShipLocationData => {
   if (name.match(/Bulin/)) {
     return {
+      events: [],
+      other: [],
+      construction: [],
       permanent: [
         {
           name: "See Common Resource Guide",
@@ -95,66 +113,34 @@ export const shipLocationParse = (
     }
   }
 
-  const dropData = shipDropData[id]
+  const dropData = shipDropData[id]!
 
-  let locations = {
-    events: [] as shipLocation[],
-    other: [] as shipLocation[],
-    permanent: [] as shipLocation[],
-  }
-
-  // Event Drops
-  const events = dropData?.events ?? []
-  if (events.length > 0) {
-    locations.events = events
-      .filter((event) => !excludedEvents.includes(event))
-      .map((event) => ({
-        name: event.replaceAll(/Rerun/g, "").trim(),
-        href: parseLocation(event),
-      }))
-  }
-
-  // "Other"
-  if (dropData?.other && dropData.other.length > 0) {
-    dropData.other.forEach((otherId) => {
-      const otherLocation = otherLocationsParse(name, otherId)
-      if (otherLocation) {
-        locations.other.push(otherLocation)
-      }
-    })
-  }
-
-  // Construction
-  let constructionName = "Construction"
-  const categories = [] as string[]
-
-  if (dropData?.light) categories.push("Light")
-  if (dropData?.heavy) categories.push("Heavy")
-  if (dropData?.special) categories.push("Special")
-
-  if (categories.length > 0) {
-    constructionName += ` (${categories.join(", ")})`
-    locations.permanent.push({
-      name: constructionName,
-      href: "Construction",
-    })
-  }
-
-  // Map Drops
-  if (dropData?.maps?.some((chapter) => chapter.length > 0)) {
-    locations.permanent.push({
-      name: "Map Drop (check Wiki)",
-      href: parseLocation(name),
-    })
-  }
+  const events = parseEvents(name, dropData.events)
+  const other = dropData.other
+    ?.map((otherId) => parseOtherLocation(name, otherId))
+    .filter(Boolean) as shipLocation[]
+  const construction = parseConstruction(dropData || {})
+  const permanent = dropData?.maps?.some((chapter) => chapter.length > 0)
+    ? [
+        {
+          name: "Map Drop (check Wiki)",
+          href: parseLocation(name),
+        },
+      ]
+    : []
 
   // Fallback
-  if (locations.events.length === 0 && locations.other.length === 0) {
-    locations.permanent.push({
-      name: "Base Game",
+  if (
+    !events.length &&
+    !other.length &&
+    !construction.length &&
+    !permanent.length
+  ) {
+    permanent.push({
+      name: "Unobtainable",
       href: "Category:Ships",
     })
   }
 
-  return locations
+  return { events, other, construction, permanent }
 }

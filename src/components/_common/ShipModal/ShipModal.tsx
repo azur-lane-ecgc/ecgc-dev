@@ -132,7 +132,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 
   // me
   const samvaluationData = shipSamvaluationParse(ship)
-  const locations = shipLocationParse(ship, id)
   const samvaluationText = samvaluationData.evaluation
   const fastLoad = samvaluationData?.preload ?? ""
   const roles = useMemo(() => ["Healer"].slice(0, 5), [])
@@ -235,7 +234,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               </h1>
 
               {/* Event / Location */}
-              <ShipLocations />
+              <ShipLocations shipName={ship} id={id} />
               <HR />
 
               {/* Flexbox for Icon + Samvaluation */}
