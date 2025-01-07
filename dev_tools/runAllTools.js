@@ -5,18 +5,49 @@ import { exec as execCallback } from "child_process"
 
 const exec = promisify(execCallback)
 const scriptsDirectory = "./dev_tools"
-const excludedFiles = ["_pageInfo.js", "runAllTools.js", "index.js", "imgur.py", "samvaluationparser.js"]
+const excludedDirectories = ["gsheets2img"]
+const excludedFiles = [
+  /_pageInfo.js/,
+  /runAllTools.js/,
+  /index.js/,
+  /samvaluationparser.js/,
+  /imgur.py/,
+]
+
+const readAllFiles = async (dir) => {
+  let files = []
+  const dirents = await fs.readdir(dir, { withFileTypes: true })
+
+  for (const dirent of dirents) {
+    const res = path.resolve(dir, dirent.name)
+
+    // Skip excluded directories
+    if (dirent.isDirectory() && excludedDirectories.includes(dirent.name)) {
+      continue
+    }
+
+    if (dirent.isDirectory()) {
+      files = [...files, ...(await readAllFiles(res))]
+    } else {
+      const relativePath = path.relative(scriptsDirectory, res)
+      files.push(relativePath)
+    }
+  }
+
+  return files
+}
 
 const runScript = async (fileName) => {
   try {
-    const { stdout, stderr } = await exec(
-      `node ${path.join(scriptsDirectory, fileName)}`,
-    )
+    const { stdout, stderr } = fileName.endsWith(".py")
+      ? await exec(`python3 ${path.join(scriptsDirectory, fileName)}`)
+      : fileName.endsWith(".js")
+        ? await exec(`node ${path.join(scriptsDirectory, fileName)}`)
+        : ""
 
     if (stderr) {
       console.error(`Stderr from ${fileName}:`, stderr)
     }
-
     console.log(stdout)
   } catch (error) {
     console.error(`Error running script ${fileName}:`, error)
@@ -26,10 +57,13 @@ const runScript = async (fileName) => {
 
 const runAllScripts = async () => {
   try {
-    const files = await fs.readdir(scriptsDirectory)
+    const files = await readAllFiles(scriptsDirectory)
 
+    // Skip excluded files
     const scriptFiles = files.filter(
-      (file) => file.endsWith(".js") && !excludedFiles.includes(file),
+      (file) =>
+        (file.endsWith(".js") || file.endsWith(".py")) &&
+        !excludedFiles.some((regex) => regex.test(file)),
     )
 
     console.log(`Found ${scriptFiles.length} scripts to run:`, scriptFiles)
