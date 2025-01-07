@@ -1,7 +1,20 @@
 export const parseLocation = (location: string) => {
-  // War Archive Version
+  // Divergent Chessboard (EN)
   if (location === "Divergent Chessboard" || location === "Opposite-Colored") {
     location = "Divergent Chessboard Rerun"
+  }
+
+  //LNY
+  else if (location.match(/Lunar New Year/)) {
+    const now = new Date()
+    const currentYear = now.getFullYear()
+    const febFirst = new Date(currentYear, 1, 1)
+
+    if (now < febFirst) {
+      location = `Happy Lunar New Year ${currentYear - 1}`
+    } else {
+      location = `Happy Lunar New Year ${currentYear}`
+    }
   }
 
   // Memento -> Collection
