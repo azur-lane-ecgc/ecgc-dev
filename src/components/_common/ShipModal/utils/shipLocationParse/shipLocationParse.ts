@@ -37,9 +37,9 @@ const OTHER_LOCATIONS: Record<number, string | null> = {
   8: "Login Reward",
   9: "Akashi's Homecoming Campaign", // Returnee Rewards
   10: "Memento (Collections)",
-  11: "Cruise Pass",
+  11: "Cruise Pass", // NOT PERMANENT
   12: "META Shop",
-  13: "META Showdown",
+  13: "META Showdown", // NOT PERMANENT
   14: "Dossier Analysis",
   15: "Shipyard",
   16: "Quest",
