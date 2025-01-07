@@ -1,7 +1,7 @@
 import fs from "fs"
 import path from "path"
 
-import { pageInfo } from "./_pageInfo.js"
+import { pageInfo } from "../_pageInfo.js"
 
 const outputFilePath = path.join(
   process.cwd(),

@@ -7,11 +7,12 @@ const exec = promisify(execCallback)
 const scriptsDirectory = "./dev_tools"
 const excludedDirectories = ["gsheets2img"]
 const excludedFiles = [
-  /_pageInfo.js/,
-  /runAllTools.js/,
-  /index.js/,
-  /samvaluationparser.js/,
-  /imgur.py/,
+  /_pageInfo\.js/,
+  /runAllTools\.js/,
+  /index\.js/,
+  /samvaluationparser\.js/,
+  /imgur\.py/,
+  /\\rankings\.py/,
 ]
 
 const readAllFiles = async (dir) => {

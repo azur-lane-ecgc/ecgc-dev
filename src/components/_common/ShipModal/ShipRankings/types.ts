@@ -3,8 +3,8 @@ export interface ShipRankingTypes {
 }
 
 export interface MainFleetRankingProps {
-  notes?: string
-  nameNote?: string
+  notes?: string | null
+  nameNote?: string | null
 
   // Rank
   hardarbiter: string
@@ -17,30 +17,30 @@ export interface MainFleetRankingProps {
   ex: string
 
   // Usage
-  consistency?: number
-  fleetreq?: number
-  gearreq?: number
-  flagreq?: number
+  consistency?: number | null
+  fleetreq?: number | null
+  gearreq?: number | null
+  flagreq?: number | null
 
   // Offense
   lightdmg: number
   mediumdmg: number
   heavydmg: number
   aoedmg: number
-  dmguptime?: number
-  offensivebuff?: number
+  dmguptime?: number | null
+  offensivebuff?: number | null
 
   // Defense
-  selfsurvival?: number
-  aa?: number
-  rammers?: number
-  othermain?: number
-  vgsurvival?: number
+  selfsurvival?: number | null
+  aa?: number | null
+  rammers?: number | null
+  othermain?: number | null
+  vgsurvival?: number | null
 }
 
 export interface VanguardFleetRankingProps {
-  notes?: string
-  nameNote?: string
+  notes?: string | null
+  nameNote?: string | null
 
   // Rank
   hardarbiter: string
@@ -53,41 +53,41 @@ export interface VanguardFleetRankingProps {
   ex: string
 
   // Usage
-  consistency?: number
-  fleetreq?: number
-  gearreq?: number
+  consistency?: number | null
+  fleetreq?: number | null
+  gearreq?: number | null
 
   // Offense
   lightdmg: number
   mediumdmg: number
   heavydmg: number
   aoedmg: number
-  offensivebuff?: number
+  offensivebuff?: number | null
 
   // Defense
-  selfsurvival?: number
-  aa?: number
-  asw?: number
-  defensivebuff?: number
+  selfsurvival?: number | null
+  aa?: number | null
+  asw?: number | null
+  defensivebuff?: number | null
 }
 
 export interface SSFleetRankingProps {
-  notes?: string
-  nameNote?: string
+  notes?: string | null
+  nameNote?: string | null
 
   // Rank
   hardarbiter: string
   cm: string
-  campaign?: string
+  campaign?: string | null
 
   // Usage
-  consistency?: number
-  fleetreq?: number
-  flagreq?: number
+  consistency?: number | null
+  fleetreq?: number | null
+  flagreq?: number | null
 
   // Offense
   lightdmg: number
   mediumdmg: number
   heavydmg: number
-  offensivebuff?: number
+  offensivebuff?: number | null
 }

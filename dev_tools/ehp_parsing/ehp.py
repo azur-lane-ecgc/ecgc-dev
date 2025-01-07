@@ -1,7 +1,6 @@
 import json
 import os
 import re
-from datetime import datetime
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
@@ -13,16 +12,11 @@ SHEET_NAMES = ["eHP 3"]
 OUTPUT_PATHS = [
     "src/components/_common/ShipModal/ShipEHP/shipEHP.json",
 ]
-CHANGELONG_SHEET_NAME = "Notes"
-END_GAME_RANKINGS_PATH = "src/components/_common/Constants/lastUpdated.ts"
 
 # Authenticate and initialize the Sheets API
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 credentials = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 service = build("sheets", "v4", credentials=credentials)
-
-
-import re
 
 
 def extract_base_name(ship_name):
@@ -85,46 +79,6 @@ def process_sheet(sheet_name):
     return data_dict
 
 
-def get_changelog_date():
-    """Fetch date from Changelog sheet (A2) and return it in MM/DD/YYYY format"""
-    result = (
-        service.spreadsheets()
-        .values()
-        .get(spreadsheetId=SPREADSHEET_ID, range=f"{CHANGELONG_SHEET_NAME}!A1")
-        .execute()
-    )
-    date_str = result.get("values", [[None]])[0][0]
-    if date_str:
-        try:
-            date_str = (
-                date_str.replace("th,", ",")
-                .replace("st,", ",")
-                .replace("nd,", ",")
-                .replace("rd,", ",")
-            )
-            date_obj = datetime.strptime(date_str, "%B %d, %Y")
-            return date_obj.strftime("%m/%d/%Y")
-        except ValueError:
-            raise ValueError(f"Invalid date format in Changelog: {date_str}")
-    return None
-
-
-def update_end_game_rankings_update_date(new_date):
-    """Update the endGameRankingsUpdateDate in the Constants file"""
-    with open(END_GAME_RANKINGS_PATH, "r", encoding="utf-8") as file:
-        content = file.read()
-
-    # Use a regex to find the line containing endGameRankingsUpdateDate and replace the date
-    updated_content = re.sub(
-        r'export const ehpUpdateDate = "\d{2}/\d{2}/\d{4}"',
-        f'export const ehpUpdateDate = "{new_date}"',
-        content,
-    )
-
-    with open(END_GAME_RANKINGS_PATH, "w", encoding="utf-8") as file:
-        file.write(updated_content)
-
-
 # Main logic to process sheets and save as separate JSON files
 if __name__ == "__main__":
     # Ensure we have matching output paths for each sheet
@@ -142,10 +96,3 @@ if __name__ == "__main__":
             json.dump(sheet_data, json_file, indent=4, ensure_ascii=False)
 
         print(f"Data from sheet '{sheet_name}' has been written to {output_path}")
-
-    changelog_date = get_changelog_date()
-    if changelog_date:
-        update_end_game_rankings_update_date(changelog_date)
-        print(f"Updated endGameRankingsUpdateDate to {changelog_date}")
-    else:
-        print("Changelog date is not available, skipping update.")

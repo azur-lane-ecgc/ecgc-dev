@@ -8,10 +8,10 @@ import {
 } from "@components/_common/ShipModal/styles"
 
 import type { ShipRankingTypes, MainFleetRankingProps } from "./types"
-import { convertToMainFleetRanking } from "./data"
 
-const MainFleetData: Record<string, MainFleetRankingProps[]> =
-  convertToMainFleetRanking()
+const MainFleetData: Record<string, MainFleetRankingProps[]> = (await import(
+  "./data/mainFleetRankings.json"
+).then((module) => module.default)) as Record<number, MainFleetRankingProps[]>
 
 export const MainFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
   const [rankingIndex, setRankingIndex] = useState<number>(0)

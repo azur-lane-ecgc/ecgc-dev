@@ -1,6 +1,6 @@
 import fs from "fs"
 
-import { pageInfo } from "./_pageInfo.js"
+import { pageInfo } from "../_pageInfo.js"
 
 const hardCodedPaths = ["src/components/Equipment/AugmentModules.astro"]
 

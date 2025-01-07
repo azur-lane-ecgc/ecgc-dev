@@ -8,10 +8,10 @@ import {
 } from "@components/_common/ShipModal/styles"
 
 import type { ShipRankingTypes, SSFleetRankingProps } from "./types"
-import { convertToSSFleetRanking } from "./data"
 
-const SSFleetData: Record<string, SSFleetRankingProps[]> =
-  convertToSSFleetRanking()
+const SSFleetData: Record<string, SSFleetRankingProps[]> = (await import(
+  "./data/ssFleetRankings.json"
+).then((module) => module.default)) as Record<number, SSFleetRankingProps[]>
 
 export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
   const [rankingIndex, setRankingIndex] = useState<number>(0)
