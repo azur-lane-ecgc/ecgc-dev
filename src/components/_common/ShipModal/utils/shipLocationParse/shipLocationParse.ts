@@ -11,7 +11,7 @@ const excludedEvents = [
   "Royal Maids Battle Royale",
   "Lunar New Year 2018",
 ]
-const exceptionShips = ["Formidable", "Mary Celeste", "Chang Chun", "Tai Yuan"]
+const exceptionShips = ["Formidable", "Mary Celeste"]
 
 export interface shipLocation {
   name: string
