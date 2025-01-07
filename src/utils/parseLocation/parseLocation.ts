@@ -1,6 +1,6 @@
 export const parseLocation = (location: string) => {
   // War Archive Version
-  if (location === "Divergent Chessboard") {
+  if (location === "Divergent Chessboard" || location === "Opposite-Colored") {
     location = "Divergent Chessboard Rerun"
   }
 
