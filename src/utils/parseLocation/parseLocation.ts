@@ -52,5 +52,9 @@ export const parseLocation = (location: string) => {
     location = "META_Showdown#Dossier_Analysis"
   }
 
+  else if (location === "Quest") {
+    location = "Akashi/Questline"
+  }
+
   return location.replaceAll(" ", "_")
 }

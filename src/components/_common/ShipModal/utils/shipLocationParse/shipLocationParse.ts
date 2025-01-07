@@ -38,6 +38,7 @@ const OTHER_LOCATIONS: Record<number, string | null> = {
   13: "META Showdown",
   14: "Dossier Analysis",
   15: "Shipyard",
+  16: "Quest",
 }
 
 const parseOtherLocation = (name: string, id: number): shipLocation | null => {
