@@ -24,6 +24,9 @@ import {
   VanguardFleetRanking,
   SSFleetRanking,
 } from "./ShipRankings"
+import { ShipEHPDisplay } from "./ShipEHP"
+import { ShipLocations } from "./ShipLocations"
+
 import {
   parseEquipHref,
   shipHullTypeParse,
@@ -35,6 +38,8 @@ import {
   shipRarityParse,
   shipImageParse,
   shipSamvaluationParse,
+  shipFleetTypeParse,
+  shipLocationParse,
 } from "./utils"
 
 import {
@@ -46,7 +51,6 @@ import {
   modalStyle,
   shipLinkStyle,
 } from "./styles"
-import { ShipEHPDisplay } from "./ShipEHP"
 
 export interface TriggerProps {
   iconNote?: string | null
@@ -128,11 +132,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 
   // me
   const samvaluationData = shipSamvaluationParse(ship)
-  const location = samvaluationData.event
+  const locations = shipLocationParse(ship, id)
   const samvaluationText = samvaluationData.evaluation
-
-  const roles = useMemo(() => ["Healer"].slice(0, 5), [])
   const fastLoad = samvaluationData?.preload ?? ""
+  const roles = useMemo(() => ["Healer"].slice(0, 5), [])
 
   return (
     <>
@@ -232,16 +235,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               </h1>
 
               {/* Event / Location */}
-              {!!location && (
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href={location.href}
-                  title={location.name}
-                >
-                  {location.name}
-                </a>
-              )}
+              <ShipLocations />
               <HR />
 
               {/* Flexbox for Icon + Samvaluation */}
