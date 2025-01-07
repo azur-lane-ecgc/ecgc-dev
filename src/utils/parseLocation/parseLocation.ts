@@ -4,6 +4,11 @@ export const parseLocation = (location: string) => {
     location = "Divergent Chessboard Rerun"
   }
 
+  // Air Raid Drills w/ Essex
+  else if (location.match(/Air Raid Drills with Essex/)) {
+    location = "Air Raid Drills with Essex Rerun"
+  }
+
   //LNY
   else if (location.match(/Lunar New Year/)) {
     const now = new Date()
