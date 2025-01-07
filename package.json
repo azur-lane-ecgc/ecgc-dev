@@ -7,9 +7,9 @@
     "preview": "astro preview",
     "dev": "astro dev",
     "submodule": "git submodule update --recursive --remote",
-    "build": "npm run submodule && npm run devtools && astro check && astro build",
+    "build": "npm run submodule && astro check && astro build",
     "devtools": "node dev_tools/runAllTools.js",
-    "start": "npm run build && start http://localhost:4321/test_ecgc_2/ && astro dev",
+    "start": "npm run devtools && npm run build && start http://localhost:4321/test_ecgc_2/ && astro dev",
     "rebuild": "npm ci && npm install && npm outdated"
   },
   "dependencies": {
