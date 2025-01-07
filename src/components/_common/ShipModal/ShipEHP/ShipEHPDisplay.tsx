@@ -103,13 +103,13 @@ export const ShipEHPDisplay: React.FC<ShipEHPDisplayProps> = ({ ship }) => {
                   style={{ backgroundColor: getEHPColor(totalEHP) }}
                   className="!text-black !font-bold"
                 >
-                  <span>{totalEHP}%</span>
+                  {totalEHP}%
                 </td>
                 <td
                   style={{ backgroundColor: getSTDColor(std) }}
                   className="!text-black !font-bold"
                 >
-                  <span>{std}%</span>
+                  {std}%
                 </td>
               </tr>
             )
