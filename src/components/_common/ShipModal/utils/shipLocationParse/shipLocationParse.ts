@@ -6,8 +6,12 @@ const shipDropData: Record<number, ShipDropData> = (await import(
   "@data/data/ship_drops.json"
 ).then((module) => module.default)) as Record<number, ShipDropData>
 
-const excludedEvents = ["Opposite-Colored", "Royal Maids Battle Royale"]
-const exceptionShips = ["Formidable", "Mary Celeste"]
+const excludedEvents = [
+  "Opposite-Colored",
+  "Royal Maids Battle Royale",
+  "Lunar New Year 2018",
+]
+const exceptionShips = ["Formidable", "Mary Celeste", "Chang Chun", "Tai Yuan"]
 
 export interface shipLocation {
   name: string
@@ -85,6 +89,16 @@ const parseEvents = (name: string, events: string[]): shipLocation[] => {
       name: event.replace(/Rerun/g, "").trim(),
       href: parseLocation(event),
     }))
+  }
+
+  // An Shan / Fu Shun
+  else if (name === "An Shan" || name === "Fu Shun") {
+    return [
+      {
+        name: "Lunar New Year (every year)",
+        href: parseLocation("Lunar New Year"),
+      },
+    ]
   }
 
   // Rest of ships

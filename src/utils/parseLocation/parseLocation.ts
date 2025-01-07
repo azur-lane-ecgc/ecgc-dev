@@ -10,7 +10,7 @@ export const parseLocation = (location: string) => {
   }
 
   //LNY
-  else if (location.match(/Lunar New Year/)) {
+  else if (location === "Lunar New Year") {
     const now = new Date()
     const currentYear = now.getFullYear()
     const febFirst = new Date(currentYear, 1, 1)
@@ -52,6 +52,7 @@ export const parseLocation = (location: string) => {
     location = "META_Showdown#Dossier_Analysis"
   }
 
+  // Akashi Questline
   else if (location === "Quest") {
     location = "Akashi/Questline"
   }
