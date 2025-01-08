@@ -72,11 +72,11 @@ const runAllScripts = async () => {
 
     for (const scriptFile of scriptFiles) {
       try {
-        console.log(`Starting ${scriptFile}...`)
+        console.log(`\x1b[36mStarting ${scriptFile}...\x1b[0m`)
         await runScript(scriptFile)
-        console.log(`Completed ${scriptFile}\n`)
+        console.log(`\x1b[32mCompleted ${scriptFile}\x1b[0m\n`)
       } catch (error) {
-        console.error(`Failed to run ${scriptFile}`)
+        console.error(`\x1b[31mFailed to run ${scriptFile}\x1b[0m`)
       }
     }
 
