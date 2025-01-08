@@ -148,6 +148,11 @@ def process_sheet(sheet_name):
         else:
             data_dict[parsed_key["shipName"].strip()].append(ranking)
 
+    for ship_name, rankings in data_dict.items():
+        data_dict[ship_name] = sorted(
+            rankings, key=lambda x: (len(x["nameNote"]) > 0, x["nameNote"])
+        )
+
     return data_dict
 
 
