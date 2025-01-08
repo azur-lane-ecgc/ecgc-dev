@@ -1,129 +1,49 @@
 {
-    "Fishpack": [
+    "Albacore": [
         {
             "nameNote": "Base",
-            "notes": "Flasher plus two of (Albacore, Homura, Archerfish).",
-            "hardarbiter": "S",
-            "cm": "S",
+            "notes": "Bonus against DD, CL, and CV.",
+            "hardarbiter": "A",
+            "cm": "A",
             "campaign": "S",
-            "consistency": -1,
+            "consistency": null,
             "fleetreq": null,
-            "flagreq": null,
+            "flagreq": -4,
             "lightdmg": 2,
-            "mediumdmg": 4,
-            "heavydmg": 5,
+            "mediumdmg": 3,
+            "heavydmg": 4,
             "offensivebuff": null
         }
     ],
-    "Flasher": [
+    "Albacore μ": [
         {
             "nameNote": "Base",
-            "notes": "Absolutely requires flag if not with Gato-class (Albacore).",
-            "hardarbiter": "S",
-            "cm": "S",
-            "campaign": "S",
+            "notes": "Armor breaks once.",
+            "hardarbiter": "C",
+            "cm": "C",
+            "campaign": "B",
             "consistency": -2,
-            "fleetreq": -1,
+            "fleetreq": null,
             "flagreq": -3,
-            "lightdmg": 2,
-            "mediumdmg": 4,
-            "heavydmg": 5,
-            "offensivebuff": 2
+            "lightdmg": 1,
+            "mediumdmg": 2,
+            "heavydmg": 2,
+            "offensivebuff": null
         }
     ],
-    "Homura": [
+    "Ami Futami": [
         {
             "nameNote": "Base",
-            "notes": "100% geo hit barrage = consistently good. Must not use unique augment for campaign.",
-            "hardarbiter": "S",
-            "cm": "S",
-            "campaign": "C",
-            "consistency": null,
+            "notes": "Bad.",
+            "hardarbiter": "D",
+            "cm": "D",
+            "campaign": "D",
+            "consistency": -1,
             "fleetreq": null,
             "flagreq": -2,
-            "lightdmg": 2,
-            "mediumdmg": 4,
-            "heavydmg": 5,
-            "offensivebuff": null
-        }
-    ],
-    "Solos": [
-        {
-            "nameNote": "Base",
-            "notes": "Flasher and Homura plus (U-556 META or Leonardo). Kick Homura if campaign.",
-            "hardarbiter": "S",
-            "cm": "A",
-            "campaign": "A",
-            "consistency": -1,
-            "fleetreq": null,
-            "flagreq": null,
             "lightdmg": 1,
-            "mediumdmg": 3,
-            "heavydmg": 4,
-            "offensivebuff": null
-        }
-    ],
-    "U-556 META": [
-        {
-            "nameNote": "Base",
-            "notes": "Bonus against light armor.",
-            "hardarbiter": "S",
-            "cm": "A",
-            "campaign": "A",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": -3,
-            "lightdmg": 2,
-            "mediumdmg": 3,
-            "heavydmg": 5,
-            "offensivebuff": null
-        }
-    ],
-    "U-81": [
-        {
-            "nameNote": "Base",
-            "notes": "Requires KMS wolfpack. Bonus against carriers.",
-            "hardarbiter": "S",
-            "cm": "A",
-            "campaign": "A",
-            "consistency": -2,
-            "fleetreq": -2,
-            "flagreq": -3,
-            "lightdmg": 2,
-            "mediumdmg": 4,
-            "heavydmg": 5,
-            "offensivebuff": null
-        }
-    ],
-    "U-96": [
-        {
-            "nameNote": "Base",
-            "notes": "Requires KMS wolfpack. Buffs KMS subs.",
-            "hardarbiter": "S",
-            "cm": "A",
-            "campaign": "A",
-            "consistency": null,
-            "fleetreq": -2,
-            "flagreq": -3,
-            "lightdmg": 1,
-            "mediumdmg": 3,
-            "heavydmg": 4,
-            "offensivebuff": 1
-        }
-    ],
-    "Wolfpack": [
-        {
-            "nameNote": "Base",
-            "notes": "U-96 and U-81 plus (U-37 or U-47). Lower oxy-rld suffers in CM/Campaign.",
-            "hardarbiter": "S",
-            "cm": "A",
-            "campaign": "A",
-            "consistency": -2,
-            "fleetreq": null,
-            "flagreq": null,
-            "lightdmg": 1,
-            "mediumdmg": 3,
-            "heavydmg": 4,
+            "mediumdmg": 1,
+            "heavydmg": 2,
             "offensivebuff": null
         }
     ],
@@ -143,22 +63,6 @@
             "offensivebuff": 3
         }
     ],
-    "Albacore": [
-        {
-            "nameNote": "Base",
-            "notes": "Bonus against DD, CL, and CV.",
-            "hardarbiter": "A",
-            "cm": "A",
-            "campaign": "S",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": -4,
-            "lightdmg": 2,
-            "mediumdmg": 3,
-            "heavydmg": 4,
-            "offensivebuff": null
-        }
-    ],
     "Archerfish": [
         {
             "nameNote": "Base",
@@ -173,6 +77,86 @@
             "mediumdmg": 3,
             "heavydmg": 5,
             "offensivebuff": 2
+        }
+    ],
+    "Bluegill": [
+        {
+            "nameNote": "Base",
+            "notes": "Bonus against DDs and CLs.",
+            "hardarbiter": "D",
+            "cm": "D",
+            "campaign": "C",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": -2,
+            "lightdmg": 1,
+            "mediumdmg": 1,
+            "heavydmg": 2,
+            "offensivebuff": null
+        }
+    ],
+    "Cavalla": [
+        {
+            "nameNote": "Base",
+            "notes": "Bonus against CV. Prefers Albacore. Do not put in bottom position.",
+            "hardarbiter": "C",
+            "cm": "C",
+            "campaign": "B",
+            "consistency": null,
+            "fleetreq": -1,
+            "flagreq": -2,
+            "lightdmg": 1,
+            "mediumdmg": 2,
+            "heavydmg": 2,
+            "offensivebuff": null
+        }
+    ],
+    "Dace": [
+        {
+            "nameNote": "Base",
+            "notes": "Bonus against CAs and CBs.",
+            "hardarbiter": "D",
+            "cm": "D",
+            "campaign": "C",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": -2,
+            "lightdmg": 1,
+            "mediumdmg": 1,
+            "heavydmg": 2,
+            "offensivebuff": null
+        }
+    ],
+    "Dolphin": [
+        {
+            "nameNote": "Base",
+            "notes": "One-time 8% fleet buff for 8s. IXs are not suitable for use against high-damage enemies.",
+            "hardarbiter": "C*",
+            "cm": "B*",
+            "campaign": "D",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": -2,
+            "lightdmg": 2,
+            "mediumdmg": 1,
+            "heavydmg": 1,
+            "offensivebuff": 1
+        }
+    ],
+    "Fishpack": [
+        {
+            "nameNote": "Base",
+            "notes": "Flasher plus two of (Albacore, Homura, Archerfish).",
+            "hardarbiter": "S",
+            "cm": "S",
+            "campaign": "S",
+            "consistency": -1,
+            "fleetreq": null,
+            "flagreq": null,
+            "lightdmg": 2,
+            "mediumdmg": 4,
+            "heavydmg": 5,
+            "offensivebuff": null
         }
     ],
     "Fishpack without Flasher": [
@@ -191,100 +175,52 @@
             "offensivebuff": null
         }
     ],
-    "I-19": [
+    "Flasher": [
         {
             "nameNote": "Base",
-            "notes": "Not top even if buffed by Amagi(CV).",
-            "hardarbiter": "A",
-            "cm": "A",
-            "campaign": "A",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": -3,
-            "lightdmg": 1,
-            "mediumdmg": 3,
-            "heavydmg": 4,
-            "offensivebuff": null
-        }
-    ],
-    "Leonardo da Vinci": [
-        {
-            "nameNote": "Base",
-            "notes": "Requires RN 🍕 gear. Bonus against light armor. Stays 5 units further right, which is good.",
-            "hardarbiter": "A",
-            "cm": "A",
+            "notes": "Absolutely requires flag if not with Gato-class (Albacore).",
+            "hardarbiter": "S",
+            "cm": "S",
             "campaign": "S",
-            "consistency": null,
+            "consistency": -2,
+            "fleetreq": -1,
+            "flagreq": -3,
+            "lightdmg": 2,
+            "mediumdmg": 4,
+            "heavydmg": 5,
+            "offensivebuff": 2
+        }
+    ],
+    "Herring": [
+        {
+            "nameNote": "Base",
+            "notes": "Bonus against DDs.",
+            "hardarbiter": "D",
+            "cm": "D",
+            "campaign": "C",
+            "consistency": -1,
             "fleetreq": null,
             "flagreq": -2,
-            "lightdmg": 2,
-            "mediumdmg": 3,
-            "heavydmg": 4,
-            "offensivebuff": null
-        }
-    ],
-    "U-37": [
-        {
-            "nameNote": "Base",
-            "notes": "Requires KMS wolfpack. Bonus against light armor.",
-            "hardarbiter": "A",
-            "cm": "A",
-            "campaign": "A",
-            "consistency": null,
-            "fleetreq": -2,
-            "flagreq": -3,
-            "lightdmg": 2,
-            "mediumdmg": 3,
-            "heavydmg": 4,
-            "offensivebuff": null
-        }
-    ],
-    "U-47": [
-        {
-            "nameNote": "Base",
-            "notes": "Ignore the Lone Wolf skill.",
-            "hardarbiter": "A",
-            "cm": "A",
-            "campaign": "B",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": -3,
             "lightdmg": 1,
-            "mediumdmg": 3,
-            "heavydmg": 4,
+            "mediumdmg": 1,
+            "heavydmg": 2,
             "offensivebuff": null
         }
     ],
-    "Royal Fortune": [
+    "Homura": [
         {
             "nameNote": "Base",
-            "notes": "Can slow boss if put in middle position. IXs are not suitable for use against high-damage enemies.",
-            "hardarbiter": "A*",
-            "cm": "S*",
+            "notes": "100% geo hit barrage = consistently good. Must not use unique augment for campaign.",
+            "hardarbiter": "S",
+            "cm": "S",
             "campaign": "C",
             "consistency": null,
             "fleetreq": null,
             "flagreq": -2,
-            "lightdmg": 3,
-            "mediumdmg": 2,
-            "heavydmg": 1,
-            "offensivebuff": 1
-        }
-    ],
-    "Tempestack": [
-        {
-            "nameNote": "Base",
-            "notes": "Royal Fortune, Amity, Mary Celeste. ONLY good against light armor.",
-            "hardarbiter": "A*",
-            "cm": "A*",
-            "campaign": "C",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": null,
-            "lightdmg": 3,
-            "mediumdmg": 2,
-            "heavydmg": 1,
-            "offensivebuff": 1
+            "lightdmg": 2,
+            "mediumdmg": 4,
+            "heavydmg": 5,
+            "offensivebuff": null
         }
     ],
     "I-13": [
@@ -319,243 +255,19 @@
             "offensivebuff": null
         }
     ],
-    "IJN Subs": [
+    "I-19": [
         {
             "nameNote": "Base",
-            "notes": "I-19 plus two of (I-13, I-168, I-58). Maybe plus one tier if buffed by Amagi(CV)?",
-            "hardarbiter": "B",
-            "cm": "B",
-            "campaign": "B",
+            "notes": "Not top even if buffed by Amagi(CV).",
+            "hardarbiter": "A",
+            "cm": "A",
+            "campaign": "A",
             "consistency": null,
-            "fleetreq": null,
-            "flagreq": null,
-            "lightdmg": 1,
-            "mediumdmg": 2,
-            "heavydmg": 3,
-            "offensivebuff": null
-        }
-    ],
-    "Minato Aqua": [
-        {
-            "nameNote": "Base",
-            "notes": "Has bad oxyreload and surface time. Stays 8 units further right, which is good. Only good for burst damage.",
-            "hardarbiter": "B",
-            "cm": "B",
-            "campaign": "C",
-            "consistency": -1,
-            "fleetreq": -2,
-            "flagreq": -3,
-            "lightdmg": 1,
-            "mediumdmg": 2,
-            "heavydmg": 3,
-            "offensivebuff": null
-        }
-    ],
-    "U-101": [
-        {
-            "nameNote": "Base",
-            "notes": "Requires KMS wolfpack. Do not use Pressure-Resistant Hull. Buffs wolfpack against DDs and CLs.",
-            "hardarbiter": "B",
-            "cm": "B",
-            "campaign": "B",
-            "consistency": null,
-            "fleetreq": -2,
-            "flagreq": 0,
-            "lightdmg": 1,
-            "mediumdmg": 2,
-            "heavydmg": 3,
-            "offensivebuff": 1
-        }
-    ],
-    "Mary Celeste": [
-        {
-            "nameNote": "Base",
-            "notes": "IXs are not suitable for use against high-damage enemies.",
-            "hardarbiter": "B*",
-            "cm": "A*",
-            "campaign": "C",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": 0,
-            "lightdmg": 3,
-            "mediumdmg": 2,
-            "heavydmg": 1,
-            "offensivebuff": null
-        }
-    ],
-    "Albacore μ": [
-        {
-            "nameNote": "Base",
-            "notes": "Armor breaks once.",
-            "hardarbiter": "C",
-            "cm": "C",
-            "campaign": "B",
-            "consistency": -2,
             "fleetreq": null,
             "flagreq": -3,
             "lightdmg": 1,
-            "mediumdmg": 2,
-            "heavydmg": 2,
-            "offensivebuff": null
-        }
-    ],
-    "Cavalla": [
-        {
-            "nameNote": "Base",
-            "notes": "Bonus against CV. Prefers Albacore. Do not put in bottom position.",
-            "hardarbiter": "C",
-            "cm": "C",
-            "campaign": "B",
-            "consistency": null,
-            "fleetreq": -1,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 2,
-            "heavydmg": 2,
-            "offensivebuff": null
-        }
-    ],
-    "I-58": [
-        {
-            "nameNote": "Base",
-            "notes": "Buffs IJN subs. Bonus against CAs and CBs.",
-            "hardarbiter": "C",
-            "cm": "C",
-            "campaign": "B",
-            "consistency": null,
-            "fleetreq": -1,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 1,
-            "heavydmg": 2,
-            "offensivebuff": 1
-        }
-    ],
-    "Nautilus": [
-        {
-            "nameNote": "Base",
-            "notes": "Short debuff window to time with your main fleet.",
-            "hardarbiter": "C",
-            "cm": "C",
-            "campaign": "B",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 1,
-            "heavydmg": 2,
-            "offensivebuff": 1
-        }
-    ],
-    "U-31": [
-        {
-            "nameNote": "Base",
-            "notes": "Requires KMS wolfpack. Has bad oxyreload.",
-            "hardarbiter": "C",
-            "cm": "C",
-            "campaign": "D",
-            "consistency": null,
-            "fleetreq": -2,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 1,
-            "heavydmg": 2,
-            "offensivebuff": null
-        }
-    ],
-    "U-73": [
-        {
-            "nameNote": "Base",
-            "notes": "Requires KMS wolfpack. Has bad oxyreload. Bonus against carriers.",
-            "hardarbiter": "C",
-            "cm": "C",
-            "campaign": "D",
-            "consistency": null,
-            "fleetreq": -2,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 2,
-            "heavydmg": 2,
-            "offensivebuff": null
-        }
-    ],
-    "Dolphin": [
-        {
-            "nameNote": "Base",
-            "notes": "One-time 8% fleet buff for 8s. IXs are not suitable for use against high-damage enemies.",
-            "hardarbiter": "C*",
-            "cm": "B*",
-            "campaign": "D",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": -2,
-            "lightdmg": 2,
-            "mediumdmg": 1,
-            "heavydmg": 1,
-            "offensivebuff": 1
-        }
-    ],
-    "Ami Futami": [
-        {
-            "nameNote": "Base",
-            "notes": "Bad.",
-            "hardarbiter": "D",
-            "cm": "D",
-            "campaign": "D",
-            "consistency": -1,
-            "fleetreq": null,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 1,
-            "heavydmg": 2,
-            "offensivebuff": null
-        }
-    ],
-    "Bluegill": [
-        {
-            "nameNote": "Base",
-            "notes": "Bonus against DDs and CLs.",
-            "hardarbiter": "D",
-            "cm": "D",
-            "campaign": "C",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 1,
-            "heavydmg": 2,
-            "offensivebuff": null
-        }
-    ],
-    "Dace": [
-        {
-            "nameNote": "Base",
-            "notes": "Bonus against CAs and CBs.",
-            "hardarbiter": "D",
-            "cm": "D",
-            "campaign": "C",
-            "consistency": null,
-            "fleetreq": null,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 1,
-            "heavydmg": 2,
-            "offensivebuff": null
-        }
-    ],
-    "Herring": [
-        {
-            "nameNote": "Base",
-            "notes": "Bonus against DDs.",
-            "hardarbiter": "D",
-            "cm": "D",
-            "campaign": "C",
-            "consistency": -1,
-            "fleetreq": null,
-            "flagreq": -2,
-            "lightdmg": 1,
-            "mediumdmg": 1,
-            "heavydmg": 2,
+            "mediumdmg": 3,
+            "heavydmg": 4,
             "offensivebuff": null
         }
     ],
@@ -607,6 +319,54 @@
             "offensivebuff": null
         }
     ],
+    "I-58": [
+        {
+            "nameNote": "Base",
+            "notes": "Buffs IJN subs. Bonus against CAs and CBs.",
+            "hardarbiter": "C",
+            "cm": "C",
+            "campaign": "B",
+            "consistency": null,
+            "fleetreq": -1,
+            "flagreq": -2,
+            "lightdmg": 1,
+            "mediumdmg": 1,
+            "heavydmg": 2,
+            "offensivebuff": 1
+        }
+    ],
+    "IJN Subs": [
+        {
+            "nameNote": "Base",
+            "notes": "I-19 plus two of (I-13, I-168, I-58). Maybe plus one tier if buffed by Amagi(CV)?",
+            "hardarbiter": "B",
+            "cm": "B",
+            "campaign": "B",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": null,
+            "lightdmg": 1,
+            "mediumdmg": 2,
+            "heavydmg": 3,
+            "offensivebuff": null
+        }
+    ],
+    "Leonardo da Vinci": [
+        {
+            "nameNote": "Base",
+            "notes": "Requires RN 🍕 gear. Bonus against light armor. Stays 5 units further right, which is good.",
+            "hardarbiter": "A",
+            "cm": "A",
+            "campaign": "S",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": -2,
+            "lightdmg": 2,
+            "mediumdmg": 3,
+            "heavydmg": 4,
+            "offensivebuff": null
+        }
+    ],
     "Mami Futami": [
         {
             "nameNote": "Base",
@@ -620,6 +380,86 @@
             "lightdmg": 1,
             "mediumdmg": 1,
             "heavydmg": 2,
+            "offensivebuff": null
+        }
+    ],
+    "Mary Celeste": [
+        {
+            "nameNote": "Base",
+            "notes": "IXs are not suitable for use against high-damage enemies.",
+            "hardarbiter": "B*",
+            "cm": "A*",
+            "campaign": "C",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": 0,
+            "lightdmg": 3,
+            "mediumdmg": 2,
+            "heavydmg": 1,
+            "offensivebuff": null
+        }
+    ],
+    "Minato Aqua": [
+        {
+            "nameNote": "Base",
+            "notes": "Has bad oxyreload and surface time. Stays 8 units further right, which is good. Only good for burst damage.",
+            "hardarbiter": "B",
+            "cm": "B",
+            "campaign": "C",
+            "consistency": -1,
+            "fleetreq": -2,
+            "flagreq": -3,
+            "lightdmg": 1,
+            "mediumdmg": 2,
+            "heavydmg": 3,
+            "offensivebuff": null
+        }
+    ],
+    "Nautilus": [
+        {
+            "nameNote": "Base",
+            "notes": "Short debuff window to time with your main fleet.",
+            "hardarbiter": "C",
+            "cm": "C",
+            "campaign": "B",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": -2,
+            "lightdmg": 1,
+            "mediumdmg": 1,
+            "heavydmg": 2,
+            "offensivebuff": 1
+        }
+    ],
+    "Royal Fortune": [
+        {
+            "nameNote": "Base",
+            "notes": "Can slow boss if put in middle position. IXs are not suitable for use against high-damage enemies.",
+            "hardarbiter": "A*",
+            "cm": "S*",
+            "campaign": "C",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": -2,
+            "lightdmg": 3,
+            "mediumdmg": 2,
+            "heavydmg": 1,
+            "offensivebuff": 1
+        }
+    ],
+    "Solos": [
+        {
+            "nameNote": "Base",
+            "notes": "Flasher and Homura plus (U-556 META or Leonardo). Kick Homura if campaign.",
+            "hardarbiter": "S",
+            "cm": "A",
+            "campaign": "A",
+            "consistency": -1,
+            "fleetreq": null,
+            "flagreq": null,
+            "lightdmg": 1,
+            "mediumdmg": 3,
+            "heavydmg": 4,
             "offensivebuff": null
         }
     ],
@@ -639,6 +479,22 @@
             "offensivebuff": null
         }
     ],
+    "Tempestack": [
+        {
+            "nameNote": "Base",
+            "notes": "Royal Fortune, Amity, Mary Celeste. ONLY good against light armor.",
+            "hardarbiter": "A*",
+            "cm": "A*",
+            "campaign": "C",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": null,
+            "lightdmg": 3,
+            "mediumdmg": 2,
+            "heavydmg": 1,
+            "offensivebuff": 1
+        }
+    ],
     "Torricelli": [
         {
             "nameNote": "Base",
@@ -653,6 +509,22 @@
             "mediumdmg": 1,
             "heavydmg": 2,
             "offensivebuff": null
+        }
+    ],
+    "U-101": [
+        {
+            "nameNote": "Base",
+            "notes": "Requires KMS wolfpack. Do not use Pressure-Resistant Hull. Buffs wolfpack against DDs and CLs.",
+            "hardarbiter": "B",
+            "cm": "B",
+            "campaign": "B",
+            "consistency": null,
+            "fleetreq": -2,
+            "flagreq": 0,
+            "lightdmg": 1,
+            "mediumdmg": 2,
+            "heavydmg": 3,
+            "offensivebuff": 1
         }
     ],
     "U-110": [
@@ -687,6 +559,38 @@
             "offensivebuff": null
         }
     ],
+    "U-31": [
+        {
+            "nameNote": "Base",
+            "notes": "Requires KMS wolfpack. Has bad oxyreload.",
+            "hardarbiter": "C",
+            "cm": "C",
+            "campaign": "D",
+            "consistency": null,
+            "fleetreq": -2,
+            "flagreq": -2,
+            "lightdmg": 1,
+            "mediumdmg": 1,
+            "heavydmg": 2,
+            "offensivebuff": null
+        }
+    ],
+    "U-37": [
+        {
+            "nameNote": "Base",
+            "notes": "Requires KMS wolfpack. Bonus against light armor.",
+            "hardarbiter": "A",
+            "cm": "A",
+            "campaign": "A",
+            "consistency": null,
+            "fleetreq": -2,
+            "flagreq": -3,
+            "lightdmg": 2,
+            "mediumdmg": 3,
+            "heavydmg": 4,
+            "offensivebuff": null
+        }
+    ],
     "U-410": [
         {
             "nameNote": "Base",
@@ -700,6 +604,22 @@
             "lightdmg": 1,
             "mediumdmg": 1,
             "heavydmg": 2,
+            "offensivebuff": null
+        }
+    ],
+    "U-47": [
+        {
+            "nameNote": "Base",
+            "notes": "Ignore the Lone Wolf skill.",
+            "hardarbiter": "A",
+            "cm": "A",
+            "campaign": "B",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": -3,
+            "lightdmg": 1,
+            "mediumdmg": 3,
+            "heavydmg": 4,
             "offensivebuff": null
         }
     ],
@@ -735,6 +655,22 @@
             "offensivebuff": null
         }
     ],
+    "U-556 META": [
+        {
+            "nameNote": "Base",
+            "notes": "Bonus against light armor.",
+            "hardarbiter": "S",
+            "cm": "A",
+            "campaign": "A",
+            "consistency": null,
+            "fleetreq": null,
+            "flagreq": -3,
+            "lightdmg": 2,
+            "mediumdmg": 3,
+            "heavydmg": 5,
+            "offensivebuff": null
+        }
+    ],
     "U-557": [
         {
             "nameNote": "Base",
@@ -751,6 +687,54 @@
             "offensivebuff": null
         }
     ],
+    "U-73": [
+        {
+            "nameNote": "Base",
+            "notes": "Requires KMS wolfpack. Has bad oxyreload. Bonus against carriers.",
+            "hardarbiter": "C",
+            "cm": "C",
+            "campaign": "D",
+            "consistency": null,
+            "fleetreq": -2,
+            "flagreq": -2,
+            "lightdmg": 1,
+            "mediumdmg": 2,
+            "heavydmg": 2,
+            "offensivebuff": null
+        }
+    ],
+    "U-81": [
+        {
+            "nameNote": "Base",
+            "notes": "Requires KMS wolfpack. Bonus against carriers.",
+            "hardarbiter": "S",
+            "cm": "A",
+            "campaign": "A",
+            "consistency": -2,
+            "fleetreq": -2,
+            "flagreq": -3,
+            "lightdmg": 2,
+            "mediumdmg": 4,
+            "heavydmg": 5,
+            "offensivebuff": null
+        }
+    ],
+    "U-96": [
+        {
+            "nameNote": "Base",
+            "notes": "Requires KMS wolfpack. Buffs KMS subs.",
+            "hardarbiter": "S",
+            "cm": "A",
+            "campaign": "A",
+            "consistency": null,
+            "fleetreq": -2,
+            "flagreq": -3,
+            "lightdmg": 1,
+            "mediumdmg": 3,
+            "heavydmg": 4,
+            "offensivebuff": 1
+        }
+    ],
     "Whydah": [
         {
             "nameNote": "Base",
@@ -764,6 +748,22 @@
             "lightdmg": 1,
             "mediumdmg": 1,
             "heavydmg": 1,
+            "offensivebuff": null
+        }
+    ],
+    "Wolfpack": [
+        {
+            "nameNote": "Base",
+            "notes": "U-96 and U-81 plus (U-37 or U-47). Lower oxy-rld suffers in CM/Campaign.",
+            "hardarbiter": "S",
+            "cm": "A",
+            "campaign": "A",
+            "consistency": -2,
+            "fleetreq": null,
+            "flagreq": null,
+            "lightdmg": 1,
+            "mediumdmg": 3,
+            "heavydmg": 4,
             "offensivebuff": null
         }
     ]

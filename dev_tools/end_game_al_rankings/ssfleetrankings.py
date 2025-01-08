@@ -19,7 +19,7 @@ credentials = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes
 service = build("sheets", "v4", credentials=credentials)
 
 # Priority levels for sorting
-priority_order = {"SS": 0, "S": 1, "A": 2, "B": 3, "C": 4, "D": 5}
+priority_order = {"SS": 5, "S": 4, "A": 3, "B": 2, "C": 1, "D": 0}
 
 
 def parse_fleet_key(fleet_key):
@@ -123,7 +123,7 @@ def process_sheet(sheet_name):
             ),
         }
 
-        if parsed_key["nameNote"] == "Base":
+        if parsed_key["nameNote"] == "":
             data_dict[parsed_key["shipName"].strip()].insert(0, ranking)
         else:
             data_dict[parsed_key["shipName"].strip()].append(ranking)
@@ -143,8 +143,21 @@ if __name__ == "__main__":
 
         sheet_data = process_sheet(sheet_name)
 
-        # Write the data to a JSON file
+        # Sort the sheet data by shipName alphabetically before saving to JSON
+        sorted_sheet_data = {
+            k: sorted(
+                sheet_data[k],
+                key=lambda x: (
+                    -priority_order.get(
+                        sheet_data[k][0]["campaign"], 0
+                    ),  # w14boss sorting
+                    k,  # tiebreak by shipName (the dictionary key)
+                ),
+            )
+            for k in sorted(sheet_data)
+        }
+        # Write the sorted data to a JSON file
         with open(output_path, "w", encoding="utf-8") as json_file:
-            json.dump(sheet_data, json_file, indent=4, ensure_ascii=False)
+            json.dump(sorted_sheet_data, json_file, indent=4, ensure_ascii=False)
 
         print(f"Data from sheet '{sheet_name}' has been written to {output_path}")
