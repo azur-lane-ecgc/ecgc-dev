@@ -22,7 +22,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
           className={`fa-solid translate-y-[1px] ${roleDropdownOpen ? "fa-angle-up" : "fa-angle-down"}`}
         />
       </button>
-      
+
       {/* Tags (Smaller Screen) */}
       <div
         className={`${
@@ -35,7 +35,8 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             <img
               loading="lazy"
               src={`/test_ecgc_2/images/faction/${faction}.png`}
-              alt={`${faction}`}
+              alt={faction}
+              title={faction}
               className="absolute top-0 left-0 w-full h-auto"
             />{" "}
           </span>
@@ -50,7 +51,8 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             <img
               loading="lazy"
               src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
-              alt={`${hullType}`}
+              alt={hullType}
+              title={hullType}
               className="w-full h-full object-contain"
             />
           </span>
@@ -81,7 +83,8 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
           <img
             loading="lazy"
             src={`/test_ecgc_2/images/faction/${faction}.png`}
-            alt={`${faction}`}
+            alt={faction}
+            title={faction}
             className="absolute top-0 left-0 w-full h-auto translate-y-[1px]"
           />
         </span>
@@ -89,7 +92,8 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
           <img
             loading="lazy"
             src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
-            alt={`${hullType}`}
+            alt={hullType}
+            title={hullType}
             className="w-full h-auto translate-y-1/2"
           />
         </span>
