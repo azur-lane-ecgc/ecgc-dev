@@ -22,4 +22,24 @@ export default defineConfig({
   base: "/test_ecgc_2/",
   output: "static",
   trailingSlash: "ignore",
+  devToolbar: { enabled: false },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes("AzurLaneData")) {
+              return "azur-lane-data"
+            }
+            if (id.includes("node_modules")) {
+              return "vendor"
+            }
+          },
+        },
+      },
+    },
+    json: {
+      stringify: true,
+    },
+  },
 })
