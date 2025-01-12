@@ -4,7 +4,7 @@
 // // Hardcoded file paths
 // const inputFilePath = "dev_tools/samvaluation.html" // Input HTML file
 // const outputFilePath =
-//   "src/components/_common/ShipModal/utils/shipSamvaluationParse/data.json" // Output JSON file
+//   "src/components/Samvaluations/ShipModal/utils/shipSamvaluationParse/data.json" // Output JSON file
 
 // // Helper function to extract data from a table in HTML
 // function extractDataFromTable(tableHtml, eventName, eventHref) {

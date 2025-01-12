@@ -11,9 +11,9 @@ SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
 SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 SHEET_NAMES = ["VG (no img)", "MAIN (no img)", "subs (no img)"]
 OUTPUT_PATHS = [
-    "src/components/_common/ShipModal/ShipRankings/data/tempvg.json",
-    "src/components/_common/ShipModal/ShipRankings/data/tempmain.json",
-    "src/components/_common/ShipModal/ShipRankings/data/tempss.json",
+    "src/components/Samvaluations/ShipModal/ShipRankings/data/tempvg.json",
+    "src/components/Samvaluations/ShipModal/ShipRankings/data/tempmain.json",
+    "src/components/Samvaluations/ShipModal/ShipRankings/data/tempss.json",
 ]
 CHANGELONG_SHEET_NAME = "Changelog"
 END_GAME_RANKINGS_PATH = "src/components/_common/Constants/lastUpdated.ts"
