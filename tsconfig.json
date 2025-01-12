@@ -15,7 +15,8 @@
       "@layouts/*": ["src/layouts/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"],
-      "@data/*": ["AzurLaneData/*"]
+      "@data/*": ["src/data/*"],
+      "@ALData/*": ["AzurLaneData/*"]
     }
   }
 }
