@@ -18,6 +18,7 @@ export const SamvaluationModalFilter = () => {
           if (!ship) return false
           return (
             <ShipModal
+              key={ship.id}
               id={ship.id}
               trigger={{
                 iconNote: null,
