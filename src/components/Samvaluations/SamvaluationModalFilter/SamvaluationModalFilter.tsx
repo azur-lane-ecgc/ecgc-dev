@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
 
@@ -6,6 +8,8 @@ import shipData from "@data/data/ships.json"
 const ships = shipData as Record<number, ShipData>
 
 export const SamvaluationModalFilter = () => {
+  const [selectedEvent, setSelectedEvent] = useState<string | null>(null)
+
   return (
     <>
       <ItemContainer>
