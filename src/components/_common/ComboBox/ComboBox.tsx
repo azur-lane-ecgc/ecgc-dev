@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from "react"
 
+import { truncateString } from "@utils/truncateString"
+
 export interface ComboBoxProps {
   className?: string
   title: string
@@ -98,8 +100,12 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
         onClick={() => setShowOptions((prev) => !prev)}
       >
         <div className="flex">
-          <span className="flex-1 text-center align-middle justify-center w-full mb-0 font-bold text-orange-400">
-            {selected || title + "..."}
+          <span
+            className={`flex-1 text-center align-middle justify-center w-full mb-0 font-bold ${
+              selected ? "text-orange-400" : "text-blue-200"
+            }`}
+          >
+            {selected ? truncateString(selected, 18) : `${title}...`}
           </span>
           <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
             {showOptions ? (
@@ -115,6 +121,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       {showOptions && (
         <div className="hidden sm:block absolute bg-[#212529] border border-gray-500 shadow-md mt-1 w-48 max-w-48 z-10 rounded-xl">
           <input
+            id={`${title}ComboBoxDesktop`}
             ref={inputRef}
             type="text"
             placeholder={`Search ${title.toLowerCase()}...`}
@@ -124,7 +131,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
           />
           <div className="max-h-64 overflow-auto px-1 my-1">
             {filteredOptions.length === 0 ? (
-              <div className="flex items-center justify-center text-gray-300 cursor-default p-1 italic text-sm h-[50px] mx-auto my-auto rounded-md">
+              <div className="flex items-center justify-center text-gray-300 cursor-default p-1 italic text-sm h-[32px] mx-auto my-auto rounded-md">
                 Nothing found.
               </div>
             ) : (
@@ -134,7 +141,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
                   onClick={() => handleSelect(item)}
                   className={`${
                     selected === item ? "text-orange-400" : "text-gray-300"
-                  } font-semibold cursor-pointer hover:bg-[#444d55] p-1 h-[32px] rounded-md flex justify-between items-center`}
+                  } font-semibold cursor-pointer hover:bg-[#444d55] p-1 h-fit rounded-md flex justify-between items-center`}
                 >
                   {item}
                   {selected === item && (
@@ -178,6 +185,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             }`}
           >
             <input
+              id={`${title}ComboBoxMobile`}
               ref={inputRef}
               type="text"
               placeholder={`Search ${title.toLowerCase()}...`}
