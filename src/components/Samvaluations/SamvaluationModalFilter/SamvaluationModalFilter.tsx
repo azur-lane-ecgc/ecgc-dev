@@ -3,8 +3,8 @@ import { useState } from "react"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 
-import type { ShipData } from "@ALDatatypes/ships"
-import shipData from "@ALDatadata/ships.json"
+import type { ShipData } from "@ALData/types/ships"
+import shipData from "@ALData/data/ships.json"
 const ships = shipData as Record<number, ShipData>
 
 export const SamvaluationModalFilter = () => {

@@ -7,15 +7,15 @@ import { endGameRankingsUpdateDate } from "@components/_common/Constants"
 
 import { formatDate } from "@utils/formatDate"
 
-import type { ShipData } from "@ALDatatypes/ships"
-import type { AugmentData } from "@ALDatatypes/augments"
+import type { ShipData } from "@ALData/types/ships"
+import type { AugmentData } from "@ALData/types/augments"
 
 const ships: Record<number, ShipData> = (await import(
-  "@ALDatadata/ships.json"
+  "@ALData/data/ships.json"
 ).then((module) => module.default)) as Record<number, ShipData>
 
 const augmentData: Record<number, AugmentData> = (await import(
-  "@ALDatadata/augments.json"
+  "@ALData/data/augments.json"
 ).then((module) => module.default)) as Record<number, AugmentData>
 
 import { ShipTags } from "./ShipTags"

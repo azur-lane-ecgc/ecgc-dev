@@ -1,9 +1,9 @@
-import type { ShipDropData } from "@ALDatatypes/ships"
+import type { ShipDropData } from "@ALData/types/ships"
 import { parseLocation } from "@utils/parseLocation"
 import { shipSeriesMap } from "./utils"
 
 const shipDropData: Record<number, ShipDropData> = (await import(
-  "@ALDatadata/ship_drops.json"
+  "@ALData/data/ship_drops.json"
 ).then((module) => module.default)) as Record<number, ShipDropData>
 
 const excludedEvents = [

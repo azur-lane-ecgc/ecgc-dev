@@ -1,4 +1,4 @@
-import type { RetroData, SlotData } from "@ALDatatypes/ships"
+import type { RetroData, SlotData } from "@ALData/types/ships"
 
 export interface SlotProps {
   type: string[]
