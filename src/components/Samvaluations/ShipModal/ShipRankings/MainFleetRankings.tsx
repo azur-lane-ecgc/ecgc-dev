@@ -5,7 +5,7 @@ import { HR } from "@components/_common/HR"
 import {
   letterRankColor,
   numberRankColor,
-} from "@components/_common/ShipModal/styles"
+} from "@components/Samvaluations/ShipModal/styles"
 
 import type { ShipRankingTypes, MainFleetRankingProps } from "./types"
 

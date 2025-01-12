@@ -1,4 +1,7 @@
-import type { LocationProps, ResourceProps } from "../CommonResourceData/types"
+import type {
+  LocationProps,
+  ResourceProps,
+} from "../../components/CommonResource/CommonResourceData/types"
 
 const numChapters = 15
 

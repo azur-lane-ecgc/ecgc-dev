@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import { ItemContainer } from "@components/_common/ItemCell"
-import { ShipModal } from "@components/_common/ShipModal"
+import { ShipModal } from "@components/Samvaluations/ShipModal"
 
 import type { ShipData } from "@data/types/ships"
 import shipData from "@data/data/ships.json"

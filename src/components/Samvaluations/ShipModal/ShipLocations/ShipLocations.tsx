@@ -1,6 +1,6 @@
 import type React from "react"
-import type { shipLocation, ShipLocationData } from "../utils"
-import { shipLocationParse } from "../utils"
+import type { shipLocation, ShipLocationData } from "@utils/ships"
+import { shipLocationParse } from "@utils/ships"
 
 interface ShipLocationProps {
   shipName: string

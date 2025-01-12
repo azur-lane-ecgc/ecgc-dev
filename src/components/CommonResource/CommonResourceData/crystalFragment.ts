@@ -1,4 +1,4 @@
-import { getTotalGuaranteed } from "../utils/getTotal"
+import { getTotalGuaranteed } from "@utils/commonResource/getTotal"
 import type { ResourceProps } from "./types"
 
 const CrystalFragmentData: ResourceProps = {

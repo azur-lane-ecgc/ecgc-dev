@@ -39,7 +39,7 @@ import {
   shipImageParse,
   shipSamvaluationParse,
   shipFleetTypeParse,
-} from "./utils"
+} from "@utils/ships"
 
 import {
   closeButtonStyle,
