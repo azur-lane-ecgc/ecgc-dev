@@ -1,12 +1,8 @@
 ---
 import WikiLink from "@components/_common/WikiLink.astro"
 import { HR } from "@components/_common/HR"
-import { ItemContainer } from "@components/_common/ItemCell"
-import { ShipModal } from "@components/_common/ShipModal"
 
-import type { ShipData } from "@data/types/ships"
-import shipData from "@data/data/ships.json"
-const ships = shipData as Record<number, ShipData>
+import { SamvaluationModalFilter } from "./SamvaluationModalFilter/SamvaluationModalFilter"
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -135,24 +131,5 @@ const ships = shipData as Record<number, ShipData>
 <h2 id="evaluations">Evaluations</h2>
 <HR />
 
-<ItemContainer>
-  {
-    Object.keys(ships).map((key) => {
-      const ship = ships[parseInt(key, 10)]
-      if (!ship) return false
-      return (
-        <ShipModal
-        client:visible={{ rootMargin: "20px" }}
-          id={ship.id}
-          trigger={{
-            iconNote: null,
-            descriptionNote: null,
-            largeDescNote: false,
-            hasBorder: true,
-          }}
-        />
-      )
-    })
-  }
-</ItemContainer>
+<SamvaluationModalFilter client:visible={{ rootMargin: "20px" }} />
 <br />
