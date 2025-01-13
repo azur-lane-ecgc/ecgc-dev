@@ -139,7 +139,7 @@ export const shipLocationParse = (
     ? [
         {
           name: "Map Drop (check Wiki)",
-          href: parseLocation(name),
+          href: name.replaceAll(" ", "_"),
         },
       ]
     : []
