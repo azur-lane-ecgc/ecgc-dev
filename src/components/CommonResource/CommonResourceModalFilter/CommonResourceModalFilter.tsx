@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import { ComboBox } from "@components/_common/ComboBox"
 import { ItemContainer } from "@components/_common/ItemCell"
+import { ItemCellSkeleton } from "@components/_common/Skeleton"
 
 import { FiniteResourceData, InfiniteResourceData } from "../CommonResourceData"
 import { ResourceModal } from "../ResourceModal"
@@ -17,6 +18,9 @@ interface CommonResourceModalFilterProps {
 export const CommonResourceModalFilter: React.FC<
   CommonResourceModalFilterProps
 > = ({ className }) => {
+  const [loading, setLoading] = useState<boolean>(true)
+
+  // ComboBoxes
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [selectedTimeframe, setSelectedTimeframe] = useState<string | null>(
     "Monthly",
@@ -41,7 +45,6 @@ export const CommonResourceModalFilter: React.FC<
     "One-Time": "oneTime",
   }
 
-  // Filtering Data
   let filteredData = [] as ResourceProps[]
 
   if (availability === "Infinite") {
@@ -65,87 +68,104 @@ export const CommonResourceModalFilter: React.FC<
     return categoryMatches && timeframeMatches
   })
 
+  // runs if component is loaded
+  useEffect(() => {
+    setLoading(false)
+  }, [])
+
   return (
-    <div className={className}>
-      <div className="flex flex-row flex-wrap gap-4">
-        <ComboBox
-          title="Category"
-          options={[
-            "Currency",
-            "Consumable",
-            "Cognitive Awakening",
-            "Bulin",
-            "Gear Enhance",
-            "Augmentation",
-            "Skill Book",
-            "Retrofit",
-          ]}
-          onSelect={setSelectedCategory}
-        />
+    <>
+      <div className={className}>
+        {/* ComboBoxes / Filters */}
+        <div className="flex flex-row flex-wrap gap-4">
+          <ComboBox
+            title="Category"
+            options={[
+              "Currency",
+              "Consumable",
+              "Cognitive Awakening",
+              "Bulin",
+              "Gear Enhance",
+              "Augmentation",
+              "Skill Book",
+              "Retrofit",
+            ]}
+            onSelect={setSelectedCategory}
+          />
 
-        <ComboBox
-          title="Timeframe"
-          options={["Daily", "Weekly", "Monthly", "Bimonthly", "One-Time"]}
-          initialOption="Monthly"
-          forceSelect={true}
-          onSelect={setSelectedTimeframe}
-        />
+          <ComboBox
+            title="Timeframe"
+            options={["Daily", "Weekly", "Monthly", "Bimonthly", "One-Time"]}
+            initialOption="Monthly"
+            forceSelect={true}
+            onSelect={setSelectedTimeframe}
+          />
 
-        {/* Availability Toggle */}
-        <div>
-          <p className="mb-1 font-bold text-fuchsia-400">Availability</p>
-          <button
-            id={`availability_input`}
-            className={`px-1 py-2 w-32 max-w-32 bg-gray-950 hover:bg-gray-800 border border-green-800 rounded-xl shadow-lg`}
-            onClick={() => {
-              if (availability === "Both") setAvailability("Infinite")
-              else if (availability === "Infinite") setAvailability("Finite")
-              else setAvailability("Both")
-            }}
-          >
-            <div className="flex justify-evenly">
-              <div className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full mb-0 font-bold text-orange-400">
-                {availability}
+          {/* Availability Toggle */}
+          <div>
+            <p className="mb-1 font-bold text-fuchsia-400">Availability</p>
+            <button
+              id={`availability_input`}
+              className={`px-1 py-2 w-32 max-w-32 bg-gray-950 hover:bg-gray-800 border border-green-800 rounded-xl shadow-lg`}
+              onClick={() => {
+                if (availability === "Both") setAvailability("Infinite")
+                else if (availability === "Infinite") setAvailability("Finite")
+                else setAvailability("Both")
+              }}
+            >
+              <div className="flex justify-evenly">
+                <div className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full mb-0 font-bold text-orange-400">
+                  {availability}
+                </div>
+                <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
+                  {availability === "Both" ? (
+                    <span className="text-cyan-400 text-base">
+                      {"\u2713"} {"\u2717"}
+                    </span>
+                  ) : availability === "Finite" ? (
+                    <span className="text-cyan-400">{"\u2717"}</span>
+                  ) : (
+                    <span className="text-cyan-400">{"\u2713"}</span>
+                  )}
+                </div>
               </div>
-              <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
-                {availability === "Both" ? (
-                  <span className="text-cyan-400 text-base">
-                    {"\u2713"} {"\u2717"}
-                  </span>
-                ) : availability === "Finite" ? (
-                  <span className="text-cyan-400">{"\u2717"}</span>
-                ) : (
-                  <span className="text-cyan-400">{"\u2713"}</span>
-                )}
-              </div>
-            </div>
-          </button>
+            </button>
+          </div>
+        </div>
+
+        {/* Filtered Content */}
+        <div className="min-h-[16.5rem]">
+          {loading && (
+            <ItemContainer>
+              {Array.from({ length: 20 }).map((_, index) => (
+                <ItemCellSkeleton key={index} />
+              ))}
+            </ItemContainer>
+          )}
+          {!loading && (
+            <ItemContainer>
+              {filteredData.map((item) => {
+                const timeframeKey = propMapping[selectedTimeframe as string]
+                const timeframeValue = item.total[timeframeKey]
+
+                const descriptionNote = `${timeframeValue}${typeof timeframeValue === "number" ? timeframeMapping[selectedTimeframe!] : ""}`
+
+                return (
+                  <ResourceModal
+                    key={item.name}
+                    item={item}
+                    trigger={{
+                      descriptionNote,
+                      largeDescNote: true,
+                      hasBorder: true,
+                    }}
+                  />
+                )
+              })}
+            </ItemContainer>
+          )}
         </div>
       </div>
-
-      {/* Filtered Content */}
-      <div className="min-h-[16.5rem]">
-        <ItemContainer>
-          {filteredData.map((item) => {
-            const timeframeKey = propMapping[selectedTimeframe as string]
-            const timeframeValue = item.total[timeframeKey]
-
-            const descriptionNote = `${timeframeValue}${typeof timeframeValue === "number" ? timeframeMapping[selectedTimeframe!] : ""}`
-
-            return (
-              <ResourceModal
-                key={item.name}
-                item={item}
-                trigger={{
-                  descriptionNote,
-                  largeDescNote: true,
-                  hasBorder: true,
-                }}
-              />
-            )
-          })}
-        </ItemContainer>
-      </div>
-    </div>
+    </>
   )
 }
