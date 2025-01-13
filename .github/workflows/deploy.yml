@@ -24,7 +24,7 @@ jobs:
       - name: Build w/ Astro
         uses: withastro/action@v3
         with:
-          node-version: latest
+          node-version: lts
           package-manager: bun
 
   deploy:
