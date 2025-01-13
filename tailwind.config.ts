@@ -1,5 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-const tailwindConfig = {
+import type { Config } from "tailwindcss"
+import type { PluginAPI } from "tailwindcss/types/config"
+
+const tailwindConfig: Config = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
@@ -20,7 +22,7 @@ const tailwindConfig = {
     container: false,
   },
   plugins: [
-    function ({ addComponents }) {
+    function ({ addComponents }: PluginAPI) {
       addComponents({
         ".container": {
           width: "100%",
