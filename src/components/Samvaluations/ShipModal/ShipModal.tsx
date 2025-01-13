@@ -111,7 +111,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const limitBreakBonus = shipLimitBreakBonusParse(mrLarData?.specific_buff)
   const slots = shipSlotParse(
     mrLarData.slots[mrLarData.slots.length - 1],
-    mrLarData.retro,
+    mrLarData.retro?.slots,
   )
 
   const augments = useMemo(() => {

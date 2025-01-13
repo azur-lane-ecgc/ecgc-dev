@@ -1,4 +1,4 @@
-import type { RetroData, SlotData } from "@ALData/types/ships"
+import type { SlotData } from "@ALData/types/ships"
 
 export interface SlotProps {
   type: string[]
@@ -30,22 +30,23 @@ const SlotMap: { [key: number]: string } = {
 }
 
 export const shipSlotParse = (
-  slotData: SlotData[],
-  retroData?: RetroData,
+  shipSlotData: SlotData[],
+  retroSlots?: Partial<SlotData>[],
 ): SlotProps[] => {
-  return slotData.map((data, index) => {
-    const retroSlot = retroData?.slots?.[index]
+  return shipSlotData.map((data, index) => {
+    const retroSlot = retroSlots?.[index]
 
-    const types = (retroSlot?.types || data.types).map(
+    const equipType = (retroSlot?.types || data.types).map(
       (typeId) => SlotMap[typeId],
     )
 
-    const efficiency = types.includes(SlotMap[10])
+    // 100% Auxiliary efficiency, else calc from data
+    const efficiency = equipType.includes(SlotMap[10])
       ? 1
       : (data.efficiency || 1) + (retroSlot?.efficiency || 0)
 
     return {
-      type: types,
+      type: equipType,
       efficiency: efficiency,
       mounts: (data.base || 1) + (retroSlot?.base || 0),
     }
