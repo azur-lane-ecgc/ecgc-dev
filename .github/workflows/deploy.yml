@@ -21,12 +21,12 @@ jobs:
         with:
           submodules: "true"
 
-      - name: Install bun
+      - name: Install & Configure Bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
-      - name: Install, build, and upload your site
+      - name: Build w/ Astro
         uses: withastro/action@v3
         with:
           node-version: 20
