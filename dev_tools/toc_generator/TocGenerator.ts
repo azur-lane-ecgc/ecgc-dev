@@ -16,7 +16,18 @@ const initializeJsonFile = async () => {
   )
 }
 
-const extractHeadings = (content) => {
+type Heading = {
+  id: string
+  content: string
+  subheadings: Subheading[]
+}
+
+type Subheading = {
+  id: string
+  content: string
+}
+
+const extractHeadings = (content: string) => {
   const headings = []
 
   const h2Matches = [
@@ -45,7 +56,7 @@ const extractHeadings = (content) => {
       continue
     }
 
-    const h2 = {
+    const h2: Heading = {
       id: h2Match.values[1],
       content: h2Content,
       subheadings: [],

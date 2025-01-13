@@ -8,7 +8,7 @@
     "dev": "astro dev",
     "submodule": "git submodule update --recursive --remote",
     "build": "astro check && astro build",
-    "devtools": "bun run submodule && node dev_tools/runAllTools.js",
+    "devtools": "bun run submodule && bun run dev_tools/runAllTools.ts",
     "start": "bun run devtools && bun run build && start http://localhost:4321/test_ecgc_2/ && astro dev",
     "rebuild": "bun ci && bun install && bun outdated"
   },

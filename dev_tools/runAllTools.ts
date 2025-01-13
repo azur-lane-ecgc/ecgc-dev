@@ -5,18 +5,18 @@ import { exec as execCallback } from "child_process"
 
 const exec = promisify(execCallback)
 const scriptsDirectory = "./dev_tools"
-const excludedDirectories = ["gsheets2img"]
+const excludedDirectories = ["_backup", "gsheets2img"]
 const excludedFiles = [
-  /_pageInfo\.js/,
-  /runAllTools\.js/,
+  /_pageInfo\.ts/,
+  /runAllTools\.ts/,
   /index\.js/,
-  /samvaluationparser\.js/,
+  /samvaluationparser\.ts/,
   /imgur\.py/,
   /\\rankings\.py/,
 ]
 
-const readAllFiles = async (dir) => {
-  let files = []
+const readAllFiles = async (dir: string): Promise<string[]> => {
+  let files: string[] = []
   const dirents = await fs.readdir(dir, { withFileTypes: true })
 
   for (const dirent of dirents) {
@@ -38,13 +38,14 @@ const readAllFiles = async (dir) => {
   return files
 }
 
-const runScript = async (fileName) => {
+const runScript = async (fileName: string): Promise<void> => {
   try {
-    const { stdout, stderr } = fileName.endsWith(".py")
-      ? await exec(`python3 ${path.join(scriptsDirectory, fileName)}`)
-      : fileName.endsWith(".js")
-        ? await exec(`node ${path.join(scriptsDirectory, fileName)}`)
-        : ""
+    const { stdout, stderr }: { stdout: string; stderr: string } =
+      fileName.endsWith(".py")
+        ? await exec(`python3 ${path.join(scriptsDirectory, fileName)}`)
+        : fileName.endsWith(".js") || fileName.endsWith(".ts")
+          ? await exec(`bun run ${path.join(scriptsDirectory, fileName)}`)
+          : { stdout: "", stderr: "" }
 
     if (stderr) {
       console.error(`Stderr from ${fileName}:`, stderr)
@@ -63,11 +64,13 @@ const runAllScripts = async () => {
     // Skip excluded files
     const scriptFiles = files.filter(
       (file) =>
-        (file.endsWith(".js") || file.endsWith(".py")) &&
+        (file.endsWith(".js") ||
+          file.endsWith(".ts") ||
+          file.endsWith(".py")) &&
         !excludedFiles.some((regex) => regex.test(file)),
     )
 
-    console.log(`Found ${scriptFiles.length} scripts to run:`, scriptFiles)
+    console.log(`Found ${scriptFiles.length} scripts to run:\n`, scriptFiles)
     console.log()
 
     for (const scriptFile of scriptFiles) {

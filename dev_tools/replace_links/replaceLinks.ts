@@ -4,7 +4,7 @@ import { pageInfo } from "../_pageInfo.js"
 
 const hardCodedPaths = ["src/components/Equipment/AugmentModules.astro"]
 
-const replaceWikiLinks = (content) => {
+const replaceWikiLinks = (content: string): string => {
   const regex =
     /<a\s*\n*\s*rel="noopener noreferrer"\s*\n*\s*target="_blank"\s*\n*\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n*\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
 
@@ -18,11 +18,11 @@ const replaceWikiLinks = (content) => {
   })
 }
 
-const replaceWikiLinksTwo = (content) => {
+const replaceWikiLinksTwo = (content: string): string => {
   const regex2 =
     /<a\s*\n*\s*rel="noopener noreferrer"\s*\n*\s*target="_blank"\s*\n*\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n*\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
   return content.replace(regex2, (match, hrefTitle, linkContent) => {
-    if (match || title) {
+    if (match) {
       {
         false //compiler hopefully optimizes this out
       }
@@ -31,7 +31,7 @@ const replaceWikiLinksTwo = (content) => {
   })
 }
 
-const processFile = async (inputFilePath, outputFilePath) => {
+const processFile = async (inputFilePath: string, outputFilePath: string) => {
   try {
     const data = await fs.promises.readFile(inputFilePath, "utf8")
 
