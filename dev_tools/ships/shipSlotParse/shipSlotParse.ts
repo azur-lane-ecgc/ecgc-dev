@@ -1,10 +1,5 @@
 import type { SlotData } from "@ALData/types/ships"
-
-export interface SlotProps {
-  type: string[]
-  efficiency: number
-  mounts: number
-}
+import type { SlotProps } from "@data/ship_data/types"
 
 const SlotMap: { [key: number]: string } = {
   0: "Unknown",

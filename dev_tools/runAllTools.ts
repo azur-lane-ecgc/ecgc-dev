@@ -14,6 +14,7 @@ const excludedFiles = [
   /imgur\.py/,
   /\\rankings\.py/,
   /\\_backup/,
+  /ships\\/,
 ]
 
 const readAllFiles = async (dir: string): Promise<string[]> => {

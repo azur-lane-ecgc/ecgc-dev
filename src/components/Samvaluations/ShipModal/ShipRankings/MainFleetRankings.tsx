@@ -7,7 +7,10 @@ import {
   numberRankColor,
 } from "@components/Samvaluations/ShipModal/styles"
 
-import type { ShipRankingTypes, MainFleetRankingProps } from "./types"
+import type {
+  ShipRankingTypes,
+  MainFleetRankingProps,
+} from "../../../../data/rankings/types"
 
 const MainFleetData: Record<string, MainFleetRankingProps[]> = (await import(
   "@data/rankings/mainFleetRankings.json"

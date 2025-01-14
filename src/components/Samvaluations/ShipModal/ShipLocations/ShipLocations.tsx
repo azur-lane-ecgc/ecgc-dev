@@ -1,10 +1,8 @@
 import type React from "react"
-import type { shipLocation, ShipLocationData } from "@utils/ships"
-import { shipLocationParse } from "@utils/ships"
+import type { shipLocation, ShipLocationData } from "@data/ship_data/types"
 
 interface ShipLocationProps {
-  shipName: string
-  id: number
+  locations: ShipLocationData
 }
 
 const LocationItem: React.FC<{ locations: shipLocation[] }> = ({
@@ -36,12 +34,7 @@ const LocationItem: React.FC<{ locations: shipLocation[] }> = ({
   )
 }
 
-export const ShipLocations: React.FC<ShipLocationProps> = ({
-  shipName,
-  id,
-}) => {
-  const locations: ShipLocationData = shipLocationParse(shipName, id)
-
+export const ShipLocations: React.FC<ShipLocationProps> = ({ locations }) => {
   return (
     <>
       {

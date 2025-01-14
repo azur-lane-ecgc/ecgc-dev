@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useState } from "react"
 
 import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
@@ -7,16 +7,11 @@ import { endGameRankingsUpdateDate } from "@components/_common/Constants"
 
 import { formatDate } from "@utils/formatDate"
 
-import type { ShipData } from "@ALData/types/ships"
-import type { AugmentData } from "@ALData/types/augments"
+import type { ShipData } from "@data/ship_data/types"
 
 const ships: Record<number, ShipData> = (await import(
-  "@ALData/data/ships.json"
+  "@data/ship_data/ship_data.json"
 ).then((module) => module.default)) as Record<number, ShipData>
-
-const augmentData: Record<number, AugmentData> = (await import(
-  "@ALData/data/augments.json"
-).then((module) => module.default)) as Record<number, AugmentData>
 
 import { ShipTags } from "./ShipTags"
 import {
@@ -27,20 +22,7 @@ import {
 import { ShipEHPDisplay } from "./ShipEHP"
 import { ShipLocations } from "./ShipLocations"
 
-import {
-  parseEquipHref,
-  shipHullTypeParse,
-  shipFactionParse,
-  shipDefaultAugmentParse,
-  shipLimitBreakBonusParse,
-  shipSlotParse,
-  shipNameParse,
-  shipRarityParse,
-  shipImageParse,
-  shipSamvaluationParse,
-  shipFleetTypeParse,
-  shipRoleParse,
-} from "@utils/ships"
+import { parseEquipHref, shipImageParse } from "@utils/ships"
 
 import {
   closeButtonStyle,
@@ -95,46 +77,27 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     }
   }
 
-  // mrlar
-  const mrLarData = ships[id]
-  const ship = shipNameParse(mrLarData.id, mrLarData.name)
-  const faction = shipFactionParse(mrLarData.nation)
+  const shipData = ships[id]
 
-  let rarity = shipRarityParse(mrLarData.rarity)
-  const isKai = mrLarData.hasOwnProperty("retro")
-  if (isKai) {
-    rarity++
-  }
-  const hull = mrLarData?.retro?.hull ?? mrLarData.hull
-  const hullType = shipHullTypeParse(hull)
-  const fleetType: "main" | "ss" | "vg" = shipFleetTypeParse(hull)
+  const ship = shipData.ship
+  const faction = shipData.faction
 
-  const limitBreakBonus = shipLimitBreakBonusParse(mrLarData?.specific_buff)
-  const slots = shipSlotParse(
-    mrLarData.slots[mrLarData.slots.length - 1],
-    mrLarData.retro?.slots,
-  )
+  const rarity = shipData.rarity
+  const isKai = shipData.isKai
+  const hullType = shipData.hullType
+  const fleetType: "main" | "ss" | "vg" = shipData.fleetType
 
-  const augments = useMemo(() => {
-    const uniqueAugment = mrLarData?.unique_aug
-      ? augmentData[mrLarData.unique_aug].name
-      : ""
+  const limitBreakBonus = shipData.limitBreakBonus
+  const slots = shipData.slots
 
-    const normalAugments = shipDefaultAugmentParse(hull)
-
-    if (!!uniqueAugment) {
-      return [uniqueAugment, ...normalAugments]
-    }
-
-    return normalAugments.length <= 0 ? null : normalAugments
-  }, [hull])
+  const augments = shipData.augments
   const shipImg = shipImageParse(ship, isKai)
 
-  // me
-  const samvaluationData = shipSamvaluationParse(ship)
-  const samvaluationText = samvaluationData.evaluation
-  const fastLoad = samvaluationData?.preload ?? ""
-  const roles = shipRoleParse(ship).slice(0, 5)
+  const samvaluationText = shipData.samvaluationText
+  const fastLoad = shipData.fastLoad
+  const roles = shipData.roles
+
+  const locations = shipData.locations
 
   return (
     <>
@@ -234,7 +197,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               </h1>
 
               {/* Event / Location */}
-              <ShipLocations shipName={ship} id={id} />
+              <ShipLocations locations={locations} />
               <HR />
 
               {/* Flexbox for Icon + Samvaluation */}
