@@ -4,7 +4,6 @@ import { ComboBox } from "@components/_common/ComboBox"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ItemCellSkeleton } from "@components/_common/Skeleton"
 
-import type { CommonResourceFilterState } from "@store/CommonResource"
 import { CommonResourceFilterReducer } from "@store/CommonResource"
 
 import { FiniteResourceData, InfiniteResourceData } from "../CommonResourceData"
