@@ -4,7 +4,7 @@ import { ItemCellSkeleton } from "@components/_common/Skeleton"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 
-import type { ShipData } from "@ALData/types/ships"
+import type { ShipData } from "@data/ship_data/types"
 
 export const SamvaluationModalFilter = () => {
   const [selectedEvent, setSelectedEvent] = useState<string | null>(null)
@@ -15,7 +15,7 @@ export const SamvaluationModalFilter = () => {
     const fetchShipsData = async () => {
       setLoading(true)
       const fetchShips: Record<number, ShipData> = (await import(
-        "@ALData/data/ships.json"
+        "@data/ship_data/ship_data.json"
       ).then((module) => module.default)) as Record<number, ShipData>
       setShips(fetchShips)
       setLoading(false)
