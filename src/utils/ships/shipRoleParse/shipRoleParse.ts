@@ -1,3 +1,3 @@
-export const ShipRoleParse = (ship: string) => {
-  return false
+export const shipRoleParse = (ship: string): string[] => {
+  return ["Healer"]
 }

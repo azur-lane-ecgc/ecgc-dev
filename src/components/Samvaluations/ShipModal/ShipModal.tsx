@@ -39,6 +39,7 @@ import {
   shipImageParse,
   shipSamvaluationParse,
   shipFleetTypeParse,
+  shipRoleParse,
 } from "@utils/ships"
 
 import {
@@ -133,7 +134,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const samvaluationData = shipSamvaluationParse(ship)
   const samvaluationText = samvaluationData.evaluation
   const fastLoad = samvaluationData?.preload ?? ""
-  const roles = useMemo(() => ["Healer"].slice(0, 5), [])
+  const roles = shipRoleParse(ship).slice(0, 5)
 
   return (
     <>
