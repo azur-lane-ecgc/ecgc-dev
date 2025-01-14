@@ -67,42 +67,42 @@ export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
           >
             <tr className="*:text-base">
               <td
-                className={`${ranking.hardarbiter && letterRankColor(ranking.hardarbiter)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.hardarbiter)} !text-black font-semibold`}
               >
                 {ranking.hardarbiter ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.meta && letterRankColor(ranking.meta)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.meta)} !text-black font-semibold`}
               >
                 {ranking.meta ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.cm && letterRankColor(ranking.cm)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.cm)} !text-black font-semibold`}
               >
                 {ranking.cm ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.w14mob && letterRankColor(ranking.w14mob)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.w14mob)} !text-black font-semibold`}
               >
                 {ranking.w14mob ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.w14boss && letterRankColor(ranking.w14boss)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.w14boss)} !text-black font-semibold`}
               >
                 {ranking.w14boss ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.w15mob && letterRankColor(ranking.w15mob)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.w15mob)} !text-black font-semibold`}
               >
                 {ranking.w15mob ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.w15boss && letterRankColor(ranking.w15boss)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.w15boss)} !text-black font-semibold`}
               >
                 {ranking.w15boss ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.ex && letterRankColor(ranking.ex)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.ex)} !text-black font-semibold`}
               >
                 {ranking.ex ?? "\u200B"}
               </td>
@@ -120,17 +120,17 @@ export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
           >
             <tr className="*:text-base">
               <td
-                className={`${ranking.consistency && numberRankColor(ranking.consistency)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.consistency)} !text-black font-semibold`}
               >
                 {ranking.consistency ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.fleetreq && numberRankColor(ranking.fleetreq)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.fleetreq)} !text-black font-semibold`}
               >
                 {ranking.fleetreq ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.gearreq && numberRankColor(ranking.gearreq)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.gearreq)} !text-black font-semibold`}
               >
                 {ranking.gearreq ?? "\u200B"}
               </td>
@@ -150,27 +150,27 @@ export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
           >
             <tr className="*:text-base">
               <td
-                className={`${ranking.lightdmg && numberRankColor(ranking.lightdmg)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.lightdmg)} !text-black font-semibold`}
               >
                 {ranking.lightdmg ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.mediumdmg && numberRankColor(ranking.mediumdmg)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.mediumdmg)} !text-black font-semibold`}
               >
                 {ranking.mediumdmg ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.heavydmg && numberRankColor(ranking.heavydmg)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.heavydmg)} !text-black font-semibold`}
               >
                 {ranking.heavydmg ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.aoedmg && numberRankColor(ranking.aoedmg)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.aoedmg)} !text-black font-semibold`}
               >
                 {ranking.aoedmg ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.offensivebuff && numberRankColor(ranking.offensivebuff)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.offensivebuff)} !text-black font-semibold`}
               >
                 {ranking.offensivebuff ?? "\u200B"}
               </td>
@@ -189,22 +189,22 @@ export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
           >
             <tr className="*:text-base">
               <td
-                className={`${ranking.selfsurvival && numberRankColor(ranking.selfsurvival)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.selfsurvival)} !text-black font-semibold`}
               >
                 {ranking.selfsurvival ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.aa && numberRankColor(ranking.aa)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.aa)} !text-black font-semibold`}
               >
                 {ranking.aa ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.asw && numberRankColor(ranking.asw)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.asw)} !text-black font-semibold`}
               >
                 {ranking.asw ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.defensivebuff && numberRankColor(ranking.defensivebuff)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.defensivebuff)} !text-black font-semibold`}
               >
                 {ranking.defensivebuff ?? "\u200B"}
               </td>

@@ -58,17 +58,17 @@ export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
           >
             <tr className="*:text-base">
               <td
-                className={`${ranking.hardarbiter && letterRankColor(ranking.hardarbiter)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.hardarbiter)} !text-black font-semibold`}
               >
                 {ranking.hardarbiter ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.cm && letterRankColor(ranking.cm)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.cm)} !text-black font-semibold`}
               >
                 {ranking.cm ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.campaign && letterRankColor(ranking.campaign)} !text-black font-semibold`}
+                className={`${letterRankColor(ranking.campaign)} !text-black font-semibold`}
               >
                 {ranking.campaign ?? "\u200B"}
               </td>
@@ -85,17 +85,17 @@ export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
           >
             <tr className="*:text-base">
               <td
-                className={`${ranking.consistency && numberRankColor(ranking.consistency)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.consistency)} !text-black font-semibold`}
               >
                 {ranking.consistency ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.fleetreq && numberRankColor(ranking.fleetreq)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.fleetreq)} !text-black font-semibold`}
               >
                 {ranking.fleetreq ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.flagreq && numberRankColor(ranking.flagreq)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.flagreq)} !text-black font-semibold`}
               >
                 {ranking.flagreq ?? "\u200B"}
               </td>
@@ -113,22 +113,22 @@ export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
           >
             <tr className="*:text-base">
               <td
-                className={`${ranking.lightdmg && numberRankColor(ranking.lightdmg)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.lightdmg)} !text-black font-semibold`}
               >
                 {ranking.lightdmg ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.mediumdmg && numberRankColor(ranking.mediumdmg)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.mediumdmg)} !text-black font-semibold`}
               >
                 {ranking.mediumdmg ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.heavydmg && numberRankColor(ranking.heavydmg)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.heavydmg)} !text-black font-semibold`}
               >
                 {ranking.heavydmg ?? "\u200B"}
               </td>
               <td
-                className={`${ranking.offensivebuff && numberRankColor(ranking.offensivebuff)} !text-black font-semibold`}
+                className={`${numberRankColor(ranking.offensivebuff)} !text-black font-semibold`}
               >
                 {ranking.offensivebuff ?? "\u200B"}
               </td>

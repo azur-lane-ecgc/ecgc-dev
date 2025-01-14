@@ -32,7 +32,9 @@ export const letterRankColor = (rank: string | null | undefined): string => {
     "": "",
   }
 
-  return (rank && getLetterRankColor[rank.replaceAll(/\*/g, "")]) || ""
+  return rank != null
+    ? (getLetterRankColor[rank.replaceAll(/\*/g, "")] ?? "")
+    : ""
 }
 
 export const numberRankColor = (
@@ -45,7 +47,7 @@ export const numberRankColor = (
     "-2": "bg-yellow-200",
     "-1": "bg-yellow-100",
     "": "",
-    "0": "bg-gray-400",
+    "0": "bg-zinc-300",
     "1": "bg-red-100",
     "2": "bg-red-200",
     "3": "bg-red-300",
@@ -54,5 +56,5 @@ export const numberRankColor = (
     "6": "bg-red-600",
   }
 
-  return (rank && getNumberRankColor[rank]) || ""
+  return rank != null ? (getNumberRankColor[rank.toString()] ?? "") : ""
 }
