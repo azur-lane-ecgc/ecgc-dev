@@ -27,5 +27,25 @@ export default defineConfig({
     json: {
       stringify: true,
     },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes("AzurLaneData")) {
+              return "azur-lane-data"
+            }
+            if (id.includes("ship_data")) {
+              return "ship-data"
+            }
+            if (id.includes("data")) {
+              return "data"
+            }
+            if (id.includes("node_modules")) {
+              return "vendor"
+            }
+          },
+        },
+      },
+    },
   },
 })
