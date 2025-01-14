@@ -10,7 +10,7 @@
     "build": "astro check && astro build",
     "devtools": "bun run submodule && bun run dev_tools/runAllTools.ts",
     "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh && astro dev",
-    "rebuild": "bun ci && bun install && bun outdated"
+    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun update && bun install"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
