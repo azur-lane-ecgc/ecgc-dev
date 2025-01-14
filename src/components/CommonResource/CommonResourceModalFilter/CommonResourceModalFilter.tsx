@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react"
+import { useEffect, useReducer, useState } from "react"
 
 import { ComboBox } from "@components/_common/ComboBox"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ItemCellSkeleton } from "@components/_common/Skeleton"
+
+import type { CommonResourceFilterState } from "@store/CommonResource"
+import { CommonResourceFilterReducer } from "@store/CommonResource"
 
 import { FiniteResourceData, InfiniteResourceData } from "../CommonResourceData"
 import { ResourceModal } from "../ResourceModal"
@@ -14,59 +17,68 @@ const combinedData: ResourceProps[] =
 interface CommonResourceModalFilterProps {
   className?: string
 }
+const timeframeMapping: { [key: string]: string } = {
+  Daily: " / Day",
+  Weekly: " / Week",
+  Monthly: " / Month",
+  Bimonthly: " / 2 Months",
+  "One-Time": " / Total",
+}
+
+const propMapping: { [key: string]: keyof ResourceProps["total"] } = {
+  Daily: "daily",
+  Weekly: "weekly",
+  Monthly: "monthly",
+  Bimonthly: "bimonthly",
+  "One-Time": "oneTime",
+}
 
 export const CommonResourceModalFilter: React.FC<
   CommonResourceModalFilterProps
 > = ({ className }) => {
   const [loading, setLoading] = useState<boolean>(true)
-
-  // ComboBoxes
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
-  const [selectedTimeframe, setSelectedTimeframe] = useState<string | null>(
-    "Monthly",
-  )
-  const [availability, setAvailability] = useState<
-    "Both" | "Infinite" | "Finite"
-  >("Both")
-
-  const timeframeMapping: { [key: string]: string } = {
-    Daily: " / Day",
-    Weekly: " / Week",
-    Monthly: " / Month",
-    Bimonthly: " / 2 Months",
-    "One-Time": " / Total",
-  }
-
-  const propMapping: { [key: string]: keyof ResourceProps["total"] } = {
-    Daily: "daily",
-    Weekly: "weekly",
-    Monthly: "monthly",
-    Bimonthly: "bimonthly",
-    "One-Time": "oneTime",
-  }
-
-  let filteredData = [] as ResourceProps[]
-
-  if (availability === "Infinite") {
-    filteredData = InfiniteResourceData
-  } else if (availability === "Finite") {
-    filteredData = FiniteResourceData
-  } else {
-    filteredData = combinedData
-  }
-
-  filteredData = filteredData.filter((item) => {
-    const categoryMatches =
-      !selectedCategory || item.category === selectedCategory
-
-    const timeframeKey = propMapping[selectedTimeframe as string]
-    const timeframeValue = item.total[timeframeKey]
-
-    const timeframeMatches =
-      typeof timeframeValue === "number" || timeframeValue === "N/A"
-
-    return categoryMatches && timeframeMatches
+  const [filteredData, setFilteredData] = useState<ResourceProps[]>([])
+  const [filterState, dispatch] = useReducer(CommonResourceFilterReducer, {
+    selectedCategory: null,
+    selectedTimeframe: "Monthly",
+    availability: "Both",
   })
+
+  useEffect(() => {
+    setLoading(true)
+
+    const filterData = () => {
+      let data: ResourceProps[] = []
+
+      if (filterState.availability === "Infinite") {
+        data = InfiniteResourceData
+      } else if (filterState.availability === "Finite") {
+        data = FiniteResourceData
+      } else {
+        data = combinedData
+      }
+
+      return data.filter((item) => {
+        const categoryMatches =
+          !filterState.selectedCategory ||
+          item.category === filterState.selectedCategory
+
+        const timeframeKey =
+          propMapping[filterState.selectedTimeframe as string]
+        const timeframeValue = item.total[timeframeKey]
+
+        const timeframeMatches =
+          typeof timeframeValue === "number" || timeframeValue === "N/A"
+
+        return categoryMatches && timeframeMatches
+      })
+    }
+
+    const filtered = filterData()
+    setFilteredData(filtered)
+
+    setLoading(false)
+  }, [filterState])
 
   // runs if component is loaded
   useEffect(() => {
@@ -90,7 +102,9 @@ export const CommonResourceModalFilter: React.FC<
               "Skill Book",
               "Retrofit",
             ]}
-            onSelect={setSelectedCategory}
+            onSelect={(value) =>
+              dispatch({ type: "SET_CATEGORY", payload: value || null })
+            }
           />
 
           <ComboBox
@@ -98,7 +112,9 @@ export const CommonResourceModalFilter: React.FC<
             options={["Daily", "Weekly", "Monthly", "Bimonthly", "One-Time"]}
             initialOption="Monthly"
             forceSelect={true}
-            onSelect={setSelectedTimeframe}
+            onSelect={(value) =>
+              dispatch({ type: "SET_TIMEFRAME", payload: value || null })
+            }
           />
 
           {/* Availability Toggle */}
@@ -108,21 +124,29 @@ export const CommonResourceModalFilter: React.FC<
               id={`availability_input`}
               className={`px-1 py-2 w-32 max-w-32 bg-gray-950 hover:bg-gray-800 border border-green-800 rounded-xl shadow-lg`}
               onClick={() => {
-                if (availability === "Both") setAvailability("Infinite")
-                else if (availability === "Infinite") setAvailability("Finite")
-                else setAvailability("Both")
+                const nextAvailability =
+                  filterState.availability === "Both"
+                    ? "Infinite"
+                    : filterState.availability === "Infinite"
+                      ? "Finite"
+                      : "Both"
+
+                dispatch({
+                  type: "SET_AVAILABILITY",
+                  payload: nextAvailability,
+                })
               }}
             >
               <div className="flex justify-evenly">
                 <div className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full mb-0 font-bold text-orange-400">
-                  {availability}
+                  {filterState.availability}
                 </div>
                 <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
-                  {availability === "Both" ? (
+                  {filterState.availability === "Both" ? (
                     <span className="text-cyan-400 text-base">
                       {"\u2713"} {"\u2717"}
                     </span>
-                  ) : availability === "Finite" ? (
+                  ) : filterState.availability === "Finite" ? (
                     <span className="text-cyan-400">{"\u2717"}</span>
                   ) : (
                     <span className="text-cyan-400">{"\u2713"}</span>
@@ -145,10 +169,11 @@ export const CommonResourceModalFilter: React.FC<
           {!loading && (
             <ItemContainer>
               {filteredData.map((item) => {
-                const timeframeKey = propMapping[selectedTimeframe as string]
+                const timeframeKey =
+                  propMapping[filterState.selectedTimeframe as string]
                 const timeframeValue = item.total[timeframeKey]
 
-                const descriptionNote = `${timeframeValue}${typeof timeframeValue === "number" ? timeframeMapping[selectedTimeframe!] : ""}`
+                const descriptionNote = `${timeframeValue}${typeof timeframeValue === "number" ? timeframeMapping[filterState.selectedTimeframe!] : ""}`
 
                 return (
                   <ResourceModal
