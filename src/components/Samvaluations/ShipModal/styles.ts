@@ -45,7 +45,7 @@ export const numberRankColor = (
     "-2": "bg-yellow-200",
     "-1": "bg-yellow-100",
     "": "",
-    "0": "bg-zinc-300",
+    "0": "bg-gray-400",
     "1": "bg-red-100",
     "2": "bg-red-200",
     "3": "bg-red-300",

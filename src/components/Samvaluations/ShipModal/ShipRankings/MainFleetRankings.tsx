@@ -10,7 +10,7 @@ import {
 import type {
   ShipRankingTypes,
   MainFleetRankingProps,
-} from "../../../../data/rankings/types"
+} from "@data/rankings/types"
 
 const MainFleetData: Record<string, MainFleetRankingProps[]> = (await import(
   "@data/rankings/mainFleetRankings.json"
