@@ -10,7 +10,7 @@ import {
 import type { ShipRankingTypes, MainFleetRankingProps } from "./types"
 
 const MainFleetData: Record<string, MainFleetRankingProps[]> = (await import(
-  "./data/mainFleetRankings.json"
+  "@data/rankings/mainFleetRankings.json"
 ).then((module) => module.default)) as Record<number, MainFleetRankingProps[]>
 
 export const MainFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {

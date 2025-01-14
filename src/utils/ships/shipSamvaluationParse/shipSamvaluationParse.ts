@@ -1,4 +1,4 @@
-import data from "./data.json"
+import data from "@data/samvaluation/samvaluationData.json"
 
 interface SamvaluationProps {
   event?: {

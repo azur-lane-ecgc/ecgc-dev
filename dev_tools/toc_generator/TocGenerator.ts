@@ -5,7 +5,7 @@ import { pageInfo } from "../_pageInfo.js"
 
 const outputFilePath = path.join(
   process.cwd(),
-  "./src/components/_common/Sidenav/TocContent.json",
+  "./src/data/toc/TocContent.json",
 )
 
 const initializeJsonFile = async () => {

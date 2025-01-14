@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import { HR } from "@components/_common/HR"
 import { TocLink } from "./TocLink"
-import globalTOC from "./TocContent.json"
+import globalTOC from "@data/toc/TocContent.json"
 
 import "./styles.css"
 

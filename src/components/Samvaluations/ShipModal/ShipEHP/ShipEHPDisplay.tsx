@@ -4,7 +4,7 @@ import { ehpUpdateDate } from "@components/_common/Constants"
 
 import { formatDate } from "@utils/formatDate"
 
-import jsonEHP from "./shipEHP.json"
+import jsonEHP from "@data/ehp/shipEHP.json"
 const shipEHPData = jsonEHP as Record<string, ShipEHPProps[]>
 
 export interface ShipEHPProps {

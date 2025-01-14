@@ -13,6 +13,7 @@ const excludedFiles = [
   /samvaluationparser\.ts/,
   /imgur\.py/,
   /\\rankings\.py/,
+  /\\_backup/,
 ]
 
 const readAllFiles = async (dir: string): Promise<string[]> => {
