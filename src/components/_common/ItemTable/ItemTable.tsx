@@ -44,7 +44,7 @@ export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
               <th
                 key={index}
                 colSpan={col?.colSpan || 1}
-                className={`${col.active && "bg-[#373b3e]"} ${col?.limiter && "ship_table_limiter"} px-1`}
+                className={`${col.active ? "bg-[#373b3e]" : ""} ${col?.limiter ? "ship_table_limiter" : ""} px-1`}
               >
                 {col.colName}
               </th>
