@@ -61,6 +61,48 @@ const DETechPoints: FleetTechData = {
       techPoints: 10,
       isShipyard: false,
     },
+    {
+      ship: "Fei Yuen",
+      rarity: 3,
+      location: [
+        {
+          event: "Core Data Shop",
+          stages: [
+            `1,200 <img
+          loading="lazy"
+          class="inline-block"
+          src="/test_ecgc_2/images/materials/core_data.png"
+          width="20px"
+          alt="Core Data"
+        />`,
+          ],
+        },
+      ],
+      investment: "Collection",
+      techPoints: 6,
+      isShipyard: false,
+    },
+    {
+      ship: "Ting An",
+      rarity: 3,
+      location: [
+        {
+          event: "Core Data Shop",
+          stages: [
+            `1,200 <img
+          loading="lazy"
+          class="inline-block"
+          src="/test_ecgc_2/images/materials/core_data.png"
+          width="20px"
+          alt="Core Data"
+        />`,
+          ],
+        },
+      ],
+      investment: "Collection",
+      techPoints: 6,
+      isShipyard: false,
+    },
   ],
 }
 
