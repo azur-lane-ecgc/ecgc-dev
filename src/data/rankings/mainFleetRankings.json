@@ -1908,7 +1908,7 @@
     "Fritz Rumey": [
         {
             "nameNote": "",
-            "notes": "zTENTATIVE damage CV who can use 8 FTRs or 0 TBs. High RLD but inflexible timing. Also strongest w15 support by far.",
+            "notes": "L/M Damage CV who can use 8 fighters. High RLD but inflexible timing. Also strongest w15 support by far.",
             "hardarbiter": "S",
             "meta": "A",
             "cm": "A",
@@ -1930,6 +1930,35 @@
             "selfsurvival": null,
             "aa": null,
             "rammers": 1,
+            "othermain": null,
+            "vgsurvival": null
+        }
+    ],
+    "Fu Shun": [
+        {
+            "nameNote": "Main",
+            "notes": "",
+            "hardarbiter": "D",
+            "meta": "D",
+            "cm": "D",
+            "w14mob": "D",
+            "w14boss": "D",
+            "w15mob": "D",
+            "w15boss": "D",
+            "ex": "D",
+            "consistency": null,
+            "fleetreq": null,
+            "gearreq": null,
+            "flagreq": null,
+            "lightdmg": 2,
+            "mediumdmg": 1,
+            "heavydmg": 1,
+            "aoedmg": 1,
+            "dmguptime": 1,
+            "offensivebuff": null,
+            "selfsurvival": -2,
+            "aa": null,
+            "rammers": null,
             "othermain": null,
             "vgsurvival": null
         }
@@ -2979,10 +3008,10 @@
     "Hwah Jah": [
         {
             "nameNote": "",
-            "notes": "Yeah.",
-            "hardarbiter": "D",
-            "meta": "D",
-            "cm": "D",
+            "notes": "zTENTATIVE Chen Hai Pro Plus Max. Top 3 w15 support.",
+            "hardarbiter": "C",
+            "meta": "C",
+            "cm": "C",
             "w14mob": "D",
             "w14boss": "D",
             "w15mob": "D",
@@ -2992,17 +3021,17 @@
             "fleetreq": -2,
             "gearreq": null,
             "flagreq": null,
-            "lightdmg": 0,
-            "mediumdmg": 0,
-            "heavydmg": 0,
-            "aoedmg": 0,
-            "dmguptime": null,
+            "lightdmg": 2,
+            "mediumdmg": 3,
+            "heavydmg": 2,
+            "aoedmg": 2,
+            "dmguptime": 1,
             "offensivebuff": null,
             "selfsurvival": -2,
             "aa": null,
             "rammers": null,
             "othermain": null,
-            "vgsurvival": null
+            "vgsurvival": 1
         }
     ],
     "Hyuuga": [
@@ -3159,7 +3188,7 @@
             "cm": "D",
             "w14mob": "A",
             "w14boss": "A",
-            "w15mob": "C",
+            "w15mob": "B",
             "w15boss": "A",
             "ex": "D",
             "consistency": null,
@@ -7512,13 +7541,13 @@
     "Zuihou": [
         {
             "nameNote": "",
-            "notes": "Ryuuhou Pro Max.",
+            "notes": "Ryuuhou Pro Max. Asterisk means the fleet is DD/CL or low-HP focused. Like a tanky DD for main tank.",
             "hardarbiter": "D",
             "meta": "D",
             "cm": "D",
             "w14mob": "A",
             "w14boss": "D",
-            "w15mob": "B",
+            "w15mob": "A*",
             "w15boss": "D",
             "ex": "D",
             "consistency": -1,

@@ -1835,6 +1835,33 @@
             "defensivebuff": null
         }
     ],
+    "Chang Feng": [
+        {
+            "nameNote": "",
+            "notes": "zTENTATIVE purple DD, what to expect",
+            "hardarbiter": "D",
+            "meta": "D",
+            "cm": "D",
+            "w14mob": "D",
+            "w14boss": "D",
+            "w15mob": "D",
+            "w15boss": "D",
+            "ex": "D",
+            "consistency": null,
+            "fleetreq": -2,
+            "gearreq": null,
+            "flagreq": null,
+            "lightdmg": 1,
+            "mediumdmg": 1,
+            "heavydmg": 1,
+            "aoedmg": 1,
+            "offensivebuff": null,
+            "selfsurvival": 1,
+            "aa": null,
+            "asw": null,
+            "defensivebuff": 1
+        }
+    ],
     "Chao Ho": [
         {
             "nameNote": "",
@@ -2022,6 +2049,33 @@
             "aa": null,
             "asw": null,
             "defensivebuff": null
+        }
+    ],
+    "Chien Wu": [
+        {
+            "nameNote": "",
+            "notes": "zTENTATIVE typical new gold CA, but worse than lala/carl",
+            "hardarbiter": "C",
+            "meta": "C",
+            "cm": "C",
+            "w14mob": "C",
+            "w14boss": "C",
+            "w15mob": "D",
+            "w15boss": "D",
+            "ex": "D",
+            "consistency": null,
+            "fleetreq": -1,
+            "gearreq": null,
+            "flagreq": null,
+            "lightdmg": 3,
+            "mediumdmg": 2,
+            "heavydmg": 1,
+            "aoedmg": 2,
+            "offensivebuff": 1,
+            "selfsurvival": 3,
+            "aa": -1,
+            "asw": null,
+            "defensivebuff": 1
         }
     ],
     "Chikuma": [
@@ -3401,10 +3455,10 @@
             "defensivebuff": null
         }
     ],
-    "Fu Shun": [
+    "Fu Po": [
         {
             "nameNote": "",
-            "notes": null,
+            "notes": "zTENTATIVE purple DD, what to expect",
             "hardarbiter": "D",
             "meta": "D",
             "cm": "D",
@@ -3413,14 +3467,41 @@
             "w15mob": "D",
             "w15boss": "D",
             "ex": "D",
-            "consistency": null,
-            "fleetreq": null,
+            "consistency": -2,
+            "fleetreq": -1,
             "gearreq": null,
             "flagreq": null,
             "lightdmg": 1,
             "mediumdmg": 1,
             "heavydmg": 1,
             "aoedmg": 1,
+            "offensivebuff": null,
+            "selfsurvival": 1,
+            "aa": null,
+            "asw": null,
+            "defensivebuff": null
+        }
+    ],
+    "Fu Shun": [
+        {
+            "nameNote": "",
+            "notes": "zTENTATIVE squishiest and highest dmg DDG. No help for teammates.",
+            "hardarbiter": "A",
+            "meta": "B",
+            "cm": "A",
+            "w14mob": "A",
+            "w14boss": "C",
+            "w15mob": "D",
+            "w15boss": "D",
+            "ex": "D",
+            "consistency": null,
+            "fleetreq": null,
+            "gearreq": null,
+            "flagreq": null,
+            "lightdmg": 5,
+            "mediumdmg": 5,
+            "heavydmg": 3,
+            "aoedmg": 4,
             "offensivebuff": null,
             "selfsurvival": 1,
             "aa": null,
@@ -3966,6 +4047,33 @@
             "aa": -1,
             "asw": null,
             "defensivebuff": null
+        }
+    ],
+    "Hai Yung": [
+        {
+            "nameNote": "",
+            "notes": "zTENTATIVE purple ship from the 19th century, what to expect",
+            "hardarbiter": "D",
+            "meta": "D",
+            "cm": "D",
+            "w14mob": "D",
+            "w14boss": "D",
+            "w15mob": "D",
+            "w15boss": "D",
+            "ex": "D",
+            "consistency": -1,
+            "fleetreq": -1,
+            "gearreq": null,
+            "flagreq": null,
+            "lightdmg": 1,
+            "mediumdmg": 1,
+            "heavydmg": 1,
+            "aoedmg": 1,
+            "offensivebuff": null,
+            "selfsurvival": 1,
+            "aa": -1,
+            "asw": null,
+            "defensivebuff": 1
         }
     ],
     "Halford": [

@@ -267,6 +267,13 @@
             "std": "35.09%"
         }
     ],
+    "Chien Wu": [
+        {
+            "name": "Chien Wu",
+            "totalEHP": "117.92%",
+            "std": "35.24%"
+        }
+    ],
     "Zara": [
         {
             "name": "Zara (With Pola, VV)",
@@ -477,18 +484,18 @@
             "std": "28.76%"
         }
     ],
-    "Prinz Heinrich": [
-        {
-            "name": "Prinz Heinrich",
-            "totalEHP": "106.93%",
-            "std": "26.65%"
-        }
-    ],
     "Admiral Hipper META": [
         {
             "name": "Admiral Hipper META",
             "totalEHP": "106.93%",
             "std": "29.63%"
+        }
+    ],
+    "Prinz Heinrich": [
+        {
+            "name": "Prinz Heinrich",
+            "totalEHP": "106.93%",
+            "std": "26.65%"
         }
     ],
     "Little Prinz Eugen": [
@@ -835,13 +842,6 @@
             "std": "26.13%"
         }
     ],
-    "Tashkent": [
-        {
-            "name": "Tashkent",
-            "totalEHP": "93.43%",
-            "std": "35.30%"
-        }
-    ],
     "Belfast": [
         {
             "name": "Belfast",
@@ -1029,6 +1029,13 @@
             "name": "Le Triomphant",
             "totalEHP": "88.17%",
             "std": "36.46%"
+        }
+    ],
+    "Tashkent": [
+        {
+            "name": "Tashkent",
+            "totalEHP": "87.90%",
+            "std": "32.98%"
         }
     ],
     "Minneapolis": [
@@ -1823,18 +1830,18 @@
             "std": "24.82%"
         }
     ],
-    "La Galissonnière": [
-        {
-            "name": "La Galissonnière",
-            "totalEHP": "73.79%",
-            "std": "25.84%"
-        }
-    ],
     "Yoizuki": [
         {
             "name": "Yoizuki",
             "totalEHP": "73.79%",
             "std": "28.41%"
+        }
+    ],
+    "La Galissonnière": [
+        {
+            "name": "La Galissonnière",
+            "totalEHP": "73.79%",
+            "std": "25.84%"
         }
     ],
     "Harutsuki": [
@@ -1849,13 +1856,6 @@
             "name": "Yuyaki",
             "totalEHP": "73.71%",
             "std": "22.85%"
-        }
-    ],
-    "Enterprise (Royal Navy)": [
-        {
-            "name": "Enterprise (Royal Navy)",
-            "totalEHP": "73.64%",
-            "std": "25.32%"
         }
     ],
     "Emanuele Pessagno": [
@@ -1917,6 +1917,13 @@
             "name": "Z47 (VS Other)",
             "totalEHP": "62.06%",
             "std": "22.55%"
+        }
+    ],
+    "Enterprise (Royal Navy)": [
+        {
+            "name": "Enterprise (Royal Navy)",
+            "totalEHP": "72.84%",
+            "std": "25.11%"
         }
     ],
     "Sheffield META": [
@@ -2286,6 +2293,13 @@
             "std": "27.83%"
         }
     ],
+    "Little Spee": [
+        {
+            "name": "Little Spee",
+            "totalEHP": "67.44%",
+            "std": "18.85%"
+        }
+    ],
     "Namiko": [
         {
             "name": "Namiko",
@@ -2293,11 +2307,16 @@
             "std": "19.76%"
         }
     ],
-    "Little Spee": [
+    "Fu Shun": [
         {
-            "name": "Little Spee",
-            "totalEHP": "67.44%",
-            "std": "18.85%"
+            "name": "Fu Shun (Retrofit)",
+            "totalEHP": "67.43%",
+            "std": "26.11%"
+        },
+        {
+            "name": "Fu Shun",
+            "totalEHP": "62.04%",
+            "std": "24.33%"
         }
     ],
     "Maestrale": [
@@ -2410,6 +2429,13 @@
             "std": "25.25%"
         }
     ],
+    "Smalley": [
+        {
+            "name": "Smalley",
+            "totalEHP": "65.88%",
+            "std": "25.46%"
+        }
+    ],
     "Concord": [
         {
             "name": "Concord",
@@ -2422,13 +2448,6 @@
             "name": "Memphis",
             "totalEHP": "65.88%",
             "std": "23.12%"
-        }
-    ],
-    "Smalley": [
-        {
-            "name": "Smalley",
-            "totalEHP": "65.88%",
-            "std": "25.46%"
         }
     ],
     "Achilles": [
@@ -2518,6 +2537,13 @@
             "name": "Gromky",
             "totalEHP": "65.40%",
             "std": "25.37%"
+        }
+    ],
+    "Hai Yung": [
+        {
+            "name": "Hai Yung",
+            "totalEHP": "65.40%",
+            "std": "23.05%"
         }
     ],
     "London": [
@@ -2828,13 +2854,6 @@
             "std": "20.84%"
         }
     ],
-    "Fu Shun": [
-        {
-            "name": "Fu Shun",
-            "totalEHP": "62.04%",
-            "std": "24.33%"
-        }
-    ],
     "Astoria": [
         {
             "name": "Astoria",
@@ -3066,18 +3085,18 @@
             "std": "24.41%"
         }
     ],
-    "Curlew": [
-        {
-            "name": "Curlew (Retrofit)",
-            "totalEHP": "59.28%",
-            "std": "20.72%"
-        }
-    ],
     "Kimberly META": [
         {
             "name": "Kimberly META",
             "totalEHP": "59.28%",
             "std": "24.08%"
+        }
+    ],
+    "Curlew": [
+        {
+            "name": "Curlew (Retrofit)",
+            "totalEHP": "59.28%",
+            "std": "20.72%"
         }
     ],
     "Laffey": [
@@ -3241,9 +3260,9 @@
             "std": "22.08%"
         }
     ],
-    "33": [
+    "3300.00%": [
         {
-            "name": "33",
+            "name": "3300.00%",
             "totalEHP": "56.59%",
             "std": "25.42%"
         }
@@ -3311,9 +3330,9 @@
             "std": "23.48%"
         }
     ],
-    "22": [
+    "2200.00%": [
         {
-            "name": "22",
+            "name": "2200.00%",
             "totalEHP": "55.74%",
             "std": "24.63%"
         }
@@ -3430,18 +3449,18 @@
             "std": "20.94%"
         }
     ],
-    "Pensacola": [
-        {
-            "name": "Pensacola",
-            "totalEHP": "52.62%",
-            "std": "16.78%"
-        }
-    ],
     "Z18": [
         {
             "name": "Z18",
             "totalEHP": "52.62%",
             "std": "20.87%"
+        }
+    ],
+    "Pensacola": [
+        {
+            "name": "Pensacola",
+            "totalEHP": "52.62%",
+            "std": "16.78%"
         }
     ],
     "Z21": [
@@ -3500,6 +3519,13 @@
             "std": "22.01%"
         }
     ],
+    "Fu Po": [
+        {
+            "name": "Fu Po",
+            "totalEHP": "51.44%",
+            "std": "21.84%"
+        }
+    ],
     "Yamakaze": [
         {
             "name": "Yamakaze",
@@ -3519,6 +3545,13 @@
             "name": "Mutsuki (Retrofit)",
             "totalEHP": "50.48%",
             "std": "22.12%"
+        }
+    ],
+    "Chang Feng": [
+        {
+            "name": "Chang Feng",
+            "totalEHP": "49.57%",
+            "std": "21.29%"
         }
     ],
     "Chicago": [

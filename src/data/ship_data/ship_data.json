@@ -3276,13 +3276,17 @@
           "href": "Ashen_Simulacrum"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -9550,13 +9554,17 @@
           "href": "Virtual_Tower"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Special)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -9923,13 +9931,17 @@
           "href": "Swirling_Cherry_Blossoms"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -16408,10 +16420,10 @@
     "id": 254,
     "ship": "Fu Shun",
     "faction": "DE",
-    "rarity": 3,
-    "isKai": false,
-    "hull": 1,
-    "hullType": "DD",
+    "rarity": 4,
+    "isKai": true,
+    "hull": 20,
+    "hullType": "DDGv",
     "fleetType": "vg",
     "limitBreakBonus": "All Out Assault activation requirement halved.",
     "slots": [
@@ -16419,15 +16431,15 @@
         "type": [
           "DD Main Gun"
         ],
-        "efficiency": 1.55,
-        "mounts": 1
+        "efficiency": 1,
+        "mounts": 2
       },
       {
         "type": [
-          "Torpedo"
+          "Missile"
         ],
-        "efficiency": 1,
-        "mounts": 2
+        "efficiency": 1.5,
+        "mounts": 1
       },
       {
         "type": [
@@ -16453,10 +16465,7 @@
         "mounts": 1
       }
     ],
-    "augments": [
-      "Dual Swords",
-      "Hammer"
-    ],
+    "augments": null,
     "samvaluationText": "Fu Shun is a damage-oriented DD with meh stats and skills. Collection only.",
     "fastLoad": "",
     "roles": [
@@ -19858,13 +19867,13 @@
           "href": "Swirling_Cherry_Blossoms"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Merit Shop",
+          "href": "Merit_Shop"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -25638,13 +25647,17 @@
           "href": "Ashen_Simulacrum"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -25932,13 +25945,17 @@
           "href": "Ashen_Simulacrum"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -26299,12 +26316,7 @@
           "href": "Merit_Shop"
         }
       ],
-      "construction": [
-        {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
-        }
-      ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -26447,13 +26459,17 @@
           "href": "Empyreal_Tragicomedy"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -26521,13 +26537,17 @@
           "href": "Empyreal_Tragicomedy"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -26738,13 +26758,21 @@
     ],
     "locations": {
       "events": [],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Special)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Merit Shop",
+          "href": "Merit_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -26883,13 +26911,17 @@
           "href": "Passionate_Polaris"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -26956,13 +26988,17 @@
           "href": "Passionate_Polaris"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Special)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -27031,13 +27067,17 @@
           "href": "Passionate_Polaris"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -27179,13 +27219,17 @@
           "href": "Passionate_Polaris"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -27324,13 +27368,17 @@
           "href": "Swirling_Cherry_Blossoms"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -27399,13 +27447,17 @@
           "href": "Swirling_Cherry_Blossoms"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -27474,13 +27526,17 @@
           "href": "Swirling_Cherry_Blossoms"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Special)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -30925,13 +30981,17 @@
           "href": "Universe_in_Unison"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Special)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -31000,13 +31060,13 @@
           "href": "Universe_in_Unison"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -31076,13 +31136,13 @@
           "href": "Universe_in_Unison"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -31149,13 +31209,17 @@
           "href": "Universe_in_Unison"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Special)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -31222,13 +31286,17 @@
           "href": "Universe_in_Unison"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -32043,13 +32111,17 @@
           "href": "Empyreal_Tragicomedy"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Heavy)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -32332,13 +32404,17 @@
     ],
     "locations": {
       "events": [],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -32403,13 +32479,17 @@
     ],
     "locations": {
       "events": [],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -32473,13 +32553,17 @@
     ],
     "locations": {
       "events": [],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -33446,13 +33530,17 @@
           "href": "Ashen_Simulacrum"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -33521,13 +33609,17 @@
           "href": "Ashen_Simulacrum"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -34113,13 +34205,13 @@
           "href": "Swirling_Cherry_Blossoms"
         }
       ],
-      "other": [],
-      "construction": [
+      "other": [
         {
-          "name": "Construction (Light)",
-          "href": "Construction"
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
         }
       ],
+      "construction": [],
       "permanent": []
     }
   },
@@ -38456,8 +38548,8 @@
     "id": 579,
     "ship": "Hwah Jah",
     "faction": "DE",
-    "rarity": 3,
-    "isKai": false,
+    "rarity": 4,
+    "isKai": true,
     "hull": 6,
     "hullType": "CVL",
     "fleetType": "main",
@@ -38465,23 +38557,27 @@
     "slots": [
       {
         "type": [
+          "Fighter",
           "Seaplane"
         ],
-        "efficiency": 1.4,
+        "efficiency": 1.5,
         "mounts": 3
       },
       {
         "type": [
+          "Fighter",
+          "Torpedo Bomber",
+          "Dive Bomber",
           "Seaplane"
         ],
-        "efficiency": 1.4,
+        "efficiency": 1.5,
         "mounts": 3
       },
       {
         "type": [
           "AA Gun"
         ],
-        "efficiency": 0.8,
+        "efficiency": 1,
         "mounts": 1
       },
       {
@@ -38594,7 +38690,12 @@
           "href": "Happy_Lunar_New_Year_2023"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     }
@@ -41437,7 +41538,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Heavy)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -41507,7 +41613,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -41577,7 +41688,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -41647,7 +41763,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -41716,7 +41837,12 @@
           "href": "Fei_Yuen's_Spring_Adventure"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     }
@@ -44833,6 +44959,284 @@
         {
           "name": "Substellar Crepuscule",
           "href": "Substellar_Crepuscule"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "674": {
+    "id": 674,
+    "ship": "Chien Wu",
+    "faction": "DE",
+    "rarity": 4,
+    "isKai": false,
+    "hull": 3,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "limitBreakBonus": null,
+    "slots": [
+      {
+        "type": [
+          "CA Main Gun"
+        ],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "CL Main Gun"
+        ],
+        "efficiency": 1,
+        "mounts": 2
+      },
+      {
+        "type": [
+          "Torpedo"
+        ],
+        "efficiency": 0.8,
+        "mounts": 2
+      },
+      {
+        "type": [
+          "Auxiliary"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": [
+      "Greatsword",
+      "Lance"
+    ],
+    "samvaluationText": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": [
+      "Healer"
+    ],
+    "locations": {
+      "events": [
+        {
+          "name": "Spring Fashion Festa",
+          "href": "Spring_Fashion_Festa"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "675": {
+    "id": 675,
+    "ship": "Hai Yung",
+    "faction": "DE",
+    "rarity": 3,
+    "isKai": false,
+    "hull": 2,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "limitBreakBonus": null,
+    "slots": [
+      {
+        "type": [
+          "CL Main Gun"
+        ],
+        "efficiency": 1,
+        "mounts": 2
+      },
+      {
+        "type": [
+          "DD Main Gun"
+        ],
+        "efficiency": 0.9,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Torpedo"
+        ],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary",
+          "ASW Equipment"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary",
+          "ASW Equipment"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": [
+      "Crossbow",
+      "Sword"
+    ],
+    "samvaluationText": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": [
+      "Healer"
+    ],
+    "locations": {
+      "events": [
+        {
+          "name": "Spring Fashion Festa",
+          "href": "Spring_Fashion_Festa"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "676": {
+    "id": 676,
+    "ship": "Chang Feng",
+    "faction": "DE",
+    "rarity": 3,
+    "isKai": false,
+    "hull": 1,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "limitBreakBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": [
+          "DD Main Gun"
+        ],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Torpedo"
+        ],
+        "efficiency": 1.4,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "AA Gun"
+        ],
+        "efficiency": 1.05,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary",
+          "ASW Equipment"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary",
+          "ASW Equipment"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": [
+      "Dual Swords",
+      "Hammer"
+    ],
+    "samvaluationText": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": [
+      "Healer"
+    ],
+    "locations": {
+      "events": [
+        {
+          "name": "Spring Fashion Festa",
+          "href": "Spring_Fashion_Festa"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "677": {
+    "id": 677,
+    "ship": "Fu Po",
+    "faction": "DE",
+    "rarity": 3,
+    "isKai": false,
+    "hull": 1,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "limitBreakBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": [
+          "DD Main Gun"
+        ],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Torpedo"
+        ],
+        "efficiency": 1.4,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "AA Gun"
+        ],
+        "efficiency": 1.05,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary",
+          "ASW Equipment"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary",
+          "ASW Equipment"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": [
+      "Dual Swords",
+      "Hammer"
+    ],
+    "samvaluationText": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": [
+      "Healer"
+    ],
+    "locations": {
+      "events": [
+        {
+          "name": "Spring Fashion Festa",
+          "href": "Spring_Fashion_Festa"
         }
       ],
       "other": [],
