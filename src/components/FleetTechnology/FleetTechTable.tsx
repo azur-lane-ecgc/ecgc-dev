@@ -121,26 +121,24 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
   return (
     factionData && (
       <>
-        {excludeShipyard ? (
-          <p>
-            You get <b>{totalTechPoints} Tech Points TOTAL</b> following this
-            table (excluding{" "}
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
-              title="Shipyard"
-            >
-              Shipyard
-            </a>
-            ).
-          </p>
-        ) : (
-          <p>
-            You get <b>{totalTechPoints} Tech Points TOTAL</b> following this
-            table.
-          </p>
-        )}
+        <p>
+          You get <b>{totalTechPoints} Tech Points TOTAL</b> following this
+          table{" "}
+          {excludeShipyard && (
+            <>
+              (excluding{" "}
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+                title="Shipyard"
+              >
+                Shipyard
+              </a>
+              ).
+            </>
+          )}
+        </p>
 
         <div className="table-responsive">
           <table className="table table-sm table-dark table-bordered text-center border-secondary align-middle">
