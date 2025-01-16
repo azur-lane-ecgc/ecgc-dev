@@ -21,7 +21,7 @@ const tableInfo = [
 
 interface FleetTechTableProps {
   faction: string
-  excludeShipyard?: boolean | null | undefined
+  excludeShipyard?: boolean
 }
 
 type SortOrder = "asc" | "desc" | null
