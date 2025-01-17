@@ -267,6 +267,28 @@ const KMSTechPoints: FleetTechData = {
       isShipyard: false,
     },
     {
+      ship: "U-110",
+      rarity: 3,
+      location: [
+        { event: "Guild Shop", stages: ["Elite Ship"] },
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="/test_ecgc_2/images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
+      ],
+      investment: "Collection",
+      techPoints: 8,
+      isShipyard: false,
+    },
+    {
       ship: "U-556",
       rarity: 3,
       location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
