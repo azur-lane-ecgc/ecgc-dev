@@ -21,25 +21,16 @@ const RNTechPoints: FleetTechData = {
   ],
   data: [
     {
-      ship: "Littorio",
-      rarity: 4,
+      ship: "Giulio Cesare",
+      rarity: 3,
       location: [
         {
-          event: "Merit Shop",
-          stages: [
-            `20,000 <img
-          loading="lazy"
-          class="inline-block"
-          src="/test_ecgc_2/images/materials/merit.png"
-          width="20px"
-          alt="Merit"
-        />`,
-          ],
+          event: "Guild Shop",
+          stages: ["Elite Ship"],
         },
-        { event: "Empyreal Tragicomedy", stages: ["B3", "D3*"] },
       ],
       investment: "Max Limit Break",
-      techPoints: 120,
+      techPoints: 74,
       isShipyard: false,
     },
     {
@@ -125,6 +116,28 @@ const RNTechPoints: FleetTechData = {
       ],
       investment: "Max Limit Break",
       techPoints: 30,
+      isShipyard: false,
+    },
+    {
+      ship: "Littorio",
+      rarity: 4,
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `20,000 <img
+          loading="lazy"
+          class="inline-block"
+          src="/test_ecgc_2/images/materials/merit.png"
+          width="20px"
+          alt="Merit"
+        />`,
+          ],
+        },
+        { event: "Empyreal Tragicomedy", stages: ["B3", "D3*"] },
+      ],
+      investment: "Collection",
+      techPoints: 40,
       isShipyard: false,
     },
     {
