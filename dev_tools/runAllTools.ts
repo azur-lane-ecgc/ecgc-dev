@@ -15,6 +15,7 @@ const excludedFiles = [
   /\\_backup/,
   /ships\\/,
   /gsheets2img/,
+  /ENV/,
 ]
 
 const readAllFiles = async (dir: string): Promise<string[]> => {
