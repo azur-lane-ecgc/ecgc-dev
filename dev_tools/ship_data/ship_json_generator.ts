@@ -1,5 +1,5 @@
 import { dirname } from "path"
-import { mkdirSync } from "fs" // Used to create directories if necessary
+import { mkdirSync } from "fs"
 
 import type { ShipData } from "@ALData/types/ships"
 import type { AugmentData } from "@ALData/types/augments"
