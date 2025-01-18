@@ -1,8 +1,12 @@
 #!/bin/bash
 # open-link.sh
 
+if [ -z "$1" ]; then
+  echo "Usage: $0 <URL>"
+  exit 1
+fi
 
-URL="http://localhost:4321/test_ecgc_2/"
+URL="$1"
 
 if command -v open &>/dev/null; then
   open $URL

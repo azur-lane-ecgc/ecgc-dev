@@ -9,7 +9,7 @@
     "submodule": "git submodule update --recursive --remote",
     "build": "astro check && astro build",
     "devtools": "bun run submodule && bun run dev_tools/runAllTools.ts",
-    "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh && astro dev",
+    "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://localhost:4321/test_ecgc_2/ && astro dev",
     "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun update && bun install"
   },
   "dependencies": {
