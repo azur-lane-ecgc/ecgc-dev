@@ -15,6 +15,8 @@ async function download(sheetID) {
     `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=zip`,
   )
   await finished(Readable.fromWeb(res.body).pipe(createWriteStream(zipPath)))
+
+  console.log("download done")
   return zipPath
 }
 
@@ -22,6 +24,8 @@ async function unzip(zipPath) {
   const extractedDir = await mkdtemp(join(tmpdir(), "gs2imgx-"))
   await decompress(zipPath, extractedDir)
   await rm(dirname(zipPath), { force: true, recursive: true })
+
+  console.log("unzip done")
   return extractedDir
 }
 
@@ -47,9 +51,11 @@ async function screenshot(htmlPath, pngPath, browser) {
   await page.close()
 }
 
-download(config.get("gsheets2img.sheetID"))
-  .then(unzip)
-  .then(async (extractedDir) => {
+async function main() {
+  try {
+    const extractedDir = await unzip(
+      await download(config.get("gsheets2img.sheetID")),
+    )
     const outputDir = normalize(config.get("gsheets2img.outputDir"))
     await mkdir(outputDir, { recursive: true })
 
@@ -66,7 +72,11 @@ download(config.get("gsheets2img.sheetID"))
             includeSheets.includes(x)) &&
           (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
       )
+
+    console.log("so far so good")
     const browser = await firefox.launch()
+    console.log("playwright working")
+
     const promises = []
 
     for (const sheetName of sheetNames) {
@@ -88,4 +98,10 @@ download(config.get("gsheets2img.sheetID"))
     await Promise.all(promises)
     await browser.close()
     await rm(extractedDir, { force: true, recursive: true })
-  })
+  } catch (error) {
+    console.error("Error:", error)
+    throw error
+  }
+}
+
+main().catch(console.error)
