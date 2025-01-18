@@ -1,3 +1,66 @@
 credentials.json
 credentials.json.base64
 automated_imgur_upload/config/config.json
+
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+ENV/
+env/
+.venv/
+venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pytest
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Flask/Django
+instance/
+*.db
+*.sqlite3
+*.log
+
+# Local configuration
+*.env
+*.flaskenv
+*.envrc
+
+# Python packaging tools
+tox/
+tox.ini
+*.tox/
+co
