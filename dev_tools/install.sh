@@ -16,5 +16,6 @@ else
 fi
 
 pip install -r requirements.txt
+playwright install firefox
 
 echo "Python Dev Tool Setup Complete."
