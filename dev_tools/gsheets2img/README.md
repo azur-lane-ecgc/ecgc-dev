@@ -4,9 +4,6 @@ This is a slightly modified version of [gsheets2img](https://github.com/blead/gs
 
 ## Configuration
 
-[node-config](https://github.com/node-config/node-config) is used to provide hierarchical configurations.
-On top of configuration files, [`NODE_CONFIG`](https://github.com/node-config/node-config/wiki/Environment-Variables#node_config) can also be used to supply configuration through environment variables.
-
 An example local configuration file `config/local.json.example` has been provided:
 
 ```json
