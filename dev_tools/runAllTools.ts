@@ -9,12 +9,12 @@ const excludedDirectories = ["_backup", "gsheets2img"]
 const excludedFiles = [
   /_pageInfo\.ts/,
   /runAllTools\.ts/,
-  /index\.js/,
   /samvaluationparser\.ts/,
   /imgur\.py/,
   /\\rankings\.py/,
   /\\_backup/,
   /ships\\/,
+  /gsheets2img/,
 ]
 
 const readAllFiles = async (dir: string): Promise<string[]> => {
@@ -45,7 +45,7 @@ const runScript = async (fileName: string): Promise<void> => {
     const { stdout, stderr }: { stdout: string; stderr: string } =
       fileName.endsWith(".py")
         ? await exec(`python3 ${path.join(scriptsDirectory, fileName)}`)
-        : fileName.endsWith(".js") || fileName.endsWith(".ts")
+        : fileName.endsWith(".ts")
           ? await exec(`bun run ${path.join(scriptsDirectory, fileName)}`)
           : { stdout: "", stderr: "" }
 
@@ -66,9 +66,7 @@ const runAllScripts = async () => {
     // Skip excluded files
     const scriptFiles = files.filter(
       (file) =>
-        (file.endsWith(".js") ||
-          file.endsWith(".ts") ||
-          file.endsWith(".py")) &&
+        (file.endsWith(".ts") || file.endsWith(".py")) &&
         !excludedFiles.some((regex) => regex.test(file)),
     )
 
