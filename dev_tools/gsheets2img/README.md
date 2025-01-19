@@ -1,6 +1,6 @@
 # gsheets2img
 
-This is a slightly modified version of [gsheets2img](https://github.com/blead/gsheets2img), used under the MIT license.
+This is a python converted version of [gsheets2img](https://github.com/blead/gsheets2img), used under the MIT license.
 
 ## Configuration
 

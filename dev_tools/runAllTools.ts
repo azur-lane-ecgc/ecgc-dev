@@ -14,7 +14,6 @@ const excludedFiles = [
   /\\rankings\.py/,
   /\\_backup/,
   /ships\\/,
-  /gsheets2img/,
   /ENV/,
 ]
 
