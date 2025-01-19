@@ -1,4 +1,4 @@
-export const shipLimitBreakBonusParse = (
+export const shipLBBonusParse = (
   specificBuff: string | null,
 ): string | null => {
   switch (specificBuff) {

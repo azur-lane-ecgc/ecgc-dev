@@ -17,7 +17,7 @@ import {
   shipFactionParse,
   shipFleetTypeParse,
   shipHullTypeParse,
-  shipLimitBreakBonusParse,
+  shipLBBonusParse,
   shipLocationParse,
   shipNameParse,
   shipRarityParse,
@@ -50,7 +50,7 @@ const writeShipDataToFile = async (
     const hullType = shipHullTypeParse(hull)
     const fleetType: "main" | "ss" | "vg" = shipFleetTypeParse(hull)
 
-    const limitBreakBonus = shipLimitBreakBonusParse(mrLarData?.specific_buff)
+    const LBBonus = shipLBBonusParse(mrLarData?.specific_buff)
     const slots = shipSlotParse(
       mrLarData.slots[mrLarData.slots.length - 1],
       mrLarData.retro?.slots,
@@ -73,7 +73,7 @@ const writeShipDataToFile = async (
     const locations = shipLocationParse(ship, +id)
 
     const samvaluationData = shipSamvaluationParse(ship)
-    const samvaluationText = samvaluationData.evaluation
+    const samEval = samvaluationData.evaluation
     const fastLoad = samvaluationData?.preload ?? ""
     const roles = shipRoleParse(ship).slice(0, 5)
 
@@ -86,10 +86,10 @@ const writeShipDataToFile = async (
       hull,
       hullType,
       fleetType,
-      limitBreakBonus,
+      LBBonus,
       slots,
       augments,
-      samvaluationText,
+      samEval,
       fastLoad,
       roles,
       locations,

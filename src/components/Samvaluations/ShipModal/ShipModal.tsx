@@ -87,13 +87,13 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const hullType = shipData.hullType
   const fleetType: "main" | "ss" | "vg" = shipData.fleetType
 
-  const limitBreakBonus = shipData.limitBreakBonus
+  const LBBonus = shipData.LBBonus
   const slots = shipData.slots
 
   const augments = shipData.augments
   const shipImg = shipImageParse(ship, isKai)
 
-  const samvaluationText = shipData.samvaluationText
+  const samEval = shipData.samEval
   const fastLoad = shipData.fastLoad
   const roles = shipData.roles
 
@@ -219,7 +219,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 <div className="text-sm w-full">
                   <span
                     className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]"
-                    dangerouslySetInnerHTML={{ __html: samvaluationText! }}
+                    dangerouslySetInnerHTML={{ __html: samEval! }}
                   />
                 </div>
               </div>
@@ -305,14 +305,14 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     </td>
                   </tr>
                 )}
-                {!!limitBreakBonus && (
+                {!!LBBonus && (
                   <tr className="*:text-base">
                     <td>
                       <b>MLB Bonus</b>
                     </td>
                     <td colSpan={4}>
                       <span className="text-fuchsia-400 font-semibold">
-                        {limitBreakBonus}
+                        {LBBonus}
                       </span>
                     </td>
                   </tr>

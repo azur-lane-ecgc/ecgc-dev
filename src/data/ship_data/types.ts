@@ -25,10 +25,10 @@ export interface ShipData {
   hull: number
   hullType: string
   fleetType: "main" | "ss" | "vg"
-  limitBreakBonus: string | null
+  LBBonus: string | null
   slots: SlotProps[]
   augments: string[] | null
-  samvaluationText?: string
+  samEval?: string
   fastLoad: string
   roles: string[]
   locations: ShipLocationData
