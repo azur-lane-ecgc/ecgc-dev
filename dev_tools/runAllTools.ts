@@ -94,6 +94,8 @@ const runAllScripts = async () => {
       }
     }
 
+    await exec(`bash ${path.join(scriptsDirectory, "final.sh")}`)
+
     console.log("All devtools completed.")
     console.log(scriptFiles)
   } catch (error) {
