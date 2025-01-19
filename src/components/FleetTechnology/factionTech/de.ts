@@ -45,17 +45,17 @@ const DETechPoints: FleetTechData = {
       ship: "An Shan",
       rarity: 3,
       location: [
-        { event: "Lunar New Year", stages: ["An Shan's Drawing Book"] },
+        { event: "Lunar New Year", stages: ["Fu Shun's Great Adventure"] },
       ],
-      investment: "Max Limit Break",
-      techPoints: 32,
+      investment: "Collection",
+      techPoints: 10,
       isShipyard: false,
     },
     {
       ship: "Fu Shun",
       rarity: 3,
       location: [
-        { event: "Lunar New Year", stages: ["Fu Shun's Great Adventure"] },
+        { event: "Lunar New Year", stages: ["An Shan's Drawing Book"] },
       ],
       investment: "Collection",
       techPoints: 10,

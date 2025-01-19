@@ -95,6 +95,27 @@ const NPTechPoints: FleetTechData = {
       isShipyard: false,
     },
     {
+      ship: "Soobrazitelny",
+      rarity: 3,
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+            loading="lazy"
+            class="inline-block"
+            src="/test_ecgc_2/images/materials/merit.png"
+            width="20px"
+            alt="Merit"
+          />`,
+          ],
+        },
+      ],
+      investment: "Collection",
+      techPoints: 10,
+      isShipyard: false,
+    },
+    {
       ship: "Chkalov",
       rarity: 4,
       location: [{ event: "Shipyard", stages: ["PR5"] }],
