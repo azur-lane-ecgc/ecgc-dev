@@ -123,9 +123,10 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
       <>
         <p>
           You get <b>{totalTechPoints} Tech Points TOTAL</b> following this
-          table{" "}
+          table
           {excludeShipyard && (
             <>
+              {" "}
               (excluding{" "}
               <a
                 rel="noopener noreferrer"
@@ -135,9 +136,10 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
               >
                 Shipyard
               </a>
-              ).
+              )
             </>
           )}
+          .
         </p>
 
         <div className="table-responsive">
