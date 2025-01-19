@@ -43,9 +43,17 @@ const readAllFiles = async (dir: string): Promise<string[]> => {
 
 const runScript = async (fileName: string): Promise<void> => {
   try {
+    const pythonPath = path.join(scriptsDirectory, "ENV", "bin", "python")
+    const pythonExecutable =
+      process.platform === "win32"
+        ? path.join(scriptsDirectory, "ENV", "Scripts", "python.exe")
+        : pythonPath
+
     const { stdout, stderr }: { stdout: string; stderr: string } =
       fileName.endsWith(".py")
-        ? await exec(`python3 ${path.join(scriptsDirectory, fileName)}`)
+        ? await exec(
+            `${pythonExecutable} ${path.join(scriptsDirectory, fileName)}`,
+          )
         : fileName.endsWith(".ts")
           ? await exec(`bun run ${path.join(scriptsDirectory, fileName)}`)
           : { stdout: "", stderr: "" }
@@ -62,6 +70,8 @@ const runScript = async (fileName: string): Promise<void> => {
 
 const runAllScripts = async () => {
   try {
+    await exec(`bash ${path.join(scriptsDirectory, "install.sh")}`)
+
     const files = await readAllFiles(scriptsDirectory)
 
     // Skip excluded files
@@ -83,6 +93,8 @@ const runAllScripts = async () => {
         console.error(`\x1b[31mFailed to run ${scriptFile}\x1b[0m`)
       }
     }
+    
+    await exec(`bash ${path.join(scriptsDirectory, "final.sh")}`)
 
     console.log("All devtools completed.")
     console.log(scriptFiles)
