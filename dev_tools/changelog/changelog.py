@@ -6,12 +6,11 @@ from datetime import datetime
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
-# Constants
 SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
 END_GAME_RANKINGS_PATH = "src/components/_common/Constants/lastUpdated.ts"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
-# Define spreadsheets and their configurations
+# Define 2 sheets to parse
 SPREADSHEETS = [
     {
         "spreadsheet_id": "1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc",
@@ -29,7 +28,7 @@ SPREADSHEETS = [
     },
 ]
 
-# Authenticate and initialize the Sheets API
+
 credentials = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 service = build("sheets", "v4", credentials=credentials)
 
@@ -45,7 +44,7 @@ def get_changelog_date(spreadsheet_id, sheet_name, cell_range, date_format):
     date_str = result.get("values", [[None]])[0][0]
     if date_str:
         try:
-            if date_format == "%B %d, %Y":  # Handle full month names
+            if date_format == "%B %d, %Y":  
                 date_str = (
                     date_str.replace("th,", ",")
                     .replace("st,", ",")
@@ -65,7 +64,6 @@ def update_constants_file(updates):
         content = file.read()
 
     for key, new_date in updates.items():
-        # Ensure each key is updated independently
         updated_content = re.sub(
             rf'export const {key} = "\d{{2}}/\d{{2}}/\d{{4}}"',
             f'export const {key} = "{new_date}"',
