@@ -1,18 +1,26 @@
-import { createWriteStream } from "node:fs"
-import { mkdir, mkdtemp, readdir, rm } from "node:fs/promises"
-import { basename, dirname, extname, join, normalize } from "node:path"
-import { tmpdir } from "node:os"
-import { Readable } from "node:stream"
-import { finished } from "node:stream/promises"
+import fs, { createWriteStream } from "fs"
+import { mkdir, mkdtemp, readdir, rm } from "fs/promises"
+import { basename, dirname, extname, join, resolve } from "path"
+import { tmpdir } from "os"
+import { Readable } from "stream"
+import { finished } from "stream/promises"
+import { fileURLToPath } from "url"
+
 import { firefox } from "playwright"
 import decompress from "decompress"
-import fs from "node:fs"
 
-const config = JSON.parse(fs.readFileSync("./config/default.json", "utf-8"))
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+const config = JSON.parse(
+  fs.readFileSync(join(__dirname, "config/default.json"), "utf-8"),
+)
 const { sheetID, outputDir, includeSheets, excludeSheets, concurrency } =
   config.gsheets2img
 
-async function download(sheetID) {
+const resolvedOutputDir = resolve(__dirname, outputDir)
+
+const download = async (sheetID) => {
   const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
   const zipPath = join(dir, sheetID + ".zip")
   const res = await fetch(
@@ -22,14 +30,14 @@ async function download(sheetID) {
   return zipPath
 }
 
-async function unzip(zipPath) {
+const unzip = async (zipPath) => {
   const extractedDir = await mkdtemp(join(tmpdir(), "gs2imgx-"))
   await decompress(zipPath, extractedDir)
   await rm(dirname(zipPath), { force: true, recursive: true })
   return extractedDir
 }
 
-async function screenshot(htmlPath, pngPath, browser) {
+const screenshot = async (htmlPath, pngPath, browser) => {
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
     deviceScaleFactor: 2,
@@ -51,42 +59,45 @@ async function screenshot(htmlPath, pngPath, browser) {
   await page.close()
 }
 
-download(sheetID)
-  .then(unzip)
-  .then(async (extractedDir) => {
-    await mkdir(normalize(outputDir), { recursive: true })
+const main = async () => {
+  const extractedDir = await unzip(await download(sheetID))
+  await mkdir(resolvedOutputDir, { recursive: true })
 
-    const files = await readdir(extractedDir)
-    const sheetNames = files
-      .filter((x) => extname(x) == ".html")
-      .map((x) => basename(x).slice(0, -5))
-      .filter(
-        (x) =>
-          (!Array.isArray(includeSheets) ||
-            !includeSheets.length ||
-            includeSheets.includes(x)) &&
-          (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
-      )
-    const browser = await firefox.launch()
-    const promises = []
+  const files = await readdir(extractedDir)
+  const sheetNames = files
+    .filter((x) => extname(x) == ".html")
+    .map((x) => basename(x).slice(0, -5))
+    .filter(
+      (x) =>
+        (!Array.isArray(includeSheets) ||
+          !includeSheets.length ||
+          includeSheets.includes(x)) &&
+        (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
+    )
+  const browser = await firefox.launch()
+  const promises = []
 
-    for (const sheetName of sheetNames) {
-      const fileName = sheetName.replace(/\s+/g, "_") + ".jpeg"
-      console.log("Uploading", fileName)
+  for (const sheetName of sheetNames) {
+    const fileName = sheetName.replace(/\s+/g, "_") + ".jpeg"
+    console.log("Uploading", fileName)
 
-      const promise = screenshot(
-        join(extractedDir, sheetName + ".html"),
-        join(outputDir, fileName),
-        browser,
-      ).then(() => promises.splice(promises.indexOf(promise), 1))
-      promises.push(promise)
+    const promise = screenshot(
+      join(extractedDir, sheetName + ".html"),
+      join(resolvedOutputDir, fileName),
+      browser,
+    ).then(() => promises.splice(promises.indexOf(promise), 1))
+    promises.push(promise)
 
-      if (promises.length >= concurrency) {
-        await Promise.race(promises)
-      }
+    if (promises.length >= concurrency) {
+      await Promise.race(promises)
     }
+  }
 
-    await Promise.all(promises)
-    await browser.close()
-    await rm(extractedDir, { force: true, recursive: true })
-  })
+  await Promise.all(promises)
+  await browser.close()
+  await rm(extractedDir, { force: true, recursive: true })
+}
+
+main().catch((error) => {
+  console.error("An error occurred:", error)
+})

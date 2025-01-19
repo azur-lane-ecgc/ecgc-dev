@@ -13,11 +13,11 @@ export default defineConfig({
     tailwind(),
     react(),
     sitemap(),
-    (await import("@playform/compress")).default({
-      CSS: false,
-      HTML: false,
-      JavaScript: false,
-    }),
+    // (await import("@playform/compress")).default({
+    //   CSS: false,
+    //   HTML: false,
+    //   JavaScript: false,
+    // }),
   ],
   base: "/test_ecgc_2/",
   output: "static",
