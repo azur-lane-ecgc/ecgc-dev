@@ -9,6 +9,8 @@ import decompress from "decompress"
 import fs from "node:fs"
 
 const config = JSON.parse(fs.readFileSync("./config/default.json", "utf-8"))
+const { sheetID, outputDir, includeSheets, excludeSheets, concurrency } =
+  config.gsheets2img
 
 async function download(sheetID) {
   const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
@@ -48,9 +50,6 @@ async function screenshot(htmlPath, pngPath, browser) {
   await page.screenshot({ path: pngPath, clip: boundingBox })
   await page.close()
 }
-
-const { sheetID, outputDir, includeSheets, excludeSheets, concurrency } =
-  config.gsheets2img
 
 download(sheetID)
   .then(unzip)
