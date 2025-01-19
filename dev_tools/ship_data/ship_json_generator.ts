@@ -1,5 +1,5 @@
 import { dirname } from "path"
-import { mkdirSync } from "fs"
+import { existsSync, mkdirSync } from "fs"
 
 import type { ShipData } from "@ALData/types/ships"
 import type { AugmentData } from "@ALData/types/augments"
@@ -96,7 +96,9 @@ const writeShipDataToFile = async (
     }
   })
 
-  mkdirSync(dirname(OUTPUT_PATH), { recursive: true })
+  if (!existsSync(dirname(OUTPUT_PATH))) {
+    mkdirSync(dirname(OUTPUT_PATH), { recursive: true })
+  }
 
   await Bun.write(OUTPUT_PATH, JSON.stringify(processedData, null, 2))
 
