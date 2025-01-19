@@ -7,11 +7,12 @@
     "preview": "astro preview",
     "dev": "astro dev",
     "submodule": "git submodule update --recursive --remote",
-    "gsheets2img": "bun install && bunx playwright install firefox && NODE_CONFIG_DIR=dev_tools/gsheets2img/config/ node dev_tools/gsheets2img/index.js",
+    "gsheets2img": "cd dev_tools/gsheets2img && bun install && node index.js && cd .. && cd ..",
     "build": "astro check && astro build",
     "devtools": "bun run submodule && bun run dev_tools/runAllTools.ts",
     "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://localhost:4321/test_ecgc_2/ && astro dev",
-    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun update"
+    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun update",
+    "prepare": "npx playwright install firefox"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -31,9 +32,8 @@
     "@types/bun": "^1.1.17",
     "@types/decompress": "^4.2.7",
     "decompress": "^4.2.1",
-    "decompress-zip": "^0.3.3",
-    "googleapis": "^144.0.0",
-    "playwright": "^1.49.1"
+    "config": "^3.3.10",
+    "playwright": "^1.41.1"
   },
   "private": true
 }

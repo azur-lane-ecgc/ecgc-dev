@@ -1,22 +1,14 @@
-import { createWriteStream } from "fs"
-import { mkdir, mkdtemp, readdir, rm, readFile } from "fs/promises"
-import { basename, dirname, extname, join, normalize } from "path"
-import { tmpdir } from "os"
-import { Readable } from "stream"
-import { finished } from "stream/promises"
-import { fileURLToPath } from "url"
-import decompress from "decompress"
+import { createWriteStream } from "node:fs"
+import { mkdir, mkdtemp, readdir, rm } from "node:fs/promises"
+import { basename, dirname, extname, join, normalize } from "node:path"
+import { tmpdir } from "node:os"
+import { Readable } from "node:stream"
+import { finished } from "node:stream/promises"
 import { firefox } from "playwright"
+import decompress from "decompress"
+import fs from "node:fs"
 
-async function loadConfig() {
-  const configPath = join(
-    dirname(fileURLToPath(import.meta.url)),
-    "config",
-    "default.json",
-  )
-  const configData = await readFile(configPath, "utf-8")
-  return JSON.parse(configData)
-}
+const config = JSON.parse(fs.readFileSync("./config/default.json", "utf-8"))
 
 async function download(sheetID) {
   const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
@@ -25,7 +17,6 @@ async function download(sheetID) {
     `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=zip`,
   )
   await finished(Readable.fromWeb(res.body).pipe(createWriteStream(zipPath)))
-
   return zipPath
 }
 
@@ -33,7 +24,6 @@ async function unzip(zipPath) {
   const extractedDir = await mkdtemp(join(tmpdir(), "gs2imgx-"))
   await decompress(zipPath, extractedDir)
   await rm(dirname(zipPath), { force: true, recursive: true })
-
   return extractedDir
 }
 
@@ -59,17 +49,15 @@ async function screenshot(htmlPath, pngPath, browser) {
   await page.close()
 }
 
-async function main() {
-  try {
-    const config = await loadConfig()
+const { sheetID, outputDir, includeSheets, excludeSheets, concurrency } =
+  config.gsheets2img
 
-    const extractedDir = await unzip(await download(config.gsheets2img.sheetID))
-    const outputDir = normalize(config.gsheets2img.outputDir)
-    await mkdir(outputDir, { recursive: true })
+download(sheetID)
+  .then(unzip)
+  .then(async (extractedDir) => {
+    await mkdir(normalize(outputDir), { recursive: true })
 
     const files = await readdir(extractedDir)
-    const includeSheets = config.gsheets2img.includeSheets
-    const excludeSheets = config.gsheets2img.excludeSheets
     const sheetNames = files
       .filter((x) => extname(x) == ".html")
       .map((x) => basename(x).slice(0, -5))
@@ -80,10 +68,7 @@ async function main() {
             includeSheets.includes(x)) &&
           (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
       )
-
     const browser = await firefox.launch()
-    console.log("Playwright Launched...\n")
-
     const promises = []
 
     for (const sheetName of sheetNames) {
@@ -97,7 +82,7 @@ async function main() {
       ).then(() => promises.splice(promises.indexOf(promise), 1))
       promises.push(promise)
 
-      if (promises.length >= config.gsheets2img.concurrency) {
+      if (promises.length >= concurrency) {
         await Promise.race(promises)
       }
     }
@@ -105,10 +90,4 @@ async function main() {
     await Promise.all(promises)
     await browser.close()
     await rm(extractedDir, { force: true, recursive: true })
-  } catch (error) {
-    console.error("Error:", error)
-    throw error
-  }
-}
-
-main().catch(console.error)
+  })
