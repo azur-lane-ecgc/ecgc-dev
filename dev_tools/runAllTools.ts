@@ -93,8 +93,6 @@ const runAllScripts = async () => {
         console.error(`\x1b[31mFailed to run ${scriptFile}\x1b[0m`)
       }
     }
-    
-    await exec(`bash ${path.join(scriptsDirectory, "final.sh")}`)
 
     console.log("All devtools completed.")
     console.log(scriptFiles)
