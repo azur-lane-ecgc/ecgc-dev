@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 import { endGameRankingsUpdateDate } from "@components/_common/Constants"
+import { ItemCellSkeleton } from "@components/_common/Skeleton"
 
 import { formatDate } from "@utils/formatDate"
 
@@ -62,6 +63,21 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   trigger,
 }: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
+  const [shipData, setShipData] = useState<ShipData | null>(null)
+  const [loading, setLoading] = useState<boolean>(true)
+
+  useEffect(() => {
+    const fetchShipsData = async () => {
+      setLoading(true)
+      const fetchShips: Record<number, ShipData> = (await import(
+        "@data/ship_data/ship_data.json"
+      ).then((module) => module.default)) as Record<number, ShipData>
+      setShipData(fetchShips[id])
+      setLoading(false)
+    }
+
+    fetchShipsData()
+  }, [])
 
   const handleOpen = () => {
     setOpen(true)
@@ -77,7 +93,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     }
   }
 
-  const shipData = ships[id]
+  if (loading || !!!shipData) {
+    return <ItemCellSkeleton />
+  }
 
   const ship = shipData.ship
   const faction = shipData.faction
@@ -136,7 +154,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
             >
               <p
                 onClick={(e) => e.stopPropagation()}
-                dangerouslySetInnerHTML={{ __html: trigger.descriptionNote }}
+                dangerouslySetInnerHTML={{
+                  __html: trigger.descriptionNote,
+                }}
               />
             </div>
           )}
@@ -195,11 +215,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   {isKai ? ship + " (Retrofit)" : ship}
                 </a>
               </h1>
-
               {/* Event / Location */}
               <ShipLocations locations={locations} />
               <HR />
-
               {/* Flexbox for Icon + Samvaluation */}
               <div className={shipIconContainerStyle}>
                 {/* Ship Icon */}
@@ -224,10 +242,8 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 </div>
               </div>
               <HR />
-
               {/* EHP */}
               <ShipEHPDisplay ship={ship} />
-
               {/* Equip Table */}
               <ItemTable
                 tableInfo={[
@@ -321,24 +337,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <HR />
 
               {/* Rankings for End Game Azur Lane */}
-              <h3 className="text-xl">
-                <a
-                  href="https://docs.google.com/spreadsheets/d/13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0/edit?gid=0#gid=0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="by Suchiguma and his team"
-                  aria-label="Rankings for End Game Azur Lane (by Suchiguma)"
-                >
-                  Rankings for End Game Azur Lane
-                </a>
-              </h3>
-              <p className="text-sm">
-                <b>Last Updated</b>:{" "}
-                <span className="text-[#00ffff]">
-                  {formatDate(endGameRankingsUpdateDate)}
-                </span>
-              </p>
-
               {(() => {
                 switch (fleetType) {
                   case "main":
