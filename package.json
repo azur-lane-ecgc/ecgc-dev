@@ -7,7 +7,7 @@
     "preview": "astro preview",
     "dev": "astro dev",
     "submodule": "git submodule update --recursive --remote",
-    "gsheets2img": "bash dev_tools/gsheets2img.sh && bash dev_tools/final.sh",
+    "gsheets2img": "bash dev_tools/gsheets2img.sh",
     "build": "astro check && astro build",
     "devtools": "bun run submodule && bun run dev_tools/runAllTools.ts",
     "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://localhost:4321/test_ecgc_2/ && astro dev",

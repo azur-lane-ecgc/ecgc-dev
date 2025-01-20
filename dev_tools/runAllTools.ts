@@ -15,6 +15,7 @@ const excludedFiles = [
   /\\_backup/,
   /ships\\/,
   /ENV/,
+  /types/,
 ]
 
 const readAllFiles = async (dir: string): Promise<string[]> => {
@@ -69,6 +70,7 @@ const runScript = async (fileName: string): Promise<void> => {
 
 const runAllScripts = async () => {
   try {
+    console.log("Installing Python Dependencies...")
     await exec(`bash ${path.join(scriptsDirectory, "install.sh")}`)
 
     const files = await readAllFiles(scriptsDirectory)
@@ -93,7 +95,7 @@ const runAllScripts = async () => {
       }
     }
 
-    await exec(`bash ${path.join(scriptsDirectory, "final.sh")}`)
+    // await exec(`bash ${path.join(scriptsDirectory, "final.sh")}`)
 
     console.log("All devtools completed.")
     console.log(scriptFiles)
