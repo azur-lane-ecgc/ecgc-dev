@@ -16,6 +16,8 @@ const SSFleetData: Record<string, SSFleetRankingProps[]> = (await import(
   "@data/rankings/ssFleetRankings.json"
 ).then((module) => module.default)) as Record<number, SSFleetRankingProps[]>
 
+import { RankingHeader } from "./RankingHeader"
+
 export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
   const [rankingIndex, setRankingIndex] = useState<number>(0)
 
@@ -32,6 +34,7 @@ export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
 
   return (
     <>
+      <RankingHeader />
       <div className="flex justify-start gap-2 mb-4">
         {rankings.map((ranking, index) => (
           <button

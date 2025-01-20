@@ -19,6 +19,8 @@ const VGFleetData: Record<string, VanguardFleetRankingProps[]> = (await import(
   VanguardFleetRankingProps[]
 >
 
+import { RankingHeader } from "./RankingHeader"
+
 export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
   const [rankingIndex, setRankingIndex] = useState<number>(0)
 
@@ -35,6 +37,7 @@ export const VanguardFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
 
   return (
     <>
+      <RankingHeader />
       <div className="flex justify-start gap-2 mb-4">
         {rankings.map((ranking, index) => (
           <button
