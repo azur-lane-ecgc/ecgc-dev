@@ -8,8 +8,17 @@ interface ShipTags {
   roles: string[]
 }
 
+export const trimRoles = (roles: string[]): string[] => {
+  if (roles.includes("SuperTank") && roles.includes("Tank")) {
+    roles.filter((role) => role != "Tank")
+  }
+  return roles
+}
+
 export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
   const [roleDropdownOpen, setRoleDropdown] = useState(false)
+
+  roles = trimRoles(roles)
 
   return (
     <>
@@ -30,7 +39,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         } bg-slate-800 absolute md:hidden text-center top-[31px] left-0 w-[150px] border-gray-400 shadow-2xl overflow-hidden z-50 transition-all ease-in-out duration-300`}
       >
         {/* Faction Icon */}
-        <div className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-5">
+        <div className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3">
           <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
             <img
               loading="lazy"
@@ -46,7 +55,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         </div>
 
         {/* HullType Icon */}
-        <div className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-5">
+        <div className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3">
           <span className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative">
             <img
               loading="lazy"
@@ -65,7 +74,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         {roles.map((role) => (
           <div
             key={role}
-            className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-5"
+            className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3"
           >
             <span className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative">
               {RoleIcons[role]}
