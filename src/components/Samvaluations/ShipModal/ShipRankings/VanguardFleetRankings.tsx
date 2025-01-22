@@ -15,7 +15,7 @@ import type {
 const VGFleetData: Record<string, VanguardFleetRankingProps[]> = (await import(
   "@data/rankings/vgFleetRankings.json"
 ).then((module) => module.default)) as Record<
-  number,
+  string,
   VanguardFleetRankingProps[]
 >
 

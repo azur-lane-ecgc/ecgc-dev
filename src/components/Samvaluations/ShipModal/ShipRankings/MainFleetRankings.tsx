@@ -14,7 +14,7 @@ import type {
 
 const MainFleetData: Record<string, MainFleetRankingProps[]> = (await import(
   "@data/rankings/mainFleetRankings.json"
-).then((module) => module.default)) as Record<number, MainFleetRankingProps[]>
+).then((module) => module.default)) as Record<string, MainFleetRankingProps[]>
 
 import { RankingHeader } from "./RankingHeader"
 
