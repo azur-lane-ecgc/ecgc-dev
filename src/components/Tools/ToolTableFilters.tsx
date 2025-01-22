@@ -10,7 +10,7 @@ const categoryDisplayMapping: { [key: string]: string } = {
   Data: "data",
 }
 
-const displayCategories = Object.keys(categoryDisplayMapping) as Array<string>
+const displayCategories = Object.keys(categoryDisplayMapping) as string[]
 
 export const ToolTableFilters = () => {
   const [category, setCategory] = useState<string | null>(null)
