@@ -3,16 +3,11 @@ import { useEffect, useState } from "react"
 import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
-import { endGameRankingsUpdateDate } from "@components/_common/Constants"
 import { ItemCellSkeleton } from "@components/_common/Skeleton"
-
-import { formatDate } from "@utils/formatDate"
 
 import type { ShipData } from "@data/ship_data/types"
 
-const ships: Record<number, ShipData> = (await import(
-  "@data/ship_data/ship_data.json"
-).then((module) => module.default)) as Record<number, ShipData>
+import { parseEquipHref, shipImageParse } from "@utils/ships"
 
 import { ShipTags } from "./ShipTags"
 import {
@@ -22,8 +17,6 @@ import {
 } from "./ShipRankings"
 import { ShipEHPDisplay } from "./ShipEHP"
 import { ShipLocations } from "./ShipLocations"
-
-import { parseEquipHref, shipImageParse } from "@utils/ships"
 
 import {
   closeButtonStyle,
