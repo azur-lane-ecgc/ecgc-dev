@@ -7,7 +7,7 @@ export const modalStyle =
   "bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative my-[1.75rem] mx-auto min-w-[300px] overflow-auto z-[100]"
 
 export const closeButtonStyle =
-  "absolute top-2 right-2 text-gray-500 hover:text-gray-300 text-xl sm:text-2xl"
+  "absolute top-1 right-2 text-gray-500 hover:text-gray-300 text-xl sm:text-2xl"
 
 export const tagContainerStyle =
   "absolute top-0 left-1/2 sm:left-0 transform -translate-x-1/2 sm:translate-x-0"
