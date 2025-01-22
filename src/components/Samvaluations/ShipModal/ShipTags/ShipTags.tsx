@@ -10,15 +10,15 @@ interface ShipTags {
 
 export const trimRoles = (roles: string[]): string[] => {
   if (roles.includes("SuperTank") && roles.includes("Tank")) {
-    roles.filter((role) => role != "Tank")
+    roles = roles.filter((role) => role != "Tank")
   }
+
   return roles
 }
 
 export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
   const [roleDropdownOpen, setRoleDropdown] = useState(false)
-
-  roles = trimRoles(roles)
+  const displayRoles = trimRoles(roles)
 
   return (
     <>
@@ -71,7 +71,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         </div>
 
         {/* Role Icons */}
-        {roles.map((role) => (
+        {displayRoles.map((role) => (
           <div
             key={role}
             className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3"
@@ -106,7 +106,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             className="w-full h-auto translate-y-1/2"
           />
         </span>
-        {roles.map((role) => (
+        {displayRoles.map((role) => (
           <span
             key={role}
             className="w-[40px] h-[40px] overflow-hidden relative inline-block"
