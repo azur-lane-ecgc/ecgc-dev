@@ -87,7 +87,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       </div>
 
       {/* Tags (Larger Screen) */}
-      <div className="absolute top-0.5 left-0 transform translate-x-0 hidden md:inline-block">
+      <div className="absolute top-0 left-0 transform translate-x-0 hidden md:inline-block">
         <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
           <img
             loading="lazy"
