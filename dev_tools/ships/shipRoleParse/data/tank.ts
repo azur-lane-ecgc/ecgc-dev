@@ -16,8 +16,9 @@ export const tankRole = (): Set<string> => {
   for (const [shipName, statsArray] of Object.entries(shipEHPData)) {
     for (const stats of statsArray) {
       const totalEHP = parseFloat(stats.totalEHP.replace("%", ""))
+      const std = parseFloat(stats.std.replace("%", ""))
 
-      if (totalEHP >= 100) {
+      if (totalEHP - std >= 75) {
         tankSet.add(shipName)
         break
       }
