@@ -13,11 +13,11 @@ export default defineConfig({
     tailwind(),
     react(),
     sitemap(),
-    // (await import("@playform/compress")).default({
-    //   CSS: false,
-    //   HTML: false,
-    //   JavaScript: false,
-    // }),
+    (await import("@playform/compress")).default({
+      CSS: false,
+      HTML: false,
+      JavaScript: false,
+    }),
   ],
   base: "/test_ecgc_2/",
   output: "static",
@@ -26,26 +26,6 @@ export default defineConfig({
   vite: {
     json: {
       stringify: true,
-    },
-    build: {
-      rollupOptions: {
-        output: {
-          manualChunks(id) {
-            if (id.includes("AzurLaneData")) {
-              return "azur-lane-data"
-            }
-            if (id.includes("ship_data")) {
-              return "ship-data"
-            }
-            if (id.includes("data")) {
-              return "data"
-            }
-            if (id.includes("node_modules")) {
-              return "vendor"
-            }
-          },
-        },
-      },
     },
   },
 })
