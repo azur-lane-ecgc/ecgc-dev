@@ -38,7 +38,10 @@ const readAllFiles = async (dir: string): Promise<string[]> => {
     }
   }
 
-  return files
+  const shipDataFiles = files.filter((file) => file.match(/ship_data/))
+  const otherFiles = files.filter((file) => !file.match(/ship_data/))
+
+  return [...otherFiles, ...shipDataFiles]
 }
 
 const runScript = async (fileName: string): Promise<void> => {
