@@ -465,9 +465,9 @@
             "std": "34.86%"
         }
     ],
-    "Pamiat Merkuria META": [
+    "Pamiat' Merkuria META": [
         {
-            "name": "Pamiat Merkuria META",
+            "name": "Pamiat' Merkuria META",
             "totalEHP": "107.26%",
             "std": "40.60%"
         }
@@ -687,9 +687,9 @@
             "std": "25.94%"
         }
     ],
-    "Pamiat Merkuria": [
+    "Pamiat' Merkuria": [
         {
-            "name": "Pamiat Merkuria (Retrofit)",
+            "name": "Pamiat' Merkuria (Retrofit)",
             "totalEHP": "100.40%",
             "std": "38.91%"
         }
@@ -1521,13 +1521,6 @@
             "std": "27.49%"
         }
     ],
-    "Chang Chun": [
-        {
-            "name": "Chang Chun (Retrofit)",
-            "totalEHP": "77.97%",
-            "std": "30.90%"
-        }
-    ],
     "Leipzig": [
         {
             "name": "Leipzig (Retrofit)",
@@ -1842,6 +1835,13 @@
             "name": "La Galissonnière",
             "totalEHP": "73.79%",
             "std": "25.84%"
+        }
+    ],
+    "Chang Chun": [
+        {
+            "name": "Chang Chun (Retrofit)",
+            "totalEHP": "73.72%",
+            "std": "28.81%"
         }
     ],
     "Harutsuki": [
@@ -2312,11 +2312,6 @@
             "name": "Fu Shun (Retrofit)",
             "totalEHP": "67.43%",
             "std": "26.11%"
-        },
-        {
-            "name": "Fu Shun",
-            "totalEHP": "62.04%",
-            "std": "24.33%"
         }
     ],
     "Maestrale": [
@@ -3113,9 +3108,9 @@
             "std": "25.55%"
         }
     ],
-    "Wolfgang Zenker": [
+    "Z9": [
         {
-            "name": "Wolfgang Zenker",
+            "name": "Z9",
             "totalEHP": "59.13%",
             "std": "24.63%"
         }
@@ -3260,9 +3255,9 @@
             "std": "22.08%"
         }
     ],
-    "3300.00%": [
+    "33": [
         {
-            "name": "3300.00%",
+            "name": "33",
             "totalEHP": "56.59%",
             "std": "25.42%"
         }
@@ -3330,9 +3325,9 @@
             "std": "23.48%"
         }
     ],
-    "2200.00%": [
+    "22": [
         {
-            "name": "2200.00%",
+            "name": "22",
             "totalEHP": "55.74%",
             "std": "24.63%"
         }
@@ -3533,9 +3528,9 @@
             "std": "22.00%"
         }
     ],
-    "Bernd von Arnim": [
+    "Z11": [
         {
-            "name": "Bernd von Arnim",
+            "name": "Z11",
             "totalEHP": "50.52%",
             "std": "19.32%"
         }
@@ -3639,6 +3634,11 @@
         }
     ],
     "Universal Bulin": [
+        {
+            "name": "Universal Bulin",
+            "totalEHP": "19.83%",
+            "std": "11.77%"
+        },
         {
             "name": "Universal Bulin",
             "totalEHP": "19.83%",
