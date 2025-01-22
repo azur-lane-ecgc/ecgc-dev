@@ -3,10 +3,10 @@ import { tankRole, superTankRole } from "./data"
 const tanks = tankRole()
 const superTanks = superTankRole()
 
-export const shipRoleParse = (ship: string, hullType?: string): string[] => {
+export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
   let roles: Array<string> = []
 
-  if (hullType === "vg") {
+  if (fleetType === "vg") {
     if (tanks.has(ship)) {
       roles.push("Tank")
     }
