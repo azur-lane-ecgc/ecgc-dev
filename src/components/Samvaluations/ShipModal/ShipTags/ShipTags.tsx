@@ -79,7 +79,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             <span className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative">
               {RoleIcons[role]}
             </span>
-            <span className="flex items-center justify-center fake-modal-link">
+            <span className="flex items-center justify-center text-cyan-300">
               {role}
             </span>
           </div>
@@ -93,7 +93,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             loading="lazy"
             src={`/test_ecgc_2/images/faction/${faction}.png`}
             alt={faction}
-            title={faction}
+            title={"Faction: " + faction}
             className="absolute top-0 left-0 w-full h-auto translate-y-[1px]"
           />
         </span>
@@ -102,12 +102,14 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             loading="lazy"
             src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
             alt={hullType}
-            title={hullType}
+            title={"Hull: " + hullType}
             className="w-full h-auto translate-y-1/2"
           />
         </span>
         {displayRoles.map((role) => (
           <span
+            aria-label={role}
+            title={role}
             key={role}
             className="w-[40px] h-[40px] overflow-hidden relative inline-block"
           >
