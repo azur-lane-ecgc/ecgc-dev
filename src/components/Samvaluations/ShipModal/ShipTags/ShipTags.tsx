@@ -8,7 +8,7 @@ interface ShipTags {
   roles: string[]
 }
 
-export const trimRoles = (roles: string[]): string[] => {
+const trimRoles = (roles: string[]): string[] => {
   if (roles.includes("SuperTank") && roles.includes("Tank")) {
     roles = roles.filter((role) => role != "Tank")
   }
