@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { hullTypeLink } from "@utils/ships"
 
 import { RoleIcons } from "./RoleIcons"
 
@@ -65,9 +66,14 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
               className="w-full h-full object-contain"
             />
           </span>
-          <span className="flex items-center justify-center fake-modal-link">
+          <a
+            className="flex items-center justify-center fake-modal-link"
+            href={hullTypeLink(hullType)}
+            target="_blank"
+            title={"Hull: " + hullType}
+          >
             {hullType}
-          </span>
+          </a>
         </div>
 
         {/* Role Icons */}
@@ -97,7 +103,12 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             className="absolute top-0 left-0 w-full h-auto translate-y-[1px]"
           />
         </span>
-        <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
+        <a
+          className="w-[40px] h-[40px] overflow-hidden relative inline-block"
+          href={hullTypeLink(hullType)}
+          target="_blank"
+          title={"Hull: " + hullType}
+        >
           <img
             loading="lazy"
             src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
@@ -105,7 +116,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             title={"Hull: " + hullType}
             className="w-full h-auto translate-y-1/2"
           />
-        </span>
+        </a>
         {displayRoles.map((role) => (
           <span
             aria-label={role}
