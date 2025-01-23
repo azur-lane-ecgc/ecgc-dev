@@ -2130,7 +2130,7 @@
     "samEval": "Juneau (Retrofit) is an AA-oriented CL with surprisingly decent damage on the side. The retrofit doubled her surface damage output, while also increasing her AA capabilities further. She is now vastly more viable in PvE than before. Overall, she is great as an AA ship, with decent damage to go along with it.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -2212,7 +2212,8 @@
     "samEval": "San Diego (Retrofit) is a damage-oriented AND AA-oriented CL with amazing stats and skills. Her personal damage is very high with MGM+1 DD Guns and great barrages (Skill 1 with Augment, Skill 2, and AoA). In particular, her Skill 1 barrage can ignore shields and is triggered individually per Main Gun, making its frequency very fast. You always want to equip her with a fast-firing and high damage DD Gun; never give her a CL gun. In addition, her ASW stat is one of the highest amongst vanguard ships, allowing her to act as a ASW carry. Her AA stat is very high, and when paired with her Skill 1 and very high AA gun efficiency, allows her to act as an AA carry for the fleet. Her bulk is also solid as well, especially with her Augment Module skill. Overall, she is an amazing ship, if a bit expensive to max fully.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -11618,7 +11619,7 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -12921,7 +12922,8 @@
     "samEval": "Maya is an AA-oriented CA with good stats and skills. Her AA is very high due to an additional AA gun mount from her Augment, and a massive AA self-buff. Her personal damage is also decent now with double Torpedo launches from her Augment module skill upgrade. Her bulk is also good due to her Evasion and Evasion Rate buffs, and stats. Overall, she is a good ship.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -28798,7 +28800,7 @@
     "samEval": "Reno is an AA-oriented CL with meh stats and skills. Her AA output is really high, but not good enough to AA carry. Her personal damage and bulk are both average at best. Collection only.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -33529,7 +33531,7 @@
     "samEval": "Allen M. Sumner is a damage-oriented DD with great stats and skills. She has higher AA than most ships, but it is not AA-carry level. She has great damage due to her stats, efficiencies, and barrages, giving her a well-rounded kit suitable for any fleet. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -34279,7 +34281,7 @@
     "samEval": "Ingraham is a support-oriented DD with good stats and skills. Her personal damage is good, but not amazing. Her support is also good at keeping your Vanguard Fleet healthy. Her AA is good, but not enough to AA carry an entire fleet. There is no need to focus +TRP auxiliary equipment to increase her AA self-buff. Overall, she is a good ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -36766,7 +36768,7 @@
     "samEval": "Little Cheshire is an AA-oriented CA with good stats and skills. Her bulk and surface damage output are alright, and the AA output remains close to normal Cheshire. Has a self-heal skill as well. Overall she's one of the better loli ships, but outside AA heavy areas she is not useful.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -38389,7 +38391,7 @@
     "samEval": "Hammann II is a support-oriented DD that has bad surface damage but more than makes up for it with utility. She has a CV damage buff, flagship protection, and high enough AA to keep CVs hidden most of the time. She even has a special ASW mount to buff her damage there. Bad surface damage drags her down, along with subpar bulk. Great CV buffer.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -38976,7 +38978,7 @@
     "samEval": "Scylla is a damage-oriented CL with great stats and skills. Her equipment loadout is nothing to write home about, but her barrages are all very good, making her damage really high. Her supportive capabilities are all worse than existing good ships. Her AA is above average. Overall, highly worth getting.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -41127,7 +41129,8 @@
     "fastLoad": "",
     "roles": [
       "Tank",
-      "SuperTank"
+      "SuperTank",
+      "AA"
     ],
     "locations": {
       "events": [
@@ -41196,7 +41199,8 @@
     "fastLoad": "",
     "roles": [
       "Tank",
-      "SuperTank"
+      "SuperTank",
+      "AA"
     ],
     "locations": {
       "events": [
@@ -43792,7 +43796,7 @@
     "samEval": "Pittsburgh is a damage-oriented CA with great stats and skills. Her personal damage is great due to MGM+1 CA Guns and her Skill 1 barrage. Her bulk is also good enough to off-tank. Her Skill 1 also inflicts a special burn on enemies, which can then trigger Armor Break when your flagship BB/BC/BBV fires a Main Gun shot, which is nice. Her Skill 2 AA gun is nice, but her AA is still not at the level of other AA carriers. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -44756,7 +44760,8 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "AA"
     ],
     "locations": {
       "events": [
@@ -50689,7 +50694,7 @@
     "samEval": "Seattle is a damage-oriented CL with great stats and skills. Her personal damage is great due to MGM+1 CL Guns, self-buffs, and a good AoA barrage. Her bulk (when placed in the off-tank position), is also high, despite her being Light Armor. Her AA is not at the same level as AA carries, but is still above average. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -51106,7 +51111,8 @@
     "samEval": "Cheshire is a tank-oriented CA with great stats and skills. Her bulk is high, and is more than sufficient to off-tank all content, and main-tank most content. Her AA is amazing, and is enough to AA-carry all content by herself. Her personal damage is mediocre, despite her skill barrages. Her fast-loaded torpedoes are nice, but since her torpedo damage is mediocre it is nothing special. You will likely max stack her Skill 2 effect in all battles. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -52218,7 +52224,8 @@
     "samEval": "Shimanto is a damage-oriented CL with great stats and skills. Her damage is great with MGM+1, double torpedo reloads, and multiple barrages. Her AA is also really good; using her gun to proc her skill can be useful situationally, but is not recommended for general use. Her Skill 1 can be situationally useful, especially when protecting backline ships. Her Skill 2 ghost AA gun is good, and the stacking from the third part of it should happen very fast. Her Fate Simulation unconditionally grants her the Skill 2 self-buffs, and adds minor shields. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "AA"
     ],
     "locations": {
       "events": [],
