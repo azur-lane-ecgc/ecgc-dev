@@ -15,10 +15,6 @@ const aaShips = aaRole()
 export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
   let roles: Array<string> = []
 
-  if (aaShips.has(ship)) {
-    roles.push("AA")
-  }
-
   // vanguard roles
   if (fleetType === "vg") {
     if (tanks.has(ship)) {
