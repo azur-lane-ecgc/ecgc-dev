@@ -16,6 +16,10 @@ const trimRoles = (roles: string[]): string[] => {
     roles = roles.filter((role) => role != "Tank")
   }
 
+  if (roles.includes("FastLoad") && roles.includes("Preload")) {
+    roles = roles.filter((role) => role != "FastLoad")
+  }
+
   return roles
 }
 

@@ -8846,7 +8846,7 @@
     "samEval": "Prince of Wales is a off-flag support-oriented BB with good stats and great skills. Her skills buff both USS and HMS ships, as well as giving her great self-buffs when sortied with USS or HMS ships. Overall, she is a great ship.",
     "fastLoad": "85% 1st Salvo Cooldown Reduction (3 HMS / USS ships).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -9150,7 +9150,8 @@
     "samEval": "Unicorn (Retrofit) is a healer-oriented CVL with great stats and amazing skills. She gains a preload which helps a lot with mobbing, and also gains backline healing capabilities as well. Her healing amount is also high as well. Overall, she is the best healer in the game, surpassing <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Perseus\" title=\"Perseus\" >Perseus</a >.",
     "fastLoad": "1 Preloaded Airstrike.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [],
@@ -22085,7 +22086,8 @@
     "samEval": "Jean Bart is an off-flag damage-oriented BB with great stats and meh skills. Her Skill 2 self-buff is reliant on using a bad BB gun, and the Augment module doesn't fix it. She also has a preload, but only MGM+1 to compensate for it. Her Augment module barrage is also mediocre at best, but it is free damage. Overall, she is a good ship.",
     "fastLoad": "1 Preloaded Salvo.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [
@@ -23131,7 +23133,7 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "45% 1st Salvo Cooldown Reduction (3 additional IJN ships).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -23880,7 +23882,7 @@
     "samEval": "Independence (Retrofit) is a support-oriented CV with great stats and skills. Her personal damage is really good due to an 8 plane loadaout and an on-strike barrage. She also buffs CVs both inside and outside of your fleet, and gets a self-cooldown reduction on her first airstrike. Overall, she is an amazing CV.",
     "fastLoad": "25% 1st Airstrike Cooldown Reduction.",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -28944,7 +28946,7 @@
     "samEval": "Casablanca is a support-oriented CVL with meh stats and great skills. Her personal damage is really bad; however she does have fast airstrikes to help mitigate it. Her fleet support for other CV / CVLs is really good, however. Overall, she is a good ship; outclassed by <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Independence\" title=\"Independence\" >Independence (Retrofit)</a >.",
     "fastLoad": "25% 1st Airstrike Cooldown Reduction.",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -29401,7 +29403,8 @@
     "samEval": "Richelieu is a flagship-oriented BB with great stats and skills. She buffs all French ships in your fleet, however she is fine without buffing anyone but herself. Her barrage is alright, and her preload helps frontload her damage output. Only MGM+1 hurts her in longer fights. Overall, she is a great ship.",
     "fastLoad": "1 Preloaded Salvo.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [
@@ -30072,7 +30075,8 @@
     "samEval": "Perseus is a healer oriented CVL with meh stats and great skills. Her damage is heavily frontloaded due to 2 preloaded airstrikes at the start of the battle. Her personal damage is really bad due to low efficiencies, AVI stat, and 6 planes. In addition, she contributes nothing else to the battle outside of her frontloaded damage and healing due to her airstrikes taking almost twice as long as other CVLs. However, her healing is really good, and heals both the Vanguard and Main Fleets. Her Skill 2 barrage does not have enough damage to subvert her deficiencies. Overall, she is an amazing healer, but redundant due to the existance of Unicorn (Retrofit).",
     "fastLoad": "2 Preloaded Airstrikes.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [
@@ -32927,7 +32931,7 @@
     "samEval": "Vittorio Veneto is an off-flag damage-oriented BB with great stats and skills. Her personal damage is high due to multiple self-buffs, good efficiencies, and a great timed barrage. She can reduce her first Main Gun salvo based on the number of other RN ships in the fleet, but that is not necessary for her to be good. The buff from using AP Guns or having RN ships from her Skill 3 is nice, but not necessary for her to be good. Overall, she is a great ship.",
     "fastLoad": "80% 1st Salvo Cooldown Reduction (+40% per additional RN ship, max 80%).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -33076,7 +33080,8 @@
     "samEval": "Aquila is a damage / support oriented CV with great stats and skills. Her per-strike damage is good due to her 8 plane loadout and on-strike barrage. Depending on the equip in her 2nd slot, she can change modes between damage and support. In damage mode, she gains a preload and multiple offensive buffs. In support mode, she grants healing and shield support for the fleet. Overall, she is a great ship regardless of what mode she is in.",
     "fastLoad": "1 Preloaded Airstrike (Dive Bomber).",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [
@@ -35084,7 +35089,7 @@
     "samEval": "Ulrich von Hutten is an off-flag damage-oriented BB with amazing stats and skills. Her personal damage is very high due to great shelling damage along with her self-buffs. When she is placed off-flag, she fires twice as fast, but deals less damage per volley; overall, this is a slight increase from using her at Flagship, due to more overall damage percent and more barrage procs. Her barrage is nice, but it is not worth to sync the slow it provides with anything. Her buff when equipped with an HE Main Gun is nice, but AP is still preferred against Medium/Heavy armored enemies. Her crossfleet is very nice defense for your other fleets, but is not necessary for her to be good. Overall, she is an amazing BB.",
     "fastLoad": "50% All Salvo Cooldown Reduction (Off-Flag).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -35922,7 +35927,7 @@
     "samEval": "Impero is a damage-oriented CV with great stats and skills. Her personal damage is good due to her 8 plane loadout, and a (unfortunately not 100%) timed barrage. Her first skill gives her a reduced reload for her first airstrike when equipping a fighter, allowing her to desync with the rest of your Main Fleet. However, due to her low reload stat relative to other Main Fleet ships, she will eventually catch up after a few airstrikes. Her Dive Bomber mode is not useful due to the damage bonus only applying to 1 airstrike overall, and making her slow reload even slower. Her Skill 2 is effectively useless, as the HP is just being transferred around instead of outright healing. Overall, she is a great ship.",
     "fastLoad": "40% 1st Airstrike Cooldown Reduction. (Fighter in Slot 1)",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -36131,7 +36136,7 @@
     "samEval": "Seydlitz is an off-flag damage-oriented BC with great stats and skills. She can off-flag if needed. You want her to have a high % of health as possible, although the damage redistribution goes against that. Main gun salvo reduction is great in mobbing, and she can give other SMS BB/BC the same reduction. Damage output is also fairly solid, making her great in bosses. Overall seems great; nothing exceptional, but she has great damage and the first salvo cooldown reduction. Typical event SSR. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": "80% 1st Salvo Cooldown Reduction (HP% Based).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -37398,7 +37403,7 @@
     "samEval": "Roma is a great off-flag damage-oriented BB, with great stats and skills. Barrage is solid, and doesn't require flagship position; the failed proc benefits are decent as well. She is guarenteed max critical damage/rate stacks at 30s into the battle, which is early enough to be relevant especially versus a boss. The sonar part of her skill is useless. The fast load from sortieing with 3 Italians is nice if you can fulfil the requirements, but it is not mandatory for her to be great. Overall, she is a great off-flag BB; typical event SR.",
     "fastLoad": "30% 1st Salvo Cooldown Reduction (2 additional RN ships).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -38900,7 +38905,7 @@
     "samEval": "Argus is a support-oriented CVL with average stats but amazing skills. She buffs carriers inside and outside of the fleet, and has a self airstrike cooldown reduction for damage desyncing. Her personal damage is very mediocre however, especially if the barrage does not proc. Solid ship all around.",
     "fastLoad": "25% 1st Airstrike Cooldown Reduction.",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -40363,7 +40368,8 @@
     "samEval": "Clemenceau is an off-flag damage-oriented BB with great stats and skills. She trades 1 Main Gun Mount for a preloaded shot, which is nice for short fights, but hinders her damage output in longer fights. She is ideally sortied with French equipment in order to increase her barrage proc rate. Her self-buffs from having French ships in the fleet are not worth building around. Overall, she is a good BB.",
     "fastLoad": "1 Preloaded Salvo.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [
@@ -40983,7 +40989,7 @@
     "samEval": "São Martinho is an off-flag oriented IXM with great stats and great skills. Her damage is heavily hindered by her equipment options, but is still good despite that, due to MGM+5 and good barrages and self-buffs. In addition, she even has a almost-Preloaded Main Gun, helping clear mob fights faster. Her Tempesta Faction buff is nice, but not necessary to take advantage of for her viability. Her bulk against AVI damage is very bad, due to having 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "80% 1st Salvo Cooldown Reduction (1 additional MOT ship).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -42883,7 +42889,8 @@
     "samEval": "Alsace is an off-flag damage-oriented BB with amazing stats and skills. Her personal damage is very high with MGM+2 BB Guns, and an aimed barrage as well. She has a preloaded Main Gun, which helps both when mobbing and bossing to deal with early wave enemies. Her increase to Main Gun capacity is nice for avoiding delays, but overall irrelevant in most content. Her Skill 1 inflicts a nice debuff to enemies, although due to its random targetting its more useful against single-target bosses. Her Skill 2 improves her Skill 1 to last for longer, but the extension isn't as useful since it already syncs with the Main Fleet; sortieing her with FFNF/MNF ships isn't necessary for this condition. Her Skill 3 barrage does no damage, and the heal can only trigger once per battle, making it only useful for the CRIT Rate buffs. Her crossfleet is nice, but not necessary for her viability. Overall, she is an amazing ship.",
     "fastLoad": "1 Preloaded Salvo.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [
@@ -43578,7 +43585,8 @@
     "samEval": "Strasbourg is an off-flag damage-oriented BC with good stats and skills. Her personal damage is good since she has decent self-buffs MGM+1 BB Guns, a preloaded Main Gun, and a cooldown reduction 2nd shot too. However, her barrage requirements are annoying to satisfy since you need 2 other MNF ships in the fleet to guarantee it. Her support to other MNF ships is nice, but not necessary for her to be viable. Her stats are on the lower side for a gold BB as well. Overall, she is a great ship.",
     "fastLoad": "1 Preloaded Salvo.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [
@@ -47667,7 +47675,7 @@
     "samEval": "Luna is a damage-oriented CVL with good stats and interesting skills. Due to her nature of being fast loaded, she is much better in mob fleets when compared to boss fleets. Only 6 total planes hurts her overall damage output, so after her first two launches her worth is reduced. Do NOT run an ASW plane in her slot 3, it is useless. Needs more testing.",
     "fastLoad": "50% 1st & 2nd Airstrike Cooldown Reduction.",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -47876,7 +47884,7 @@
     "samEval": "Chihaya Kisaragi is a damage-oriented CV with great stats and skills. She has a first-strike cooldown reduction, allowing her to desync her damage from the rest of your Main Fleet easily. She has 8 planes, and that combined with her on-strike barrage makes her damage really good. Overall, she is a great ship.",
     "fastLoad": "30% 1st Airstrike Cooldown Reduction.",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -48643,7 +48651,8 @@
     "samEval": "Chise Asukagawa is a damage-oriented CV with great stats and skills. She has great personal damage with 8 planes and good stats, as well as an on-strike barrage. She also offers additional damage and support on her 1st (preloaded!) and 3rd airstrikes, which are nice to have. The Augment interaction between her and Rikka is not worth using them together for. Overall, she is a great ship.",
     "fastLoad": "1 Preloaded Airstrike.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [
@@ -49700,7 +49709,7 @@
     "samEval": "Murasaki is a damage-oriented CVL with good stats and skills. She only has 6 planes, but her barrages are good, making her personal damage good. In addition, she has a fast-load, and inflicts DoT on enemies hit by her barrage, further adding to her utility. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "45% 1st Airstrike Cooldown Reduction.",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -51374,7 +51383,8 @@
     "samEval": "Champagne is an off-flag damage-oriented BB with good stats and skills. Her personal damage is good, despite only 1 MGM, due to her preloaded BB shot as well as drastically reduced Main Gun cooldown. Her barrages are nice, but nothing special. She can be a bit frailer than other BBs due to being Medium armor as well as having damage-redirection from the flagship. Her Main Gun ammo choice should be based on the enemy armor types, not her Skill 2. Overall, she is a good ship, but can be a sidegrade to more easily available options.",
     "fastLoad": "1 Preloaded Salvo.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [],
@@ -52418,7 +52428,8 @@
     "samEval": "Flandre is an amazing off-flag damage-oriented BB with great stats, skills, and a preloaded main gun to boot. Her Skill 1 gives her a timed, 100% chance, priority target barrage, which does a lot of damage, and is improved by her Fate Simulation. The marking effect from her Skill 1 is nice, but not necessary to play around for her to be good. Her Skill 2 is defensive-focused only, which is not useful for the majority of content. Overall, she is a amazing ship, but can be worse than UR BBs for some content.",
     "fastLoad": "1 Preloaded Salvo.",
     "roles": [
-      "Healer"
+      "FastLoad",
+      "Preload"
     ],
     "locations": {
       "events": [],
@@ -53785,7 +53796,7 @@
     "samEval": "Renown META is a great mobbing-oriented off-flag BC with solid stats. Her barrages have a nice pattern but are pretty underwhelming in base power. Due to her skill, she effectively gets a free salvo compared to the average BB/BC, which is always nice. Shields for the vanguard are always welcome as well. Overall, she seems solid; nothing exceptional but not bad either.",
     "fastLoad": "50% 1st & 2nd Salvo Cooldown Reduction.",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [],
@@ -55119,7 +55130,7 @@
     "samEval": "Béarn META is a damage-oriented CV with great stats and skills. Her Skill 1 gives her a 70% on-strike barrage, with a guaranteed trigger every 2 launches, which is good but not ideal. Her Skill 2 tornado isn't really relevant due to the 3 activation limit per battle, as well as it dealing almost no damage. Her Skill 3 can improve her Skill 1 barrage based on whether a CL gun or Dive Bomber is equipped in slot 3. In addition, her Skill 3 grants her a fast-load, which can be improved even further when equipped with a Dive Bomber. Due to this, equipping a Dive Bomber in slot 3 is generally preferred, due to the improved fast-load, Béarn META having better AVI scaling compared to FP scaling, and the barrage not getting blocked by shields. Overall, she is a great ship.",
     "fastLoad": "50% 1st Airstrike Cooldown Reduction (20% initially, +30% if Dive Bomber in Slot 3).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [
