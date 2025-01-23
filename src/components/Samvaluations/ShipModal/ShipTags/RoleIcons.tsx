@@ -14,6 +14,9 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
   Preload: (
     <i className="fa-solid fa-jet-fighter text-fuchsia-400 text-[30px] w-full h-auto md:translate-y-2 md:translate-x-2" />
   ),
+  AA: (
+    <i className="fa-solid fa-plane-slash text-red-300 text-[25px] w-full h-auto md:translate-y-[10px] md:translate-x-[9px]" />
+  ),
   default: (
     <i className="fa-solid fa-heart text-red-400 text-[30px] w-full h-auto md:translate-y-2 md:translate-x-2" />
   ),

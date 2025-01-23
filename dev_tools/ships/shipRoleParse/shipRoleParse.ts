@@ -1,12 +1,23 @@
-import { tankRole, superTankRole, fastLoadRole, preloadRole } from "./data"
+import {
+  tankRole,
+  superTankRole,
+  fastLoadRole,
+  preloadRole,
+  aaRole,
+} from "./data"
 
 const tanks = tankRole()
 const superTanks = superTankRole()
 const fastLoadShips = fastLoadRole()
 const preloadShips = preloadRole()
+const aaShips = aaRole()
 
 export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
   let roles: Array<string> = []
+
+  if (aaShips.has(ship)) {
+    roles.push("AA")
+  }
 
   // vanguard roles
   if (fleetType === "vg") {
@@ -23,6 +34,10 @@ export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
   // <add here>
 
   // global roles
+  if (aaShips.has(ship)) {
+    roles.push("AA")
+  }
+
   if (fastLoadShips.has(ship)) {
     roles.push("FastLoad")
   }
