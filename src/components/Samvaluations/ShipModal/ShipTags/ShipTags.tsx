@@ -1,4 +1,6 @@
 import { useState } from "react"
+
+import { factionLink } from "@utils/factionLink"
 import { hullTypeLink } from "@utils/ships"
 
 import { RoleIcons } from "./RoleIcons"
@@ -46,13 +48,19 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
               loading="lazy"
               src={`/test_ecgc_2/images/faction/${faction}.png`}
               alt={faction}
-              title={faction}
+              title={"Faction: " + faction}
               className="absolute top-0 left-0 w-full h-auto"
             />{" "}
           </span>
-          <span className="flex items-center justify-center fake-modal-link">
+          <a
+            className="flex items-center justify-center fake-modal-link"
+            href={factionLink(faction)}
+            target="_blank"
+            title={"Faction: " + faction}
+            aria-label={faction}
+          >
             {faction}
-          </span>
+          </a>
         </div>
 
         {/* HullType Icon */}
@@ -62,7 +70,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
               loading="lazy"
               src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
               alt={hullType}
-              title={hullType}
+              title={"Hull: " + hullType}
               className="w-full h-full object-contain"
             />
           </span>
@@ -71,6 +79,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             href={hullTypeLink(hullType)}
             target="_blank"
             title={"Hull: " + hullType}
+            aria-label={hullType}
           >
             {hullType}
           </a>
@@ -82,10 +91,16 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             key={role}
             className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3"
           >
-            <span className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative">
+            <span
+              className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative"
+              title={role}
+            >
               {RoleIcons[role]}
             </span>
-            <span className="flex items-center justify-center text-cyan-300">
+            <span
+              className="flex items-center justify-center text-white/90 font-bold"
+              title={role}
+            >
               {role}
             </span>
           </div>
@@ -94,7 +109,13 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
 
       {/* Tags (Larger Screen) */}
       <div className="absolute top-0 left-0 transform translate-x-0 hidden md:inline-block">
-        <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
+        <a
+          className="w-[40px] h-[40px] overflow-hidden relative inline-block"
+          href={factionLink(faction)}
+          target="_blank"
+          title={"Faction: " + faction}
+          aria-label={faction}
+        >
           <img
             loading="lazy"
             src={`/test_ecgc_2/images/faction/${faction}.png`}
@@ -102,12 +123,13 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             title={"Faction: " + faction}
             className="absolute top-0 left-0 w-full h-auto translate-y-[1px]"
           />
-        </span>
+        </a>
         <a
           className="w-[40px] h-[40px] overflow-hidden relative inline-block"
           href={hullTypeLink(hullType)}
           target="_blank"
           title={"Hull: " + hullType}
+          aria-label={hullType}
         >
           <img
             loading="lazy"
