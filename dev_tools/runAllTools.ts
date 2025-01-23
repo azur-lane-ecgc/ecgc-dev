@@ -7,13 +7,11 @@ const exec = promisify(execCallback)
 const scriptsDirectory = "./dev_tools"
 const excludedDirectories = ["_backup", "gsheets2img"]
 const excludedFiles = [
+  /\\_backup/,
   /_pageInfo\.ts/,
   /runAllTools\.ts/,
-  /samvaluationparser\.ts/,
   /imgur\.py/,
-  /\\rankings\.py/,
-  /\\_backup/,
-  /ships\\/,
+  /ships/,
   /ENV/,
   /types/,
 ]
