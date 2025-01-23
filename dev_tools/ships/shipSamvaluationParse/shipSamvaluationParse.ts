@@ -1,6 +1,4 @@
-import data from "@data/samvaluation/samvaluationData.json"
-
-interface SamvaluationProps {
+export interface SamvaluationProps {
   event?: {
     name: string
     href: string
@@ -9,7 +7,9 @@ interface SamvaluationProps {
   preload?: string
 }
 
-const samvaluationData = data as Record<string, SamvaluationProps>
+const samvaluationData = (await import(
+  "@data/samvaluation/samvaluationData.json"
+).then((module) => module.default)) as Record<string, SamvaluationProps>
 
 export const shipSamvaluationParse = (ship: string): SamvaluationProps => {
   const shipData = samvaluationData[ship] ?? {}
