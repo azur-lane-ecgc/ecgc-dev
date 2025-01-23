@@ -53579,6 +53579,10 @@
         {
           "name": "Cruise Pass",
           "href": "Cruise_Pass"
+        },
+        {
+          "name": "META Shop",
+          "href": "META_Shop"
         }
       ],
       "construction": [],
@@ -55746,6 +55750,74 @@
         }
       ],
       "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "30043": {
+    "id": 30043,
+    "ship": "Bolzano META",
+    "faction": "META",
+    "rarity": 3,
+    "isKai": false,
+    "hull": 3,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": [
+          "CA Main Gun"
+        ],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Torpedo"
+        ],
+        "efficiency": 1.7,
+        "mounts": 2
+      },
+      {
+        "type": [
+          "AA Gun"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": [
+          "Auxiliary"
+        ],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": [
+      "Greatsword",
+      "Lance"
+    ],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": [
+      "Healer"
+    ],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Cruise Pass",
+          "href": "Cruise_Pass"
+        }
+      ],
       "construction": [],
       "permanent": []
     }

@@ -1565,6 +1565,33 @@
             "defensivebuff": null
         }
     ],
+    "Bolzano META": [
+        {
+            "nameNote": "",
+            "notes": "Elite META ship lol. Can tank/AA a little better when solo vanguard, but why would you do that.",
+            "hardarbiter": "D",
+            "meta": "D",
+            "cm": "D",
+            "w14mob": "D",
+            "w14boss": "D",
+            "w15mob": "D",
+            "w15boss": "D",
+            "ex": "D",
+            "consistency": -1,
+            "fleetreq": null,
+            "gearreq": null,
+            "flagreq": null,
+            "lightdmg": 1,
+            "mediumdmg": 1,
+            "heavydmg": 1,
+            "aoedmg": 1,
+            "offensivebuff": null,
+            "selfsurvival": 2,
+            "aa": null,
+            "asw": null,
+            "defensivebuff": null
+        }
+    ],
     "Bremerton": [
         {
             "nameNote": "",
