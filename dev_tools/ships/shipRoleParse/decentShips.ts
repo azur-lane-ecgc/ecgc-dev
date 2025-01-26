@@ -41,7 +41,7 @@ export const isDecentVG = (shipName: string): boolean => {
   }
 
   for (const ranking of rankings) {
-    for (const [key, value] of Object.entries(ranking)) {
+    for (const [_, value] of Object.entries(ranking)) {
       // check numeric properties
       if (typeof value === "number" && value - 1 >= 1) {
         return true
@@ -68,7 +68,7 @@ export const isDecentMainFleet = (shipName: string): boolean => {
   }
 
   for (const ranking of rankings) {
-    for (const [key, value] of Object.entries(ranking)) {
+    for (const [_, value] of Object.entries(ranking)) {
       // check numeric properties
       if (typeof value === "number" && value - 1 >= 1) {
         return true
@@ -95,7 +95,7 @@ export const isDecentSSFleet = (shipName: string): boolean => {
   }
 
   for (const ranking of rankings) {
-    for (const [key, value] of Object.entries(ranking)) {
+    for (const [_, value] of Object.entries(ranking)) {
       // check numeric properties
       if (typeof value === "number" && value - 1 >= 1) {
         return true
