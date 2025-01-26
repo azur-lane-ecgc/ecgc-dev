@@ -20,7 +20,7 @@ const factionToWikiMap: Record<string, string> = {
  */
 export const factionLink = (faction: string): string => {
   const baseUrl = "https://azurlane.koumakan.jp/wiki/"
-  const wikiPage = factionToWikiMap[faction]
+  const wikiPage = factionToWikiMap[faction].replaceAll(" ", "_")
 
   if (!!!wikiPage) {
     return `${baseUrl}/Category:Ships`
