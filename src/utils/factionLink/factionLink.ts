@@ -6,11 +6,22 @@ const factionToWikiMap: Record<string, string> = {
   KMS: "Iron Blood",
   DE: "Dragon Empery",
   RN: "Sardegna Empire",
-  SN: "Northern_Parliament",
+  SN: "Northern Parliament",
   FFNF: "Iris Libre",
   MNF: "Vichya Dominion",
   MOT: "Tempesta",
   META: "META",
+  Neptunia: "Neptunia",
+  Bilibili: "Bilibili",
+  Utawarerumono: "Utawarerumono",
+  KizunaAI: "KizunaAI",
+  Hololive: "Hololive",
+  "Venus Vacation": "Venus Vacation",
+  "The Idolmaster": "The Idolmaster",
+  SSSS: "SSSS",
+  "Atelier Ryza": "Atelier Ryza",
+  "Senran Kagura": "Senran Kagura",
+  "To LOVE-Ru": "To LOVE-Ru",
 }
 
 /**

@@ -3,6 +3,7 @@ import { useState } from "react"
 import { factionLink } from "@utils/factionLink"
 import { hullTypeLink } from "@utils/ships"
 
+import { getFactionIcon } from "./FactionIcons"
 import { RoleIcons } from "./RoleIcons"
 
 interface ShipTags {
@@ -51,14 +52,8 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       >
         {/* Faction Icon */}
         <div className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3">
-          <span className="w-[40px] h-[40px] overflow-hidden relative inline-block">
-            <img
-              loading="lazy"
-              src={`/test_ecgc_2/images/faction/${faction}.png`}
-              alt={faction}
-              title={"Faction: " + faction}
-              className="absolute top-0 left-0 w-full h-auto"
-            />{" "}
+          <span className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative">
+            {getFactionIcon(faction)}
           </span>
           <a
             className="flex items-center justify-center fake-modal-link"
@@ -117,46 +112,47 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
 
       {/* Tags (Larger Screen) */}
       <div className="absolute top-0 left-0 transform translate-x-0 hidden md:inline-block">
-        <a
-          className="w-[40px] h-[40px] overflow-hidden relative inline-block"
-          href={factionLink(faction)}
-          target="_blank"
-          title={"Faction: " + faction}
-          aria-label={faction}
-        >
-          <img
-            loading="lazy"
-            src={`/test_ecgc_2/images/faction/${faction}.png`}
-            alt={faction}
+        {/* Faction + Hull Icons */}
+        <div className="flex space-x-1 pl-1 mt-1">
+          <a
+            className="w-[40px] h-[40px] relative overflow-hidden flex items-center justify-center"
+            href={factionLink(faction)}
+            target="_blank"
             title={"Faction: " + faction}
-            className="absolute top-0 left-0 w-full h-auto translate-y-[1px]"
-          />
-        </a>
-        <a
-          className="w-[40px] h-[40px] overflow-hidden relative inline-block"
-          href={hullTypeLink(hullType)}
-          target="_blank"
-          title={"Hull: " + hullType}
-          aria-label={hullType}
-        >
-          <img
-            loading="lazy"
-            src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
-            alt={hullType}
-            title={"Hull: " + hullType}
-            className="w-full h-auto translate-y-1/2"
-          />
-        </a>
-        {displayRoles.map((role) => (
-          <span
-            aria-label={role}
-            title={role}
-            key={role}
-            className="w-[40px] h-[40px] overflow-hidden relative inline-block"
+            aria-label={faction}
           >
-            {RoleIcons[role]}
-          </span>
-        ))}
+            {getFactionIcon(faction)}
+          </a>
+          <a
+            className="w-[40px] h-[40px] relative overflow-hidden flex items-center justify-center"
+            href={hullTypeLink(hullType)}
+            target="_blank"
+            title={"Hull: " + hullType}
+            aria-label={hullType}
+          >
+            <img
+              loading="lazy"
+              src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
+              alt={hullType}
+              title={"Hull: " + hullType}
+              className="w-full h-auto"
+            />
+          </a>
+        </div>
+
+        {/* Role Icons */}
+        <div className="flex pl-1 mt-0.5">
+          {displayRoles.map((role) => (
+            <div
+              aria-label={role}
+              title={role}
+              key={role}
+              className="w-[40px] h-[40px] relative overflow-hidden flex items-center justify-center"
+            >
+              {RoleIcons[role]}
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )
