@@ -9,10 +9,10 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
     <i className="fa-solid fa-shield-halved text-fuchsia-400 text-[30px] w-full h-auto md:translate-y-2 md:translate-x-2" />
   ),
   FastLoad: (
-    <i className="fa-solid fa-jet-fighter text-green-600 text-[25px] w-full h-auto md:translate-y-[10px] md:translate-x-[9px]" />
+    <i className="fa-solid fa-jet-fighter text-green-600 text-[25px] w-full h-auto md:translate-y-[11px] md:translate-x-[6px]" />
   ),
   Preload: (
-    <i className="fa-solid fa-jet-fighter text-fuchsia-400 text-[25px] w-full h-auto md:translate-y-[10px] md:translate-x-[9px]" />
+    <i className="fa-solid fa-jet-fighter text-fuchsia-400 text-[25px] w-full h-auto md:translate-y-[11px] md:translate-x-[6px]" />
   ),
   AA: (
     <i className="fa-solid fa-plane-slash text-red-300 text-[25px] w-full h-auto md:translate-y-[11px] md:translate-x-[6px]" />
