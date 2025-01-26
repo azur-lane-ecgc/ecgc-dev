@@ -1575,7 +1575,8 @@
     "samEval": "Eldridge (Retrofit) is a support-oriented DD with good stats and amazing skills. Despite having 2 AA Guns post-retrofit, her AA is not enough to solo-carry a fleet; however, it is still above average. Upon retrofit, she gains a special ASW weapon with stats similar to a +10 Hedgehog, which drastically increases her ASW capabilities. Her Skill 1 provides complete immunity for all Vanguard damage taken, although the trigger condition can be hard to satisfy if she is in the center of the Vanguard Fleet. Her retrofit enhances this skill to prevent DoT or other self-damage from happening. The Skill 1 Barrage is also good. Her Skill 2 gives her a barrage whenever the Flagship launches their main weapons, which is aimed and does good damage. Her AoA is improved upon retrofit to also do more damage, which is nice; no AoA reduction hurts though. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "ASW"
     ],
     "locations": {
       "events": [],
@@ -2213,7 +2214,8 @@
     "fastLoad": "",
     "roles": [
       "Tank",
-      "AA"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [],
@@ -4057,7 +4059,7 @@
     "samEval": "North Carolina is a support-oriented BB with good stats and skills. Her personal damage is very mediocre due to no self-buffs, and a mediocre barrage from her augment-improved Skill 1. Her Augment Module grants her a 5% HP heal to all Vanguard Fleet ships every 10s whenever she fires a Timed Fuze AA Gun, drastically increasing her support value. Even so, she still cannot solo sustain a full fleet in difficult content. Overall, she is a good ship, but worse than <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Unicorn\" title=\"Unicorn\" >Unicorn (Retrofit)</a > for general use.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -4353,7 +4355,7 @@
     "samEval": "New Jersey is an off-flag damage-oriented BB with amazing stats and skills. Her shelling damage is really high, and combined with a great barrage makes her personal damage really high. Her self-buffs (especially the Main Gun Spread reduction) are also really good, further boosting her damage. Her crossfleet skill barrage is nice, and the buff is good when using USS CVs in the other fleet. Overall, she is an amazing ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -5215,7 +5217,8 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [],
@@ -6845,7 +6848,7 @@
     "samEval": "Dido is a damage-oriented CL with great stats and great skills. Her personal damage is amazing when sortied with at least 1 other HMS ship, due to her AoA barrage being very strong and self-buffs. Her Skill 2 can buff Queen Elizabeth or Queen Elizabeth META, but this isn't required for her to be good. With her Augment, she herself can get those buffs and increased Main Gun CRIT Rate, but since her Main Gun damage is not that massive, it isn't necessary for her to be viable. Her Augment also drastically increases her AoA damage. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -8847,6 +8850,7 @@
     "samEval": "Prince of Wales is a off-flag support-oriented BB with good stats and great skills. Her skills buff both USS and HMS ships, as well as giving her great self-buffs when sortied with USS or HMS ships. Overall, she is a great ship.",
     "fastLoad": "85% 1st Salvo Cooldown Reduction (3 HMS / USS ships).",
     "roles": [
+      "AA",
       "FastLoad"
     ],
     "locations": {
@@ -9001,7 +9005,7 @@
     "samEval": "Vanguard is an off-flag damage-oriented BB with amazing stats and skills. Her AA is very high, allowing her to help the vanguard in plane-heavy areas situationally. Her debuffs are amazing, allowing the entire fleet to take advantage of them. Her personal damage is pretty good with MGM+2 BB Guns, and a good barrage, especially since she can take advantage of her own debuffs. The Secondary Gun Crit Rate buff looks nice on paper but is useless outside W14. Her crossfleet barrage + buff are nice, but not necessary for her to be good. You want to use an HMS equipment on her, which is most likely going to be <a href=\"https://azurlane.koumakan.jp/wiki/Twin_40mm_Bofors_STAAG\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Twin 40mm Bofors STAAG\" >Twin 40mm Bofors STAAG</a >, among other great HMS Secondary Gun or AA Gun options. Overall, she is an amazing ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -11619,7 +11623,8 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "AA"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [],
@@ -13966,7 +13971,7 @@
     "samEval": "Musashi is an off-flag capable BB with top tier damage and bulk. She has a guaranteed barrage on main gun fire, a variety of very strong self-buffs, and a crossfleet barrage to boot. She still prefers flagship due to barrage pattern, but can work off-flag. For the IJN Main Gun requirement, the best options are the Twin 410mm Kai (HE, no syncing), the Triple 460mm (AP, no syncing), or Triple 410mm (AP, syncing). The enhanced barrage is a sizable upgrade, but since Musashi overkills most content in a good fleet regardless, it's fine to ignore it. For the IJN gear requirement, use the Type 1 AP Shell as an Auxilary. Overall, Musashi is amazing, and is highly worth getting.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -15044,7 +15049,8 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [],
@@ -16695,7 +16701,8 @@
     "fastLoad": "",
     "roles": [
       "Tank",
-      "SuperTank"
+      "SuperTank",
+      "AA"
     ],
     "locations": {
       "events": [
@@ -19715,7 +19722,7 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -23520,7 +23527,7 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -23884,6 +23891,7 @@
     "samEval": "Independence (Retrofit) is a support-oriented CV with great stats and skills. Her personal damage is really good due to an 8 plane loadaout and an on-strike barrage. She also buffs CVs both inside and outside of your fleet, and gets a self-cooldown reduction on her first airstrike. Overall, she is an amazing CV.",
     "fastLoad": "25% 1st Airstrike Cooldown Reduction.",
     "roles": [
+      "AA",
       "FastLoad"
     ],
     "locations": {
@@ -25051,7 +25059,7 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -31886,7 +31894,7 @@
     "samEval": "Nürnberg is an AA-oriented CL with meh stats and skills. Her AA is good but not high enough to AA carry as a dedicated AA unit. Her personal damage is bad, and her SS EXP buff is situational at best, since calling in SS is unreliable on auto-battle. Overall, she is a meh ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -34058,7 +34066,7 @@
     "samEval": "Morrison is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "ASW"
     ],
     "locations": {
       "events": [
@@ -35247,7 +35255,7 @@
     "samEval": "Hai Tien is a damage-oriented CL with meh stats and skills. Her personal damage is alright due to MGM+1 DD Guns and decent barrages. However, her lack of an AA Gun Mount actively hurts your fleets AA output. Collection only.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -35322,7 +35330,7 @@
     "samEval": "Hai Chi is a damage-oriented CL with meh stats and skills. Her personal damage is alright due to MGM+1 DD Guns. Her smokescreen is unreliable on auto-battle due to your Vanguard Fleet moving in and out of it repeatedly. Her lack of an AA Gun Mount actively hurts your fleets AA output. Collection only.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -36420,7 +36428,7 @@
     "samEval": "Emden is a damage-oriented CL with great stats and skills. She has top CL damage due to her strong barrages and guns, plus an interesting torpedo gimmick. CL gun mode has more damage, but DD gun mode has slightly less damage for solid utility. Either mode works extremely well. Bulk is average, but DD gun mode's heal helps. Overall, she is VERY good. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -36629,7 +36637,8 @@
     "samEval": "Jervis is a mob-tank oriented DD with great stats and skills. Her AoA barrage is good, making her damage output solid even though she only has 1 MGM. Her heal is nice, however it's not enough to support an entire fleet on its own. Her Skill 1 buffs are very situational, with the HMS support being practically useless, and the \"only in DD/CL fleet\" buff being W14 / W15 specific. Her Skill 2 gives her great bulk when placed in the tank position;however, with her low HP her bulk against bosses is in doubt. She also has 30% Aux stat gain which helps add to her bulk. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "ASW"
     ],
     "locations": {
       "events": [
@@ -36700,7 +36709,7 @@
     "samEval": "Bellona is a support-oriented CL with good stats and great skills. Bulk is alright, AA is pretty high but not carry level, but her damage output is mediocre. The only redeeming factor about her is the Air Raid Assistance CV buff, combined with her higher than average AA. HMS buff is not worth for the most part due to how situational and bad it is. Overall, she is good as a carrier buffer and for AA support, but not worth using outside this niche.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -36768,7 +36777,8 @@
     "samEval": "Little Cheshire is an AA-oriented CA with good stats and skills. Her bulk and surface damage output are alright, and the AA output remains close to normal Cheshire. Has a self-heal skill as well. Overall she's one of the better loli ships, but outside AA heavy areas she is not useful.",
     "fastLoad": "",
     "roles": [
-      "AA"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [
@@ -37755,7 +37765,7 @@
     "samEval": "Wakatsuki is a hybrid-oriented DD best used as a middle-position damage dealer. She has solid stats with multiple barrages and MGM+1, which give her great bullet spam. She also has a secondary built-in ASW mount, which is nice in submarine-heavy areas but useless outside of that. Ignore the Akizuki-class sortie buff when using her, it is not needed at all for her to be good. Overall, she is solid; one of the best DDs currently.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "ASW"
     ],
     "locations": {
       "events": [
@@ -37894,7 +37904,7 @@
     "samEval": "Janus is a damage-oriented DD with great stats and barrages, but average skills.<br /><b>Positives</b>: Skill 2 is amazing, and when coupled with her stats and amazing barrages make her damage output (both direct and indirect) on the higher end for DDs.<br /><b >Negatives</b >': Only 1 Main Gun Mount hinders damage output a bit. Skill requirements ruin fleetbuilding. The shield benefit is nice but requires 2 other HMS ships in the fleet, and the self-buff requires her sister, which is impractical in most cases.<br /><b >Verdict</b >': Above average DD; starter level or better.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "ASW"
     ],
     "locations": {
       "events": [
@@ -38391,6 +38401,7 @@
     "samEval": "Hammann II is a support-oriented DD that has bad surface damage but more than makes up for it with utility. She has a CV damage buff, flagship protection, and high enough AA to keep CVs hidden most of the time. She even has a special ASW mount to buff her damage there. Bad surface damage drags her down, along with subpar bulk. Great CV buffer.",
     "fastLoad": "",
     "roles": [
+      "ASW",
       "AA"
     ],
     "locations": {
@@ -38692,7 +38703,7 @@
     "samEval": "Ting An is a support-oriented AE with bad personal damage. Her stats are not very good, since her AVI is too low to do any personal damage even with barrages. In addition, her HP is too low for her to main tank. Her Skill 1 buffs are very rng reliant on getting the right ones, and even then other buffers can do the job way better. Just use a ship that has high personal damage instead. Collection only.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -40719,7 +40730,7 @@
     "samEval": "Houston II is a damage-oriented CL with great stats and skills. Her personal damage is great due to MGM+1 supplemented with good barrages. Her bulk is pretty good as well, with her Skill 2 giving her a lifeline once she is at low health. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [],
@@ -40786,7 +40797,8 @@
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "AA"
     ],
     "locations": {
       "events": [
@@ -40924,7 +40936,8 @@
     "samEval": "Adventure Galley is a damage-oriented IXV with good stats and skills. Her damage is alright due to MGM+1, as well as a decent skill barrage. Her bulk is on the frailer side, but 3 auxiliary equipment slots somewhat offset that. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a good ship, but at best she is a sidegrade to more easily accessible options.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "AA"
     ],
     "locations": {
       "events": [
@@ -40991,6 +41004,7 @@
     "samEval": "São Martinho is an off-flag oriented IXM with great stats and great skills. Her damage is heavily hindered by her equipment options, but is still good despite that, due to MGM+5 and good barrages and self-buffs. In addition, she even has a almost-Preloaded Main Gun, helping clear mob fights faster. Her Tempesta Faction buff is nice, but not necessary to take advantage of for her viability. Her bulk against AVI damage is very bad, due to having 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "80% 1st Salvo Cooldown Reduction (1 additional MOT ship).",
     "roles": [
+      "AA",
       "FastLoad"
     ],
     "locations": {
@@ -41130,7 +41144,9 @@
     "roles": [
       "Tank",
       "SuperTank",
-      "AA"
+      "ASW",
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [
@@ -41200,7 +41216,8 @@
     "roles": [
       "Tank",
       "SuperTank",
-      "AA"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [
@@ -42129,7 +42146,7 @@
     "samEval": "Nubian is a damage-oriented DD with great stats and skills. Her personal damage is good due to MGM+1 DD Guns, and multiple barrages. She gains increased CRIT Rate / DMG as the battle goes on for longer, which is a solid buff. The slash attack is nice as it ignores shields, and clears bullets / torpedoes in its way. Her Skill 2 debuff is good, but the sonar is not that useful for the majority of content in the game. Furthermore, the debuff does not have a 100% proc rate. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "ASW"
     ],
     "locations": {
       "events": [
@@ -44761,7 +44778,8 @@
     "fastLoad": "",
     "roles": [
       "Tank",
-      "AA"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [
@@ -51112,7 +51130,8 @@
     "fastLoad": "",
     "roles": [
       "Tank",
-      "AA"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [],
@@ -52225,7 +52244,8 @@
     "fastLoad": "",
     "roles": [
       "Tank",
-      "AA"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [],
@@ -52507,7 +52527,7 @@
     "samEval": "Halford is a damage-oriented DD with great stats and skills. Her personal damage is great, despite only 1 MGM, due to her ability to equip the F8F Bearcat (Floatplane), and take advantage of its skill. Her Skill 1 additionally grants her a 15s Seaplane barrage, which both has good damage and has a guaranteed debuff when it lands. Due to how great the F8F Bearcat (Floatplane) is, you want to always be equipping one in Slot 3 over AA guns. Her Skill 2 has self-buffs and an additional barrage when not equipping a Seaplane, but the benefits of the Seaplane (damage, passive interception, screen-clear), outweigh the gains from Skill 2. The benefits from Skill 2 when equipping a Seaplane are nice, but nothing exceptional. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "ASW"
     ],
     "locations": {
       "events": [],
@@ -54369,7 +54389,8 @@
     "samEval": "The opportunity cost of using Vestal META over any other easily-acquirable backline ship is not worth it, due to her support not being that worthwhile and her damage being lackluster. Collection only.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA",
+      "AACarry"
     ],
     "locations": {
       "events": [],
