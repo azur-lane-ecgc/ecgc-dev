@@ -38,7 +38,7 @@ export const aaRole = (): Set<string> => {
     const vgRankings = VGFleetRankingData[shipName]
     if (vgRankings && isDecentVG(shipName)) {
       for (const ranking of vgRankings) {
-        if (ranking.aa) {
+        if (ranking.aa && ranking.aa > 0) {
           aaSet.add(shipName)
           break
         }
@@ -48,7 +48,7 @@ export const aaRole = (): Set<string> => {
     const mainRankings = MainFleetRankingData[shipName]
     if (mainRankings && isDecentMainFleet(shipName)) {
       for (const ranking of mainRankings) {
-        if (ranking.aa) {
+        if (ranking.aa && ranking.aa > 0) {
           aaSet.add(shipName)
           break
         }

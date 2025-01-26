@@ -19722,7 +19722,7 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "AA"
+      "Healer"
     ],
     "locations": {
       "events": [
@@ -35255,7 +35255,7 @@
     "samEval": "Hai Tien is a damage-oriented CL with meh stats and skills. Her personal damage is alright due to MGM+1 DD Guns and decent barrages. However, her lack of an AA Gun Mount actively hurts your fleets AA output. Collection only.",
     "fastLoad": "",
     "roles": [
-      "AA"
+      "Healer"
     ],
     "locations": {
       "events": [
@@ -35330,7 +35330,7 @@
     "samEval": "Hai Chi is a damage-oriented CL with meh stats and skills. Her personal damage is alright due to MGM+1 DD Guns. Her smokescreen is unreliable on auto-battle due to your Vanguard Fleet moving in and out of it repeatedly. Her lack of an AA Gun Mount actively hurts your fleets AA output. Collection only.",
     "fastLoad": "",
     "roles": [
-      "AA"
+      "Healer"
     ],
     "locations": {
       "events": [
@@ -36428,7 +36428,7 @@
     "samEval": "Emden is a damage-oriented CL with great stats and skills. She has top CL damage due to her strong barrages and guns, plus an interesting torpedo gimmick. CL gun mode has more damage, but DD gun mode has slightly less damage for solid utility. Either mode works extremely well. Bulk is average, but DD gun mode's heal helps. Overall, she is VERY good. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": "",
     "roles": [
-      "AA"
+      "Healer"
     ],
     "locations": {
       "events": [
@@ -38703,7 +38703,7 @@
     "samEval": "Ting An is a support-oriented AE with bad personal damage. Her stats are not very good, since her AVI is too low to do any personal damage even with barrages. In addition, her HP is too low for her to main tank. Her Skill 1 buffs are very rng reliant on getting the right ones, and even then other buffers can do the job way better. Just use a ship that has high personal damage instead. Collection only.",
     "fastLoad": "",
     "roles": [
-      "AA"
+      "Healer"
     ],
     "locations": {
       "events": [
@@ -40797,8 +40797,7 @@
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Tank",
-      "AA"
+      "Tank"
     ],
     "locations": {
       "events": [
@@ -40936,8 +40935,7 @@
     "samEval": "Adventure Galley is a damage-oriented IXV with good stats and skills. Her damage is alright due to MGM+1, as well as a decent skill barrage. Her bulk is on the frailer side, but 3 auxiliary equipment slots somewhat offset that. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a good ship, but at best she is a sidegrade to more easily accessible options.",
     "fastLoad": "",
     "roles": [
-      "Tank",
-      "AA"
+      "Tank"
     ],
     "locations": {
       "events": [
@@ -41004,7 +41002,6 @@
     "samEval": "São Martinho is an off-flag oriented IXM with great stats and great skills. Her damage is heavily hindered by her equipment options, but is still good despite that, due to MGM+5 and good barrages and self-buffs. In addition, she even has a almost-Preloaded Main Gun, helping clear mob fights faster. Her Tempesta Faction buff is nice, but not necessary to take advantage of for her viability. Her bulk against AVI damage is very bad, due to having 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "80% 1st Salvo Cooldown Reduction (1 additional MOT ship).",
     "roles": [
-      "AA",
       "FastLoad"
     ],
     "locations": {

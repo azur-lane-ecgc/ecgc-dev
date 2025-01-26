@@ -6,6 +6,11 @@
             "percentSD": "130.14%"
         },
         {
+            "name": "San Diego (+100 AA)",
+            "totalAA": "4127",
+            "percentSD": "113.86%"
+        },
+        {
             "name": "San Diego",
             "totalAA": "3625",
             "percentSD": "100.00%"
@@ -4324,7 +4329,7 @@
         {
             "name": "Yorck",
             "totalAA": "0",
-            "percentSD": "#DIV/0!"
+            "percentSD": "0.00%"
         }
     ]
 }
