@@ -15,10 +15,10 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
     <i className="fa-solid fa-jet-fighter text-fuchsia-400 text-[25px] w-full h-auto md:translate-y-[10px] md:translate-x-[9px]" />
   ),
   AA: (
-    <i className="fa-solid fa-plane-slash text-red-300 text-[25px] w-full h-auto md:translate-y-[10px] md:translate-x-[9px]" />
+    <i className="fa-solid fa-plane-slash text-red-300 text-[25px] w-full h-auto md:translate-y-[11px] md:translate-x-[6px]" />
   ),
   AACarry: (
-    <i className="fa-solid fa-plane-slash text-blue-500 text-[25px] w-full h-auto md:translate-y-[10px] md:translate-x-[9px]" />
+    <i className="fa-solid fa-plane-slash text-blue-500 text-[25px] w-full h-auto md:translate-y-[11px] md:translate-x-[6px]" />
   ),
   ASW: (
     <i className="fa-solid fa-droplet-slash text-red-300 text-[25px] w-full h-auto md:translate-y-[11px] md:translate-x-[6px]" />
