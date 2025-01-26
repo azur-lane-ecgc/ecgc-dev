@@ -31144,7 +31144,7 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "AA"
     ],
     "locations": {
       "events": [
@@ -52313,7 +52313,8 @@
     "samEval": "Felix Schultz is a mob-tank oriented DD with a great combination of damage and bulk. Her bulk is great due to her high HP, 30% Auxiliary stat boosts, and her skills. Her damage is not to be scoffed at as well due to multiple barrages. Her Skill 1 grants her great Crit buffs, as well as frontloading her barrage. Her Skill 2 drastically adds to her bulk as it gives her +EVA Rate very consistently. She can be equipped with either the Quadruple 152mm or the Twin 150mm TbtsK C42T0 due to her self-buffs from equipping a CL gun. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Tank",
+      "SuperTank"
     ],
     "locations": {
       "events": [],
@@ -55844,7 +55845,7 @@
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "Tank"
     ],
     "locations": {
       "events": [],

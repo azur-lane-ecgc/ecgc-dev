@@ -38,6 +38,11 @@
             "name": "Z52 (twin 100)",
             "totalAA": "2635",
             "percentSD": "72.69%"
+        },
+        {
+            "name": "Z52 (pewpew gun)",
+            "totalAA": "2537",
+            "percentSD": "69.99%"
         }
     ],
     "Shimanto": [
@@ -232,9 +237,9 @@
             "percentSD": "40.69%"
         }
     ],
-    "Dido µ": [
+    "Dido μ": [
         {
-            "name": "Dido µ",
+            "name": "Dido μ",
             "totalAA": "1420",
             "percentSD": "39.18%"
         }
@@ -370,9 +375,9 @@
             "percentSD": "28.31%"
         }
     ],
-    "Cleveland µ": [
+    "Cleveland μ": [
         {
-            "name": "Cleveland µ",
+            "name": "Cleveland μ",
             "totalAA": "1013",
             "percentSD": "27.94%"
         }
@@ -510,9 +515,9 @@
             "percentSD": "25.61%"
         }
     ],
-    "Baltimore µ": [
+    "Baltimore μ": [
         {
-            "name": "Baltimore µ",
+            "name": "Baltimore μ",
             "totalAA": "920",
             "percentSD": "25.38%"
         }
@@ -790,9 +795,9 @@
             "percentSD": "22.36%"
         }
     ],
-    "Noshiro µ": [
+    "Noshiro μ": [
         {
-            "name": "Noshiro µ",
+            "name": "Noshiro μ",
             "totalAA": "805",
             "percentSD": "22.22%"
         }
@@ -1028,9 +1033,9 @@
             "percentSD": "20.95%"
         }
     ],
-    "Sheffield Âµ": [
+    "Sheffield μ": [
         {
-            "name": "Sheffield Âµ",
+            "name": "Sheffield μ",
             "totalAA": "759",
             "percentSD": "20.95%"
         }
@@ -1315,9 +1320,9 @@
             "percentSD": "19.73%"
         }
     ],
-    "Boise µ": [
+    "Boise μ": [
         {
-            "name": "Boise µ",
+            "name": "Boise μ",
             "totalAA": "714",
             "percentSD": "19.70%"
         }
@@ -2036,9 +2041,9 @@
             "percentSD": "16.50%"
         }
     ],
-    "Friedrich der GroÃŸe": [
+    "Friedrich der Große": [
         {
-            "name": "Friedrich der GroÃŸe",
+            "name": "Friedrich der Große",
             "totalAA": "595",
             "percentSD": "16.42%"
         }
@@ -2099,9 +2104,9 @@
             "percentSD": "16.14%"
         }
     ],
-    "Roon Âµ": [
+    "Roon μ": [
         {
-            "name": "Roon Âµ",
+            "name": "Roon μ",
             "totalAA": "585",
             "percentSD": "16.14%"
         }
@@ -2204,9 +2209,9 @@
             "percentSD": "15.86%"
         }
     ],
-    "Kongou Âµ": [
+    "Kongou μ": [
         {
-            "name": "Kongou Âµ",
+            "name": "Kongou μ",
             "totalAA": "575",
             "percentSD": "15.86%"
         }
@@ -2491,9 +2496,9 @@
             "percentSD": "15.19%"
         }
     ],
-    "Prinz Eugen µ": [
+    "Prinz Eugen μ": [
         {
-            "name": "Prinz Eugen µ",
+            "name": "Prinz Eugen μ",
             "totalAA": "550",
             "percentSD": "15.16%"
         }
@@ -2596,9 +2601,9 @@
             "percentSD": "15.03%"
         }
     ],
-    "Le Malin Âµ": [
+    "Le Malin μ": [
         {
-            "name": "Le Malin Âµ",
+            "name": "Le Malin μ",
             "totalAA": "543",
             "percentSD": "14.99%"
         }
@@ -2685,6 +2690,13 @@
             "name": "Champagne",
             "totalAA": "533",
             "percentSD": "14.71%"
+        }
+    ],
+    "Ying Swei": [
+        {
+            "name": "Ying Swei",
+            "totalAA": "532",
+            "percentSD": "14.68%"
         }
     ],
     "Izumo": [
@@ -2995,9 +3007,9 @@
             "percentSD": "13.86%"
         }
     ],
-    "Tashkent µ": [
+    "Tashkent μ": [
         {
-            "name": "Tashkent µ",
+            "name": "Tashkent μ",
             "totalAA": "502",
             "percentSD": "13.84%"
         }
@@ -3023,9 +3035,9 @@
             "percentSD": "13.84%"
         }
     ],
-    "Pamiat Merkuria META": [
+    "Pamiat' Merkuria META": [
         {
-            "name": "Pamiat Merkuria META",
+            "name": "Pamiat' Merkuria META",
             "totalAA": "501",
             "percentSD": "13.83%"
         }
@@ -3142,9 +3154,9 @@
             "percentSD": "13.41%"
         }
     ],
-    "Le Téméraire µ": [
+    "Le Téméraire μ": [
         {
-            "name": "Le Téméraire µ",
+            "name": "Le Téméraire μ",
             "totalAA": "483",
             "percentSD": "13.31%"
         }
@@ -3191,9 +3203,9 @@
             "percentSD": "13.22%"
         }
     ],
-    "Pamiat Merkuria": [
+    "Pamiat' Merkuria": [
         {
-            "name": "Pamiat Merkuria",
+            "name": "Pamiat' Merkuria",
             "totalAA": "479",
             "percentSD": "13.21%"
         }
@@ -3240,6 +3252,13 @@
             "percentSD": "13.13%"
         }
     ],
+    "Chao Ho": [
+        {
+            "name": "Chao Ho",
+            "totalAA": "475",
+            "percentSD": "13.11%"
+        }
+    ],
     "Little Renown": [
         {
             "name": "Little Renown",
@@ -3268,9 +3287,9 @@
             "percentSD": "13.04%"
         }
     ],
-    "Admiral Hipper µ": [
+    "Admiral Hipper μ": [
         {
-            "name": "Admiral Hipper µ",
+            "name": "Admiral Hipper μ",
             "totalAA": "473",
             "percentSD": "13.04%"
         }
@@ -3597,9 +3616,9 @@
             "percentSD": "11.42%"
         }
     ],
-    "Gascogne Âµ": [
+    "Gascogne μ": [
         {
-            "name": "Gascogne Âµ",
+            "name": "Gascogne μ",
             "totalAA": "413",
             "percentSD": "11.40%"
         }
@@ -4234,25 +4253,11 @@
             "percentSD": "9.12%"
         }
     ],
-    "Ying Swei": [
-        {
-            "name": "Ying Swei",
-            "totalAA": "532",
-            "percentSD": "14.68%"
-        }
-    ],
     "Hai Chi": [
         {
             "name": "Hai Chi",
             "totalAA": "36",
             "percentSD": "0.99%"
-        }
-    ],
-    "Chao Ho": [
-        {
-            "name": "Chao Ho",
-            "totalAA": "475",
-            "percentSD": "13.11%"
         }
     ],
     "Hai Tien": [
