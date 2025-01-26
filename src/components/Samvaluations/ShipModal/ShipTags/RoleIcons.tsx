@@ -21,7 +21,11 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
     <i className="fa-solid fa-plane-slash text-blue-500 text-[25px] w-full h-auto md:translate-y-[11px] md:translate-x-[6px]" />
   ),
   ASW: (
-    <i className="fa-solid fa-droplet-slash text-red-300 text-[25px] w-full h-auto md:translate-y-[11px] md:translate-x-[6px]" />
+    <img
+      src="https://al.mrlar.dev/icons/stats/asw.webp"
+      alt="icon"
+      className="w-[30px] h-auto text-red-300 md:translate-y-[12px] md:translate-x-[8px]"
+    />
   ),
   default: (
     <i className="fa-solid fa-heart text-red-400 text-[30px] w-full h-auto md:translate-y-2 md:translate-x-2" />
