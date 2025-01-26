@@ -3215,5 +3215,11 @@
   },
   "Amagi": {
     "preload": "45% 1st Salvo Cooldown Reduction (3 additional IJN ships)."
+  },
+  "Akagi": {
+    "preload": "50% 1st Airstrike Cooldown Reduction (with Kaga)."
+  },
+  "Kaga": {
+    "preload": "50% 1st Airstrike Cooldown Reduction (with Akagi)."
   }
 }
