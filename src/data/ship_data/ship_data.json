@@ -45284,7 +45284,7 @@
   "10001": {
     "id": 10001,
     "ship": "Neptune (Neptunia)",
-    "faction": "Collab",
+    "faction": "Neptunia",
     "rarity": 3,
     "isKai": false,
     "hull": 2,
@@ -45354,7 +45354,7 @@
   "10002": {
     "id": 10002,
     "ship": "Noire",
-    "faction": "Collab",
+    "faction": "Neptunia",
     "rarity": 3,
     "isKai": false,
     "hull": 3,
@@ -45422,7 +45422,7 @@
   "10003": {
     "id": 10003,
     "ship": "Blanc",
-    "faction": "Collab",
+    "faction": "Neptunia",
     "rarity": 3,
     "isKai": false,
     "hull": 1,
@@ -45492,7 +45492,7 @@
   "10004": {
     "id": 10004,
     "ship": "Vert",
-    "faction": "Collab",
+    "faction": "Neptunia",
     "rarity": 3,
     "isKai": false,
     "hull": 7,
@@ -45560,7 +45560,7 @@
   "10005": {
     "id": 10005,
     "ship": "Purple Heart",
-    "faction": "Collab",
+    "faction": "Neptunia",
     "rarity": 4,
     "isKai": false,
     "hull": 2,
@@ -45630,7 +45630,7 @@
   "10006": {
     "id": 10006,
     "ship": "Black Heart",
-    "faction": "Collab",
+    "faction": "Neptunia",
     "rarity": 4,
     "isKai": false,
     "hull": 3,
@@ -45698,7 +45698,7 @@
   "10007": {
     "id": 10007,
     "ship": "White Heart",
-    "faction": "Collab",
+    "faction": "Neptunia",
     "rarity": 4,
     "isKai": false,
     "hull": 1,
@@ -45768,7 +45768,7 @@
   "10008": {
     "id": 10008,
     "ship": "Green Heart",
-    "faction": "Collab",
+    "faction": "Neptunia",
     "rarity": 4,
     "isKai": false,
     "hull": 7,
@@ -45836,7 +45836,7 @@
   "10021": {
     "id": 10021,
     "ship": "22",
-    "faction": "Collab",
+    "faction": "Bilibili",
     "rarity": 3,
     "isKai": false,
     "hull": 1,
@@ -45906,7 +45906,7 @@
   "10022": {
     "id": 10022,
     "ship": "33",
-    "faction": "Collab",
+    "faction": "Bilibili",
     "rarity": 3,
     "isKai": false,
     "hull": 1,
@@ -45976,7 +45976,7 @@
   "10031": {
     "id": 10031,
     "ship": "Kuon",
-    "faction": "Collab",
+    "faction": "Utawarerumono",
     "rarity": 4,
     "isKai": false,
     "hull": 3,
@@ -46044,7 +46044,7 @@
   "10032": {
     "id": 10032,
     "ship": "Nekone",
-    "faction": "Collab",
+    "faction": "Utawarerumono",
     "rarity": 4,
     "isKai": false,
     "hull": 1,
@@ -46114,7 +46114,7 @@
   "10033": {
     "id": 10033,
     "ship": "Rurutie",
-    "faction": "Collab",
+    "faction": "Utawarerumono",
     "rarity": 4,
     "isKai": false,
     "hull": 2,
@@ -46184,7 +46184,7 @@
   "10034": {
     "id": 10034,
     "ship": "Uruuru",
-    "faction": "Collab",
+    "faction": "Utawarerumono",
     "rarity": 3,
     "isKai": false,
     "hull": 6,
@@ -46254,7 +46254,7 @@
   "10035": {
     "id": 10035,
     "ship": "Saraana",
-    "faction": "Collab",
+    "faction": "Utawarerumono",
     "rarity": 3,
     "isKai": false,
     "hull": 6,
@@ -46324,7 +46324,7 @@
   "10036": {
     "id": 10036,
     "ship": "Fumiruiru",
-    "faction": "Collab",
+    "faction": "Utawarerumono",
     "rarity": 3,
     "isKai": false,
     "hull": 7,
@@ -46392,7 +46392,7 @@
   "10041": {
     "id": 10041,
     "ship": "Kizuna AI",
-    "faction": "Collab",
+    "faction": "KizunaAI",
     "rarity": 3,
     "isKai": false,
     "hull": 1,
@@ -46462,7 +46462,7 @@
   "10042": {
     "id": 10042,
     "ship": "Elegant Kizuna AI",
-    "faction": "Collab",
+    "faction": "KizunaAI",
     "rarity": 4,
     "isKai": false,
     "hull": 3,
@@ -46530,7 +46530,7 @@
   "10043": {
     "id": 10043,
     "ship": "Anniversary Kizuna AI",
-    "faction": "Collab",
+    "faction": "KizunaAI",
     "rarity": 4,
     "isKai": false,
     "hull": 7,
@@ -46598,7 +46598,7 @@
   "10044": {
     "id": 10044,
     "ship": "Super Gamer Kizuna AI",
-    "faction": "Collab",
+    "faction": "KizunaAI",
     "rarity": 4,
     "isKai": false,
     "hull": 5,
@@ -46668,7 +46668,7 @@
   "10051": {
     "id": 10051,
     "ship": "Shirakami Fubuki",
-    "faction": "Collab",
+    "faction": "Hololive",
     "rarity": 4,
     "isKai": false,
     "hull": 1,
@@ -46738,7 +46738,7 @@
   "10052": {
     "id": 10052,
     "ship": "Tokino Sora",
-    "faction": "Collab",
+    "faction": "Hololive",
     "rarity": 4,
     "isKai": false,
     "hull": 7,
@@ -46806,7 +46806,7 @@
   "10053": {
     "id": 10053,
     "ship": "Minato Aqua",
-    "faction": "Collab",
+    "faction": "Hololive",
     "rarity": 4,
     "isKai": false,
     "hull": 8,
@@ -46874,7 +46874,7 @@
   "10054": {
     "id": 10054,
     "ship": "Natsuiro Matsuri",
-    "faction": "Collab",
+    "faction": "Hololive",
     "rarity": 3,
     "isKai": false,
     "hull": 1,
@@ -46944,7 +46944,7 @@
   "10055": {
     "id": 10055,
     "ship": "Nakiri Ayame",
-    "faction": "Collab",
+    "faction": "Hololive",
     "rarity": 3,
     "isKai": false,
     "hull": 3,
@@ -47012,7 +47012,7 @@
   "10056": {
     "id": 10056,
     "ship": "Murasaki Shion",
-    "faction": "Collab",
+    "faction": "Hololive",
     "rarity": 3,
     "isKai": false,
     "hull": 6,
@@ -47082,7 +47082,7 @@
   "10057": {
     "id": 10057,
     "ship": "Ookami Mio",
-    "faction": "Collab",
+    "faction": "Hololive",
     "rarity": 3,
     "isKai": false,
     "hull": 7,
@@ -47150,7 +47150,7 @@
   "10061": {
     "id": 10061,
     "ship": "Marie Rose",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 4,
     "isKai": false,
     "hull": 1,
@@ -47221,7 +47221,7 @@
   "10062": {
     "id": 10062,
     "ship": "Honoka",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 4,
     "isKai": false,
     "hull": 5,
@@ -47292,7 +47292,7 @@
   "10063": {
     "id": 10063,
     "ship": "Kasumi (Venus Vacation)",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 4,
     "isKai": false,
     "hull": 3,
@@ -47361,7 +47361,7 @@
   "10064": {
     "id": 10064,
     "ship": "Misaki",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 4,
     "isKai": false,
     "hull": 2,
@@ -47432,7 +47432,7 @@
   "10065": {
     "id": 10065,
     "ship": "Nagisa",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 3,
     "isKai": false,
     "hull": 5,
@@ -47503,7 +47503,7 @@
   "10066": {
     "id": 10066,
     "ship": "Nyotengu",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 3,
     "isKai": false,
     "hull": 7,
@@ -47572,7 +47572,7 @@
   "10067": {
     "id": 10067,
     "ship": "Monica",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 3,
     "isKai": false,
     "hull": 2,
@@ -47643,7 +47643,7 @@
   "10068": {
     "id": 10068,
     "ship": "Luna",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 4,
     "isKai": false,
     "hull": 6,
@@ -47715,7 +47715,7 @@
   "10069": {
     "id": 10069,
     "ship": "Tamaki",
-    "faction": "Collab",
+    "faction": "Venus Vacation",
     "rarity": 4,
     "isKai": false,
     "hull": 4,
@@ -47786,7 +47786,7 @@
   "10071": {
     "id": 10071,
     "ship": "Haruka Amami",
-    "faction": "Collab",
+    "faction": "The Idolmaster",
     "rarity": 4,
     "isKai": false,
     "hull": 2,
@@ -47856,7 +47856,7 @@
   "10072": {
     "id": 10072,
     "ship": "Chihaya Kisaragi",
-    "faction": "Collab",
+    "faction": "The Idolmaster",
     "rarity": 4,
     "isKai": false,
     "hull": 7,
@@ -47924,7 +47924,7 @@
   "10073": {
     "id": 10073,
     "ship": "Iori Minase",
-    "faction": "Collab",
+    "faction": "The Idolmaster",
     "rarity": 4,
     "isKai": false,
     "hull": 5,
@@ -47993,7 +47993,7 @@
   "10074": {
     "id": 10074,
     "ship": "Azusa Miura",
-    "faction": "Collab",
+    "faction": "The Idolmaster",
     "rarity": 4,
     "isKai": false,
     "hull": 3,
@@ -48061,7 +48061,7 @@
   "10075": {
     "id": 10075,
     "ship": "Ritsuko Akizuki",
-    "faction": "Collab",
+    "faction": "The Idolmaster",
     "rarity": 3,
     "isKai": false,
     "hull": 19,
@@ -48132,7 +48132,7 @@
   "10076": {
     "id": 10076,
     "ship": "Ami Futami",
-    "faction": "Collab",
+    "faction": "The Idolmaster",
     "rarity": 3,
     "isKai": false,
     "hull": 8,
@@ -48200,7 +48200,7 @@
   "10077": {
     "id": 10077,
     "ship": "Mami Futami",
-    "faction": "Collab",
+    "faction": "The Idolmaster",
     "rarity": 3,
     "isKai": false,
     "hull": 8,
@@ -48268,7 +48268,7 @@
   "10081": {
     "id": 10081,
     "ship": "Rikka Takarada",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 4,
     "isKai": false,
     "hull": 2,
@@ -48342,7 +48342,7 @@
   "10082": {
     "id": 10082,
     "ship": "Akane Shinjo",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 4,
     "isKai": false,
     "hull": 5,
@@ -48413,7 +48413,7 @@
   "10083": {
     "id": 10083,
     "ship": "Hass",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 3,
     "isKai": false,
     "hull": 2,
@@ -48484,7 +48484,7 @@
   "10084": {
     "id": 10084,
     "ship": "Namiko",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 3,
     "isKai": false,
     "hull": 3,
@@ -48553,7 +48553,7 @@
   "10085": {
     "id": 10085,
     "ship": "Yume Minami",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 4,
     "isKai": false,
     "hull": 3,
@@ -48622,7 +48622,7 @@
   "10086": {
     "id": 10086,
     "ship": "Chise Asukagawa",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 4,
     "isKai": false,
     "hull": 7,
@@ -48692,7 +48692,7 @@
   "10087": {
     "id": 10087,
     "ship": "Mujina",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 3,
     "isKai": false,
     "hull": 5,
@@ -48763,7 +48763,7 @@
   "10088": {
     "id": 10088,
     "ship": "The 2nd",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 4,
     "isKai": false,
     "hull": 10,
@@ -48833,7 +48833,7 @@
   "10089": {
     "id": 10089,
     "ship": "Princess Hime",
-    "faction": "Collab",
+    "faction": "SSSS",
     "rarity": 4,
     "isKai": false,
     "hull": 19,
@@ -48905,7 +48905,7 @@
   "10091": {
     "id": 10091,
     "ship": "Reisalin Stout",
-    "faction": "Collab",
+    "faction": "Atelier Ryza",
     "rarity": 4,
     "isKai": false,
     "hull": 2,
@@ -48978,7 +48978,7 @@
   "10092": {
     "id": 10092,
     "ship": "Klaudia Valentz",
-    "faction": "Collab",
+    "faction": "Atelier Ryza",
     "rarity": 4,
     "isKai": false,
     "hull": 6,
@@ -49049,7 +49049,7 @@
   "10093": {
     "id": 10093,
     "ship": "Patricia Abelheim",
-    "faction": "Collab",
+    "faction": "Atelier Ryza",
     "rarity": 4,
     "isKai": false,
     "hull": 5,
@@ -49120,7 +49120,7 @@
   "10094": {
     "id": 10094,
     "ship": "Lila Decyrus",
-    "faction": "Collab",
+    "faction": "Atelier Ryza",
     "rarity": 3,
     "isKai": false,
     "hull": 3,
@@ -49189,7 +49189,7 @@
   "10095": {
     "id": 10095,
     "ship": "Serri Glaus",
-    "faction": "Collab",
+    "faction": "Atelier Ryza",
     "rarity": 3,
     "isKai": false,
     "hull": 7,
@@ -49258,7 +49258,7 @@
   "10096": {
     "id": 10096,
     "ship": "Kala Ideas",
-    "faction": "Collab",
+    "faction": "Atelier Ryza",
     "rarity": 4,
     "isKai": false,
     "hull": 18,
@@ -49329,7 +49329,7 @@
   "10101": {
     "id": 10101,
     "ship": "Asuka",
-    "faction": "Collab",
+    "faction": "Senran Kagura",
     "rarity": 4,
     "isKai": false,
     "hull": 2,
@@ -49400,7 +49400,7 @@
   "10102": {
     "id": 10102,
     "ship": "Ikaruga",
-    "faction": "Collab",
+    "faction": "Senran Kagura",
     "rarity": 4,
     "isKai": false,
     "hull": 3,
@@ -49469,7 +49469,7 @@
   "10103": {
     "id": 10103,
     "ship": "Homura",
-    "faction": "Collab",
+    "faction": "Senran Kagura",
     "rarity": 4,
     "isKai": false,
     "hull": 8,
@@ -49538,7 +49538,7 @@
   "10104": {
     "id": 10104,
     "ship": "Yumi",
-    "faction": "Collab",
+    "faction": "Senran Kagura",
     "rarity": 4,
     "isKai": false,
     "hull": 7,
@@ -49607,7 +49607,7 @@
   "10105": {
     "id": 10105,
     "ship": "Fubuki (Senran Kagura)",
-    "faction": "Collab",
+    "faction": "Senran Kagura",
     "rarity": 4,
     "isKai": false,
     "hull": 5,
@@ -49678,7 +49678,7 @@
   "10106": {
     "id": 10106,
     "ship": "Murasaki",
-    "faction": "Collab",
+    "faction": "Senran Kagura",
     "rarity": 3,
     "isKai": false,
     "hull": 6,
@@ -49749,7 +49749,7 @@
   "10107": {
     "id": 10107,
     "ship": "Yūyaki",
-    "faction": "Collab",
+    "faction": "Senran Kagura",
     "rarity": 3,
     "isKai": false,
     "hull": 3,
@@ -49818,7 +49818,7 @@
   "10111": {
     "id": 10111,
     "ship": "Lala Satalin Deviluke",
-    "faction": "Collab",
+    "faction": "To LOVE-Ru",
     "rarity": 4,
     "isKai": false,
     "hull": 3,
@@ -49887,7 +49887,7 @@
   "10112": {
     "id": 10112,
     "ship": "Nana Astar Deviluke",
-    "faction": "Collab",
+    "faction": "To LOVE-Ru",
     "rarity": 4,
     "isKai": false,
     "hull": 1,
@@ -49958,7 +49958,7 @@
   "10113": {
     "id": 10113,
     "ship": "Momo Belia Deviluke",
-    "faction": "Collab",
+    "faction": "To LOVE-Ru",
     "rarity": 4,
     "isKai": false,
     "hull": 2,
@@ -50029,7 +50029,7 @@
   "10114": {
     "id": 10114,
     "ship": "Golden Darkness",
-    "faction": "Collab",
+    "faction": "To LOVE-Ru",
     "rarity": 4,
     "isKai": false,
     "hull": 5,
@@ -50100,7 +50100,7 @@
   "10115": {
     "id": 10115,
     "ship": "Haruna Sairenji",
-    "faction": "Collab",
+    "faction": "To LOVE-Ru",
     "rarity": 3,
     "isKai": false,
     "hull": 4,
@@ -50170,7 +50170,7 @@
   "10116": {
     "id": 10116,
     "ship": "Yui Kotegawa",
-    "faction": "Collab",
+    "faction": "To LOVE-Ru",
     "rarity": 3,
     "isKai": false,
     "hull": 7,
