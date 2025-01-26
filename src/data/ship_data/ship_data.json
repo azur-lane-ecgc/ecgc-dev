@@ -14468,9 +14468,9 @@
       "Hunting Bow"
     ],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
-    "fastLoad": "",
+    "fastLoad": "50% 1st Airstrike Cooldown Reduction (with Kaga).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [],
@@ -14536,9 +14536,9 @@
       "Hunting Bow"
     ],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
-    "fastLoad": "",
+    "fastLoad": "50% 1st Airstrike Cooldown Reduction (with Akagi).",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [],
