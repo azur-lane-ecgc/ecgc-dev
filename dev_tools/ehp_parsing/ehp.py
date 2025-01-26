@@ -50,7 +50,7 @@ def process_sheet(sheet_name):
     data_dict = {}
 
     for row in values:
-        if len(row) < 3:  
+        if len(row) < 3:
             continue
 
         original_name = row[0].strip()  # Column A (including notes)
@@ -66,7 +66,9 @@ def process_sheet(sheet_name):
 
         if base_name not in data_dict:
             data_dict[base_name] = []
-        data_dict[base_name].append(entry)
+
+        if not any(entry["name"] == e["name"] for e in data_dict[base_name]):
+            data_dict[base_name].append(entry)
 
     return data_dict
 
