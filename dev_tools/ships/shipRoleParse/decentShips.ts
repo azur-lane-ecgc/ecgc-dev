@@ -1,0 +1,115 @@
+import type {
+  MainFleetRankingProps,
+  VanguardFleetRankingProps,
+  SSFleetRankingProps,
+} from "@data/rankings/types"
+
+const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
+  (await import("@data/rankings/vgFleetRankings.json").then(
+    (module) => module.default,
+  )) as Record<string, VanguardFleetRankingProps[]>
+
+const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
+  (await import("@data/rankings/mainFleetRankings.json").then(
+    (module) => module.default,
+  )) as Record<string, VanguardFleetRankingProps[]>
+
+const SSFleetRankingData: Record<string, SSFleetRankingProps[]> = (await import(
+  "@data/rankings/ssFleetRankings.json"
+).then((module) => module.default)) as Record<string, SSFleetRankingProps[]>
+
+const priorityOrder: Record<string, number> = {
+  SS: 5,
+  S: 4,
+  A: 3,
+  B: 2,
+  C: 1,
+  D: 0,
+  default: 0,
+}
+
+const sanitizeString = (str: string | null | undefined): string | null => {
+  if (!str) return null
+  return str.replace(/[^a-zA-Z]/g, "")
+}
+
+export const isDecentVG = (shipName: string): boolean => {
+  const rankings = VGFleetRankingData[shipName]
+
+  if (!rankings) {
+    return false
+  }
+
+  for (const ranking of rankings) {
+    for (const [key, value] of Object.entries(ranking)) {
+      // check numeric properties
+      if (typeof value === "number" && value - 1 >= 1) {
+        return true
+      }
+
+      // check string properties
+      if (typeof value === "string") {
+        const sanitizedProp = sanitizeString(value)
+        if (sanitizedProp && priorityOrder[sanitizedProp] >= 1) {
+          return true
+        }
+      }
+    }
+  }
+
+  return false
+}
+
+export const isDecentMainFleet = (shipName: string): boolean => {
+  const rankings = MainFleetRankingData[shipName]
+
+  if (!rankings) {
+    return false
+  }
+
+  for (const ranking of rankings) {
+    for (const [key, value] of Object.entries(ranking)) {
+      // check numeric properties
+      if (typeof value === "number" && value - 1 >= 1) {
+        return true
+      }
+
+      // check string properties
+      if (typeof value === "string") {
+        const sanitizedProp = sanitizeString(value)
+        if (sanitizedProp && priorityOrder[sanitizedProp] >= 1) {
+          return true
+        }
+      }
+    }
+  }
+
+  return false
+}
+
+export const isDecentSSFleet = (shipName: string): boolean => {
+  const rankings = SSFleetRankingData[shipName]
+
+  if (!rankings) {
+    return false
+  }
+
+  for (const ranking of rankings) {
+    for (const [key, value] of Object.entries(ranking)) {
+      // check numeric properties
+      if (typeof value === "number" && value - 1 >= 1) {
+        return true
+      }
+
+      // check string properties
+      if (typeof value === "string") {
+        const sanitizedProp = sanitizeString(value)
+        if (sanitizedProp && priorityOrder[sanitizedProp] >= 1) {
+          return true
+        }
+      }
+    }
+  }
+
+  return false
+}
