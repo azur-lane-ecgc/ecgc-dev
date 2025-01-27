@@ -1,7 +1,7 @@
-import type { SamvaluationProps } from "dev_tools/ships/shipSamvaluationParse"
+import type { SamvaluationProps } from "@tools/samvaluation/types"
 
 const samvaluationData = (await import(
-  "@data/samvaluation/samvaluationData.json"
+  "@tools/samvaluation/samvaluationData.json"
 ).then((module) => module.default)) as Record<string, SamvaluationProps>
 
 export const fastLoadRole = (): Set<string> => {

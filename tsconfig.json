@@ -17,6 +17,7 @@
       "@utils/*": ["src/utils/*"],
       "@data/*": ["src/data/*"],
       "@store/*": ["src/store/*"],
+      "@tools/*": ["dev_tools/*"],
       "@ALData/*": ["AzurLaneData/*"]
     }
   }

@@ -9,7 +9,7 @@ SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
 SPREADSHEET_ID = "1rb_uXVmDnK2YKe-0YRTrf3VUcQi8mKwEMYKCBFmVXCc"
 SHEET_NAMES = ["List"]
 OUTPUT_PATHS = [
-    "src/data/aa/shipAA.json",
+    "dev_tools/aa_parsing/shipAA.json",
 ]
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]

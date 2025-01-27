@@ -1,12 +1,12 @@
-import type { ShipAAProps } from "@data/aa/types"
 import type {
   VanguardFleetRankingProps,
   MainFleetRankingProps,
 } from "@data/rankings/types"
+import type { ShipAAProps } from "@tools/aa_parsing/types"
 
 import { isDecentMainFleet, isDecentVG } from "../decentShips"
 
-const shipAAData = (await import("@data/aa/shipAA.json").then(
+const shipAAData = (await import("@tools/aa_parsing/shipAA.json").then(
   (module) => module.default,
 )) as Record<string, ShipAAProps[]>
 
