@@ -18,6 +18,7 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
   ),
   ASW: (
     <img
+      loading="lazy"
       src="https://al.mrlar.dev/icons/stats/asw.webp"
       alt="icon"
       className="w-[32px] h-auto text-red-300"
