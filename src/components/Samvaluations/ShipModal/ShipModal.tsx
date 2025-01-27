@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useTrackVisibility } from "react-intersection-observer-hook"
 
 import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
@@ -57,22 +58,32 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 }: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
   const [shipData, setShipData] = useState<ShipData | null>(null)
-  const [loading, setLoading] = useState<boolean>(true)
+  const [ref, { isVisible }] = useTrackVisibility({
+    rootMargin: "125%",
+  })
 
   useEffect(() => {
     const fetchShipsData = async () => {
-      setLoading(true)
-      const fetchShips: Record<number, ShipData> = (await import(
-        "@data/ship_data/ship_data.json"
-      ).then((module) => module.default)) as Record<number, ShipData>
-      setShipData(fetchShips[id])
-      setLoading(false)
+      if (isVisible && !shipData) {
+        try {
+          const fetchShips: Record<number, ShipData> = (await import(
+            "@data/ship_data/ship_data.json"
+          ).then((module) => module.default)) as Record<number, ShipData>
+          setShipData(fetchShips[id])
+        } catch (error) {
+          console.error(`PLEASE DM SITE DEVELOPER ASAP REGARDING SHIP ${id}`)
+          console.error(error)
+        }
+      }
     }
 
     fetchShipsData()
-  }, [])
+  }, [isVisible])
 
   const handleOpen = () => {
+    if (!!!shipData) {
+      return
+    }
     setOpen(true)
     if (!document.body.classList.contains("overflow-hidden")) {
       document.body.classList.add("overflow-hidden")
@@ -80,14 +91,26 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }
 
   const handleClose = () => {
+    if (!!!shipData) {
+      return
+    }
     setOpen(false)
     if (document.body.classList.contains("overflow-hidden")) {
       document.body.classList.remove("overflow-hidden")
     }
   }
 
-  if (loading || !!!shipData) {
-    return <ItemCellSkeleton />
+  // return ItemCellSkeleton BEFORE shipData check
+  if (!isVisible) {
+    return (
+      <div ref={ref}>
+        <ItemCellSkeleton />
+      </div>
+    )
+  }
+
+  if (!!!shipData) {
+    return false
   }
 
   const ship = shipData.ship
@@ -126,6 +149,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
           }
         }}
         aria-label={`Open modal for ${ship}`}
+        ref={ref}
       >
         <div className="relative">
           <div className="fake-modal-link">
