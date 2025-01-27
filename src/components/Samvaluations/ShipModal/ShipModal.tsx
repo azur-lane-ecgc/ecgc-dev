@@ -142,12 +142,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
         onClick={handleOpen}
         tabIndex={0}
         role="button"
-        onKeyDown={(e) => {
-          if (e.key === "Enter") {
-            handleOpen()
-            e.preventDefault()
-          }
-        }}
         aria-label={`Open modal for ${ship}`}
         ref={ref}
       >
@@ -189,12 +183,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
           aria-modal="true"
           role="dialog"
           tabIndex={-1}
-          onKeyDown={(e) => {
-            if (e.key === "Escape") {
-              handleClose()
-              e.preventDefault()
-            }
-          }}
           aria-label={`Close modal for ${ship}`}
         >
           {/* Modal Window */}
