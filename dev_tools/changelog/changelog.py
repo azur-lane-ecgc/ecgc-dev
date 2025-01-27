@@ -1,5 +1,3 @@
-import json
-import os
 import re
 from datetime import datetime
 
@@ -44,7 +42,7 @@ def get_changelog_date(spreadsheet_id, sheet_name, cell_range, date_format):
     date_str = result.get("values", [[None]])[0][0]
     if date_str:
         try:
-            if date_format == "%B %d, %Y":  
+            if date_format == "%B %d, %Y":
                 date_str = (
                     date_str.replace("th,", ",")
                     .replace("st,", ",")
