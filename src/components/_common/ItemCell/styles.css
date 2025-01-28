@@ -53,8 +53,10 @@
 }
 
 .shipCellHover:hover,
-.shipRowCell:hover {
-  border: 1px solid orange;
+.shipCellHover:focus,
+.shipCellHover:focus-visible,
+.shipCellHover:focus-within {
+  border: 1px solid orange !important;
   background-color: #3b444bb9;
 }
 

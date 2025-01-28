@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useTrackVisibility } from "react-intersection-observer-hook"
 
 import "@components/_common/ItemCell/styles.css"
@@ -8,6 +8,11 @@ import { ItemCellSkeleton } from "@components/_common/Skeleton"
 
 import type { ShipData } from "@data/ship_data/types"
 
+import {
+  useBodyOverflow,
+  useModalFocus,
+  useModalHistory,
+} from "@utils/modalHooks"
 import { parseEquipHref, shipImageParse } from "@utils/ships"
 
 import { ShipTags } from "./ShipTags"
@@ -18,6 +23,7 @@ import {
 } from "./ShipRankings"
 import { ShipEHPDisplay } from "./ShipEHP"
 import { ShipLocations } from "./ShipLocations"
+import { useShipData } from "./ShipModalHooks"
 
 import {
   closeButtonStyle,
@@ -57,48 +63,34 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   trigger,
 }: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
-  const [shipData, setShipData] = useState<ShipData | null>(null)
   const [ref, { isVisible }] = useTrackVisibility({
     rootMargin: "125%",
   })
 
-  useEffect(() => {
-    const fetchShipsData = async () => {
-      if (isVisible && !shipData) {
-        try {
-          const fetchShips: Record<number, ShipData> = (await import(
-            "@data/ship_data/ship_data.json"
-          ).then((module) => module.default)) as Record<number, ShipData>
-          setShipData(fetchShips[id])
-        } catch (error) {
-          console.error(`PLEASE DM SITE DEVELOPER ASAP REGARDING SHIP ${id}`)
-          console.error(error)
-        }
-      }
-    }
-
-    fetchShipsData()
-  }, [isVisible])
-
-  const handleOpen = () => {
-    if (!!!shipData) {
-      return
-    }
-    setOpen(true)
-    if (!document.body.classList.contains("overflow-hidden")) {
-      document.body.classList.add("overflow-hidden")
-    }
-  }
+  const shipData: ShipData | null = useShipData(id, isVisible)
 
   const handleClose = () => {
-    if (!!!shipData) {
+    if (!shipData) {
       return
     }
     setOpen(false)
-    if (document.body.classList.contains("overflow-hidden")) {
-      document.body.classList.remove("overflow-hidden")
-    }
   }
+
+  const handleOpen = () => {
+    if (!shipData) {
+      return
+    }
+    setOpen(true)
+  }
+
+  // hook calls
+  useModalFocus(
+    open,
+    `modalTrigger${shipData?.ship}`,
+    `modalOverlay${shipData?.ship}`,
+  )
+  // useModalHistory(id.toString(), open, setOpen)
+  useBodyOverflow(open)
 
   // return ItemCellSkeleton BEFORE shipData check
   if (!isVisible) {
@@ -113,25 +105,23 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     return false
   }
 
-  const ship = shipData.ship
-  const faction = shipData.faction
+  const {
+    ship,
+    faction,
+    rarity,
+    isKai,
+    hullType,
+    fleetType,
+    LBBonus,
+    slots,
+    augments,
+    samEval,
+    fastLoad,
+    roles,
+    locations,
+  } = shipData
 
-  const rarity = shipData.rarity
-  const isKai = shipData.isKai
-  const hullType = shipData.hullType
-  const fleetType: "main" | "ss" | "vg" = shipData.fleetType
-
-  const LBBonus = shipData.LBBonus
-  const slots = shipData.slots
-
-  const augments = shipData.augments
   const shipImg = shipImageParse(ship, isKai)
-
-  const samEval = shipData.samEval
-  const fastLoad = shipData.fastLoad
-  const roles = shipData.roles
-
-  const locations = shipData.locations
 
   return (
     <>

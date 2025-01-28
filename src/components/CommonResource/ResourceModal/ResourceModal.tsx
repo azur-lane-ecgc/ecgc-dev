@@ -14,11 +14,16 @@ import {
   shipLinkStyle,
 } from "@components/Samvaluations/ShipModal/styles"
 
-import type { ResourceProps } from "../CommonResourceData/types"
 import { getCellColor } from "@utils/commonResource/getCellColor"
+import {
+  useBodyOverflow,
+  useModalFocus,
+  useModalHistory,
+} from "@utils/modalHooks"
 
 import { LocationLinks } from "./LocationLinks"
 import { Mark } from "./Mark"
+import type { ResourceProps } from "../CommonResourceData/types"
 
 interface ResourceModalProps {
   item: ResourceProps
@@ -28,21 +33,15 @@ interface ResourceModalProps {
 export const ResourceModal: React.FC<ResourceModalProps> = ({
   item,
   trigger,
-}): React.JSX.Element => {
+}): React.ReactNode => {
   const [open, setOpen] = useState(false)
 
   const handleOpen = () => {
     setOpen(true)
-    if (!document.body.classList.contains("overflow-hidden")) {
-      document.body.classList.add("overflow-hidden")
-    }
   }
 
   const handleClose = () => {
     setOpen(false)
-    if (document.body.classList.contains("overflow-hidden")) {
-      document.body.classList.remove("overflow-hidden")
-    }
   }
 
   const name = item.plural || item.name + "s"
@@ -50,6 +49,10 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
   const imgUrl = item.image
   const wikiLink = item.wikiLink
   const drops = item.drops
+
+  useModalFocus(open, `modalTrigger${name}`, `modalOverlay${name}`)
+  // useModalHistory(name, open, setOpen)
+  useBodyOverflow(open)
 
   return (
     <>
