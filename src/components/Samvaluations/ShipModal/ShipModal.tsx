@@ -89,7 +89,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     `modalTrigger${shipData?.ship}`,
     `modalOverlay${shipData?.ship}`,
   )
-  // useModalHistory(id.toString(), open, setOpen)
+  useModalHistory(id.toString(), open, setOpen)
   useBodyOverflow(open)
 
   // return ItemCellSkeleton BEFORE shipData check

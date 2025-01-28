@@ -23,23 +23,31 @@ export const useModalHistory = (
   setOpen: (open: boolean) => void,
 ) => {
   useEffect(() => {
-    const handlePopState = (event: PopStateEvent) => {
-      if (event.state?.modalOpen && open) {
-        event.preventDefault()
+    // if (window.location.hash.includes(id)) {
+    //   setOpen(true)
+    //   return
+    // }
+
+    if (open) {
+      history.replaceState(null, "", window.location.pathname)
+      history.pushState(null, "", `#${id}`)
+    }
+
+    const handleHashChange = () => {
+      if (open) {
         setOpen(false)
+
+        history.replaceState(null, "", window.location.pathname)
       }
     }
 
-    if (open) {
-      history.replaceState({ modalOpen: true }, "", window.location.href)
-    } else {
-      history.replaceState(null, "", window.location.href)
-    }
-
-    window.addEventListener("popstate", handlePopState)
+    window.addEventListener("hashchange", handleHashChange)
 
     return () => {
-      window.removeEventListener("popstate", handlePopState)
+      window.removeEventListener("hashchange", handleHashChange)
+      if (open) {
+        history.replaceState(null, "", window.location.pathname)
+      }
     }
   }, [id, open, setOpen])
 }

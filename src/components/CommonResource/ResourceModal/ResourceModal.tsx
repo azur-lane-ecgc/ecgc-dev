@@ -51,14 +51,14 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
   const drops = item.drops
 
   useModalFocus(open, `modalTrigger${name}`, `modalOverlay${name}`)
-  // useModalHistory(name, open, setOpen)
+  useModalHistory(name.replaceAll(" ", "_"), open, setOpen)
   useBodyOverflow(open)
 
   return (
     <>
       {/* Trigger "button" */}
       <div
-        id={`modalTrigger${name}`}
+        id={`modalTrigger${name.replaceAll(" ", "_")}`}
         className={`${modalTriggerStyle} ${!!trigger?.hasBorder ? "border-gray-400" : "border-transparent"}`}
         onClick={handleOpen}
         tabIndex={0}
