@@ -25,7 +25,7 @@ export const SamvaluationModalFilter = () => {
               key={ship.id}
               id={ship.id}
               trigger={{
-                iconNote: null,
+                iconNote: "Rank: SS",
                 descriptionNote: `Events: ${formatLocation(ship.locations.events)}`,
                 largeDescNote: false,
                 hasBorder: true,
