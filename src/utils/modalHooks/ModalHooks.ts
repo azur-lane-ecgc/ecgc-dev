@@ -16,40 +16,25 @@ export const useModalFocus = (
   }, [open, modalID, triggerButtonID])
 }
 
-// hook to manage history and popstate
-export const useModalHistory = (
-  id: string,
-  open: boolean,
-  setOpen: (open: boolean) => void,
-) => {
+// hook to manage url hash for modal
+export const useModalHistory = (id: string, open: boolean) => {
   useEffect(() => {
-    // if (window.location.hash.includes(id)) {
-    //   setOpen(true)
-    //   return
-    // }
-
     if (open) {
-      history.replaceState(null, "", window.location.pathname)
-      history.pushState(null, "", `#${id}`)
-    }
-
-    const handleHashChange = () => {
-      if (open) {
-        setOpen(false)
-
+      if (!(window.location.hash === `#${id}`)) {
+        history.replaceState(null, "", `#${id}`)
+      }
+    } else {
+      if (window.location.hash === `#${id}`) {
         history.replaceState(null, "", window.location.pathname)
       }
     }
-
-    window.addEventListener("hashchange", handleHashChange)
 
     return () => {
-      window.removeEventListener("hashchange", handleHashChange)
       if (open) {
         history.replaceState(null, "", window.location.pathname)
       }
     }
-  }, [id, open, setOpen])
+  }, [id, open])
 }
 
 // hook to manage body overflow
