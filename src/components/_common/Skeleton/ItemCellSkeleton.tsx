@@ -1,9 +1,14 @@
-import { Skeleton } from "./Skeleton"
 import "@components/_common/ItemCell/styles.css"
+import { Skeleton } from "./Skeleton"
 
-export const ItemCellSkeleton = () => {
+interface itemSkeletonProps {
+  id?: string
+}
+
+export const ItemCellSkeleton: React.FC<itemSkeletonProps> = ({ id }) => {
   return (
     <div
+      {...(id && { id })}
       className={`${"border modifiedShipRowCell text-center"} border-gray-400`}
     >
       <div className="relative">
