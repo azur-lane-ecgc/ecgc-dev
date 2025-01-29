@@ -1,4 +1,3 @@
-import type React from "react"
 import type { shipLocation, ShipLocationData } from "@data/ship_data/types"
 
 interface ShipLocationProps {
