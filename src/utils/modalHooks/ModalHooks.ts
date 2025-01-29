@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 
 // hook for modal focus handling
 export const useModalFocus = (
@@ -17,8 +17,19 @@ export const useModalFocus = (
 }
 
 // hook to manage url hash for modal
-export const useModalHistory = (id: string, open: boolean) => {
+export const useModalHistory = (
+  id: string,
+  open: boolean,
+  setOpen?: () => void,
+) => {
+  const initialLoad = useRef(true)
+
   useEffect(() => {
+    if (initialLoad.current) {
+      initialLoad.current = false
+      return
+    }
+
     if (open) {
       if (!(window.location.hash === `#${id}`)) {
         history.replaceState(null, "", `#${id}`)
