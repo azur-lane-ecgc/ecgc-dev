@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useEffect } from "react"
 
 // hook for modal focus handling
 export const useModalFocus = (
@@ -16,36 +16,40 @@ export const useModalFocus = (
   }, [open, modalID, triggerButtonID])
 }
 
-// hook to manage url hash for modal
+// hook to manage history and popstate
 export const useModalHistory = (
   id: string,
   open: boolean,
-  setOpen?: () => void,
+  setOpen: (open: boolean) => void,
 ) => {
-  const initialLoad = useRef(true)
-
   useEffect(() => {
-    if (initialLoad.current) {
-      initialLoad.current = false
-      return
-    }
+    // if (window.location.hash.includes(id)) {
+    //   setOpen(true)
+    //   return
+    // }
 
     if (open) {
-      if (!(window.location.hash === `#${id}`)) {
-        history.replaceState(null, "", `#${id}`)
-      }
-    } else {
-      if (window.location.hash === `#${id}`) {
+      history.replaceState(null, "", window.location.pathname)
+      history.pushState(null, "", `#${id}`)
+    }
+
+    const handleHashChange = () => {
+      if (open) {
+        setOpen(false)
+
         history.replaceState(null, "", window.location.pathname)
       }
     }
 
+    window.addEventListener("hashchange", handleHashChange)
+
     return () => {
+      window.removeEventListener("hashchange", handleHashChange)
       if (open) {
         history.replaceState(null, "", window.location.pathname)
       }
     }
-  }, [id, open])
+  }, [id, open, setOpen])
 }
 
 // hook to manage body overflow

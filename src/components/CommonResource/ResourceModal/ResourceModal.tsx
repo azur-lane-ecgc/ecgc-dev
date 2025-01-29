@@ -51,7 +51,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
   const drops = item.drops
 
   useModalFocus(open, `modalTrigger${name}`, `modalOverlay${name}`)
-  useModalHistory(name.replaceAll(" ", "_"), open)
+  useModalHistory(name.replaceAll(" ", "_"), open, setOpen)
   useBodyOverflow(open)
 
   return (
