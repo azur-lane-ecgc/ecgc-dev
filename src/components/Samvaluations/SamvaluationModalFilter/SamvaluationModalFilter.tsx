@@ -5,6 +5,8 @@ import { ShipModal } from "@components/Samvaluations/ShipModal"
 
 import type { ShipData } from "@data/ship_data/types"
 
+import { formatLocation } from "@utils/formatLocation"
+
 const ships: Record<number, ShipData> = (await import(
   "@data/ship_data/ship_data.json"
 ).then((module) => module.default)) as Record<number, ShipData>
@@ -24,7 +26,7 @@ export const SamvaluationModalFilter = () => {
               id={ship.id}
               trigger={{
                 iconNote: null,
-                descriptionNote: null,
+                descriptionNote: `Events: ${formatLocation(ship.locations.events)}`,
                 largeDescNote: false,
                 hasBorder: true,
               }}
