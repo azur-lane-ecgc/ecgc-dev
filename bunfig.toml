@@ -1,2 +1,4 @@
 smol = true
 telementry = false
+[test]
+preload = "./happydom.ts"
