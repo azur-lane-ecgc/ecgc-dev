@@ -64,7 +64,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 }: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
   const [ref, { isVisible }] = useTrackVisibility({
-    rootMargin: "125%",
+    rootMargin: "1000px",
   })
 
   const shipData: ShipData | null = useShipData(id, isVisible)
