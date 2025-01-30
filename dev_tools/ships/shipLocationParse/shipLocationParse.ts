@@ -1,5 +1,7 @@
 import type { ShipDropData } from "@ALData/types/ships"
+import type { shipLocation, ShipLocationData } from "@data/ship_data/types"
 import { parseLocation } from "@utils/parseLocation"
+
 import { shipSeriesMap } from "./utils"
 
 const shipDropData: Record<number, ShipDropData> = (await import(
@@ -12,18 +14,6 @@ const excludedEvents = [
   "Lunar New Year 2018",
 ]
 const exceptionShips = ["Formidable", "Mary Celeste"]
-
-export interface shipLocation {
-  name: string
-  href: string
-}
-
-export interface ShipLocationData {
-  events: shipLocation[]
-  other: shipLocation[]
-  construction: shipLocation[]
-  permanent: shipLocation[]
-}
 
 const OTHER_LOCATIONS: Record<number, string | null> = {
   0: "Guild Shop",
@@ -114,6 +104,7 @@ export const shipLocationParse = (
   name: string,
   id: number,
 ): ShipLocationData => {
+  // Bulin Exception
   if (name.match(/Bulin/)) {
     return {
       events: [],
@@ -129,7 +120,6 @@ export const shipLocationParse = (
   }
 
   const dropData = shipDropData[id]!
-
   const events = parseEvents(name, dropData.events)
   const other = dropData.other
     ?.map((otherId) => parseOtherLocation(name, otherId))

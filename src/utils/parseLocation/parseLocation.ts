@@ -22,6 +22,11 @@ export const parseLocation = (location: string) => {
     }
   }
 
+  // Shipyard
+  else if (location.match(/Shipyard \(PR(\d+)\)/)) {
+    location = location.replace(/Shipyard \(PR(\d+)\)/, "Research#Series_$1")
+  }
+
   // Memento -> Collection
   else if (location === "Memento (Collections)") {
     location = "Collection"
@@ -37,11 +42,6 @@ export const parseLocation = (location: string) => {
     location = "Building#UR_Ships_Construction"
   }
 
-  // Shipyard
-  else if (location.match(/Shipyard \(PR(\d+)\)/)) {
-    location = location.replace(/Shipyard \(PR(\d+)\)/, "Research#Series_$1")
-  }
-
   // Login Rewards
   else if (location === "Login Reward") {
     location = "Missions#Login_Rewards"
@@ -55,6 +55,8 @@ export const parseLocation = (location: string) => {
   // Akashi Questline
   else if (location === "Quest") {
     location = "Akashi/Questline"
+  } else if (location === "Cruise Pass") {
+    location = "Cruise_Missions"
   }
 
   return location.replaceAll(" ", "_")
