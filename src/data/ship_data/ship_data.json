@@ -53529,9 +53529,9 @@
       "Officer's Sword"
     ],
     "samEval": "Yamishiro META is a damage-oriented BB with good stats and meh skills. She only has 2 MGM, but compensates for this with reduced cooldown on her first 2 Main Gun shots. She also has a decent on-fire barrage. Overall, she is a meh ship, and is outclassed by other easily accessible options.",
-    "fastLoad": "",
+    "fastLoad": "50% 1st, 2nd, & 3rd Salvo Cooldown Reduction.",
     "roles": [
-      "Healer"
+      "FastLoad"
     ],
     "locations": {
       "events": [],
