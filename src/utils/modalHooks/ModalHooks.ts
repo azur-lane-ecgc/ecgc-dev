@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 
 // hook for modal focus handling
 export const useModalFocus = (
@@ -6,9 +6,15 @@ export const useModalFocus = (
   triggerButtonID: string,
   modalID: string,
 ) => {
-  useEffect(() => {
-    const elementId = open ? modalID : triggerButtonID
+  const hasMounted = useRef(false)
 
+  useEffect(() => {
+    if (!hasMounted.current) {
+      hasMounted.current = true
+      return
+    }
+
+    const elementId = open ? modalID : triggerButtonID
     const element = document.getElementById(elementId)
     if (element) {
       element.focus()
