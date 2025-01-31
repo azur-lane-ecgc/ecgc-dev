@@ -4,7 +4,7 @@ import { useTrackVisibility } from "react-intersection-observer-hook"
 import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
-import { ItemCellSkeleton } from "@components/_common/Skeleton"
+import { IconSkeleton } from "@components/_common/Skeleton"
 
 import type { ShipData } from "@data/ship_data/types"
 
@@ -63,7 +63,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 }: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
   const [ref, { isVisible }] = useTrackVisibility({
-    rootMargin: "1000px",
+    rootMargin: "200px",
   })
 
   const {
@@ -104,15 +104,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   useModalHistory(id.toString(), open, setOpen)
   useBodyOverflow(open)
 
-  // return ItemCellSkeleton BEFORE shipData check
-  if (!isVisible) {
-    return (
-      <div ref={ref}>
-        <ItemCellSkeleton />
-      </div>
-    )
-  }
-
   return (
     <>
       {/* Trigger "button" */}
@@ -131,13 +122,26 @@ export const ShipModal: React.FC<ShipModalProps> = ({
         aria-label={`Open modal for ${ship}`}
         ref={ref}
       >
-        <div className="relative">
-          <div className="fake-modal-link">
-            <div className={`icon rarity-${rarity} border-radius-0`}>
-              <img loading="lazy" src={`${shipImg}`} alt={`${ship}`} />
+        <div id={id.toString()} className="relative">
+          <div className="fake-modal-link" ref={ref}>
+            <div
+              className={`icon border-radius-0 ${isVisible ? `rarity-${rarity}` : ""}`}
+            >
+              {isVisible ? (
+                <img
+                  width={60}
+                  height={60}
+                  loading="lazy"
+                  src={shipImg}
+                  alt={ship}
+                />
+              ) : (
+                <IconSkeleton />
+              )}
             </div>
             {`${ship} ${isKai ? "(Retrofit)" : ""}`}
           </div>
+
           {!!trigger?.iconNote && (
             <div className="icon-note">
               <p>{trigger.iconNote}</p>
