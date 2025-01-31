@@ -222,9 +222,11 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   {isKai ? ship + " (Retrofit)" : ship}
                 </a>
               </h1>
+
               {/* Event / Location */}
               <ShipLocations locations={locations} />
               <HR />
+
               {/* Flexbox for Icon + Samvaluation */}
               <div className={shipIconContainerStyle}>
                 {/* Ship Icon */}
@@ -249,8 +251,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 </div>
               </div>
               <HR />
+
               {/* EHP */}
               <ShipEHPDisplay ship={ship} />
+
               {/* Equip Table */}
               <ItemTable
                 tableInfo={[
