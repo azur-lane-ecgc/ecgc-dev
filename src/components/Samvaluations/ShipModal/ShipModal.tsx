@@ -23,7 +23,6 @@ import {
 } from "./ShipRankings"
 import { ShipEHPDisplay } from "./ShipEHP"
 import { ShipLocations } from "./ShipLocations"
-import { useShipData } from "./ShipModalHooks"
 
 import {
   closeButtonStyle,
@@ -43,7 +42,7 @@ export interface TriggerProps {
 }
 
 interface ShipModalProps {
-  id: number
+  shipData: ShipData
   trigger?: TriggerProps
 }
 
@@ -53,13 +52,13 @@ interface ShipModalProps {
  * @component
  *
  * @param {ShipModalProps} props - The props for configuring the ship modal.
- * @param {number} props.id - Azur Lane ID of the ship
+ * @param {ShipData} props.shipData - Data regarding the ship
  * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)
  *
  * @returns {React.ReactNode} The Ship Modal itself.
  */
 export const ShipModal: React.FC<ShipModalProps> = ({
-  id,
+  shipData,
   trigger,
 }: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
@@ -67,45 +66,8 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     rootMargin: "1000px",
   })
 
-  const shipData: ShipData | null = useShipData(id, isVisible)
-
-  const handleClose = () => {
-    if (!shipData) {
-      return
-    }
-    setOpen(false)
-  }
-
-  const handleOpen = () => {
-    if (!shipData) {
-      return
-    }
-    setOpen(true)
-  }
-
-  // hook calls
-  useModalFocus(
-    open,
-    `modalTrigger${shipData?.ship}`,
-    `modalOverlay${shipData?.ship}`,
-  )
-  useModalHistory(id.toString(), open, setOpen)
-  useBodyOverflow(open)
-
-  // return ItemCellSkeleton BEFORE shipData check
-  if (!isVisible) {
-    return (
-      <div ref={ref}>
-        <ItemCellSkeleton />
-      </div>
-    )
-  }
-
-  if (!!!shipData) {
-    return false
-  }
-
   const {
+    id,
     ship,
     faction,
     rarity,
@@ -122,6 +84,34 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   } = shipData
 
   const shipImg = shipImageParse(ship, isKai)
+
+  const handleClose = () => {
+    if (!shipData) {
+      return
+    }
+    setOpen(false)
+  }
+
+  const handleOpen = () => {
+    if (!shipData) {
+      return
+    }
+    setOpen(true)
+  }
+
+  // hook calls
+  useModalFocus(open, `modalTrigger${ship}`, `modalOverlay${ship}`)
+  useModalHistory(id.toString(), open, setOpen)
+  useBodyOverflow(open)
+
+  // return ItemCellSkeleton BEFORE shipData check
+  if (!isVisible) {
+    return (
+      <div ref={ref}>
+        <ItemCellSkeleton />
+      </div>
+    )
+  }
 
   return (
     <>
