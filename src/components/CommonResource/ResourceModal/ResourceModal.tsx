@@ -77,6 +77,8 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               className={`icon rarity-${Array.isArray(rarity) ? rarity[1] : rarity} border-radius-0`}
             >
               <img
+                width={60}
+                height={60}
                 loading="lazy"
                 src={`/test_ecgc_2/images/${Array.isArray(imgUrl) ? imgUrl[1] : imgUrl}`}
                 alt={`${item.name}`}
