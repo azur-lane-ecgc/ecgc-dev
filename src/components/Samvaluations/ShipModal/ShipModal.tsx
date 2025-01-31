@@ -100,7 +100,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }
 
   // hook calls
-  useModalFocus(open, `modalTrigger${ship}`, `modalOverlay${ship}`)
+  useModalFocus(open, id.toString(), `modalOverlay${ship}`, id.toString())
   useModalHistory(id.toString(), open, setOpen)
   useBodyOverflow(open)
 
@@ -108,7 +108,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     <>
       {/* Trigger "button" */}
       <div
-        id={`modalTrigger${ship}`}
+        id={`${id}`}
         className={`${modalTriggerStyle} ${!!trigger?.hasBorder ? "border-gray-400" : "border-transparent"}`}
         onClick={handleOpen}
         tabIndex={0}
@@ -122,7 +122,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
         aria-label={`Open modal for ${ship}`}
         ref={ref}
       >
-        <div id={id.toString()} className="relative">
+        <div className="relative">
           <div className="fake-modal-link" ref={ref}>
             <div
               className={`icon border-radius-0 ${isVisible ? `rarity-${rarity}` : ``}`}

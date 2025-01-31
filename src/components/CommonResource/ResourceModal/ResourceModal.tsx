@@ -50,7 +50,12 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
   const wikiLink = item.wikiLink
   const drops = item.drops
 
-  useModalFocus(open, `modalTrigger${name}`, `modalOverlay${name}`)
+  useModalFocus(
+    open,
+    name.replaceAll(" ", "_"),
+    `modalOverlay${name}`,
+    name.replaceAll(" ", "_"),
+  )
   useModalHistory(name.replaceAll(" ", "_"), open, setOpen)
   useBodyOverflow(open)
 
@@ -58,7 +63,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
     <>
       {/* Trigger "button" */}
       <div
-        id={`modalTrigger${name.replaceAll(" ", "_")}`}
+        id={`${name.replaceAll(" ", "_")}`}
         className={`${modalTriggerStyle} ${!!trigger?.hasBorder ? "border-gray-400" : "border-transparent"}`}
         onClick={handleOpen}
         tabIndex={0}

@@ -5,17 +5,25 @@ export const useModalFocus = (
   open: boolean,
   triggerButtonID: string,
   modalID: string,
+  shipID?: string,
 ) => {
   const hasMounted = useRef(false)
 
   useEffect(() => {
     if (!hasMounted.current) {
       hasMounted.current = true
+      if (shipID && window.location.hash.includes(shipID)) {
+        const triggerButton = document.getElementById(triggerButtonID)
+        if (triggerButton) {
+          triggerButton.focus()
+        }
+      }
       return
     }
 
     const elementId = open ? modalID : triggerButtonID
     const element = document.getElementById(elementId)
+
     if (element) {
       element.focus()
     }
