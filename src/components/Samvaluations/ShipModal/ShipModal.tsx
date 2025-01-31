@@ -129,8 +129,8 @@ export const ShipModal: React.FC<ShipModalProps> = ({
             >
               {isVisible ? (
                 <img
-                  width={60}
-                  height={60}
+                  width={56}
+                  height={56}
                   loading="lazy"
                   src={shipImg}
                   alt={ship}

@@ -54,8 +54,8 @@ export const ItemCell: React.FC<ItemCellProps> = ({
         >
           <div className={`icon rarity-${rarity} border-radius-0`}>
             <img
-              width={60}
-              height={60}
+              width={56}
+              height={56}
               loading="lazy"
               src={!imgOverride ? `/test_ecgc_2/images/${itemImg}` : itemImg}
               alt={`${item}`}
