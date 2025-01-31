@@ -12,6 +12,7 @@
         "@types/react": "^19.0.8",
         "@types/react-dom": "^19.0.3",
         "astro": "^5.2.1",
+        "babel-plugin-react-compiler": "^19.0.0-beta-27714ef-20250124",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-intersection-observer-hook": "^3.0.1",
@@ -366,6 +367,8 @@
     "autoprefixer": ["autoprefixer@10.4.20", "", { "dependencies": { "browserslist": "^4.23.3", "caniuse-lite": "^1.0.30001646", "fraction.js": "^4.3.7", "normalize-range": "^0.1.2", "picocolors": "^1.0.1", "postcss-value-parser": "^4.2.0" }, "peerDependencies": { "postcss": "^8.1.0" }, "bin": "bin/autoprefixer" }, "sha512-XY25y5xSv/wEoqzDyXXME4AFfkZI0P23z6Fs3YgymDnKJkCGOnkL0iTxCa85UTqaSgfcqyf3UA6+c7wUvx/16g=="],
 
     "axobject-query": ["axobject-query@4.1.0", "", {}, "sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ=="],
+
+    "babel-plugin-react-compiler": ["babel-plugin-react-compiler@19.0.0-beta-27714ef-20250124", "", { "dependencies": { "@babel/types": "^7.19.0" } }, "sha512-1AnF/dlvbIJzAjw5jEbDx7csHx772VP9AtrEg2CgUUD6MIu24j5ShxmBZ0tpfdb2pZtLVwcsoGylfZTzUoCr9w=="],
 
     "bail": ["bail@2.0.2", "", {}, "sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw=="],
 

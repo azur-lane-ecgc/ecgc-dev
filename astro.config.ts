@@ -6,6 +6,12 @@ import tailwind from "@astrojs/tailwind"
 
 import sitemap from "@astrojs/sitemap"
 
+const ReactCompilerConfig = {
+  sources: (filename: string) => {
+    return filename.endsWith(".tsx")
+  },
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://samheart564.github.io/test_ecgc_2/",
@@ -27,5 +33,12 @@ export default defineConfig({
     json: {
       stringify: true,
     },
+    plugins: [
+      react({
+        babel: {
+          plugins: [["babel-plugin-react-compiler", ReactCompilerConfig]],
+        },
+      }),
+    ],
   },
 })
