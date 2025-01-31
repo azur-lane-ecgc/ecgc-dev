@@ -40797,7 +40797,7 @@
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Tank"
+      "Healer"
     ],
     "locations": {
       "events": [
@@ -50917,8 +50917,7 @@
     "samEval": "Azuma is a tank-oriented CB with amazing stats and skills. Her bulk is very high, and she can equip the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/VH_Armor_Plating\" title=\"VH Armor Plating\" >VH Armor Plating</a > to situationally improve it. Her personal damage is also very good, with MGM+1 CB Guns and good barrages. She is ideally equipped with a CB gun to take full advantage of her self-buffs. Overall, she is an amazing ship, but not high priority if you have other UR CBs already.",
     "fastLoad": "",
     "roles": [
-      "Tank",
-      "SuperTank"
+      "Tank"
     ],
     "locations": {
       "events": [],
