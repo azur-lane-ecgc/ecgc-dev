@@ -125,7 +125,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
         <div id={id.toString()} className="relative">
           <div className="fake-modal-link" ref={ref}>
             <div
-              className={`icon border-radius-0 ${isVisible ? `rarity-${rarity}` : ""}`}
+              className={`icon border-radius-0 ${isVisible ? `rarity-${rarity}` : ``}`}
             >
               {isVisible ? (
                 <img
@@ -232,7 +232,13 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     title={ship}
                     href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
                   >
-                    <img loading="lazy" src={`${shipImg}`} alt={`${ship}`} />
+                    <img
+                      width={116}
+                      height={116}
+                      loading="lazy"
+                      src={`${shipImg}`}
+                      alt={`${ship}`}
+                    />
                   </a>
                 </div>
 
