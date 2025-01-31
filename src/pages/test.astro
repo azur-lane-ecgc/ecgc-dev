@@ -3,10 +3,14 @@ import GuidePageLayout from "@layouts/guides/GuidePageLayout.astro"
 import GuideHeading from "@components/_common/GuideHeading.astro"
 import { HR } from "@components/_common/HR"
 import WikiLink from "@components/_common/WikiLink.astro"
-
 import { ImageCarousel } from "@components/_common/ImageCarousel"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
+
+import type { ShipData } from "@data/ship_data/types"
+const ships: Record<number, ShipData> = (await import(
+  "@data/ship_data/ship_data.json"
+).then((module) => module.default)) as Record<number, ShipData>
 
 const data = [
   {
@@ -65,7 +69,7 @@ const data = [
   <ItemContainer>
     <ShipModal
       client:visible={{ rootMargin: "20px" }}
-      id={142}
+      shipData={ships[142]}
       trigger={{
         iconNote: "CVL",
         descriptionNote: "Really good ship Really good ship",
@@ -75,7 +79,7 @@ const data = [
     />
     <ShipModal
       client:visible={{ rootMargin: "20px" }}
-      id={576}
+      shipData={ships[576]}
       trigger={{
         iconNote: null,
         descriptionNote: null,
@@ -85,7 +89,7 @@ const data = [
     />
     <ShipModal
       client:visible={{ rootMargin: "50px" }}
-      id={142}
+      shipData={ships[142]}
       trigger={{
         iconNote: "CVL",
         descriptionNote: `<a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a> is cute.`,
