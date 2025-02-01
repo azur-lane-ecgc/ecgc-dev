@@ -731,6 +731,11 @@
     "fileName": "Samvaluations",
     "toc": [
       {
+        "id": "evaluations",
+        "content": "Evaluations",
+        "subheadings": []
+      },
+      {
         "id": "third_party",
         "content": "Third-Party Tools",
         "subheadings": [
@@ -747,11 +752,6 @@
       {
         "id": "notes",
         "content": "Notes",
-        "subheadings": []
-      },
-      {
-        "id": "evaluations",
-        "content": "Evaluations",
         "subheadings": []
       }
     ]
