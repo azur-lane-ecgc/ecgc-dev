@@ -6,6 +6,8 @@ import {
   aaRole,
   aswRole,
   aaCarryRole,
+  damageDealer,
+  strongDamageDealer,
 } from "./data"
 
 const tanks = tankRole()
@@ -15,6 +17,8 @@ const preloadShips = preloadRole()
 const aaShips = aaRole()
 const aaCarryShips = aaCarryRole()
 const aswShips = aswRole()
+const damageDealerShips = damageDealer()
+const strongDamageDealers = strongDamageDealer()
 
 export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
   let roles: Array<string> = []
@@ -38,6 +42,14 @@ export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
   // <add here>
 
   // global roles
+  if (damageDealerShips.has(ship)) {
+    roles.push("DmgDealer")
+  }
+
+  if (strongDamageDealers.has(ship)) {
+    roles.push("TopDmg")
+  }
+
   if (aaShips.has(ship)) {
     roles.push("AA")
   }

@@ -24,5 +24,11 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
       className="w-[32px] h-auto text-red-300"
     />
   ),
+  DmgDealer: (
+    <i className="fa-solid fa-shuttle-space text-orange-400 text-[25px] h-auto" />
+  ),
+  TopDmg: (
+    <i className="fa-solid fa-shuttle-space text-orange-700 text-[25px] h-auto" />
+  ),
   default: <i className="fa-solid fa-heart text-red-400 text-[30px] h-auto" />,
 }

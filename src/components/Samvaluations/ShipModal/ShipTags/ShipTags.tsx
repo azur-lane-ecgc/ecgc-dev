@@ -13,16 +13,24 @@ interface ShipTags {
 }
 
 const trimRoles = (roles: string[]): string[] => {
+  // Super Tank & Tank
   if (roles.includes("SuperTank") && roles.includes("Tank")) {
     roles = roles.filter((role) => role != "Tank")
   }
 
+  // Fast Load & Preload
   if (roles.includes("FastLoad") && roles.includes("Preload")) {
     roles = roles.filter((role) => role != "FastLoad")
   }
 
+  // AA Carry & AA Average
   if (roles.includes("AA") && roles.includes("AACarry")) {
     roles = roles.filter((role) => role != "AA")
+  }
+
+  // Strong Damage Dealer & Average Damage Dealer
+  if (roles.includes("DmgDealer") && roles.includes("TopDmg")) {
+    roles = roles.filter((role) => role != "DmgDealer")
   }
 
   return roles
@@ -149,7 +157,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
               key={role}
               className="w-[40px] h-[40px] relative overflow-hidden flex items-center justify-center"
             >
-              {RoleIcons[role]}
+              {RoleIcons[role] || RoleIcons["default"]}
             </div>
           ))}
         </div>
