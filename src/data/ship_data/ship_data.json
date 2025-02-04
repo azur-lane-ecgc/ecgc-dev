@@ -40840,7 +40840,7 @@
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "Tank"
     ],
     "locations": {
       "events": [
@@ -50988,6 +50988,7 @@
     "fastLoad": "",
     "roles": [
       "Tank",
+      "SuperTank",
       "DmgDealer",
       "TopDmg"
     ],
