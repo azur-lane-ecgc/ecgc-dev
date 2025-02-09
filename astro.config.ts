@@ -13,11 +13,15 @@ export default defineConfig({
     tailwind(),
     react(),
     sitemap(),
-    // (await import("@playform/compress")).default({
-    //   CSS: false,
-    //   HTML: false,
-    //   JavaScript: false,
-    // }),
+    (await import("@playform/compress")).default({
+      CSS: false,
+      HTML: false,
+      JavaScript: false,
+      Exclude: [
+        (File: string) =>
+          File.includes("SiteIcon"),
+      ],
+    }),
   ],
   base: "/test_ecgc_2/",
   output: "static",
