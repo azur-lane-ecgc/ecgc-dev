@@ -21,7 +21,7 @@
     "@playform/compress": "^0.1.7",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "astro": "^5.2.5",
+    "astro": "^5.3.0",
     "babel-plugin-react-compiler": "^19.0.0-beta-e552027-20250112",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -30,7 +30,7 @@
     "typescript": "^5.7.3"
   },
   "devDependencies": {
-    "@happy-dom/global-registrator": "^16.8.1",
+    "@happy-dom/global-registrator": "^17.1.0",
     "@types/bun": "^1.2.2"
   },
   "private": true
