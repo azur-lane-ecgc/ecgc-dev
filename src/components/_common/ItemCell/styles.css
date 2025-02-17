@@ -58,6 +58,7 @@
 .shipCellHover:focus-within {
   border: 1px solid orange !important;
   background-color: #3b444bb9;
+  outline: 1px solid orange !important;
 }
 
 /* cell */
