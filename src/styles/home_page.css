@@ -1,5 +1,6 @@
-/* global styles */
+@import "./global.css";
 
+/* global styles */
 html {
   scroll-behavior: smooth;
 }

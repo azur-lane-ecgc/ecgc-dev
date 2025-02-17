@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* Old button behavior */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Custom container styles */
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+}
+
+/* Custom colors */
+@layer utilities {
+  :root {
+    --ecgc-primary: #121212;
+    --ecgc-secondary: #1b1b1b;
+  }
+
+  .bg-ecgc-primary {
+    background-color: var(--ecgc-primary);
+  }
+
+  .bg-ecgc-secondary {
+    background-color: var(--ecgc-secondary);
+  }
+
+  .text-ecgc-primary {
+    color: var(--ecgc-primary);
+  }
+
+  .text-ecgc-secondary {
+    color: var(--ecgc-secondary);
+  }
+}
