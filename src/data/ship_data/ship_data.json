@@ -2368,6 +2368,7 @@
       }
     ],
     "augments": [
+      "Super Bubblegum Pro Max",
       "Crossbow",
       "Sword"
     ],
@@ -12850,13 +12851,14 @@
       }
     ],
     "augments": [
+      "Ryuuki Full Moon",
       "Greatsword",
       "Lance"
     ],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": [
-      "Healer"
+      "DmgDealer"
     ],
     "locations": {
       "events": [

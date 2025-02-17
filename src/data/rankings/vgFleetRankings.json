@@ -758,8 +758,8 @@
     "Atago": [
         {
             "nameNote": "",
-            "notes": null,
-            "hardarbiter": "D",
+            "notes": "Augment adds about 69% more damage to a bad ship, making Atago decent now. Nice.",
+            "hardarbiter": "C",
             "meta": "D",
             "cm": "D",
             "w14mob": "D",
@@ -767,14 +767,14 @@
             "w15mob": "D",
             "w15boss": "D",
             "ex": "D",
-            "consistency": -1,
+            "consistency": null,
             "fleetreq": null,
             "gearreq": null,
             "flagreq": null,
-            "lightdmg": 1,
-            "mediumdmg": 1,
+            "lightdmg": 2,
+            "mediumdmg": 2,
             "heavydmg": 1,
-            "aoedmg": 1,
+            "aoedmg": 2,
             "offensivebuff": null,
             "selfsurvival": 2,
             "aa": null,
@@ -2243,7 +2243,7 @@
     "Columbia": [
         {
             "nameNote": "",
-            "notes": null,
+            "notes": "Augment adds about 15% more damage, including the new weak barrage.",
             "hardarbiter": "D",
             "meta": "D",
             "cm": "D",
