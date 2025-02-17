@@ -109,7 +109,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
       {/* Trigger "button" */}
       <div
         id={`${id}`}
-        className={`${modalTriggerStyle} ${!!trigger?.hasBorder ? "border-gray-400" : "border-transparent"}`}
+        className={`${modalTriggerStyle} ${
+          !!trigger?.hasBorder ? "border-gray-400" : "border-transparent"
+        }`}
         onClick={handleOpen}
         tabIndex={0}
         role="button"
@@ -125,7 +127,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
         <div className="relative">
           <div className="fake-modal-link" ref={ref}>
             <div
-              className={`icon border-radius-0 ${isVisible ? `rarity-${rarity}` : ``}`}
+              className={`icon border-radius-0 ${
+                isVisible ? `rarity-${rarity}` : ``
+              }`}
             >
               {isVisible ? (
                 <img
@@ -211,7 +215,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   className={`${shipLinkStyle}`}
                   rel="noopener noreferrer"
                   target="_blank"
-                  href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
+                  href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(
+                    " ",
+                    "_",
+                  )}`}
                 >
                   {isKai ? ship + " (Retrofit)" : ship}
                 </a>
@@ -230,7 +237,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     rel="noopener noreferrer"
                     target="_blank"
                     title={ship}
-                    href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
+                    href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(
+                      " ",
+                      "_",
+                    )}`}
                   >
                     <img
                       width={116}
@@ -300,7 +310,10 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                           <a
                             rel="noopener noreferrer"
                             target="_blank"
-                            href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(" ", "_")}`}
+                            href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(
+                              " ",
+                              "_",
+                            )}`}
                           >
                             {augment}
                           </a>
