@@ -11,16 +11,14 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap(),
-    // (await import("@playform/compress")).default({
-    //   CSS: false,
-    //   HTML: false,
-    //   JavaScript: false,
-    //   Exclude: [
-    //     (File: string) =>
-    //       File.includes("SiteIcon"),
-    //   ],
-    // }),
+    (await import("@playform/compress")).default({
+      CSS: false,
+      HTML: false,
+      JavaScript: false,
+      Exclude: [(File: string) => File.includes("SiteIcon")],
+    }),
   ],
+  build: { format: "file" },
   base: "/test_ecgc_2/",
   output: "static",
   trailingSlash: "never",
