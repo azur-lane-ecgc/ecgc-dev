@@ -18,10 +18,9 @@ export default defineConfig({
       Exclude: [(File: string) => File.includes("SiteIcon")],
     }),
   ],
-  build: { format: "file" },
   base: "/test_ecgc_2/",
   output: "static",
-  trailingSlash: "never",
+  trailingSlash: "always",
   devToolbar: { enabled: false },
   vite: {
     json: {

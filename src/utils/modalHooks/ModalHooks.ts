@@ -41,7 +41,7 @@ export const useModalHistory = (
 
     if (open) {
       history.replaceState(null, "", basePath)
-      history.pushState(null, "", `${basePath}/#/${id}`)
+      history.pushState(null, "", `${basePath}#/${id}`)
     }
 
     const handleHashChange = () => {
