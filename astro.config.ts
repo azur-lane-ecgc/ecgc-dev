@@ -25,7 +25,7 @@ export default defineConfig({
   ],
   base: "/test_ecgc_2/",
   output: "static",
-  trailingSlash: "ignore",
+  trailingSlash: "never",
   devToolbar: { enabled: false },
   vite: {
     json: {
