@@ -37,21 +37,17 @@ export const useModalHistory = (
   setOpen: (open: boolean) => void,
 ) => {
   useEffect(() => {
-    // if (window.location.hash.includes(id)) {
-    //   setOpen(true)
-    //   return
-    // }
+    const basePath = window.location.pathname
 
     if (open) {
-      history.replaceState(null, "", window.location.pathname)
-      history.pushState(null, "", `#${id}`)
+      history.replaceState(null, "", basePath)
+      history.pushState(null, "", `${basePath}/#/${id}`)
     }
 
     const handleHashChange = () => {
       if (open) {
         setOpen(false)
-
-        history.replaceState(null, "", window.location.pathname)
+        history.replaceState(null, "", basePath)
       }
     }
 
@@ -60,7 +56,7 @@ export const useModalHistory = (
     return () => {
       window.removeEventListener("hashchange", handleHashChange)
       if (open) {
-        history.replaceState(null, "", window.location.pathname)
+        history.replaceState(null, "", basePath)
       }
     }
   }, [id, open, setOpen])
