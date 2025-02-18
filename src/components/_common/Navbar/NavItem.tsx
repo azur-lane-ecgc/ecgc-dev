@@ -44,12 +44,14 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
           <span>
             {page.name}{" "}
             <i
-              className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
+              className={`fas ${
+                isOpen ? `fa-chevron-up` : `fa-chevron-down`
+              } ml-1 text-xs`}
             />
           </span>
         </button>
         {isOpen && (
-          <div className="absolute left-0 mt-2 min-w-fit rounded-md shadow-lg bg-[#222a42] ring-1 ring-black ring-opacity-5 z-[70]">
+          <div className="absolute left-0 mt-2 min-w-fit rounded-md shadow-lg bg-[#222a42] ring-1 ring-black/5 z-[70]">
             <div
               role="menu"
               aria-orientation="vertical"

@@ -64,7 +64,9 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
       {/* Trigger "button" */}
       <div
         id={`${name.replaceAll(" ", "_")}`}
-        className={`${modalTriggerStyle} ${!!trigger?.hasBorder ? "border-gray-400" : "border-transparent"}`}
+        className={`${modalTriggerStyle} ${
+          !!trigger?.hasBorder ? "border-gray-400" : "border-transparent"
+        }`}
         onClick={handleOpen}
         tabIndex={0}
         role="button"
@@ -79,13 +81,17 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
         <div className="relative">
           <div className="fake-modal-link">
             <div
-              className={`icon rarity-${Array.isArray(rarity) ? rarity[1] : rarity} border-radius-0`}
+              className={`icon rarity-${
+                Array.isArray(rarity) ? rarity[1] : rarity
+              } border-radius-0`}
             >
               <img
                 width={56}
                 height={56}
                 loading="lazy"
-                src={`/test_ecgc_2/images/${Array.isArray(imgUrl) ? imgUrl[1] : imgUrl}`}
+                src={`/test_ecgc_2/images/${
+                  Array.isArray(imgUrl) ? imgUrl[1] : imgUrl
+                }`}
                 alt={`${item.name}`}
               />
             </div>
@@ -155,7 +161,10 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   className={`${shipLinkStyle}`}
                   rel="noopener noreferrer"
                   target="_blank"
-                  href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+                  href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(
+                    " ",
+                    "_",
+                  )}`}
                 >
                   {name}
                 </a>
@@ -182,10 +191,15 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                             rel="noopener noreferrer"
                             target="_blank"
                             title={name}
-                            href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+                            href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(
+                              " ",
+                              "_",
+                            )}`}
                           >
                             <img
                               loading="lazy"
+                              width={100}
+                              height={100}
                               src={`/test_ecgc_2/images/${url}`}
                               alt={`${name} - Image ${index + 1}`}
                             />
@@ -193,16 +207,21 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                         </div>
                       ))
                     ) : (
-                      <div className={`rarity-${rarity} ${shipIconStyle}`}>
+                      <div className={`rarity-${rarity} ${shipIconStyle} `}>
                         <a
                           className={shipLinkStyle}
                           rel="noopener noreferrer"
                           target="_blank"
                           title={name}
-                          href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+                          href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(
+                            " ",
+                            "_",
+                          )}`}
                         >
                           <img
                             loading="lazy"
+                            width={100}
+                            height={100}
                             src={`/test_ecgc_2/images/${imgUrl}`}
                             alt={`${name}`}
                           />
@@ -326,10 +345,15 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                       rel="noopener noreferrer"
                       target="_blank"
                       title={name}
-                      href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+                      href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(
+                        " ",
+                        "_",
+                      )}`}
                     >
                       <img
                         loading="lazy"
+                        width={100}
+                        height={100}
                         src={`/test_ecgc_2/images/${imgUrl}`}
                         alt={`${name}`}
                       />

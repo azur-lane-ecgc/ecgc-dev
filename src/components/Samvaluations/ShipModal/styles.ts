@@ -2,7 +2,7 @@ export const modalTriggerStyle =
   "border modifiedShipRowCell text-center cursor-pointer shipCellHover"
 
 export const modalOverlayStyle =
-  "h-[100%] w-[100%] fixed inset-0 bg-black bg-opacity-40 z-[99] overflow-y-auto"
+  "h-[100%] w-[100%] fixed inset-0 bg-black/40 z-[99] overflow-y-auto"
 export const modalStyle =
   "bg-ecgc-secondary rounded-lg shadow-lg w-full md:min-w-[750px] md:w-7/12 p-7 relative my-[1.75rem] mx-auto min-w-[300px] overflow-auto z-[100]"
 
@@ -33,7 +33,7 @@ export const letterRankColor = (rank: string | null | undefined): string => {
   }
 
   return rank != null
-    ? (getLetterRankColor[rank.replaceAll(/\*/g, "")] ?? "")
+    ? getLetterRankColor[rank.replaceAll(/\*/g, "")] ?? ""
     : ""
 }
 
@@ -56,5 +56,5 @@ export const numberRankColor = (
     "6": "bg-red-600",
   }
 
-  return rank != null ? (getNumberRankColor[rank.toString()] ?? "") : ""
+  return rank != null ? getNumberRankColor[rank.toString()] ?? "" : ""
 }
