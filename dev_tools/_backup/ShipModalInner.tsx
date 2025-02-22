@@ -2,7 +2,7 @@ import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 
-import type { ShipData } from "@data/ship_data/types"
+import type { ShipData } from "@db/ship_data/types"
 
 import { parseEquipHref, shipImageParse } from "@utils/ships"
 
@@ -100,7 +100,10 @@ export const ShipModalInner: React.FC<ShipModalInner> = ({
               className={`${shipLinkStyle}`}
               rel="noopener noreferrer"
               target="_blank"
-              href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
+              href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(
+                " ",
+                "_",
+              )}`}
             >
               {isKai ? ship + " (Retrofit)" : ship}
             </a>
@@ -117,7 +120,10 @@ export const ShipModalInner: React.FC<ShipModalInner> = ({
                 rel="noopener noreferrer"
                 target="_blank"
                 title={ship}
-                href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(" ", "_")}`}
+                href={`https://azurlane.koumakan.jp/wiki/${ship.replaceAll(
+                  " ",
+                  "_",
+                )}`}
               >
                 <img loading="lazy" src={`${shipImg}`} alt={`${ship}`} />
               </a>
@@ -179,7 +185,10 @@ export const ShipModalInner: React.FC<ShipModalInner> = ({
                       <a
                         rel="noopener noreferrer"
                         target="_blank"
-                        href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(" ", "_")}`}
+                        href={`https://azurlane.koumakan.jp/wiki/${augment.replaceAll(
+                          " ",
+                          "_",
+                        )}`}
                       >
                         {augment}
                       </a>

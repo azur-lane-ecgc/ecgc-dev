@@ -7,9 +7,9 @@ import { ImageCarousel } from "@components/_common/ImageCarousel"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 
-import type { ShipData } from "@data/ship_data/types"
+import type { ShipData } from "@db/ship_data/types"
 const ships: Record<number, ShipData> = (await import(
-  "@data/ship_data/ship_data.json"
+  "@db/ship_data/ship_data.json"
 ).then((module) => module.default)) as Record<number, ShipData>
 
 const data = [

@@ -2,22 +2,22 @@ import type {
   VanguardFleetRankingProps,
   MainFleetRankingProps,
   SSFleetRankingProps,
-} from "@data/rankings/types"
+} from "@db/rankings/types"
 
 import { isDecentVG, isDecentMainFleet, isDecentSSFleet } from "../decentShips"
 
 const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@data/rankings/vgFleetRankings.json").then(
+  (await import("@db/rankings/vgFleetRankings.json").then(
     (module) => module.default,
   )) as Record<string, VanguardFleetRankingProps[]>
 
 const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
-  (await import("@data/rankings/mainFleetRankings.json").then(
+  (await import("@db/rankings/mainFleetRankings.json").then(
     (module) => module.default,
   )) as Record<string, MainFleetRankingProps[]>
 
 const SSFleetRankingData: Record<string, SSFleetRankingProps[]> = (await import(
-  "@data/rankings/ssFleetRankings.json"
+  "@db/rankings/ssFleetRankings.json"
 ).then((module) => module.default)) as Record<string, SSFleetRankingProps[]>
 
 const isDamageDealer = (

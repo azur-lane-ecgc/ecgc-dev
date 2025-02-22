@@ -6,7 +6,7 @@ import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 import { IconSkeleton } from "@components/_common/Skeleton"
 
-import type { ShipData } from "@data/ship_data/types"
+import type { ShipData } from "@db/ship_data/types"
 
 import {
   useBodyOverflow,

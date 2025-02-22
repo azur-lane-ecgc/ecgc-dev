@@ -3,12 +3,12 @@ import { useState } from "react"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 
-import type { ShipData } from "@data/ship_data/types"
+import type { ShipData } from "@db/ship_data/types"
 
 import { formatLocation } from "@utils/formatLocation"
 
 const ships: Record<number, ShipData> = (await import(
-  "@data/ship_data/ship_data.json"
+  "@db/ship_data/ship_data.json"
 ).then((module) => module.default)) as Record<number, ShipData>
 
 export const SamvaluationModalFilter = () => {
@@ -26,7 +26,9 @@ export const SamvaluationModalFilter = () => {
               shipData={ship}
               trigger={{
                 iconNote: "Rank: SS",
-                descriptionNote: `Events: ${formatLocation(ship.locations.events)}`,
+                descriptionNote: `Events: ${formatLocation(
+                  ship.locations.events,
+                )}`,
                 largeDescNote: false,
                 hasBorder: true,
               }}

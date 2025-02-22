@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import { HR } from "@components/_common/HR"
 import { TocLink } from "./TocLink"
-import globalTOC from "@data/toc/TocContent.json"
+import globalTOC from "@db/toc/TocContent.json"
 
 import "./styles.css"
 
@@ -62,7 +62,9 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
       {/* <!-- Table of Contents (SideNav) --> */}
       <button
         id="sidenavButton"
-        className={`btn custom-sidenav-button ${isToggle ? "toggle" : ""} ${isSidenavCollapse ? "custom-sidenav-collapse" : ""}`}
+        className={`btn custom-sidenav-button ${isToggle ? "toggle" : ""} ${
+          isSidenavCollapse ? "custom-sidenav-collapse" : ""
+        }`}
         onClick={toggleFunction}
       >
         <i id="sidenavToggleUp" className="fa fa-angle-double-up" />
@@ -75,7 +77,9 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
 
       <div
         id="sidenav"
-        className={`sidenav overflow-auto ${isToggle ? "toggle" : ""} ${isSidenavCollapse ? "custom-sidenav-collapse" : ""}`}
+        className={`sidenav overflow-auto ${isToggle ? "toggle" : ""} ${
+          isSidenavCollapse ? "custom-sidenav-collapse" : ""
+        }`}
       >
         <div className="container m-auto">
           <span className="block md:hidden sidenav-header">

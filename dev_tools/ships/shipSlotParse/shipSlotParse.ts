@@ -1,5 +1,5 @@
 import type { SlotData } from "@ALData/types/ships"
-import type { SlotProps } from "@data/ship_data/types"
+import type { SlotProps } from "@db/ship_data/types"
 
 const SlotMap: { [key: number]: string } = {
   0: "Unknown",

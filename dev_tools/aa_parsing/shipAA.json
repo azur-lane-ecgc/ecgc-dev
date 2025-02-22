@@ -11,6 +11,11 @@
             "percentSD": "113.86%"
         },
         {
+            "name": "San Diego (EU AA)",
+            "totalAA": "3818",
+            "percentSD": "105.34%"
+        },
+        {
             "name": "San Diego",
             "totalAA": "3625",
             "percentSD": "100.00%"

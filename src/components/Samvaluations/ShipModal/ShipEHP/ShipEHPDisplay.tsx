@@ -2,11 +2,11 @@ import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 import { ehpUpdateDate } from "@components/_common/Constants"
 
-import type { ShipEHPProps } from "@data/ehp/types"
+import type { ShipEHPProps } from "@db/ehp/types"
 
 import { formatDate } from "@utils/formatDate"
 
-import jsonEHP from "@data/ehp/shipEHP.json"
+import jsonEHP from "@db/ehp/shipEHP.json"
 const shipEHPData = jsonEHP as Record<string, ShipEHPProps[]>
 
 interface ShipEHPDisplayProps {

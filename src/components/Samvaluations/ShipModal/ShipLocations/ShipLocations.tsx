@@ -1,4 +1,4 @@
-import type { shipLocation, ShipLocationData } from "@data/ship_data/types"
+import type { shipLocation, ShipLocationData } from "@db/ship_data/types"
 
 interface ShipLocationProps {
   locations: ShipLocationData

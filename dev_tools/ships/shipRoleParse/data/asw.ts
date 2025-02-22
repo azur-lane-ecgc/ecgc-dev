@@ -1,9 +1,9 @@
-import type { VanguardFleetRankingProps } from "@data/rankings/types"
+import type { VanguardFleetRankingProps } from "@db/rankings/types"
 
 import { isDecentVG } from "../decentShips"
 
 const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@data/rankings/vgFleetRankings.json").then(
+  (await import("@db/rankings/vgFleetRankings.json").then(
     (module) => module.default,
   )) as Record<string, VanguardFleetRankingProps[]>
 

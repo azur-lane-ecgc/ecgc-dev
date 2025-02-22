@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import type { ShipData } from "@data/ship_data/types"
+import type { ShipData } from "@db/ship_data/types"
 
 // hook to get ship data
 export const useShipData = (id: number, isVisible: boolean) => {
@@ -10,7 +10,7 @@ export const useShipData = (id: number, isVisible: boolean) => {
       if (isVisible && !shipData) {
         try {
           const fetchShips: Record<number, ShipData> = (await import(
-            "@data/ship_data/ship_data.json"
+            "@db/ship_data/ship_data.json"
           ).then((module) => module.default)) as Record<number, ShipData>
           setShipData(fetchShips[id])
         } catch (error) {
