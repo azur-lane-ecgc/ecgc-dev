@@ -10,7 +10,7 @@ SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
 SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 SHEET_NAMES = ["VG (no img)"]
 OUTPUT_PATHS = [
-    "src/data/rankings/vgFleetRankings.json"
+    "src/db/rankings/vgFleetRankings.json"
 ]
 
 

@@ -3,10 +3,7 @@ import path from "path"
 
 import { pageInfo } from "../_pageInfo.js"
 
-const outputFilePath = path.join(
-  process.cwd(),
-  "./src/data/toc/TocContent.json",
-)
+const outputFilePath = path.join(process.cwd(), "./src/db/toc/TocContent.json")
 
 const initializeJsonFile = async () => {
   await fs.promises.writeFile(

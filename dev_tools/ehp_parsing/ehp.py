@@ -9,7 +9,7 @@ SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
 SPREADSHEET_ID = "1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
 SHEET_NAMES = ["eHP 3"]
 OUTPUT_PATHS = [
-    "src/data/ehp/shipEHP.json",
+    "src/db/ehp/shipEHP.json",
 ]
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
