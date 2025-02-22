@@ -1,1 +1,1 @@
-export * from './hullTypeLink'
+export * from "./hullTypeLink"

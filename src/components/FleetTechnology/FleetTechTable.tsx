@@ -155,7 +155,9 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
                 {tableInfo.map((col, index) => (
                   <th
                     key={index}
-                    className={`${col?.limiter && "ship_table_limiter"} px-1 relative`}
+                    className={`${
+                      col?.limiter && "ship_table_limiter"
+                    } px-1 relative`}
                     onClick={() => handleSort(col.key)}
                   >
                     <div className="flex cursor-pointer">
@@ -206,7 +208,9 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
                             <a
                               rel="noopener noreferrer"
                               target="_blank"
-                              href={`https://azurlane.koumakan.jp/wiki/${parseLocation(entry.event)}`}
+                              href={`https://azurlane.koumakan.jp/wiki/${parseLocation(
+                                entry.event,
+                              )}`}
                               title={entry.event}
                             >
                               {entry.event}

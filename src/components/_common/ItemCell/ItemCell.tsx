@@ -42,13 +42,20 @@ export const ItemCell: React.FC<ItemCellProps> = ({
 }) => {
   const itemCell = (
     <div
-      className={`border ${hasBorder ? "border-gray-400" : "border-transparent"} ${hover ? `shipCellHover` : ""} modifiedShipRowCell text-center ${className}`}
+      className={`border ${
+        hasBorder ? "border-gray-400" : "border-transparent"
+      } ${
+        hover ? `shipCellHover` : ""
+      } modifiedShipRowCell text-center ${className}`}
     >
       <div className="relative">
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(" ", "_")}`}
+          href={`https://azurlane.koumakan.jp/wiki/${wikiLink.replaceAll(
+            " ",
+            "_",
+          )}`}
           title={item}
           aria-label={item}
         >

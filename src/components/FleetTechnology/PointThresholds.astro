@@ -10,7 +10,7 @@ interface Props {
 const { faction } = Astro.props
 
 const factionData = allFactionData.find(
-  (data) => data.faction.toLowerCase() === faction.toLowerCase()
+  (data) => data.faction.toLowerCase() === faction.toLowerCase(),
 )
 ---
 

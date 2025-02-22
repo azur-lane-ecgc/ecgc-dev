@@ -45,10 +45,14 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       {/* Small Screen Tag Trigger */}
       <button
         onClick={() => setRoleDropdown(!roleDropdownOpen)}
-        className={`bg-[#3b444bb9] absolute top-0 left-0 p-[4px] rounded-lg text-base flex items-center space-x-2 border-2 border-gray-400 text-gray-300 ${roleDropdownOpen ? "border-pink-300 text-amber-500" : ""} hover:text-cyan-300 hover:border-amber-500 md:hidden`}
+        className={`bg-[#3b444bb9] absolute top-0 left-0 p-[4px] rounded-lg text-base flex items-center space-x-2 border-2 border-gray-400 text-gray-300 ${
+          roleDropdownOpen ? "border-pink-300 text-amber-500" : ""
+        } hover:text-cyan-300 hover:border-amber-500 md:hidden`}
       >
         <i
-          className={`fa-solid translate-y-[1px] ${roleDropdownOpen ? "fa-angle-up" : "fa-angle-down"}`}
+          className={`fa-solid translate-y-[1px] ${
+            roleDropdownOpen ? "fa-angle-up" : "fa-angle-down"
+          }`}
         />
       </button>
 

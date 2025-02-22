@@ -76,7 +76,9 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
       </div>
 
       <i
-        className={`carousel-toggle cc fa-solid ${caption ? "fa-eye" : "fa-eye-slash"}`}
+        className={`carousel-toggle cc fa-solid ${
+          caption ? "fa-eye" : "fa-eye-slash"
+        }`}
         onClick={() => {
           setCaption((prev) => !prev)
           setuserInteract(true)
@@ -85,7 +87,9 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
       {!isOneElement && (
         <>
           <i
-            className={`carousel-toggle cycle fa-solid ${play ? "fa-pause" : "fa-play"}`}
+            className={`carousel-toggle cycle fa-solid ${
+              play ? "fa-pause" : "fa-play"
+            }`}
             onClick={() => setPlay((prev) => !prev)}
           />
           <i

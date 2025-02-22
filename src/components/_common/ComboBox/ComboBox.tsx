@@ -96,7 +96,9 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       <p className="mb-1 font-bold text-fuchsia-400">{title}</p>
       <button
         id={`${title}_input`}
-        className={`px-1 py-2 w-48 max-w-48 ${showOptions ? "bg-[#2e343a]" : "bg-[#212529]"} hover:bg-[#394047] border border-green-800 rounded-md shadow-lg`}
+        className={`px-1 py-2 w-48 max-w-48 ${
+          showOptions ? "bg-[#2e343a]" : "bg-[#212529]"
+        } hover:bg-[#394047] border border-green-800 rounded-md shadow-lg`}
         onClick={() => setShowOptions((prev) => !prev)}
       >
         <div className="flex">

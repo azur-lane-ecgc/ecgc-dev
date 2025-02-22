@@ -172,7 +172,11 @@ export const CommonResourceModalFilter: React.FC<
                   propMapping[filterState.selectedTimeframe as string]
                 const timeframeValue = item.total[timeframeKey]
 
-                const descriptionNote = `${timeframeValue}${typeof timeframeValue === "number" ? timeframeMapping[filterState.selectedTimeframe!] : ""}`
+                const descriptionNote = `${timeframeValue}${
+                  typeof timeframeValue === "number"
+                    ? timeframeMapping[filterState.selectedTimeframe!]
+                    : ""
+                }`
 
                 return (
                   <ResourceModal

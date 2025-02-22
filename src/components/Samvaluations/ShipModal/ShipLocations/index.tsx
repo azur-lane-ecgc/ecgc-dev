@@ -1,1 +1,1 @@
-export * from './ShipLocations'
+export * from "./ShipLocations"

@@ -41,7 +41,9 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
           <span>
             {page.name}{" "}
             <i
-              className={`fas ${isOpen ? `fa-chevron-up` : `fa-chevron-down`} ml-1 text-xs`}
+              className={`fas ${
+                isOpen ? `fa-chevron-up` : `fa-chevron-down`
+              } ml-1 text-xs`}
             />
           </span>
         </button>

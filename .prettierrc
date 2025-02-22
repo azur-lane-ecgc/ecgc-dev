@@ -1,5 +1,9 @@
 {
   "semi": false,
   "singleQuote": false,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "plugins": ["prettier-plugin-astro"],
+  "useTabs": false,
+  "tabWidth": 2,
+  "endOfLine": "lf"
 }

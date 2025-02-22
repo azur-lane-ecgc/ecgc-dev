@@ -30,11 +30,11 @@ const {
 } = Astro.props
 
 const changelogComponents = Object.values(
-  import.meta.glob("../../components/Changelog/*.astro", { eager: true })
+  import.meta.glob("../../components/Changelog/*.astro", { eager: true }),
 ) as AstroInstance[]
 
 const ChangelogContent = changelogComponents.find((component) =>
-  component.file.includes(`Changelog${year}Content`)
+  component.file.includes(`Changelog${year}Content`),
 )?.default
 ---
 

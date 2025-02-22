@@ -114,7 +114,9 @@ export const ToolTable: React.FC<ToolTableProps> = ({ category }) => {
             {tableInfo.map((col, index) => (
               <th
                 key={index}
-                className={`${col?.limiter && "ship_table_limiter"} px-1 relative`}
+                className={`${
+                  col?.limiter && "ship_table_limiter"
+                } px-1 relative`}
                 onClick={() => handleSort(col.key)}
               >
                 <div className="flex cursor-pointer">

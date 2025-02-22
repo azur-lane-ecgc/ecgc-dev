@@ -4,7 +4,7 @@ import { getStaticPaths } from "./[year].astro"
 const paths = await getStaticPaths()
 
 return Astro.redirect(
-  `/test_ecgc_2/changelog/${paths[paths.length - 1].params.year}`
+  `/test_ecgc_2/changelog/${paths[paths.length - 1].params.year}`,
 )
 ---
 

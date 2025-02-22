@@ -1,1 +1,1 @@
-export * from './shipimageParse'
+export * from "./shipimageParse"

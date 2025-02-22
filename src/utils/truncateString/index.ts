@@ -1,1 +1,1 @@
-export * from './truncateString'
+export * from "./truncateString"

@@ -1,1 +1,1 @@
-export * from './parseLocation'
+export * from "./parseLocation"
