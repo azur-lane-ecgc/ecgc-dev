@@ -23,7 +23,6 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "astro": "^5.3.0",
-    "babel-plugin-react-compiler": "^19.0.0-beta-e552027-20250112",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-intersection-observer-hook": "^3.0.1",
