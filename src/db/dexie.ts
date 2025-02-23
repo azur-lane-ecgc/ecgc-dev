@@ -41,7 +41,7 @@ class ShipDatabase extends Dexie {
     this.version(1).stores({
       ships:
         "&id, ship, faction, rarity, hullType, fleetType, roles, *locationNames",
-      info: "&key", // Stores metadata like last known hash
+      info: "&key",
     })
     this.ships = this.table("ships")
     this.info = this.table("info")
@@ -57,21 +57,7 @@ const extractLocationNames = (locations: ShipLocationData): string[] => {
   ]
 }
 
-export const clearAllDatabases = async () => {
-  const databases = await indexedDB.databases()
-  if (databases.length === 0) {
-    return
-  }
-  for (const db of databases) {
-    if (db.name) {
-      console.log(`Deleting IndexedDB: ${db.name}`)
-      indexedDB.deleteDatabase(db.name)
-    }
-  }
-}
-
 export const populateDatabase = async () => {
-  await clearAllDatabases()
   await db.ships.clear()
   const allShips: AllShipData[] = Object.values(shipData).map((ship) => ({
     ...ship,
