@@ -83,7 +83,6 @@ const writeShipDataToFile = async (
       faction,
       rarity,
       isKai,
-      hull,
       hullType,
       fleetType,
       LBBonus,
