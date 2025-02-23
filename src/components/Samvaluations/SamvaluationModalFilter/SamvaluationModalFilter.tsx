@@ -17,7 +17,7 @@ export const SamvaluationModalFilter = () => {
 
   useEffect(() => {
     checkAndUpdateDatabase().then(() => {
-      console.log("Database checked and populated if needed.")
+      console.log("Database checked within component.")
     })
   }, [])
 
