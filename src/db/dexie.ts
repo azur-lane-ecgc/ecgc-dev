@@ -37,7 +37,7 @@ class ShipDatabase extends Dexie {
   info: Dexie.Table<{ key: string; value: any }, string>
 
   constructor() {
-    super("ShipDatabase")
+    super("ECGCShipDatabase")
     this.version(1).stores({
       ships:
         "&id, ship, faction, rarity, hullType, fleetType, roles, *locationNames",
@@ -57,7 +57,22 @@ const extractLocationNames = (locations: ShipLocationData): string[] => {
   ]
 }
 
+export const clearAllDatabases = async () => {
+  const databases = await indexedDB.databases()
+  if (databases.length === 0) {
+    return
+  }
+  for (const db of databases) {
+    if (db.name) {
+      console.log(`Deleting IndexedDB: ${db.name}`)
+      indexedDB.deleteDatabase(db.name)
+    }
+  }
+}
+
 export const populateDatabase = async () => {
+  await clearAllDatabases()
+  await db.ships.clear()
   const allShips: AllShipData[] = Object.values(shipData).map((ship) => ({
     ...ship,
     rankings:
@@ -68,8 +83,6 @@ export const populateDatabase = async () => {
     ehp: ehp[ship.ship] || null,
     locationNames: extractLocationNames(ship.locations),
   }))
-
-  await db.ships.clear()
   await db.ships.bulkPut(allShips)
 }
 
