@@ -22,7 +22,6 @@ export interface ShipData {
   faction: string
   rarity: number
   isKai: boolean
-  hull: number
   hullType: string
   fleetType: "main" | "ss" | "vg"
   LBBonus: string | null
