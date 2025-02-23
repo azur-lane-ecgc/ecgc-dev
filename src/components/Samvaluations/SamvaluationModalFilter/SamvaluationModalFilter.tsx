@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 
+import { checkAndUpdateDatabase } from "@db/dexie"
 import type { ShipData } from "@db/ship_data/types"
 
 import { formatLocation } from "@utils/formatLocation"
@@ -13,6 +14,12 @@ const ships: Record<number, ShipData> = (await import(
 
 export const SamvaluationModalFilter = () => {
   const [selectedEvent, setSelectedEvent] = useState<string | null>(null)
+
+  useEffect(() => {
+    checkAndUpdateDatabase().then(() => {
+      console.log("Database checked and populated if needed.")
+    })
+  }, [])
 
   return (
     <>
