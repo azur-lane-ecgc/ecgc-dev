@@ -1,1 +1,1 @@
-export * from './shipSlotParse'
+export * from "./shipSlotParse"

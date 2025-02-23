@@ -1,1 +1,1 @@
-export * from './shipRarityParse'
+export * from "./shipRarityParse"

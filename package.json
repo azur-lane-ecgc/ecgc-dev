@@ -9,7 +9,7 @@
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bash dev_tools/gsheets2img.sh",
     "build": "bunx --bun astro check && bunx --bun astro build",
-    "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json}\"",
+    "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json}\" \"dev_tools/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json}\" --ignore-path .prettierignore",
     "devtools": "bun run submodule && bun run dev_tools/runAllTools.ts && bun run format",
     "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://localhost:4321/test_ecgc_2 && bunx --bun astro dev",
     "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun update"

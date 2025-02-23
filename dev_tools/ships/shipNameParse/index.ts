@@ -1,1 +1,1 @@
-export * from './shipNameParse'
+export * from "./shipNameParse"
