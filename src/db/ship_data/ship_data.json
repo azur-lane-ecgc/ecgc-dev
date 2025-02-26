@@ -29775,7 +29775,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Scylla is a damage-oriented CL with great stats and skills. Her equipment loadout is nothing to write home about, but her barrages are all very good, making her damage really high. Her supportive capabilities are all worse than existing good ships. Her AA is above average. Overall, highly worth getting.",
     "fastLoad": "",
-    "roles": ["AA"],
+    "roles": ["DmgDealer", "AA"],
     "locations": {
       "events": [
         {
