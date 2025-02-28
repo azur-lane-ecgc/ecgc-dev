@@ -2165,6 +2165,13 @@
       "std": "28.09%"
     }
   ],
+  "Bartolomeo Colleoni": [
+    {
+      "name": "Bartolomeo Colleoni",
+      "totalEHP": "70.13%",
+      "std": "26.77%"
+    }
+  ],
   "Z1": [
     {
       "name": "Z1 (Retrofit)",
@@ -2789,6 +2796,13 @@
       "name": "Z43",
       "totalEHP": "63.96%",
       "std": "26.10%"
+    }
+  ],
+  "Giosue Carducci": [
+    {
+      "name": "Giosue Carducci",
+      "totalEHP": "63.94%",
+      "std": "27.84%"
     }
   ],
   "La Galissonnière META": [
@@ -3454,6 +3468,13 @@
       "std": "21.73%"
     }
   ],
+  "Mutsuki": [
+    {
+      "name": "Mutsuki (Retrofit)",
+      "totalEHP": "54.66%",
+      "std": "23.49%"
+    }
+  ],
   "Chi An": [
     {
       "name": "Chi An",
@@ -3571,13 +3592,6 @@
       "name": "Yamakaze",
       "totalEHP": "52.39%",
       "std": "22.83%"
-    }
-  ],
-  "Mutsuki": [
-    {
-      "name": "Mutsuki (Retrofit)",
-      "totalEHP": "52.18%",
-      "std": "22.95%"
     }
   ],
   "Chicago": [

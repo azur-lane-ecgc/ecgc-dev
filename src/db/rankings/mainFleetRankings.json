@@ -517,6 +517,35 @@
       "vgsurvival": null
     }
   ],
+  "Andrea Doria META": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - Needs another META ship for +10% dmg.",
+      "hardarbiter": "B",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "A",
+      "w14boss": "B",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": -2,
+      "gearreq": null,
+      "flagreq": -1,
+      "lightdmg": 3,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 3,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 2,
+      "othermain": null,
+      "vgsurvival": 1
+    }
+  ],
   "Anniversary Kizuna AI": [
     {
       "nameNote": "",
@@ -3008,7 +3037,7 @@
   "Hwah Jah": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Chen Hai Pro Plus Max. Top 3 w15 support.",
+      "notes": "Chen Hai Pro Plus Max. Top 3 w15 support.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -5259,6 +5288,35 @@
       "rammers": 1,
       "othermain": null,
       "vgsurvival": null
+    }
+  ],
+  "Raffaello": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - Subpar UR BB for bossing (confident), but great for mob (very tentative). Heal is inconsistent but strong on average. Poor AA.",
+      "hardarbiter": "A",
+      "meta": "B",
+      "cm": "A",
+      "w14mob": "SS",
+      "w14boss": "A",
+      "w15mob": "S",
+      "w15boss": "B",
+      "ex": "B",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 3,
+      "dmguptime": null,
+      "offensivebuff": 2,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": 3
     }
   ],
   "Ranger": [

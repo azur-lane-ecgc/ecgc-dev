@@ -367,6 +367,22 @@
       "offensivebuff": null
     }
   ],
+  "Maggiore Baracca": [
+    {
+      "nameNote": "Base",
+      "notes": "zTENTATIVE - Stays 5 units further right, which is good. Takes too long to lose HP in single boss battles, better for campaign.",
+      "hardarbiter": "A",
+      "cm": "A",
+      "campaign": "S",
+      "consistency": -1,
+      "fleetreq": null,
+      "flagreq": -2,
+      "lightdmg": 2,
+      "mediumdmg": 3,
+      "heavydmg": 4,
+      "offensivebuff": null
+    }
+  ],
   "Mami Futami": [
     {
       "nameNote": "Base",
@@ -450,7 +466,7 @@
   "Solos": [
     {
       "nameNote": "Base",
-      "notes": "Flasher and Homura plus (U-556 META or Leonardo). Kick Homura if campaign.",
+      "notes": "Flasher and Homura plus (U-556 META, Leonardo, or Baracca). Kick Homura if campaign.",
       "hardarbiter": "S",
       "cm": "A",
       "campaign": "A",
