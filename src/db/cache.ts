@@ -1,12 +1,12 @@
 import { db } from "./dexie"
 
-export const cacheShipImage = async (shipName: string, imageUrl: string) => {
-  await db.ship_img.put({ ship: shipName, image: imageUrl })
+export const cacheShipImage = async (shipID: number, imageUrl: string) => {
+  await db.ship_img.put({ id: shipID, image: imageUrl })
 }
 
 export const getCachedShipImage = async (
-  shipName: string,
+  shipID: number,
 ): Promise<string | null> => {
-  const entry = await db.ship_img.get(shipName)
+  const entry = await db.ship_img.get(shipID)
   return entry ? entry.image : null
 }

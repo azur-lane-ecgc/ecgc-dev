@@ -56,7 +56,7 @@ export const populateDb = async () => {
 
   for (const ship of allShips) {
     const shipImage = shipImageParse(ship.ship, ship.isKai)
-    await cacheShipImage(ship.ship, shipImage)
+    await cacheShipImage(ship.id, shipImage)
   }
 }
 
