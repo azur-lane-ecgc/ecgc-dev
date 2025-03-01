@@ -1,7 +1,3 @@
-export interface ShipRankingTypes {
-  ship: string
-}
-
 export interface BaseFleetRankingProps {
   notes?: string | null
   nameNote?: string | null

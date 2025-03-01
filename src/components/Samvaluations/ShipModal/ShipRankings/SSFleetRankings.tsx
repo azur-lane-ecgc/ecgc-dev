@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useState } from "react"
 
 import { ItemTable } from "@components/_common/ItemTable"
 import { HR } from "@components/_common/HR"
@@ -7,23 +7,20 @@ import {
   numberRankColor,
 } from "@components/Samvaluations/ShipModal/styles"
 
-import type { ShipRankingTypes, SSFleetRankingProps } from "@db/rankings/types"
-
-const SSFleetData: Record<string, SSFleetRankingProps[]> = (await import(
-  "@db/rankings/ssFleetRankings.json"
-).then((module) => module.default)) as Record<string, SSFleetRankingProps[]>
+import type { SSFleetRankingProps } from "@db/rankings/types"
 
 import { RankingHeader } from "./RankingHeader"
 
-export const SSFleetRanking: React.FC<ShipRankingTypes> = ({ ship }) => {
+interface SSFleetRankingComponentProps {
+  rankings: SSFleetRankingProps[] | null | undefined
+}
+
+export const SSFleetRanking: React.FC<SSFleetRankingComponentProps> = ({
+  rankings,
+}) => {
   const [rankingIndex, setRankingIndex] = useState<number>(0)
 
-  const rankings: SSFleetRankingProps[] = useMemo(
-    () => SSFleetData[ship],
-    [ship],
-  )
-
-  if (!!!rankings) {
+  if (!rankings) {
     return <p>This ship doesn't have rankings currently. Come back later!</p>
   }
 

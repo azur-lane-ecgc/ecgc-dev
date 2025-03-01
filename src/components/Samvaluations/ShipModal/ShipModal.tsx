@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useTrackVisibility } from "react-intersection-observer-hook"
 
 import "@components/_common/ItemCell/styles.css"
@@ -6,14 +6,20 @@ import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 import { IconSkeleton } from "@components/_common/Skeleton"
 
-import type { ShipData } from "@db/ship_data/types"
+import { getCachedShipImage } from "@db/cache"
+import type { AllShipData } from "@db/types"
+import type {
+  MainFleetRankingProps,
+  VanguardFleetRankingProps,
+  SSFleetRankingProps,
+} from "@db/rankings/types"
 
 import {
   useBodyOverflow,
   useModalFocus,
   useModalHistory,
 } from "@utils/modalHooks"
-import { parseEquipHref, shipImageParse } from "@utils/ships"
+import { parseEquipHref } from "@utils/ships"
 
 import { ShipTags } from "./ShipTags"
 import {
@@ -42,7 +48,7 @@ export interface TriggerProps {
 }
 
 interface ShipModalProps {
-  shipData: ShipData
+  shipData: AllShipData
   trigger?: TriggerProps
 }
 
@@ -52,7 +58,7 @@ interface ShipModalProps {
  * @component
  *
  * @param {ShipModalProps} props - The props for configuring the ship modal.
- * @param {ShipData} props.shipData - Data regarding the ship
+ * @param {AllShipData} props.shipData - Complete data regarding the ship including rankings and EHP
  * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)
  *
  * @returns {React.ReactNode} The Ship Modal itself.
@@ -65,6 +71,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const [ref, { isVisible }] = useTrackVisibility({
     rootMargin: "200px",
   })
+  const [shipImg, setCachedImage] = useState<string | null>(null)
 
   const {
     id,
@@ -81,9 +88,24 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     fastLoad,
     roles,
     locations,
+    rankings,
+    ehp,
   } = shipData
 
-  const shipImg = shipImageParse(ship, isKai)
+  useEffect(() => {
+    const loadCachedImage = async () => {
+      try {
+        const image = await getCachedShipImage(id)
+        if (image) {
+          setCachedImage(image)
+        }
+      } catch (error) {
+        console.error("Error loading cached ship image:", error)
+      }
+    }
+
+    loadCachedImage()
+  }, [id])
 
   const handleClose = () => {
     if (!shipData) {
@@ -131,7 +153,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 isVisible ? `rarity-${rarity}` : ``
               }`}
             >
-              {isVisible ? (
+              {isVisible && !!shipImg ? (
                 <img
                   width={56}
                   height={56}
@@ -263,7 +285,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <HR />
 
               {/* EHP */}
-              <ShipEHPDisplay ship={ship} />
+              <ShipEHPDisplay shipEHP={ehp} />
 
               {/* Equip Table */}
               <ItemTable
@@ -361,18 +383,31 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <HR />
 
               {/* Rankings for End Game Azur Lane */}
-              {(() => {
-                switch (fleetType) {
-                  case "main":
-                    return <MainFleetRanking ship={ship} />
-                  case "ss":
-                    return <SSFleetRanking ship={ship} />
-                  case "vg":
-                    return <VanguardFleetRanking ship={ship} />
-                  default:
-                    return false
-                }
-              })()}
+              {rankings &&
+                (() => {
+                  switch (fleetType) {
+                    case "main":
+                      return (
+                        <MainFleetRanking
+                          rankings={rankings as MainFleetRankingProps[]}
+                        />
+                      )
+                    case "ss":
+                      return (
+                        <SSFleetRanking
+                          rankings={rankings as SSFleetRankingProps[]}
+                        />
+                      )
+                    case "vg":
+                      return (
+                        <VanguardFleetRanking
+                          rankings={rankings as VanguardFleetRankingProps[]}
+                        />
+                      )
+                    default:
+                      return false
+                  }
+                })()}
             </div>
           </div>
         </div>

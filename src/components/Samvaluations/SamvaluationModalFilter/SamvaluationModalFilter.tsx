@@ -3,46 +3,40 @@ import { useEffect, useState } from "react"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 
+import { db } from "@db/dexie"
 import { checkAndUpdateDatabase } from "@db/populateDb"
-import type { ShipData } from "@db/ship_data/types"
+import type { AllShipData } from "@db/types"
 
 import { formatLocation } from "@utils/formatLocation"
 
-const ships: Record<number, ShipData> = (await import(
-  "@db/ship_data/ship_data.json"
-).then((module) => module.default)) as Record<number, ShipData>
-
 export const SamvaluationModalFilter = () => {
+  const [ships, setShips] = useState<AllShipData[]>([])
   const [selectedEvent, setSelectedEvent] = useState<string | null>(null)
 
   useEffect(() => {
-    checkAndUpdateDatabase().then(() => {
-      console.log("Database checked within component.")
-    })
+    const fetchShips = async () => {
+      await checkAndUpdateDatabase()
+      const allShips = await db.ships.orderBy("id").toArray()
+      setShips(allShips)
+    }
+
+    fetchShips()
   }, [])
 
   return (
-    <>
-      <ItemContainer>
-        {Object.keys(ships).map((key) => {
-          const ship = ships[parseInt(key, 10)]
-          if (!ship) return false
-          return (
-            <ShipModal
-              key={ship.id}
-              shipData={ship}
-              trigger={{
-                iconNote: "Rank: SS",
-                descriptionNote: `Events: ${formatLocation(
-                  ship.locations.events,
-                )}`,
-                largeDescNote: false,
-                hasBorder: true,
-              }}
-            />
-          )
-        })}
-      </ItemContainer>
-    </>
+    <ItemContainer>
+      {ships.map((ship) => (
+        <ShipModal
+          key={ship.id}
+          shipData={ship}
+          trigger={{
+            iconNote: "Rank: SS",
+            descriptionNote: `Events: ${formatLocation(ship.locations.events)}`,
+            largeDescNote: false,
+            hasBorder: true,
+          }}
+        />
+      ))}
+    </ItemContainer>
   )
 }
