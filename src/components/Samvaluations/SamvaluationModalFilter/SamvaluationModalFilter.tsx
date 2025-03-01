@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 
-import { checkAndUpdateDatabase } from "@db/dexie"
+import { checkAndUpdateDatabase } from "@db/populateDb"
 import type { ShipData } from "@db/ship_data/types"
 
 import { formatLocation } from "@utils/formatLocation"
