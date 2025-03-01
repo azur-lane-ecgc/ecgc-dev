@@ -10,7 +10,7 @@ class ShipDatabase extends Dexie {
     super("ECGCShipDatabase")
     this.version(1).stores({
       ships:
-        "&id, ship, faction, rarity, hullType, fleetType, roles, *locationNames",
+        "&id, ship, faction, rarity, hullType, fleetType, *roles, *locationNames",
       info: "&key",
       ship_img: "&id",
     })
