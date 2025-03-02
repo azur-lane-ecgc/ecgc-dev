@@ -50,6 +50,7 @@ export interface TriggerProps {
 interface ShipModalProps {
   shipData: AllShipData
   trigger?: TriggerProps
+  loading: boolean
 }
 
 /**
@@ -66,6 +67,7 @@ interface ShipModalProps {
 export const ShipModal: React.FC<ShipModalProps> = ({
   shipData,
   trigger,
+  loading = false,
 }: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
   const [ref, { isVisible }] = useTrackVisibility({
@@ -108,14 +110,14 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }, [id])
 
   const handleClose = () => {
-    if (!shipData) {
+    if (loading) {
       return
     }
     setOpen(false)
   }
 
   const handleOpen = () => {
-    if (!shipData) {
+    if (loading) {
       return
     }
     setOpen(true)
@@ -153,7 +155,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 isVisible ? `rarity-${rarity}` : ``
               }`}
             >
-              {isVisible && !!shipImg ? (
+              {isVisible && !!shipImg && !loading ? (
                 <img
                   width={56}
                   height={56}
