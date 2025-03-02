@@ -66,36 +66,4 @@ const data = [
   <br />
 
   <br />
-  <ItemContainer>
-    <ShipModal
-      client:visible={{ rootMargin: "20px" }}
-      shipData={ships[142]}
-      trigger={{
-        iconNote: "CVL",
-        descriptionNote: "Really good ship Really good ship",
-        largeDescNote: false,
-        hasBorder: false,
-      }}
-    />
-    <ShipModal
-      client:visible={{ rootMargin: "20px" }}
-      shipData={ships[576]}
-      trigger={{
-        iconNote: null,
-        descriptionNote: null,
-        largeDescNote: false,
-        hasBorder: false,
-      }}
-    />
-    <ShipModal
-      client:visible={{ rootMargin: "50px" }}
-      shipData={ships[142]}
-      trigger={{
-        iconNote: "CVL",
-        descriptionNote: `<a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a> is cute.`,
-        largeDescNote: false,
-        hasBorder: true,
-      }}
-    />
-  </ItemContainer>
 </GuidePageLayout>
