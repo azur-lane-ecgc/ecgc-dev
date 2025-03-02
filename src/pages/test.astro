@@ -4,13 +4,6 @@ import GuideHeading from "@components/_common/GuideHeading.astro"
 import { HR } from "@components/_common/HR"
 import WikiLink from "@components/_common/WikiLink.astro"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
-import { ItemContainer } from "@components/_common/ItemCell"
-import { ShipModal } from "@components/Samvaluations/ShipModal"
-
-import type { ShipData } from "@db/ship_data/types"
-const ships: Record<number, ShipData> = (await import(
-  "@db/ship_data/ship_data.json"
-).then((module) => module.default)) as Record<number, ShipData>
 
 const data = [
   {
