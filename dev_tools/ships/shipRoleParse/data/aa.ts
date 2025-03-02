@@ -1,7 +1,7 @@
 import type {
   VanguardFleetRankingProps,
   MainFleetRankingProps,
-} from "@db/rankings/types"
+} from "@db/types"
 import type { ShipAAProps } from "@tools/aa_parsing/types"
 
 import { isDecentMainFleet, isDecentVG } from "../decentShips"

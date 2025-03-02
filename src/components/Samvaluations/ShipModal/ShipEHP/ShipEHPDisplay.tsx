@@ -2,7 +2,7 @@ import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 import { ehpUpdateDate } from "@components/_common/Constants"
 
-import type { ShipEHPProps } from "@db/ehp/types"
+import type { ShipEHPProps } from "@db/types"
 
 import { formatDate } from "@utils/formatDate"
 

@@ -2,7 +2,7 @@ import type {
   VanguardFleetRankingProps,
   MainFleetRankingProps,
   SSFleetRankingProps,
-} from "@db/rankings/types"
+} from "@db/types"
 
 import { isDecentVG, isDecentMainFleet, isDecentSSFleet } from "../decentShips"
 

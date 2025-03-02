@@ -11,7 +11,7 @@ const augmentData: Record<number, AugmentData> = (await import(
   "@ALData/data/augments.json"
 ).then((module) => module.default)) as Record<number, AugmentData>
 
-import type { ShipData as ProcessedShipData } from "@db/ship_data/types"
+import type { ShipData as ProcessedShipData } from "@db/types"
 import {
   shipDefaultAugmentParse,
   shipFactionParse,

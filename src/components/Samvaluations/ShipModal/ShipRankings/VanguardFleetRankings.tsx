@@ -7,7 +7,7 @@ import {
   numberRankColor,
 } from "@components/Samvaluations/ShipModal/styles"
 
-import type { VanguardFleetRankingProps } from "@db/rankings/types"
+import type { VanguardFleetRankingProps } from "@db/types"
 
 import { RankingHeader } from "./RankingHeader"
 

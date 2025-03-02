@@ -1,5 +1,5 @@
 import type { ShipDropData } from "@ALData/types/ships"
-import type { shipLocation, ShipLocationData } from "@db/ship_data/types"
+import type { shipLocation, ShipLocationData } from "@db/types"
 import { parseLocation } from "@utils/parseLocation"
 
 import { shipSeriesMap } from "./utils"

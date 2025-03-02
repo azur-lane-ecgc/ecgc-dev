@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import type { ShipData } from "@db/ship_data/types"
+import type { ShipData } from "@db/types"
 
 // hook to get ship data
 export const useShipData = (id: number, isVisible: boolean) => {

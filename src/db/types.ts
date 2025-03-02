@@ -15,3 +15,7 @@ export interface AllShipData extends ShipData {
   ehp?: ShipEHPProps[] | null
   locationNames: string[]
 }
+
+export * from "./ehp/types"
+export * from "./rankings/types"
+export * from "./ship_data/types"

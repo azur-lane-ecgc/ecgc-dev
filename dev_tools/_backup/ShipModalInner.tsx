@@ -2,7 +2,7 @@ import "@components/_common/ItemCell/styles.css"
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 
-import type { ShipData } from "@db/ship_data/types"
+import type { ShipData } from "@db/types"
 
 import { parseEquipHref, shipImageParse } from "@utils/ships"
 

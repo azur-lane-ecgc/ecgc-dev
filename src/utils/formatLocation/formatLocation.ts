@@ -1,4 +1,4 @@
-import type { shipLocation } from "@db/ship_data/types"
+import type { shipLocation } from "@db/types"
 
 export const formatLocation = (locations: shipLocation[]) => {
   if (!locations || locations.length === 0) {

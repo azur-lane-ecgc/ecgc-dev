@@ -1,4 +1,4 @@
-import type { VanguardFleetRankingProps } from "@db/rankings/types"
+import type { VanguardFleetRankingProps } from "@db/types"
 
 import { isDecentVG } from "../decentShips"
 

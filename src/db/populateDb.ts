@@ -10,8 +10,7 @@ import type {
   VanguardFleetRankingProps,
   SSFleetRankingProps,
 } from "./rankings/types"
-import type { ShipData, ShipLocationData } from "./ship_data/types"
-import type { AllShipData } from "./types"
+import type { ShipData, ShipLocationData, AllShipData } from "./types"
 
 const shipData = (await import("./ship_data/ship_data.json")).default as Record<
   number,

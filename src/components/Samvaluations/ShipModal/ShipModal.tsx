@@ -12,7 +12,7 @@ import type {
   MainFleetRankingProps,
   VanguardFleetRankingProps,
   SSFleetRankingProps,
-} from "@db/rankings/types"
+} from "@db/types"
 
 import {
   useBodyOverflow,

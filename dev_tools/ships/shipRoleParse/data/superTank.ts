@@ -1,5 +1,5 @@
-import type { ShipEHPProps } from "@db/ehp/types"
-import type { VanguardFleetRankingProps } from "@db/rankings/types"
+import type { ShipEHPProps } from "@db/types"
+import type { VanguardFleetRankingProps } from "@db/types"
 
 const shipEHPData = (await import("@db/ehp/shipEHP.json").then(
   (module) => module.default,
