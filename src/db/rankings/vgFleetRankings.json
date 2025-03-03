@@ -1160,6 +1160,33 @@
       "defensivebuff": null
     }
   ],
+  "Bartolomeo Colleoni": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - Bad.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Bayard": [
     {
       "nameNote": "",
@@ -1865,7 +1892,7 @@
   "Chang Feng": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE purple DD, what to expect",
+      "notes": "Purple and bad.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2081,7 +2108,7 @@
   "Chien Wu": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE typical new gold CA, but worse than lala/carl",
+      "notes": "Typical 2024 gold CA, but worse than lala/carl",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -3485,7 +3512,7 @@
   "Fu Po": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE purple DD, what to expect",
+      "notes": "Purple and bad.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3512,7 +3539,7 @@
   "Fu Shun": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE squishiest and highest dmg DDG. No help for teammates.",
+      "notes": "Squishiest and highest dmg DDG. No help for teammates.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -3642,6 +3669,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": null
+    }
+  ],
+  "Giosuè Carducci": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - Bad. Use fast torps. Contradictory skill, requires taking damage while being made of paper.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "C*",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
     }
   ],
   "Giuseppe Garibaldi": [
@@ -4079,7 +4133,7 @@
   "Hai Yung": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE purple ship from the 19th century, what to expect",
+      "notes": "Purple ship from the 19th century, bad.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
