@@ -36,7 +36,7 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
 }
 
 const isFilterEmpty = (filters: ShipState["filters"]): boolean => {
-  return !!!filters.hullType && !!!filters.rarity
+  return filters.hullType.length <= 0 && !!!filters.rarity
 }
 
 export const useShipFilter = () => {
