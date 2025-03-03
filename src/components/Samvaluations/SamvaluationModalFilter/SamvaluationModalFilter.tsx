@@ -1,42 +1,57 @@
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react"
 
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
+import { ComboBox, MultiSelectComboBox } from "@components/_common/ComboBox"
 
-import { db } from "@db/dexie"
 import { checkAndUpdateDatabase } from "@db/populateDb"
-import type { AllShipData } from "@db/types"
+import type { ShipData } from "@db/types"
+const shipData = (await import("@db/ship_data/ship_data.json"))
+  .default as Record<number, ShipData>
 
 import { formatLocation } from "@utils/formatLocation"
 
-export const SamvaluationModalFilter = () => {
-  const [ships, setShips] = useState<AllShipData[]>([])
-  const [selectedEvent, setSelectedEvent] = useState<string | null>(null)
+import { useShipFilter } from "./useShipFilter"
 
+export const SamvaluationModalFilter: React.FC = () => {
+  const [loading, setLoading] = useState<boolean>(true)
   useEffect(() => {
-    const fetchShips = async () => {
-      await checkAndUpdateDatabase()
-      const allShips = await db.ships.orderBy("id").toArray()
-      setShips(allShips)
-    }
-
-    fetchShips()
+    checkAndUpdateDatabase().then(() => setLoading(false))
   }, [])
 
+  const { state, dispatch } = useShipFilter()
+
   return (
-    <ItemContainer>
-      {ships.map((ship) => (
-        <ShipModal
-          key={ship.id}
-          shipData={ship}
-          trigger={{
-            iconNote: "Rank: SS",
-            descriptionNote: `Events: ${formatLocation(ship.locations.events)}`,
-            largeDescNote: false,
-            hasBorder: true,
-          }}
+    <>
+      <div className="flex flex-row flex-wrap gap-4">
+        <ComboBox
+          title="Hull Type"
+          options={Array.from(
+            new Set([
+              ...Object.values(shipData).map((ship) => ship.hullType),
+              "IX", // hardcoded since no ship is IX directly
+            ]),
+          ).sort((a, b) => a.localeCompare(b))}
+          onSelect={(hullType) =>
+            dispatch({ type: "SET_FILTER", payload: { hullType } })
+          }
         />
-      ))}
-    </ItemContainer>
+      </div>
+      <ItemContainer>
+        {state.visibleShips.map((ship) => (
+          <ShipModal
+            key={ship.id}
+            shipData={ship}
+            trigger={{
+              iconNote: "Rank: SS",
+              descriptionNote: `Events: ${formatLocation(ship.locations.events)}`,
+              largeDescNote: false,
+              hasBorder: true,
+            }}
+            loading={loading}
+          />
+        ))}
+      </ItemContainer>
+    </>
   )
 }
