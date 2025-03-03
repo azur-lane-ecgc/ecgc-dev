@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useTrackVisibility } from "react-intersection-observer-hook"
 
 import "@components/_common/ItemCell/styles.css"
@@ -6,7 +6,6 @@ import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 import { IconSkeleton } from "@components/_common/Skeleton"
 
-import { getCachedShipImage } from "@db/cache"
 import type { AllShipData } from "@db/types"
 import type {
   MainFleetRankingProps,
@@ -19,7 +18,7 @@ import {
   useModalFocus,
   useModalHistory,
 } from "@utils/modalHooks"
-import { parseEquipHref } from "@utils/ships"
+import { parseEquipHref, shipImageParse } from "@utils/ships"
 
 import { ShipTags } from "./ShipTags"
 import {
@@ -73,7 +72,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   const [ref, { isVisible }] = useTrackVisibility({
     rootMargin: "200px",
   })
-  const [shipImg, setCachedImage] = useState<string | null>(null)
 
   const {
     id,
@@ -94,20 +92,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     ehp,
   } = shipData
 
-  useEffect(() => {
-    const loadCachedImage = async () => {
-      try {
-        const image = await getCachedShipImage(id)
-        if (image) {
-          setCachedImage(image)
-        }
-      } catch (error) {
-        console.error("Error loading cached ship image:", error)
-      }
-    }
-
-    loadCachedImage()
-  }, [id])
+  const shipImg = shipImageParse(ship, isKai)
 
   const handleClose = () => {
     if (loading) {

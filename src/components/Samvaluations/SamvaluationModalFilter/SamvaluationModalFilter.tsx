@@ -19,7 +19,7 @@ export const SamvaluationModalFilter: React.FC = () => {
     checkAndUpdateDatabase().then(() => setLoading(false))
   }, [])
 
-  const { state, dispatch } = useShipFilter()
+  const { state, dispatch } = useShipFilter(loading)
 
   return (
     <>
@@ -29,6 +29,7 @@ export const SamvaluationModalFilter: React.FC = () => {
           options={Array.from(
             new Set([
               ...Object.values(shipData).map((ship) => ship.hullType),
+              "DDGm",
               "IX",
             ]),
           ).sort((a, b) => a.localeCompare(b))}

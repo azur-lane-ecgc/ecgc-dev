@@ -82,4 +82,5 @@ export const checkAndUpdateDatabase = async () => {
   console.log("Database data has changed, updating...")
   await populateDb()
   await db.info.put({ key: "data_hash", value: rawDataHash })
+  console.log("Database updated fully!")
 }
