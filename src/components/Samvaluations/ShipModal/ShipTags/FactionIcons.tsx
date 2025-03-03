@@ -5,7 +5,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/0.webp"
       alt="Universal"
       title="Faction: Universal"
-      className="w-[32px] h-auto"
+      className="h-auto w-[32px]"
     />
   ),
   USS: (
@@ -14,7 +14,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/1.webp"
       alt="USS"
       title="Faction: USS"
-      className="w-[35px] h-auto"
+      className="h-auto w-[35px]"
     />
   ),
   HMS: (
@@ -23,7 +23,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/2.webp"
       alt="HMS"
       title="Faction: HMS"
-      className="w-[30px] h-auto"
+      className="h-auto w-[30px]"
     />
   ),
   IJN: (
@@ -32,7 +32,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/3.webp"
       alt="IJN"
       title="Faction: IJN"
-      className="w-[40px] h-auto"
+      className="h-auto w-[40px]"
     />
   ),
   KMS: (
@@ -41,7 +41,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/4.webp"
       alt="KMS"
       title="Faction: KMS"
-      className="w-[32px] h-auto"
+      className="h-auto w-[32px]"
     />
   ),
   DE: (
@@ -50,7 +50,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/5.webp"
       alt="DE"
       title="Faction: DE"
-      className="w-[33px] h-auto"
+      className="h-auto w-[33px]"
     />
   ),
   RN: (
@@ -59,7 +59,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/6.webp"
       alt="RN"
       title="Faction: RN"
-      className="w-[40px] h-auto"
+      className="h-auto w-[40px]"
     />
   ),
   SN: (
@@ -68,7 +68,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/7.webp"
       alt="SN"
       title="Faction: SN"
-      className="w-[40px] h-auto"
+      className="h-auto w-[40px]"
     />
   ),
   FFNF: (
@@ -77,7 +77,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/8.webp"
       alt="FFNF"
       title="Faction: FFNF"
-      className="w-[30px] h-auto"
+      className="h-auto w-[30px]"
     />
   ),
   MNF: (
@@ -86,7 +86,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/9.webp"
       alt="MNF"
       title="Faction: MNF"
-      className="w-[30px] h-auto"
+      className="h-auto w-[30px]"
     />
   ),
   MOT: (
@@ -95,7 +95,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/96.webp"
       alt="MOT"
       title="Faction: MOT"
-      className="w-[40px] h-auto !bg-[#fafafa]"
+      className="h-auto w-[40px] !bg-[#fafafa]"
     />
   ),
   META: (
@@ -104,7 +104,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/97.webp"
       alt="META"
       title="Faction: META"
-      className="w-[37px] h-auto !bg-[#fafafa]"
+      className="h-auto w-[37px] !bg-[#fafafa]"
     />
   ),
   Neptunia: (
@@ -113,7 +113,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/101.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="w-[40px] h-auto !bg-[#fafafa]"
+      className="h-auto w-[40px] !bg-[#fafafa]"
     />
   ),
   Bilibili: (
@@ -122,7 +122,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/102.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="w-[40px] h-auto !bg-[#fafafa]"
+      className="h-auto w-[40px] !bg-[#fafafa]"
     />
   ),
   default: (
@@ -131,7 +131,7 @@ export const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/100.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="w-[40px] h-auto !bg-[#fafafa]"
+      className="h-auto w-[40px] !bg-[#fafafa]"
     />
   ),
 }

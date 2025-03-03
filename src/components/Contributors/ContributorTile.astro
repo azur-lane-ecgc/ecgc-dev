@@ -66,17 +66,17 @@ const { name, discord, position, description, imageSrc, kofiLink } = Astro.props
 </style>
 
 <div
-  class="contributor-tile relative text-center w-[300px] sm:max-w-[350px] md:max-w-[400px]"
+  class="contributor-tile relative w-[300px] text-center sm:max-w-[350px] md:max-w-[400px]"
 >
   <img
     loading="lazy"
     src={imageSrc}
     alt={`${name}'s icon`}
-    class="rounded-full shadow-lg w-[150px] h-[150px]"
+    class="h-[150px] w-[150px] rounded-full shadow-lg"
   />
 
   <!-- Username -->
-  <h4 class="contributor-name mt-2 mb-0">{name}</h4>
+  <h4 class="contributor-name mb-0 mt-2">{name}</h4>
 
   <!-- Discord -->
   <p class="contributor-discord">@{discord}</p>
@@ -84,7 +84,7 @@ const { name, discord, position, description, imageSrc, kofiLink } = Astro.props
 
   <!-- Role -->
   <div class="contributor-details flex flex-col justify-start">
-    <h4 class="mb-1 contributor-details-custom">{position}</h4>
+    <h4 class="contributor-details-custom mb-1">{position}</h4>
     <small class="contributor-small-custom">"{description}"</small>
 
     {
@@ -95,7 +95,7 @@ const { name, discord, position, description, imageSrc, kofiLink } = Astro.props
           rel="noopener noreferrer"
           class="kofi mt-5"
         >
-          <small class="mb-2 contributor-small-custom">
+          <small class="contributor-small-custom mb-2">
             <i class="fa fa-coffee"> Buy me a coffee!</i>
           </small>
         </a>

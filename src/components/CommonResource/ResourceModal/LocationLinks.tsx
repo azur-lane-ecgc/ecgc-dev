@@ -32,7 +32,7 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
       {locations.map((location, index) => (
         <div
           key={index}
-          className="text-[12px] md:text-[12.5px] lg:text-[13px] leading-normal"
+          className="text-[12px] leading-normal md:text-[12.5px] lg:text-[13px]"
         >
           <a
             rel="noopener noreferrer"
@@ -43,11 +43,11 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
             )}`}
             title={location.name}
             aria-label={location.name}
-            className="font-bold !text-[#0047ab] bg-transparent no-underline hover:!text-[#3c5679] hover:underline active:!text-[#3c5679] active:underline"
+            className="bg-transparent font-bold !text-[#0047ab] no-underline hover:!text-[#3c5679] hover:underline active:!text-[#3c5679] active:underline"
           >
             {location.name}
           </a>{" "}
-          <span className="text-black font-semibold">
+          <span className="font-semibold text-black">
             {location.notes && `(${location.notes})`}
             {location.quantity.amount && ` - ${location.quantity.amount}`}
             {location.quantity.timeFrame &&

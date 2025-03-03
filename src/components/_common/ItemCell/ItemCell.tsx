@@ -76,11 +76,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
           </div>
         )}
         {!!descriptionNote && (
-          <div
-            className={`description-note 
-              ${largeDescNote ? "larger" : ""}
-            `}
-          >
+          <div className={`description-note ${largeDescNote ? "larger" : ""} `}>
             <p dangerouslySetInnerHTML={{ __html: descriptionNote }}></p>
           </div>
         )}
@@ -91,6 +87,6 @@ export const ItemCell: React.FC<ItemCellProps> = ({
   return inGroup ? (
     itemCell
   ) : (
-    <div className="flex justify-center items-center">{itemCell}</div>
+    <div className="flex items-center justify-center">{itemCell}</div>
   )
 }

@@ -102,7 +102,7 @@ export const ToolTable: React.FC<ToolTableProps> = ({ category }) => {
 
   return (
     <div className="table-responsive">
-      <table className="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+      <table className="table-sm table-dark table-bordered border-secondary table text-center align-middle">
         <colgroup>
           {tableInfo.map((col, index) => (
             <col key={index} width={col.colWidth} />
@@ -116,14 +116,14 @@ export const ToolTable: React.FC<ToolTableProps> = ({ category }) => {
                 key={index}
                 className={`${
                   col?.limiter && "ship_table_limiter"
-                } px-1 relative`}
+                } relative px-1`}
                 onClick={() => handleSort(col.key)}
               >
                 <div className="flex cursor-pointer">
-                  <span className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full">
+                  <span className="w-full flex-1 justify-center pl-[8.75px] pr-2 text-center align-middle">
                     {col.colName}
                   </span>
-                  <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
+                  <div className="m-0 flex flex-col justify-center space-x-0 space-y-0 *:!leading-[0.35]">
                     <i
                       className={`fa fa-caret-up text-sm ${
                         sortConfig.column === col.key

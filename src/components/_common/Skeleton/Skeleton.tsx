@@ -7,12 +7,7 @@ export const Skeleton = ({ className = "", animate = true }: SkeletonProps) => {
   return (
     <div className={`relative ${className}`}>
       <div
-        className={`
-          bg-gray-400 
-          rounded 
-          ${animate ? "animate-pulse" : ""} 
-          w-full h-full
-        `}
+        className={`rounded bg-gray-400 ${animate ? "animate-pulse" : ""} h-full w-full`}
       />
     </div>
   )

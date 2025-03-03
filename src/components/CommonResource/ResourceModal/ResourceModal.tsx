@@ -104,9 +104,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
           )}
           {!!trigger?.descriptionNote && (
             <div
-              className={`description-note 
-              ${trigger.largeDescNote ? "larger" : ""}
-            `}
+              className={`description-note ${trigger.largeDescNote ? "larger" : ""} `}
             >
               <p
                 onClick={(e) => e.stopPropagation()}
@@ -153,7 +151,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
             {/* Internal Content */}
             <div
               id={`innerModalContent${name}`}
-              className="mx-auto text-center pt-1"
+              className="mx-auto pt-1 text-center"
             >
               {/* Heading */}
               <h1 className="mb-0">
@@ -169,7 +167,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   {name}
                 </a>
               </h1>
-              <h6 className="sm:hidden mt-1 underline underline-offset-2">
+              <h6 className="mt-1 underline underline-offset-2 sm:hidden">
                 Tables are scrollable horizontally!
               </h6>
 
@@ -178,7 +176,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 <>
                   {/* Item Icon */}
                   <div
-                    className={`mt-5 w-full gap-4 flex flex-row flex-wrap justify-center`}
+                    className={`mt-5 flex w-full flex-row flex-wrap justify-center gap-4`}
                   >
                     {Array.isArray(imgUrl) && Array.isArray(rarity) ? (
                       imgUrl.map((url, index) => (
@@ -337,7 +335,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                   </div>
                 </>
               ) : (
-                <div className="flex flex-col md:flex-row items-center gap-4 mt-5">
+                <div className="mt-5 flex flex-col items-center gap-4 md:flex-row">
                   {/* Item Icon */}
                   <div className={`rarity-${rarity} ${shipIconStyle}`}>
                     <a
@@ -409,12 +407,12 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               {item.notes && (
                 <p
                   dangerouslySetInnerHTML={{ __html: `Note: ${item.notes}` }}
-                  className="!text-sm mt-3"
+                  className="mt-3 !text-sm"
                 ></p>
               )}
               <HR />
 
-              <h4 className="text-left ml-1 mb-3">Daily</h4>
+              <h4 className="mb-3 ml-1 text-left">Daily</h4>
               <ItemTable
                 tableInfo={[
                   { colName: "Academy", colWidth: "25%", limiter: true },
@@ -450,7 +448,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               <HR />
 
               {/* Farming */}
-              <h4 className="text-left ml-1 mb-3">Farming</h4>
+              <h4 className="mb-3 ml-1 text-left">Farming</h4>
               <ItemTable
                 tableInfo={[
                   { colName: "Campaign", colWidth: "25%", limiter: true },
@@ -492,7 +490,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               <HR />
 
               {/* Shops 1 */}
-              <h4 className="text-left ml-1 mb-3">Shops</h4>
+              <h4 className="mb-3 ml-1 text-left">Shops</h4>
               <ItemTable
                 tableInfo={[
                   { colName: "General", colWidth: "25%", limiter: true },

@@ -20,7 +20,7 @@ export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
 }) => {
   return (
     <div className="table-responsive">
-      <table className="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+      <table className="table-sm table-dark table-bordered border-secondary table text-center align-middle">
         <colgroup>
           {tableInfo.map((col, index) =>
             col.colSpan ? (

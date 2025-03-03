@@ -32,12 +32,11 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
 
   if (page.isDropdown) {
     return (
-      <div className="relative group" ref={dropdownRef}>
+      <div className="group relative" ref={dropdownRef}>
         <button
-          className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium text-white
-              ${
-                dropdownActive ? "navbar-active" : ""
-              } transition-colors duration-200`}
+          className={`navbar-link flex items-center rounded-md px-3 py-2 text-base font-medium text-white ${
+            dropdownActive ? "navbar-active" : ""
+          } transition-colors duration-200`}
           onClick={() => setIsOpen(!isOpen)}
         >
           <i className={`fas ${page.icon} mr-1`} />
@@ -51,7 +50,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
           </span>
         </button>
         {isOpen && (
-          <div className="absolute left-0 mt-2 min-w-fit rounded-md shadow-lg bg-[#222a42] ring-1 ring-black/5 z-[70]">
+          <div className="absolute left-0 z-[70] mt-2 min-w-fit rounded-md bg-[#222a42] shadow-lg ring-1 ring-black/5">
             <div
               role="menu"
               aria-orientation="vertical"
@@ -67,12 +66,9 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
                       ? `${item.href}`
                       : `/test_ecgc_2/${item.href}`
                   }
-                  className={`block px-3 py-1 text-[1rem]
-                    ${
-                      activePage === item.href
-                        ? "navbar-active !text-white"
-                        : ""
-                    } hover:!bg-white/15 hover:text-cyan-400 transition-colors duration-200`}
+                  className={`block px-3 py-1 text-[1rem] ${
+                    activePage === item.href ? "navbar-active !text-white" : ""
+                  } transition-colors duration-200 hover:!bg-white/15 hover:text-cyan-400`}
                   role="menuitem"
                 >
                   {item.name}
@@ -89,10 +85,9 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
     <a
       aria-label={page.href}
       href={page?.external ? `${page.href}` : `/test_ecgc_2/${page.href}`}
-      className={`navbar-link flex items-center px-2 py-2 rounded-md text-base font-medium min-h-[40px]
-          ${
-            activePage === page.href ? "navbar-active" : ""
-          } transition-colors duration-200`}
+      className={`navbar-link flex min-h-[40px] items-center rounded-md px-2 py-2 text-base font-medium ${
+        activePage === page.href ? "navbar-active" : ""
+      } transition-colors duration-200`}
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >

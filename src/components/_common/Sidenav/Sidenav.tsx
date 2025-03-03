@@ -82,7 +82,7 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
         }`}
       >
         <div className="container m-auto">
-          <span className="block md:hidden sidenav-header">
+          <span className="sidenav-header block md:hidden">
             <h2 className="text-center">Table of Contents</h2>
             <HR />
           </span>

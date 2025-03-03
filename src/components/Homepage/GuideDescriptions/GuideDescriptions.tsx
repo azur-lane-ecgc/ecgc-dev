@@ -11,30 +11,30 @@ export const GuideDescriptions: React.FC = () => {
     <>
       {/* Images w/ Description */}
       <div id="images" className="hidden md:block">
-        <div className="flex flex-wrap -mx-3">
+        <div className="-mx-3 flex flex-wrap">
           {guides.map((guide, index) => (
             <div
               key={index}
-              className="w-full px-3 mt-3 sm:mt-0 text-left gridcell-list-style"
+              className="gridcell-list-style mt-3 w-full px-3 text-left sm:mt-0"
             >
-              <div className="flex mt-1">
-                <div className="shrink-0 w-[80px]">
+              <div className="mt-1 flex">
+                <div className="w-[80px] shrink-0">
                   <a href={guide.link} target="_self" rel="noopener noreferrer">
                     <img
                       loading="lazy"
-                      className="h-[100px] rounded shadow-lg object-cover"
+                      className="h-[100px] rounded object-cover shadow-lg"
                       src={guide.image}
                       alt={`${guide.title} cover`}
                     />
                   </a>
                 </div>
-                <div className="ml-4 grow mt-1">
+                <div className="ml-4 mt-1 grow">
                   <a href={guide.link} target="_self" rel="noopener noreferrer">
-                    <div className="text-sm font-bold uppercase mb-4 guide-title">
+                    <div className="guide-title mb-4 text-sm font-bold uppercase">
                       {guide.title}
                     </div>
                   </a>
-                  <div className="text-xs mb-4 text-gray-600 mod-gridcell-details-style">
+                  <div className="mod-gridcell-details-style mb-4 text-xs text-gray-600">
                     <div>
                       <i className="fas fa-pencil-alt mr-1" />
                       &#8201;
@@ -69,7 +69,7 @@ export const GuideDescriptions: React.FC = () => {
 
       {/* Images Only */}
       <div className="block md:hidden" id="images">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {guides.map((guide, index) => (
             <div key={index} className="mt-5 text-center">
               <a
@@ -80,15 +80,15 @@ export const GuideDescriptions: React.FC = () => {
               >
                 <img
                   loading="lazy"
-                  className="w-[150px] h-[200px] mx-auto rounded shadow-lg object-cover"
+                  className="mx-auto h-[200px] w-[150px] rounded object-cover shadow-lg"
                   src={guide.image}
                   alt={guide.title}
                 />
-                <div className="gridcell-title guide-title text-[95%] uppercase font-bold mt-2 mb-4">
+                <div className="gridcell-title guide-title mb-4 mt-2 text-[95%] font-bold uppercase">
                   {guide.title}
                 </div>
               </a>
-              <div className="gridcell-details-style-2 text-[80%] mb-4">
+              <div className="gridcell-details-style-2 mb-4 text-[80%]">
                 <div>
                   <i className="fas fa-pencil-alt mr-1" />
                   {guide.authors.length > 0

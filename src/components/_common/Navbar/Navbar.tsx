@@ -63,9 +63,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
 
   return (
     <>
-      <nav className="z-[70] sticky top-0 bg-[#222a42] text-white">
+      <nav className="sticky top-0 z-[70] bg-[#222a42] text-white">
         <div className="container mx-auto py-2">
-          <div className="flex items-center justify-between h-[40px]">
+          <div className="flex h-[40px] items-center justify-between">
             <a
               aria-label="site-icon"
               href={`/test_ecgc_2/`}
@@ -79,14 +79,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
               />
             </a>
             {/* Desktop Nav Items */}
-            <div className="hidden md:flex items-center">
+            <div className="hidden items-center md:flex">
               {navbarPages.map((page, index) => (
                 <NavItem key={index} page={page} activePage={activePage} />
               ))}
             </div>
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-white focus:outline-none hover:bg-white/15 p-2 rounded hover:shadow-lg flex items-center justify-center"
+              className="flex items-center justify-center rounded p-2 text-white hover:bg-white/15 hover:shadow-lg focus:outline-none md:hidden"
               onClick={toggleNavCollapse}
             >
               <i className="fas fa-bars text-xl" />
@@ -97,11 +97,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
         {/* Mobile Dropdown Menu */}
         <div
           ref={dropdownRef}
-          className={`md:hidden absolute top-[47px] left-0 w-full bg-[#222a42] z-[71] overflow-hidden transition-[max-height] duration-300 ease-in-out ${
+          className={`absolute left-0 top-[47px] z-[71] w-full overflow-hidden bg-[#222a42] transition-[max-height] duration-300 ease-in-out md:hidden ${
             isNavCollapsed ? "max-h-0" : "max-h-screen"
           }`}
         >
-          <div className="container mx-auto pt-2 pb-3 space-y-1">
+          <div className="container mx-auto space-y-1 pb-3 pt-2">
             {navbarPages.map((page, index) => (
               <MobileNavItem
                 key={index}
@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
       </nav>
       {!isNavCollapsed && (
         <div
-          className={`md:hidden fixed top-0 left-0 z-[69] h-full w-full bg-black/40`}
+          className={`fixed left-0 top-0 z-[69] h-full w-full bg-black/40 md:hidden`}
           aria-hidden="true"
           onClick={collapseAll}
         />

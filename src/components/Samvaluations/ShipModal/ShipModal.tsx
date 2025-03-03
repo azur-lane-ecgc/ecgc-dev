@@ -177,9 +177,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
           )}
           {!!trigger?.descriptionNote && (
             <div
-              className={`description-note 
-              ${trigger.largeDescNote ? "larger" : ""}
-            `}
+              className={`description-note ${trigger.largeDescNote ? "larger" : ""} `}
             >
               <p
                 onClick={(e) => e.stopPropagation()}
@@ -231,7 +229,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
             {/* Internal Content */}
             <div
               id={`innerModalContent${ship}`}
-              className="mx-auto text-center pt-1"
+              className="mx-auto pt-1 text-center"
             >
               {/* Heading */}
               <h1 className="mb-0">
@@ -277,7 +275,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 </div>
 
                 {/* Samvaluation */}
-                <div className="text-sm w-full">
+                <div className="w-full text-sm">
                   <span
                     className="text-[14.5px] leading-normal text-[hsla(0,0%,100%,0.75)]"
                     dangerouslySetInnerHTML={{ __html: samEval! }}
@@ -363,7 +361,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       <b>Preload</b>
                     </td>
                     <td colSpan={4}>
-                      <span className="text-green-400 font-semibold">
+                      <span className="font-semibold text-green-400">
                         {fastLoad}
                       </span>
                     </td>
@@ -375,7 +373,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                       <b>MLB Bonus</b>
                     </td>
                     <td colSpan={4}>
-                      <span className="text-fuchsia-400 font-semibold">
+                      <span className="font-semibold text-fuchsia-400">
                         {LBBonus}
                       </span>
                     </td>

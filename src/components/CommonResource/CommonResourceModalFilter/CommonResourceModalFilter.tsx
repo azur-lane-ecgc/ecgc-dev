@@ -121,7 +121,7 @@ export const CommonResourceModalFilter: React.FC<
             <p className="mb-1 font-bold text-fuchsia-400">Availability</p>
             <button
               id={`availability_input`}
-              className={`px-1 py-2 w-32 max-w-32 bg-gray-950 hover:bg-gray-800 border border-green-800 rounded-xl shadow-lg`}
+              className={`w-32 max-w-32 rounded-xl border border-green-800 bg-gray-950 px-1 py-2 shadow-lg hover:bg-gray-800`}
               onClick={() => {
                 const nextAvailability =
                   filterState.availability === "Both"
@@ -137,12 +137,12 @@ export const CommonResourceModalFilter: React.FC<
               }}
             >
               <div className="flex justify-evenly">
-                <div className="flex-1 text-center align-middle justify-center pl-[8.75px] pr-2 w-full mb-0 font-bold text-orange-400">
+                <div className="mb-0 w-full flex-1 justify-center pl-[8.75px] pr-2 text-center align-middle font-bold text-orange-400">
                   {filterState.availability}
                 </div>
-                <div className="flex flex-col justify-center m-0 space-y-0 space-x-0 *:!leading-[0.35]">
+                <div className="m-0 flex flex-col justify-center space-x-0 space-y-0 *:!leading-[0.35]">
                   {filterState.availability === "Both" ? (
-                    <span className="text-cyan-400 text-base">
+                    <span className="text-base text-cyan-400">
                       {"\u2713"} {"\u2717"}
                     </span>
                   ) : filterState.availability === "Finite" ? (

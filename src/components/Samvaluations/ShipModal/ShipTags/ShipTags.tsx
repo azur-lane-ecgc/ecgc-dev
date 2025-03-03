@@ -45,9 +45,9 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       {/* Small Screen Tag Trigger */}
       <button
         onClick={() => setRoleDropdown(!roleDropdownOpen)}
-        className={`bg-[#3b444bb9] absolute top-0 left-0 p-[4px] rounded-lg text-base flex items-center space-x-2 border-2 border-gray-400 text-gray-300 ${
+        className={`absolute left-0 top-0 flex items-center space-x-2 rounded-lg border-2 border-gray-400 bg-[#3b444bb9] p-[4px] text-base text-gray-300 ${
           roleDropdownOpen ? "border-pink-300 text-amber-500" : ""
-        } hover:text-cyan-300 hover:border-amber-500 md:hidden`}
+        } hover:border-amber-500 hover:text-cyan-300 md:hidden`}
       >
         <i
           className={`fa-solid translate-y-[1px] ${
@@ -60,15 +60,15 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       <div
         className={`${
           roleDropdownOpen ? "max-h-[500px] border" : "max-h-0 border-0"
-        } bg-slate-800 absolute md:hidden text-center top-[31px] left-0 w-[150px] border-gray-400 shadow-2xl overflow-hidden z-50 transition-all ease-in-out duration-300`}
+        } absolute left-0 top-[31px] z-50 w-[150px] overflow-hidden border-gray-400 bg-slate-800 text-center shadow-2xl transition-all duration-300 ease-in-out md:hidden`}
       >
         {/* Faction Icon */}
-        <div className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3">
-          <span className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative">
+        <div className="flex w-full justify-between border border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
+          <span className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden">
             {getFactionIcon(faction)}
           </span>
           <a
-            className="flex items-center justify-center fake-modal-link"
+            className="fake-modal-link flex items-center justify-center"
             href={factionLink(faction)}
             target="_blank"
             title={"Faction: " + faction}
@@ -79,18 +79,18 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         </div>
 
         {/* HullType Icon */}
-        <div className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3">
-          <span className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative">
+        <div className="flex w-full justify-between border border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
+          <span className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden">
             <img
               loading="lazy"
               src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
               alt={hullType}
               title={"Hull: " + hullType}
-              className="w-full h-full object-contain"
+              className="h-full w-full object-contain"
             />
           </span>
           <a
-            className="flex items-center justify-center fake-modal-link"
+            className="fake-modal-link flex items-center justify-center"
             href={hullTypeLink(hullType)}
             target="_blank"
             title={"Hull: " + hullType}
@@ -104,16 +104,16 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         {displayRoles.map((role) => (
           <div
             key={role}
-            className="w-full flex justify-between border border-transparent border-b-gray-600 hover:border-[#ffa500] hover:bg-[#3b444bb9] py-1 px-3"
+            className="flex w-full justify-between border border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]"
           >
             <span
-              className="w-[40px] h-[40px] flex items-center justify-center overflow-hidden relative"
+              className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"
               title={role}
             >
               {RoleIcons[role]}
             </span>
             <span
-              className="flex items-center justify-center text-white/90 font-bold"
+              className="flex items-center justify-center font-bold text-white/90"
               title={role}
             >
               {role}
@@ -123,11 +123,11 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       </div>
 
       {/* Tags (Larger Screen) */}
-      <div className="absolute top-0 left-0 transform translate-x-0 hidden md:inline-block">
+      <div className="absolute left-0 top-0 hidden translate-x-0 transform md:inline-block">
         {/* Faction + Hull Icons */}
-        <div className="flex space-x-1 pl-1 mt-1">
+        <div className="mt-1 flex space-x-1 pl-1">
           <a
-            className="w-[40px] h-[40px] relative overflow-hidden flex items-center justify-center"
+            className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"
             href={factionLink(faction)}
             target="_blank"
             title={"Faction: " + faction}
@@ -136,7 +136,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             {getFactionIcon(faction)}
           </a>
           <a
-            className="w-[40px] h-[40px] relative overflow-hidden flex items-center justify-center"
+            className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"
             href={hullTypeLink(hullType)}
             target="_blank"
             title={"Hull: " + hullType}
@@ -147,19 +147,19 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
               src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
               alt={hullType}
               title={"Hull: " + hullType}
-              className="w-full h-auto"
+              className="h-auto w-full"
             />
           </a>
         </div>
 
         {/* Role Icons */}
-        <div className="flex pl-1 mt-0.5">
+        <div className="mt-0.5 flex pl-1">
           {displayRoles.map((role) => (
             <div
               aria-label={role}
               title={role}
               key={role}
-              className="w-[40px] h-[40px] relative overflow-hidden flex items-center justify-center"
+              className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"
             >
               {RoleIcons[role] || RoleIcons["default"]}
             </div>

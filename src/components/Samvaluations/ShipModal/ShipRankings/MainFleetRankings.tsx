@@ -29,11 +29,11 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
   return (
     <>
       <RankingHeader />
-      <div className="flex justify-start gap-2 mb-4">
+      <div className="mb-4 flex justify-start gap-2">
         {rankings.map((ranking, index) => (
           <button
             key={index}
-            className={`px-4 py-2 border rounded font-semibold ${
+            className={`rounded border px-4 py-2 font-semibold ${
               rankingIndex === index
                 ? "bg-fuchsia-600/60 text-white"
                 : "bg-gray-300/85"
@@ -64,49 +64,49 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
                 <td
                   className={`${letterRankColor(
                     ranking.hardarbiter,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.hardarbiter ?? "\u200B"}
                 </td>
                 <td
                   className={`${letterRankColor(
                     ranking.meta,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.meta ?? "\u200B"}
                 </td>
                 <td
                   className={`${letterRankColor(
                     ranking.cm,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.cm ?? "\u200B"}
                 </td>
                 <td
                   className={`${letterRankColor(
                     ranking.w14mob,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.w14mob ?? "\u200B"}
                 </td>
                 <td
                   className={`${letterRankColor(
                     ranking.w14boss,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.w14boss ?? "\u200B"}
                 </td>
                 <td
                   className={`${letterRankColor(
                     ranking.w15mob,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.w15mob ?? "\u200B"}
                 </td>
                 <td
                   className={`${letterRankColor(
                     ranking.w15boss,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.w15boss ?? "\u200B"}
                 </td>
@@ -128,35 +128,35 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
                 <td
                   className={`${letterRankColor(
                     ranking.ex,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.ex ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.consistency,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.consistency ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.fleetreq,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.fleetreq ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.gearreq,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.gearreq ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.flagreq || "",
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.flagreq ?? "\u200B"}
                 </td>
@@ -179,42 +179,42 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
                 <td
                   className={`${numberRankColor(
                     ranking.lightdmg,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.lightdmg ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.mediumdmg,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.mediumdmg ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.heavydmg,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.heavydmg ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.aoedmg,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.aoedmg ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.dmguptime,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.dmguptime ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.offensivebuff,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.offensivebuff ?? "\u200B"}
                 </td>
@@ -236,35 +236,35 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
                 <td
                   className={`${numberRankColor(
                     ranking.selfsurvival,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.selfsurvival ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.aa,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.aa ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.rammers,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.rammers ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.othermain,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.othermain ?? "\u200B"}
                 </td>
                 <td
                   className={`${numberRankColor(
                     ranking.vgsurvival,
-                  )} !text-black font-semibold`}
+                  )} font-semibold !text-black`}
                 >
                   {ranking.vgsurvival ?? "\u200B"}
                 </td>

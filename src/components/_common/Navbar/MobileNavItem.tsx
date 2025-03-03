@@ -30,8 +30,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
     return (
       <>
         <button
-          className={`navbar-link w-full text-left px-3 py-2 rounded-md text-base font-medium text-white
-              ${dropdownActive ? "navbar-active" : ""} `}
+          className={`navbar-link w-full rounded-md px-3 py-2 text-left text-base font-medium text-white ${dropdownActive ? "navbar-active" : ""} `}
           onClick={() => {
             toggleDropdown(page.name.toLowerCase())
             setIsOpen(!isOpen)
@@ -56,10 +55,9 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
                 href={
                   item?.external ? `${item.href}` : `/test_ecgc_2/${item.href}`
                 }
-                className={`block px-3 py-2 rounded-md text-base font-normal
-                  ${
-                    activePage === item.href ? "navbar-active !text-white" : ""
-                  } hover:!bg-white/15 hover:text-cyan-400 transition-colors duration-200`}
+                className={`block rounded-md px-3 py-2 text-base font-normal ${
+                  activePage === item.href ? "navbar-active !text-white" : ""
+                } transition-colors duration-200 hover:!bg-white/15 hover:text-cyan-400`}
               >
                 {item.name}
               </a>
@@ -74,8 +72,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
     <a
       aria-label={page.href}
       href={page?.external ? `${page.href}` : `/test_ecgc_2/${page.href}`}
-      className={`navbar-link flex items-center px-3 py-2 rounded-md text-base font-medium no-underline
-          ${activePage === page.href ? "navbar-active" : ""} `}
+      className={`navbar-link flex items-center rounded-md px-3 py-2 text-base font-medium no-underline ${activePage === page.href ? "navbar-active" : ""} `}
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >

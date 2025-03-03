@@ -27,7 +27,7 @@ const currPage = pageInfo.find((page) => page.title === title)
   }
 </style>
 
-<div class="text-center mt-[10px] pb-3">
+<div class="mt-[10px] pb-3 text-center">
   <h1>
     <b>
       <u>{title}</u>
@@ -36,7 +36,7 @@ const currPage = pageInfo.find((page) => page.title === title)
 
   {
     currPage ? (
-      <p class="text-center title-subheading nospace">
+      <p class="title-subheading nospace text-center">
         <b>Author(s)</b>:{" "}
         <span class="author-name">
           {currPage.authors.length > 0
