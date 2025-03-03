@@ -9,6 +9,7 @@ interface ShipState {
   visibleShips: AllShipData[]
   filters: {
     hullType: string[]
+    rarity?: string
   }
 }
 
@@ -34,41 +35,52 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
   }
 }
 
+const isFilterEmpty = (filters: ShipState["filters"]): boolean => {
+  return !!!filters.hullType && !!!filters.rarity
+}
+
 export const useShipFilter = () => {
   const [state, dispatch] = useReducer(shipReducer, {
     visibleShips: Object.values(shipData) as AllShipData[],
-    filters: { hullType: [] },
+    filters: { hullType: [], rarity: "" },
   })
 
   useEffect(() => {
-    const applyFilters = async () => {
-      // Check if all filters are empty
-      const areAllFiltersEmpty = Object.values(state.filters).every(
-        (filterValue) =>
-          (Array.isArray(filterValue) && filterValue.length === 0) ||
-          !filterValue,
-      )
-
+    const fetchFilteredShips = async () => {
       let query = db.ships.toCollection()
 
-      if (!!!areAllFiltersEmpty) {
-        const hullFilter = state.filters.hullType
-        if (hullFilter.length > 0) {
-          query = db.ships.where("hullType").anyOf(hullFilter)
+      if (!isFilterEmpty(state.filters)) {
+        if (state.filters.hullType.length > 0) {
+          const specialFilters = state.filters.hullType.filter(
+            (h) => h === "DD" || h === "IX",
+          )
+          const regularFilters = state.filters.hullType.filter(
+            (h) => h !== "DD" && h !== "IX",
+          )
+
+          if (specialFilters.length > 0) {
+            query = db.ships
+              .where("hullType")
+              .startsWithAnyOfIgnoreCase(specialFilters)
+          }
+          if (regularFilters.length > 0) {
+            query = db.ships.where("hullType").anyOf(regularFilters)
+          }
         }
 
-        // You can add more filter conditions here as you develop them
-        // Example:
-        // if (state.filters.someOtherFilter) {
-        //   query = query.filter(ship => someOtherFilterCondition);
-        // }
+        if (state.filters.rarity) {
+          const rarityNumber = parseInt(state.filters.rarity, 10)
+          if (!isNaN(rarityNumber)) {
+            query = query.and((ship) => ship.rarity === rarityNumber)
+          }
+        }
       }
 
-      const filteredShips = (await query.toArray()).sort((a, b) => a.id - b.id)
+      const filteredShips = await query.sortBy("id")
       dispatch({ type: "SET_SHIPS", payload: filteredShips })
     }
 
-    applyFilters()
+    fetchFilteredShips()
   }, [state.filters])
 
   return { state, dispatch }

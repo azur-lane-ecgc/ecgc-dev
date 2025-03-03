@@ -29,11 +29,14 @@ export const SamvaluationModalFilter: React.FC = () => {
           options={Array.from(
             new Set([
               ...Object.values(shipData).map((ship) => ship.hullType),
-              "IX", // hardcoded since no ship is IX directly
+              "IX",
             ]),
           ).sort((a, b) => a.localeCompare(b))}
           onSelect={(hullType) =>
-            dispatch({ type: "SET_FILTER", payload: { hullType } })
+            dispatch({
+              type: "SET_FILTER",
+              payload: { hullType: hullType ? [hullType] : [] },
+            })
           }
         />
       </div>
