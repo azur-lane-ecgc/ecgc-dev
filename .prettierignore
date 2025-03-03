@@ -1,2 +1,4 @@
 dev_tools/ENV
 dev_tools/_backup
+node_modules
+dist
