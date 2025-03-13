@@ -6208,7 +6208,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Order of the White Rose", "Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": ["Healer"],
@@ -7600,7 +7600,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Biggest Girl's Bonnie Bells", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": ["Healer"],
@@ -11905,7 +11905,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["Public-Private Schedule", "Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": ["Healer"],
@@ -16969,10 +16969,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["This Box is Really Heavy", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -21799,10 +21799,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Rime Sword of the Great One", "Bowgun", "Officer's Sword"],
     "samEval": "Rossiya is a flagship-oriented BB with meh stats and skills. Her self-buff is only for the first 2 battles, which is not relevant when mobbing. Her barrage has high raw damage but a really bad pattern and average proc rate. Overall, she is a meh ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -41695,6 +41695,10 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        },
+        {
+          "name": "Dossier Analysis",
+          "href": "META_Showdown#Dossier_Analysis"
         }
       ],
       "construction": [],
@@ -42685,6 +42689,58 @@
         }
       ],
       "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "30045": {
+    "id": 30045,
+    "ship": "Hornet META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.35,
+        "mounts": 3
+      },
+      {
+        "type": ["Dive Bomber"],
+        "efficiency": 1.25,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Healer"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "META Showdown",
+          "href": "META_Showdown"
+        }
+      ],
       "construction": [],
       "permanent": []
     }

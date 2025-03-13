@@ -65,7 +65,7 @@
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",
-      "consistency": null,
+      "consistency": -1,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
@@ -3566,28 +3566,28 @@
   "Fubuki": [
     {
       "nameNote": "",
-      "notes": "Buffs Fubuki class.",
+      "notes": "After augment, huge buffs for all DDs. Not tiered as a TRP buffer.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
-      "w14mob": "D",
+      "w14mob": "C",
       "w14boss": "D",
       "w15mob": "D",
       "w15boss": "D",
-      "ex": "D",
-      "consistency": null,
-      "fleetreq": -3,
+      "ex": "C",
+      "consistency": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
-      "heavydmg": 1,
+      "heavydmg": 2,
       "aoedmg": 1,
-      "offensivebuff": null,
+      "offensivebuff": 1,
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
-      "defensivebuff": null
+      "defensivebuff": 3
     }
   ],
   "Fumizuki": [
@@ -6347,7 +6347,7 @@
   "Köln": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Chooses from 10 possible barrages.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6356,7 +6356,7 @@
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",
-      "consistency": null,
+      "consistency": -1,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
@@ -11880,7 +11880,7 @@
   "York": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "After augment, still terrible.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -11889,7 +11889,7 @@
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",
-      "consistency": null,
+      "consistency": -1,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
