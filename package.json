@@ -13,27 +13,28 @@
     "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" \"dev_tools/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
     "devtools": "bun run submodule && bun run dev_tools/runAllTools.ts && bun run smol_format",
     "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://localhost:4321/test_ecgc_2/ && bunx --bun astro dev",
-    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun update"
+    "update": "bun upgrade && bun update && bun install",
+    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^4.2.1",
     "@astrojs/sitemap": "^3.2.1",
     "@playform/compress": "^0.1.7",
-    "@tailwindcss/vite": "^4.0.12",
+    "@tailwindcss/vite": "^4.0.13",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "astro": "^5.4.2",
+    "astro": "^5.4.3",
     "dexie": "^4.0.11",
     "dexie-react-hooks": "^1.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-intersection-observer-hook": "^3.0.1",
-    "tailwindcss": "^4.0.12",
+    "tailwindcss": "^4.0.13",
     "typescript": "^5.8.2"
   },
   "devDependencies": {
-    "@happy-dom/global-registrator": "^17.4.3",
+    "@happy-dom/global-registrator": "^17.4.4",
     "@types/bun": "^1.2.5",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
