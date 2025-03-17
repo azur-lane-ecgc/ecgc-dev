@@ -3,7 +3,7 @@
 cd dev_tools || { echo "dev_tools directory not found!"; exit 1; }
 
 if [ ! -d "ENV" ]; then
-    python -m venv ENV
+    uv venv ENV
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -17,7 +17,7 @@ else
     exit 1
 fi
 
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 playwright install firefox
 
 echo "Python Dev Tool Setup Complete."

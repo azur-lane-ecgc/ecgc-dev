@@ -44,17 +44,9 @@ const readAllFiles = async (dir: string): Promise<string[]> => {
 
 const runScript = async (fileName: string): Promise<void> => {
   try {
-    const pythonPath = path.join(scriptsDirectory, "ENV", "bin", "python")
-    const pythonExecutable =
-      process.platform === "win32"
-        ? path.join(scriptsDirectory, "ENV", "Scripts", "python.exe")
-        : pythonPath
-
     const { stdout, stderr }: { stdout: string; stderr: string } =
       fileName.endsWith(".py")
-        ? await exec(
-            `${pythonExecutable} ${path.join(scriptsDirectory, fileName)}`,
-          )
+        ? await exec(`uv run ${path.join(scriptsDirectory, fileName)}`)
         : fileName.endsWith(".ts")
           ? await exec(`bun run ${path.join(scriptsDirectory, fileName)}`)
           : { stdout: "", stderr: "" }
