@@ -43,5 +43,10 @@ export default defineConfig({
         },
       }),
     ],
+    server: {
+      watch: {
+        ignored: ["**/dist/**", "**/dev_tools/**", "**/node_modules/**"],
+      },
+    },
   },
 })
