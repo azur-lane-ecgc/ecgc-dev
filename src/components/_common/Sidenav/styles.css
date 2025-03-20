@@ -67,7 +67,7 @@
   transform: rotate(90deg);
   z-index: 50;
   position: fixed;
-  top: 16.4px;
+  top: 18px;
   left: 0px;
   transform-origin: bottom left;
   transition: 0.5s;
