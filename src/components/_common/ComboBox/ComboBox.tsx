@@ -51,7 +51,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   useEffect(() => {
     if (showOptions) {
       setShouldRenderMobile(true)
-      setTimeout(() => setIsVisible(true), 10)
+      setTimeout(() => setIsVisible(true), 75)
       if (inputRef.current) {
         inputRef.current.focus()
       }
