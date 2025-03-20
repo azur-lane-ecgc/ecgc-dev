@@ -1,30 +1,15 @@
 import { useState } from "react"
-
-import { HR } from "@components/_common/HR"
-import { TocLink } from "./TocLink"
-import globalTOC from "./TocContent.json"
+import type { ReactNode } from "react"
 
 import "./styles.css"
 
 interface SidenavProps {
-  page?: string
+  children: ReactNode
 }
 
-interface TocContentType {
-  id: string
-  content: string
-  subheadings: {
-    id: string
-    content: string
-  }[]
-}
-
-export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
+export const Sidenav: React.FC<SidenavProps> = ({ children }) => {
   const [isToggle, setToggle] = useState(false)
   const [isSidenavCollapse, setSidenavCollapse] = useState(false)
-
-  const TocContent: TocContentType[] =
-    globalTOC.find((file) => file.fileName === page)?.toc || []
 
   const toggleFunction = () => {
     var main = document.getElementById("main")
@@ -46,12 +31,6 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
     }
   }
 
-  const smToggleFunction = () => {
-    if (window.innerWidth < 1016) {
-      toggleFunction()
-    }
-  }
-
   return (
     <>
       {/* <!-- Overlay --> */}
@@ -70,55 +49,18 @@ export const Sidenav: React.FC<SidenavProps> = ({ page = "" }) => {
         <i id="sidenavToggleUp" className="fa fa-angle-double-up" />
         <i id="sidenavToggleDown" className="fa fa-angle-double-down" />
         <span className="sidenav-btn-text hidden md:inline">
-          {" "}
           Table of Contents
         </span>
       </button>
 
+      {/* Internal Sidenav Content */}
       <div
         id="sidenav"
         className={`sidenav overflow-auto ${isToggle ? "toggle" : ""} ${
           isSidenavCollapse ? "custom-sidenav-collapse" : ""
         }`}
       >
-        <div className="container m-auto">
-          <span className="sidenav-header block md:hidden">
-            <h2 className="text-center">Table of Contents</h2>
-            <HR />
-          </span>
-          {TocContent.length > 0 && (
-            <div className="toc">
-              <ol>
-                {TocContent.map((tocLink) => (
-                  <li key={tocLink.id}>
-                    <TocLink
-                      id={tocLink.id}
-                      level={1}
-                      onClick={smToggleFunction}
-                    >
-                      {tocLink.content}
-                    </TocLink>
-                    {tocLink.subheadings.length > 0 && (
-                      <ol>
-                        {tocLink.subheadings.map((tocLinkSubheading) => (
-                          <li key={tocLinkSubheading.id}>
-                            <TocLink
-                              id={tocLinkSubheading.id}
-                              level={2}
-                              onClick={smToggleFunction}
-                            >
-                              {tocLinkSubheading.content}
-                            </TocLink>
-                          </li>
-                        ))}
-                      </ol>
-                    )}
-                  </li>
-                ))}
-              </ol>
-            </div>
-          )}
-        </div>
+        <div className="container m-auto">{children}</div>
       </div>
     </>
   )
