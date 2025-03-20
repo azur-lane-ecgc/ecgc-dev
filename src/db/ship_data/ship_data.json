@@ -27498,7 +27498,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -27550,7 +27555,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -27602,7 +27612,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Heavy)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },

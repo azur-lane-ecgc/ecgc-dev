@@ -19,18 +19,18 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^4.2.1",
-    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/sitemap": "^3.3.0",
     "@playform/compress": "^0.1.7",
-    "@tailwindcss/vite": "^4.0.14",
-    "@types/react": "^19.0.10",
+    "@tailwindcss/vite": "^4.0.15",
+    "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
-    "astro": "^5.5.2",
+    "astro": "^5.5.3",
     "dexie": "^4.0.11",
     "dexie-react-hooks": "^1.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-intersection-observer-hook": "^3.0.1",
-    "tailwindcss": "^4.0.14",
+    "tailwindcss": "^4.0.15",
     "typescript": "^5.8.2"
   },
   "devDependencies": {
