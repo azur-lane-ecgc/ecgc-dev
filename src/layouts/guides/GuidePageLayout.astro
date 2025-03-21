@@ -9,7 +9,7 @@ import "@styles/poppins_font.css"
 
 import { Navbar } from "@components/_common/Navbar"
 import { pageInfo } from "@components/_common/PageInfo"
-import { Sidenav, SidenavToc } from "@components/_common/Sidenav"
+import { SidenavPage } from "@components/_common/Sidenav"
 import Footer from "@components/_common/Footer.astro"
 
 interface Props {
@@ -87,13 +87,7 @@ const {
 
 <body>
   <Navbar activePage={activePage} client:load />
-  {
-    !!tocID && (
-      <Sidenav client:load>
-        <SidenavToc page={tocID} />
-      </Sidenav>
-    )
-  }
+  {!!tocID && <SidenavPage page={tocID} client:load />}
   <div
     id="main"
     class="guide-content-body custom-sidenav-shift mx-auto max-w-[100%] overflow-y-hidden px-3 md:max-w-[75%]"

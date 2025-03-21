@@ -20,8 +20,10 @@ export const SidenavToc: React.FC<SidenavTocProps> = ({ page = "" }) => {
     globalTOC.find((file) => file.fileName === page)?.toc || []
 
   const smToggleFunction = () => {
-    var mainSidenavButton = document.getElementById("sidenavButton")
-    mainSidenavButton?.click()
+    if (window.innerWidth < 1016) {
+      var mainSidenavButton = document.getElementById("sidenavButton")
+      mainSidenavButton?.click()
+    }
   }
 
   return (
