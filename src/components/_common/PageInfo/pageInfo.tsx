@@ -40,8 +40,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Equipment Guide",
     authors: ["Samheart564"],
-    lastUpdated: "9/5/2024",
-    revision: "1.15.0",
+    lastUpdated: "3/20/2025",
+    revision: "1.16.0",
     description: (
       <>
         Goes over the optimal equipment to use in Azur Lane, in an easy-to-read
