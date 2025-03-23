@@ -8,7 +8,7 @@
     "dev": "bunx --bun astro dev",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bash dev_tools/gsheets2img.sh",
-    "imgur": "python dev_tools/automated_imgur_upload/imgur.py",
+    "imgur": "uv run dev_tools/automated_imgur_upload/imgur.py",
     "build": "bunx --bun astro check && bunx --bun astro build",
     "smol_format": "bunx --bun prettier --write \"src/**/*.{astro,json}\" \"dev_tools/**/*.{astro,json}\" --ignore-path .prettierignore",
     "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" \"dev_tools/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
