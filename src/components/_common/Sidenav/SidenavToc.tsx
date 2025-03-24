@@ -21,7 +21,7 @@ export const SidenavToc: React.FC<SidenavTocProps> = ({ page = "" }) => {
 
   const smToggleFunction = () => {
     if (window.innerWidth < 1016) {
-      var mainSidenavButton = document.getElementById("sidenavButton")
+      const mainSidenavButton = document.getElementById("sidenavButton")
       mainSidenavButton?.click()
     }
   }
