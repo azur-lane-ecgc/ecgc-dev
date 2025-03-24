@@ -40,7 +40,9 @@ export const SamvaluationModalFilter: React.FC = () => {
           title="Hull Type"
           options={Array.from(
             new Set([
-              ...Object.values(shipData).map((ship) => ship.hullType),
+              ...Object.values(shipData).map((ship) =>
+                ship.hullType === "DDGv" ? "DDG" : ship.hullType,
+              ),
               "IX",
             ]),
           ).sort((a, b) => a.localeCompare(b))}

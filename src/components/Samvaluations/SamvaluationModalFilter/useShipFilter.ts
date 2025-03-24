@@ -62,12 +62,23 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
   if (filters.hullType.length > 0) {
     let hullFilters = [...filters.hullType]
 
-    if (hullFilters.includes("DD") || hullFilters.includes("IX")) {
+    if (
+      hullFilters.includes("DD") ||
+      hullFilters.includes("IX") ||
+      hullFilters.includes("DDG")
+    ) {
       query = db.ships
         .where("hullType")
-        .anyOf(hullFilters.filter((h) => h !== "DD" && h !== "IX"))
+        .anyOf(
+          hullFilters.filter((h) => h !== "DD" && h !== "IX" && h !== "DDG"),
+        )
 
       // include all DDG
+      if (hullFilters.includes("DDG")) {
+        query = query.or("hullType").startsWith("DDG")
+      }
+
+      // include all DD
       if (hullFilters.includes("DD")) {
         query = query.or("hullType").startsWith("DD")
       }
