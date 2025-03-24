@@ -48,34 +48,25 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
 
   // hull type filters
   if (filters.hullType.length > 0) {
-    const specialFilters = filters.hullType.filter(
-      (h) => h === "DD" || h === "IX" || h === "DDGm",
-    )
-    const regularFilters = filters.hullType.filter(
-      (h) => h !== "DD" && h !== "IX" && h !== "DDGm",
-    )
+    let hullFilters = [...filters.hullType]
 
-    query = query.and((ship) => {
-      // special cases
-      if (specialFilters.length > 0) {
-        const expandedSpecialFilters = specialFilters.flatMap((h) =>
-          h === "DDGm" ? ["DDGv"] : h,
-        )
-        if (
-          expandedSpecialFilters.some((filter) =>
-            ship.hullType.toLowerCase().startsWith(filter.toLowerCase()),
-          )
-        )
-          return true
+    if (hullFilters.includes("DD") || hullFilters.includes("IX")) {
+      query = db.ships
+        .where("hullType")
+        .anyOf(hullFilters.filter((h) => h !== "DD" && h !== "IX"))
+
+      // include all DDG
+      if (hullFilters.includes("DD")) {
+        query = query.or("hullType").startsWith("DD")
       }
 
-      // normal cases
-      if (regularFilters.length > 0) {
-        return regularFilters.includes(ship.hullType)
+      // include all IX
+      if (hullFilters.includes("IX")) {
+        query = query.or("hullType").startsWith("IX")
       }
-
-      return true
-    })
+    } else {
+      query = db.ships.where("hullType").anyOf(hullFilters)
+    }
   }
 
   /*
