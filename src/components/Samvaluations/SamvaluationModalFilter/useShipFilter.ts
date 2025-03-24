@@ -5,11 +5,14 @@ import type { ShipData, AllShipData } from "@db/types"
 const shipData = (await import("@db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
 
+import { normalizeString } from "@utils/string"
+
 interface ShipState {
   visibleShips: AllShipData[]
   filters: {
     hullType: string[]
     rarity: number[]
+    searchTerm: string
   }
 }
 
@@ -45,6 +48,15 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
 
 const fetchFilteredShips = async (filters: ShipState["filters"]) => {
   let query = db.ships.toCollection()
+
+  // string filters (ignore all other filters)
+  if (filters.searchTerm.trim() !== "") {
+    const search = normalizeString(filters.searchTerm)
+
+    return query
+      .filter((ship) => normalizeString(ship.ship).includes(search))
+      .sortBy("ship")
+  }
 
   // hull type filters
   if (filters.hullType.length > 0) {
@@ -95,10 +107,11 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
   }
 }
 
+// main filtering hook
 export const useShipFilter = (loading: boolean = true) => {
   const [state, dispatch] = useReducer(shipReducer, {
     visibleShips: Object.values(shipData) as AllShipData[],
-    filters: { hullType: [], rarity: [] },
+    filters: { hullType: [], rarity: [], searchTerm: "" },
   })
 
   useEffect(() => {

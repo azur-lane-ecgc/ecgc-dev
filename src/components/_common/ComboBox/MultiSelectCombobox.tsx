@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 
-import { truncateString } from "@utils/truncateString"
+import { truncateString } from "@utils/string/truncateString"
 
 export interface MultiComboBoxProps {
   className?: string
