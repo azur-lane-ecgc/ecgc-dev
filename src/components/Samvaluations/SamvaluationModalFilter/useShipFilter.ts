@@ -55,7 +55,7 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
 
     return query
       .filter((ship) => normalizeString(ship.ship).includes(search))
-      .sortBy("ship")
+      .sortBy("id")
   }
 
   // hull type filters

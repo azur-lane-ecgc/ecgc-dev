@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
+import { Input } from "@components/_common/Input"
 
 import { checkAndUpdateDatabase } from "@db/populateDb"
 import type { ShipData } from "@db/types"
@@ -24,6 +25,16 @@ export const SamvaluationModalFilter: React.FC = () => {
   return (
     <>
       <div className="flex flex-row flex-wrap gap-3.5">
+        <Input
+          title="Ship Name"
+          onSelect={(searchTerm) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: { searchTerm: searchTerm.trim() },
+            })
+          }
+          debounceTimer={275}
+        />
         <MultiSelectCombobox
           title="Hull Type"
           options={Array.from(
