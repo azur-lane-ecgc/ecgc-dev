@@ -4,10 +4,14 @@ import type { ReactNode } from "react"
 import "./styles.css"
 
 interface SidenavProps {
+  btnText?: string
   children: ReactNode
 }
 
-export const Sidenav: React.FC<SidenavProps> = ({ children }) => {
+export const Sidenav: React.FC<SidenavProps> = ({
+  btnText = null,
+  children,
+}) => {
   const [isToggle, setToggle] = useState(false)
   const [isSidenavCollapse, setSidenavCollapse] = useState(false)
 
@@ -38,7 +42,7 @@ export const Sidenav: React.FC<SidenavProps> = ({ children }) => {
         <div className="overlay visible" onClick={toggleFunction}></div>
       )}
 
-      {/* <!-- Table of Contents (SideNav) --> */}
+      {/* <!-- Sidenav Button --> */}
       <button
         id="sidenavButton"
         className={`btn custom-sidenav-button ${isToggle ? "toggle" : ""} ${
@@ -48,9 +52,9 @@ export const Sidenav: React.FC<SidenavProps> = ({ children }) => {
       >
         <i id="sidenavToggleUp" className="fa fa-angle-double-up" />
         <i id="sidenavToggleDown" className="fa fa-angle-double-down" />
-        <span className="sidenav-btn-text hidden md:inline">
-          Table of Contents
-        </span>
+        {btnText && (
+          <span className="sidenav-btn-text hidden md:inline">{btnText}</span>
+        )}
       </button>
 
       {/* Internal Sidenav Content */}
