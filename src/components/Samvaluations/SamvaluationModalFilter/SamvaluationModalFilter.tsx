@@ -33,6 +33,7 @@ export const SamvaluationModalFilter: React.FC = () => {
               payload: { searchTerm: searchTerm.trim() },
             })
           }
+          placeholder="Base Name ONLY"
           debounceTimer={275}
         />
         <MultiSelectCombobox
