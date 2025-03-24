@@ -94,8 +94,15 @@
     },
     {
       "name": "Felix Schultz",
-      "totalEHP": "122.92%",
-      "std": "43.87%"
+      "totalEHP": "127.60%",
+      "std": "45.97%"
+    }
+  ],
+  "Laffey II": [
+    {
+      "name": "Laffey II",
+      "totalEHP": "149.15%",
+      "std": "57.31%"
     }
   ],
   "Ping Hai": [
@@ -115,13 +122,6 @@
       "name": "Yat Sen (Retrofit)",
       "totalEHP": "146.07%",
       "std": "77.19%"
-    }
-  ],
-  "Laffey II": [
-    {
-      "name": "Laffey II",
-      "totalEHP": "144.26%",
-      "std": "55.07%"
     }
   ],
   "Kronshtadt": [
@@ -146,6 +146,18 @@
       "name": "Kala Ideas",
       "totalEHP": "121.41%",
       "std": "28.35%"
+    }
+  ],
+  "Fancy": [
+    {
+      "name": "Fancy (3 Gear)",
+      "totalEHP": "135.55%",
+      "std": "40.99%"
+    },
+    {
+      "name": "Fancy (2 Gear)",
+      "totalEHP": "118.50%",
+      "std": "38.33%"
     }
   ],
   "Eldridge": [
@@ -182,18 +194,6 @@
       "name": "Azuma",
       "totalEHP": "108.55%",
       "std": "21.70%"
-    }
-  ],
-  "Fancy": [
-    {
-      "name": "Fancy (3 Gear)",
-      "totalEHP": "129.39%",
-      "std": "40.05%"
-    },
-    {
-      "name": "Fancy (2 Gear)",
-      "totalEHP": "118.50%",
-      "std": "38.33%"
     }
   ],
   "Neptune": [
@@ -258,6 +258,18 @@
       "std": "25.33%"
     }
   ],
+  "Golden Hind": [
+    {
+      "name": "Golden Hind (3 Gear)",
+      "totalEHP": "118.24%",
+      "std": "38.02%"
+    },
+    {
+      "name": "Golden Hind (2 Gear)",
+      "totalEHP": "101.10%",
+      "std": "35.16%"
+    }
+  ],
   "Tallinn": [
     {
       "name": "Tallinn",
@@ -270,6 +282,30 @@
       "name": "Yume Minami",
       "totalEHP": "117.78%",
       "std": "34.92%"
+    }
+  ],
+  "Adventure Galley": [
+    {
+      "name": "Adventure Galley (3 Gear)",
+      "totalEHP": "117.47%",
+      "std": "30.71%"
+    },
+    {
+      "name": "Adventure Galley (2 Gear)",
+      "totalEHP": "103.04%",
+      "std": "28.76%"
+    }
+  ],
+  "Otto von Alvensleben": [
+    {
+      "name": "Otto von Alvensleben (150 CL)",
+      "totalEHP": "117.17%",
+      "std": "44.79%"
+    },
+    {
+      "name": "Otto von Alvensleben (114/PlyGun)",
+      "totalEHP": "105.60%",
+      "std": "39.20%"
     }
   ],
   "Jervis": [
@@ -341,30 +377,6 @@
       "std": "24.88%"
     }
   ],
-  "Golden Hind": [
-    {
-      "name": "Golden Hind (3 Gear)",
-      "totalEHP": "113.51%",
-      "std": "37.26%"
-    },
-    {
-      "name": "Golden Hind (2 Gear)",
-      "totalEHP": "101.10%",
-      "std": "35.16%"
-    }
-  ],
-  "Adventure Galley": [
-    {
-      "name": "Adventure Galley (3 Gear)",
-      "totalEHP": "112.81%",
-      "std": "30.10%"
-    },
-    {
-      "name": "Adventure Galley (2 Gear)",
-      "totalEHP": "103.04%",
-      "std": "28.76%"
-    }
-  ],
   "Bolzano META": [
     {
       "name": "Bolzano META (alone)",
@@ -382,18 +394,6 @@
       "name": "Chikuma",
       "totalEHP": "111.97%",
       "std": "37.67%"
-    }
-  ],
-  "Otto von Alvensleben": [
-    {
-      "name": "Otto von Alvensleben (150 CL)",
-      "totalEHP": "111.81%",
-      "std": "42.24%"
-    },
-    {
-      "name": "Otto von Alvensleben (114/PlyGun)",
-      "totalEHP": "101.23%",
-      "std": "37.13%"
     }
   ],
   "San Diego": [
@@ -531,6 +531,13 @@
       "std": "40.47%"
     }
   ],
+  "Hatsuzuki": [
+    {
+      "name": "Hatsuzuki",
+      "totalEHP": "106.18%",
+      "std": "43.69%"
+    }
+  ],
   "New Orleans": [
     {
       "name": "New Orleans",
@@ -621,13 +628,6 @@
       "std": "31.38%"
     }
   ],
-  "Hatsuzuki": [
-    {
-      "name": "Hatsuzuki",
-      "totalEHP": "102.18%",
-      "std": "41.66%"
-    }
-  ],
   "Mainz": [
     {
       "name": "Mainz (Fate)",
@@ -652,6 +652,13 @@
       "name": "Takao",
       "totalEHP": "101.05%",
       "std": "33.27%"
+    }
+  ],
+  "Montpelier": [
+    {
+      "name": "Montpelier",
+      "totalEHP": "100.89%",
+      "std": "32.82%"
     }
   ],
   "Brennus": [
@@ -699,13 +706,6 @@
       "std": "30.05%"
     }
   ],
-  "Montpelier": [
-    {
-      "name": "Montpelier",
-      "totalEHP": "98.41%",
-      "std": "31.71%"
-    }
-  ],
   "Maya": [
     {
       "name": "Maya",
@@ -725,6 +725,13 @@
       "name": "Roon μ",
       "totalEHP": "97.22%",
       "std": "22.62%"
+    }
+  ],
+  "Pittsburgh": [
+    {
+      "name": "Pittsburgh",
+      "totalEHP": "96.98%",
+      "std": "25.36%"
     }
   ],
   "Mogami": [
@@ -791,11 +798,11 @@
       "std": "27.99%"
     }
   ],
-  "Pittsburgh": [
+  "Suzutsuki": [
     {
-      "name": "Pittsburgh",
-      "totalEHP": "94.89%",
-      "std": "24.50%"
+      "name": "Suzutsuki",
+      "totalEHP": "94.23%",
+      "std": "35.12%"
     }
   ],
   "Reisalin Stout": [
@@ -897,11 +904,16 @@
       "std": "37.73%"
     }
   ],
-  "Suzutsuki": [
+  "Portsmouth Adventure": [
     {
-      "name": "Suzutsuki",
-      "totalEHP": "91.25%",
-      "std": "33.66%"
+      "name": "Portsmouth Adventure (3 Gear)",
+      "totalEHP": "91.19%",
+      "std": "28.86%"
+    },
+    {
+      "name": "Portsmouth Adventure (2 Gear)",
+      "totalEHP": "77.46%",
+      "std": "26.60%"
     }
   ],
   "Kalk": [
@@ -1059,18 +1071,6 @@
       "std": "21.79%"
     }
   ],
-  "Portsmouth Adventure": [
-    {
-      "name": "Portsmouth Adventure (3 Gear)",
-      "totalEHP": "87.33%",
-      "std": "28.24%"
-    },
-    {
-      "name": "Portsmouth Adventure (2 Gear)",
-      "totalEHP": "77.46%",
-      "std": "26.60%"
-    }
-  ],
   "Algérie": [
     {
       "name": "Algérie",
@@ -1099,6 +1099,13 @@
       "std": "27.23%"
     }
   ],
+  "Attilio Regolo": [
+    {
+      "name": "Attilio Regolo",
+      "totalEHP": "86.87%",
+      "std": "32.17%"
+    }
+  ],
   "Dido μ": [
     {
       "name": "Dido μ (Mobbing)",
@@ -1125,6 +1132,25 @@
       "std": "23.75%"
     }
   ],
+  "Mogador": [
+    {
+      "name": "Mogador",
+      "totalEHP": "86.22%",
+      "std": "45.18%"
+    }
+  ],
+  "Biloxi": [
+    {
+      "name": "Biloxi (AA)",
+      "totalEHP": "85.96%",
+      "std": "26.70%"
+    },
+    {
+      "name": "Biloxi (no AA)",
+      "totalEHP": "82.15%",
+      "std": "25.34%"
+    }
+  ],
   "Dido": [
     {
       "name": "Dido",
@@ -1149,6 +1175,13 @@
       "name": "Phoenix",
       "totalEHP": "85.33%",
       "std": "26.12%"
+    }
+  ],
+  "Suffolk": [
+    {
+      "name": "Suffolk (Retrofit)",
+      "totalEHP": "85.12%",
+      "std": "25.73%"
     }
   ],
   "L'Audacieux": [
@@ -1203,13 +1236,6 @@
       "std": "30.10%"
     }
   ],
-  "Attilio Regolo": [
-    {
-      "name": "Attilio Regolo",
-      "totalEHP": "83.72%",
-      "std": "30.62%"
-    }
-  ],
   "Cleveland": [
     {
       "name": "Cleveland",
@@ -1257,20 +1283,6 @@
       "std": "25.56%"
     }
   ],
-  "Mogador": [
-    {
-      "name": "Mogador",
-      "totalEHP": "83.11%",
-      "std": "43.24%"
-    }
-  ],
-  "Suffolk": [
-    {
-      "name": "Suffolk (Retrofit)",
-      "totalEHP": "83.01%",
-      "std": "24.76%"
-    }
-  ],
   "Lila Decyrus": [
     {
       "name": "Lila Decyrus",
@@ -1278,18 +1290,18 @@
       "std": "25.41%"
     }
   ],
+  "Hu Pen": [
+    {
+      "name": "Hu Pen",
+      "totalEHP": "82.81%",
+      "std": "39.25%"
+    }
+  ],
   "Kizuna AI": [
     {
       "name": "Kizuna AI",
       "totalEHP": "82.58%",
       "std": "39.70%"
-    }
-  ],
-  "Biloxi": [
-    {
-      "name": "Biloxi (AA)",
-      "totalEHP": "82.15%",
-      "std": "25.34%"
     }
   ],
   "Bellona": [
@@ -1325,11 +1337,25 @@
       "std": "28.67%"
     }
   ],
+  "Svirepy": [
+    {
+      "name": "Svirepy",
+      "totalEHP": "81.70%",
+      "std": "33.86%"
+    }
+  ],
   "Soobrazitelny": [
     {
       "name": "Soobrazitelny",
       "totalEHP": "81.64%",
       "std": "32.25%"
+    }
+  ],
+  "Cygnet": [
+    {
+      "name": "Cygnet (Retrofit)",
+      "totalEHP": "81.61%",
+      "std": "38.71%"
     }
   ],
   "Norfolk": [
@@ -1395,6 +1421,18 @@
       "std": "33.57%"
     }
   ],
+  "Halford": [
+    {
+      "name": "Halford (SeaPlane)",
+      "totalEHP": "80.70%",
+      "std": "29.91%"
+    },
+    {
+      "name": "Halford (NoPlane)",
+      "totalEHP": "79.97%",
+      "std": "32.07%"
+    }
+  ],
   "Shimakaze": [
     {
       "name": "Shimakaze",
@@ -1419,13 +1457,6 @@
       "name": "An Shan (Retrofit)",
       "totalEHP": "80.32%",
       "std": "33.66%"
-    }
-  ],
-  "Hu Pen": [
-    {
-      "name": "Hu Pen",
-      "totalEHP": "80.24%",
-      "std": "37.78%"
     }
   ],
   "Nürnberg": [
@@ -1454,6 +1485,13 @@
       "name": "Allen M. Sumner",
       "totalEHP": "79.73%",
       "std": "31.71%"
+    }
+  ],
+  "Hatakaze META": [
+    {
+      "name": "Hatakaze META",
+      "totalEHP": "79.63%",
+      "std": "32.86%"
     }
   ],
   "Le Malin": [
@@ -1517,20 +1555,6 @@
       "std": "23.70%"
     }
   ],
-  "Svirepy": [
-    {
-      "name": "Svirepy",
-      "totalEHP": "78.69%",
-      "std": "32.26%"
-    }
-  ],
-  "Cygnet": [
-    {
-      "name": "Cygnet (Retrofit)",
-      "totalEHP": "78.59%",
-      "std": "36.91%"
-    }
-  ],
   "Tashkent μ": [
     {
       "name": "Tashkent μ",
@@ -1559,18 +1583,6 @@
       "std": "26.23%"
     }
   ],
-  "Halford": [
-    {
-      "name": "Halford (SeaPlane)",
-      "totalEHP": "78.21%",
-      "std": "28.68%"
-    },
-    {
-      "name": "Halford (NoPlane)",
-      "totalEHP": "77.47%",
-      "std": "30.78%"
-    }
-  ],
   "Leipzig": [
     {
       "name": "Leipzig (Retrofit)",
@@ -1597,6 +1609,13 @@
       "name": "Devonshire",
       "totalEHP": "77.92%",
       "std": "25.30%"
+    }
+  ],
+  "Ognevoy": [
+    {
+      "name": "Ognevoy",
+      "totalEHP": "77.68%",
+      "std": "30.36%"
     }
   ],
   "Scylla": [
@@ -1634,6 +1653,13 @@
       "std": "27.75%"
     }
   ],
+  "Nubian": [
+    {
+      "name": "Nubian",
+      "totalEHP": "77.14%",
+      "std": "33.29%"
+    }
+  ],
   "Little Cheshire": [
     {
       "name": "Little Cheshire",
@@ -1655,18 +1681,18 @@
       "std": "30.48%"
     }
   ],
-  "Hatakaze META": [
-    {
-      "name": "Hatakaze META",
-      "totalEHP": "76.67%",
-      "std": "31.28%"
-    }
-  ],
   "Cassin": [
     {
       "name": "Cassin (Retrofit)",
       "totalEHP": "76.57%",
       "std": "29.86%"
+    }
+  ],
+  "Eskimo": [
+    {
+      "name": "Eskimo",
+      "totalEHP": "76.19%",
+      "std": "32.17%"
     }
   ],
   "Purple Heart": [
@@ -1758,18 +1784,18 @@
       "std": "26.16%"
     }
   ],
-  "Ognevoy": [
-    {
-      "name": "Ognevoy",
-      "totalEHP": "74.85%",
-      "std": "28.89%"
-    }
-  ],
   "Kuon": [
     {
       "name": "Kuon",
       "totalEHP": "74.77%",
       "std": "22.14%"
+    }
+  ],
+  "Amazon": [
+    {
+      "name": "Amazon (Retrofit)",
+      "totalEHP": "74.76%",
+      "std": "34.73%"
     }
   ],
   "Tanikaze": [
@@ -1782,13 +1808,6 @@
       "name": "Tanikaze (Retrofit)",
       "totalEHP": "66.78%",
       "std": "27.77%"
-    }
-  ],
-  "Nubian": [
-    {
-      "name": "Nubian",
-      "totalEHP": "74.69%",
-      "std": "31.94%"
     }
   ],
   "Épée": [
@@ -1903,13 +1922,6 @@
       "std": "22.42%"
     }
   ],
-  "Eskimo": [
-    {
-      "name": "Eskimo",
-      "totalEHP": "73.55%",
-      "std": "30.70%"
-    }
-  ],
   "Nicoloso da Recco": [
     {
       "name": "Nicoloso da Recco",
@@ -1966,18 +1978,18 @@
       "std": "24.65%"
     }
   ],
+  "Hammann II": [
+    {
+      "name": "Hammann II",
+      "totalEHP": "72.21%",
+      "std": "31.93%"
+    }
+  ],
   "Kamikaze": [
     {
       "name": "Kamikaze (Retrofit)",
       "totalEHP": "72.16%",
       "std": "31.72%"
-    }
-  ],
-  "Amazon": [
-    {
-      "name": "Amazon (Retrofit)",
-      "totalEHP": "72.06%",
-      "std": "33.13%"
     }
   ],
   "Black Prince": [
@@ -2053,6 +2065,13 @@
       "name": "Grozny",
       "totalEHP": "71.35%",
       "std": "27.59%"
+    }
+  ],
+  "Kawakaze": [
+    {
+      "name": "Kawakaze",
+      "totalEHP": "71.15%",
+      "std": "32.45%"
     }
   ],
   "Boise μ": [
@@ -2177,13 +2196,6 @@
       "name": "Z1 (Retrofit)",
       "totalEHP": "70.12%",
       "std": "29.05%"
-    }
-  ],
-  "Hammann II": [
-    {
-      "name": "Hammann II",
-      "totalEHP": "70.09%",
-      "std": "30.73%"
     }
   ],
   "Marie Rose": [
@@ -2319,6 +2331,13 @@
       "std": "30.67%"
     }
   ],
+  "Deutschland": [
+    {
+      "name": "Deutschland",
+      "totalEHP": "68.10%",
+      "std": "19.60%"
+    }
+  ],
   "Stremitelny": [
     {
       "name": "Stremitelny",
@@ -2401,11 +2420,37 @@
       "std": "32.12%"
     }
   ],
+  "Fleuret": [
+    {
+      "name": "Fleuret",
+      "totalEHP": "67.52%",
+      "std": "30.26%"
+    }
+  ],
+  "Nowaki": [
+    {
+      "name": "Nowaki",
+      "totalEHP": "67.50%",
+      "std": "28.21%"
+    }
+  ],
   "Gromky": [
     {
       "name": "Gromky",
       "totalEHP": "67.46%",
       "std": "26.32%"
+    }
+  ],
+  "Kersaint": [
+    {
+      "name": "Kersaint (Heal 2x)",
+      "totalEHP": "67.46%",
+      "std": "28.01%"
+    },
+    {
+      "name": "Kersaint",
+      "totalEHP": "61.59%",
+      "std": "26.76%"
     }
   ],
   "Suzunami": [
@@ -2450,11 +2495,11 @@
       "std": "30.59%"
     }
   ],
-  "Deutschland": [
+  "Ying Swei": [
     {
-      "name": "Deutschland",
-      "totalEHP": "66.73%",
-      "std": "18.94%"
+      "name": "Ying Swei",
+      "totalEHP": "67.02%",
+      "std": "28.12%"
     }
   ],
   "Richmond": [
@@ -2604,6 +2649,13 @@
       "std": "27.31%"
     }
   ],
+  "Vampire META": [
+    {
+      "name": "Vampire META",
+      "totalEHP": "65.74%",
+      "std": "24.73%"
+    }
+  ],
   "Trieste": [
     {
       "name": "Trieste",
@@ -2618,37 +2670,11 @@
       "std": "26.77%"
     }
   ],
-  "Kersaint": [
-    {
-      "name": "Kersaint (Heal 2x)",
-      "totalEHP": "65.47%",
-      "std": "26.91%"
-    },
-    {
-      "name": "Kersaint",
-      "totalEHP": "59.77%",
-      "std": "25.71%"
-    }
-  ],
   "Fiji": [
     {
       "name": "Fiji",
       "totalEHP": "65.47%",
       "std": "20.94%"
-    }
-  ],
-  "Fleuret": [
-    {
-      "name": "Fleuret",
-      "totalEHP": "65.46%",
-      "std": "29.07%"
-    }
-  ],
-  "Nowaki": [
-    {
-      "name": "Nowaki",
-      "totalEHP": "65.29%",
-      "std": "26.96%"
     }
   ],
   "Vampire": [
@@ -2791,6 +2817,13 @@
       "std": "17.50%"
     }
   ],
+  "Benson": [
+    {
+      "name": "Benson",
+      "totalEHP": "64.05%",
+      "std": "26.35%"
+    }
+  ],
   "Z43": [
     {
       "name": "Z43",
@@ -2861,13 +2894,6 @@
       "std": "23.46%"
     }
   ],
-  "Vampire META": [
-    {
-      "name": "Vampire META",
-      "totalEHP": "63.41%",
-      "std": "23.49%"
-    }
-  ],
   "Bush": [
     {
       "name": "Bush",
@@ -2887,6 +2913,13 @@
       "name": "Juno",
       "totalEHP": "63.25%",
       "std": "27.94%"
+    }
+  ],
+  "Kimberly META": [
+    {
+      "name": "Kimberly META",
+      "totalEHP": "63.10%",
+      "std": "26.35%"
     }
   ],
   "Astoria": [
@@ -2959,18 +2992,18 @@
       "std": "18.74%"
     }
   ],
+  "Z25": [
+    {
+      "name": "Z25",
+      "totalEHP": "62.27%",
+      "std": "25.48%"
+    }
+  ],
   "Abukuma": [
     {
       "name": "Abukuma (Retrofit)",
       "totalEHP": "62.13%",
       "std": "21.94%"
-    }
-  ],
-  "Benson": [
-    {
-      "name": "Benson",
-      "totalEHP": "62.10%",
-      "std": "25.24%"
     }
   ],
   "Hunter META": [
@@ -2999,13 +3032,6 @@
       "name": "Maillé Brézé",
       "totalEHP": "61.92%",
       "std": "25.50%"
-    }
-  ],
-  "Ying Swei": [
-    {
-      "name": "Ying Swei",
-      "totalEHP": "61.74%",
-      "std": "25.85%"
     }
   ],
   "Aurora": [
@@ -3092,13 +3118,6 @@
       "std": "21.42%"
     }
   ],
-  "Kimberly META": [
-    {
-      "name": "Kimberly META",
-      "totalEHP": "60.68%",
-      "std": "24.98%"
-    }
-  ],
   "Yura": [
     {
       "name": "Yura",
@@ -3113,11 +3132,11 @@
       "std": "26.26%"
     }
   ],
-  "Z25": [
+  "Dewey": [
     {
-      "name": "Z25",
-      "totalEHP": "60.41%",
-      "std": "24.42%"
+      "name": "Dewey",
+      "totalEHP": "60.43%",
+      "std": "25.60%"
     }
   ],
   "Hardy": [
@@ -3253,13 +3272,6 @@
       "std": "24.48%"
     }
   ],
-  "Dewey": [
-    {
-      "name": "Dewey",
-      "totalEHP": "58.59%",
-      "std": "24.52%"
-    }
-  ],
   "Sendai": [
     {
       "name": "Sendai (Retrofit)",
@@ -3344,6 +3356,25 @@
       "std": "25.56%"
     }
   ],
+  "Jersey": [
+    {
+      "name": "Jersey (No Sisters)",
+      "totalEHP": "57.63%",
+      "std": "24.69%"
+    },
+    {
+      "name": "Jersey (Sisters)",
+      "totalEHP": "48.02%",
+      "std": "19.19%"
+    }
+  ],
+  "Gridley": [
+    {
+      "name": "Gridley",
+      "totalEHP": "57.50%",
+      "std": "24.97%"
+    }
+  ],
   "Inazuma": [
     {
       "name": "Inazuma",
@@ -3386,6 +3417,13 @@
       "std": "23.63%"
     }
   ],
+  "Craven": [
+    {
+      "name": "Craven",
+      "totalEHP": "56.78%",
+      "std": "24.81%"
+    }
+  ],
   "Z16": [
     {
       "name": "Z16",
@@ -3407,37 +3445,11 @@
       "std": "24.56%"
     }
   ],
-  "Jersey": [
-    {
-      "name": "Jersey (No Sisters)",
-      "totalEHP": "56.08%",
-      "std": "23.79%"
-    },
-    {
-      "name": "Jersey (Sisters)",
-      "totalEHP": "46.73%",
-      "std": "18.42%"
-    }
-  ],
   "Shirayuki": [
     {
       "name": "Shirayuki",
       "totalEHP": "56.08%",
       "std": "24.16%"
-    }
-  ],
-  "Gridley": [
-    {
-      "name": "Gridley",
-      "totalEHP": "55.75%",
-      "std": "23.92%"
-    }
-  ],
-  "Kawakaze": [
-    {
-      "name": "Kawakaze",
-      "totalEHP": "55.70%",
-      "std": "23.70%"
     }
   ],
   "Akatsuki": [
@@ -3447,11 +3459,18 @@
       "std": "24.29%"
     }
   ],
-  "Craven": [
+  "Fei Yuen": [
     {
-      "name": "Craven",
-      "totalEHP": "55.06%",
-      "std": "23.77%"
+      "name": "Fei Yuen",
+      "totalEHP": "55.34%",
+      "std": "23.98%"
+    }
+  ],
+  "Fu Po": [
+    {
+      "name": "Fu Po",
+      "totalEHP": "54.94%",
+      "std": "23.74%"
     }
   ],
   "Hunter": [
@@ -3496,6 +3515,13 @@
       "std": "23.43%"
     }
   ],
+  "Z11": [
+    {
+      "name": "Z11",
+      "totalEHP": "54.47%",
+      "std": "21.19%"
+    }
+  ],
   "Z21": [
     {
       "name": "Z21",
@@ -3515,13 +3541,6 @@
       "name": "Z2",
       "totalEHP": "53.62%",
       "std": "20.98%"
-    }
-  ],
-  "Fei Yuen": [
-    {
-      "name": "Fei Yuen",
-      "totalEHP": "53.41%",
-      "std": "22.84%"
     }
   ],
   "McCall": [
@@ -3552,13 +3571,6 @@
       "std": "16.29%"
     }
   ],
-  "Fu Po": [
-    {
-      "name": "Fu Po",
-      "totalEHP": "53.12%",
-      "std": "22.66%"
-    }
-  ],
   "Salt Lake City": [
     {
       "name": "Salt Lake City",
@@ -3578,13 +3590,6 @@
       "name": "Z18",
       "totalEHP": "52.57%",
       "std": "20.50%"
-    }
-  ],
-  "Z11": [
-    {
-      "name": "Z11",
-      "totalEHP": "52.50%",
-      "std": "20.07%"
     }
   ],
   "Yamakaze": [

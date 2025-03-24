@@ -42747,7 +42747,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [],
       "other": [
