@@ -731,6 +731,11 @@
     "fileName": "Samvaluations",
     "toc": [
       {
+        "id": "notes",
+        "content": "Notes",
+        "subheadings": []
+      },
+      {
         "id": "evaluations",
         "content": "Evaluations",
         "subheadings": []
@@ -748,11 +753,6 @@
             "content": "EHP V3"
           }
         ]
-      },
-      {
-        "id": "notes",
-        "content": "Notes",
-        "subheadings": []
       }
     ]
   },
