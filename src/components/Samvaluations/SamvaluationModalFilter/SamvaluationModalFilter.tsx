@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
-import { ComboBox, MultiSelectComboBox } from "@components/_common/ComboBox"
+import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
 
 import { checkAndUpdateDatabase } from "@db/populateDb"
 import type { ShipData } from "@db/types"
@@ -11,7 +11,7 @@ const shipData = (await import("@db/ship_data/ship_data.json"))
 
 import { formatLocation } from "@utils/formatLocation"
 
-import { useShipFilter } from "./useShipFilter"
+import { rarityOptions, useShipFilter } from "./useShipFilter"
 
 export const SamvaluationModalFilter: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
@@ -23,8 +23,8 @@ export const SamvaluationModalFilter: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-row flex-wrap gap-4">
-        <ComboBox
+      <div className="flex flex-row flex-wrap gap-3.5">
+        <MultiSelectCombobox
           title="Hull Type"
           options={Array.from(
             new Set([
@@ -36,7 +36,28 @@ export const SamvaluationModalFilter: React.FC = () => {
           onSelect={(hullType) =>
             dispatch({
               type: "SET_FILTER",
-              payload: { hullType: hullType ? [hullType] : [] },
+              payload: { hullType: hullType || [] },
+            })
+          }
+        />
+        <MultiSelectCombobox
+          title="Rarity"
+          options={rarityOptions.map((r) => r.label)}
+          onSelect={(selectedLabels) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: {
+                rarity: [
+                  ...new Set(
+                    selectedLabels
+                      ?.map(
+                        (label) =>
+                          rarityOptions.find((r) => r.label === label)?.value,
+                      )
+                      .filter(Boolean),
+                  ),
+                ].sort((a, b) => (b ?? 0) - (a ?? 0)),
+              },
             })
           }
         />
