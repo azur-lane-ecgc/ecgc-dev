@@ -12,7 +12,7 @@ export const Sidenav: React.FC<SidenavProps> = ({ children }) => {
   const [isSidenavCollapse, setSidenavCollapse] = useState(false)
 
   const toggleFunction = () => {
-    var main = document.getElementById("main")
+    const main = document.getElementById("main")
 
     if (window.innerWidth >= 1016) {
       main?.classList.toggle("custom-sidenav-collapse")
