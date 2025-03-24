@@ -50,7 +50,7 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
   let query = db.ships.toCollection()
 
   // string filters (ignore all other filters)
-  if (filters.searchTerm.trim() !== "") {
+  if (!!filters.searchTerm.trim()) {
     const search = normalizeString(filters.searchTerm)
 
     return query
