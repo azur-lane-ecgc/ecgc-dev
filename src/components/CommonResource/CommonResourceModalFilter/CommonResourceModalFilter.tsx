@@ -3,6 +3,7 @@ import { useEffect, useReducer, useState } from "react"
 import { ComboBox } from "@components/_common/ComboBox"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ItemCellSkeleton } from "@components/_common/Skeleton"
+import { ToggleButton } from "@components/_common/ToggleButton"
 
 import { CommonResourceFilterReducer } from "@store/CommonResource"
 
@@ -117,43 +118,17 @@ export const CommonResourceModalFilter: React.FC<
           />
 
           {/* Availability Toggle */}
-          <div>
-            <p className="mb-1 font-bold text-fuchsia-400">Availability</p>
-            <button
-              id={`availability_input`}
-              className={`w-32 max-w-32 rounded-xl border border-green-800 bg-gray-950 px-1 py-2 shadow-lg hover:bg-gray-800`}
-              onClick={() => {
-                const nextAvailability =
-                  filterState.availability === "Both"
-                    ? "Infinite"
-                    : filterState.availability === "Infinite"
-                      ? "Finite"
-                      : "Both"
-
-                dispatch({
-                  type: "SET_AVAILABILITY",
-                  payload: nextAvailability,
-                })
-              }}
-            >
-              <div className="flex justify-evenly">
-                <div className="mb-0 w-full flex-1 justify-center pl-[8.75px] pr-2 text-center align-middle font-bold text-orange-400">
-                  {filterState.availability}
-                </div>
-                <div className="m-0 flex flex-col justify-center space-x-0 space-y-0 *:!leading-[0.35]">
-                  {filterState.availability === "Both" ? (
-                    <span className="text-base text-cyan-400">
-                      {"\u2713"} {"\u2717"}
-                    </span>
-                  ) : filterState.availability === "Finite" ? (
-                    <span className="text-cyan-400">{"\u2717"}</span>
-                  ) : (
-                    <span className="text-cyan-400">{"\u2713"}</span>
-                  )}
-                </div>
-              </div>
-            </button>
-          </div>
+          <ToggleButton
+            title="Availability"
+            options={["Both", "Infinite", "Finite"]}
+            value={filterState.availability}
+            onSelect={(nextAvailability) =>
+              dispatch({
+                type: "SET_AVAILABILITY",
+                payload: nextAvailability as "Both" | "Infinite" | "Finite",
+              })
+            }
+          />
         </div>
 
         {/* Filtered Content */}
