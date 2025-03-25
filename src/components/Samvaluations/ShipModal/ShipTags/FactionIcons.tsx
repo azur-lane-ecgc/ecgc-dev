@@ -1,4 +1,4 @@
-export const FactionIcons: { [key: string]: React.JSX.Element } = {
+const FactionIcons: { [key: string]: React.JSX.Element } = {
   Universal: (
     <img
       loading="lazy"

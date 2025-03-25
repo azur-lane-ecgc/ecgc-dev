@@ -36,7 +36,7 @@ const extractLocationNames = (locations: ShipLocationData): string[] => {
   ]
 }
 
-export const populateDb = async () => {
+const populateDb = async () => {
   await db.ships.clear()
   await db.ship_img.clear()
 

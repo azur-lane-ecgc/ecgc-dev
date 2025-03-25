@@ -9,8 +9,8 @@ export const modalStyle =
 export const closeButtonStyle =
   "absolute top-0 right-2 text-gray-500 hover:text-gray-300 text-2xl sm:text-3xl"
 
-export const tagContainerStyle =
-  "absolute top-0 left-1/2 sm:left-0 transform -translate-x-1/2 sm:translate-x-0"
+// export const tagContainerStyle =
+//   "absolute top-0 left-1/2 sm:left-0 transform -translate-x-1/2 sm:translate-x-0"
 
 export const shipLinkStyle =
   "!text-white bg-transparent no-underline visited:text-white visited:bg-transparent hover:!text-[hsla(0,0%,100%,0.75)] hover:!bg-transparent !hover:underline active:text-red-500 active:bg-transparent active:underline"
