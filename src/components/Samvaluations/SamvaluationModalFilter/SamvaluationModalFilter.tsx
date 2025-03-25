@@ -4,6 +4,7 @@ import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 import { MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
+import { ToggleButton } from "@components/_common/ToggleButton"
 
 import { checkAndUpdateDatabase } from "@db/populateDb"
 import type { ShipData } from "@db/types"
@@ -60,6 +61,21 @@ export const SamvaluationModalFilter: React.FC = () => {
                   ),
                 ].sort((a, b) => (b ?? 0) - (a ?? 0)),
               },
+            })
+          }
+        />
+        <ToggleButton
+          title="Retrofit"
+          options={[
+            { title: "All", payload: "" },
+            { title: "Retrofit", payload: "true" },
+            { title: "Non-Retrofit", payload: "false" },
+          ]}
+          initialValue={0}
+          onSelect={(nextAvailability) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: { isKai: nextAvailability },
             })
           }
         />

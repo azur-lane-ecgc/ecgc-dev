@@ -13,6 +13,7 @@ interface ShipState {
     hullType: string[]
     rarity: number[]
     searchTerm: string
+    isKai: "true" | "false" | ""
   }
 }
 
@@ -92,9 +93,15 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
     }
   }
 
+  // retrofit filter
+  if (!!filters.isKai) {
+    const isKaiBool = filters.isKai === "true"
+    query = query.and((ship) => ship.isKai === isKaiBool)
+  }
+
   /*
    *
-   * insert other filters here
+   * insert other filters above here
    *
    */
 
@@ -122,7 +129,7 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
 export const useShipFilter = (loading: boolean = true) => {
   const [state, dispatch] = useReducer(shipReducer, {
     visibleShips: Object.values(shipData) as AllShipData[],
-    filters: { hullType: [], rarity: [], searchTerm: "" },
+    filters: { hullType: [], rarity: [], searchTerm: "", isKai: "" },
   })
 
   useEffect(() => {
