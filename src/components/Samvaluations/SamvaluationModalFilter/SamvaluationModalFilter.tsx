@@ -68,7 +68,7 @@ export const SamvaluationModalFilter: React.FC = () => {
           title="Retrofit"
           options={[
             { title: "All", payload: "" },
-            { title: "Retrofit", payload: "true" },
+            { title: "Is-Retrofit", payload: "true" },
             { title: "Non-Retrofit", payload: "false" },
           ]}
           initialValue={0}
