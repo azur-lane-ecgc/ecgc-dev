@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
-import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
+import { MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
 
 import { checkAndUpdateDatabase } from "@db/populateDb"
@@ -25,17 +25,6 @@ export const SamvaluationModalFilter: React.FC = () => {
   return (
     <>
       <div className="flex flex-row flex-wrap gap-3.5">
-        <Input
-          title="Ship Name"
-          onSelect={(searchTerm) =>
-            dispatch({
-              type: "SET_FILTER",
-              payload: { searchTerm: searchTerm.trim() },
-            })
-          }
-          placeholder="Base Name ONLY"
-          debounceTimer={275}
-        />
         <MultiSelectCombobox
           title="Hull Type"
           options={Array.from(
@@ -73,6 +62,20 @@ export const SamvaluationModalFilter: React.FC = () => {
               },
             })
           }
+        />
+      </div>
+      <div className="mt-3">
+        <Input
+          className="w-48 sm:w-56 md:w-72"
+          title="Ship Name"
+          onSelect={(searchTerm) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: { searchTerm: searchTerm.trim() },
+            })
+          }
+          placeholder="Base Name ONLY"
+          debounceTimer={275}
         />
       </div>
       <ItemContainer>

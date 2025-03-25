@@ -110,7 +110,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   return (
     <div ref={wrapperRef} className={className}>
       {/* combobox button */}
-      <p className="mb-1 font-bold text-fuchsia-400">{title}</p>
+      <p className="!mb-2 font-bold">{title}</p>
       <button
         id={`${title}_input`}
         className={`w-48 max-w-48 px-1 py-2 ${
