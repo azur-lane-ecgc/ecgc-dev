@@ -31,7 +31,7 @@ export const ToggleButton: React.FC<ToggleButtonProps> = ({
     <div className={className}>
       <p className="!mb-2 font-bold">{title}</p>
       <button
-        className="w-32 rounded-xl border border-green-800 bg-gray-950 px-1 py-2 shadow-lg hover:bg-gray-800 sm:w-40 md:w-48"
+        className="w-36 rounded-xl border border-green-800 bg-gray-950 px-1 py-2 shadow-lg hover:bg-gray-800 sm:w-40 md:w-48"
         onClick={handleClick}
       >
         <div className="relative flex items-center">
