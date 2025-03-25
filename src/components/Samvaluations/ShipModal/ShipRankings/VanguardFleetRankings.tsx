@@ -2,10 +2,7 @@ import { useState } from "react"
 
 import { ItemTable } from "@components/_common/ItemTable"
 import { HR } from "@components/_common/HR"
-import {
-  letterRankColor,
-  numberRankColor,
-} from "@components/Samvaluations/ShipModal/styles"
+import { letterRankColor, numberRankColor } from "./utils"
 
 import type { VanguardFleetRankingProps } from "@db/types"
 
