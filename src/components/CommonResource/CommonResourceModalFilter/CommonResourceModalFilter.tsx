@@ -120,8 +120,12 @@ export const CommonResourceModalFilter: React.FC<
           {/* Availability Toggle */}
           <ToggleButton
             title="Availability"
-            options={["Both", "Infinite", "Finite"]}
-            value={filterState.availability}
+            options={[
+              { title: "Both", payload: "Both" },
+              { title: "Infinite", payload: "Infinite" },
+              { title: "Finite", payload: "Finite" },
+            ]}
+            initialValue={0}
             onSelect={(nextAvailability) =>
               dispatch({
                 type: "SET_AVAILABILITY",
