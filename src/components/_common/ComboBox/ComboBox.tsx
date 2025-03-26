@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 
-import { truncateString } from "@utils/string/truncateString"
+import { truncateString } from "@utils/string"
 
 export interface ComboBoxProps {
   className?: string
@@ -8,7 +8,7 @@ export interface ComboBoxProps {
   options: string[]
   initialOption?: string
   forceSelect?: boolean
-  onSelect?: (option: string | null) => void
+  onSelect: (option: string | null) => void
 }
 
 export const ComboBox: React.FC<ComboBoxProps> = ({
