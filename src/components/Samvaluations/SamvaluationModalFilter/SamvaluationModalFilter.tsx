@@ -25,12 +25,12 @@ export const SamvaluationModalFilter: React.FC = () => {
 
   return (
     <>
-      <div className="mb-3 flex flex-row flex-wrap gap-3.5">
+      <div className="mb-3">
         <button
+          className="rounded-xl border border-pink-800 bg-purple-400 px-4 py-2 shadow-lg hover:bg-purple-300"
           onClick={() => dispatch({ type: "RESET_FILTER", payload: null })}
-          className="text-white"
         >
-          <p>Reset Filters</p>
+          <div className="text-center font-bold text-black">Clear Filters</div>
         </button>
       </div>
 
