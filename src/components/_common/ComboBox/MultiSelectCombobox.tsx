@@ -88,7 +88,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   const handleSelect = (name: string) => {
     let newSelected: string[]
 
-    if (forceSelect && selected.includes(name)) {
+    if (forceSelect && selected.includes(name) && selected.length === 1) {
       newSelected = [name]
     } else {
       newSelected = selected.includes(name)
