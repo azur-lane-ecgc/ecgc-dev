@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { useLiveQuery } from "dexie-react-hooks"
 
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
@@ -7,18 +6,20 @@ import { MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
 import { ToggleButton } from "@components/_common/ToggleButton"
 
-import { db } from "@db/dexie"
 import { checkAndUpdateDatabase } from "@db/populateDb"
-import type { AllShipData } from "@db/types"
 
 import { formatLocation } from "@utils/formatLocation"
 
 import { useShipFilter } from "./useShipFilter"
-import { rarityOptions } from "./utils"
+import {
+  allHullTypes,
+  allRarities,
+  allFactions,
+  allRarityOptions,
+} from "./utils"
 
 export const SamvaluationModalFilter: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
-  const shipData: AllShipData[] = useLiveQuery(() => db.ships.toArray()) || []
   const { state, dispatch } = useShipFilter(loading)
 
   useEffect(() => {
@@ -51,14 +52,7 @@ export const SamvaluationModalFilter: React.FC = () => {
         />
         <MultiSelectCombobox
           title="Hull Type"
-          options={Array.from(
-            new Set([
-              ...shipData.map((ship) =>
-                ship.hullType === "DDGv" ? "DDG" : ship.hullType,
-              ),
-              "IX",
-            ]),
-          ).sort()}
+          options={allHullTypes}
           onSelect={(hullType) =>
             dispatch({
               type: "SET_FILTER",
@@ -69,11 +63,7 @@ export const SamvaluationModalFilter: React.FC = () => {
         />
         <MultiSelectCombobox
           title="Faction"
-          options={[
-            ...Array.from(
-              new Set([...shipData.map((ship) => ship.faction)]),
-            ).sort(),
-          ]}
+          options={allFactions}
           onSelect={(faction) =>
             dispatch({
               type: "SET_FILTER",
@@ -84,21 +74,20 @@ export const SamvaluationModalFilter: React.FC = () => {
         />
         <MultiSelectCombobox
           title="Rarity"
-          options={rarityOptions.map((r) => r.label)}
+          options={allRarityOptions}
           onSelect={(selectedLabels) =>
             dispatch({
               type: "SET_FILTER",
               payload: {
-                rarity: [
-                  ...new Set(
-                    selectedLabels
-                      ?.map(
-                        (label) =>
-                          rarityOptions.find((r) => r.label === label)?.value,
-                      )
-                      .filter(Boolean),
-                  ),
-                ].sort((a, b) => (b ?? 0) - (a ?? 0)),
+                rarity:
+                  selectedLabels
+                    ?.map((label) =>
+                      Object.keys(allRarities).find(
+                        (key) => allRarities[Number(key)] === label,
+                      ),
+                    )
+                    .filter(Boolean)
+                    .sort((a, b) => Number(b ?? 0) - Number(a ?? 0)) || [],
               },
             })
           }
