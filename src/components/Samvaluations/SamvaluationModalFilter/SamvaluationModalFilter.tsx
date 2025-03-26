@@ -13,8 +13,9 @@ import { formatLocation } from "@utils/formatLocation"
 import { useShipFilter } from "./useShipFilter"
 import {
   allHullTypes,
+  allianceFactionsMap,
+  allFactionOptions,
   allRarities,
-  allFactions,
   allRarityOptions,
 } from "./utils"
 
@@ -63,11 +64,23 @@ export const SamvaluationModalFilter: React.FC = () => {
         />
         <MultiSelectCombobox
           title="Faction"
-          options={allFactions}
-          onSelect={(faction) =>
+          options={[...allFactionOptions.map((option) => option.label)]}
+          onSelect={(selectedLabels) =>
             dispatch({
               type: "SET_FILTER",
-              payload: { faction: faction || [] },
+              payload: {
+                faction:
+                  selectedLabels
+                    ?.map((label) => {
+                      if (allianceFactionsMap[label]) {
+                        return label
+                      }
+                      return allFactionOptions.find(
+                        (option) => option.label === label,
+                      )?.value
+                    })
+                    .filter(Boolean) || [],
+              },
             })
           }
           reset={state.reset}

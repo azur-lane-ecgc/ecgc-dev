@@ -7,6 +7,8 @@ const shipData = (await import("@db/ship_data/ship_data.json"))
 
 import { normalizeString } from "@utils/string"
 
+import { allianceFactionsMap } from "./utils"
+
 interface ShipState {
   visibleShips: AllShipData[]
   filters: {
@@ -131,7 +133,18 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
 
   // faction filter
   if (filters.faction.length > 0) {
-    query = query.and((ship) => filters.faction.includes(ship.faction))
+    query = query.and((ship) => {
+      const isInAlliance = filters.faction.some((selectedFaction) => {
+        if (allianceFactionsMap[selectedFaction]) {
+          return allianceFactionsMap[selectedFaction].includes(ship.faction)
+        }
+        return false
+      })
+
+      const isInSelectedFactions = filters.faction.includes(ship.faction)
+
+      return isInAlliance || isInSelectedFactions
+    })
   }
 
   /*

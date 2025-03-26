@@ -1,4 +1,4 @@
-const factionToWikiMap: Record<string, string> = {
+export const factionToWikiMap: Record<string, string> = {
   Universal: "Universal",
   USS: "Eagle Union",
   HMS: "Royal Navy",
@@ -26,12 +26,12 @@ const factionToWikiMap: Record<string, string> = {
 
 /**
  * Generates the Azur Lane Wiki page URL for a given faction.
- * @param faction - The faction string (e.g., "USS", "HMS", etc.)
+ * @param faction - The faction string (e.g., "Eagle Union", "Royal Navy", etc.)
  * @returns The full URL to the faction's Azur Lane Wiki page.
  */
 export const factionLink = (faction: string): string => {
   const baseUrl = "https://azurlane.koumakan.jp/wiki/"
-  const wikiPage = factionToWikiMap[faction].replaceAll(" ", "_")
+  const wikiPage = faction.replaceAll(" ", "_")
 
   if (!!!wikiPage) {
     return `${baseUrl}/Category:Ships`
