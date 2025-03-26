@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { useLiveQuery } from "dexie-react-hooks"
 
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
@@ -6,22 +7,23 @@ import { MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
 import { ToggleButton } from "@components/_common/ToggleButton"
 
+import { db } from "@db/dexie"
 import { checkAndUpdateDatabase } from "@db/populateDb"
-import type { ShipData } from "@db/types"
-const shipData = (await import("@db/ship_data/ship_data.json"))
-  .default as Record<number, ShipData>
+import type { AllShipData } from "@db/types"
 
 import { formatLocation } from "@utils/formatLocation"
 
-import { rarityOptions, useShipFilter } from "./useShipFilter"
+import { useShipFilter } from "./useShipFilter"
+import { rarityOptions } from "./utils"
 
 export const SamvaluationModalFilter: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
+  const shipData: AllShipData[] = useLiveQuery(() => db.ships.toArray()) || []
+  const { state, dispatch } = useShipFilter(loading)
+
   useEffect(() => {
     checkAndUpdateDatabase().then(() => setLoading(false))
   }, [])
-
-  const { state, dispatch } = useShipFilter(loading)
 
   return (
     <>
@@ -51,12 +53,12 @@ export const SamvaluationModalFilter: React.FC = () => {
           title="Hull Type"
           options={Array.from(
             new Set([
-              ...Object.values(shipData).map((ship) =>
+              ...shipData.map((ship) =>
                 ship.hullType === "DDGv" ? "DDG" : ship.hullType,
               ),
               "IX",
             ]),
-          ).sort((a, b) => a.localeCompare(b))}
+          ).sort()}
           onSelect={(hullType) =>
             dispatch({
               type: "SET_FILTER",
