@@ -66,6 +66,21 @@ export const SamvaluationModalFilter: React.FC = () => {
           reset={state.reset}
         />
         <MultiSelectCombobox
+          title="Faction"
+          options={[
+            ...Array.from(
+              new Set([...shipData.map((ship) => ship.faction)]),
+            ).sort(),
+          ]}
+          onSelect={(faction) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: { faction: faction || [] },
+            })
+          }
+          reset={state.reset}
+        />
+        <MultiSelectCombobox
           title="Rarity"
           options={rarityOptions.map((r) => r.label)}
           onSelect={(selectedLabels) =>
