@@ -15,17 +15,17 @@ export const allHullTypes = Array.from(
 ).sort()
 
 // rarity
-export const allRarities: Record<number, string> = {
-  5: "Ultra Rare (5)",
-  4: "Super Rare (4)",
-  3: "Elite (3)",
-  2: "Rare (2)",
-  1: "Common (1)",
+export const allRarities: Record<string, number> = {
+  "Ultra Rare (5)": 5,
+  "Super Rare (4)": 4,
+  "Elite (3)": 3,
+  "Rare (2)": 2,
+  "Common (1)": 1,
 }
 
-export const allRarityOptions = Object.entries(allRarities)
-  .sort(([a], [b]) => Number(b) - Number(a))
-  .map(([_, value]) => value)
+export const allRarityOptions = Object.keys(allRarities).sort(
+  (a, b) => allRarities[b] - allRarities[a],
+)
 
 // faction
 const allFactions = [

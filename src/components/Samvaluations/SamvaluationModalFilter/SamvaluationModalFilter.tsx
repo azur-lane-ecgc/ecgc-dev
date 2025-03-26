@@ -94,13 +94,9 @@ export const SamvaluationModalFilter: React.FC = () => {
               payload: {
                 rarity:
                   selectedLabels
-                    ?.map((label) =>
-                      Object.keys(allRarities).find(
-                        (key) => allRarities[Number(key)] === label,
-                      ),
-                    )
-                    .filter(Boolean)
-                    .sort((a, b) => Number(b ?? 0) - Number(a ?? 0)) || [],
+                    ?.map((label) => allRarities[label])
+                    .filter((value) => value !== undefined)
+                    .sort((a, b) => b - a) || [],
               },
             })
           }
