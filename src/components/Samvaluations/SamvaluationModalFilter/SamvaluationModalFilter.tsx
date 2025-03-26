@@ -25,17 +25,23 @@ export const SamvaluationModalFilter: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-row flex-wrap gap-3.5">
+      {/* ComboBoxes */}
+      <div className="mb-3 flex flex-row flex-wrap gap-3.5">
         <MultiSelectCombobox
           title="Hull Type"
-          options={Array.from(
-            new Set([
-              ...Object.values(shipData).map((ship) =>
-                ship.hullType === "DDGv" ? "DDG" : ship.hullType,
-              ),
-              "IX",
-            ]),
-          ).sort((a, b) => a.localeCompare(b))}
+          options={[
+            "Main Fleet",
+            "Vanguard Fleet",
+            "Submarine Fleet",
+            ...Array.from(
+              new Set([
+                ...Object.values(shipData).map((ship) =>
+                  ship.hullType === "DDGv" ? "DDG" : ship.hullType,
+                ),
+                "IX",
+              ]),
+            ).sort((a, b) => a.localeCompare(b)),
+          ]}
           onSelect={(hullType) =>
             dispatch({
               type: "SET_FILTER",
@@ -64,25 +70,47 @@ export const SamvaluationModalFilter: React.FC = () => {
             })
           }
         />
+      </div>
+
+      {/* Input + Button Container */}
+      <div className="mb-3 flex flex-row-reverse flex-wrap justify-end gap-3.5">
+        {/* Unique Augment Filter */}
+        <ToggleButton
+          title="Augments"
+          options={[
+            { title: "All", payload: "" },
+            { title: "Unique", payload: "true" },
+            { title: "Standard", payload: "false" },
+          ]}
+          initialValue={0}
+          onSelect={(nextOption) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: { hasUniqueAugment: nextOption },
+            })
+          }
+        />
+
+        {/* Retrofit Filter */}
         <ToggleButton
           title="Retrofit"
           options={[
             { title: "All", payload: "" },
-            { title: "Is-Retrofit", payload: "true" },
-            { title: "Non-Retrofit", payload: "false" },
+            { title: "Has-Retrofit", payload: "true" },
+            { title: "No Retrofit", payload: "false" },
           ]}
           initialValue={0}
-          onSelect={(nextAvailability) =>
+          onSelect={(nextOption) =>
             dispatch({
               type: "SET_FILTER",
-              payload: { isKai: nextAvailability },
+              payload: { isKai: nextOption },
             })
           }
         />
-      </div>
-      <div className="mt-3">
+
+        {/* Search Bar */}
         <Input
-          className="w-48 sm:w-56 md:w-72"
+          className="w-full sm:w-56 md:w-72"
           title="Ship Name"
           onSelect={(searchTerm) =>
             dispatch({
@@ -94,6 +122,8 @@ export const SamvaluationModalFilter: React.FC = () => {
           debounceTimer={275}
         />
       </div>
+
+      {/* Ship Modals */}
       <ItemContainer>
         {state.visibleShips.map((ship) => (
           <ShipModal

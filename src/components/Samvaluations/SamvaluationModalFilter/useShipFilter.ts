@@ -14,6 +14,7 @@ interface ShipState {
     rarity: number[]
     searchTerm: string
     isKai: "true" | "false" | ""
+    hasUniqueAugment: "true" | "false" | ""
   }
 }
 
@@ -45,6 +46,23 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
     default:
       return state
   }
+}
+
+const hasUniqueAugment = (
+  augments: AllShipData["augments"] | null,
+  hullType: string,
+): boolean => {
+  if (!!!augments) return false
+
+  if (hullType.startsWith("AE") || hullType.startsWith("BM")) {
+    return augments.length > 1
+  }
+
+  if (hullType.startsWith("IX")) {
+    return augments.length > 0
+  }
+
+  return augments.length > 2
 }
 
 const fetchFilteredShips = async (filters: ShipState["filters"]) => {
@@ -91,12 +109,31 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
     } else {
       query = db.ships.where("hullType").anyOf(hullFilters)
     }
+
+    if (hullFilters.includes("Main Fleet")) {
+      query = query.or("fleetType").equals("main")
+    }
+    if (hullFilters.includes("Submarine Fleet")) {
+      query = query.or("fleetType").equals("ss")
+    }
+    if (hullFilters.includes("Vanguard Fleet")) {
+      query = query.or("fleetType").equals("vg")
+    }
   }
 
   // retrofit filter
   if (!!filters.isKai) {
     const isKaiBool = filters.isKai === "true"
     query = query.and((ship) => ship.isKai === isKaiBool)
+  }
+
+  // unique augment filter
+  if (!!filters.hasUniqueAugment) {
+    const hasUniqueAugmentBool = filters.hasUniqueAugment === "true"
+    query = query.and(
+      (ship) =>
+        hasUniqueAugment(ship.augments, ship.hullType) === hasUniqueAugmentBool,
+    )
   }
 
   /*
@@ -129,7 +166,13 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
 export const useShipFilter = (loading: boolean = true) => {
   const [state, dispatch] = useReducer(shipReducer, {
     visibleShips: Object.values(shipData) as AllShipData[],
-    filters: { hullType: [], rarity: [], searchTerm: "", isKai: "" },
+    filters: {
+      hullType: [],
+      rarity: [],
+      searchTerm: "",
+      isKai: "",
+      hasUniqueAugment: "",
+    },
   })
 
   useEffect(() => {
