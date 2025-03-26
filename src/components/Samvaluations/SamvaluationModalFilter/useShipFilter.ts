@@ -16,6 +16,7 @@ interface ShipState {
     isKai: "true" | "false" | ""
     hasUniqueAugment: "true" | "false" | ""
     fleetType: string[]
+    faction: string[]
   }
   reset: string
 }
@@ -25,48 +26,6 @@ interface ShipAction {
   payload: any
 }
 
-const initialState = {
-  visibleShips: Object.values(shipData) as AllShipData[],
-  filters: {
-    hullType: [],
-    rarity: [],
-    searchTerm: "",
-    isKai: "",
-    hasUniqueAugment: "",
-    fleetType: [],
-  },
-}
-
-const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
-  switch (action.type) {
-    case "SET_SHIPS":
-      return { ...state, visibleShips: action.payload as AllShipData[] }
-    case "SET_FILTER":
-      return {
-        ...state,
-        filters: {
-          ...state.filters,
-          ...(action.payload as Partial<ShipState["filters"]>),
-        },
-      }
-    case "RESET_FILTER":
-      return {
-        ...state,
-        filters: initialState.filters as ShipState["filters"],
-        reset: state.reset === "t" ? "f" : "t",
-      }
-    default:
-      return state
-  }
-}
-
-export const rarityOptions = [
-  { label: "Ultra Rare (5)", value: 5 },
-  { label: "Super Rare (4)", value: 4 },
-  { label: "Elite (3)", value: 3 },
-  { label: "Rare (2)", value: 2 },
-  { label: "Common (1)", value: 1 },
-]
 const fleetTypeMapping: Record<string, string> = {
   "Main Fleet": "main",
   "Vanguard Fleet": "vg",
@@ -170,6 +129,11 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
     )
   }
 
+  // faction filter
+  if (filters.faction.length > 0) {
+    query = query.and((ship) => filters.faction.includes(ship.faction))
+  }
+
   /*
    *
    * insert other filters above here
@@ -197,19 +161,45 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
 }
 
 // main filtering hook
+const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
+  switch (action.type) {
+    case "SET_SHIPS":
+      return { ...state, visibleShips: action.payload as AllShipData[] }
+    case "SET_FILTER":
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          ...(action.payload as Partial<ShipState["filters"]>),
+        },
+      }
+    case "RESET_FILTER":
+      return {
+        ...state,
+        filters: initialState.filters as ShipState["filters"],
+        reset: state.reset === "t" ? "f" : "t",
+      }
+    default:
+      return state
+  }
+}
+
+const initialState: ShipState = {
+  visibleShips: Object.values(shipData) as AllShipData[],
+  filters: {
+    hullType: [],
+    rarity: [],
+    searchTerm: "",
+    isKai: "",
+    hasUniqueAugment: "",
+    fleetType: [],
+    faction: [],
+  },
+  reset: "t",
+}
+
 export const useShipFilter = (loading: boolean = true) => {
-  const [state, dispatch] = useReducer(shipReducer, {
-    visibleShips: Object.values(shipData) as AllShipData[],
-    filters: {
-      hullType: [],
-      rarity: [],
-      searchTerm: "",
-      isKai: "",
-      hasUniqueAugment: "",
-      fleetType: [],
-    },
-    reset: "t",
-  })
+  const [state, dispatch] = useReducer(shipReducer, initialState)
 
   useEffect(() => {
     if (!loading) {
