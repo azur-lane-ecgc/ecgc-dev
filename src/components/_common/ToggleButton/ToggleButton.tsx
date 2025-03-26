@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 interface ToggleButtonProps {
   className?: string
@@ -10,6 +10,7 @@ interface ToggleButtonProps {
   ]
   initialValue?: number
   onSelect: (payload: string) => void
+  reset?: any
 }
 
 export const ToggleButton: React.FC<ToggleButtonProps> = ({
@@ -18,8 +19,15 @@ export const ToggleButton: React.FC<ToggleButtonProps> = ({
   options,
   initialValue = 0,
   onSelect,
+  reset,
 }) => {
   const [selectedIndex, setSelectedIndex] = useState(initialValue)
+
+  useEffect(() => {
+    if (!!reset) {
+      setSelectedIndex(initialValue)
+    }
+  }, [reset])
 
   const handleClick = () => {
     const nextIndex = (selectedIndex + 1) % 3

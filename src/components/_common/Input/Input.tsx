@@ -9,6 +9,7 @@ interface InputProps {
   placeholder?: string
   debounceTimer?: number
   onSelect: (searchTerm: string) => void
+  reset?: any
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -19,6 +20,7 @@ export const Input: React.FC<InputProps> = ({
   placeholder,
   debounceTimer = 300,
   onSelect,
+  reset,
 }) => {
   const [searchTerm, setSearchTerm] = useState<string>(initialValue)
   const inputRef = useRef<HTMLInputElement | null>(null)
@@ -33,6 +35,13 @@ export const Input: React.FC<InputProps> = ({
   useEffect(() => {
     onSelect(debouncedSearchTerm)
   }, [debouncedSearchTerm])
+
+  useEffect(() => {
+    if (!!reset) {
+      handleClear()
+      inputRef.current?.blur()
+    }
+  }, [reset])
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value)

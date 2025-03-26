@@ -10,6 +10,7 @@ export interface MultiComboBoxProps {
   forceSelect?: boolean
   moveSelectedToTop?: boolean
   onSelect?: (option: string[] | null) => void
+  reset?: any
 }
 
 export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
@@ -20,6 +21,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   forceSelect,
   moveSelectedToTop = false,
   onSelect,
+  reset,
 }) => {
   const [input, setInput] = useState<string>("")
   const [selected, setSelected] = useState<string[]>(initialOption || [])
@@ -63,6 +65,16 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
       return () => clearTimeout(timer)
     }
   }, [showOptions])
+
+  useEffect(() => {
+    if (!!reset) {
+      setSelected(initialOption || [])
+      setInput("")
+      // setShowOptions(false)
+      // setIsVisible(false)
+      // setShouldRenderMobile(false)
+    }
+  }, [reset])
 
   const filteredOptions = (() => {
     const baseOptions = input

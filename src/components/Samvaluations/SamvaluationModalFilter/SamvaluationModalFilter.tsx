@@ -25,29 +25,45 @@ export const SamvaluationModalFilter: React.FC = () => {
 
   return (
     <>
+      <div className="mb-3 flex flex-row flex-wrap gap-3.5">
+        <button
+          onClick={() => dispatch({ type: "RESET_FILTER", payload: null })}
+          className="text-white"
+        >
+          <p>Reset Filters</p>
+        </button>
+      </div>
+
       {/* ComboBoxes */}
       <div className="mb-3 flex flex-row flex-wrap gap-3.5">
         <MultiSelectCombobox
+          title="Fleet Type"
+          options={["Main Fleet", "Vanguard Fleet", "Submarine Fleet"]}
+          onSelect={(fleetType) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: { fleetType: fleetType || [] },
+            })
+          }
+          reset={state.reset}
+        />
+        <MultiSelectCombobox
           title="Hull Type"
-          options={[
-            "Main Fleet",
-            "Vanguard Fleet",
-            "Submarine Fleet",
-            ...Array.from(
-              new Set([
-                ...Object.values(shipData).map((ship) =>
-                  ship.hullType === "DDGv" ? "DDG" : ship.hullType,
-                ),
-                "IX",
-              ]),
-            ).sort((a, b) => a.localeCompare(b)),
-          ]}
+          options={Array.from(
+            new Set([
+              ...Object.values(shipData).map((ship) =>
+                ship.hullType === "DDGv" ? "DDG" : ship.hullType,
+              ),
+              "IX",
+            ]),
+          ).sort((a, b) => a.localeCompare(b))}
           onSelect={(hullType) =>
             dispatch({
               type: "SET_FILTER",
               payload: { hullType: hullType || [] },
             })
           }
+          reset={state.reset}
         />
         <MultiSelectCombobox
           title="Rarity"
@@ -69,6 +85,7 @@ export const SamvaluationModalFilter: React.FC = () => {
               },
             })
           }
+          reset={state.reset}
         />
       </div>
 
@@ -89,6 +106,7 @@ export const SamvaluationModalFilter: React.FC = () => {
               payload: { hasUniqueAugment: nextOption },
             })
           }
+          reset={state.reset}
         />
 
         {/* Retrofit Filter */}
@@ -106,6 +124,7 @@ export const SamvaluationModalFilter: React.FC = () => {
               payload: { isKai: nextOption },
             })
           }
+          reset={state.reset}
         />
 
         {/* Search Bar */}
@@ -120,6 +139,7 @@ export const SamvaluationModalFilter: React.FC = () => {
           }
           placeholder="Base Name ONLY"
           debounceTimer={275}
+          reset={state.reset}
         />
       </div>
 

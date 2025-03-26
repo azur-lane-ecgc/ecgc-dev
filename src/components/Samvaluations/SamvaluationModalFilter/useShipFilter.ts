@@ -15,21 +15,27 @@ interface ShipState {
     searchTerm: string
     isKai: "true" | "false" | ""
     hasUniqueAugment: "true" | "false" | ""
+    fleetType: string[]
   }
+  reset: string
 }
 
 interface ShipAction {
-  type: "SET_SHIPS" | "SET_FILTER"
+  type: string
   payload: any
 }
 
-export const rarityOptions = [
-  { label: "Ultra Rare (5)", value: 5 },
-  { label: "Super Rare (4)", value: 4 },
-  { label: "Elite (3)", value: 3 },
-  { label: "Rare (2)", value: 2 },
-  { label: "Common (1)", value: 1 },
-]
+const initialState = {
+  visibleShips: Object.values(shipData) as AllShipData[],
+  filters: {
+    hullType: [],
+    rarity: [],
+    searchTerm: "",
+    isKai: "",
+    hasUniqueAugment: "",
+    fleetType: [],
+  },
+}
 
 const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
   switch (action.type) {
@@ -43,9 +49,28 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
           ...(action.payload as Partial<ShipState["filters"]>),
         },
       }
+    case "RESET_FILTER":
+      return {
+        ...state,
+        filters: initialState.filters as ShipState["filters"],
+        reset: state.reset === "t" ? "f" : "t",
+      }
     default:
       return state
   }
+}
+
+export const rarityOptions = [
+  { label: "Ultra Rare (5)", value: 5 },
+  { label: "Super Rare (4)", value: 4 },
+  { label: "Elite (3)", value: 3 },
+  { label: "Rare (2)", value: 2 },
+  { label: "Common (1)", value: 1 },
+]
+const fleetTypeMapping: Record<string, string> = {
+  "Main Fleet": "main",
+  "Vanguard Fleet": "vg",
+  "Submarine Fleet": "ss",
 }
 
 const hasUniqueAugment = (
@@ -121,6 +146,15 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
     }
   }
 
+  // fleet type filter
+  if (filters.fleetType.length > 0) {
+    const internalFleetTypes = filters.fleetType.map(
+      (fleet) => fleetTypeMapping[fleet],
+    )
+
+    query = query.and((ship) => internalFleetTypes.includes(ship.fleetType))
+  }
+
   // retrofit filter
   if (!!filters.isKai) {
     const isKaiBool = filters.isKai === "true"
@@ -172,7 +206,9 @@ export const useShipFilter = (loading: boolean = true) => {
       searchTerm: "",
       isKai: "",
       hasUniqueAugment: "",
+      fleetType: [],
     },
+    reset: "t",
   })
 
   useEffect(() => {
