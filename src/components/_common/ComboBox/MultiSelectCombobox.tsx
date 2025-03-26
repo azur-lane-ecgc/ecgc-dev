@@ -1,15 +1,16 @@
 import { useState, useRef, useEffect } from "react"
 
-import { truncateString } from "@utils/string/truncateString"
+import { useDebounce } from "@utils/useDebounce"
+import { truncateString } from "@utils/string"
 
 export interface MultiComboBoxProps {
   className?: string
   title: string
   options: string[]
-  initialOption?: string[]
+  initialOptions?: string[]
   forceSelect?: boolean
   moveSelectedToTop?: boolean
-  onSelect?: (option: string[] | null) => void
+  onSelect: (option: string[] | null) => void
   reset?: any
 }
 
@@ -17,14 +18,14 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   className,
   title,
   options,
-  initialOption,
+  initialOptions,
   forceSelect,
   moveSelectedToTop = false,
   onSelect,
   reset,
 }) => {
   const [input, setInput] = useState<string>("")
-  const [selected, setSelected] = useState<string[]>(initialOption || [])
+  const [selected, setSelected] = useState<string[]>(initialOptions || [])
   const [showOptions, setShowOptions] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const [shouldRenderMobile, setShouldRenderMobile] = useState(false)
@@ -32,9 +33,11 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   const wrapperRef = useRef<HTMLDivElement | null>(null)
   const inputRef = useRef<HTMLInputElement | null>(null)
 
+  const debouncedSelected: string[] = useDebounce(selected, 190)
+
   useEffect(() => {
-    if (initialOption && onSelect) {
-      onSelect(initialOption)
+    if (initialOptions && onSelect) {
+      onSelect(initialOptions)
     }
 
     const handleClickOutside = (event: MouseEvent) => {
@@ -53,6 +56,10 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   }, [])
 
   useEffect(() => {
+    onSelect(debouncedSelected.length > 0 ? debouncedSelected : [])
+  }, [debouncedSelected])
+
+  useEffect(() => {
     if (showOptions) {
       setShouldRenderMobile(true)
       setTimeout(() => setIsVisible(true), 75)
@@ -68,11 +75,8 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
 
   useEffect(() => {
     if (!!reset) {
-      setSelected(initialOption || [])
+      setSelected(initialOptions || [])
       setInput("")
-      // setShowOptions(false)
-      // setIsVisible(false)
-      // setShouldRenderMobile(false)
     }
   }, [reset])
 
@@ -112,10 +116,6 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
 
     if (newSelected.length === 0) {
       setInput("")
-    }
-
-    if (onSelect) {
-      onSelect(newSelected.length > 0 ? newSelected : null)
     }
   }
 
