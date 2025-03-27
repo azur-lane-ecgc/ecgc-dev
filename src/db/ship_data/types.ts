@@ -1,4 +1,4 @@
-interface SlotProps {
+export interface SlotProps {
   type: string[]
   efficiency: number
   mounts: number
