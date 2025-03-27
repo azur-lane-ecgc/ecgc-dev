@@ -1,10 +1,10 @@
-export interface CommonResourceFilterState {
+interface CommonResourceFilterState {
   selectedCategory: string | null
   selectedTimeframe: string | null
   availability: "Both" | "Infinite" | "Finite"
 }
 
-export type CommonResourceFilterAction =
+type CommonResourceFilterAction =
   | { type: "SET_CATEGORY"; payload: string | null }
   | { type: "SET_TIMEFRAME"; payload: string | null }
   | { type: "SET_AVAILABILITY"; payload: "Both" | "Infinite" | "Finite" }

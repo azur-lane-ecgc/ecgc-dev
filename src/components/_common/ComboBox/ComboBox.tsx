@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react"
 
 import { truncateString } from "@utils/string"
 
-export interface ComboBoxProps {
+interface ComboBoxProps {
   className?: string
   title: string
   options: string[]

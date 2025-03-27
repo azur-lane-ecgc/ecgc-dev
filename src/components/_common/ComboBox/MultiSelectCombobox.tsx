@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react"
 import { useDebounce } from "@utils/useDebounce"
 import { truncateString } from "@utils/string"
 
-export interface MultiComboBoxProps {
+interface MultiComboBoxProps {
   className?: string
   title: string
   options: string[]

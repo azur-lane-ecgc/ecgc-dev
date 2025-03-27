@@ -13,7 +13,7 @@ import {
   hasUniqueAugment,
 } from "./utils"
 
-export interface ShipState {
+interface ShipFilterProps {
   visibleShips: AllShipData[]
   filters: {
     hullType: string[]
@@ -33,7 +33,7 @@ interface ShipAction {
   payload: any
 }
 
-const fetchFilteredShips = async (filters: ShipState["filters"]) => {
+const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
   let query = db.ships.toCollection()
 
   // string filters (ignore all other filters)
@@ -155,7 +155,7 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
   }
 }
 
-export const initialFilters: ShipState["filters"] = {
+export const initialFilters: ShipFilterProps["filters"] = {
   hullType: [],
   rarity: [],
   searchTerm: "",
@@ -166,7 +166,10 @@ export const initialFilters: ShipState["filters"] = {
 }
 
 // main filtering hook
-const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
+const shipReducer = (
+  state: ShipFilterProps,
+  action: ShipAction,
+): ShipFilterProps => {
   switch (action.type) {
     case "SET_SHIPS":
       return {
@@ -179,7 +182,7 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
         ...state,
         filters: {
           ...state.filters,
-          ...(action.payload as Partial<ShipState["filters"]>),
+          ...(action.payload as Partial<ShipFilterProps["filters"]>),
         },
       }
     case "RESET_FILTER":
@@ -193,7 +196,7 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
   }
 }
 
-export const useShipFilter = (initialFilters: ShipState["filters"]) => {
+export const useShipFilter = (initialFilters: ShipFilterProps["filters"]) => {
   const [loading, setLoading] = useState<boolean>(true)
 
   const [state, dispatch] = useReducer(shipReducer, {

@@ -5,7 +5,7 @@ import { shipImageParse } from "@utils/ships"
 import { ItemCell } from "./ItemCell"
 import "./styles.css"
 
-export interface ShipCellProps {
+interface ShipCellProps {
   ship: string
   isKai?: boolean
   rarity: number
