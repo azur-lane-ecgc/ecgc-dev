@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react"
 
+interface Option {
+  title: string
+  payload: string
+  symbol?: string
+}
+
 interface ToggleButtonProps {
   className?: string
   title: string
   options: [
-    { title: string; payload: string }, // both
-    { title: string; payload: string }, // positive
-    { title: string; payload: string }, // negative
+    Option, // both
+    Option, // positive
+    Option, // negative
   ]
   initialValue?: number
   onSelect: (payload: string) => void
@@ -35,6 +41,14 @@ export const ToggleButton: React.FC<ToggleButtonProps> = ({
     onSelect(options[nextIndex].payload)
   }
 
+  const getSymbol = (index: number): string => {
+    const option = options[index]
+    return (
+      option.symbol ??
+      (index === 1 ? "\u2713" : index === 2 ? "\u2717" : "\u2713 \u2717")
+    )
+  }
+
   return (
     <div className={className}>
       <p className="!mb-2 font-bold">{title}</p>
@@ -51,15 +65,7 @@ export const ToggleButton: React.FC<ToggleButtonProps> = ({
               {options[selectedIndex].title}
             </div>
             <div className="m-0 flex w-10 flex-col items-end justify-center">
-              {selectedIndex === 0 ? (
-                <span className="text-base text-cyan-400">
-                  {"\u2713 \u2717"}
-                </span>
-              ) : selectedIndex === 1 ? (
-                <span className="text-cyan-400">{"\u2713"}</span>
-              ) : (
-                <span className="text-cyan-400">{"\u2717"}</span>
-              )}
+              <span className="text-cyan-400">{getSymbol(selectedIndex)}</span>
             </div>
           </div>
         </div>
