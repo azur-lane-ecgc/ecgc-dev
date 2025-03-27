@@ -3222,5 +3222,8 @@
   },
   "Kaga": {
     "preload": "50% 1st Airstrike Cooldown Reduction (with Akagi)."
+  },
+  "Amagi(CV)": {
+    "preload": "50% 1st Airstrike Cooldown Reduction (with Akagi or Kaga)"
   }
 }
