@@ -216,6 +216,14 @@ export const useShipFilter = (initialFilters: ShipFilterProps["filters"]) => {
           console.log("error dm developer asap")
         })
       setLoading(false)
+    } else {
+      fetchFilteredShips(state.filters)
+        .then((filteredShips) => {
+          dispatch({ type: "SET_SHIPS", payload: filteredShips })
+        })
+        .catch(() => {
+          console.log("error dm developer asap")
+        })
     }
   }, [state.filters])
 
