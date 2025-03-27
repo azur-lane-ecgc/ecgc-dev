@@ -1905,6 +1905,62 @@
       "vgsurvival": null
     }
   ],
+  "Franklin": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - Essex Pro Max and equal to 70% proc Enterprise in bossing.",
+      "hardarbiter": "A",
+      "meta": "A",
+      "cm": "A",
+      "w14mob": "B",
+      "w14boss": "A",
+      "w15mob": "C",
+      "w15boss": "B",
+      "ex": "C",
+      "consistency": -1,
+      "fleetreq": -2,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 4,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    },
+    {
+      "nameNote": "with Yorktown II",
+      "notes": "zTENTATIVE - Equal to 70% proc Enterprise. Yorkii's 8% reload reduction allows Franklin to use Skyraider and still be fast.",
+      "hardarbiter": "S",
+      "meta": "A",
+      "cm": "A",
+      "w14mob": "D",
+      "w14boss": "A",
+      "w15mob": "D",
+      "w15boss": "A",
+      "ex": "C",
+      "consistency": -1,
+      "fleetreq": -2,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 5,
+      "mediumdmg": 5,
+      "heavydmg": 4,
+      "aoedmg": 4,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Friedrich der Große": [
     {
       "nameNote": "",
@@ -4768,6 +4824,35 @@
       "vgsurvival": null
     }
   ],
+  "Nevada META": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - quite bad. But BB RLD +1 very good!",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -3,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "New Jersey": [
     {
       "nameNote": "",
@@ -5322,7 +5407,7 @@
   "Raffaello": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE - Subpar UR BB for bossing (confident), but great for mob (very tentative). Heal is inconsistent but strong on average. Poor AA.",
+      "notes": "Subpar UR BB for bossing, but extremely great for mob. Heal is inconsistent but strong on average. Poor AA.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",

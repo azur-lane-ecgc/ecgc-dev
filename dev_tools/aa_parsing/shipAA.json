@@ -1,6 +1,11 @@
 {
   "San Diego": [
     {
+      "name": "San Diego",
+      "totalAA": "3625",
+      "percentSD": "100.00%"
+    },
+    {
       "name": "San Diego (150Gun)",
       "totalAA": "4717",
       "percentSD": "130.14%"
@@ -4340,6 +4345,20 @@
       "name": "Yorck",
       "totalAA": "0",
       "percentSD": "0.00%"
+    }
+  ],
+  "Santa Fe": [
+    {
+      "name": "Santa Fe",
+      "totalAA": "1144",
+      "percentSD": "31.57%"
+    }
+  ],
+  "Miller": [
+    {
+      "name": "Miller",
+      "totalAA": "761",
+      "percentSD": "20.99%"
     }
   ]
 }

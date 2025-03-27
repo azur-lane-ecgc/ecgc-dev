@@ -7694,6 +7694,33 @@
       "defensivebuff": 2
     }
   ],
+  "Miller": [
+    {
+      "nameNote": "",
+      "notes": "Very bad tankiness but needs to main tank for minor buffs. All she has Carrier Escort, which doesn't even proc immediately.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 2
+    }
+  ],
   "Minazuki": [
     {
       "nameNote": "",
@@ -10011,6 +10038,33 @@
       "aoedmg": 1,
       "offensivebuff": null,
       "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Santa Fe": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - Decent DPS, and Flares are nichely Huge debuff but on special timing.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "C",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -3,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 3,
+      "offensivebuff": 3,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null

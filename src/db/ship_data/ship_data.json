@@ -20297,7 +20297,7 @@
     "augments": ["Fabulous Fioretto", "Greatsword", "Lance"],
     "samEval": "Zara is a mob-tank oriented CA with great stats and good skills. Her personal damage is mediocre since outside of her MGM+1 she has no good skill barrages. Her bulk is decent due to her shields, and her unique Augment Module further giving her evasion and minor healing. Her Skill 2 doesn't affect her Main Gun choices against enemies. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -31142,7 +31142,7 @@
     "augments": ["Land's End Helm"],
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Tank"],
+    "roles": ["Healer"],
     "locations": {
       "events": [
         {
@@ -32367,7 +32367,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Tank"],
+    "roles": ["Healer"],
     "locations": {
       "events": [
         {
@@ -34713,6 +34713,162 @@
         {
           "name": "Paradiso of Shackled Light",
           "href": "Paradiso_of_Shackled_Light"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "682": {
+    "id": 682,
+    "ship": "Franklin",
+    "faction": "USS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.4,
+        "mounts": 3
+      },
+      {
+        "type": ["Dive Bomber"],
+        "efficiency": 1.3,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["DmgDealer", "TopDmg"],
+    "locations": {
+      "events": [
+        {
+          "name": "Letters from Valley Hospital",
+          "href": "Letters_from_Valley_Hospital"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "683": {
+    "id": 683,
+    "ship": "Santa Fe",
+    "faction": "USS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.75,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["DmgDealer"],
+    "locations": {
+      "events": [
+        {
+          "name": "Letters from Valley Hospital",
+          "href": "Letters_from_Valley_Hospital"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "684": {
+    "id": 684,
+    "ship": "Miller",
+    "faction": "USS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "All Out Assault activation requirement halved.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.3,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Healer"],
+    "locations": {
+      "events": [
+        {
+          "name": "Letters from Valley Hospital",
+          "href": "Letters_from_Valley_Hospital"
         }
       ],
       "other": [],
@@ -38935,7 +39091,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Azuma is a tank-oriented CB with amazing stats and skills. Her bulk is very high, and she can equip the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/VH_Armor_Plating\" title=\"VH Armor Plating\" >VH Armor Plating</a > to situationally improve it. Her personal damage is also very good, with MGM+1 CB Guns and good barrages. She is ideally equipped with a CB gun to take full advantage of her self-buffs. Overall, she is an amazing ship, but not high priority if you have other UR CBs already.",
     "fastLoad": "",
-    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -40027,7 +40183,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Hindenburg is a damage-oriented CA with amazing stats and skills. She has enough bulk to mob-tank in a pinch, but it is not recommended for her to tank over other good options. Her damage output is among the best in the game for vanguard ships due to multiple main gun mounts, as well as her shield-ignoring ability from her skills. Her Skill 2's special attack is very consistent especially against boss enemies. Overall, she is an amazing ship.",
     "fastLoad": "",
-    "roles": ["Tank", "DmgDealer", "TopDmg"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -41070,6 +41226,10 @@
         {
           "name": "Cruise Pass",
           "href": "Cruise_Missions"
+        },
+        {
+          "name": "META Shop",
+          "href": "META_Shop"
         }
       ],
       "construction": [],
@@ -42643,7 +42803,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Tank"],
+    "roles": ["Healer"],
     "locations": {
       "events": [],
       "other": [
@@ -42754,6 +42914,58 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "30046": {
+    "id": 30046,
+    "ship": "Nevada META",
+    "faction": "META",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.3,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Healer"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Cruise Pass",
+          "href": "Cruise_Missions"
         }
       ],
       "construction": [],
