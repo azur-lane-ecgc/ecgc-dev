@@ -1,10 +1,8 @@
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
-import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
+import { MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
 import { ToggleButton } from "@components/_common/ToggleButton"
-
-import { checkAndUpdateDatabase } from "@db/populateDb"
 
 import { formatLocation } from "@utils/formatLocation"
 
@@ -19,6 +17,10 @@ import {
 
 export const SamvaluationModalFilter: React.FC = () => {
   const { state, dispatch } = useShipFilter(initialFilters)
+
+  if (state.filters.fleetType.length > 0) {
+    console.log(state.filters)
+  }
 
   return (
     <>

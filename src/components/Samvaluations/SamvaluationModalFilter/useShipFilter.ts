@@ -206,7 +206,6 @@ export const useShipFilter = (initialFilters: ShipState["filters"]) => {
 
   useEffect(() => {
     if (loading) {
-      checkAndUpdateDatabase()
       fetchFilteredShips(state.filters).then((filteredShips) => {
         dispatch({ type: "SET_SHIPS", payload: filteredShips })
       })
