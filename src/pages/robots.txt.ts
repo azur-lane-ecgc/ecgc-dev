@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { APIRoute } from "astro"
 
 const getRobotsTxt = (sitemapURL: URL) => `
