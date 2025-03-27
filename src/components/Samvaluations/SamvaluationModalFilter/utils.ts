@@ -107,3 +107,14 @@ export const allFactionOptions = [
       ),
     })),
 ]
+
+// roles
+export const allRoles = Array.from(
+  new Set(
+    [
+      ...Object.values(shipData)
+        .map((ship) => ship.roles)
+        .flat(),
+    ].filter((role) => role !== "Bad" && role !== "Meh"),
+  ),
+).sort()

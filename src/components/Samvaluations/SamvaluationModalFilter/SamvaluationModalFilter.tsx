@@ -13,6 +13,7 @@ import {
   allFactionOptions,
   allRarities,
   allRarityOptions,
+  allRoles,
 } from "./utils"
 
 export const SamvaluationModalFilter: React.FC = () => {
@@ -98,6 +99,51 @@ export const SamvaluationModalFilter: React.FC = () => {
           reset={state.reset}
         />
       </div>
+
+      <div className="mb-3 flex flex-row flex-wrap gap-3.5">
+        <MultiSelectCombobox
+          title="Fleet Roles"
+          options={allRoles}
+          initialOptions={initialFilters.fleetType}
+          onSelect={(roles) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: { roles: roles },
+            })
+          }
+          reset={state.reset}
+        />
+      </div>
+
+      {/* conditional filters */}
+      {/* {state.filters.fleetType.includes("Main Fleet") && (
+        <div className="mb-3 flex flex-row flex-wrap gap-3.5">
+          <MultiSelectCombobox
+            title="Fleet Type"
+            options={["Main Fleet", "Vanguard Fleet", "Submarine Fleet"]}
+            initialOptions={initialFilters.fleetType}
+            onSelect={(fleetType) => {
+              console.log("hi")
+              return false
+            }}
+            reset={state.filters.fleetType.includes("Main Fleet")}
+          />
+          <ToggleButton
+            title="Sort"
+            options={[
+              { title: "None", payload: "" },
+              { title: "Ascending", payload: "asc" },
+              { title: "Descending", payload: "desc" },
+            ]}
+            initialValue={0}
+            onSelect={(fleetType) => {
+              console.log("hi")
+              return false
+            }}
+            reset={state.reset}
+          />
+        </div>
+      )} */}
 
       {/* Input + Button Container */}
       <div className="mb-3 flex flex-row-reverse flex-wrap justify-end gap-3.5">
