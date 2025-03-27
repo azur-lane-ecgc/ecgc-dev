@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react"
-
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
 import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
@@ -20,12 +18,7 @@ import {
 } from "./utils"
 
 export const SamvaluationModalFilter: React.FC = () => {
-  const [loading, setLoading] = useState<boolean>(true)
-  const { state, dispatch } = useShipFilter(initialFilters, loading)
-
-  useEffect(() => {
-    checkAndUpdateDatabase().then(() => setLoading(false))
-  }, [])
+  const { state, dispatch } = useShipFilter(initialFilters)
 
   return (
     <>
@@ -40,15 +33,14 @@ export const SamvaluationModalFilter: React.FC = () => {
 
       {/* ComboBoxes */}
       <div className="mb-3 flex flex-row flex-wrap gap-3.5">
-        <ComboBox
+        <MultiSelectCombobox
           title="Fleet Type"
           options={["Main Fleet", "Vanguard Fleet", "Submarine Fleet"]}
-          initialOption={initialFilters.fleetType[0]}
-          forceSelect={true}
+          initialOptions={initialFilters.fleetType}
           onSelect={(fleetType) =>
             dispatch({
               type: "SET_FILTER",
-              payload: { fleetType: [fleetType] },
+              payload: { fleetType: fleetType },
             })
           }
           reset={state.reset}
@@ -175,7 +167,7 @@ export const SamvaluationModalFilter: React.FC = () => {
               largeDescNote: false,
               hasBorder: true,
             }}
-            loading={loading}
+            loading={state.loading}
           />
         ))}
       </ItemContainer>

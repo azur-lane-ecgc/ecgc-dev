@@ -1,4 +1,4 @@
-import { useReducer, useEffect } from "react"
+import { useEffect, useReducer, useState } from "react"
 import { db } from "@db/dexie"
 import type { ShipData, AllShipData } from "@db/types"
 
@@ -7,7 +7,12 @@ const shipData = (await import("@db/ship_data/ship_data.json"))
 
 import { normalizeString } from "@utils/string"
 
-import { allianceFactionsMap } from "./utils"
+import {
+  allianceFactionsMap,
+  fleetTypeMapping,
+  hasUniqueAugment,
+} from "./utils"
+import { checkAndUpdateDatabase } from "@db/populateDb"
 
 export interface ShipState {
   visibleShips: AllShipData[]
@@ -21,34 +26,12 @@ export interface ShipState {
     faction: string[]
   }
   reset: string
+  loading: boolean
 }
 
 interface ShipAction {
   type: string
   payload: any
-}
-
-const fleetTypeMapping: Record<string, string> = {
-  "Main Fleet": "main",
-  "Vanguard Fleet": "vg",
-  "Submarine Fleet": "ss",
-}
-
-const hasUniqueAugment = (
-  augments: AllShipData["augments"] | null,
-  hullType: string,
-): boolean => {
-  if (!!!augments) return false
-
-  if (hullType.startsWith("AE") || hullType.startsWith("BM")) {
-    return augments.length > 1
-  }
-
-  if (hullType.startsWith("IX")) {
-    return augments.length > 0
-  }
-
-  return augments.length > 2
 }
 
 const fetchFilteredShips = async (filters: ShipState["filters"]) => {
@@ -179,7 +162,7 @@ export const initialFilters: ShipState["filters"] = {
   searchTerm: "",
   isKai: "",
   hasUniqueAugment: "",
-  fleetType: ["Main Fleet"],
+  fleetType: [],
   faction: [],
 }
 
@@ -187,7 +170,11 @@ export const initialFilters: ShipState["filters"] = {
 const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
   switch (action.type) {
     case "SET_SHIPS":
-      return { ...state, visibleShips: action.payload as AllShipData[] }
+      return {
+        ...state,
+        visibleShips: action.payload as AllShipData[],
+        loading: false,
+      }
     case "SET_FILTER":
       return {
         ...state,
@@ -207,21 +194,23 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
   }
 }
 
-export const useShipFilter = (
-  initialFilters: ShipState["filters"],
-  loading: boolean = true,
-) => {
+export const useShipFilter = (initialFilters: ShipState["filters"]) => {
+  const [loading, setLoading] = useState<boolean>(true)
+
   const [state, dispatch] = useReducer(shipReducer, {
     visibleShips: Object.values(shipData) as AllShipData[],
     filters: initialFilters,
     reset: "t",
+    loading: true,
   })
 
   useEffect(() => {
-    if (!loading) {
+    if (loading) {
+      checkAndUpdateDatabase()
       fetchFilteredShips(state.filters).then((filteredShips) => {
         dispatch({ type: "SET_SHIPS", payload: filteredShips })
       })
+      setLoading(false)
     }
   }, [state.filters, loading])
 
