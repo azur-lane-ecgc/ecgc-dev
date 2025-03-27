@@ -9,6 +9,7 @@ import {
   damageDealer,
   strongDamageDealer,
 } from "./data"
+import { isDecentMainFleet, isDecentSSFleet, isDecentVG } from "./decentShips"
 
 const tanks = tankRole()
 const superTanks = superTankRole()
@@ -68,7 +69,15 @@ export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
 
   // testing
   if (roles.length === 0) {
-    roles.push("Healer")
+    if (fleetType == "vg" && isDecentVG(ship)) {
+      roles.push("Meh")
+    } else if (fleetType == "main" && isDecentMainFleet(ship)) {
+      roles.push("Meh")
+    } else if (fleetType == "ss" && isDecentSSFleet(ship)) {
+      roles.push("Meh")
+    } else {
+      roles.push("Bad")
+    }
   }
 
   return roles
