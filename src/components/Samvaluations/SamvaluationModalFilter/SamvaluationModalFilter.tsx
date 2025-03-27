@@ -18,10 +18,6 @@ import {
 export const SamvaluationModalFilter: React.FC = () => {
   const { state, dispatch } = useShipFilter(initialFilters)
 
-  if (state.filters.fleetType.length > 0) {
-    console.log(state.filters)
-  }
-
   return (
     <>
       <div className="mb-3">
