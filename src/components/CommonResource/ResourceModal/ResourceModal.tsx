@@ -4,7 +4,7 @@ import "@components/_common/ItemCell/styles.css"
 
 import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
-import type { TriggerProps } from "@components/Samvaluations/ShipModal"
+import type { TriggerProps } from "@components/_common/ShipModal"
 import {
   closeButtonStyle,
   modalOverlayStyle,
@@ -12,7 +12,7 @@ import {
   modalStyle,
   shipIconStyle,
   shipLinkStyle,
-} from "@components/Samvaluations/ShipModal/styles"
+} from "@components/_common/ShipModal/styles"
 
 import { getCellColor } from "@utils/commonResource/getCellColor"
 import {

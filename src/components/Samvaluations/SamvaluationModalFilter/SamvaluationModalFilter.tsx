@@ -1,5 +1,5 @@
 import { ItemContainer } from "@components/_common/ItemCell"
-import { ShipModal } from "@components/Samvaluations/ShipModal"
+import { ShipModal } from "@components/_common/ShipModal"
 import { MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
 import { ToggleButton } from "@components/_common/ToggleButton"
