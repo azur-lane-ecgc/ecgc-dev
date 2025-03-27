@@ -12,7 +12,6 @@ import {
   fleetTypeMapping,
   hasUniqueAugment,
 } from "./utils"
-import { checkAndUpdateDatabase } from "@db/populateDb"
 
 export interface ShipState {
   visibleShips: AllShipData[]
