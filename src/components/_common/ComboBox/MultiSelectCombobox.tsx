@@ -137,7 +137,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
             }`}
           >
             {selected.length
-              ? truncateString(selected.join(", "), 18)
+              ? truncateString(selected.sort().join(", "), 18)
               : `${title}...`}
           </span>
           <div className="m-0 flex flex-col justify-center space-x-0 space-y-0 *:!leading-[0.35]">
