@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/Samvaluations/ShipModal"
-import { MultiSelectCombobox } from "@components/_common/ComboBox"
+import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
 import { ToggleButton } from "@components/_common/ToggleButton"
 
@@ -10,7 +10,7 @@ import { checkAndUpdateDatabase } from "@db/populateDb"
 
 import { formatLocation } from "@utils/formatLocation"
 
-import { useShipFilter } from "./useShipFilter"
+import { initialFilters, useShipFilter } from "./useShipFilter"
 import {
   allHullTypes,
   allianceFactionsMap,
@@ -21,7 +21,7 @@ import {
 
 export const SamvaluationModalFilter: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
-  const { state, dispatch } = useShipFilter(loading)
+  const { state, dispatch } = useShipFilter(initialFilters, loading)
 
   useEffect(() => {
     checkAndUpdateDatabase().then(() => setLoading(false))
@@ -40,13 +40,15 @@ export const SamvaluationModalFilter: React.FC = () => {
 
       {/* ComboBoxes */}
       <div className="mb-3 flex flex-row flex-wrap gap-3.5">
-        <MultiSelectCombobox
+        <ComboBox
           title="Fleet Type"
           options={["Main Fleet", "Vanguard Fleet", "Submarine Fleet"]}
+          initialOption={initialFilters.fleetType[0]}
+          forceSelect={true}
           onSelect={(fleetType) =>
             dispatch({
               type: "SET_FILTER",
-              payload: { fleetType: fleetType || [] },
+              payload: { fleetType: [fleetType] },
             })
           }
           reset={state.reset}
@@ -54,6 +56,7 @@ export const SamvaluationModalFilter: React.FC = () => {
         <MultiSelectCombobox
           title="Hull Type"
           options={allHullTypes}
+          initialOptions={initialFilters.hullType}
           onSelect={(hullType) =>
             dispatch({
               type: "SET_FILTER",
@@ -65,6 +68,7 @@ export const SamvaluationModalFilter: React.FC = () => {
         <MultiSelectCombobox
           title="Faction"
           options={[...allFactionOptions.map((option) => option.label)]}
+          initialOptions={initialFilters.faction}
           onSelect={(selectedLabels) =>
             dispatch({
               type: "SET_FILTER",
@@ -88,6 +92,7 @@ export const SamvaluationModalFilter: React.FC = () => {
         <MultiSelectCombobox
           title="Rarity"
           options={allRarityOptions}
+          initialOptions={initialFilters.rarity}
           onSelect={(selectedLabels) =>
             dispatch({
               type: "SET_FILTER",
@@ -96,7 +101,7 @@ export const SamvaluationModalFilter: React.FC = () => {
                   selectedLabels
                     ?.map((label) => allRarities[label])
                     .filter((value) => value !== undefined)
-                    .sort((a, b) => b - a) || [],
+                    .sort((a, b) => Number(b) - Number(a)) || [],
               },
             })
           }
