@@ -9,11 +9,11 @@ import { normalizeString } from "@utils/string"
 
 import { allianceFactionsMap } from "./utils"
 
-interface ShipState {
+export interface ShipState {
   visibleShips: AllShipData[]
   filters: {
     hullType: string[]
-    rarity: number[]
+    rarity: string[]
     searchTerm: string
     isKai: "true" | "false" | ""
     hasUniqueAugment: "true" | "false" | ""
@@ -155,7 +155,7 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
 
   // rarity filters
   if (filters.rarity.length > 0) {
-    query = query.and((ship) => filters.rarity.includes(ship.rarity))
+    query = query.and((ship) => filters.rarity.includes(String(ship.rarity)))
   }
 
   // sort by id within each rarity
@@ -164,13 +164,23 @@ const fetchFilteredShips = async (filters: ShipState["filters"]) => {
       .sortBy("id")
       .then((ships) =>
         filters.rarity.flatMap((rarity) =>
-          ships.filter((ship) => ship.rarity === rarity),
+          ships.filter((ship) => String(ship.rarity) === rarity),
         ),
       )
   } else {
     // default (id sort)
     return query.sortBy("id")
   }
+}
+
+export const initialFilters: ShipState["filters"] = {
+  hullType: [],
+  rarity: [],
+  searchTerm: "",
+  isKai: "",
+  hasUniqueAugment: "",
+  fleetType: ["Main Fleet"],
+  faction: [],
 }
 
 // main filtering hook
@@ -189,7 +199,7 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
     case "RESET_FILTER":
       return {
         ...state,
-        filters: initialState.filters as ShipState["filters"],
+        filters: initialFilters,
         reset: state.reset === "t" ? "f" : "t",
       }
     default:
@@ -197,22 +207,15 @@ const shipReducer = (state: ShipState, action: ShipAction): ShipState => {
   }
 }
 
-const initialState: ShipState = {
-  visibleShips: Object.values(shipData) as AllShipData[],
-  filters: {
-    hullType: [],
-    rarity: [],
-    searchTerm: "",
-    isKai: "",
-    hasUniqueAugment: "",
-    fleetType: [],
-    faction: [],
-  },
-  reset: "t",
-}
-
-export const useShipFilter = (loading: boolean = true) => {
-  const [state, dispatch] = useReducer(shipReducer, initialState)
+export const useShipFilter = (
+  initialFilters: ShipState["filters"],
+  loading: boolean = true,
+) => {
+  const [state, dispatch] = useReducer(shipReducer, {
+    visibleShips: Object.values(shipData) as AllShipData[],
+    filters: initialFilters,
+    reset: "t",
+  })
 
   useEffect(() => {
     if (!loading) {
