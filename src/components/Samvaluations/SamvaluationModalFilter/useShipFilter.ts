@@ -161,7 +161,7 @@ export const initialFilters: ShipFilterProps["filters"] = {
   searchTerm: "",
   isKai: "",
   hasUniqueAugment: "",
-  fleetType: [],
+  fleetType: ["Main Fleet"],
   faction: [],
 }
 
@@ -208,12 +208,16 @@ export const useShipFilter = (initialFilters: ShipFilterProps["filters"]) => {
 
   useEffect(() => {
     if (loading) {
-      fetchFilteredShips(state.filters).then((filteredShips) => {
-        dispatch({ type: "SET_SHIPS", payload: filteredShips })
-      })
+      fetchFilteredShips(state.filters)
+        .then((filteredShips) => {
+          dispatch({ type: "SET_SHIPS", payload: filteredShips })
+        })
+        .catch(() => {
+          console.log("error dm developer asap")
+        })
       setLoading(false)
     }
-  }, [state.filters, loading])
+  }, [state.filters])
 
   return { state, dispatch }
 }

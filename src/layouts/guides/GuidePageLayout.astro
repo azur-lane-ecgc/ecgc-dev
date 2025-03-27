@@ -113,7 +113,9 @@ const {
 
   <script>
     import { checkAndUpdateDatabase } from "@db/populateDb"
-    checkAndUpdateDatabase()
+    checkAndUpdateDatabase().catch(() => {
+      console.log("error dm developer asap")
+    })
   </script>
 
 
