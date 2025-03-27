@@ -161,7 +161,7 @@ export const initialFilters: ShipFilterProps["filters"] = {
   searchTerm: "",
   isKai: "",
   hasUniqueAugment: "",
-  fleetType: ["Main Fleet"],
+  fleetType: [],
   faction: [],
 }
 
