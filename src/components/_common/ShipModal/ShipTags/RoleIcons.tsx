@@ -1,4 +1,8 @@
 export const RoleIcons: { [key: string]: React.JSX.Element } = {
+  Bad: (
+    <i className="fa-solid fa-trash-arrow-up h-auto text-[28px] text-orange-400" />
+  ),
+  Meh: <i className="fa-solid fa-recycle h-auto text-[30px] text-cyan-400" />,
   Healer: <i className="fa-solid fa-heart h-auto text-[30px] text-red-400" />,
   Tank: (
     <i className="fa-solid fa-shield-halved h-auto text-[27px] text-green-600" />
