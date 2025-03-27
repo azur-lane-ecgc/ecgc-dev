@@ -9,6 +9,7 @@ export interface ComboBoxProps {
   initialOption?: string
   forceSelect?: boolean
   onSelect: (option: string | null) => void
+  reset?: any
 }
 
 export const ComboBox: React.FC<ComboBoxProps> = ({
@@ -18,6 +19,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   initialOption,
   forceSelect,
   onSelect,
+  reset,
 }) => {
   const [input, setInput] = useState<string>("")
   const [selected, setSelected] = useState<string | null>(initialOption || null)
@@ -61,6 +63,13 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       return () => clearTimeout(timer)
     }
   }, [showOptions])
+
+  useEffect(() => {
+    if (!!reset) {
+      setSelected(initialOption || null)
+      setInput("")
+    }
+  }, [reset])
 
   const filteredOptions = (() => {
     const baseOptions = input
