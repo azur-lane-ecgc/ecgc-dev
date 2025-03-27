@@ -38,7 +38,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -90,7 +90,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -142,7 +142,7 @@
     "augments": ["Ultra Rainbow Hammer", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -194,7 +194,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -246,7 +246,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -308,7 +308,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -370,7 +370,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -427,7 +427,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -489,7 +489,7 @@
     "augments": ["The Lucky Winner", "Dual Swords", "Hammer"],
     "samEval": "McCall is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -551,7 +551,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -603,7 +603,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -665,7 +665,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Charles Ausburne (Retrofit) is a damage-oriented DD with good stats and skills. Since Beaver Squadron Tag is wasted on DDs compared to tank cruisers, all aspects requiring it are practically useless. Her damage got buffed from her base form, and she gained a new barrage to further improve it, but it still doesn't make her better than starter retrofits. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -722,7 +722,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -779,7 +779,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -841,7 +841,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -903,7 +903,7 @@
     "augments": ["You Don't Fear What You Don't Hear", "Dual Swords", "Hammer"],
     "samEval": "Spence is a damage-oriented DD with bad stats and a good skill. Her Skill 1 barrage is good, but it isn't enough to save her. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -965,7 +965,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -1074,7 +1074,7 @@
     "augments": ["Sims' Playtime", "Dual Swords", "Hammer"],
     "samEval": "Sims (Retrofit) is a damage-oriented DD with meh stats and skills. Her damage is very meh, and her support, while good, is not worth using her for over other damage-oriented options. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -1131,7 +1131,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -1245,7 +1245,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -1307,7 +1307,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -1369,7 +1369,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -1431,7 +1431,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -1497,7 +1497,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -1558,7 +1558,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -1743,7 +1743,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -1804,7 +1804,7 @@
     "augments": ["Super Bubblegum Pro Max", "Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -1856,7 +1856,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -1918,7 +1918,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -1970,7 +1970,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -2094,7 +2094,7 @@
     "augments": ["Houston's Liftoff", "Greatsword", "Lance"],
     "samEval": "Houston is a damage-oriented CA with meh stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -2222,7 +2222,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -2284,7 +2284,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -2341,7 +2341,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -2398,7 +2398,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -2568,7 +2568,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -2630,7 +2630,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -2692,7 +2692,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -2758,7 +2758,7 @@
     "augments": ["No More Tears", "Bowgun", "Officer's Sword"],
     "samEval": "Arizona is a support-oriented BB with meh stats and skills. Her personal damage is pretty underwhelming, and her healing is too RNG to support a full fleet, even with her Augment module. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -2824,7 +2824,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -2886,7 +2886,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -3416,7 +3416,7 @@
     "augments": ["Streamer's Secret Weapon", "Scepter", "Hunting Bow"],
     "samEval": "Long Island (Retrofit) is a damage-oriented CVL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -3478,7 +3478,7 @@
     "augments": ["One More Ball!", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -3540,7 +3540,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -3602,7 +3602,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -3788,7 +3788,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -3911,7 +3911,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -3973,7 +3973,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -4096,7 +4096,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -4162,7 +4162,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -4214,7 +4214,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -4266,7 +4266,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -4328,7 +4328,7 @@
     "augments": ["My Friends A and Y", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -4390,7 +4390,7 @@
     "augments": ["Shining Comet", "Dual Swords", "Hammer"],
     "samEval": "Comet (Retrofit) is a damage-oriented DD with meh stats and skills. Her Skill 1 barrage is servicable, but that's her only form of damage, making her overall damage mediocre. Her torpedo buff to other DDs is nice, but not that important. Her Skill 2 smokescreen is unreliable due to how smokescreens work. Overall, she is a mediocre ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -4452,7 +4452,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -4514,7 +4514,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -4576,7 +4576,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -4638,7 +4638,7 @@
     "augments": ["Halo of Fortune", "Dual Swords", "Hammer"],
     "samEval": "Fortune (Retrofit) is a damage-oriented DD with bad stats and skills. Collection only",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -4695,7 +4695,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -4752,7 +4752,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -4809,7 +4809,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -4861,7 +4861,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -4918,7 +4918,7 @@
     "augments": ["Full Burst Javelin", "Dual Swords", "Hammer"],
     "samEval": "Javelin (Retrofit) is a damage-oriented DD with good stats and skills. Her bulk is pretty good, especially for a DD. Her damage is very good due to her Augment module barrage, and she has great mixed damage from her Main Guns and Torpedoes as well. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -4975,7 +4975,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -5032,7 +5032,7 @@
     "augments": ["Night Princess's Caprice", "Dual Swords", "Hammer"],
     "samEval": "Vampire is a damage-oriented DD with bad stats and skills. The heal she provides is not worth the damage loss from using this ship over other options, even with the Augment module enhancing the heal. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -5089,7 +5089,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -5151,7 +5151,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -5213,7 +5213,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -5331,7 +5331,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -5388,7 +5388,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -5449,7 +5449,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Manchester is a damage-oriented CL with average FP, bad Torpedoes, and good skills.<br /><b>Positives</b>: Both her skills are very good; boosting her self damage and faster torpedoes are great.<br /><b>Negatives</b>': Her personal damage is lackluster due to a mediocre AoA and only 1 CL Main Gun Mount. The Torpedo stat is so bad that it doesn't make up for the lack of bullet damage.<br /><b>Verdict</b>': Waifu only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -5506,7 +5506,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -5562,7 +5562,7 @@
     "augments": ["Another Precious Thing", "Crossbow", "Sword"],
     "samEval": "Edinburgh is a damage-oriented CL with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -5618,7 +5618,7 @@
     "augments": ["Afternoon of Surging Elegance", "Crossbow", "Sword"],
     "samEval": "Belfast is a damage-oriented CL with good stats and skills. Her personal damage is hindered by 1 MGM, but her self-buffs are enough to bring it up to acceptable levels. She also has a smokescreen, which can situationally be useful. She is ideally equipped with an HE CL gun to take full advantage of her self-buff. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -5679,7 +5679,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -5736,7 +5736,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -5793,7 +5793,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -5973,7 +5973,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -6035,7 +6035,7 @@
     "augments": ["The Sweetness of Cloudwatching", "Greatsword", "Lance"],
     "samEval": "Suffolk (Retrofit) is a damage-oriented CA with meh stats and skills. She has great damage for an Elite ship, but her bulk is very frail, even with her self heal. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -6097,7 +6097,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -6159,7 +6159,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -6211,7 +6211,7 @@
     "augments": ["Order of the White Rose", "Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -6273,7 +6273,7 @@
     "augments": ["Proof of Inheritance", "Greatsword", "Lance"],
     "samEval": "Exeter (Retrofit) is a damage-oriented CA with good stats and meh skills. Her personal damage is good, especially against Medium Armor, due to her barrage and self-buffs. However, only 1 MGM drags her personal damage down. Her Skill 1 procs at the start of the battle and has a decent barrage attached to it, but only has a 60% trigger rate for the rest of the battle, which isn't good enough since it's uptime isn't long enough to justify the RNG involved. Her Skill 2 is nice, but also has an unreliable trigger rate. Overall, she is a meh ship, and can be a sidegrade / downgrade to other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -6330,7 +6330,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -6392,7 +6392,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -6454,7 +6454,7 @@
     "augments": ["Dame's Medal of Grace", "Bowgun", "Officer's Sword"],
     "samEval": "Hood is a flagship-oriented BC with good stats and amazing skills. Her barrage is very strong, and has a 100% proc rate, making her a great damage option. She also provides a Reload buff to all Main Fleet ships upon her barrage triggering. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -6515,7 +6515,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -6704,7 +6704,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -6761,7 +6761,7 @@
     "augments": ["Knight Commander's Medal", "Bowgun", "Officer's Sword"],
     "samEval": "King George V is a flagship damage-oriented BB with good stats and skills. Her barrage is timed, which gives her more spread out damage when mobbing. Using the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Quadruple_356mm_Main_Gun_Mount\" title=\"Quadruple 356mm Main Gun Mount\" >Quadruple 356mm Main Gun Mount</a > gives her an almost preload, but is not recommended due to the gun being awful otherwise. Her Augment Module removes this requirement in exchange for losing her self-buffs when sortied with Royal Navy ships, which is an alright tradeoff but nothing special. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -6879,7 +6879,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -6988,7 +6988,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -7120,7 +7120,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Eagle is a damage-oriented CVL with meh stats and skills. Can equip a secondary gun, which helps with interception. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -7239,7 +7239,7 @@
     "augments": ["For Love and Peace", "Scepter", "Hunting Bow"],
     "samEval": "Illustrious is a support-oriented CV with good stats and skills. Her personal damage is good, with 8 planes and an on-strike rocket barrage. Her support is also good, granting a large shield based on her own max HP to the Vanguard Fleet, and some minor healing along with it. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -7300,7 +7300,7 @@
     "augments": ["Splendid as Sky and Sea", "Scepter", "Hunting Bow"],
     "samEval": "Victorious is a damage-oriented CV with good stats and meh skills. Her personal damage is alright, but nothing special due to minor self-buffs and the unrealiability of her Skill 2. Her Reload stat is also low for a CV. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -7357,7 +7357,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Formidable is a support / damage-oriented CV with great stats and skills. As a support, she offers a timestop that other ships can take advantage of to improve their geometric accuracy against bosses. As a damage-dealer, when equipped with the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Fairey_Albacore\" title=\"Fairey Albacore\" >Fairey Albacore</a > Torpedo Bomber, she has great screen-wide barrages on airstrike, which along with her loadout help clear out enemy waves well. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -7422,7 +7422,7 @@
     "augments": ["Punctual Glory", "Scepter", "Hunting Bow"],
     "samEval": "Glorious is a damage-oriented CV with bad stats and skills. Her augment granted her a 20% cooldown reduction on her first airstrike, which mitigates her slow reload somewhat. Her self-damage is also pretty bad due to 7 planes and average efficiencies. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -7479,7 +7479,7 @@
     "augments": ["Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -7541,7 +7541,7 @@
     "augments": ["Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -7603,7 +7603,7 @@
     "augments": ["Biggest Girl's Bonnie Bells", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -7655,7 +7655,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Shirayuki has FP and TRP boosts from skills, but stats and efficiencies are underwhelming compared to others. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -7716,7 +7716,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Miyuki is a torpedo-oriented DD with meh stats compared to other ships in her role. Her guns and AA aren't good, and her torpedoes and skills are not good enough to make her noticable. In particular, ramming and evasion reliant skills are huge gimmicks for low HP ships like Miyuki. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -7772,7 +7772,7 @@
     ],
     "samEval": "Ayanami (Retrofit) is a damage-oriented DD with great stats and skills. Her Main Gun damage is really awful, but her Torpedo damage is among the best in the game, especially when combined with her self-buffs. She is ideally equipped with a fast-firing Main Gun to trigger her skill and All-out-Assault barrage faster for maximum uptime. Overall, she is a great ship, but susceptible to the deficiencies of Torpedo targetting on auto-battle.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -7824,7 +7824,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -7881,7 +7881,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hibiki doesn't have any relevant stat buffs from her skills to make up for her subpar base stats, and her self heal doesn't add much to her bulk. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -7938,7 +7938,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -7990,7 +7990,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -8042,7 +8042,7 @@
     "augments": ["Watch Your Head!", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -8146,7 +8146,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -8198,7 +8198,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -8259,7 +8259,7 @@
     "augments": ["Floaty Sparkly", "Dual Swords", "Hammer"],
     "samEval": "Kagerou (Retrofit) is a support-oriented DD with good stats and skills. She has good Torpedo buffs for the Vanguard Fleet, and her own Torpedo damage is pretty good as well. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -8315,7 +8315,7 @@
     ],
     "samEval": "Shiranui is a damage-oriented DD with bad stats and skills. Her Augment Module barrage adds some damage but it is not enough. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -8367,7 +8367,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -8428,7 +8428,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -8489,7 +8489,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -8550,7 +8550,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -8602,7 +8602,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -8658,7 +8658,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -8719,7 +8719,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -8776,7 +8776,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -8833,7 +8833,7 @@
     "augments": ["Upgrade Tool Pro Max", "Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -8885,7 +8885,7 @@
     "augments": ["Delicious Nagara-class Nabemono", "Crossbow", "Sword"],
     "samEval": "Nagara is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -8989,7 +8989,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Natori is a damage-oriented CL with meh stats and good skills. During the first 30s of battle, her personal damage is actually pretty good due to multiple great barrages, including a mini carpet-bomb that does great damage. Her bulk is also pretty good as well, with a good shield as well as damage reduction for all CLs in the fleet. Overall, she is a good ship, especially when mobbing.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -9041,7 +9041,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Yura is a support-oriented CL with meh stats and skills. Her personal damage and support have contridicting requirements, forcing you to choose one or the other. Both modes are subpar anyway, making her not worth using. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -9098,7 +9098,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Kinu (Retrofit) is a good damage-oriented CL, with solid stats and efficiencies. Skills also buff her damage output nicely. Overall, not the best, but certainly not the worst.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -9155,7 +9155,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -9273,7 +9273,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -9330,7 +9330,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -9382,7 +9382,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -9434,7 +9434,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -9486,7 +9486,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -9595,7 +9595,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -9647,7 +9647,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Nachi (Retrofit) is a tank-oriented CA with good stats and skills. Her bulk is good enough to tank most content, and she has great fleet support, especially with other CA/CL/CB. Her personal damage is meh due to only 1 MGM. Her Skill 1 can be both situationally good or bad, depending on the damage of the stage she is on, so be wary. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -9699,7 +9699,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -9765,7 +9765,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Haguro is a tank-oriented CA best used as a main tank. She has good enough HP, which coupled with her great Luck and Evasion (which can get boosted further from her torpedoes!) gives her high bulk. She also has a self-heal when the skill barrage activation fails. Her barrages and MGM are very mediocre for the role, however. Overall, she is a great pure tank, but has bad damage output for the role.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -9991,7 +9991,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -10043,7 +10043,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -10100,7 +10100,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -10157,7 +10157,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -10214,7 +10214,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -10266,7 +10266,7 @@
     "augments": ["Shichi-Go-San Exorcism Bells", "Bowgun", "Officer's Sword"],
     "samEval": "Fusou (Retrofit) is a flagship-oriented BB with good stats and skills. Her Augment Module makes her Retrofit more viable, due to her barrage being good. Her personal damage is decent due to good self-buffs and stats, especially for a lower rarity ship. The cost to get this investment can be a bit steep, however. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -10318,7 +10318,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -10370,7 +10370,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -10437,7 +10437,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -10560,7 +10560,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -10617,7 +10617,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Kii is a flagship-oriented BB with great stats and skills. Her timed barrage means that her damage output is staggered. She is ideally sortied with 2 other IJN ships for her buffs. Uniquely, she also buffs the Torpedo stat from the Main Fleet, however that has situational usage. Overall she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -10674,7 +10674,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -10787,7 +10787,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -10839,7 +10839,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -10891,7 +10891,7 @@
     "augments": ["Resplendent Flower Hairpin", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -10943,7 +10943,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Zuihou is a healer-oriented CVL with average stats and good skills. Compared to Unicorn (Retrofit), Zuihou heals less overall, but part of her healing is based on her own HP, and all of her healing targets lower HP ships within the fleet (except 1 random tick from her Skill 1). Her Skill 1 barrage is good, but her personal damage is still mediocre due to a 6-plane loadout. Her Skill 2 buffs your Submarine Fleet and Main Fleet by a decent amount as well. Overall she is a great ship, but not worth using over Unicorn (Retrofit).",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -10995,7 +10995,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -11052,7 +11052,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -11213,7 +11213,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -11265,7 +11265,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -11317,7 +11317,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -11610,7 +11610,7 @@
     "augments": ["The One and Only Style", "Dual Swords", "Hammer"],
     "samEval": "Z1 is a damage-oriented DD with good stats and skills. Her buffs are only for KMS DDs, which makes them very niche. Her personal damage is alright, but nothing special. Overall, she is a good ship, but can be a sidegrade/downgrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -11723,7 +11723,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -11784,7 +11784,7 @@
     "augments": ["Teachings of the Seven Bridges", "Crossbow", "Sword"],
     "samEval": "Königsberg is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -11846,7 +11846,7 @@
     "augments": ["Storm-Breaking Fist?", "Crossbow", "Sword"],
     "samEval": "Karlsruhe (Retrofit) is a damage-oriented CL with bad stats and skills. Her personal damage is awful, even with her Augment Module, due to only 1 MGM and no good barrages. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -11908,7 +11908,7 @@
     "augments": ["Public-Private Schedule", "Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -11970,7 +11970,7 @@
     "augments": ["Guardian Fishy", "Crossbow", "Sword"],
     "samEval": "Leipzig (Retrofit) is a support-oriented CL with good damage and skills. Her personal damage is good, despite only 1 MGM, due to her self buffs, good Torpedoes and the Skill 1 barrage. Her support is also good, but only works on CB / CA / CLs. Overall, she is a good ship, but can be a sidegrade / downgrade to other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -12022,7 +12022,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -12201,7 +12201,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -12258,7 +12258,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -12310,7 +12310,7 @@
     "augments": ["Daredevil's Caution", "Bowgun", "Officer's Sword"],
     "samEval": "Scharnhorst is a damage-oriented BB with bad stats and skills. Her Augment Module duplicates her barrage but with your flagship's scaling, which doesn't add enough to make her relevant. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -12367,7 +12367,7 @@
     "augments": ["Calculations Complete!", "Bowgun", "Officer's Sword"],
     "samEval": "Gneisenau is an off-flag damage-oriented BC with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -12419,7 +12419,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -12480,7 +12480,7 @@
     "augments": ["Lonely Queen's Flag", "Bowgun", "Officer's Sword"],
     "samEval": "Tirpitz is an off-flag damage-oriented BB with meh stats and skills. Her personal damage is very lackluster, and is only brought up to good levels when paired with Bismarck (which isn't worth building your fleet around). Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -12989,7 +12989,7 @@
     "augments": ["Pirozhki", "Crossbow", "Sword"],
     "samEval": "Avrora is a support-oriented CL with meh stats and great skills. Her stats and personal damage are mediocre (even with her Unique Augment Module added barrage), but her buff makes up for it by buffing your Vanguard Fleet's damage. Overall, she is a great ship provided her buff is fully utilized.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -13046,7 +13046,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -13098,7 +13098,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -13155,7 +13155,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -13207,7 +13207,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -13382,7 +13382,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -13434,7 +13434,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -13495,7 +13495,7 @@
     "augments": ["Mutsuki's Candy!", "Dual Swords", "Hammer"],
     "samEval": "Mutsuki (Retrofit) is a damage-oriented DD with very bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -13547,7 +13547,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -13599,7 +13599,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -13651,7 +13651,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -13703,7 +13703,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -13760,7 +13760,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -13816,7 +13816,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -13868,7 +13868,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Umikaze is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -13925,7 +13925,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Yamakaze is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -14039,7 +14039,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -14096,7 +14096,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -14148,7 +14148,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -14209,7 +14209,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -14270,7 +14270,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -14322,7 +14322,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -14374,7 +14374,7 @@
     "augments": ["To Become Statuesque?", "Dual Swords", "Hammer"],
     "samEval": "Nicholas (Retrofit) is a damage-oriented DD with good stats and great skills. Her personal damage is good due to having good FP and a lot of self-buffs, but only 1 MGM and lackluster barrages hurt her potential. Her bulk is nothing special as well. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -14426,7 +14426,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -14478,7 +14478,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -14530,7 +14530,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -14587,7 +14587,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -14648,7 +14648,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -14709,7 +14709,7 @@
     "augments": ["Grinding Day and Night", "Crossbow", "Sword"],
     "samEval": "Sendai (Retrofit) is a support-oriented CL with good stats and skills. Her Skill 1 buffs the TRP stat of all DDs and CLs in your fleet, which is a solid boost. In addition, it significantly increases her survaviblity with her Augment Module. Her Skill 2 flares are practically useless, as they are both RNG and are hard to sync with other ships, despite the effect being very good. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -14761,7 +14761,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -14813,7 +14813,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -14870,7 +14870,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -14931,7 +14931,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -14992,7 +14992,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -15049,7 +15049,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -15101,7 +15101,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -15162,7 +15162,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -15323,7 +15323,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -15384,7 +15384,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -15441,7 +15441,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -15498,7 +15498,7 @@
     "augments": ["Speed S", "Crossbow", "Sword"],
     "samEval": "Jamaica is a damage-oriented CL with bad stats and skill. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -15611,7 +15611,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -15668,7 +15668,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -15725,7 +15725,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -15782,7 +15782,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -15843,7 +15843,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -15899,7 +15899,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -15956,7 +15956,7 @@
     "augments": ["Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -16008,7 +16008,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -16112,7 +16112,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -16164,7 +16164,7 @@
     "augments": ["Hydrophone Calibration Device", "Kunai", "Dagger"],
     "samEval": "I-58 is a damage-oriented SS with average stats and great skills. Her personal damage is pretty good for an Elite SS due to her self-buffs. Her buff to other IJN SS is nice, but not needed for her viability. Overall, she is a good SS, especially for newer players, but worse than all the relevant SR SS options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -16268,7 +16268,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -16377,7 +16377,7 @@
     "augments": ["1-Cent Coins", "Kunai", "Dagger"],
     "samEval": "U-557 is a damage-oriented SS with meh stats and skills. Her personal damage is meh, and her Augment Module trades damage potential for consistency compared to the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Dagger\" title=\"Dagger\" >Dagger</a >. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -16438,7 +16438,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -16495,7 +16495,7 @@
     "augments": ["Li'l Smile", "Dual Swords", "Hammer"],
     "samEval": "Z18 is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -16617,7 +16617,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -16674,7 +16674,7 @@
     "augments": ["Fantastic Loop", "Crossbow", "Sword"],
     "samEval": "Émile Bertin (Retrofit) is a damage-oriented CL with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -16731,7 +16731,7 @@
     "augments": ["Surcouf's Sunday", "Kunai", "Dagger"],
     "samEval": "Surcouf is a damage-oriented SS with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -16788,7 +16788,7 @@
     "augments": ["Flowering Courage", "Dual Swords", "Hammer"],
     "samEval": "Le Mars (Retrofit) is a damage-oriented DD with meh stats and skills. Her Skill 1 is very RNG, and building fleets around FFNF or MNF Vanguard Ships is worse than using a union of multiple good ships. The barrage from Skill 1 is a nice bit of damage, but not enough to justify her slot in the fleet. Her Skill 2 is even more RNG than her Skill 1, and only adds to her middling bulk. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -16850,7 +16850,7 @@
     "augments": ["Confections Making Set", "Bowgun", "Officer's Sword"],
     "samEval": "Dunkerque is a flagship-oriented BC with meh stats and good skills. Her stats are mediocre, and she has a preloaded Main Gun Mount in exchange for only having MGM+1, which isn't a good enough tradeoff. Her Skill 1 is great, but only a 70% chance for the effects to trigger hurts her. Overall, she is a meh ship, and is a sidegrade / downgrade to other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -17033,7 +17033,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -17255,7 +17255,7 @@
     "augments": ["Tem and Opie", "Dual Swords", "Hammer"],
     "samEval": "Le Téméraire is a damage-oriented DD with meh stats and skills. Her personal damage is meh due to an aimed barrage from her Skill 1, but even that isn't 100% guarenteed. Her self-buffs help, but don't bring her up to standard. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -17312,7 +17312,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -17368,7 +17368,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -17425,7 +17425,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -17482,7 +17482,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -17600,7 +17600,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -17656,7 +17656,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -17769,7 +17769,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -17826,7 +17826,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -17883,7 +17883,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -17940,7 +17940,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -18053,7 +18053,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -18105,7 +18105,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -18161,7 +18161,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -18217,7 +18217,7 @@
     "augments": ["Bizarre Teatime", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -18387,7 +18387,7 @@
     "augments": ["Mini Lebe", "Dual Swords", "Hammer"],
     "samEval": "Z2 is a damage-oriented DD with meh stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -18444,7 +18444,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -18496,7 +18496,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -18553,7 +18553,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -18610,7 +18610,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -18662,7 +18662,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -18714,7 +18714,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -18766,7 +18766,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -18888,7 +18888,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -18945,7 +18945,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -19002,7 +19002,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -19054,7 +19054,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -19106,7 +19106,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -19276,7 +19276,7 @@
     "augments": ["Magie de l'Amitié", "Dual Swords", "Hammer"],
     "samEval": "L'Opiniâtre is a damage-oriented DD with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -19337,7 +19337,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -19394,7 +19394,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -19565,7 +19565,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -19622,7 +19622,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Alabama is a flagship-oriented BB with good stats and skills. Her barrage is good, and it is timed, allowing her to stagger her damage more easily. She is best used in a mobbing fleet due to her gaining more buffs as the sortie progresses. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -19735,7 +19735,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Bataan is a damage-oriented CVL with good stats and skills. She has high efficiency planes, and a solid barrage, but only 6 total planes hinder her. Overall, she is a good ship, but is outclassed by easily accessible options. Gives +1 CV RLD Fleet Technology.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -19792,7 +19792,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "San Juan is an AA-oriented CL with bad stats and skills. She has great AA, but it is not enough to justify using her over a damage option (to outdamage the enemy before their planes kill you). Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -19849,7 +19849,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Birmingham is a damage-oriented CL with good stats and skills. She is relatively bulky for her hull type, and she has good damage to go along with it. Her Skill 1 even offers minor fleet support due to reducing flagship Burn duration. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -19910,7 +19910,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Aylwin is a damage-oriented DD with really bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -19962,7 +19962,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -20014,7 +20014,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -20070,7 +20070,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -20122,7 +20122,7 @@
     "augments": ["Incanto", "Bowgun", "Officer's Sword"],
     "samEval": "Littorio is a flagship-oriented BB with great stats and skills. She doesn't have many self-buffs compared to other BBs, and 130% Main Gun efficiency hinders her shelling damage. Her barrage is still pretty good, however. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -20179,7 +20179,7 @@
     "augments": ["The Complete Old Lady Kit", "Bowgun", "Officer's Sword"],
     "samEval": "Conte di Cavour is an off-flag damage-oriented BB with bad stats and skills. Her unique Augment Module is an improvement over her base form, but it is not enough to save her. Collection only. Gives +1 BB RLD Fleet Technology.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -20236,7 +20236,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Giulio Cesare is an off-flag damage-oriented BB with bad stats and skills. Collection only. Gives +1 BB ACC Fleet Technology.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -20358,7 +20358,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Trento is a damage-oriented CA with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -20415,7 +20415,7 @@
     "augments": ["Carabinier's Honored Hallmark", "Dual Swords", "Hammer"],
     "samEval": "Carabiniere is a damage-oriented DD with meh stats and skills. Her personal damage is mediocre, and her support, while nice, is not worth using her over options that do more damage. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -20472,7 +20472,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -20532,7 +20532,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -20584,7 +20584,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -20767,7 +20767,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -20824,7 +20824,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -20885,7 +20885,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -20937,7 +20937,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -20998,7 +20998,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Suruga is a flagship-oriented BB with average stats, skills, barrage, and efficiencies. Her timed barrage means that her damage output is staggered. The barrage isn't special due to its pattern and subpar base damage. Overall, she is average, especially in the current landscape of BBs from research and recent new events.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -21059,7 +21059,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Ryuuhou is a healer-oriented CVL with average stats and good skills. Compared to Perseus and Unicorn (Retrofit), Ryuuhou is better when healing a single-target, but worse at fleet-wide healing. Also compared to Perseus and Unicorn, she doesn't have a preload. Overall good, but not worth using over Unicorn (Retrofit) / Perseus.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -21120,7 +21120,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -21181,7 +21181,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -21242,7 +21242,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -21294,7 +21294,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Grozny is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -21351,7 +21351,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Minsk is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -21522,7 +21522,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Kirov is a damage-oriented CL with good stats and great skills. Her personal damage is pretty good due to multiple skill barrages and her increased Main Gun range. Her bulk is also decent. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -21636,7 +21636,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Gangut is an off-flag damage-oriented BB with meh stats and skills. When equipped with her signiture Main Gun, she gains cooldown reduction which is nice when mobbing but still worse than other easily accessible options. Against bosses, she is also outclassed by other easily accessible options. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -21745,7 +21745,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Sovetskaya Belorussiya is a flagship-oriented BB with great stats and skills. Her barrage is strong, and has a good pattern; although, it is a bit farther back than normal. She also has multiple heals for self-sutain over the course of fights, and even helps your Vanguard Fleet a little bit as well. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -21859,7 +21859,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Intrepid is a damage-oriented CV with good stats and skills. She has a good loadout (8 planes) and an on-strike barrage; however, the barrage is nothing special compared to other recently released CVs in 2023. She also doesn't have as many self-buffs compared to the top of her hull. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -21973,7 +21973,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Cooper attempts to be an ASW-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -22087,7 +22087,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "Bluegill is a SS with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -22201,7 +22201,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Marblehead is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -22258,7 +22258,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -22319,7 +22319,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -22380,7 +22380,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -22437,7 +22437,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -22551,7 +22551,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Jeanne d'Arc is a support-oriented CL with great stats and skills. Her personal damage is very mediocre at best, but she makes up for it with her Vanguard Fleet supportive capabilities. Against most bosses, her prescence can increase the survaviblity of your Vanguard Fleet by a sizable amount. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -22608,7 +22608,7 @@
     "augments": ["Bludgeon of Faith", "Greatsword", "Lance"],
     "samEval": "Algérie is a damage-oriented CA with great stats and meh skills. Her damage output is good due to her skill barrage having a proc change on every Main Gun shot. Her bulk is fine, but not enough to tank any hard content reliably. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -22665,7 +22665,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "La Galissonnière is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -22722,7 +22722,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Vauquelin is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -22779,7 +22779,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Béarn is a damage-oriented CVL with meh stats and skills. Can equip a secondary gun, which helps with interception. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -22836,7 +22836,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -22893,7 +22893,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23064,7 +23064,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Hermione is a damage-oriented CL with meh stats and skills. Her personal damage is mediocre due to 1 MGM and decent barrages. self-buffs. She ideally is not sortied as the Main Tank due to her Skill 2 self-buffs. Overall, she is a mediocre ship. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23121,7 +23121,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Valiant is a damage-oriented BB with meh stats and skills. Her personal damage is mediocre due to a 50% barrage chance, and average Main Gun efficiencies and stats. She offers some fleet support due to a spoecial Armor Break, but that is not worth using her over a better ship that contributes more to the battle. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23178,7 +23178,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Icarus is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23235,7 +23235,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23410,7 +23410,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23467,7 +23467,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "She has subpar stats and unreliable skills, along with only 6 planes. Collection only. Gives +1 CV AVI Fleet Technology.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23524,7 +23524,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "She has subpar stats and unreliable skills, along with only 6 planes. Collection only. Gives +1 CV RLD Fleet Technology.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23581,7 +23581,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Has solid bulk, but lack of damage output hurts her a lot. Her potential support capabiliities from Cargo gear are also lackluster. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -23638,7 +23638,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Princeton is a damage-oriented CVL with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23695,7 +23695,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -23756,7 +23756,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -23931,7 +23931,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -23992,7 +23992,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -24106,7 +24106,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -24339,7 +24339,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Weser is a damage-oriented CVL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -24453,7 +24453,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Z24 is a damage-oriented DD with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -24510,7 +24510,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Z28 is a damage-oriented DD with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -24628,7 +24628,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Vincenzo Gioberti is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -24685,7 +24685,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -24742,7 +24742,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "U-410 is a damage-oriented SS with meh stats and skills. Her damage in KMS Submarine Fleets is alright, but worse than all the gold ships. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -24794,7 +24794,7 @@
     "augments": ["Ambrosial Violet Whispers", "Crossbow", "Sword"],
     "samEval": "Ying Swei is a damage-oriented CL with bad stats and skills. Her lack of an AA Gun Mount, forcing her to use her Ghost AA Gun, actively hurts your fleet's AA capabilities. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -24850,7 +24850,7 @@
     "augments": ["Plum-Red Silksteps", "Crossbow", "Sword"],
     "samEval": "Chao Hao is a damage-oriented CL with bad stats and skills. Her lack of an AA Gun Mount, forcing her to use her Ghost AA Gun, actively hurts your fleet's AA capabilities. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -24906,7 +24906,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Penelope is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -25019,7 +25019,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Gremyashchy is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -25076,7 +25076,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Murmansk is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -25133,7 +25133,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Gromky is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -25361,7 +25361,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "Torricelli is a damage-oriented SS with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -25418,7 +25418,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Maestrale is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -25475,7 +25475,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Libeccio is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -25532,7 +25532,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Nicoloso da Recco is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -25589,7 +25589,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -25707,7 +25707,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Stephen Potter is a support-oriented DD with meh stats and great skills. Her personal damage is pretty awful, but her skills more than make up for it. Her Skill 1 gives both other Vanguard ships a great buff, and her Skill 2 gives all CVs a Damage buff of their own. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -25768,7 +25768,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -25996,7 +25996,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Boise is a damage-oriented CL with average stats and skills. Her personal damage is good with MGM+1 CL guns and a barrage. Her self-buffs are nothing special, however. Overall, she is an alright ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -26110,7 +26110,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -26167,7 +26167,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Kazagumo is a support-oriented DD with great stats and skills. Her torpedo damage is pretty good, which along with her AoA and torpedo reload reduction make her damage output on the higher end for supports. She prefers to use a fast main gun to get as many All-out-Assault activations as possible. Her CV support is top-notch; her CV/CVL heal is nice in extended fights. Overall, she is a great option.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -26281,7 +26281,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "Nautilus is a damage-oriented SS with great stats and skills. Her gimmick of resurfacing for a bit before diving back against is not useful, and can make her die earlier than expected. However, her personal damage is still pretty good, making her worth using as a 3rd SS in a USS composition, assuming you have nobody better. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -26338,7 +26338,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Katsuragi is a damage-oriented CV with good stats and skills. She has a full 8-plane CV loadout along with good plane efficiencies, making her damage good. Her barrage is very pretty, but each individual petal does a small amount of damage, and the main part of the barrage damage is converging torpedoes, which has an unreliable hit-rate. Her AVI damage reduction support is good, but very situational given that it requires an IJN fleet. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -26447,7 +26447,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Le Terrible is a damage-oriented DD with great stats and skills. Her damage is good due to her multiple skill barrages and self-buffs. She is ideally sortied as the only DD in your vanguard for the RLD and DMG reduction buffs. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -26504,7 +26504,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Maillé Brézé is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -26561,7 +26561,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Foch is a damage-oriented CA with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -26618,7 +26618,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Magdeburg is a damage-oriented CL with good stats and skills. Her personal damage is middling due to only 1 MGM. Her barrage can make it better, but it requires winning 2 battles to improve it to a good level. Her self-buffs are also reliant on winning battles throughout the sortie. Her bulk is fine; nothing special but not awful either. Her AA is fine; nothing special. Overall, she is a good CL.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -26675,7 +26675,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Elbe is a damage-oriented CVL with meh stats and skills. Her personal damage is middling due to 6 planes. Her airstrike barrage is not 100% proc chance and also middling. The shield she provides is not worth using her for. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -26789,7 +26789,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "U-1206 is a damage-oriented SS with meh stats and skills. You would only use her as a transitional KMS submarine while you are trying to build the better KMS submarines. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -26908,7 +26908,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Charybdis is a support-oriented CL with meh stats and skills. Her personal damage is bad due to only 1 MGM and bad barrages. Her AA damage is good, but nothing special. Her Skill 1 whirlpool is very underwhelming and has a small AoE. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -26965,7 +26965,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Hai Tien is a damage-oriented CL with meh stats and skills. Her personal damage is alright due to MGM+1 DD Guns and decent barrages. However, her lack of an AA Gun Mount actively hurts your fleets AA output. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -27022,7 +27022,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Hai Chi is a damage-oriented CL with meh stats and skills. Her personal damage is alright due to MGM+1 DD Guns. Her smokescreen is unreliable on auto-battle due to your Vanguard Fleet moving in and out of it repeatedly. Her lack of an AA Gun Mount actively hurts your fleets AA output. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -27079,7 +27079,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Bristol is a damage-oriented DD with good stats and skills. Her personal damage is alright despite 1 MGM, since her barrages are good and she has AoA reduction. Her AA is also good, due to having a relatively high AA stat and efficiencies compared to other DDs. Her lanturn debuff is amazing if it lands, but due to the zone spawing in front of Bristol, it is unreliable to trigger on auto-battle. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -27142,7 +27142,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Chen Hai (Retrofit) is a damage-oriented CVL with meh stats and good skills. Her loadout is drastically improved, but only 5 planes is still bad, despite the high efficiencies. She has multiple good barrages, but they don't make up for the lack of planes. Overall, she is a meh ship, and is outclassed by other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -27256,7 +27256,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Arkhangelsk is an off-flag damage-oriented BB with meh stats and skills. Her barrage is 100%, but has mediocre damage. The +ACC buff to your Main Fleet is not that useful as well. Her Skill 2 is just self-buffs, but they aren't large enough to affect her viability. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -27313,7 +27313,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Soobrazitelny is a damage-oriented DD with bad stats and skills. Her Skill 1 has a smokescreen, which is very rng. Her Skill 2 is alright, but the heal is only to SN DDs, AND limited in activation chances. The Skill 2 barrage is nothing special as well. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -27370,7 +27370,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Volga is a support-oriented CV with great stats and skills. Her personal damage is good due to having the full 8-plane CV loadout, and multiple barrages. She lacks a lot of self-buffs except from her Skill 3, which should be satisfied very easily. Her Skill 2 provides a lot of healing, but two out of the three heals have random targetting. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -27546,7 +27546,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Pompeo Magno is a damage-oriented DD with good stats and skills. Her personal damage is good due to MGM+1 DD Guns and good FP. Her torpedo damage is not good, and neither is her barrage damage. Her Skill 1 special burn is not that special, as it does little damage. Her Skill 2 buffs her torpedo damage, but it isn't enough to make her torpedo damage stand out. Her bulk is also decent due to gaining 30% more stats from auxiliaries. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -27603,7 +27603,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Trieste is a damage-oriented CA with bad stats and skills. Despite her stats being damage-oriented, her skills are bulk-oriented, making her bad at both. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -27712,7 +27712,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Lützow is a flagship-oriented BC, with solid stats and an alright barrage. Has a meh debuff, and is otherwise very \"traditional.\" Overall, seems solid; nothing exceptional, but not awful. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -27764,7 +27764,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Stats are meh, and barrage pattern is not that great. Debuff is alright, but still worse than other BB support like Duke of York. She's bad, but it could be worse. Waifu only. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -27816,7 +27816,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Has meh bulk for a tank, but damage is lacking. Worse than Portland Kai as a tank, therefore not really worth using outside waifu. She's bad, but it could be worse. Waifu only. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -27920,7 +27920,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "What did you expect from a purple torpedo focused CL with meh stats, skills, and efficiencies? She's bad, just like a typical event purple. Waifu only. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -28232,7 +28232,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Revenge is an off-flag damage-oriented BB with bad stats and skills. Her stats are bad compared to gold BBs, and the skills don't make up for them. Her Barrage is very meh, the armor break is alright but not worth sacrificing a BB slot for, and the second skill in its entirety is purely a gimmick. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -28398,7 +28398,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "What did you expect from a purple torpedo focused CL with meh Stats, Skills, and Efficiencies? Her saving grace is that her AoA barrage is alright. She's bad, just like a typical event purple. Waifu only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -28559,7 +28559,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Bolzano is a bad CA with meh/bad stats. Her skills improve her bulk a decent bit, but she is still not tanky enough to main tank most content. Her damage ouput is average at best as well. Overall, she is bad; collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -28663,7 +28663,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Alfredo is a bad DD with alright FP, but meh/bad other stats. Her efficiencies, coupled with only 1 MGM, make her damage output bad as well. The flares are situational at best, and so is the smokescreen. Overall, she is bad; collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -28715,7 +28715,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Emanuele Pessagno is a bad DD with alright FP, but meh/bad other stats. Her skills are decent, and her high main gun efficiency give her decent damage despite 1 MGM. The second skill is all situational at best. Overall she is bad, but it could be worse; collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -28767,7 +28767,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Z16 is a mixed bag. Her stats are not high, and 1 Main Gun with subpar barrages makes her damage output meh. She boosts her AP gun damage, but has low base FP. She gains the Torpedo spread reduction Limit Break benefit, but has subpar torpedos. Her mines are a neat gimmick, but are practically useless in standard gameplay. Overall, she is collection only. Gives +1 DD FP Fleet Technology.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -28923,7 +28923,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -29198,7 +29198,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Langley II is a support-oriented CVL that has decent damage and great support. Due to her personal damage being mediocre, she is most likely not worth using over other damage options, despite the CV support. Decent, but you probably have something better.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -29577,7 +29577,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Ting An is a support-oriented AE with bad personal damage. Her stats are not very good, since her AVI is too low to do any personal damage even with barrages. In addition, her HP is too low for her to main tank. Her Skill 1 buffs are very rng reliant on getting the right ones, and even then other buffers can do the job way better. Just use a ship that has high personal damage instead. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -29686,7 +29686,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Royal Oak is a off-flag damage-oriented BB with great stats and interesting skills. Her barrage is based upon taking damage or after 20s has passed, both of which allow her to run a shelling gun instead of a barrage gun. Her damage redirection is niche and her self heal is useless for most purposes since backline ships rarely take meaningful damage. She technically prefers flagship but is fine as an off-flag. Overall, typical event SSR. Not horrible but not top tier.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -29842,7 +29842,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hero attempts to be a damage-oriented DD but has terrible stats. The skill are nice, especially the barrages (either of them), but it's not enough to get her over the hump. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -29946,7 +29946,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Sevastopol is a barrage-oriented BB with meh stats and skills. Her barrage would be nice if the proc rate was higher, but 50% is too rng to be reliable. In addition, the heal is very minor compared to using a dedicated healer (like Unicorn). Overall, she is collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -30050,7 +30050,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -30102,7 +30102,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Otto von Alvensleben is a mob-tank oriented DD with great damage and skills. Her Skill 1 gives her a great barrage every 15s, which is where the majority of her damage comes from. Her Skill 2 greately increases her bulk along with the 30% auxiliary stat boost from max limit-break. Despite the AoA reduction when using a CL gun, a DD gun will be better the majority of the time. Overall, she is a great DD.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -30154,7 +30154,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Jade is a damage-oriented CVL that has meh damage and stats. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -30310,7 +30310,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Taihou-chan is a damage oriented CV with average stats and great skills. Her stats are lower than other good CVs due to being elite rarity, but they are still good enough. Her skills give her a self AVI boost, as well as a timed barrage and Main Fleet support. Overall, she is a good CV.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -30362,7 +30362,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Doria is a flagship-oriented BB with meh stats and skills. Her barrage proc chance is only 50%, which is not good. Her supportive capabilities do not justify using her over other easily accessible BB options. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -30570,7 +30570,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Painleve is a healer-oriented CV with great stats and skills. Her Skill 1 is great support for your fleet regardless of which version is triggered. Her Skill 2 heals both herself and the vanguard a good amount, but 5s after an airstrike is fired might be too slow for some fleet compositions. Compared to other healers, having 8 planes is a huge benefit to her own personal damage. Overall she is a great CV.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -30622,7 +30622,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Suffren is a damage-oriented CA with meh stats and skills. Her skills boost her damage by a decent bit, however her base damage is so low with only 1 MGM and low torpedo stats that it doesn't really make a difference. Her bulk is also not good enough to act as a tank for neither a boss nor mob fleet. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -30674,7 +30674,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Kersaint is a damage-oriented DD with bad stats and skills. Her skill is alright, but the heal is useless and the other two are useless when her base damage is already really low. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -30726,7 +30726,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Lyon is a damage-oriented BB with meh stats and skills. Her Main Gun damage is meh, and her barrage is only a 50% proc rate making her average damage even worse. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -31038,7 +31038,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Asanagi is a support-oriented DD with bad stats and skills. Her personal damage is bad, and her support is useless due to the 10s cooldown not justifying a 0.3s duration. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -31142,7 +31142,7 @@
     "augments": ["Land's End Helm"],
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -31354,7 +31354,7 @@
     "augments": ["Portable \"Little Guys\""],
     "samEval": "Whydah is a damage-oriented IXS with meh stats and skills. Her damage is heavily skewed towards Light Armor, due to her DD Guns. Her bulk is also suspect, especially in longer fights. Overall, she is good, but not comparable to SR Submarines.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -31562,7 +31562,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "San Jacinto is a damage-oriented CVL with good stats and skills. Her personal damage is hindered somewhat by 6 planes, but she gets increased slot efficiency and skill barrages to compensate. The ASW strike from her Skill 1 is alright, but very niche since current ASW content is very easy to deal with. Her Skill 2 is nice, but reliant on her taking damage, which as a backline ship is somewhat rare. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -31718,7 +31718,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Huan Ch'ang is a flagship-oriented BC with good stats and skills. Her personal damage is good due to MGM+2 BB Guns and a good barrage. She is ideally sortied with another Dragon Empery ship to increase her barrage trigger chance to 100%. Her buff to either the Vanguard or Main Fleet is nice, but the Main Fleet buff is significantly more impactful than the Vanguard Fleet buff. Her Skill 2 allows her to ignore the Out-Of-Ammo debuff, making her more effective in a mob fleet compared to a boss fleet. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -31775,7 +31775,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Chi An is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -31832,7 +31832,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Lung Wu is a damage-oriented DD with bad stats and skills. She has double the torpedo launches of a normal ship, but because of her stats being bad, this doesn't improve her viability. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -31889,7 +31889,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hu Pen is a damage-oriented DD with bad stats and skills. She has double the torpedo launches of a normal ship, but because of her stats being bad, this doesn't improve her viability. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -31946,7 +31946,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Fei Yuan is a damage-oriented DD with bad stats and skills. She has double the torpedo launches of a normal ship, but because of her stats being bad, this doesn't improve her viability. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32055,7 +32055,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Svirepy is a damage-oriented DD with meh stats and skills. She has few self-buffs, and only 1 MGM, making her damage mediocre. Her barrages are alright, but nothing special. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32107,7 +32107,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Poltava is an off-flag support-oriented BB with meh stats and skills. Her personal damage is very lackluster due to low Main Gun efficiencies and FP stat. Her barrage is decent, but is unreliable due to requiring her to take damage. Since each Main Gun shell is counted individually, her Skiil 1 support will almost always trigger. Despite this, it is very mediocre due to the slow being a small amount and the damage buffs being for niche ships. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32211,7 +32211,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Liverpool is a damage-oriented CL with meh stats and skills. Her damage is mediocre outside of her Skill 1 barrage. She is ideally equipped with a fast torpedo to trigger her Skill 1 barrage more often. Her Skill 2 can generate a barrier when she is at low health, but she is still on the average side in terms of bulk. Her FP buff to other Vanguard Fleet ships is nice, but not worth her slot in the fleet. Overall, she is a meh ship, and is a sidegrade to other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32263,7 +32263,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Devonshire is a damage-oriented CA with meh stats and skills. Her damage is mediocre outside of her Skill 1 barrage, but that alone is not enough to carry her. Her heal is alright, but nothing special as it's only 8% of her HP once per battle. Her Skill 2 is great, but doesn't have a 100% proc rate, and her equipped weapons are not strong enough to take advantage significantly. Overall, she is a meh ship, and is a sidegrade to other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32367,7 +32367,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -32419,7 +32419,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -32471,7 +32471,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32523,7 +32523,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32575,7 +32575,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -32627,7 +32627,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Shinano-chan is a damage-oriented CV with great stats and skills. Her personal damage is great due to 9 planes and a timed Skill 1 barrage. The AA debuff from her Skill 1 is nice when buffing other CVs in your fleet. Her Skill 2 should NOT be built around when deciding who to use in the fleet. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -32887,7 +32887,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Fleuret is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32939,7 +32939,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Épée is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -32991,7 +32991,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Little Friedrich is a flagship damage-oriented BB with good stats and skills. Her personal damage is good due to MGM+2 BB Guns, and a solid proximity barrage. Her skill 2 barrage is weak, and it is not necessary to sortie her with other Little ships to improve its effectiveness. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -33147,7 +33147,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "U-31 is a damage-oriented SS with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -33199,7 +33199,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Z43 is a damage-oriented DD with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -33355,7 +33355,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Dupleix is a damage-oriented CA with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -33511,7 +33511,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "Herring is a damage-oriented SS with bad stats and skills. Her heal to the surface fleet is RNG, and so is her retreat speed. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -33563,7 +33563,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Bell is a support-oriented DD with bad stats and skills. Her TRP buff to other ships is RNG, so she's not even usable in that role compared to other TRP buffers like Kasumi META. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -33719,7 +33719,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -33771,7 +33771,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -33979,7 +33979,7 @@
     "augments": ["Special Spirits"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -34031,7 +34031,7 @@
     "augments": ["Brilliant Trinket"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -34187,7 +34187,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -34239,7 +34239,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -34291,7 +34291,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -34395,7 +34395,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -34447,7 +34447,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -34499,7 +34499,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -34655,7 +34655,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -34707,7 +34707,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -34863,7 +34863,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -34915,7 +34915,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -34967,7 +34967,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35019,7 +35019,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35071,7 +35071,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35123,7 +35123,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35175,7 +35175,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35227,7 +35227,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35279,7 +35279,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35331,7 +35331,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35383,7 +35383,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35435,7 +35435,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35487,7 +35487,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35539,7 +35539,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35591,7 +35591,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35643,7 +35643,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35695,7 +35695,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35747,7 +35747,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -35799,7 +35799,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -35851,7 +35851,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35903,7 +35903,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -35955,7 +35955,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36007,7 +36007,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36111,7 +36111,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36163,7 +36163,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36215,7 +36215,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36267,7 +36267,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36527,7 +36527,7 @@
     "augments": ["Souffle Pancake", "Bowgun", "Officer's Sword"],
     "samEval": "Nagisa is worse than easily acquirable good ships at her role. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36579,7 +36579,7 @@
     "augments": ["Manjuu Bun", "Scepter", "Hunting Bow"],
     "samEval": "Nyotengu is worse than easily acquirable good ships at her role. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36631,7 +36631,7 @@
     "augments": ["Papanasi", "Crossbow", "Sword"],
     "samEval": "Monica is worse than easily acquirable good ships at her role. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36787,7 +36787,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Haruka Amami is a support-oriented CL with average stats and skills. Her personal damage is a bit lackluster due to only 1 MGM and the skill barrage not being enough to make up for it. Her support is also not enough to justify using her over other damage options that can kill the enemy faster. Overall, she is a good ship, but she is a sidegrade / downgrade to easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -36891,7 +36891,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Iori Minase is an off-flag damage-oriented BB with good stats and meh skills. Her stats are alright, but a lack of self-buffs hinders her damage output. Her barrage is also good, and has priority targetting. Overall, she is a good ship, but she is a sidegarde / downgrade to easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -36995,7 +36995,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Ritsuko is a support-oriented AE with good stats and skills. Her personal damage is decent due to her high FP stat, and she can equip <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/List_of_Cargo\" title=\"Cargo\" >Cargo</a > gear to offer fleet support. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -37047,7 +37047,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "Ami Futami is a damage-oriented SS with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -37099,7 +37099,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "Mami Futami is a damage-oriented SS with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -37151,7 +37151,7 @@
     "augments": ["Primal Accepter", "Crossbow", "Sword"],
     "samEval": "Rikka Takarada is a damage-oriented CL with great stats and amazing skills. She possesses multiple strong, piercing laser barrages that deal great damage against huge waves of enemies in a row; however, during her downtime her damage is pretty underwhelming. In addition, she can equip multiple Auxiliary equipment at once, although ideally 3 of those slots are the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Battle_Tracto_Max\" title=\"Battle Tracto Max\" >Battle Tracto Max</a >, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Buster_Borr\" title=\"Buster Borr\" >Buster Borr</a >, and Gridman Calibur to get the most barrage benefits possible. Her bulk is also good enough to mob-tank most content reliably. The Augment interaction between her and Chise / Yume is not worth using them together for. Overall, she is an amazing ships when mobbing, and a great ship outside of it.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -37255,7 +37255,7 @@
     "augments": ["Buster Borr Upgrade", "Crossbow", "Sword"],
     "samEval": "Hass is a damage-oriented CL with meh stats and skills. Using her to activate Rikka's skill requirement is not recommended. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -37307,7 +37307,7 @@
     "augments": ["Battle Tracto Max Upgrade", "Greatsword", "Lance"],
     "samEval": "Namiko is a damage-oriented CA with meh stats and skills. Using her to actiate Rikka's skill requirement is not recommended. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -37463,7 +37463,7 @@
     "augments": ["Kaiju Seed", "Bowgun", "Officer's Sword"],
     "samEval": "Mujina is a flagship-oriented BB with meh stats and good skills. Her personal damage is good due to multiple barrages upon Main Gun Fire, but the damage is unremarkable compared to good SR BBs currently available. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -37671,7 +37671,7 @@
     "augments": ["Astrumnox", "Scepter", "Hunting Bow"],
     "samEval": "Klaudia is a support-oriented CVL with interesting skills. The stats are average for a good CV, so no issues there. Her skills make her act like a healer, especially for Ryza ships. Her skill and augment barrages add to her damage, but compared to other 8-plane damage-oriented CVs, her damage is lacking due to only having 7-planes. Due to her heal being spread out, and having a pseudo preload (from the barrage activation at the start of the battle), and having better per-strike damage, she is an amazing support. Unicorn Retrofit is better than her regardless. Amazing Healer CVL.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -37775,7 +37775,7 @@
     "augments": ["Oren Herald", "Greatsword", "Lance"],
     "samEval": "Lila is a damage-oriented CA with decent bulk but high damage potential. Her stats, skills, and Augment give her decent bulk. With enough stacks of her skills, her damage can really ramp up over time. She is ideally sortied with other Ryza ships to give her maximum damage potential. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -37827,7 +37827,7 @@
     "augments": ["Grand Floracion", "Scepter", "Hunting Bow"],
     "samEval": "Serri is a damage-oriented CV with average stats and average skills. As a solo-CV, her damage is decent, with an 8-plane loadout, barrage on Airstrike, and the damage dealt buffs she gains throughout the battle from skills and Augments. In an Atelier fleet, her 2nd skill can activate way more frequently, and her 3rd skill can grant more AP overall to the fleet, thus increasing her contribution by a fair bit. Inside Atelier fleet: Great CV option. Outside Atelier fleet: Meh CV option.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -38519,7 +38519,7 @@
     "augments": ["Emergency Fire Extinguisher", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -38571,7 +38571,7 @@
     "augments": ["Banner of Order", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [
         {
@@ -38675,7 +38675,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Monarch is a flagship damage-oriented BB with great stats and good skills. Her main gun damage is great, and supplemented by a great barrage that can slow enemies hit. The barrage being 70% is not ideal, however. Her Skill 2 is effectively negligable for almost all battles, and the FS5 does not improve it much at all. Overall, she is a great ship, but can be a sidegrade to most modern event BBs.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -38987,7 +38987,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Georgia is an off-flag damage-oriented BB with good stats and good skills. Her shelling damage is nothing special since she only has MGM+1 Main Guns, instead of the usual MGM+2. Her barrage is very strong when it lands, but it is very narrow and prone to missing, not to mention it not having a 100% proc chance. Overall, she is a good ship, but can be a sidegrade to most modern event BBs.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -39039,7 +39039,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Kitakaze is a damage-oriented DD with great stats and skills. Her personal damage is very good due to MGM+1 DD Guns, good torpedoes, and good barrages. Her skill changes her Main Guns to do drastically more against Heavy Armored enemies in exchange for being slightly worse against Light Armored enemies, which is a worthwhile tradeoff. She is ideally equipped with a Sakura Empire (IJN) Main Gun for her Skill 1 buff. You do NOT want her to be in the frontmost (tank) position for her skill condition; FS5 removes it anyways. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -39195,7 +39195,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Gascogne is a flagship damage-oriented BB with great stats and skills. Her personal damage is good, despite MGM+1 Main Guns, since her barrage has a 100% proc rate and her Main Guns independently aim. Her Skill 1 healing is nice, and can help her stay alive slightly more easily against stages with significant backline pressure. Overall, she is a great ship, but can be a sidegrade to some modern Event BBs.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -39403,7 +39403,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Odin is an off-flag damage-oriented BC with great stats and skills. Her Skill 1 moves her to a unique position right in front of the Flagship, which can help tank damage otherwise intended for your flagship. Her personal damage is very good due to MGM+2 Main Guns, a timed barrage, and her special-secondary gun. Her Skill 1's submarine scan is very niche, and not relevant. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -40603,7 +40603,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Ark Royal META is a damage-oriented CV with great stats and good skills. Her per strike damage is very high, especially against single-target enemies where all her Torpedo Bombers can land. Her slow support is nice, but the slow percentage is too small to enable consistent CV support. Her on-strike barrages are a bit weak as well. Overall, she is a good ship, but outclassed by <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Ark_Royal\" title=\"Ark Royal\" >Ark Royal (Retrofit)</a >.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -40771,7 +40771,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Fusou META is a flagship-oriented BB with meh stats and skills. Her gun damage is alright, but her barrage damage is pretty bad, and has a very wide pattern such that it is bad against single-target enemies. She has a crossfleet skill, but that doesn't improve her viability nor make her worth using. Overall, she is a meh ship, and is outclassed by other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -40827,7 +40827,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Hiyou META is a damage-oriented CVL with bad stats and skills. She has an on-strike barrage, but her personal damage is still really bad despite it. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -40939,7 +40939,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Junyou META is a damage-oriented CVL with bad stats and skills. She has an on-strike barrage, but her personal damage is still really bad despite it. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -41107,7 +41107,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Memphis META is a damage-oriented CL with meh stats and skills. Stats are okay, but damage is lackluster, and skills are bad. The slow is gimmicky, as well as the damage boost to certain factions. The +EVA to some meta ships is a joke since it doesn't improve their survivability significantly. Collection tier only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -41219,7 +41219,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Trento META is a damage-oriented CA with meh stats, bad bulk, only 1 MGM, and a barrage that isn't good enough to take her over the hump. Overall, she is bad; collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -41331,7 +41331,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hunter META is a damage-oriented DD with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -41383,7 +41383,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Fortune META is a damage-oriented DD with bad stats, middling skills, middling barrages, only 1 MGM. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -41435,7 +41435,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Arizona META is a damage-oriented BB with great stats, proximity barrages and great support. The zone from Skill 1 is decently big as well. Good BB overall.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -41491,7 +41491,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Sheffield META is a damage-oriented CL with a bit of support on the side. Since she only has 1 MGM, her barrages aren't good enough to make up for the lack of damage compared to other CLs. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -41599,7 +41599,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "La Galissonnière META is a damage-oriented CL with decent stats and skills. Her damage seems decent despite only 1 MGM due to her barrage, but it is nothing exceptional. Her bulk is also very average for a CL. Overall, she's meh.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -41755,7 +41755,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Algérie META is a damage-oriented CA with great stats and interesting skills. Since she only has 1 MGM, her damage is average at best. Her skills are also decent, with good barrages and burns, but they are unreliable and don't improve her damage that much. Overall, she is an average CA.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -41811,7 +41811,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hatakaze META is a damage-oriented DD with meh stats and skills. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -41919,7 +41919,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Princeton META is a damage-oriented CVL with good stats and skills. Her personal damage is meh due to only having 6 planes, but her (unfortunately RNG) barrages add to it. She also offers no additional fleetwide support. Overall, she is a good ship, but at best she is a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -41971,7 +41971,7 @@
     "augments": ["Lance"],
     "samEval": "Erebus META is a flagship-oriented BB with good stats and skills. Her personal damage is very RNG reliant on her barrage, but it is a very very good barrage, especially for a lower rarity BB. Her self-buffs are decent, but only MGM+1 makes her shelling damage weak. Her heal is nice, but not relevant to her viability. Her bulk is also more suspect, due to her being Light Armor and her low HP relative to other BBs. Overall, she is a good ship, but at best she is a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -42075,7 +42075,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Kimberly META is a damage-oriented DD with meh stats and skills. Her personal damage is alright despite 1 MGM, due to multiple good barrages. Overall, she is a meh ship, and is outclassed by other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -42231,7 +42231,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Vampire META is a damage-oriented DD with bad stats and skills. Overall, she is a bad ship, and is outclassed by other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -42335,7 +42335,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Foch META is a damage-oriented CA with meh stats and skills. Her personal damage is mediocre at best, due to a solid barrage but only 1 MGM. Her out-of-ammo penalty reduction is nice, but not enough to save her. Her bulk is also nothing special. Collection only.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -42439,7 +42439,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Kasumi META is a support-oriented DD with good stats and skills. Her personal damage is good, despite only 1 MGM, due to her Torpedo stat being very high. Her Skill 1 both supports all Torpedo DDs, and gives her a decent barrage. Her Skill 2 is basically useless since your Vanguard Fleet rarely dies every battle. Overall, she is a good ship, best used in manual-battle Torpedo-oriented fleets.",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -42595,7 +42595,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -42647,7 +42647,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -42803,7 +42803,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -42959,7 +42959,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Healer"],
+    "roles": ["Bad"],
     "locations": {
       "events": [],
       "other": [
