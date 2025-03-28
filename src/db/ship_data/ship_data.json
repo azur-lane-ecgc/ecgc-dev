@@ -8664,9 +8664,9 @@
       "Officer's Sword"
     ],
     "samEval": "King George V is a flagship damage-oriented BB with good stats and skills. Her barrage is timed, which gives her more spread out damage when mobbing. Using the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Quadruple_356mm_Main_Gun_Mount\" title=\"Quadruple 356mm Main Gun Mount\" >Quadruple 356mm Main Gun Mount</a > gives her an almost preload, but is not recommended due to the gun being awful otherwise. Her Augment Module removes this requirement in exchange for losing her self-buffs when sortied with Royal Navy ships, which is an alright tradeoff but nothing special. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
-    "fastLoad": "",
+    "fastLoad": "75% 1st Salvo Cooldown Reduction (No other HMS ships OR equipping Quadruple 356mm).",
     "roles": [
-      "Meh"
+      "FastLoad"
     ],
     "locations": {
       "events": [
@@ -29415,9 +29415,9 @@
       "Hunting Bow"
     ],
     "samEval": "Béarn is a damage-oriented CVL with meh stats and skills. Can equip a secondary gun, which helps with interception. Collection only.",
-    "fastLoad": "",
+    "fastLoad": "50% 1st Airstrike Cooldown Reduction (Dive Bomber in Slot 3).",
     "roles": [
-      "Meh"
+      "FastLoad"
     ],
     "locations": {
       "events": [
