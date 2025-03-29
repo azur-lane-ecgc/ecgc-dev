@@ -951,7 +951,8 @@
       "name": "Aurora Noctis",
       "href": "https://azurlane.koumakan.jp/wiki/Aurora_Noctis"
     },
-    "evaluation": "Eagle is a damage-oriented CVL with meh stats and skills. Can equip a secondary gun, which helps with interception. Collection only."
+    "evaluation": "Eagle is a damage-oriented CVL with meh stats and skills. Can equip a secondary gun, which helps with interception. Collection only.",
+    "preload": "50% 1st Airstrike Cooldown Reduction (Dive Bomber in Slot 3)."
   },
   "Valiant": {
     "event": {
@@ -2647,7 +2648,8 @@
       "name": "Research (Series 6)",
       "href": "https://azurlane.koumakan.jp/wiki/Research#Series_6"
     },
-    "evaluation": "Kearsarge is a off-flag damage-oriented BB with amazing stats and skills. She has amazing damage output with her BB guns, planes, and stat buffs. Her slow reload can be an issue in certain fleet compositions, but it can be built around without major issues. Her special secondary guns are awful for interception, but are better than not having them at all. Her Skill 2 buffs all CV and CVL damage in the fleet outright when paired with a USS Main Fleet ship, which is a very good buff. Overall, she is an amazing ship."
+    "evaluation": "Kearsarge is a off-flag damage-oriented BB with amazing stats and skills. She has amazing damage output with her BB guns, planes, and stat buffs. Her slow reload can be an issue in certain fleet compositions, but it can be built around without major issues. Her special secondary guns are awful for interception, but are better than not having them at all. Her Skill 2 buffs all CV and CVL damage in the fleet outright when paired with a USS Main Fleet ship, which is a very good buff. Overall, she is an amazing ship.",
+    "preload": "30% 1st Airstrike Cooldown Reduction (USS or SN Fighter in Slot 2)."
   },
   "Hindenburg": {
     "event": {
@@ -3227,5 +3229,8 @@
   },
   "Amagi(CV)": {
     "preload": "50% 1st Airstrike Cooldown Reduction (with Akagi or Kaga)"
+  },
+  "Little Renown": {
+    "preload": "40% 1st, 2nd, & 3rd Salvo Cooldown Reduction."
   }
 }
