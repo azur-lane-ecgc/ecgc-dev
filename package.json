@@ -12,6 +12,7 @@
     "build": "bunx --bun astro check && bunx --bun astro build",
     "smol_format": "bunx --bun prettier --write \"src/**/*.{astro,json}\" \"dev_tools/**/*.{astro,json}\" --ignore-path .prettierignore",
     "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" \"dev_tools/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
+    "smol_devtools": "bun dev_tools/ship_data/ship_json_generator.ts && bun run smol_format",
     "devtools": "bun run submodule && bun run dev_tools/runAllTools.ts && bun run smol_format",
     "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://localhost:4321/test_ecgc_2/ && bunx --bun astro dev",
     "update": "bun upgrade && bun update && bun install",
