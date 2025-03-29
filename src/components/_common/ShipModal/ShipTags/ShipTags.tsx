@@ -13,27 +13,32 @@ interface ShipTags {
 }
 
 const trimRoles = (roles: string[]): string[] => {
-  // Super Tank & Tank
+  // Super Tank & Tank (trim Tank)
   if (roles.includes("SuperTank") && roles.includes("Tank")) {
     roles = roles.filter((role) => role != "Tank")
   }
 
-  // Fast Load & Preload
+  // Fast Load & Preload (trim FastLoad)
   if (roles.includes("FastLoad") && roles.includes("Preload")) {
     roles = roles.filter((role) => role != "FastLoad")
   }
 
-  // AA Carry & AA Average
+  // FlagPref & FlagReq (trim FlagPref)
+  if (roles.includes("FlagPref") && roles.includes("FlagReq")) {
+    roles = roles.filter((role) => role != "FlagPref")
+  }
+
+  // AA Carry & AA Average (trim AA)
   if (roles.includes("AA") && roles.includes("AACarry")) {
     roles = roles.filter((role) => role != "AA")
   }
 
-  // Strong Damage Dealer & Average Damage Dealer
+  // Strong Damage Dealer & Average Damage Dealer (trim DmgDealer)
   if (roles.includes("DmgDealer") && roles.includes("TopDmg")) {
     roles = roles.filter((role) => role != "DmgDealer")
   }
 
-  return roles
+  return roles.slice(0, 5)
 }
 
 export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {

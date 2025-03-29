@@ -8,6 +8,8 @@ import {
   aaCarryRole,
   damageDealer,
   strongDamageDealer,
+  flagshipPref,
+  flagshipReq,
 } from "./data"
 import { isDecentMainFleet, isDecentSSFleet, isDecentVG } from "./decentShips"
 
@@ -21,7 +23,11 @@ const aswShips = aswRole()
 const damageDealerShips = damageDealer()
 const strongDamageDealers = strongDamageDealer()
 
-export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
+export const shipRoleParse = (
+  ship: string,
+  fleetType?: string,
+  hullType?: string,
+): string[] => {
   let roles: Array<string> = []
 
   // vanguard roles
@@ -40,6 +46,14 @@ export const shipRoleParse = (ship: string, fleetType?: string): string[] => {
   }
 
   // main fleet roles
+  if (fleetType === "main") {
+    if (flagshipPref(ship)) {
+      roles.push("FlagPref")
+    }
+    if (hullType && flagshipReq(ship, hullType)) {
+      roles.push("FlagReq")
+    }
+  }
   // <add here>
 
   // global roles

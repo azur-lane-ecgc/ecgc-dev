@@ -2692,7 +2692,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [],
       "other": [
@@ -2948,7 +2948,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Colorado (Retrofit) is a flagship damage-oriented BB with great stats and good skills. Her damage is great due to MGM+2 BB guns, and an amazing barrage from her Skill 1; only a 70% barrage trigger chance is not ideal, however. Her Skill 2 self-buffs her FP and ACC by quite a bit. Overall, she is a great ship, but can be a sidegrade to other easily accessible options.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -3005,7 +3005,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -3062,7 +3062,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "West Virgina (Retrofit) is a flagship damage-oriented BB with great stats and good skills. Her barrage is only a 70% proc rate, which is not ideal; however her shelling damage is above average to make up for it. She is ideally sortied with another BB/BC to enhance both her barrage and supportive capabilities as well. Overall, she is a good BB option.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -3185,7 +3185,7 @@
     "augments": ["Victory Bell", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -3478,7 +3478,7 @@
     "augments": ["One More Ball!", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [],
       "other": [
@@ -6454,7 +6454,7 @@
     "augments": ["Dame's Medal of Grace", "Bowgun", "Officer's Sword"],
     "samEval": "Hood is a flagship-oriented BC with good stats and amazing skills. Her barrage is very strong, and has a 100% proc rate, making her a great damage option. She also provides a Reload buff to all Main Fleet ships upon her barrage triggering. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [],
       "other": [
@@ -6642,7 +6642,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Nelson (Retrofit) is a flagship-oriented BB with great stats and skills. She gains 15% more main gun efficiency, bringing her gun damage up to par with other SSR BBs. Her barrage proc rate also increases to 100%, although it still suffers the same issues as the original Big Seven (not arcing, not as single-target oriented). The single target barrage is decent, but nothing amazing. Overall, she is a great ship; one of the best easily acquirable BBs for new players.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -6704,7 +6704,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [],
       "other": [
@@ -6761,7 +6761,7 @@
     "augments": ["Knight Commander's Medal", "Bowgun", "Officer's Sword"],
     "samEval": "King George V is a flagship damage-oriented BB with good stats and skills. Her barrage is timed, which gives her more spread out damage when mobbing. Using the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Quadruple_356mm_Main_Gun_Mount\" title=\"Quadruple 356mm Main Gun Mount\" >Quadruple 356mm Main Gun Mount</a > gives her an almost preload, but is not recommended due to the gun being awful otherwise. Her Augment Module removes this requirement in exchange for losing her self-buffs when sortied with Royal Navy ships, which is an alright tradeoff but nothing special. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "75% 1st Salvo Cooldown Reduction (No other HMS ships OR equipping Quadruple 356mm).",
-    "roles": ["FastLoad"],
+    "roles": ["FlagPref", "FlagReq", "FastLoad"],
     "locations": {
       "events": [
         {
@@ -7119,8 +7119,8 @@
     ],
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Eagle is a damage-oriented CVL with meh stats and skills. Can equip a secondary gun, which helps with interception. Collection only.",
-    "fastLoad": "",
-    "roles": ["Meh"],
+    "fastLoad": "50% 1st Airstrike Cooldown Reduction (Dive Bomber in Slot 3).",
+    "roles": ["FastLoad"],
     "locations": {
       "events": [
         {
@@ -7479,7 +7479,7 @@
     "augments": ["Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [],
       "other": [
@@ -7541,7 +7541,7 @@
     "augments": ["Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [],
       "other": [
@@ -10499,7 +10499,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -10560,7 +10560,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -10617,7 +10617,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Kii is a flagship-oriented BB with great stats and skills. Her timed barrage means that her damage output is staggered. She is ideally sortied with 2 other IJN ships for her buffs. Uniquely, she also buffs the Torpedo stat from the Main Fleet, however that has situational usage. Overall she is a great ship.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -10735,7 +10735,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Musashi is an off-flag capable BB with top tier damage and bulk. She has a guaranteed barrage on main gun fire, a variety of very strong self-buffs, and a crossfleet barrage to boot. She still prefers flagship due to barrage pattern, but can work off-flag. For the IJN Main Gun requirement, the best options are the Twin 410mm Kai (HE, no syncing), the Triple 460mm (AP, no syncing), or Triple 410mm (AP, syncing). The enhanced barrage is a sizable upgrade, but since Musashi overkills most content in a good fleet regardless, it's fine to ignore it. For the IJN gear requirement, use the Type 1 AP Shell as an Auxilary. Overall, Musashi is amazing, and is highly worth getting.",
     "fastLoad": "",
-    "roles": ["DmgDealer", "TopDmg", "AA"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg", "AA"],
     "locations": {
       "events": [
         {
@@ -12367,7 +12367,7 @@
     "augments": ["Calculations Complete!", "Bowgun", "Officer's Sword"],
     "samEval": "Gneisenau is an off-flag damage-oriented BC with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -12419,7 +12419,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -15101,7 +15101,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -15956,7 +15956,7 @@
     "augments": ["Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [],
       "other": [],
@@ -16850,7 +16850,7 @@
     "augments": ["Confections Making Set", "Bowgun", "Officer's Sword"],
     "samEval": "Dunkerque is a flagship-oriented BC with meh stats and good skills. Her stats are mediocre, and she has a preloaded Main Gun Mount in exchange for only having MGM+1, which isn't a good enough tradeoff. Her Skill 1 is great, but only a 70% chance for the effects to trigger hurts her. Overall, she is a meh ship, and is a sidegrade / downgrade to other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -17708,7 +17708,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "45% 1st Salvo Cooldown Reduction (3 additional IJN ships).",
-    "roles": ["FastLoad"],
+    "roles": ["FlagPref", "FastLoad"],
     "locations": {
       "events": [
         {
@@ -17769,7 +17769,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -18444,7 +18444,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [],
       "other": [],
@@ -19622,7 +19622,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Alabama is a flagship-oriented BB with good stats and skills. Her barrage is good, and it is timed, allowing her to stagger her damage more easily. She is best used in a mobbing fleet due to her gaining more buffs as the sortie progresses. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -20122,7 +20122,7 @@
     "augments": ["Incanto", "Bowgun", "Officer's Sword"],
     "samEval": "Littorio is a flagship-oriented BB with great stats and skills. She doesn't have many self-buffs compared to other BBs, and 130% Main Gun efficiency hinders her shelling damage. Her barrage is still pretty good, however. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -20179,7 +20179,7 @@
     "augments": ["The Complete Old Lady Kit", "Bowgun", "Officer's Sword"],
     "samEval": "Conte di Cavour is an off-flag damage-oriented BB with bad stats and skills. Her unique Augment Module is an improvement over her base form, but it is not enough to save her. Collection only. Gives +1 BB RLD Fleet Technology.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -20236,7 +20236,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Giulio Cesare is an off-flag damage-oriented BB with bad stats and skills. Collection only. Gives +1 BB ACC Fleet Technology.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -20998,7 +20998,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Suruga is a flagship-oriented BB with average stats, skills, barrage, and efficiencies. Her timed barrage means that her damage output is staggered. The barrage isn't special due to its pattern and subpar base damage. Overall, she is average, especially in the current landscape of BBs from research and recent new events.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -21745,7 +21745,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Sovetskaya Belorussiya is a flagship-oriented BB with great stats and skills. Her barrage is strong, and has a good pattern; although, it is a bit farther back than normal. She also has multiple heals for self-sutain over the course of fights, and even helps your Vanguard Fleet a little bit as well. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -21802,7 +21802,7 @@
     "augments": ["Rime Sword of the Great One", "Bowgun", "Officer's Sword"],
     "samEval": "Rossiya is a flagship-oriented BB with meh stats and skills. Her self-buff is only for the first 2 battles, which is not relevant when mobbing. Her barrage has high raw damage but a really bad pattern and average proc rate. Overall, she is a meh ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -22379,8 +22379,8 @@
     ],
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
-    "fastLoad": "",
-    "roles": ["Bad"],
+    "fastLoad": "40% 1st, 2nd, & 3rd Salvo Cooldown Reduction.",
+    "roles": ["FastLoad"],
     "locations": {
       "events": [
         {
@@ -22494,7 +22494,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Richelieu is a flagship-oriented BB with great stats and skills. She buffs all French ships in your fleet, however she is fine without buffing anyone but herself. Her barrage is alright, and her preload helps frontload her damage output. Only MGM+1 hurts her in longer fights. Overall, she is a great ship.",
     "fastLoad": "1 Preloaded Salvo.",
-    "roles": ["FastLoad", "Preload"],
+    "roles": ["FlagPref", "FlagReq", "FastLoad", "Preload"],
     "locations": {
       "events": [
         {
@@ -23121,7 +23121,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Valiant is a damage-oriented BB with meh stats and skills. Her personal damage is mediocre due to a 50% barrage chance, and average Main Gun efficiencies and stats. She offers some fleet support due to a spoecial Armor Break, but that is not worth using her over a better ship that contributes more to the battle. Collection only.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -25768,7 +25768,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -27712,7 +27712,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Lützow is a flagship-oriented BC, with solid stats and an alright barrage. Has a meh debuff, and is otherwise very \"traditional.\" Overall, seems solid; nothing exceptional, but not awful. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -29686,7 +29686,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Royal Oak is a off-flag damage-oriented BB with great stats and interesting skills. Her barrage is based upon taking damage or after 20s has passed, both of which allow her to run a shelling gun instead of a barrage gun. Her damage redirection is niche and her self heal is useless for most purposes since backline ships rarely take meaningful damage. She technically prefers flagship but is fine as an off-flag. Overall, typical event SSR. Not horrible but not top tier.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -29946,7 +29946,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Sevastopol is a barrage-oriented BB with meh stats and skills. Her barrage would be nice if the proc rate was higher, but 50% is too rng to be reliable. In addition, the heal is very minor compared to using a dedicated healer (like Unicorn). Overall, she is collection only.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -30154,7 +30154,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Jade is a damage-oriented CVL that has meh damage and stats. Collection only.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -30362,7 +30362,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Doria is a flagship-oriented BB with meh stats and skills. Her barrage proc chance is only 50%, which is not good. Her supportive capabilities do not justify using her over other easily accessible BB options. Collection only.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -30726,7 +30726,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Lyon is a damage-oriented BB with meh stats and skills. Her Main Gun damage is meh, and her barrage is only a 50% proc rate making her average damage even worse. Collection only.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -30934,7 +30934,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Owari is a off-flag damage-oriented BB with great stats and skills. Her personal damage is high due to her high self-buffs, good main gun efficiency, and great barrages. Her barrage has a lot of its damage aimed, but since some of it is centered, she is slightly better as a Flagship than as an Off-Flag. Her \"Best Buds\" support given to other ships is nice but unreliable in its targetting. She is ideally sortied such that her Skill 2 condition for barrage activation chance is satisfied. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -31406,7 +31406,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Laffey II is a damage-oriented DD with amazing stats and skills. Her personal damage is very high; despite only having 1 MGM, she has 2 summons as well as multiple skill barrages to augment her damage further. Her Skill 2 grants her a special AA gun, as well as AA self-buffs, that raise her AA to very high levels when combined with her existing 180% AA mount. You want to equip her with a USS equipment due to her Skill 2. In addition, she can also keep USS CVs hidden more easily due to reducing their detection gauge. Her Skill 3 adds to her bulk significantly. Despite her Skill 1 self barrage starting at 70%, for all procs after the first one it is very easy for it to maintain 100% proc chance. Overall, she is an amazing ship.",
     "fastLoad": "",
-    "roles": ["Tank", "SuperTank", "ASW", "DmgDealer", "AA"],
+    "roles": ["Tank", "SuperTank", "ASW", "DmgDealer", "AA", "AACarry"],
     "locations": {
       "events": [
         {
@@ -31718,7 +31718,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Huan Ch'ang is a flagship-oriented BC with good stats and skills. Her personal damage is good due to MGM+2 BB Guns and a good barrage. She is ideally sortied with another Dragon Empery ship to increase her barrage trigger chance to 100%. Her buff to either the Vanguard or Main Fleet is nice, but the Main Fleet buff is significantly more impactful than the Vanguard Fleet buff. Her Skill 2 allows her to ignore the Out-Of-Ammo debuff, making her more effective in a mob fleet compared to a boss fleet. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -32991,7 +32991,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Little Friedrich is a flagship damage-oriented BB with good stats and skills. Her personal damage is good due to MGM+2 BB Guns, and a solid proximity barrage. Her skill 2 barrage is weak, and it is not necessary to sortie her with other Little ships to improve its effectiveness. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -35903,7 +35903,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -36371,7 +36371,7 @@
     "augments": ["Cream Puff", "Bowgun", "Officer's Sword"],
     "samEval": "Honoka is a flagship-oriented BB with great stats and interesting skills. Her Skill 1 has good self-buffs; although some of the possible barrages are better than others. Her Skill 2 has a nice damage 100% proc rate barrage which does good damage. The healing is unreliable, but it is a nice cushion alongside an actual healer-oriented ship. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -36527,7 +36527,7 @@
     "augments": ["Souffle Pancake", "Bowgun", "Officer's Sword"],
     "samEval": "Nagisa is worse than easily acquirable good ships at her role. Collection only.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -37463,7 +37463,7 @@
     "augments": ["Kaiju Seed", "Bowgun", "Officer's Sword"],
     "samEval": "Mujina is a flagship-oriented BB with meh stats and good skills. Her personal damage is good due to multiple barrages upon Main Gun Fire, but the damage is unremarkable compared to good SR BBs currently available. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -37515,7 +37515,7 @@
     "augments": ["Live Baton", "Bowgun", "Officer's Sword"],
     "samEval": "Nibanme is a flagship-oriented BB with great stats and skills. No aux guns hurts her interception capability, but her damage is very good, and comes from multiple sources. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -37723,7 +37723,7 @@
     "augments": ["Edel Schwert", "Bowgun", "Officer's Sword"],
     "samEval": "Patricia is a flagship-oriented damage-dealer BB with great stats and amazing skills. Her stats are very standard for a good BB, and are buffed further through her skills. She has a very wide pattern, decent damage, guarenteed barrage every main gun shot, which is amazing for clearing potential. Great BB overall.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -38467,7 +38467,7 @@
     "augments": ["Golden Slash", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -38519,7 +38519,7 @@
     "augments": ["Emergency Fire Extinguisher", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [
         {
@@ -38571,7 +38571,7 @@
     "augments": ["Banner of Order", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [
         {
@@ -38675,7 +38675,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Monarch is a flagship damage-oriented BB with great stats and good skills. Her main gun damage is great, and supplemented by a great barrage that can slow enemies hit. The barrage being 70% is not ideal, however. Her Skill 2 is effectively negligable for almost all battles, and the FS5 does not improve it much at all. Overall, she is a great ship, but can be a sidegrade to most modern event BBs.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [],
       "other": [
@@ -38779,7 +38779,7 @@
     "augments": ["Muramasa and Masamune", "Bowgun", "Officer's Sword"],
     "samEval": "Izumo is a flagship damage-oriented BB with great stats and skills. Her shelling damage is good, and combined with her barrage gives her great damage output. Her barrage has a 100% activation chance, which is very good considering how wide the barrge is. Her barrage can get partially blocked by enemy shields, but that shouldn't be an issue on most stages. Her AP damage taken reduction skill is nice to have, but not necessary for her viability. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -38987,7 +38987,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Georgia is an off-flag damage-oriented BB with good stats and good skills. Her shelling damage is nothing special since she only has MGM+1 Main Guns, instead of the usual MGM+2. Her barrage is very strong when it lands, but it is very narrow and prone to missing, not to mention it not having a 100% proc chance. Overall, she is a good ship, but can be a sidegrade to most modern event BBs.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [],
       "other": [
@@ -39195,7 +39195,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Gascogne is a flagship damage-oriented BB with great stats and skills. Her personal damage is good, despite MGM+1 Main Guns, since her barrage has a 100% proc rate and her Main Guns independently aim. Her Skill 1 healing is nice, and can help her stay alive slightly more easily against stages with significant backline pressure. Overall, she is a great ship, but can be a sidegrade to some modern Event BBs.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [],
       "other": [
@@ -39715,7 +39715,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Marco Polo is a flagship-oriented BB with great stats and skills. Her barrage is very good, and has a very high proc rate. Her main guns are also very strong for a barrage-oriented BB, which allow her to be less reliant on RNG for her damage output. Her crossfleet skill is nice but nothing special. Overall, she is a great BB.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -39819,7 +39819,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Prinz Rupprecht is a flagship-oriented BC with solid stats and skills. Her barrage is solid, and has a high proc chance. She has a long range ghost gun for more free damage, as well as a great torpedo barrage off of it. She ideally prefers to be flagship due to her barrage pattern. Her heal is irrelevant when paired with a good healer like Unicorn. Overall, she is a great BB/BC option.",
     "fastLoad": "",
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -40026,8 +40026,8 @@
     ],
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Kearsarge is a off-flag damage-oriented BB with amazing stats and skills. She has amazing damage output with her BB guns, planes, and stat buffs. Her slow reload can be an issue in certain fleet compositions, but it can be built around without major issues. Her special secondary guns are awful for interception, but are better than not having them at all. Her Skill 2 buffs all CV and CVL damage in the fleet outright when paired with a USS Main Fleet ship, which is a very good buff. Overall, she is an amazing ship.",
-    "fastLoad": "",
-    "roles": ["DmgDealer", "TopDmg"],
+    "fastLoad": "30% 1st Airstrike Cooldown Reduction (USS or SN Fighter in Slot 2).",
+    "roles": ["DmgDealer", "TopDmg", "FastLoad"],
     "locations": {
       "events": [],
       "other": [
@@ -40547,7 +40547,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Hiryuu META is a damage-oriented CV with great stats and skills. Her per-strike damage is great due to multiple skill barrages, and her 8 plane loadout. Since the barrages are centered around her, she ideally prefers flagship position for maximum effectiveness, but is still fine off-flag, especially when you are using Flagship BBs. She ideally is sortied with IJN Equipment to trigger her self-buffs. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -40715,7 +40715,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Souryuu META is a damage-oriented CV with great stats and skills. Her per-strike damage is great due to multiple skill barrages, and her 8 plane loadout. Since the barrages are centered around her, she ideally prefers flagship position for maximum effectiveness, but is still fine off-flag, especially when you are using Flagship BBs. She ideally is sortied with IJN Equipment to trigger her self-buffs. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -40771,7 +40771,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Fusou META is a flagship-oriented BB with meh stats and skills. Her gun damage is alright, but her barrage damage is pretty bad, and has a very wide pattern such that it is bad against single-target enemies. She has a crossfleet skill, but that doesn't improve her viability nor make her worth using. Overall, she is a meh ship, and is outclassed by other easily accessible options.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [],
       "other": [
@@ -40995,7 +40995,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Scharnhorst META is an off-flag damage-oriented BC with good stats and skills. Her personal damage is average due to her barrages weak base damage, and her average Main Guns. Her equipped torpedo damage is bad, even with the increased range and spread buffs, so she is ideally equipped with a fast torpedo to trigger her barrage more often. No Auxiliary gun means her interception is weaker than other BBs, but she has a unique long-range ghost gun to compensate for this. Overall, she is a good ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -41051,7 +41051,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Yamishiro META is a damage-oriented BB with good stats and meh skills. She only has 2 MGM, but compensates for this with reduced cooldown on her first 2 Main Gun shots. She also has a decent on-fire barrage. Overall, she is a meh ship, and is outclassed by other easily accessible options.",
     "fastLoad": "50% 1st, 2nd, & 3rd Salvo Cooldown Reduction.",
-    "roles": ["FastLoad"],
+    "roles": ["FlagPref", "FastLoad"],
     "locations": {
       "events": [],
       "other": [
@@ -41163,7 +41163,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Repulse META is an off-flag damage-oriented BC with good stats and great skills. Stats are alright, but her barrages are very good and more than make up for them. She is still good as an off-flag, but for maximum performance you want her in the Flagship slot. Overall, she is a great BC, very worthy of being an SR.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -41435,7 +41435,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Arizona META is a damage-oriented BB with great stats, proximity barrages and great support. The zone from Skill 1 is decently big as well. Good BB overall.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["FlagPref"],
     "locations": {
       "events": [],
       "other": [
@@ -41543,7 +41543,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Queen Elizabeth META is an off-flag damage-oriented BB with good stats and skills. Her shelling damage is average, but her barrages more than make up for it. The marking for META/HMS ships is pointless, and so is the random META ship in the fleet dealing more damage. You can sortie her with other META ships to get all her buffs, but that is not necessary for her to be viable. Overall, she is a great BB.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -41971,7 +41971,7 @@
     "augments": ["Lance"],
     "samEval": "Erebus META is a flagship-oriented BB with good stats and skills. Her personal damage is very RNG reliant on her barrage, but it is a very very good barrage, especially for a lower rarity BB. Her self-buffs are decent, but only MGM+1 makes her shelling damage weak. Her heal is nice, but not relevant to her viability. Her bulk is also more suspect, due to her being Light Armor and her low HP relative to other BBs. Overall, she is a good ship, but at best she is a sidegrade to more easily accessible options.",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq"],
     "locations": {
       "events": [],
       "other": [
@@ -42179,7 +42179,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Rodney META is an off-flag damage-oriented BB with great stats and skills. Her Skill 1 creates 2 summons, who individually deal decent amounts of damage. She has great damage with MGM+2 BB Guns, and 2 barrages: one with a high (but not 100%) proc rate that has priority aiming, and one every 12s from her summons. The heal when her summons die is irrelevant, you want them alive as long as possible. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -42491,7 +42491,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Nagato META is a flagship-oriented BB with great stats and skills. Her personal damage is great due to MGM+2 BB Guns, and an amazing barrage. Her Skill 1 is good, but the IJN benefits gained are outweighted from the benefits from not using an IJN ship in her Skill 3. Her Skill 2 gives a nice buff to all Vanguard Ships, and can even trigger on equipment heals like Repair Toolkit. Her Skill 3 gives her a guaranteed on-fire barrage. Ideally, she is sortied with no IJN ships to maximize the power of this barrage, as it removes the RNG requirement. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -42543,7 +42543,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -42855,7 +42855,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer"],
     "locations": {
       "events": [
         {

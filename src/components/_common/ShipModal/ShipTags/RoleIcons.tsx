@@ -16,6 +16,10 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
   Preload: (
     <i className="fa-solid fa-jet-fighter h-auto text-[25px] text-fuchsia-400" />
   ),
+  FlagPref: (
+    <i className="fa-solid fa-flag h-auto text-[25px] text-orange-400" />
+  ),
+  FlagReq: <i className="fa-solid fa-flag h-auto text-[25px] text-amber-700" />,
   AA: <i className="fa-solid fa-plane-slash h-auto text-[25px] text-red-300" />,
   AACarry: (
     <i className="fa-solid fa-plane-slash h-auto text-[25px] text-blue-500" />
