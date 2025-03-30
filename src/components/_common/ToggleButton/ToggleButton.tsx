@@ -66,6 +66,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
           </div>
           <div className="flex w-full items-center justify-between">
             <div className="invisible w-full text-center font-bold text-orange-400">
+              {/* invisible so takes up space */}
               {options[selectedIndex].title}
             </div>
             <div className="m-0 flex w-10 flex-col items-end justify-center">
