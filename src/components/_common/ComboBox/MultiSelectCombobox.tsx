@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react"
 
 import { useDebounce } from "@utils/useDebounce"
-import { truncateString } from "@utils/string"
+import { truncateArray } from "@utils/string"
 
 interface MultiComboBoxProps {
   className?: string
@@ -136,9 +136,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
               selected.length ? "text-orange-400" : "text-blue-200"
             }`}
           >
-            {selected.length
-              ? truncateString(selected.sort().join(", "), 18)
-              : `${title}...`}
+            {selected.length ? truncateArray(selected, 18) : `${title}...`}
           </span>
           <div className="m-0 flex flex-col justify-center space-x-0 space-y-0 *:!leading-[0.35]">
             {showOptions ? (
