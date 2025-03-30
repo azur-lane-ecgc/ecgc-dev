@@ -9,17 +9,23 @@ interface Option {
 interface ToggleButtonProps {
   className?: string
   title: string
-  options: [
-    Option, // both
-    Option, // positive
-    Option, // negative
-  ]
+  options: Option[]
   initialValue?: number
   onSelect: (payload: string) => void
   reset?: any
 }
 
-export const ThreeToggleButton: React.FC<ToggleButtonProps> = ({
+const getDefaultSymbol = (index: number, optionsCount: number): string => {
+  if (optionsCount === 2) {
+    return index === 0 ? "\u2713" : "\u2717"
+  } else if (optionsCount === 3) {
+    return index === 0 ? "\u2713 \u2717" : index === 1 ? "\u2713" : "\u2717"
+  }
+  return ""
+}
+
+// base toggle button
+const ToggleButton: React.FC<ToggleButtonProps> = ({
   className = "",
   title,
   options,
@@ -28,25 +34,23 @@ export const ThreeToggleButton: React.FC<ToggleButtonProps> = ({
   reset,
 }) => {
   const [selectedIndex, setSelectedIndex] = useState(initialValue)
+  const optionsCount = options.length
 
   useEffect(() => {
     if (!!reset) {
       setSelectedIndex(initialValue)
     }
-  }, [reset])
+  }, [reset, initialValue])
 
   const handleClick = () => {
-    const nextIndex = (selectedIndex + 1) % 3
+    const nextIndex = (selectedIndex + 1) % optionsCount
     setSelectedIndex(nextIndex)
     onSelect(options[nextIndex].payload)
   }
 
   const getSymbol = (index: number): string => {
     const option = options[index]
-    return (
-      option.symbol ??
-      (index === 1 ? "\u2713" : index === 2 ? "\u2717" : "\u2713 \u2717")
-    )
+    return option.symbol ?? getDefaultSymbol(index, optionsCount)
   }
 
   return (
@@ -72,4 +76,20 @@ export const ThreeToggleButton: React.FC<ToggleButtonProps> = ({
       </button>
     </div>
   )
+}
+
+interface TwoToggleButtonProps extends Omit<ToggleButtonProps, "options"> {
+  options: [Option, Option]
+}
+
+export const TwoToggleButton: React.FC<TwoToggleButtonProps> = (props) => {
+  return <ToggleButton {...props} />
+}
+
+interface ThreeToggleButtonProps extends Omit<ToggleButtonProps, "options"> {
+  options: [Option, Option, Option]
+}
+
+export const ThreeToggleButton: React.FC<ThreeToggleButtonProps> = (props) => {
+  return <ToggleButton {...props} />
 }
