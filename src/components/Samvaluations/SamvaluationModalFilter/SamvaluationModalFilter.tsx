@@ -104,11 +104,11 @@ export const SamvaluationModalFilter: React.FC = () => {
         <MultiSelectCombobox
           title="Fleet Roles"
           options={allRoles}
-          initialOptions={initialFilters.fleetType}
+          initialOptions={initialFilters.roles.values}
           onSelect={(roles) =>
             dispatch({
               type: "SET_FILTER",
-              payload: { roles: roles },
+              payload: { roles: { ...state.filters.roles, values: roles } },
             })
           }
           reset={state.reset}

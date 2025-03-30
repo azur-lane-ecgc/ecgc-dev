@@ -23,7 +23,10 @@ interface ShipFilterProps {
     hasUniqueAugment: "true" | "false" | ""
     fleetType: string[]
     faction: string[]
-    roles: string[]
+    roles: {
+      values: string[]
+      logic: boolean
+    }
   }
   reset: string
   loading: boolean
@@ -131,10 +134,16 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
   }
 
   // roles filter
-  if (filters.roles.length > 0) {
-    query = query.and((ship) => {
-      return filters.roles.some((role) => ship.roles.includes(role))
-    })
+  if (filters.roles.values.length > 0) {
+    if (filters.roles.logic) {
+      query = query.and((ship) =>
+        filters.roles.values.every((role) => ship.roles.includes(role)),
+      )
+    } else {
+      query = query.and((ship) =>
+        filters.roles.values.some((role) => ship.roles.includes(role)),
+      )
+    }
   }
 
   /*
@@ -171,7 +180,10 @@ export const initialFilters: ShipFilterProps["filters"] = {
   hasUniqueAugment: "",
   fleetType: [],
   faction: [],
-  roles: [],
+  roles: {
+    values: [],
+    logic: false,
+  },
 }
 
 // main filtering hook
