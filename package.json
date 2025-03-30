@@ -22,7 +22,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^4.2.2",
     "@astrojs/sitemap": "^3.3.0",
-    "@playform/compress": "^0.1.7",
+    "@playform/compress": "^0.1.8",
     "@tailwindcss/vite": "^4.0.17",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@happy-dom/global-registrator": "^17.4.4",
     "@types/bun": "^1.2.8",
-    "knip": "^5.46.2",
+    "knip": "^5.46.3",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11"

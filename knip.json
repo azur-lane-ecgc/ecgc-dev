@@ -1,1 +1,1 @@
-{ "project": ["src/**"], "ignore": ["AzurLaneData/**"] }
+{ "project": ["src/**"], "ignore": ["AzurLaneData/**", "dev_tools/**"] }
