@@ -2,7 +2,7 @@ import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
 import { MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
-import { ToggleButton } from "@components/_common/ToggleButton"
+import { ThreeToggleButton } from "@components/_common/ToggleButton"
 
 import { formatLocation } from "@utils/formatLocation"
 
@@ -128,7 +128,7 @@ export const SamvaluationModalFilter: React.FC = () => {
             }}
             reset={state.filters.fleetType.includes("Main Fleet")}
           />
-          <ToggleButton
+          <ThreeToggleButton
             title="Sort"
             options={[
               { title: "None", payload: "" },
@@ -148,7 +148,7 @@ export const SamvaluationModalFilter: React.FC = () => {
       {/* Input + Button Container */}
       <div className="mb-3 flex flex-row-reverse flex-wrap justify-end gap-3.5">
         {/* Unique Augment Filter */}
-        <ToggleButton
+        <ThreeToggleButton
           title="Augments"
           options={[
             { title: "All", payload: "" },
@@ -166,7 +166,7 @@ export const SamvaluationModalFilter: React.FC = () => {
         />
 
         {/* Retrofit Filter */}
-        <ToggleButton
+        <ThreeToggleButton
           title="Retrofit"
           options={[
             { title: "All", payload: "" },

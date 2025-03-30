@@ -3,7 +3,7 @@ import { useEffect, useReducer, useState } from "react"
 import { ComboBox } from "@components/_common/ComboBox"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ItemCellSkeleton } from "@components/_common/Skeleton"
-import { ToggleButton } from "@components/_common/ToggleButton"
+import { ThreeToggleButton } from "@components/_common/ToggleButton"
 
 import { CommonResourceFilterReducer } from "@store/CommonResource"
 
@@ -118,7 +118,7 @@ export const CommonResourceModalFilter: React.FC<
           />
 
           {/* Availability Toggle */}
-          <ToggleButton
+          <ThreeToggleButton
             title="Availability"
             options={[
               { title: "Both", payload: "Both" },
