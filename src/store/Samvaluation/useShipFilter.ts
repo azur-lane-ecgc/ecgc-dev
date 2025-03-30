@@ -12,7 +12,7 @@ import {
   hasUniqueAugment,
 } from "@utils/ships"
 
-interface ShipFilterProps {
+export interface ShipFilterProps {
   visibleShips: AllShipData[]
   filters: {
     hullType: string[]
@@ -31,7 +31,7 @@ interface ShipFilterProps {
   loading: boolean
 }
 
-interface ShipAction {
+export interface ShipAction {
   type: string
   payload: any
 }
