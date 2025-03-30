@@ -1,17 +1,16 @@
 import { useEffect, useReducer, useState } from "react"
+
 import { db } from "@db/dexie"
 import type { ShipData, AllShipData } from "@db/types"
-
 const shipData = (await import("@db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
 
 import { normalizeString } from "@utils/string"
-
 import {
   allianceFactionsMap,
   fleetTypeMapping,
   hasUniqueAugment,
-} from "./utils"
+} from "@utils/ships"
 
 interface ShipFilterProps {
   visibleShips: AllShipData[]

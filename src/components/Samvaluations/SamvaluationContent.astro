@@ -2,7 +2,7 @@
 import WikiLink from "@components/_common/WikiLink.astro"
 import { HR } from "@components/_common/HR"
 
-import { SamvaluationModalFilter } from "./SamvaluationModalFilter"
+import { SamvaluationModals } from "./SamvaluationModals"
 ---
 
 <h2 id="introduction">Introduction</h2>
@@ -61,7 +61,7 @@ import { SamvaluationModalFilter } from "./SamvaluationModalFilter"
 <h2 id="evaluations">Evaluations</h2>
 <HR />
 
-<SamvaluationModalFilter client:visible={{ rootMargin: "50px" }} />
+<SamvaluationModals client:visible={{ rootMargin: "50px" }} />
 <br />
 
 <h2 id="third_party">Third-Party Tools</h2>

@@ -7,9 +7,12 @@ import {
   ThreeToggleButton,
 } from "@components/_common/ToggleButton"
 
-import { formatLocation } from "@utils/formatLocation"
+import {
+  initialFilters,
+  useShipFilter,
+} from "@store/Samvaluation/useShipFilter"
 
-import { initialFilters, useShipFilter } from "./useShipFilter"
+import { formatLocation } from "@utils/formatLocation"
 import {
   allHullTypes,
   allianceFactionsMap,
@@ -17,9 +20,9 @@ import {
   allRarities,
   allRarityOptions,
   allRoles,
-} from "./utils"
+} from "@utils/ships"
 
-export const SamvaluationModalFilter: React.FC = () => {
+export const SamvaluationModals: React.FC = () => {
   const { state, dispatch } = useShipFilter(initialFilters)
 
   return (
