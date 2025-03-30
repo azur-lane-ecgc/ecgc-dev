@@ -130,7 +130,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
                 : ""
             }`}
             options={[
-              { title: "OR", payload: "false", symbol: "| |" },
+              { title: "OR", payload: "false", symbol: "\u00A0|\u00A0" },
               { title: "AND", payload: "true", symbol: "&" },
             ]}
             initialValue={0}
