@@ -2,7 +2,10 @@ import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
 import { MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
-import { ThreeToggleButton } from "@components/_common/ToggleButton"
+import {
+  TwoToggleButton,
+  ThreeToggleButton,
+} from "@components/_common/ToggleButton"
 
 import { formatLocation } from "@utils/formatLocation"
 
@@ -109,6 +112,27 @@ export const SamvaluationModalFilter: React.FC = () => {
             dispatch({
               type: "SET_FILTER",
               payload: { roles: { ...state.filters.roles, values: roles } },
+            })
+          }
+          reset={state.reset}
+        />
+
+        <TwoToggleButton
+          title="Role Select"
+          options={[
+            { title: "OR", payload: "false", symbol: "\u2228" },
+            { title: "AND", payload: "true", symbol: "\u2227" },
+          ]}
+          initialValue={0}
+          onSelect={(trigger) =>
+            dispatch({
+              type: "SET_FILTER",
+              payload: {
+                roles: {
+                  ...state.filters.roles,
+                  logic: trigger === "true" ? true : false,
+                },
+              },
             })
           }
           reset={state.reset}
