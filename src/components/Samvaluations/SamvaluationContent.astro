@@ -131,3 +131,37 @@ import { SamvaluationModalFilter } from "./SamvaluationModalFilter"
   math and assumptions. Click the link in the heading for more details.
 </p>
 <br />
+
+<button
+  id="evaluationScrollBtn"
+  onclick="document.getElementById('samvaluationModalScroll').scrollIntoView({ behavior: 'smooth' })"
+  class="fixed right-4 hidden rounded bg-pink-300 px-2 py-1 text-black shadow-lg transition-opacity duration-300"
+  aria-label="button"
+>
+  <i class="fa fa-arrow-up"></i>
+</button>
+
+<script>
+  document.addEventListener("scroll", () => {
+    const button = document.getElementById("evaluationScrollBtn")
+    const scrollY = window.scrollY
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+    const threshold = 60
+
+    if (button) {
+      if (scrollY > 100) {
+        button.classList.remove("hidden")
+        button.classList.add("opacity-100")
+      } else {
+        button.classList.add("hidden")
+        button.classList.remove("opacity-100")
+      }
+
+      if (maxScroll - scrollY <= threshold) {
+        button.style.bottom = `${threshold}px`
+      } else {
+        button.style.bottom = "1rem"
+      }
+    }
+  })
+</script>
