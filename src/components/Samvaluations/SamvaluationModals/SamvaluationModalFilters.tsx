@@ -4,6 +4,7 @@ import {
   TwoToggleButton,
   ThreeToggleButton,
 } from "@components/_common/ToggleButton"
+import { CustomToggleButton } from "@components/_common/ToggleButton/CustomToggleButton"
 
 import {
   initialFilters,
@@ -111,39 +112,40 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
       </div>
 
       <div className="mb-3 flex flex-row flex-wrap gap-3.5">
-        <MultiSelectCombobox
-          title="Fleet Roles"
-          options={allRoles}
-          initialOptions={initialFilters.roles.values}
-          onSelect={(roles) =>
-            dispatch({
-              type: "SET_FILTER",
-              payload: { roles: { ...state.filters.roles, values: roles } },
-            })
-          }
-          reset={state.reset}
-        />
-
-        <TwoToggleButton
-          title="Role Select"
-          options={[
-            { title: "OR", payload: "false", symbol: "\u2228" },
-            { title: "AND", payload: "true", symbol: "\u2227" },
-          ]}
-          initialValue={0}
-          onSelect={(trigger) =>
-            dispatch({
-              type: "SET_FILTER",
-              payload: {
-                roles: {
-                  ...state.filters.roles,
-                  logic: trigger === "true" ? true : false,
-                },
-              },
-            })
-          }
-          reset={state.reset}
-        />
+        <div className="relative inline-block">
+          <MultiSelectCombobox
+            title="Fleet Roles"
+            options={allRoles}
+            initialOptions={initialFilters.roles.values}
+            onSelect={(roles) =>
+              dispatch({
+                type: "SET_FILTER",
+                payload: { roles: { ...state.filters.roles, values: roles } },
+              })
+            }
+            reset={state.reset}
+          />
+          {state.filters.roles.values.length > 0 && (
+            <CustomToggleButton
+              options={[
+                { title: "OR", payload: "false", symbol: "| |" },
+                { title: "AND", payload: "true", symbol: "&" },
+              ]}
+              onSelect={(trigger) =>
+                dispatch({
+                  type: "SET_FILTER",
+                  payload: {
+                    roles: {
+                      ...state.filters.roles,
+                      logic: trigger === "true" ? true : false,
+                    },
+                  },
+                })
+              }
+              reset={state.reset}
+            />
+          )}
+        </div>
       </div>
 
       {/* conditional filters */}

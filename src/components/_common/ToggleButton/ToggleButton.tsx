@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-interface Option {
+export interface Option {
   title: string
   payload: string
   symbol?: string
