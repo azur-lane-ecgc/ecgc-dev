@@ -33,16 +33,13 @@ export const CustomToggleButton: React.FC<CustomToggleButtonProps> = ({
   }
   return (
     <button
-      className={
-        className +
-        "absolute left-0 top-[37.5px] m-1 rounded bg-gray-200 px-1.5 py-1 text-xs"
-      }
+      className={className}
       onClick={(e) => {
         e.stopPropagation()
         handleClick()
       }}
     >
-      {options[selectedIndex].symbol}
+      <span className="font-semibold">{options[selectedIndex].symbol}</span>
     </button>
   )
 }
