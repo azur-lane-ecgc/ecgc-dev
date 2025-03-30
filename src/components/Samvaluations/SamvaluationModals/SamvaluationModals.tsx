@@ -1,11 +1,5 @@
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
-import { MultiSelectCombobox } from "@components/_common/ComboBox"
-import { Input } from "@components/_common/Input"
-import {
-  TwoToggleButton,
-  ThreeToggleButton,
-} from "@components/_common/ToggleButton"
 
 import {
   initialFilters,
@@ -13,14 +7,7 @@ import {
 } from "@store/Samvaluation/useShipFilter"
 
 import { formatLocation } from "@utils/formatLocation"
-import {
-  allHullTypes,
-  allianceFactionsMap,
-  allFactionOptions,
-  allRarities,
-  allRarityOptions,
-  allRoles,
-} from "@utils/ships"
+
 import { SamvaluationModalFilters } from "./SamvaluationModalFilters"
 
 export const SamvaluationModals: React.FC = () => {
