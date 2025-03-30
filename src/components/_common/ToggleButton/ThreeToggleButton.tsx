@@ -19,7 +19,7 @@ interface ToggleButtonProps {
   reset?: any
 }
 
-export const ToggleButton: React.FC<ToggleButtonProps> = ({
+export const ThreeToggleButton: React.FC<ToggleButtonProps> = ({
   className = "",
   title,
   options,
