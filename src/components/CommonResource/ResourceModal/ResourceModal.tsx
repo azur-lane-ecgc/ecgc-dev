@@ -14,7 +14,7 @@ import {
   shipLinkStyle,
 } from "@components/_common/ShipModal/styles"
 
-import { getCellColor } from "@utils/commonResource/getCellColor"
+import { getCellColor } from "@utils/commonResource"
 import {
   useBodyOverflow,
   useModalFocus,

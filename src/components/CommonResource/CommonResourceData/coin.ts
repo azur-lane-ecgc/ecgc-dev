@@ -1,4 +1,4 @@
-import { getTotalGuaranteed } from "@utils/commonResource/getTotal"
+import { getTotalGuaranteed } from "@utils/commonResource"
 import type { ResourceProps } from "./types"
 
 const CoinData: ResourceProps = {
