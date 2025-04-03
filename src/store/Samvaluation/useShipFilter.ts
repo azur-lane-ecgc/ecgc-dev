@@ -55,7 +55,8 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
     if (
       hullFilters.includes("DD") ||
       hullFilters.includes("IX") ||
-      hullFilters.includes("DDG")
+      hullFilters.includes("DDG") ||
+      hullFilters.includes("SS")
     ) {
       query = db.ships
         .where("hullType")
@@ -76,6 +77,11 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
       // include all IX
       if (hullFilters.includes("IX")) {
         query = query.or("hullType").startsWith("IX")
+      }
+
+      // include all SS
+      if (hullFilters.includes("SS")) {
+        query = query.or("hullType").startsWith("SS")
       }
     } else {
       query = db.ships.where("hullType").anyOf(hullFilters)
