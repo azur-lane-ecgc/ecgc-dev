@@ -1,4 +1,4 @@
-interface BaseFleetRankingProps {
+export interface BaseFleetRankingProps {
   notes?: string | null
   nameNote?: string | null
 

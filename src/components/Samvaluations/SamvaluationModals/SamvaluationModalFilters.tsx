@@ -1,4 +1,4 @@
-import { MultiSelectCombobox } from "@components/_common/ComboBox"
+import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
 import { ThreeToggleButton } from "@components/_common/ToggleButton"
 import { CustomToggleButton } from "@components/_common/ToggleButton/CustomToggleButton"
@@ -16,6 +16,7 @@ import {
   allRarities,
   allRarityOptions,
   allRoles,
+  offenseTypes,
 } from "@utils/ships"
 
 interface ModalFilterProps {
@@ -145,6 +146,61 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
                 },
               })
             }
+            reset={state.reset}
+          />
+        </div>
+        <div className="relative">
+          <ComboBox
+            title="Off. Sort"
+            options={Object.keys(offenseTypes)}
+            initialOption={initialFilters.offensiveSort.value}
+            onSelect={(role) =>
+              dispatch({
+                type: "SET_FILTER",
+                payload: {
+                  offensiveSort: {
+                    ...state.filters.offensiveSort,
+                    value: role,
+                  },
+                },
+              })
+            }
+            reset={state.reset}
+          />
+
+          <CustomToggleButton
+            className={`absolute left-0 top-[37.5px] m-1 flex justify-center rounded bg-fuchsia-200 px-1.5 py-1 text-xs ${
+              state.filters.offensiveSort.value.length === 0
+                ? "pointer-events-none hidden select-none"
+                : ""
+            }`}
+            options={[
+              { title: "DESC", payload: "true", symbol: "\u2193" },
+              { title: "ASC", payload: "false", symbol: "\u2191" },
+              { title: "NONE", payload: "null", symbol: "X" },
+            ]}
+            initialValue={0}
+            onSelect={(trigger) => {
+              let newLogic: boolean | null
+
+              if (trigger === "true") {
+                newLogic = true
+              } else if (trigger === "false") {
+                newLogic = false
+              } else {
+                newLogic = null
+              }
+
+              dispatch({
+                type: "SET_FILTER",
+                payload: {
+                  offensiveSort: {
+                    ...state.filters.offensiveSort,
+                    logic: newLogic,
+                  },
+                },
+              })
+            }}
             reset={state.reset}
           />
         </div>

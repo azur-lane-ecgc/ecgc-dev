@@ -15,3 +15,6 @@ export * from "./faction"
 
 // roles
 export * from "./roles"
+
+//rankings
+export * from "./rankings"

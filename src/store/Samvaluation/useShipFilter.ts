@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useState } from "react"
 
 import { db } from "@db/dexie"
-import type { ShipData, AllShipData } from "@db/types"
+import type { BaseFleetRankingProps, ShipData, AllShipData } from "@db/types"
 const shipData = (await import("@db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
 
@@ -10,6 +10,7 @@ import {
   allianceFactionsMap,
   fleetTypeMapping,
   hasUniqueAugment,
+  offenseTypes,
 } from "@utils/ships"
 
 export interface ShipFilterProps {
@@ -25,6 +26,10 @@ export interface ShipFilterProps {
     roles: {
       values: string[]
       logic: boolean
+    }
+    offensiveSort: {
+      value: string
+      logic: boolean | null
     }
   }
   reset: string
@@ -162,8 +167,35 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
     query = query.and((ship) => filters.rarity.includes(String(ship.rarity)))
   }
 
+  // offensive sort filter
+  if (filters.offensiveSort.value && filters.offensiveSort.logic !== null) {
+    const sortKey = offenseTypes[
+      filters.offensiveSort.value
+    ] as keyof BaseFleetRankingProps
+
+    return query.toArray().then((ships) => {
+      return ships.sort((a, b) => {
+        const getHighestValue = (ship: AllShipData) => {
+          if (!ship.rankings || !Array.isArray(ship.rankings)) return 0
+          return Math.max(
+            0,
+            ...ship.rankings.map((r) => {
+              const ranking = r as unknown as BaseFleetRankingProps
+              return (ranking[sortKey] as number) ?? 0
+            }),
+          )
+        }
+
+        const aValue = getHighestValue(a)
+        const bValue = getHighestValue(b)
+
+        return filters.offensiveSort.logic ? bValue - aValue : aValue - bValue
+      })
+    })
+  }
+
   // sort by id within each rarity
-  if (filters.rarity.length > 0) {
+  else if (filters.rarity.length > 0) {
     return query
       .sortBy("id")
       .then((ships) =>
@@ -188,6 +220,10 @@ export const initialFilters: ShipFilterProps["filters"] = {
   roles: {
     values: [],
     logic: false,
+  },
+  offensiveSort: {
+    value: "",
+    logic: null,
   },
 }
 
