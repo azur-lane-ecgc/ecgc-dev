@@ -1,4 +1,4 @@
- interface BaseFleetRankingProps {
+interface BaseFleetRankingProps {
   notes?: string | null
   nameNote?: string | null
 
