@@ -154,17 +154,23 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
             title="Off. Sort"
             options={Object.keys(offenseTypes)}
             initialOption={initialFilters.offensiveSort.value}
-            onSelect={(role) =>
+            onSelect={(role) => {
+              const isFirstSelection =
+                state.filters.offensiveSort.value.length === 0
+
               dispatch({
                 type: "SET_FILTER",
                 payload: {
                   offensiveSort: {
                     ...state.filters.offensiveSort,
                     value: role,
+                    logic: isFirstSelection
+                      ? true
+                      : state.filters.offensiveSort.logic,
                   },
                 },
               })
-            }
+            }}
             reset={state.reset}
           />
 
@@ -179,7 +185,13 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
               { title: "ASC", payload: "false", symbol: "\u2191" },
               { title: "NONE", payload: "null", symbol: "X" },
             ]}
-            initialValue={0}
+            initialValue={
+              state.filters.offensiveSort.logic === true
+                ? 0
+                : state.filters.offensiveSort.logic === false
+                  ? 1
+                  : 2
+            }
             onSelect={(trigger) => {
               let newLogic: boolean | null
 
