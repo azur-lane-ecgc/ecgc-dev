@@ -1,4 +1,4 @@
-import type { ShipData, AllShipData } from "@db/types"
+import type { ShipData } from "@db/types"
 const shipData = (await import("@db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
 
