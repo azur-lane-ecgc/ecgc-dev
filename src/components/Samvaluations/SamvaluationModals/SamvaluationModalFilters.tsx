@@ -163,7 +163,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
                 payload: {
                   offensiveSort: {
                     ...state.filters.offensiveSort,
-                    value: role,
+                    value: role ?? "",
                     logic: isFirstSelection
                       ? true
                       : state.filters.offensiveSort.logic,
