@@ -131,10 +131,14 @@ const {
           }),
           (e.__SV = 1))
       })(document, window.posthog || [])
-      posthog.init("phc_l6QBFtrpilmwF0FpH1A5eFkDTHx5V3hRrsumQyhyy5O", {
-        api_host: "https://us.i.posthog.com",
-        person_profiles: "always",
-      })
+      if (
+        !window.location.host.includes("127.0.0.1") &&
+        !window.location.host.includes("localhost")
+      ) {
+        posthog.init("phc_l6QBFtrpilmwF0FpH1A5eFkDTHx5V3hRrsumQyhyy5O", {
+          api_host: "https://us.i.posthog.com",
+        })
+      }
     </script>
   </head><span data-astro-transition-persist="someId">
     <noscript>Your browser does not support JavaScript!</noscript>
