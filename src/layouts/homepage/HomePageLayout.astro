@@ -1,4 +1,6 @@
 ---
+import posthog from "posthog-js"
+
 import "@styles/home_page.css"
 import "@styles/fontawesome/css/fontawesome.css"
 import "@styles/fontawesome/css/brands.css"
@@ -17,6 +19,11 @@ interface Props {
 }
 
 const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
+
+posthog.init("phc_l6QBFtrpilmwF0FpH1A5eFkDTHx5V3hRrsumQyhyy5O", {
+  api_host: "https://us.i.posthog.com",
+  person_profiles: "always",
+})
 ---
 
 <!doctype html>

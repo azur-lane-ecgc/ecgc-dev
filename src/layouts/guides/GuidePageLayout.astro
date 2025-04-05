@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions"
+import posthog from "posthog-js"
 
 import "@styles/guide_page.css"
 import "@styles/fontawesome/css/fontawesome.css"
@@ -31,6 +32,11 @@ const {
   metaImage,
   metaDescription,
 } = Astro.props
+
+posthog.init("phc_l6QBFtrpilmwF0FpH1A5eFkDTHx5V3hRrsumQyhyy5O", {
+  api_host: "https://us.i.posthog.com",
+  person_profiles: "always",
+})
 ---
 
 <!doctype html>
