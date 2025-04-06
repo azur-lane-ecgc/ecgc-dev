@@ -37,7 +37,7 @@
   "devDependencies": {
     "@happy-dom/global-registrator": "^17.4.4",
     "@types/bun": "^1.2.8",
-    "knip": "^5.46.5",
+    "knip": "^5.47.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11"
