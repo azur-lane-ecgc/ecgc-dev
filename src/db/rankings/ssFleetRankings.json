@@ -531,15 +531,15 @@
     {
       "nameNote": "Base",
       "notes": "Requires KMS wolfpack. Do not use Pressure-Resistant Hull. Buffs wolfpack against DDs and CLs.",
-      "hardarbiter": "B",
-      "cm": "B",
-      "campaign": "B",
+      "hardarbiter": "S",
+      "cm": "A",
+      "campaign": "A",
       "consistency": null,
       "fleetreq": -2,
       "flagreq": 0,
       "lightdmg": 1,
-      "mediumdmg": 2,
-      "heavydmg": 3,
+      "mediumdmg": 3,
+      "heavydmg": 4,
       "offensivebuff": 1
     }
   ],
