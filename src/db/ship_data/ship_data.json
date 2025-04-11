@@ -5385,7 +5385,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["Cherished Cleaning Equipment", "Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": ["Meh"],
@@ -19505,7 +19505,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Kunai", "Dagger"],
+    "augments": ["Great Shark", "Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
     "roles": ["DmgDealer"],
@@ -27980,7 +27980,12 @@
           "href": "Sugary-Sweet_Käsekuchen"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     }
