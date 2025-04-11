@@ -79,14 +79,6 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
   )
 }
 
-interface TwoToggleButtonProps extends Omit<ToggleButtonProps, "options"> {
-  options: [Option, Option]
-}
-
-export const TwoToggleButton: React.FC<TwoToggleButtonProps> = (props) => {
-  return <ToggleButton {...props} />
-}
-
 interface ThreeToggleButtonProps extends Omit<ToggleButtonProps, "options"> {
   options: [Option, Option, Option]
 }
