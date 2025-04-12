@@ -1,7 +1,13 @@
 import { useEffect, useReducer, useState } from "react"
 
 import { db } from "@db/dexie"
-import type { BaseFleetRankingProps, ShipData, AllShipData } from "@db/types"
+import type {
+  MainFleetRankingProps,
+  VanguardFleetRankingProps,
+  SSFleetRankingProps,
+  ShipData,
+  AllShipData,
+} from "@db/types"
 const shipData = (await import("@db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
 
@@ -10,7 +16,8 @@ import {
   allianceFactionsMap,
   fleetTypeMapping,
   hasUniqueAugment,
-  offenseTypes,
+  rankingTypes,
+  letterRankToNumber,
 } from "@utils/ships"
 
 export interface ShipFilterProps {
@@ -27,7 +34,7 @@ export interface ShipFilterProps {
       values: string[]
       logic: boolean
     }
-    offensiveSort: {
+    rankingSort: {
       value: string
       logic: boolean | null
     }
@@ -167,29 +174,93 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
     query = query.and((ship) => filters.rarity.includes(String(ship.rarity)))
   }
 
-  // offensive sort filter
-  if (filters.offensiveSort.value && filters.offensiveSort.logic !== null) {
-    const sortKey = offenseTypes[
-      filters.offensiveSort.value
-    ] as keyof BaseFleetRankingProps
+  // ranking sort filter
+  if (filters.rankingSort.value && filters.rankingSort.logic !== null) {
+    const sortKey = rankingTypes[filters.rankingSort.value] as string
 
     return query.toArray().then((ships) => {
-      return ships.sort((a, b) => {
+      const shipsWithRankings = ships.map((ship) => {
         const getHighestValue = (ship: AllShipData) => {
-          if (!ship.rankings || !Array.isArray(ship.rankings)) return 0
+          if (!ship.rankings) {
+            return 0
+          }
+
+          const rankingsToUse =
+            ship.fleetType === "vg"
+              ? ship.rankings.vgRankings
+              : ship.fleetType === "main"
+                ? ship.rankings.mfRankings
+                : ship.fleetType === "ss"
+                  ? ship.rankings.ssRankings
+                  : null
+
+          if (!rankingsToUse || !Array.isArray(rankingsToUse)) {
+            return 0
+          }
+
           return Math.max(
             0,
-            ...ship.rankings.map((r) => {
-              const ranking = r as unknown as BaseFleetRankingProps
-              return (ranking[sortKey] as number) ?? 0
+            ...rankingsToUse.map((r) => {
+              const ranking = r as any
+
+              let value = ranking[sortKey]
+
+              if (
+                ship.fleetType === "ss" &&
+                (sortKey === "w14mob" ||
+                  sortKey === "w14boss" ||
+                  sortKey === "w15mob" ||
+                  sortKey === "w15boss")
+              ) {
+                value = ranking.campaign
+              }
+
+              // numeric fields (lightdmg, mediumdmg, heavydmg, offensivebuff)
+              if (typeof value === "number") {
+                return value ?? 0
+              }
+
+              // string fields (meta, w14mob, etc.)
+              if (typeof value === "string") {
+                return letterRankToNumber(value)
+              }
+
+              return 0
             }),
           )
         }
 
-        const aValue = getHighestValue(a)
-        const bValue = getHighestValue(b)
+        return {
+          ship,
+          rankingValue: getHighestValue(ship),
+        }
+      })
 
-        return filters.offensiveSort.logic ? bValue - aValue : aValue - bValue
+      const groupedByRanking: Record<number, AllShipData[]> = {}
+
+      shipsWithRankings.forEach(({ ship, rankingValue }) => {
+        if (!groupedByRanking[rankingValue]) {
+          groupedByRanking[rankingValue] = []
+        }
+        groupedByRanking[rankingValue].push(ship)
+      })
+
+      const sortedRankingValues = Object.keys(groupedByRanking)
+        .map(Number)
+        .sort((a, b) => (filters.rankingSort.logic ? b - a : a - b))
+
+      return sortedRankingValues.flatMap((rankingValue) => {
+        const shipsInRanking = groupedByRanking[rankingValue]
+
+        const rarities = Array.from(
+          new Set(shipsInRanking.map((ship) => ship.rarity)),
+        ).sort((a, b) => b - a)
+
+        return rarities.flatMap((rarity) =>
+          shipsInRanking
+            .filter((ship) => ship.rarity === rarity)
+            .sort((a, b) => a.id - b.id),
+        )
       })
     })
   }
@@ -203,8 +274,10 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
           ships.filter((ship) => String(ship.rarity) === rarity),
         ),
       )
-  } else {
-    // default (id sort)
+  }
+
+  // default (id sort)
+  else {
     return query.sortBy("id")
   }
 }
@@ -221,7 +294,7 @@ export const initialFilters: ShipFilterProps["filters"] = {
     values: [],
     logic: false,
   },
-  offensiveSort: {
+  rankingSort: {
     value: "",
     logic: null,
   },

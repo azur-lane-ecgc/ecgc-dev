@@ -16,7 +16,7 @@ import {
   allRarities,
   allRarityOptions,
   allRoles,
-  offenseTypes,
+  rankingTypes,
 } from "@utils/ships"
 
 interface ModalFilterProps {
@@ -151,22 +151,21 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
         </div>
         <div className="relative">
           <ComboBox
-            title="Off. Sort"
-            options={Object.keys(offenseTypes)}
-            initialOption={initialFilters.offensiveSort.value}
+            title="Ranking Sort"
+            options={Object.keys(rankingTypes)}
+            initialOption={initialFilters.rankingSort.value}
             onSelect={(role) => {
               const isFirstSelection =
-                state.filters.offensiveSort.value.length === 0
+                state.filters.rankingSort.value.length === 0
 
               dispatch({
                 type: "SET_FILTER",
                 payload: {
-                  offensiveSort: {
-                    ...state.filters.offensiveSort,
+                  rankingSort: {
                     value: role ?? "",
                     logic: isFirstSelection
                       ? true
-                      : state.filters.offensiveSort.logic,
+                      : state.filters.rankingSort.logic,
                   },
                 },
               })
@@ -176,7 +175,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
 
           <CustomToggleButton
             className={`absolute left-0 top-[37.5px] m-1 flex justify-center rounded bg-fuchsia-200 px-1.5 py-1 text-xs ${
-              state.filters.offensiveSort.value.length === 0
+              state.filters.rankingSort.value.length === 0
                 ? "pointer-events-none hidden select-none"
                 : ""
             }`}
@@ -186,9 +185,9 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
               { title: "NONE", payload: "null", symbol: "X" },
             ]}
             initialValue={
-              state.filters.offensiveSort.logic === true
+              state.filters.rankingSort.logic === true
                 ? 0
-                : state.filters.offensiveSort.logic === false
+                : state.filters.rankingSort.logic === false
                   ? 1
                   : 2
             }
@@ -206,8 +205,8 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
               dispatch({
                 type: "SET_FILTER",
                 payload: {
-                  offensiveSort: {
-                    ...state.filters.offensiveSort,
+                  rankingSort: {
+                    ...state.filters.rankingSort,
                     logic: newLogic,
                   },
                 },
