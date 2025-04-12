@@ -248,12 +248,13 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
           </div>
         )} */}
 
-      {/* Input + Button Container */}
+      {/* Scroll Marker */}
       <div
         className="pointer-events-none absolute h-0 overflow-hidden opacity-0"
         aria-hidden="true"
         id="samvaluationModalScroll"
       ></div>
+      {/* Input + Button Container */}
       <div className="mb-3 flex flex-row-reverse flex-wrap justify-end gap-3.5">
         {/* Unique Augment Filter */}
         <ThreeToggleButton
