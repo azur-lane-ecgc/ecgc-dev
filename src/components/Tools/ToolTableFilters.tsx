@@ -21,13 +21,16 @@ export const ToolTableFilters = () => {
   }
 
   return (
-    <div className="flex flex-col gap-4">
-      <ComboBox
-        title="Category"
-        options={displayCategories}
-        onSelect={handleSelect}
-      />
+    <>
+      <div className="mb-3 flex flex-row flex-wrap gap-3.5">
+        <ComboBox
+          title="Category"
+          options={displayCategories}
+          onSelect={handleSelect}
+        />
+      </div>
+
       <ToolTable category={category} />
-    </div>
+    </>
   )
 }

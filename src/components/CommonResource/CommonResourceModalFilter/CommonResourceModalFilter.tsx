@@ -89,7 +89,7 @@ export const CommonResourceModalFilter: React.FC<
     <>
       <div className={className}>
         {/* ComboBoxes / Filters */}
-        <div className="flex flex-row flex-wrap gap-4">
+        <div className="mb-3 flex flex-row flex-wrap gap-3.5">
           <ComboBox
             title="Category"
             options={[
