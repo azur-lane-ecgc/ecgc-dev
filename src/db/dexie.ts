@@ -12,7 +12,7 @@ class ShipDatabase extends Dexie {
       ships:
         "&id, ship, faction, rarity, hullType, fleetType, *roles, *locationNames",
       info: "&key",
-      ship_img: "&id",
+      // ship_img: "&id",
     })
 
     this.ships = this.table("ships")
