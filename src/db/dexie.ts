@@ -4,7 +4,7 @@ import type { AllShipData } from "./types"
 class ShipDatabase extends Dexie {
   ships: Dexie.Table<AllShipData, number>
   info: Dexie.Table<{ key: string; value: any }, string>
-  ship_img: Dexie.Table<{ id: number; image: string }, number>
+  // ship_img: Dexie.Table<{ id: number; image: string }, number>
 
   constructor() {
     super("ECGCShipDatabase")
@@ -17,7 +17,7 @@ class ShipDatabase extends Dexie {
 
     this.ships = this.table("ships")
     this.info = this.table("info")
-    this.ship_img = this.table("ship_img")
+    // this.ship_img = this.table("ship_img")
   }
 }
 

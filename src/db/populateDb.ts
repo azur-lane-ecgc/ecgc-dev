@@ -1,7 +1,7 @@
-import { shipImageParse } from "@utils/ships"
+// import { shipImageParse } from "@utils/ships"
 
 import { db } from "./dexie"
-import { cacheShipImage } from "./cache"
+// import { cacheShipImage } from "./cache"
 import { generateHash } from "./dbHash"
 
 import type { ShipEHPProps } from "./ehp/types"
@@ -38,7 +38,7 @@ const extractLocationNames = (locations: ShipLocationData): string[] => {
 
 const populateDb = async () => {
   await db.ships.clear()
-  await db.ship_img.clear()
+  // await db.ship_img.clear()
 
   const allShips: AllShipData[] = Object.values(shipData).map((ship) => ({
     ...ship,
@@ -53,10 +53,10 @@ const populateDb = async () => {
 
   await db.ships.bulkPut(allShips)
 
-  for (const ship of allShips) {
-    const shipImage = shipImageParse(ship.ship, ship.isKai)
-    await cacheShipImage(ship.id, shipImage)
-  }
+  // for (const ship of allShips) {
+  //   const shipImage = shipImageParse(ship.ship, ship.isKai)
+  //   await cacheShipImage(ship.id, shipImage)
+  // }
 }
 
 export const checkAndUpdateDatabase = async () => {
