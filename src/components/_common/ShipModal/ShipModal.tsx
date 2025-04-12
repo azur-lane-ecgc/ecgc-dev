@@ -7,11 +7,6 @@ import { ItemTable } from "@components/_common/ItemTable"
 import { IconSkeleton } from "@components/_common/Skeleton"
 
 import type { AllShipData } from "@db/types"
-import type {
-  MainFleetRankingProps,
-  VanguardFleetRankingProps,
-  SSFleetRankingProps,
-} from "@db/types"
 
 import {
   useBodyOverflow,
