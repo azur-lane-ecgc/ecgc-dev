@@ -7,11 +7,11 @@ import type {
 import type { ShipData } from "./ship_data/types"
 
 export interface AllShipData extends ShipData {
-  rankings?:
-    | MainFleetRankingProps[]
-    | VanguardFleetRankingProps[]
-    | SSFleetRankingProps[]
-    | null
+  rankings: {
+    mfRankings: MainFleetRankingProps[] | null
+    vgRankings: VanguardFleetRankingProps[] | null
+    ssRankings: SSFleetRankingProps[] | null
+  }
   ehp?: ShipEHPProps[] | null
   locationNames: string[]
 }

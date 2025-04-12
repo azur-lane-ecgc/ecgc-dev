@@ -42,14 +42,11 @@ const populateDb = async () => {
 
   const allShips: AllShipData[] = Object.values(shipData).map((ship) => ({
     ...ship,
-    rankings:
-      ship.fleetType === "main"
-        ? mainFleetRankings[ship.ship] || null
-        : ship.fleetType === "vg"
-          ? vgFleetRankings[ship.ship] || null
-          : ship.fleetType === "ss"
-            ? ssFleetRankings[ship.ship] || null
-            : null,
+    rankings: {
+      mfRankings: ship.fleetType === "main" ? mainFleetRankings[ship.ship] || null : null,
+      vgRankings: ship.fleetType === "vg" ? vgFleetRankings[ship.ship] || null : null,
+      ssRankings: ship.fleetType === "ss" ? ssFleetRankings[ship.ship] || null : null,
+    },
     ehp: ehp[ship.ship] || null,
     locationNames: extractLocationNames(ship.locations),
   }))

@@ -2,14 +2,14 @@ import { useState } from "react"
 
 import { ItemTable } from "@components/_common/ItemTable"
 import { HR } from "@components/_common/HR"
-import { letterRankColor, numberRankColor } from "./utils"
+import { letterRankColor, numberRankColor } from "./styles"
 
 import type { MainFleetRankingProps } from "@db/types"
 
 import { RankingHeader } from "./RankingHeader"
 
 interface MainFleetRankingComponentProps {
-  rankings: MainFleetRankingProps[] | null | undefined
+  rankings: MainFleetRankingProps[] | null
 }
 
 export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({

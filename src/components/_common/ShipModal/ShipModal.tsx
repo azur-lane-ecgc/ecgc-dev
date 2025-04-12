@@ -372,22 +372,12 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                 (() => {
                   switch (fleetType) {
                     case "main":
-                      return (
-                        <MainFleetRanking
-                          rankings={rankings as MainFleetRankingProps[]}
-                        />
-                      )
+                      return <MainFleetRanking rankings={rankings.mfRankings} />
                     case "ss":
-                      return (
-                        <SSFleetRanking
-                          rankings={rankings as SSFleetRankingProps[]}
-                        />
-                      )
+                      return <SSFleetRanking rankings={rankings.ssRankings} />
                     case "vg":
                       return (
-                        <VanguardFleetRanking
-                          rankings={rankings as VanguardFleetRankingProps[]}
-                        />
+                        <VanguardFleetRanking rankings={rankings.vgRankings} />
                       )
                     default:
                       return false
