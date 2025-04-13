@@ -18003,7 +18003,12 @@
     "fastLoad": "",
     "roles": ["AA"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Lunar New Year 2019",
+          "href": "Lunar_New_Year_2019"
+        }
+      ],
       "other": [],
       "construction": [
         {
@@ -18055,7 +18060,12 @@
     "fastLoad": "",
     "roles": ["Meh"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Lunar New Year 2019",
+          "href": "Lunar_New_Year_2019"
+        }
+      ],
       "other": [],
       "construction": [
         {
@@ -18107,7 +18117,12 @@
     "fastLoad": "",
     "roles": ["Bad"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Lunar New Year 2019",
+          "href": "Lunar_New_Year_2019"
+        }
+      ],
       "other": [
         {
           "name": "Requisition",
@@ -18163,7 +18178,12 @@
     "fastLoad": "",
     "roles": ["Bad"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Lunar New Year 2019",
+          "href": "Lunar_New_Year_2019"
+        }
+      ],
       "other": [
         {
           "name": "Requisition",
@@ -18219,7 +18239,12 @@
     "fastLoad": "",
     "roles": ["Bad"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Lunar New Year 2019",
+          "href": "Lunar_New_Year_2019"
+        }
+      ],
       "other": [
         {
           "name": "Requisition",
@@ -24746,8 +24771,8 @@
     "locations": {
       "events": [
         {
-          "name": "Lunar New Year 2021",
-          "href": "Lunar_New_Year_2021"
+          "name": "Happy Lunar New Year 2021",
+          "href": "Happy_Lunar_New_Year_2021"
         }
       ],
       "other": [],
@@ -24796,7 +24821,12 @@
     "fastLoad": "",
     "roles": ["Bad"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Happy Lunar New Year 2021",
+          "href": "Happy_Lunar_New_Year_2021"
+        }
+      ],
       "other": [
         {
           "name": "Guild Shop",
@@ -24852,7 +24882,12 @@
     "fastLoad": "",
     "roles": ["Bad"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Happy Lunar New Year 2021",
+          "href": "Happy_Lunar_New_Year_2021"
+        }
+      ],
       "other": [
         {
           "name": "Guild Shop",
@@ -24908,7 +24943,12 @@
     "fastLoad": "",
     "roles": ["Bad"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Happy Lunar New Year 2021",
+          "href": "Happy_Lunar_New_Year_2021"
+        }
+      ],
       "other": [
         {
           "name": "Guild Shop",
@@ -26969,8 +27009,8 @@
     "locations": {
       "events": [
         {
-          "name": "World Within the Painting",
-          "href": "World_Within_the_Painting"
+          "name": "Happy Lunar New Year 2022",
+          "href": "Happy_Lunar_New_Year_2022"
         }
       ],
       "other": [
@@ -27026,8 +27066,8 @@
     "locations": {
       "events": [
         {
-          "name": "World Within the Painting",
-          "href": "World_Within_the_Painting"
+          "name": "Happy Lunar New Year 2022",
+          "href": "Happy_Lunar_New_Year_2022"
         }
       ],
       "other": [
@@ -29415,8 +29455,8 @@
     "locations": {
       "events": [
         {
-          "name": "Winter Pathfinder",
-          "href": "Winter_Pathfinder"
+          "name": "Happy Lunar New Year 2023",
+          "href": "Happy_Lunar_New_Year_2023"
         }
       ],
       "other": [],
@@ -31955,8 +31995,8 @@
     "locations": {
       "events": [
         {
-          "name": "Fei Yuen's Spring Adventure",
-          "href": "Fei_Yuen's_Spring_Adventure"
+          "name": "Happy Lunar New Year 2024",
+          "href": "Happy_Lunar_New_Year_2024"
         }
       ],
       "other": [
@@ -34352,8 +34392,8 @@
     "locations": {
       "events": [
         {
-          "name": "Spring Fashion Festa",
-          "href": "Spring_Fashion_Festa"
+          "name": "Happy Lunar New Year 2025",
+          "href": "Happy_Lunar_New_Year_2025"
         }
       ],
       "other": [],
@@ -34404,8 +34444,8 @@
     "locations": {
       "events": [
         {
-          "name": "Spring Fashion Festa",
-          "href": "Spring_Fashion_Festa"
+          "name": "Happy Lunar New Year 2025",
+          "href": "Happy_Lunar_New_Year_2025"
         }
       ],
       "other": [],
@@ -34456,8 +34496,8 @@
     "locations": {
       "events": [
         {
-          "name": "Spring Fashion Festa",
-          "href": "Spring_Fashion_Festa"
+          "name": "Happy Lunar New Year 2025",
+          "href": "Happy_Lunar_New_Year_2025"
         }
       ],
       "other": [],
@@ -34508,8 +34548,8 @@
     "locations": {
       "events": [
         {
-          "name": "Spring Fashion Festa",
-          "href": "Spring_Fashion_Festa"
+          "name": "Happy Lunar New Year 2025",
+          "href": "Happy_Lunar_New_Year_2025"
         }
       ],
       "other": [],
