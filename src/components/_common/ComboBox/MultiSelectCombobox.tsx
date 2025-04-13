@@ -11,6 +11,8 @@ interface MultiComboBoxProps {
   forceSelect?: boolean
   moveSelectedToTop?: boolean
   onSelect: (option: string[] | null) => void
+  disabled?: boolean
+  disabledMessage?: string
   reset?: any
 }
 
@@ -22,6 +24,8 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   forceSelect,
   moveSelectedToTop = false,
   onSelect,
+  disabled,
+  disabledMessage,
   reset,
 }) => {
   const [input, setInput] = useState<string>("")
@@ -80,6 +84,14 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
     }
   }, [reset])
 
+  useEffect(() => {
+    if (disabled) {
+      setSelected(initialOptions || [])
+      setInput("")
+      onSelect([])
+    }
+  }, [disabled])
+
   const filteredOptions = (() => {
     const baseOptions = input
       ? options.filter((item) =>
@@ -122,19 +134,28 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   return (
     <div ref={wrapperRef} className={className}>
       {/* combobox button */}
-      <p className="!mb-2 font-bold">{title}</p>
+      <p
+        title={disabledMessage}
+        className={`!mb-2 font-bold ${disabled ? "text-red-300/90! underline! cursor-pointer" : ""}`}
+      >
+        {title}
+      </p>
       <button
         id={`${title}_input`}
         className={`w-48 max-w-48 px-1 py-2 ${
           showOptions ? "bg-[#2e343a]" : "bg-[#212529]"
         } rounded-md border border-green-800 shadow-lg hover:bg-[#394047]`}
-        onClick={() => setShowOptions((prev) => !prev)}
+        onClick={() => {
+          if (!disabled) {
+            setShowOptions((prev) => !prev)
+          }
+        }}
       >
         <div className="flex">
           <span
             className={`mb-0 w-full flex-1 justify-center text-center align-middle font-bold ${
               selected.length ? "text-orange-400" : "text-blue-200"
-            }`}
+            } ${disabled ? "text-blue-200/80!" : ""}`}
           >
             {selected.length ? truncateArray(selected, 18) : `${title}...`}
           </span>
@@ -142,7 +163,9 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
             {showOptions ? (
               <i className="fa fa-caret-up text-sm text-cyan-300"></i>
             ) : (
-              <i className="fa fa-caret-down text-sm text-cyan-300"></i>
+              <i
+                className={`fa fa-caret-down text-sm text-cyan-300 ${disabled ? "text-cyan-300/50!" : ""}`}
+              ></i>
             )}
           </div>
         </div>

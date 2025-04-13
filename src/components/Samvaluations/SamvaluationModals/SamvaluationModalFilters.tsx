@@ -170,12 +170,14 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
                 },
               })
             }}
+            disabled={state.filters.fleetType.length !== 1}
+            disabledMessage="Need ONLY 1 Fleet Type Selected"
             reset={state.reset}
           />
 
           <CustomToggleButton
             className={`absolute left-0 top-[37.5px] m-1 flex justify-center rounded bg-fuchsia-200 px-1.5 py-1 text-xs ${
-              state.filters.rankingSort.value.length === 0
+              !!!state.filters.rankingSort.value
                 ? "pointer-events-none hidden select-none"
                 : ""
             }`}
