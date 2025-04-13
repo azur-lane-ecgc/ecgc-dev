@@ -6,7 +6,7 @@ export const hasUniqueAugment = (
 ): boolean => {
   if (!!!augments) return false
 
-  if (hullType.startsWith("AE") || hullType.startsWith("BM")) {
+  if (hullType.startsWith("AR") || hullType.startsWith("BM")) {
     return augments.length > 1
   }
 
