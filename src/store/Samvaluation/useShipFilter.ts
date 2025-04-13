@@ -10,8 +10,7 @@ import {
   allianceFactionsMap,
   fleetTypeMapping,
   hasUniqueAugment,
-  rankingTypes,
-  letterRankToNumber,
+  getHighestValue,
 } from "@utils/ships"
 
 export interface ShipFilterProps {
@@ -170,63 +169,11 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
 
   // ranking sort filter
   if (filters.rankingSort.value && filters.rankingSort.logic !== null) {
-    const sortKey = rankingTypes[filters.rankingSort.value] as string
-
     return query.toArray().then((ships) => {
       const shipsWithRankings = ships.map((ship) => {
-        const getHighestValue = (ship: AllShipData) => {
-          if (!ship.rankings) {
-            return 0
-          }
-
-          const rankingsToUse =
-            ship.fleetType === "vg"
-              ? ship.rankings.vgRankings
-              : ship.fleetType === "main"
-                ? ship.rankings.mfRankings
-                : ship.fleetType === "ss"
-                  ? ship.rankings.ssRankings
-                  : null
-
-          if (!rankingsToUse || !Array.isArray(rankingsToUse)) {
-            return 0
-          }
-
-          return Math.max(
-            0,
-            ...rankingsToUse.map((r) => {
-              const ranking = r as any
-
-              let value = ranking[sortKey]
-
-              if (
-                ship.fleetType === "ss" &&
-                (sortKey === "w14mob" ||
-                  sortKey === "w14boss" ||
-                  sortKey === "w15mob" ||
-                  sortKey === "w15boss")
-              ) {
-                value = ranking.campaign
-              }
-
-              // numeric fields (lightdmg, mediumdmg, heavydmg, offensivebuff)
-              if (typeof value === "number") {
-                return value ?? 0
-              }
-
-              // string fields (meta, w14mob, etc.)
-              if (typeof value === "string") {
-                return letterRankToNumber(value)
-              }
-
-              return 0
-            }),
-          )
-        }
-
         return {
           ship,
-          rankingValue: getHighestValue(ship),
+          rankingValue: getHighestValue(ship, filters.rankingSort),
         }
       })
 
