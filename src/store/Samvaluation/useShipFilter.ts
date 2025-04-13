@@ -1,13 +1,7 @@
 import { useEffect, useReducer, useState } from "react"
 
 import { db } from "@db/dexie"
-import type {
-  MainFleetRankingProps,
-  VanguardFleetRankingProps,
-  SSFleetRankingProps,
-  ShipData,
-  AllShipData,
-} from "@db/types"
+import type { ShipData, AllShipData } from "@db/types"
 const shipData = (await import("@db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
 
