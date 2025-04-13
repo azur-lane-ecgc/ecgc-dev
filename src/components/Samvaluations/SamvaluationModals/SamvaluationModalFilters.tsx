@@ -184,15 +184,8 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
             options={[
               { title: "DESC", payload: "true", symbol: "\u2193" },
               { title: "ASC", payload: "false", symbol: "\u2191" },
-              { title: "NONE", payload: "null", symbol: "X" },
             ]}
-            initialValue={
-              state.filters.rankingSort.logic === true
-                ? 0
-                : state.filters.rankingSort.logic === false
-                  ? 1
-                  : 2
-            }
+            initialValue={state.filters.rankingSort.logic === true ? 0 : 1}
             onSelect={(trigger) => {
               let newLogic: boolean | null
 
