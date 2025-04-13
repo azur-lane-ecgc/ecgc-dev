@@ -7,6 +7,7 @@ export const rankingTypes: Record<string, string> = {
   "Heavy DMG": "heavydmg",
   "Off. Buff": "offensivebuff",
   "Meta Boss": "meta",
+  CM: "cm",
   "W14 Mob": "w14mob",
   "W14 Boss": "w14boss",
   "W15 Mob": "w15mob",
