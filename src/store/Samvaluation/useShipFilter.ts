@@ -31,7 +31,7 @@ export interface ShipFilterProps {
       value: string
       logic: boolean | null
     }
-    events: string[]
+    event: string
   }
   reset: string
   loading: boolean
@@ -157,11 +157,9 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
     }
   }
 
-  if (filters.events.length > 0) {
+  if (filters.event) {
     query = query.and((ship) =>
-      filters.events.every((event) =>
-        ship.locations.events.some((loc) => loc.name === event),
-      ),
+      ship.locations.events.some((loc) => loc.name === filters.event),
     )
   }
 
@@ -252,7 +250,7 @@ export const initialFilters: ShipFilterProps["filters"] = {
     value: "",
     logic: null,
   },
-  events: [],
+  event: "",
 }
 
 // main filtering hook
@@ -315,7 +313,6 @@ export const useShipFilter = (initialFilters: ShipFilterProps["filters"]) => {
           console.log("error dm developer asap")
         })
     }
-    console.log(state.filters.events)
   }, [state.filters])
 
   return { state, dispatch }
