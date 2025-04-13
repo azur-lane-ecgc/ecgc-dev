@@ -95,7 +95,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   const filteredOptions = (() => {
     const baseOptions = input
       ? options.filter((item) =>
-          item.toLowerCase().startsWith(input.toLowerCase()),
+          item.toLowerCase().includes(input.toLowerCase()),
         )
       : options
 
