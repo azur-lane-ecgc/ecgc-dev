@@ -1,3 +1,4 @@
+import { HR } from "@components/_common/HR"
 import { ItemContainer } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
 
@@ -7,6 +8,7 @@ import {
 } from "@store/Samvaluation/useShipFilter"
 
 import { formatLocation } from "@utils/formatLocation"
+import { getHighestValue, numberToLetterRank } from "@utils/ships"
 
 import { SamvaluationModalFilters } from "./SamvaluationModalFilters"
 
@@ -16,6 +18,7 @@ export const SamvaluationModals: React.FC = () => {
   return (
     <>
       <SamvaluationModalFilters state={state} dispatch={dispatch} />
+      <HR />
 
       {/* Ship Modals */}
       {state.visibleShips.length > 0 ? (
@@ -25,10 +28,12 @@ export const SamvaluationModals: React.FC = () => {
               key={ship.id}
               shipData={ship}
               trigger={{
-                iconNote: "Rank: SS",
-                descriptionNote: `Events: ${formatLocation(ship.locations.events)}`,
+                iconNote: ship.isKai ? "Retrofit" : "",
+                descriptionNote: state.filters.rankingSort.value
+                  ? `Rank: ${numberToLetterRank(getHighestValue(ship.fleetType, ship.rankings, state.filters.rankingSort))}`
+                  : `Events: ${formatLocation(ship.locations.events)}`,
                 largeDescNote: false,
-                hasBorder: true,
+                hasBorder: false,
               }}
               loading={state.loading}
             />

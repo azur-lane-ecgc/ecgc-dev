@@ -30,22 +30,46 @@ export const letterRankToNumber = (rank: string | null | undefined): number => {
   return rankMapping[cleaned] ?? 0
 }
 
+export const numberToLetterRank = (
+  input: number | string | null | undefined,
+): string => {
+  const numberMapping: { [key: number]: string } = {
+    6: "SS",
+    5: "S",
+    4: "A",
+    3: "B",
+    2: "C",
+    1: "D",
+  }
+
+  if (typeof input === "string") {
+    return input
+  }
+
+  if (typeof input === "number") {
+    return numberMapping[input] ?? "D"
+  }
+
+  return "D"
+}
+
 export const getHighestValue = (
-  ship: AllShipData,
+  fleetType: AllShipData["fleetType"],
+  rankings: AllShipData["rankings"],
   rankingSort: ShipFilterProps["filters"]["rankingSort"],
 ) => {
-  if (!ship.rankings) {
+  if (!rankings) {
     return 0
   }
   const sortKey = rankingTypes[rankingSort.value] as string
 
   const rankingsToUse =
-    ship.fleetType === "vg"
-      ? ship.rankings.vgRankings
-      : ship.fleetType === "main"
-        ? ship.rankings.mfRankings
-        : ship.fleetType === "ss"
-          ? ship.rankings.ssRankings
+    fleetType === "vg"
+      ? rankings.vgRankings
+      : fleetType === "main"
+        ? rankings.mfRankings
+        : fleetType === "ss"
+          ? rankings.ssRankings
           : null
 
   if (!rankingsToUse || !Array.isArray(rankingsToUse)) {
@@ -60,7 +84,7 @@ export const getHighestValue = (
       let value = ranking[sortKey]
 
       if (
-        ship.fleetType === "ss" &&
+        fleetType === "ss" &&
         (sortKey === "w14mob" ||
           sortKey === "w14boss" ||
           sortKey === "w15mob" ||

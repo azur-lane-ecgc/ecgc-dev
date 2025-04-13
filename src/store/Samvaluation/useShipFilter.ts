@@ -173,7 +173,11 @@ const fetchFilteredShips = async (filters: ShipFilterProps["filters"]) => {
       const shipsWithRankings = ships.map((ship) => {
         return {
           ship,
-          rankingValue: getHighestValue(ship, filters.rankingSort),
+          rankingValue: getHighestValue(
+            ship.fleetType,
+            ship.rankings,
+            filters.rankingSort,
+          ),
         }
       })
 
