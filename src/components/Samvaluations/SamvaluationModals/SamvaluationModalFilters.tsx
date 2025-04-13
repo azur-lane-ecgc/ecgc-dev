@@ -16,6 +16,7 @@ import {
   allRarities,
   allRarityOptions,
   allRoles,
+  allEvents,
   rankingTypes,
 } from "@utils/ships"
 
@@ -209,6 +210,35 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
             }}
             reset={state.reset}
           />
+        </div>
+        <div className="relative">
+          <MultiSelectCombobox
+            title="Events"
+            options={allEvents}
+            initialOptions={initialFilters.events}
+            onSelect={(events) =>
+              dispatch({
+                type: "SET_FILTER",
+                payload: { events: events || [] },
+              })
+            }
+            reset={state.reset}
+          />
+
+          {/* <CustomToggleButton
+            className={`absolute left-0 top-[37.5px] m-1 flex justify-center rounded bg-fuchsia-200 px-1.5 py-1 text-xs ${
+              state.filters.roles.values.length === 0
+                ? "pointer-events-none hidden select-none"
+                : ""
+            }`}
+            options={[
+              { title: "OR", payload: "false", symbol: "\u00A0|\u00A0" },
+              { title: "AND", payload: "true", symbol: "&" },
+            ]}
+            initialValue={0}
+            onSelect={(trigger) => false}
+            reset={state.reset}
+          /> */}
         </div>
       </div>
 
