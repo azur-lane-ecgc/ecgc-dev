@@ -22,6 +22,11 @@ export const parseLocation = (location: string) => {
     }
   }
 
+  // LNY 2020
+  else if (location === "Lunar New Year 2020") {
+    location = "Spring Festival"
+  }
+
   // Shipyard
   else if (location.match(/Shipyard \(PR(\d+)\)/)) {
     location = location.replace(/Shipyard \(PR(\d+)\)/, "Research#Series_$1")

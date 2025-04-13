@@ -91,16 +91,6 @@ const parseEvents = (name: string, events: string[]): shipLocation[] => {
     ]
   }
 
-  // Uranami (Spring Festival)
-  else if (name === "Uranami") {
-    return [
-      {
-        name: "Spring Festival",
-        href: parseLocation("Spring Festival"),
-      },
-    ]
-  }
-
   // Rest of ships
   return [
     {
