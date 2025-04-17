@@ -208,13 +208,6 @@
       "std": "35.91%"
     }
   ],
-  "Voroshilov": [
-    {
-      "name": "Voroshilov",
-      "totalEHP": "124.78%",
-      "std": "42.42%"
-    }
-  ],
   "Bayard": [
     {
       "name": "Bayard",
@@ -258,6 +251,13 @@
       "name": "Drake",
       "totalEHP": "108.88%",
       "std": "26.33%"
+    }
+  ],
+  "Voroshilov": [
+    {
+      "name": "Voroshilov",
+      "totalEHP": "118.73%",
+      "std": "39.84%"
     }
   ],
   "Otto von Alvensleben": [
