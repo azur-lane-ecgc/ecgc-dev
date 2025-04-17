@@ -1,54 +1,24 @@
-# Astro Starter Kit: Basics
+# ECGC
+Sam's English Community Guide Compendium for Azur Lane
 
-```sh
-npm create astro@latest -- --template basics
-```
+Link: [samheart564.github.io/ecgc](https://samheart564.github.io/ECGC/)  
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Beta / Test Version: [samheart564.github.io/test_ecgc](https://samheart564.github.io/test_ecgc/)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Astro Version (WIP): [samheart564.github.io/test_ecgc_2](https://samheart564.github.io/test_ecgc_2/)
+- [Astro Version Github](https://github.com/samheart564/test_ecgc_2) 
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+gsheets2img is a modified version of [github.com/blead/gsheets2img](https://github.com/blead/gsheets2img) and is used with consent of the developer.
 
-## 🚀 Project Structure
+If there are any questions, concerns, or feedback, DM me on discord @samheart564.  
+Join our [Discord Server](https://discord.gg/wKJKxq5WQt)!
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+# Legal Notice
+## Disclaimer
+This website (and its derivatives "test_ecgc" and "test_ecgc_2") is owned, made and maintained by Sam K. (samheart564). All rights are reserved by the aforementioned person; there is **no** license. Unauthorized copying, redistributing or modifying of files served by this website (and its derivatives) in any way shape or form is strictly prohibited. All contributors will not hold copyright over any of their contributions unless otherwise stated by the aforementioned person.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Exceptions are all game assets and any data available in the [AzurLaneData repository](https://github.com/MrLar/AzurLaneData). Re-publishing this tool for the sake of translations or for other reasons is also not allowed without permission from the aforementioned person.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Relevant Third Parties
+Azur Lane and all related copyrights/assets used as part of this website are the property of Manjuu Co.,Ltd. & YongShi Co.,Ltd. Yostar, Inc. respectively. This tool is not affiliated with Azur Lane or any of the 3 parties. All 3 parties are reserved the right to shut down this project at any time.
