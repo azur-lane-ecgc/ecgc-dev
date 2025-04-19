@@ -6944,8 +6944,18 @@
           "href": "Pledge_of_the_Radiant_Court"
         }
       ],
-      "other": [],
-      "construction": [],
+      "other": [
+        {
+          "name": "Permanent Ultra Rare Pity",
+          "href": "Building#UR_Ships_Construction"
+        }
+      ],
+      "construction": [
+        {
+          "name": "Construction (Heavy, Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -28077,8 +28087,18 @@
           "href": "Pledge_of_the_Radiant_Court"
         }
       ],
-      "other": [],
-      "construction": [],
+      "other": [
+        {
+          "name": "Merit Shop",
+          "href": "Merit_Shop"
+        }
+      ],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -28234,7 +28254,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
@@ -28286,7 +28311,12 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Heavy)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     }
   },
