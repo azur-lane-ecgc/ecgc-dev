@@ -1,4 +1,9 @@
-// <fleet of ship> | <buff receiver> | <buff type> | "Support"
+// All VANGUARD FLEET ships that offer relevant support
+
+/*
+  Naming Convention:
+  <fleet of ship> | <buff receiver> | <buff type> | "Support"
+*/
 
 export const vgAllDMGSupport = new Set<string>([
   "Aurora",
