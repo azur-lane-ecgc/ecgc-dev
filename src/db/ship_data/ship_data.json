@@ -35042,7 +35042,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["DmgDealer"],
+    "roles": ["DmgDealer", "AA", "AACarry"],
     "locations": {
       "events": [
         {

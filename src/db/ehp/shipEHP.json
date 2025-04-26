@@ -694,6 +694,13 @@
       "std": "33.54%"
     }
   ],
+  "De Zeven Provinciën": [
+    {
+      "name": "De Zeven Provinciën",
+      "totalEHP": "100.26%",
+      "std": "28.42%"
+    }
+  ],
   "Momo Belia Deviluke": [
     {
       "name": "Momo Belia Deviluke (Front)",
@@ -770,13 +777,6 @@
       "name": "Azusa Miura",
       "totalEHP": "93.24%",
       "std": "25.89%"
-    }
-  ],
-  "De Zeven Provincien": [
-    {
-      "name": "De Zeven Provincien",
-      "totalEHP": "97.94%",
-      "std": "28.80%"
     }
   ],
   "Pola": [
@@ -1128,6 +1128,13 @@
       "name": "Suffolk (Retrofit)",
       "totalEHP": "89.76%",
       "std": "26.23%"
+    }
+  ],
+  "Oleg": [
+    {
+      "name": "Oleg",
+      "totalEHP": "89.74%",
+      "std": "27.71%"
     }
   ],
   "Santa Fe": [
@@ -1520,13 +1527,6 @@
       "name": "Norfolk",
       "totalEHP": "82.91%",
       "std": "23.59%"
-    }
-  ],
-  "Oleg": [
-    {
-      "name": "Oleg",
-      "totalEHP": "82.84%",
-      "std": "26.62%"
     }
   ],
   "Allen M. Sumner": [
@@ -2703,6 +2703,13 @@
       "std": "22.08%"
     }
   ],
+  "Evertsen": [
+    {
+      "name": "Evertsen",
+      "totalEHP": "68.11%",
+      "std": "27.85%"
+    }
+  ],
   "Honolulu": [
     {
       "name": "Honolulu",
@@ -3497,13 +3504,6 @@
       "name": "Shirayuki",
       "totalEHP": "58.42%",
       "std": "24.25%"
-    }
-  ],
-  "Evertsen": [
-    {
-      "name": "Evertsen",
-      "totalEHP": "58.24%",
-      "std": "23.52%"
     }
   ],
   "Akatsuki": [
