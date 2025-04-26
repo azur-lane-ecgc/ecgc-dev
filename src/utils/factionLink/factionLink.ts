@@ -9,6 +9,7 @@ export const factionToWikiMap: Record<string, string> = {
   SN: "Northern Parliament",
   FFNF: "Iris Libre",
   MNF: "Vichya Dominion",
+  HNLMS: "Kingdom of Tulipa",
   MOT: "Tempesta",
   META: "META",
   Neptunia: "Neptunia",

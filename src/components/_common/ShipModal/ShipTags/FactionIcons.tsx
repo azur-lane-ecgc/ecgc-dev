@@ -89,6 +89,15 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       className="h-auto w-[30px]"
     />
   ),
+  HNLMS: (
+    <img
+      loading="lazy"
+      src="https://al.mrlar.dev/icons/nation/11.webp"
+      alt="HNLMS"
+      title="Faction: HNLMS"
+      className="h-auto w-[30px]"
+    />
+  ),
   MOT: (
     <img
       loading="lazy"

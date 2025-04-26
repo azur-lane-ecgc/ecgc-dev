@@ -9,6 +9,7 @@ const factionMap: Record<number, string> = {
   7: "SN",
   8: "FFNF",
   9: "MNF",
+  11: "HNLMS",
   96: "MOT",
   97: "META",
   101: "Neptunia",

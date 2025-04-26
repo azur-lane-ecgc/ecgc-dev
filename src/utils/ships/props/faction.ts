@@ -35,6 +35,7 @@ export const allianceFactionsMap: Record<string, string[]> = {
   "Crimson Axis": crimsonAxisFactions,
   META: ["META"],
   Tempesta: ["MOT"],
+  "Kingdom of Tulipa": ["HNLMS"],
   Collaboration: collaborationFactions,
 }
 
