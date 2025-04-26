@@ -30177,7 +30177,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Otto von Alvensleben is a mob-tank oriented DD with great damage and skills. Her Skill 1 gives her a great barrage every 15s, which is where the majority of her damage comes from. Her Skill 2 greately increases her bulk along with the 30% auxiliary stat boost from max limit-break. Despite the AoA reduction when using a CL gun, a DD gun will be better the majority of the time. Overall, she is a great DD.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -31217,7 +31217,7 @@
     "augments": ["Land's End Helm"],
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -34944,6 +34944,266 @@
         {
           "name": "Letters from Valley Hospital",
           "href": "Letters_from_Valley_Hospital"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "685": {
+    "id": 685,
+    "ship": "Kazan",
+    "faction": "SN",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
+    "locations": {
+      "events": [
+        {
+          "name": "Toward Tulipa's Seas",
+          "href": "Toward_Tulipa's_Seas"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "686": {
+    "id": 686,
+    "ship": "De Zeven Provinciën",
+    "faction": "HNLMS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo", "AA Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["DmgDealer"],
+    "locations": {
+      "events": [
+        {
+          "name": "Toward Tulipa's Seas",
+          "href": "Toward_Tulipa's_Seas"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "687": {
+    "id": 687,
+    "ship": "Evertsen",
+    "faction": "HNLMS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "+30% stats gained from Auxiliary Equipment.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.75,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Toward Tulipa's Seas",
+          "href": "Toward_Tulipa's_Seas"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "688": {
+    "id": 688,
+    "ship": "Oleg",
+    "faction": "SN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Meh"],
+    "locations": {
+      "events": [
+        {
+          "name": "Toward Tulipa's Seas",
+          "href": "Toward_Tulipa's_Seas"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "693": {
+    "id": 693,
+    "ship": "Little Anchorage",
+    "faction": "USS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun"],
+        "efficiency": 1.15,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.15,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.15,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatsword", "Lance"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Tank"],
+    "locations": {
+      "events": [
+        {
+          "name": "Drawing the Starry Skies",
+          "href": "Drawing_the_Starry_Skies"
         }
       ],
       "other": [],
@@ -39166,7 +39426,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Azuma is a tank-oriented CB with amazing stats and skills. Her bulk is very high, and she can equip the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/VH_Armor_Plating\" title=\"VH Armor Plating\" >VH Armor Plating</a > to situationally improve it. Her personal damage is also very good, with MGM+1 CB Guns and good barrages. She is ideally equipped with a CB gun to take full advantage of her self-buffs. Overall, she is an amazing ship, but not high priority if you have other UR CBs already.",
     "fastLoad": "",
-    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -40206,7 +40466,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Felix Schultz is a mob-tank oriented DD with a great combination of damage and bulk. Her bulk is great due to her high HP, 30% Auxiliary stat boosts, and her skills. Her damage is not to be scoffed at as well due to multiple barrages. Her Skill 1 grants her great Crit buffs, as well as frontloading her barrage. Her Skill 2 drastically adds to her bulk as it gives her +EVA Rate very consistently. She can be equipped with either the Quadruple 152mm or the Twin 150mm TbtsK C42T0 due to her self-buffs from equipping a CL gun. Overall, she is a great ship.",
     "fastLoad": "",
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [

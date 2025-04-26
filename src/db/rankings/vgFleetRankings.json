@@ -2510,6 +2510,33 @@
       "defensivebuff": 1
     }
   ],
+  "De Zeven Provinciën": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - top 3 AA",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "A",
+      "w15boss": "A",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 3,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": 4,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "Denver": [
     {
       "nameNote": "",
@@ -3075,6 +3102,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": null
+    }
+  ],
+  "Evertsen": [
+    {
+      "nameNote": "",
+      "notes": "Bad ship and even bad tech!",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
     }
   ],
   "Exeter": [
@@ -6965,6 +7019,33 @@
       "defensivebuff": null
     }
   ],
+  "Little Anchorage": [
+    {
+      "nameNote": "",
+      "notes": "How dare I say she's a bad ship",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 3,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 2
+    }
+  ],
   "Little Bel": [
     {
       "nameNote": "",
@@ -8958,6 +9039,33 @@
       "aoedmg": 1,
       "offensivebuff": null,
       "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
+  "Oleg": [
+    {
+      "nameNote": "",
+      "notes": "Bad ship.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 1

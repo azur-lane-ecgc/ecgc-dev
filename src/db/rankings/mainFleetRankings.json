@@ -3728,6 +3728,35 @@
       "vgsurvival": null
     }
   ],
+  "Kazan": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - 40% slow, terrible damage for a new SR, but BB healer is interesting",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "B",
+      "w14boss": "D",
+      "w15mob": "C",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": -3,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 2,
+      "dmguptime": null,
+      "offensivebuff": 1,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": 1,
+      "vgsurvival": 2
+    }
+  ],
   "Kearsarge": [
     {
       "nameNote": "with BBs",
