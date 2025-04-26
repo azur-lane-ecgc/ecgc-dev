@@ -31,12 +31,10 @@ export const factionToWikiMap: Record<string, string> = {
  * @returns The full URL to the faction's Azur Lane Wiki page.
  */
 export const factionLink = (faction: string): string => {
-  const baseUrl = "https://azurlane.koumakan.jp/wiki/"
-  const wikiPage = faction.replaceAll(" ", "_")
+  const wikiName = factionToWikiMap[faction]
 
-  if (!!!wikiPage) {
-    return `${baseUrl}/Category:Ships`
-  }
-
-  return `${baseUrl}${wikiPage}`
+  return (
+    `https://azurlane.koumakan.jp/wiki/` +
+    (wikiName ? wikiName.replaceAll(" ", "_") : "Category:Ships")
+  )
 }
