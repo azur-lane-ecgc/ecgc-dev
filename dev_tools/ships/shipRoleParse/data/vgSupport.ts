@@ -1,61 +1,36 @@
-// All VANGUARD FLEET ships that offer relevant support
-
+// All support ships with correct categories and naming convention
 /*
   Naming Convention:
   <fleet of ship> | <buff receiver> | <buff type> | "Support"
 */
 
-export const vgAllDMGSupport = new Set<string>([
-  "Aurora",
-  "Gloucester",
+export const vgMainDmgSupport = new Set(["Plymouth"])
+
+export const vgCVDmgSupport = new Set(["Kazagumo"])
+
+export const vgMainBulkSupport = new Set(["Z52", "Kazagumo"])
+
+export const vgAllDMGSupport = new Set([
   "Helena",
-  "Le Mars",
-  "Cleveland",
-  "Sendai",
-  "Santa Fe",
+  "Z52",
+  "Mogador",
+  "Noshiro μ",
+  "Tanikaze",
 ])
 
-export const vgAllSlowSupport = new Set<string>([
-  "Ägir",
+export const vgAllSlowSupport = new Set(["Eldridge", "Ägir", "Mogador"])
+
+export const vgVgAllDMGSupport = new Set(["Aurora", "San Francisco", "Fubuki"])
+
+export const vgVgTRPSupport = new Set(["Noshiro", "Jintsuu", "Jintsuu META"])
+
+export const vgVgBulkSupport = new Set([
   "Eldridge",
-  "Kirov META",
-  "Northampton II",
-  "Admiral Hipper META",
-])
-
-export const vgBBSupport = new Set<string>(["Plymouth"])
-
-export const vgCVSupport = new Set<string>([
-  "Sirius",
-  "Baltimore",
-  "Bellona",
-  "Hammann II",
-  "Kazagumo",
-  "Stephen Potter",
-  "Scylla",
-])
-
-export const vgVgDMGSupport = new Set<string>([
-  "Avrora",
-  "Chapayev",
-  "Emden",
+  "Jeanne d'Arc",
+  "Noshiro",
+  "Jintsuu META",
+  "San Francisco",
   "Fubuki",
 ])
 
-export const vgVgTRPSupport = new Set<string>([
-  "Noshiro μ",
-  "Sendai",
-  "Tanikaze",
-  "Jintsuu",
-  "Jintsuu META",
-  "Naganami",
-  "Noshiro",
-])
-
-export const vgVgSustainSupport = new Set<string>([
-  "Eldridge",
-  "Jeanne d'Arc",
-  "Anchorage",
-  "Harbin",
-  "San Francisco",
-])
+export const vgSupport = new Set(["Guam"])
