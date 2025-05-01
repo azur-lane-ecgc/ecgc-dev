@@ -10,7 +10,7 @@ import {
   strongDamageDealer,
   flagshipPref,
   flagshipReq,
-} from "./data"
+} from "./roleDefs"
 import { isDecentMainFleet, isDecentSSFleet, isDecentVG } from "./decentShips"
 
 const tanks = tankRole()
