@@ -6,12 +6,6 @@ import { hullTypeLink } from "@utils/ships"
 import { getFactionIcon } from "./FactionIcons"
 import { RoleIcons } from "./RoleIcons"
 
-interface ShipTags {
-  hullType: string
-  faction: string
-  roles: string[]
-}
-
 const trimRoles = (roles: string[]): string[] => {
   // Super Tank & Tank (trim Tank)
   if (roles.includes("SuperTank") && roles.includes("Tank")) {
@@ -39,6 +33,12 @@ const trimRoles = (roles: string[]): string[] => {
   }
 
   return roles.slice(0, 5)
+}
+
+interface ShipTags {
+  hullType: string
+  faction: string
+  roles: string[]
 }
 
 export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
