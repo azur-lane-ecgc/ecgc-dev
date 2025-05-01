@@ -4,6 +4,28 @@
   <fleet of ship> | <buff receiver> | <buff type> | "Support"
 */
 
+// Main Fleet
+
+export const UnicornRetrofit = new Set(["Unicorn"])
+
+export const MainAllHealSupport = new Set([
+  "Unicorn",
+  "Perseus",
+  "Zuihou",
+  "Ryuuhou",
+  "Shouhou",
+  "Aquila",
+  "Volga",
+  "Klaudia Valentz",
+  "Painlevé",
+  "Raffaelo",
+  "Daisen",
+])
+
+export const test = []
+
+// Vanguard Fleet
+
 export const vgMainDmgSupport = new Set(["Plymouth"])
 
 export const vgCVDmgSupport = new Set(["Kazagumo", "Sirius"])
@@ -25,6 +47,6 @@ export const vgVgBulkSupport = new Set([
   "Eldridge",
   "Jeanne d'Arc",
   "Anchorage",
-  "Jintsuu META",
   "San Francisco",
+  "De Zeven Provinciën",
 ])
