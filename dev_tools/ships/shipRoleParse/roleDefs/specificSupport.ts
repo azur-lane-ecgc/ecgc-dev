@@ -6,9 +6,9 @@
 
 // Main Fleet
 
-export const UnicornRetrofit = new Set(["Unicorn"])
+export const uniKai = new Set(["Unicorn"])
 
-export const MainAllHealSupport = new Set([
+export const mainAllHealSupport = new Set([
   "Unicorn",
   "Perseus",
   "Zuihou",
@@ -22,7 +22,25 @@ export const MainAllHealSupport = new Set([
   "Daisen",
 ])
 
-export const test = []
+export const mainAllSlowSupport = new Set([
+  "Admiral Nakhimov",
+  "August von Parseval",
+  "Implacable",
+  "Bismarck Zwei",
+  "Yumi",
+])
+
+export const mainMainDmgSupport = new Set(["Sovetsky Soyuz"])
+
+export const mainCVDmgSupport = new Set([
+  "Shinano",
+  "Nagato",
+  "Yorktown II",
+  "Independence",
+  "Kearsarge",
+])
+
+export const mainBBDmgSupport = new Set(["Mikasa", "Vanguard"])
 
 // Vanguard Fleet
 
