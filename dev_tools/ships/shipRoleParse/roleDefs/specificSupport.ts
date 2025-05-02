@@ -1,4 +1,3 @@
-// All support ships with correct categories and naming convention
 /*
   Naming Convention:
   <fleet of ship> | <buff receiver> | <buff type> | "Support"
@@ -48,7 +47,9 @@ export const vgMainDmgSupport = new Set(["Plymouth"])
 
 export const vgCVDmgSupport = new Set(["Kazagumo", "Sirius"])
 
-export const vgAllDMGSupport = new Set(["Helena", "Aurora", "Z52"])
+export const vgAllDmgSupport = new Set(["Helena", "Aurora", "Z52"])
+
+export const vgVgDmgSupport = new Set(["Avrora"])
 
 export const vgAllSlowSupport = new Set(["Eldridge", "Ägir", "Mogador"])
 
