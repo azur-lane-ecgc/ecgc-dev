@@ -1,6 +1,5 @@
 ---
 import { pageInfo } from "@components/_common/PageInfo"
-const guides = pageInfo
 ---
 
 <style>
@@ -66,7 +65,7 @@ const guides = pageInfo
 <div id="images" class="hidden md:block">
   <div class="-mx-3 flex flex-wrap">
     {
-      guides.map((guide) => (
+      pageInfo.map((guide) => (
         <div class="gridcell-list-style mt-3 w-full px-3 text-left sm:mt-0">
           <div class="mt-1 flex">
             <div class="w-[80px] shrink-0">
@@ -123,7 +122,7 @@ const guides = pageInfo
 <div class="block md:hidden" id="images">
   <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
     {
-      guides.map((guide) => (
+      pageInfo.map((guide) => (
         <div class="mt-5 text-center">
           <a
             href={guide.link}
