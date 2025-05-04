@@ -15,7 +15,7 @@ export const rankingTypes: Record<string, string> = {
   "Event EX": "ex",
 }
 
-export const letterRankToNumber = (rank: string | null | undefined): number => {
+const letterRankToNumber = (rank: string | null | undefined): number => {
   const rankMapping: { [key: string]: number } = {
     SS: 6,
     S: 5,
