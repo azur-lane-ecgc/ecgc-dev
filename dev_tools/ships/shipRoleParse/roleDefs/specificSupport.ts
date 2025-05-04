@@ -16,13 +16,13 @@ export const mainHealSupport = new Set([
 ])
 
 export const mainSmallHealSupport = new Set([
-  "Shouhou",
   "Aquila",
   "Volga",
   "Klaudia Valentz",
   "Painlevé",
   "Raffaelo",
   "Daisen",
+  "Honoka",
 ])
 
 export const mainAllSlowSupport = new Set([
@@ -34,6 +34,8 @@ export const mainAllSlowSupport = new Set([
 
 export const mainMainDmgSupport = new Set(["Sovetsky Soyuz", "Alsace"])
 
+export const mainBBDmgSupport = new Set(["Mikasa", "Vanguard"])
+
 export const mainCVDmgSupport = new Set([
   "Shinano",
   "Nagato",
@@ -43,19 +45,17 @@ export const mainCVDmgSupport = new Set([
   "AmagiCV",
 ])
 
-export const mainBBDmgSupport = new Set(["Mikasa", "Vanguard"])
-
 // Vanguard Fleet
+
+export const vgAllDmgSupport = new Set(["Helena", "Aurora", "Z52"])
 
 export const vgBBDmgSupport = new Set(["Plymouth"])
 
 export const vgCVDmgSupport = new Set(["Kazagumo", "Sirius"])
 
-export const vgAllDmgSupport = new Set(["Helena", "Aurora", "Z52"])
+export const vgAllSlowSupport = new Set(["Eldridge", "Ägir"])
 
 export const vgVgDmgSupport = new Set(["Avrora"])
-
-export const vgAllSlowSupport = new Set(["Eldridge", "Ägir"])
 
 export const vgVgTRPSupport = new Set([
   "Noshiro",
