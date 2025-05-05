@@ -1,1 +1,1 @@
-export * from "./pageInfo.jsx"
+export * from "./pageInfo.tsx"
