@@ -24,6 +24,10 @@ export const pageInfo = [
     path: "src/components/Farming/FarmingGuideContent.astro",
   },
   {
+    name: "Fleetbuilding Guide",
+    path: "src/components/Fleetbuilding/FleetbuildingGuideContent.astro",
+  },
+  {
     name: "Fleet Technology Guide",
     path: "src/components/FleetTechnology/FleetTechnologyContent.astro",
   },
