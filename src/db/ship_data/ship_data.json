@@ -2504,7 +2504,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["The Ace's Card", "Greatsword", "Lance"],
     "samEval": "Baltimore is a damage-oriented CA with great stats and skills. She modifies her ammo type, so she prefers guns with the highest raw damage. Can be sortied with or without USS carriers. Her personal damage is also good. Overall, she is a great ship.",
     "fastLoad": "",
     "roles": ["DmgDealer"],
@@ -21668,7 +21668,11 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": [
+      "Yesterday Or the Night Before That",
+      "Bowgun",
+      "Officer's Sword"
+    ],
     "samEval": "Gangut is an off-flag damage-oriented BB with meh stats and skills. When equipped with her signiture Main Gun, she gains cooldown reduction which is nice when mobbing but still worse than other easily accessible options. Against bosses, she is also outclassed by other easily accessible options. Collection only.",
     "fastLoad": "",
     "roles": ["Meh"],
