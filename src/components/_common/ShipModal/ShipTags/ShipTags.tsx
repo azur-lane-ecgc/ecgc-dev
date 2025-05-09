@@ -1,39 +1,10 @@
 import { useState } from "react"
 
 import { factionLink } from "@utils/factionLink"
-import { hullTypeLink } from "@utils/ships"
+import { hullTypeLink, trimRoles } from "@utils/ships"
 
 import { getFactionIcon } from "./FactionIcons"
 import { RoleIcons } from "./RoleIcons"
-
-const trimRoles = (roles: string[]): string[] => {
-  // Super Tank & Tank (trim Tank)
-  if (roles.includes("SuperTank") && roles.includes("Tank")) {
-    roles = roles.filter((role) => role != "Tank")
-  }
-
-  // Fast Load & Preload (trim FastLoad)
-  if (roles.includes("FastLoad") && roles.includes("Preload")) {
-    roles = roles.filter((role) => role != "FastLoad")
-  }
-
-  // FlagPref & FlagReq (trim FlagPref)
-  if (roles.includes("FlagPref") && roles.includes("FlagReq")) {
-    roles = roles.filter((role) => role != "FlagPref")
-  }
-
-  // AA Carry & AA Average (trim AA)
-  if (roles.includes("AA") && roles.includes("AACarry")) {
-    roles = roles.filter((role) => role != "AA")
-  }
-
-  // Strong Damage Dealer & Average Damage Dealer (trim DmgDealer)
-  if (roles.includes("DmgDealer") && roles.includes("TopDmg")) {
-    roles = roles.filter((role) => role != "DmgDealer")
-  }
-
-  return roles.slice(0, 5)
-}
 
 interface ShipTags {
   hullType: string
