@@ -38,5 +38,11 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
   TopDmg: (
     <i className="fa-solid fa-shuttle-space h-auto text-[25px] text-orange-700" />
   ),
+  OffSupport: (
+    <i className="fa-solid fa-sun h-auto text-[27px] text-yellow-500" />
+  ),
+  DefSupport: (
+    <i className="fa-solid fa-moon h-auto text-[27px] text-violet-200" />
+  ),
   default: <i className="fa-solid fa-heart h-auto text-[30px] text-red-400" />,
 }

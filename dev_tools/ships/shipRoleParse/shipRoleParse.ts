@@ -10,6 +10,8 @@ import {
   strongDamageDealer,
   flagshipPref,
   flagshipReq,
+  offensiveSupport,
+  defensiveSupport,
 } from "./roleDefs"
 import { isDecentMainFleet, isDecentSSFleet, isDecentVG } from "./decentShips"
 
@@ -22,6 +24,8 @@ const aaCarryShips = aaCarryRole()
 const aswShips = aswRole()
 const damageDealerShips = damageDealer()
 const strongDamageDealers = strongDamageDealer()
+const genOffSupport = offensiveSupport()
+const genDefSupport = defensiveSupport()
 
 export const shipRoleParse = (
   ship: string,
@@ -81,8 +85,20 @@ export const shipRoleParse = (
     roles.push("Preload")
   }
 
+  if (genDefSupport.has(ship)) {
+    roles.push("DefSupport")
+  }
+
+  if (genOffSupport.has(ship)) {
+    roles.push("OffSupport")
+  }
+
   // testing
-  if (roles.length === 0) {
+  if (
+    roles.length === 0 ||
+    (roles.length > 0 &&
+      roles.every((r) => r === "OffSupport" || r === "DefSupport"))
+  ) {
     if (fleetType == "vg" && isDecentVG(ship)) {
       roles.push("Meh")
     } else if (fleetType == "main" && isDecentMainFleet(ship)) {
