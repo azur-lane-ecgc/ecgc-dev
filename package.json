@@ -35,7 +35,7 @@
     "tailwindcss": "^4.1.6"
   },
   "devDependencies": {
-    "@happy-dom/global-registrator": "^17.4.6",
+    "@happy-dom/global-registrator": "^17.4.7",
     "@types/bun": "^1.2.12",
     "knip": "^5.55.1",
     "prettier": "^3.5.3",
