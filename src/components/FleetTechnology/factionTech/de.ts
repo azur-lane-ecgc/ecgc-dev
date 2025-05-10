@@ -42,6 +42,64 @@ const DETechPoints: FleetTechData = {
       isShipyard: false,
     },
     {
+      ship: "Ying Swei",
+      rarity: 3,
+      location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
+      investment: "Max Limit Break",
+      techPoints: 24,
+      isShipyard: false,
+    },
+    {
+      ship: "Chao Ho",
+      rarity: 3,
+      location: [{ event: "Guild Shop", stages: ["Elite Ship"] }],
+      investment: "Max Limit Break",
+      techPoints: 24,
+      isShipyard: false,
+    },
+    {
+      ship: "Hai Chi",
+      rarity: 3,
+      location: [
+        {
+          event: "Core Data Shop",
+          stages: [
+            `1,200 <img
+          loading="lazy"
+          class="inline-block"
+          src="/test_ecgc_2/images/materials/core_data.png"
+          width="20px"
+          alt="Core Data"
+        />`,
+          ],
+        },
+      ],
+      investment: "Collection",
+      techPoints: 12,
+      isShipyard: false,
+    },
+    {
+      ship: "Hai Tien",
+      rarity: 3,
+      location: [
+        {
+          event: "Core Data Shop",
+          stages: [
+            `1,200 <img
+          loading="lazy"
+          class="inline-block"
+          src="/test_ecgc_2/images/materials/core_data.png"
+          width="20px"
+          alt="Core Data"
+        />`,
+          ],
+        },
+      ],
+      investment: "Collection",
+      techPoints: 12,
+      isShipyard: false,
+    },
+    {
       ship: "An Shan",
       rarity: 3,
       location: [
