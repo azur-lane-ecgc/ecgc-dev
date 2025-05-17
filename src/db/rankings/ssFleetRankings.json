@@ -146,7 +146,7 @@
   "Fishpack": [
     {
       "nameNote": "Base",
-      "notes": "Flasher plus two of (Albacore, Homura, Archerfish).",
+      "notes": "Flasher plus two of (Albacore, Homura, Archerfish). Let Flasher or Albacore be flag.",
       "hardarbiter": "S",
       "cm": "S",
       "campaign": "S",
@@ -162,7 +162,7 @@
   "Fishpack without Flasher": [
     {
       "nameNote": "Base",
-      "notes": "Archerfish plus two of (Albacore, Homura, Nautilus, Cavalla). Kick Homura if campaign.",
+      "notes": "Archerfish plus two of (Albacore, Homura, Nautilus, Cavalla). Kick Homura if campaign. Albacore flag.",
       "hardarbiter": "A",
       "cm": "A",
       "campaign": "A",
@@ -466,7 +466,7 @@
   "Solos": [
     {
       "nameNote": "Base",
-      "notes": "Flasher and Homura plus (U-556 META, Leonardo, or Baracca). Kick Homura if campaign.",
+      "notes": "Flasher (flag) and Homura plus (U-556 META, Leonardo, or Baracca). Kick Homura if campaign.",
       "hardarbiter": "S",
       "cm": "A",
       "campaign": "A",
@@ -611,8 +611,8 @@
     {
       "nameNote": "Base",
       "notes": "Requires KMS wolfpack. Has bad oxyreload. Bonus against CLs.",
-      "hardarbiter": "D",
-      "cm": "D",
+      "hardarbiter": "C",
+      "cm": "C",
       "campaign": "D",
       "consistency": null,
       "fleetreq": -2,
@@ -643,8 +643,8 @@
     {
       "nameNote": "Base",
       "notes": "Requires KMS wolfpack.",
-      "hardarbiter": "D",
-      "cm": "D",
+      "hardarbiter": "C",
+      "cm": "C",
       "campaign": "C",
       "consistency": null,
       "fleetreq": -2,
@@ -770,14 +770,14 @@
   "Wolfpack": [
     {
       "nameNote": "Base",
-      "notes": "U-96 and U-81 plus (U-37 or U-47). Lower oxy-rld suffers in CM/Campaign.",
+      "notes": "U-96 (flag), U-81, and U-101. Substitutes are U-37 or U-47. Lower oxy-rld suffers in CM/Campaign.",
       "hardarbiter": "S",
       "cm": "A",
       "campaign": "A",
       "consistency": -2,
       "fleetreq": null,
       "flagreq": null,
-      "lightdmg": 1,
+      "lightdmg": 2,
       "mediumdmg": 3,
       "heavydmg": 4,
       "offensivebuff": null

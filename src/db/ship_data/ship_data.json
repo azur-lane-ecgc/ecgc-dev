@@ -37513,7 +37513,7 @@
     "augments": ["Primal Accepter", "Crossbow", "Sword"],
     "samEval": "Rikka Takarada is a damage-oriented CL with great stats and amazing skills. She possesses multiple strong, piercing laser barrages that deal great damage against huge waves of enemies in a row; however, during her downtime her damage is pretty underwhelming. In addition, she can equip multiple Auxiliary equipment at once, although ideally 3 of those slots are the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Battle_Tracto_Max\" title=\"Battle Tracto Max\" >Battle Tracto Max</a >, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Buster_Borr\" title=\"Buster Borr\" >Buster Borr</a >, and Gridman Calibur to get the most barrage benefits possible. Her bulk is also good enough to mob-tank most content reliably. The Augment interaction between her and Chise / Yume is not worth using them together for. Overall, she is an amazing ships when mobbing, and a great ship outside of it.",
     "fastLoad": "",
-    "roles": ["Meh"],
+    "roles": ["AA", "AACarry"],
     "locations": {
       "events": [
         {
