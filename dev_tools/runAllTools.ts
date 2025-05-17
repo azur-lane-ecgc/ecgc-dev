@@ -9,6 +9,7 @@ const excludedDirectories = ["_backup", "gsheets2img"]
 const excludedFiles = [
   /\\_backup/,
   /_pageInfo\.ts/,
+  /barrage\.ts/,
   /runAllTools\.ts/,
   /imgur\.py/,
   /ships/,
