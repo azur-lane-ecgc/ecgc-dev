@@ -22,10 +22,10 @@ local ammoColors = {
     Torpedo  = "LightSkyBlue",
     AA       = "MistyRose",
     Bomb     = "PaleTurquoise",
-    SAP      = "LavenderBlush",
+    SAP      = "LightPink",
     Missile  = "Azure",
     Shrapnel = "Lavender",
-    SHS      = "Seashell",
+    SHS      = "LightSteelBlue",
 }
 local aimNames = { [-1] = "Unknown", [0] = "Random", [1] = "Aimed" }
 
