@@ -22575,7 +22575,7 @@ local p = {
   },
   ["29452"] = {
     barrages = { {
-      name = "All Out Assault - Cleveland µ II",
+      name = "All Out Assault - Cleveland μ II",
       parts = { {
         damage = 15,
         coefficient = 1.25,
@@ -22602,7 +22602,7 @@ local p = {
   },
   ["29462"] = {
     barrages = { {
-      name = "All Out Assault - Sheffield µ II",
+      name = "All Out Assault - Sheffield μ II",
       parts = { {
         damage = 20,
         coefficient = 1.25,
@@ -22629,7 +22629,7 @@ local p = {
   },
   ["29472"] = {
     barrages = { {
-      name = "All Out Assault - Admiral Hipper µ",
+      name = "All Out Assault - Admiral Hipper μ",
       parts = { {
         damage = 35,
         coefficient = 1,

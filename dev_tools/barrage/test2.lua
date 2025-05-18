@@ -56,6 +56,7 @@ function p.shipBarrage(frame)
         :addClass("sortable")
         :addClass("mw-collapsible")
         :addClass("barrageTable")
+        :addClass("navigation-not-searchable")
 
 
     -- load styles
