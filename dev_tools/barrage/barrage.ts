@@ -1,84 +1,86 @@
-import { writeFile } from "fs/promises"
+import { readFile, writeFile } from "fs/promises"
 
 import type { ShipData } from "@ALData/types/ships"
 import type { Barrage } from "@ALData/types/barrages"
+import type { AugmentData } from "@ALData/types/augments"
 
-const ships: Record<number, ShipData> = (await import(
-  "@ALData/data/ships.json"
-).then((module) => module.default)) as Record<number, ShipData>
-
-const barrages: Record<number, Barrage[]> = (await import(
-  "@ALData/data/barrages.json"
-).then((module) => module.default)) as Record<number, Barrage[]>
-
-// Define our enhanced structure that includes ships
-interface EnhancedBarrageData {
+type EnhancedBarrageData = {
   barrages: Barrage[]
   ships: string[]
 }
 
-const main = async (): Promise<void> => {
-  const allSkillIds = new Set<number>()
+// ————————————————————————————————————————————————
+// 1) Gather and write enhanced barrages.json
+// ————————————————————————————————————————————————
+const createJSON = async (): Promise<void> => {
+  const ships: Record<number, ShipData> = (await import(
+    "@ALData/data/ships.json"
+  ).then((m) => m.default)) as Record<number, ShipData>
 
-  // Create a mapping from skill IDs to ship names
+  const barrages: Record<number, Barrage[]> = (await import(
+    "@ALData/data/barrages.json"
+  ).then((m) => m.default)) as Record<number, Barrage[]>
+
+  const augments: Record<number, AugmentData> = (await import(
+    "@ALData/data/augments.json"
+  ).then((m) => m.default)) as Record<number, AugmentData>
+
+  const allSkillIds = new Set<number>()
   const skillToShips: Record<number, Set<string>> = {}
 
-  // Helper function to add skill ID and ship name to our tracking
   const addSkillAndShip = (id: number, shipName: string) => {
     allSkillIds.add(id)
-
-    if (!skillToShips[id]) {
-      skillToShips[id] = new Set<string>()
-    }
-
+    skillToShips[id] = skillToShips[id] || new Set()
     skillToShips[id].add(shipName)
   }
 
-  // Populate the mapping and collect all skill IDs
   Object.values(ships).forEach((ship) => {
-    // Process main skills
-    ship.skills.flat().forEach((id) => {
-      addSkillAndShip(id, ship.name)
-    })
-
-    // Process retrofit skills if they exist
-    if (ship.retro && ship.retro.skills) {
-      ship.retro.skills.forEach((skill) => {
-        if (skill.with) {
-          addSkillAndShip(skill.with, ship.name)
-        }
-      })
-    }
-
-    // Process fate simulation skills if they exist
-    // These are nested inside the research array
-    if (ship.research) {
-      ship.research.forEach((researchLevel) => {
-        if (researchLevel && researchLevel.fate && researchLevel.fate.skills) {
-          researchLevel.fate.skills.forEach((skill) => {
-            if (skill.with) {
-              addSkillAndShip(skill.with, ship.name)
-            }
-          })
+    ship.skills.flat().forEach((id) => addSkillAndShip(id, ship.name))
+    ship.retro?.skills.forEach(
+      (skill) => skill.with && addSkillAndShip(skill.with, ship.name),
+    )
+    ship.research?.forEach((lvl) =>
+      lvl.fate?.skills.forEach(
+        (skill) => skill.with && addSkillAndShip(skill.with, ship.name),
+      ),
+    )
+    if (ship.unique_aug) {
+      const augment = augments[ship.unique_aug]
+      augment?.skill_upgrades?.forEach((upgrade) => {
+        if (upgrade.with) {
+          addSkillAndShip(upgrade.with, ship.name)
         }
       })
     }
   })
 
-  // Create the enhanced barrage data with ship names
-  const result = Array.from(allSkillIds).reduce<
-    Record<number, EnhancedBarrageData>
-  >((acc, id) => {
-    const barrageArray = barrages[id]
-    if (barrageArray) {
-      // Create the new structure with barrages array and ships array
-      acc[id] = {
-        barrages: barrageArray,
-        ships: Array.from(skillToShips[id] || new Set()),
+  const result: Record<number, EnhancedBarrageData> = Array.from(
+    allSkillIds,
+  ).reduce(
+    (acc, id) => {
+      const arr = barrages[id]
+      if (arr) {
+        acc[id] = {
+          barrages: arr,
+          ships: Array.from(skillToShips[id] || []).sort(),
+        }
       }
-    }
-    return acc
-  }, {})
+      return acc
+    },
+    {} as Record<number, EnhancedBarrageData>,
+  )
+
+  // ————————————————————————————————————————————————
+  // 1.5) Move trailing "(…)" onto its own line within the name
+  // ————————————————————————————————————————————————
+  Object.values(result).forEach(({ barrages }) => {
+    barrages.forEach((barrage) => {
+      barrage.name = barrage.name.replace(
+        /\s*\(([^)]+)\)$/,
+        (_match, p1) => `\n(${p1})`,
+      )
+    })
+  })
 
   await writeFile(
     "dev_tools/barrage/barrages.json",
@@ -90,7 +92,64 @@ const main = async (): Promise<void> => {
   )
 }
 
-main().catch((err) => {
-  console.error(err)
-  process.exit(1)
-})
+// ————————————————————————————————————————————————
+// 2) Convert that JSON to a Lua module
+// ————————————————————————————————————————————————
+const luaConvert = async (
+  inputPath: string,
+  outputPath: string,
+): Promise<void> => {
+  // Helpers
+  const isValidLuaId = (k: string) => /^[A-Za-z_]\w*$/.test(k)
+  const escapeStr = (s: string) =>
+    `"${s.replace(/\\/g, "\\\\").replace(/"/g, '\\"').replace(/\n/g, "\\n")}"`
+
+  const toLua = (v: any, indent = ""): string => {
+    if (Array.isArray(v)) {
+      if (!v.length) return "{}"
+      return `{ ${v.map((x) => toLua(x, indent)).join(", ")} }`
+    }
+    if (v && typeof v === "object") {
+      const entries = Object.entries(v)
+      if (!entries.length) return "{}"
+      const lines = entries.map(([k, val]) => {
+        const key = isValidLuaId(k) ? k : `["${k}"]`
+        return `${indent}  ${key} = ${toLua(val, indent + "  ")}`
+      })
+      return `{\n${lines.join(",\n")}\n${indent}}`
+    }
+    switch (typeof v) {
+      case "string":
+        return escapeStr(v)
+      case "number":
+      case "boolean":
+        return String(v)
+      default:
+        return "nil"
+    }
+  }
+
+  // Read JSON
+  const jsonText = await readFile(inputPath, "utf-8")
+  const data = JSON.parse(jsonText)
+
+  // Convert & wrap
+  const luaBody = toLua(data)
+  const out = `local p = ${luaBody}\n\nreturn p\n`
+
+  // Write Lua file
+  await writeFile(outputPath, out, "utf-8")
+  console.log(`Lua module written to ${outputPath}`)
+}
+
+// ————————————————————————————————————————————————
+// Run both in sequence
+// ————————————————————————————————————————————————
+createJSON()
+  .then(() =>
+    luaConvert("dev_tools/barrage/barrages.json", "dev_tools/barrage/data.lua"),
+  )
+  .catch((err) => {
+    console.error(err)
+    process.exit(1)
+  })
