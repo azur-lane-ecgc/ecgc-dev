@@ -21,6 +21,6 @@ Some notes regarding the barrage chart below:
 
 
 == Reference ==
-* Credits to MrLar and Riceist for compiling all barrage information. ([https://github.com/MrLar/AzurLaneData/blob/main/data/barrages.json MrLar's AzurLaneData], [[User:Riceist/BarrageDatamine|Riceist's Barrage Datamine]])
+* Credits to MrLar and Riceist for compiling all barrage information ([https://github.com/MrLar/AzurLaneData/blob/main/data/barrages.json MrLar's AzurLaneData], [[User:Riceist/BarrageDatamine|Riceist's Barrage Datamine]]).
 * Credits to Hayashi#8923 and Enbayft#2527 on Discord for compiling early barrage charts ([https://cdn.discordapp.com/attachments/451152615502512140/477624033047740447/Barrages.png Hayashi's old chart 1] and [https://cdn.discordapp.com/attachments/451152615502512140/482322837429026817/Skills.png old chart 2], [https://github.com/Enbayft/Random-AL-Stuff/blob/master/BarrageChart.xlsx Enbayft's old chart on Github]).
 * [https://wiki.biligame.com/blhx/%E5%85%A8%E8%88%B9%E5%85%A8%E5%BC%B9%E5%8F%91%E5%B0%84%EF%BC%8C%E4%B8%93%E5%B1%9E%E5%BC%B9%E5%B9%95%EF%BC%8C%E6%8A%80%E8%83%BD%E5%BC%B9%E5%B9%95%E6%80%A7%E8%83%BD%E4%B8%80%E8%A7%88 Original chart (from Chinese wiki)]
