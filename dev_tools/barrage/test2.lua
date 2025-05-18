@@ -57,13 +57,19 @@ function p.shipBarrage(frame)
         :addClass("mw-collapsible")
         :addClass("barrageTable")
 
-    if frame and frame.extensionTag then
-        html:wikitext(
-            frame:extensionTag('templatestyles', '', {
-                src = 'Module:ShipBarrage/styles.css'
-            })
-        )
+
+    -- load styles
+    local f = mw.getCurrentFrame()
+    local styleTag
+    if f.extensionTag then
+        styleTag = f:extensionTag('templatestyles', '', {
+            src = 'Module:ShipBarrage/styles.css'
+        })
+    else
+        styleTag = '<templatestyles src="Module:ShipBarrage/styles.css" />'
     end
+
+    html:wikitext(styleTag)
 
     -- header
     do

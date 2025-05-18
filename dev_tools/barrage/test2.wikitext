@@ -1,0 +1,7940 @@
+A barrage, or danmaku is a set of projectiles fired by ships upon triggering either a set number of shots from the Main Gun or by activating a skill. Aside from adding supplementary damage, some barrages may provide debuff effects such as burn, slow, flood, etc. Barrages are affected by 100% Firepower, Torpedo or Airpower stat respectively unless otherwise stated, but are not affected by weapon efficiencies. Gun-based barrages are upgraded via [[Limit Break]] while skill-based barrages are upgraded by spending Skill Books in the [[Academy]].
+
+==Details==
+Some notes regarding the barrage chart below:
+* Every escort ship has a gun-based barrage skill, which is triggered by a specified number of shots or volleys from their Main Gun. Limit Break decreases number of shots needed to activate as well as increase the barrage's damage.
+** For ships without Main Gun Mount +1, DDs need 10 volleys, CLs need 8 volleys and CAs need 6 volleys to activate. Takao-class CAs in particular only need 4.
+** For ships with Main Gun Mount +1, DDs need 16 volleys, CLs need 10 volleys and CAs need 8 volleys to activate.
+** [[Yat Sen]] has two Main Guns and requires 12 volleys to activate.
+** Note that this is based on the fastest Main Gun type that the ship can equip, so e.g. Atlanta-class counts as DD for this purpose.
+* Values listed below assume the entire barrage hits an enemy. Some ships with seemingly high barrage damage may in fact deal less in actual combat due to the nature of their barrage. Eldridge's, for instance, fires in a radial pattern instead of frontal, which has a chance to miss more enemies and decrease its actual damage value.
+* AP barrages are specified below as to whether they pierce (penetrate through an enemy to hit others behind it) or not. The chance to inflict burn or flood damage (DoT) is also displayed.
+* Ships with multi-part barrages (more than one type of bullet) have all parts and individual damage values listed.
+* Shrapnel: Bullet changes into a different bullet (eg Sanshikidan, Kiroshima, Helena META).  Both parts are listed.
+* Note that all barrages' damage values are in their upgraded form (II).
+* If not stated otherwise, assume barrage scales off 100% of the appropriate stat (i.e., a Round type of HE would scale off 100% of FP, and a Round type of Torpedo (CV) would scale off 100% of Aviation).
+
+==Unique barrages==
+These are barrages that can only be activated by certain ships.
+
+{{BarrageListHeader}}
+{{BarrageList
+ | SkillIcon = 29290
+ | Name = All Out Assault - 22 II
+ | Ships = [[22]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 320
+ | DmgM = 256
+ | DmgH = 192
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29300
+ | Name = All Out Assault - 33 II
+ | Ships = [[33]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 320
+ | DmgM = 256
+ | DmgH = 192
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29110
+ | GifID = 29112
+ | Name = All Out Assault - Ayanami II
+ | Ships = [[Ayanami]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 648
+ | DmgM = 324
+ | DmgH = 324	
+ | Notes = 1% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 29790
+ | GifID = 
+ | Name = All Out Assault : Bristol II
+ | Ships = [[Bristol]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 440
+ | DmgM = 440
+ | DmgH = 440
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 147
+ | Dmg2M = 189
+ | Dmg2H = 252
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29020
+ | GifID = 29022
+ | Name = All Out Assault - Eldridge II
+ | Ships = [[Eldridge]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 518.4
+ | DmgM = 518.4
+ | DmgH = 518.4	
+ | Notes = Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21027
+ | Name = All Out Assault - Icarus II
+ | Ships = [[Icarus]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 225
+ | DmgH = 120
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29060
+ | GifID = 29062
+ | Name = All Out Assault - Glowworm II
+ | Ships = [[Glowworm]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 180
+ | DmgM = 180
+ | DmgH = 180	
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29080
+ | GifID = 29082
+ | Name = All Out Assault - Javelin II
+ | Ships = [[Javelin]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 324
+ | DmgM = 252
+ | DmgH = 144
+ | Notes = Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 29820
+ | GifID = 
+ | Name = All Out Assault: Kiev II
+ | Ships = [[Kiev]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 704
+ | DmgM = 576
+ | DmgH = 448
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29280
+ | GifID = 29282
+ | Name = All Out Assault - Kawakaze II
+ | Ships = [[Kawakaze]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 126
+ | DmgM = 162
+ | DmgH = 225	
+ | Notes = Scaled with 80% of Torpedo stat.
+ | Dmg2Type = HE
+ | Dmg2L = 472.5
+ | Dmg2M = 405
+ | Dmg2H = 382.5
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29730
+ | GifID = 29732
+ | Name = All Out Assault - Kazagumo II
+ | Ships = [[Kazagumo]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 472.5
+ | DmgM = 378
+ | DmgH = 283.5	
+ | Notes =
+ | Dmg2Type = Torpedo
+ | Dmg2L = 256
+ | Dmg2M = 320
+ | Dmg2H = 416
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29380
+ | GifID = 29382
+ | Name = All Out Assault - Kitakaze II
+ | Ships = [[Kitakaze]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 374.4
+ | DmgM = 468
+ | DmgH = 608.4	
+ | Notes = Has Main Gun + 1.
+ | Dmg2Type = HE
+ | Dmg2L = 422.4
+ | Dmg2M = 230.4
+ | Dmg2H = 115.2
+ | Notes2 = 1% burn chance.  Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 29050
+ | GifID = 29052
+ | Name = All Out Assault - Laffey II
+ | Ships = [[Laffey]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 504
+ | DmgM = 252
+ | DmgH = 252
+ | Notes = 1% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 29410
+ | GifID = 29412
+ | Name = All Out Assault - Le Malin II
+ | Ships = [[Le Malin]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 864
+ | DmgM = 432
+ | DmgH = 432
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 94.5
+ | Dmg2M = 121.5
+ | Dmg2H = 162	
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29620
+ | GifID = 
+ | Name = All Out Assault - Le Malin µ II
+ | Ships = [[Le Malin µ]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 864
+ | DmgM = 432
+ | DmgH = 432
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 94.5
+ | Dmg2M = 121.5
+ | Dmg2H = 162	
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29760
+ | GifID = 
+ | Name = All Out Assault - Le Terrible II
+ | Ships = [[Le Terrible]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 864
+ | DmgM = 432
+ | DmgH = 432
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 94.5
+ | Dmg2M = 121.5
+ | Dmg2H = 162	
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29330
+ | GifID = 29332
+ | Name = All Out Assault - Le Triomphant II
+ | Ships = [[Le Triomphant]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 576
+ | DmgM = 387
+ | DmgH = 288
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 94.5
+ | Dmg2M = 121.5
+ | Dmg2H = 162
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29330
+ | GifID = 29332
+ | Name = All Out Assault: Pompeo Magno II
+ | Ships = [[Pompeo Magno]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 736
+ | DmgM = 588.8
+ | DmgH = 441.6
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29330
+ | GifID = 
+ | Name = All Out Assault: Storozhevoy II
+ | Ships = [[Soobrazitelny]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 275
+ | DmgM = 220
+ | DmgH = 165
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29600
+ | GifID = 
+ | Name = All Out Assault - Suzutsuki II
+ | Ships = [[Suzutsuki]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 378
+ | DmgM = 302.4
+ | DmgH = 226.8
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 117.6
+ | Dmg2M = 151.2
+ | Dmg2H = 201.6
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29500
+ | GifID = 29502
+ | Name = All Out Assault - Tashkent II
+ | Ships = [[Tashkent]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 792
+ | DmgM = 648
+ | DmgH = 504
+ | Notes = Does not cause burn.
+}}
+{{BarrageList
+ | SkillIcon = 29640
+ | GifID = 
+ | Name = All Out Assault - Tashkent µ II
+ | Ships = [[Tashkent µ]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 792
+ | DmgM = 648
+ | DmgH = 504
+ | Notes = Does not cause burn.
+}}
+{{BarrageList
+ | SkillIcon = 29090
+ | GifID = 29092
+ | Name = All Out Assault - Vampire II
+ | Ships = [[Vampire]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 270
+ | DmgM = 202.5
+ | DmgH = 108
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29130
+ | GifID = 29132
+ | Name = All Out Assault - Yukikaze II
+ | Ships = [[Yukikaze]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 270
+ | DmgM = 135
+ | DmgH = 135
+ | Notes = 1% burn chance.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 168
+ | Dmg2M = 216
+ | Dmg2H = 288
+ | Notes2 = Scaled with 80% of Torpedo stat
+}}
+{{BarrageList
+ | SkillIcon = 29120
+ | GifID = 29122
+ | Name = All Out Assault - Yuudachi II
+ | Ships = [[Yuudachi]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 540
+ | DmgM = 450
+ | DmgH = 405
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 126
+ | Dmg2M = 162
+ | Dmg2H = 216
+ | Notes2 = Scaled with by 80% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 29120
+ | GifID = 29123
+ | Name = All Out Assault - Yuudachi III
+ | Ships = [[Yuudachi]] (Retrofit)
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 675
+ | DmgM = 562.5
+ | DmgH = 506.25
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 126
+ | Dmg2M = 162
+ | Dmg2H = 216
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29170
+ | GifID = 29172
+ | Name = All Out Assault - Z1 II
+ | Ships = [[Z1]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 360
+ | DmgM = 180
+ | DmgH = 72
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29200
+ | GifID = 29202
+ | Name = All Out Assault - Z23 II
+ | Ships = [[Z23]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 300
+ | DmgM = 240
+ | DmgH = 180
+ | Notes = Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 29210
+ | GifID = 29212
+ | Name = All Out Assault - Z46 II
+ | Ships = [[Z46]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 648
+ | DmgM = 504
+ | DmgH = 288
+ | Notes = Does not pierce.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 112
+ | Dmg2M = 144
+ | Dmg2H = 192
+ | Notes2 = Homing torpedoes.
+}}	
+{{BarrageList
+ | SkillIcon = 29750
+ | GifID = 
+ | Name = All Out Assault II: Ingraham
+ | Ships = [[Ingraham]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 660
+ | DmgM = 660
+ | DmgH = 660
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 147
+ | Dmg2M = 189
+ | Dmg2H = 252
+ | Notes2 = 
+}}	
+{{BarrageList
+ | SkillIcon = 29140
+ | GifID = 
+ | Name = All Out Assault II: Shimakaze
+ | Ships = [[Shimakaze]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 690
+ | DmgM = 690
+ | DmgH = 690
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 360
+ | Dmg2M = 450
+ | Dmg2H = 675
+ | Notes2 = 
+ | Dmg3Type = AP
+ | Dmg3L = 45
+ | Dmg3M = 45
+ | Dmg3H = 45
+ | Notes3 = Blade, Pierce 3, Ignore shield
+}}	
+{{BarrageList
+ | SkillIcon = 29850
+ | GifID = 
+ | Name = All Out Assault II : Jervis 
+ | Ships = [[Jervis]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 1125
+ | DmgM = 900
+ | DmgH = 675
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 360
+ | Dmg2M = 450
+ | Dmg2H = 585
+ | Notes2 = 
+}}	
+{{BarrageList
+ | SkillIcon = 29880
+ | GifID = 
+ | Name = All Out Assault: L'Indomptable II
+ | Ships = [[L'Indomptable]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 777.6
+ | DmgM = 388.8
+ | DmgH =  	388.8
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 94.5
+ | Dmg2M = 121.5
+ | Dmg2H = 162
+ | Notes2 = 
+}}	
+{{BarrageList
+ | SkillIcon = 29190
+ | GifID = 29192
+ | Name = All Out Assault - Avrora II
+ | Ships = [[Avrora]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 375
+ | DmgM = 300
+ | DmgH = 225
+ | Notes = Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 29100
+ | GifID = 29102
+ | Name = All Out Assault - Belfast II
+ | Ships = [[Belfast]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 780
+ | DmgM = 585
+ | DmgH = 312
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29510
+ | GifID = 29512
+ | Name = All Out Assault - Chapayev II
+ | Ships = [[Chapayev]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 924
+ | DmgM = 756
+ | DmgH = 588
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29450
+ | GifID = 
+ | Name = All Out Assault - Cleveland (Muse) II
+ | Ships = [[Cleveland µ]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 360
+ | DmgM = 360
+ | DmgH = 270
+ | Notes = Blue musical note.
+}}
+{{BarrageList
+ | SkillIcon = 29490
+ | GifID = 29492
+ | Name = All Out Assault - Dido II
+ | Ships = [[Dido]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 637.5
+ | DmgM = 478.125
+ | DmgH = 255
+ | Notes = 
+ | Dmg2Type = AP
+ | Dmg2L = 510
+ | Dmg2M = 408
+ | Dmg2H = 306
+ | Notes2 = Does not pierce 
+}}
+{{BarrageList
+ | SkillIcon = 29630
+ | GifID = 
+ | Name = All Out Assault - Dido μ II
+ | Ships = [[Dido µ]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 701.25
+ | DmgM = 701.25
+ | DmgH = 510
+ | Notes = 
+ | Dmg2Type = AP
+ | Dmg2L = 561
+ | Dmg2M = 561
+ | Dmg2H = 459
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 28112
+ | Name = All Out Assault - Emile Bertin II
+ | Ships = [[Émile_Bertin]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 450
+ | DmgM = 360
+ | DmgH = 270
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29920
+ | GifID = 
+ | Name = All Out Assault - Giuseppe Garibaldi II
+ | Ships = [[Giuseppe Garibaldi]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 96
+ | DmgM = 96
+ | DmgH = 96
+ | Notes = Shrapnel, Pierce 99, Homing
+ | Dmg2Type = HE
+ | Dmg2L = 907.2
+ | Dmg2M = 638.4
+ | Dmg2H = 470.4 
+ | Notes2 = Pierce 1
+ | Dmg3Type = Torpedo
+ | Dmg3L = 288
+ | Dmg3M = 360
+ | Dmg3H = 468
+ | Notes3 = 
+}}
+{{BarrageList
+ | SkillIcon = 29900
+ | GifID = 
+ | Name = All Out Assault - Harbin II
+ | Ships = [[Harbin]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 720
+ | DmgM = 360
+ | DmgH = 360
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 144
+ | Dmg2M = 180
+ | Dmg2H = 270
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29580
+ | GifID = 29582
+ | Name = All Out Assault - Hermione II
+ | Ships = [[Hermione]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 378
+ | DmgM = 554.4
+ | DmgH = 378
+ | Notes = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 29540
+ | GifID = 29542
+ | Name = All Out Assault - Jeanne d'Arc II
+ | Ships = [[Jeanne d'Arc]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 928
+ | DmgM = 672 
+ | DmgH = 448
+ | Dmg2Type = Torpedo
+ | Dmg2L = 117.6
+ | Dmg2M = 151.2
+ | Dmg2H = 201.6
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29570
+ | GifID = 29572
+ | Name = All Out Assault - Mainz II
+ | Ships = [[Mainz]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 1176
+ | DmgM = 756
+ | DmgH = 588
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29230
+ | GifID = 29232
+ | Name = All Out Assault - Neptune II
+ | Ships = [[Neptune]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 1408
+ | DmgM = 1126.4
+ | DmgH = 844.8
+ | Notes = Does not pierce.
+}}
+{{BarrageList
+ | SkillIcon = 29480
+ | GifID = 29482
+ | Name = All Out Assault - Noshiro II
+ | Ships = [[Noshiro]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 1087.5
+ | DmgM = 787.5
+ | DmgH = 525
+ | Notes = Does not cause burn.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 126
+ | Dmg2M = 180
+ | Dmg2H = 216
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29890
+ | GifID = 
+ | Name = All Out Assault: Plymouth II
+ | Ships = [[Plymouth]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 1125
+ | DmgM = 1125
+ | DmgH = 1125
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 144
+ | Dmg2M = 180
+ | Dmg2H = 234
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29530
+ | GifID = 29533
+ | Name = Reno Barrage II
+ | Ships = [[Reno]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 432
+ | DmgM = 432
+ | DmgH = 432
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29350
+ | GifID = 29351
+ | Name = All Out Assault - San Diego (Retrofit)
+ | Ships = [[San Diego]] (Retrofit)
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 550
+ | DmgM = 412.5
+ | DmgH = 220
+ | Notes = Unlocked upon Retrofit. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 29390
+ | GifID = 29392
+ | Name = All Out Assault - Seattle II
+ | Ships = [[Seattle]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 792
+ | DmgM = 648
+ | DmgH = 504
+ | Notes = Does not pierce. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 29460
+ | GifID = 
+ | Name = All Out Assault - Sheffield (Muse) II
+ | Ships = [[Sheffield µ]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 720
+ | DmgM = 720
+ | DmgH = 600
+ | Notes = Purple musical note.
+}}
+{{BarrageList
+ | SkillIcon = 29360
+ | GifID = 29362
+ | Name = All Out Assault - Sirius II
+ | Ships = [[Sirius]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 850
+ | DmgM = 680
+ | DmgH = 510
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29680
+ | GifID = 
+ | Name = All Out Assault - Kirov II
+ | Ships = [[Kirov]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 1306.25
+ | DmgM = 1068.75
+ | DmgH = 831.25
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 84
+ | Dmg2M = 108
+ | Dmg2H = 144
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29700
+ | GifID = 
+ | Name = All Out Assault - Duca degli Abruzzi II
+ | Ships = [[Duca degli Abruzzi]]
+ | Class = CL
+ | DmgType = Torpedo
+ | DmgL = 168
+ | DmgM = 210
+ | DmgH = 273
+ | Notes = 
+ | Dmg2Type = Normal
+ | Dmg2L = 54
+ | Dmg2M = 54
+ | Dmg2H = 54
+ | Notes2 = Homing. Pierce 99. Splits into HE shells.
+ | Dmg3Type = HE
+ | Dmg3L = 510.3
+ | Dmg3M = 359.1
+ | Dmg3H = 264.6
+ | Notes3 = 
+}}
+{{BarrageList
+ | SkillIcon = 800120
+ | GifID = 
+ | Name = Ashen Might - Helena II
+ | Ships = [[Helena META]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 240
+ | DmgH = 180
+ | Notes = 
+ | Dmg2Type = Normal
+ | Dmg2L = 160
+ | Dmg2M = 160
+ | Dmg2H = 160
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29770
+ | GifID = 
+ | Name = All Out Assault II: Magdeburg
+ | Ships = [[Magdeburg]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 980
+ | DmgM = 630
+ | DmgH = 490
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 96
+ | Dmg2M = 120
+ | Dmg2H = 156
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29780
+ | GifID = 
+ | Name = All Out Assault : Charybdis II
+ | Ships = [[Charybdis]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 960
+ | DmgM = 748
+ | DmgH = 496
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29840
+ | GifID = 
+ | Name = All Out Assault - Emden II
+ | Ships = [[Emden]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 480
+ | DmgM = 480
+ | DmgH = 480
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29470
+ | GifID = 
+ | Name = All Out Assault - Admiral Hipper (Muse) II
+ | Ships = [[Admiral Hipper µ]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 231
+ | DmgM = 252
+ | DmgH = 210
+ | Notes = 8% burn chance. Red musical note?
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 
+ | Name = All Out Assault - Algérie II
+ | Ships = [[Algérie]]
+ | Class = CA
+ | DmgType = SAP
+ | DmgL = 208
+ | DmgM = 400
+ | DmgH = 208
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29660
+ | GifID = 
+ | Name = All Out Assault - Baltimore µ II
+ | Ships = [[Baltimore µ]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 210
+ | DmgM = 231
+ | DmgH = 252
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29550
+ | GifID = 
+ | Name = All Out Assault - Cheshire II
+ | Ships = [[Cheshire]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 567
+ | DmgM = 399
+ | DmgH = 294
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29560
+ | GifID = 29562
+ | Name = All Out Assault - Drake II
+ | Ships = [[Drake]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 923.4
+ | DmgM = 649.8
+ | DmgH = 478.8
+ | Notes = 
+ | Dmg2Type = AP
+ | Dmg2L = 256.5
+ | Dmg2M = 376.2
+ | Dmg2H = 256.5
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29220
+ | GifID = 29222
+ | Name = All Out Assault - Ibuki II
+ | Ships = [[Ibuki]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 576.84
+ | DmgM = 401.28
+ | DmgH = 300.96
+ | Notes = 8% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 22253 
+ | Name = All Out Assault - Mogami II (Retrofit)
+ | Ships = [[Mogami]] (Retrofit)
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 487.5
+ | DmgM = 331.5
+ | DmgH = 253.5
+ | Notes = 8% burn chance. Unlocked upon Retrofit. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 29240
+ | GifID = 29242
+ | Name = All Out Assault - Roon II
+ | Ships = [[Roon]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 396
+ | DmgM = 580.8
+ | DmgH = 396
+ | Notes = Can pierce once. Has Main Gun + 1.
+ | Dmg2Type = HE
+ | Dmg2L = 712.8
+ | Dmg2M = 501.6
+ | Dmg2H = 369.6
+ | Notes2 = 8% burn chance. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 29610
+ | GifID = 
+ | Name = All Out Assault - Roon μ II
+ | Ships = [[Roon µ]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 712.8
+ | DmgM = 501.6
+ | DmgH = 369.6
+ | Notes = 8% burn chance.
+ | Dmg2Type = AP
+ | Dmg2L = 528
+ | Dmg2M = 686.4
+ | Dmg2H = 686.4
+ | Notes2 = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 29250
+ | GifID = 29252
+ | Name = All Out Assault - Saint Louis II
+ | Ships = [[Saint Louis]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 712.8
+ | DmgM = 501.6
+ | DmgH = 369.6
+ | Notes = 8% burn chance. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 22255
+ | Name = All Out Assault - Suzuya II
+ | Ships = [[Suzuya]], [[Kumano]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 562.5
+ | DmgM = 382.5
+ | DmgH = 292.5
+ | Notes = 8% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 22257
+ | Name = All Out Assault - Suzuya II (Enhanced)
+ | Ships = [[Suzuya]], [[Kumano]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 656.25
+ | DmgM = 525
+ | DmgH = 420
+ | Notes = 8% burn chance.
+ | Dmg2Type = AP
+ | Dmg2L = 180
+ | Dmg2M = 264
+ | Dmg2H = 180
+ | Notes2 = Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 29710
+ | GifID = 
+ | Name = All Out Assault - San Francisco II
+ | Ships = [[San Francisco]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 315
+ | DmgM = 462
+ | DmgH = 315
+ | Notes = Pierce 1. Slows enemy movement by 15% for 5s.
+}}
+{{BarrageList
+ | SkillIcon = 29740
+ | GifID = 
+ | Name = All Out Assault - Anchorage II
+ | Ships = [[Anchorage]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 540
+ | DmgM = 792
+ | DmgH = 540
+ | Notes = Pierce 1.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 128
+ | Dmg2M = 160
+ | Dmg2H = 208
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29860
+ | GifID = 
+ | Name = All Out Assault II : Little Cheshire
+ | Ships = [[Little Cheshire]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 324
+ | DmgM = 228
+ | DmgH = 168
+ | Notes = Homing bullets.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 
+ | Name = All Out Assault: Bolzano II
+ | Ships = [[Bolzano]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 234
+ | DmgM = 187.2
+ | DmgH = 152.1
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29340
+ | GifID = 29342
+ | Name = All Out Assault - Albacore II
+ | Ships = [[Albacore]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 460.8
+ | DmgM = 576
+ | DmgH = 748.8
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29650
+ | GifID = 29342
+ | Name = All Out Assault - Albacore µ II
+ | Ships = [[Albacore µ]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 336
+ | DmgM = 420
+ | DmgH = 546
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29440
+ | GifID = 29442
+ | Name = All Out Assault - Cavalla II
+ | Ships = [[Cavalla]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 460.8
+ | DmgM = 576
+ | DmgH = 748.8
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29370
+ | GifID = 29372
+ | Name = All Out Assault - I-13 II
+ | Ships = [[I-13]]
+ | Class = SSV
+ | DmgType = Torpedo
+ | DmgL = 396
+ | DmgM = 495
+ | DmgH = 643.5
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29420
+ | GifID = 29422
+ | Name = All Out Assault - I-168 II
+ | Ships = [[I-168]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29260
+ | GifID = 29262
+ | Name = All Out Assault - I-19 II
+ | Ships = [[I-19]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29910
+ | GifID = 
+ | Name = All Out Assault - Leonardo da Vinci II
+ | Ships = [[Leonardo da Vinci]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 29320
+ | GifID = 29322
+ | Name = All Out Assault - Surcouf II
+ | Ships = [[Surcouf]]
+ | Class = SS
+ | DmgType = HE
+ | DmgL = 750
+ | DmgM = 510
+ | DmgH = 390	
+ | Notes = 8% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 29430
+ | GifID = 29432
+ | Name= All Out Assault - U-101 II
+ | Ships = [[U-101]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 29310
+ | GifID = 29312
+ | Name= All Out Assault - U-47 II
+ | Ships = [[U-47]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 29270
+ | GifID = 29272
+ | Name = All Out Assault - U-81 II
+ | Ships = [[U-81]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 29590
+ | GifID = 29592
+ | Name = All Out Assault - U-96 II
+ | Ships = [[U-96]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 29670
+ | GifID = 29672
+ | Name = All Out Assault - U-37 II
+ | Ships = [[U-37]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 29720
+ | GifID = 
+ | Name = All Out Assault - Archerfish II
+ | Ships = [[Archerfish]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 216
+ | DmgM = 270
+ | DmgH = 405
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 216
+ | Dmg2M = 270
+ | Dmg2H = 405
+ | Notes2 = Slows enemy movement by 25% for 3s.
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22412
+ | Name = All Out Assault - Kashino II
+ | Ships = [[Kashino]]
+ | Class = AE
+ | DmgType = HE
+ | DmgL = 405
+ | DmgM = 202.5
+ | DmgH = 202.5
+ | Notes = 1% chance to burn.
+}}
+{{BarrageList
+ | SkillIcon = 
+ | GifID = 6580
+ | Name = I've Brought Your Cannons!
+ | Ships = [[Kashino]]
+ | Class = AE
+ | DmgType = Normal
+ | DmgL = 114.66
+ | DmgM = 463.8
+ | DmgH = 147.42
+ | Notes = Hidden skill triggered when sortied with [[Shinano]].
+}}
+|}
+
+==Class barrages==
+Barrages that are class-specific.
+
+{{BarrageListHeader}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21012
+ | Name = All Out Assault - A-class II
+ | Ships = [[Acasta]], [[Amazon]], [[Ardent]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 125
+ | DmgM = 100
+ | DmgH = 75
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22072
+ | Name = All Out Assault - Akatsuki-class II
+ | Ships = [[Akatsuki]], [[Hibiki]], [[Ikazuchi]], [[Inazuma]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 212.5
+ | DmgM = 191.25
+ | DmgH = 106.25
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22062
+ | Name = All Out Assault - Akizuki-class II
+ | Ships = [[Niizuki]], [[Harutsuki]], [[Yoizuki]], [[Hanazuki]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 280
+ | DmgM = 180
+ | DmgH = 140
+ | Notes = 3% burn chance. Has Main Gun + 1
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 25022
+ | Name = All Out Assault - Alfredo Oriani-class II
+ | Ships = [[Vincenzo Gioberti]], [[Alfredo Oriani]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 240
+ | DmgH = 180
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 24012
+ | Name = All Out Assault - An Shan-class II	
+ | Ships = [[An Shan]], [[Chang Chun]], [[Fu Shun]], [[Tai Yuan]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 390
+ | DmgM = 270
+ | DmgH = 180
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 24012
+ | Name = All Out Assault - An Shan-class II (Enhanced)
+ | Ships = [[An Shan]], [[Chang Chun]], [[Fu Shun]], [[Tai Yuan]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 585
+ | DmgM = 405
+ | DmgH = 270
+ | Notes = When equipped with [[Seal of the Four Gods]].<br />Cosmetic difference between ships.
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 24012
+ | Name = All Out Assault - An Shan-class III (Unenhanced)
+ | Ships = [[An Shan]], [[Chang Chun]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 234
+ | DmgM = 162
+ | DmgH = 108
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 24012
+ | Name = All Out Assault - An Shan-class III (Enhanced)
+ | Ships = [[An Shan]], [[Chang Chun]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 650
+ | DmgM = 450
+ | DmgH = 300
+ | Notes = When equipped with [[Seal of the Four Gods]].<br />Cosmetic difference between ships.
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22092
+ | Name = All Out Assault - Asashio-class II
+ | Ships = [[Arashio]], [[Asashio]], [[Kasumi]], [[Michishio]], [[Ooshio]] 
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 225
+ | DmgM = 180
+ | DmgH = 135
+ | Notes = 1% burn chance
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21022
+ | Name = All Out Assault - B-class II
+ | Ships = [[Beagle]], [[Bulldog]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 200
+ | DmgM = 200
+ | DmgH = 200
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 20062
+ | Name = All Out Assault - Benson-class II
+ | Ships = [[Bailey]], [[Benson]], [[Hobby]], [[Kalk]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 187.5
+ | DmgM = 187.5
+ | DmgH = 187.5
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21032
+ | Name = All Out Assault - C-class II
+ | Ships = [[Comet]], [[Crescent]], [[Cygnet]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 150
+ | DmgM = 112.5
+ | DmgH = 60
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21092
+ | Name = All Out Assault - E-class II
+ | Ships = [[Echo]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 250
+ | DmgM = 200
+ | DmgH = 150
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21042 
+ | Name = All Out Assault - F-class II
+ | Ships = [[Fortune]], [[Foxhound]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 250
+ | DmgM = 187.5
+ | DmgH = 100
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 20012
+ | Name = All Out Assault - Farragut-class II
+ | Ships = [[Aylwin]], [[Dewey]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 125
+ | DmgM = 93.75
+ | DmgH = 50
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 20042
+ | Name = All Out Assault - Fletcher-class II
+ | Ships = [[Aulick]], [[Bache]], [[Bush]], [[Charles Ausburne]], [[Fletcher]], [[Foote]], [[Halsey Powell]], [[Hazelwood]], [[Jenkins]], [[Kimberly]], [[Mullany]], [[Nicholas]], [[Radford]], [[Spence]], [[Stanly]], [[Thatcher]], [[Stephen Potter]]. [[Morrison]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 250
+ | DmgM = 187.5
+ | DmgH = 100
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22022
+ | Name = All Out Assault - Fubuki-class II
+ | Ships = [[Fubuki]], [[Miyuki]], [[Uranami]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 200
+ | DmgM = 180
+ | DmgH = 100
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21052
+ | Name = All Out Assault - G-class II
+ | Ships = [[Grenville]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 250
+ | DmgM = 200
+ | DmgH = 150
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 26012
+ | Name = All Out Assault - Gnevny-class II
+ | Ships = [[Grozny]], [[Gremyashchy]], [[Gromky]], [[Stremitelny]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 250
+ | DmgM = 200
+ | DmgH = 150
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 20032 
+ | Name = All Out Assault - Gridley-class II
+ | Ships = [[Gridley]], [[McCall]], [[Craven]], [[Maury]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 150
+ | DmgM = 112.5
+ | DmgH = 60
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21062
+ | Name = All Out Assault - H-class II
+ | Ships = [[Hardy]], [[Hunter]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 175
+ | DmgM = 140
+ | DmgH = 105	
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22042
+ | Name = All Out Assault - Hatsuharu-class II
+ | Ships = [[Ariake]], [[Hatsuharu]], [[Hatsushimo]], [[Wakaba]], [[Yuugure]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 150
+ | DmgM = 75
+ | DmgH = 30
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21072 
+ | Name = All Out Assault - J-class II
+ | Ships = [[Juno]], [[Jupiter]], [[Jersey]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 225
+ | DmgH = 120
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22052
+ | Name = All Out Assault - Kagerou-class II
+ | Ships = [[Shiranui]], [[Kagerou]], [[Nowaki]], [[Hamakaze]], [[Tanikaze]], [[Urakaze]], [[Isokaze]], [[Kuroshio]], [[Oyashio]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 150
+ | DmgM = 120
+ | DmgH = 90
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22082
+ | Name = All Out Assault - Kamikaze-class II
+ | Ships = [[Kamikaze]], [[Matsukaze]], [[Hatakaze]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 390
+ | DmgM = 195
+ | DmgH = 195
+ | Notes = 1% burn chance
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 28012 
+ | Name = All Out Assault - L'Adroit-class II
+ | Ships = [[Forbin]], [[Le Mars]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 312
+ | DmgM = 216
+ | DmgH = 144
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 28022
+ | Name = All Out Assault - Le Hardi-class II
+ | Ships = [[Le_Téméraire]], [[L'Opiniâtre]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 270
+ | DmgM = 202.5
+ | DmgH = 108
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 26022
+ | Name = All Out Assault - Leningrad-class II
+ | Ships = [[Minsk]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 351
+ | DmgM = 243
+ | DmgH = 162
+ | Notes = 1% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21082 
+ | Name = All Out Assault - M-class II
+ | Ships = [[Matchless]], [[Musketeer]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 325
+ | DmgM = 243.75
+ | DmgH = 130
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 
+ | Name = All Out Assault - Maestrale-class II
+ | Ships = [[Libeccio]], [[Maestrale]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 345
+ | DmgM = 276
+ | DmgH = 207
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 20022 
+ | Name = All Out Assault - Mahan-class II
+ | Ships = [[Cassin]], [[Downes]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 125
+ | DmgM = 93.75
+ | DmgH = 50
+ | Notes = 
+}}	
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22012
+ | Name = All Out Assault - Mutsuki-class II
+ | Ships = [[Fumizuki]], [[Kisaragi]], [[Minazuki]], [[Mikazuki]], [[Mutsuki]], [[Nagatsuki]], [[Uzuki]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 405
+ | DmgM = 202.5
+ | DmgH = 202.5
+ | Notes = 1% burn chance
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 
+ | Name = All Out Assault - Navigatori-class II
+ | Ships = [[Nicoloso da Recco]], [[Emanuele Pessagno]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 403.2
+ | DmgM = 322.56
+ | DmgH = 241.92
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 25012
+ | Name = All Out Assault - Soldati-class II
+ | Ships = [[Carabiniere]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 240
+ | DmgH = 180
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22032 
+ | Name = All Out Assault - Shiratsuyu-class II
+ | Ships = [[Shigure]], [[Shiratsuyu]], [[Umikaze]], [[Yamakaze]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 250
+ | DmgM = 187.5
+ | DmgH = 100
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 20052 
+ | Name = All Out Assault - Sims-class II
+ | Ships = [[Sims]], [[Hammann]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 225
+ | DmgH = 120
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 21017
+ | Name = All Out Assault - Tribal-class II
+ | Ships = [[Eskimo]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 375
+ | DmgM = 281.25
+ | DmgH = 150
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 23012
+ | Name = All Out Assault - Type 1934 II
+ | Ships = [[Z2]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 180
+ | DmgM = 140
+ | DmgH = 80
+ | Notes = Does not pierce.
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 23032
+ | Name = All Out Assault - Type 1936 II
+ | Ships = [[Z18]], [[Z19]], [[Z20]], [[Z21]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 150
+ | DmgM = 75
+ | DmgH = 30
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 23042 
+ | Name = All Out Assault - Type 1936A II
+ | Ships = [[Z24]], [[Z25]], [[Z26]], [[Z28]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 297
+ | DmgM = 243
+ | DmgH = 189
+ | Notes = Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 23052
+ | Name = All Out Assault - Type 1936B II
+ | Ships = [[Z35]], [[Z36]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 360
+ | DmgM = 180
+ | DmgH = 180
+ | Notes = 1% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 28032
+ | Name = All Out Assault - Vauquelin-class II
+ | Ships = [[Tartu]], [[Vauquelin]],[[Maillé Brézé]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 360
+ | DmgM = 270
+ | DmgH = 144
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 22057
+ | Name = All Out Assault - Yuugumo-class II
+ | Ships = [[Kiyonami]], [[Makinami]], [[Naganami]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 150
+ | DmgM = 120
+ | DmgH = 90
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 20082
+ | Name = All Out Assault - Allen M. Sumner-class II
+ | Ships = [[Cooper]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 412.5
+ | DmgM = 412.5
+ | DmgH = 375
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20000
+ | GifID = 
+ | Name = All Out Assault - Allen M. Sumner-class II
+ | Ships = [[Allen M. Sumner]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 660
+ | DmgM = 660
+ | DmgH = 660
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 147
+ | Dmg2M = 189
+ | Dmg2H = 252
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 22152
+ | Name = All Out Assault - Agano-class II
+ | Ships = [[Agano]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 600
+ | DmgM = 540
+ | DmgH = 420
+ | Notes = 3% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 21132
+ | Name = All Out Assault - Arethusa-class II
+ | Ships = [[Arethusa]], [[Galatea]], [[Aurora]], [[Penelope]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 385
+ | DmgM = 288.75
+ | DmgH = 154
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 20132 
+ | Name = All Out Assault - Atlanta-class II
+ | Ships = [[Atlanta]], [[Juneau]], [[Li'l Sandy]], [[San Diego]], [[San Juan]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 500
+ | DmgM = 375
+ | DmgH = 200
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 20132 
+ | Name = All Out Assault - Atlanta-class III
+ | Ships = [[Juneau]] (Retrofit)
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 500
+ | DmgM = 375
+ | DmgH = 200
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 26112
+ | Name = All Out Assault - Bogatyr-class II
+ | Ships = [[Pamiat' Merkuria]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 312.5
+ | DmgM = 250
+ | DmgH = 187.5
+ | Notes = Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 20122
+ | Name = All Out Assault - Brooklyn-class II
+ | Ships = [[Brooklyn]], [[Helena]], [[Honolulu]], [[Lena]], [[Phoenix]], [[St. Louis]], [[Boise]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 375
+ | DmgM = 281.25
+ | DmgH = 150
+ | Notes = Has Main Gun + 1
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 21172
+ | Name = All Out Assault - Ceres-class II
+ | Ships = [[Curacoa]], [[Curlew]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 412.5
+ | DmgM = 412.5
+ | DmgH = 412.5
+ | Notes = Has Main Gun + 1
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 
+ | Name = All Out Assault - Chao Ho-class II
+ | Ships = [[Ying Swei]], [[Chao Ho]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 450
+ | DmgM = 360
+ | DmgH = 270
+ | Notes = Has Main Gun + 1
+ | Dmg2Type = AP
+ | Dmg2L = 337.5
+ | Dmg2M = 495
+ | Dmg2H = 337.5
+ | Notes2 = Has Main Gun + 1
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 20142
+ | Name = All Out Assault - Cleveland-class II
+ | Ships = [[Biloxi]], [[Birmingham]], [[Clevelad]], [[Cleveland]], [[Montpelier]], [[Columbia]], [[Denver]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 600
+ | DmgM = 450
+ | DmgH = 240
+ | Notes = Has Main Gun + 1
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 21122
+ | Name = All Out Assault - Dido-class II
+ | Ships = [[Black Prince]], [[Bellona]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 440
+ | DmgM = 352
+ | DmgH = 264
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 21142 
+ | Name = All Out Assault - Edinburgh-class II
+ | Ships = [[Edinburgh]], [[Little Bel]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 440
+ | DmgM = 330
+ | DmgH = 176
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 
+ | Name = All Out Assault - Emerald-class II
+ | Ships = [[Enterprise (Royal Navy)]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 490
+ | DmgM = 490
+ | DmgH = 490
+ | Notes = Actual Trigger count is 10
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 21162 
+ | Name = All Out Assault - Fiji-class II
+ | Ships = [[Fiji]], [[Jamaica]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 779.63
+ | DmgM = 594
+ | DmgH = 334.13
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 21182
+ | Name = All Out Assault - Gloucester-class II
+ | Ships = [[Gloucester]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 726
+ | DmgM = 561
+ | DmgH = 330
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 
+ | Name = All Out Assault : Hai Chi-Class II
+ | Ships = [[Hai Chi]], [[Hai Tien]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 600
+ | DmgM = 450
+ | DmgH = 240
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 23112 
+ | Name = All Out Assault - Konigsberg-class II
+ | Ships = [[Köln]], [[Karlsruhe]], [[Königsberg]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 250
+ | DmgM = 200
+ | DmgH = 150
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 28122
+ | Name = All Out Assault - La Galissonnière-class II
+ | Ships = [[La Galissonnière]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 585
+ | DmgM = 405
+ | DmgH = 270
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 21112
+ | Name = All Out Assault - Leander-class II
+ | Ships = [[Leander]], [[Achilles]], [[Ajax]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 550
+ | DmgM = 412.5
+ | DmgH = 220
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 23122 
+ | Name = All Out Assault - Leipzig-class II
+ | Ships = [[Leipzig]], [[Nürnberg]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 250
+ | DmgM = 200
+ | DmgH = 150
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 22252 
+ | Name = All Out Assault - Mogami-class II
+ | Ships = [[Mogami]], [[Mikuma]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 324
+ | DmgM = 216
+ | DmgH = 162
+ | Notes = 3% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 22142
+ | Name = All Out Assault - Nagara-class II
+ | Ships = [[Nagara]], [[Isuzu]], [[Abukuma]], [[Kinu]], [[Yura]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 375
+ | DmgM = 281.25
+ | DmgH = 150
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 24112 
+ | Name = All Out Assault - Ning Hai-class II
+ | Ships = [[Ning Hai]], [[Ping Hai]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 225
+ | DmgM = 180
+ | DmgH = 135
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 20112 
+ | Name = All Out Assault - Omaha-class II
+ | Ships = [[Concord]], [[Marblehead]], [[Memphis]], [[Omaha]], [[Raleigh]], [[Richmond]], [[Murmansk]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 350
+ | DmgM = 262.5
+ | DmgH = 140
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 
+ | Name = All Out Assault - Pillau Class II
+ | Ships = [[Elbing]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 843.75
+ | DmgM = 675
+ | DmgH = 506.25
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 22132 
+ | Name = All Out Assault - Sendai-class II
+ | Ships = [[Sendai]], [[Jintsuu]], [[Naka]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 900
+ | DmgM = 450
+ | DmgH = 180
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 21152 
+ | Name = All Out Assault - Southampton-class II
+ | Ships = [[Southampton]], [[Glasgow]], [[Newcastle]], [[Sheffield]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 726
+ | DmgM = 561
+ | DmgH = 330
+ | Notes = This barrage fires 20 small shells and 4 large shells, but both do exactly the same amount of damage per shell.
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 
+ | Name = All Out Assault - Suffren-class II
+ | Ships = [[Foch]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 228
+ | DmgM = 334.4
+ | DmgH = 228
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 29402
+ | Name = All Out Assault - Swiftsure-class II
+ | Ships = [[Swiftsure]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 765
+ | DmgM = 612
+ | DmgH = 459
+ | Notes = Does not pierce.
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 24122
+ | Name = All Out Assault - Yat Sen-class II
+ | Ships = [[Yat Sen]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 693
+ | DmgM = 445.5
+ | DmgH = 346.5
+ | Notes = 3% burn chance. Has two Main Guns.
+}}
+{{BarrageList
+ | SkillIcon = 20100
+ | GifID = 22162 
+ | Name = All Out Assault - Yuubari-class II
+ | Ships = [[Yuubari]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 500
+ | DmgM = 450
+ | DmgH = 250
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 23212 
+ | Name = All Out Assault - Admiral Hipper-class II
+ | Ships = [[Admiral Hipper]], [[Prinz Eugen]], [[Tallinn]], [[Blücher]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 192
+ | DmgH = 144
+ | Notes = 30% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 22222 
+ | Name = All Out Assault - Aoba-class II
+ | Ships = [[Aoba]], [[Kinugasa]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 228
+ | DmgM = 182.4
+ | DmgH = 136.8
+ | Notes = 30% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 20262
+ | Name = All Out Assault - Baltimore-class II
+ | Ships = [[Baltimore]], [[Bremerton]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 214.2
+ | DmgM = 302.4
+ | DmgH = 214.2
+ | Notes = Can pierce once. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 23222 
+ | Name = All Out Assault - Deutschland-class II
+ | Ships = [[Deutschland]], [[Admiral Graf Spee]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 360
+ | DmgM = 528
+ | DmgH = 260
+ | Notes = Can pierce once.
+ | Dmg2Type = AP
+ | Dmg2L = 440
+ | Dmg2M = 352
+ | Dmg2H = 264
+ | Notes2 = Can pierce once, normal appearance
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 22212 
+ | Name = All Out Assault - Furutaka-class II
+ | Ships = [[Furutaka]], [[Kako]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 228
+ | DmgM = 182.4
+ | DmgH = 136.8
+ | Notes = 30% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 21222 
+ | Name = All Out Assault - Kent-class II
+ | Ships = [[Kent]], [[Suffolk]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 228
+ | DmgM = 182.4
+ | DmgH = 136.8
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 21212
+ | Name = All Out Assault - London-class II
+ | Ships = [[London]], [[Shropshire]], [[Sussex]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 190
+ | DmgM = 152
+ | DmgH = 114
+ | Notes = 30% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 22232
+ | Name = All Out Assault - Myoukou-class II
+ | Ships = [[Ashigara]], [[Myoukou]], [[Nachi]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 228
+ | DmgM = 205.2
+ | DmgH = 114
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 20242
+ | Name = All Out Assault - New Orleans-class II
+ | Ships = [[Astoria]], [[Minneapolis]], [[Quincy]], [[Vincennes]], [[New Orleans]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 192
+ | DmgH = 144
+ | Notes = 30% burn chance. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 21232 
+ | Name = All Out Assault - Norfolk-class II
+ | Ships = [[Norfolk]], [[Dorsetshire]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 228
+ | DmgM = 182.4
+ | DmgH = 136.8
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20200	
+ | GifID = 20222
+ | Name = All Out Assault - Northampton-class II
+ | Ships = [[Houston]], [[Chicago]], [[Northampton]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 192
+ | DmgH = 144
+ | Notes = 30% burn chance. Has Main Gun + 1
+}}
+{{BarrageList
+ | SkillIcon = 20200	
+ | GifID = 23232
+ | Name = All Out Assault - P-class II
+ | Ships = [[Prinz Heinrich]], [[Prinz Adalbert]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 720
+ | DmgM = 1056
+ | DmgH = 720
+ | Notes = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 20212
+ | Name = All Out Assault - Pensacola-class II
+ | Ships = [[Pensacola]], [[Salt Lake City]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 320
+ | DmgM = 320
+ | DmgH = 320
+ | Notes = Has Main Gun + 1
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 20232 
+ | Name = All Out Assault - Portland-class II
+ | Ships = [[Portland]], [[Indianapolis]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 192
+ | DmgH = 144
+ | Notes = 30% burn chance. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 
+ | Name = All Out Assault - Roon-Class II
+ | Ships = [[Yorck]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 594
+ | DmgM = 871.2
+ | DmgH = 594
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 22262
+ | Name = All Out Assault - Takao-class II
+ | Ships = [[Takao]], [[Atago]], [[Maya]], [[Choukai]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 540
+ | DmgM = 540
+ | DmgH = 540
+ | Notes = 
+}}	
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 
+ | Name = All Out Assault - Tone-class II
+ | Ships = [[Chikuma]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 540
+ | DmgM = 540
+ | DmgH = 540
+ | Notes = 
+}}	
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 25212
+ | Name = All Out Assault - Trento-class II
+ | Ships = [[Trento]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 228
+ | DmgM = 182.4
+ | DmgH = 136.8
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 
+ | Name = All Out Assault: Trento-class II (Enhanced)
+ | Ships = [[Trieste]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 1512
+ | DmgM = 972
+ | DmgH = 756
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 20252 
+ | Name = All Out Assault - Wichita-class II
+ | Ships = [[Wichita]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 192
+ | DmgH = 144
+ | Notes = 30% burn chance. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 21242 
+ | Name = All Out Assault - York-class II
+ | Ships = [[York]], [[Exeter]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 304
+ | DmgM = 243.2
+ | DmgH = 182.4
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20200
+ | GifID = 25222
+ | Name = All Out Assault - Zara-class II
+ | Ships = [[Zara]], [[Pola]]
+ | Class = CA
+ | DmgType = SAP
+ | DmgL = 156
+ | DmgM = 300
+ | DmgH = 156
+ | Notes = Can pierce once. Has Main Gun + 1.
+}}
+{{BarrageList
+ | SkillIcon = 20300
+ | GifID = 
+ | Name = All Out Assault - Brin-class II
+ | Ships = [[Torricelli]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 20300
+ | GifID = 20312
+ | Name = All Out Assault - Gato-class II
+ | Ships = [[Dace]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20300
+ | GifID = 22312
+ | Name = All Out Assault - I-class II
+ | Ships = [[I-25]], [[I-26]], [[I-56]], [[I-58]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 20300
+ | GifID = 
+ | Name = All Out Assault II: Narwhal-class
+ | Ships = [[Nautilus]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 240
+ | DmgM = 300
+ | DmgH = 390
+ | Notes = 
+ | Dmg2Type = Normal
+ | Dmg2L = 225
+ | Dmg2M = 180
+ | Dmg2H = 135
+ | Notes2 = Scaled with 100% of Firepower stat
+}}
+{{BarrageList
+ | SkillIcon = 20300
+ | GifID = 23322
+ | Name = All Out Assault - Type IXB II
+ | Ships = [[U-110]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 20300
+ | GifID = 23512
+ | Name = All Out Assault - Type IXC II
+ | Ships = [[U-522]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 20300
+ | GifID = 23412
+ | Name = All Out Assault - Type VIIB II
+ | Ships = [[U-73]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 264
+ | DmgM = 330
+ | DmgH = 429
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 20300
+ | GifID = 23312
+ | Name = All Out Assault - Type VIIC II
+ | Ships = [[U-556]], [[U-557]], [[U-410]], [[U-1206]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes = Homing torpedoes.
+}}
+|}
+
+==Skill barrages==
+Barrages triggered by skills. Conditions for triggering skills may be found [[Skills|here]].
+
+Note:
+* Skill barrages of Battleships/Battlecruisers may include arcing shots which cannot be blocked by shields, unlike straight shots.
+* Skill barrages of Aircraft Carriers may include torpedo bombers that launch either aimed torpedoes or parallel torpedoes.
+
+{{BarrageListHeader}}
+{{BarrageList
+ | SkillIcon = 13480
+ | GifID = 13480
+ | Name = All Out Assault, Open Fire!
+ | Ships = [[Icarus]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 480
+ | DmgM = 384
+ | DmgH = 288
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 119
+ | Dmg2M = 153
+ | Dmg2H = 204
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29050
+ | GifID = 11210
+ | Name = Annihilation Mode
+ | Ships = [[Laffey]] (Retrofit)
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 931
+ | DmgM = 735
+ | DmgH = 441
+ | Notes = Can pierce once.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 624
+ | Dmg2M = 780
+ | Dmg2H = 1014
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29080
+ | GifID = 10860
+ | Name = Assault Mode
+ | Ships = [[Javelin]] (Retrofit)
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 648
+ | DmgM = 504
+ | DmgH = 288
+ | Notes = Can pierce once.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 624
+ | Dmg2M = 780
+ | Dmg2H = 1014
+ | Notes2 = 
+}}
+{{BarrageList
+ | Name = Beckoning of Ice
+ | GifID = 
+ | SkillIcon = 13830
+ | Ships = [[Tashkent µ]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 180
+ | DmgM = 90
+ | DmgH = 36
+ | Notes = Snezhinka fires every 2s for 50s.
+}}
+{{BarrageList
+ | SkillIcon = 13130
+ | GifID = 
+ | Name = Black Cat Cyclone
+ | Ships = [[Cooper]]
+ | Class = DD
+ | DmgType = Bomb (CV)
+ | DmgL = 1276.8
+ | DmgM = 1915.2
+ | DmgH = 2280
+ | Notes = Scaled with 120% of Torpedo stat.
+ | Dmg2Type = ASW
+ | Dmg2L = 84
+ | Dmg2M = 42
+ | Dmg2H = 16.8
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 104020
+ | GifID = 104022
+ | Name = Crisis Prevention!
+ | Ships = [[Kizuna AI]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 499.2
+ | DmgM = 624
+ | DmgH = 811.2
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 12680
+ | GifID = 12680
+ | Name = Dance of Wind and Rain
+ | Ships = [[Shigure]] (Retrofit)
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 1140
+ | DmgM = 570
+ | DmgH = 570
+ | Notes = 1% burn chance.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 643.2
+ | Dmg2M = 804
+ | Dmg2H = 1045.2
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 10940
+ | GifID = 10940
+ | Name = Demon Dance
+ | Ships = [[Ayanami]] (Retrofit)
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 624
+ | DmgM = 312
+ | DmgH = 312
+ | Notes = 1% burn chance.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 748.8
+ | Dmg2M = 936
+ | Dmg2H = 1216.8
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 29200
+ | GifID = 11320
+ | Name = Destruction Mode
+ | Ships = [[Z23]] (Retrofit)
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 774.4
+ | DmgM = 633.6
+ | DmgH = 422.4
+ | Notes = Can pierce once.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 464
+ | Dmg2M = 580
+ | Dmg2H = 754
+ | Notes2 = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 13570
+ | GifID = 13571
+ | Name = Anti-Torpedo Field
+ | Ships = [[Z26]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 275.2
+ | DmgM = 344
+ | DmgH = 447.2
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 12280
+ | GifID = 12280
+ | Name = Destruction Mode - Prototype
+ | Ships = [[Z1]] (Retrofit)
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 1296
+ | DmgM = 972
+ | DmgH = 648
+ | Notes = Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 12190
+ | GifID = 12190
+ | Name = Devilish Strike
+ | Ships = [[Z36]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 388.8
+ | DmgM = 302.4
+ | DmgH = 172.8
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13390
+ | GifID = 
+ | Name = Eskimo, attack!
+ | Ships = [[Eskimo]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 408
+ | DmgM = 408
+ | DmgH = 408
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 103040
+ | GifID = 
+ | Name = Evening Star
+ | Ships = [[Nekone]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 330.4
+ | DmgM = 330.4
+ | DmgH = 330.4
+ | Notes = 100% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 101110
+ | GifID = 101110
+ | Name = Getter Ravine
+ | Ships = [[White Heart]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 640
+ | DmgM = 448
+ | DmgH = 192
+ | Notes = "Ice Balls"
+ | Dmg2Type = AP
+ | Dmg2L = 552
+ | Dmg2M = 441.6
+ | Dmg2H = 331.2
+ | Notes2 = "Sparks". Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 19180
+ | GifID = 19180
+ | Name = Kitakaze Style: Lotus Torpedoes
+ | Ships = [[Kitakaze]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 345.6
+ | DmgM = 432
+ | DmgH = 561.6
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 19180
+ | GifID = 18180
+ | Name = Kitakaze Style: Lotus Torpedoes+
+ | Ships = [[Kitakaze]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 408
+ | DmgM = 510
+ | DmgH = 663
+ | Notes = 
+ | Dmg2Type = Normal
+ | Dmg2L = 414
+ | Dmg2M = 414
+ | Dmg2H = 414
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 13770
+ | GifID = 
+ | Name = Heavenly Hymn
+ | Ships = [[Le Malin µ]]
+ | Class = DD
+ | DmgType = Bomb (CV)
+ | DmgL = 1408
+ | DmgM = 1584
+ | DmgH = 1936
+ | Notes = Scaled with 60% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 105010
+ | GifID = 
+ | Name = Mach 2.42 Blossom
+ | Ships = [[Shirakami Fubuki]]
+ | Class = DD
+ | DmgType = Torpedo (CV)
+ | DmgL = 1056
+ | DmgM = 1188
+ | DmgH = 1452
+ | Notes = Scaled with 60% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 106010
+ | GifID = 106011
+ | Name = Rose's Thorns
+ | Ships = [[Marie Rose]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 750
+ | DmgM = 750
+ | DmgH = 750
+ | Notes = 100% chance to crit.
+}}
+{{BarrageList
+ | SkillIcon = 11960
+ | GifID = 11960
+ | Name = Star of the Fjord
+ | Ships = [[Hardy]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 175
+ | DmgM = 131.25
+ | DmgH = 70
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 582.4
+ | Dmg2M = 728
+ | Dmg2H = 946.4
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 13640
+ | GifID = 13642
+ | Name = Suzutsuki, Causing Confusion!
+ | Ships = [[Suzutsuki]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 39
+ | DmgM = 39
+ | DmgH = 39
+ | Notes = Smoke Screen explosion.
+ | Dmg2Type = Normal
+ | Dmg2L = 640
+ | Dmg2M = 512
+ | Dmg2H = 384
+ | Notes2 = 
+ | Dmg3Type = Torpedo
+ | Dmg3L = 345.6
+ | Dmg3M = 432
+ | Dmg3H = 561.6
+ | Notes3 = 
+}}
+{{BarrageList
+ | Name = The Blue Cruiser
+ | GifID = 
+ | SkillIcon = 12980
+ | Ships = [[Tashkent]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 180
+ | DmgM = 90
+ | DmgH = 36
+ | Notes = 100% slow chance.  Snezhinka fires every 2s for 50s.
+}}
+
+{{BarrageList
+ | SkillIcon = 105080
+ | GifID = 
+ | Name = The Summer Flower We Watch
+ | Ships = [[Natsuiro Matsuri]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 691.2
+ | DmgM = 345.6
+ | DmgH = 345.6
+ | Notes = 1% burn chance.
+ | Dmg2Type = AP
+ | Dmg2L = 648
+ | Dmg2M = 504
+ | Dmg2H = 288
+ | Notes2 = Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 10580
+ | GifID = 10580
+ | Name = Vampire's Kiss
+ | Ships = [[Vampire]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 312
+ | DmgM = 390
+ | DmgH = 507
+ | Notes = Scaled with 80% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 14000
+ | GifID = 
+ | Name = Fiendish Rampage
+ | Ships = [[Z24]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 360
+ | DmgM = 360
+ | DmgH = 360
+ | Notes = 
+ | Dmg2Type = HE
+ | Dmg2L = 180
+ | Dmg2M = 144
+ | Dmg2H = 108
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14020
+ | GifID = 14020
+ | Name = I'll Protect the Vanguard!
+ | Ships = [[Z28]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 1320
+ | DmgM = 1056
+ | DmgH = 792
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 14030
+ | GifID = 14030
+ | Name = Ontological Rudder
+ | Ships = [[Vincenzo Gioberti]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 1360
+ | DmgM = 1088
+ | DmgH = 816
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 259.2
+ | Dmg2M = 324
+ | Dmg2H = 421.2
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14140
+ | GifID = 
+ | Name = Scalawaggish Little Snowball
+ | Ships = [[Stremitelny]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 680.4
+ | DmgM = 478.8
+ | DmgH = 352.8
+ | Notes = Slows enemies movement speed by 5% on hit.
+}}
+{{BarrageList
+ | SkillIcon = 14270
+ | GifID = 
+ | Name = Shooting Gun-Star
+ | Ships = [[Allen M. Sumner]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 561
+ | DmgM = 561
+ | DmgH = 510
+ | Notes =
+ | Dmg2Type = Torpedo
+ | Dmg2L = 404
+ | Dmg2M = 505
+ | Dmg2H = 656.5
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 14420
+ | GifID = 
+ | Name = The Southwesterly Wind
+ | Ships = [[Libeccio]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes =
+ | Dmg2Type = AP
+ | Dmg2L = 480
+ | Dmg2M = 480
+ | Dmg2H = 480
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 14700
+ | GifID = 
+ | Name = Foo and Friends and Kasumi Too
+ | Ships = [[Kasumi]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 594
+ | DmgM = 308
+ | DmgH = 308
+ | Notes = 1% chance to burn.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 857.6
+ | Dmg2M = 1072
+ | Dmg2H = 1393.6
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 14720
+ | GifID = 
+ | Name = Support Robot Mk IV
+ | Ships = [[Ingraham]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 50
+ | DmgM = 50
+ | DmgH = 50
+ | Notes = Pierce 99, Ignore shields
+ | Dmg2Type = AP
+ | Dmg2L = 450
+ | Dmg2M = 450
+ | Dmg2H = 450
+ | Notes2 = Pierce 5
+}}
+{{BarrageList
+ | SkillIcon = 14850
+ | GifID = 
+ | Name = Upon the Wind's Edge
+ | Ships = [[Shimakaze]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 255
+ | DmgM = 255
+ | DmgH = 255
+ | Notes = Ignore shields
+ | Dmg2Type = Torpedo
+ | Dmg2L = 480
+ | Dmg2M = 600
+ | Dmg2H = 780
+ | Notes2 = 100% chance to flood.
+}}
+{{BarrageList
+ | SkillIcon = 14870
+ | GifID = 
+ | Name = Within the Thunder's Roar
+ | Ships = [[Shimakaze]]
+ | Class = DD
+ | DmgType = Torpedo
+ | DmgL = 960
+ | DmgM = 1200
+ | DmgH = 1560
+ | Notes = 100% chance to flood.
+}}
+{{BarrageList
+ | SkillIcon = 14900
+ | GifID = 14900
+ | Name = Feral Claws
+ | Ships = [[Yuudachi]] (Retrofit)
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 900
+ | DmgM = 750
+ | DmgH = 675
+ | Notes = 100% chance to cause special burn.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 235.2
+ | Dmg2M = 305.4
+ | Dmg2H = 403.2
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14930
+ | GifID = 
+ | Name = Terrific Terror
+ | Ships = [[Le Terrible]]
+ | Class = DD
+ | DmgType = HE
+ | DmgL = 1300
+ | DmgM = 900
+ | DmgH = 600
+ | Notes = Pierce 1.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 180
+ | Dmg2M = 225
+ | Dmg2H = 292.5
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15160
+ | GifID = 
+ | Name = Let's Go, Data 857!
+ | Ships = [[Bristol]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 605
+ | DmgM = 605
+ | DmgH = 550
+ | Notes =
+ | Dmg2Type = Torpedo
+ | Dmg2L = 404
+ | Dmg2M = 505
+ | Dmg2H = 656.5
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15190
+ | GifID = 
+ | Name = Azure Dragon's Dance
+ | Ships = [[An Shan]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 800
+ | DmgM = 800
+ | DmgH = 800
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15200
+ | GifID = 
+ | Name = White Tiger's Prance
+ | Ships = [[Chang Chun]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 800
+ | DmgM = 800
+ | DmgH = 800
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15240
+ | GifID = 
+ | Name = Can I Attack Now? (Unenhanced)
+ | Ships = [[Kiev]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 260
+ | DmgM = 208
+ | DmgH = 156
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15240
+ | GifID = 
+ | Name = Can I Attack Now? (Enhance 1)
+ | Ships = [[Kiev]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 420
+ | DmgM = 328
+ | DmgH = 228
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15240
+ | GifID = 
+ | Name = Can I Attack Now? (Enhance 2)
+ | Ships = [[Kiev]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 740
+ | DmgM = 568
+ | DmgH = 372
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 320
+ | Dmg2M = 400
+ | Dmg2H = 520
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15280
+ | GifID = 
+ | Name = A Genius Keeps Things Simple!
+ | Ships = [[Soobrazitelny]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 480
+ | DmgM = 384
+ | DmgH = 288
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 230.4
+ | Dmg2M = 288
+ | Dmg2H = 374.4
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15740
+ | GifID = 
+ | Name = Vichya's Black Lance
+ | Ships = [[L'Indomptable]]
+ | Class = DD
+ | DmgType = AP
+ | DmgL = 60
+ | DmgM = 60
+ | DmgH = 60
+ | Notes = Ignore shields
+}}
+{{BarrageList
+ | SkillIcon = 15740
+ | GifID = 
+ | Name = Vichya's Black Lance
+ | Ships = [[L'Indomptable]]
+ | Class = DD
+ | DmgType = Normal
+ | DmgL = 520
+ | DmgM = 416
+ | DmgH = 312
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 105
+ | Dmg2M = 135
+ | Dmg2H = 180
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 19320
+ | GifID = 
+ | Name = Ausgewogen
+ | Ships = [[Mainz]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 432
+ | DmgM = 432
+ | DmgH = 432
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 19320
+ | GifID = 
+ | Name = Ausgewogen+
+ | Ships = [[Mainz]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 960
+ | DmgM = 960
+ | DmgH = 960
+ | Notes = 
+}}
+{{BarrageList
+ | Name = Blaze Break
+ | GifID = 101070
+ | SkillIcon = 101070
+ | Ships = [[Purple Heart]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 504
+ | DmgM = 403.2
+ | DmgH = 302.4
+ | Notes = 8% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 15800
+ | GifID = 
+ | Name = Halo of Fervor
+ | Ships = [[Giuseppe Garibaldi]]
+ | Class = CL
+ | DmgType = Torpedo
+ | DmgL = 288
+ | DmgM = 360
+ | DmgH = 468
+ | Notes = 
+ | Dmg2Type = HE
+ | Dmg2L = 672
+ | Dmg2M = 432
+ | Dmg2H = 312
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 13460
+ | GifID = 13461
+ | Name = Blast Geminio
+ | Ships = [[Hermione]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 480
+ | DmgM = 320
+ | DmgH = 240
+ | Notes = Straight shots.
+}}
+{{BarrageList
+ | SkillIcon = 13460
+ | GifID = 13460
+ | Name = Bombarda Geminio
+ | Ships = [[Hermione]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 480
+ | DmgM = 320
+ | DmgH = 240
+ | Notes = Arcing shots. Splash 3. Add Blast Geminio if there are no enemy units within 30 units of this ship.
+}}
+{{BarrageList
+ | Name = Cavalier of the Ether
+ | GifID = 13000
+ | SkillIcon = 13000
+ | Ships = [[Chapayev]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 390
+ | DmgM = 265.2
+ | DmgH = 202.8
+ | Notes = 100% burn chance.
+}}
+{{BarrageList
+ | Name = Lyrical Dedication
+ | GifID = 
+ | SkillIcon = 13810
+ | Ships = [[Dido µ]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 220
+ | DmgM = 240
+ | DmgH = 200
+ | Notes = 8% burn chance.
+}}
+{{BarrageList
+ | Name = Lyrical Dedication (Enhanced)
+ | GifID = 
+ | SkillIcon = 13810
+ | Ships = [[Dido µ]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 275
+ | DmgM = 300
+ | DmgH = 250
+ | Notes = 8% burn chance.
+ | Dmg2Type = HE
+ | Dmg2L = 300
+ | Dmg2M = 300
+ | Dmg2H = 250
+ | Notes2 = Homing bullets.
+}}
+{{BarrageList
+ | SkillIcon = 12040
+ | GifID = 12041
+ | Name = Erratic Inventor (Prototype Type-0 Main Gun)
+ | Ships = [[Yuubari]] (Retrofit)
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 544.32
+ | DmgM = 383.04
+ | DmgH = 282.24
+ | Notes = 100% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 12040
+ | GifID = 12042
+ | Name = Erratic Inventor (Prototype Torpedo Tube)
+ | Ships = [[Yuubari]] (Retrofit)
+ | Class = CL
+ | DmgType = Torpedo
+ | DmgL = 307.2
+ | DmgM = 384
+ | DmgH = 499.2
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 12040
+ | GifID = 12043
+ | Name = Erratic Inventor (Special Pyrotechnics Bomb)
+ | Ships = [[Yuubari]] (Retrofit)
+ | Class = CL
+ | DmgType = Sanshikidan
+ | DmgL = 180
+ | DmgM = 144
+ | DmgH = 108
+ | Notes = Does not cause burn.
+}}
+{{BarrageList
+ | SkillIcon = 13190
+ | GifID = 13192
+ | Name = I'm Not Afraid Anymore!
+ | Ships = [[Isuzu]]
+ | Class = CL
+ | DmgType = Torpedo
+ | DmgL = 151.2
+ | DmgM = 194.4
+ | DmgH = 259.2
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 106110
+ | GifID = 
+ | Name = Joker Card
+ | Ships = [[Monica]]
+ | Class = CL
+ | DmgType = SAP
+ | DmgL = 240
+ | DmgM = 240
+ | DmgH = 240
+ | Notes = Bullets. 10% Damage debuff. Scaled with 100% of Torpedo stat.
+ | Dmg2Type = AP
+ | Dmg2L = 300
+ | Dmg2M = 300
+ | Dmg2H = 300
+ | Notes2 = Cards. Pierce 1. Scaled with 100% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 103060
+ | GifID = 
+ | Name = Lily Root (Stage 1)
+ | Ships = [[Rurutie]]
+ | Class = CL
+ | DmgType = Torpedo
+ | DmgL = 138
+ | DmgM = 138
+ | DmgH = 138
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 103060
+ | GifID = 
+ | Name = Lily Root (Stage 2)
+ | Ships = [[Rurutie]]
+ | Class = CL
+ | DmgType = Torpedo
+ | DmgL = 348
+ | DmgM = 348
+ | DmgH = 348
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 103060
+ | GifID = 
+ | Name = Lily Root (Stage 3)
+ | Ships = [[Rurutie]]
+ | Class = CL
+ | DmgType = Torpedo
+ | DmgL = 396
+ | DmgM = 396
+ | DmgH = 396
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 103060
+ | GifID = 
+ | Name = Lily Root (Stage 4)
+ | Ships = [[Rurutie]]
+ | Class = CL
+ | DmgType = Torpedo
+ | DmgL = 420
+ | DmgM = 420
+ | DmgH = 420
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 12360
+ | GifID = 12362
+ | Name = Messenger of Love
+ | Ships = [[Émile Bertin]] (Retrofit)
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 744
+ | DmgM = 595.2
+ | DmgH = 446.4
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 604.8
+ | Dmg2M = 777.6
+ | Dmg2H = 1036.8
+ | Notes2 = Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 19310
+ | GifID = 19312
+ | Name = Retaliatory Shield
+ | Ships = [[Mainz]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 259.2
+ | DmgM = 201.6
+ | DmgH = 115.2
+ | Notes = Can pierce once. 1% chance to burn.
+ | Dmg2Type = HE
+ | Dmg2L = 345.6
+ | Dmg2M = 172.8
+ | Dmg2H = 172.8
+ | Notes2 = 1% chance to burn
+}}
+{{BarrageList
+ | SkillIcon = 11720
+ | GifID = 11720
+ | Name = Sparkling Battle Star!
+ | Ships = [[San Diego]] (Retrofit)
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 864
+ | DmgM = 432
+ | DmgH = 432
+ | Notes = 1% burn chance. Homing bullets.
+}}
+{{BarrageList
+ | SkillIcon = 13320
+ | GifID = 13320
+ | Name = Shells of Judgment
+ | Ships = [[La Galissonnière]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 120
+ | DmgM = 120
+ | DmgH = 120
+ | Notes = 10% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 12270
+ | GifID = 12270
+ | Name = Sparkling Star!
+ | Ships = [[Li'l Sandy]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 223.2
+ | DmgM = 111.6
+ | DmgH = 111.6
+ | Notes = Scaled with 100% of ASW stat. Can hit subs.
+}}
+
+{{BarrageList
+ | SkillIcon = 101060
+ | GifID = 101060
+ | Name = Victory Slash
+ | Ships = [[Purple Heart]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 4863.6
+ | DmgM = 7642.8
+ | DmgH = 6253.2
+ | Notes = "Swords". Can pierce twice.
+ | Dmg2Type = Normal
+ | Dmg2L = 1008
+ | Dmg2M = 504
+ | Dmg2H = 201.6
+ | Notes2 = "Bullets". Scaled with 120% of Firepower stat.
+}}
+{{BarrageList
+ | SkillIcon = 106080
+ | GifID = 
+ | Name = Venus Friends
+ | Ships = [[Misaki]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 675
+ | DmgM = 475
+ | DmgH = 350
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13970
+ | GifID = 
+ | Name = Follow My Lead... Please!
+ | Ships = [[Nürnberg]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 360
+ | DmgM = 568
+ | DmgH = 360
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 14070
+ | GifID = 
+ | Name = Cleanse Impurity
+ | Ships = [[Ying Swei]], [[Chao Ho]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 144
+ | DmgM = 115.2
+ | DmgH = 100.8
+ | Notes = 
+ | Dmg2Type = Normal
+ | Dmg2L = 144
+ | Dmg2M = 115.2
+ | Dmg2H = 100.8
+ | Notes2 = Pierce 1.
+ | Dmg3Type = Torpedo
+ | Dmg3L = 99.2
+ | Dmg3M = 124
+ | Dmg3H = 161.2
+ | Notes3 = 
+}}
+{{BarrageList
+ | SkillIcon = 14170
+ | GifID = 
+ | Name = Kirov Reporting!
+ | Ships = [[Kirov]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 501.5
+ | DmgM = 501.5
+ | DmgH = 501.5
+ | Notes = 100% special burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 14240
+ | GifID = 
+ | Name = Laid-Back Defending
+ | Ships = [[Murmansk]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 189
+ | DmgM = 133
+ | DmgH = 98
+ | Notes = 70% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 14260
+ | GifID = 
+ | Name = From Merkuria With Love!
+ | Ships = [[Pamiat' Merkuria]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 409.5
+ | DmgM = 850.5
+ | DmgH = 724.5
+ | Notes = Slows movement speed by 20% for 5s, Pierce 1, Ignore shields.
+}}
+{{BarrageList
+ | SkillIcon = 14340
+ | GifID = 
+ | Name = Halo of Flames
+ | Ships = [[Duca degli Abruzzi]]
+ | Class = CL
+ | DmgType = SAP
+ | DmgL = 169
+ | DmgM =325
+ | DmgH = 169
+ | Notes = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 14610
+ | GifID = 14611
+ | Name = The Bigger They Are...
+ | Ships = [[Boise]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 96
+ | DmgM = 120
+ | DmgH = 144
+ | Notes = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 800090
+ | GifID = 
+ | Name = Shadow-Wing Torch
+ | Ships = [[Helena META]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 270
+ | DmgM = 216
+ | DmgH = 189
+ | Notes = Spawned Bullets. Ignore Shield. Pierce 50
+ | Dmg2Type = Normal
+ | Dmg2L = 270
+ | Dmg2M = 216
+ | Dmg2H = 189
+ | Notes2 = Travelling bullets. 10% Damage Debuff.
+}}
+{{BarrageList
+ | SkillIcon = 107030
+ | GifID = 
+ | Name = PositiveBurst!
+ | Ships = [[Haruka Amami]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 1069.2
+ | DmgM = 752.4
+ | DmgH = 554.4
+ | Notes = 8% chance to burn.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 216
+ | Dmg2M = 270
+ | Dmg2H = 351
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14760
+ | GifID = 14762
+ | Name = Sunglint Phantasm
+ | Ships = [[Yura]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 640
+ | DmgM = 480
+ | DmgH = 256
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 643.2
+ | Dmg2M = 804
+ | Dmg2H = 1045.2
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 108010
+ | GifID = 
+ | Name = Grid Beam (No BattleTracto/Namiko)
+ | Ships = [[Rikka Takarada]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 180
+ | DmgM = 144
+ | DmgH = 108
+ | Notes = 2.5s duration, 5 ticks/s
+}}
+{{BarrageList
+ | SkillIcon = 108010
+ | GifID = 
+ | Name = Grid Beam (BattleTracto/Namiko)
+ | Ships = [[Rikka Takarada]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 300
+ | DmgH = 300
+ | Notes = 2.5s duration, 5 ticks/s
+}}
+{{BarrageList
+ | SkillIcon = 108010
+ | GifID = 
+ | Name = Grid Beam (BusterBorr/Hass)
+ | Ships = [[Rikka Takarada]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 480
+ | DmgM = 480
+ | DmgH = 480
+ | Notes = 2.5s duration, 5 ticks/s
+}}
+{{BarrageList
+ | SkillIcon = 108020
+ | GifID = 
+ | Name = Slash & Circus (unenhanced)
+ | Ships = [[Rikka Takarada]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 360
+ | DmgM = 360
+ | DmgH = 360
+ | Notes = Ignore shields.
+}}
+{{BarrageList
+ | SkillIcon = 108020
+ | GifID = 
+ | Name = Slash & Circus (Gridman Calibur/Namiko)
+ | Ships = [[Rikka Takarada]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 432
+ | DmgM = 432
+ | DmgH = 432
+ | Notes = Pierce 10. Armor break.
+}}
+{{BarrageList
+ | SkillIcon = 108020
+ | GifID = 
+ | Name = Slash & Circus (Sky Vittor/Hass)
+ | Ships = [[Rikka Takarada]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 567
+ | DmgM = 399
+ | DmgH = 294
+ | Notes = Ignore shields.
+}}
+{{BarrageList
+ | SkillIcon = 108030
+ | GifID = 
+ | Name = Grid Fixer Beam
+ | Ships = [[Rikka Takarada]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 576
+ | DmgM = 460.8
+ | DmgH = 345.6
+ | Notes = 2.5s duration, 5 ticks/s.
+}}
+{{BarrageList
+ | SkillIcon = 108090
+ | GifID = 
+ | Name = Coordinated Volley
+ | Ships = [[Hass]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 90
+ | DmgM = 90
+ | DmgH = 90
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 108100
+ | GifID = 
+ | Name = Amp Laser Circus
+ | Ships = [[Hass]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 216
+ | DmgM = 152
+ | DmgH = 112
+ | Notes = Ignore shields.
+ | Dmg2Type = Normal
+ | Dmg2L = 300
+ | Dmg2M = 300
+ | Dmg2H = 300
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14990
+ | GifID = 
+ | Name = Scorching Combo (Unenhanced)
+ | Ships = [[Magdeburg]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 219.232
+ | DmgM = 421.6
+ | DmgH = 219.232
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 144
+ | Dmg2M = 180
+ | Dmg2H = 234
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14990
+ | GifID = 
+ | Name = Scorching Combo (Enhanced 1)
+ | Ships = [[Magdeburg]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 509.795
+ | DmgM = 980.375
+ | DmgH = 509.795
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 144
+ | Dmg2M = 180
+ | Dmg2H = 234
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14990
+ | GifID = 
+ | Name = Scorching Combo (Enhanced 2)
+ | Ships = [[Magdeburg]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 509.795
+ | DmgM = 980.375
+ | DmgH = 509.795
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 288
+ | Dmg2M = 360
+ | Dmg2H = 468
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15130
+ | GifID = 
+ | Name = Wave-Breaking Speardancer
+ | Ships = [[Hai Chi]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 225
+ | DmgH = 120
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15110
+ | GifID = 
+ | Name = Scrollbearer of Turbulent Seas
+ | Ships = [[Hai Tien]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 350
+ | DmgM = 262.5
+ | DmgH = 140
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15560
+ | GifID = 
+ | Name = Marvels of History - Elbing (< 30 )
+ | Ships = [[Elbing]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 280
+ | DmgM = 180
+ | DmgH = 140
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15560
+ | GifID = 
+ | Name = Marvels of History - Elbing (> 30 )
+ | Ships = [[Elbing]]
+ | Class = CL
+ | DmgType = HE
+ | DmgL = 180
+ | DmgM = 140
+ | DmgH = 80
+ | Notes = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 15560
+ | GifID = 
+ | Name = Duet of Alternation (DD gun)
+ | Ships = [[Emden]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 240
+ | DmgH = 240
+ | Notes = Ignore shields.
+}}
+{{BarrageList
+ | SkillIcon = 15560
+ | GifID = 
+ | Name = Duet of Alternation (CL gun)
+ | Ships = [[Emden]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 960
+ | DmgM = 960
+ | DmgH = 960
+ | Notes = 30% Slow, Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 800420
+ | GifID = 
+ | Name = Decelerative Fire
+ | Ships = [[Memphis META]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 130
+ | DmgM = 130
+ | DmgH = 130
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 800450
+ | GifID = 
+ | Name = Framework of Logic - Memphis
+ | Ships = [[Memphis META]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 420
+ | DmgM = 336
+ | DmgH = 252
+ | Notes =
+ | Dmg2Type = Torpedo
+ | Dmg2L = 240
+ | Dmg2M = 300
+ | Dmg2H = 390
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 19540
+ | GifID = 
+ | Name = Pathfinder's Shroud
+ | Ships = [[Plymouth]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 840
+ | DmgM = 840
+ | DmgH = 840
+ | Notes = Ignore shields, Pierce 50, Shrapnel
+ | Dmg2Type = Normal
+ | Dmg2L = 840
+ | Dmg2M = 840
+ | Dmg2H = 840
+ | Notes2 = Reaim
+}}
+{{BarrageList
+ | SkillIcon = 19590
+ | GifID = 
+ | Name = Blazing Battledance
+ | Ships = [[Harbin]]
+ | Class = CL
+ | DmgType = Normal
+ | DmgL = 500
+ | DmgM = 500
+ | DmgH = 500
+ | Notes = Aimed
+}}
+{{BarrageList
+ | SkillIcon = 13270
+ | GifID = 13270
+ | Name = Bellowing Gusts of Fire
+ | Ships = [[Algérie]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 486
+ | DmgM = 342
+ | DmgH = 252
+ | Notes = 10% burn chance. 8 damage burn.
+}}
+{{BarrageList
+ | SkillIcon = 16440
+ | GifID = 
+ | Name = Plum Flower in the Cold Night
+ | Ships = [[Yat Sen]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 448
+ | DmgM = 288
+ | DmgH = 224
+ | Notes = Pierce 50, Shrapnel
+ | Dmg2Type = AP
+ | Dmg2L = 448
+ | Dmg2M = 288
+ | Dmg2H = 224
+ | Notes2 = Reaim
+}}
+{{BarrageList
+ | SkillIcon = 16440
+ | GifID = 
+ | Name = Plum Flower in the Cold Night (enhanced)
+ | Ships = [[Yat Sen]]
+ | Class = CL
+ | DmgType = AP
+ | DmgL = 896
+ | DmgM = 576
+ | DmgH = 448
+ | Notes = Pierce 50, Shrapnel
+ | Dmg2Type = AP
+ | Dmg2L = 896
+ | Dmg2M = 576
+ | Dmg2H = 448
+ | Notes2 = Reaim
+}}
+{{BarrageList
+ | SkillIcon = 19280
+ | GifID = 
+ | Name = Grin and Fire!
+ | Ships = [[Cheshire]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 792.96
+ | DmgM = 792.96
+ | DmgH = 792.96
+ | Notes = Splash range 7.
+}}
+{{BarrageList
+ | SkillIcon = 19300
+ | GifID = 
+ | Name = Flintlock Burst
+ | Ships = [[Drake]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 276
+ | DmgM = 276
+ | DmgH = 276
+ | Notes = 15% lifesteal. Ignores shields.
+}}
+{{BarrageList
+ | SkillIcon = 19060
+ | GifID = 19060
+ | Name = Flash of Lightning
+ | Ships = [[Ibuki]]
+ | Class = CA
+ | DmgType = Torpedo
+ | DmgL = 540.8
+ | DmgM = 707.2
+ | DmgH = 956.8
+ | Notes = Scaled with 120% of Torpedo stat.
+}}
+
+{{BarrageList
+ | SkillIcon = 105110
+ | GifID = 
+ | Name = Demon Cutter Asura-Rakshasa
+ | Ships = [[Nakiri Ayame]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 81
+ | DmgM = 81
+ | DmgH = 81
+ | Notes = Can pierce 20 times. 100% critical rate.
+}}
+{{BarrageList
+ | SkillIcon = 11850
+ | GifID = 11850
+ | Name = The Flashing Blade of Surabaya
+ | Ships = [[Ashigara]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 216
+ | DmgM = 152
+ | DmgH = 112
+ | Notes = 8% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 101090
+ | GifID = 101090
+ | Name = Lacy Dance
+ | Ships = [[Black Heart]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 312
+ | DmgM = 234
+ | DmgH = 124.8
+ | Notes = 
+ | Dmg2Type = AP
+ | Dmg2L = 312
+ | Dmg2M = 249.6
+ | Dmg2H = 187.2
+ | Notes2 = Can pierce once.
+ | Dmg3Type = HE
+ | Dmg3L = 421.2
+ | Dmg3M = 327.6
+ | Dmg3H = 218.4
+ | Notes3 = 3% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 103020
+ | GifID = 
+ | Name = Ten Sisters
+ | Ships = [[Kuon]]
+ | Class = CA
+ | DmgType = Torpedo
+ | DmgL = 296.8
+ | DmgM = 296.8
+ | DmgH = 296.8
+ | Notes =
+}}
+{{BarrageList
+| SkillIcon = 13100
+| GifID = 13101
+| Name = Blazing Burst Wings
+| Ships = [[Bremerton]]
+| Class = CA
+| DmgType = HE
+| DmgL = 324
+| DmgM = 228
+| DmgH = 168
+| Notes = 
+}}
+{{BarrageList
+| SkillIcon = 13730
+| GifID = 
+| Name = Encore Flare
+| Ships = [[Roon µ]]
+| Class = CA
+| DmgType = AP
+| DmgL = 216
+| DmgM = 216
+| DmgH = 216
+| Notes = Pierce 99, 10% damage debuff
+| Dmg2Type = Normal
+| Dmg2L = 74.4
+| Dmg2M = 74.4
+| Dmg2H = 74.4
+| Notes2 = Splash 12, Scaled with 100% of ASW stat.
+| Dmg3Type = Torpedo
+| Dmg3L = 240
+| Dmg3M = 300
+| Dmg3H = 390
+| Notes3 = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 106050
+ | GifID = 106050
+ | Name = Sakura Petal Dance
+ | Ships = [[Kasumi (Venus Vacation)]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 302.4
+ | DmgM = 235.2
+ | DmgH = 134.4
+ | Notes = Pierce 1.
+ | Dmg2Type = HE
+ | Dmg2L = 403.2
+ | Dmg2M = 201.6
+ | Dmg2H = 201.6
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 14050
+ | GifID = 14050
+ | Name = Viola Spear
+ | Ships = [[Pola]]
+ | Class = CA
+ | DmgType = SAP
+ | DmgL = 208
+ | DmgM = 400
+ | DmgH = 208
+ | Notes = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 13920
+ | GifID = 
+ | Name = Heinrich's Hunch Punch
+ | Ships = [[Prinz Heinrich]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 1144
+ | DmgM = 1144
+ | DmgH = 1144
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 14190
+ | GifID = 
+ | Name = Bulwark of Rime
+ | Ships = [[Tallinn]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 528
+ | DmgM = 528
+ | DmgH = 528
+ | Notes = Slows movement speed by 8%. Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 800500
+ | GifID = 
+ | Name = Blade of Shattered Dreams
+ | Ships = [[Trento META]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 324
+ | DmgM = 324
+ | DmgH = 324
+ | Notes = Aimed
+}}
+{{BarrageList
+ | SkillIcon = 800530
+ | GifID = 
+ | Name = Flickering Light - Trento
+ | Ships = [[Trento META]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 540
+ | DmgM = 540
+ | DmgH = 540
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 648
+ | Dmg2M = 810
+ | Dmg2H = 1053
+ | Notes2 = Aimed
+}}
+{{BarrageList
+ | SkillIcon = 14570
+ | GifID = 
+ | Name = Get Starstruck!
+ | Ships = [[San Francisco]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 231
+ | DmgM = 231
+ | DmgH = 231
+ | Notes = 3% chance to burn.
+}}
+{{BarrageList
+ | SkillIcon = 19440
+ | GifID = 
+ | Name = Riddle Me This
+ | Ships = [[Anchorage]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 864
+ | DmgM = 608
+ | DmgH = 448
+ | Notes = 8% chance to burn.
+}}
+{{BarrageList
+ | SkillIcon = 107110
+ | GifID = 
+ | Name = Directionally Challenged
+ | Ships = [[Azusa Miura]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 425.25
+ | DmgM = 299.25
+ | DmgH = 220.5
+ | Notes = Pierce 5. Ignore shields
+}}
+{{BarrageList
+ | SkillIcon = 14780
+ | GifID = 
+ | Name = All-Seeing Eye (IJN CV)
+ | Ships = [[Chikuma]]
+ | Class = CA
+ | DmgType = Bomb (CV)
+ | DmgL = 416
+ | DmgM = 468
+ | DmgH = 572
+ | Notes = Scaled with 100% of Firepower stat.
+ | Dmg2Type = HE
+ | Dmg2L = 445.5
+ | Dmg2M = 313.5
+ | Dmg2H = 231
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14780
+ | GifID = 
+ | Name = All-Seeing Eye (no IJN CV)
+ | Ships = [[Chikuma]]
+ | Class = CA
+ | DmgType = Bomb (CV)
+ | DmgL = 208
+ | DmgM = 234
+ | DmgH = 286
+ | Notes = Scaled with 100% of Firepower stat.
+ | Dmg2Type = HE
+ | Dmg2L = 445.5
+ | Dmg2M = 313.5
+ | Dmg2H = 231
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14920
+ | GifID = 
+ | Name = Nola Finale
+ | Ships = [[New Orleans]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 105
+ | DmgM = 195
+ | DmgH = 165
+ | Notes = Pierce 5. 100% chance to cause Armor Break.
+}}
+{{BarrageList
+ | SkillIcon = 108110
+ | GifID = 
+ | Name = Blazing Inferno Rex Roar
+ | Ships = [[Yume Minami]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 162
+ | DmgM = 114
+ | DmgH = 84
+ | Notes = 2.5s duration. 5 ticks/s
+}}
+{{BarrageList
+ | SkillIcon = 108120
+ | GifID = 
+ | Name = Something Beam
+ | Ships = [[Yume Minami]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 360
+ | DmgM = 360
+ | DmgH = 360
+ | Notes = 2.5s duration. 5 ticks/s. Armor Break on heavy armor
+}}
+{{BarrageList
+ | SkillIcon = 108130
+ | GifID = 
+ | Name = Dynazenon Full Burst
+ | Ships = [[Yume Minami]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 240
+ | DmgH = 240
+ | Notes = 2.5s duration. 5 ticks/s.
+ | Dmg2Type = Normal
+ | Dmg2L = 135
+ | Dmg2M = 135
+ | Dmg2H = 135
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 108070
+ | GifID = 
+ | Name = Calibur End
+ | Ships = [[Namiko]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 720
+ | DmgM = 720
+ | DmgH = 720
+ | Notes = Ignore shields.
+}}
+{{BarrageList
+ | SkillIcon = 108080
+ | GifID = 
+ | Name = Tanker Cannon
+ | Ships = [[Namiko]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 234
+ | DmgM = 162
+ | DmgH = 108
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 15020
+ | GifID = 
+ | Name = Knockout Shot
+ | Ships = [[Prinz Adalbert]]
+ | Class = CA
+ | DmgType = Normal
+ | DmgL = 520
+ | DmgM = 520
+ | DmgH = 520
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 15600
+ | GifID = 
+ | Name = A Surprise for Mew!
+ | Ships = [[Little Cheshire]]
+ | Class = CA
+ | DmgType = HE
+ | DmgL = 509.76
+ | DmgM = 509.76
+ | DmgH = 509.76
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 15930
+ | GifID = 
+ | Name = Daredevil Sweetheart
+ | Ships = [[Blücher]]
+ | Class = CA
+ | DmgType = AP
+ | DmgL = 576
+ | DmgM = 704
+ | DmgH = 640
+ | Notes = Aimed
+}}
+{{BarrageList
+ | SkillIcon = 19210
+ | GifID = 19211
+ | Name = Special Gunnery Training
+ | Ships = [[Azuma]]
+ | Class = CB
+ | DmgType = HE
+ | DmgL = 384
+ | DmgM = 384
+ | DmgH = 384
+ | Notes = Small straight shots. Does not cause burn.
+}}
+{{BarrageList
+ | SkillIcon = 19210
+ | GifID = 19213
+ | Name = Special Gunnery Training (Enhanced - Close)
+ | Ships = [[Azuma]]
+ | Class = CB
+ | DmgType = HE
+ | DmgL = 384
+ | DmgM = 384
+ | DmgH = 384
+ | Notes = Small straight shots. Does not cause burn.
+ | Dmg2Type = HE
+ | Dmg2L = 753.3
+ | Dmg2M = 530.1
+ | Dmg2H = 390.6
+ | Notes2 = Straight Shots. 100% burn chance. Enemies within 30 units.
+}}
+{{BarrageList
+ | SkillIcon = 19210
+ | GifID = 19214
+ | Name = Special Gunnery Training (Enhanced - Far)
+ | Ships = [[Azuma]]
+ | Class = CB
+ | DmgType = HE
+ | DmgL = 384
+ | DmgM = 384
+ | DmgH = 384
+ | Notes = Small straight shots. Does not cause burn.
+ | Dmg2Type = HE
+ | Dmg2L = 502.2
+ | Dmg2M = 353.4
+ | Dmg2H = 260.4
+ | Notes2 = Arching shots. 100% burn chance. No enemies with 30 units.
+}}
+{{BarrageList
+ | SkillIcon = 15290
+ | GifID = 
+ | Name = Jöttun's Jaws
+ | Ships = [[Ägir]]
+ | Class = CB
+ | DmgType = AP
+ | DmgL = 252
+ | DmgM = 369.6
+ | DmgH = 252
+ | Notes = Arching shots.
+ | Dmg2Type = AP
+ | Dmg2L = 360
+ | Dmg2M = 528
+ | Dmg2H = 360
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 19430
+ | GifID = 
+ | Name = Indomitable Ice (Unenhanced)
+ | Ships = [[Kronshtadt]]
+ | Class = CB
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 240
+ | DmgH = 240
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15290
+ | GifID = 
+ | Name = Indomitable Ice (Enhanced)
+ | Ships = [[Kronshtadt]]
+ | Class = CB
+ | DmgType = AP
+ | DmgL = 252
+ | DmgM = 369.6
+ | DmgH = 252
+ | Notes = Arching shots.
+ | Dmg2Type = Normal
+ | Dmg2L = 240
+ | Dmg2M = 240
+ | Dmg2H = 240
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15300
+ | GifID = 
+ | Name = Tempered Prudence
+ | Ships = [[Kronshtadt]]
+ | Class = CB
+ | DmgType = AP
+ | DmgL = 330
+ | DmgM = 330
+ | DmgH = 330
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15310
+ | GifID = 
+ | Name = Strong-Willed Support
+ | Ships = [[Kronshtadt]]
+ | Class = CB
+ | DmgType = AP
+ | DmgL = 369.6
+ | DmgM = 369.6
+ | DmgH = 369.6
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 19650
+ | GifID = 
+ | Name = Panacea's Paean
+ | Ships = [[Brest]]
+ | Class = CB
+ | DmgType = Normal
+ | DmgL = 320
+ | DmgM = 320
+ | DmgH = 320
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 19650
+ | GifID = 
+ | Name = Panacea's Paean (enhanced)
+ | Ships = [[Brest]]
+ | Class = CB
+ | DmgType = AP
+ | DmgL = 93.6
+ | DmgM = 270.4
+ | DmgH = 228.8
+ | Notes = Aimed, Arcing
+ | Dmg2Type = Normal
+ | Dmg2L = 320
+ | Dmg2M = 320
+ | Dmg2H = 320
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 11270
+ | GifID = 11271
+ | Name = Blaze of Glory
+ | Ships = [[Kirishima]]
+ | Class = BC
+ | DmgType = Sanshikidan
+ | DmgL = 3520
+ | DmgM = 3097.6
+ | DmgH = 2675.2
+ | Notes = 50% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 11800
+ | GifID = 11800
+ | Name = Crippling Strike
+ | Ships = [[Amagi]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 813.6
+ | DmgM = 1084.8
+ | DmgH = 632.8
+ | Notes = Aimed arcing shots.
+ | Dmg2Type = Normal
+ | Dmg2L = 842.4
+ | Dmg2M = 1123.2
+ | Dmg2H = 655.2
+ | Notes2 = Straight shots.
+ | Dmg3Type = AP
+ | Dmg3L = 360
+ | Dmg3M = 280
+ | Dmg3H = 160
+ | Notes3 = Straight shots. Can pierce once.
+ | Dmg4Type = Torpedo
+ | Dmg4L = 436.5
+ | Dmg4M = 545.6
+ | Dmg4H = 709.3
+ | Notes4 = Aimed torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 11490
+ | GifID = 11490
+ | Name = Frontal Fire
+ | Ships = [[Dunkerque]]
+ | Class = BC
+ | DmgType = HE
+ | DmgL = 1512
+ | DmgM = 1064
+ | DmgH = 784
+ | Notes = Large shells. 8% burn chance.
+ | Dmg2Type = Normal
+ | Dmg2L = 480
+ | Dmg2M = 384
+ | Dmg2H = 336
+ | Notes2 = Needles.
+}}
+{{BarrageList
+ | SkillIcon = 10290
+ | GifID = 10290
+ | Name = Royal Navy's Glory
+ | Ships = [[Hood]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 1583.4
+ | DmgM = 2262
+ | DmgH = 2035.8
+ | Notes = Arcing shots.
+}}
+{{BarrageList
+ | SkillIcon = 10290
+ | GifID = 10290
+ | Name = Royal Navy's Glory+
+ | Ships = [[Hood]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 3166.8
+ | DmgM = 2262
+ | DmgH = 2035.8
+ | Notes = Arcing shots.
+}}
+{{BarrageList
+ | SkillIcon = 19340
+ | GifID = 
+ | Name = Herteitr's Rolling Thunder
+ | Ships = [[Odin]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 2208
+ | DmgM = 1766.4
+ | DmgH = 1324.8
+ | Notes =
+ | Dmg2Type = AP
+ | Dmg2L = 360
+ | Dmg2M = 360
+ | Dmg2H = 360
+ | Notes2 = Pierce 10. Ignores Shields
+}}
+{{BarrageList
+ | SkillIcon = 19340
+ | GifID = 
+ | Name = Herteitr's Rolling Thunder+
+ | Ships = [[Odin]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 4800
+ | DmgM = 3840
+ | DmgH = 2880
+ | Notes = Pierce 1. Ignores Shields
+ | Dmg2Type = AP
+ | Dmg2L = 720
+ | Dmg2M = 720
+ | Dmg2H = 720
+ | Notes2 = Pierce 10. Ignores Shields
+}}
+{{BarrageList
+ | SkillIcon = 10660
+ | GifID = 10660
+ | Name = Sniper
+ | Ships = [[Scharnhorst]]
+ | Class = BC
+ | DmgType = AP
+ | DmgL = 157.41
+ | DmgM = 454.74
+ | DmgH = 384.78
+ | Notes = Arching shots. 100% critical rate.
+}}
+{{BarrageList
+ | SkillIcon = 2100
+ | GifID = 2101
+ | Name = Torpedo Launch
+ | Ships = [[Scharnhorst]], [[Gneisenau]]
+ | Class = BC
+ | DmgType = Torpedo
+ | DmgL = 328.8
+ | DmgM = 411
+ | DmgH = 534.3
+ | Notes = Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 800260
+ | GifID = 
+ | Name = Seething Chains
+ | Ships = [[Gneisenau META]]
+ | Class = BC
+ | DmgType = AP
+ | DmgL = 660
+ | DmgM = 660
+ | DmgH = 660
+ | Notes = 100% chance to apply special burn.
+ | Dmg2Type = Normal
+ | Dmg2L = 900
+ | Dmg2M = 900
+ | Dmg2H = 900
+ | Notes2 = 100% chance to apply special burn.
+}}
+{{BarrageList
+ | SkillIcon = 800270
+ | GifID = 
+ | Name = Disruption Wave
+ | Ships = [[Gneisenau META]]
+ | Class = BC
+ | DmgType = Torpedo
+ | DmgL = 358.4
+ | DmgM = 448
+ | DmgH = 582.4
+ | Notes = Homing torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 800340
+ | GifID = 
+ | Name = Dual Snipe
+ | Ships = [[Scharnhorst META]]
+ | Class = BC
+ | DmgType = AP
+ | DmgL = 381.6
+ | DmgM = 858.6
+ | DmgH = 699.6
+ | Notes = 100% chance to apply special armor break.
+}}
+{{BarrageList
+ | SkillIcon = 800340
+ | GifID = 
+ | Name = Dual Snipe (Proximity)
+ | Ships = [[Scharnhorst META]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 144
+ | DmgM = 144
+ | DmgH = 144
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 800350
+ | GifID = 
+ | Name = Blazing Blitz
+ | Ships = [[Scharnhorst META]]
+ | Class = BC
+ | DmgType = HE
+ | DmgL = 240
+ | DmgM = 240
+ | DmgH = 240
+ | Notes = 50% chance to apply burn.
+ | Dmg2Type = AP
+ | Dmg2L = 240
+ | Dmg2M = 240
+ | Dmg2H = 240
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 12050
+ | GifID = 12050
+ | Name = Torpedoes: Ready!
+ | Ships = [[Hiei-chan]]
+ | Class = BC
+ | DmgType = Torpedo
+ | DmgL = 460.8
+ | DmgM = 576
+ | DmgH = 748.8
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 800460
+ | GifID = 
+ | Name = Blazing Slash!
+ | Ships = [[Repulse META]]
+ | Class = BC
+ | DmgType = HE
+ | DmgL = 1120
+ | DmgM = 880
+ | DmgH = 720
+ | Notes = Aimed, Arcing, Armor Break
+ | Dmg2Type = HE
+ | Dmg2L = 990
+ | Dmg2M = 825
+ | Dmg2H = 660
+ | Notes2 = Pierce 3, Increased Burn DMG
+}}
+{{BarrageList
+ | SkillIcon = 800470
+ | GifID = 
+ | Name = Repulsing Pyrotechnics
+ | Ships = [[Repulse META]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 640
+ | DmgM = 640
+ | DmgH = 640
+ | Notes = 
+ | Dmg2Type = HE
+ | Dmg2L = 374.4
+ | Dmg2M = 312
+ | Dmg2H = 249.6 
+ | Notes2 = Ignore shield
+}}
+{{BarrageList
+ | SkillIcon = 19550
+ | GifID = 
+ | Name = Lindwurm - Devouring Fang
+ | Ships = [[Prinz Rupprecht]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 120
+ | DmgM = 120
+ | DmgH = 120
+ | Notes = Pierce 1
+ | Dmg2Type = Torpedo
+ | Dmg2L = 832
+ | Dmg2M = 1040
+ | Dmg2H = 1352
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 19560
+ | GifID = 
+ | Name = Lindwurm - Protector's Oculus
+ | Ships = [[Prinz Rupprecht]]
+ | Class = BC
+ | DmgType = Normal
+ | DmgL = 960
+ | DmgM = 960
+ | DmgH = 960
+ | Notes = Aimed, Arcing
+ | Dmg2Type = Normal
+ | Dmg2L = 720
+ | Dmg2M = 720
+ | Dmg2H = 720
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15950
+ | GifID = 
+ | Name = Urd's Fate-Piercer
+ | Ships = [[Brünhilde]]
+ | Class = BC
+ | DmgType = HE
+ | DmgL = 280
+ | DmgM = 220
+ | DmgH = 220
+ | Notes = Aimed, Arcing, Slow
+ | Dmg2Type = HE
+ | Dmg2L = 1260
+ | Dmg2M = 990
+ | Dmg2H = 990
+ | Notes2 = Aimed, Arcing
+ | Dmg3Type = Torpedo
+ | Dmg3L = 448
+ | Dmg3M = 560
+ | Dmg3H = 728
+ | Notes3 = Homing
+}}
+{{BarrageList
+ | SkillIcon = 19350
+ | GifID = 19351
+ | Name = Augmenting Mechanism: Setzer Principle (timed)
+ | Ships = [[Champagne]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 168.3
+ | DmgM = 729.3
+ | DmgH = 617.1
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 19350
+ | GifID = 19351
+ | Name = Augmenting Mechanism: Setzer Principle+ (timed)
+ | Ships = [[Champagne]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 184.14
+ | DmgM = 797.94
+ | DmgH = 675.18
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 19350
+ | GifID = 19352
+ | Name = Augmenting Mechanism: Setzer Principle (on fire)
+ | Ships = [[Champagne]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 518.4
+ | DmgM = 403.2
+ | DmgH = 230.4
+ | Notes = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 19350
+ | GifID = 19352
+ | Name = Augmenting Mechanism: Setzer Principle+ (on fire)
+ | Ships = [[Champagne]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 576
+ | DmgM = 448
+ | DmgH = 256
+ | Notes = Pierce 1.
+}}
+{{BarrageList
+ | SkillIcon = 19070
+ | GifID = 19070
+ | Name = A Legend's Inheritance
+ | Ships = [[Izumo]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 1872
+ | DmgM = 5054.4
+ | DmgH = 4492.8
+ | Notes = Straight shots. Can pierce once. Scaled with 120% of Firepower stat.
+}}
+{{BarrageList
+ | SkillIcon = 19070
+ | GifID = 18070
+ | Name = A Legend's Inheritance +
+ | Ships = [[Izumo]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 936
+ | DmgM = 2527.2
+ | DmgH = 2246.4
+ | Notes = Straight shots. Can pierce once. Scaled with 120% of Firepower stat.
+ | Dmg2Type = Normal
+ | Dmg2L = 936
+ | Dmg2M = 2527.2
+ | Dmg2H = 2246.4
+ | Notes2 = Arching shots. Scaled with 120% of Firepower stat.
+}}
+{{BarrageList
+ | SkillIcon = 19260
+ | GifID = 19261
+ | Name = Precision Salvo Protocol
+ | Ships = [[Gascogne]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 1512
+ | DmgM = 1512
+ | DmgH = 1512
+ | Notes = Arching shots.
+}}
+{{BarrageList
+ | SkillIcon = 19260
+ | GifID = 19262
+ | Name = Precision Salvo Protocol (enhanced)
+ | Ships = [[Gascogne]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 1958.8
+ | DmgM = 1958.8
+ | DmgH = 1958.8
+ | Notes = Arching shots.
+}}
+{{BarrageList
+ | SkillIcon = 12150
+ | GifID = 12151
+ | Name = Armament Optimization
+ | Ships = [[King George V]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 320
+ | DmgM = 256
+ | DmgH = 224
+ | Notes = Straight shots.
+ | Dmg2Type = Normal
+ | Dmg2L = 580.8
+ | Dmg2M = 726
+ | Dmg2H = 943.8
+ | Notes2 = Arching shots.
+}}
+{{BarrageList
+ | SkillIcon = 12150
+ | GifID = 12152
+ | Name = Armament Optimization (Enhanced)
+ | Ships = [[King George V]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 320
+ | DmgM = 256
+ | DmgH = 224
+ | Notes = Straight shots.
+ | Dmg2Type = Normal
+ | Dmg2L = 883.2
+ | Dmg2M = 1104
+ | Dmg2H = 1435.2
+ | Notes2 = Arching shots.
+}}
+{{BarrageList
+ | SkillIcon = 10320
+ | GifID = 10320
+ | Name = BIG SEVEN
+ | Ships = [[Nelson]], [[Rodney]], [[Colorado]], [[Maryland]], [[West Virginia]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 6864
+ | DmgM = 5491.2
+ | DmgH = 4804.8
+ | Notes = Straight shots.
+}}
+{{BarrageList
+ | SkillIcon = 11430
+ | GifID = 11430
+ | Name = BIG SEVEN - SAKURA
+ | Ships = [[Nagato]], [[Mutsu]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 6600
+ | DmgM = 5500
+ | DmgH = 4400
+ | Notes = Shells. 30% burn chance.
+ | Dmg2Type = HE
+ | Dmg2L = 1800
+ | Dmg2M = 2400
+ | Dmg2H = 1400
+ | Notes2 = Arrows. 30% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 11100
+ | GifID = 11100
+ | Name = Concerto of Blood
+ | Ships = [[Duke of York]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 332.64
+ | DmgM = 475.2
+ | DmgH = 427.68
+ | Notes = Arching shots. Slows upon hit.
+}}
+{{BarrageList
+ | SkillIcon = 11820
+ | GifID = 11820
+ | Name = Conquer To Loot!
+ | Ships = [[Kaga (Battleship)]]
+ | Class = BB
+ | DmgType = Torpedo
+ | DmgL = 675.8
+ | DmgM = 844.8
+ | DmgH = 1098.2
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 11000
+ | GifID = 11000
+ | Name = Courageous Shelling
+ | Ships = [[Washington]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 1096.2
+ | DmgM = 1566
+ | DmgH = 1409.4
+ | Notes = Arching shots.
+ | Dmg2Type = HE
+ | Dmg2L = 720
+ | Dmg2M = 360
+ | Dmg2H = 360
+ | Notes2 = Straight shots. 1% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 10310
+ | GifID = 10310
+ | Name = Divine Marksman
+ | Ships = [[Warspite]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 101.64
+ | DmgM = 440.44
+ | DmgH = 372.68
+ | Notes = Arching shots. Scaled with 80% of Firepower stat. 100% critical rate.
+}}
+{{BarrageList
+ | SkillIcon = 10310
+ | GifID = 10310
+ | Name = Divine Marksman Plus
+ | Ships = [[Warspite]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 121.44
+ | DmgM = 526.24
+ | DmgH = 445.28
+ | Notes = Arching shots. Scaled with 80% of Firepower stat. 100% critical rate.
+}}
+{{BarrageList
+ | SkillIcon = 12650
+ | GifID = 12650
+ | Name = Fading Memories of Glory
+ | Ships = [[Conte di Cavour]], [[Giulio Cesare]]
+ | Class = BB
+ | DmgType = Torpedo
+ | DmgL = 460.8
+ | DmgM = 576
+ | DmgH = 748.8
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 11810
+ | GifID = 11810
+ | Name = Fight To Win!
+ | Ships = [[Kaga (Battleship)]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 1501.5
+ | DmgM = 2145
+ | DmgH = 1930.5
+ | Notes = Arching shots.
+ | Dmg2Type = HE
+ | Dmg2L = 840
+ | Dmg2M = 420
+ | Dmg2H = 420
+ | Notes2 = Straight shots. 1% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 19160
+ | GifID = 19161
+ | Name = Heavy Barrel Blaster
+ | Ships = [[Georgia]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 683.54
+ | DmgM = 1419.66
+ | DmgH = 1209.34
+ | Notes = Arching shots. 20% armor break chance. 100% critical rate.
+ | Dmg2Type = HE
+ | Dmg2L = 1512
+ | Dmg2M = 1008
+ | Dmg2H = 756
+ | Notes2 = Arching shots. A literal rain of HE shells. 1% burn chance. 100% critical rate.
+}}
+{{BarrageList
+ | SkillIcon = 13020
+ | GifID = 13020
+ | Name = Lod Obstrel
+ | Ships = [[Sovetskaya Rossiya]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 612
+ | DmgM = 1836
+ | DmgH = 1912.5
+ | Notes = Arching shots.
+ | Dmg2Type = Bomb (CV)
+ | Dmg2L = 358.4
+ | Dmg2M = 403.2
+ | Dmg2H = 492.8
+ | Notes2 = Ice bombs. Slows movement by 40% and deals 23 flooding damage.
+ | Dmg3Type = Normal
+ | Dmg3L = 480
+ | Dmg3M = 240
+ | Dmg3H = 240
+ | Notes3 = Ice shards.
+}}
+{{BarrageList
+ | SkillIcon = 12430
+ | GifID = 12435
+ | Name = Lucky A
+ | Ships = [[Alabama]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 765
+ | DmgM = 1836
+ | DmgH = 1759.5
+ | Notes = Arching shots.
+ | Dmg2Type = HE
+ | Dmg2L = 720
+ | Dmg2M = 360
+ | Dmg2H = 360
+ | Notes2 = Straight shots.
+}}
+{{BarrageList
+ | SkillIcon = 2090
+ | GifID = 2091
+ | Name = Magnetic Torpedoes
+ | Ships = [[Tirpitz]]
+ | Class = BB
+ | DmgType = Torpedo
+ | DmgL = 438.4
+ | DmgM = 548
+ | DmgH = 712.4
+ | Notes = Homing torpedoes. Scaled with 150% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 19030
+ | GifID = 19030
+ | Name = Monarch's Coercion
+ | Ships = [[Monarch]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 821.6
+ | DmgM = 2567.5
+ | DmgH = 2464.8
+ | Notes = Arching shots. Scaled with 120% of Firepower stat.
+}}
+{{BarrageList
+ | SkillIcon = 106090
+ | GifID = 106090
+ | Name = Not-So-Gentle Sister
+ | Ships = [[Nagisa]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 1312.2
+ | DmgM = 923.4
+ | DmgH = 680.4
+ | Notes = 
+ | Dmg2Type = Normal
+ | Dmg2L = 480
+ | Dmg2M = 384
+ | Dmg2H = 336
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 12600
+ | GifID = 12608
+ | Name = Rosa Bombardamento
+ | Ships = [[Littorio]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 480
+ | DmgM = 240
+ | DmgH = 240
+ | Notes = Straight shots.
+ | Dmg2Type = AP
+ | Dmg2L = 417.6
+ | Dmg2M = 1252.8
+ | Dmg2H = 1305
+ | Notes2 = Arching shots.
+}}
+{{BarrageList
+ | SkillIcon = 106030
+ | GifID = 106031
+ | Name = Rock-Paper-Cannon Salvo (Petals)
+ | Ships = [[Honoka]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 144
+ | DmgM = 112
+ | DmgH = 64
+ | Notes = Pierce 1.
+ | Dmg2Type = HE
+ | Dmg2L = 192
+ | Dmg2M = 96
+ | Dmg2H = 96
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 106030
+ | GifID = 
+ | Name = Rock-Paper-Cannon Salvo (Bullets)
+ | Ships = [[Honoka]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 675
+ | DmgM = 475
+ | DmgH = 350
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 106030
+ | GifID = 
+ | Name = Rock-Paper-Cannon Salvo (Cards)
+ | Ships = [[Honoka]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 400
+ | DmgM = 400
+ | DmgH = 400
+ | Notes = Pierce 1
+}}
+{{BarrageList
+ | SkillIcon = 12600
+ | GifID = 12606
+ | Name = Rosa Bombardamento (Enhanced)
+ | Ships = [[Littorio]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 480
+ | DmgM = 240
+ | DmgH = 240
+ | Notes = Straight shots.
+ | Dmg2Type = AP
+ | Dmg2L = 626.4
+ | Dmg2M = 1879.2
+ | Dmg2H = 1957.5
+ | Notes2 = Arching shots.
+}}
+{{BarrageList
+ | SkillIcon = 12640
+ | GifID = 12640
+ | Name = Sardegnian Coercion
+ | Ships = [[Giulio Cesare]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 1890
+ | DmgM = 1190
+ | DmgH = 980
+ | Notes = 30% burn chance.
+ | Dmg2Type = Normal
+ | Dmg2L = 420
+ | Dmg2M = 336
+ | Dmg2H = 294
+ | Notes2 = Arrows.
+}}
+{{BarrageList
+ | SkillIcon = 10130
+ | GifID = 10130
+ | Name = Sister Penn!
+ | Ships = [[Pennsylvania]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 1008
+ | DmgM = 1440
+ | DmgH = 1296
+ | Notes = Arching shots.
+}}
+{{BarrageList
+ | SkillIcon = 106040
+ | GifID = 106040
+ | Name = Super Mega Explosion
+ | Ships = [[Honoka]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 1020
+ | DmgM = 816
+ | DmgH = 612
+ | Notes = 70% chance to apply a special burn.
+ | Dmg2Type = AP
+ | Dmg2L = 221
+ | Dmg2M = 459
+ | Dmg2H = 391
+ | Notes2 = 20% chance to apply armor break
+}}
+{{BarrageList
+ | SkillIcon = 19230
+ | GifID = 19221
+ | Name = Symphony of Destruction
+ | Ships = [[Friedrich der Große]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 2208
+ | DmgM = 2208
+ | DmgH = 2208
+ | Notes = Straight shots.
+ | Dmg2Type = HE
+ | Dmg2L = 1013.6
+ | Dmg2M = 769.4
+ | Dmg2H = 651.6
+ | Notes2 = Arching shots. 50% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 104070
+ | GifID = 104070
+ | Name = Super AIming Adjustment
+ | Ships = [[Super Gamer Kizuna AI]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 1364
+ | DmgM = 1116
+ | DmgH = 868
+ | Notes = Straight shots.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 691.2
+ | Dmg2M = 864
+ | Dmg2H = 1123.2
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 12810
+ | GifID = 12810
+ | Name = Unleashed Tactics (Non-Exercise)
+ | Ships = [[Suruga]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 910
+ | DmgM = 1300
+ | DmgH = 1170
+ | Notes = Arching.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 307.2
+ | Dmg2M = 384
+ | Dmg2H = 499.2
+ | Notes2 = Torpedo.
+ | Dmg3Type = Normal
+ | Dmg3L = 360
+ | Dmg3M = 288
+ | Dmg3H = 252
+ | Notes3 = Normal.
+ | Dmg4Type = AP
+ | Dmg4L = 360
+ | Dmg4M = 288
+ | Dmg4H = 252
+ | Notes4 = AP. Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 12810
+ | GifID = 12800
+ | Name = Unleashed Tactics (Exercise)
+ | Ships = [[Suruga]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 910
+ | DmgM = 1300
+ | DmgH = 1170
+ | Notes = Arching.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 307.2
+ | Dmg2M = 384
+ | Dmg2H = 499.2
+ | Notes2 = Torpedo.
+ | Dmg3Type = Normal
+ | Dmg3L = 720
+ | Dmg3M = 576
+ | Dmg3H = 504
+ | Notes3 = Normal.
+ | Dmg4Type = AP
+ | Dmg4L = 720
+ | Dmg4M = 576
+ | Dmg4H = 504
+ | Notes4 = AP. Can pierce once.
+ | Dmg5Type = AP
+ | Dmg5L = 480
+ | Dmg5M = 384
+ | Dmg5H = 288
+ | Notes5 = Petals. Can pierce once.
+}}
+{{BarrageList
+ | SkillIcon = 12130
+ | GifID = 12132
+ | Name = Unwavering Strength
+ | Ships = [[Bismarck]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 616
+ | DmgM = 880
+ | DmgH = 792
+ | Notes = Arching shots.
+ | Dmg2Type = HE
+ | Dmg2L = 336
+ | Dmg2M = 168
+ | Dmg2H = 168
+ | Notes2 = Straight shots. 1% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 13160
+ | GifID = 13161
+ | Name = Accomplish Any Feat!
+ | Ships = [[Tosa]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 561.6
+ | DmgM = 748.8
+ | DmgH = 436.8
+ | Notes = Aimed arching shots.
+ | Dmg2Type = Normal
+ | Dmg2L = 842.4
+ | Dmg2M = 1123.2
+ | Dmg2H = 655.2
+ | Notes2 = Arching shots.
+ | Dmg3Type = Torpedo
+ | Dmg3L = 675.84
+ | Dmg3M = 844.8
+ | Dmg3H = 1098.24
+ | Notes3 = Aimed torpedoes.
+ | Dmg4Type = Normal
+ | Dmg4L = 960
+ | Dmg4M = 768
+ | Dmg4H = 576
+ | Notes4 = Straight shots.
+}}
+{{BarrageList
+ | SkillIcon = 13170
+ | GifID = 13171
+ | Name = Crush Any Contender! (Proximity)
+ | Ships = [[Tosa]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 480
+ | DmgM = 480
+ | DmgH = 480
+ | Notes = Straight shots.
+ | Dmg2Type = HE
+ | Dmg2L = 260.4
+ | Dmg2M = 204.6
+ | Dmg2H = 167.4
+ | Notes2 = Straight shots. 30% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 13170
+ | GifID = 
+ | Name = Crush Any Contender! (Support)
+ | Ships = [[Tosa]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 864
+ | DmgM = 864
+ | DmgH = 864
+ | Notes = Straight shots.
+}}
+{{BarrageList
+ | SkillIcon = 13250
+ | GifID = 13256
+ | Name = The Iris's Holy Flame
+ | Ships = [[Richelieu]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 1360
+ | DmgM = 1088
+ | DmgH = 816
+ | Notes = Arching shots. 70% burn chance. 119 damage burn.
+ | Dmg2Type = HE
+ | Dmg2L = 960
+ | Dmg2M = 480
+ | Dmg2H = 480
+ | Notes2 = Straight shots. 70% burn chance. 119 damage burn.
+}}
+{{BarrageList
+ | SkillIcon = 13610
+ | GifID = 13610
+ | Name = Kii Fleet Strategy
+ | Ships = [[Kii]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 544.5
+ | DmgM = 1452
+ | DmgH = 1542
+ | Notes = Arching shots.
+ | Dmg2Type = HE
+ | Dmg2L = 720
+ | Dmg2M = 576
+ | Dmg2H = 432
+ | Notes2 = 
+ | Dmg3Type = AP
+ | Dmg3L = 162
+ | Dmg3M = 126
+ | Dmg3H = 72
+ | Notes3 = 
+ | Dmg4Type = Torpedo
+ | Dmg4L = 614.4
+ | Dmg4M = 768
+ | Dmg4H = 998.4
+ | Notes4 = 
+}}
+{{BarrageList
+ | SkillIcon = 13440
+ | GifID = 13440
+ | Name = Synchronized Strike
+ | Ships = [[Howe]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 960.96
+ | DmgM = 755.04
+ | DmgH = 617.76
+ | Notes = 50% chance to burn.
+}}
+{{BarrageList
+ | SkillIcon = 13500
+ | GifID = 13500
+ | Name = Leading the Way
+ | Ships = [[Valiant]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 95.4
+ | DmgM = 356.4
+ | DmgH = 308.88
+ | Notes = 100% chance to armor break. Scaled with 80% of Firepower stat.
+}}
+{{BarrageList
+ | SkillIcon = 13510
+ | GifID = 13510
+ | Name = Forward!
+ | Ships = [[Valiant]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 1166.4
+ | DmgM = 820.8
+ | DmgH = 604.8
+ | Notes = 50% chance to burn.
+ | Dmg2Type = Normal
+ | Dmg2L = 480
+ | Dmg2M = 384
+ | Dmg2H = 336
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14150
+ | GifID = 
+ | Name = Curtain of Rime
+ | Ships = [[Sovetskaya Belorussiya]]
+ | Class = BB
+ | DmgType = Bomb (CV)
+ | DmgL = 2066.4
+ | DmgM = 2296
+ | DmgH = 2525.6
+ | Notes = Slows movement by 40% and deals 23 flooding damage. Scaled with 100% of Firepower stat.
+}}
+{{BarrageList
+ | SkillIcon = 14310
+ | GifID = 
+ | Name = The Eternal Flagship
+ | Ships = [[Vittorio Veneto]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 836.22
+ | DmgM = 657.03
+ | DmgH = 537.57
+ | Notes = 100% burn chance.
+ | Dmg2Type = AP
+ | Dmg2L = 238.92
+ | Dmg2M = 716.76
+ | Dmg2H = 746.625
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14470
+ | GifID = 
+ | Name = Absolute Adaptability
+ | Ships = [[Amagi-chan]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 406.8
+ | DmgM = 542.4
+ | DmgH = 316.4
+ | Notes = 
+ | Dmg2Type = HE
+ | Dmg2L = 648
+ | Dmg2M = 456
+ | Dmg2H = 336
+ | Notes2 = 50% burn chance
+ | Dmg3Type = Torpedo
+ | Dmg3L = 436.48
+ | Dmg3M = 545.6
+ | Dmg3H = 709.28
+ | Notes3 = 
+}}
+{{BarrageList
+ | SkillIcon = 14480
+ | GifID = 
+ | Name = Prescient Planning
+ | Ships = [[Amagi-chan]]
+ | Class = BB
+ | DmgType = Torpedo
+ | DmgL = 872.96
+ | DmgM = 1091.2
+ | DmgH = 1418.56
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 14510
+ | GifID = 
+ | Name = Dragon's Breath
+ | Ships = [[New Jersey]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 808.5
+ | DmgM = 635.25
+ | DmgH = 519.75
+ | Notes = 100% chance to crit. 100% chance to burn.
+ | Dmg2Type = AP
+ | Dmg2L = 388.245
+ | Dmg2M = 806.355
+ | Dmg2H = 686.895
+ | Notes2 = 100% chance to crit. 50% chance to apply a special armor break.
+ | Dmg3Type = Normal
+ | Dmg3L = 320
+ | Dmg3M = 320
+ | Dmg3H = 320
+ | Notes3 = 100% chance to crit. Ignores shields.
+}}
+{{BarrageList
+ | SkillIcon = 14520
+ | GifID = 
+ | Name = Freedom Through Firepower
+ | Ships = [[New Jersey]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 388.245
+ | DmgM = 806.355
+ | DmgH = 686.895
+ | Notes = 50% chance to apply a special armor break.
+ | Dmg2Type = Normal
+ | Dmg2L = 640
+ | Dmg2M = 640
+ | Dmg2H = 640
+ | Notes2 = Ignores shields.
+}}
+{{BarrageList
+ | SkillIcon = 19490
+ | GifID = 19490
+ | Name = Legendary Voyage
+ | Ships = [[Marco Polo]]
+ | Class = BB
+ | DmgType = SAP
+ | DmgL = 2040
+ | DmgM = 3060
+ | DmgH = 1020
+ | Notes = 
+ | Dmg2Type = HE
+ | Dmg2L = 1440
+ | Dmg2M = 720
+ | Dmg2H = 720
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 19510
+ | GifID = 
+ | Name = Untold Tales
+ | Ships = [[Marco Polo]]
+ | Class = BB
+ | DmgType = SAP
+ | DmgL = 1800
+ | DmgM = 900
+ | DmgH = 900
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 107070
+ | GifID = 
+ | Name = Iori Strike!
+ | Ships = [[Iori Minase]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 801.9
+ | DmgM = 594
+ | DmgH = 534.6
+ | Notes = 50% chance to burn
+ | Dmg2Type = AP
+ | Dmg2L = 471.9
+ | Dmg2M = 907.5
+ | Dmg2H = 871.2
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 108040
+ | GifID = 
+ | Name = Energy Pulse
+ | Ships = [[Akane Shinjo]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 1512
+ | DmgM = 1008
+ | DmgH = 756
+ | Notes = 
+ | Dmg2Type = HE
+ | Dmg2L = 225
+ | Dmg2M = 225
+ | Dmg2H = 225
+ | Notes2 = big explosion
+}}
+{{BarrageList
+ | SkillIcon = 108050
+ | GifID = 
+ | Name = Instance Abreaction
+ | Ships = [[Akane Shinjo]]
+ | Class = BB
+ | DmgType = Bomb (CV)
+ | DmgL = 1305
+ | DmgM = 1131
+ | DmgH = 870
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 108160
+ | GifID = 
+ | Name = Instance Domination: Wings
+ | Ships = [[Mujina]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 120
+ | DmgM = 96
+ | DmgH = 72
+ | Notes = small waves
+ | Dmg2Type = Normal
+ | Dmg2L = 240
+ | Dmg2M = 192
+ | Dmg2H = 72
+ | Notes2 = big waves
+}}
+{{BarrageList
+ | SkillIcon = 108170
+ | GifID = 
+ | Name = Instance Domination: Flames
+ | Ships = [[Mujina]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 3045
+ | DmgM = 2436
+ | DmgH = 1827
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15050
+ | GifID = 
+ | Name = The Laurel of Prosody
+ | Ships = [[Ulrich von Hutten]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 440
+ | DmgM = 440
+ | DmgH = 440
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15050
+ | GifID = 
+ | Name = The Laurel of Prosody (Proximity)
+ | Ships = [[Ulrich von Hutten]]
+ | Class = BB
+ | DmgType = Torpedo
+ | DmgL = 312
+ | DmgM = 390
+ | DmgH = 507
+ | Notes = 
+ | Dmg2Type = Normal
+ | Dmg2L = 3120
+ | Dmg2M = 3120
+ | Dmg2H = 3120
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15070
+ | GifID = 
+ | Name = Revolutionary's Prosaic
+ | Ships = [[Ulrich von Hutten]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 290
+ | DmgM = 210
+ | DmgH = 140
+ | Notes = 
+ | Dmg2Type = Normal
+ | Dmg2L = 640
+ | Dmg2M = 640
+ | Dmg2H = 640
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15260
+ | GifID = 
+ | Name = Noble Strike
+ | Ships = [[Arkhangelsk]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 95.04
+ | DmgM = 356.4
+ | DmgH = 308.88
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 800380
+ | GifID = 
+ | Name = Blood Sacrifice (Enhanced)
+ | Ships = [[Yamashiro META]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 440
+ | DmgM = 440
+ | DmgH = 440
+ | Notes = Straight shots.
+ | Dmg2Type = AP
+ | Dmg2L = 193.6
+ | Dmg2M = 580.8
+ | Dmg2H = 605
+ | Notes2 = Arching shots.
+}}
+{{BarrageList
+ | SkillIcon = 800380
+ | GifID = 
+ | Name = Blood Sacrifice (Unenhanced)
+ | Ships = [[Yamashiro META]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 440
+ | DmgM = 440
+ | DmgH = 440
+ | Notes = Straight shots.
+}}
+{{BarrageList
+ | SkillIcon = 15360
+ | GifID = 
+ | Name = Marvels of History - Seydlitz
+ | Ships = [[Seydlitz]]
+ | Class = BB
+ | DmgType = HE
+ | DmgL = 963.2
+ | DmgM = 584.8
+ | DmgH = 447.2
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15460
+ | GifID = 
+ | Name = Bravery at Skagerrak
+ | Ships = [[Lützow]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 400
+ | DmgM = 400
+ | DmgH = 400
+ | Notes = Arching shots.
+ | Dmg2Type = Normal
+ | Dmg2L = 900
+ | Dmg2M = 900
+ | Dmg2H = 900
+ | Notes2 = 
+ | Dmg3Type = Normal
+ | Dmg3L = 440
+ | Dmg3M = 352
+ | Dmg3H = 308
+ | Notes3 = 
+ | Dmg4Type = Torpedo
+ | Dmg4L = 281.6
+ | Dmg4M = 352
+ | Dmg4H = 457.6
+ | Notes4 =  
+}}
+{{BarrageList
+ | SkillIcon = 15440
+ | GifID = 
+ | Name = Providential Starfall
+ | Ships = [[Thüringen]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 223.6
+ | DmgM = 464.4
+ | DmgH = 395.6
+ | Notes = 
+ | Dmg2Type = HE
+ | Dmg2L = 432
+ | Dmg2M = 216
+ | Dmg2H = 216
+ | Notes2 = 
+ | Dmg3Type = Normal
+ | Dmg3L = 120
+ | Dmg3M = 96
+ | Dmg3H = 84
+ | Notes3 = 
+}}
+{{BarrageList
+ | SkillIcon = 15680
+ | GifID = 
+ | Name = Glistening Guns of Glory
+ | Ships = [[Vanguard]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 1276
+ | DmgM = 1276
+ | DmgH = 1276
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 15690
+ | GifID = 
+ | Name = Scatter, Minions of Darkness!
+ | Ships = [[Vanguard]]
+ | Class = BB
+ | DmgType = Normal
+ | DmgL = 572
+ | DmgM = 572
+ | DmgH = 572
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 15650
+ | GifID = 
+ | Name = Revengeful Strike
+ | Ships = [[Revenge]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 118.4
+ | DmgM = 444
+ | DmgH = 384.8
+ | Notes = 100% chance to apply special armor break.
+}}
+{{BarrageList
+ | SkillIcon = 15840
+ | GifID = 
+ | Name = Inheritor's Will
+ | Ships = [[Roma]]
+ | Class = BB
+ | DmgType = AP
+ | DmgL = 594
+ | DmgM = 858
+ | DmgH = 726
+ | Notes = Arcing, Arimed
+ | Dmg2Type = HE
+ | Dmg2L = 288
+ | Dmg2M = 240
+ | Dmg2H = 192
+ | Notes2 = Aimed
+ | Dmg3Type = HE
+ | Dmg3L = 240
+ | Dmg3M = 240
+ | Dmg3H = 240
+ | Notes3 = Aimed
+}}
+{{BarrageList
+ | SkillIcon = 11300
+ | GifID = 11300
+ | Name = Artillery Volley
+ | Ships = [[Abercrombie]]
+ | Class = BM
+ | DmgType = HE
+ | DmgL = 2592
+ | DmgM = 3456
+ | DmgH = 2016
+ | Notes = Arrows. 30% burn chance.
+ | Dmg2Type = Normal
+ | Dmg2L = 2376
+ | Dmg2M = 1900.8
+ | Dmg2H = 1663.2
+ | Notes2 = Straight shots.
+}}
+{{BarrageList
+ | SkillIcon = 10350
+ | GifID = 10350
+ | Name = Infinite Darkness
+ | Ships = [[Erebus]], [[Terror]]
+ | Class = BM
+ | DmgType = HE
+ | DmgL = 3240
+ | DmgM = 2592
+ | DmgH = 1944
+ | Notes = Arrows. 30% burn chance.
+ | Dmg2Type = Normal
+ | Dmg2L = 2376
+ | Dmg2M = 1900.8
+ | Dmg2H = 1663.2
+ | Notes2 = Straight shots.
+}}
+{{BarrageList
+ | SkillIcon = 12740
+ | GifID = 
+ | Name = Airborne Dualism
+ | Ships = [[Akagi µ]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 2006.4
+ | DmgM = 2199.6
+ | DmgH = 2643.6
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 12740
+ | GifID = 
+ | Name = Airborne Dualism
+ | Ships = [[Akagi µ]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 2304
+ | DmgM = 3168
+ | DmgH = 3744
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 10180
+ | GifID = 10180
+ | Name = Artillery Cover
+ | Ships = [[Lexington]], [[Saratoga]]
+ | Class = CV
+ | DmgType = HE
+ | DmgL = 869.4
+ | DmgM = 680.4
+ | DmgH = 529.2
+ | Notes = 8% burn chance. Scaled with 120% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 10210
+ | Name = Doolittle Airstrike
+ | Ships = [[Hornet]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 2131.2
+ | DmgM = 2397.6
+ | DmgH = 2930.4
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 11930
+ | Name = Doolittle Raid Plus
+ | Ships = [[Shangri-La]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 2131.2
+ | DmgM = 2397.6
+ | DmgH = 2930.4
+ | Notes =
+}}
+{{BarrageList
+ | SkillIcon = 11020
+ | Name = Double Sting
+ | Ships = [[Wasp]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 864
+ | DmgM = 972
+ | DmgH = 1188
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 105030
+ | GifID = 
+ | Name = Dream☆Story
+ | Ships = [[Tokino Sora]]
+ | Class = CV
+ | DmgType = HE
+ | DmgL = 2375.34
+ | DmgM = 2375.34
+ | DmgH = 2375.34
+ | Notes = 1.5% burn chance. Scaled with 100% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11840
+ | GifID = 
+ | Name = Flowers of Fate (Scraps)
+ | Ships = [[Hiryuu]] (Retrofit)
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 275.2
+ | DmgM = 378.4
+ | DmgH = 447.2
+ | Notes = Parallel torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 11840
+ | GifID = 
+ | Name = Flowers of Fate (Flower Sake)
+ | Ships = [[Hiryuu]] (Retrofit)
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 550.4
+ | DmgM = 756.8
+ | DmgH = 894.4
+ | Notes = Parallel torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 11840
+ | GifID = 
+ | Name = Flowers of Fate (Lesser Blue)
+ | Ships = [[Hiryuu]] (Retrofit)
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 825.6
+ | DmgM = 1135.2
+ | DmgH = 1341.6
+ | Notes = Parallel torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 11840
+ | GifID = 
+ | Name = Flowers of Fate (Five Brights)
+ | Ships = [[Hiryuu]] (Retrofit)
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1376
+ | DmgM = 1892
+ | DmgH = 2236
+ | Notes = Parallel torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 11830
+ | GifID = 
+ | Name = Flowers of Fate (Seeds)
+ | Ships = [[Souryuu]] (Retrofit)
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 334.4
+ | DmgM = 366.6
+ | DmgH = 440.6
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11830
+ | GifID = 
+ | Name = Flowers of Fate (Moonlight Sake)
+ | Ships = [[Souryuu]] (Retrofit)
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 668.8
+ | DmgM = 733.2
+ | DmgH = 881.2
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11830
+ | GifID = 
+ | Name = Flowers of Fate (Boars, Deers, Butterflies)
+ | Ships = [[Souryuu]] (Retrofit)
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1003.2
+ | DmgM = 1099.8
+ | DmgH = 1321.8
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11830
+ | GifID = 
+ | Name = Flowers of Fate (Five Brights)
+ | Ships = [[Souryuu]] (Retrofit)
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1672
+ | DmgM = 1833
+ | DmgH = 2203
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 104050
+ | GifID = 
+ | Name = Future Base
+ | Ships = [[Anniversary Kizuna AI]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1435.2
+ | DmgM = 1621.5
+ | DmgH = 1938.9
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 103120
+ | GifID = 
+ | Name = Honey Moon
+ | Ships = [[Fumiruiru]]
+ | Class = CV
+ | DmgType = Laser?
+ | DmgL = 431.2
+ | DmgM = 431.2
+ | DmgH = 431.2
+ | Notes = Scaled with 100% of Aviation stat. Can pierce... like a laser?
+}}
+{{BarrageList
+ | SkillIcon = 106130
+ | GifID = 
+ | Name = Dance of the Heavens
+ | Ships = [[Nyotengu]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1435.2
+ | DmgM = 1621.5
+ | DmgH = 1938.9
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11620
+ | Name = Predestined Launch (Suisei's Coruscation)
+ | Ships = [[Taihou]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 4992
+ | DmgM = 5616
+ | DmgH = 6864
+ | Notes = Scaled with 80% of Aviation stat. Can hit subs.
+}}
+{{BarrageList
+ | SkillIcon = 11620
+ | Name = Predestined Launch (Ryuusei's Descent)
+ | Ships = [[Taihou]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 3456
+ | DmgM = 4320
+ | DmgH = 5616
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13750
+ | Name = Scarlet Waltz
+ | Ships = [[Taihou µ]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1152
+ | DmgM = 1584
+ | DmgH = 1872
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13750
+ | Name = Scarlet Waltz (Enhanced)
+ | Ships = [[Taihou µ]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1152
+ | DmgM = 1584
+ | DmgH = 1872
+ | Notes = 
+ | Dmg2Type = Bomb (CV)
+ | Dmg2L = 956.8
+ | Dmg2M = 1081
+ | Dmg2H = 1292.6
+ | Notes2 = Scaled with 80% of AVI stat.
+}}
+{{BarrageList
+ | SkillIcon = 13760
+ | Name = Soaring Opening
+ | Ships = [[Taihou µ]]
+ | Class = CV
+ | DmgType = Normal
+ | DmgL = 1484
+ | DmgM = 1484
+ | DmgH = 1484
+ | Notes = 8% lifesteal. Scaled with 80% of AVI stat.
+}}
+{{BarrageList
+ | SkillIcon = 101130
+ | GifID = 
+ | Name = Rainy Ratnapura
+ | Ships = [[Green Heart]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 752
+ | DmgM = 846
+ | DmgH = 1034
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13580
+ | GifID = 
+ | Name = Hope's Tempest
+ | Ships = [[Shinano]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 960
+ | DmgM = 1080
+ | DmgH = 1320
+ | Notes = Shiden. Scaled with 80% of AVI stat.
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 1248
+ | Dmg2M = 1716
+ | Dmg2H = 2028
+ | Notes2 = Ryuusei. Aimed torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 13590
+ | GifID = 
+ | Name = Dreamwaker's Bow
+ | Ships = [[Shinano]]
+ | Class = CV
+ | DmgType = Normal
+ | DmgL = 40
+ | DmgM = 40
+ | DmgH = 40
+ | Notes = 2 Butterflies. 99 Pierce.
+ | Dmg2Type = Normal
+ | Dmg2L = 1000
+ | Dmg2M = 800
+ | Dmg2H = 600
+ | Notes2 = Bullets.
+}}
+{{BarrageList
+ | SkillIcon = 11990
+ | GifID = 
+ | Name = Unwavering Resolution (1 CV/CVL)
+ | Ships = [[Bunker Hill]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 387.2
+ | DmgM = 411.4
+ | DmgH = 484
+ | Notes = Scaled with 120% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11990
+ | GifID = 
+ | Name = Unwavering Resolution (2 CVs/CVLs)
+ | Ships = [[Bunker Hill]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 387.2
+ | DmgM = 411.4
+ | DmgH = 484
+ | Notes = Scaled with 120% Aviation stat.
+ | Dmg2Type = Bomb (CV)
+ | Dmg2L = 1025.6
+ | Dmg2M = 1369
+ | Dmg2H = 1624
+ | Notes2 = Scaled with 120% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11990
+ | GifID = 
+ | Name = Unwavering Resolution (3 CVs/CVLs)
+ | Ships = [[Bunker Hill]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1152
+ | DmgM = 1584
+ | DmgH = 1872
+ | Notes = Parallel torpedoes.
+ | Dmg2Type = Bomb (CV)
+ | Dmg2L = 1025.6
+ | Dmg2M = 1369
+ | Dmg2H = 1624
+ | Notes2 = Scaled with 120% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 12570
+ | GifID = 
+ | Name = Supporting Wings
+ | Ships = [[Formidable]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 2304
+ | DmgM = 3168
+ | DmgH = 3744
+ | Notes = Parallel torpedoes. 80% Flood chance. Scaled with 120% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 10330
+ | Name = Swordfishes, Strike!
+ | Ships = [[Ark Royal]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 210
+ | DmgM = 168
+ | DmgH = 126
+ | Notes = Aimed torpedoes. Scaled with 120% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 14710
+ | Name = Destruction Bolt
+ | Ships = [[Ark Royal]]
+ | Class = CV
+ | DmgType = AP
+ | DmgL = 360
+ | DmgM = 360
+ | DmgH = 360
+ | Notes = Aimed shells. Ignores shields. Applies debuffs.
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 1152
+ | Dmg2M = 1584
+ | Dmg2H = 1872
+ | Notes2 = Parallel torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 12070
+ | GifID = 
+ | Name = Take the Initiative!
+ | Ships = [[Akagi-chan]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 2006.4
+ | DmgM = 2199.6
+ | DmgH = 2643.6
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 12090
+ | GifID = 12090
+ | Name = Taste My Wrath!
+ | Ships = [[Zeppy]]
+ | Class = CV
+ | DmgType = AP
+ | DmgL = 492.8
+ | DmgM = 403.2
+ | DmgH = 313.6
+ | Notes = Central. Does not pierce.
+ | Dmg2Type = HE
+ | Dmg2L = 576
+ | Dmg2M = 288
+ | Dmg2H = 288
+ | Notes2 = Wide. 1% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 12090
+ | GifID = 12092
+ | Name = Taste My Wrath!! (Enhanced)
+ | Ships = [[Zeppy]]
+ | Class = CV
+ | DmgType = AP
+ | DmgL = 492.8
+ | DmgM = 403.2
+ | DmgH = 313.6
+ | Notes = Central. Does not pierce.
+ | Dmg2Type = AP
+ | Dmg2L = 818.4
+ | Dmg2M = 669.6
+ | Dmg2H = 520.8
+ | Notes2 = Wide. Does not pierce.
+}}
+{{BarrageList
+ | SkillIcon = 11640
+ | Name = Valorous Avengers
+ | Ships = [[Essex]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1926.4
+ | DmgM = 2648.8
+ | DmgH = 3130.4
+ | Notes = Parallel torpedoes. 100% Flood chance.
+}}
+{{BarrageList
+ | SkillIcon = 10190
+ | Name = Vengeful Strike
+ | Ships = [[Yorktown]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1143.9
+ | DmgM = 1482.6
+ | DmgH = 1757.25
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 105140
+ | GifID = 
+ | Name = Wild Dualism
+ | Ships = [[Ookami Mio]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1440
+ | DmgM = 1620
+ | DmgH = 1980
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 105140
+ | GifID = 
+ | Name = Wild Dualism
+ | Ships = [[Ookami Mio]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1152
+ | DmgM = 1584
+ | DmgH = 1872
+ | Notes = Aimed torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 11400
+ | Name = Witch's Prank
+ | Ships = [[Saratoga]] (Retrofit)
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 857.6
+ | DmgM = 1117
+ | DmgH = 1324
+ | Notes = 100% burn chance. Scaled with 120% of Aviation stat.
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 646.4
+ | Dmg2M = 888.8
+ | Dmg2H = 1050.4
+ | Notes2 = Aimed torpedoes. 100% Flood chance. Scaled with 120% of Aviation stat.
+}}
+{{BarrageList
+| SkillIcon = 13800
+| GifID
+| Name = Blue Spirit
+| Ships = [[Illustrious µ]]
+| Class = CV
+| DmgType = Bomb (CV)
+| DmgL = 4698
+| DmgM = 2871
+| DmgH = 1044
+| Notes = 8% chance to burn. Burn scales with Firepower Stat.
+}}
+{{BarrageList
+| SkillIcon = 13070
+| GifID
+| Name = Soaring Silver Wings
+| Ships = [[Intrepid]]
+| Class = CV
+| DmgType = Bomb (CV)
+| DmgL = 1854
+| DmgM = 2385
+| DmgH = 2877
+| Notes = 100% chance to apply Armor Break.
+}}
+{{BarrageList
+| SkillIcon = 13360
+| GifID
+| Name = Take Off!
+| Ships = [[Little Illustrious]]
+| Class = CV
+| DmgType = Torpedo (CV)
+| DmgL = 1440
+| DmgM = 1152
+| DmgH = 864
+| Notes = Aimed torpedoes.
+}}
+{{BarrageList
+| SkillIcon = 13370
+| GifID
+| Name = Prayer for Love and Peace
+| Ships = [[Little Illustrious]]
+| Class = CV
+| DmgType = Bomb (CV)
+| DmgL = 96
+| DmgM = 96
+| DmgH = 96
+| Notes = 
+}}
+{{BarrageList
+| SkillIcon = 13340
+| GifID = 13342
+| Name = Sacrament: Holy Bombardment
+| Ships = [[Béarn]]
+| Class = CV
+| DmgType = AP
+| DmgL = 156.8
+| DmgM = 490
+| DmgH = 470.4
+| Notes = 
+| Dmg2Type = HE
+| Dmg2L = 1056
+| Dmg2M = 528
+| Dmg2H = 528
+| Notes2 = 3% burn chance.
+}}
+{{BarrageList
+| SkillIcon = 13350
+| GifID
+| Name = Sacrament: Sacred Second Wing
+| Ships = [[Béarn]]
+| Class = CV
+| DmgType = Bomb (CV)
+| DmgL = 1824
+| DmgM = 2052
+| DmgH = 2508
+| Notes = Scaled with 80% of Avi stat.
+| Dmg2Type = Torpedo (CV)
+| Dmg2L = 268.8
+| Dmg2M = 345.6
+| Dmg2H = 460.8
+| Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 13520
+ | GifID = 13342
+ | Name = Royal Arts: Knight's Arsenal
+ | Ships = [[Eagle]]
+ | Class = CV
+ | DmgType = AP
+ | DmgL = 156.8
+ | DmgM = 490
+ | DmgH = 470.4
+ | Notes = 
+ | Dmg2Type = HE
+ | Dmg2L = 1056
+ | Dmg2M = 528
+ | Dmg2H = 528
+ | Notes2 = 3% chance to burn.
+}}
+{{BarrageList
+ | SkillIcon = 13530
+ | GifID = 
+ | Name = Royal Arts: Swordbearing Eagle
+ | Ships = [[Eagle]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1382.4
+ | DmgM = 1900.8
+ | DmgH = 2246.4
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 800040
+ | GifID = 
+ | Name = Scorched Blade
+ | Ships = [[Hiryuu META]]
+ | Class = CV
+ | DmgType = AP
+ | DmgL = 870
+ | DmgM = 870
+ | DmgH = 870
+ | Notes = Pierce 3. Ignore shields.
+}}
+{{BarrageList
+ | SkillIcon = 800050
+ | GifID = 
+ | Name = Cards of Light and Dark (Barrage 1)
+ | Ships = [[Hiryuu META]]
+ | Class = CV
+ | DmgType = Normal
+ | DmgL = 45
+ | DmgM = 36
+ | DmgH = 27
+ | Notes = Pierce 99.
+ | Dmg2Type = HE
+ | Dmg2L = 1458
+ | Dmg2M = 1026
+ | Dmg2H = 756
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 800050
+ | GifID = 
+ | Name = Cards of Light and Dark (Barrage 2)
+ | Ships = [[Hiryuu META]]
+ | Class = CV
+ | DmgType = Normal
+ | DmgL = 1020.6
+ | DmgM = 718.2
+ | DmgH = 529.2
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 800060
+ | GifID = 
+ | Name = The Cherry Petal Memento
+ | Ships = [[Hiryuu META]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1728
+ | DmgM = 2376
+ | DmgH = 2808
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13880
+ | GifID = 
+ | Name = Iron Blood Falcon
+ | Ships = [[Peter Strasser]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1152
+ | DmgM = 1584
+ | DmgH = 1872
+ | Notes = Aimed Torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 800010
+ | GifID = 
+ | Name = Shadowflame Torch
+ | Ships = [[Ark Royal META]]
+ | Class = CV
+ | DmgType = AP
+ | DmgL = 45
+ | DmgM = 45
+ | DmgH = 45
+ | Notes = Ignore Shields. Pierce 99.
+ | Dmg2Type = Normal
+ | Dmg2L = 1080
+ | Dmg2M = 1080
+ | Dmg2H = 1080
+ | Notes2 = Slows movement speed by 20% for 5s. Scaled with 100% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 800020
+ | GifID = 
+ | Name = Shadow Skirmisher
+ | Ships = [[Ark Royal META]]
+ | Class = CV
+ | DmgType = AP
+ | DmgL = 136
+ | DmgM = 425
+ | DmgH = 408
+ | Notes = Ignore Shields. Pierce 99. Scaled with 100% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 800030
+ | GifID = 
+ | Name = Glorious Onslaught
+ | Ships = [[Ark Royal META]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 696
+ | DmgM = 957
+ | DmgH = 1131
+ | Notes = Scaled with 100% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 14370
+ | GifID = 
+ | Name = Freccia dell'Aquila
+ | Ships = [[Aquila]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 518.4
+ | DmgM = 550.8
+ | DmgH = 648
+ | Notes = Scaled with 80% of Aviation stat.
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 768
+ | Dmg2M = 1056
+ | Dmg2H = 1248
+ | Notes2 = Scaled with 100% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 14540
+ | GifID = 
+ | Name = Wings of Soaring Flames
+ | Ships = [[Ticonderoga]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 3801.6
+ | DmgM = 2613.6
+ | DmgH = 1900.8
+ | Notes = Scaled with 100% of Aviation stat. 60% chance to apply a special burn.
+}}
+{{BarrageList
+ | SkillIcon = 19380
+ | GifID = 
+ | Name = Sky Raiding Retribution
+ | Ships = [[Hakuryuu]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1166.4
+ | DmgM = 1555.2
+ | DmgH = 1814.4
+ | Notes = Lightning. Scaled with 80% of Aviation stat. 100% chance to apply a special burn that increases damage taken by 8% for 7s.
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 764.8
+ | Dmg2M = 1051.6
+ | Dmg2H = 1242.8
+ | Notes2 = Aimed torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 19390
+ | GifID = 
+ | Name = Flame-Anointed Conquest (Fighter)
+ | Ships = [[Hakuryuu]]
+ | Class = CV
+ | DmgType = Normal
+ | DmgL = 510
+ | DmgM = 510
+ | DmgH = 510
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 19390
+ | GifID = 
+ | Name = Flame-Anointed Conquest (No fighter)
+ | Ships = [[Hakuryuu]]
+ | Class = CV
+ | DmgType = AP
+ | DmgL = 680
+ | DmgM = 680
+ | DmgH = 680
+ | Notes = Pierce 3. Ignores Shield
+}}
+{{BarrageList
+ | SkillIcon = 19470
+ | GifID = 
+ | Name = ex-Principle of Shattering
+ | Ships = [[August von Parseval]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1136
+ | DmgM = 1590.4
+ | DmgH = 568
+ | Notes = 100% chance to apply a special armor break.
+}}
+{{BarrageList
+ | SkillIcon = 107040
+ | GifID = 
+ | Name = Cerulean Song
+ | Ships = [[Chihaya Kisaragi]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 9600
+ | DmgM = 9600
+ | DmgH = 9600
+ | Notes = 
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 1152
+ | Dmg2M = 1140
+ | Dmg2H = 1872
+ | Notes2 = Aimed torpedoes
+}}
+{{BarrageList
+ | SkillIcon = 800130
+ | GifID = 
+ | Name = Akatan of Blossoming Flame
+ | Ships = [[Souryuu META]]
+ | Class = CV
+ | DmgType = Normal
+ | DmgL = 160
+ | DmgM = 160
+ | DmgH = 160
+ | Notes = Balls
+ | Dmg2Type = Normal
+ | Dmg2L = 480
+ | Dmg2M = 384
+ | Dmg2H = 288
+ | Notes2 = Projectiles, 100% chance to cause special burn
+ | Dmg3Type = AP
+ | Dmg3L = 529.2
+ | Dmg3M = 718.2
+ | Dmg3H = 1020.6
+ | Notes3 = Cards, 100% chance to cause special burn.
+}}
+{{BarrageList
+ | SkillIcon = 800140
+ | GifID = 
+ | Name = Aotan of Shadow-Sealing
+ | Ships = [[Souryuu META]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1401.6
+ | DmgM = 1534.2
+ | DmgH = 1842
+ | Notes = 
+ | Dmg2Type = AP
+ | Dmg2L = 2752
+ | Dmg2M = 2752
+ | Dmg2H = 2752
+ | Notes2 = Blades, 100% chance to flood.
+}}
+{{BarrageList
+ | SkillIcon = 14830
+ | GifID = 
+ | Name = Late-Blooming Airstrike
+ | Ships = [[Katsuragi]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 2160
+ | DmgM = 2160
+ | DmgH = 2160
+ | Notes = 
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 1872
+ | Dmg2M = 2574
+ | Dmg2H = 3042
+ | Notes2 = Aimed torpedoes
+}}
+{{BarrageList
+ | SkillIcon = 108140
+ | GifID = 
+ | Name = Ride the Wind
+ | Ships = [[Chise Asukagawa]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1056
+ | DmgM = 1452
+ | DmgH = 1716
+ | Notes = aimed torpedoes
+}}
+{{BarrageList
+ | SkillIcon = 108150
+ | GifID = 
+ | Name = Take to the Skies
+ | Ships = [[Chise Asukagawa]]
+ | Class = CV
+ | DmgType = normal
+ | DmgL = 2266
+ | DmgM = 2266
+ | DmgH = 2266
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15320
+ | GifID = 
+ | Name = Meteoric Hope
+ | Ships = [[Volga]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 1926.4
+ | DmgM = 2648.8
+ | DmgH = 3130.4
+ | Notes = 100% chance to apply flood.
+}}
+{{BarrageList
+ | SkillIcon = 15320
+ | GifID = 
+ | Name = Meteoric Hope (Fail)
+ | Ships = [[Volga]]
+ | Class = CV
+ | DmgType = Normal
+ | DmgL = 560
+ | DmgM = 560
+ | DmgH = 560
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15330
+ | GifID = 
+ | Name = Crystals of the Great River
+ | Ships = [[Volga]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 350
+ | DmgM = 350
+ | DmgH = 350
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15330
+ | GifID = 
+ | Name = Impero is Brilliant (Fighter)
+ | Ships = [[Impero]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 518.4
+ | DmgM = 550.8
+ | DmgH = 648
+ | Notes = 
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 2376
+ | Dmg2M = 3267
+ | Dmg2H = 3861
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 15330
+ | GifID = 
+ | Name = Impero is Brilliant (Dive Bomber)
+ | Ships = [[Impero]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 3648
+ | DmgM = 3984
+ | DmgH = 4776
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 800220
+ | GifID = 
+ | Name = Stormchasing Blade
+ | Ships = [[Hiyou META]]
+ | Class = CVL
+ | DmgType = AP
+ | DmgL = 300
+ | DmgM = 300
+ | DmgH = 300
+ | Notes = Ignore shields.
+ | Dmg2Type = Torpedo (CV)
+ | Dmg2L = 1224
+ | Dmg2M = 1683
+ | Dmg2H = 1989
+ | Notes2 = Aimed torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 800300
+ | GifID = 
+ | Name = Stormchasing Spirit
+ | Ships = [[Junyou META]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1920
+ | DmgM = 2640
+ | DmgH = 3120
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15000
+ | GifID = 
+ | Name = Bad Girl's Surprise Strike
+ | Ships = [[Elbe]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 2112
+ | DmgM = 2376
+ | DmgH = 2904
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15170
+ | GifID = 
+ | Name = Star-Studded Formation
+ | Ships = [[Chen Hai]]
+ | Class = CVL
+ | DmgType = Normal
+ | DmgL = 720
+ | DmgM = 576
+ | DmgH = 432
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15180
+ | GifID = 
+ | Name = Cunning Stratagem (Unenhanced)
+ | Ships = [[Chen Hai]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 960
+ | DmgM = 1080
+ | DmgH = 1320
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15180
+ | GifID = 
+ | Name = Cunning Stratagem (Enhanced)
+ | Ships = [[Chen Hai]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 4992
+ | DmgM = 5616
+ | DmgH = 6864
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15620
+ | GifID = 
+ | Name = One Iota of Effort
+ | Ships = [[Indomitable]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1248
+ | DmgM = 1482
+ | DmgH = 1794
+ | Notes = 100% chance to apply special burn.
+}}
+{{BarrageList
+ | SkillIcon = 15630
+ | GifID = 
+ | Name = Two Can Play at That Game
+ | Ships = [[Indomitable]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1620
+ | DmgM = 1215
+ | DmgH = 1215
+ | Notes = 100% chance to apply special burn.
+}}
+{{BarrageList
+ | SkillIcon = 15720
+ | GifID = 
+ | Name = Sacraments of Illusion (Top)
+ | Ships = [[Joffre]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 1218
+ | DmgM = 957
+ | DmgH = 435
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15720
+ | GifID = 
+ | Name = Sacraments of Illusion (Bottom)
+ | Ships = [[Joffre]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 2880
+ | DmgM = 3960
+ | DmgH = 4680
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 15730
+ | GifID = 
+ | Name = Black Plumes of Judgment
+ | Ships = [[Joffre]]
+ | Class = CV
+ | DmgType = Bomb (CV)
+ | DmgL = 2160
+ | DmgM = 2160
+ | DmgH = 2160
+ | Notes = Piercing
+}}
+{{BarrageList
+ | SkillIcon = 19600
+ | GifID = 
+ | Name = Aviation Experiment - Coordinated Bombardment
+ | Ships = [[Chkalov]]
+ | Class = CV
+ | DmgType = Torpedo (CV)
+ | DmgL = 2764.8
+ | DmgM = 3801.6
+ | DmgH = 4492.8
+ | Notes = 
+ | Dmg2Type = Bomb (CV)
+ | Dmg2L = 1204
+ | Dmg2M = 1204
+ | Dmg2H = 1204
+ | Notes2 = 
+ | Dmg3Type = Bomb (CV)
+ | Dmg3L = 4816
+ | Dmg3M = 5117
+ | Dmg3H = 6020
+ | Notes3 = Special addition
+}}
+{{BarrageList
+ | SkillIcon = 19600
+ | GifID = 
+ | Name = Contingency Experiment - Suppressive Fire
+ | Ships = [[Chkalov]]
+ | Class = CV
+ | DmgType = Normal
+ | DmgL = 240
+ | DmgM = 240
+ | DmgH = 240
+ | Notes = -10% AA stat
+}}
+{{BarrageList
+ | SkillIcon = 12110
+ | GifID = 
+ | Name = Destiny Draw! (Blackburn Fire Blast)
+ | Ships = [[Hermes]] (Retrofit)
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 294
+ | DmgM = 294
+ | DmgH = 294
+ | Notes = 50% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 12110
+ | GifID = 
+ | Name = Destiny Draw! (Swordfish Bombardment of Destruction)
+ | Ships = [[Hermes]] (Retrofit)
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 744
+ | DmgM = 744
+ | DmgH = 744
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 12110
+ | GifID = 
+ | Name = Destiny Draw! (Obnoxious Carpet Bombing)
+ | Ships = [[Hermes]] (Retrofit)
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 1728
+ | DmgM = 1728
+ | DmgH = 1728
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 11260
+ | Name = Eagle's Defiance
+ | Ships = [[Hiyou]], [[Junyou]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1728
+ | DmgM = 2376
+ | DmgH = 2808
+ | Notes = Aimed torpedoes.
+}}
+{{BarrageList
+ | SkillIcon = 13710
+ | Name = Evasive Scramble
+ | Ships = [[Princeton]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1656
+ | DmgM = 2277
+ | DmgH = 2691
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 12500
+ | GifID = 
+ | Name = Hellcat's Roar
+ | Ships = [[Bataan]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 1824
+ | DmgM = 2052
+ | DmgH = 2508
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 11920
+ | GifID = 
+ | Name = Knight of the Sky
+ | Ships = [[Independence]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 496.8
+ | DmgM = 683.1
+ | DmgH = 807.3
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 11920
+ | GifID = 
+ | Name = Knight of the Sky (Enhanced)
+ | Ships = [[Independence]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1490.4
+ | DmgM = 2049.3
+ | DmgH = 2421.9
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 11920
+ | GifID = 
+ | Name = Knight of the Sky (Retrofit)
+ | Ships = [[Independence]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1490.4
+ | DmgM = 2049.3
+ | DmgH = 2421.9
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 11920
+ | GifID = 
+ | Name = Knight of the Sky (Retrofit, Enhanced)
+ | Ships = [[Independence]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1987.2
+ | DmgM = 2732.4
+ | DmgH = 3229.2
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 105130
+ | GifID = 
+ | Name = MP Burst - Explosion
+ | Ships = [[Murasaki Shion]]
+ | Class = CVL
+ | DmgType = AP
+ | DmgL = 490
+ | DmgM = 490
+ | DmgH = 490
+ | Notes = Scaled with 100% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11900
+ | GifID = 
+ | Name = Protector of the North Passage
+ | Ships = [[Chaser]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1382.4
+ | DmgM = 1900.8
+ | DmgH = 2246.4
+ | Notes =
+ | Dmg2Type = ASW
+ | Dmg2L = 264
+ | Dmg2M = 132
+ | Dmg2H = 52.8
+ | Notes2 =
+}}
+{{BarrageList
+ | SkillIcon = 11760
+ | GifID = 
+ | Name = Raid Signal
+ | Ships = [[Ryuujou]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 1435.2
+ | DmgM = 1621.5
+ | DmgH = 1938.9
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11580
+ | Name = Swordfishes, Attack!
+ | Ships = [[Centaur]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1939.2
+ | DmgM = 2666.4
+ | DmgH = 3151.2
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 103100
+ | GifID = 
+ | Name = Twin Shadow Musou
+ | Ships = [[Saraana]], [[Uruuru]]
+ | Class = CVL
+ | DmgType = AP
+ | DmgL = 450
+ | DmgM = 450
+ | DmgH = 450
+ | Notes = Does not pierce. Scaled with 100% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13680
+ | GifID = 
+ | Name = Strike Team, Attack!
+ | Ships = [[Chitose]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 576
+ | DmgM = 648
+ | DmgH = 792
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13680
+ | GifID = 
+ | Name = Strike Team, Attack! (2+ launch)
+ | Ships = [[Chitose]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 768
+ | DmgM = 1056
+ | DmgH = 1248
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13680
+ | GifID = 
+ | Name = Strike Team, Attack! (Enhanced)
+ | Ships = [[Chitose]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 1152
+ | DmgM = 1296
+ | DmgH = 1584
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13680
+ | GifID = 
+ | Name = Strike Team, Attack! (2+ launch enhanced)
+ | Ships = [[Chitose]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1536
+ | DmgM = 2112
+ | DmgH = 2496
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13690
+ | GifID = 
+ | Name = Chiyoda's Domain?
+ | Ships = [[Chiyoda]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 576
+ | DmgM = 648
+ | DmgH = 792
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13690
+ | GifID = 
+ | Name = Chiyoda's Domain? (2+ launch)
+ | Ships = [[Chiyoda]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 768
+ | DmgM = 1056
+ | DmgH = 1248
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13690
+ | GifID = 
+ | Name = Chiyoda's Domain? (Enhanced)
+ | Ships = [[Chiyoda]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 1152
+ | DmgM = 1296
+ | DmgH = 1584
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13690
+ | GifID = 
+ | Name = Chiyoda's Domain? (2+ launch enhanced)
+ | Ships = [[Chiyoda]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1536
+ | DmgM = 2112
+ | DmgH = 2496
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 13420
+ | GifID = 
+ | Name = Athena's Catapult (Fairey Firefly)
+ | Ships = [[Perseus]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 1072
+ | DmgM = 1273
+ | DmgH = 1541
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13420
+ | GifID = 
+ | Name = Athena's Catapult (TBF Avengers)
+ | Ships = [[Perseus]]
+ | Class = CVL
+ | DmgType = Torpedo (CV)
+ | DmgL = 1641.6
+ | DmgM = 2257.2
+ | DmgH = 2667.6
+ | Notes = Scaled with 100% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13420
+ | GifID = 
+ | Name = Athena's Catapult (Sea Hornet)
+ | Ships = [[Perseus]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 1286.4
+ | DmgM = 1527.6
+ | DmgH = 1849.2
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13950
+ | GifID = 
+ | Name = The Lonesome Lookout
+ | Ships = [[Weser]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 662.4
+ | DmgM = 745.2
+ | DmgH = 910.8
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 13950
+ | GifID = 
+ | Name = The Lonesome Lookout (Enhanced)
+ | Ships = [[Weser]]
+ | Class = CVL
+ | DmgType = Bomb (CV)
+ | DmgL = 993.6
+ | DmgM = 1117.8
+ | DmgH = 1366.2
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11610
+ | GifID = 
+ | Name = Aviation Battleship Fleet
+ | Ships = [[Ise]] (Retrofit)
+ | Class = BBV
+ | DmgType = Bomb (CV)
+ | DmgL = 956.8
+ | DmgM = 1081
+ | DmgH = 1292.6
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 10830
+ | GifID = 
+ | Name = Aviation Preparations
+ | Ships = [[Fusou]] (Retrofit), [[Yamashiro]] (Retrofit)
+ | Class = BBV
+ | DmgType = Bomb (CV)
+ | DmgL = 2076
+ | DmgM = 2205.75
+ | DmgH = 2595
+ | Notes = Scaled with 80% of Aviation stat.
+}}
+{{BarrageList
+ | SkillIcon = 11600
+ | GifID = 11600
+ | Name = Melee Artillery
+ | Ships = [[Hyuuga]]
+ | Class = BBV
+ | DmgType = HE
+ | DmgL = 1120
+ | DmgM = 880
+ | DmgH = 720
+ | Notes = 30% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 11380
+ | GifID = 11381
+ | Name = Departing Strike
+ | Ships = [[I-58]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 336
+ | DmgM = 420
+ | DmgH = 546
+ | Notes = Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 12380
+ | GifID = 12380
+ | Name = Destructive Departure
+ | Ships = [[I-25]]
+ | Class = SS
+ | DmgType = Normal
+ | DmgL = 864
+ | DmgM = 864
+ | DmgH = 864
+ | Notes = Scaled with 100% of Firepower stat.
+}}
+{{BarrageList
+ | SkillIcon = 12380
+ | GifID = 
+ | Name = Glen Assault
+ | Ships = [[I-25]]
+ | Class = SS
+ | DmgType = Bomb (CV)
+ | DmgL = 254.4
+ | DmgM = 270.3
+ | DmgH = 318
+ | Notes = Scaled with 75% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 12470
+ | GifID = 12471
+ | Name = Double the Gato!
+ | Ships = [[Cavalla]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 201.6
+ | DmgM = 252
+ | DmgH = 327.6
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 11370
+ | GifID = 11370
+ | Name = Fatal Penetration
+ | Ships = [[I-19]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 230.4
+ | DmgM = 288
+ | DmgH = 374.4
+ | Notes = Can pierce. Scaled with 120% of Torpedo stat
+}}
+{{BarrageList
+ | SkillIcon = 15790
+ | GifID = 
+ | Name = Get 'Em, Canguro!
+ | Ships = [[Leonardo da Vinci]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 208
+ | DmgM = 128
+ | DmgH = 160
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 216
+ | Dmg2M = 172.8
+ | Dmg2H = 280.8 
+ | Notes2 = Flooding 0.45 24.1/3
+ | Dmg3Type = Torpedo
+ | Dmg3L = 312
+ | Dmg3M = 192
+ | Dmg3H = 240
+ | Notes3 = 
+}}
+{{BarrageList
+ | SkillIcon = 105070
+ | GifID = 105070
+ | Name = Promise to the Sunflower
+ | Ships = [[Minato Aqua]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 480
+ | DmgM = 600
+ | DmgH = 780
+ | Notes = 100% critical rate. Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 105070
+ | GifID = 105071
+ | Name = Promise to the Sunflower (Enhanced)
+ | Ships = [[Minato Aqua]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 960
+ | DmgM = 1200
+ | DmgH = 1560
+ | Notes = 100% critical rate. Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 13850
+ | GifID = 11670
+ | Name = Universal Surprise!
+ | Ships = [[Albacore µ]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 158.4
+ | DmgM = 198
+ | DmgH = 257.4
+ | Notes = 70% chance to armor break.
+ | Dmg2Type = Torpedo
+ | Dmg2L = 158.4
+ | Dmg2M = 198
+ | Dmg2H = 257.4
+ | Notes2 = 70% special burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 11680
+ | GifID = 11670
+ | Name = Surpriiiiiiiise!
+ | Ships = [[Albacore]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 192
+ | DmgM = 240
+ | DmgH = 312
+ | Notes = 70% burn chance.
+}}
+{{BarrageList
+ | SkillIcon = 12390
+ | GifID = 12391
+ | Name = Turning the Tables!
+ | Ships = [[I-168]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 480
+ | DmgM = 600
+ | DmgH = 780
+ | Notes = 100% critical rate. Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 13550
+ | GifID = 13550
+ | Name = Smiling Hunter
+ | Ships = [[U-96]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 448
+ | DmgM = 560
+ | DmgH = 728
+ | Notes = Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 12180
+ | GifID = 12180
+ | Name = The Light of an Oath
+ | Ships = [[U-556]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 230.4
+ | DmgM = 288
+ | DmgH = 374.4
+ | Notes = Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 12180
+ | GifID = 12181
+ | Name = The Light of an Oath (Enhanced)
+ | Ships = [[U-556]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 460.8
+ | DmgM = 576
+ | DmgH = 748.8
+ | Notes = Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 13930
+ | GifID = 13931
+ | Name = Westward Trident
+ | Ships = [[U-37]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 352
+ | DmgM = 440
+ | DmgH = 572
+ | Notes = Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 14130
+ | GifID = 
+ | Name = Mysterious Huntress
+ | Ships = [[U-410]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 256
+ | DmgM = 320
+ | DmgH = 416
+ | Notes = Scaled with 120% of Torpedo stat.
+}}
+{{BarrageList
+ | SkillIcon = 14460
+ | GifID = 
+ | Name = Turn the Tide
+ | Ships = [[Torricelli]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 320
+ | DmgM = 400
+ | DmgH = 520
+ | Notes = Scaled with 120% of Torpedo stat.
+ | Dmg2Type = Normal
+ | Dmg2L = 676
+ | Dmg2M = 494
+ | Dmg2H = 364
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 14600
+ | GifID = 14600
+ | Name = Parting Gift
+ | Ships = [[Archerfish]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 768
+ | DmgM = 960
+ | DmgH = 1248
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 107150
+ | GifID = 
+ | Name = Double Trouble - Ami
+ | Ships = [[Ami Futami]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 107150
+ | GifID = 
+ | Name = Double Trouble - Mami
+ | Ships = [[Mami Futami]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 432
+ | DmgM = 540
+ | DmgH = 702
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 14740
+ | GifID = 
+ | Name = The Intrepid Nautilus
+ | Ships = [[Nautilus]]
+ | Class = SS
+ | DmgType = Torpedo
+ | DmgL = 96
+ | DmgM = 120
+ | DmgH = 156
+ | Notes = 
+ | Dmg2Type = Torpedo
+ | Dmg2L = 192
+ | Dmg2M = 240
+ | Dmg2H = 312
+ | Notes2 = 
+}}
+{{BarrageList
+ | SkillIcon = 107120
+ | GifID = 107121
+ | Name = Fleet Course Management
+ | Ships = [[Ritsuko Akizuki]]
+ | Class = AE
+ | DmgType = Normal
+ | DmgL = 300
+ | DmgM = 225
+ | DmgH = 120
+ | Notes = 
+}}
+{{BarrageList
+ | SkillIcon = 107120
+ | GifID = 107123
+ | Name = Fleet Course Management (Enhanced)
+ | Ships = [[Ritsuko Akizuki]]
+ | Class = AE
+ | DmgType = Normal
+ | DmgL = 450
+ | DmgM = 337.5
+ | DmgH = 180
+ | Notes = 
+ | Dmg2Type = AP
+ | Dmg2L = 360
+ | Dmg2M = 288
+ | Dmg2H = 216
+ | Notes2 = 
+}}
+|}
+
+==Reference==
+* Credits to Hayashi#8923 and Enbayft#2527 on Discord for compiling the barrage charts ([https://cdn.discordapp.com/attachments/451152615502512140/477624033047740447/Barrages.png Hayashi's old chart 1] and [https://cdn.discordapp.com/attachments/451152615502512140/482322837429026817/Skills.png old chart 2], [https://github.com/Enbayft/Random-AL-Stuff/blob/master/BarrageChart.xlsx Enbayft's chart on Github]).
+* [https://wiki.biligame.com/blhx/%E5%85%A8%E8%88%B9%E5%85%A8%E5%BC%B9%E5%8F%91%E5%B0%84%EF%BC%8C%E4%B8%93%E5%B1%9E%E5%BC%B9%E5%B9%95%EF%BC%8C%E6%8A%80%E8%83%BD%E5%BC%B9%E5%B9%95%E6%80%A7%E8%83%BD%E4%B8%80%E8%A7%88 Original chart (from Chinese wiki)]
