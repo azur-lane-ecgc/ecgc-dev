@@ -28,11 +28,12 @@ local ammoColors = {
     Shrapnel = "Lavender",
     SHS      = "LightSteelBlue",
 }
-local aimNames = { [-1] = "Unknown", [0] = "", [1] = "Priority", [2] = "" }
+local aimNames = { [-1] = "Unknown", [0] = "", [1] = "Priority", [2] = "Random", [3] = "Nearest", [4] = "Special" }
 
 function p.shipBarrage(frame)
     local args = frame.args or {}
     local filter = args and args.filter
+    local aim_type = args and args.aim_type
     local locCol = tonumber(args.locCol) == 1
     local keys = {}
     for key in string.gmatch(args.list or "", "[^,]+") do
@@ -41,6 +42,7 @@ function p.shipBarrage(frame)
 
     local cols = {}
 
+    -- build the base cols
     if locCol then
         local label = (filter == "equip") and "Equip(s)" or "Ship(s)"
         cols = {
@@ -53,6 +55,15 @@ function p.shipBarrage(frame)
             "Coef", "Light", "Medium", "Heavy", "Aim", "Notes", "Effect"
         }
     end
+
+    if not aim_type then
+        for i = #cols, 1, -1 do
+            if cols[i] == "Aim" then
+                table.remove(cols, i)
+            end
+        end
+    end
+
 
     local html = mw.html.create("table")
         :addClass("wikitable")
@@ -162,7 +173,9 @@ function p.shipBarrage(frame)
                     row:tag("td"):wikitext("'''" .. string.format("%.1f", H) .. "'''"):done()
 
                     -- Aim
-                    row:tag("td"):wikitext(aimNames[part.aim_type] or ""):done()
+                    if aim_type then
+                        row:tag("td"):wikitext(aimNames[part.aim_type] or ""):done()
+                    end
 
                     -- Notes
                     local notesList = {}
