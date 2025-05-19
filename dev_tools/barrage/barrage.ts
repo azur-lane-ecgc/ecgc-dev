@@ -4,6 +4,7 @@ import type { ShipData } from "@ALData/types/ships"
 import type { Barrage } from "@ALData/types/barrages"
 import type { AugmentData } from "@ALData/types/augments"
 import type { EquipmentData } from "@ALData/types/equipments"
+import { apply } from "node_modules/astro/dist/core/polyfill"
 
 type EnhancedBarrageData = {
   barrages: Barrage[]
@@ -138,6 +139,60 @@ const createEquipAndAugBarrageJSON = async (): Promise<void> => {
 }
 
 // ————————————————————————————————————————————————
+// NEW: Overwrite aim_type based on scraped barrages3.json with per-variant matching
+// ————————————————————————————————————————————————
+async function applyTargetting(): Promise<void> {
+  // 1) load the JSON you just generated
+  const raw = await readFile("dev_tools/barrage/barrages.json", "utf-8")
+  const shipBarrages: Record<number, EnhancedBarrageData> = JSON.parse(raw)
+
+  // 2) load the scraped data
+  const scrapedRaw = await readFile("dev_tools/barrage/barrages3.json", "utf-8")
+  const scraped: Record<
+    number,
+    Array<{
+      parts: Array<{ damage: number; count: number; targetting: number }>
+    }>
+  > = JSON.parse(scrapedRaw)
+
+  // 3) for each skill id...
+  for (const [sidStr, data] of Object.entries(shipBarrages)) {
+    const sid = Number(sidStr)
+    // try exact or fallback
+    const exact = scraped[sid]
+    const fallback = scraped[Math.floor(sid / 10) * 10]
+    const variants = exact ?? fallback ?? []
+
+    // 4) for each barrage variant in your existing JSON...
+    data.barrages.forEach((origVariant, vi) => {
+      const scrapedVariant = variants[vi]
+      if (!scrapedVariant) return // no match, skip
+
+      // only if part counts line up
+      if (scrapedVariant.parts.length !== origVariant.parts.length) return
+
+      // 5) now for each part, match by (damage, count)
+      origVariant.parts.forEach((part, pi) => {
+        const sp = scrapedVariant.parts.find(
+          (s) => s.damage === part.damage && s.count === part.count,
+        )
+        // if found, overwrite aim_type
+        //@ts-ignore
+        part.aim_type = sp?.targetting ?? 0
+      })
+    })
+  }
+
+  // 6) write it back out so luaConvert picks up the new aim_type
+  await writeFile(
+    "dev_tools/barrage/barrages.json",
+    JSON.stringify(shipBarrages, null, 2),
+    "utf-8",
+  )
+  console.log("Applied targetting to barrages.json")
+}
+
+// ————————————————————————————————————————————————
 // 3) Convert JSON to Lua module
 // ————————————————————————————————————————————————
 const luaConvert = async (
@@ -189,6 +244,9 @@ const luaConvert = async (
 const main = async () => {
   try {
     await createJSON()
+
+    await applyTargetting()
+
     await luaConvert(
       "dev_tools/barrage/barrages.json",
       "dev_tools/barrage/data.lua",

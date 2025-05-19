@@ -83,7 +83,7 @@ for tbl in tables:
 
         # Conversion helpers
         def to_int(v):
-            return int(v) if v and v.isdigit() else None
+            return int(v) if v and str(v).isdigit() else None
 
         def to_float(v):
             try:
@@ -114,4 +114,8 @@ for tbl in tables:
 
         last_barrage[sid]["parts"].append(part)
 
-print(json.dumps(out, indent=2))
+# Write out to barrages3.json
+with open("barrages3.json", "w", encoding="utf-8") as out_f:
+    json.dump(out, out_f, ensure_ascii=False, indent=2)
+
+print("Written", len(out), "skills to barrages3.json")

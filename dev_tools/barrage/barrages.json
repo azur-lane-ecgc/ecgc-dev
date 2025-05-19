@@ -74,7 +74,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -121,7 +121,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 18,
             "velocity": 12,
@@ -266,7 +266,7 @@
               50,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 50,
             "splash": 15,
             "velocity": 12,
@@ -314,7 +314,7 @@
               0,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 15,
             "velocity": 0,
@@ -351,7 +351,7 @@
               0,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 1,
             "velocity": 0,
@@ -571,7 +571,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 40,
             "splash": 0,
             "velocity": 18,
@@ -707,7 +707,7 @@
               0,
               500
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 180,
             "splash": 15,
             "velocity": 0,
@@ -743,7 +743,7 @@
               0,
               500
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 180,
             "splash": 15,
             "velocity": 0,
@@ -790,7 +790,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -836,7 +836,7 @@
               35,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 50,
             "splash": 15,
             "velocity": 12,
@@ -882,7 +882,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -933,7 +933,7 @@
               0,
               110
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360
           },
           {
@@ -957,7 +957,7 @@
               22,
               40
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 35,
             "splash": 3,
             "velocity": 3,
@@ -1003,7 +1003,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -1037,7 +1037,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -1088,7 +1088,7 @@
               35,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 50,
             "splash": 15,
             "velocity": 12,
@@ -1183,7 +1183,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 22,
@@ -1263,7 +1263,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -1479,7 +1479,7 @@
               35,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 50,
             "splash": 15,
             "velocity": 12,
@@ -1529,7 +1529,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 22,
@@ -1707,7 +1707,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -1741,7 +1741,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -1791,7 +1791,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 22,
@@ -2098,7 +2098,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -2136,7 +2136,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -2186,7 +2186,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -2224,7 +2224,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -2360,7 +2360,7 @@
               0,
               200
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -2635,7 +2635,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -2819,7 +2819,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 22,
@@ -2853,7 +2853,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -2967,7 +2967,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -3001,7 +3001,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 2,
@@ -3051,7 +3051,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 80,
             "splash": 3,
             "velocity": 4,
@@ -3623,7 +3623,7 @@
               35,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 50,
             "splash": 15,
             "velocity": 12,
@@ -4636,7 +4636,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -4767,7 +4767,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -4802,7 +4802,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 13,
@@ -5379,7 +5379,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -5427,7 +5427,7 @@
               0,
               75
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
@@ -5473,7 +5473,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 22,
@@ -5599,7 +5599,7 @@
               0,
               500
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 25,
             "splash": 16,
             "velocity": 1.5,
@@ -6124,7 +6124,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -6162,7 +6162,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -6208,7 +6208,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 4,
             "angle": 60,
             "splash": 3,
             "velocity": 4,
@@ -6255,7 +6255,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -6458,7 +6458,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -6492,7 +6492,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 7,
@@ -6526,7 +6526,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 7,
@@ -6882,7 +6882,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -7039,7 +7039,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -7177,7 +7177,7 @@
               0,
               500
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 22,
             "splash": 5,
             "velocity": 1.5,
@@ -7212,7 +7212,7 @@
               0,
               500
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 25,
             "splash": 28,
             "velocity": 1.5,
@@ -8032,7 +8032,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -8197,7 +8197,7 @@
               35,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 50,
             "splash": 15,
             "velocity": 15,
@@ -8247,7 +8247,7 @@
               0,
               85
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 20,
@@ -8332,7 +8332,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -8366,7 +8366,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 3,
             "velocity": 5,
@@ -8462,7 +8462,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -8500,7 +8500,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 0,
             "velocity": 20,
@@ -8936,7 +8936,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 14,
             "velocity": 15,
@@ -8970,7 +8970,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 0,
             "velocity": 7,
@@ -9004,7 +9004,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 0,
             "velocity": 7,
@@ -9038,7 +9038,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 60,
             "splash": 3,
             "velocity": 4,
@@ -10715,7 +10715,7 @@
               0,
               120
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 10,
@@ -11219,7 +11219,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 12,
             "velocity": 1,
@@ -12425,7 +12425,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -13402,7 +13402,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5,
@@ -14762,7 +14762,7 @@
               35,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 50,
             "splash": 15,
             "velocity": 15,
@@ -15007,7 +15007,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -15979,7 +15979,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 7,
             "velocity": 12,
@@ -16078,7 +16078,7 @@
               0,
               80
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 45,
             "splash": 7,
             "velocity": 15,
@@ -16670,7 +16670,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -16704,7 +16704,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 22,
@@ -16784,7 +16784,7 @@
               0,
               95
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -16818,7 +16818,7 @@
               0,
               95
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 10,
@@ -17368,7 +17368,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 8,
@@ -17906,7 +17906,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 8,
@@ -17990,7 +17990,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 120,
             "splash": 0,
             "velocity": 10,
@@ -18028,7 +18028,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 60,
             "splash": 3,
             "velocity": 2,
@@ -18272,7 +18272,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 20,
@@ -18306,7 +18306,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 3,
@@ -18605,7 +18605,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -18814,7 +18814,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 14,
@@ -18848,7 +18848,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -19842,7 +19842,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 180,
             "splash": 2.5,
             "velocity": 4,
@@ -20570,7 +20570,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 22,
@@ -20864,7 +20864,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -20902,7 +20902,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -21488,7 +21488,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -22023,7 +22023,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 0.75,
@@ -22428,7 +22428,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 120,
             "splash": 0,
             "velocity": 14,
@@ -22676,7 +22676,7 @@
               0,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 0,
             "velocity": 12,
@@ -23492,7 +23492,7 @@
               0,
               150
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
@@ -23707,7 +23707,7 @@
               0,
               500
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 16,
             "splash": 30,
             "velocity": 0,
@@ -23891,7 +23891,7 @@
               0,
               120
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 200,
             "splash": 0,
             "velocity": 4,
@@ -24022,7 +24022,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 3,
             "velocity": 6,
@@ -24119,7 +24119,7 @@
               0,
               120
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 8,
@@ -24588,7 +24588,7 @@
               0,
               150
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -24622,7 +24622,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 3,
             "velocity": 3,
@@ -24937,7 +24937,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -25604,7 +25604,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 3,
@@ -25638,7 +25638,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 36,
@@ -26020,7 +26020,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 0,
             "velocity": 0,
@@ -26066,7 +26066,7 @@
               0,
               100
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 22,
@@ -26320,7 +26320,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 14,
             "velocity": 15,
@@ -26416,7 +26416,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -27159,7 +27159,7 @@
               0,
               80
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -27339,7 +27339,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 3,
@@ -27373,7 +27373,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 36,
@@ -27933,7 +27933,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 15,
             "velocity": 15,
@@ -28415,7 +28415,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 0,
             "velocity": 0,
@@ -28844,7 +28844,7 @@
               0,
               100
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 22,
@@ -29015,7 +29015,7 @@
               25,
               80
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 60,
             "velocity": 7,
@@ -29943,7 +29943,7 @@
               0,
               55
             ],
-            "aim_type": 1,
+            "aim_type": 3,
             "angle": 360,
             "splash": 0,
             "velocity": 22,
@@ -30371,7 +30371,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -31626,7 +31626,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 4,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -31720,7 +31720,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -35365,7 +35365,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 360,
             "splash": 0,
             "velocity": 3,
@@ -36315,7 +36315,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 3,
@@ -37157,7 +37157,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -37191,7 +37191,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 8,
@@ -37639,7 +37639,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 24,
@@ -37921,7 +37921,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 15,
             "velocity": 8,
@@ -37971,7 +37971,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 0.75,
@@ -38005,7 +38005,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 0.75,
@@ -38039,7 +38039,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 0.75,
@@ -38073,7 +38073,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -38431,7 +38431,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 0.75,
@@ -38465,7 +38465,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -38835,7 +38835,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -39133,7 +39133,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -39305,7 +39305,7 @@
               0,
               100
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -39449,7 +39449,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 360,
             "splash": 0,
             "velocity": 8,
@@ -39483,7 +39483,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -39613,7 +39613,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 0.75,
@@ -39647,7 +39647,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -39969,7 +39969,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
@@ -40083,7 +40083,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -40129,7 +40129,7 @@
               0,
               80
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 5,
@@ -40163,7 +40163,7 @@
               0,
               80
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 2.5,
@@ -40197,7 +40197,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 3,
@@ -40381,7 +40381,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 16,
@@ -40415,7 +40415,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -40495,7 +40495,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -40575,7 +40575,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -40621,7 +40621,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
@@ -40655,7 +40655,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 5,
@@ -40895,7 +40895,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -41203,7 +41203,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 180,
             "splash": 0,
             "velocity": 3.9,
@@ -41283,7 +41283,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -41375,7 +41375,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 0.75,
@@ -41409,7 +41409,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -41535,7 +41535,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -41569,7 +41569,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 3,
             "velocity": 4,
@@ -41661,7 +41661,7 @@
               0,
               80
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 5,
@@ -41695,7 +41695,7 @@
               0,
               80
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 2.5,
@@ -41729,7 +41729,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 3,
@@ -41809,7 +41809,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 5,
@@ -41855,7 +41855,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 8,
@@ -41889,7 +41889,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -41935,7 +41935,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
@@ -41969,7 +41969,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -42015,7 +42015,7 @@
               0,
               100
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 150,
             "splash": 6,
             "velocity": 1.5,
@@ -42062,7 +42062,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -42188,7 +42188,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
@@ -42222,7 +42222,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -42348,7 +42348,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 5,
@@ -42535,7 +42535,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 120,
             "splash": 0,
             "velocity": 0.75,
@@ -42753,7 +42753,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 0.75,
@@ -42918,7 +42918,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -43090,7 +43090,7 @@
               0,
               100
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 150,
             "splash": 6,
             "velocity": 1.5,
@@ -43183,7 +43183,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
@@ -43217,7 +43217,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
@@ -43263,7 +43263,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
@@ -43343,7 +43343,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -43520,7 +43520,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 4,
@@ -43692,7 +43692,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -43738,7 +43738,7 @@
               0,
               150
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -43772,7 +43772,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 3,
             "velocity": 3,
@@ -43914,7 +43914,7 @@
               0,
               100
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
@@ -44286,7 +44286,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 0.75,
@@ -44320,7 +44320,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -44492,7 +44492,7 @@
               0,
               100
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 150,
             "splash": 6,
             "velocity": 1.5,
@@ -44539,7 +44539,7 @@
               0,
               100
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
@@ -44585,7 +44585,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
@@ -44631,7 +44631,7 @@
               0,
               150
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 10,
@@ -44666,7 +44666,7 @@
               0,
               150
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -44751,7 +44751,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 8,
@@ -44785,7 +44785,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 5,
@@ -44916,7 +44916,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
@@ -45203,7 +45203,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 14,
@@ -45249,7 +45249,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -45283,7 +45283,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -45317,7 +45317,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -45531,7 +45531,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -45625,7 +45625,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 10,
             "velocity": 6,
@@ -45760,7 +45760,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -45794,7 +45794,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -45844,7 +45844,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -46270,7 +46270,7 @@
               35,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -46439,7 +46439,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -46489,7 +46489,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -46527,7 +46527,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 120,
             "splash": 0,
             "velocity": 20,
@@ -46847,7 +46847,7 @@
               35,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -47074,7 +47074,7 @@
               0,
               200
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 3,
             "velocity": 3,
@@ -47841,7 +47841,7 @@
               0,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 6,
             "velocity": 11,
@@ -47967,7 +47967,7 @@
               0,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 8,
@@ -48013,7 +48013,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 16,
@@ -48047,7 +48047,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 16,
@@ -48478,7 +48478,7 @@
               0,
               500
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 180,
             "splash": 15,
             "velocity": 0,
@@ -48774,7 +48774,7 @@
               0,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 6,
             "velocity": 11,
@@ -48854,7 +48854,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 16,
@@ -48934,7 +48934,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 18,
             "velocity": 12,
@@ -49070,7 +49070,7 @@
               0,
               500
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 180,
             "splash": 15,
             "velocity": 0,
@@ -49116,7 +49116,7 @@
               0,
               200
             ],
-            "aim_type": 0,
+            "aim_type": 4,
             "angle": 180,
             "splash": 0,
             "velocity": 18,
@@ -49728,7 +49728,7 @@
               35,
               105
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -49897,7 +49897,7 @@
               0,
               120
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
@@ -50173,7 +50173,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 360,
             "splash": 3,
             "velocity": 0,
@@ -50207,7 +50207,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 4,
             "angle": 360,
             "splash": 3,
             "velocity": 0,
@@ -51101,7 +51101,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -51277,7 +51277,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -51315,7 +51315,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -54322,7 +54322,7 @@
               0,
               42
             ],
-            "aim_type": 1,
+            "aim_type": 3,
             "angle": 75,
             "splash": 3,
             "velocity": 2,
@@ -54778,7 +54778,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 14,
@@ -55661,7 +55661,7 @@
               35,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 50,
             "splash": 0,
             "velocity": 12,
@@ -55846,7 +55846,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -56070,7 +56070,7 @@
               0,
               120
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 3,
             "velocity": 0,
@@ -56290,7 +56290,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -56951,7 +56951,7 @@
               0,
               95
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 4,
@@ -57228,7 +57228,7 @@
               0,
               1
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 16,
             "velocity": 1,
@@ -57274,7 +57274,7 @@
               0,
               150
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
@@ -57308,7 +57308,7 @@
               0,
               150
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -57442,7 +57442,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 120,
             "splash": 0,
             "velocity": 30,
@@ -57476,7 +57476,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 120,
             "splash": 3,
             "velocity": 1,
@@ -57514,7 +57514,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 120,
             "splash": 6,
             "velocity": 1,
@@ -57548,7 +57548,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 120,
             "splash": 0,
             "velocity": 10,
@@ -57582,7 +57582,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 3,
             "angle": 120,
             "splash": 3,
             "velocity": 5,
@@ -57628,7 +57628,7 @@
               0,
               120
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -58065,7 +58065,7 @@
               0,
               100
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -58104,7 +58104,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 360,
             "splash": 0,
             "velocity": 5,
@@ -58142,7 +58142,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 360,
             "splash": 30,
             "velocity": 0.1,
@@ -59920,7 +59920,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 6,
@@ -60606,7 +60606,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 15,
@@ -60644,7 +60644,7 @@
               35,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 50,
             "splash": 16,
             "velocity": 15,
@@ -60737,7 +60737,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 60,
             "splash": 0,
             "velocity": 15,
@@ -60787,7 +60787,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 18,
@@ -60821,7 +60821,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 3,
             "velocity": 3,
@@ -61082,7 +61082,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 4,
@@ -61162,7 +61162,7 @@
               0,
               60
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 15,
             "velocity": 5,
@@ -61200,7 +61200,7 @@
               0,
               200
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 15,
             "velocity": 5,
@@ -61251,7 +61251,7 @@
               0,
               200
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
@@ -61302,7 +61302,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 3,
@@ -61841,7 +61841,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -62492,7 +62492,7 @@
               0,
               90
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 180,
             "splash": 0,
             "velocity": 0,
@@ -62585,7 +62585,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 5.5,
@@ -62619,7 +62619,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -62703,7 +62703,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 22,
@@ -62783,7 +62783,7 @@
               0,
               100
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 60,
             "splash": 15,
             "velocity": 15,
@@ -62834,7 +62834,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
@@ -63029,7 +63029,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 3,
             "velocity": 4,
@@ -63075,7 +63075,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -64254,7 +64254,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 120,
             "splash": 3,
             "velocity": 5,
@@ -64875,7 +64875,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 12,
@@ -65905,7 +65905,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -67369,7 +67369,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 3,
             "velocity": 3,
@@ -67419,7 +67419,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 28,
@@ -67769,7 +67769,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -67803,7 +67803,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -69094,7 +69094,7 @@
               0,
               100
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 80,
             "splash": 3,
             "velocity": 5,
@@ -69997,7 +69997,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 3,
             "angle": 120,
             "splash": 15,
             "velocity": 8,
@@ -70097,7 +70097,7 @@
               25,
               95
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 60,
             "splash": 16,
             "velocity": 15,
@@ -70303,7 +70303,7 @@
               0,
               80
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 0,
             "velocity": 18,
@@ -70349,7 +70349,7 @@
               0,
               150
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
@@ -70648,7 +70648,7 @@
               0,
               50
             ],
-            "aim_type": 0,
+            "aim_type": 2,
             "angle": 360,
             "splash": 3,
             "velocity": 2,
@@ -70794,7 +70794,7 @@
               0,
               100
             ],
-            "aim_type": 0,
+            "aim_type": 1,
             "angle": 120,
             "splash": 3,
             "velocity": 2,
