@@ -28,7 +28,7 @@ local ammoColors = {
     Shrapnel = "Lavender",
     SHS      = "LightSteelBlue",
 }
-local aimNames = { [-1] = "Unknown", [0] = "Random", [1] = "Aimed" }
+local aimNames = { [-1] = "Unknown", [0] = "", [1] = "Priority", [2] = "" }
 
 function p.shipBarrage(frame)
     local args = frame.args or {}

@@ -139,14 +139,10 @@ const createEquipAndAugBarrageJSON = async (): Promise<void> => {
 }
 
 // ————————————————————————————————————————————————
-// NEW: Overwrite aim_type based on scraped barrages3.json with per-variant matching
+// NEW: Overwrite aim_type in barrages2.json (equip/augment) too
 // ————————————————————————————————————————————————
-async function applyTargetting(): Promise<void> {
-  // 1) load the JSON you just generated
-  const raw = await readFile("dev_tools/barrage/barrages.json", "utf-8")
-  const shipBarrages: Record<number, EnhancedBarrageData> = JSON.parse(raw)
-
-  // 2) load the scraped data
+async function applyTargettingToAll(): Promise<void> {
+  // load scraped data
   const scrapedRaw = await readFile("dev_tools/barrage/barrages3.json", "utf-8")
   const scraped: Record<
     number,
@@ -155,41 +151,37 @@ async function applyTargetting(): Promise<void> {
     }>
   > = JSON.parse(scrapedRaw)
 
-  // 3) for each skill id...
-  for (const [sidStr, data] of Object.entries(shipBarrages)) {
-    const sid = Number(sidStr)
-    // try exact or fallback
-    const exact = scraped[sid]
-    const fallback = scraped[Math.floor(sid / 10) * 10]
-    const variants = exact ?? fallback ?? []
+  // helper to patch one JSON file
+  async function patchFile(path: string) {
+    const raw = await readFile(path, "utf-8")
+    const data: Record<number, EnhancedBarrageData> = JSON.parse(raw)
 
-    // 4) for each barrage variant in your existing JSON...
-    data.barrages.forEach((origVariant, vi) => {
-      const scrapedVariant = variants[vi]
-      if (!scrapedVariant) return // no match, skip
+    for (const [sidStr, entry] of Object.entries(data)) {
+      const sid = Number(sidStr)
+      const exact = scraped[sid]
+      const fallback = scraped[Math.floor(sid / 10) * 10]
+      const variants = exact ?? fallback ?? []
 
-      // only if part counts line up
-      if (scrapedVariant.parts.length !== origVariant.parts.length) return
-
-      // 5) now for each part, match by (damage, count)
-      origVariant.parts.forEach((part, pi) => {
-        const sp = scrapedVariant.parts.find(
-          (s) => s.damage === part.damage && s.count === part.count,
-        )
-        // if found, overwrite aim_type
-        //@ts-ignore
-        part.aim_type = sp?.targetting ?? 0
+      entry.barrages.forEach((variant, vi) => {
+        const sv = variants[vi]
+        if (!sv || sv.parts.length !== variant.parts.length) return
+        variant.parts.forEach((part, pi) => {
+          const sp = sv.parts.find(
+            (s) => s.damage === part.damage && s.count === part.count,
+          )
+          //@ts-ignore
+          part.aim_type = sp?.targetting ?? 0
+        })
       })
-    })
+    }
+
+    await writeFile(path, JSON.stringify(data, null, 2), "utf-8")
+    console.log(`Patched targetting in ${path}`)
   }
 
-  // 6) write it back out so luaConvert picks up the new aim_type
-  await writeFile(
-    "dev_tools/barrage/barrages.json",
-    JSON.stringify(shipBarrages, null, 2),
-    "utf-8",
-  )
-  console.log("Applied targetting to barrages.json")
+  // patch both files
+  await patchFile("dev_tools/barrage/barrages.json")
+  await patchFile("dev_tools/barrage/barrages2.json")
 }
 
 // ————————————————————————————————————————————————
@@ -244,15 +236,13 @@ const luaConvert = async (
 const main = async () => {
   try {
     await createJSON()
-
-    await applyTargetting()
+    await createEquipAndAugBarrageJSON()
+    await applyTargettingToAll()
 
     await luaConvert(
       "dev_tools/barrage/barrages.json",
       "dev_tools/barrage/data.lua",
     )
-
-    await createEquipAndAugBarrageJSON()
     await luaConvert(
       "dev_tools/barrage/barrages2.json",
       "dev_tools/barrage/data2.lua",

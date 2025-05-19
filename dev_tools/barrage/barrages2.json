@@ -118,7 +118,7 @@
               0,
               75
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
@@ -168,7 +168,7 @@
               0,
               75
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
@@ -218,7 +218,7 @@
               0,
               75
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
@@ -352,7 +352,7 @@
               0,
               75
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
@@ -445,7 +445,7 @@
               0,
               75
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
@@ -572,7 +572,7 @@
               0,
               75
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
@@ -665,7 +665,7 @@
               0,
               75
             ],
-            "aim_type": 1,
+            "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
@@ -1354,7 +1354,7 @@
               0,
               90
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 22,
@@ -1915,7 +1915,7 @@
               0,
               80
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 0.1,
@@ -1949,7 +1949,7 @@
               0,
               50
             ],
-            "aim_type": 1,
+            "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 0.1,
