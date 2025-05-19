@@ -1,4 +1,5 @@
 local data = mw.loadData("Module:ShipBarrage/data")
+local data2 = mw.loadData("Module:ShipBarrage/data2")
 local p = {}
 
 local ammoNames = {
@@ -31,7 +32,8 @@ local aimNames = { [-1] = "Unknown", [0] = "Random", [1] = "Aimed" }
 
 function p.shipBarrage(frame)
     local args = frame.args or {}
-    local shipCol = tonumber(args.shipCol) == 1
+    local filter = args and args.filter
+    local locCol = tonumber(args.locCol) == 1
     local keys = {}
     for key in string.gmatch(args.list or "", "[^,]+") do
         table.insert(keys, mw.text.trim(key))
@@ -39,9 +41,10 @@ function p.shipBarrage(frame)
 
     local cols = {}
 
-    if shipCol then
+    if locCol then
+        local label = (filter == "equip") and "Equip(s)" or "Ship(s)"
         cols = {
-            "Skill", "Ship(s)", "Stat", "Ammo", "DMG", "Count",
+            "Skill", label, "Stat", "Ammo", "DMG", "Count",
             "Coef", "Light", "Medium", "Heavy", "Aim", "Notes", "Effect"
         }
     else
@@ -86,15 +89,15 @@ function p.shipBarrage(frame)
     end
 
     for _, key in ipairs(keys) do
-        local entry = data[key]
+        local entry = (filter == "equip" and data2 or data)[key]
         if entry then
             local numKey    = tonumber(key)
             local iconKey   = numKey and (numKey - (numKey % 10)) or key
             local ships     = {}
             local shipLinks = {}
 
-            if shipCol then
-                ships = entry.ships
+            if locCol then
+                ships = entry.ships or entry.equips or {}
                 for _, s in ipairs(ships) do table.insert(shipLinks, "[[" .. s .. "]]") end
             end
 
@@ -114,7 +117,7 @@ function p.shipBarrage(frame)
                             :done()
 
                         -- Ship Name
-                        if shipCol then
+                        if locCol then
                             row:tag("td")
                                 :addClass("barrageTitle")
                                 :attr("rowspan", totalRows)
@@ -227,33 +230,47 @@ function p.shipBarrage(frame)
 end
 
 function p.list(frame)
-    local args    = frame.args or {}
-    local mode    = args.filter and mw.text.trim(args.filter):lower()
-    local shipCol = tonumber(args.shipCol) == 1
+    local args   = frame.args or {}
+    local mode   = args.filter and mw.text.trim(args.filter):lower()
+    local locCol = tonumber(args.locCol) == 1
 
-    local skills  = {}
+    local skills = {}
     for key, entry in pairs(data) do
         local name = entry.barrages[1] and entry.barrages[1].name or ""
         table.insert(skills, { id = key, name = name })
     end
 
+    local skills2 = {}
+    for key, entry in pairs(data2) do
+        local name = entry.barrages[1] and entry.barrages[1].name or ""
+        table.insert(skills2, { id = key, name = name })
+    end
+
     table.sort(skills, function(a, b) return a.name < b.name end)
 
     local filtered = {}
-    for _, s in ipairs(skills) do
-        if not mode then
+
+    if mode == "equip" then
+        for _, s in ipairs(skills2) do
             table.insert(filtered, s.id)
-        elseif mode == "aoa" and s.name:find(" II") then
-            table.insert(filtered, s.id)
-        elseif mode == "noaoa" and not s.name:find(" II") then
-            table.insert(filtered, s.id)
+        end
+    else
+        for _, s in ipairs(skills) do
+            if not mode then
+                table.insert(filtered, s.id)
+            elseif mode == "aoa" and s.name:find(" II") then
+                table.insert(filtered, s.id)
+            elseif mode == "noaoa" and not s.name:find(" II") then
+                table.insert(filtered, s.id)
+            end
         end
     end
 
     local fakeFrame = {
         args = {
-            list    = table.concat(filtered, ","),
-            shipCol = shipCol and 1 or 0
+            list   = table.concat(filtered, ","),
+            locCol = locCol and 1 or 0,
+            filter = mode
         }
     }
     return p.shipBarrage(fakeFrame)

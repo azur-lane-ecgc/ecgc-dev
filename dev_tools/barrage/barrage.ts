@@ -3,14 +3,16 @@ import { readFile, writeFile } from "fs/promises"
 import type { ShipData } from "@ALData/types/ships"
 import type { Barrage } from "@ALData/types/barrages"
 import type { AugmentData } from "@ALData/types/augments"
+import type { EquipmentData } from "@ALData/types/equipments"
 
 type EnhancedBarrageData = {
   barrages: Barrage[]
-  ships: string[]
+  ships?: string[]
+  equips?: string[]
 }
 
 // ————————————————————————————————————————————————
-// 1) Gather and write enhanced barrages.json
+// 1) Gather and write enhanced barrages.json (SHIP barrages)
 // ————————————————————————————————————————————————
 const createJSON = async (): Promise<void> => {
   const ships: Record<number, ShipData> = (await import(
@@ -54,33 +56,19 @@ const createJSON = async (): Promise<void> => {
     }
   })
 
-  const result: Record<number, EnhancedBarrageData> = Array.from(
-    allSkillIds,
-  ).reduce(
-    (acc, id) => {
-      const arr = barrages[id]
-      if (arr) {
-        acc[id] = {
-          barrages: arr,
-          ships: Array.from(skillToShips[id] || []).sort(),
-        }
+  const result: Record<number, EnhancedBarrageData> = {}
+  for (const id of allSkillIds) {
+    const arr = barrages[id]
+    if (arr) {
+      result[id] = {
+        barrages: arr.map((b) => ({
+          ...b,
+          name: b.name.replace(/\s*\(([^)]+)\)$/, (_m, p1) => `\n(${p1})`),
+        })),
+        ships: Array.from(skillToShips[id] || []).sort(),
       }
-      return acc
-    },
-    {} as Record<number, EnhancedBarrageData>,
-  )
-
-  // ————————————————————————————————————————————————
-  // 1.5) Move trailing "(…)" onto its own line within the name
-  // ————————————————————————————————————————————————
-  Object.values(result).forEach(({ barrages }) => {
-    barrages.forEach((barrage) => {
-      barrage.name = barrage.name.replace(
-        /\s*\(([^)]+)\)$/,
-        (_match, p1) => `\n(${p1})`,
-      )
-    })
-  })
+    }
+  }
 
   await writeFile(
     "dev_tools/barrage/barrages.json",
@@ -93,21 +81,78 @@ const createJSON = async (): Promise<void> => {
 }
 
 // ————————————————————————————————————————————————
-// 2) Convert that JSON to a Lua module
+// 2) Write enhanced barrages2.json (EQUIP + AUGMENT barrages)
+// ————————————————————————————————————————————————
+const createEquipAndAugBarrageJSON = async (): Promise<void> => {
+  const barrages: Record<number, Barrage[]> = (await import(
+    "@ALData/data/barrages.json"
+  ).then((m) => m.default)) as Record<number, Barrage[]>
+
+  const augments: Record<number, AugmentData> = (await import(
+    "@ALData/data/augments.json"
+  ).then((m) => m.default)) as Record<number, AugmentData>
+
+  const equips: Record<number, EquipmentData> = (await import(
+    "@ALData/data/equipments.json"
+  ).then((m) => m.default)) as Record<number, EquipmentData>
+
+  const allSkillIds = new Set<number>()
+  const skillToItems: Record<number, Set<string>> = {}
+
+  const addSkillAndItem = (id: number, itemName: string) => {
+    allSkillIds.add(id)
+    skillToItems[id] = skillToItems[id] || new Set()
+    skillToItems[id].add(itemName)
+  }
+
+  for (const equip of Object.values(equips)) {
+    equip.skills?.forEach((id) => addSkillAndItem(id, equip.name))
+  }
+
+  for (const augment of Object.values(augments)) {
+    augment.skills?.forEach((id) => addSkillAndItem(id, augment.name))
+  }
+
+  const result: Record<number, EnhancedBarrageData> = {}
+  for (const id of allSkillIds) {
+    const arr = barrages[id]
+    if (arr) {
+      result[id] = {
+        barrages: arr.map((b) => ({
+          ...b,
+          name: b.name.replace(/\s*\(([^)]+)\)$/, (_m, p1) => `\n(${p1})`),
+        })),
+        equips: Array.from(skillToItems[id]).sort(),
+      }
+    }
+  }
+
+  await writeFile(
+    "dev_tools/barrage/barrages2.json",
+    JSON.stringify(result, null, 2),
+    "utf-8",
+  )
+  console.log(
+    `barrages2.json written with ${Object.keys(result).length} entries.`,
+  )
+}
+
+// ————————————————————————————————————————————————
+// 3) Convert JSON to Lua module
 // ————————————————————————————————————————————————
 const luaConvert = async (
   inputPath: string,
   outputPath: string,
 ): Promise<void> => {
-  // Helpers
   const isValidLuaId = (k: string) => /^[A-Za-z_]\w*$/.test(k)
   const escapeStr = (s: string) =>
     `"${s.replace(/\\/g, "\\\\").replace(/"/g, '\\"').replace(/\n/g, "\\n")}"`
 
   const toLua = (v: any, indent = ""): string => {
     if (Array.isArray(v)) {
-      if (!v.length) return "{}"
-      return `{ ${v.map((x) => toLua(x, indent)).join(", ")} }`
+      return v.length
+        ? `{ ${v.map((x) => toLua(x, indent)).join(", ")} }`
+        : "{}"
     }
     if (v && typeof v === "object") {
       const entries = Object.entries(v)
@@ -129,27 +174,37 @@ const luaConvert = async (
     }
   }
 
-  // Read JSON
   const jsonText = await readFile(inputPath, "utf-8")
   const data = JSON.parse(jsonText)
-
-  // Convert & wrap
   const luaBody = toLua(data)
   const out = `local p = ${luaBody}\n\nreturn p\n`
 
-  // Write Lua file
   await writeFile(outputPath, out, "utf-8")
   console.log(`Lua module written to ${outputPath}`)
 }
 
 // ————————————————————————————————————————————————
-// Run both in sequence
+// 4) Run both sets of conversions in order
 // ————————————————————————————————————————————————
-createJSON()
-  .then(() =>
-    luaConvert("dev_tools/barrage/barrages.json", "dev_tools/barrage/data.lua"),
-  )
-  .catch((err) => {
+const main = async () => {
+  try {
+    await createJSON()
+    await luaConvert(
+      "dev_tools/barrage/barrages.json",
+      "dev_tools/barrage/data.lua",
+    )
+
+    await createEquipAndAugBarrageJSON()
+    await luaConvert(
+      "dev_tools/barrage/barrages2.json",
+      "dev_tools/barrage/data2.lua",
+    )
+
+    console.log("All barrage data written successfully.")
+  } catch (err) {
     console.error(err)
     process.exit(1)
-  })
+  }
+}
+
+main()
