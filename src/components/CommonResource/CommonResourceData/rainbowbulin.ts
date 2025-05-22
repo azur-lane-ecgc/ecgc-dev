@@ -43,7 +43,7 @@ const SpecializedBulinData: ResourceProps = {
         {
           name: "Medal Shop",
           wikiLink: "Shops#Prototype_Shop",
-          quantity: { amount: 0.25, timeFrame: "monthly" },
+          quantity: { amount: 0.75, timeFrame: "monthly" },
           notes: "Specialized Core",
         },
       ],
