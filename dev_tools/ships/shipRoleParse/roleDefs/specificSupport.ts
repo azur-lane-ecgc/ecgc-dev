@@ -49,13 +49,11 @@ export const mainCVDmgSupport = new Set([
 
 export const vgAllDmgSupport = new Set(["Helena", "Aurora", "Z52"])
 
-export const vgBBDmgSupport = new Set(["Plymouth"])
+export const vgBBDmgSupport = new Set(["Plymouth", "Trafalgar"])
 
 export const vgCVDmgSupport = new Set(["Kazagumo", "Sirius"])
 
 export const vgAllSlowSupport = new Set(["Eldridge", "Ägir"])
-
-export const vgVgDmgSupport = new Set(["Avrora"])
 
 export const vgVgTRPSupport = new Set([
   "Noshiro",
