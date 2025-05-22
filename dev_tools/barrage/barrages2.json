@@ -10,40 +10,25 @@
             "count": 12,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.35,
-              0.95,
-              0.7
-            ],
+            "armor_mod": [1.35, 0.95, 0.7],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              200
-            ],
+            "range": [0, 200],
             "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Dynamic Cannon"
-    ]
+    "equips": ["Dynamic Cannon"]
   },
   "6940": {
     "barrages": [
@@ -56,42 +41,27 @@
             "count": 18,
             "stat": "avi",
             "ratio": 1,
-            "armor_mod": [
-              0.8,
-              0.9,
-              1.1
-            ],
+            "armor_mod": [0.8, 0.9, 1.1],
             "ammo": 6,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
             "is_air": true,
-            "range": [
-              0,
-              1
-            ],
+            "range": [0, 1],
             "aim_type": 0,
             "angle": 25,
             "splash": 8,
             "velocity": 1.6,
             "pierce": 0,
-            "shell_range": [
-              180,
-              220
-            ],
-            "spread": [
-              10,
-              25
-            ],
+            "shell_range": [180, 220],
+            "spread": [10, 25],
             "airdrop": true
           }
         ]
       }
     ],
-    "equips": [
-      "Goldburn"
-    ]
+    "equips": ["Goldburn"]
   },
   "60130": {
     "barrages": [
@@ -104,33 +74,20 @@
             "count": 3,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              0.6,
-              0.6
-            ],
+            "armor_mod": [1.2, 0.6, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              90,
-              110
-            ],
-            "spread": [
-              8,
-              8
-            ],
+            "shell_range": [90, 110],
+            "spread": [8, 8],
             "buffs": [
               "Special Burn (DMG equal to 5 + WepDMG * WepCoeff * (1 + (FP / 100)) * 0.6 with 1 tick every second for 5s, ID: 475)"
             ],
@@ -139,9 +96,7 @@
         ]
       }
     ],
-    "equips": [
-      "Grand Bomb"
-    ]
+    "equips": ["Grand Bomb"]
   },
   "60140": {
     "barrages": [
@@ -154,44 +109,27 @@
             "count": 3,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              0.6,
-              0.6
-            ],
+            "armor_mod": [1.2, 0.6, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              90,
-              110
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Slow by 40% for 5s"
-            ],
+            "shell_range": [90, 110],
+            "spread": [8, 8],
+            "buffs": ["Slow by 40% for 5s"],
             "buff_chance": 1
           }
         ]
       }
     ],
-    "equips": [
-      "Crystal Ice Bomb"
-    ]
+    "equips": ["Crystal Ice Bomb"]
   },
   "60150": {
     "barrages": [
@@ -204,44 +142,27 @@
             "count": 3,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              0.6,
-              0.6
-            ],
+            "armor_mod": [1.2, 0.6, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              90,
-              110
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Reduce crit rate by 10% for 5s"
-            ],
+            "shell_range": [90, 110],
+            "spread": [8, 8],
+            "buffs": ["Reduce crit rate by 10% for 5s"],
             "buff_chance": 1
           }
         ]
       }
     ],
-    "equips": [
-      "Laute Plajig"
-    ]
+    "equips": ["Laute Plajig"]
   },
   "60160": {
     "barrages": [
@@ -254,36 +175,21 @@
             "count": 3,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              0.6,
-              0.6
-            ],
+            "armor_mod": [1.2, 0.6, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 1,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              90,
-              110
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Reduce crit rate by 10% for 5s"
-            ],
+            "shell_range": [90, 110],
+            "spread": [8, 8],
+            "buffs": ["Reduce crit rate by 10% for 5s"],
             "buff_chance": 1
           },
           {
@@ -292,40 +198,25 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.35,
-              1.35,
-              1.35
-            ],
+            "armor_mod": [1.35, 1.35, 1.35],
             "ammo": 6,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              500
-            ],
+            "range": [0, 500],
             "aim_type": 1,
             "angle": 16,
             "splash": 35,
             "velocity": 0,
             "pierce": 0,
-            "shell_range": [
-              180,
-              220
-            ],
-            "spread": [
-              5,
-              5
-            ]
+            "shell_range": [180, 220],
+            "spread": [5, 5]
           }
         ]
       }
     ],
-    "equips": [
-      "Wirbel Luft"
-    ]
+    "equips": ["Wirbel Luft"]
   },
   "60180": {
     "barrages": [
@@ -338,36 +229,21 @@
             "count": 3,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              190,
-              210
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Reduce crit rate by 10% for 5s"
-            ],
+            "shell_range": [190, 210],
+            "spread": [8, 8],
+            "buffs": ["Reduce crit rate by 10% for 5s"],
             "buff_chance": 1
           }
         ]
@@ -381,44 +257,27 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 1,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              190,
-              210
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Reduce crit rate by 10% for 5s"
-            ],
+            "shell_range": [190, 210],
+            "spread": [8, 8],
+            "buffs": ["Reduce crit rate by 10% for 5s"],
             "buff_chance": 1
           }
         ]
       }
     ],
-    "equips": [
-      "Genesis Hammer"
-    ]
+    "equips": ["Genesis Hammer"]
   },
   "60190": {
     "barrages": [
@@ -431,36 +290,21 @@
             "count": 3,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              190,
-              210
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Reduce EVA by 10%"
-            ],
+            "shell_range": [190, 210],
+            "spread": [8, 8],
+            "buffs": ["Reduce EVA by 10%"],
             "buff_chance": 1
           }
         ]
@@ -474,36 +318,21 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 1,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              190,
-              210
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Reduce EVA by 10%"
-            ],
+            "shell_range": [190, 210],
+            "spread": [8, 8],
+            "buffs": ["Reduce EVA by 10%"],
             "buff_chance": 1
           },
           {
@@ -512,40 +341,25 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              2,
-              2,
-              2
-            ],
+            "armor_mod": [2, 2, 2],
             "ammo": 6,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              60
-            ],
+            "range": [0, 60],
             "aim_type": 0,
             "angle": 60,
             "splash": 40,
             "velocity": 0,
             "pierce": 0,
-            "shell_range": [
-              180,
-              220
-            ],
-            "spread": [
-              5,
-              5
-            ]
+            "shell_range": [180, 220],
+            "spread": [5, 5]
           }
         ]
       }
     ],
-    "equips": [
-      "Bubble Bullet"
-    ]
+    "equips": ["Bubble Bullet"]
   },
   "60210": {
     "barrages": [
@@ -558,36 +372,21 @@
             "count": 3,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              0.6,
-              0.6
-            ],
+            "armor_mod": [1.2, 0.6, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              90,
-              110
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Decrease FP, TRP and AVI by 3% for 30s"
-            ],
+            "shell_range": [90, 110],
+            "spread": [8, 8],
+            "buffs": ["Decrease FP, TRP and AVI by 3% for 30s"],
             "buff_chance": 1
           }
         ]
@@ -601,44 +400,27 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              0.6,
-              0.6
-            ],
+            "armor_mod": [1.2, 0.6, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 1,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              90,
-              110
-            ],
-            "spread": [
-              8,
-              8
-            ],
-            "buffs": [
-              "Decrease FP, TRP and AVI by 3% for 30s"
-            ],
+            "shell_range": [90, 110],
+            "spread": [8, 8],
+            "buffs": ["Decrease FP, TRP and AVI by 3% for 30s"],
             "buff_chance": 1
           }
         ]
       }
     ],
-    "equips": [
-      "Apocalypse"
-    ]
+    "equips": ["Apocalypse"]
   },
   "60220": {
     "barrages": [
@@ -651,33 +433,20 @@
             "count": 3,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              0.6,
-              0.6
-            ],
+            "armor_mod": [1.2, 0.6, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 2,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              90,
-              110
-            ],
-            "spread": [
-              8,
-              8
-            ],
+            "shell_range": [90, 110],
+            "spread": [8, 8],
             "buffs": [
               "Planes spawned by this ship gain 10% crit chance for 10s",
               "Increase DMG taken by 5% for 10s"
@@ -695,33 +464,20 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              0.6,
-              0.6
-            ],
+            "armor_mod": [1.2, 0.6, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              75
-            ],
+            "range": [0, 75],
             "aim_type": 1,
             "angle": 360,
             "splash": 15,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              90,
-              110
-            ],
-            "spread": [
-              8,
-              8
-            ],
+            "shell_range": [90, 110],
+            "spread": [8, 8],
             "buffs": [
               "Planes spawned by this ship gain 10% crit chance for 10s",
               "Increase DMG taken by 5% for 10s"
@@ -731,9 +487,7 @@
         ]
       }
     ],
-    "equips": [
-      "N/A"
-    ]
+    "equips": ["N/A"]
   },
   "60420": {
     "barrages": [
@@ -746,33 +500,20 @@
             "count": 4,
             "stat": "trp",
             "ratio": 1,
-            "armor_mod": [
-              0.8,
-              1,
-              1.3
-            ],
+            "armor_mod": [0.8, 1, 1.3],
             "ammo": 4,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              40
-            ],
+            "range": [0, 40],
             "aim_type": 1,
             "angle": 105,
             "splash": 3,
             "velocity": 2,
             "pierce": 0,
-            "shell_range": [
-              130,
-              170
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [130, 170],
+            "spread": [0, 0]
           }
         ]
       },
@@ -785,40 +526,25 @@
             "count": 16,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.2,
-              1.2,
-              1.2
-            ],
+            "armor_mod": [1.2, 1.2, 1.2],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              90
-            ],
+            "range": [0, 90],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              150,
-              150
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [150, 150],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Anti-EM Commands"
-    ]
+    "equips": ["Anti-EM Commands"]
   },
   "60490": {
     "barrages": [
@@ -831,40 +557,25 @@
             "count": 40,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              90
-            ],
+            "range": [0, 90],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
             "pierce": 0,
-            "shell_range": [
-              190,
-              210
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [190, 210],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Ninjutsu Scroll"
-    ]
+    "equips": ["Ninjutsu Scroll"]
   },
   "60500": {
     "barrages": [
@@ -877,34 +588,21 @@
             "count": 1,
             "stat": "avi",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 5,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
             "is_air": true,
-            "range": [
-              0,
-              30
-            ],
+            "range": [0, 30],
             "aim_type": 1,
             "angle": 180,
             "splash": 20,
             "velocity": 12,
             "pierce": 0,
-            "shell_range": [
-              10,
-              50
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [10, 50],
+            "spread": [0, 0]
           },
           {
             "damage": 40,
@@ -912,41 +610,26 @@
             "count": 1,
             "stat": "avi",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 5,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
             "is_air": true,
-            "range": [
-              0,
-              36
-            ],
+            "range": [0, 36],
             "aim_type": 1,
             "angle": 80,
             "splash": 20,
             "velocity": 12,
             "pierce": 0,
-            "shell_range": [
-              10,
-              50
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [10, 50],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Sea of Stars Area B20 Access Pass"
-    ]
+    "equips": ["Sea of Stars Area B20 Access Pass"]
   },
   "60520": {
     "barrages": [
@@ -959,33 +642,20 @@
             "count": 2,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 2,
             "is_critical": false,
             "notes": [],
             "shrapnel": true,
             "ignore_shield": true,
-            "range": [
-              0,
-              90
-            ],
+            "range": [0, 90],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
             "pierce": 99,
-            "shell_range": [
-              12,
-              12
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [12, 12],
+            "spread": [0, 0]
           },
           {
             "damage": 12,
@@ -993,40 +663,25 @@
             "count": 10,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 2,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              90
-            ],
+            "range": [0, 90],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 15,
             "pierce": 0,
-            "shell_range": [
-              200,
-              200
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [200, 200],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Cross Brooch"
-    ]
+    "equips": ["Cross Brooch"]
   },
   "60540": {
     "barrages": [
@@ -1040,35 +695,20 @@
             "stat": "fleetpower",
             "stat_cap": 350,
             "ratio": 0.0125,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 2,
             "is_critical": false,
-            "notes": [
-              "The 1.25% of FleetPower scaling is capped at 350"
-            ],
+            "notes": ["The 1.25% of FleetPower scaling is capped at 350"],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 12,
             "pierce": 0,
-            "shell_range": [
-              120,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [120, 120],
+            "spread": [0, 0]
           },
           {
             "damage": 12,
@@ -1077,35 +717,20 @@
             "stat": "fleetpower",
             "stat_cap": 350,
             "ratio": 0.0125,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
-            "notes": [
-              "The 1.25% of FleetPower scaling is capped at 350"
-            ],
+            "notes": ["The 1.25% of FleetPower scaling is capped at 350"],
             "shrapnel": true,
             "ignore_shield": true,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 0.1,
             "pierce": 50,
-            "shell_range": [
-              0.01,
-              0.01
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [0.01, 0.01],
+            "spread": [0, 0]
           },
           {
             "damage": 12,
@@ -1114,43 +739,26 @@
             "stat": "fleetpower",
             "stat_cap": 350,
             "ratio": 0.0125,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
-            "notes": [
-              "The 1.25% of FleetPower scaling is capped at 350"
-            ],
+            "notes": ["The 1.25% of FleetPower scaling is capped at 350"],
             "shrapnel": false,
             "ignore_shield": false,
             "reaim": true,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 8,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "RPG Adventure Interface"
-    ]
+    "equips": ["RPG Adventure Interface"]
   },
   "60660": {
     "barrages": [
@@ -1163,40 +771,25 @@
             "count": 4,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              0.8,
-              0.6
-            ],
+            "armor_mod": [1, 0.8, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              85
-            ],
+            "range": [0, 85],
             "aim_type": 1,
             "angle": 360,
             "splash": 0,
             "velocity": 10,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Fargo Direct Drone"
-    ]
+    "equips": ["Fargo Direct Drone"]
   },
   "60830": {
     "barrages": [
@@ -1209,43 +802,26 @@
             "count": 1,
             "stat": "avi",
             "ratio": 1,
-            "armor_mod": [
-              0.8,
-              1.1,
-              1.3
-            ],
+            "armor_mod": [0.8, 1.1, 1.3],
             "ammo": 4,
             "is_critical": false,
-            "notes": [
-              "Can damage subs"
-            ],
+            "notes": ["Can damage subs"],
             "shrapnel": false,
             "ignore_shield": false,
             "is_air": true,
-            "range": [
-              0,
-              80
-            ],
+            "range": [0, 80],
             "aim_type": 1,
             "angle": 25,
             "splash": 3,
             "velocity": 3,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Fairey Gannet"
-    ]
+    "equips": ["Fairey Gannet"]
   },
   "108410": {
     "barrages": [
@@ -1258,40 +834,25 @@
             "count": 12,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              0.8,
-              0.6
-            ],
+            "armor_mod": [1, 0.8, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              200
-            ],
+            "range": [0, 200],
             "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Primal Accepter"
-    ]
+    "equips": ["Primal Accepter"]
   },
   "108420": {
     "barrages": [
@@ -1304,35 +865,20 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": -1,
             "is_critical": false,
-            "notes": [
-              "100% all stats"
-            ],
+            "notes": ["100% all stats"],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              95
-            ],
+            "range": [0, 95],
             "aim_type": 0,
             "angle": 60,
             "splash": 26,
             "velocity": 5,
             "pierce": 0,
-            "shell_range": [
-              180,
-              220
-            ],
-            "spread": [
-              10,
-              10
-            ]
+            "shell_range": [180, 220],
+            "spread": [10, 10]
           },
           {
             "damage": 15,
@@ -1340,33 +886,20 @@
             "count": 4,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 2,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              90
-            ],
+            "range": [0, 90],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 22,
             "pierce": 1,
-            "shell_range": [
-              80,
-              100
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 100],
+            "spread": [0, 0]
           },
           {
             "damage": 100,
@@ -1374,40 +907,25 @@
             "count": 5,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              0.8,
-              0.6
-            ],
+            "armor_mod": [1, 0.8, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              25
-            ],
+            "range": [0, 25],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Confinement Program"
-    ]
+    "equips": ["Confinement Program"]
   },
   "108450": {
     "barrages": [
@@ -1420,33 +938,20 @@
             "count": 24,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              200
-            ],
+            "range": [0, 200],
             "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ],
+            "shell_range": [80, 120],
+            "spread": [0, 0],
             "buffs": [
               "Standard Armor Break (8% for 6s, ID: 401) if target hit is Heavy Armor"
             ],
@@ -1455,9 +960,7 @@
         ]
       }
     ],
-    "equips": [
-      "Dyna Wing"
-    ]
+    "equips": ["Dyna Wing"]
   },
   "108470": {
     "barrages": [
@@ -1470,34 +973,21 @@
             "count": 12,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              0.8,
-              0.6
-            ],
+            "armor_mod": [1, 0.8, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
             "is_air": true,
-            "range": [
-              0,
-              85
-            ],
+            "range": [0, 85],
             "aim_type": 1,
             "angle": 180,
             "splash": 0,
             "velocity": 4,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           },
           {
             "damage": 20,
@@ -1505,41 +995,26 @@
             "count": 24,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              0.8,
-              0.6
-            ],
+            "armor_mod": [1, 0.8, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
             "is_air": true,
-            "range": [
-              0,
-              85
-            ],
+            "range": [0, 85],
             "aim_type": 1,
             "angle": 180,
             "splash": 0,
             "velocity": 2,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Kaiju Seed"
-    ]
+    "equips": ["Kaiju Seed"]
   },
   "108480": {
     "barrages": [
@@ -1552,42 +1027,27 @@
             "count": 20,
             "stat": "avi",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 6,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
             "is_air": true,
-            "range": [
-              0,
-              1
-            ],
+            "range": [0, 1],
             "aim_type": 0,
             "angle": 25,
             "splash": 18,
             "velocity": 1.5,
             "pierce": 0,
-            "shell_range": [
-              180,
-              220
-            ],
-            "spread": [
-              1,
-              1
-            ],
+            "shell_range": [180, 220],
+            "spread": [1, 1],
             "airdrop": true
           }
         ]
       }
     ],
-    "equips": [
-      "Live Baton"
-    ]
+    "equips": ["Live Baton"]
   },
   "108490": {
     "barrages": [
@@ -1600,40 +1060,25 @@
             "count": 12,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.35,
-              0.95,
-              0.7
-            ],
+            "armor_mod": [1.35, 0.95, 0.7],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              200
-            ],
+            "range": [0, 200],
             "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Dragon Ornament"
-    ]
+    "equips": ["Dragon Ornament"]
   },
   "111200": {
     "barrages": [
@@ -1646,33 +1091,20 @@
             "count": 15,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       },
@@ -1685,40 +1117,25 @@
             "count": 15,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1.5,
-              1.5,
-              1.5
-            ],
+            "armor_mod": [1.5, 1.5, 1.5],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Omnitool"
-    ]
+    "equips": ["Omnitool"]
   },
   "111210": {
     "barrages": [
@@ -1731,33 +1148,20 @@
             "count": 15,
             "stat": "trp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       },
@@ -1770,40 +1174,25 @@
             "count": 15,
             "stat": "trp",
             "ratio": 1,
-            "armor_mod": [
-              1.5,
-              1.5,
-              1.5
-            ],
+            "armor_mod": [1.5, 1.5, 1.5],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Animal Attack"
-    ]
+    "equips": ["Animal Attack"]
   },
   "111220": {
     "barrages": [
@@ -1816,33 +1205,20 @@
             "count": 15,
             "stat": "trp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       },
@@ -1855,40 +1231,25 @@
             "count": 15,
             "stat": "trp",
             "ratio": 1,
-            "armor_mod": [
-              1.5,
-              1.5,
-              1.5
-            ],
+            "armor_mod": [1.5, 1.5, 1.5],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              120
-            ],
+            "range": [0, 120],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 1,
             "pierce": 0,
-            "shell_range": [
-              80,
-              120
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [80, 120],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Burst Flower"
-    ]
+    "equips": ["Burst Flower"]
   },
   "111230": {
     "barrages": [
@@ -1901,33 +1262,20 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              0.7,
-              1,
-              0.9
-            ],
+            "armor_mod": [0.7, 1, 0.9],
             "ammo": 2,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              80
-            ],
+            "range": [0, 80],
             "aim_type": 0,
             "angle": 120,
             "splash": 0,
             "velocity": 0.1,
             "pierce": 0,
-            "shell_range": [
-              0,
-              0
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [0, 0],
+            "spread": [0, 0]
           },
           {
             "damage": 1,
@@ -1935,44 +1283,27 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              50
-            ],
+            "range": [0, 50],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 0.1,
             "pierce": 0,
-            "shell_range": [
-              1,
-              1
-            ],
-            "spread": [
-              0,
-              0
-            ],
-            "buffs": [
-              ""
-            ],
+            "shell_range": [1, 1],
+            "spread": [0, 0],
+            "buffs": [""],
             "buff_chance": 1
           }
         ]
       }
     ],
-    "equips": [
-      "Golden Slash"
-    ]
+    "equips": ["Golden Slash"]
   },
   "111240": {
     "barrages": [
@@ -1985,44 +1316,27 @@
             "count": 1,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              1,
-              1
-            ],
+            "armor_mod": [1, 1, 1],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              50
-            ],
+            "range": [0, 50],
             "aim_type": 1,
             "angle": 360,
             "splash": 18,
             "velocity": 12,
             "pierce": 0,
-            "shell_range": [
-              1,
-              1
-            ],
-            "spread": [
-              0,
-              0
-            ],
-            "buffs": [
-              "Remove Standard Burns (ID: 311)"
-            ],
+            "shell_range": [1, 1],
+            "spread": [0, 0],
+            "buffs": ["Remove Standard Burns (ID: 311)"],
             "buff_chance": 1
           }
         ]
       }
     ],
-    "equips": [
-      "Emergency Fire Extinguisher"
-    ]
+    "equips": ["Emergency Fire Extinguisher"]
   },
   "902200": {
     "barrages": [
@@ -2035,33 +1349,20 @@
             "count": 12,
             "stat": "fp",
             "ratio": 1,
-            "armor_mod": [
-              1,
-              0.8,
-              0.6
-            ],
+            "armor_mod": [1, 0.8, 0.6],
             "ammo": 1,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              180
-            ],
+            "range": [0, 180],
             "aim_type": 0,
             "angle": 360,
             "splash": 0,
             "velocity": 0.75,
             "pierce": 0,
-            "shell_range": [
-              70,
-              90
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [70, 90],
+            "spread": [0, 0]
           },
           {
             "damage": 42,
@@ -2069,39 +1370,24 @@
             "count": 3,
             "stat": "trp",
             "ratio": 1,
-            "armor_mod": [
-              0.7,
-              0.9,
-              1.2
-            ],
+            "armor_mod": [0.7, 0.9, 1.2],
             "ammo": 4,
             "is_critical": false,
             "notes": [],
             "shrapnel": false,
             "ignore_shield": false,
-            "range": [
-              0,
-              90
-            ],
+            "range": [0, 90],
             "aim_type": 0,
             "angle": 60,
             "splash": 3,
             "velocity": 4,
             "pierce": 0,
-            "shell_range": [
-              130,
-              170
-            ],
-            "spread": [
-              0,
-              0
-            ]
+            "shell_range": [130, 170],
+            "spread": [0, 0]
           }
         ]
       }
     ],
-    "equips": [
-      "Fantastic Loop"
-    ]
+    "equips": ["Fantastic Loop"]
   }
 }

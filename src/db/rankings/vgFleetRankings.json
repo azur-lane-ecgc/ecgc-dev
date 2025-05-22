@@ -9381,7 +9381,7 @@
       "w15boss": "A",
       "ex": "B*",
       "consistency": null,
-      "fleetreq": null,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 5,
@@ -11312,6 +11312,33 @@
       "defensivebuff": null
     }
   ],
+  "Trafalgar": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Single 113 >= Single 76 >= 100 kai. Timed EVA Rate debuff, perma 15% slow. Requires flagship with main gun.",
+      "hardarbiter": "S",
+      "meta": "S",
+      "cm": "S",
+      "w14mob": "A",
+      "w14boss": "A",
+      "w15mob": "A",
+      "w15boss": "A",
+      "ex": "B*",
+      "consistency": null,
+      "fleetreq": -1,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "offensivebuff": 3,
+      "selfsurvival": 2,
+      "aa": 3,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Trento": [
     {
       "nameNote": "",
@@ -12744,7 +12771,7 @@
   "Z52": [
     {
       "nameNote": "",
-      "notes": "Single 113 >= 100 kai. FlagshipCover. Slash. Heal lowest by 6%. Fleet buff almost 5%.",
+      "notes": "Single 113 >= Single 76 >= 100 kai. FlagshipCover. Slash. Heal lowest by 6%. Fleet buff almost 5%.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",

@@ -4717,20 +4717,20 @@
     "id": 94,
     "ship": "Glowworm",
     "faction": "HMS",
-    "rarity": 3,
-    "isKai": false,
+    "rarity": 4,
+    "isKai": true,
     "hullType": "DD",
     "fleetType": "vg",
     "LBBonus": "+30% stats gained from Auxiliary Equipment.",
     "slots": [
       {
         "type": ["DD Main Gun"],
-        "efficiency": 1.3,
-        "mounts": 1
+        "efficiency": 1.35,
+        "mounts": 2
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.35,
+        "efficiency": 1.4000000000000001,
         "mounts": 2
       },
       {
@@ -6956,6 +6956,58 @@
           "href": "Construction"
         }
       ],
+      "permanent": []
+    }
+  },
+  "138": {
+    "id": 138,
+    "ship": "Lion",
+    "faction": "HMS",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.7,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Rose on the High Tower",
+          "href": "A_Rose_on_the_High_Tower"
+        }
+      ],
+      "other": [],
+      "construction": [],
       "permanent": []
     }
   },
@@ -35186,6 +35238,214 @@
       "permanent": []
     }
   },
+  "689": {
+    "id": 689,
+    "ship": "Trafalgar",
+    "faction": "HMS",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.6,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["DmgDealer", "AA", "AACarry", "OffSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Rose on the High Tower",
+          "href": "A_Rose_on_the_High_Tower"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "690": {
+    "id": 690,
+    "ship": "Cleopatra",
+    "faction": "HMS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 1.4,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.3,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Rose on the High Tower",
+          "href": "A_Rose_on_the_High_Tower"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "691": {
+    "id": 691,
+    "ship": "Gallant",
+    "faction": "HMS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "+30% stats gained from Auxiliary Equipment.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.35,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.05,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Rose on the High Tower",
+          "href": "A_Rose_on_the_High_Tower"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
+  "692": {
+    "id": 692,
+    "ship": "Trinidad",
+    "faction": "HMS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.4,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.55,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Rose on the High Tower",
+          "href": "A_Rose_on_the_High_Tower"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    }
+  },
   "693": {
     "id": 693,
     "ship": "Little Anchorage",
@@ -43332,6 +43592,58 @@
       ],
       "construction": [],
       "permanent": []
+    }
+  },
+  "30048": {
+    "id": 30048,
+    "ship": "Glorious META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.5,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": "",
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Unobtainable",
+          "href": "Category:Ships"
+        }
+      ]
     }
   }
 }
