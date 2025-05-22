@@ -237,6 +237,14 @@ const KMSTechPoints: FleetTechData = {
       isShipyard: false,
     },
     {
+      ship: "Magdeburg",
+      rarity: 4,
+      location: [{ event: "Tower of Transcendence", stages: ["B3", "D3*"] }],
+      investment: "Collection",
+      techPoints: 20,
+      isShipyard: false,
+    },
+    {
       ship: "U-96",
       rarity: 4,
       location: [{ event: "Medal Shop", stages: ["SS"] }],

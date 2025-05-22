@@ -52,6 +52,7 @@ const NPTechPoints: FleetTechData = {
       techPoints: 72,
       isShipyard: false,
     },
+
     {
       ship: "Minsk",
       rarity: 3,
@@ -74,6 +75,14 @@ const NPTechPoints: FleetTechData = {
       isShipyard: false,
     },
     {
+      ship: "Kiev",
+      rarity: 4,
+      location: [{ event: "Abyssal Refrain", stages: ["B3", "D3*"] }],
+      investment: "Collection",
+      techPoints: 22,
+      isShipyard: false,
+    },
+    {
       ship: "Gromky",
       rarity: 3,
       location: [
@@ -90,8 +99,8 @@ const NPTechPoints: FleetTechData = {
           ],
         },
       ],
-      investment: "Max Limit Break",
-      techPoints: 32,
+      investment: "Collection",
+      techPoints: 10,
       isShipyard: false,
     },
     {
@@ -114,14 +123,6 @@ const NPTechPoints: FleetTechData = {
       investment: "Collection",
       techPoints: 10,
       isShipyard: false,
-    },
-    {
-      ship: "Chkalov",
-      rarity: 4,
-      location: [{ event: "Shipyard", stages: ["PR5"] }],
-      investment: "Collection",
-      techPoints: 38,
-      isShipyard: true,
     },
   ],
 }
