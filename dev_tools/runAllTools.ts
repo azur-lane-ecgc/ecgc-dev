@@ -10,6 +10,7 @@ const excludedFiles = [
   /\\_backup/,
   /_pageInfo\.ts/,
   /barrage\.ts/,
+  /barrage\.py/,
   /runAllTools\.ts/,
   /imgur\.py/,
   /ships/,
