@@ -31,7 +31,7 @@ export const SamvaluationModals: React.FC = () => {
                 iconNote: ship.isKai ? "Retrofit" : "",
                 descriptionNote: state.filters.rankingSort.value
                   ? `Rank: ${numberToLetterRank(getHighestValue(ship.fleetType, ship.rankings, state.filters.rankingSort))}`
-                  : `Events: ${formatLocation(ship.locations.events)}`,
+                  : null /* `Events: ${formatLocation(ship.locations.events)}` */,
                 largeDescNote: false,
                 hasBorder: false,
               }}
