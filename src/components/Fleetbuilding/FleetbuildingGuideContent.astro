@@ -1,7 +1,12 @@
 ---
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
+import { ItemContainer, ShipCell } from "@components/_common/ItemCell"
+import { ShipModal } from "@components/_common/ShipModal"
+
 import WikiLink from "@components/_common/WikiLink.astro"
+
+import { preloadShips, fastLoadShips } from "./shipCategories"
 ---
 
 <h2 id="introduction">Introduction</h2><HR />
@@ -18,9 +23,8 @@ import WikiLink from "@components/_common/WikiLink.astro"
 </p>
 <br />
 
-<h2 id="just_started">If you just started Azur Lane...</h2><hr
-  class="custom-hr"
-/>
+<h2 id="just_started">If you just started Azur Lane...</h2>
+<HR />
 <p>
   Just stick to 1 fleet for now and ignore this guide. This guide is meant for
   mid-game players who have enough ships leveled to get a second fleet going.
@@ -486,6 +490,40 @@ import WikiLink from "@components/_common/WikiLink.astro"
   </ul>
 </ul>
 <br />
+
+<h3 id="preload_ships">List of Ships with Preloads</h3>
+<ItemContainer>
+  {
+    preloadShips.map((ship) => (
+      <ShipCell
+        ship={ship.ship}
+        isKai={ship.isKai}
+        rarity={ship.rarity}
+        inGroup={true}
+        hasBorder={true}
+        hover={true}
+      />
+    ))
+  }
+</ItemContainer>
+
+<h3 id="fastload_ships">List of Ships with Fast Loads</h3>
+<ItemContainer>
+  {
+    fastLoadShips
+      .filter((ship) => !ship.roles.includes("Preload"))
+      .map((ship) => (
+        <ShipCell
+          ship={ship.ship}
+          isKai={ship.isKai}
+          rarity={ship.rarity}
+          inGroup={true}
+          hasBorder={true}
+          hover={true}
+        />
+      ))
+  }
+</ItemContainer>
 
 <h2 id="skill_sync">Skill Syncing</h2><HR />
 
