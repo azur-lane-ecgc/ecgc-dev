@@ -4752,7 +4752,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -35329,7 +35329,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": "",
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "AA"],
     "locations": {
       "events": [
         {

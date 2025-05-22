@@ -2186,6 +2186,33 @@
       "defensivebuff": null
     }
   ],
+  "Cleopatra": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE has fleet air damage reduction but not AA carry-level AA.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": 1,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Clevelad": [
     {
       "nameNote": "",
@@ -3836,11 +3863,11 @@
   "Glowworm": [
     {
       "nameNote": "",
-      "notes": "For ramming memes.",
-      "hardarbiter": "D",
-      "meta": "D",
-      "cm": "D",
-      "w14mob": "D",
+      "notes": "For ramming memes. Use torpedo that reloads between 20 and 23s like quint mags. Mk IX to be tested.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "B",
       "w14boss": "D",
       "w15mob": "D",
       "w15boss": "D",
@@ -3849,12 +3876,12 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 1,
-      "mediumdmg": 1,
-      "heavydmg": 1,
-      "aoedmg": 1,
+      "lightdmg": 3,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
