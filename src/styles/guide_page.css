@@ -48,7 +48,7 @@ h2 {
 
 .h3,
 h3 {
-  font-size: max(1.3rem + 0.6vw, 1.17em);
+  font-size: min(calc(1.3rem + 0.6vw), 1.75em);
 }
 
 .h4,
