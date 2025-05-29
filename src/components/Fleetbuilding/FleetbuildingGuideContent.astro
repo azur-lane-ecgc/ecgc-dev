@@ -1,7 +1,7 @@
 ---
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
-import { ItemContainer, ShipCell } from "@components/_common/ItemCell"
+import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 import { ShipModal } from "@components/_common/ShipModal"
 
 import WikiLink from "@components/_common/WikiLink.astro"
@@ -480,6 +480,44 @@ import { preloadShips, fastLoadShips } from "./shipCategories"
         Some equipment can also help stagger volleys or airstrikes. Read
         equipment skills for details.
       </p>
+
+      <ItemContainer>
+        <ItemCell
+          item="Admiralty Fire Control Table"
+          wikiLink="Admiralty Fire Control Table"
+          itemImg="equipment/rainbow_table.png"
+          rarity={5}
+          inGroup={true}
+          hasBorder={true}
+        />
+
+        <ItemCell
+          item="High Standard Fire Control Radar"
+          wikiLink="High Standard Fire Control Radar"
+          itemImg="equipment/hsfcr.png"
+          rarity={4}
+          inGroup={true}
+          hasBorder={true}
+        />
+
+        <ItemCell
+          item="Homing Beacon"
+          wikiLink="Homing Beacon"
+          itemImg="equipment/homing_beacon.png"
+          rarity={3}
+          inGroup={true}
+          hasBorder={true}
+        />
+
+        <ItemCell
+          item="Elite Aviation Maintenence Manjuu"
+          wikiLink="Elite Aviation Maintenence Manjuu"
+          itemImg="equipment/aviation_manjuu.png"
+          rarity={3}
+          inGroup={true}
+          hasBorder={true}
+        />
+      </ItemContainer>
     </li>
     <li>
       <p>
