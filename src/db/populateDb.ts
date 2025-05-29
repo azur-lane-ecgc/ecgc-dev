@@ -27,14 +27,14 @@ const vgFleetRankings = (await import("./rankings/vgFleetRankings.json"))
 const ssFleetRankings = (await import("./rankings/ssFleetRankings.json"))
   .default as Record<string, SSFleetRankingProps[]>
 
-const extractLocationNames = (locations: ShipLocationData): string[] => {
-  return [
-    ...locations.events.map((loc) => loc.name),
-    ...locations.other.map((loc) => loc.name),
-    ...locations.construction.map((loc) => loc.name),
-    ...locations.permanent.map((loc) => loc.name),
-  ]
-}
+// const extractLocationNames = (locations: ShipLocationData): string[] => {
+//   return [
+//     ...locations.events.map((loc) => loc.name),
+//     ...locations.other.map((loc) => loc.name),
+//     ...locations.construction.map((loc) => loc.name),
+//     ...locations.permanent.map((loc) => loc.name),
+//   ]
+// }
 
 const populateDb = async () => {
   await db.ships.clear()
@@ -51,7 +51,7 @@ const populateDb = async () => {
         ship.fleetType === "ss" ? ssFleetRankings[ship.ship] || null : null,
     },
     ehp: ehp[ship.ship] || null,
-    locationNames: extractLocationNames(ship.locations),
+    // locationNames: extractLocationNames(ship.locations),
   }))
 
   await db.ships.bulkPut(allShips)

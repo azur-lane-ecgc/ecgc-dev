@@ -13,7 +13,7 @@ export interface AllShipData extends ShipData {
     ssRankings: SSFleetRankingProps[] | null
   }
   ehp?: ShipEHPProps[] | null
-  locationNames: string[]
+  locationNames?: string[]
 }
 
 export * from "./ehp/types"
