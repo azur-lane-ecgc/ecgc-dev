@@ -49,7 +49,8 @@
           "href": "/test_ecgc_2/common_resource"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "2": {
     "id": 2,
@@ -101,7 +102,8 @@
           "href": "/test_ecgc_2/common_resource"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "3": {
     "id": 3,
@@ -153,7 +155,8 @@
           "href": "/test_ecgc_2/common_resource"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "4": {
     "id": 4,
@@ -205,7 +208,8 @@
           "href": "Dewey"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "5": {
     "id": 5,
@@ -267,7 +271,8 @@
           "href": "Cassin"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "6": {
     "id": 6,
@@ -329,7 +334,8 @@
           "href": "Downes"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "7": {
     "id": 7,
@@ -386,7 +392,8 @@
           "href": "Gridley"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "8": {
     "id": 8,
@@ -448,7 +455,8 @@
           "href": "Craven"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "9": {
     "id": 9,
@@ -510,7 +518,8 @@
           "href": "McCall"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "10": {
     "id": 10,
@@ -562,7 +571,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "11": {
     "id": 11,
@@ -624,7 +634,8 @@
           "href": "Fletcher"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "13": {
     "id": 13,
@@ -681,7 +692,8 @@
           "href": "Charles_Ausburne"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "14": {
     "id": 14,
@@ -738,7 +750,8 @@
           "href": "Thatcher"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "15": {
     "id": 15,
@@ -800,7 +813,8 @@
           "href": "Aulick"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "16": {
     "id": 16,
@@ -862,7 +876,8 @@
           "href": "Foote"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "17": {
     "id": 17,
@@ -924,7 +939,8 @@
           "href": "Spence"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "18": {
     "id": 18,
@@ -976,7 +992,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "19": {
     "id": 19,
@@ -1033,7 +1050,8 @@
           "href": "Laffey"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "26": {
     "id": 26,
@@ -1090,7 +1108,8 @@
           "href": "Sims"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "27": {
     "id": 27,
@@ -1152,7 +1171,8 @@
           "href": "Hammann"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "28": {
     "id": 28,
@@ -1204,7 +1224,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "29": {
     "id": 29,
@@ -1266,7 +1287,8 @@
           "href": "Omaha"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "30": {
     "id": 30,
@@ -1328,7 +1350,8 @@
           "href": "Raleigh"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "31": {
     "id": 31,
@@ -1390,7 +1413,8 @@
           "href": "Brooklyn"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "32": {
     "id": 32,
@@ -1456,7 +1480,8 @@
           "href": "Phoenix"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "33": {
     "id": 33,
@@ -1517,7 +1542,8 @@
           "href": "Helena"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "34": {
     "id": 34,
@@ -1579,7 +1605,8 @@
           "href": "Atlanta"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "35": {
     "id": 35,
@@ -1641,7 +1668,8 @@
           "href": "Juneau"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "36": {
     "id": 36,
@@ -1702,7 +1730,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "37": {
     "id": 37,
@@ -1763,7 +1792,8 @@
           "href": "Cleveland"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "38": {
     "id": 38,
@@ -1815,7 +1845,8 @@
           "href": "Columbia"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "39": {
     "id": 39,
@@ -1877,7 +1908,8 @@
           "href": "Pensacola"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "40": {
     "id": 40,
@@ -1929,7 +1961,8 @@
           "href": "Salt_Lake_City"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "41": {
     "id": 41,
@@ -1991,7 +2024,8 @@
           "href": "Northampton"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "42": {
     "id": 42,
@@ -2053,7 +2087,8 @@
           "href": "Chicago"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "43": {
     "id": 43,
@@ -2115,7 +2150,8 @@
           "href": "Houston"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "44": {
     "id": 44,
@@ -2181,7 +2217,8 @@
           "href": "Portland"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "45": {
     "id": 45,
@@ -2243,7 +2280,8 @@
           "href": "Indianapolis"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "46": {
     "id": 46,
@@ -2300,7 +2338,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "47": {
     "id": 47,
@@ -2357,7 +2396,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "48": {
     "id": 48,
@@ -2414,7 +2454,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "49": {
     "id": 49,
@@ -2466,7 +2507,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "50": {
     "id": 50,
@@ -2527,7 +2569,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "52": {
     "id": 52,
@@ -2589,7 +2632,8 @@
           "href": "Nevada"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "53": {
     "id": 53,
@@ -2651,7 +2695,8 @@
           "href": "Oklahoma"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "54": {
     "id": 54,
@@ -2717,7 +2762,8 @@
           "href": "Pennsylvania"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "55": {
     "id": 55,
@@ -2783,7 +2829,8 @@
           "href": "Arizona"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "58": {
     "id": 58,
@@ -2845,7 +2892,8 @@
           "href": "Tennessee"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "59": {
     "id": 59,
@@ -2907,7 +2955,8 @@
           "href": "California"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "60": {
     "id": 60,
@@ -2964,7 +3013,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "61": {
     "id": 61,
@@ -3021,7 +3071,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "62": {
     "id": 62,
@@ -3083,7 +3134,8 @@
           "href": "West_Virginia"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "63": {
     "id": 63,
@@ -3144,7 +3196,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "64": {
     "id": 64,
@@ -3205,7 +3258,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "65": {
     "id": 65,
@@ -3261,7 +3315,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "66": {
     "id": 66,
@@ -3313,7 +3368,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "68": {
     "id": 68,
@@ -3375,7 +3431,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "70": {
     "id": 70,
@@ -3437,7 +3494,8 @@
           "href": "Long_Island"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "71": {
     "id": 71,
@@ -3499,7 +3557,8 @@
           "href": "Bogue"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "72": {
     "id": 72,
@@ -3561,7 +3620,8 @@
           "href": "Langley"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "73": {
     "id": 73,
@@ -3623,7 +3683,8 @@
           "href": "Lexington"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "74": {
     "id": 74,
@@ -3685,7 +3746,8 @@
           "href": "Saratoga"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "75": {
     "id": 75,
@@ -3747,7 +3809,8 @@
           "href": "Ranger"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "76": {
     "id": 76,
@@ -3809,7 +3872,8 @@
           "href": "Yorktown"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "77": {
     "id": 77,
@@ -3870,7 +3934,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "78": {
     "id": 78,
@@ -3932,7 +3997,8 @@
           "href": "Hornet"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "79": {
     "id": 79,
@@ -3989,7 +4055,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "80": {
     "id": 80,
@@ -4055,7 +4122,8 @@
           "href": "Vestal"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "81": {
     "id": 81,
@@ -4121,7 +4189,8 @@
           "href": "Amazon"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "82": {
     "id": 82,
@@ -4173,7 +4242,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "83": {
     "id": 83,
@@ -4225,7 +4295,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "86": {
     "id": 86,
@@ -4287,7 +4358,8 @@
           "href": "Beagle"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "87": {
     "id": 87,
@@ -4349,7 +4421,8 @@
           "href": "Bulldog"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "88": {
     "id": 88,
@@ -4411,7 +4484,8 @@
           "href": "Comet"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "89": {
     "id": 89,
@@ -4473,7 +4547,8 @@
           "href": "Crescent"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "90": {
     "id": 90,
@@ -4535,7 +4610,8 @@
           "href": "Cygnet"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "91": {
     "id": 91,
@@ -4597,7 +4673,8 @@
           "href": "Foxhound"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "92": {
     "id": 92,
@@ -4654,7 +4731,8 @@
           "href": "Fortune"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "93": {
     "id": 93,
@@ -4711,7 +4789,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "94": {
     "id": 94,
@@ -4768,7 +4847,8 @@
           "href": "Glowworm"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "96": {
     "id": 96,
@@ -4820,7 +4900,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "100": {
     "id": 100,
@@ -4877,7 +4958,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "101": {
     "id": 101,
@@ -4934,7 +5016,8 @@
           "href": "Javelin"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "102": {
     "id": 102,
@@ -4991,7 +5074,8 @@
           "href": "Juno"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "103": {
     "id": 103,
@@ -5048,7 +5132,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "104": {
     "id": 104,
@@ -5110,7 +5195,8 @@
           "href": "Leander"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "105": {
     "id": 105,
@@ -5172,7 +5258,8 @@
           "href": "Achilles"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "106": {
     "id": 106,
@@ -5234,7 +5321,8 @@
           "href": "Ajax"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "107": {
     "id": 107,
@@ -5290,7 +5378,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "110": {
     "id": 110,
@@ -5347,7 +5436,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "111": {
     "id": 111,
@@ -5408,7 +5498,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "112": {
     "id": 112,
@@ -5465,7 +5556,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "113": {
     "id": 113,
@@ -5521,7 +5613,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "114": {
     "id": 114,
@@ -5577,7 +5670,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "115": {
     "id": 115,
@@ -5638,7 +5732,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "116": {
     "id": 116,
@@ -5695,7 +5790,8 @@
           "href": "Arethusa"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "117": {
     "id": 117,
@@ -5752,7 +5848,8 @@
           "href": "Galatea"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "118": {
     "id": 118,
@@ -5804,7 +5901,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "119": {
     "id": 119,
@@ -5870,7 +5968,8 @@
           "href": "London"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "120": {
     "id": 120,
@@ -5932,7 +6031,8 @@
           "href": "Shropshire"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "121": {
     "id": 121,
@@ -5994,7 +6094,8 @@
           "href": "Kent"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "122": {
     "id": 122,
@@ -6056,7 +6157,8 @@
           "href": "Suffolk"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "123": {
     "id": 123,
@@ -6118,7 +6220,8 @@
           "href": "Norfolk"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "124": {
     "id": 124,
@@ -6170,7 +6273,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "125": {
     "id": 125,
@@ -6232,7 +6336,8 @@
           "href": "York"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "126": {
     "id": 126,
@@ -6289,7 +6394,8 @@
           "href": "Exeter"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "127": {
     "id": 127,
@@ -6351,7 +6457,8 @@
           "href": "Renown"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "128": {
     "id": 128,
@@ -6413,7 +6520,8 @@
           "href": "Repulse"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "129": {
     "id": 129,
@@ -6474,7 +6582,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "130": {
     "id": 130,
@@ -6536,7 +6645,8 @@
           "href": "Queen_Elizabeth"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "131": {
     "id": 131,
@@ -6601,7 +6711,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "132": {
     "id": 132,
@@ -6663,7 +6774,8 @@
           "href": "Nelson"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "133": {
     "id": 133,
@@ -6720,7 +6832,8 @@
           "href": "Rodney"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "134": {
     "id": 134,
@@ -6777,7 +6890,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "135": {
     "id": 135,
@@ -6838,7 +6952,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "136": {
     "id": 136,
@@ -6895,7 +7010,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "137": {
     "id": 137,
@@ -6957,7 +7073,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "138": {
     "id": 138,
@@ -7009,7 +7126,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "140": {
     "id": 140,
@@ -7071,7 +7189,8 @@
           "href": "Hermes"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "142": {
     "id": 142,
@@ -7141,7 +7260,8 @@
           "href": "Unicorn"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "143": {
     "id": 143,
@@ -7198,7 +7318,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "144": {
     "id": 144,
@@ -7260,7 +7381,8 @@
           "href": "Ark_Royal"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "145": {
     "id": 145,
@@ -7321,7 +7443,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "146": {
     "id": 146,
@@ -7378,7 +7501,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "147": {
     "id": 147,
@@ -7443,7 +7567,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "148": {
     "id": 148,
@@ -7500,7 +7625,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "149": {
     "id": 149,
@@ -7562,7 +7688,8 @@
           "href": "Erebus"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "150": {
     "id": 150,
@@ -7624,7 +7751,8 @@
           "href": "Terror"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "151": {
     "id": 151,
@@ -7676,7 +7804,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "152": {
     "id": 152,
@@ -7737,7 +7866,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "154": {
     "id": 154,
@@ -7789,7 +7919,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "155": {
     "id": 155,
@@ -7845,7 +7976,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "159": {
     "id": 159,
@@ -7902,7 +8034,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "160": {
     "id": 160,
@@ -7959,7 +8092,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "161": {
     "id": 161,
@@ -8011,7 +8145,8 @@
           "href": "Ikazuchi"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "162": {
     "id": 162,
@@ -8063,7 +8198,8 @@
           "href": "Inazuma"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "163": {
     "id": 163,
@@ -8115,7 +8251,8 @@
           "href": "Shiratsuyu"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "164": {
     "id": 164,
@@ -8167,7 +8304,8 @@
           "href": "Yuudachi"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "165": {
     "id": 165,
@@ -8219,7 +8357,8 @@
           "href": "Shigure"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "166": {
     "id": 166,
@@ -8280,7 +8419,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "167": {
     "id": 167,
@@ -8332,7 +8472,8 @@
           "href": "Kagerou"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "168": {
     "id": 168,
@@ -8388,7 +8529,8 @@
           "href": "Shiranui"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "170": {
     "id": 170,
@@ -8449,7 +8591,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "171": {
     "id": 171,
@@ -8510,7 +8653,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "173": {
     "id": 173,
@@ -8571,7 +8715,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "174": {
     "id": 174,
@@ -8623,7 +8768,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "175": {
     "id": 175,
@@ -8679,7 +8825,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "176": {
     "id": 176,
@@ -8740,7 +8887,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "177": {
     "id": 177,
@@ -8797,7 +8945,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "178": {
     "id": 178,
@@ -8854,7 +9003,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "179": {
     "id": 179,
@@ -8906,7 +9056,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "182": {
     "id": 182,
@@ -8958,7 +9109,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "183": {
     "id": 183,
@@ -9010,7 +9162,8 @@
           "href": "Isuzu"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "184": {
     "id": 184,
@@ -9062,7 +9215,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "185": {
     "id": 185,
@@ -9119,7 +9273,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "186": {
     "id": 186,
@@ -9176,7 +9331,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "187": {
     "id": 187,
@@ -9228,7 +9384,8 @@
           "href": "Abukuma"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "188": {
     "id": 188,
@@ -9294,7 +9451,8 @@
           "href": "Mogami"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "189": {
     "id": 189,
@@ -9351,7 +9509,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "190": {
     "id": 190,
@@ -9403,7 +9562,8 @@
           "href": "Furutaka"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "191": {
     "id": 191,
@@ -9455,7 +9615,8 @@
           "href": "Kako"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "192": {
     "id": 192,
@@ -9507,7 +9668,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "193": {
     "id": 193,
@@ -9559,7 +9721,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "195": {
     "id": 195,
@@ -9616,7 +9779,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "196": {
     "id": 196,
@@ -9668,7 +9832,8 @@
           "href": "Myoukou"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "197": {
     "id": 197,
@@ -9720,7 +9885,8 @@
           "href": "Nachi"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "198": {
     "id": 198,
@@ -9786,7 +9952,8 @@
           "href": "Ashigara"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "199": {
     "id": 199,
@@ -9838,7 +10005,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "200": {
     "id": 200,
@@ -9899,7 +10067,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "201": {
     "id": 201,
@@ -9960,7 +10129,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "202": {
     "id": 202,
@@ -10012,7 +10182,8 @@
           "href": "Maya"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "203": {
     "id": 203,
@@ -10064,7 +10235,8 @@
           "href": "Choukai"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "204": {
     "id": 204,
@@ -10121,7 +10293,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "205": {
     "id": 205,
@@ -10178,7 +10351,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "206": {
     "id": 206,
@@ -10235,7 +10409,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "207": {
     "id": 207,
@@ -10287,7 +10462,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "208": {
     "id": 208,
@@ -10339,7 +10515,8 @@
           "href": "Fusou"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "209": {
     "id": 209,
@@ -10391,7 +10568,8 @@
           "href": "Yamashiro"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "210": {
     "id": 210,
@@ -10458,7 +10636,8 @@
           "href": "Ise"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "211": {
     "id": 211,
@@ -10520,7 +10699,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "212": {
     "id": 212,
@@ -10581,7 +10761,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "213": {
     "id": 213,
@@ -10638,7 +10819,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "214": {
     "id": 214,
@@ -10695,7 +10877,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "215": {
     "id": 215,
@@ -10756,7 +10939,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "217": {
     "id": 217,
@@ -10815,7 +10999,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "218": {
     "id": 218,
@@ -10867,7 +11052,8 @@
           "href": "Hiyou"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "219": {
     "id": 219,
@@ -10919,7 +11105,8 @@
           "href": "Junyou"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "220": {
     "id": 220,
@@ -10971,7 +11158,8 @@
           "href": "Houshou"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "221": {
     "id": 221,
@@ -11023,7 +11211,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "222": {
     "id": 222,
@@ -11080,7 +11269,8 @@
           "href": "Shouhou"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "223": {
     "id": 223,
@@ -11137,7 +11327,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "224": {
     "id": 224,
@@ -11189,7 +11380,8 @@
           "href": "Akagi"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "225": {
     "id": 225,
@@ -11241,7 +11433,8 @@
           "href": "Kaga"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "226": {
     "id": 226,
@@ -11293,7 +11486,8 @@
           "href": "Souryuu"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "227": {
     "id": 227,
@@ -11345,7 +11539,8 @@
           "href": "Hiryuu"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "228": {
     "id": 228,
@@ -11406,7 +11601,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "229": {
     "id": 229,
@@ -11467,7 +11663,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "230": {
     "id": 230,
@@ -11524,7 +11721,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "231": {
     "id": 231,
@@ -11586,7 +11784,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "232": {
     "id": 232,
@@ -11638,7 +11837,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "233": {
     "id": 233,
@@ -11695,7 +11895,8 @@
           "href": "Z1"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "236": {
     "id": 236,
@@ -11751,7 +11952,8 @@
           "href": "Z23"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "237": {
     "id": 237,
@@ -11812,7 +12014,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "238": {
     "id": 238,
@@ -11874,7 +12077,8 @@
           "href": "Königsberg"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "239": {
     "id": 239,
@@ -11936,7 +12140,8 @@
           "href": "Karlsruhe"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "240": {
     "id": 240,
@@ -11998,7 +12203,8 @@
           "href": "Köln"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "241": {
     "id": 241,
@@ -12050,7 +12256,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "242": {
     "id": 242,
@@ -12111,7 +12318,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "243": {
     "id": 243,
@@ -12163,7 +12371,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "244": {
     "id": 244,
@@ -12229,7 +12438,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "245": {
     "id": 245,
@@ -12286,7 +12496,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "246": {
     "id": 246,
@@ -12338,7 +12549,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "248": {
     "id": 248,
@@ -12395,7 +12607,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "249": {
     "id": 249,
@@ -12447,7 +12660,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "250": {
     "id": 250,
@@ -12508,7 +12722,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "251": {
     "id": 251,
@@ -12569,7 +12784,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "252": {
     "id": 252,
@@ -12630,7 +12846,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "253": {
     "id": 253,
@@ -12682,7 +12899,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "254": {
     "id": 254,
@@ -12734,7 +12952,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "255": {
     "id": 255,
@@ -12795,7 +13014,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "256": {
     "id": 256,
@@ -12856,7 +13076,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "257": {
     "id": 257,
@@ -12913,7 +13134,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "258": {
     "id": 258,
@@ -12965,7 +13187,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "259": {
     "id": 259,
@@ -13017,7 +13240,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "262": {
     "id": 262,
@@ -13074,7 +13298,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "263": {
     "id": 263,
@@ -13126,7 +13351,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "264": {
     "id": 264,
@@ -13183,7 +13409,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "265": {
     "id": 265,
@@ -13235,7 +13462,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "266": {
     "id": 266,
@@ -13287,7 +13515,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "267": {
     "id": 267,
@@ -13348,7 +13577,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "268": {
     "id": 268,
@@ -13410,7 +13640,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "269": {
     "id": 269,
@@ -13462,7 +13693,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "270": {
     "id": 270,
@@ -13523,7 +13755,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "271": {
     "id": 271,
@@ -13575,7 +13808,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "272": {
     "id": 272,
@@ -13627,7 +13861,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "274": {
     "id": 274,
@@ -13679,7 +13914,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "276": {
     "id": 276,
@@ -13731,7 +13967,8 @@
           "href": "Minazuki"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "277": {
     "id": 277,
@@ -13788,7 +14025,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "278": {
     "id": 278,
@@ -13844,7 +14082,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "280": {
     "id": 280,
@@ -13896,7 +14135,8 @@
           "href": "Mikazuki"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "286": {
     "id": 286,
@@ -13953,7 +14193,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "287": {
     "id": 287,
@@ -14010,7 +14251,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "288": {
     "id": 288,
@@ -14067,7 +14309,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "293": {
     "id": 293,
@@ -14124,7 +14367,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "295": {
     "id": 295,
@@ -14176,7 +14420,8 @@
           "href": "Niizuki"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "296": {
     "id": 296,
@@ -14237,7 +14482,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "297": {
     "id": 297,
@@ -14298,7 +14544,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "299": {
     "id": 299,
@@ -14350,7 +14597,8 @@
           "href": "Radford"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "300": {
     "id": 300,
@@ -14402,7 +14650,8 @@
           "href": "Jenkins"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "301": {
     "id": 301,
@@ -14454,7 +14703,8 @@
           "href": "Nicholas"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "303": {
     "id": 303,
@@ -14506,7 +14756,8 @@
           "href": "Richmond"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "304": {
     "id": 304,
@@ -14558,7 +14809,8 @@
           "href": "Honolulu"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "305": {
     "id": 305,
@@ -14615,7 +14867,8 @@
           "href": "St._Louis"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "306": {
     "id": 306,
@@ -14676,7 +14929,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "307": {
     "id": 307,
@@ -14737,7 +14991,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "308": {
     "id": 308,
@@ -14789,7 +15044,8 @@
           "href": "Sendai"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "309": {
     "id": 309,
@@ -14841,7 +15097,8 @@
           "href": "Jintsuu"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "310": {
     "id": 310,
@@ -14898,7 +15155,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "316": {
     "id": 316,
@@ -14959,7 +15217,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "317": {
     "id": 317,
@@ -15020,7 +15279,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "318": {
     "id": 318,
@@ -15077,7 +15337,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "319": {
     "id": 319,
@@ -15129,7 +15390,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "320": {
     "id": 320,
@@ -15190,7 +15452,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "321": {
     "id": 321,
@@ -15242,7 +15505,8 @@
           "href": "Agano"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "322": {
     "id": 322,
@@ -15299,7 +15563,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "324": {
     "id": 324,
@@ -15351,7 +15616,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "325": {
     "id": 325,
@@ -15412,7 +15678,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "326": {
     "id": 326,
@@ -15469,7 +15736,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "327": {
     "id": 327,
@@ -15526,7 +15794,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "328": {
     "id": 328,
@@ -15587,7 +15856,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "329": {
     "id": 329,
@@ -15639,7 +15909,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "330": {
     "id": 330,
@@ -15696,7 +15967,8 @@
           "href": "Denver"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "331": {
     "id": 331,
@@ -15753,7 +16025,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "332": {
     "id": 332,
@@ -15810,7 +16083,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "333": {
     "id": 333,
@@ -15871,7 +16145,8 @@
           "href": "Michishio"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "334": {
     "id": 334,
@@ -15927,7 +16202,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "335": {
     "id": 335,
@@ -15984,7 +16260,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "336": {
     "id": 336,
@@ -16036,7 +16313,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "337": {
     "id": 337,
@@ -16088,7 +16366,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "338": {
     "id": 338,
@@ -16140,7 +16419,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "339": {
     "id": 339,
@@ -16192,7 +16472,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "340": {
     "id": 340,
@@ -16244,7 +16525,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "341": {
     "id": 341,
@@ -16296,7 +16578,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "342": {
     "id": 342,
@@ -16348,7 +16631,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "343": {
     "id": 343,
@@ -16405,7 +16689,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "344": {
     "id": 344,
@@ -16466,7 +16751,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "345": {
     "id": 345,
@@ -16523,7 +16809,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "346": {
     "id": 346,
@@ -16584,7 +16871,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "347": {
     "id": 347,
@@ -16645,7 +16933,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "348": {
     "id": 348,
@@ -16702,7 +16991,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "349": {
     "id": 349,
@@ -16759,7 +17049,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "350": {
     "id": 350,
@@ -16816,7 +17107,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "351": {
     "id": 351,
@@ -16878,7 +17170,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "352": {
     "id": 352,
@@ -16935,7 +17228,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "353": {
     "id": 353,
@@ -17000,7 +17294,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "354": {
     "id": 354,
@@ -17061,7 +17356,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "355": {
     "id": 355,
@@ -17117,7 +17413,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "356": {
     "id": 356,
@@ -17169,7 +17466,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "357": {
     "id": 357,
@@ -17226,7 +17524,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "358": {
     "id": 358,
@@ -17283,7 +17582,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "359": {
     "id": 359,
@@ -17340,7 +17640,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "360": {
     "id": 360,
@@ -17396,7 +17697,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "361": {
     "id": 361,
@@ -17453,7 +17755,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "362": {
     "id": 362,
@@ -17510,7 +17813,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "363": {
     "id": 363,
@@ -17567,7 +17871,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "364": {
     "id": 364,
@@ -17628,7 +17933,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "365": {
     "id": 365,
@@ -17684,7 +17990,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "366": {
     "id": 366,
@@ -17736,7 +18043,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "367": {
     "id": 367,
@@ -17797,7 +18105,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "368": {
     "id": 368,
@@ -17854,7 +18163,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "369": {
     "id": 369,
@@ -17911,7 +18221,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "370": {
     "id": 370,
@@ -17968,7 +18279,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "371": {
     "id": 371,
@@ -18029,7 +18341,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "372": {
     "id": 372,
@@ -18086,7 +18399,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "373": {
     "id": 373,
@@ -18143,7 +18457,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "374": {
     "id": 374,
@@ -18204,7 +18519,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "375": {
     "id": 375,
@@ -18265,7 +18581,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "376": {
     "id": 376,
@@ -18326,7 +18643,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "377": {
     "id": 377,
@@ -18383,7 +18701,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "378": {
     "id": 378,
@@ -18440,7 +18759,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "379": {
     "id": 379,
@@ -18497,7 +18817,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "380": {
     "id": 380,
@@ -18549,7 +18870,8 @@
           "href": "Bunker_Hill"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "381": {
     "id": 381,
@@ -18606,7 +18928,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "382": {
     "id": 382,
@@ -18663,7 +18986,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "383": {
     "id": 383,
@@ -18715,7 +19039,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "384": {
     "id": 384,
@@ -18767,7 +19092,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "385": {
     "id": 385,
@@ -18819,7 +19145,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "386": {
     "id": 386,
@@ -18880,7 +19207,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "387": {
     "id": 387,
@@ -18941,7 +19269,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "388": {
     "id": 388,
@@ -18998,7 +19327,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "389": {
     "id": 389,
@@ -19055,7 +19385,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "390": {
     "id": 390,
@@ -19107,7 +19438,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "391": {
     "id": 391,
@@ -19159,7 +19491,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "392": {
     "id": 392,
@@ -19216,7 +19549,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "393": {
     "id": 393,
@@ -19268,7 +19602,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "394": {
     "id": 394,
@@ -19329,7 +19664,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "395": {
     "id": 395,
@@ -19390,7 +19726,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "396": {
     "id": 396,
@@ -19447,7 +19784,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "397": {
     "id": 397,
@@ -19504,7 +19842,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "398": {
     "id": 398,
@@ -19561,7 +19900,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "399": {
     "id": 399,
@@ -19618,7 +19958,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "400": {
     "id": 400,
@@ -19675,7 +20016,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "401": {
     "id": 401,
@@ -19736,7 +20078,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "402": {
     "id": 402,
@@ -19788,7 +20131,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "403": {
     "id": 403,
@@ -19845,7 +20189,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "404": {
     "id": 404,
@@ -19902,7 +20247,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "405": {
     "id": 405,
@@ -19963,7 +20309,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "406": {
     "id": 406,
@@ -20015,7 +20362,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "407": {
     "id": 407,
@@ -20067,7 +20415,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "408": {
     "id": 408,
@@ -20123,7 +20472,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "409": {
     "id": 409,
@@ -20175,7 +20525,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "410": {
     "id": 410,
@@ -20232,7 +20583,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "411": {
     "id": 411,
@@ -20289,7 +20641,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "412": {
     "id": 412,
@@ -20350,7 +20703,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "413": {
     "id": 413,
@@ -20411,7 +20765,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "414": {
     "id": 414,
@@ -20468,7 +20823,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "415": {
     "id": 415,
@@ -20525,7 +20881,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "416": {
     "id": 416,
@@ -20585,7 +20942,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "417": {
     "id": 417,
@@ -20637,7 +20995,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "418": {
     "id": 418,
@@ -20698,7 +21057,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "419": {
     "id": 419,
@@ -20759,7 +21119,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "420": {
     "id": 420,
@@ -20820,7 +21181,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "421": {
     "id": 421,
@@ -20877,7 +21239,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "422": {
     "id": 422,
@@ -20938,7 +21301,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "423": {
     "id": 423,
@@ -20990,7 +21354,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "424": {
     "id": 424,
@@ -21051,7 +21416,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "425": {
     "id": 425,
@@ -21112,7 +21478,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "426": {
     "id": 426,
@@ -21173,7 +21540,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "427": {
     "id": 427,
@@ -21234,7 +21602,8 @@
           "href": "Halsey_Powell"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "428": {
     "id": 428,
@@ -21295,7 +21664,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "429": {
     "id": 429,
@@ -21347,7 +21717,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "431": {
     "id": 431,
@@ -21404,7 +21775,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "432": {
     "id": 432,
@@ -21461,7 +21833,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "433": {
     "id": 433,
@@ -21518,7 +21891,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "434": {
     "id": 434,
@@ -21575,7 +21949,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "435": {
     "id": 435,
@@ -21632,7 +22007,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "436": {
     "id": 436,
@@ -21689,7 +22065,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "437": {
     "id": 437,
@@ -21750,7 +22127,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "438": {
     "id": 438,
@@ -21802,7 +22180,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "440": {
     "id": 440,
@@ -21859,7 +22238,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "441": {
     "id": 441,
@@ -21916,7 +22296,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "442": {
     "id": 442,
@@ -21973,7 +22354,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "443": {
     "id": 443,
@@ -22030,7 +22412,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "444": {
     "id": 444,
@@ -22087,7 +22470,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "445": {
     "id": 445,
@@ -22144,7 +22528,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "446": {
     "id": 446,
@@ -22201,7 +22586,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "447": {
     "id": 447,
@@ -22258,7 +22644,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "448": {
     "id": 448,
@@ -22315,7 +22702,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "449": {
     "id": 449,
@@ -22376,7 +22764,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "450": {
     "id": 450,
@@ -22437,7 +22826,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "451": {
     "id": 451,
@@ -22494,7 +22884,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "452": {
     "id": 452,
@@ -22551,7 +22942,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "453": {
     "id": 453,
@@ -22608,7 +23000,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "454": {
     "id": 454,
@@ -22665,7 +23058,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "455": {
     "id": 455,
@@ -22722,7 +23116,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "456": {
     "id": 456,
@@ -22779,7 +23174,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "457": {
     "id": 457,
@@ -22836,7 +23232,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "458": {
     "id": 458,
@@ -22893,7 +23290,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "459": {
     "id": 459,
@@ -22950,7 +23348,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "460": {
     "id": 460,
@@ -23007,7 +23406,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "461": {
     "id": 461,
@@ -23064,7 +23464,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "462": {
     "id": 462,
@@ -23121,7 +23522,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "463": {
     "id": 463,
@@ -23178,7 +23580,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "464": {
     "id": 464,
@@ -23235,7 +23638,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "465": {
     "id": 465,
@@ -23292,7 +23696,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "466": {
     "id": 466,
@@ -23349,7 +23754,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "467": {
     "id": 467,
@@ -23410,7 +23816,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "468": {
     "id": 468,
@@ -23467,7 +23874,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "469": {
     "id": 469,
@@ -23524,7 +23932,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "470": {
     "id": 470,
@@ -23581,7 +23990,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "471": {
     "id": 471,
@@ -23638,7 +24048,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "472": {
     "id": 472,
@@ -23695,7 +24106,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "473": {
     "id": 473,
@@ -23752,7 +24164,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "474": {
     "id": 474,
@@ -23813,7 +24226,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "475": {
     "id": 475,
@@ -23870,7 +24284,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "476": {
     "id": 476,
@@ -23927,7 +24342,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "477": {
     "id": 477,
@@ -23988,7 +24404,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "478": {
     "id": 478,
@@ -24049,7 +24466,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "479": {
     "id": 479,
@@ -24106,7 +24524,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "480": {
     "id": 480,
@@ -24163,7 +24582,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "481": {
     "id": 481,
@@ -24220,7 +24640,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "482": {
     "id": 482,
@@ -24277,7 +24698,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "483": {
     "id": 483,
@@ -24334,7 +24756,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "484": {
     "id": 484,
@@ -24396,7 +24819,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "485": {
     "id": 485,
@@ -24453,7 +24877,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "486": {
     "id": 486,
@@ -24510,7 +24935,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "487": {
     "id": 487,
@@ -24567,7 +24993,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "488": {
     "id": 488,
@@ -24624,7 +25051,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "489": {
     "id": 489,
@@ -24685,7 +25113,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "490": {
     "id": 490,
@@ -24742,7 +25171,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "491": {
     "id": 491,
@@ -24799,7 +25229,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "492": {
     "id": 492,
@@ -24851,7 +25282,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "493": {
     "id": 493,
@@ -24912,7 +25344,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "494": {
     "id": 494,
@@ -24973,7 +25406,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "495": {
     "id": 495,
@@ -25034,7 +25468,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "496": {
     "id": 496,
@@ -25091,7 +25526,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "497": {
     "id": 497,
@@ -25148,7 +25584,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "498": {
     "id": 498,
@@ -25205,7 +25642,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "499": {
     "id": 499,
@@ -25262,7 +25700,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "500": {
     "id": 500,
@@ -25319,7 +25758,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "501": {
     "id": 501,
@@ -25376,7 +25816,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "502": {
     "id": 502,
@@ -25433,7 +25874,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "503": {
     "id": 503,
@@ -25490,7 +25932,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "504": {
     "id": 504,
@@ -25547,7 +25990,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "505": {
     "id": 505,
@@ -25604,7 +26048,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "506": {
     "id": 506,
@@ -25661,7 +26106,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "507": {
     "id": 507,
@@ -25718,7 +26164,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "508": {
     "id": 508,
@@ -25779,7 +26226,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "509": {
     "id": 509,
@@ -25840,7 +26288,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "510": {
     "id": 510,
@@ -25897,7 +26346,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "511": {
     "id": 511,
@@ -25954,7 +26404,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "512": {
     "id": 512,
@@ -26011,7 +26462,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "513": {
     "id": 513,
@@ -26068,7 +26520,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "514": {
     "id": 514,
@@ -26125,7 +26578,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "515": {
     "id": 515,
@@ -26182,7 +26636,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "516": {
     "id": 516,
@@ -26239,7 +26694,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "517": {
     "id": 517,
@@ -26296,7 +26752,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "518": {
     "id": 518,
@@ -26353,7 +26810,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "519": {
     "id": 519,
@@ -26410,7 +26868,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "520": {
     "id": 520,
@@ -26467,7 +26926,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "521": {
     "id": 521,
@@ -26519,7 +26979,8 @@
           "href": "New_Orleans"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "522": {
     "id": 522,
@@ -26576,7 +27037,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "523": {
     "id": 523,
@@ -26633,7 +27095,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "524": {
     "id": 524,
@@ -26690,7 +27153,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "525": {
     "id": 525,
@@ -26747,7 +27211,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "526": {
     "id": 526,
@@ -26804,7 +27269,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "527": {
     "id": 527,
@@ -26861,7 +27327,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "528": {
     "id": 528,
@@ -26918,7 +27385,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "529": {
     "id": 529,
@@ -26980,7 +27448,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "530": {
     "id": 530,
@@ -27037,7 +27506,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "531": {
     "id": 531,
@@ -27094,7 +27564,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "532": {
     "id": 532,
@@ -27151,7 +27622,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "533": {
     "id": 533,
@@ -27208,7 +27680,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "534": {
     "id": 534,
@@ -27271,7 +27744,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "535": {
     "id": 535,
@@ -27328,7 +27802,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "536": {
     "id": 536,
@@ -27385,7 +27860,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "537": {
     "id": 537,
@@ -27442,7 +27918,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "538": {
     "id": 538,
@@ -27499,7 +27976,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "539": {
     "id": 539,
@@ -27561,7 +28039,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "540": {
     "id": 540,
@@ -27618,7 +28097,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "541": {
     "id": 541,
@@ -27675,7 +28155,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "542": {
     "id": 542,
@@ -27732,7 +28213,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "543": {
     "id": 543,
@@ -27784,7 +28266,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "544": {
     "id": 544,
@@ -27836,7 +28319,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "545": {
     "id": 545,
@@ -27888,7 +28372,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "546": {
     "id": 546,
@@ -27940,7 +28425,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "547": {
     "id": 547,
@@ -27992,7 +28478,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "548": {
     "id": 548,
@@ -28044,7 +28531,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "549": {
     "id": 549,
@@ -28101,7 +28589,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "550": {
     "id": 550,
@@ -28163,7 +28652,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "551": {
     "id": 551,
@@ -28215,7 +28705,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "552": {
     "id": 552,
@@ -28267,7 +28758,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "553": {
     "id": 553,
@@ -28324,7 +28816,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "554": {
     "id": 554,
@@ -28381,7 +28874,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "555": {
     "id": 555,
@@ -28438,7 +28932,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "556": {
     "id": 556,
@@ -28495,7 +28990,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "557": {
     "id": 557,
@@ -28552,7 +29048,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "558": {
     "id": 558,
@@ -28604,7 +29101,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "559": {
     "id": 559,
@@ -28656,7 +29154,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "560": {
     "id": 560,
@@ -28708,7 +29207,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "561": {
     "id": 561,
@@ -28760,7 +29260,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "562": {
     "id": 562,
@@ -28812,7 +29313,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "563": {
     "id": 563,
@@ -28864,7 +29366,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "564": {
     "id": 564,
@@ -28916,7 +29419,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "566": {
     "id": 566,
@@ -28968,7 +29472,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "567": {
     "id": 567,
@@ -29020,7 +29525,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "568": {
     "id": 568,
@@ -29072,7 +29578,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "569": {
     "id": 569,
@@ -29129,7 +29636,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "570": {
     "id": 570,
@@ -29186,7 +29694,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "571": {
     "id": 571,
@@ -29243,7 +29752,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "572": {
     "id": 572,
@@ -29295,7 +29805,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "573": {
     "id": 573,
@@ -29347,7 +29858,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "574": {
     "id": 574,
@@ -29399,7 +29911,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "575": {
     "id": 575,
@@ -29451,7 +29964,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "576": {
     "id": 576,
@@ -29503,7 +30017,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "577": {
     "id": 577,
@@ -29560,7 +30075,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "578": {
     "id": 578,
@@ -29617,7 +30133,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "579": {
     "id": 579,
@@ -29674,7 +30191,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "580": {
     "id": 580,
@@ -29731,7 +30249,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "581": {
     "id": 581,
@@ -29783,7 +30302,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "582": {
     "id": 582,
@@ -29835,7 +30355,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "583": {
     "id": 583,
@@ -29887,7 +30408,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "584": {
     "id": 584,
@@ -29939,7 +30461,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "585": {
     "id": 585,
@@ -29991,7 +30514,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "586": {
     "id": 586,
@@ -30043,7 +30567,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "587": {
     "id": 587,
@@ -30095,7 +30620,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "588": {
     "id": 588,
@@ -30147,7 +30673,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "589": {
     "id": 589,
@@ -30199,7 +30726,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "590": {
     "id": 590,
@@ -30251,7 +30779,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "591": {
     "id": 591,
@@ -30303,7 +30832,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "592": {
     "id": 592,
@@ -30355,7 +30885,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "593": {
     "id": 593,
@@ -30407,7 +30938,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "594": {
     "id": 594,
@@ -30459,7 +30991,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "595": {
     "id": 595,
@@ -30511,7 +31044,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "596": {
     "id": 596,
@@ -30563,7 +31097,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "597": {
     "id": 597,
@@ -30615,7 +31150,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "598": {
     "id": 598,
@@ -30667,7 +31203,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "599": {
     "id": 599,
@@ -30719,7 +31256,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "600": {
     "id": 600,
@@ -30771,7 +31309,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "601": {
     "id": 601,
@@ -30823,7 +31362,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "602": {
     "id": 602,
@@ -30875,7 +31415,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "603": {
     "id": 603,
@@ -30927,7 +31468,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "604": {
     "id": 604,
@@ -30979,7 +31521,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "605": {
     "id": 605,
@@ -31031,7 +31574,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "606": {
     "id": 606,
@@ -31083,7 +31627,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "607": {
     "id": 607,
@@ -31135,7 +31680,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "608": {
     "id": 608,
@@ -31187,7 +31733,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "609": {
     "id": 609,
@@ -31239,7 +31786,8 @@
           "href": "Houston_II"
         }
       ]
-    }
+    },
+    "permanent": true
   },
   "610": {
     "id": 610,
@@ -31291,7 +31839,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "611": {
     "id": 611,
@@ -31347,7 +31896,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "612": {
     "id": 612,
@@ -31399,7 +31949,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "613": {
     "id": 613,
@@ -31451,7 +32002,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "614": {
     "id": 614,
@@ -31503,7 +32055,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "615": {
     "id": 615,
@@ -31563,7 +32116,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "616": {
     "id": 616,
@@ -31615,7 +32169,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "617": {
     "id": 617,
@@ -31667,7 +32222,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "618": {
     "id": 618,
@@ -31719,7 +32275,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "619": {
     "id": 619,
@@ -31771,7 +32328,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "620": {
     "id": 620,
@@ -31823,7 +32381,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "621": {
     "id": 621,
@@ -31880,7 +32439,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "622": {
     "id": 622,
@@ -31937,7 +32497,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "623": {
     "id": 623,
@@ -31994,7 +32555,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "624": {
     "id": 624,
@@ -32051,7 +32613,8 @@
         }
       ],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "625": {
     "id": 625,
@@ -32108,7 +32671,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "626": {
     "id": 626,
@@ -32160,7 +32724,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "627": {
     "id": 627,
@@ -32212,7 +32777,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "628": {
     "id": 628,
@@ -32264,7 +32830,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "630": {
     "id": 630,
@@ -32316,7 +32883,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "631": {
     "id": 631,
@@ -32368,7 +32936,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "632": {
     "id": 632,
@@ -32420,7 +32989,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "633": {
     "id": 633,
@@ -32472,7 +33042,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "634": {
     "id": 634,
@@ -32524,7 +33095,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "635": {
     "id": 635,
@@ -32576,7 +33148,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "636": {
     "id": 636,
@@ -32628,7 +33201,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "637": {
     "id": 637,
@@ -32680,7 +33254,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "638": {
     "id": 638,
@@ -32732,7 +33307,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "639": {
     "id": 639,
@@ -32784,7 +33360,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "640": {
     "id": 640,
@@ -32836,7 +33413,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "641": {
     "id": 641,
@@ -32888,7 +33466,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "642": {
     "id": 642,
@@ -32940,7 +33519,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "643": {
     "id": 643,
@@ -32992,7 +33572,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "645": {
     "id": 645,
@@ -33044,7 +33625,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "646": {
     "id": 646,
@@ -33096,7 +33678,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "647": {
     "id": 647,
@@ -33148,7 +33731,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "648": {
     "id": 648,
@@ -33200,7 +33784,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "649": {
     "id": 649,
@@ -33252,7 +33837,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "650": {
     "id": 650,
@@ -33304,7 +33890,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "651": {
     "id": 651,
@@ -33356,7 +33943,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "652": {
     "id": 652,
@@ -33408,7 +33996,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "653": {
     "id": 653,
@@ -33460,7 +34049,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "654": {
     "id": 654,
@@ -33512,7 +34102,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "655": {
     "id": 655,
@@ -33564,7 +34155,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "657": {
     "id": 657,
@@ -33616,7 +34208,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "658": {
     "id": 658,
@@ -33668,7 +34261,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "659": {
     "id": 659,
@@ -33720,7 +34314,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "660": {
     "id": 660,
@@ -33772,7 +34367,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "661": {
     "id": 661,
@@ -33824,7 +34420,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "662": {
     "id": 662,
@@ -33876,7 +34473,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "663": {
     "id": 663,
@@ -33928,7 +34526,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "664": {
     "id": 664,
@@ -33980,7 +34579,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "665": {
     "id": 665,
@@ -34032,7 +34632,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "666": {
     "id": 666,
@@ -34084,7 +34685,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "667": {
     "id": 667,
@@ -34136,7 +34738,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "668": {
     "id": 668,
@@ -34188,7 +34791,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "669": {
     "id": 669,
@@ -34240,7 +34844,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "670": {
     "id": 670,
@@ -34300,7 +34905,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "671": {
     "id": 671,
@@ -34352,7 +34958,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "672": {
     "id": 672,
@@ -34404,7 +35011,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "673": {
     "id": 673,
@@ -34456,7 +35064,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "674": {
     "id": 674,
@@ -34508,7 +35117,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "675": {
     "id": 675,
@@ -34560,7 +35170,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "676": {
     "id": 676,
@@ -34612,7 +35223,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "677": {
     "id": 677,
@@ -34664,7 +35276,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "678": {
     "id": 678,
@@ -34716,7 +35329,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "679": {
     "id": 679,
@@ -34768,7 +35382,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "680": {
     "id": 680,
@@ -34820,7 +35435,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "681": {
     "id": 681,
@@ -34872,7 +35488,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "682": {
     "id": 682,
@@ -34924,7 +35541,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "683": {
     "id": 683,
@@ -34976,7 +35594,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "684": {
     "id": 684,
@@ -35028,7 +35647,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "685": {
     "id": 685,
@@ -35080,7 +35700,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "686": {
     "id": 686,
@@ -35132,7 +35753,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "687": {
     "id": 687,
@@ -35184,7 +35806,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "688": {
     "id": 688,
@@ -35236,7 +35859,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "689": {
     "id": 689,
@@ -35288,7 +35912,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "690": {
     "id": 690,
@@ -35340,7 +35965,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "691": {
     "id": 691,
@@ -35392,7 +36018,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "692": {
     "id": 692,
@@ -35444,7 +36071,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "693": {
     "id": 693,
@@ -35496,7 +36124,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "697": {
     "id": 697,
@@ -35548,7 +36177,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10001": {
     "id": 10001,
@@ -35600,7 +36230,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10002": {
     "id": 10002,
@@ -35652,7 +36283,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10003": {
     "id": 10003,
@@ -35704,7 +36336,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10004": {
     "id": 10004,
@@ -35756,7 +36389,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10005": {
     "id": 10005,
@@ -35808,7 +36442,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10006": {
     "id": 10006,
@@ -35860,7 +36495,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10007": {
     "id": 10007,
@@ -35912,7 +36548,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10008": {
     "id": 10008,
@@ -35964,7 +36601,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10021": {
     "id": 10021,
@@ -36016,7 +36654,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10022": {
     "id": 10022,
@@ -36068,7 +36707,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10031": {
     "id": 10031,
@@ -36120,7 +36760,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10032": {
     "id": 10032,
@@ -36172,7 +36813,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10033": {
     "id": 10033,
@@ -36224,7 +36866,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10034": {
     "id": 10034,
@@ -36276,7 +36919,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10035": {
     "id": 10035,
@@ -36328,7 +36972,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10036": {
     "id": 10036,
@@ -36380,7 +37025,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10041": {
     "id": 10041,
@@ -36432,7 +37078,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10042": {
     "id": 10042,
@@ -36484,7 +37131,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10043": {
     "id": 10043,
@@ -36536,7 +37184,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10044": {
     "id": 10044,
@@ -36588,7 +37237,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10051": {
     "id": 10051,
@@ -36640,7 +37290,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10052": {
     "id": 10052,
@@ -36692,7 +37343,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10053": {
     "id": 10053,
@@ -36744,7 +37396,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10054": {
     "id": 10054,
@@ -36796,7 +37449,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10055": {
     "id": 10055,
@@ -36848,7 +37502,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10056": {
     "id": 10056,
@@ -36900,7 +37555,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10057": {
     "id": 10057,
@@ -36952,7 +37608,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10061": {
     "id": 10061,
@@ -37004,7 +37661,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10062": {
     "id": 10062,
@@ -37056,7 +37714,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10063": {
     "id": 10063,
@@ -37108,7 +37767,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10064": {
     "id": 10064,
@@ -37160,7 +37820,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10065": {
     "id": 10065,
@@ -37212,7 +37873,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10066": {
     "id": 10066,
@@ -37264,7 +37926,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10067": {
     "id": 10067,
@@ -37316,7 +37979,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10068": {
     "id": 10068,
@@ -37368,7 +38032,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10069": {
     "id": 10069,
@@ -37420,7 +38085,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10071": {
     "id": 10071,
@@ -37472,7 +38138,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10072": {
     "id": 10072,
@@ -37524,7 +38191,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10073": {
     "id": 10073,
@@ -37576,7 +38244,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10074": {
     "id": 10074,
@@ -37628,7 +38297,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10075": {
     "id": 10075,
@@ -37680,7 +38350,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10076": {
     "id": 10076,
@@ -37732,7 +38403,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10077": {
     "id": 10077,
@@ -37784,7 +38456,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10081": {
     "id": 10081,
@@ -37836,7 +38509,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10082": {
     "id": 10082,
@@ -37888,7 +38562,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10083": {
     "id": 10083,
@@ -37940,7 +38615,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10084": {
     "id": 10084,
@@ -37992,7 +38668,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10085": {
     "id": 10085,
@@ -38044,7 +38721,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10086": {
     "id": 10086,
@@ -38096,7 +38774,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10087": {
     "id": 10087,
@@ -38148,7 +38827,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10088": {
     "id": 10088,
@@ -38200,7 +38880,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10089": {
     "id": 10089,
@@ -38252,7 +38933,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10091": {
     "id": 10091,
@@ -38304,7 +38986,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10092": {
     "id": 10092,
@@ -38356,7 +39039,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10093": {
     "id": 10093,
@@ -38408,7 +39092,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10094": {
     "id": 10094,
@@ -38460,7 +39145,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10095": {
     "id": 10095,
@@ -38512,7 +39198,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10096": {
     "id": 10096,
@@ -38564,7 +39251,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10101": {
     "id": 10101,
@@ -38616,7 +39304,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10102": {
     "id": 10102,
@@ -38672,7 +39361,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10103": {
     "id": 10103,
@@ -38724,7 +39414,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10104": {
     "id": 10104,
@@ -38780,7 +39471,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10105": {
     "id": 10105,
@@ -38836,7 +39528,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10106": {
     "id": 10106,
@@ -38892,7 +39585,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "10107": {
     "id": 10107,
@@ -38944,7 +39638,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10111": {
     "id": 10111,
@@ -38996,7 +39691,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10112": {
     "id": 10112,
@@ -39048,7 +39744,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10113": {
     "id": 10113,
@@ -39100,7 +39797,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10114": {
     "id": 10114,
@@ -39152,7 +39850,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10115": {
     "id": 10115,
@@ -39204,7 +39903,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "10116": {
     "id": 10116,
@@ -39256,7 +39956,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20001": {
     "id": 20001,
@@ -39308,7 +40009,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20002": {
     "id": 20002,
@@ -39360,7 +40062,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20003": {
     "id": 20003,
@@ -39412,7 +40115,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20004": {
     "id": 20004,
@@ -39464,7 +40168,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20005": {
     "id": 20005,
@@ -39516,7 +40221,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20006": {
     "id": 20006,
@@ -39568,7 +40274,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20007": {
     "id": 20007,
@@ -39620,7 +40327,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20008": {
     "id": 20008,
@@ -39672,7 +40380,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20009": {
     "id": 20009,
@@ -39724,7 +40433,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20010": {
     "id": 20010,
@@ -39776,7 +40486,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20011": {
     "id": 20011,
@@ -39828,7 +40539,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20012": {
     "id": 20012,
@@ -39880,7 +40592,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20013": {
     "id": 20013,
@@ -39932,7 +40645,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20014": {
     "id": 20014,
@@ -39984,7 +40698,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20015": {
     "id": 20015,
@@ -40036,7 +40751,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20016": {
     "id": 20016,
@@ -40088,7 +40804,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20017": {
     "id": 20017,
@@ -40140,7 +40857,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20018": {
     "id": 20018,
@@ -40192,7 +40910,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20019": {
     "id": 20019,
@@ -40244,7 +40963,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20020": {
     "id": 20020,
@@ -40296,7 +41016,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20021": {
     "id": 20021,
@@ -40348,7 +41069,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20022": {
     "id": 20022,
@@ -40400,7 +41122,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20023": {
     "id": 20023,
@@ -40452,7 +41175,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20024": {
     "id": 20024,
@@ -40504,7 +41228,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20025": {
     "id": 20025,
@@ -40556,7 +41281,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20026": {
     "id": 20026,
@@ -40608,7 +41334,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20027": {
     "id": 20027,
@@ -40660,7 +41387,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20028": {
     "id": 20028,
@@ -40712,7 +41440,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20029": {
     "id": 20029,
@@ -40764,7 +41493,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20030": {
     "id": 20030,
@@ -40816,7 +41546,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20031": {
     "id": 20031,
@@ -40868,7 +41599,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20032": {
     "id": 20032,
@@ -40920,7 +41652,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20033": {
     "id": 20033,
@@ -40972,7 +41705,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20034": {
     "id": 20034,
@@ -41024,7 +41758,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20035": {
     "id": 20035,
@@ -41076,7 +41811,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20036": {
     "id": 20036,
@@ -41128,7 +41864,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "20037": {
     "id": 20037,
@@ -41180,7 +41917,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30001": {
     "id": 30001,
@@ -41236,7 +41974,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30002": {
     "id": 30002,
@@ -41292,7 +42031,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30003": {
     "id": 30003,
@@ -41348,7 +42088,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30004": {
     "id": 30004,
@@ -41404,7 +42145,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30005": {
     "id": 30005,
@@ -41460,7 +42202,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30006": {
     "id": 30006,
@@ -41516,7 +42259,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30007": {
     "id": 30007,
@@ -41572,7 +42316,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30008": {
     "id": 30008,
@@ -41628,7 +42373,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30009": {
     "id": 30009,
@@ -41684,7 +42430,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30010": {
     "id": 30010,
@@ -41740,7 +42487,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30011": {
     "id": 30011,
@@ -41796,7 +42544,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30012": {
     "id": 30012,
@@ -41852,7 +42601,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30013": {
     "id": 30013,
@@ -41908,7 +42658,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30014": {
     "id": 30014,
@@ -41964,7 +42715,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30015": {
     "id": 30015,
@@ -42020,7 +42772,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30016": {
     "id": 30016,
@@ -42072,7 +42825,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30017": {
     "id": 30017,
@@ -42128,7 +42882,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30018": {
     "id": 30018,
@@ -42180,7 +42935,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30019": {
     "id": 30019,
@@ -42236,7 +42992,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30020": {
     "id": 30020,
@@ -42288,7 +43045,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30021": {
     "id": 30021,
@@ -42340,7 +43098,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30022": {
     "id": 30022,
@@ -42392,7 +43151,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30023": {
     "id": 30023,
@@ -42448,7 +43208,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30024": {
     "id": 30024,
@@ -42500,7 +43261,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30025": {
     "id": 30025,
@@ -42556,7 +43318,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30026": {
     "id": 30026,
@@ -42608,7 +43371,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30027": {
     "id": 30027,
@@ -42660,7 +43424,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30028": {
     "id": 30028,
@@ -42712,7 +43477,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30029": {
     "id": 30029,
@@ -42764,7 +43530,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30030": {
     "id": 30030,
@@ -42816,7 +43583,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30031": {
     "id": 30031,
@@ -42868,7 +43636,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30032": {
     "id": 30032,
@@ -42920,7 +43689,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30033": {
     "id": 30033,
@@ -42972,7 +43742,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30034": {
     "id": 30034,
@@ -43024,7 +43795,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30035": {
     "id": 30035,
@@ -43076,7 +43848,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30036": {
     "id": 30036,
@@ -43128,7 +43901,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30037": {
     "id": 30037,
@@ -43180,7 +43954,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30038": {
     "id": 30038,
@@ -43232,7 +44007,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30039": {
     "id": 30039,
@@ -43284,7 +44060,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30040": {
     "id": 30040,
@@ -43336,7 +44113,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30041": {
     "id": 30041,
@@ -43388,7 +44166,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30042": {
     "id": 30042,
@@ -43440,7 +44219,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30043": {
     "id": 30043,
@@ -43492,7 +44272,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30044": {
     "id": 30044,
@@ -43544,7 +44325,8 @@
       "other": [],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": true
   },
   "30045": {
     "id": 30045,
@@ -43596,7 +44378,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30046": {
     "id": 30046,
@@ -43648,7 +44431,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30047": {
     "id": 30047,
@@ -43700,7 +44484,8 @@
       ],
       "construction": [],
       "permanent": []
-    }
+    },
+    "permanent": false
   },
   "30048": {
     "id": 30048,
@@ -43752,6 +44537,7 @@
           "href": "Category:Ships"
         }
       ]
-    }
+    },
+    "permanent": true
   }
 }

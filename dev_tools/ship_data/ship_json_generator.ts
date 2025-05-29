@@ -13,6 +13,7 @@ const augmentData: Record<number, AugmentData> = (await import(
 
 import type { ShipData as ProcessedShipData } from "@db/types"
 import {
+  isPermanent,
   shipDefaultAugmentParse,
   shipFactionParse,
   shipFleetTypeParse,
@@ -71,6 +72,7 @@ const writeShipDataToFile = async (
     })()
 
     const locations = shipLocationParse(ship, +id)
+    const permanent = isPermanent(locations, +id)
 
     const samvaluationData = shipSamvaluationParse(ship)
     const samEval = samvaluationData.evaluation
@@ -92,6 +94,7 @@ const writeShipDataToFile = async (
       fastLoad,
       roles,
       locations,
+      permanent,
     }
   })
 

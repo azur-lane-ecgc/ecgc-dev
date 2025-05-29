@@ -119,7 +119,7 @@ export const shipLocationParse = (
     }
   }
 
-  const dropData = shipDropData[id]!
+  const dropData = shipDropData[id]
   const events = parseEvents(name, dropData.events)
   const other = dropData.other
     ?.map((otherId) => parseOtherLocation(name, otherId))
@@ -148,4 +148,26 @@ export const shipLocationParse = (
   }
 
   return { events, other, construction, permanent }
+}
+
+export const isPermanent = (
+  locations: ShipLocationData,
+  id: number,
+): boolean => {
+  const NOT_PERMANENT = new Set<string>(["Cruise Pass", "META Showdown"])
+
+  if (locations.construction.length || locations.permanent.length) {
+    return true
+  }
+
+  if (locations.other.some((loc) => !NOT_PERMANENT.has(loc.name))) {
+    return true
+  }
+
+  const dropData = shipDropData[id]
+  if (dropData.events.length && !!!dropData.limited) {
+    return true
+  }
+
+  return false
 }
