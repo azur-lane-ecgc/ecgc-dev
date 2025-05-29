@@ -594,7 +594,16 @@
       {
         "id": "damage_stagger",
         "content": "Fast Loads / Staggering Damage",
-        "subheadings": []
+        "subheadings": [
+          {
+            "id": "preload_ships",
+            "content": "List of Ships with Preloads"
+          },
+          {
+            "id": "fastload_ships",
+            "content": "List of Ships with Fast Loads"
+          }
+        ]
       },
       {
         "id": "skill_sync",

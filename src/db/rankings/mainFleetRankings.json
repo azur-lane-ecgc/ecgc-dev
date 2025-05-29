@@ -1908,7 +1908,7 @@
   "Franklin": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE - Essex Pro Max and equal to 70% proc Enterprise in bossing.",
+      "notes": "Essex Pro Max and equal to 70% proc Enterprise in bossing.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -1935,7 +1935,7 @@
     },
     {
       "nameNote": "with Yorktown II",
-      "notes": "zTENTATIVE - Equal to 70% proc Enterprise. Yorkii's 8% reload reduction allows Franklin to use Skyraider and still be fast.",
+      "notes": "Equal to 70% proc Enterprise. Yorkii's 8% reload reduction allows Franklin to use Skyraider and still be fast.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -2364,7 +2364,36 @@
       "aa": null,
       "rammers": null,
       "othermain": null,
-      "vgsurvival": null
+      "vgsurvival": 1
+    }
+  ],
+  "Glorious META": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Requires enemy with high-dmg hits, get >= 20 marks. Beats URs if battle is 1 strike long, but not EX because need 10 hits.",
+      "hardarbiter": "B",
+      "meta": "A",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "A",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 3,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": 1
     }
   ],
   "Gneisenau": [

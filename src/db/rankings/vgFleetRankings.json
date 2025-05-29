@@ -1163,7 +1163,7 @@
   "Bartolomeo Colleoni": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE - Bad.",
+      "notes": "Bad.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2540,7 +2540,7 @@
   "De Zeven Provinciën": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE - top 3 AA",
+      "notes": "Top 3 AA.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -3752,10 +3752,37 @@
       "defensivebuff": null
     }
   ],
+  "Gallant": [
+    {
+      "nameNote": "",
+      "notes": "The barricades get destroyed so quickly because they're big, so no Defense Buff.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Giosuè Carducci": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE - Bad. Use fast torps. Contradictory skill, requires taking damage while being made of paper.",
+      "notes": "Bad. Use fast torps. Contradictory skill, requires taking damage while being made of paper.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10181,7 +10208,7 @@
   "Santa Fe": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE - Decent DPS, and Flares are nichely Huge debuff but on special timing.",
+      "notes": "Decent DPS, and Flares are nichely huge debuff but on special timing.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -11445,6 +11472,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": 1
+    }
+  ],
+  "Trinidad": [
+    {
+      "nameNote": "",
+      "notes": "Pretty good dps actually, a third of it being from the 15s barrage. But just below the threshold for a 2.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
     }
   ],
   "Umikaze": [
