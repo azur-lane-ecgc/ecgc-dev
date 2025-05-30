@@ -13,13 +13,13 @@ export const mainHealSupport = new Set([
   "Zuihou",
   "Ryuuhou",
   "Shouhou",
+  "Painlevé",
 ])
 
 export const mainSmallHealSupport = new Set([
   "Aquila",
   "Volga",
   "Klaudia Valentz",
-  "Painlevé",
   "Raffaelo",
   "Daisen",
   "Honoka",

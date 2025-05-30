@@ -12,6 +12,7 @@ import {
   flagshipReq,
   offensiveSupport,
   defensiveSupport,
+  mainHealSupport,
 } from "./roleDefs"
 import { isDecentMainFleet, isDecentSSFleet, isDecentVG } from "./decentShips"
 
@@ -26,6 +27,7 @@ const damageDealerShips = damageDealer()
 const strongDamageDealers = strongDamageDealer()
 const genOffSupport = offensiveSupport()
 const genDefSupport = defensiveSupport()
+const healer = mainHealSupport
 
 export const shipRoleParse = (
   ship: string,
@@ -61,6 +63,10 @@ export const shipRoleParse = (
   // <add here>
 
   // global roles
+  if (healer.has(ship)) {
+    roles.push("Healer")
+  }
+
   if (damageDealerShips.has(ship)) {
     roles.push("DmgDealer")
   }
