@@ -105,7 +105,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
 
   // hook calls
   useModalFocus(open, id.toString(), `modalOverlay${ship}`, id.toString())
-  useModalHistory(id.toString(), open, setOpen)
+  // useModalHistory(id.toString(), open, setOpen)
   useBodyOverflow(open)
 
   return (
