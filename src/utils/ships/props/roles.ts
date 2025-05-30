@@ -38,5 +38,10 @@ export const trimRoles = (roles: string[]): string[] => {
     roles = roles.filter((role) => role != "DmgDealer")
   }
 
+  // Healer & DefSupport (trim DefSupport )
+  if (roles.includes("Healer") && roles.includes("DefSupport")) {
+    roles = roles.filter((role) => role != "DefSupport")
+  }
+
   return roles.slice(0, 5)
 }
