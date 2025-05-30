@@ -72,7 +72,7 @@ const writeShipDataToFile = async (
     })()
 
     const locations = shipLocationParse(ship, +id)
-    const permanent = isPermanent(locations, +id)
+    const permanent = isPermanent(+id)
 
     const samvaluationData = shipSamvaluationParse(ship)
     const samEval = samvaluationData.evaluation

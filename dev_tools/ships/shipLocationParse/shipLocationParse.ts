@@ -177,35 +177,53 @@ export const shipLocationParse = (
 }
 
 export const isPermanent = (
-  locations: ShipLocationData,
   id: number,
 ): { isPermanent: boolean; isCollab: boolean } => {
-  let defaultLoc = { isPermanent: true, isCollab: false }
-
-  const NOT_PERMANENT = new Set<string>(["Cruise Pass", "META Showdown"])
-
-  // in permanent build || campaign map drop
-  if (locations.construction.length || locations.permanent.length) {
-    return defaultLoc
-  }
-
-  // permanent sources that aren't map drops (ex. shops)
-  if (locations.other.some((loc) => !NOT_PERMANENT.has(loc.name))) {
-    return defaultLoc
-  }
-
-  // permanent EVENT map drop
   const dropData = shipDropData[id]
-  if (dropData.events.length && !!!dropData.limited) {
-    return defaultLoc
+  if (!dropData) return { isPermanent: false, isCollab: false }
+
+  const qualifies = (ship: ShipDropData): boolean => {
+    if (!ship) return false
+
+    // rule 1: ship is available in light / heavy / special construction
+    const r1 = !!ship.timer && (ship.light || ship.heavy || ship.special)
+
+    // rule 2: ship is available from permanent not map-drop or not build sources (ex. shops)
+    const r2 =
+      ship.other.length > 0 &&
+      ship.other.some((code) => code !== 11 && code !== 13)
+
+    // rule 3: ship is available from campaign map-drop
+    const r3 = ship.maps.length > 0
+
+    return r1 || r2 || r3
   }
 
-  defaultLoc.isPermanent = false
+  // rule 4: other event ships from this ship's events are permanent (through rules 1-3)
+  const events: Set<string> = new Set(dropData.events)
 
-  // collab events
-  if (locations.events.some((loc) => collabEvents.includes(loc.name))) {
-    defaultLoc.isCollab = true
+  const rule4 =
+    events.size > 0 &&
+    Object.entries(shipDropData).some(([k, ship]) => {
+      if (Number(k) === id) return false // skip self
+
+      const ev = ship.events
+      if (ev.length !== events.size) return false
+      const evSet = new Set(ev)
+      if (evSet.size !== events.size) return false
+
+      for (const e of events) if (!evSet.has(e)) return false
+
+      return qualifies(ship)
+    })
+
+  // collab flag
+  const isCollab =
+    dropData.events.length > 0 &&
+    dropData.events.some((ev) => collabEvents.includes(ev))
+
+  return {
+    isPermanent: qualifies(dropData) || rule4,
+    isCollab: isCollab,
   }
-
-  return defaultLoc
 }
