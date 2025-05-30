@@ -31,5 +31,8 @@ export interface ShipData {
   fastLoad: string
   roles: string[]
   locations: ShipLocationData
-  permanent?: boolean
+  permanent: {
+    isPermanent: boolean
+    isCollab: boolean
+  }
 }
