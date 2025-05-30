@@ -13,6 +13,32 @@ const excludedEvents = [
   "Royal Maids Battle Royale",
   "Lunar New Year 2018",
 ]
+
+const collabEvents = [
+  "Bilibili 8th Anniversary",
+  "Recently, Ayanami Seems...",
+  "Stardust",
+  "Visitors from Another Dimension",
+  "Armored Trooper Votoms",
+  "Bilibili 9th Anniversary: Battery Support Plan",
+  "Atré Akihabara Collaboration",
+  "Lawson Collaboration",
+  "Utawarerumono Collab",
+  "Virtual Connection Synchronicity",
+  "Atré Akihabara Collaboration Rerun",
+  "Looking Glass of Fact and Fiction",
+  "Vacation Lane",
+  "The Cutest Companions!",
+  "Armored Trooper Votoms Rerun",
+  "Azur Anthem",
+  "World-Spanning Arclight",
+  "The Alchemist and the Archipelago of Secrets",
+  "Vacation Lane Rerun",
+  "World-Spanning Arclight Rerun",
+  "The Ninja Scrolls: Azur Flash",
+  "Dangerous Inventions Incoming!",
+]
+
 const exceptionShips = ["Formidable", "Mary Celeste"]
 
 const OTHER_LOCATIONS: Record<number, string | null> = {
@@ -153,21 +179,33 @@ export const shipLocationParse = (
 export const isPermanent = (
   locations: ShipLocationData,
   id: number,
-): boolean => {
+): { isPermanent: boolean; isCollab: boolean } => {
+  let defaultLoc = { isPermanent: true, isCollab: false }
+
   const NOT_PERMANENT = new Set<string>(["Cruise Pass", "META Showdown"])
 
+  // in permanent build || campaign map drop
   if (locations.construction.length || locations.permanent.length) {
-    return true
+    return defaultLoc
   }
 
+  // permanent sources that aren't map drops (ex. shops)
   if (locations.other.some((loc) => !NOT_PERMANENT.has(loc.name))) {
-    return true
+    return defaultLoc
   }
 
+  // permanent EVENT map drop
   const dropData = shipDropData[id]
   if (dropData.events.length && !!!dropData.limited) {
-    return true
+    return defaultLoc
   }
 
-  return false
+  defaultLoc.isPermanent = false
+
+  // collab events
+  if (locations.events.some((loc) => collabEvents.includes(loc.name))) {
+    defaultLoc.isCollab = true
+  }
+
+  return defaultLoc
 }
