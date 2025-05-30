@@ -2,11 +2,10 @@
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
 import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
-import { ShipModal } from "@components/_common/ShipModal"
 
 import WikiLink from "@components/_common/WikiLink.astro"
 
-import { preloadShips, fastLoadShips } from "./shipCategories"
+import { preloadShips, fastLoadShips, healerShips } from "./shipCategories"
 ---
 
 <h2 id="introduction">Introduction</h2><HR />
@@ -99,342 +98,84 @@ import { preloadShips, fastLoadShips } from "./shipCategories"
 </ul>
 <br />
 
-<h2 id="backline">Backline Ship Roles</h2><HR />
-<ul>
-  <li>
-    <p><b>Notes:</b></p>
-  </li>
-  <ul>
-    <li>
-      <p>
-        <i
-          >Consult a tierlist/other guide, or make your own judgements for ship
-          viability. The order of ships listed below is NOT a ship rating
-          criteria.</i
-        >
-      </p>
-    </li>
-    <li>
-      <p>
-        <i
-          >Some ships might fall into multiple roles! Read their skills for more
-          information. The roles assigned below are roles I would use them in
-          personally.</i
-        >
-      </p>
-    </li>
-    <li>
-      <p>
-        <i
-          >See <a href="#skill_sync" target="_self" rel="noopener noreferrer"
-            >Skill Syncing</a
-          > for more information on <b>Faction Fleets</b> and <b>Pair Skills.</b
-          ></i
-        >
-      </p>
-    </li>
-    <li>
-      <p>
-        <i
-          >See <a
-            href="#damage_stagger"
-            target="_self"
-            rel="noopener noreferrer">Preloads / Staggering Damage</a
-          > for more information on <b>Fast Loaders</b></i
-        >
-      </p>
-    </li>
-  </ul>
-</ul>
+<h2 id="backline">Backline Ship Roles</h2>
+<HR />
+
+<h3 id="healer">Healer</h3>
+<p>
+  The backbone of a mob fleet. Helps sustain your ships over the course of a
+  sortie.
+</p>
 <br />
 
-<h3 id="healer">Healers</h3>
-<ul>
-  <li>
-    <p>
-      They sustain a mob fleet over the course of a sortie through enormous
-      healing.
-    </p>
-  </li>
-</ul>
-
-<h3 id="flagship_bb">Flagship BB</h3>
-<ul>
-  <li>
-    <p>
-      Provides a strong (position-dependent!) frontal barrage and/or have
-      fleetwide benefits from being in the flagship position from their skills.
-      This slot also gives BBs optimal secondary gun range.
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        ><WikiLink page="Bismarck" title="Bismarck">Bismarck</WikiLink>, <WikiLink
-          page="Nagato"
-          title="Nagato">Nagato</WikiLink
-        >, <WikiLink page="Richelieu" title="Richelieu">Richelieu</WikiLink>, <WikiLink
-          page="Amagi"
-          title="Amagi">Amagi</WikiLink
-        > all have support capabilities, read skills for details.</i
-      >
-    </p>
-  </li>
-</ul>
-
-<h3 id="off-flag_bb">Off-Flag BB</h3>
-<ul>
-  <li>
-    <p>
-      Provides damage and/or support <b>without being position-locked.</b> Using
-      multiple BBs can also provide extra secondary gun support.
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        >All BBs in this section can act as the <a
-          rel="noopener noreferrer"
-          target="_self"
-          href="#flagship_bb">Flagship BB</a
-        >, but the opposite is not true!</i
-      >
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        >Multiple ships in this section all have varying support capabilities,
-        read skills for details.</i
-      >
-    </p>
-  </li>
-</ul>
-
-<h3 id="damage_cv">Damage CV</h3>
-<ul>
-  <li>
-    <p>Provides strong damage (usually more AoE oriented).</p>
-  </li>
-  <li>
-    <p>
-      <i
-        >Multiple ships in this section all have varying support capabilities,
-        read skills for details.</i
-      >
-    </p>
-  </li>
-</ul>
-
-<h3 id="backline_support">Support</h3>
-<ul>
-  <li>
-    <p>
-      These ships have slightly less per-strike damage in exchange for
-      additional fleet support.
-    </p>
-  </li>
-  <ul>
-    <li>
-      <p>
-        <i>
-          <WikiLink page="Aquila" title="Aquila">Aquila</WikiLink>,
-          <WikiLink page="Ark Royal" title="Ark Royal">Ark Royal</WikiLink>,
-          <WikiLink page="Formidable" title="Formidable">Formidable</WikiLink>,
-          <WikiLink page="Illustrious μ" title="Illustrious μ"
-            >Illustrious μ</WikiLink
-          >
-          can also do damage if you focus damage over support, read skills for details.
-        </i>
-      </p>
-    </li>
-  </ul>
-</ul>
+<h4>Permanently Available:</h4>
+<ItemContainer>
+  {
+    healerShips.map((ship) =>
+      ship.permanent.isPermanent ? (
+        <ShipCell
+          ship={ship.ship}
+          isKai={ship.isKai}
+          rarity={ship.rarity}
+          inGroup={true}
+          hasBorder={true}
+          hover={true}
+        />
+      ) : (
+        false
+      ),
+    )
+  }
+</ItemContainer>
 <br />
 
-<h2 id="vg">Vanguard Ship Roles</h2><HR />
-<ul>
-  <li>
-    <p><b>Notes:</b></p>
-  </li>
-  <ul>
-    <li>
-      <p>
-        <i
-          >Consult a tierlist/other guide, or make your own judgements for ship
-          viability. The order of ships listed below is NOT a ship rating
-          criteria.</i
-        >
-      </p>
-    </li>
-    <li>
-      <p>
-        <i
-          >Some ships might fall into multiple roles! Read their skills for more
-          information. The roles assigned below are roles I would use them in
-          personally.</i
-        >
-      </p>
-    </li>
-    <li>
-      <p>
-        <i
-          >See <a href="#skill_sync" target="_self" rel="noopener noreferrer"
-            >Skill Syncing</a
-          > for more information on <b>Faction Fleets</b> and <b>Pair Skills.</b
-          ></i
-        >
-      </p>
-    </li>
-  </ul>
-</ul>
+<h4>Event-Locked:</h4>
+<ItemContainer>
+  {
+    healerShips.map((ship) =>
+      !ship.permanent.isPermanent && !ship.permanent.isCollab ? (
+        <ShipCell
+          ship={ship.ship}
+          isKai={ship.isKai}
+          rarity={ship.rarity}
+          inGroup={true}
+          hasBorder={true}
+          hover={true}
+        />
+      ) : (
+        false
+      ),
+    )
+  }
+</ItemContainer>
 <br />
 
-<h3 id="mob_main_tank">Mob Main Tank</h3>
-<ul>
-  <li>
-    <p>
-      These ships are more susceptible to high damage bullets, but work great as
-      Mob Tanks.
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        >Most Mob Main Tanks can also fall into the <a
-          href="#vg_damage_dealer"
-          target="_self"
-          rel="noopener noreferrer">Damage Dealer</a
-        > and/or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
-        > category, read skills for details.</i
-      >
-    </p>
-  </li>
-</ul>
-
-<h3 id="boss_main_tank">Boss Main Tank</h3>
-<ul>
-  <li>
-    <p>These ships are extremely tanky, in addition to having decent damage.</p>
-  </li>
-  <li>
-    <p>
-      <i
-        >All Boss Main Tank ships can also <a
-          href="#mob_main_tank"
-          target="_self"
-          rel="noopener noreferrer">Mob Main Tank</a
-        > extremely well, but the opposite is not true!</i
-      >
-    </p>
-  </li>
-</ul>
+<h4>
+  <WikiLink page="Events#Collaboration_Events" title="Collaboration Events"
+    >Collaboration</WikiLink
+  >:
+</h4>
+<ItemContainer>
+  {
+    healerShips.map((ship) =>
+      ship.permanent.isCollab ? (
+        <ShipCell
+          ship={ship.ship}
+          isKai={ship.isKai}
+          rarity={ship.rarity}
+          inGroup={true}
+          hasBorder={true}
+          hover={true}
+        />
+      ) : (
+        false
+      ),
+    )
+  }
+</ItemContainer>
 <br />
 
-<h3 id="vg_damage_dealer">Damage Dealer</h3>
-<ul>
-  <li>
-    <p>These ships focus on dealing strong personal damage.</p>
-  </li>
-  <li>
-    <p>
-      <i
-        >Damage levels can vary wildly in this section; read the ships' skills
-        or other guides for more information.</i
-      >
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        >Bulk levels can vary wildly in this section; read the ships' skills or
-        other guides for more information.</i
-      >
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        >Support capabilities can vary wildly in this section; read the ships'
-        skills or other guides for more information.</i
-      >
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        >Ships that only deal damage from torpedoes and have nothing else going
-        for them are noticably worse than other ship types when playing on
-        auto-battle. However when playing on manual-battle, they are noticably
-        better than other ship types. Use with caution.</i
-      >
-    </p>
-  </li>
-</ul>
-<br />
-
-<h3 id="vg_support">Support</h3>
-<ul>
-  <li>
-    <p>
-      These ships have less personal damage in exchange for additional fleet
-      support.
-    </p>
-  </li>
-  <li>
-    <p>
-      Some ships will overlap with other sections. This is because they are good
-      ships even outside of their support, but not acknowledging their Support
-      capabiliities would be doing them a disservice.
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        >Read the ships' skills to see any condition(s) needed for the support
-        to activate.</i
-      >
-    </p>
-    <ul>
-      <li>
-        <p>
-          <i>
-            <h5>Some support skills are harder to trigger than others!!</h5>
-          </i>
-        </p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>
-      <h5>
-        <i
-          >Some supports are more specific than others, read their skills for
-          more information!</i
-        >
-      </h5>
-    </p>
-  </li>
-  <li>
-    <p>
-      <h5>
-        <i
-          >Some supports might not be worth using over <a
-            href="#vg_damage_dealer"
-            target="_self"
-            rel="noopener noreferrer">Damage Dealers</a
-          >, consult a tierlist/other guide for more information.</i
-        >
-      </h5>
-    </p>
-  </li>
-</ul>
-<br />
-
-<h2 id="damage_stagger">Fast Loads / Staggering Damage</h2><hr
-  class="custom-hr"
-/>
+<h2 id="damage_stagger">Fast Loads / Staggering Damage</h2><HR />
 <p>
   Having all your BB shots or CV airstrikes overkill a wave does not help with
   clear times. This is why staggering damage helps.
@@ -544,6 +285,7 @@ import { preloadShips, fastLoadShips } from "./shipCategories"
     ))
   }
 </ItemContainer>
+<br />
 
 <h3 id="fastload_ships">List of Ships with Fast Loads</h3>
 <ItemContainer>
@@ -562,6 +304,7 @@ import { preloadShips, fastLoadShips } from "./shipCategories"
       ))
   }
 </ItemContainer>
+<br />
 
 <h2 id="skill_sync">Skill Syncing</h2><HR />
 
@@ -610,7 +353,7 @@ import { preloadShips, fastLoadShips } from "./shipCategories"
     <WikiLink page="Duke of York" title="Duke of York">Duke of York</WikiLink>,
     <WikiLink page="Ark Royal" title="Ark Royal">Ark Royal</WikiLink>,
     <WikiLink page="Implacable" title="Implacable">Implacable</WikiLink>,
-    <WikiLink page="Centaur" title="Centaur">Centaur</WikiLink>
+    <WikiLink page="Centaur" title="Centaur">Centaur</WikiLink>, etc.
   </i>
 </p>
 
@@ -643,9 +386,16 @@ import { preloadShips, fastLoadShips } from "./shipCategories"
 
 <h3 id="faction_fleets">Faction Fleets</h3>
 <p>
-  Faction Fleets are sub-optimal. A well-built mixed faction fleet will perform
-  better than a well-built faction fleet 100% of the time.
+  Faction Fleets are fleets that are built around a specific faction, usually
+  using a ship that specifically buffs that faction.
 </p>
+<p>
+  The main issue with faction fleets is that most faction-specific supports do
+  not provide enough damage to justify the support capabilities. A well-built
+  mixed faction fleet will perform better than a well-built faction fleet 100%
+  of the time. <b>Just use good ships, ignoring faction.</b>
+</p>
+<br />
 
 <h3 id="pair_skills">Pair Skills</h3>
 <p>
@@ -752,9 +502,7 @@ import { preloadShips, fastLoadShips } from "./shipCategories"
 </ul>
 <br />
 
-<h2 id="campaign_fleet_comps">Campaign Fleet Compositions</h2><hr
-  class="custom-hr"
-/>
+<h2 id="campaign_fleet_comps">Campaign Fleet Compositions</h2><HR />
 
 <h3 id="campaign_theory">Theory</h3>
 <p>
@@ -963,9 +711,7 @@ import { preloadShips, fastLoadShips } from "./shipCategories"
 </p>
 <br />
 
-<h2 id="opsi_fleet_comps">Operation Siren Fleet Compositions</h2><hr
-  class="custom-hr"
-/>
+<h2 id="opsi_fleet_comps">Operation Siren Fleet Compositions</h2><HR />
 <p>
   <i>See also: <WikiLink page="Operation Siren">Operation Siren</WikiLink></i>
 </p>

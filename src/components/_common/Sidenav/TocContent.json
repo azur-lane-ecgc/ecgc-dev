@@ -549,45 +549,7 @@
         "subheadings": [
           {
             "id": "healer",
-            "content": "Healers"
-          },
-          {
-            "id": "flagship_bb",
-            "content": "Flagship BB"
-          },
-          {
-            "id": "off-flag_bb",
-            "content": "Off-Flag BB"
-          },
-          {
-            "id": "damage_cv",
-            "content": "Damage CV"
-          },
-          {
-            "id": "backline_support",
-            "content": "Support"
-          }
-        ]
-      },
-      {
-        "id": "vg",
-        "content": "Vanguard Ship Roles",
-        "subheadings": [
-          {
-            "id": "mob_main_tank",
-            "content": "Mob Main Tank"
-          },
-          {
-            "id": "boss_main_tank",
-            "content": "Boss Main Tank"
-          },
-          {
-            "id": "vg_damage_dealer",
-            "content": "Damage Dealer"
-          },
-          {
-            "id": "vg_support",
-            "content": "Support"
+            "content": "Healer"
           }
         ]
       },

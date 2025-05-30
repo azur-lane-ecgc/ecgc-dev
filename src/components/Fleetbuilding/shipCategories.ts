@@ -9,3 +9,7 @@ export const fastLoadShips: ShipData[] = Object.values(shipData).filter(
 export const preloadShips: ShipData[] = fastLoadShips.filter((ship) =>
   ship.roles.includes("Preload"),
 )
+
+export const healerShips: ShipData[] = Object.values(shipData).filter(
+  (ship) => ship.roles.includes("Healer") || ship.ship.match(/Klaudia/g),
+)
