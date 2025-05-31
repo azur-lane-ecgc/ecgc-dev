@@ -15,6 +15,9 @@ import {
   offSupportShips,
   defSupportShips,
 } from "./shipCategories"
+
+import USSSubFleet from "@assets/fleetbuilding_guide/USSSubFleet.png"
+import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
 ---
 
 <h2 id="introduction">Introduction</h2><HR />
@@ -1172,6 +1175,22 @@ import {
   </li>
 </ul>
 <br />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "50px" }}
+  data={[
+    {
+      src: USSSubFleet.src,
+      caption: "Example USS Submarine Fleet.",
+      alt: "Example USS Submarine Fleet.",
+    },
+    {
+      src: KMSSubFleet.src,
+      caption: "Example KMS Submarine Fleet.",
+      alt: "Example KMS Submarine Fleet.",
+    },
+  ]}
+/>
 
 <h3 id="global_subs">International Submarine Fleet</h3>
 <p>Testing</p>
