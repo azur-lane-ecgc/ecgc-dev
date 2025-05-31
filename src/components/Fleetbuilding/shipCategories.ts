@@ -49,7 +49,7 @@ export const flagReqShips: ShipData[] = Object.values(shipData)
     (s) =>
       s.fleetType === "main" &&
       s.roles.includes("FlagReq") &&
-      !(s.roles.includes("Meh") || s.roles.includes("Bad")),
+      !(s.roles.includes("Bad") || s.roles.includes("Meh")),
   )
   .sort((a, b) => maxDamage(b.ship) - maxDamage(a.ship))
 
@@ -61,8 +61,9 @@ export const dmgDealerShips: ShipData[] = Object.values(shipData)
   .filter(
     (s) =>
       s.fleetType === "main" &&
-      s.roles.includes("TopDmg") &&
-      !flagReqSet.has(s.ship),
+      s.roles.includes("DmgDealer") &&
+      !flagReqSet.has(s.ship) &&
+      !(s.roles.includes("Bad") || s.roles.includes("Meh")),
   )
   .sort((a, b) => maxDamage(b.ship) - maxDamage(a.ship))
 
@@ -81,7 +82,7 @@ export const offSupportShips: ShipData[] = Object.values(shipData)
       s.fleetType === "main" &&
       s.roles.includes("OffSupport") &&
       !healerSet.has(s.ship) &&
-      !dmgDealerSet.has(s.ship),
+      !(s.roles.includes("Bad") || s.roles.includes("Meh")),
   )
   .sort((a, b) => maxOffensiveBuff(b.ship) - maxOffensiveBuff(a.ship))
 
@@ -101,6 +102,6 @@ export const defSupportShips: ShipData[] = Object.values(shipData)
       s.fleetType === "main" &&
       s.roles.includes("DefSupport") &&
       !healerSet.has(s.ship) &&
-      !dmgDealerSet.has(s.ship),
+      !(s.roles.includes("Bad") || s.roles.includes("Meh")),
   )
   .sort((a, b) => maxDefSupport(b.ship) - maxDefSupport(a.ship))

@@ -14,7 +14,14 @@ import {
   defensiveSupport,
   mainHealSupport,
 } from "./roleDefs"
-import { isDecentMainFleet, isDecentSSFleet, isDecentVG } from "./decentShips"
+import {
+  isDecentMainFleet,
+  isDecentSSFleet,
+  isDecentVG,
+  isGoodMainFleet,
+  isGoodVGFleet,
+  isGoodSSFleet,
+} from "./decentShips"
 
 const tanks = tankRole()
 const superTanks = superTankRole()
@@ -99,12 +106,13 @@ export const shipRoleParse = (
     roles.push("OffSupport")
   }
 
+  const isGood =
+    (fleetType === "vg" && isGoodVGFleet(ship)) ||
+    (fleetType === "main" && isGoodMainFleet(ship)) ||
+    (fleetType === "ss" && isGoodSSFleet(ship))
+
   // testing
-  if (
-    roles.length === 0 ||
-    (roles.length > 0 &&
-      roles.every((r) => r === "OffSupport" || r === "DefSupport"))
-  ) {
+  if (roles.length === 0 || (roles.length > 0 && !isGood)) {
     if (fleetType == "vg" && isDecentVG(ship)) {
       roles.push("Meh")
     } else if (fleetType == "main" && isDecentMainFleet(ship)) {
