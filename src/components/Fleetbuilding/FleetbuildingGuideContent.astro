@@ -5,7 +5,16 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 
 import WikiLink from "@components/_common/WikiLink.astro"
 
-import { preloadShips, fastLoadShips, healerShips } from "./shipCategories"
+import { FleetbuildingShipList } from "./FleetbuildingShipList"
+import {
+  preloadShips,
+  fastLoadShips,
+  healerShips,
+  dmgDealerShips,
+  flagReqShips,
+  offSupportShips,
+  defSupportShips,
+} from "./shipCategories"
 ---
 
 <h2 id="introduction">Introduction</h2><HR />
@@ -100,6 +109,53 @@ import { preloadShips, fastLoadShips, healerShips } from "./shipCategories"
 
 <h2 id="backline">Backline Ship Roles</h2>
 <HR />
+<ul>
+  <li>
+    <p><b>Notes:</b></p>
+  </li>
+  <ul>
+    <li>
+      <p>
+        <i
+          >Consult a tierlist/other guide, or make your own judgements for ship
+          viability. The order of ships listed below is NOT a ship rating
+          criteria.</i
+        >
+      </p>
+    </li>
+    <li>
+      <p>
+        <i
+          >Some ships might fall into multiple roles! Read their skills for more
+          information. The roles assigned below are roles I would use them in
+          personally.</i
+        >
+      </p>
+    </li>
+    <li>
+      <p>
+        <i
+          >See <a href="#skill_sync" target="_self" rel="noopener noreferrer"
+            >Skill Syncing</a
+          > for more information on <b>Faction Fleets</b> and <b>Pair Skills.</b
+          ></i
+        >
+      </p>
+    </li>
+    <li>
+      <p>
+        <i
+          >See <a
+            href="#damage_stagger"
+            target="_self"
+            rel="noopener noreferrer">Preloads / Staggering Damage</a
+          > for more information on <b>Fast Loaders</b></i
+        >
+      </p>
+    </li>
+  </ul>
+</ul>
+<br />
 
 <h3 id="healer">Healer</h3>
 <p>
@@ -107,73 +163,36 @@ import { preloadShips, fastLoadShips, healerShips } from "./shipCategories"
   sortie.
 </p>
 <br />
+<FleetbuildingShipList ships={healerShips} />
 
-<h4>Permanently Available:</h4>
-<ItemContainer>
-  {
-    healerShips.map((ship) =>
-      ship.permanent.isPermanent ? (
-        <ShipCell
-          ship={ship.ship}
-          isKai={ship.isKai}
-          rarity={ship.rarity}
-          inGroup={true}
-          hasBorder={true}
-          hover={true}
-        />
-      ) : (
-        false
-      ),
-    )
-  }
-</ItemContainer>
+<h3 id="flagship_bb">Flagship BB</h3>
+<p>
+  They do big number (depending on the ship). These ships need to be in the
+  Flagship position for maximum effect.
+</p>
 <br />
+<FleetbuildingShipList ships={flagReqShips} />
 
-<h4>Event-Locked:</h4>
-<ItemContainer>
-  {
-    healerShips.map((ship) =>
-      !ship.permanent.isPermanent && !ship.permanent.isCollab ? (
-        <ShipCell
-          ship={ship.ship}
-          isKai={ship.isKai}
-          rarity={ship.rarity}
-          inGroup={true}
-          hasBorder={true}
-          hover={true}
-        />
-      ) : (
-        false
-      ),
-    )
-  }
-</ItemContainer>
+<h3 id="main_dmg_dealer">Damage Dealer</h3>
+<p>They do big number (depending on the ship).</p>
 <br />
+<FleetbuildingShipList ships={dmgDealerShips} />
 
-<h4>
-  <WikiLink page="Events#Collaboration_Events" title="Collaboration Events"
-    >Collaboration</WikiLink
-  >:
-</h4>
-<ItemContainer>
-  {
-    healerShips.map((ship) =>
-      ship.permanent.isCollab ? (
-        <ShipCell
-          ship={ship.ship}
-          isKai={ship.isKai}
-          rarity={ship.rarity}
-          inGroup={true}
-          hasBorder={true}
-          hover={true}
-        />
-      ) : (
-        false
-      ),
-    )
-  }
-</ItemContainer>
+<h3 id="main_off_support">Offensive Support</h3>
+<p>
+  These ships offer offensive buffs to the fleet in exchange for slightly lower
+  fleet damage.
+</p>
 <br />
+<FleetbuildingShipList ships={offSupportShips} />
+
+<h3 id="main_def_support">Defensive Support</h3>
+<p>
+  These ships offer defensive buffs to the fleet in exchange for slightly lower
+  fleet damage.
+</p>
+<br />
+<FleetbuildingShipList ships={defSupportShips} />
 
 <h2 id="damage_stagger">Fast Loads / Staggering Damage</h2><HR />
 <p>

@@ -550,6 +550,22 @@
           {
             "id": "healer",
             "content": "Healer"
+          },
+          {
+            "id": "flagship_bb",
+            "content": "Flagship BB"
+          },
+          {
+            "id": "main_dmg_dealer",
+            "content": "Damage Dealer"
+          },
+          {
+            "id": "main_off_support",
+            "content": "Offensive Support"
+          },
+          {
+            "id": "main_def_support",
+            "content": "Defensive Support"
           }
         ]
       },
