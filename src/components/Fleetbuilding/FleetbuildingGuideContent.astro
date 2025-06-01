@@ -8,10 +8,11 @@ import WikiLink from "@components/_common/WikiLink.astro"
 import { FleetbuildingShipList } from "./FleetbuildingShipList"
 import {
   preloadShips,
-  fastLoadShips,
+  reduction25to49Ships,
+  reduction50to74Ships,
+  reduction75to99Ships,
   healerShips,
   dmgDealerShips,
-  flagReqShips,
   offSupportShips,
   defSupportShips,
 } from "./shipCategories"
@@ -169,14 +170,6 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
 <br />
 <FleetbuildingShipList ships={healerShips} />
 
-<h3 id="flagship_bb">Flagship BB</h3>
-<p>
-  They do big number (depending on the ship). These ships need to be in the
-  Flagship position for maximum effect.
-</p>
-<br />
-<FleetbuildingShipList ships={flagReqShips} />
-
 <h3 id="main_dmg_dealer">Damage Dealer</h3>
 <p>They do big number (depending on the ship).</p>
 <br />
@@ -185,7 +178,7 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
 <h3 id="main_off_support">Offensive Support</h3>
 <p>
   These ships offer offensive buffs to the fleet in exchange for slightly lower
-  fleet damage.
+  personal damage.
 </p>
 <br />
 <FleetbuildingShipList ships={offSupportShips} />
@@ -193,7 +186,7 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
 <h3 id="main_def_support">Defensive Support</h3>
 <p>
   These ships offer defensive buffs to the fleet in exchange for slightly lower
-  fleet damage.
+  personal damage.
 </p>
 <br />
 <FleetbuildingShipList ships={defSupportShips} />
@@ -293,7 +286,36 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
 </ul>
 <br />
 
-<h3 id="preload_ships">List of Ships with Preloads</h3>
+<h3 id="fast_loader_list">List of Ships with Fast Loads</h3>
+<ul>
+  <li>
+    <p>
+      <i
+        >Consult a tierlist or other guide for ship viability. Ships are NOT
+        ordered by viability.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Ships in this category also fulfil other roles (sometimes multiple!),
+        which are marked accordingly. The role listed is the role I would
+        personally use them in.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Some ships are more strict with requirements to Fast Load than others,
+        so be wary of ruining your fleet composition. Read skills for details!</i
+      >
+    </p>
+  </li>
+</ul>
+
+<h5><u>Preload</u></h5>
 <ItemContainer>
   {
     preloadShips.map((ship) => (
@@ -308,23 +330,52 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
     ))
   }
 </ItemContainer>
-<br />
 
-<h3 id="fastload_ships">List of Ships with Fast Loads</h3>
+<h5><u>75% - 99%</u></h5>
 <ItemContainer>
   {
-    fastLoadShips
-      .filter((ship) => !ship.roles.includes("Preload"))
-      .map((ship) => (
-        <ShipCell
-          ship={ship.ship}
-          isKai={ship.isKai}
-          rarity={ship.rarity}
-          inGroup={true}
-          hasBorder={true}
-          hover={true}
-        />
-      ))
+    reduction75to99Ships.map((ship) => (
+      <ShipCell
+        ship={ship.ship}
+        isKai={ship.isKai}
+        rarity={ship.rarity}
+        inGroup={true}
+        hasBorder={true}
+        hover={true}
+      />
+    ))
+  }
+</ItemContainer>
+
+<h5><u>50% - 74%</u></h5>
+<ItemContainer>
+  {
+    reduction50to74Ships.map((ship) => (
+      <ShipCell
+        ship={ship.ship}
+        isKai={ship.isKai}
+        rarity={ship.rarity}
+        inGroup={true}
+        hasBorder={true}
+        hover={true}
+      />
+    ))
+  }
+</ItemContainer>
+
+<h5><u>25% - 49%</u></h5>
+<ItemContainer>
+  {
+    reduction25to49Ships.map((ship) => (
+      <ShipCell
+        ship={ship.ship}
+        isKai={ship.isKai}
+        rarity={ship.rarity}
+        inGroup={true}
+        hasBorder={true}
+        hover={true}
+      />
+    ))
   }
 </ItemContainer>
 <br />
@@ -393,7 +444,7 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
       <li>
         <p>
           All ships launch at roughly the same time (within 1 second of each
-          other).
+          other; for CV slow supports you might need closer timings).
         </p>
       </li>
       <li>
@@ -428,7 +479,7 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
 <ul>
   <li>
     <p>
-      <b>1-2</b> Ships Needed: It is fine to build the fleet around this buff.
+      <b>1</b> Other Ship Needed: It is fine to build the fleet around this buff.
     </p>
   </li>
   <ul>
@@ -441,8 +492,8 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
   </ul>
   <li>
     <p>
-      <b>3+</b> Ships Needed, and the benefit is <b>good</b>: It is fine to
-      build the fleet around this buff.
+      <b>2+</b> Other Ships Needed, and the benefit is <b>good</b>: It is fine
+      to build the fleet around this buff.
     </p>
   </li>
   <ul>
@@ -455,8 +506,8 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
   </ul>
   <li>
     <p>
-      <b>3+</b> Ships Needed, and the benefit is <b>mediocre / bad</b>: It is
-      fine to ignore this buff.
+      <b>2+</b> Other Ships Needed, and the benefit is <b>mediocre / bad</b>: It
+      is fine to ignore this buff.
     </p>
   </li>
   <ul>
@@ -932,10 +983,8 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
         <WikiLink page="August von Parseval" title="August von Parseval"
           >August von Parseval</WikiLink
         >,
-        <WikiLink page="Ark Royal" title="Ark Royal">Ark Royal</WikiLink>, or <WikiLink
-          page="Formidable"
-          title="Formidable">Formidable</WikiLink
-        >)
+        <WikiLink page="Ark Royal" title="Ark Royal">Ark Royal</WikiLink>,
+        etc.).
       </p>
     </li>
     <li>

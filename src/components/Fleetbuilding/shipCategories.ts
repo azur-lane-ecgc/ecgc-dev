@@ -4,14 +4,31 @@ const shipData = (await import("@db/ship_data/ship_data.json"))
 const mainFleetRankings = (await import("@db/rankings/mainFleetRankings.json"))
   .default as Record<string, MainFleetRankingProps[]>
 
+import { shipSort } from "@utils/ships"
+
 // fast load ships
-export const fastLoadShips: ShipData[] = Object.values(shipData).filter((s) =>
-  s.roles.includes("FastLoad"),
+const fastLoadShips: ShipData[] = shipSort(
+  Object.values(shipData).filter((s) => !!s.fastLoad),
 )
 
-export const preloadShips: ShipData[] = fastLoadShips.filter((s) =>
-  s.roles.includes("Preload"),
-)
+export const reduction25to49Ships: ShipData[] = fastLoadShips.filter((s) => {
+  const r = s.fastLoad!.reduction
+  return r >= 25 && r <= 49
+})
+
+export const reduction50to74Ships: ShipData[] = fastLoadShips.filter((s) => {
+  const r = s.fastLoad!.reduction
+  return r >= 50 && r <= 74
+})
+
+export const reduction75to99Ships: ShipData[] = fastLoadShips.filter((s) => {
+  const r = s.fastLoad!.reduction
+  return r >= 75 && r <= 99
+})
+
+export const preloadShips: ShipData[] = fastLoadShips.filter((s) => {
+  return s.fastLoad!.reduction === 100
+})
 
 // healer ships
 const maxVgSurvival = (name: string): number =>
@@ -43,18 +60,6 @@ const maxDamage = (name: string): number =>
 
 const healerSet = new Set(healerShips.map((s) => s.ship))
 
-// flagship ships
-export const flagReqShips: ShipData[] = Object.values(shipData)
-  .filter(
-    (s) =>
-      s.fleetType === "main" &&
-      s.roles.includes("FlagReq") &&
-      !(s.roles.includes("Bad") || s.roles.includes("Meh")),
-  )
-  .sort((a, b) => maxDamage(b.ship) - maxDamage(a.ship))
-
-const flagReqSet = new Set(flagReqShips.map((s) => s.ship))
-
 // damage dealer ships
 
 export const dmgDealerShips: ShipData[] = Object.values(shipData)
@@ -62,7 +67,6 @@ export const dmgDealerShips: ShipData[] = Object.values(shipData)
     (s) =>
       s.fleetType === "main" &&
       s.roles.includes("DmgDealer") &&
-      !flagReqSet.has(s.ship) &&
       !(s.roles.includes("Bad") || s.roles.includes("Meh")),
   )
   .sort((a, b) => maxDamage(b.ship) - maxDamage(a.ship))
