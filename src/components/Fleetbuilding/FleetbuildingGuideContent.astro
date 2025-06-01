@@ -1,4 +1,7 @@
 ---
+import USSSubFleet from "@assets/fleetbuilding_guide/USSSubFleet.png"
+import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
+
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
 import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
@@ -15,10 +18,18 @@ import {
   dmgDealerShips,
   offSupportShips,
   defSupportShips,
-} from "./shipCategories"
+} from "./MFShipCategories"
 
-import USSSubFleet from "@assets/fleetbuilding_guide/USSSubFleet.png"
-import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
+import {
+  VGsuperTankShips,
+  VGtankShips,
+  VGdmgDealerShips,
+  VGaACarryShips,
+  VGaaShips,
+  VGaswShips,
+  VGoffSupportShips,
+  VGdefSupportShips,
+} from "./VGShipCategories"
 ---
 
 <h2 id="introduction">Introduction</h2><HR />
@@ -190,6 +201,141 @@ import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
 </p>
 <br />
 <FleetbuildingShipList ships={defSupportShips} />
+
+<h2 id="vg">Vanguard Ship Roles</h2>
+<HR />
+<ul>
+  <li>
+    <p><b>Notes:</b></p>
+  </li>
+  <ul>
+    <li>
+      <p>
+        <i
+          >Consult a tierlist/other guide, or make your own judgements for ship
+          viability. The order of ships listed below is NOT a ship rating
+          criteria.</i
+        >
+      </p>
+    </li>
+    <li>
+      <p>
+        <i
+          >Some ships might fall into multiple roles! Read their skills for more
+          information. The roles assigned below are roles I would use them in
+          personally.</i
+        >
+      </p>
+    </li>
+    <li>
+      <p>
+        <i
+          >See <a href="#skill_sync" target="_self" rel="noopener noreferrer"
+            >Skill Syncing</a
+          > for more information on <b>Faction Fleets</b> and <b>Pair Skills.</b
+          ></i
+        >
+      </p>
+    </li>
+  </ul>
+</ul>
+<br />
+
+<h3 id="supertank">SuperTank</h3>
+<p>
+  These ships are extremely bulky and can survive almost any single fight (in
+  the correct circumstances; read skills for details).
+</p>
+<br />
+<FleetbuildingShipList ships={VGsuperTankShips} />
+
+<h3 id="tank">Tank</h3>
+<p>
+  These ships are bulky and can survive many different fights (in the correct
+  circumstances; read skills for details).
+</p>
+<br />
+<FleetbuildingShipList ships={VGtankShips} />
+
+<h3 id="vg_damage_dealer">Damage Dealer</h3>
+<p>These ships do a lot of damage.</p>
+<ul>
+  <li>
+    <p>
+      <i
+        >Damage levels can vary wildly in this section; read the ships' skills
+        or other guides for more information.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Bulk levels can vary wildly in this section; read the ships' skills or
+        other guides for more information.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Support capabilities can vary wildly in this section; read the ships'
+        skills or other guides for more information.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Ships that only deal damage from torpedoes and have nothing else going
+        for them are noticably worse than other ship types when playing on
+        auto-battle. However when playing on manual-battle, they are noticably
+        better than other ship types. Use with caution.</i
+      >
+    </p>
+  </li>
+</ul>
+<br />
+<FleetbuildingShipList ships={VGdmgDealerShips} />
+
+<h3 id="aa_carry">AA Carry</h3>
+<p>
+  These ships can single-handedly solve your entire fleet's AA issues on their
+  own.
+</p>
+<br />
+<FleetbuildingShipList ships={VGaACarryShips} />
+
+<h3 id="aa">AA</h3>
+<p>These ships can solve most of your fleet's AA issues.</p>
+<br />
+<FleetbuildingShipList ships={VGaaShips} />
+
+<h3 id="asw">ASW</h3>
+<p>
+  These ships can solve most of your fleet's ASW issues, especially when
+  equipped with <WikiLink page="Hedgehog"
+    >"Hedgehog" Anti-Submarine Mortar</WikiLink
+  >.
+</p>
+<br />
+<FleetbuildingShipList ships={VGaswShips} />
+
+<h3 id="vg_offensive_support">Offensive Support</h3>
+<p>
+  These ships offer offensive buffs to the fleet in exchange for slightly lower
+  personal damage.
+</p>
+<br />
+<FleetbuildingShipList ships={VGoffSupportShips} />
+
+<h3 id="vg_defensive_support">Defensive Support</h3>
+<p>
+  These ships offer defensive buffs to the fleet in exchange for slightly lower
+  personal damage.
+</p>
+<br />
+<FleetbuildingShipList ships={VGdefSupportShips} />
 
 <h2 id="damage_stagger">Fast Loads / Staggering Damage</h2><HR />
 <p>

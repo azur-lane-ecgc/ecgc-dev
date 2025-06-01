@@ -71,8 +71,6 @@ export const dmgDealerShips: ShipData[] = Object.values(shipData)
   )
   .sort((a, b) => maxDamage(b.ship) - maxDamage(a.ship))
 
-const dmgDealerSet = new Set(dmgDealerShips.map((s) => s.ship))
-
 // off support ships
 const maxOffensiveBuff = (name: string): number =>
   (mainFleetRankings[name] ?? []).reduce<number>(

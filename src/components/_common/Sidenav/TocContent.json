@@ -566,6 +566,44 @@
         ]
       },
       {
+        "id": "vg",
+        "content": "Vanguard Ship Roles",
+        "subheadings": [
+          {
+            "id": "supertank",
+            "content": "SuperTank"
+          },
+          {
+            "id": "tank",
+            "content": "Tank"
+          },
+          {
+            "id": "vg_damage_dealer",
+            "content": "Damage Dealer"
+          },
+          {
+            "id": "aa_carry",
+            "content": "AA Carry"
+          },
+          {
+            "id": "aa",
+            "content": "AA"
+          },
+          {
+            "id": "asw",
+            "content": "ASW"
+          },
+          {
+            "id": "vg_offensive_support",
+            "content": "Offensive Support"
+          },
+          {
+            "id": "vg_defensive_support",
+            "content": "Defensive Support"
+          }
+        ]
+      },
+      {
         "id": "damage_stagger",
         "content": "Fast Loads / Staggering Damage",
         "subheadings": [

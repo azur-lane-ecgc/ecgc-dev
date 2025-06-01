@@ -20,7 +20,7 @@ export const FleetbuildingShipList: React.FC<Props> = ({
   const renderGroup = (title: React.ReactNode, list: ShipData[]) =>
     list.length ? (
       <>
-        <h4>{title}</h4>
+        <h5>{title}</h5>
         <ItemContainer>
           {list.map((ship) => (
             <ShipCell
