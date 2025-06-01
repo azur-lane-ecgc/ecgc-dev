@@ -11,7 +11,7 @@ import type { AllShipData } from "@db/types"
 import {
   useBodyOverflow,
   useModalFocus,
-  useModalHistory,
+  // useModalHistory,
 } from "@utils/modalHooks"
 import { parseEquipHref, shipImageParse } from "@utils/ships"
 
