@@ -76,7 +76,7 @@ const writeShipDataToFile = async (
 
     const samvaluationData = shipSamvaluationParse(ship)
     const samEval = samvaluationData.evaluation
-    const fastLoad = samvaluationData?.preload ?? ""
+    const fastLoad = samvaluationData?.preload2 || null
     const roles = shipRoleParse(ship, fleetType, hullType)
 
     processedData[+id] = {
@@ -91,7 +91,7 @@ const writeShipDataToFile = async (
       slots,
       augments,
       samEval,
-      fastLoad,
+      fastLoad: fastLoad,
       roles,
       locations,
       permanent,

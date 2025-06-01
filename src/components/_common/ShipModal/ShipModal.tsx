@@ -342,7 +342,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                     </td>
                     <td colSpan={4}>
                       <span className="font-semibold text-green-400">
-                        {fastLoad}
+                        {fastLoad.text}
                       </span>
                     </td>
                   </tr>

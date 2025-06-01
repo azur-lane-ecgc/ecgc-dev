@@ -28,7 +28,12 @@ export interface ShipData {
   slots: SlotProps[]
   augments: string[] | null
   samEval?: string
-  fastLoad: string
+  fastLoad: {
+    text: string
+    reduction: number
+    quantity: number
+    conditional: string
+  } | null
   roles: string[]
   locations: ShipLocationData
   permanent: {
