@@ -12,7 +12,7 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Common Resource Guide",
     authors: ["Samheart564"],
-    lastUpdated: "6/1/2025",
+    lastUpdated: "6/8/2025",
     revision: "2.0.0",
     description: `Goes over Common Resources in Azur Lane, how to acquire them, and how much you can acquire in a reasonable time frame.`,
     link: "common_resource",
@@ -30,7 +30,7 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Equipment Guide",
     authors: ["Samheart564"],
-    lastUpdated: "6/1/2025",
+    lastUpdated: "6/8/2025",
     revision: "1.17.0",
     description: `Goes over the optimal equipment to use in Azur Lane, in an easy-to-read image format!`,
     link: "equipment",
@@ -48,7 +48,7 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Fleetbuilding Guide",
     authors: ["Samheart564"],
-    lastUpdated: "6/1/2025",
+    lastUpdated: "6/8/2025",
     revision: "1.13.0",
     description: `Goes over how to make fleets for both Campaign and <a href="https://azurlane.koumakan.jp/wiki/Operation Siren" target="_blank" rel="noopener noreferrer">Operation Siren</a> in Azur Lane.`,
     link: "fleetbuilding",
@@ -57,7 +57,7 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Fleet Technology Guide",
     authors: ["Samheart564"],
-    lastUpdated: "6/1/2025",
+    lastUpdated: "6/8/2025",
     revision: "1.2.0",
     description: `Goes over the <a href="https://azurlane.koumakan.jp/wiki/Fleet_Technology" target="_blank" rel="noopener noreferrer">Fleet Technology</a> mechanics and how to get Tech Points in Azur Lane.`,
     link: "fleet_technology",
@@ -66,7 +66,7 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Newbie Tips",
     authors: ["Samheart564"],
-    lastUpdated: "6/1/2025",
+    lastUpdated: "6/8/2025",
     revision: "2.0.0",
     description: `Goes over basic advice and mistakes to avoid for new players!`,
     link: "newbie_tips",
@@ -75,7 +75,7 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Research Guide",
     authors: ["Samheart564"],
-    lastUpdated: "6/1/2025",
+    lastUpdated: "6/8/2025",
     revision: "1.6.0",
     description:
       'Goes over the <a href="https://azurlane.koumakan.jp/wiki/Research" target="_blank" rel="noopener noreferrer">Research</a> mechanics in Azur Lane, including optimal Research Projects to take, and how Catchup / Coin-up work.',
