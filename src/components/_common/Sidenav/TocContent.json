@@ -750,7 +750,7 @@
       },
       {
         "id": "gacha",
-        "content": "Gacha & Ship Construction",
+        "content": "Gacha Advice",
         "subheadings": []
       },
       {
@@ -773,6 +773,10 @@
         "content": "Basic Fleetbuilding",
         "subheadings": [
           {
+            "id": "limit_breaks",
+            "content": "Limit Breaks"
+          },
+          {
             "id": "fleet_positionings",
             "content": "Fleet Positionings"
           },
@@ -791,6 +795,10 @@
           {
             "id": "retrofit_ships",
             "content": "Retrofitting Ships"
+          },
+          {
+            "id": "skill_upgrades",
+            "content": "Skill Upgrades"
           }
         ]
       },
@@ -814,13 +822,8 @@
         "subheadings": []
       },
       {
-        "id": "limit_breaks",
-        "content": "Limit Breaks",
-        "subheadings": []
-      },
-      {
         "id": "gear",
-        "content": "Gear & Tech Box Management",
+        "content": "Early Game Equipment Tips",
         "subheadings": [
           {
             "id": "avoid_farming_gear",
@@ -833,10 +836,6 @@
           {
             "id": "situational_gear",
             "content": "Gearing Is Situational"
-          },
-          {
-            "id": "skill_upgrades",
-            "content": "Skill Upgrades"
           },
           {
             "id": "augment_and_lab",
