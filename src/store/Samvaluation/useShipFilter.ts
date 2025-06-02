@@ -1,12 +1,11 @@
-import { useEffect, useReducer, useState } from "react"
+import { useEffect, useReducer } from "react"
 
 import type {
   ShipData,
-  AllShipData,
   MainFleetRankingProps,
   VanguardFleetRankingProps,
   SSFleetRankingProps,
-  ShipEHPProps,
+  // ShipEHPProps,
 } from "@db/types"
 const shipData = (await import("@db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
@@ -16,10 +15,10 @@ const vgFleetRankings = (await import("@db/rankings/vgFleetRankings.json"))
   .default as Record<string, VanguardFleetRankingProps[]>
 const ssFleetRankings = (await import("@db/rankings/ssFleetRankings.json"))
   .default as Record<string, SSFleetRankingProps[]>
-const ehp = (await import("@db/ehp/shipEHP.json")).default as Record<
-  string,
-  ShipEHPProps[]
->
+// const ehp = (await import("@db/ehp/shipEHP.json")).default as Record<
+//   string,
+//   ShipEHPProps[]
+// >
 
 import { normalizeString } from "@utils/string"
 import {
@@ -30,7 +29,7 @@ import {
 } from "@utils/ships"
 
 export interface ShipFilterProps {
-  visibleShips: AllShipData[]
+  visibleShips: ShipData[]
   filters: {
     hullType: string[]
     rarity: string[]
@@ -60,11 +59,10 @@ export interface ShipAction {
 
 const fetchFilteredShips = async (
   filters: ShipFilterProps["filters"],
-): Promise<AllShipData[]> => {
-  // Start with all ships in-memory
-  let ships = Object.values(shipData) as AllShipData[]
+): Promise<ShipData[]> => {
+  let ships = Object.values(shipData)
 
-  // 1) Search term (overrides all other filters)
+  // search term
   if (filters.searchTerm.trim() !== "") {
     const search = normalizeString(filters.searchTerm)
     return ships
@@ -217,7 +215,7 @@ const fetchFilteredShips = async (
     })
 
     // Group ships by their rankingValue
-    const groupedByRanking: Record<number, AllShipData[]> = {}
+    const groupedByRanking: Record<number, ShipData[]> = {}
     shipsWithRankings.forEach(({ ship, rankingValue }) => {
       if (!groupedByRanking[rankingValue]) {
         groupedByRanking[rankingValue] = []
@@ -231,11 +229,11 @@ const fetchFilteredShips = async (
       .sort((a, b) => (filters.rankingSort.logic ? b - a : a - b))
 
     // For each rankingValue group, further sort by rarity descending, then by id ascending
-    const result: AllShipData[] = []
+    const result: ShipData[] = []
     for (const val of sortedRankingValues) {
       const shipsInRanking = groupedByRanking[val]
       // Group by rarity
-      const rarityGroups: Record<number, AllShipData[]> = {}
+      const rarityGroups: Record<number, ShipData[]> = {}
       shipsInRanking.forEach((ship) => {
         const r = ship.rarity
         if (!rarityGroups[r]) {
@@ -263,7 +261,7 @@ const fetchFilteredShips = async (
   if (filters.rarity.length > 0) {
     // First sort by id so we can extract in id order
     ships = ships.sort((a, b) => a.id - b.id)
-    const byRarity: AllShipData[] = []
+    const byRarity: ShipData[] = []
     for (const rarity of filters.rarity) {
       byRarity.push(...ships.filter((ship) => String(ship.rarity) === rarity))
     }
@@ -302,7 +300,7 @@ const shipReducer = (
     case "SET_SHIPS":
       return {
         ...state,
-        visibleShips: action.payload as AllShipData[],
+        visibleShips: action.payload,
         loading: false,
       }
     case "SET_FILTER":
@@ -328,7 +326,7 @@ const shipReducer = (
 
 export const useShipFilter = (initFilters: ShipFilterProps["filters"]) => {
   const [state, dispatch] = useReducer(shipReducer, {
-    visibleShips: Object.values(shipData) as AllShipData[],
+    visibleShips: Object.values(shipData),
     filters: initFilters,
     reset: "t",
     loading: true,

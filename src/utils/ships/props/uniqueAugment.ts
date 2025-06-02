@@ -1,7 +1,7 @@
-import type { AllShipData } from "@db/types"
+import type { ShipData } from "@db/types"
 
 export const hasUniqueAugment = (
-  augments: AllShipData["augments"] | null,
+  augments: ShipData["augments"] | null,
   hullType: string,
 ): boolean => {
   if (!!!augments) return false

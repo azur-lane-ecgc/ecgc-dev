@@ -6,7 +6,7 @@ import { HR } from "@components/_common/HR"
 import { ItemTable } from "@components/_common/ItemTable"
 import { IconSkeleton } from "@components/_common/Skeleton"
 
-import type { AllShipData } from "@db/types"
+import type { ShipData } from "@db/types"
 
 import {
   useBodyOverflow,
@@ -42,7 +42,7 @@ export interface TriggerProps {
 }
 
 interface ShipModalProps {
-  shipData: AllShipData
+  shipData: ShipData
   trigger?: TriggerProps
   loading: boolean
 }
@@ -53,7 +53,7 @@ interface ShipModalProps {
  * @component
  *
  * @param {ShipModalProps} props - The props for configuring the ship modal.
- * @param {AllShipData} props.shipData - Complete data regarding the ship including rankings and EHP
+ * @param {ShipData} props.shipData - Complete data regarding the ship including rankings and EHP
  * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)
  *
  * @returns {React.ReactNode} The Ship Modal itself.

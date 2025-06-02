@@ -1,4 +1,9 @@
-import type { AllShipData } from "@db/types"
+import type {
+  ShipData,
+  VanguardFleetRankingProps,
+  MainFleetRankingProps,
+  SSFleetRankingProps,
+} from "@db/types"
 import type { ShipFilterProps } from "@store/Samvaluation/useShipFilter"
 
 export const rankingTypes: Record<string, string> = {
@@ -55,8 +60,12 @@ export const numberToLetterRank = (
 }
 
 export const getHighestValue = (
-  fleetType: AllShipData["fleetType"],
-  rankings: AllShipData["rankings"],
+  fleetType: ShipData["fleetType"],
+  rankings: {
+    mfRankings: MainFleetRankingProps[] | null
+    vgRankings: VanguardFleetRankingProps[] | null
+    ssRankings: SSFleetRankingProps[] | null
+  },
   rankingSort: ShipFilterProps["filters"]["rankingSort"],
 ) => {
   if (!rankings) {
