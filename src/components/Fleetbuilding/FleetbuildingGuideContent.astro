@@ -1,6 +1,11 @@
 ---
 import USSSubFleet from "@assets/fleetbuilding_guide/USSSubFleet.png"
 import KMSSubFleet from "@assets/fleetbuilding_guide/KMSSubFleet.png"
+import GeneralBossing from "@assets/fleetbuilding_guide/GeneralBossing.png"
+import GeneralMobbing from "@assets/fleetbuilding_guide/GeneralMobbing.png"
+import BBFleet from "@assets/fleetbuilding_guide/BBFleet.png"
+import IJNCVFleet from "@assets/fleetbuilding_guide/IJNCVFleet.png"
+import USSCVFleet from "@assets/fleetbuilding_guide/USSCVFleet.png"
 
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
@@ -760,6 +765,21 @@ import {
 
 <h2 id="campaign_fleet_comps">Campaign Fleet Compositions</h2><HR />
 
+<ImageCarousel
+  client:visible={{ rootMargin: "50px" }}
+  data={[
+    {
+      src: GeneralMobbing.src,
+      caption: "Example Mob Fleet",
+    },
+    {
+      src: GeneralBossing.src,
+      caption: "Example Boss Fleet.",
+    },
+  ]}
+/>
+<br />
+
 <h3 id="campaign_theory">Theory</h3>
 <p>
   ECTL does a great job going over the theory and mechanics of fleetbuilding,
@@ -971,6 +991,25 @@ import {
 <p>
   <i>See also: <WikiLink page="Operation Siren">Operation Siren</WikiLink></i>
 </p>
+<br />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "50px" }}
+  data={[
+    {
+      src: BBFleet.src,
+      caption: "Example BB Boss Fleet.",
+    },
+    {
+      src: IJNCVFleet.src,
+      caption: `Example CV Boss Fleet ("Ryuusei").`,
+    },
+    {
+      src: USSCVFleet.src,
+      caption: `Example CV Boss Fleet ("Rocket").`,
+    },
+  ]}
+/>
 <br />
 
 <h3 id="opsi_theory">Theory</h3>
