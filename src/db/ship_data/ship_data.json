@@ -38205,7 +38205,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {

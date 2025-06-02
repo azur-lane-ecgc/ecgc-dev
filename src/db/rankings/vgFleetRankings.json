@@ -4008,7 +4008,34 @@
       "w15boss": "D",
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -2,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Grenville META": [
+    {
+      "nameNote": "",
+      "notes": "Buffs DD FP.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -7208,6 +7235,33 @@
       "defensivebuff": null
     }
   ],
+  "Little Ägir": [
+    {
+      "nameNote": "",
+      "notes": "15% slow that is somewhat but inconsistently timeable due to CB gun angles.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 3,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Liverpool": [
     {
       "nameNote": "",
@@ -9506,7 +9560,7 @@
   "Portland": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Do not use Indianapolis.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
