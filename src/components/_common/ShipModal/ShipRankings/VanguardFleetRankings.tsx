@@ -2,20 +2,24 @@ import { useState } from "react"
 
 import { ItemTable } from "@components/_common/ItemTable"
 import { HR } from "@components/_common/HR"
-import { letterRankColor, numberRankColor } from "./styles"
 
 import type { VanguardFleetRankingProps } from "@db/types"
+const vgFleetRankings = (await import("@db/rankings/vgFleetRankings.json"))
+  .default as Record<string, VanguardFleetRankingProps[]>
 
 import { RankingHeader } from "./RankingHeader"
+import { letterRankColor, numberRankColor } from "./styles"
 
 interface VGFleetComponentRankingProps {
-  rankings: VanguardFleetRankingProps[] | null
+  ship: string
 }
 
 export const VanguardFleetRanking: React.FC<VGFleetComponentRankingProps> = ({
-  rankings,
+  ship,
 }) => {
   const [rankingIndex, setRankingIndex] = useState<number>(0)
+
+  const rankings = vgFleetRankings[ship]
 
   if (!rankings) {
     return <p>This ship doesn't have rankings currently. Come back later!</p>

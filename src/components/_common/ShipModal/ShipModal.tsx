@@ -83,8 +83,6 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     fastLoad,
     roles,
     locations,
-    rankings,
-    ehp,
   } = shipData
 
   const shipImg = shipImageParse(ship, isKai)
@@ -265,7 +263,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <HR />
 
               {/* EHP */}
-              <ShipEHPDisplay shipEHP={ehp} />
+              <ShipEHPDisplay ship={ship} />
 
               {/* Equip Table */}
               <ItemTable
@@ -363,21 +361,18 @@ export const ShipModal: React.FC<ShipModalProps> = ({
               <HR />
 
               {/* Rankings for End Game Azur Lane */}
-              {rankings &&
-                (() => {
-                  switch (fleetType) {
-                    case "main":
-                      return <MainFleetRanking rankings={rankings.mfRankings} />
-                    case "ss":
-                      return <SSFleetRanking rankings={rankings.ssRankings} />
-                    case "vg":
-                      return (
-                        <VanguardFleetRanking rankings={rankings.vgRankings} />
-                      )
-                    default:
-                      return false
-                  }
-                })()}
+              {(() => {
+                switch (fleetType) {
+                  case "main":
+                    return <MainFleetRanking ship={ship} />
+                  case "ss":
+                    return <SSFleetRanking ship={ship} />
+                  case "vg":
+                    return <VanguardFleetRanking ship={ship} />
+                  default:
+                    return false
+                }
+              })()}
             </div>
           </div>
         </div>

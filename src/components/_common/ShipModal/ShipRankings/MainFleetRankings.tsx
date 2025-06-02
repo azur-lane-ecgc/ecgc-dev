@@ -2,22 +2,26 @@ import { useState } from "react"
 
 import { ItemTable } from "@components/_common/ItemTable"
 import { HR } from "@components/_common/HR"
-import { letterRankColor, numberRankColor } from "./styles"
 
 import type { MainFleetRankingProps } from "@db/types"
+const mainFleetRankings = (await import("@db/rankings/mainFleetRankings.json"))
+  .default as Record<string, MainFleetRankingProps[]>
 
 import { RankingHeader } from "./RankingHeader"
+import { letterRankColor, numberRankColor } from "./styles"
 
 interface MainFleetRankingComponentProps {
-  rankings: MainFleetRankingProps[] | null
+  ship: string
 }
 
 export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
-  rankings,
+  ship,
 }) => {
   const [rankingIndex, setRankingIndex] = useState<number>(0)
 
-  if (!rankings) {
+  const rankings = mainFleetRankings[ship]
+
+  if (!!!rankings) {
     return <p>This ship doesn't have rankings currently. Come back later!</p>
   }
 

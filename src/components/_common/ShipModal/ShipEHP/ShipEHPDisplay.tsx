@@ -3,16 +3,22 @@ import { ItemTable } from "@components/_common/ItemTable"
 import { ehpUpdateDate } from "@components/_common/Constants"
 
 import type { ShipEHPProps } from "@db/types"
+const ehp = (await import("@db/ehp/shipEHP.json")).default as Record<
+  string,
+  ShipEHPProps[]
+>
 
 import { formatDate } from "@utils/formatDate"
 
 import { getEHPColor, getSTDColor } from "./gradient"
 
 interface ShipEHPDisplayProps {
-  shipEHP: ShipEHPProps[] | null | undefined
+  ship: string
 }
 
-export const ShipEHPDisplay: React.FC<ShipEHPDisplayProps> = ({ shipEHP }) => {
+export const ShipEHPDisplay: React.FC<ShipEHPDisplayProps> = ({ ship }) => {
+  const shipEHP = ehp[ship]
+
   if (!!!shipEHP) {
     return false
   }
