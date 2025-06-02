@@ -13,8 +13,8 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 
 import WikiLink from "@components/_common/WikiLink.astro"
 
-import { FleetbuildingShipList } from "./FleetbuildingShipList"
-import { SubmarineTable } from "./SubmarineTable"
+import FleetbuildingShipList from "./FleetbuildingShipList.astro"
+import SubmarineTable from "./SubmarineTable.astro"
 import {
   preloadShips,
   reduction25to49Ships,
@@ -196,18 +196,12 @@ import {
   sortie.
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={healerShips}
-/>
+<FleetbuildingShipList ships={healerShips} />
 
 <h3 id="main_dmg_dealer">Damage Dealer</h3>
 <p>They do big number (depending on the ship).</p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={dmgDealerShips}
-/>
+<FleetbuildingShipList ships={dmgDealerShips} />
 
 <h3 id="main_off_support">Offensive Support</h3>
 <p>
@@ -215,10 +209,7 @@ import {
   personal damage.
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={offSupportShips}
-/>
+<FleetbuildingShipList ships={offSupportShips} />
 
 <h3 id="main_def_support">Defensive Support</h3>
 <p>
@@ -226,10 +217,7 @@ import {
   personal damage.
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={defSupportShips}
-/>
+<FleetbuildingShipList ships={defSupportShips} />
 
 <h2 id="vg">Vanguard Ship Roles</h2>
 <HR />
@@ -276,10 +264,7 @@ import {
   the correct circumstances; read skills for details).
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={VGsuperTankShips}
-/>
+<FleetbuildingShipList ships={VGsuperTankShips} />
 
 <h3 id="tank">Tank</h3>
 <p>
@@ -287,10 +272,7 @@ import {
   circumstances; read skills for details).
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={VGtankShips}
-/>
+<FleetbuildingShipList ships={VGtankShips} />
 
 <h3 id="vg_damage_dealer">Damage Dealer</h3>
 <p>These ships do a lot of damage.</p>
@@ -331,10 +313,7 @@ import {
   </li>
 </ul>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={VGdmgDealerShips}
-/>
+<FleetbuildingShipList ships={VGdmgDealerShips} />
 
 <h3 id="aa_carry">AA Carry</h3>
 <p>
@@ -342,18 +321,12 @@ import {
   own.
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={VGaACarryShips}
-/>
+<FleetbuildingShipList ships={VGaACarryShips} />
 
 <h3 id="aa">AA</h3>
 <p>These ships can solve most of your fleet's AA issues.</p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={VGaaShips}
-/>
+<FleetbuildingShipList ships={VGaaShips} />
 
 <h3 id="asw">ASW</h3>
 <p>
@@ -363,10 +336,7 @@ import {
   >.
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={VGaswShips}
-/>
+<FleetbuildingShipList ships={VGaswShips} />
 
 <h3 id="vg_offensive_support">Offensive Support</h3>
 <p>
@@ -374,10 +344,7 @@ import {
   personal damage.
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={VGoffSupportShips}
-/>
+<FleetbuildingShipList ships={VGoffSupportShips} />
 
 <h3 id="vg_defensive_support">Defensive Support</h3>
 <p>
@@ -385,10 +352,7 @@ import {
   personal damage.
 </p>
 <br />
-<FleetbuildingShipList
-  client:visible={{ rootMargin: "50px" }}
-  ships={VGdefSupportShips}
-/>
+<FleetbuildingShipList ships={VGdefSupportShips} />
 
 <h2 id="damage_stagger">Fast Loads / Staggering Damage</h2><HR />
 <p>
@@ -1477,26 +1441,17 @@ import {
 
 <h3 id="global_subs">International Submarine Fleet</h3>
 <SubmarineTable
-  client:visible={{ rootMargin: "50px" }}
   main={internationalFleetMain}
   substitute={internationalFleetSub}
 />
 <br />
 
 <h3 id="kms_subs">KMS "Wolfpack" Submarine Fleet</h3>
-<SubmarineTable
-  client:visible={{ rootMargin: "50px" }}
-  main={kmsWolfpackFleetMain}
-  substitute={kmsWolfpackFleetSub}
-/>
+<SubmarineTable main={kmsWolfpackFleetMain} substitute={kmsWolfpackFleetSub} />
 <br />
 
 <h3 id="uss_subs">USS "Fishpack" Submarine Fleet</h3>
-<SubmarineTable
-  client:visible={{ rootMargin: "50px" }}
-  main={ussFishpackFleetMain}
-  substitute={ussFishpackFleetSub}
-/>
+<SubmarineTable main={ussFishpackFleetMain} substitute={ussFishpackFleetSub} />
 <br />
 
 <h3 id="mot_subs">Tempesta Submarine Fleet</h3>
@@ -1507,11 +1462,7 @@ import {
   >
 </p>
 
-<SubmarineTable
-  client:visible={{ rootMargin: "50px" }}
-  main={tempestaFleetMain}
-  substitute={tempestaFleetSub}
-/>
+<SubmarineTable main={tempestaFleetMain} substitute={tempestaFleetSub} />
 <br />
 
 <h2 id="other_tips">Other Fleetbuilding Tips</h2><HR />

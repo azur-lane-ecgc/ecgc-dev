@@ -1,0 +1,75 @@
+---
+import { ItemTable } from "@components/_common/ItemTable"
+import { ShipModal } from "@components/_common/ShipModal"
+import type { ShipData } from "@db/types"
+import shipDataJson from "@db/ship_data/ship_data.json" assert { type: "json" }
+
+import type { SSEntry } from "./SSFShipCategories"
+
+const shipDataRecord = shipDataJson as Record<number, ShipData>
+const allShips = Object.values(shipDataRecord) as ShipData[]
+
+const { main, substitute } = Astro.props as {
+  main: SSEntry[]
+  substitute: SSEntry[]
+}
+---
+
+<ItemTable
+  tableInfo={[
+    { colName: "Take 3 of", colWidth: "50%" },
+    { colName: "Substitutions", colWidth: "50%" },
+  ]}
+>
+  <tr class="*:text-base">
+    <td>
+      <div class="mx-[10px] my-[20px] flex flex-wrap justify-center">
+        {
+          main.map((entry) => {
+            const ship = allShips.find((s) => s.ship === entry.name)
+            if (!ship) return null
+            return (
+              <ShipModal
+                client:visible={{ rootMargin: "50px" }}
+                uniqueID={`main-${ship.id}`}
+                shipData={ship}
+                trigger={{
+                  hasBorder: false,
+                  iconNote: entry.iconNote ?? null,
+                  descriptionNote: entry.descriptionNote ?? null,
+                  largeDescNote: null,
+                }}
+                loading={false}
+              />
+            )
+          })
+        }
+      </div>
+    </td>
+
+    <td>
+      <div class="mx-[10px] my-[20px] flex flex-wrap justify-center">
+        {
+          substitute.map((entry) => {
+            const ship = allShips.find((s) => s.ship === entry.name)
+            if (!ship) return null
+            return (
+              <ShipModal
+                client:visible={{ rootMargin: "50px" }}
+                uniqueID={`sub-${ship.id}`}
+                shipData={ship}
+                trigger={{
+                  hasBorder: false,
+                  iconNote: entry.iconNote ?? null,
+                  descriptionNote: entry.descriptionNote ?? null,
+                  largeDescNote: null,
+                }}
+                loading={false}
+              />
+            )
+          })
+        }
+      </div>
+    </td>
+  </tr>
+</ItemTable>
