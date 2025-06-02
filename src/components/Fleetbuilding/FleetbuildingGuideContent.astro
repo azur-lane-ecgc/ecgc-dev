@@ -13,8 +13,10 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 
 import WikiLink from "@components/_common/WikiLink.astro"
 
+import FastLoadShipList from "./FastLoadShipList.astro"
 import FleetbuildingShipList from "./FleetbuildingShipList.astro"
 import SubmarineTable from "./SubmarineTable.astro"
+
 import {
   preloadShips,
   reduction25to49Ships,
@@ -385,163 +387,94 @@ import {
       >
     </p>
   </li>
-  <li>
-    <p>Ways to stagger damage:</p>
-  </li>
   <ul>
     <li>
       <p>
-        Slightly adjusting Planes (CVs) or Main Guns (BBs) can help stagger
-        damage slightly.
-      </p>
-    </li>
-    <li>
-      <p>
-        Some equipment can also help stagger volleys or airstrikes. Read
-        equipment skills for details.
-      </p>
-
-      <ItemContainer>
-        <ItemCell
-          item="Admiralty Fire Control Table"
-          wikiLink="Admiralty Fire Control Table"
-          itemImg="equipment/rainbow_table.png"
-          rarity={5}
-          inGroup={true}
-          hasBorder={true}
-        />
-
-        <ItemCell
-          item="High Standard Fire Control Radar"
-          wikiLink="High Standard Fire Control Radar"
-          itemImg="equipment/hsfcr.png"
-          rarity={4}
-          inGroup={true}
-          hasBorder={true}
-        />
-
-        <ItemCell
-          item="Homing Beacon"
-          wikiLink="Homing Beacon"
-          itemImg="equipment/homing_beacon.png"
-          rarity={3}
-          inGroup={true}
-          hasBorder={true}
-        />
-
-        <ItemCell
-          item="Elite Aviation Maintenence Manjuu"
-          wikiLink="Elite Aviation Maintenence Manjuu"
-          itemImg="equipment/aviation_manjuu.png"
-          rarity={3}
-          inGroup={true}
-          hasBorder={true}
-        />
-      </ItemContainer>
-    </li>
-    <li>
-      <p>
-        Using one of the ships listed below that have built-in stagger through
-        their skills.
+        <b
+          >Conditions below do NOT include self in the requirements! It could be
+          easier than you think to activate the conditions.</b
+        >
       </p>
     </li>
   </ul>
 </ul>
-<br />
-
-<h3 id="fast_loader_list">List of Ships with Fast Loads</h3>
+<li>
+  <p>Ways to stagger damage:</p>
+</li>
 <ul>
   <li>
     <p>
-      <i
-        >Consult a tierlist or other guide for ship viability. Ships are NOT
-        ordered by viability.</i
-      >
+      Slightly adjusting Planes (CVs) or Main Guns (BBs) can help stagger damage
+      slightly.
     </p>
   </li>
   <li>
     <p>
-      <i
-        >Ships in this category also fulfil other roles (sometimes multiple!),
-        which are marked accordingly. The role listed is the role I would
-        personally use them in.</i
-      >
+      Some equipment can also help stagger volleys or airstrikes. Read equipment
+      skills for details.
     </p>
+
+    <ItemContainer>
+      <ItemCell
+        item="Admiralty Fire Control Table"
+        wikiLink="Admiralty Fire Control Table"
+        itemImg="equipment/rainbow_table.png"
+        rarity={5}
+        inGroup={true}
+        hasBorder={true}
+      />
+
+      <ItemCell
+        item="High Standard Fire Control Radar"
+        wikiLink="High Standard Fire Control Radar"
+        itemImg="equipment/hsfcr.png"
+        rarity={4}
+        inGroup={true}
+        hasBorder={true}
+      />
+
+      <ItemCell
+        item="Homing Beacon"
+        wikiLink="Homing Beacon"
+        itemImg="equipment/homing_beacon.png"
+        rarity={3}
+        inGroup={true}
+        hasBorder={true}
+      />
+
+      <ItemCell
+        item="Elite Aviation Maintenence Manjuu"
+        wikiLink="Elite Aviation Maintenence Manjuu"
+        itemImg="equipment/aviation_manjuu.png"
+        rarity={3}
+        inGroup={true}
+        hasBorder={true}
+      />
+    </ItemContainer>
   </li>
   <li>
     <p>
-      <i
-        >Some ships are more strict with requirements to Fast Load than others,
-        so be wary of ruining your fleet composition. Read skills for details!</i
-      >
+      Using one of the ships listed below that have built-in stagger through
+      their skills.
     </p>
   </li>
 </ul>
 
+<br />
+
+<h3 id="fast_loader_list">List of Ships with Fast Loads</h3>
+
 <h5><u>Preload</u></h5>
-<ItemContainer>
-  {
-    preloadShips.map((ship) => (
-      <ShipCell
-        ship={ship.ship}
-        isKai={ship.isKai}
-        rarity={ship.rarity}
-        inGroup={true}
-        hasBorder={true}
-        hover={true}
-      />
-    ))
-  }
-</ItemContainer>
+<FastLoadShipList role="preload" ships={preloadShips} />
 
 <h5><u>75% - 99%</u></h5>
-<ItemContainer>
-  {
-    reduction75to99Ships.map((ship) => (
-      <ShipCell
-        ship={ship.ship}
-        isKai={ship.isKai}
-        rarity={ship.rarity}
-        inGroup={true}
-        hasBorder={true}
-        hover={true}
-      />
-    ))
-  }
-</ItemContainer>
+<FastLoadShipList role="75-99" ships={reduction75to99Ships} />
 
 <h5><u>50% - 74%</u></h5>
-<ItemContainer>
-  {
-    reduction50to74Ships.map((ship) => (
-      <ShipCell
-        ship={ship.ship}
-        isKai={ship.isKai}
-        rarity={ship.rarity}
-        inGroup={true}
-        hasBorder={true}
-        hover={true}
-      />
-    ))
-  }
-</ItemContainer>
+<FastLoadShipList role="50-74" ships={reduction50to74Ships} />
 
 <h5><u>25% - 49%</u></h5>
-<ItemContainer>
-  {
-    reduction25to49Ships.map((ship) => (
-      <ShipCell
-        ship={ship.ship}
-        isKai={ship.isKai}
-        rarity={ship.rarity}
-        inGroup={true}
-        hasBorder={true}
-        hover={true}
-      />
-    ))
-  }
-</ItemContainer>
-<br />
+<FastLoadShipList role="25-49" ships={reduction25to49Ships} />
 
 <h2 id="skill_sync">Skill Syncing</h2><HR />
 

@@ -1,0 +1,28 @@
+---
+import type { ShipData } from "@db/types"
+
+import { ItemContainer } from "@components/_common/ItemCell"
+import { ShipModal } from "@components/_common/ShipModal"
+
+const { ships, role } = Astro.props as { ships: ShipData[]; role?: string }
+---
+
+<ItemContainer>
+  {
+    ships.map((ship) => (
+      <ShipModal
+        client:visible={{ rootMargin: "50px" }}
+        uniqueID={`${role ?? ""}-fastload-${ship.id}`}
+        shipData={ship}
+        trigger={{
+          hasBorder: true,
+          iconNote: null,
+          descriptionNote: ship.fastLoad?.conditional ?? null,
+          largeDescNote: null,
+        }}
+        loading={false}
+      />
+    ))
+  }
+</ItemContainer>
+<br />
