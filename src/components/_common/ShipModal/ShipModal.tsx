@@ -42,6 +42,7 @@ export interface TriggerProps {
 }
 
 interface ShipModalProps {
+  uniqueID?: string
   shipData: ShipData
   trigger?: TriggerProps
   loading: boolean
@@ -62,6 +63,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   shipData,
   trigger,
   loading = false,
+  uniqueID = undefined,
 }: ShipModalProps): React.ReactNode => {
   const [open, setOpen] = useState(false)
   const [ref, { isVisible }] = useTrackVisibility({
@@ -102,7 +104,12 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   }
 
   // hook calls
-  useModalFocus(open, id.toString(), `modalOverlay${ship}`, id.toString())
+  useModalFocus(
+    open,
+    uniqueID ?? id.toString(),
+    `modalOverlay${uniqueID ?? ship}`,
+    id.toString(),
+  )
   // useModalHistory(id.toString(), open, setOpen)
   useBodyOverflow(open)
 
@@ -110,7 +117,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
     <>
       {/* Trigger "button" */}
       <div
-        id={`${id}`}
+        id={`${uniqueID ?? id}`}
         className={`${modalTriggerStyle} ${
           !!trigger?.hasBorder ? "border-gray-400" : "border-transparent"
         }`}
@@ -171,7 +178,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
       {/* Modal */}
       {open && (
         <div
-          id={`modalOverlay${ship}`}
+          id={`modalOverlay${uniqueID ?? ship}`}
           className={modalOverlayStyle}
           onClick={handleClose}
           aria-modal="true"
