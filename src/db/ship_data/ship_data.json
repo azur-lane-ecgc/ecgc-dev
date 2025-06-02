@@ -7216,7 +7216,7 @@
       "text": "75% 1st Salvo Cooldown Reduction (No other HMS ships OR equipping Quadruple 356mm).",
       "reduction": 75,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "No other HMS ships OR equipping Quadruple 356mm"
     },
     "roles": ["FlagPref", "FlagReq", "FastLoad", "Meh"],
     "locations": {
@@ -7279,10 +7279,10 @@
     "augments": ["A Royal Knight's Pride", "Bowgun", "Officer's Sword"],
     "samEval": "Prince of Wales is a off-flag support-oriented BB with good stats and great skills. Her skills buff both USS and HMS ships, as well as giving her great self-buffs when sortied with USS or HMS ships. Overall, she is a great ship.",
     "fastLoad": {
-      "text": "85% 1st Salvo Cooldown Reduction (3 HMS / USS ships).",
+      "text": "85% 1st Salvo Cooldown Reduction (3+ HMS / USS ships).",
       "reduction": 85,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "3+ HMS / USS ships"
     },
     "roles": ["DmgDealer", "AA", "FastLoad", "OffSupport", "Meh"],
     "locations": {
@@ -7680,7 +7680,7 @@
       "text": "50% 1st Airstrike Cooldown Reduction (Dive Bomber in Slot 3).",
       "reduction": 50,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "Dive Bomber in Slot 3"
     },
     "roles": ["FastLoad", "Meh"],
     "locations": {
@@ -11965,7 +11965,7 @@
       "text": "50% 1st Airstrike Cooldown Reduction (with Kaga).",
       "reduction": 50,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "with Kaga"
     },
     "roles": ["FastLoad", "Meh"],
     "locations": {
@@ -12026,7 +12026,7 @@
       "text": "50% 1st Airstrike Cooldown Reduction (with Akagi).",
       "reduction": 50,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "with Akagi"
     },
     "roles": ["FastLoad", "Meh"],
     "locations": {
@@ -19044,10 +19044,10 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": {
-      "text": "45% 1st Salvo Cooldown Reduction (3 additional IJN ships).",
+      "text": "45% 1st Salvo Cooldown Reduction (4+ IJN ships).",
       "reduction": 45,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "4+ IJN ships"
     },
     "roles": ["FlagPref", "FastLoad", "DefSupport", "Meh"],
     "locations": {
@@ -24538,7 +24538,7 @@
       "text": "50% 1st Airstrike Cooldown Reduction (Dive Bomber in Slot 3).",
       "reduction": 50,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "Dive Bomber in Slot 3"
     },
     "roles": ["FastLoad", "Meh"],
     "locations": {
@@ -27142,7 +27142,7 @@
       "text": "80% 1st Salvo Cooldown Reduction (+40% per additional RN ship, max 80%).",
       "reduction": 80,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "+40% per additional RN ship, max 80%"
     },
     "roles": ["DmgDealer", "FastLoad", "DefSupport", "OffSupport", "Meh"],
     "locations": {
@@ -27269,7 +27269,7 @@
       "text": "1 Preloaded Airstrike (Dive Bomber).",
       "reduction": 100,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "Dive Bomber"
     },
     "roles": ["DmgDealer", "FastLoad", "Preload", "DefSupport"],
     "locations": {
@@ -28924,7 +28924,7 @@
       "text": "50% All Salvo Cooldown Reduction (Off-Flag).",
       "reduction": 50,
       "quantity": 0,
-      "conditional": ""
+      "conditional": "Off-Flag"
     },
     "roles": ["DmgDealer", "TopDmg", "FastLoad", "OffSupport"],
     "locations": {
@@ -29804,7 +29804,7 @@
       "text": "80% 1st Salvo Cooldown Reduction (HP% Based).",
       "reduction": 80,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "HP% Based"
     },
     "roles": ["DmgDealer", "FastLoad", "Meh"],
     "locations": {
@@ -30854,10 +30854,10 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Roma is a great off-flag damage-oriented BB, with great stats and skills. Barrage is solid, and doesn't require flagship position; the failed proc benefits are decent as well. She is guarenteed max critical damage/rate stacks at 30s into the battle, which is early enough to be relevant especially versus a boss. The sonar part of her skill is useless. The fast load from sortieing with 3 Italians is nice if you can fulfil the requirements, but it is not mandatory for her to be great. Overall, she is a great off-flag BB; typical event SR.",
     "fastLoad": {
-      "text": "30% 1st Salvo Cooldown Reduction (2 additional RN ships).",
+      "text": "30% 1st Salvo Cooldown Reduction (3+ RN ships).",
       "reduction": 30,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "3+ RN ships"
     },
     "roles": ["DmgDealer", "FastLoad", "Meh"],
     "locations": {
@@ -33764,10 +33764,10 @@
     "augments": ["Lance of the Golden Age"],
     "samEval": "São Martinho is an off-flag oriented IXM with great stats and great skills. Her damage is heavily hindered by her equipment options, but is still good despite that, due to MGM+5 and good barrages and self-buffs. In addition, she even has a almost-Preloaded Main Gun, helping clear mob fights faster. Her Tempesta Faction buff is nice, but not necessary to take advantage of for her viability. Her bulk against AVI damage is very bad, due to having 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": {
-      "text": "80% 1st Salvo Cooldown Reduction (1 additional MOT ship).",
+      "text": "80% 1st Salvo Cooldown Reduction (2+ MOT ships).",
       "reduction": 80,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "2+ MOT ships"
     },
     "roles": ["FastLoad", "Meh"],
     "locations": {
@@ -34866,10 +34866,10 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Formidable μ is a damage-oriented CV with great stats and good skills. Her personal damage is pretty good with 8 planes, an AVI self-buff, and a good skill barrage from her Skill 3. Her Skill 1 grants her a preloaded airstrike, but only if there are other μ ships in the fleet, making it somewhat difficult to build around since most μ ships are not good. Her Skill 2 is niche since it's impossible to sync up the stop with other Main Fleets ships, and its not a 100% proc chance. Overall, she is a good ship, but can be a sidegrade to more easily accessible options if she doesn't have a preload.",
     "fastLoad": {
-      "text": "1 Preloaded Airstrike (3+ ).",
+      "text": "1 Preloaded Airstrike (3+ μ-ships).",
       "reduction": 100,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "3+ μ-ships"
     },
     "roles": ["DmgDealer", "FastLoad", "Preload", "Meh"],
     "locations": {
@@ -36281,7 +36281,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": {
-      "text": "50% 1st Airstrike Cooldown Reduction (with Akagi or Kaga)",
+      "text": "50% 1st Airstrike Cooldown Reduction (with Akagi or Kaga).",
       "reduction": 50,
       "quantity": 1,
       "conditional": "with Akagi or Kaga"
@@ -43790,10 +43790,10 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Kearsarge is a off-flag damage-oriented BB with amazing stats and skills. She has amazing damage output with her BB guns, planes, and stat buffs. Her slow reload can be an issue in certain fleet compositions, but it can be built around without major issues. Her special secondary guns are awful for interception, but are better than not having them at all. Her Skill 2 buffs all CV and CVL damage in the fleet outright when paired with a USS Main Fleet ship, which is a very good buff. Overall, she is an amazing ship.",
     "fastLoad": {
-      "text": "30% 1st Airstrike Cooldown Reduction (USS or SN Fighter in Slot 2).",
+      "text": "30% 1st Airstrike Cooldown Reduction (USS / SN Fighter in Slot 2).",
       "reduction": 30,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "USS / SN Fighter in Slot 2"
     },
     "roles": ["DmgDealer", "TopDmg", "FastLoad", "OffSupport"],
     "locations": {
@@ -46241,7 +46241,7 @@
       "text": "50% 1st Airstrike Cooldown Reduction (20% initially, +30% if Dive Bomber in Slot 3).",
       "reduction": 50,
       "quantity": 1,
-      "conditional": ""
+      "conditional": "20% initially, +30% if Dive Bomber in Slot 3"
     },
     "roles": ["DmgDealer", "FastLoad", "Meh"],
     "locations": {

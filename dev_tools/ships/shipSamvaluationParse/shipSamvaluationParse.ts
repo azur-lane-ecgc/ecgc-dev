@@ -56,7 +56,7 @@ export const shipSamvaluationParse = (ship: string): SamvaluationProps => {
     }
 
     // condition
-    const condMatch = preloadText.match(/\(([^)]+)\)\s*$/)
+    const condMatch = preloadText.match(/\(([^)]+)\)/)
     conditional = condMatch ? condMatch[1].trim() : ""
   }
   let preload2 = null
