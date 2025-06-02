@@ -24,56 +24,79 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 <h2 id="mail">Mail is a Bank!</h2>
 <HR />
 <p>
-  When you claim Mail Rewards, all Oil and Coin rewards are stored inside Mail
-  Storage. The Mail Storage caps are 600K for Oil and 1.8M for Coins
-  respectively.
+  When you claim Mail rewards, all Oil and Coin rewards are stored in
+  <b>Mail Storage</b>. The caps are <b>600 000 Oil</b> and <b>1 800 000 Coins</b
+  >.
   <b>Leave ALL Oil / Coins inside Mail Storage until you need it</b>. This helps
   prevent your
   <WikiLink page="Living Area#Canteen and Merchant" title="Canteen and Merchant"
     >Canteen and Merchant</WikiLink
   >
-  from filling up. You can withdraw from the Mail Storage as needed.
+  from filling up. You can withdraw from Mail Storage as needed.
 </p>
 <br />
 
-<h2 id="permanent_ur">Permanent URs are a TRAP!</h2>
+<h2 id="gacha">Gacha Advice</h2>
 <HR />
 <p>
-  <i>
-    Main Article:
-    <WikiLink
-      page="Building#UR Ships Construction"
-      title="UR Ships Construction">UR Ships Construction</WikiLink
-    >
-  </i>
-</p>
-
-<p>
-  Do not pull only for the permanent URs as you will be able to get them
-  indirectly from events. By pulling on the permanent pools. you will wastefully
-  deplete your cubes and you won't have enough cubes to pull the new few events.
-  The permanent UR pity allows you to select a UR after 200 pulls and these
-  pulls
-  <b><u>include non-UR EVENT banners</u></b>. Ideally you would want to only
-  pull during events and you will get the permanent URs for free.
-</p>
-<p>
-  Even if you do get a UR ship (either from events or permanent banners), she is
-  not useful until she is max limit broken. This is because non-MLB ships are
-  worse than most every other ship in the game.
+  Your initial “Build 1 ship” Daily Mission comes from Light Construction.
+  Building 1 ship every day nets the Cube back. Beyond this:
 </p>
 <ul>
   <li>
     <p>
-      <i
-        >For more information about how to acquire UR bulins, check out the
-        <a
-          href="/test_ecgc_2/common_resource"
-          target="_self"
-          rel="noopener noreferrer"
-          title="Common Resource Guide">Common Resource Guide</a
-        >.</i
-      >
+      Use Cubes **only** on <b>Event banners</b>. Permanent pools offer the
+      lowest return; you'll eventually get Permanent URs by pulling on events
+      anyway.
+    </p>
+  </li>
+  <li>
+    <p>
+      Complete <i>Requisition</i> exactly once for its mission. Afterwards, buy dupes
+      from the <i>Medal Shop</i> instead.
+    </p>
+  </li>
+  <li>
+    <p>
+      The <b>Permanent UR pity</b> counter includes non-UR event pulls. To see why
+      you shouldn't chase Permanents early, read the
+      <a href="#permanent_ur" target="_self" rel="noopener noreferrer"
+        >Permanent UR section</a
+      >.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h2 id="permanent_ur">Permanent UR Pity is a TRAP!</h2>
+<HR />
+<p>
+  <i
+    >Main Article:
+    <WikiLink
+      page="Building#UR Ships Construction"
+      title="UR Ships Construction">UR Ships Construction</WikiLink
+    ></i
+  >
+</p>
+<p>
+  Do not pull purely for Permanent URs. Permanent pity counts toward all pools,
+  including event banners. Chasing URs on events gives you Permanent pity “for
+  free.” Most Permanent URs powercreep faster than limited URs, so save UR
+  Bulins for limited banners and use pity dupes to finish MLB.
+</p>
+<p>
+  Even if you do snag a typical Permanent UR, she is weak until limit-broken.
+  Most non-MLB URs perform worse than many SRs. It's almost always better to
+  pull on events and get Permanent URs as byproducts.
+</p>
+<ul>
+  <li>
+    <p>
+      To farm UR Bulins, see the
+      <a href="/test_ecgc_2/common_resource" target="_self"
+        >Common Resource Guide</a
+      >.
     </p>
   </li>
 </ul>
@@ -84,25 +107,19 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 <p>
   <i
     >See also:
-    <a
-      href="/test_ecgc_2/early_ship_recommendations"
-      target="_self"
-      rel="noopener noreferrer">Early Ship Recommendations</a
+    <a href="/test_ecgc_2/early_ship_recommendations" target="_self"
+      >Early Ship Recommendations</a
     ></i
   >
 </p>
-
 <p>
   Every new player starts with 4000 Guild Coins. Guild Coins are easy to acquire
-  if you are in an active guild.<br />To get to the
-  <WikiLink page="Guild Shop">Guild Shop</WikiLink>, click <b>Shop</b> -&#62; <b
-    >Supply</b
-  > -&#62; <b>Guild</b>.
+  if you are in an active guild.<br />
+  To get to the Guild Shop, click <b>Shop</b> → <b>Supply</b> → <b>Guild</b>.
 </p>
 
 <p>
-  The following are ships that are HIGHLY RECOMMENDED to get at the start of the
-  game:
+  The following ships are <b>highly recommended</b> for beginners:
 </p>
 
 <ItemTable
@@ -112,126 +129,89 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
     { colName: "Description", colWidth: "53%", limiter: true },
   ]}
 >
-  <!-- Ship Cell -->
   <tr>
-    <!-- image cell -->
     <td>
       <ShipCell ship="Unicorn" rarity={3} />
     </td>
-    <!-- location -->
     <td>
       <WikiLink page="Shops#Guild Shop" title="Guild Shop"
         >Guild Shop - Elite Ship</WikiLink
       >
     </td>
-
-    <!-- description -->
     <td>
       <p>
-        Unicorn is the best healer in the game.
-        <b>Retrofit as soon as possible!</b>
+        Unicorn is the best healer in the game. <b
+          >Retrofit as soon as possible!</b
+        >
       </p>
     </td>
   </tr>
 
-  <!-- Ship Cell -->
   <tr>
-    <!-- image cell -->
     <td>
       <ShipCell ship="Helena" rarity={3} />
     </td>
-
-    <!-- location -->
     <td>
       <WikiLink page="Shops#Guild Shop" title="Guild Shop"
         >Guild Shop - Elite Ship</WikiLink
       >
     </td>
-
-    <!-- description -->
     <td>
       <p>
-        Helena is a decent damage-dealer early on, and her support capabilities
-        are top-tier for bosses.
+        Helena is a strong damage-dealer early and her support buffs are
+        top-tier for bosses.
       </p>
     </td>
   </tr>
 
-  <!-- Ship Cell -->
   <tr>
-    <!-- image cell -->
     <td>
       <ShipCell ship="Portland" rarity={2} />
     </td>
-
-    <!-- location -->
     <td>
       <WikiLink page="Shops#Guild Shop" title="Guild Shop"
         >Guild Shop - Rare Ship</WikiLink
       >
     </td>
-
-    <!-- description -->
     <td>
       <p>
-        Portland is a great tank for mid-late game.
-        <b>Retrofit as soon as possible!</b>
+        Portland is a great Vanguard tank through mid-late game.
+        <b>Retrofit her ASAP!</b>
       </p>
     </td>
   </tr>
 
-  <!-- Ship Cell -->
   <tr>
-    <!-- image cell -->
     <td>
       <ShipCell ship="Pennsylvania" rarity={2} />
     </td>
-
-    <!-- location -->
     <td>
       <WikiLink page="Shops#Guild Shop" title="Guild Shop"
         >Guild Shop - Rare Ship</WikiLink
       >
     </td>
-
-    <!-- description -->
     <td>
-      <p>She is your best easily-accessible BB.</p>
+      <p>She's your easiest accessible Battleship.</p>
     </td>
   </tr>
 </ItemTable>
 <br />
 
 <p>
-  You buy one of the ships per rarity, then refresh the shop using Guild Coins
-  (top right), then buy the other two missing ships. You will be using these
-  ships (except
-  <WikiLink page="Pennsylvania">Pennsylvania</WikiLink>) for the majority of the
-  game!
+  Buy one of each rarity, then refresh Guild Shop (top right) to pick up the
+  remaining two. You'll use these ships (except
+  <WikiLink page="Pennsylvania">Pennsylvania</WikiLink>) for a long time!
 </p>
-
 <p>
-  You should have
-  <WikiLink page="Pennsylvania">Pennsylvania</WikiLink>
-  as the Flagship (middle slot),
-  <WikiLink page="Portland">Portland</WikiLink>
-  as the Tank (left slot). It is highly recommended to use your starter for rookie
-  missions as well.
+  Ideally have <WikiLink page="Pennsylvania">Pennsylvania</WikiLink> as Flagship
+  (middle slot) and <WikiLink page="Portland">Portland</WikiLink> as Main Tank (left
+  slot). Use your starter ship in rookie missions if needed.
 </p>
-
 <p>
-  Depending on when you start and/or what rate-up ships you pulled for, you
-  might have better options than the ones listed. In that case, you can replace
-  <WikiLink page="Pennsylvania">Pennsylvania</WikiLink>
-  or
-  <WikiLink page="Enterprise">Enterprise</WikiLink>. Try not to use too many
-  high-rarity ships, as SR Bulins are very scarce early on.
-</p>
-
-<p>
-  If you do not have
-  <WikiLink page="Enterprise">Enterprise</WikiLink>, you can use any other ship
-  available as filler.
+  If you pull something better early, feel free to swap out
+  <WikiLink page="Pennsylvania">Pennsylvania</WikiLink> or
+  <WikiLink page="Enterprise">Enterprise</WikiLink>, but don't overinvest in
+  high-rarity ships—SR Bulins are scarce.
 </p>
 
 <ImageCarousel
@@ -245,217 +225,273 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 />
 <br />
 
-<p>
-  Other items to buy in
-  <WikiLink page="Shops#Guild Shop" title="Guild Shop">Guild Shop</WikiLink>:
-</p>
+<p>Other worthwhile Guild Shop purchases:</p>
 <ul>
   <li>
     <p>
-      <WikiLink page="Living Area#Tactical Class" title="Tactical Classroom"
+      <WikiLink page="Living Area#Tactical_Class" title="Tactical Classroom"
         >T3 Skill Books</WikiLink
-      >
-      (Gold Rarity) - grab Offensive (Red).
+      > (Gold Rarity) - grab Offensive (Red).
     </p>
   </li>
   <li>
     <p>
       <WikiLink page="Equipment#Upgrade (Enhance)" title="Equipment Enhancing"
         >T4 Upgrade Parts</WikiLink
-      >
-      (Gold Rarity) - grab Aircraft or Main Gun.
+      > (Gold Rarity) - grab Aircraft or Main Gun.
     </p>
   </li>
   <li>
     <p>
       <WikiLink page="Equipment#Equipment boxes" title="Tech Boxes"
         >T4 Tech Boxes</WikiLink
-      >
-      (Gold Rarity) - grab
-      <WikiLink page="Eagle Union">Eagle Union</WikiLink>
-      since they contain the most useful equipment.
+      > (Gold Rarity) - grab
+      <WikiLink page="Eagle Union">Eagle Union</WikiLink> since they contain the
+      most useful equipment.
     </p>
   </li>
   <li>
     <p>
       <WikiLink page="Living Area#Refilling Supplies" title="Dorm"
         >Royal Gourmet / Full Course</WikiLink
-      >
-      - optional, but nice to get if you have the spare Guild Coins for them.
+      > - optional, nice if you have extra Guild Coins.
     </p>
   </li>
   <li>
     <p>
       <WikiLink page="Dockyard#Cognitive Awakening" title="Cognitive Chips"
         >Cognitive Chips</WikiLink
-      >
-      - more of a mid-late game investment.
+      > - more of a mid-late game investment.
     </p>
   </li>
 </ul>
+<br />
+
+<h2 id="shops">Shop Priority</h2>
+<HR />
+<p>
+  <i
+    >Main Article:
+    <a
+      href="/test_ecgc_2/shop_priority"
+      target="_self"
+      rel="noopener noreferrer">Shop Priority</a
+    ></i
+  >
+</p>
 <br />
 
 <h2 id="basic_fleetbuilding">Basic Fleetbuilding</h2>
 <HR />
 <p>
   <i
-    >For a more detailed Fleetbuilding guide, read the
+    >For a detailed Fleetbuilding guide, read the
     <a
       href="/test_ecgc_2/fleetbuilding"
       target="_self"
       rel="noopener noreferrer">Fleetbuilding Guide</a
-    >
-    on this website!</i
+    > on this website!</i
   >
 </p>
 
-<h3 id="fleet_positionings">Fleet Positionings</h3>
+<h3 id="limit_breaks">
+  <WikiLink page="Dockyard#Limit Break" title="Limit Break"
+    >Limit Breaks</WikiLink
+  >
+</h3>
+<HR />
 <p>
-  Positions in a fleet matter, as different positions take more damage or affect
-  ship barrage placement.
+  Use <WikiLink page="Dockyard#Limit Break">Limit Break</WikiLink> ships
+  <b>as soon as possible</b>. Limit Breaks are massive power spikes and allow
+  much faster progression.
 </p>
-<p>Specifically, these two positions are the most important:</p>
 <ul>
   <li>
     <p>
-      <b>Flagship:</b> The Flagship is the middle slot in your Main Fleet (gold-colored
-      square). This slot is almost always a BB, as BBs can use their Secondary Guns
-      to deal with Suicide / Ramming enemies. Many BBs have barrages that require
-      this position to deal their maximum damage output, and will deal significantly
-      less damage when not in this slot.
+      For Bulin locations, check the
+      <a href="/test_ecgc_2/common_resource" target="_self"
+        >Common Resource Guide</a
+      >. SR (Gold Rarity) Bulins are scarce—plan carefully.
     </p>
   </li>
   <li>
     <p>
-      <b>Main Tank:</b> The Main Tank is the left-most slot in your Vanguard Fleet.
-      This slot is prioritized for the tankiest ship in your Vanguard since the slot
-      takes the most damage in the fleet.
+      Do <b>not</b> spread Bulins across multiple ships. It's better to have one
+      ship MLB than four ships at LB 1.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="fleet_positionings">Fleet Positionings</h3>
+<p>
+  Positions matter: some slots take more damage and affect barrage placement.
+</p>
+<p>Specifically, two are critical:</p>
+<ul>
+  <li>
+    <p>
+      <b>Flagship:</b> The middle slot in your Main Fleet (gold-colored square).
+      Usually a BB—secondary guns help manage suicide enemies. Many BB barrages deal
+      maximum damage only from this slot.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Main Tank:</b> The leftmost slot in your Vanguard Fleet. Pick your tankiest
+      Vanguard here, as it takes the most damage.
     </p>
   </li>
 </ul>
 <br />
 
 <h3 id="faction_fleets">Faction Fleets SUCK</h3>
-<p>Faction fleets have a lot of downsides, most notably:</p>
+<p>Running faction fleets has multiple downsides:</p>
 <ul>
   <li>
-    <p>
-      Often, they require significantly more Bulin investment when compared to
-      other fleet types, slowing down progression.
-    </p>
+    <p>They demand far more Bulins than generic fleets, slowing progression.</p>
+  </li>
+  <li>
+    <p>There is no extra synergy bonus simply for using same-faction ships.</p>
   </li>
   <li>
     <p>
-      There are no special bonuses or synergy from running ships from the same
-      faction together.
-    </p>
-  </li>
-  <li>
-    <p>
-      All currently existing Faction buffers are so bad that you get more
-      benefit running a Good ship instead of a ship purely for the Faction buff
-      (ex.
-      <WikiLink page="Bismarck">Bismarck</WikiLink>). The good Faction bufffer
-      ships are ones that don't rely on their Faction buff to be good (ex.
-      <WikiLink page="Richelieu">Richelieu</WikiLink>).
+      Few faction buffers are meaningful; you're usually better off running a
+      high-quality “good” ship rather than a faction ship that relies on
+      buffing. (Example: <WikiLink page="Bismarck">Bismarck</WikiLink> vs. a standalone
+      strong ship like <WikiLink page="Richelieu">Richelieu</WikiLink>.)
     </p>
   </li>
 </ul>
+<br />
+
+<h3 id="early_hyperlevelling">Hyper-Levelling & Early Fleets</h3>
+<p>
+  Run a single strong fleet through Chapters 1-8. Missions calling for two
+  fleets can use a “throwaway” Fleet 2 until Chapter 9, where you start
+  investing in a proper second fleet.
+</p>
+<ul>
+  <li>
+    <p>
+      “Fleet Power” and “Total Stats” are just vanity numbers—ignore them; focus
+      on matching ship composition to stage mechanics.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="submarine_fleet">Submarine Fleet (Optional)</h3>
+<p>
+  You do not need to invest in submarines early. You can clear Lv. 65 Supply
+  Line Disruption with minimal sub investment:
+  <a
+    href="https://www.youtube.com/watch?v=cxC2Iy4XVfE"
+    target="_blank"
+    rel="noopener noreferrer">Video demo</a
+  >.
+</p>
+<br />
+
+<h3 id="retrofit_ships">Retrofitting Ships</h3>
+<p>
+  Your highest priority retrofit is
+  <WikiLink page="Unicorn">Unicorn</WikiLink>. After that, retrofit any other
+  core ship you use daily.
+</p>
 <br />
 
 <h2 id="push_campaign">Push Campaign</h2>
 <HR />
 <p>
-  Your first objective (besides event grinding) is to push to
+  Your first major goal (besides event grinding) is to push to
   <WikiLink page="Chapter 9">Chapter 9</WikiLink>.
 </p>
 <ul>
   <li>
     <p>
-      <WikiLink page="Chapter 9">Chapter 9</WikiLink>
-      and above stages have an
-      <WikiLink page="Oil Cost#Fuel Cost Limit" title="Oil-cap"
+      Chapters 9 and above have an
+      <WikiLink page="Oil Cost#Fuel Cost Limit" title="Oil-Cap"
         >Oil-Cap</WikiLink
-      >, which limits your fleets' oil expenditure to an amount indicated on the
-      stage, massively increasing your oil economy.
+      >, which limits your fleet's consumption. This massively improves oil
+      efficiency.
     </p>
   </li>
   <li>
     <p>
-      <WikiLink page="Chapter 9">Chapter 9</WikiLink>
-      and above stages also have Clearing Rewards, which give additional coins and
-      other smaller rewards upon a stage clear, massively increasing your coin income.
+      Chapters 9+ also award Clearing Rewards (coins and small resources),
+      boosting coin income.
     </p>
   </li>
   <li>
     <p>
-      A massive EXP gain spike occurs once you reach
-      <WikiLink page="Chapter 11">11-1</WikiLink>.
+      A big EXP spike occurs at <WikiLink page="Chapter 11">11-1</WikiLink>.
     </p>
   </li>
   <li>
     <p>
-      On maps with an Oil-Cap: the most efficient EXP farming stages will be
-      X-1, and the most efficient coin farming stages will be X-4.
+      On oil-cap maps, the most efficient EXP farm is X-1, and the best coin
+      farm is X-4.
     </p>
   </li>
 </ul>
 <p>
-  Once you reach
-  <WikiLink page="Chapter 12">Chapter 12</WikiLink>,
+  Once you hit
+  <WikiLink page="Chapter 12">Chapter 12</WikiLink>, you begin getting
   <WikiLink page="Dockyard#Cognitive Awakening" title="Cognitive Chips"
     >Cognitive Chips</WikiLink
-  >
-  are added to the Clearing Rewards drop pool. It is recommended to farm Chapter
-  12 and above due to the scarcity of Cognitive Chips as your progress further into
-  the game.
+  > from Clearing Rewards. Farm Chapter 12+ if you need more Chips.
 </p>
 <br />
 
-<h3 id="3-4">Do not farm 3-4</h3>
+<h3 id="do_not_farm_3_4">Do Not Farm 3-4</h3>
 <p>
-  Farming
+  Farming for
   <WikiLink page="Akagi">Akagi</WikiLink>
   and/or
   <WikiLink page="Kaga">Kaga</WikiLink>
-  may seem appealing because shiny, but it is one of the worst things a newbie can
-  do.
+  at 3-4 is one of the worst early game mistakes.
 </p>
 <ul>
   <li>
     <p>
-      They have a really poor drop rate at 0.75% each and the oil spent trying
-      to farm them can easily get you to mid-game.
+      Their drop rates are only 0.75% each; you will spend too much Oil for too
+      little return.
     </p>
   </li>
   <li>
     <p>
-      Foxes are an expensive investment at 8 Gold Bulins total for a pair of
-      mediocre ships; they require each other to get to that mediocre
-      performance (each on their own are as bad as some commons), and it leads
-      to a fleet imbalance.
+      Foxes (Akagi/Kaga) cost 8 Gold Bulins total (they need each other to
+      achieve mediocre performance). Each alone is weaker than many Commons,
+      unbalancing your fleet.
     </p>
   </li>
   <li>
     <p>
-      You tend to always want to use
-      <WikiLink page="Unicorn">Unicorn</WikiLink>
-      since she's one of the best investments for a newbie and running foxes with
-      her will lead to a 3 CV fleet, which tends to die to (commonly found) suicide
-      boats very easily.
+      You almost always want to run
+      <WikiLink page="Unicorn">Unicorn</WikiLink>—mixing in Foxes forces a 3 CV
+      fleet, which dies easily to suicide boats.
     </p>
   </li>
 </ul>
 <br />
 <p>
-  Any guides that suggest to farm foxes are either outdated (they weren't even
-  great back in the days) and/or misleading. If you really want foxes, it is
-  best to progress and come back when you can farm them with a 1-1 fleet (2
-  ships).
+  Any guide that says “farm Foxes” is outdated or misleading. If you really want
+  them, progress further and farm with a 1-1 fleet (two ships total).
 </p>
 <br />
 
-<h2 id="out_of_ammo">My fleet is out of ammo!!!!</h2>
+<h3 id="war_archives">War Archives</h3>
+<p>
+  Only farm <WikiLink page="War Archives">War Archive</WikiLink> stages you
+  <u>need</u> for ship drops or <a
+    href="/test_ecgc_2/fleet_technology"
+    target="_self">Fleet Technology</a
+  >. Skip the rest until much later.
+</p>
+<br />
+
+<h2 id="out_of_ammo">My Fleet Is Out of Ammo!</h2>
 <HR />
 <p>
   <i>
@@ -463,85 +499,43 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
     <WikiLink page="Combat#Ammo" title="Ammo">Ammo</WikiLink>
   </i>
 </p>
-
 <p>
-  Your fleet can still fight with 0 ammo; they just do reduced damage. Read the
-  wiki article above for more information.
+  Your fleet can still fight with 0 Ammo; they just do reduced damage. Read the
+  linked Wiki to understand how to manage low-ammo situations.
 </p>
 <br />
 
-<h2 id="limit_breaks">
-  <WikiLink page="Dockyard#Limit Break" title="Limit Break"
-    >Limit Breaks</WikiLink
-  >
-</h2>
-<HR />
-<p>
-  <WikiLink page="Dockyard#Limit Break" title="Limit Break"
-    >Limit Break</WikiLink
-  >
-  ships you use <b>as soon as possible</b>. Limit breaks are massive power
-  spikes for all ships, and allow for easier and faster progression.
-</p>
-<ul>
-  <li>
-    <p>
-      For Bulin locations, check out the
-      <b
-        ><a
-          href="/test_ecgc_2/common_resource"
-          target="_self"
-          rel="noopener noreferrer"
-          title="Common Resource Guide">Common Resource Guide</a
-        ></b
-      >. SR (Gold Rarity) Bulins are scarce, so be mindful when you are using
-      them.
-    </p>
-  </li>
-  <li>
-    <p>
-      Do NOT spread out Bulins on multiple ships! It is better to have 1 ship
-      MLB than 4 ships at LB1.
-    </p>
-  </li>
-</ul>
-<br />
-
-<h2 id="gear">Gear</h2>
+<h2 id="gear">Early Game Equipment Tips</h2>
 <HR />
 
 <h3 id="avoid_farming_gear">Avoid Farming Gear</h3>
 <p>
   Gear drops in
   <WikiLink page="Campaign">Campaign</WikiLink>
-  maps are horrendous. It is recommended to not farm any Campaign maps for gear due
-  to their drop rates and mediocrity.
+  maps are horrible. Do not farm Campaign maps for gear because drop rates and loot
+  quality are poor.
 </p>
 <ul>
   <li>
     <p>
-      During certain Events, the gear drop can be worthwhile to farm, but Event
-      Currency is always first priority.
+      In certain Events, gear drops can be worth farming, but Event currency
+      always has higher priority.
     </p>
   </li>
 </ul>
-
 <p>
-  In Early Game, most gear is obtained from Tech Box opening. Always craft up
-  Tech Boxes to at least T3 (Purple) before opening them.<br />In mid/late game,
-  gear will be coming from
-  <WikiLink page="Gear Lab">Gear Lab</WikiLink>
-  and/or
+  Early game gear mostly comes from Tech Boxes. Always craft Tech Boxes up to at
+  least T3 (Purple) before opening. In mid/late game, gear comes from
+  <WikiLink page="Gear Lab">Gear Lab</WikiLink> and/or
   <WikiLink page="Operation Siren">Operation Siren</WikiLink>.
 </p>
 <br />
 
 <h3 id="gear_rarity">Gold Gear =/= Good</h3>
 <p>
-  The rarity of gear doesn't determine its value. There are a lot of gold rarity
-  equipment that are significantly worse than a more commonly available purple
-  or blue gear option.<br />The equipment below will be what you are looking for
-  in early game, which are all available from T3 (Purple) Tech Boxes.
+  Rarity does not guarantee power. Many Gold (Rare) items underperform compared
+  to Purple (T3) gear. Below are early-game T3 (Purple) Tech Box drops to look
+  out for.
 </p>
 
 <ItemTable
@@ -551,12 +545,8 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
   ]}
 >
   <tr>
-    <!-- Support type -->
     <td>Elite</td>
-
-    <!-- image cell -->
     <td>
-      <!-- Ship Row -->
       <ItemContainer>
         <ItemCell
           item="Triple 406 Mk 6"
@@ -565,7 +555,6 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
           rarity={3}
           inGroup={true}
         />
-
         <ItemCell
           item="Twin 410mm"
           wikiLink="Twin_410mm_(3rd_Year_Type)#Type_3-0"
@@ -573,7 +562,6 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
           rarity={3}
           inGroup={true}
         />
-
         <ItemCell
           item="SB2C Helldiver"
           wikiLink="Curtiss_SB2C_Helldiver#Type_3-0"
@@ -581,7 +569,6 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
           rarity={3}
           inGroup={true}
         />
-
         <ItemCell
           item="F4U Corsair"
           wikiLink="Vought_F4U_Corsair#Type_3-0"
@@ -589,7 +576,6 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
           rarity={3}
           inGroup={true}
         />
-
         <ItemCell
           item="Tenzan"
           wikiLink="Nakajima_B6N_Tenzan#Type_3-0"
@@ -597,7 +583,6 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
           rarity={3}
           inGroup={true}
         />
-
         <ItemCell
           item="Twin 150mm TbtsK C/36"
           wikiLink="Twin_150mm_(TbtsK_C/36)#Type_3-0"
@@ -605,7 +590,6 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
           rarity={3}
           inGroup={true}
         />
-
         <ItemCell
           item="Repair Toolkit"
           wikiLink="Repair_Toolkit#Type_3-0"
@@ -616,12 +600,8 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
       </ItemContainer>
     </td>
   </tr>
-
   <tr>
-    <!-- Support type -->
     <td>Rare</td>
-
-    <!-- image cell -->
     <td>
       <ItemContainer>
         <ItemCell
@@ -631,7 +611,6 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
           rarity={2}
           inGroup={true}
         />
-
         <ItemCell
           item="Naval Camouflage"
           wikiLink="Naval_Camouflage#Type_3-0"
@@ -646,10 +625,9 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 <br />
 
 <p>
-  This also applies to Rainbow (UR) rarity gear; not all Rainbow gear is good.
-  Gear in general are situational.
+  This principle applies to UR gear as well—high rarity does not automatically
+  mean “best.” Gear is always situational. For more gear guides, see:
 </p>
-<p>For other gear guides, check out:</p>
 <ul>
   <li>
     <p>
@@ -668,87 +646,78 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
     </p>
   </li>
 </ul>
-
 <br />
 
-<h3 id="situational_gear">Gearing is situational</h3>
+<h3 id="situational_gear">Gearing Is Situational</h3>
 <p>
-  People often ask "What is BIS for X?". In this game, gearing is always
-  situational. You want to gear your fleets to what you are facing.
+  People often ask “What is BIS for X?”. In Azur Lane, it's always situational.
+  Choose gear based on stage mechanics and enemy types, not just raw numbers.
 </p>
 <ul>
   <li>
     <p>
-      Every weapon has a specific Ammo Modifier, which increases / decreases
-      their damage against specific enemies.
+      Every weapon has specific Ammo Modifiers. These modifiers can
+      increase/decrease damage against certain enemies. For rough comparisons of
+      gear stats and Ammo Modifiers, see:
+      <WikiLink page="Equipment List">Equipment List</WikiLink>.
     </p>
-    <ul>
-      <li>
-        <p>
-          Click on a specific weapon category on this wiki page (<WikiLink
-            page="Equipment List">Equipment List</WikiLink
-          >) to roughly compare gear stats / damage / Ammo Modifiers.
-        </p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Skills and/or Fight Mechanics affect gearing.</p>
-    <ul>
-      <li>
-        <p>
-          Ex.
-          <WikiLink page="Helena">Helena</WikiLink>'s Radar Scan debuffs enemies
-          on 20s intervals, so you want your Main Fleet ships' gear to time with
-          Helena, instead of strictly going by pure highest damage.
-        </p>
-      </li>
-      <li>
-        <p>
-          Ex.
-          <WikiLink page="Kearsarge">Kearsarge</WikiLink>
-          wants to equip an
-          <WikiLink page="Eagle Union">Eagle Union</WikiLink>
-          or
-          <WikiLink page="Northern Parliament">Northern Parliament</WikiLink>
-          Aircraft, and gives great buffs for meeting that requirement, therefore
-          that has higher priority over the plane's damage.
-        </p>
-      </li>
-    </ul>
   </li>
   <li>
     <p>
-      For mobbing, you want to spread out your backline damage to prevent
-      overkilling and/or wasted (missed) attacks. Some ships have skills that
-      reduce cooldowns or have very high reload to allow them to strike first.
+      Skills or fight mechanics often drive gear choice. Example:
+      <WikiLink page="Helena">Helena</WikiLink>'s Radar Scan debuffs enemies
+      every 20 seconds—time your Main Fleet gear with her rather than chasing
+      pure damage.
     </p>
-    <ul>
-      <li>
-        <p>
-          A common mistake is to give your healer faster planes to get more
-          heals. What actually happens is you shift your heal timing slightly
-          earlier without getting an extra strike in a fight, losing a
-          significant portion of the healer's damage. Because of this enemies
-          have a higher chance of staying alive longer and you take more damage
-          because of it, resulting in a net negative.
-        </p>
-      </li>
-    </ul>
+  </li>
+  <li>
+    <p>
+      Some ships want specific gear synergies. Example:
+      <WikiLink page="Kearsarge">Kearsarge</WikiLink> gains big buffs if she uses
+      <WikiLink page="Eagle Union">Eagle Union</WikiLink> or
+      <WikiLink page="Northern Parliament">Northern Parliament</WikiLink> aircraft,
+      so that is higher priority than plane damage alone.
+    </p>
+  </li>
+  <li>
+    <p>
+      When mobbing, spread backline damage to avoid overkill—some ships have
+      high reload or cooldown reduction skills that let them strike first. A
+      common mistake is giving your healer faster planes: it shifts heal timing
+      without adding extra strikes, leading to a net loss.
+    </p>
   </li>
 </ul>
+<br />
+
+<h3 id="skill_upgrades">Skill Upgrades</h3>
+<p>
+  Upgrade only on ships you use frequently—prioritise skills that meaningfully
+  boost stage clears. Many basic stat-boost skills can wait.
+  <i
+    >(See also:
+    <WikiLink page="Living_Area#Tactical_Class">Tactical Class</WikiLink>.)</i
+  >
+</p>
+<br />
+
+<h3 id="augment_and_lab">Augment Modules & Gear Lab</h3>
+<p>
+  Both systems are long-term grinds—unlock them but don't over-invest early.
+  Main articles:
+  <a href="/test_ecgc_2/equipment#augment_module" target="_self"
+    >Augment Modules</a
+  >
+  and
+  <a href="/test_ecgc_2/equipment#gear_lab" target="_self">Gear Lab</a>.
+</p>
 <br />
 
 <h2 id="upgradable_resources">Upgradable Resources</h2>
 <HR />
 <p>
-  The following is a list of relevant items that can be crafted to a
-  higher-rarity version of themselves by
-  <b
-    >clicking on them in the
-    <WikiLink page="Equipment#Material (Items)" title="Depot">Depot</WikiLink
-    ></b
-  >:
+  The following items can be crafted to higher rarity in the
+  <WikiLink page="Equipment#Material (Items)" title="Depot">Depot</WikiLink>:
 </p>
 
 <ItemTable
@@ -807,8 +776,7 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
     </td>
     <td rowspan="2">
       <p class="px-1 py-1">
-        Always craft up. Never open T1 / T2 Tech Boxes; only open T3 or higher
-        Tech Boxes.
+        Always craft up. Never open T1/T2 Tech Boxes—only open T3 or higher.
       </p>
     </td>
   </tr>
@@ -859,10 +827,9 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
     </td>
     <td rowspan="2">
       <p class="px-1 py-1">
-        Upgrading these to higher rarity causes a loss in total exp gained
-        compared to using every book seperately without crafting. Therefore, it
-        is not worth crafting skill books up unless you have a big stockpile
-        that you won't ever finish.
+        Upgrading Skill Books to higher rarity reduces total EXP gain compared
+        to using them individually. Only craft if you have an overstock you
+        won't use.
       </p>
     </td>
   </tr>
@@ -912,99 +879,55 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
       />
     </td>
     <td>
-      <p class="px-1 py-1">
-        These are very scarce resources and should only be crafted up as needed.
-      </p>
+      <p class="px-1 py-1">These are very scarce. Craft up only as needed.</p>
     </td>
   </tr>
 </ItemTable>
 <br />
 
-<h2 id="combat_data_packs">Grind Shipyard EXP MANUALLY</h2>
+<h2 id="combat_data_packs">Grind Shipyard EXP Manually</h2>
 <HR />
 <p>
-  Combat Data packs should NOT be used for completing the EXP grind in
-  <WikiLink page="Research#Shipyard" title="Shipyard">Shipyard</WikiLink>.
-  Instead, they should be used in the
+  Combat Data Packs <b>should NOT</b> be used to grind
+  <WikiLink page="Research#Shipyard" title="Shipyard">Shipyard EXP</WikiLink>.
+  Instead, spend Packs in the
   <WikiLink page="Shops#Prototype Shop" title="Prototype Shop"
     >Prototype Shop</WikiLink
-  >
-  to buy Gear Blueprints.
+  > to buy Gear Blueprints.
 </p>
 <ul>
   <li>
     <p>
-      The Gear acquired through this method could take upwards of up to
-      <b>3+ months</b> to get through normal means, not to mention the opportunity
-      cost of doing Research on other seasons.
+      Gear from Prototype Shop can take months to get via regular drops. Using
+      Packs can net valuable blueprints in 1-2 weeks.
     </p>
   </li>
   <li>
     <p>
-      The EXP grind takes a maximum of <b>1-2 weeks</b> when committing to it, even
-      for mid-game players.
+      Shipyard EXP grind manually usually takes 1-2 weeks if you're committed,
+      even for mid-game accounts.
     </p>
   </li>
 </ul>
 <br />
 
 <p>
-  For more information about Research, check out the
-  <b
-    ><a
-      href="/test_ecgc_2/research"
-      target="_self"
-      rel="noopener noreferrer"
-      title="Research Guide">Research Guide</a
-    ></b
+  For full Research details, see the
+  <a href="/test_ecgc_2/research" target="_self" rel="noopener noreferrer"
+    >Research Guide</a
   >.
 </p>
-<br />
-
-<h2 id="gacha">Gacha</h2>
-<HR />
-<p>
-  <i
-    >See also:
-    <WikiLink page="Construction">Construction</WikiLink></i
-  >
-</p>
-
-<p>
-  Wisdom Cubes should only be used on Event banners, indicated by the text that
-  says <b>EVENT</b> when choosing a build pool. The Event build pool also contains
-  permanent pool ships alongside the rate-up Event ships.
-</p>
-<ul>
-  <li>
-    <p>
-      You should be completing the
-      <WikiLink page="Missions#Daily Missions" title="Daily Missions"
-        >Daily Mission</WikiLink
-      >
-      "Build 1 ship" by building 1 ship from Light Construction. The mission gives
-      you your Cube back, making it a net-zero Cube loss.
-    </p>
-  </li>
-  <li>
-    <p>
-      It is not recommended to build on any other Construction Pools, even for
-      the Daily Mission, but its your cubes to lose.
-    </p>
-  </li>
-</ul>
-
 <br />
 
 <h2 id="rerolling">Rerolling</h2>
 <HR />
 <p>
-  It is not recommended to reroll accounts due to the cube income being spread
-  out instead of frontloaded, especially at the start of the game.
+  It is not recommended to reroll accounts because Cube income is spread out
+  rather than frontloaded, especially in early game.
 </p>
 <p>
-  The only exception is if you are starting during a UR event, where the UR ship
-  is a rate-up ship in the Event banner.
+  Only consider rerolling if you start during a UR event where the UR is the
+  rate-up ship.
 </p>
 <br />
 
@@ -1013,45 +936,35 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 </h2>
 <HR />
 <p>
-  You can cheese a 3-star <WikiLink page="Combat#Hard Mode" title="Hard Mode"
-    >Hard Mode</WikiLink
-  >
-  clear due to the map mechanics.
+  You can cheese a 3-star
+  <WikiLink page="Combat#Hard Mode" title="Hard Mode">Hard Mode</WikiLink>
+  clear by exploiting map mechanics:
 </p>
 <ol>
   <li>
     <p>
-      First, kill all the mobs, then kill the boss.
-      <b>(2 stars, 1 attempt)</b>
+      Kill all mobs, then kill the boss. <b>(2 stars, 1 attempt)</b>
     </p>
   </li>
   <li>
     <p>
-      Second, kill all the mobs you can, but before killing the boss, leave the
-      stage. This doesn't use up an attempt. Repeat until you obtain the last
-      star, then either kill the boss again (using up the daily attempt) or
-      retreat. <b>(1 stars, 0 attempts)</b>
+      Kill all mobs you can, then leave before killing the boss. This does not
+      use an attempt. Repeat until you see the third star, then finish the boss
+      or retreat. <b>(1 star, 0 attempts)</b>
     </p>
   </li>
 </ol>
 <p>
-  If you do not see mobs upon entry, be sure to
-  <b>turn Clearing Mode off</b>.
+  If you don't see mobs on entering, be sure to <b>turn Clearing Mode off</b>.
 </p>
 <br />
 
-<h2 id="shops">Shop Priority</h2>
+<h2 id="upcoming_events">Upcoming Events & Resources</h2>
 <HR />
 <p>
-  <i
-    >Main Article:
-    <a
-      href="/test_ecgc_2/shop_priority"
-      target="_self"
-      rel="noopener noreferrer"
-    >
-      <b>Shop Priority</b>
-    </a>
-  </i>
+  Keep an eye on Azur Lane's official social channels (Twitter/Discord) for
+  event announcements. Event ships, gear, and currencies often require focused
+  farming strategies (e.g., limited currency exchange items). Check the
+  <WikiLink page="Events">Events guide</WikiLink> for a running calendar.
 </p>
 <br />

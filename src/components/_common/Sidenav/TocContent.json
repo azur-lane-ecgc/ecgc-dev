@@ -749,13 +749,23 @@
         "subheadings": []
       },
       {
+        "id": "gacha",
+        "content": "Gacha & Ship Construction",
+        "subheadings": []
+      },
+      {
         "id": "permanent_ur",
-        "content": "Permanent URs are a TRAP!",
+        "content": "Permanent UR Pity is a TRAP!",
         "subheadings": []
       },
       {
         "id": "guild_shop",
         "content": "Guild Shop",
+        "subheadings": []
+      },
+      {
+        "id": "shops",
+        "content": "Shop Priority",
         "subheadings": []
       },
       {
@@ -769,6 +779,18 @@
           {
             "id": "faction_fleets",
             "content": "Faction Fleets SUCK"
+          },
+          {
+            "id": "early_hyperlevelling",
+            "content": "Hyper-Levelling & Early Fleets"
+          },
+          {
+            "id": "submarine_fleet",
+            "content": "Submarine Fleet (Optional)"
+          },
+          {
+            "id": "retrofit_ships",
+            "content": "Retrofitting Ships"
           }
         ]
       },
@@ -777,14 +799,18 @@
         "content": "Push Campaign",
         "subheadings": [
           {
-            "id": "3-4",
-            "content": "Do not farm 3-4"
+            "id": "do_not_farm_3_4",
+            "content": "Do Not Farm 3-4"
+          },
+          {
+            "id": "war_archives",
+            "content": "War Archives"
           }
         ]
       },
       {
         "id": "out_of_ammo",
-        "content": "My fleet is out of ammo!!!!",
+        "content": "My Fleet Is Out of Ammo!",
         "subheadings": []
       },
       {
@@ -794,7 +820,7 @@
       },
       {
         "id": "gear",
-        "content": "Gear",
+        "content": "Gear & Tech Box Management",
         "subheadings": [
           {
             "id": "avoid_farming_gear",
@@ -806,7 +832,15 @@
           },
           {
             "id": "situational_gear",
-            "content": "Gearing is situational"
+            "content": "Gearing Is Situational"
+          },
+          {
+            "id": "skill_upgrades",
+            "content": "Skill Upgrades"
+          },
+          {
+            "id": "augment_and_lab",
+            "content": "Augment Modules & Gear Lab"
           }
         ]
       },
@@ -817,12 +851,7 @@
       },
       {
         "id": "combat_data_packs",
-        "content": "Grind Shipyard EXP MANUALLY",
-        "subheadings": []
-      },
-      {
-        "id": "gacha",
-        "content": "Gacha",
+        "content": "Grind Shipyard EXP Manually",
         "subheadings": []
       },
       {
@@ -836,8 +865,8 @@
         "subheadings": []
       },
       {
-        "id": "shops",
-        "content": "Shop Priority",
+        "id": "upcoming_events",
+        "content": "Upcoming Events & Resources",
         "subheadings": []
       }
     ]
