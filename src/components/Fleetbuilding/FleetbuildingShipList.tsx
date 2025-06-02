@@ -1,4 +1,5 @@
-import { ItemContainer, ShipCell } from "@components/_common/ItemCell"
+import { ItemContainer } from "@components/_common/ItemCell"
+import { ShipModal } from "@components/_common/ShipModal"
 import type { ShipData } from "@db/types"
 import type React from "react"
 
@@ -23,14 +24,16 @@ export const FleetbuildingShipList: React.FC<Props> = ({
         <h5>{title}</h5>
         <ItemContainer>
           {list.map((ship) => (
-            <ShipCell
-              key={ship.ship}
-              ship={ship.ship}
-              isKai={ship.isKai}
-              rarity={ship.rarity}
-              inGroup
-              hasBorder
-              hover
+            <ShipModal
+              key={ship.id}
+              shipData={ship}
+              trigger={{
+                hasBorder: true,
+                iconNote: null,
+                descriptionNote: null,
+                largeDescNote: null,
+              }}
+              loading={false}
             />
           ))}
         </ItemContainer>
