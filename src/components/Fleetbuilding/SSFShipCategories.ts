@@ -14,7 +14,7 @@ export const internationalFleetMain: SSEntry[] = [
 ]
 
 export const internationalFleetSub: SSEntry[] = [
-  { name: "Archerfish", descriptionNote: "If Other USS" },
+  { name: "Archerfish", descriptionNote: "If other USS" },
   { name: "U-47", descriptionNote: "w/ Augment" },
   { name: "Homura" },
   { name: "Minato Aqua" },
