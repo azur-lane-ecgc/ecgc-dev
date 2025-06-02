@@ -196,12 +196,12 @@ import {
   sortie.
 </p>
 <br />
-<FleetbuildingShipList ships={healerShips} />
+<FleetbuildingShipList role="healer" ships={healerShips} />
 
 <h3 id="main_dmg_dealer">Damage Dealer</h3>
 <p>They do big number (depending on the ship).</p>
 <br />
-<FleetbuildingShipList ships={dmgDealerShips} />
+<FleetbuildingShipList role="main-dmgdealer" ships={dmgDealerShips} />
 
 <h3 id="main_off_support">Offensive Support</h3>
 <p>
@@ -209,7 +209,7 @@ import {
   personal damage.
 </p>
 <br />
-<FleetbuildingShipList ships={offSupportShips} />
+<FleetbuildingShipList role="main-offsupport" ships={offSupportShips} />
 
 <h3 id="main_def_support">Defensive Support</h3>
 <p>
@@ -217,7 +217,7 @@ import {
   personal damage.
 </p>
 <br />
-<FleetbuildingShipList ships={defSupportShips} />
+<FleetbuildingShipList role="main-defsupport" ships={defSupportShips} />
 
 <h2 id="vg">Vanguard Ship Roles</h2>
 <HR />
@@ -264,7 +264,7 @@ import {
   the correct circumstances; read skills for details).
 </p>
 <br />
-<FleetbuildingShipList ships={VGsuperTankShips} />
+<FleetbuildingShipList role="supertank" ships={VGsuperTankShips} />
 
 <h3 id="tank">Tank</h3>
 <p>
@@ -272,7 +272,7 @@ import {
   circumstances; read skills for details).
 </p>
 <br />
-<FleetbuildingShipList ships={VGtankShips} />
+<FleetbuildingShipList role="tank" ships={VGtankShips} />
 
 <h3 id="vg_damage_dealer">Damage Dealer</h3>
 <p>These ships do a lot of damage.</p>
@@ -313,7 +313,7 @@ import {
   </li>
 </ul>
 <br />
-<FleetbuildingShipList ships={VGdmgDealerShips} />
+<FleetbuildingShipList role="vg-dmgdealer" ships={VGdmgDealerShips} />
 
 <h3 id="aa_carry">AA Carry</h3>
 <p>
@@ -321,12 +321,12 @@ import {
   own.
 </p>
 <br />
-<FleetbuildingShipList ships={VGaACarryShips} />
+<FleetbuildingShipList role="vg-aacarry" ships={VGaACarryShips} />
 
 <h3 id="aa">AA</h3>
 <p>These ships can solve most of your fleet's AA issues.</p>
 <br />
-<FleetbuildingShipList ships={VGaaShips} />
+<FleetbuildingShipList role="vg-aa" ships={VGaaShips} />
 
 <h3 id="asw">ASW</h3>
 <p>
@@ -336,7 +336,7 @@ import {
   >.
 </p>
 <br />
-<FleetbuildingShipList ships={VGaswShips} />
+<FleetbuildingShipList role="vg-asw" ships={VGaswShips} />
 
 <h3 id="vg_offensive_support">Offensive Support</h3>
 <p>
@@ -344,7 +344,7 @@ import {
   personal damage.
 </p>
 <br />
-<FleetbuildingShipList ships={VGoffSupportShips} />
+<FleetbuildingShipList role="vg-offsupport" ships={VGoffSupportShips} />
 
 <h3 id="vg_defensive_support">Defensive Support</h3>
 <p>
@@ -352,7 +352,7 @@ import {
   personal damage.
 </p>
 <br />
-<FleetbuildingShipList ships={VGdefSupportShips} />
+<FleetbuildingShipList role="vg-defsupport" ships={VGdefSupportShips} />
 
 <h2 id="damage_stagger">Fast Loads / Staggering Damage</h2><HR />
 <p>
