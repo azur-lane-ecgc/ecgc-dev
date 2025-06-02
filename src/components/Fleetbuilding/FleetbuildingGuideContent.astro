@@ -14,6 +14,7 @@ import { ItemCell, ItemContainer, ShipCell } from "@components/_common/ItemCell"
 import WikiLink from "@components/_common/WikiLink.astro"
 
 import { FleetbuildingShipList } from "./FleetbuildingShipList"
+import { SubmarineTable } from "./SubmarineTable"
 import {
   preloadShips,
   reduction25to49Ships,
@@ -35,6 +36,17 @@ import {
   VGoffSupportShips,
   VGdefSupportShips,
 } from "./VGShipCategories"
+
+import {
+  internationalFleetMain,
+  internationalFleetSub,
+  kmsWolfpackFleetMain,
+  kmsWolfpackFleetSub,
+  ussFishpackFleetMain,
+  ussFishpackFleetSub,
+  tempestaFleetMain,
+  tempestaFleetSub,
+} from "./SSFShipCategories"
 ---
 
 <h2 id="introduction">Introduction</h2><HR />
@@ -1464,15 +1476,27 @@ import {
 <br />
 
 <h3 id="global_subs">International Submarine Fleet</h3>
-<p>Testing</p>
+<SubmarineTable
+  client:visible={{ rootMargin: "50px" }}
+  main={internationalFleetMain}
+  substitute={internationalFleetSub}
+/>
 <br />
 
 <h3 id="kms_subs">KMS "Wolfpack" Submarine Fleet</h3>
-<p>Testing</p>
+<SubmarineTable
+  client:visible={{ rootMargin: "50px" }}
+  main={kmsWolfpackFleetMain}
+  substitute={kmsWolfpackFleetSub}
+/>
 <br />
 
 <h3 id="uss_subs">USS "Fishpack" Submarine Fleet</h3>
-<p>Testing</p>
+<SubmarineTable
+  client:visible={{ rootMargin: "50px" }}
+  main={ussFishpackFleetMain}
+  substitute={ussFishpackFleetSub}
+/>
 <br />
 
 <h3 id="mot_subs">Tempesta Submarine Fleet</h3>
@@ -1483,7 +1507,11 @@ import {
   >
 </p>
 
-<p>Testing</p>
+<SubmarineTable
+  client:visible={{ rootMargin: "50px" }}
+  main={tempestaFleetMain}
+  substitute={tempestaFleetSub}
+/>
 <br />
 
 <h2 id="other_tips">Other Fleetbuilding Tips</h2><HR />
