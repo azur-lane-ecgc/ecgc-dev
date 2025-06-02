@@ -17,7 +17,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   useEffect(() => {
-    if (activeDropdown != page.name.toLowerCase()) {
+    if (activeDropdown !== page.name.toLowerCase()) {
       setIsOpen(false)
     }
   }, [activeDropdown])

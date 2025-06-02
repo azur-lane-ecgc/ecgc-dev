@@ -1,15 +1,15 @@
 ---
-import { ItemContainer } from "@components/_common/ItemCell";
-import { ShipModal } from "@components/_common/ShipModal";
-import type { ShipData } from "@db/types";
+import { ItemContainer } from "@components/_common/ItemCell"
+import { ShipModal } from "@components/_common/ShipModal"
+import type { ShipData } from "@db/types"
 
-const { ships } = Astro.props as { ships: ShipData[] };
+const { ships } = Astro.props as { ships: ShipData[] }
 
 const groups = {
-	permanent: ships.filter((s) => s.permanent.isPermanent),
-	event: ships.filter((s) => !s.permanent.isPermanent && !s.permanent.isCollab),
-	collab: ships.filter((s) => s.permanent.isCollab),
-};
+  permanent: ships.filter((s) => s.permanent.isPermanent),
+  event: ships.filter((s) => !s.permanent.isPermanent && !s.permanent.isCollab),
+  collab: ships.filter((s) => s.permanent.isCollab),
+}
 ---
 
 <h5>Permanently Available:</h5>
