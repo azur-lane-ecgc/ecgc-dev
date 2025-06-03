@@ -531,6 +531,211 @@
     ]
   },
   {
+    "fileName": "Fleetbuilding Guide",
+    "toc": [
+      {
+        "id": "just_started",
+        "content": "If you just started Azur Lane...",
+        "subheadings": []
+      },
+      {
+        "id": "mob_vs_boss",
+        "content": "Mob Fleet vs Boss Fleet",
+        "subheadings": []
+      },
+      {
+        "id": "backline",
+        "content": "Backline Ship Roles",
+        "subheadings": [
+          {
+            "id": "healer",
+            "content": "Healer"
+          },
+          {
+            "id": "main_dmg_dealer",
+            "content": "Damage Dealer"
+          },
+          {
+            "id": "main_off_support",
+            "content": "Offensive Support"
+          },
+          {
+            "id": "main_def_support",
+            "content": "Defensive Support"
+          }
+        ]
+      },
+      {
+        "id": "vg",
+        "content": "Vanguard Ship Roles",
+        "subheadings": [
+          {
+            "id": "supertank",
+            "content": "SuperTank"
+          },
+          {
+            "id": "tank",
+            "content": "Tank"
+          },
+          {
+            "id": "vg_damage_dealer",
+            "content": "Damage Dealer"
+          },
+          {
+            "id": "aa_carry",
+            "content": "AA Carry"
+          },
+          {
+            "id": "aa",
+            "content": "AA"
+          },
+          {
+            "id": "asw",
+            "content": "ASW"
+          },
+          {
+            "id": "vg_offensive_support",
+            "content": "Offensive Support"
+          },
+          {
+            "id": "vg_defensive_support",
+            "content": "Defensive Support"
+          }
+        ]
+      },
+      {
+        "id": "damage_stagger",
+        "content": "Fast Loads / Staggering Damage",
+        "subheadings": [
+          {
+            "id": "fast_loader_list",
+            "content": "List of Ships with Fast Loads"
+          }
+        ]
+      },
+      {
+        "id": "skill_sync",
+        "content": "Skill Syncing",
+        "subheadings": [
+          {
+            "id": "timed_skill",
+            "content": "Timed Skill Syncing"
+          },
+          {
+            "id": "on_shot_sync",
+            "content": "On Shot / Strike Syncing"
+          },
+          {
+            "id": "faction_fleets",
+            "content": "Faction Fleets"
+          },
+          {
+            "id": "pair_skills",
+            "content": "Pair Skills"
+          }
+        ]
+      },
+      {
+        "id": "damage_distribution",
+        "content": "Damage Distribution",
+        "subheadings": [
+          {
+            "id": "backline_dmg_dist",
+            "content": "Backline"
+          },
+          {
+            "id": "vanguard_dmg_dist",
+            "content": "Vanguard"
+          }
+        ]
+      },
+      {
+        "id": "campaign_fleet_comps",
+        "content": "Campaign Fleet Compositions",
+        "subheadings": [
+          {
+            "id": "campaign_theory",
+            "content": "Theory"
+          },
+          {
+            "id": "mob_fleet",
+            "content": "Mob Fleet"
+          },
+          {
+            "id": "generic_boss_fleet",
+            "content": "Generic Boss Fleet"
+          }
+        ]
+      },
+      {
+        "id": "opsi_fleet_comps",
+        "content": "Operation Siren Fleet Compositions",
+        "subheadings": [
+          {
+            "id": "opsi_theory",
+            "content": "Theory"
+          },
+          {
+            "id": "opsi_mob_fleet",
+            "content": "Mob Fleet (Operation Siren)"
+          },
+          {
+            "id": "opsi_generic_boss_fleet",
+            "content": "Generic Boss Fleet (Operation Siren)"
+          },
+          {
+            "id": "opsi_bb_fleet",
+            "content": "BB Boss Fleet (Operation Siren)"
+          },
+          {
+            "id": "opsi_cv_fleet",
+            "content": "CV Boss Fleet (Operation Siren)"
+          }
+        ]
+      },
+      {
+        "id": "sub_fleet",
+        "content": "Submarine Fleet Compositions",
+        "subheadings": [
+          {
+            "id": "sub_fleet_positioning",
+            "content": "Submarine Fleet Positioning"
+          },
+          {
+            "id": "global_subs",
+            "content": "International Submarine Fleet"
+          },
+          {
+            "id": "kms_subs",
+            "content": "KMS \"Wolfpack\" Submarine Fleet"
+          },
+          {
+            "id": "uss_subs",
+            "content": "USS \"Fishpack\" Submarine Fleet"
+          },
+          {
+            "id": "mot_subs",
+            "content": "Tempesta Submarine Fleet"
+          }
+        ]
+      },
+      {
+        "id": "other_tips",
+        "content": "Other Fleetbuilding Tips",
+        "subheadings": [
+          {
+            "id": "crossfleet",
+            "content": "Cross-fleet Effects"
+          },
+          {
+            "id": "req_help",
+            "content": "Hard Mode Requirement Help"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "fileName": "Newbie Tips",
     "toc": [
       {
