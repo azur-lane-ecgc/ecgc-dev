@@ -25,7 +25,7 @@ export const pageInfo = [
   },
   {
     name: "Fleetbuilding Guide",
-    path: "src/components/Fleetbuilding/FleetbuildingGuideContent.astro",
+    path: "src/components/Fleetbuilding/FleetbuildingContent.astro",
   },
   {
     name: "Fleet Technology Guide",
