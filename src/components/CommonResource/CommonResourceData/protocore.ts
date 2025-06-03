@@ -29,8 +29,8 @@ const PrototypeCoreData: ResourceProps = {
         {
           name: "Beginner Rewards",
           wikiLink: "Beginner_Rewards#Development_(PR)",
-          quantity: { amount: 4800, timeFrame: "one-time" },
-          notes: "PR1-PR5",
+          quantity: { amount: 5600, timeFrame: "one-time" },
+          notes: "PR1-PR6",
         },
       ],
       checkMark: {
