@@ -36,7 +36,7 @@ export const kmsWolfpackFleetMain: SSEntry[] = [
   { name: "U-96", descriptionNote: "w/ Augment" },
   { name: "U-37" },
   { name: "U-81" },
-  { name: "U-47", descriptionNote: "w/ Augment" },
+  { name: "U-101", descriptionNote: "w/ Augment" },
 ]
 
 export const kmsWolfpackFleetSub: SSEntry[] = [
@@ -44,7 +44,7 @@ export const kmsWolfpackFleetSub: SSEntry[] = [
   { name: "Maggiore Baracca" },
   { name: "Leonardo da Vinci" },
   { name: "Homura" },
-  { name: "U-101", descriptionNote: "w/ Augment" },
+  { name: "U-47", descriptionNote: "w/ Augment" },
 ]
 
 /**
@@ -57,12 +57,12 @@ export const ussFishpackFleetMain: SSEntry[] = [
 ]
 
 export const ussFishpackFleetSub: SSEntry[] = [
-  { name: "Cavalla" },
   { name: "Leonardo da Vinci" },
   { name: "Maggiore Baracca" },
   { name: "U-556 META" },
-  { name: "U-47", descriptionNote: "w/ Augment" },
   { name: "Homura", descriptionNote: "w/ Augment" },
+  { name: "U-47", descriptionNote: "w/ Augment" },
+  { name: "Cavalla" },
   { name: "Nautilus" },
   { name: "Minato Aqua" },
   { name: "Amity", descriptionNote: "w/ Augment" },
