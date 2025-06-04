@@ -21,6 +21,21 @@ const T2RetrofitPrintData: ResourceProps = {
         mark: "check",
       },
     },
+    missions: {
+      found: true,
+      locations: [
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 20, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "x",
+      },
+    },
     hardModeDrop: {
       found: true,
       locations: [

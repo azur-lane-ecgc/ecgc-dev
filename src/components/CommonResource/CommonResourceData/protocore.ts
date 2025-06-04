@@ -27,10 +27,10 @@ const PrototypeCoreData: ResourceProps = {
       found: true,
       locations: [
         {
-          name: "Beginner Rewards",
-          wikiLink: "Beginner_Rewards#Development_(PR)",
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Development Missions",
           quantity: { amount: 5600, timeFrame: "one-time" },
-          notes: "PR1-PR6",
+          notes: "Dev.",
         },
       ],
       checkMark: {

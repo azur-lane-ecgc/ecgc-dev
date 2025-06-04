@@ -29,6 +29,12 @@ const T3PlateData: ResourceProps = {
           wikiLink: "Missions#Weekly_Missions",
           quantity: { amount: 10, timeFrame: "weekly" },
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 60, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",

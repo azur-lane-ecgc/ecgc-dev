@@ -22,6 +22,12 @@ const CoreData: ResourceProps = {
           wikiLink: "Missions#Weekly_Missions",
           quantity: { amount: 15, timeFrame: "weekly" },
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 1600, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",

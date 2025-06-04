@@ -28,6 +28,12 @@ const UniversalBulinData: ResourceProps = {
           quantity: { amount: 2, timeFrame: "one-time" },
           notes: "Lv.20, Lv.30",
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 4, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",

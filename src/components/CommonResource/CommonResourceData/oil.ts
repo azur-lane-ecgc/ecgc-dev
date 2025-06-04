@@ -51,6 +51,12 @@ const OilData: ResourceProps = {
           wikiLink: "Akashi's Shop#Packs",
           quantity: { amount: 4000, timeFrame: "weekly" },
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 9300, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",

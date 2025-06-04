@@ -7,6 +7,21 @@ const T2SkillBookData: ResourceProps = {
   image: "materials/unknown_t2_book.png",
   wikiLink: "https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class",
   drops: {
+    missions: {
+      found: true,
+      locations: [
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 10, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "x",
+      },
+    },
     academy: {
       found: true,
       locations: [

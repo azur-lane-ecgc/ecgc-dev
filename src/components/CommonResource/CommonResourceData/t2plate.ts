@@ -29,6 +29,12 @@ const T2PlateData: ResourceProps = {
           wikiLink: "Missions#Daily_Missions",
           quantity: { amount: 5, timeFrame: "daily" },
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 50, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",

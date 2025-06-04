@@ -36,6 +36,12 @@ const T1EXPDataPackData: ResourceProps = {
           quantity: { amount: 900, timeFrame: "one-time" },
           notes: "Total Rewards",
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 600, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",

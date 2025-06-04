@@ -41,6 +41,24 @@ const WisdomCubeData: ResourceProps = {
           wikiLink: "Missions#Weekly_Missions",
           quantity: { amount: 12, timeFrame: "weekly" },
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook",
+          quantity: { amount: 148, timeFrame: "one-time" },
+          notes: "80 Rookie | 68 Mechanic",
+        },
+        // {
+        //   name: "Commander Handbook",
+        //   wikiLink: "Commander Handbook#Rookie Missions",
+        //   quantity: { amount: 80, timeFrame: "one-time" },
+        //   notes: "Rookie",
+        // },
+        // {
+        //   name: "Commander Handbook",
+        //   wikiLink: "Commander Handbook#Mechanic Tutorials",
+        //   quantity: { amount: 68, timeFrame: "one-time" },
+        //   notes: "Mechanic",
+        // },
       ],
       checkMark: {
         color: "green",

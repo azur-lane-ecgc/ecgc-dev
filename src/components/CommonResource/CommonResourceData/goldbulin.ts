@@ -28,6 +28,12 @@ const PrototypeBulinData: ResourceProps = {
           quantity: { amount: 2, timeFrame: "one-time" },
           notes: "Lv.40, Lv.50",
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 4, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",

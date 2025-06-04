@@ -8,6 +8,21 @@ const AugmentModuleCoreData: ResourceProps = {
   image: "materials/augment_module_core.png",
   wikiLink: "Augmentation#Crafting_and_Enhancing",
   drops: {
+    missions: {
+      found: true,
+      locations: [
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 10, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "x",
+      },
+    },
     dailyRaid: {
       found: true,
       locations: [

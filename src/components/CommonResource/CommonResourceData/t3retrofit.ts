@@ -7,6 +7,21 @@ const T3RetrofitPrintData: ResourceProps = {
   image: "materials/unknown_t3_bp.png",
   wikiLink: "Dockyard#Retrofit",
   drops: {
+    missions: {
+      found: true,
+      locations: [
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 10, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
+      ],
+      checkMark: {
+        color: "sand",
+        mark: "x",
+      },
+    },
     hardModeDrop: {
       found: true,
       locations: [

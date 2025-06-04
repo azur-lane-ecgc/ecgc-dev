@@ -29,6 +29,12 @@ const T1RetrofitPrintData: ResourceProps = {
           wikiLink: "Missions#Daily_Missions",
           quantity: { amount: 2, timeFrame: "daily" },
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 20, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",

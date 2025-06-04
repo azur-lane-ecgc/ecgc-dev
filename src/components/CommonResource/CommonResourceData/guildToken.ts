@@ -46,6 +46,12 @@ const GuildTokenData: ResourceProps = {
           wikiLink: "Missions#Weekly_Missions",
           quantity: { amount: 200, timeFrame: "weekly" },
         },
+        {
+          name: "Commander Handbook",
+          wikiLink: "Commander Handbook#Rookie Missions",
+          quantity: { amount: 500, timeFrame: "one-time" },
+          notes: "Rookie",
+        },
       ],
       checkMark: {
         color: "green",
