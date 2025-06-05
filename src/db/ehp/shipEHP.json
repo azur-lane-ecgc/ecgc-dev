@@ -470,6 +470,18 @@
       "std": "26.08%"
     }
   ],
+  "Little Ägir": [
+    {
+      "name": "Little Ägir",
+      "totalEHP": "110.42%",
+      "std": "27.47%"
+    },
+    {
+      "name": "Little Ägir (VH)",
+      "totalEHP": "107.44%",
+      "std": "27.09%"
+    }
+  ],
   "Kasumi (Venus Vacation)": [
     {
       "name": "Kasumi (Venus Vacation)",
@@ -1841,6 +1853,13 @@
       "std": "23.98%"
     }
   ],
+  "Kawakaze META": [
+    {
+      "name": "Kawakaze META",
+      "totalEHP": "79.29%",
+      "std": "34.22%"
+    }
+  ],
   "Amazon": [
     {
       "name": "Amazon (Retrofit)",
@@ -2823,6 +2842,13 @@
       "name": "Grenville",
       "totalEHP": "67.56%",
       "std": "28.72%"
+    }
+  ],
+  "Grenville META": [
+    {
+      "name": "Grenville META",
+      "totalEHP": "67.44%",
+      "std": "28.14%"
     }
   ],
   "Benson": [

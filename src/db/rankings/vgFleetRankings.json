@@ -5966,6 +5966,33 @@
       "defensivebuff": null
     }
   ],
+  "Kawakaze META": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE - requires blood shadows to stay alive to exceed Plymouth in DPS. If they die fast, still better than normal Kawakaze.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "A",
+      "w14boss": "B",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 3,
+      "heavydmg": 3,
+      "aoedmg": 3,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Kazagumo": [
     {
       "nameNote": "",

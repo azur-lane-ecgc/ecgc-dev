@@ -6,10 +6,10 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 # Constants
-SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
+SERVICE_ACCOUNT_FILE = "credentials.json"
 SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 SHEET_NAMES = ["MAIN (no img)"]
-OUTPUT_PATHS = ["src/db/rankings/mainFleetRankings.json"]
+OUTPUT_PATHS = ["../../src/db/rankings/mainFleetRankings.json"]
 
 
 # Authenticate and initialize the Sheets API
@@ -171,6 +171,7 @@ if __name__ == "__main__":
 
         # Write the sorted data to a JSON file
         with open(output_path, "w", encoding="utf-8") as json_file:
-            json.dump(sorted_sheet_data, json_file, indent=4, ensure_ascii=False)
+            json.dump(sorted_sheet_data, json_file, indent=2, ensure_ascii=False)
+            json_file.write('\n')
 
         print(f"Data from sheet '{sheet_name}' has been written to {output_path}")

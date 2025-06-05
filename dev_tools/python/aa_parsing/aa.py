@@ -5,11 +5,11 @@ import re
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
-SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
+SERVICE_ACCOUNT_FILE = "credentials.json"
 SPREADSHEET_ID = "1rb_uXVmDnK2YKe-0YRTrf3VUcQi8mKwEMYKCBFmVXCc"
 SHEET_NAMES = ["List"]
 OUTPUT_PATHS = [
-    "dev_tools/aa_parsing/shipAA.json",
+    "aa_parsing/shipAA.json",
 ]
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -82,6 +82,7 @@ if __name__ == "__main__":
 
         # Write data to JSON
         with open(output_path, "w", encoding="utf-8") as json_file:
-            json.dump(sheet_data, json_file, indent=4, ensure_ascii=False)
+            json.dump(sheet_data, json_file, indent=2, ensure_ascii=False)
+            json_file.write('\n')
 
         print(f"Data from sheet '{sheet_name}' has been written to {output_path}")
