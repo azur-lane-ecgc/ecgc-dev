@@ -37,6 +37,7 @@ const collabEvents = [
   "World-Spanning Arclight Rerun",
   "The Ninja Scrolls: Azur Flash",
   "Dangerous Inventions Incoming!",
+  "Illusory Drifters",
 ]
 
 const exceptionShips = ["Formidable", "Mary Celeste"]
