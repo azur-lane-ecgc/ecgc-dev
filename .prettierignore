@@ -1,4 +1,6 @@
-dev_tools/ENV
-dev_tools/_backup
+dev_tools/testing
+
+.venv
+**/.venv
 node_modules
 dist

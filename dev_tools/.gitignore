@@ -1,5 +1,7 @@
 credentials.json
+**/credentials.json
 credentials.json.base64
+**/credentials.json.base64
 python/automated_imgur_upload/config/config.json
 
 # Python bytecode
