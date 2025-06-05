@@ -4440,7 +4440,12 @@
     "fastLoad": null,
     "roles": ["DefSupport", "Meh"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Glorious Battle",
+          "href": "Glorious_Battle"
+        }
+      ],
       "other": [],
       "construction": [
         {
@@ -11793,11 +11798,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -30211,12 +30221,7 @@
           "href": "Pledge_of_the_Radiant_Court"
         }
       ],
-      "other": [
-        {
-          "name": "Merit Shop",
-          "href": "Merit_Shop"
-        }
-      ],
+      "other": [],
       "construction": [
         {
           "name": "Construction (Light)",
@@ -30277,7 +30282,12 @@
           "href": "Pledge_of_the_Radiant_Court"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Merit Shop",
+          "href": "Merit_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
@@ -37087,11 +37097,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -37143,11 +37158,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -37199,11 +37219,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -37259,7 +37284,7 @@
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -42234,6 +42259,118 @@
       "isCollab": true
     }
   },
+  "10121": {
+    "id": 10121,
+    "ship": "BLACK★ROCK SHOOTER",
+    "faction": "Universal",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BC",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Rock Cannon", "Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Illusory Drifters",
+          "href": "Illusory_Drifters"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": true
+    }
+  },
+  "10122": {
+    "id": 10122,
+    "ship": "DEAD MASTER",
+    "faction": "Universal",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.4,
+        "mounts": 3
+      },
+      {
+        "type": ["Dive Bomber"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.3,
+        "mounts": 3
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dead Scythe", "Scepter", "Hunting Bow"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Illusory Drifters",
+          "href": "Illusory_Drifters"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": true
+    }
+  },
   "20001": {
     "id": 20001,
     "ship": "Neptune",
@@ -45965,13 +46102,17 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        },
+        {
+          "name": "Dossier Analysis",
+          "href": "META_Showdown#Dossier_Analysis"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -47092,15 +47233,71 @@
     "fastLoad": null,
     "roles": ["DmgDealer", "DefSupport"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "A Rose on the High Tower",
+          "href": "A_Rose_on_the_High_Tower"
+        }
+      ],
       "other": [],
       "construction": [],
-      "permanent": [
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30049": {
+    "id": 30049,
+    "ship": "Kawakaze META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.85,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.55,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.85,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [
         {
-          "name": "Unobtainable",
-          "href": "Category:Ships"
+          "name": "META Showdown",
+          "href": "META_Showdown"
         }
-      ]
+      ],
+      "construction": [],
+      "permanent": []
     },
     "permanent": {
       "isPermanent": false,

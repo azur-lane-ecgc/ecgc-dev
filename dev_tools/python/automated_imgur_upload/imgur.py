@@ -2,6 +2,8 @@ import json
 import webbrowser
 import requests
 
+from gsheets2img import main as main2
+
 def load_config():
     with open('dev_tools/automated_imgur_upload/config/config.json', 'r') as file:
         return json.load(file)
@@ -86,6 +88,7 @@ def print_credit_limit(access_token):
 
 
 if __name__ == "__main__":
+    main2()
     config = load_config()
     client_id = config['client_id']
     client_secret = config['client_secret']

@@ -4,7 +4,6 @@ import type { ShipData } from "@ALData/types/ships"
 import type { Barrage } from "@ALData/types/barrages"
 import type { AugmentData } from "@ALData/types/augments"
 import type { EquipmentData } from "@ALData/types/equipments"
-import { apply } from "node_modules/astro/dist/core/polyfill"
 
 type EnhancedBarrageData = {
   barrages: Barrage[]

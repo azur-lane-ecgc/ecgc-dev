@@ -1,6 +1,6 @@
 credentials.json
 credentials.json.base64
-automated_imgur_upload/config/config.json
+python/automated_imgur_upload/config/config.json
 
 # Python bytecode
 __pycache__/
