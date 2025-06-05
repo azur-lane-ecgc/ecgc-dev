@@ -1,4 +1,5 @@
 import json
+import os
 import webbrowser
 
 import requests
@@ -28,21 +29,38 @@ def get_tokens(client_id, client_secret, pin):
 
 def upload_image(image_key, image_repository, access_token, album_id):
     image_info = image_repository[image_key]
-    image_path = "../../" + image_info["path"]
+
+    relative_subpath = image_info["path"]
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    project_root = os.path.abspath(os.path.join(script_dir, "..", "..", ".."))
+
+    image_path = os.path.join(project_root, relative_subpath)
+
+    if not os.path.isfile(image_path):
+        print(f"❌ File not found at {image_path}")
+        return {"success": False, "error": f"File not found: {image_path}"}
+
     title = image_info["title"]
-    description = (
-        image_info["title"]
-        if image_info["description"] == ""
-        else image_info["description"]
-    )
+    description = image_info["description"] or title
 
     url = "https://api.imgur.com/3/upload"
     headers = {"Authorization": f"Bearer {access_token}"}
+
     with open(image_path, "rb") as image_file:
         files = {"image": image_file}
         data = {"album": album_id, "title": title, "description": description}
         response = requests.post(url, headers=headers, files=files, data=data)
+
+    try:
         return response.json()
+    except ValueError:
+        return {
+            "success": False,
+            "status_code": response.status_code,
+            "raw_text": response.text,
+        }
 
 
 def upload_images_in_order(image_order, image_repository, access_token, album_id):
@@ -50,7 +68,11 @@ def upload_images_in_order(image_order, image_repository, access_token, album_id
         upload_response = upload_image(
             image_key, image_repository, access_token, album_id
         )
-        print(f"Uploaded {image_key}: {upload_response['success']}")
+
+        if upload_response.get("success", False):
+            print(f"✅ Uploaded {image_key}")
+        else:
+            print(f"❌ Failed {image_key}: {upload_response}")
 
 
 def delete_image(deletehash, access_token):
