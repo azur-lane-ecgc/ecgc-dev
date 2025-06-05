@@ -141,5 +141,5 @@ def imgur():
 
 
 if __name__ == "__main__":
-    # gsheets2img()
+    gsheets2img()
     imgur()
