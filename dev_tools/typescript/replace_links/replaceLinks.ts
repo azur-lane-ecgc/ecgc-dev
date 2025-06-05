@@ -47,11 +47,11 @@ const processFile = async (inputFilePath: string, outputFilePath: string) => {
 
 export const replaceLinks = () => {
   for (const page of pageInfo) {
-    processFile(page.path, page.path)
+    processFile(`../../${page.path}`, `../../${page.path}`)
   }
 
   for (const path of hardCodedPaths) {
-    processFile(path, path)
+    processFile(`../../${path}`, `../../${path}`)
   }
 }
 

@@ -2,7 +2,7 @@ import json
 import webbrowser
 
 import requests
-from gsheets2img import main as main2
+from gsheets2img import main as gsheets2img
 
 
 def load_config():
@@ -28,7 +28,7 @@ def get_tokens(client_id, client_secret, pin):
 
 def upload_image(image_key, image_repository, access_token, album_id):
     image_info = image_repository[image_key]
-    image_path = image_info["path"]
+    image_path = "../../" + image_info["path"]
     title = image_info["title"]
     description = (
         image_info["title"]
@@ -66,9 +66,10 @@ def delete_all_images_from_album(album_id, access_token):
     response = requests.get(url, headers=headers)
     images = response.json()["data"]
 
-    for image in images:
-        deletehash = image["deletehash"]
-        delete_image(deletehash, access_token)
+    if images:
+        for image in images:
+            deletehash = image["deletehash"]
+            delete_image(deletehash, access_token)
 
 
 def print_credit_limit(access_token):
@@ -83,8 +84,7 @@ def print_credit_limit(access_token):
     print(f"Client Remaining: {credits['ClientRemaining']}")
 
 
-if __name__ == "__main__":
-    main2()
+def imgur():
     config = load_config()
     client_id = config["client_id"]
     client_secret = config["client_secret"]
@@ -116,3 +116,8 @@ if __name__ == "__main__":
     print()
     print_credit_limit(access_token)
     print()
+
+
+if __name__ == "__main__":
+    # gsheets2img()
+    imgur()

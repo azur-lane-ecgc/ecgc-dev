@@ -6,7 +6,7 @@ import type { ShipAAProps } from "@tools/python/aa_parsing/types"
 
 import { isDecentMainFleet, isDecentVG } from "../decentShips"
 
-const shipAAData = (await import("@tools/aa_parsing/shipAA.json").then(
+const shipAAData = (await import("@tools/python/aa_parsing/shipAA.json").then(
   (module) => module.default,
 )) as Record<string, ShipAAProps[]>
 

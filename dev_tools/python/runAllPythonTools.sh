@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source dev_tools/python/install.sh
-
 files=(
     "aa_parsing/aa.py"
     "ehp_parsing/ehp.py"
@@ -16,5 +14,7 @@ for file in "${files[@]}"; do
     uv run "$file"
     echo
 done
+
+deactivate
 
 # bun run smol_format

@@ -27,7 +27,7 @@ import {
   shipSlotParse,
 } from "../ships"
 
-const OUTPUT_PATH = "src/db/ship_data/ship_data.json"
+const OUTPUT_PATH = "../../src/db/ship_data/ship_data.json"
 
 const writeShipDataToFile = async (
   ships: Record<number, ShipData>,
