@@ -834,6 +834,35 @@
       "vgsurvival": null
     }
   ],
+  "BLACK★ROCK SHOOTER": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Bataan": [
     {
       "nameNote": "",
@@ -1526,6 +1555,35 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
+  "DEAD MASTER": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
