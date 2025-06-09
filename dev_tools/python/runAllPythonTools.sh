@@ -13,6 +13,7 @@ for file in "${files[@]}"; do
     echo "Running: $file"
     uv run "$file"
     echo
+    sleep 0.25
 done
 
 deactivate
