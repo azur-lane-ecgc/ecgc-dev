@@ -2,7 +2,7 @@
 
 cd dev_tools/python || { echo "dev_tools directory not found!"; exit 1; }
 
-if [ ! -d "ENV" ]; then
+if [ ! -d ".venv" ]; then
     uv venv
 fi
 
