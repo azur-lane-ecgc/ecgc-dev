@@ -17,15 +17,13 @@ export default defineConfig({
     react(),
     sitemap(),
     metaTags(),
-    // (await import("@playform/compress")).default({
-    //   CSS: false,
-    //   HTML: false,
-    //   JavaScript: false,
-    //   Exclude: [
-    //     (File: string) =>
-    //       File.includes("SiteIcon"),
-    //   ],
-    // }),
+    (await import("@playform/compress")).default({
+      CSS: false,
+      HTML: false,
+      JavaScript: false,
+      Image: true,
+      Exclude: [(File: string) => File.includes("SiteIcon")],
+    }),
   ],
   // base: "/ecgc-dev/",
   base: "/",
