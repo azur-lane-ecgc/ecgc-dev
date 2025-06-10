@@ -2,12 +2,11 @@
 import { defineConfig } from "astro/config"
 
 import cloudflare from "@astrojs/cloudflare"
+import metaTags from "astro-meta-tags"
 
 import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
 import tailwindcss from "@tailwindcss/vite"
-
-import metaTags from "astro-meta-tags"
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,12 +17,15 @@ export default defineConfig({
     react(),
     sitemap(),
     metaTags(),
-    (await import("@playform/compress")).default({
-      CSS: false,
-      HTML: false,
-      JavaScript: false,
-      Exclude: [(File: string) => File.includes("SiteIcon")],
-    }),
+    // (await import("@playform/compress")).default({
+    //   CSS: false,
+    //   HTML: false,
+    //   JavaScript: false,
+    //   Exclude: [
+    //     (File: string) =>
+    //       File.includes("SiteIcon"),
+    //   ],
+    // }),
   ],
   // base: "/ecgc-dev/",
   base: "/",
