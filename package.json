@@ -5,14 +5,15 @@
   "scripts": {
     "astro": "astro",
     "preview": "--bun astro preview",
-    "dev": "bunx --bun astro dev",
+    "vite-dev": "bunx --bun astro dev",
+    "dev": "bunx wrangler dev",
     "submodule": "git submodule update --recursive --remote",
     "imgur": "bash dev_tools/python/gsheets2imgur.sh",
     "build": "bunx --bun astro check && bunx --bun astro build",
     "smol_format": "bunx --bun prettier --write \"src/**/*.{astro,json}\" \"dev_tools/**/*.{astro,json}\" --ignore-path .prettierignore",
     "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" \"dev_tools/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
     "devtools": "bun run submodule && bash dev_tools/runAllTools.sh && bun run smol_format",
-    "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://localhost:4321/ && bunx --bun astro dev",
+    "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://127.0.0.1:8787/ && bunx --bun astro dev",
     "update": "bun upgrade && bun update && bun install",
     "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
     "deploy": "bun run build && bunx wrangler deploy"
