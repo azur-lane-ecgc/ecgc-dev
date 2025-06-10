@@ -62,7 +62,7 @@ const PrototypeCoreData: ResourceProps = {
   },
   notes: `Read 
       <a
-        href="/ecgc-dev/research#protocore_income"
+        href="/research#protocore_income"
         rel="noopener noreferrer"
         target="_blank"
       >

@@ -64,7 +64,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
               width={56}
               height={56}
               loading="lazy"
-              src={!imgOverride ? `/ecgc-dev/images/${itemImg}` : itemImg}
+              src={!imgOverride ? `/images/${itemImg}` : itemImg}
               alt={`${item}`}
             />
           </div>

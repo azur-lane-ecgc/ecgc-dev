@@ -13,20 +13,22 @@ import swup from '@swup/astro';
 // https://astro.build/config
 export default defineConfig({
   // adapter: cloudflare({imageService: 'compile'}),
-  site: "https://samheart564.github.io/ecgc-dev/",
+  // site: "https://samheart564.github.io/",
+  site: "https://azurlaneecgc.com",
   integrations: [
     swup({ theme: false, animationClass: false }),
     react(),
     sitemap(),
     metaTags(),
-    (await import("@playform/compress")).default({
-      CSS: false,
-      HTML: false,
-      JavaScript: false,
-      Exclude: [(File: string) => File.includes("SiteIcon")],
-    }),
+    // (await import("@playform/compress")).default({
+    //   CSS: false,
+    //   HTML: false,
+    //   JavaScript: false,
+    //   Exclude: [(File: string) => File.includes("SiteIcon")],
+    // }),
   ],
-  base: "/ecgc-dev/",
+  // base: "/",
+  base: "/",
   output: "static",
   trailingSlash: "ignore",
   vite: {

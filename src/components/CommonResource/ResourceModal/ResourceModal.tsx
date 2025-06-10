@@ -89,7 +89,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 width={56}
                 height={56}
                 loading="lazy"
-                src={`/ecgc-dev/images/${
+                src={`/images/${
                   Array.isArray(imgUrl) ? imgUrl[1] : imgUrl
                 }`}
                 alt={`${item.name}`}
@@ -198,7 +198,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                               loading="lazy"
                               width={100}
                               height={100}
-                              src={`/ecgc-dev/images/${url}`}
+                              src={`/images/${url}`}
                               alt={`${name} - Image ${index + 1}`}
                             />
                           </a>
@@ -220,7 +220,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                             loading="lazy"
                             width={100}
                             height={100}
-                            src={`/ecgc-dev/images/${imgUrl}`}
+                            src={`/images/${imgUrl}`}
                             alt={`${name}`}
                           />
                         </a>
@@ -352,7 +352,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                         loading="lazy"
                         width={100}
                         height={100}
-                        src={`/ecgc-dev/images/${imgUrl}`}
+                        src={`/images/${imgUrl}`}
                         alt={`${name}`}
                       />
                     </a>

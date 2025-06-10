@@ -293,7 +293,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                             <a
                               rel="noopener noreferrer"
                               target="_blank"
-                              href={`/ecgc-dev/equipment#${equipHref}`}
+                              href={`/equipment#${equipHref}`}
                             >
                               {type}
                             </a>

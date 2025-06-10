@@ -23,7 +23,7 @@ const FFNFTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/ecgc-dev/images/materials/merit.png"
+        src="/images/materials/merit.png"
         width="20px"
         alt="Merit"
       />`,
@@ -44,7 +44,7 @@ const FFNFTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/ecgc-dev/images/materials/merit.png"
+        src="/images/materials/merit.png"
         width="20px"
         alt="Merit"
       />`,

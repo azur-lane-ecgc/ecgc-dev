@@ -5,7 +5,7 @@ Link: [samheart564.github.io/ecgc](https://samheart564.github.io/ECGC/)
 
 Beta / Test Version: [samheart564.github.io/test_ecgc](https://samheart564.github.io/test_ecgc/)
 
-Astro Version (WIP): [samheart564.github.io/ecgc-dev](https://samheart564.github.io/ecgc-dev/)
+Astro Version (WIP): [samheart564.github.io/ecgc-dev](https://samheart564.github.io/)
 - [Astro Version Github](https://github.com/samheart564/ecgc-dev) 
 
 gsheets2img is a modified version of [github.com/blead/gsheets2img](https://github.com/blead/gsheets2img) and is used with consent of the developer.

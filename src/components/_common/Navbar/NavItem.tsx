@@ -62,7 +62,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
                   aria-label={item.href}
                   key={idx}
                   href={
-                    item?.external ? `${item.href}` : `/ecgc-dev/${item.href}`
+                    item?.external ? `${item.href}` : `/${item.href}`
                   }
                   className={`block px-3 py-1 text-[1rem] ${
                     activePage === item.href ? "navbar-active !text-white" : ""
@@ -82,7 +82,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
   return (
     <a
       aria-label={page.href}
-      href={page?.external ? `${page.href}` : `/ecgc-dev/${page.href}`}
+      href={page?.external ? `${page.href}` : `/${page.href}`}
       className={`navbar-link flex min-h-[40px] items-center rounded-md px-2 py-2 text-base font-medium ${
         activePage === page.href ? "navbar-active" : ""
       } transition-colors duration-200`}

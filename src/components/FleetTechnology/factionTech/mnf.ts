@@ -21,7 +21,7 @@ const MNFTechPoints: FleetTechData = {
             `5,000 <img
         loading="lazy"
         class="inline-block"
-        src="/ecgc-dev/images/materials/merit.png"
+        src="/images/materials/merit.png"
         width="20px"
         alt="Merit"
       />`,
@@ -46,7 +46,7 @@ const MNFTechPoints: FleetTechData = {
             `1,000 <img
           loading="lazy"
           class="inline-block"
-          src="/ecgc-dev/images/materials/core_data.png"
+          src="/images/materials/core_data.png"
           width="20px"
           alt="Core Data"
         />`,
