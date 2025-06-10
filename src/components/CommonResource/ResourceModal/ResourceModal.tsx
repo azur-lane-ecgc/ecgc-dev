@@ -89,9 +89,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 width={56}
                 height={56}
                 loading="lazy"
-                src={`/images/${
-                  Array.isArray(imgUrl) ? imgUrl[1] : imgUrl
-                }`}
+                src={`/images/${Array.isArray(imgUrl) ? imgUrl[1] : imgUrl}`}
                 alt={`${item.name}`}
               />
             </div>

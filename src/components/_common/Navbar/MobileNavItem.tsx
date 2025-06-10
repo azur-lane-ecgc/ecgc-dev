@@ -52,9 +52,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
               <a
                 aria-label={item.href}
                 key={idx}
-                href={
-                  item?.external ? `${item.href}` : `/${item.href}`
-                }
+                href={item?.external ? `${item.href}` : `/${item.href}`}
                 className={`block rounded-md px-3 py-2 text-base font-normal ${
                   activePage === item.href ? "navbar-active !text-white" : ""
                 } transition-colors duration-200 hover:!bg-white/15 hover:text-cyan-400`}
