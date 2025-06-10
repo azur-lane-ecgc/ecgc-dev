@@ -1,16 +1,21 @@
 // @ts-nocheck
 import { defineConfig } from "astro/config"
 
+import cloudflare from "@astrojs/cloudflare"
+
 import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
 import tailwindcss from "@tailwindcss/vite"
 
 import metaTags from "astro-meta-tags"
+import swup from '@swup/astro';
 
 // https://astro.build/config
 export default defineConfig({
+  adapter: cloudflare({imageService: 'compile'}),
   site: "https://samheart564.github.io/ecgc-dev/",
   integrations: [
+    swup({ theme: false, animationClass: false }),
     react(),
     sitemap(),
     metaTags(),

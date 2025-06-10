@@ -18,9 +18,12 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/cloudflare": "^12.5.4",
+    "@astrojs/partytown": "^2.1.4",
     "@astrojs/react": "^4.3.0",
     "@astrojs/sitemap": "^3.4.1",
     "@playform/compress": "^0.1.9",
+    "@swup/astro": "^1.6.0",
     "@tailwindcss/vite": "^4.1.8",
     "@types/react": "^19.1.7",
     "@types/react-dom": "^19.1.6",
@@ -29,7 +32,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-intersection-observer-hook": "^4.0.0",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.8",
+    "wrangler": "^4.19.1"
   },
   "devDependencies": {
     "@happy-dom/global-registrator": "^17.6.3",

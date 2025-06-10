@@ -1,0 +1,8 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "ecgc-dev",
+    "compatibility_date": "2025-06-09",
+    "assets": {
+      "directory": "./dist"
+    }
+  }
