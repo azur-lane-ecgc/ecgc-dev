@@ -48,22 +48,18 @@ const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
       metaImage ? (
         <meta
           property="og:image"
-          content={`https://samheart564.github.io/ecgc-dev/images/${metaImage}`}
+          content={`https://samheart564.github.io/images/${metaImage}`}
         />
       ) : (
         <meta
           property="og:image"
-          content="https://samheart564.github.io/ecgc-dev/images/misc/SiteIcon.png"
+          content="https://samheart564.github.io/images/misc/SiteIcon.png"
         />
       )
     }
     <meta name="og:description" content={metaDescription} />
 
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/ecgc-dev/images/misc/SiteIcon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/images/misc/SiteIcon.ico" />
 
     <script is:inline type="application/ld+json">
       {
@@ -71,7 +67,7 @@ const { title, activePage, metaUrl, metaImage, metaDescription } = Astro.props
         "@type": "WebSite",
         "name": "Azur Lane ECGC",
         "url": "https://samheart564.github.io/ecgc-dev",
-        "image": "https://samheart564.github.io/ecgc-dev/images/misc/SiteIcon.png"
+        "image": "https://samheart564.github.io/images/misc/SiteIcon.png"
       }
     </script>
   </head><span data-astro-transition-persist="someId2">
