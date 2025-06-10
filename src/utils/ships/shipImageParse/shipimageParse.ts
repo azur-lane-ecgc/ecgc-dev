@@ -17,5 +17,5 @@ export const shipImageParse = (ship: string, isKai?: boolean): string => {
   const shipKey = `${decodeURIComponent(ship)}${isKai ? "Kai" : ""}Icon`
   const result = shipIcons[shipKey]
 
-  return result ?? "/test_ecgc_2/images/materials/UnknownShip.png"
+  return result ?? "/ecgc-dev/images/materials/UnknownShip.png"
 }

@@ -59,7 +59,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
           <span className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden">
             <img
               loading="lazy"
-              src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
+              src={`/ecgc-dev/images/ship_type/${hullType}.png`}
               alt={hullType}
               title={"Hull: " + hullType}
               className="h-full w-full object-contain"
@@ -120,7 +120,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
           >
             <img
               loading="lazy"
-              src={`/test_ecgc_2/images/ship_type/${hullType}.png`}
+              src={`/ecgc-dev/images/ship_type/${hullType}.png`}
               alt={hullType}
               title={"Hull: " + hullType}
               className="h-auto w-full"

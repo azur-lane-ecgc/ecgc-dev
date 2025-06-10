@@ -9,7 +9,7 @@ import metaTags from "astro-meta-tags"
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://samheart564.github.io/test_ecgc_2/",
+  site: "https://samheart564.github.io/ecgc-dev/",
   integrations: [
     react(),
     sitemap(),
@@ -21,7 +21,7 @@ export default defineConfig({
       Exclude: [(File: string) => File.includes("SiteIcon")],
     }),
   ],
-  base: "/test_ecgc_2/",
+  base: "/ecgc-dev/",
   output: "static",
   trailingSlash: "ignore",
   vite: {

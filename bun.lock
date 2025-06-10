@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "test_ecgc_2",
+      "name": "ecgc-dev",
       "dependencies": {
         "@astrojs/check": "^0.9.4",
         "@astrojs/react": "^4.3.0",

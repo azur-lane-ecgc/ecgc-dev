@@ -5,8 +5,8 @@ Link: [samheart564.github.io/ecgc](https://samheart564.github.io/ECGC/)
 
 Beta / Test Version: [samheart564.github.io/test_ecgc](https://samheart564.github.io/test_ecgc/)
 
-Astro Version (WIP): [samheart564.github.io/test_ecgc_2](https://samheart564.github.io/test_ecgc_2/)
-- [Astro Version Github](https://github.com/samheart564/test_ecgc_2) 
+Astro Version (WIP): [samheart564.github.io/ecgc-dev](https://samheart564.github.io/ecgc-dev/)
+- [Astro Version Github](https://github.com/samheart564/ecgc-dev) 
 
 gsheets2img is a modified version of [github.com/blead/gsheets2img](https://github.com/blead/gsheets2img) and is used with consent of the developer.
 
@@ -16,7 +16,7 @@ Join our [Discord Server](https://discord.gg/wKJKxq5WQt)!
 
 # Legal Notice
 ## Disclaimer
-This website (and its derivatives "test_ecgc" and "test_ecgc_2") is owned, made and maintained by Sam K. (samheart564). All rights are reserved by the aforementioned person; there is **no** license. Unauthorized copying, redistributing or modifying of files served by this website (and its derivatives) in any way shape or form is strictly prohibited. All contributors will not hold copyright over any of their contributions unless otherwise stated by the aforementioned person.
+This website (and its derivatives "ecgc-dev", "test_ecgc" and "test_ecgc_2") is owned, made and maintained by Sam K. (samheart564). All rights are reserved by the aforementioned person; there is **no** license. Unauthorized copying, redistributing or modifying of files served by this website (and its derivatives) in any way shape or form is strictly prohibited. All contributors will not hold copyright over any of their contributions unless otherwise stated by the aforementioned person.
 
 Exceptions are all game assets and any data available in the [AzurLaneData repository](https://github.com/MrLar/AzurLaneData). Re-publishing this tool for the sake of translations or for other reasons is also not allowed without permission from the aforementioned person.
 

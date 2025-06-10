@@ -53,7 +53,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
                 aria-label={item.href}
                 key={idx}
                 href={
-                  item?.external ? `${item.href}` : `/test_ecgc_2/${item.href}`
+                  item?.external ? `${item.href}` : `/ecgc-dev/${item.href}`
                 }
                 className={`block rounded-md px-3 py-2 text-base font-normal ${
                   activePage === item.href ? "navbar-active !text-white" : ""
@@ -71,7 +71,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
   return (
     <a
       aria-label={page.href}
-      href={page?.external ? `${page.href}` : `/test_ecgc_2/${page.href}`}
+      href={page?.external ? `${page.href}` : `/ecgc-dev/${page.href}`}
       className={`navbar-link flex items-center rounded-md px-3 py-2 text-base font-medium no-underline ${activePage === page.href ? "navbar-active" : ""} `}
       target={page.external ? "_blank" : "_self"}
       rel="noopener noreferrer"
