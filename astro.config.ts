@@ -12,7 +12,7 @@ import swup from '@swup/astro';
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: cloudflare({imageService: 'compile'}),
+  // adapter: cloudflare({imageService: 'compile'}),
   site: "https://samheart564.github.io/ecgc-dev/",
   integrations: [
     swup({ theme: false, animationClass: false }),
