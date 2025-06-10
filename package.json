@@ -14,7 +14,8 @@
     "devtools": "bun run submodule && bash dev_tools/runAllTools.sh && bun run smol_format",
     "start": "bun run devtools && bun run build && bash dev_tools/open-link.sh http://localhost:4321/ecgc-dev/ && bunx --bun astro dev",
     "update": "bun upgrade && bun update && bun install",
-    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update"
+    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
+    "deploy": "bun run build && bunx --bun wrangler deploy"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
