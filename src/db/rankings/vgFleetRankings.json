@@ -4025,10 +4025,10 @@
   "Grenville META": [
     {
       "nameNote": "",
-      "notes": "Buffs DD FP.",
-      "hardarbiter": "D",
-      "meta": "D",
-      "cm": "D",
+      "notes": "Buffs DD FP. Buffs FP damage by ~11% for BBs.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
       "w14mob": "D",
       "w14boss": "D",
       "w15mob": "D",
@@ -4042,7 +4042,7 @@
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": null,
+      "offensivebuff": 2,
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
