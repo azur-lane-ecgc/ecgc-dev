@@ -47175,7 +47175,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["OffSupport", "Meh"],
     "locations": {
       "events": [],
       "other": [
