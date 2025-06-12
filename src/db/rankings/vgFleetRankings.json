@@ -2162,7 +2162,7 @@
   "Choukai": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Yes, this is already updated for her augment.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2171,8 +2171,8 @@
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",
-      "consistency": -2,
-      "fleetreq": -1,
+      "consistency": null,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -4484,7 +4484,7 @@
   "Hardy": [
     {
       "nameNote": "",
-      "notes": "Buffs HMS DDs.",
+      "notes": "Buffs HMS DDs. These ratings already include her unique augment.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10901,10 +10901,10 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
-      "defensivebuff": null
+      "defensivebuff": 1
     }
   ],
   "Stanly": [

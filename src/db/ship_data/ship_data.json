@@ -5131,7 +5131,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Hard and Soft", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
     "roles": ["Bad"],
@@ -7019,10 +7019,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Old Lady's Royal Sword", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -10759,7 +10759,11 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": [
+      "Hermit Dragon of Iwashimizu's Shingon Blade",
+      "Greatsword",
+      "Lance"
+    ],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
     "roles": ["Meh"],
@@ -15644,10 +15648,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["Lucky Lou", "Crossbow", "Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["DefSupport", "Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -26032,10 +26036,14 @@
         "mounts": 1
       }
     ],
-    "augments": ["Scepter", "Hunting Bow"],
+    "augments": [
+      "The Punctualist's Ceremonial Needle",
+      "Scepter",
+      "Hunting Bow"
+    ],
     "samEval": "Peter Strasser is a damage-oriented CV with good stats and skills. Her personal damage is solid due to good stats and an on-strike barrage, but it is nothing exceptional. Her chance to set enemy speed to 0 is too random to take advantage of, but it is nice to have. She is ideally sortied with other KMS CVs to take advantage of the cooldown reduction she provides. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport", "Meh"],
+    "roles": ["DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
