@@ -1,11 +1,13 @@
 // @ts-nocheck
 import { defineConfig } from "astro/config"
 
-import cloudflare from "@astrojs/cloudflare"
+// astro plugins
+import react from "@astrojs/react"
+// import cloudflare from "@astrojs/cloudflare"
+import sitemap from "@astrojs/sitemap"
 import metaTags from "astro-meta-tags"
 
-import react from "@astrojs/react"
-import sitemap from "@astrojs/sitemap"
+// vite plugins
 import tailwindcss from "@tailwindcss/vite"
 
 // https://astro.build/config
