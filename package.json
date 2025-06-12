@@ -5,7 +5,9 @@
   "scripts": {
     "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
     "submodule": "git submodule update --recursive --remote",
-    "imgur": "bash dev_tools/python/gsheets2imgur.sh",
+    "gsheets2img": "bash dev_tools/python/gsheets2imgur.sh -g",
+    "imgur": "bash dev_tools/python/gsheets2imgur.sh -i",
+    "gsheets2imgur": "bash dev_tools/python/gsheets2imgur.sh",
     "devtools": "bun run submodule && bash dev_tools/runAllTools.sh && bun run smol_format",
     "build": "bunx --bun astro check && bunx astro build",
     "open": "bash dev_tools/open-link.sh http://localhost:4321/",
