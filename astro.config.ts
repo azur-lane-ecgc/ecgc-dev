@@ -2,8 +2,8 @@
 import { defineConfig } from "astro/config"
 
 // astro plugins
-import react from "@astrojs/react"
 // import cloudflare from "@astrojs/cloudflare"
+import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
 import metaTags from "astro-meta-tags"
 
@@ -13,21 +13,8 @@ import tailwindcss from "@tailwindcss/vite"
 // https://astro.build/config
 export default defineConfig({
   // adapter: cloudflare({imageService: 'compile'}),
-  // site: "https://samheart564.github.io/ecgc-dev/",
   site: "https://azurlaneecgc.com",
-  integrations: [
-    react(),
-    sitemap(),
-    metaTags(),
-    (await import("@playform/compress")).default({
-      CSS: false,
-      HTML: false,
-      JavaScript: false,
-      Image: true,
-      Exclude: [(File: string) => File.includes("SiteIcon")],
-    }),
-  ],
-  // base: "/ecgc-dev/",
+  integrations: [react(), sitemap(), metaTags()],
   base: "/",
   output: "static",
   trailingSlash: "ignore",
