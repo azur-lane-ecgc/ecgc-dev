@@ -150,6 +150,7 @@ ul ul ul {
 .guide-content-body {
   background-color: #1b1b1b;
   border: 2px solid #252525;
+  min-height: calc(100svh - 102px);
 }
 
 /* For Table Links */
