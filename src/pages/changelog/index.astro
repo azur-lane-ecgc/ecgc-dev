@@ -1,9 +1,7 @@
 ---
-import { getStaticPaths } from "./[year].astro"
+import { LATEST_YEAR } from "@components/Changelog/changelogConstants"
 
-const paths = await getStaticPaths()
-
-return Astro.redirect(`/changelog/${paths[paths.length - 1].params.year}`)
+return Astro.redirect(`/changelog/${LATEST_YEAR}`)
 ---
 
-{false && paths}
+{false}
