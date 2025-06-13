@@ -4,4 +4,4 @@ import { LATEST_YEAR } from "@components/Changelog/changelogConstants"
 return Astro.redirect(`/changelog/${LATEST_YEAR}`)
 ---
 
-{false}
+{false && LATEST_YEAR}
