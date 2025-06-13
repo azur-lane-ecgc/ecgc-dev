@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "update": "bun upgrade && bun update && bun install",
     "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bash dev_tools/python/gsheets2imgur.sh -g",
@@ -12,7 +13,6 @@
     "smol_format": "bunx --bun prettier --write \"src/**/*.{astro,json}\" \"dev_tools/**/*.{astro,json}\" --ignore-path .prettierignore",
     "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" \"dev_tools/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
     "devtools": "bun run submodule && bash dev_tools/runAllTools.sh && bun run smol_format",
-    "update": "bun upgrade && bun update && bun install",
     "build": "bunx --bun astro check && bunx astro build",
     "cf-build": "bunx astro build",
     "compress-build": "bunx --bun astro check && bun run build && bun run compress",
