@@ -14,5 +14,5 @@ const { page, title } = Astro.props
   aria-label={page}
   class="inline-block"
 >
-  <slot />
+  {Astro.slots.has("default") ? <slot /> : page}
 </a>
