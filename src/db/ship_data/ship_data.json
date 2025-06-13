@@ -596,7 +596,12 @@
           "href": "Collection"
         }
       ],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
@@ -2628,7 +2633,12 @@
           "href": "Collection"
         }
       ],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Heavy, Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
@@ -6585,7 +6595,12 @@
           "href": "Collection"
         }
       ],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Heavy, Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
@@ -8392,7 +8407,12 @@
           "href": "Collection"
         }
       ],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
@@ -12476,7 +12496,12 @@
           "href": "Akashi/Questline"
         }
       ],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light, Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
@@ -12916,7 +12941,12 @@
           "href": "Collection"
         }
       ],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light, Heavy, Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
