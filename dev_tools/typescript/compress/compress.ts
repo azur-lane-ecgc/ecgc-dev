@@ -1,5 +1,5 @@
 import { readdir, stat } from "fs/promises"
-import { join, extname } from "path"
+import { join, extname, resolve, relative } from "path"
 import sharp from "sharp"
 
 const extensionMap: Record<string, string> = {
@@ -34,7 +34,7 @@ const compressionSettings: Record<string, any> = {
 
 const supported = Object.keys(compressionSettings)
 
-async function getAllImages(dir: string): Promise<string[]> {
+const getAllImages = async (dir: string): Promise<string[]> => {
   const out: string[] = []
   for (const name of await readdir(dir)) {
     const p = join(dir, name)
@@ -44,20 +44,25 @@ async function getAllImages(dir: string): Promise<string[]> {
     } else {
       const ext = extname(name).slice(1).toLowerCase()
       const fmt = extensionMap[ext] || ext
-      if (supported.includes(fmt)) out.push(p)
+      if (supported.includes(fmt)) {
+        out.push(resolve(p))
+      }
     }
   }
   return out
 }
 
-async function compressImage(file: string) {
+const compressImage = async (file: string, base: string) => {
   const ext = extname(file).slice(1).toLowerCase()
   const fmt = extensionMap[ext] || ext
   const opts = compressionSettings[fmt]
   if (!opts) return
 
+  const relPath = relative(base, file).replace(/\\/g, "/")
   const origSize = (await stat(file)).size
-  let img = sharp(file, {
+
+  const inBuf = Buffer.from(await Bun.file(file).arrayBuffer())
+  let img = sharp(inBuf, {
     failOn: "error",
     sequentialRead: true,
     unlimited: true,
@@ -87,33 +92,41 @@ async function compressImage(file: string) {
       break
   }
 
-  await img.toFile(file)
+  const outBuf = await img.toBuffer()
+  await Bun.write(file, outBuf)
+
   const newSize = (await stat(file)).size
   const saved = (((origSize - newSize) / origSize) * 100).toFixed(1)
   console.log(
-    `${file}: ${(origSize / 1024).toFixed(1)}KB → ${(newSize / 1024).toFixed(
-      1,
-    )}KB (${saved}% saved)`,
+    `✓ ${relPath}: ${(origSize / 1024).toFixed(1)}KB → ${(
+      newSize / 1024
+    ).toFixed(1)}KB (${saved}% saved)`,
   )
 }
 
-async function main() {
-  const base = "../../dist"
+const main = async () => {
+  const base = resolve("../../dist")
   console.log("🔍 Scanning for images under", base)
-  const images = await getAllImages(base)
-  if (!images.length) {
+  let images: string[] = []
+  try {
+    images = await getAllImages(base)
+  } catch (err) {
+    console.error(`Error reading directory ${base}:`, err)
+    return
+  }
+  if (images.length === 0) {
     console.log("No images found.")
     return
   }
   console.log(`Found ${images.length} images. Compressing…`)
   for (const img of images) {
     try {
-      await compressImage(img)
+      await compressImage(img, base)
     } catch (err) {
       console.error(`Error compressing ${img}:`, err)
     }
   }
-  console.log("Images compressed!")
+  console.log("🎉 Done compressing images.")
 }
 
 main().catch(console.error)
