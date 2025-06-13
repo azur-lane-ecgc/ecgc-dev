@@ -22,23 +22,7 @@ export default defineConfig({
     json: {
       stringify: true,
     },
-    plugins: [
-      tailwindcss(),
-      react({
-        babel: {
-          plugins: [
-            [
-              "babel-plugin-react-compiler",
-              {
-                sources: (filename: string) => {
-                  return filename.endsWith(".tsx")
-                },
-              },
-            ],
-          ],
-        },
-      }),
-    ],
+    plugins: [tailwindcss()],
     server: {
       watch: {
         ignored: ["**/dist/**", "**/dev_tools/**", "**/node_modules/**"],
