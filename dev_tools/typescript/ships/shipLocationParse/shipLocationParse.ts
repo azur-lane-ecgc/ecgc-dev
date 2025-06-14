@@ -63,17 +63,21 @@ const OTHER_LOCATIONS: Record<number, string | null> = {
 }
 
 const parseOtherLocation = (name: string, id: number): shipLocation | null => {
+  let locName = null
+
   if (id === 15) {
-    name = `Shipyard (PR${shipSeriesMap[name]})`
+    locName = `Shipyard (PR${shipSeriesMap[name]})`
   } else {
-    name = OTHER_LOCATIONS[id] || "IF YOU SEE THIS, DM THE WEBSITE DEVELOPER"
+    locName = OTHER_LOCATIONS[id]
   }
 
-  if (!name) return null
+  if (!!!locName) {
+    return null
+  }
 
   return {
-    name,
-    href: parseLocation(name),
+    name: locName,
+    href: parseLocation(locName),
   }
 }
 
