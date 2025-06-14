@@ -1,9 +1,9 @@
 import json
 import os
+import time
 import webbrowser
 
 import requests
-from gsheets2img import main as gsheets2img
 
 
 def load_config():
@@ -73,6 +73,8 @@ def upload_images_in_order(image_order, image_repository, access_token, album_id
             print(f"✅ Uploaded {image_key}")
         else:
             print(f"❌ Failed {image_key}: {upload_response}")
+
+        time.sleep(0.15)
 
 
 def delete_image(deletehash, access_token):
