@@ -39,6 +39,7 @@ export interface TriggerProps {
   descriptionNote?: string | null
   largeDescNote?: boolean | null
   hasBorder?: boolean | null
+  nonRetrofit?: boolean | null
 }
 
 interface ShipModalProps {
@@ -88,6 +89,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
   } = shipData
 
   const shipImg = shipImageParse(ship, isKai)
+  const triggerShipImg = trigger?.nonRetrofit
+    ? shipImageParse(ship, false)
+    : null
 
   const handleClose = () => {
     if (loading) {
@@ -137,7 +141,9 @@ export const ShipModal: React.FC<ShipModalProps> = ({
           <div className="fake-modal-link" ref={ref}>
             <div
               className={`icon border-radius-0 ${
-                isVisible ? `rarity-${rarity}` : ``
+                isVisible
+                  ? `rarity-${trigger?.nonRetrofit ? rarity - 1 : rarity}`
+                  : ``
               }`}
             >
               {isVisible && !!shipImg && !loading ? (
@@ -145,14 +151,14 @@ export const ShipModal: React.FC<ShipModalProps> = ({
                   width={56}
                   height={56}
                   loading="lazy"
-                  src={shipImg}
+                  src={triggerShipImg ?? shipImg}
                   alt={ship}
                 />
               ) : (
                 <IconSkeleton />
               )}
             </div>
-            {`${ship} ${isKai ? "(Retrofit)" : ""}`}
+            {`${ship} ${(trigger?.nonRetrofit ? false : isKai) ? "(Retrofit)" : ""}`}
           </div>
 
           {!!trigger?.iconNote && (
