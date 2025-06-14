@@ -45,7 +45,7 @@ interface ShipModalProps {
   uniqueID?: string
   shipData: ShipData
   trigger?: TriggerProps
-  loading: boolean
+  loading?: boolean
 }
 
 /**
