@@ -1,13 +1,25 @@
 ---
 import { HR } from "@components/_common/HR"
-import WikiLink from "@components/_common/WikiLink.astro"
-
 import { ItemContainer, ItemCell, ShipCell } from "@components/_common/ItemCell"
 import { ItemTable } from "@components/_common/ItemTable"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
+import { LocationItem } from "@components/_common/ShipModal/ShipLocations"
+import WikiLink from "@components/_common/WikiLink.astro"
+import { ShipModal } from "@components/_common/ShipModal"
 
-// images
+import type { ShipData } from "@db/types"
+
 import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
+
+const shipData = (await import("@db/ship_data/ship_data.json"))
+  .default as Record<number, ShipData>
+
+const newJerseyData = shipData[68]
+const shinanoData = shipData[231]
+const unicornData = shipData[142]
+const helenaData = shipData[33]
+const portlandData = shipData[44]
+const pennData = shipData[54]
 ---
 
 <h2 id="avoid_yt_guides">Avoid YouTube Guides</h2>
@@ -51,16 +63,18 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
   </li>
   <li>
     <p>
-      Complete <i>Requisition</i> exactly once for its Commander Handbook mission.
-      You are better off spending medals within the <WikiLink page="Medal Shop"
-        >Medal Shop</WikiLink
+      Complete <i>Requisition</i> exactly once for its <WikiLink
+        page="Commander Handbook"
+      /> mission. You are better off spending medals within the <WikiLink
+        page="Medal Shop">Medal Shop</WikiLink
       > for guaranteed ships and other items instead.
     </p>
   </li>
   <li>
     <p>
-      Don't speedrun Permanent UR ships, even if the Commander Handbook missions
-      incentivize it. Read the
+      Don't speedrun Permanent UR ships, even if the <WikiLink
+        page="Commander Handbook"
+      /> missions incentivize it. Read the
       <a href="#permanent_ur" target="_self" rel="noopener noreferrer"
         >Permanent UR section</a
       >. for more information.
@@ -101,6 +115,78 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 </ul>
 <br />
 
+<h3 id="commander_handbook_ur">
+  <WikiLink page="Commander Handbook">Commander Handbook</WikiLink> UR
+</h3>
+
+<p>
+  The <WikiLink page="Commander Handbook" /> gives you a free UR ship upon completing
+  all the missions. As mentioned earlier, the UR ship (regardless of which ship you
+  select) will not be good until they are max limit break.
+</p>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "22%" },
+    { colName: "Location", colWidth: "25%" },
+    { colName: "Description", colWidth: "53%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={shinanoData}
+          uniqueID="handbook-Shinano"
+        />
+      </div>
+    </td>
+    <td>
+      <div class="[&_div]:!text-[14px]">
+        <LocationItem locations={shinanoData.locations.other} />
+        <LocationItem locations={shinanoData.locations.construction} />
+      </div>
+    </td>
+    <td>
+      <p><b>Pick Shinano if you don't have her!</b></p>
+      <br />
+      <p>
+        Amazing damage-oriented CV. Also buffs IJN CVs when paired alongside
+        her, and buffs all DDs in the Vanguard Fleet.
+      </p>
+      <p><i>Ideally used alongside 2+ other IJN ships.</i></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={newJerseyData}
+          uniqueID="handbook-NJ"
+        />
+      </div>
+    </td>
+    <td>
+      <div class="[&_div]:!text-[14px]">
+        <LocationItem locations={newJerseyData.locations.other} />
+        <LocationItem locations={newJerseyData.locations.construction} />
+      </div>
+    </td>
+    <td>
+      <p>
+        Amazing off-flag damage-oriented BB. Worse than modern URs, but still
+        better than most non-URs.
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+<br />
+
 <h2 id="guild_shop"><WikiLink page="Guild Shop">Guild Shop</WikiLink></h2>
 <HR />
 <p>
@@ -132,7 +218,13 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 >
   <tr>
     <td>
-      <ShipCell ship="Unicorn" rarity={3} />
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={unicornData}
+          trigger={{ nonRetrofit: true }}
+        />
+      </div>
     </td>
     <td>
       <WikiLink page="Shops#Guild Shop" title="Guild Shop"
@@ -150,7 +242,13 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 
   <tr>
     <td>
-      <ShipCell ship="Helena" rarity={3} />
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={helenaData}
+          trigger={{ nonRetrofit: true }}
+        />
+      </div>
     </td>
     <td>
       <WikiLink page="Shops#Guild Shop" title="Guild Shop"
@@ -167,7 +265,13 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 
   <tr>
     <td>
-      <ShipCell ship="Portland" rarity={2} />
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={portlandData}
+          trigger={{ nonRetrofit: true }}
+        />
+      </div>
     </td>
     <td>
       <WikiLink page="Shops#Guild Shop" title="Guild Shop"
@@ -184,7 +288,12 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 
   <tr>
     <td>
-      <ShipCell ship="Pennsylvania" rarity={2} />
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={pennData}
+        />
+      </div>
     </td>
     <td>
       <WikiLink page="Shops#Guild Shop" title="Guild Shop"
