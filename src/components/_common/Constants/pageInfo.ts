@@ -39,8 +39,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Farming Guide",
     authors: ["Samheart564"],
-    lastUpdated: "9/5/2024",
-    revision: "1.1.1",
+    lastUpdated: "6/10/2025",
+    revision: "1.1.3",
     description: `Goes over the optimal ways to farm in Azur Lane.`,
     link: "farming",
     image: "/images/misc/farming_guide_cover.jpg",
