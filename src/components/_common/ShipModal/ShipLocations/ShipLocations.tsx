@@ -4,7 +4,7 @@ interface ShipLocationProps {
   locations: ShipLocationData
 }
 
-const LocationItem: React.FC<{ locations: shipLocation[] }> = ({
+export const LocationItem: React.FC<{ locations: shipLocation[] }> = ({
   locations,
 }) => {
   if (locations.length === 0) {
