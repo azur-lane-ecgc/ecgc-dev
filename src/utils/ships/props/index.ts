@@ -18,6 +18,3 @@ export * from "./roles"
 
 //rankings
 export * from "./rankings"
-
-//events
-export * from "./events"

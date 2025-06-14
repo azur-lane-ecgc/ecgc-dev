@@ -692,7 +692,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 2
       },
       {
@@ -1575,7 +1575,7 @@
     "slots": [
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 2
       },
       {
@@ -1711,7 +1711,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 2
       },
       {
@@ -1772,7 +1772,7 @@
     "slots": [
       {
         "type": ["DD Main Gun", "CL Main Gun"],
-        "efficiency": 1.1500000000000001,
+        "efficiency": 1.15,
         "mounts": 2
       },
       {
@@ -1782,7 +1782,7 @@
       },
       {
         "type": ["AA Gun"],
-        "efficiency": 1.8499999999999999,
+        "efficiency": 1.85,
         "mounts": 1
       },
       {
@@ -2278,7 +2278,7 @@
     "slots": [
       {
         "type": ["CA Main Gun"],
-        "efficiency": 1.1500000000000001,
+        "efficiency": 1.15,
         "mounts": 2
       },
       {
@@ -3637,7 +3637,7 @@
       },
       {
         "type": ["AA Gun"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
@@ -3703,7 +3703,7 @@
       },
       {
         "type": ["AA Gun"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
@@ -3769,7 +3769,7 @@
       },
       {
         "type": ["Dive Bomber"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 2
       },
       {
@@ -3896,12 +3896,12 @@
       },
       {
         "type": ["Dive Bomber"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 3
       },
       {
         "type": ["Dive Bomber"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 3
       },
       {
@@ -4361,7 +4361,7 @@
       },
       {
         "type": ["AA Gun"],
-        "efficiency": 1.1500000000000001,
+        "efficiency": 1.15,
         "mounts": 2
       },
       {
@@ -4675,7 +4675,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 2
       },
       {
@@ -5061,7 +5061,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 2
       },
       {
@@ -5417,12 +5417,12 @@
     "slots": [
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1.3499999999999999,
+        "efficiency": 1.35,
         "mounts": 1
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.6500000000000001,
+        "efficiency": 1.65,
         "mounts": 2
       },
       {
@@ -5483,7 +5483,7 @@
     "slots": [
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1.5999999999999999,
+        "efficiency": 1.6,
         "mounts": 1
       },
       {
@@ -5549,7 +5549,7 @@
     "slots": [
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1.5999999999999999,
+        "efficiency": 1.6,
         "mounts": 1
       },
       {
@@ -6295,12 +6295,12 @@
     "slots": [
       {
         "type": ["CA Main Gun"],
-        "efficiency": 1.5999999999999999,
+        "efficiency": 1.6,
         "mounts": 1
       },
       {
         "type": ["DD Main Gun", "Torpedo"],
-        "efficiency": 1.6500000000000001,
+        "efficiency": 1.65,
         "mounts": 1
       },
       {
@@ -6427,12 +6427,12 @@
     "slots": [
       {
         "type": ["CA Main Gun"],
-        "efficiency": 1.5999999999999999,
+        "efficiency": 1.6,
         "mounts": 1
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.6500000000000001,
+        "efficiency": 1.65,
         "mounts": 2
       },
       {
@@ -6620,7 +6620,7 @@
     "slots": [
       {
         "type": ["CA Main Gun"],
-        "efficiency": 1.5499999999999998,
+        "efficiency": 1.55,
         "mounts": 1
       },
       {
@@ -7010,7 +7010,7 @@
     "slots": [
       {
         "type": ["BB Main Gun"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 3
       },
       {
@@ -7048,10 +7048,6 @@
         {
           "name": "Medal Shop",
           "href": "Medal_Shop"
-        },
-        {
-          "name": "Akashi's Homecoming Campaign",
-          "href": "Akashi's_Homecoming_Campaign"
         }
       ],
       "construction": [
@@ -7525,17 +7521,17 @@
     "slots": [
       {
         "type": ["Torpedo Bomber"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 3
       },
       {
         "type": ["Torpedo Bomber"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 3
       },
       {
         "type": ["AA Gun"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
@@ -7634,10 +7630,6 @@
         {
           "name": "Guild Shop",
           "href": "Guild_Shop"
-        },
-        {
-          "name": "Akashi's Homecoming Campaign",
-          "href": "Akashi's_Homecoming_Campaign"
         }
       ],
       "construction": [
@@ -7746,7 +7738,7 @@
       },
       {
         "type": ["Dive Bomber"],
-        "efficiency": 0.9500000000000001,
+        "efficiency": 0.95,
         "mounts": 2
       },
       {
@@ -8367,12 +8359,12 @@
     "slots": [
       {
         "type": ["DD Main Gun"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.6500000000000001,
+        "efficiency": 1.65,
         "mounts": 2
       },
       {
@@ -9518,7 +9510,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.6500000000000001,
+        "efficiency": 1.65,
         "mounts": 2
       },
       {
@@ -9803,7 +9795,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.7999999999999998,
+        "efficiency": 1.8,
         "mounts": 2
       },
       {
@@ -9859,7 +9851,7 @@
     "slots": [
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1.1500000000000001,
+        "efficiency": 1.15,
         "mounts": 1
       },
       {
@@ -11064,7 +11056,7 @@
       },
       {
         "type": ["AA Gun", "Timed Fuze AA Gun"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
@@ -11120,7 +11112,7 @@
       },
       {
         "type": ["AA Gun", "Timed Fuze AA Gun"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
@@ -11166,7 +11158,7 @@
     "slots": [
       {
         "type": ["BB Main Gun"],
-        "efficiency": 1.7999999999999998,
+        "efficiency": 1.8,
         "mounts": 2
       },
       {
@@ -11176,7 +11168,7 @@
       },
       {
         "type": ["AA Gun", "Timed Fuze AA Gun"],
-        "efficiency": 0.9500000000000001,
+        "efficiency": 0.95,
         "mounts": 1
       },
       {
@@ -11247,7 +11239,7 @@
       },
       {
         "type": ["AA Gun", "Timed Fuze AA Gun"],
-        "efficiency": 0.9500000000000001,
+        "efficiency": 0.95,
         "mounts": 1
       },
       {
@@ -12101,7 +12093,7 @@
       },
       {
         "type": ["Torpedo Bomber"],
-        "efficiency": 1.1500000000000001,
+        "efficiency": 1.15,
         "mounts": 2
       },
       {
@@ -12152,7 +12144,7 @@
       },
       {
         "type": ["Dive Bomber"],
-        "efficiency": 1.1500000000000001,
+        "efficiency": 1.15,
         "mounts": 2
       },
       {
@@ -12526,7 +12518,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.5499999999999998,
+        "efficiency": 1.55,
         "mounts": 2
       },
       {
@@ -13833,12 +13825,12 @@
       },
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1.3499999999999999,
+        "efficiency": 1.35,
         "mounts": 1
       },
       {
         "type": ["AA Gun"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 2
       },
       {
@@ -15491,7 +15483,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.4000000000000001,
+        "efficiency": 1.4,
         "mounts": 2
       },
       {
@@ -15850,7 +15842,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.7999999999999998,
+        "efficiency": 1.8,
         "mounts": 2
       },
       {
@@ -15906,7 +15898,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.7999999999999998,
+        "efficiency": 1.8,
         "mounts": 2
       },
       {
@@ -18697,7 +18689,7 @@
     "slots": [
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1.5499999999999998,
+        "efficiency": 1.55,
         "mounts": 1
       },
       {
@@ -19440,7 +19432,7 @@
     "slots": [
       {
         "type": ["DD Main Gun", "CL Main Gun"],
-        "efficiency": 1.1500000000000001,
+        "efficiency": 1.15,
         "mounts": 2
       },
       {
@@ -22563,7 +22555,7 @@
     "slots": [
       {
         "type": ["DD Main Gun"],
-        "efficiency": 0.8500000000000001,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
@@ -42300,7 +42292,7 @@
   "10121": {
     "id": 10121,
     "ship": "BLACK★ROCK SHOOTER",
-    "faction": "Universal",
+    "faction": "BLACK★ROCK SHOOTER",
     "rarity": 4,
     "isKai": false,
     "hullType": "BC",
@@ -42356,7 +42348,7 @@
   "10122": {
     "id": 10122,
     "ship": "DEAD MASTER",
-    "faction": "Universal",
+    "faction": "BLACK★ROCK SHOOTER",
     "rarity": 4,
     "isKai": false,
     "hullType": "CV",

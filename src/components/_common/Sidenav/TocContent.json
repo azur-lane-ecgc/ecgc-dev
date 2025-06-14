@@ -141,6 +141,16 @@
         "id": "6-10-2025",
         "content": "June 10th, 2025",
         "subheadings": []
+      },
+      {
+        "id": "3-20-2025",
+        "content": "March 20th, 2025",
+        "subheadings": []
+      },
+      {
+        "id": "1-1-2025",
+        "content": "What happened between the previous update and these updates?",
+        "subheadings": []
       }
     ]
   },
@@ -217,6 +227,11 @@
       {
         "id": "research",
         "content": "Research (PR/DR) Ships",
+        "subheadings": []
+      },
+      {
+        "id": "commander_handbook_ur",
+        "content": "Commander Handbook UR",
         "subheadings": []
       }
     ]
@@ -618,6 +633,10 @@
         "content": "Fast Loads / Staggering Damage",
         "subheadings": [
           {
+            "id": "how_to_stagger",
+            "content": "How to Stagger Damage"
+          },
+          {
             "id": "fast_loader_list",
             "content": "List of Ships with Fast Loads"
           }
@@ -754,6 +773,11 @@
         "subheadings": []
       },
       {
+        "id": "rerolling",
+        "content": "Rerolling",
+        "subheadings": []
+      },
+      {
         "id": "mail",
         "content": "Mail is a Bank!",
         "subheadings": []
@@ -766,7 +790,12 @@
       {
         "id": "permanent_ur",
         "content": "Permanent UR Pity is a TRAP!",
-        "subheadings": []
+        "subheadings": [
+          {
+            "id": "commander_handbook_ur",
+            "content": "Commander Handbook UR"
+          }
+        ]
       },
       {
         "id": "guild_shop",
@@ -865,11 +894,6 @@
       {
         "id": "combat_data_packs",
         "content": "Grind Shipyard EXP Manually",
-        "subheadings": []
-      },
-      {
-        "id": "rerolling",
-        "content": "Rerolling",
         "subheadings": []
       },
       {

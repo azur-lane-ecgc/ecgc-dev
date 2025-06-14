@@ -56,9 +56,10 @@
 .shipCellHover:focus,
 .shipCellHover:focus-visible,
 .shipCellHover:focus-within {
-  border: 1px solid orange !important;
+  border-color: transparent !important;
+  outline: 2px solid orange !important;
+  outline-offset: -1px;
   background-color: #3b444bb9;
-  outline: 1px solid orange !important;
 }
 
 /* cell */
