@@ -15,7 +15,7 @@
     "devtools": "bun run submodule && bash dev_tools/runAllTools.sh && bun run smol_format",
     "build": "bunx --bun astro check && bunx astro build",
     "cf-build": "bunx astro build",
-    "compress-build": "bunx --bun astro check && bun run build && bun run compress",
+    "compress-build": "bun run build && bun run compress",
     "open": "bash dev_tools/open-link.sh http://localhost:4321/",
     "cf-open": "bash dev_tools/open-link.sh http://localhost:4321/",
     "dev": "bunx astro dev",
