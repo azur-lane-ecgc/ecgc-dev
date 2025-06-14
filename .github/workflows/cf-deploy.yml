@@ -3,6 +3,8 @@ name: Deploy to Cloudflare Workers
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "dev_tools/**"
   workflow_dispatch:
 
 jobs:
@@ -13,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-            submodules: recursive
+          submodules: recursive
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
