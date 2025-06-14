@@ -52,7 +52,7 @@ const OTHER_LOCATIONS: Record<number, string | null> = {
   6: "Permanent Ultra Rare Pity",
   7: null, // Weekly Missions
   8: "Login Reward",
-  9: "Akashi's Homecoming Campaign", // Returnee Rewards
+  9: null, // Returnee Rewards, aren't relevant to this guide
   10: "Memento (Collections)",
   11: "Cruise Pass", // NOT PERMANENT
   12: "META Shop",
