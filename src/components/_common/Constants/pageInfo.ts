@@ -21,8 +21,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Early Ship Recommendations",
     authors: ["Samheart564"],
-    lastUpdated: "11/24/2023",
-    revision: "1.1.4",
+    lastUpdated: "6/10/2025",
+    revision: "1.1.5",
     description: `Goes over easily accessible good ships in Azur Lane and where to acquire them.`,
     link: "early_ship_recommendations",
     image: "/images/misc/early_ship_recs_cover.png",
