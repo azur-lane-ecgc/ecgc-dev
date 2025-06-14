@@ -15,7 +15,7 @@ Join our [Discord Server](https://discord.gg/wKJKxq5WQt)!
 
 ## Disclaimer
 
-This website (and its derivatives "ecgc-dev", "test_ecgc" and "test_ecgc_2") is owned, made and maintained by Sam K. (samheart564). All rights are reserved by the aforementioned person; there is **no** license. Unauthorized copying, redistributing or modifying of files served by this website (and its derivatives) in any way shape or form is strictly prohibited. All contributors will not hold copyright over any of their contributions unless otherwise stated by the aforementioned person.
+This website (and its derivatives "ECGC", "ecgc-dev", "test_ecgc" and "test_ecgc_2") is owned, made and maintained by Sam K. (samheart564). All rights are reserved by the aforementioned person; there is **no** license. Unauthorized copying, redistributing or modifying of files served by this website (and its derivatives) in any way shape or form is strictly prohibited. All contributors will not hold copyright over any of their contributions unless otherwise stated by the aforementioned person.
 
 Exceptions are all game assets and any data available in the [AzurLaneData repository](https://github.com/MrLar/AzurLaneData). Re-publishing this tool for the sake of translations or for other reasons is also not allowed without permission from the aforementioned person.
 
