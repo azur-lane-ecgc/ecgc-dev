@@ -1,13 +1,25 @@
 ---
 import { HR } from "@components/_common/HR"
-import WikiLink from "@components/_common/WikiLink.astro"
-
 import { ItemContainer, ItemCell, ShipCell } from "@components/_common/ItemCell"
 import { ItemTable } from "@components/_common/ItemTable"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
+import { LocationItem } from "@components/_common/ShipModal/ShipLocations"
+import WikiLink from "@components/_common/WikiLink.astro"
+import { ShipModal } from "@components/_common/ShipModal"
 
-// images
+import type { ShipData } from "@db/types"
+
 import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
+
+const shipData = (await import("@db/ship_data/ship_data.json"))
+  .default as Record<number, ShipData>
+
+const newJerseyData = shipData[68]
+const shinanoData = shipData[231]
+const unicornData = shipData[142]
+const helenaData = shipData[33]
+const portlandData = shipData[44]
+const pennData = shipData[54]
 ---
 
 <h2 id="avoid_yt_guides">Avoid YouTube Guides</h2>
@@ -18,6 +30,18 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
   information will come from Azur Lane Discord Servers, and/or people who
   actually play the game. Good Discord servers for help are Azur Lane Official,
   English Community Tier List, and English Community Guide Compendium.
+</p>
+<br />
+
+<h2 id="rerolling">Rerolling</h2>
+<HR />
+<p>
+  It is not recommended to reroll accounts because Cube income is spread out
+  rather than frontloaded, especially in early game.
+</p>
+<p>
+  Only consider rerolling if you start during a UR event where the UR is the
+  rate-up ship.
 </p>
 <br />
 
@@ -51,16 +75,18 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
   </li>
   <li>
     <p>
-      Complete <i>Requisition</i> exactly once for its Commander Handbook mission.
-      You are better off spending medals within the <WikiLink page="Medal Shop"
-        >Medal Shop</WikiLink
+      Complete <i>Requisition</i> exactly once for its <WikiLink
+        page="Commander Handbook"
+      /> mission. You are better off spending medals within the <WikiLink
+        page="Medal Shop">Medal Shop</WikiLink
       > for guaranteed ships and other items instead.
     </p>
   </li>
   <li>
     <p>
-      Don't speedrun Permanent UR ships, even if the Commander Handbook missions
-      incentivize it. Read the
+      Don't speedrun Permanent UR ships, even if the <WikiLink
+        page="Commander Handbook"
+      /> missions incentivize it. Read the
       <a href="#permanent_ur" target="_self" rel="noopener noreferrer"
         >Permanent UR section</a
       >. for more information.
@@ -101,6 +127,74 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 </ul>
 <br />
 
+<h3 id="commander_handbook_ur">
+  <WikiLink page="Commander Handbook">Commander Handbook</WikiLink> UR
+</h3>
+
+<p>
+  The <WikiLink page="Commander Handbook" /> gives you a free UR ship upon completing
+  all the missions. As mentioned earlier, the UR ship (regardless of which ship you
+  select) will not be good until they are max limit break.
+</p>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "22%" },
+    { colName: "Location", colWidth: "25%" },
+    { colName: "Description", colWidth: "53%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={shinanoData}
+          uniqueID="handbook-Shinano"
+        />
+      </div>
+    </td>
+    <td>
+      <LocationItem locations={shinanoData.locations.other} />
+      <LocationItem locations={shinanoData.locations.construction} />
+    </td>
+    <td>
+      <p><b>Pick Shinano if you don't have her!</b></p>
+      <br />
+      <p>
+        Amazing damage-oriented CV. Also buffs IJN CVs when paired alongside
+        her, and buffs all DDs in the Vanguard Fleet.
+      </p>
+      <p><i>Ideally used alongside 2+ other IJN ships.</i></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={newJerseyData}
+          uniqueID="handbook-NJ"
+        />
+      </div>
+    </td>
+    <td>
+      <LocationItem locations={newJerseyData.locations.other} />
+      <LocationItem locations={newJerseyData.locations.construction} />
+    </td>
+    <td>
+      <p>
+        Amazing off-flag damage-oriented BB. Worse than modern URs, but still
+        better than most non-URs.
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+<br />
+
 <h2 id="guild_shop"><WikiLink page="Guild Shop">Guild Shop</WikiLink></h2>
 <HR />
 <p>
@@ -132,12 +226,20 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 >
   <tr>
     <td>
-      <ShipCell ship="Unicorn" rarity={3} />
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={unicornData}
+          trigger={{ nonRetrofit: true }}
+        />
+      </div>
     </td>
-    <td>
-      <WikiLink page="Shops#Guild Shop" title="Guild Shop"
-        >Guild Shop - Elite Ship</WikiLink
-      >
+    <td
+      ><p>
+        <WikiLink page="Shops#Guild Shop" title="Guild Shop"
+          >Guild Shop - Elite Ship</WikiLink
+        >
+      </p>
     </td>
     <td>
       <p>
@@ -150,12 +252,20 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 
   <tr>
     <td>
-      <ShipCell ship="Helena" rarity={3} />
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={helenaData}
+          trigger={{ nonRetrofit: true }}
+        />
+      </div>
     </td>
-    <td>
-      <WikiLink page="Shops#Guild Shop" title="Guild Shop"
-        >Guild Shop - Elite Ship</WikiLink
-      >
+    <td
+      ><p>
+        <WikiLink page="Shops#Guild Shop" title="Guild Shop"
+          >Guild Shop - Elite Ship</WikiLink
+        >
+      </p>
     </td>
     <td>
       <p>
@@ -167,12 +277,20 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 
   <tr>
     <td>
-      <ShipCell ship="Portland" rarity={2} />
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={portlandData}
+          trigger={{ nonRetrofit: true }}
+        />
+      </div>
     </td>
-    <td>
-      <WikiLink page="Shops#Guild Shop" title="Guild Shop"
-        >Guild Shop - Rare Ship</WikiLink
-      >
+    <td
+      ><p>
+        <WikiLink page="Shops#Guild Shop" title="Guild Shop"
+          >Guild Shop - Rare Ship</WikiLink
+        >
+      </p>
     </td>
     <td>
       <p>
@@ -184,12 +302,19 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 
   <tr>
     <td>
-      <ShipCell ship="Pennsylvania" rarity={2} />
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={pennData}
+        />
+      </div>
     </td>
-    <td>
-      <WikiLink page="Shops#Guild Shop" title="Guild Shop"
-        >Guild Shop - Rare Ship</WikiLink
-      >
+    <td
+      ><p>
+        <WikiLink page="Shops#Guild Shop" title="Guild Shop"
+          >Guild Shop - Rare Ship</WikiLink
+        >
+      </p>
     </td>
     <td>
       <p>She's your easiest accessible Battleship.</p>
@@ -336,7 +461,7 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
     <p>
       For Bulin locations, check the
       <a href="/common_resource" target="_self">Common Resource Guide</a>. SR
-      (Gold Rarity) Bulins are scarce—plan carefully.
+      (Gold Rarity) Bulins are scarce; plan carefully.
     </p>
   </li>
   <li>
@@ -357,8 +482,9 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
   <li>
     <p>
       <b>Flagship:</b> The middle slot in your Main Fleet (gold-colored square).
-      Usually a BB—secondary guns help manage suicide enemies. Many BB barrages deal
-      maximum damage only from this slot.
+      Usually a BB is placed here due to their secondary guns helping to defend against
+      suicide enemies. Additionally, many BB barrages deal maximum damage when placed
+      in this slot.
     </p>
   </li>
   <li>
@@ -399,8 +525,8 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 <ul>
   <li>
     <p>
-      "Fleet Power" and "Total Stats" are just vanity numbers—ignore them; focus
-      on matching ship composition to stage mechanics.
+      "Fleet Power" and "Total Stats" are just vanity numbers, just ignore them.
+      Focus on matching ship composition to stage mechanics.
     </p>
   </li>
 </ul>
@@ -672,7 +798,7 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 <br />
 
 <p>
-  This principle applies to UR gear as well—high rarity does not automatically
+  This principle applies to UR gear as well: high rarity does not automatically
   mean "best." Gear is always situational. For more gear guides, see:
 </p>
 <ul>
@@ -713,8 +839,8 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
     <p>
       Skills or fight mechanics often drive gear choice. Example:
       <WikiLink page="Helena">Helena</WikiLink>'s Radar Scan debuffs enemies
-      every 20 seconds—time your Main Fleet gear with her rather than chasing
-      pure damage.
+      every 20 seconds; when using her, you should time your Main Fleet to 20s
+      to match.
     </p>
   </li>
   <li>
@@ -722,16 +848,16 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
       Some ships want specific gear synergies. Example:
       <WikiLink page="Kearsarge">Kearsarge</WikiLink> gains big buffs if she uses
       <WikiLink page="Eagle Union">Eagle Union</WikiLink> or
-      <WikiLink page="Northern Parliament">Northern Parliament</WikiLink> aircraft,
-      so that is higher priority than plane damage alone.
+      <WikiLink page="Northern Parliament">Northern Parliament</WikiLink> aircraft.
     </p>
   </li>
   <li>
     <p>
-      When mobbing, spread backline damage to avoid overkill—some ships have
+      When mobbing, spread backline damage to avoid overkill. Some ships have
       high reload or cooldown reduction skills that let them strike first. A
-      common mistake is giving your healer faster planes: it shifts heal timing
-      without adding extra strikes, leading to a net loss.
+      common mistake is giving your healer faster planes: the "faster" healing
+      does not justify the damage loss, especially if the healer has a
+      preloaded-airstrike. Normal damage equipment is fine on them.
     </p>
   </li>
 </ul>
@@ -739,7 +865,7 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
 
 <h3 id="augment_and_lab">Augment Modules & Gear Lab</h3>
 <p>
-  Both systems are long-term grinds—unlock them but don't over-invest early.
+  Both systems are long-term grinds. Unlock them but don't over-invest early.
   Main articles:
   <a href="/equipment#augment_module" target="_self">Augment Modules</a>
   and
@@ -810,7 +936,7 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
     </td>
     <td rowspan="2">
       <p class="px-1 py-1">
-        Always craft up. Never open T1/T2 Tech Boxes—only open T3 or higher.
+        Always craft up. Never open T1/T2 Tech Boxes; only open T3 or higher.
       </p>
     </td>
   </tr>
@@ -949,18 +1075,6 @@ import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
   For full Research details, see the
   <a href="/research" target="_self" rel="noopener noreferrer">Research Guide</a
   >.
-</p>
-<br />
-
-<h2 id="rerolling">Rerolling</h2>
-<HR />
-<p>
-  It is not recommended to reroll accounts because Cube income is spread out
-  rather than frontloaded, especially in early game.
-</p>
-<p>
-  Only consider rerolling if you start during a UR event where the UR is the
-  rate-up ship.
 </p>
 <br />
 
