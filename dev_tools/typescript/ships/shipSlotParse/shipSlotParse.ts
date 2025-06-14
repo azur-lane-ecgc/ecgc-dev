@@ -42,7 +42,7 @@ export const shipSlotParse = (
 
     return {
       type: equipType,
-      efficiency: efficiency,
+      efficiency: Number(efficiency.toFixed(2)),
       mounts: (data.base || 1) + (retroSlot?.base || 0),
     }
   })
