@@ -4,6 +4,7 @@ files=(
     "replace_links/replaceLinks.ts"
     "ship_data/ship_json_generator.ts"
     "toc_generator/TocGenerator.ts"
+    "events/azurLaneEvents.ts"
 )
 
 for file in "${files[@]}"; do
