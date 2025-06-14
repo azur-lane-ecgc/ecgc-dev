@@ -87,7 +87,6 @@ import { pageInfo } from "@components/_common/Constants"
               <div class="mod-gridcell-details-style mb-4 text-xs text-gray-600">
                 <div>
                   <i class="fas fa-pencil-alt mr-1" />
-                  &#8201;
                   {guide.authors.length > 0
                     ? guide.authors.map((author, index) => (
                         <span>
@@ -100,7 +99,7 @@ import { pageInfo } from "@components/_common/Constants"
 
                 <div>
                   <i class="fas fa-sync mr-1" />
-                  &#8201;{guide.lastUpdated}
+                  {guide.lastUpdated}
                 </div>
                 <div>Revision {guide.revision}</div>
               </div>
