@@ -12,11 +12,11 @@
     <meta name="og:title" content="Samvaluations" />
     <meta
       name="og:url"
-      content="https://www.azurlaneecgc.com/newbie_tips"
+      content="https://azurlaneecgc.com/newbie_tips"
     />
     <meta
       name="og:image"
-      content="https://www.azurlaneecgc.com/images/misc/No-Cover.jpg"
+      content="https://azurlaneecgc.com/images/misc/No-Cover.jpg"
     />
     <!-- NO COVER -->
     <meta
