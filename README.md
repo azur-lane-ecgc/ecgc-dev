@@ -2,7 +2,7 @@
 
 Sam's English Community Guide Compendium for Azur Lane
 
-Link: [azurlaneecgc.com/](https://www.azurlaneecgc.com/)
+Link: [azurlaneecgc.com/](https://azurlaneecgc.com/)
 
 Beta / Test Version: [samheart564.github.io/test_ecgc](https://samheart564.github.io/test_ecgc/)
 

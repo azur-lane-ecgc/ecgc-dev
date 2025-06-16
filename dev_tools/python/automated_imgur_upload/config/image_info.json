@@ -104,7 +104,7 @@
   "Cover_Page": {
     "type": "image",
     "title": "Cover Page",
-    "description": "Continuation of Nerezza's Gameplay Picture Guides.\n\nLink to Azur Lane English Community Guide Compendium (preferred): https://www.azurlaneecgc.com/equipment\nGoogle Sheets Link (if Imgur is wonky):\nhttps://docs.google.com/spreadsheets/d/1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM/edit?gid=1859764162#gid=1859764162\n\n",
+    "description": "Continuation of Nerezza's Gameplay Picture Guides.\n\nLink to Azur Lane English Community Guide Compendium (preferred): https://azurlaneecgc.com/equipment\nGoogle Sheets Link (if Imgur is wonky):\nhttps://docs.google.com/spreadsheets/d/1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM/edit?gid=1859764162#gid=1859764162\n\n",
     "path": "public/images/equip_important/Cover_Page.jpg"
   },
   "Cross-fleet_Effects": {
@@ -176,7 +176,7 @@
   "Historical_Note": {
     "type": "image",
     "title": "Hard Mode Req Help",
-    "description": "Changelog:\nhttps://www.azurlaneecgc.com/changelog\n\nYOU CAN CTRL+F TO FIND IMAGES NOW! MAKE SURE ALL ARE LOADED IN FIRST.",
+    "description": "Changelog:\nhttps://azurlaneecgc.com/changelog\n\nYOU CAN CTRL+F TO FIND IMAGES NOW! MAKE SURE ALL ARE LOADED IN FIRST.",
     "path": "public/images/equip_important/Historical_Note.png"
   },
   "IX_Auxes": {
