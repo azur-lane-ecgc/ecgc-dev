@@ -1,7 +1,7 @@
-import type { SamvaluationProps } from "@tools/typescript/samvaluation/types"
+import type { SamvaluationProps } from "dev/typescript/samvaluation/types"
 
 const samvaluationData = (await import(
-  "@tools/typescript/samvaluation/samvaluationData.json"
+  "dev/typescript/samvaluation/samvaluationData.json"
 ).then((module) => module.default)) as Record<string, SamvaluationProps>
 
 export const fastLoadRole = (): Set<string> => {
