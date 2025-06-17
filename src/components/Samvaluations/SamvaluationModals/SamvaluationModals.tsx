@@ -19,7 +19,6 @@ import {
   useShipFilter,
 } from "@store/Samvaluation/useShipFilter"
 
-// import { formatLocation } from "@utils/formatLocation"
 import { getHighestValue, numberToLetterRank } from "@utils/ships"
 
 import { SamvaluationModalFilters } from "./SamvaluationModalFilters"
