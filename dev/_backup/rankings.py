@@ -7,7 +7,7 @@
 # from googleapiclient.discovery import build
 
 # # Constants
-# SERVICE_ACCOUNT_FILE = "dev_tools/credentials.json"
+# SERVICE_ACCOUNT_FILE = "dev/credentials.json"
 # SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 # SHEET_NAMES = ["VG (no img)", "MAIN (no img)", "subs (no img)"]
 # OUTPUT_PATHS = [

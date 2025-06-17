@@ -25,7 +25,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
     server: {
       watch: {
-        ignored: ["**/dist/**", "**/dev_tools/**", "**/node_modules/**"],
+        ignored: ["**/dist/**", "**/dev/**", "**/node_modules/**"],
       },
     },
   },

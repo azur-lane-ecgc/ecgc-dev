@@ -1,5 +1,5 @@
 
-source dev_tools/python/install.sh
+source dev/python/install.sh
 
 run_gsheets2img() {
     uv run automated_imgur_upload/gsheets2img.py

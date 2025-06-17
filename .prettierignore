@@ -1,8 +1,8 @@
-dev_tools/testing
-
 .astro
 .wrangler
 .venv
 **/.venv
 node_modules
 dist
+
+dev/_backup
