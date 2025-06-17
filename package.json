@@ -26,8 +26,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
-    "astro": "^5.9.3",
-    "astro-meta-tags": "^0.3.2",
+    "astro": "^5.9.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-intersection-observer-hook": "^4.0.0",
@@ -36,17 +35,17 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/sitemap": "^3.4.1",
+    "astro-meta-tags": "^0.3.2",
     "@tailwindcss/vite": "^4.1.10",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@happy-dom/global-registrator": "^18.0.1",
     "@types/bun": "^1.2.16",
-    "knip": "^5.61.0",
+    "knip": "^5.61.1",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "sharp": "^0.34.2",
-    "wrangler": "^4.20.0"
+    "wrangler": "^4.20.1"
   },
   "private": true
 }
