@@ -1,5 +1,5 @@
 #!/bin/bash
-cd dev_tools/typescript
+cd dev/typescript
 
 bun run compress/compress.ts
 echo

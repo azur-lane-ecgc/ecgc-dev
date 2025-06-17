@@ -2,7 +2,7 @@
 // import fs from "fs"
 
 // // Hardcoded file paths
-// const inputFilePath = "dev_tools/samvaluation.html" // Input HTML file
+// const inputFilePath = "dev/samvaluation.html" // Input HTML file
 // const outputFilePath =
 //   "src/components/Samvaluations/ShipModal/utils/shipSamvaluationParse/data.json" // Output JSON file
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd dev_tools/python || { echo "dev_tools directory not found!"; exit 1; }
+cd dev/python || { echo "dev directory not found!"; exit 1; }
 
 if [ ! -d ".venv" ]; then
     uv venv
