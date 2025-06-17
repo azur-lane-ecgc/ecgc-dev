@@ -2,7 +2,7 @@ import type {
   VanguardFleetRankingProps,
   MainFleetRankingProps,
 } from "@db/types"
-import type { ShipAAProps } from "@tools/python/aa_parsing/types"
+import type { ShipAAProps } from "dev/python/aa_parsing/types"
 
 import { isDecentMainFleet, isDecentVG } from "../decentShips"
 
@@ -20,7 +20,7 @@ const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
     (module) => module.default,
   )) as Record<string, MainFleetRankingProps[]>
 
-export const aaCarryRole = (): Set<string> => {
+export const aaRole = (): Set<string> => {
   const aaSet = new Set<string>()
 
   for (const shipName of Object.keys(shipAAData)) {
@@ -38,7 +38,7 @@ export const aaCarryRole = (): Set<string> => {
     const vgRankings = VGFleetRankingData[shipName]
     if (vgRankings && isDecentVG(shipName)) {
       for (const ranking of vgRankings) {
-        if (ranking.aa && ranking.aa >= 3) {
+        if (ranking.aa && ranking.aa > 0) {
           aaSet.add(shipName)
           break
         }
@@ -48,7 +48,7 @@ export const aaCarryRole = (): Set<string> => {
     const mainRankings = MainFleetRankingData[shipName]
     if (mainRankings && isDecentMainFleet(shipName)) {
       for (const ranking of mainRankings) {
-        if (ranking.aa && ranking.aa >= 2) {
+        if (ranking.aa && ranking.aa > 0) {
           aaSet.add(shipName)
           break
         }

@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "dev_tools/_backup/*", "dev_tools/python/*"],
+  "exclude": ["dist", "dev/_backup/*", "dev/python/*"],
   "compilerOptions": {
     "allowJs": true,
     "resolveJsonModule": true,
@@ -17,7 +17,7 @@
       "@utils/*": ["src/utils/*"],
       "@db/*": ["src/db/*"],
       "@store/*": ["src/store/*"],
-      "@tools/*": ["dev_tools/*"],
+      "@tools/*": ["dev/*"],
       "@ALData/*": ["AzurLaneData/*"]
     }
   }
