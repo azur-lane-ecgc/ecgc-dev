@@ -14,7 +14,16 @@ import tailwindcss from "@tailwindcss/vite"
 export default defineConfig({
   // adapter: cloudflare({imageService: 'compile'}),
   site: "https://azurlaneecgc.com",
-  integrations: [react(), sitemap(), metaTags()],
+  integrations: [
+    react(),
+    sitemap({
+      serialize(item) {
+        item.url = item.url.replace(/\/$/, "")
+        return item
+      },
+    }),
+    metaTags(),
+  ],
   base: "/",
   output: "static",
   trailingSlash: "ignore",
