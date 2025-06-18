@@ -2189,7 +2189,7 @@
   "Cleopatra": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE has fleet air damage reduction but not AA carry-level AA.",
+      "notes": "Has fleet air damage reduction but not AA carry-level AA.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5113,7 +5113,7 @@
       "w14boss": "A",
       "w15mob": "D",
       "w15boss": "D",
-      "ex": "A",
+      "ex": "S",
       "consistency": -2,
       "fleetreq": null,
       "gearreq": null,
@@ -5572,7 +5572,7 @@
       "w14boss": "C",
       "w15mob": "D",
       "w15boss": "D",
-      "ex": "S",
+      "ex": "SS",
       "consistency": null,
       "fleetreq": null,
       "gearreq": null,
@@ -11450,7 +11450,7 @@
   "Trafalgar": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Single 113 >= Single 76 >= 100 kai. Timed EVA Rate debuff, perma 15% slow. Requires flagship with main gun.",
+      "notes": "Single 113 >= Single 76 >= 100 kai. Timed EVA Rate debuff, perma 15% slow. Requires flagship with main gun.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
