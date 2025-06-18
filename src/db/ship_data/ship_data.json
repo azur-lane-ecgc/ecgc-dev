@@ -18417,7 +18417,7 @@
     "augments": ["Sylvan Dawnbreeze", "Scepter", "Hunting Bow"],
     "samEval": "Centaur is a support-oriented CVL with great stats and skills. Her personal damage is good with 8 planes. Her reload stat is on the higher end for CVs, allowing her support to be easily syncable without much effort. Her Skill 1 barrage applies a slow to enemies hit, and her Skill 2 buffs your Main Fleet. She is ideally sortied with 2 more HMS ships, but that is not necessary for her to be good. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport", "Meh"],
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [],
       "other": [],
