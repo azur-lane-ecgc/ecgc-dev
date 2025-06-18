@@ -16,6 +16,7 @@ interface Props {
   title: string
   metaTitle?: string
   activePage: string
+  canonical?: string
   tocID?: string | null
   metaUrl?: string
   metaImage?: string
@@ -26,6 +27,7 @@ const {
   title,
   metaTitle,
   activePage,
+  canonical,
   tocID,
   metaUrl,
   metaImage,
@@ -40,7 +42,7 @@ const {
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link
       rel="canonical"
-      href={`https://azurlaneecgc.com${activePage ? `/${activePage}` : ""}`}
+      href={`https://azurlaneecgc.com${activePage ? `/${canonical ?? activePage}` : ""}`}
     />
 
     <meta
