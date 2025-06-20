@@ -42,7 +42,7 @@ def process_sheet(sheet_name):
     result = (
         service.spreadsheets()
         .values()
-        .get(spreadsheetId=SPREADSHEET_ID, range=f"{sheet_name}!A2:C")
+        .get(spreadsheetId=SPREADSHEET_ID, range=f"{sheet_name}!A2:D")
         .execute()
     )
 
@@ -56,7 +56,7 @@ def process_sheet(sheet_name):
         original_name = row[0].strip()  # Column A (including notes)
         base_name = extract_base_name(original_name)  # Base ship name
         totalEHP = row[1].strip()  # EHP value
-        std = row[2].strip()  # 3STD
+        std = row[3].strip()  # 3STD
 
         entry = {
             "name": original_name,
@@ -85,6 +85,6 @@ if __name__ == "__main__":
         # Write data to JSON
         with open(output_path, "w", encoding="utf-8") as json_file:
             json.dump(sheet_data, json_file, indent=2, ensure_ascii=False)
-            json_file.write('\n')
+            json_file.write("\n")
 
         print(f"Data from sheet '{sheet_name}' has been written to {output_path}")
