@@ -209,7 +209,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 3,
+      "selfsurvival": 2,
       "aa": -1,
       "asw": null,
       "defensivebuff": null
@@ -398,7 +398,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": 2,
       "asw": null,
       "defensivebuff": null
@@ -749,7 +749,7 @@
       "heavydmg": 2,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -1208,7 +1208,7 @@
       "heavydmg": 3,
       "aoedmg": 4,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 4,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -1613,7 +1613,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -1721,7 +1721,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -1856,7 +1856,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -2288,7 +2288,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -2558,7 +2558,7 @@
       "heavydmg": 1,
       "aoedmg": 3,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 3,
       "aa": 4,
       "asw": null,
       "defensivebuff": 1
@@ -2639,7 +2639,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -2936,7 +2936,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -3125,7 +3125,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -3341,7 +3341,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 2,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 3
@@ -3854,7 +3854,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -4313,7 +4313,7 @@
       "heavydmg": 2,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": 1,
       "defensivebuff": 1
@@ -4367,7 +4367,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -4529,7 +4529,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 2,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -4637,7 +4637,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 2
@@ -4718,7 +4718,7 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": 2
@@ -4799,7 +4799,7 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -5042,7 +5042,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -5177,7 +5177,7 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -5393,7 +5393,7 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": 1,
       "defensivebuff": 1
@@ -5420,7 +5420,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -5528,7 +5528,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 4,
       "aa": null,
       "asw": 1,
       "defensivebuff": 1
@@ -5744,7 +5744,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 5,
+      "selfsurvival": 4,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -5879,7 +5879,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -5933,7 +5933,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 2,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -5987,7 +5987,7 @@
       "heavydmg": 3,
       "aoedmg": 3,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 1,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -6230,7 +6230,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -6608,7 +6608,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 4,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -6797,7 +6797,7 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -6824,7 +6824,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -7013,7 +7013,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -7175,7 +7175,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -7310,7 +7310,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -7553,7 +7553,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -7742,7 +7742,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 2,
       "aa": 2,
       "asw": null,
       "defensivebuff": null
@@ -8147,7 +8147,7 @@
       "heavydmg": 2,
       "aoedmg": 2,
       "offensivebuff": 2,
-      "selfsurvival": 2,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -8174,7 +8174,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -8714,7 +8714,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -9092,7 +9092,7 @@
       "heavydmg": 1,
       "aoedmg": 3,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": 1,
       "defensivebuff": null
@@ -9146,7 +9146,7 @@
       "heavydmg": 1,
       "aoedmg": 3,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -9281,7 +9281,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -9335,7 +9335,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -9821,7 +9821,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -10334,7 +10334,7 @@
       "heavydmg": 1,
       "aoedmg": 3,
       "offensivebuff": 1,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": 2,
       "asw": null,
       "defensivebuff": 2
@@ -10469,7 +10469,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -10523,7 +10523,7 @@
       "heavydmg": 4,
       "aoedmg": 3,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -10901,7 +10901,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 1,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -11036,7 +11036,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 1,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -11171,7 +11171,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -11900,7 +11900,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 4,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -12681,7 +12681,7 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -12924,7 +12924,7 @@
       "heavydmg": 2,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -12951,7 +12951,7 @@
       "heavydmg": 4,
       "aoedmg": 4,
       "offensivebuff": 1,
-      "selfsurvival": 3,
+      "selfsurvival": 4,
       "aa": 3,
       "asw": null,
       "defensivebuff": 2
