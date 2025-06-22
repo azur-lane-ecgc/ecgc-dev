@@ -34,7 +34,7 @@ export const pageInfo: PageInfoItem[] = [
     revision: "1.17.0",
     description: `Goes over the optimal equipment to use in Azur Lane, in an easy-to-read image format!`,
     link: "equipment",
-    image: "/images/misc/equipment_guide_cover.png",
+    image: "/images/misc/equipment_guide_cover.jpg",
   },
   {
     title: "Farming Guide",
@@ -66,11 +66,11 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Newbie Tips",
     authors: ["Samheart564"],
-    lastUpdated: "6/10/2025",
-    revision: "2.0.0",
+    lastUpdated: "6/22/2025",
+    revision: "2.0.1",
     description: `Goes over basic advice and mistakes to avoid for new players!`,
     link: "newbie_tips",
-    image: "/images/misc/no_cover.jpg",
+    image: "/images/misc/newbie_tips_cover.jpg",
   },
   {
     title: "Research Guide",
