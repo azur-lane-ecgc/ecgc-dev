@@ -48,8 +48,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Fleetbuilding Guide",
     authors: ["Samheart564"],
-    lastUpdated: "6/10/2025",
-    revision: "1.13.0",
+    lastUpdated: "6/22/2025",
+    revision: "1.13.1",
     description: `Goes over how to make fleets for both Campaign and <a href="https://azurlane.koumakan.jp/wiki/Operation Siren" target="_blank" rel="noopener noreferrer">Operation Siren</a> in Azur Lane.`,
     link: "fleetbuilding",
     image: "/images/misc/fleetbuilding_guide_cover.png",
