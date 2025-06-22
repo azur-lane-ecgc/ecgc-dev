@@ -340,7 +340,7 @@ import {
 <br />
 <FleetbuildingShipList role="vg-asw" ships={VGaswShips} />
 
-<h3 id="vg_offensive_support">Offensive Support</h3>
+<h3 id="vg_off_support">Offensive Support</h3>
 <p>
   These ships offer offensive buffs to the fleet in exchange for slightly lower
   personal damage.
@@ -348,7 +348,7 @@ import {
 <br />
 <FleetbuildingShipList role="vg-offsupport" ships={VGoffSupportShips} />
 
-<h3 id="vg_defensive_support">Defensive Support</h3>
+<h3 id="vg_def_support">Defensive Support</h3>
 <p>
   These ships offer defensive buffs to the fleet in exchange for slightly lower
   personal damage.
@@ -517,8 +517,8 @@ import {
 
 <h3 id="on_shot_sync">On Shot / Strike Syncing</h3>
 <p>
-  <i>
-    Example:
+  <i
+    >Example:
     <WikiLink page="Vanguard" title="Vanguard">Vanguard</WikiLink>,
     <WikiLink page="Duke of York" title="Duke of York">Duke of York</WikiLink>,
     <WikiLink page="Ark Royal" title="Ark Royal">Ark Royal</WikiLink>,
@@ -720,26 +720,39 @@ import {
     <li>
       <p>
         Slot 2 (Flagship): <a
-          href="#flagship_bb"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Flagship BB</a
-        > or <a href="#off-flag_bb" target="_self" rel="noopener noreferrer"
-          >Off-Flag BB</a
+          rel="noopener noreferrer">Damage Dealer</a
+        > or <a
+          href="#main_off_support"
+          target="_self"
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
+      <ul>
+        <li>
+          <p>Ideally a BB / BC for the auxiliary gun.</p>
+        </li>
+      </ul>
     </li>
     <li>
       <p>
         Slot 3 (Off-Flag): <a
-          href="#off-flag_bb"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Off-Flag BB</a
-        > or <a href="#damage_cv" target="_self" rel="noopener noreferrer"
-          >Damage CV</a
+          rel="noopener noreferrer">Damage Dealer</a
         > or <a
-          href="#backline_support"
+          href="#main_off_support"
           target="_self"
-          rel="noopener noreferrer">Support</a
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
     </li>
@@ -756,12 +769,10 @@ import {
     <li>
       <p>
         Slot 1 (Main Tank): <a
-          href="#boss_main_tank"
+          href="#supertank"
           target="_self"
-          rel="noopener noreferrer">Boss Main Tank</a
-        > or <a href="#mob_main_tank" target="_self" rel="noopener noreferrer"
-          >Mob Main Tank</a
-        >
+          rel="noopener noreferrer">Super Tank</a
+        > or <a href="#tank" target="_self" rel="noopener noreferrer">Tank</a>
       </p>
     </li>
     <li>
@@ -770,9 +781,13 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
-        >
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
+        > or <a href="#aa_carry" target="_self" rel="noopener noreferrer"
+          >AA Carry</a
+        > or <a href="#asw" target="_self" rel="noopener noreferrer">ASW</a>
       </p>
     </li>
     <li>
@@ -781,9 +796,13 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
-        >
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
+        > or <a href="#aa_carry" target="_self" rel="noopener noreferrer"
+          >AA Carry</a
+        > or <a href="#asw" target="_self" rel="noopener noreferrer">ASW</a>
       </p>
     </li>
   </ul>
@@ -801,41 +820,56 @@ import {
     <li>
       <p>
         Slot 1 (Off-Flag): <a
-          href="#off-flag_bb"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Off-Flag BB</a
-        > or <a href="#damage_cv" target="_self" rel="noopener noreferrer"
-          >Damage CV</a
+          rel="noopener noreferrer">Damage Dealer</a
         > or <a
-          href="#backline_support"
+          href="#main_off_support"
           target="_self"
-          rel="noopener noreferrer">Support</a
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
     </li>
     <li>
       <p>
         Slot 2 (Flagship): <a
-          href="#flagship_bb"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Flagship BB</a
-        > or <a href="#off-flag_bb" target="_self" rel="noopener noreferrer"
-          >Off-Flag BB</a
+          rel="noopener noreferrer">Damage Dealer</a
+        > or <a
+          href="#main_off_support"
+          target="_self"
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
+      <ul>
+        <li>
+          <p>Ideally a BB / BC for the auxiliary gun.</p>
+        </li>
+      </ul>
     </li>
     <li>
       <p>
         Slot 3 (Off-Flag): <a
-          href="#off-flag_bb"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Off-Flag BB</a
-        > or <a href="#damage_cv" target="_self" rel="noopener noreferrer"
-          >Damage CV</a
+          rel="noopener noreferrer">Damage Dealer</a
         > or <a
-          href="#backline_support"
+          href="#main_off_support"
           target="_self"
-          rel="noopener noreferrer">Support</a
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
     </li>
@@ -852,10 +886,10 @@ import {
     <li>
       <p>
         Slot 1 (Main Tank): <a
-          href="#boss_main_tank"
+          href="#supertank"
           target="_self"
-          rel="noopener noreferrer">Boss Main Tank</a
-        >
+          rel="noopener noreferrer">Super Tank</a
+        > or <a href="#tank" target="_self" rel="noopener noreferrer">Tank</a>
       </p>
     </li>
     <li>
@@ -864,9 +898,13 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
-        >
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
+        > or <a href="#aa_carry" target="_self" rel="noopener noreferrer"
+          >AA Carry</a
+        > or <a href="#asw" target="_self" rel="noopener noreferrer">ASW</a>
       </p>
     </li>
     <li>
@@ -875,9 +913,13 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
-        >
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
+        > or <a href="#aa_carry" target="_self" rel="noopener noreferrer"
+          >AA Carry</a
+        > or <a href="#asw" target="_self" rel="noopener noreferrer">ASW</a>
       </p>
     </li>
   </ul>
@@ -924,10 +966,10 @@ import {
 <h3 id="opsi_theory">Theory</h3>
 <p>
   Since most of the large buffs given by Support ships (from <a
-    href="#backline_support"
+    href="#main_off_support"
     target="_self"
     rel="noopener noreferrer">Main Fleet</a
-  > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
+  > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
     >Vanguard Fleet</a
   >) target a specific Hull type (like BB, CV, etc.), building around maximizing
   those buffs is most optimal.
@@ -990,37 +1032,51 @@ import {
     <li>
       <p>
         Slot 1 (Off-Flag): <a
-          href="#off-flag_bb"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Off-Flag BB</a
+          rel="noopener noreferrer">Damage Dealer</a
         > or <a
-          href="#backline_support"
+          href="#main_off_support"
           target="_self"
-          rel="noopener noreferrer">Support</a
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
     </li>
     <li>
       <p>
         Slot 2 (Flagship): <a
-          href="#flagship_bb"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Flagship BB</a
-        > or <a href="#off-flag_bb" target="_self" rel="noopener noreferrer"
-          >Off-Flag BB</a
+          rel="noopener noreferrer">Damage Dealer</a
+        > or <a
+          href="#main_off_support"
+          target="_self"
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
     </li>
     <li>
       <p>
-        Slot 1 (Off-Flag): <a
-          href="#off-flag_bb"
+        Slot 3 (Off-Flag): <a
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Off-Flag BB</a
+          rel="noopener noreferrer">Damage Dealer</a
         > or <a
-          href="#backline_support"
+          href="#main_off_support"
           target="_self"
-          rel="noopener noreferrer">Support</a
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
     </li>
@@ -1037,10 +1093,10 @@ import {
     <li>
       <p>
         Slot 1 (Main Tank): <a
-          href="#boss_main_tank"
+          href="#supertank"
           target="_self"
-          rel="noopener noreferrer">Boss Main Tank</a
-        >
+          rel="noopener noreferrer">Super Tank</a
+        > or <a href="#tank" target="_self" rel="noopener noreferrer">Tank</a>
       </p>
     </li>
     <li>
@@ -1049,8 +1105,10 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
         >
       </p>
     </li>
@@ -1060,8 +1118,10 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
         >
       </p>
     </li>
@@ -1069,20 +1129,33 @@ import {
 </ul>
 <br />
 <ul>
-  <li><b>OpSi Specific Notes:</b></li>
+  <li>
+    <p><b>OpSi Specific Notes:</b></p>
+  </li>
   <ul>
     <li>
       <p>
         Ideally, at least one of these <a
-          href="#backline_support"
+          href="#main_off_support"
           target="_self"
           rel="noopener noreferrer">Supports (from Main Fleet)</a
-        > are used: <WikiLink page="Vanguard" title="Vanguard"
-          >Vanguard</WikiLink
-        >, <WikiLink page="Howe" title="Howe">Howe</WikiLink>, <WikiLink
-          page="Duke of York"
-          title="Duke of York">Duke of York</WikiLink
-        >
+        > are used: <WikiLink page="Lion">Lion</WikiLink>, <WikiLink
+          page="Vanguard"
+          title="Vanguard">Vanguard</WikiLink
+        >, <WikiLink page="Duke of York" title="Duke of York"
+          >Duke of York</WikiLink
+        >.
+      </p>
+    </li>
+    <li>
+      <p>
+        Ideally, at least one of these <a
+          href="#vg_off_support"
+          target="_self"
+          rel="noopener noreferrer">Supports (from Vanguard Fleet)</a
+        > are used: <WikiLink page="Helena">Helena</WikiLink>, <WikiLink
+          page="Aurora">Aurora</WikiLink
+        >, <WikiLink page="Trafalgar">Trafalgar</WikiLink>.
       </p>
     </li>
   </ul>
@@ -1113,29 +1186,32 @@ import {
         <WikiLink page="August von Parseval" title="August von Parseval"
           >August von Parseval</WikiLink
         >, <WikiLink page="Peter Strasser">Peter Strasser</WikiLink>,
-        <WikiLink page="Ark Royal" title="Ark Royal">Ark Royal</WikiLink>,
-        etc.).
+        <WikiLink page="Ark Royal" title="Ark Royal">Ark Royal</WikiLink>, etc.)
       </p>
     </li>
     <li>
       <p>
         Slot 2 (Flagship): <a
-          href="#damage_cv"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Damage CV</a
+          rel="noopener noreferrer">Damage Dealer</a
         >
       </p>
     </li>
     <li>
       <p>
         Slot 3 (Off-Flag): <a
-          href="#damage_cv"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Damage CV</a
+          rel="noopener noreferrer">Damage Dealer</a
         > or <a
-          href="#backline_support"
+          href="#main_off_support"
           target="_self"
-          rel="noopener noreferrer">Support</a
+          rel="noopener noreferrer">Offensive Support</a
+        > or <a
+          href="#main_def_support"
+          target="_self"
+          rel="noopener noreferrer">Defensive Support</a
         >
       </p>
     </li>
@@ -1152,10 +1228,10 @@ import {
     <li>
       <p>
         Slot 1 (Main Tank): <a
-          href="#boss_main_tank"
+          href="#supertank"
           target="_self"
-          rel="noopener noreferrer">Boss Main Tank</a
-        >
+          rel="noopener noreferrer">Super Tank</a
+        > or <a href="#tank" target="_self" rel="noopener noreferrer">Tank</a>
       </p>
     </li>
     <li>
@@ -1164,8 +1240,12 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
+        > or <a href="#aa_carry" target="_self" rel="noopener noreferrer"
+          >AA Carry</a
         >
       </p>
     </li>
@@ -1175,8 +1255,12 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
+        > or <a href="#aa_carry" target="_self" rel="noopener noreferrer"
+          >AA Carry</a
         >
       </p>
     </li>
@@ -1184,15 +1268,17 @@ import {
 </ul>
 <br />
 <ul>
-  <li><b>OpSi Specific Notes:</b></li>
+  <li>
+    <p><b>OpSi Specific Notes:</b></p>
+  </li>
   <ul>
     <li>
       <p>
-        Ideally, at least one of these <a
-          href="#vg_support"
+        Ideally, use a support ship from <a
+          href="#vg_off_support"
           target="_self"
-          rel="noopener noreferrer">CV Damage Supports</a
-        > are used.
+          rel="noopener noreferrer">here</a
+        > that supports CV damage (ex. <WikiLink page="Kazagumo" />).
       </p>
     </li>
   </ul>
@@ -1221,17 +1307,18 @@ import {
         >,
         <WikiLink page="August von Parseval" title="August von Parseval"
           >August von Parseval</WikiLink
-        >) or <WikiLink page="Independence" title="Independence"
-          >Independence (Retrofit)</WikiLink
-        > or other <a href="#damage_cv" target="_self" rel="noopener noreferrer"
-          >Damage CV</a
+        >) or <a
+          href="#main_dmg_dealer"
+          target="_self"
+          rel="noopener noreferrer">Damage Dealer</a
         >
       </p>
     </li>
     <li>
       <p>
-        Slot 2 (Flagship): <WikiLink page="Enterprise" title="Enterprise"
-          >Enterprise</WikiLink
+        Slot 2 (Flagship): <WikiLink page="Kearsarge">Kearsarge</WikiLink> or <WikiLink
+          page="Enterprise"
+          title="Enterprise">Enterprise</WikiLink
         >
       </p>
     </li>
@@ -1240,9 +1327,9 @@ import {
         Slot 3 (Off-Flag): <WikiLink page="Yorktown II" title="Yorktown II"
           >Yorktown II</WikiLink
         > (ideally) or other <a
-          href="#damage_cv"
+          href="#main_dmg_dealer"
           target="_self"
-          rel="noopener noreferrer">Damage CV</a
+          rel="noopener noreferrer">Damage Dealer</a
         >
       </p>
     </li>
@@ -1259,10 +1346,10 @@ import {
     <li>
       <p>
         Slot 1 (Main Tank): <a
-          href="#boss_main_tank"
+          href="#supertank"
           target="_self"
-          rel="noopener noreferrer">Boss Main Tank</a
-        >
+          rel="noopener noreferrer">Super Tank</a
+        > or <a href="#tank" target="_self" rel="noopener noreferrer">Tank</a>
       </p>
     </li>
     <li>
@@ -1271,8 +1358,12 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
+        > or <a href="#aa_carry" target="_self" rel="noopener noreferrer"
+          >AA Carry</a
         >
       </p>
     </li>
@@ -1282,8 +1373,12 @@ import {
           href="#vg_damage_dealer"
           target="_self"
           rel="noopener noreferrer">Damage Dealer</a
-        > or <a href="#vg_support" target="_self" rel="noopener noreferrer"
-          >Support</a
+        > or <a href="#vg_off_support" target="_self" rel="noopener noreferrer"
+          >Offensive Support</a
+        > or <a href="#vg_def_support" target="_self" rel="noopener noreferrer"
+          >Defensive Support</a
+        > or <a href="#aa_carry" target="_self" rel="noopener noreferrer"
+          >AA Carry</a
         >
       </p>
     </li>
@@ -1295,11 +1390,11 @@ import {
   <ul>
     <li>
       <p>
-        Ideally, at least one of these <a
-          href="#vg_support"
+        Ideally, use a support ship from <a
+          href="#vg_off_support"
           target="_self"
-          rel="noopener noreferrer">CV Damage Supports</a
-        > are used.
+          rel="noopener noreferrer">here</a
+        > that supports CV damage (ex. <WikiLink page="Kazagumo" />).
       </p>
     </li>
   </ul>
