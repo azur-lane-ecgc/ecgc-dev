@@ -624,11 +624,11 @@
             "content": "ASW"
           },
           {
-            "id": "vg_offensive_support",
+            "id": "vg_off_support",
             "content": "Offensive Support"
           },
           {
-            "id": "vg_defensive_support",
+            "id": "vg_def_support",
             "content": "Defensive Support"
           }
         ]
