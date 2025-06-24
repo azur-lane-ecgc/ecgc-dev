@@ -210,11 +210,11 @@
   "Homura": [
     {
       "nameNote": "Base",
-      "notes": "100% geo hit barrage = consistently good. Must not use unique augment for campaign.",
+      "notes": "100% geo hit barrage = consistently good. Must not use unique augment for campaign. Inconsistent movement.",
       "hardarbiter": "S",
       "cm": "S",
       "campaign": "C",
-      "consistency": null,
+      "consistency": -2,
       "fleetreq": null,
       "flagreq": -2,
       "lightdmg": 2,
