@@ -473,7 +473,7 @@
       "consistency": -1,
       "fleetreq": null,
       "flagreq": null,
-      "lightdmg": 1,
+      "lightdmg": 2,
       "mediumdmg": 3,
       "heavydmg": 4,
       "offensivebuff": null
@@ -537,9 +537,9 @@
       "consistency": null,
       "fleetreq": -2,
       "flagreq": 0,
-      "lightdmg": 1,
-      "mediumdmg": 3,
-      "heavydmg": 4,
+      "lightdmg": 2,
+      "mediumdmg": 4,
+      "heavydmg": 5,
       "offensivebuff": 1
     }
   ],
@@ -655,6 +655,22 @@
       "offensivebuff": null
     }
   ],
+  "U-552": [
+    {
+      "nameNote": "Base",
+      "notes": "Best bossing wolf by a little. Requires KMS wolfpack. Bonus against light. Inconsistent movement. Dies in difficult mobbing.",
+      "hardarbiter": "S",
+      "cm": "S",
+      "campaign": "C",
+      "consistency": -2,
+      "fleetreq": -2,
+      "flagreq": -3,
+      "lightdmg": 2,
+      "mediumdmg": 4,
+      "heavydmg": 5,
+      "offensivebuff": null
+    }
+  ],
   "U-556": [
     {
       "nameNote": "Base",
@@ -747,7 +763,7 @@
       "flagreq": -3,
       "lightdmg": 1,
       "mediumdmg": 3,
-      "heavydmg": 4,
+      "heavydmg": 5,
       "offensivebuff": 1
     }
   ],
@@ -770,7 +786,7 @@
   "Wolfpack": [
     {
       "nameNote": "Base",
-      "notes": "U-96 (flag), U-81, and U-101. Substitutes are U-37 or U-47. Lower oxy-rld suffers in CM/Campaign.",
+      "notes": "U-552 (flag) plus two of (96, 81, 101). Substitutes are U-37 or U-47. Lower oxy-rld suffers in CM/Campaign.",
       "hardarbiter": "S",
       "cm": "A",
       "campaign": "A",
