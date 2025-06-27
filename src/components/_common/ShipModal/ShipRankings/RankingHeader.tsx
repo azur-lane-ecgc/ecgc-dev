@@ -1,4 +1,4 @@
-import { endGameRankingsUpdateDate } from "@components/_common/Constants"
+import { endGameRankingsUpdateDate } from "src/constants"
 
 import { formatDate } from "@utils/formatDate"
 
