@@ -21043,7 +21043,7 @@
     "augments": ["\"Great Shark\"", "Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -25130,7 +25130,7 @@
     "augments": ["Special Mix (Do Not Drink)", "Kunai", "Dagger"],
     "samEval": "U-96 is a damage / support oriented SS with great stats and skills. Her personal damage is great, especially with her self-buffs to TRP and TRP Crit Rate. She should be sortied in a full SS fleet due to her Skill 1 improving her barrage. Her Skill 2 both buffs other KMS SS and self-buffs herself, incentivizing her to be played in a Wolfpack SS fleet. Overall, she is a great ship, best used in a KMS Wolfpack SS fleet.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -38240,6 +38240,181 @@
         {
           "name": "Drawing the Starry Skies",
           "href": "Drawing_the_Starry_Skies"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "694": {
+    "id": 694,
+    "ship": "Admiral Zenker",
+    "faction": "KMS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BC",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.4,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": [
+      "FlagPref",
+      "FlagReq",
+      "DmgDealer",
+      "DefSupport",
+      "OffSupport",
+      "Meh"
+    ],
+    "locations": {
+      "events": [
+        {
+          "name": "The Neon City Investigator",
+          "href": "The_Neon_City_Investigator"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "695": {
+    "id": 695,
+    "ship": "U-552",
+    "faction": "KMS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "SS",
+    "fleetType": "ss",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Submarine Torpedo"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["Submarine Torpedo"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.85,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Kunai", "Dagger"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg"],
+    "locations": {
+      "events": [
+        {
+          "name": "The Neon City Investigator",
+          "href": "The_Neon_City_Investigator"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "696": {
+    "id": 696,
+    "ship": "Z13",
+    "faction": "KMS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.75,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "The Neon City Investigator",
+          "href": "The_Neon_City_Investigator"
         }
       ],
       "other": [],

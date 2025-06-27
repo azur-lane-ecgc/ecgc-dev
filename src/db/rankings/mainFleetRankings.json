@@ -84,6 +84,35 @@
       "vgsurvival": null
     }
   ],
+  "Admiral Zenker": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Standard top-level gold BB for 2025.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": -3,
+      "lightdmg": 3,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": null,
+      "offensivebuff": 1,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": 1
+    }
+  ],
   "Akagi": [
     {
       "nameNote": "",

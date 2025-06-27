@@ -12498,6 +12498,33 @@
       "defensivebuff": 1
     }
   ],
+  "Z13": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Z16": [
     {
       "nameNote": "",
