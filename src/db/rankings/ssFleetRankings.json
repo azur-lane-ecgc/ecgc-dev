@@ -338,7 +338,7 @@
   "IJN Subs": [
     {
       "nameNote": "Base",
-      "notes": "I-19 plus two of (I-13, I-168, I-58). Maybe plus one tier if buffed by Amagi(CV)?",
+      "notes": "I-19 plus two of (I-13, I-168, I-58). Plus one tier if buffed by Amagi(CV).",
       "hardarbiter": "B",
       "cm": "B",
       "campaign": "B",
@@ -434,11 +434,11 @@
   "Nautilus": [
     {
       "nameNote": "Base",
-      "notes": "Short debuff window to time with your main fleet.",
+      "notes": "Short debuff window to time with your main fleet. Inconsistent movement.",
       "hardarbiter": "C",
       "cm": "C",
       "campaign": "B",
-      "consistency": null,
+      "consistency": -2,
       "fleetreq": null,
       "flagreq": -2,
       "lightdmg": 1,
@@ -476,6 +476,22 @@
       "lightdmg": 2,
       "mediumdmg": 3,
       "heavydmg": 4,
+      "offensivebuff": null
+    }
+  ],
+  "Solos without Flasher/Homura": [
+    {
+      "nameNote": "Base",
+      "notes": "U-556 META, Leonardo da Vinci, and Maggiore Baracca.",
+      "hardarbiter": "A",
+      "cm": "B",
+      "campaign": "A",
+      "consistency": null,
+      "fleetreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 2,
+      "heavydmg": 3,
       "offensivebuff": null
     }
   ],
@@ -578,11 +594,11 @@
   "U-31": [
     {
       "nameNote": "Base",
-      "notes": "Requires KMS wolfpack. Has bad oxyreload.",
+      "notes": "Requires KMS wolfpack. Has bad oxyreload. Inconsistent movement.",
       "hardarbiter": "C",
       "cm": "C",
       "campaign": "D",
-      "consistency": null,
+      "consistency": -2,
       "fleetreq": -2,
       "flagreq": -2,
       "lightdmg": 1,
@@ -786,7 +802,7 @@
   "Wolfpack": [
     {
       "nameNote": "Base",
-      "notes": "U-552 (flag) plus two of (96, 81, 101). Substitutes are U-37 or U-47. Lower oxy-rld suffers in CM/Campaign.",
+      "notes": "U-552 (flag) plus two of (96, 81, 101). U-37 or 47 are worse. Lower oxy-rld suffers in CM/Campaign. KICK 552 IF Campaign.",
       "hardarbiter": "S",
       "cm": "A",
       "campaign": "A",
