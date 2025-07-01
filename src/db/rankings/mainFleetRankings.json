@@ -2457,9 +2457,9 @@
   "Glorious META": [
     {
       "nameNote": "",
-      "notes": "Requires enemy with high-dmg hits, get >= 20 marks. Beats URs if battle is 1 strike long, but not EX because need 10 hits.",
-      "hardarbiter": "B",
-      "meta": "B",
+      "notes": "REQUIRES enemy with high-dmg hits, get >= 20 marks. Beats URs if battle is 1 strike long, but not EX because need 10 hits.",
+      "hardarbiter": "A*",
+      "meta": "A*",
       "cm": "B",
       "w14mob": "B",
       "w14boss": "A",
