@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
-    "astro": "^5.10.2",
+    "astro": "^5.11.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-intersection-observer-hook": "^4.0.0",
@@ -40,13 +40,13 @@
     "@tailwindcss/vite": "^4.1.11",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@types/bun": "^1.2.17",
+    "@types/bun": "^1.2.18",
     "knip": "^5.61.3",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.13",
     "sharp": "^0.34.2",
-    "wrangler": "^4.22.0"
+    "wrangler": "^4.23.0"
   },
   "private": true
 }
