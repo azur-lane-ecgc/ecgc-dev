@@ -2,7 +2,7 @@ import type { ShipDropData } from "@ALData/types/ships"
 import type { shipLocation, ShipLocationData } from "@db/types"
 import { parseLocation } from "@utils/parseLocation"
 
-import { shipSeriesMap } from "./utils"
+import { shipSeriesMap } from "./shipSeriesMap"
 
 const shipDropData: Record<number, ShipDropData> = (await import(
   "@ALData/data/ship_drops.json"
