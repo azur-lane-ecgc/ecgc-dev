@@ -49,4 +49,11 @@ export const shipSeriesMap: Record<string, number> = {
   Napoli: 7,
   "Admiral Nakhimov": 7,
   Bayard: 7,
+
+  // Series 8
+  Mecklenburg: 8,
+  "Gouden Leeuw": 8,
+  Kansas: 8,
+  "Dmitri Donskoi": 8,
+  "Vittorio Cuniberti": 8,
 }
