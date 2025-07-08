@@ -5,7 +5,7 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 SERVICE_ACCOUNT_FILE = "credentials.json"
-END_GAME_RANKINGS_PATH = "../../src/components/_common/Constants/lastUpdated.ts"
+END_GAME_RANKINGS_PATH = "../../src/constants/lastUpdated.ts"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 # Define 2 sheets to parse

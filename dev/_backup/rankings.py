@@ -16,7 +16,7 @@
 #     "src/components/Samvaluations/ShipModal/ShipRankings/data/tempss.json",
 # ]
 # CHANGELONG_SHEET_NAME = "Changelog"
-# END_GAME_RANKINGS_PATH = "src/components/_common/Constants/lastUpdated.ts"
+# END_GAME_RANKINGS_PATH = "src/constants/lastUpdated.ts"
 
 # # Authenticate and initialize the Sheets API
 # SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
