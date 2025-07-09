@@ -906,6 +906,13 @@
       "std": "27.81%"
     }
   ],
+  "Choukai": [
+    {
+      "name": "Choukai",
+      "totalEHP": "96.88%",
+      "std": "31.86%"
+    }
+  ],
   "Rikka Takarada": [
     {
       "name": "Rikka Takarada",
@@ -1263,13 +1270,6 @@
       "name": "Emden (CL Gun)",
       "totalEHP": "82.92%",
       "std": "26.85%"
-    }
-  ],
-  "Choukai": [
-    {
-      "name": "Choukai",
-      "totalEHP": "89.15%",
-      "std": "28.55%"
     }
   ],
   "L'Audacieux": [
@@ -1972,6 +1972,13 @@
       "std": "31.39%"
     }
   ],
+  "St. Louis": [
+    {
+      "name": "St. Louis",
+      "totalEHP": "77.26%",
+      "std": "24.70%"
+    }
+  ],
   "Köln": [
     {
       "name": "Köln (Retrofit)",
@@ -2314,13 +2321,6 @@
       "name": "Bell",
       "totalEHP": "73.69%",
       "std": "29.25%"
-    }
-  ],
-  "St. Louis": [
-    {
-      "name": "St. Louis",
-      "totalEHP": "73.56%",
-      "std": "23.06%"
     }
   ],
   "Avrora": [
@@ -2765,6 +2765,13 @@
       "name": "Fiji",
       "totalEHP": "68.45%",
       "std": "21.18%"
+    }
+  ],
+  "Z13": [
+    {
+      "name": "Z13",
+      "totalEHP": "68.41%",
+      "std": "25.54%"
     }
   ],
   "Aulick": [
