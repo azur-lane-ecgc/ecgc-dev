@@ -36,7 +36,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/sitemap": "^3.4.1",
-    "astro-meta-tags": "^0.3.2",
+    "astro-meta-tags": "^0.4.0",
     "@tailwindcss/vite": "^4.1.11",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
