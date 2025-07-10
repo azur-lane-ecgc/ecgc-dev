@@ -98,7 +98,7 @@ const compressImage = async (file: string, base: string) => {
   const newSize = (await stat(file)).size
   const saved = (((origSize - newSize) / origSize) * 100).toFixed(1)
   console.log(
-    `✓ ${relPath}: ${(origSize / 1024).toFixed(1)}KB → ${(
+    `${relPath}: ${(origSize / 1024).toFixed(1)}KB → ${(
       newSize / 1024
     ).toFixed(1)}KB (${saved}% saved)`,
   )
@@ -106,7 +106,7 @@ const compressImage = async (file: string, base: string) => {
 
 const main = async () => {
   const base = resolve("../../dist")
-  console.log("🔍 Scanning for images under", base)
+  console.log("Scanning for images under", base)
   let images: string[] = []
   try {
     images = await getAllImages(base)
@@ -126,7 +126,7 @@ const main = async () => {
       console.error(`Error compressing ${img}:`, err)
     }
   }
-  console.log("🎉 Done compressing images.")
+  console.log("Done compressing images.")
 }
 
 main().catch(console.error)
