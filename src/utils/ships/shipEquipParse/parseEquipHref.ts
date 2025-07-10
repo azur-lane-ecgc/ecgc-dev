@@ -6,30 +6,42 @@ export const parseEquipHref = (
     .toLowerCase()
     .replace("main gun", "gun")
 
+  const normalizedHullType = hull_type.toLowerCase()
+
+  const isMainFleet = ["bb", "bc", "bbv", "cv", "cvl"].includes(
+    normalizedHullType,
+  )
+
   switch (normalizedEquipType) {
+    // main guns
     case "dd gun":
-      return "dd_guns"
+      return isMainFleet ? "main_fleet_secondary_guns" : "dd_guns"
     case "cl gun":
-      return "cl_guns"
+      return isMainFleet ? "main_fleet_secondary_guns" : "cl_guns"
     case "ca gun":
       return "ca_guns"
+    case "cb gun":
+      return "cb_guns"
     case "bb gun":
       return "bb_guns"
 
+    // torps
     case "surface torpedo":
-      return "surface_torpedoes"
     case "torpedo":
       return "surface_torpedoes"
+    case "missile":
+      return "surface_torpedoes"
+    case "sub torpedo":
+      return "ss_torpedo"
 
+    // aa guns
     case "timed fuze aa gun":
-      return "aa_guns"
     case "fuze aa gun":
-      return "aa_guns"
     case "aa gun":
-      return "aa_guns"
     case "aa gun (normal)":
       return "aa_guns"
 
+    // planes
     case "fighter":
       return "fighters"
     case "torpedo bomber":
@@ -37,8 +49,9 @@ export const parseEquipHref = (
     case "dive bomber":
       return "dive_bombers"
 
+    // auxes
     case "auxiliary":
-      switch (hull_type.toLowerCase()) {
+      switch (normalizedHullType) {
         case "bb":
         case "bc":
         case "bbv":
@@ -55,6 +68,9 @@ export const parseEquipHref = (
         case "ss":
           return "ss_auxiliary"
         case "ix":
+        case "ixm":
+        case "ixv":
+        case "ixs":
           return "ix_auxiliary"
         case "ae":
           return "ae_auxiliary"
@@ -63,31 +79,21 @@ export const parseEquipHref = (
         default:
           return ""
       }
-    case "cb gun":
-      return "cb_guns"
-    case "seaplane":
-      return "recon_planes"
-    case "sub torpedo":
-      return "ss_torpedo"
-
-    case "asw equipment":
-      return "asw_equipment"
-    case "depth charge":
-      return "asw_equipment"
-    case "asw bomber":
-      return "asw_equipment"
-    case "asw plane":
-      return "asw_equipment"
-    case "asw heli":
-      return "asw_equipment"
-    case "asw helicopter":
-      return "asw_equipment"
-
     case "cargo":
       return "ae_auxiliary"
 
-    case "missile":
-      return "surface_torpedoes"
+    // misc
+    case "seaplane":
+      return "recon_planes"
+
+    // asw
+    case "asw equipment":
+    case "depth charge":
+    case "asw bomber":
+    case "asw plane":
+    case "asw heli":
+    case "asw helicopter":
+      return "asw_equipment"
 
     default:
       return ""
