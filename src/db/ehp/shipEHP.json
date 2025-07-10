@@ -318,6 +318,13 @@
       "std": "26.23%"
     }
   ],
+  "Gouden Leeuw": [
+    {
+      "name": "Gouden Leeuw",
+      "totalEHP": "118.56%",
+      "std": "27.43%"
+    }
+  ],
   "Yume Minami": [
     {
       "name": "Yume Minami",
@@ -730,6 +737,13 @@
       "name": "Roon",
       "totalEHP": "99.06%",
       "std": "24.79%"
+    }
+  ],
+  "Dimitri Donskoi": [
+    {
+      "name": "Dimitri Donskoi",
+      "totalEHP": "102.22%",
+      "std": "28.69%"
     }
   ],
   "Blücher": [
@@ -2634,6 +2648,13 @@
       "std": "28.91%"
     }
   ],
+  "Evertsen": [
+    {
+      "name": "Evertsen",
+      "totalEHP": "70.19%",
+      "std": "28.80%"
+    }
+  ],
   "Ting An": [
     {
       "name": "Ting An",
@@ -2732,6 +2753,13 @@
       "std": "24.87%"
     }
   ],
+  "Giosue Carducci": [
+    {
+      "name": "Giosue Carducci",
+      "totalEHP": "68.88%",
+      "std": "28.80%"
+    }
+  ],
   "Trieste": [
     {
       "name": "Trieste",
@@ -2774,6 +2802,13 @@
       "std": "25.54%"
     }
   ],
+  "Vittorio Cuniberti": [
+    {
+      "name": "Vittorio Cuniberti",
+      "totalEHP": "68.39%",
+      "std": "25.73%"
+    }
+  ],
   "Aulick": [
     {
       "name": "Aulick",
@@ -2800,13 +2835,6 @@
       "name": "La Galissonnière META",
       "totalEHP": "68.22%",
       "std": "22.02%"
-    }
-  ],
-  "Evertsen": [
-    {
-      "name": "Evertsen",
-      "totalEHP": "68.11%",
-      "std": "27.73%"
     }
   ],
   "Honolulu": [
@@ -2879,13 +2907,6 @@
       "std": "18.81%"
     }
   ],
-  "Giosue Carducci": [
-    {
-      "name": "Giosue Carducci",
-      "totalEHP": "66.88%",
-      "std": "27.75%"
-    }
-  ],
   "Yuubari": [
     {
       "name": "Yuubari (Retrofit)",
@@ -2898,6 +2919,13 @@
       "name": "Atlanta",
       "totalEHP": "66.77%",
       "std": "20.24%"
+    }
+  ],
+  "Gallant": [
+    {
+      "name": "Gallant",
+      "totalEHP": "66.76%",
+      "std": "26.50%"
     }
   ],
   "Morrison": [
@@ -3108,13 +3136,6 @@
       "name": "Vincenzo Gioberti",
       "totalEHP": "65.02%",
       "std": "27.16%"
-    }
-  ],
-  "Gallant": [
-    {
-      "name": "Gallant",
-      "totalEHP": "64.93%",
-      "std": "25.56%"
     }
   ],
   "Kinugasa": [
