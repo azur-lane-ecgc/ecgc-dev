@@ -2540,7 +2540,7 @@
   "De Zeven Provinciën": [
     {
       "nameNote": "",
-      "notes": "Top 3 AA.",
+      "notes": "Top level AA.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -2722,6 +2722,33 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": 1,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Dmitri Donskoi": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Generic ship, has weak fleet AP buff.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "A",
+      "w14boss": "A",
+      "w15mob": "B",
+      "w15boss": "B",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": -1,
+      "gearreq": -1,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": 3,
+      "aa": null,
       "asw": null,
       "defensivebuff": null
     }
@@ -3968,6 +3995,33 @@
       "defensivebuff": null
     }
   ],
+  "Gouden Leeuw": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE. CB but not CB, with amazing AA. 5% HE buff for fleet. Guam with worse tanking and much better LDmg.",
+      "hardarbiter": "S",
+      "meta": "A",
+      "cm": "A",
+      "w14mob": "S",
+      "w14boss": "S",
+      "w15mob": "S",
+      "w15boss": "S",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 4,
+      "offensivebuff": null,
+      "selfsurvival": 3,
+      "aa": 4,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "Gremyashchy": [
     {
       "nameNote": "",
@@ -4106,7 +4160,7 @@
   "Grozny": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Augment adds about 32% damage but doesn't take her out of bottom tier.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4115,7 +4169,7 @@
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",
-      "consistency": -1,
+      "consistency": null,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
@@ -4146,7 +4200,7 @@
       "fleetreq": -2,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 2,
+      "lightdmg": 3,
       "mediumdmg": 3,
       "heavydmg": 2,
       "aoedmg": 3,
@@ -11872,6 +11926,33 @@
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Vittorio Cuniberti": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Use fast torps. High DPS but squishy.",
+      "hardarbiter": "B",
+      "meta": "C",
+      "cm": "B",
+      "w14mob": "A",
+      "w14boss": "B",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 5,
+      "heavydmg": 3,
+      "aoedmg": 4,
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,

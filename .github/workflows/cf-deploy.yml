@@ -25,7 +25,7 @@ jobs:
           bun-version: latest
 
       - name: Check for only devDependency changes
-        id: devdeps
+        id: dev-deps
         run: |
           git fetch origin main --depth=1
           git diff origin/main HEAD -- package.json > changes.diff
