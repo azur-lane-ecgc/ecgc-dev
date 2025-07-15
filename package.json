@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "update": "bun upgrade && bun update && bun install",
-    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
+    "rebuild": "git pull origin main --rebase && rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bash dev/python/gsheets2imgur.sh -g",
