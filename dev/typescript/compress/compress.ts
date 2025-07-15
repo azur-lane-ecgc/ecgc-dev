@@ -98,9 +98,9 @@ const compressImage = async (file: string, base: string) => {
   const newSize = (await stat(file)).size
   const saved = (((origSize - newSize) / origSize) * 100).toFixed(1)
   console.log(
-    `${relPath}: ${(origSize / 1024).toFixed(1)}KB → ${(
-      newSize / 1024
-    ).toFixed(1)}KB (${saved}% saved)`,
+    `${relPath}: ${(origSize / 1024).toFixed(1)}KB → ${(newSize / 1024).toFixed(
+      1,
+    )}KB (${saved}% saved)`,
   )
 }
 
