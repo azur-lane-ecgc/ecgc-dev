@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
-    "astro": "^5.11.1",
+    "astro": "^5.11.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-intersection-observer-hook": "^4.0.0",
@@ -46,7 +46,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "sharp": "^0.34.3",
-    "wrangler": "^4.24.3"
+    "wrangler": "^4.24.4"
   },
   "private": true
 }
