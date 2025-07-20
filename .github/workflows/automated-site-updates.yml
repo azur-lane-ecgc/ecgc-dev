@@ -20,7 +20,7 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v6
         with:
-          version: "0.7.21"
+          version: "0.8.0"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -30,7 +30,7 @@ jobs:
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: "1.2.18"
+          bun-version: "1.2.19"
 
       - name: Install dependencies
         run: |
