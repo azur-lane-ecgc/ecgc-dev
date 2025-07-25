@@ -6445,7 +6445,7 @@
   "Shoukaku": [
     {
       "nameNote": "with Zuikaku",
-      "notes": "Dmg +8% for Zuikaku and self. Needs to launch airstrike before other main fleet ships. Aug's eff is bugged, only gives +1%.",
+      "notes": "Dmg +8% for Zuikaku and self. Needs to launch airstrike before other main fleet ships.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -6472,7 +6472,7 @@
     },
     {
       "nameNote": "without Zuikaku",
-      "notes": "Needs to launch airstrike before other main fleet ships. Aug's eff is bugged, only gives +1%.",
+      "notes": "Needs to launch airstrike before other main fleet ships.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -6874,7 +6874,7 @@
   "Taihou": [
     {
       "nameNote": "",
-      "notes": "Needs to finish reloading before other main fleet ships launch airstrikes or land salvos. Aug's eff is bugged, only gives +1%.",
+      "notes": "Needs to finish reloading before other main fleet ships launch airstrikes or land salvos.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
