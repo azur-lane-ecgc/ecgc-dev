@@ -41025,7 +41025,7 @@
     "augments": ["Confinement Program", "Bowgun", "Officer's Sword"],
     "samEval": "Akane Shinjo is a flagship-oriented BB with great stats and skills. She has multiple 100% trigger chance barrages, as well as MGM+2 and good Main Gun damgae to go alongside them. Her Augment Module also grants her a summon for the early part of the battle, which adds to her damage further. She ideally prefers flagship for maximum barrage impact, but she can work at a slightly worse level when off-flag. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -42675,7 +42675,7 @@
     "augments": ["Ephemeral Record", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -42787,7 +42787,7 @@
     "augments": ["Huntress", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -48112,7 +48112,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq", "Bad"],
     "locations": {
       "events": [],
       "other": [
