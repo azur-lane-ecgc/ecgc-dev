@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
-    "astro": "^5.12.5",
+    "astro": "^5.12.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-intersection-observer-hook": "^4.0.0",
