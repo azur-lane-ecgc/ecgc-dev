@@ -1,5 +1,4 @@
 #!/bin/bash
-# open-link.sh
 
 if [ -z "$1" ]; then
   echo "Usage: $0 <URL>"
