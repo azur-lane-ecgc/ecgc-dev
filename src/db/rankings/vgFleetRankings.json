@@ -110,7 +110,7 @@
   "Admiral Hipper": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Augment slightly buffs Hipper class, including Tallinn. Still bad.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -120,14 +120,14 @@
       "w15boss": "D",
       "ex": "D",
       "consistency": -1,
-      "fleetreq": null,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": null,
+      "offensivebuff": 1,
       "selfsurvival": 2,
       "aa": null,
       "asw": null,
@@ -2837,7 +2837,7 @@
   "Duca degli Abruzzi": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Large boost from augment brings her close but not close enough to C tier and 2 damage.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2846,7 +2846,7 @@
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",
-      "consistency": -1,
+      "consistency": null,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
