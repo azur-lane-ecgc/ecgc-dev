@@ -12982,10 +12982,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Tunken der Liebe", "Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DefSupport", "Meh"],
+    "roles": ["DefSupport", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -27242,7 +27242,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["Pursuer's Proof", "Crossbow", "Sword"],
     "samEval": "Duca degli Abruzzi is a damage-oriented CL with great stats and skills. Her personal damage is very balanced due to decent Main Guns, barrages, and her great torpedo damage. Her bulk is also pretty good as well due to her stats, and her Skill 2 adds to it further. Overall, she is a great ship.",
     "fastLoad": null,
     "roles": ["Tank", "Meh"],
