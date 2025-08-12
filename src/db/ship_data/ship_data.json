@@ -41478,7 +41478,7 @@
     "augments": ["Sparkling Reverie", "Crossbow", "Sword"],
     "samEval": "Ryza is a damage-oriented mobbing CL with amazing clearing potential within the first 30s of a battle. Her stats are very solid, and coupled with MGM+1 give her good damage output from her Main Guns. Her skills immensely buff the damage potential of all her Auxiliary barrages, and her unique Augment Module adds more barrages to the mix. You want all the Atelier Ryza Bombs equipped on Ryza, due to the +20% crit rate buff to by barrages when equipped by her for applying \"Item Mark\" to enemies, and for the \"Fatal Drive\" unique Augment Module barrage. After all her barrages are exhausted, she is painfully average. Amazing CL for mobbing.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["OffSupport", "Meh"],
     "locations": {
       "events": [
         {
