@@ -18438,25 +18438,25 @@
     "id": 357,
     "ship": "Essex",
     "faction": "USS",
-    "rarity": 4,
-    "isKai": false,
+    "rarity": 5,
+    "isKai": true,
     "hullType": "CV",
     "fleetType": "main",
     "LBBonus": null,
     "slots": [
       {
         "type": ["Fighter"],
-        "efficiency": 1.4,
+        "efficiency": 1.45,
         "mounts": 3
       },
       {
-        "type": ["Dive Bomber"],
-        "efficiency": 1.3,
+        "type": ["Fighter", "Torpedo Bomber", "Dive Bomber"],
+        "efficiency": 1.35,
         "mounts": 3
       },
       {
         "type": ["Torpedo Bomber"],
-        "efficiency": 1.2,
+        "efficiency": 1.3,
         "mounts": 2
       },
       {
@@ -18473,7 +18473,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -38501,6 +38501,286 @@
         {
           "name": "Little Ruler of the Abyssal Kingdom",
           "href": "Little_Ruler_of_the_Abyssal_Kingdom"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "698": {
+    "id": 698,
+    "ship": "Masséna",
+    "faction": "FFNF",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BC",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Secrets of the Abyss",
+          "href": "Secrets_of_the_Abyss"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "699": {
+    "id": 699,
+    "ship": "Bois Belleau",
+    "faction": "FFNF",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CVL",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.3,
+        "mounts": 4
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.2,
+        "mounts": 4
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Plane"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Plane"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Secrets of the Abyss",
+          "href": "Secrets_of_the_Abyss"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "700": {
+    "id": 700,
+    "ship": "Duquesne",
+    "faction": "FFNF",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun"],
+        "efficiency": 1.15,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.65,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.9,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatsword", "Lance"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Secrets of the Abyss",
+          "href": "Secrets_of_the_Abyss"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "701": {
+    "id": 701,
+    "ship": "Le Hardi",
+    "faction": "FFNF",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "+30% stats gained from Auxiliary Equipment.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.5,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Secrets of the Abyss",
+          "href": "Secrets_of_the_Abyss"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "702": {
+    "id": 702,
+    "ship": "Duguay-Trouin",
+    "faction": "FFNF",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.5,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Secrets of the Abyss",
+          "href": "Secrets_of_the_Abyss"
         }
       ],
       "other": [],
