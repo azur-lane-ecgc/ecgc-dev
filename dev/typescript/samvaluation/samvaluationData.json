@@ -3232,5 +3232,8 @@
   },
   "Little Renown": {
     "preload": "40% 1st, 2nd, & 3rd Salvo Cooldown Reduction."
+  },
+  "Masséna": {
+    "preload": "1 Preloaded Salvo."
   }
 }
