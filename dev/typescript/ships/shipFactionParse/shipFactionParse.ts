@@ -24,6 +24,7 @@ const factionMap: Record<number, string> = {
   110: "Senran Kagura",
   111: "To LOVE-Ru",
   112: "BLACK★ROCK SHOOTER",
+  113: "Atelier Yumia",
 }
 
 export const shipFactionParse = (faction: number): string => {

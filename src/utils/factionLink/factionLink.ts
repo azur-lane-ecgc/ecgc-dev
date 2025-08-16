@@ -24,6 +24,7 @@ export const factionToWikiMap: Record<string, string> = {
   "Senran Kagura": "Senran Kagura",
   "To LOVE-Ru": "To LOVE-Ru",
   "BLACK★ROCK SHOOTER": "BLACK★ROCK SHOOTER (Nation)",
+  "Atelier Yumia": "Atelier Yumia",
 }
 
 /**
