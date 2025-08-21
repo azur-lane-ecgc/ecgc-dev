@@ -8741,7 +8741,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Yuudachi (Retrofit) is a damage-oriented DD with amazing stats and skills. Her personal damage is very high due to MGM+1 DD Guns, high torpedo stat and efficiency, and great self-buffs. In addition, she does more damage to burned enemies, and her barrage applies burns, allowing her kit to be maximized without supports. Her bulk is also high due to her Skill 3 self-buffs as well. Her support is nice, but buffing other ships is not needed to make her worth using. Overall, she is an amazing DD.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [],
       "other": [],
@@ -44986,7 +44986,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Halford is a damage-oriented DD with great stats and skills. Her personal damage is great, despite only 1 MGM, due to her ability to equip the F8F Bearcat (Floatplane), and take advantage of its skill. Her Skill 1 additionally grants her a 15s Seaplane barrage, which both has good damage and has a guaranteed debuff when it lands. Due to how great the F8F Bearcat (Floatplane) is, you want to always be equipping one in Slot 3 over AA guns. Her Skill 2 has self-buffs and an additional barrage when not equipping a Seaplane, but the benefits of the Seaplane (damage, passive interception, screen-clear), outweigh the gains from Skill 2. The benefits from Skill 2 when equipping a Seaplane are nice, but nothing exceptional. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer", "DefSupport", "OffSupport", "Meh"],
+    "roles": ["ASW", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -45042,7 +45042,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Daisen is an off-flag damage-oriented / support-oriented BB with great stats and skills. Her personal damage is great due to MGM+2 BB Guns, and a guaranteed, priority-target barrage. Her Skill 1 improves this barrage with different effects, both of which are great. The toggle when equipped with an IJN AA Gun is not relevant; there is no need to build around it. Her Skill 2 launches a recon plane which increases Daisen's personal damage to that enemy by a large amount, but it doesn't have priority targetting. When this palne is shot down, she heals the entire Vanguard Fleet by 8% HP, which is enough to solo-sustain a mob-fleet. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
