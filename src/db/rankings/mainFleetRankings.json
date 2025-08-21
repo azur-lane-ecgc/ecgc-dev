@@ -1620,10 +1620,10 @@
   "Daisen": [
     {
       "nameNote": "",
-      "notes": "Like Owari with slightly worse damage but an inconsistent vanguard heal.",
-      "hardarbiter": "B",
+      "notes": "Best gold BB as of late 2025, with an inconsistent vanguard heal in w13+. Fs5 gives +9% dmg.",
+      "hardarbiter": "A",
       "meta": "B",
-      "cm": "C",
+      "cm": "B",
       "w14mob": "A",
       "w14boss": "B",
       "w15mob": "B",
@@ -1633,10 +1633,10 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 3,
-      "mediumdmg": 3,
-      "heavydmg": 2,
-      "aoedmg": 2,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 4,
       "dmguptime": null,
       "offensivebuff": null,
       "selfsurvival": null,
@@ -5374,7 +5374,7 @@
   "Owari": [
     {
       "nameNote": "",
-      "notes": "Still the best gold BB a year after her release, through 2024.",
+      "notes": "Was the best gold BB for 2 years, from Sep 2023 to Aug 2025.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
