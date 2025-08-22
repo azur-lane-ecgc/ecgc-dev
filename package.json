@@ -41,12 +41,12 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@types/bun": "^1.2.20",
-    "knip": "^5.62.0",
+    "knip": "^5.63.0",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "sharp": "^0.34.3",
-    "wrangler": "^4.31.0"
+    "wrangler": "^4.32.0"
   },
   "private": true
 }

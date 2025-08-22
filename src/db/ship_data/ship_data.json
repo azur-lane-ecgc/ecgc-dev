@@ -38551,7 +38551,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -38607,7 +38607,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -38719,7 +38719,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "DefSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -40740,7 +40740,7 @@
       "quantity": 1,
       "conditional": ""
     },
-    "roles": ["FastLoad", "Meh"],
+    "roles": ["DmgDealer", "FastLoad", "Meh"],
     "locations": {
       "events": [
         {
@@ -44930,7 +44930,7 @@
       "quantity": 1,
       "conditional": ""
     },
-    "roles": ["DmgDealer", "FastLoad", "Preload", "Meh"],
+    "roles": ["DmgDealer", "TopDmg", "FastLoad", "Preload"],
     "locations": {
       "events": [],
       "other": [
