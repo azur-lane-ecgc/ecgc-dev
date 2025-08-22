@@ -2861,6 +2861,33 @@
       "defensivebuff": null
     }
   ],
+  "Duguay-Trouin": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": -2,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Duisburg": [
     {
       "nameNote": "",
@@ -2901,6 +2928,33 @@
       "w15boss": "D",
       "ex": "D",
       "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Duquesne": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
@@ -6672,9 +6726,9 @@
     {
       "nameNote": "",
       "notes": null,
-      "hardarbiter": "D",
-      "meta": "D",
-      "cm": "D",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
       "w14mob": "C",
       "w14boss": "D",
       "w15mob": "D",
@@ -6855,6 +6909,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": null
+    }
+  ],
+  "Le Hardi": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Prefers Iris gear, prefers Iris main tank.",
+      "hardarbiter": "D",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": -3,
+      "gearreq": -1,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 2
     }
   ],
   "Le Malin": [
