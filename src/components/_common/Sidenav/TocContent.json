@@ -1104,8 +1104,13 @@
         "subheadings": []
       },
       {
-        "id": "tools",
-        "content": "Other Tools",
+        "id": "tool_list",
+        "content": "Tool List",
+        "subheadings": []
+      },
+      {
+        "id": "tool_making",
+        "content": "Tool Making",
         "subheadings": []
       }
     ]
