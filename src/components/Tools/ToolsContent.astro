@@ -1,18 +1,37 @@
 ---
 import { HR } from "@components/_common/HR"
+import WikiLink from "@components/_common/WikiLink.astro"
 
 import { ToolTableFilters } from "./ToolTableFilters"
 ---
 
-<h2 id="introduction">Introduction</h2>
+<h2 id="wiki">Azur Lane English Wiki</h2>
 <HR />
+<p class="!text-2xl">
+  THE <b><WikiLink page="">AZUR LANE ENGLISH WIKI</WikiLink></b> IS AN AMAZING RESOURCE.
+  PLEASE CHECK IT OUT.
+</p>
+
 <p>
-  Helpful Tools to enhance your Azur Lane Experience! <i
+  There are a lot of "guides" that are more suitable for the Wiki than for a
+  guide website. If the content you are looking for is not controversial or
+  debatable, chances are it is already on the Wiki. If it isn't, submit feedback
+  on the Wiki.
+</p>
+<br />
+
+<h2 id="tools">Other Tools</h2>
+<HR />
+<p class="!mb-5">
+  Helpful Tools to enhance your Azur Lane Experience! The "last updated" date on the guide heading does NOT correlate to the last time any of these tools were
+  updated.
+</p>
+<p>
+  <i
     >Most of these tools are unaffilated with ECGC. To contact their respective
     authors, go to their websites.</i
   >
 </p>
-<br />
 
 <ToolTableFilters client:visible={{ rootMargin: "50px" }} />
 <br />
