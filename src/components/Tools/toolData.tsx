@@ -23,6 +23,21 @@ export const ToolData: ToolProps[] = [
     ),
   },
   {
+    tool: "Azur Lane Asset Downloader",
+    category: ["data"],
+    toolLink: "https://github.com/nobbyfix/AzurLane-AssetDownloader",
+    authors: ["nobbyfix"],
+    description: (
+      <>
+        Various scripts to extract data from Azur Lane (very complicated).{" "}
+        <i>
+          Author has made other technical tools as well; check their GitHub
+          profile for more information.
+        </i>
+      </>
+    ),
+  },
+  {
     tool: "Azur Lane Data GitHub",
     category: ["data"],
     toolLink: "https://github.com/MrLar/AzurLaneData",
