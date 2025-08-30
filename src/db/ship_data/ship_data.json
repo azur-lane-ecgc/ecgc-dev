@@ -21892,7 +21892,7 @@
     "augments": ["Fabulous Fioretto", "Greatsword", "Lance"],
     "samEval": "Zara is a mob-tank oriented CA with great stats and good skills. Her personal damage is mediocre since outside of her MGM+1 she has no good skill barrages. Her bulk is decent due to her shields, and her unique Augment Module further giving her evasion and minor healing. Her Skill 2 doesn't affect her Main Gun choices against enemies. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "Meh"],
+    "roles": ["Tank", "DmgDealer", "DefSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -33708,7 +33708,7 @@
     "augments": ["Land's End Helm"],
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["OffSupport", "Meh"],
+    "roles": ["Tank", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -33824,7 +33824,7 @@
     "augments": ["Handwritten Note"],
     "samEval": "Adventure Galley is a damage-oriented IXV with good stats and skills. Her damage is alright due to MGM+1, as well as a decent skill barrage. Her bulk is on the frailer side, but 3 auxiliary equipment slots somewhat offset that. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a good ship, but at best she is a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["OffSupport", "Meh"],
+    "roles": ["Tank", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -35043,7 +35043,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Eugen μ is a mob tank-oriented CA with great stats and skills. Her personal damage is good due to her skill barrages and AoA. Her Skill 1 drains her own HP to give buffs to your other characters, which can hinder her bulk if not paired with a healer. Despite this, her bulk is still fairly good. Her Skill 2 increases her personal damage by a sizable amount, and has a chance to fire a barrage; unfortunately the barrage doesn't have a 100% proc chance. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank", "Meh"],
     "locations": {
       "events": [
         {
@@ -43205,7 +43205,7 @@
     "augments": ["Neptune's Trident", "Crossbow", "Sword"],
     "samEval": "Neptune is a mob-tank oriented CL with good stats and skills. She only has 1 MGM, but her skill that boosts her AP damage makes up for it. Her AoA barrage is very good; however no pierce despite being AP hurts a bit. Her bulk is also fine, and supplemented by her self-heal. Overall, she is a good ship, but can be a sidegrade to other easily accessible options.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -44839,7 +44839,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Felix Schultz is a mob-tank oriented DD with a great combination of damage and bulk. Her bulk is great due to her high HP, 30% Auxiliary stat boosts, and her skills. Her damage is not to be scoffed at as well due to multiple barrages. Her Skill 1 grants her great Crit buffs, as well as frontloading her barrage. Her Skill 2 drastically adds to her bulk as it gives her +EVA Rate very consistently. She can be equipped with either the Quadruple 152mm or the Twin 150mm TbtsK C42T0 due to her self-buffs from equipping a CL gun. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -44895,7 +44895,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Hindenburg is a damage-oriented CA with amazing stats and skills. She has enough bulk to mob-tank in a pinch, but it is not recommended for her to tank over other good options. Her damage output is among the best in the game for vanguard ships due to multiple main gun mounts, as well as her shield-ignoring ability from her skills. Her Skill 2's special attack is very consistent especially against boss enemies. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
