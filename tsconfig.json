@@ -3,9 +3,7 @@
 	"include": [".astro/types.d.ts", "**/*"],
 	"exclude": ["dist", "dev/_backup/*", "dev/python/*"],
 	"compilerOptions": {
-		"compilerOptions": {
-			"types": ["vite/client"]
-		},
+		"types": ["vite/client"],
 		"allowJs": true,
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
