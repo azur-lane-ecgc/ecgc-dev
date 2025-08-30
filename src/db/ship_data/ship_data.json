@@ -38566,8 +38566,18 @@
     ],
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+<<<<<<< HEAD
     "fastLoad": null,
     "roles": ["DmgDealer", "TopDmg"],
+=======
+    "fastLoad": {
+      "text": "1 Preloaded Salvo.",
+      "reduction": 100,
+      "quantity": 1,
+      "conditional": ""
+    },
+    "roles": ["DmgDealer", "FastLoad", "Preload", "Meh"],
+>>>>>>> 6caec0a (devtool update)
     "locations": {
       "events": [
         {
@@ -42935,7 +42945,7 @@
   "10131": {
     "id": 10131,
     "ship": "Yumia Liessfeldt",
-    "faction": "Universal",
+    "faction": "Atelier Yumia",
     "rarity": 4,
     "isKai": false,
     "hullType": "CVL",
@@ -42991,7 +43001,7 @@
   "10132": {
     "id": 10132,
     "ship": "Isla von Duerer",
-    "faction": "Universal",
+    "faction": "Atelier Yumia",
     "rarity": 4,
     "isKai": false,
     "hullType": "CL",
@@ -43047,7 +43057,7 @@
   "10133": {
     "id": 10133,
     "ship": "Nina Friede",
-    "faction": "Universal",
+    "faction": "Atelier Yumia",
     "rarity": 4,
     "isKai": false,
     "hullType": "BB",
@@ -43103,7 +43113,7 @@
   "10134": {
     "id": 10134,
     "ship": "Lenja",
-    "faction": "Universal",
+    "faction": "Atelier Yumia",
     "rarity": 4,
     "isKai": false,
     "hullType": "DD",
