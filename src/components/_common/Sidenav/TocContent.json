@@ -936,6 +936,10 @@
           {
             "id": "shipyard_priority_by_season",
             "content": "Shipyard Priority by Season"
+          },
+          {
+            "id": "exp_farming",
+            "content": "Shipyard EXP Farming"
           }
         ]
       },
