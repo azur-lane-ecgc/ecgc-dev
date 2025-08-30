@@ -56,7 +56,7 @@ def process_sheet(sheet_name):
         original_name = row[0].strip()  # Column A (including notes)
         base_name = extract_base_name(original_name)  # Base ship name
         totalEHP = row[1].strip()  # EHP value
-        std = row[2].strip()  # 3STD
+        std = row[3].strip()  # 3STD
 
         entry = {
             "name": original_name,
