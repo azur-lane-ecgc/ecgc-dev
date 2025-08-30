@@ -100,4 +100,13 @@ export const pageInfo: PageInfoItem[] = [
     link: "shop_priority",
     image: "/images/misc/no_cover.jpg",
   },
+  {
+    title: "Azur Lane Tools",
+    authors: ["The Azur Lane English Community"],
+    lastUpdated: "8/30/2025",
+    revision: "2.0.0",
+    description: `Aggregate list of useful resources related to Azur Lane.`,
+    link: "tools",
+    image: "/images/misc/no_cover.jpg",
+  },
 ]

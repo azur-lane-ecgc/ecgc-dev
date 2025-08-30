@@ -1094,5 +1094,20 @@
         ]
       }
     ]
+  },
+  {
+    "fileName": "Tools",
+    "toc": [
+      {
+        "id": "wiki",
+        "content": "Azur Lane English Wiki",
+        "subheadings": []
+      },
+      {
+        "id": "tools",
+        "content": "Other Tools",
+        "subheadings": []
+      }
+    ]
   }
 ]

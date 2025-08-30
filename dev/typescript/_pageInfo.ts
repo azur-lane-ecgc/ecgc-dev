@@ -51,4 +51,8 @@ export const pageInfo = [
     name: "Samvaluations",
     path: "src/components/Samvaluations/SamvaluationContent.astro",
   },
+  {
+    name: "Tools",
+    path: "src/components/Tools/ToolsContent.astro",
+  },
 ]
