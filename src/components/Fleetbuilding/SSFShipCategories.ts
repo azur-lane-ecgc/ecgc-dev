@@ -33,6 +33,7 @@ export const internationalFleetSub: SSEntry[] = [
  * KMS "Wolfpack" Submarine Fleet
  */
 export const kmsWolfpackFleetMain: SSEntry[] = [
+  { name: "U-552" },
   { name: "U-96", descriptionNote: "w/ Augment" },
   { name: "U-37" },
   { name: "U-81" },
