@@ -23,7 +23,8 @@
     "cf-dev": "bunx wrangler dev",
     "start": "bun run devtools && bun run build && bun run open && bun run dev",
     "cf-start": "bun run devtools && bun run build && bun run cf-open && bun run cf-dev",
-    "deploy": "bun run compress-build && bunx wrangler deploy"
+    "deploy": "bun run compress-build && bunx wrangler deploy",
+    "prepare": "bunx lefthook install"
   },
   "dependencies": {
     "@astrojs/react": "^4.3.1",
