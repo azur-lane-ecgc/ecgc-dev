@@ -1,0 +1,102 @@
+---
+import WikiLink from "@components/_common/WikiLink.astro"
+
+import { allFactionData } from "./factionTech"
+
+interface Props {
+  faction: string
+}
+
+const { faction } = Astro.props
+
+const factionData = allFactionData.find(
+  (data) => data.faction.toLowerCase() === faction.toLowerCase(),
+)
+
+if (!factionData) {
+  return "MESSAGE DEV ASAP"
+}
+
+const MATERIAL_MAPPINGS = {
+  "Merit Shop": {
+    material: "merit",
+    image: "/images/materials/merit.png",
+    alt: "Merit",
+    wikiPage: "Merit Shop",
+    wikiTitle: "Merit Shop",
+  },
+  "Core Data Shop": {
+    material: "core_data",
+    image: "/images/materials/core_data.png",
+    alt: "Core Data",
+    wikiPage: "Shops#Core Exchange",
+    wikiTitle: "Core Data Shop",
+  },
+}
+
+const extractCost = (stage: string): number => {
+  const match = stage.match(/(\d{1,3}(?:,\d{3})*)/)
+  if (match) {
+    return parseInt(match[1].replace(/,/g, ""))
+  }
+  return 0
+}
+
+const materialCosts: Record<string, { total: number; config: any }> = {}
+
+factionData.data.forEach((ship) => {
+  ship.location.forEach((loc) => {
+    const materialConfig =
+      MATERIAL_MAPPINGS[loc.event as keyof typeof MATERIAL_MAPPINGS]
+    if (materialConfig) {
+      loc.stages.forEach((stage) => {
+        const cost = extractCost(stage)
+        if (cost > 0) {
+          if (!materialCosts[materialConfig.material]) {
+            materialCosts[materialConfig.material] = {
+              total: 0,
+              config: materialConfig,
+            }
+          }
+          materialCosts[materialConfig.material].total += cost
+        }
+      })
+    }
+  })
+})
+
+const formatNumber = (num: number): string => {
+  return num.toLocaleString()
+}
+---
+
+{
+  factionData && Object.keys(materialCosts).length > 0 && (
+    <p>
+      <i>
+        It costs{" "}
+        {Object.entries(materialCosts).map(([material, data], index, array) => (
+          <span>
+            {formatNumber(data.total)}{" "}
+            <WikiLink page={data.config.wikiPage} title={data.config.wikiTitle}>
+              <img
+                loading="lazy"
+                class="inline-block"
+                src={data.config.image}
+                width="20px"
+                alt={data.config.alt}
+              />
+            </WikiLink>
+            {index < array.length - 2
+              ? ", "
+              : index === array.length - 2
+                ? " and "
+                : ""}
+          </span>
+        ))}{" "}
+        to acquire all ships here.
+        <slot />
+      </i>
+    </p>
+  )
+}

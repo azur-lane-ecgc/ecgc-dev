@@ -2,7 +2,9 @@
 import { HR } from "@components/_common/HR"
 import { ImageCarousel } from "@components/_common/ImageCarousel"
 import WikiLink from "@components/_common/WikiLink.astro"
+
 import { FleetTechTable } from "./FleetTechTable"
+import FleetTechCost from "./FleetTechCost.astro"
 import PointThresholds from "./PointThresholds.astro"
 
 //images
@@ -141,363 +143,281 @@ import FactionTechWindow from "@assets/research_guide/faction_tech_window.png"
   </li>
 
   <li>
-    <p>
-      <i>
-        It costs 52,000
-        <WikiLink page="Merit Shop" title="Merit Shop">
-          <img
-            loading="lazy"
-            class="inline-block"
-            src="/images/materials/merit.png"
-            width="20px"
-            alt="Merit"
-          />
-        </WikiLink> to acquire all ships here.
-      </i>
-    </p>
+    <FleetTechCost faction="KMS" />
   </li>
+  <br />
+
+  <FleetTechTable client:visible={{ rootMargin: "50px" }} faction="KMS" />
+  <br />
+
+  <h2 id="de"><WikiLink page="Dragon Empery">Dragon Empery (DE)</WikiLink></h2>
+  <HR />
+  <br />
+
+  <h3>Point Thresholds:</h3>
+  <PointThresholds faction="DE" />
+  <br />
+
+  <p class="text-[1.25rem] font-bold">Notes:</p>
+  <ul>
+    <li>
+      <FleetTechCost faction="DE">
+        <span
+          >You can get <WikiLink page="Harbin" title="Harbin">Harbin</WikiLink> without
+          spending any, however.</span
+        >
+      </FleetTechCost>
+    </li>
+  </ul>
+  <br />
+
+  <FleetTechTable
+    client:visible={{ rootMargin: "50px" }}
+    faction="DE"
+    excludeShipyard={false}
+  />
+  <br />
+
+  <h2 id="np">
+    <WikiLink page="Northern Parliament">Northern Parliament (NP)</WikiLink>
+  </h2>
+  <HR />
+  <br />
+
+  <h3>Point Thresholds:</h3>
+  <PointThresholds faction="NP" />
+  <br />
+
+  <p class="text-[1.25rem] font-bold">Notes:</p>
+  <ul>
+    <li>
+      <p>
+        <i>
+          Due to how few guaranteed
+          <WikiLink page="Northern Parliament" title="Northern Parliament"
+            >Northern Parliament</WikiLink
+          >
+          ships exist permanently outside
+          <WikiLink page="Construction" title="Construction"
+            >Construction</WikiLink
+          >, it is fine to wait until a Russian Event is active, instead of
+          speedrunning any of the ships needing them.
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <i>
+          <WikiLink page="Chapayev" title="Chapayev">Chapayev</WikiLink>
+          is <u>guaranteed</u> after your 60th
+          <WikiLink page="Northern Overture" title="Northern Overture"
+            >Northern Overture</WikiLink
+          > D3 clear.
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <i>
+          <WikiLink page="Tallinn" title="Tallinn">Tallinn</WikiLink>
+          is <u>guaranteed</u> after your 60th
+          <WikiLink
+            page="Khorovod of Dawn's Rime"
+            title="Khorovod of Dawn's Rime">Khorovod of Dawn's Rime</WikiLink
+          > D3 clear.
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <i>
+          <WikiLink page="Kiev">Kiev</WikiLink>
+          is <u>guaranteed</u> after your 60th
+          <WikiLink page="Abyssal Refrain">Abyssal Refrain</WikiLink> D3 clear.
+        </i>
+      </p>
+    </li>
+    <li>
+      <FleetTechCost faction="NP" />
+    </li>
+  </ul>
+  <br />
+
+  <FleetTechTable
+    client:visible={{ rootMargin: "50px" }}
+    faction="NP"
+    excludeShipyard={true}
+  />
+  <br />
+
+  <h2 id="rn">
+    <WikiLink page="Sardegna Empire">Sardegna Empire (RN)</WikiLink>
+  </h2>
+  <HR />
+  <br />
+
+  <h3>Point Thresholds:</h3>
+  <PointThresholds faction="RN" />
+  <br />
+
+  <p class="text-[1.25rem] font-bold">Notes:</p>
+  <ul>
+    <li>
+      <p>
+        <i>
+          Due to how few guaranteed
+          <WikiLink page="Sardegna Empire" title="Sardegna Empire"
+            >Sardegna Empire</WikiLink
+          >
+          ships exist permanently outside
+          <WikiLink page="Construction" title="Construction"
+            >Construction</WikiLink
+          >, it is fine to wait until an Italian Event is active, instead of
+          speedrunning any of the ships needing them.
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <i>
+          <WikiLink page="Littorio" title="Littorio">Littorio</WikiLink>
+          is <u>guaranteed</u> after your 60th
+          <WikiLink page="Empyreal Tragicomedy" title="Empyreal Tragicomedy"
+            >Empyreal Tragicomedy</WikiLink
+          > D3 clear.
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <i>
+          <WikiLink page="Duca degli Abruzzi" title="Duca degli Abruzzi"
+            >Duca degli Abruzzi</WikiLink
+          >
+          is <u>guaranteed</u> after your 60th
+          <WikiLink page="Daedalian Hymn" title="Daedalian Hymn"
+            >Daedalian Hymn</WikiLink
+          > D3 clear.
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <i>
+          <WikiLink page="Giuseppe Garibaldi" title="Giuseppe Garibaldi"
+            >Giuseppe Garibaldi</WikiLink
+          >
+          is <u>guaranteed</u> after your 60th
+          <WikiLink page="Aquilifer's Ballade" title="Aquilifer's Ballade"
+            >Aquilifer's Ballade</WikiLink
+          > D3 clear.
+        </i>
+      </p>
+    </li>
+    <li>
+      <FleetTechCost faction="RN" />
+    </li>
+  </ul>
+  <br />
+
+  <FleetTechTable client:visible={{ rootMargin: "50px" }} faction="RN" />
+  <br />
+
+  <h2 id="ffnf"><WikiLink page="Iris Libre">Iris Libre (FFNF)</WikiLink></h2>
+  <HR />
+  <br />
+
+  <h3>Point Thresholds:</h3>
+  <PointThresholds faction="FFNF" />
+  <br />
+
+  <p class="text-[1.25rem] font-bold">Notes:</p>
+  <ul>
+    <li>
+      <p>
+        <i>
+          <WikiLink page="Le Triomphant" title="Le Triomphant"
+            >Le Triomphant</WikiLink
+          >
+          is <u>guaranteed</u> after your 60th
+          <WikiLink
+            page="Iris of Light and Dark Rerun"
+            title="Iris of Light and Dark">Iris of Light and Dark</WikiLink
+          >
+          D3 clear.
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <i>
+          <WikiLink page="Jeanne d'Arc" title="Jeanne d'Arc"
+            >Jeanne d'Arc</WikiLink
+          >
+          is <u>guaranteed</u> after your 60th
+          <WikiLink page="Skybound Oratorio" title="Skybound Oratorio"
+            >Skybound Oratorio</WikiLink
+          >
+          D3 clear.
+        </i>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <i>
+          Development Level 30 (Max Limit Break)
+          <WikiLink page="Saint Louis" title="Saint Louis">Saint Louis</WikiLink
+          >
+          gives an additional 70 Tech Points, which can help alleviate other requirements.
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <i>
+          Development Level 30 (Max Limit Break)
+          <WikiLink page="Champagne" title="Champagne">Champagne</WikiLink>
+          gives an additional 96 Tech Points, which can help alleviate other requirements.
+        </i>
+      </p>
+    </li>
+    <li>
+      <FleetTechCost faction="FFNF" />
+    </li>
+  </ul>
+
+  <br />
+
+  <FleetTechTable
+    client:visible={{ rootMargin: "50px" }}
+    faction="FFNF"
+    excludeShipyard={false}
+  />
+  <br />
+
+  <h2 id="mnf">
+    <WikiLink page="Vichya Dominion">Vichya Dominion (MNF)</WikiLink>
+  </h2>
+  <HR />
+  <br />
+
+  <h3>Point Thresholds:</h3>
+  <PointThresholds faction="MNF" />
+  <br />
+
+  <p class="text-[1.25rem] font-bold">Notes:</p>
+  <ul>
+    <li>
+      <FleetTechCost faction="MNF" />
+    </li>
+  </ul>
+  <br />
+
+  <FleetTechTable
+    client:visible={{ rootMargin: "50px" }}
+    faction="MNF"
+    excludeShipyard={false}
+  />
+  <br />
 </ul>
-<br />
-
-<FleetTechTable client:visible={{ rootMargin: "50px" }} faction="KMS" />
-<br />
-
-<h2 id="de"><WikiLink page="Dragon Empery">Dragon Empery (DE)</WikiLink></h2>
-<HR />
-<br />
-
-<h3>Point Thresholds:</h3>
-<PointThresholds faction="DE" />
-<br />
-
-<p class="text-[1.25rem] font-bold">Notes:</p>
-<ul>
-  <li>
-    <p>
-      <i>
-        It costs 4,800
-        <WikiLink page="Shops#Core Exchange" title="Core Data Shop">
-          <img
-            loading="lazy"
-            class="inline-block"
-            src="/images/materials/core_data.png"
-            width="20px"
-            alt="Core Data"
-          />
-        </WikiLink> to acquire all ships here. You can get <WikiLink
-          page="Harbin"
-          title="Harbin">Harbin</WikiLink
-        > without spending any, however.
-      </i>
-    </p>
-  </li>
-</ul>
-<br />
-
-<FleetTechTable
-  client:visible={{ rootMargin: "50px" }}
-  faction="DE"
-  excludeShipyard={false}
-/>
-<br />
-
-<h2 id="np">
-  <WikiLink page="Northern Parliament">Northern Parliament (NP)</WikiLink>
-</h2>
-<HR />
-<br />
-
-<h3>Point Thresholds:</h3>
-<PointThresholds faction="NP" />
-<br />
-
-<p class="text-[1.25rem] font-bold">Notes:</p>
-<ul>
-  <li>
-    <p>
-      <i>
-        Due to how few guaranteed
-        <WikiLink page="Northern Parliament" title="Northern Parliament"
-          >Northern Parliament</WikiLink
-        >
-        ships exist permanently outside
-        <WikiLink page="Construction" title="Construction"
-          >Construction</WikiLink
-        >, it is fine to wait until a Russian Event is active, instead of
-        speedrunning any of the ships needing them.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        <WikiLink page="Chapayev" title="Chapayev">Chapayev</WikiLink>
-        is <u>guaranteed</u> after your 60th
-        <WikiLink page="Northern Overture" title="Northern Overture"
-          >Northern Overture</WikiLink
-        > D3 clear.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        <WikiLink page="Tallinn" title="Tallinn">Tallinn</WikiLink>
-        is <u>guaranteed</u> after your 60th
-        <WikiLink page="Khorovod of Dawn's Rime" title="Khorovod of Dawn's Rime"
-          >Khorovod of Dawn's Rime</WikiLink
-        > D3 clear.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        <WikiLink page="Kiev">Kiev</WikiLink>
-        is <u>guaranteed</u> after your 60th
-        <WikiLink page="Abyssal Refrain">Abyssal Refrain</WikiLink> D3 clear.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        It costs 24,000 <WikiLink page="Merit Shop" title="Merit Shop">
-          <img
-            loading="lazy"
-            class="inline-block"
-            src="/images/materials/merit.png"
-            width="20px"
-            alt="Merit"
-          />
-        </WikiLink> to acquire all ships here.
-      </i>
-    </p>
-  </li>
-</ul>
-<br />
-
-<FleetTechTable
-  client:visible={{ rootMargin: "50px" }}
-  faction="NP"
-  excludeShipyard={true}
-/>
-<br />
-
-<h2 id="rn">
-  <WikiLink page="Sardegna Empire">Sardegna Empire (RN)</WikiLink>
-</h2>
-<HR />
-<br />
-
-<h3>Point Thresholds:</h3>
-<PointThresholds faction="RN" />
-<br />
-
-<p class="text-[1.25rem] font-bold">Notes:</p>
-<ul>
-  <li>
-    <p>
-      <i>
-        Due to how few guaranteed
-        <WikiLink page="Sardegna Empire" title="Sardegna Empire"
-          >Sardegna Empire</WikiLink
-        >
-        ships exist permanently outside
-        <WikiLink page="Construction" title="Construction"
-          >Construction</WikiLink
-        >, it is fine to wait until an Italian Event is active, instead of
-        speedrunning any of the ships needing them.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        <WikiLink page="Littorio" title="Littorio">Littorio</WikiLink>
-        is <u>guaranteed</u> after your 60th
-        <WikiLink page="Empyreal Tragicomedy" title="Empyreal Tragicomedy"
-          >Empyreal Tragicomedy</WikiLink
-        > D3 clear.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        <WikiLink page="Duca degli Abruzzi" title="Duca degli Abruzzi"
-          >Duca degli Abruzzi</WikiLink
-        >
-        is <u>guaranteed</u> after your 60th
-        <WikiLink page="Daedalian Hymn" title="Daedalian Hymn"
-          >Daedalian Hymn</WikiLink
-        > D3 clear.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        <WikiLink page="Giuseppe Garibaldi" title="Giuseppe Garibaldi"
-          >Giuseppe Garibaldi</WikiLink
-        >
-        is <u>guaranteed</u> after your 60th
-        <WikiLink page="Aquilifer's Ballade" title="Aquilifer's Ballade"
-          >Aquilifer's Ballade</WikiLink
-        > D3 clear.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        It costs 54,000
-        <WikiLink page="Merit Shop" title="Merit Shop">
-          <img
-            loading="lazy"
-            class="inline-block"
-            src="/images/materials/merit.png"
-            width="20px"
-            alt="Merit"
-          />
-        </WikiLink> to acquire all ships here.
-      </i>
-    </p>
-  </li>
-</ul>
-<br />
-
-<FleetTechTable client:visible={{ rootMargin: "50px" }} faction="RN" />
-<br />
-
-<h2 id="ffnf"><WikiLink page="Iris Libre">Iris Libre (FFNF)</WikiLink></h2>
-<HR />
-<br />
-
-<h3>Point Thresholds:</h3>
-<PointThresholds faction="FFNF" />
-<br />
-
-<p class="text-[1.25rem] font-bold">Notes:</p>
-<ul>
-  <li>
-    <p>
-      <i>
-        <WikiLink page="Le Triomphant" title="Le Triomphant"
-          >Le Triomphant</WikiLink
-        >
-        is <u>guaranteed</u> after your 60th
-        <WikiLink
-          page="Iris of Light and Dark Rerun"
-          title="Iris of Light and Dark">Iris of Light and Dark</WikiLink
-        >
-        D3 clear.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        <WikiLink page="Jeanne d'Arc" title="Jeanne d'Arc"
-          >Jeanne d'Arc</WikiLink
-        >
-        is <u>guaranteed</u> after your 60th
-        <WikiLink page="Skybound Oratorio" title="Skybound Oratorio"
-          >Skybound Oratorio</WikiLink
-        >
-        D3 clear.
-      </i>
-    </p>
-  </li>
-
-  <li>
-    <p>
-      <i>
-        Development Level 30 (Max Limit Break)
-        <WikiLink page="Saint Louis" title="Saint Louis">Saint Louis</WikiLink>
-        gives an additional 70 Tech Points, which can help alleviate other requirements.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        Development Level 30 (Max Limit Break)
-        <WikiLink page="Champagne" title="Champagne">Champagne</WikiLink>
-        gives an additional 96 Tech Points, which can help alleviate other requirements.
-      </i>
-    </p>
-  </li>
-  <li>
-    <p>
-      <i>
-        It costs 16,000
-        <WikiLink page="Merit Shop" title="Merit Shop">
-          <img
-            loading="lazy"
-            class="inline-block"
-            src="/images/materials/merit.png"
-            width="20px"
-            alt="Merit"
-          />
-        </WikiLink> to acquire all ships here.
-      </i>
-    </p>
-  </li>
-</ul>
-
-<br />
-
-<FleetTechTable
-  client:visible={{ rootMargin: "50px" }}
-  faction="FFNF"
-  excludeShipyard={false}
-/>
-<br />
-
-<h2 id="mnf">
-  <WikiLink page="Vichya Dominion">Vichya Dominion (MNF)</WikiLink>
-</h2>
-<HR />
-<br />
-
-<h3>Point Thresholds:</h3>
-<PointThresholds faction="MNF" />
-<br />
-
-<p class="text-[1.25rem] font-bold">Notes:</p>
-<ul>
-  <li>
-    <p>
-      <i>
-        It costs 5,000
-        <WikiLink page="Merit Shop" title="Merit Shop">
-          <img
-            loading="lazy"
-            class="inline-block"
-            src="/images/materials/merit.png"
-            width="20px"
-            alt="Merit"
-          />
-        </WikiLink> and 1,000
-        <WikiLink page="Shops#Core Exchange" title="Core Data Shop">
-          <img
-            loading="lazy"
-            class="inline-block"
-            src="/images/materials/core_data.png"
-            width="20px"
-            alt="Core Data"
-          />
-        </WikiLink> to acquire all ships here.
-      </i>
-    </p>
-  </li>
-</ul>
-<br />
-
-<FleetTechTable
-  client:visible={{ rootMargin: "50px" }}
-  faction="MNF"
-  excludeShipyard={false}
-/>
-<br />
