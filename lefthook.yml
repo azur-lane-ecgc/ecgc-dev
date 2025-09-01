@@ -1,0 +1,11 @@
+# lefthook.yml
+
+pre-commit:
+  only:
+    - dev/*
+    - src/*
+  commands:
+    prettier:
+      glob: "*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
+      run: bunx --bun prettier --write {staged_files}
+      stage_fixed: true
