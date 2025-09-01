@@ -13,6 +13,10 @@ const NPTechPoints: FleetTechData = {
       techPoints: 300,
       note: "+RN Points",
     },
+    {
+      ship: "Dmitri Donskoi",
+      techPoints: 300,
+    },
   ],
   data: [
     {

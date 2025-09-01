@@ -9,6 +9,11 @@ const RNTechPoints: FleetTechData = {
       note: "+SN Points",
     },
     {
+      ship: "Goudeen Leeuw",
+      techPoints: 200,
+      note: "+KMS Points",
+    },
+    {
       ship: "Chkalov",
       techPoints: 300,
       note: "+USS Points",
@@ -17,6 +22,10 @@ const RNTechPoints: FleetTechData = {
       ship: "Napoli",
       techPoints: 300,
       note: "+SN Points",
+    },
+    {
+      ship: "Vittorio Cuniberti",
+      techPoints: 300,
     },
   ],
   data: [
@@ -154,6 +163,35 @@ const RNTechPoints: FleetTechData = {
       location: [{ event: "Daedalian Hymn", stages: ["B3", "D3*"] }],
       investment: "Collection",
       techPoints: 24,
+      isShipyard: false,
+    },
+    {
+      ship: "Giuseppe Garibaldi",
+      rarity: 4,
+      location: [{ event: "Aquilifer's Ballade", stages: ["B3", "D3*"] }],
+      investment: "Collection",
+      techPoints: 24,
+      isShipyard: false,
+    },
+    {
+      ship: "Emanuele Pessagno",
+      rarity: 3,
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
+      ],
+      investment: "Collection",
+      techPoints: 10,
       isShipyard: false,
     },
   ],

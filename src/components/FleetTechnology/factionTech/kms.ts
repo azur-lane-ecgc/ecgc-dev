@@ -11,8 +11,10 @@ const KMSTechPoints: FleetTechData = {
     { ship: "Ägir", techPoints: 700 },
     { ship: "Prinz Rupprecht", techPoints: 700 },
     { ship: "Flandre", techPoints: 800, note: "+MNF Points" },
+    { ship: "Goudeen Leeuw", techPoints: 800, note: "+RN Points" },
     { ship: "Felix Schultz", techPoints: 850 },
     { ship: "Hindenburg", techPoints: 950 },
+    { ship: "Mecklenburg", techPoints: 950 },
   ],
   data: [
     {
@@ -52,6 +54,27 @@ const KMSTechPoints: FleetTechData = {
       ],
       investment: "Max Limit Break",
       techPoints: 72,
+      isShipyard: false,
+    },
+    {
+      ship: "Thüringen",
+      rarity: 3,
+      location: [
+        {
+          event: "Merit Shop",
+          stages: [
+            `8,000 <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/merit.png"
+        width="20px"
+        alt="Merit"
+      />`,
+          ],
+        },
+      ],
+      investment: "Max Limit Break",
+      techPoints: 62,
       isShipyard: false,
     },
     {
@@ -242,6 +265,14 @@ const KMSTechPoints: FleetTechData = {
       location: [{ event: "Tower of Transcendence", stages: ["B3", "D3*"] }],
       investment: "Collection",
       techPoints: 20,
+      isShipyard: false,
+    },
+    {
+      ship: "Seydlitz",
+      rarity: 4,
+      location: [{ event: "Rondo at Rainbow's End", stages: ["B3", "D3*"] }],
+      investment: "Collection",
+      techPoints: 14,
       isShipyard: false,
     },
     {
