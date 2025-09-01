@@ -574,6 +574,11 @@
         "subheadings": []
       },
       {
+        "id": "late_game_campaign",
+        "content": "Late Game Campaign Stages",
+        "subheadings": []
+      },
+      {
         "id": "backline",
         "content": "Backline Ship Roles",
         "subheadings": [
@@ -684,8 +689,8 @@
         ]
       },
       {
-        "id": "campaign_fleet_comps",
-        "content": "Campaign Fleet Compositions",
+        "id": "basic_fleet_comps",
+        "content": "Basic Fleet Composition",
         "subheadings": [
           {
             "id": "campaign_theory",
@@ -696,8 +701,12 @@
             "content": "Mob Fleet"
           },
           {
-            "id": "generic_boss_fleet",
-            "content": "Generic Boss Fleet"
+            "id": "boss_fleet",
+            "content": "Boss Fleet"
+          },
+          {
+            "id": "ship_positioning",
+            "content": "Ship Positioning"
           }
         ]
       },
