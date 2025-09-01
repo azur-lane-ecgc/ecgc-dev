@@ -131,7 +131,7 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://azurlane.koumakan.jp/wiki/Research#Shipyard"
+                href="https://azurlane.koumakan.jp/wiki/Shipyard"
                 title="Shipyard"
               >
                 Shipyard
