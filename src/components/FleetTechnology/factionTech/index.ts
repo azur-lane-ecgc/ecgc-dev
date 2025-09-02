@@ -2,7 +2,7 @@ import DETechPoints from "./de"
 import FFNFTechPoints from "./ffnf"
 import KMSTechPoints from "./kms"
 import MNFTechPoints from "./mnf"
-import NPTechPoints from "./np"
+import SNTechPoints from "./sn"
 import RNTechPoints from "./rn"
 
 export const allFactionData = [
@@ -10,6 +10,6 @@ export const allFactionData = [
   FFNFTechPoints,
   KMSTechPoints,
   MNFTechPoints,
-  NPTechPoints,
+  SNTechPoints,
   RNTechPoints,
 ]

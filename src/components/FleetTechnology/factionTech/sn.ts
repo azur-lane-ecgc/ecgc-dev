@@ -1,7 +1,7 @@
 import type { FleetTechData } from "./types"
 
-const NPTechPoints: FleetTechData = {
-  faction: "NP",
+const SNTechPoints: FleetTechData = {
+  faction: "SN",
   thresholds: [
     {
       ship: "Napoli",
@@ -131,4 +131,4 @@ const NPTechPoints: FleetTechData = {
   ],
 }
 
-export default NPTechPoints
+export default SNTechPoints
