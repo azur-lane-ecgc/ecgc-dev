@@ -14083,7 +14083,7 @@
 
       <h3 id="PR1">
         <a
-          href="https://azurlane.koumakan.jp/wiki/Research#Series_1"
+          href="https://azurlane.koumakan.jp/wiki/Shipyard#Series_1"
           target="_blank"
           rel="noopener noreferrer"
           title="PR1"
@@ -14315,7 +14315,7 @@
 
       <h3 id="PR2">
         <a
-          href="https://azurlane.koumakan.jp/wiki/Research#Series_2"
+          href="https://azurlane.koumakan.jp/wiki/Shipyard#Series_2"
           target="_blank"
           rel="noopener noreferrer"
           title="PR2"
@@ -14559,7 +14559,7 @@
 
       <h3 id="PR3">
         <a
-          href="https://azurlane.koumakan.jp/wiki/Research#Series_3"
+          href="https://azurlane.koumakan.jp/wiki/Shipyard#Series_3"
           target="_blank"
           rel="noopener noreferrer"
           title="PR3"
@@ -14759,7 +14759,7 @@
 
       <h3 id="PR4">
         <a
-          href="https://azurlane.koumakan.jp/wiki/Research#Series_4"
+          href="https://azurlane.koumakan.jp/wiki/Shipyard#Series_4"
           target="_blank"
           rel="noopener noreferrer"
           title="PR4"
@@ -14957,7 +14957,7 @@
 
       <h3 id="PR5">
         <a
-          href="https://azurlane.koumakan.jp/wiki/Research#Series_5"
+          href="https://azurlane.koumakan.jp/wiki/Shipyard#Series_5"
           target="_blank"
           rel="noopener noreferrer"
           title="PR5"
@@ -15154,7 +15154,7 @@
 
       <h3 id="PR6">
         <a
-          href="https://azurlane.koumakan.jp/wiki/Research#Series_6"
+          href="https://azurlane.koumakan.jp/wiki/Shipyard#Series_6"
           target="_blank"
           rel="noopener noreferrer"
           title="PR6"
@@ -15367,7 +15367,7 @@
 
       <h3 id="PR7">
         <a
-          href="https://azurlane.koumakan.jp/wiki/Research#Series_7"
+          href="https://azurlane.koumakan.jp/wiki/Shipyard#Series_7"
           target="_blank"
           rel="noopener noreferrer"
           title="PR7"

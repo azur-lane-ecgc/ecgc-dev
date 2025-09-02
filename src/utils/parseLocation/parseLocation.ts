@@ -24,7 +24,7 @@ export const parseLocation = (location: string) => {
 
   // Shipyard
   else if (location.match(/Shipyard \(PR(\d+)\)/)) {
-    location = location.replace(/Shipyard \(PR(\d+)\)/, "Research#Series_$1")
+    location = location.replace(/Shipyard \(PR(\d+)\)/, "Shipyard#Series_$1")
   }
 
   // Memento -> Collection
