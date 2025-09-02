@@ -11684,7 +11684,7 @@
       "offensivebuff": 3,
       "selfsurvival": 2,
       "aa": 3,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": null
     }
   ],
