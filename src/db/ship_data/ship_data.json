@@ -38576,8 +38576,12 @@
       "quantity": 1,
       "conditional": ""
     },
+<<<<<<< HEAD
     "roles": ["DmgDealer", "FastLoad", "Preload", "Meh"],
 >>>>>>> 6caec0a (devtool update)
+=======
+    "roles": ["DmgDealer", "TopDmg", "FastLoad", "Preload"],
+>>>>>>> 843e920 (package & devtool updates)
     "locations": {
       "events": [
         {
