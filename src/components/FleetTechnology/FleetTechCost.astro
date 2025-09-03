@@ -75,7 +75,7 @@ const formatNumber = (num: number): string => {
     <p>
       <i>
         It costs{" "}
-        {Object.entries(materialCosts).map(([material, data], index, array) => (
+        {Object.entries(materialCosts).map(([_, data], index, array) => (
           <span>
             {formatNumber(data.total)}{" "}
             <WikiLink page={data.config.wikiPage} title={data.config.wikiTitle}>
