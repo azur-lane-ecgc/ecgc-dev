@@ -11,6 +11,11 @@ gsheets2img is a modified version of [github.com/blead/gsheets2img](https://gith
 If there are any questions, concerns, or feedback, DM me on discord @samheart564.  
 Join our [Discord Server](https://discord.gg/wKJKxq5WQt)!
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=samheart564/ecgc-dev&type=Date)](https://www.star-history.com/#samheart564/ecgc-dev&Date)
+
+
 ## Legal Notice
 
 ### Disclaimer
