@@ -13,7 +13,15 @@ Join our [Discord Server](https://discord.gg/wKJKxq5WQt)!
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=samheart564/ecgc-dev&type=Date)](https://www.star-history.com/#samheart564/ecgc-dev&Date)
+## Star History
+
+<a href="https://www.star-history.com/#samheart564/ecgc-dev&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=samheart564/ecgc-dev&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=samheart564/ecgc-dev&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=samheart564/ecgc-dev&type=Date" />
+ </picture>
+</a>
 
 
 ## Legal Notice
