@@ -7426,7 +7426,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Vanguard is an off-flag damage-oriented BB with amazing stats and skills. Her AA is very high, allowing her to help the vanguard in plane-heavy areas situationally. Her debuffs are amazing, allowing the entire fleet to take advantage of them. Her personal damage is pretty good with MGM+2 BB Guns, and a good barrage, especially since she can take advantage of her own debuffs. The Secondary Gun Crit Rate buff looks nice on paper but is useless outside W14. Her crossfleet barrage + buff are nice, but not necessary for her to be good. You want to use an HMS equipment on her, which is most likely going to be <a href=\"https://azurlane.koumakan.jp/wiki/Twin_40mm_Bofors_STAAG\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Twin 40mm Bofors STAAG\" >Twin 40mm Bofors STAAG</a >, among other great HMS Secondary Gun or AA Gun options. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "AA", "OffSupport"],
+    "roles": ["DmgDealer", "TopDmg", "AA", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -33468,7 +33468,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Owari is a off-flag damage-oriented BB with great stats and skills. Her personal damage is high due to her high self-buffs, good main gun efficiency, and great barrages. Her barrage has a lot of its damage aimed, but since some of it is centered, she is slightly better as a Flagship than as an Off-Flag. Her \"Best Buds\" support given to other ships is nice but unreliable in its targetting. She is ideally sortied such that her Skill 2 condition for barrage activation chance is satisfied. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer", "DefSupport"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -34101,7 +34101,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Constellation is an off-flag oriented BC with great stats and skills. Her personal damage is very good due to an effective 100% proc chance barrage when equipped with a USS gear, as well as her self-buffs. Since most trash mobs are very slow, the buff to enemies with lower speed is nice, but trash mobs die quickly anyway so this buff's effectiveness is diminished. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [
         {
@@ -36610,7 +36610,7 @@
     "augments": ["Treasure Ship's Lantern"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "Meh"],
+    "roles": ["DefSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -38551,7 +38551,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -40796,7 +40796,7 @@
     "augments": ["Macaroon", "Bowgun", "Officer's Sword"],
     "samEval": "Tamaki is an off-flag damage-oriented BB with great stats and skills. Her Skill 1 has a nice debuff to all enemies on the field. In addition, since her secondary gun range is increased, she has more capable interception. Her barrage is aimed, and has a 100% chance to proc with her augment. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport", "Meh"],
+    "roles": ["DmgDealer", "TopDmg", "DefSupport", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -42330,7 +42330,7 @@
     ],
     "samEval": "Fubuki is an off-flag damage-oriented BB with great stats and skills. Her Skill 1 has a nice debuff to enemies, in addition to buffing her initial Main Gun shot. Her Skill 2 is also a good debuff as well. Her barrage is mostly aimed, and has a 100% chance to proc with her augment. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport", "Meh"],
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -42843,7 +42843,7 @@
     "augments": ["Rock Cannon", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [
         {
@@ -43067,7 +43067,7 @@
     "augments": ["Huntress", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer", "Meh"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -45266,7 +45266,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -47316,7 +47316,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Rodney META is an off-flag damage-oriented BB with great stats and skills. Her Skill 1 creates 2 summons, who individually deal decent amounts of damage. She has great damage with MGM+2 BB Guns, and 2 barrages: one with a high (but not 100%) proc rate that has priority aiming, and one every 12s from her summons. The heal when her summons die is irrelevant, you want them alive as long as possible. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -48056,7 +48056,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer", "DefSupport"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {
