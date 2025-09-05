@@ -4047,7 +4047,11 @@
         "mounts": 1
       }
     ],
-    "augments": ["Scepter", "Hunting Bow"],
+    "augments": [
+      "The Miracle That Symbolizes Freedom",
+      "Scepter",
+      "Hunting Bow"
+    ],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
     "roles": ["Bad"],
@@ -8850,10 +8854,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Noble, Lucky, and Invincible", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DefSupport", "Meh"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -17714,7 +17718,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["The Stage is Mine", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
     "roles": ["Bad"],
@@ -17905,7 +17909,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Squire's Rapier", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
     "roles": ["DefSupport", "Meh"],
@@ -25636,8 +25640,12 @@
       ],
       "other": [
         {
-          "name": "Core Data Shop",
-          "href": "Core_Data_Shop"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
       "construction": [],
@@ -25697,8 +25705,12 @@
       ],
       "other": [
         {
-          "name": "Core Data Shop",
-          "href": "Core_Data_Shop"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
       "construction": [],
@@ -38663,7 +38675,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -43232,10 +43244,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Monarch's Pledge", "Bowgun", "Officer's Sword"],
     "samEval": "Monarch is a flagship damage-oriented BB with great stats and good skills. Her main gun damage is great, and supplemented by a great barrage that can slow enemies hit. The barrage being 70% is not ideal, however. Her Skill 2 is effectively negligable for almost all battles, and the FS5 does not improve it much at all. Overall, she is a great ship, but can be a sidegrade to most modern event BBs.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "Bad"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -47323,13 +47335,17 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        },
+        {
+          "name": "Dossier Analysis",
+          "href": "META_Showdown#Dossier_Analysis"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -48399,6 +48415,62 @@
         {
           "name": "Cruise Pass",
           "href": "Cruise_Missions"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30051": {
+    "id": 30051,
+    "ship": "Yuudachi META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.55,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.85,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "META Showdown",
+          "href": "META_Showdown"
         }
       ],
       "construction": [],
