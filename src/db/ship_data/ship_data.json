@@ -17721,7 +17721,7 @@
     "augments": ["The Stage is Mine", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -28256,8 +28256,12 @@
       ],
       "other": [
         {
-          "name": "Core Data Shop",
-          "href": "Core_Data_Shop"
+          "name": "Medal Shop",
+          "href": "Medal_Shop"
+        },
+        {
+          "name": "Requisition",
+          "href": "Requisition"
         }
       ],
       "construction": [],

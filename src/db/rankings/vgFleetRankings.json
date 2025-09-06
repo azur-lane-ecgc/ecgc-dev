@@ -13093,7 +13093,7 @@
   "Z35": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Waiting to see how the mine hits.",
+      "notes": "Augment adds a very strong mine (effectively a delayed bomb), increasing her damage by about 70%.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -13106,10 +13106,10 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 1,
-      "mediumdmg": 1,
-      "heavydmg": 1,
-      "aoedmg": 1,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
