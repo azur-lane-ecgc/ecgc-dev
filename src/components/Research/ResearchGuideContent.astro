@@ -485,8 +485,8 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
 <ul>
   <li>
     <p>
-      <b>PR6</b> is slightly worse than the other 2 options (PR5, PR7) due to having
-      similar ships but worse gear. Still fine to set as a focus, however.
+      <b>PR6</b> is slightly worse than the other options due to having similar ships
+      but worse gear. Still fine to set as a focus, however.
     </p>
   </li>
 </ul>
@@ -608,7 +608,8 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
 </ul>
 <p>
   You can only do one catch-up at a time, but there is no time limit. <i
-    >It is recommended to do the PR catch-ups before the DR catch-ups.</i
+    >It is recommended to do the PR catch-ups before the DR catch-ups, as DR
+    ships use a lot more prints.</i
   >
 </p>
 <br />
@@ -1085,7 +1086,7 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
   <tr>
     <td>
       <ItemCell
-        item="Triple 406mm/50 Main Gun Mount"
+        item="Prototype Triple 406mm/50 Main Gun Mount"
         wikiLink="Triple_406mm_(Mle_1938_Prototype)"
         itemImg="equipment/triple_406_mle.png"
         rarity={4}
@@ -1094,14 +1095,14 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
       <WikiLink
         page="Triple 406mm (Mle 1938 Prototype)"
         title="Triple 406mm/50 Main Gun Mount"
-        >Triple 406mm/50 Main Gun Mount</WikiLink
+        >Prototype Triple 406mm/50 Main Gun Mount</WikiLink
       >
     </td>
     <td><p>PR3</p></td>
-    <td><p>3 Equipment<br />(75 Prints)</p></td>
+    <td><p>2 Equipment<br />(50 Prints)</p></td>
     <td>
       <p>
-        1125 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+        750 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
           ><img
             loading="lazy"
             src="/images/materials/protocore.png"
@@ -1120,6 +1121,47 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
       <p>
         <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
       </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Triple 380mm Mle 1935 Main Gun Mount"
+        wikiLink="Triple_380mm_(Mle_1935_Prototype)"
+        itemImg="equipment/triple_380_mle.png"
+        rarity={4}
+        caption={false}
+      />
+      <WikiLink
+        page="Triple 380mm (Mle 1935 Prototype)"
+        title="Prototype Triple 380mm Mle 1935 Main Gun Mount"
+        >Prototype Triple 380mm Mle 1935 Main Gun Mount</WikiLink
+      >
+    </td>
+    <td><p>PR6</p></td>
+    <td><p>1 Equipment<br />(25 Prints)</p></td>
+    <td>
+      <p>
+        375 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            loading="lazy"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Best 20s reload AP BB gun.</p>
+      <p style="font-size:small">
+        <i>Found under "Prototype Weapon Blueprint - Series 6."</i>
+      </p>
+      <!-- <p>
+        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+      </p> -->
     </td>
   </tr>
 
@@ -1157,6 +1199,9 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
       <p style="font-size:small">
         <i>Found under "Prototype Weapon Blueprint - Series 4."</i>
       </p>
+      <p>
+        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+      </p>
     </td>
   </tr>
 
@@ -1191,6 +1236,9 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
     </td>
     <td>
       <p>Best General-Use Dive Bomber.</p>
+      <p>
+        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+      </p>
     </td>
   </tr>
 
@@ -1464,7 +1512,7 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
             rel="noopener noreferrer"
             target="_self"
             href="#catch-up_min_max"
-            title="Catch-up Min-Max">PR Catch-up Minmaxing**</a
+            title="Catch-up Min-Max">PR Catch-up Min-maxing**</a
           ></b
         >
       </p>
@@ -1546,7 +1594,7 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
   <p>
     This method involves manipulating Research to allow you to convert all the
     Catch-up prints from a season into Prototype Core. <i
-      >This is only recommended for PR1 and PR2. <b
+      >You can do it for any season with catch-up active. <b
         >Do NOT do this with any of the DR Catch-ups!</b
       ></i
     >
@@ -1572,15 +1620,17 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
     <li>
       <p>
         Research a PR ship that is of the same season that you want to convert
-        Catch-up prints for. Any PR ship works.
+        Catch-up prints for. Any PR ship works. For example, if I wanted to
+        convert <WikiLink page="Monarch" /> prints, I would research and develop
+        <WikiLink page="Monarch" />.
       </p>
     </li>
     <li>
       <p>
-        While your valuable (PR4, PR5, DR) Catch-up prints are slowly trickling
-        in, obtain and develop the ship from Step 2 using coins until the ship
-        is development level 30. This entire process should take about 50 days
-        or less, assuming you are spending 3000 <WikiLink
+        While your valuable (PR, DR) Catch-up prints are slowly trickling in,
+        obtain and develop the ship from Step 2 using coins until the ship is
+        development level 30. This entire process should take about 50 days or
+        less, assuming you are spending 3000 <WikiLink
           page="Shops"
           title="Shops"
           ><img
@@ -1611,9 +1661,9 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
       <ul>
         <li>
           <p>
-            If you are not finished with the valuable (PR4, PR5, DR) Catch-up
-            prints, it is fine to remain on the valuable Catch-up and come back
-            to this step later.
+            If you are not finished with the valuable Catch-up prints, it is
+            fine to remain on the valuable Catch-up and come back to this step
+            later.
           </p>
         </li>
         <li>
@@ -1694,13 +1744,17 @@ import ShipyardWindow from "@assets/research_guide/shipyard_window.png"
         /></WikiLink
       >): <WikiLink
         page="Triple 406mm (Mle 1938 Prototype)"
-        title="Triple 406mm/50 Main Gun Mount"
-        >Triple 406mm/50 Main Gun Mount</WikiLink
-      > (x3),
+        title="Prototype Triple 406mm/50 Main Gun Mount"
+        >Prototype Triple 406mm/50 Main Gun Mount</WikiLink
+      > (x2), <WikiLink
+        page="Triple 380mm (Mle 1935 Prototype)"
+        title="Prototype Triple 380mm Mle 1935 Main Gun Mount"
+        >Prototype Triple 380mm Mle 1935 Main Gun Mount</WikiLink
+      > (x1),
       <WikiLink
         page="Nakajima J5N Tenrai (Dive Bomber Prototype)"
         title="Prototype Tenrai">Prototype Tenrai</WikiLink
-      >.
+      > (x1).
     </p>
   </li>
   <li>
