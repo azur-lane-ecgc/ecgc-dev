@@ -1,11 +1,13 @@
+import os
 import re
+
 from datetime import datetime
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 SERVICE_ACCOUNT_FILE = "credentials.json"
-END_GAME_RANKINGS_PATH = "../../src/constants/lastUpdated.ts"
+CHANGELOG_PATH = "../../src/constants/lastUpdated.ts"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 # Define 2 sheets to parse
@@ -57,8 +59,16 @@ def get_changelog_date(spreadsheet_id, sheet_name, cell_range, date_format):
 
 
 def update_constants_file(updates):
-    """Update specified date fields in the Constants file."""
-    with open(END_GAME_RANKINGS_PATH, "r", encoding="utf-8") as file:
+    """Update specified date fields in the Constants file, create file if missing."""
+    if not os.path.exists(CHANGELOG_PATH):
+        # Create file with default exports if missing
+        with open(CHANGELOG_PATH, "w", encoding="utf-8") as file:
+            for key, new_date in updates.items():
+                file.write(f'export const {key} = "{new_date}"\n')
+        return
+
+    # File exists → update it
+    with open(CHANGELOG_PATH, "r", encoding="utf-8") as file:
         content = file.read()
 
     for key, new_date in updates.items():
@@ -67,10 +77,12 @@ def update_constants_file(updates):
             f'export const {key} = "{new_date}"',
             content,
         )
-        if updated_content != content:
-            content = updated_content
+        # If key wasn't found, append it
+        if updated_content == content:
+            updated_content += f'\nexport const {key} = "{new_date}"'
+        content = updated_content
 
-    with open(END_GAME_RANKINGS_PATH, "w", encoding="utf-8") as file:
+    with open(CHANGELOG_PATH, "w", encoding="utf-8") as file:
         file.write(content)
 
 

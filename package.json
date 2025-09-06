@@ -63,6 +63,13 @@
     "vite": "^7.1.4",
     "wrangler": "^4.33.1"
     "wrangler": "^4.33.2"
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4",
+    "wrangler": "^4.34.0"
   },
-  "private": true
+  "private": true,
+  "trustedDependencies": [
+    "@tailwindcss/oxide",
+    "oxc-resolver"
+  ]
 }
