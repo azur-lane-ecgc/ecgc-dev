@@ -3,7 +3,6 @@ import shutil
 import tempfile
 import zipfile
 from pathlib import Path
-
 import requests
 from playwright.sync_api import sync_playwright
 
@@ -16,23 +15,17 @@ sheet_id = gsheets2img["sheetID"]
 output_dir = Path(__file__).parent / Path(gsheets2img["outputDir"])
 include_sheets = gsheets2img.get("includeSheets", [])
 exclude_sheets = gsheets2img.get("excludeSheets", [])
-
 resolved_output_dir = output_dir.resolve()
-
 
 def download(sheet_id):
     temp_dir = Path(tempfile.mkdtemp(prefix="gs2imgz-"))
     zip_path = temp_dir / f"{sheet_id}.zip"
-
     url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=zip"
     response = requests.get(url)
     response.raise_for_status()
-
     with open(zip_path, "wb") as f:
         f.write(response.content)
-
     return zip_path
-
 
 def unzip(zip_path):
     temp_dir = Path(tempfile.mkdtemp(prefix="gs2imgx-"))
@@ -40,7 +33,6 @@ def unzip(zip_path):
         zip_ref.extractall(temp_dir)
     shutil.rmtree(zip_path.parent, ignore_errors=True)
     return temp_dir
-
 
 def screenshot(html_path, png_path, browser):
     page = browser.new_page(
@@ -73,40 +65,39 @@ def screenshot(html_path, png_path, browser):
         return
 
     row_header_width = row_header_box["width"]
-    bounding_box["x"] += row_header_width + 1
-    bounding_box["width"] -= row_header_width + 1
 
-    page.set_viewport_size(
-        {
-            "width": int(bounding_box["width"]) + 10,
-            "height": int(bounding_box["height"]) + 10,
-        }
-    )
+    # Create a new clip area instead of modifying the original bounding_box
+    clip_area = {
+        "x": bounding_box["x"] + row_header_width + 1,
+        "y": bounding_box["y"],
+        "width": bounding_box["width"] - row_header_width - 1,
+        "height": bounding_box["height"]
+    }
+
+    # Set viewport large enough to contain the full content with buffer
+    page.set_viewport_size({
+        "width": max(1920, int(clip_area["width"]) + 100),
+        "height": max(1080, int(clip_area["height"]) + 100)
+    })
 
     print(f"Uploading {html_path.stem}")
-    page.screenshot(path=str(png_path), clip=bounding_box)
+    page.screenshot(path=str(png_path), clip=clip_area)
     page.close()
-
 
 def process_sheets(sheet_names, extracted_dir, browser):
     for sheet_name in sheet_names:
         file_name = sheet_name.replace(" ", "_") + ".jpeg"
         html_path = extracted_dir / f"{sheet_name}.html"
         png_path = resolved_output_dir / file_name
-
         if not html_path.exists():
             print(f"Skipping {sheet_name}: HTML file not found.")
             continue
-
         screenshot(html_path, png_path, browser)
-
 
 def main():
     resolved_output_dir.mkdir(parents=True, exist_ok=True)
-
     zip_path = download(sheet_id)
     extracted_dir = unzip(zip_path)
-
     files = [f for f in extracted_dir.iterdir() if f.suffix == ".html"]
     sheet_names = [
         f.stem
@@ -126,7 +117,6 @@ def main():
 
     shutil.rmtree(extracted_dir)
     print("Finished uploading images.")
-
 
 if __name__ == "__main__":
     main()
