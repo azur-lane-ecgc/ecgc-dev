@@ -117,7 +117,7 @@ const WisdomCubeData: ResourceProps = {
     monthly: 0,
     bimonthly: 0,
   },
-  notes: "Total income is likely way higher due to OpSi RNG.",
+  notes: "Total income is likely way higher due to Commission RNG.",
 }
 
 WisdomCubeData.total = getTotalGuaranteed(WisdomCubeData)
