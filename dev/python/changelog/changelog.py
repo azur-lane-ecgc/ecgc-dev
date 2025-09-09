@@ -1,12 +1,9 @@
-import os
-import re
-
 from datetime import datetime
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
-SERVICE_ACCOUNT_FILE = "credentials.json"
+SERVICE_ACCOUNT_FILE = "../../credentials.json"
 CHANGELOG_PATH = "../../src/constants/lastUpdated.ts"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
@@ -59,31 +56,10 @@ def get_changelog_date(spreadsheet_id, sheet_name, cell_range, date_format):
 
 
 def update_constants_file(updates):
-    """Update specified date fields in the Constants file, create file if missing."""
-    if not os.path.exists(CHANGELOG_PATH):
-        # Create file with default exports if missing
-        with open(CHANGELOG_PATH, "w", encoding="utf-8") as file:
-            for key, new_date in updates.items():
-                file.write(f'export const {key} = "{new_date}"\n')
-        return
-
-    # File exists → update it
-    with open(CHANGELOG_PATH, "r", encoding="utf-8") as file:
-        content = file.read()
-
-    for key, new_date in updates.items():
-        updated_content = re.sub(
-            rf'export const {key} = "\d{{2}}/\d{{2}}/\d{{4}}"',
-            f'export const {key} = "{new_date}"',
-            content,
-        )
-        # If key wasn't found, append it
-        if updated_content == content:
-            updated_content += f'\nexport const {key} = "{new_date}"'
-        content = updated_content
-
+    """Always overwrite the Constants file with the latest date exports."""
     with open(CHANGELOG_PATH, "w", encoding="utf-8") as file:
-        file.write(content)
+        for key, new_date in updates.items():
+            file.write(f'export const {key} = "{new_date}"\n')
 
 
 if __name__ == "__main__":

@@ -1,7 +1,4 @@
-credentials.json
-**/credentials.json
-credentials.json.base64
-**/credentials.json.base64
+
 tokens.json
 **/tokens.json
 config.json

@@ -1,8 +1,8 @@
-// export interface SlotProps {
-//   type: string[]
-//   efficiency: number
-//   mounts: number
-// }
+interface SlotProps {
+  type: string[]
+  efficiency: number
+  mounts: number
+}
 
 export interface shipLocation {
   name: string

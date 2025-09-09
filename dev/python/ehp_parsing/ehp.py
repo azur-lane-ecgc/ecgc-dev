@@ -5,7 +5,7 @@ import re
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
-SERVICE_ACCOUNT_FILE = "credentials.json"
+SERVICE_ACCOUNT_FILE = "../../credentials.json"
 SPREADSHEET_ID = "1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
 SHEET_NAMES = ["eHP 3"]
 OUTPUT_PATHS = [
