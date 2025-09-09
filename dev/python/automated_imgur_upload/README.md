@@ -4,33 +4,41 @@ This is a python converted version of [gsheets2img](https://github.com/blead/gsh
 
 ## Configuration
 
-An example local configuration file `config/local.json.example` has been provided:
+The application uses three configuration files for `imgur.py` only. `gsheets2img.py` has hardcoded constants within it directly.
 
-```json
-{
-  "gsheets2img": {
-    "sheetID": "aBC-123_xYz",
-    "outputDir": "/path/to/output/dir",
-    "includeSheets": [
-      "Sheet1",
-      "Sheet3",
-      "My Sheet",
-      "Copy of My Sheet",
-      "All sheets are included if includeSheets is empty"
-    ],
-    "excludeSheets": [
-      "Sheet3",
-      "Copy of My Sheet",
-      "If an included sheet is in excludeSheets, it becomes excluded"
-    ],
-    "concurrency": 2
-  }
-}
-```
+### config.json
 
-- `gsheets2img.sheetID`: (String) Target spreadsheet ID. (can be found in the URL: `https://docs.google.com/spreadsheets/d/<spreadsheetId>/edit#gid=0`)
-- `gsheets2img.outputDir`: (String) Directory to save images to. (default: `"./output"`)
-- `gsheets2img.includeSheets`: (Array) Sheet names to include. All sheets are included if empty. (default: `[]`)
-- `gsheets2img.excludeSheets`: (Array) Sheet names to exclude. If an included sheet is in the array, it becomes excluded. (default: `[]`)
-  - To clarify, if a sheet is in both arrays (like `Sheet3` and `Copy of My Sheet` in the example above), it is completely ignored.
-- `gsheets2img.concurrency`: (Number) Number of sheets to process at the same time. (default: `5`)
+Main configuration file containing:
+
+- `client_id`: (String) Google OAuth client ID for API access
+- `client_secret`: (String) Google OAuth client secret for API authentication
+- `image_order`: (Array) Ordered list of sheet names that defines the processing sequence. Only sheets listed here will be processed, in the specified order.
+
+### tokens.json
+
+OAuth token storage containing:
+
+- `access_token`: (String) Current OAuth access token
+- `expires_in`: (Number) Token expiration time in seconds
+- `token_type`: (String) Token type (typically "bearer")
+- `scope`: OAuth scope permissions
+- `refresh_token`: (String) Refresh token for obtaining new access tokens
+- `account_id`: (Number) Associated account ID
+- `account_username`: (String) Associated account username
+- `expires_at`: (String) Token expiration timestamp
+
+### image_info.json
+
+Image metadata registry containing entries for each processed sheet:
+
+- `type`: (String) Content type (typically "image")
+- `title`: (String) Human-readable title for the sheet
+- `description`: (String) Optional description
+- `path`: (String) File system path where the generated image is stored
+
+## Processing Behavior
+
+- Only sheets listed in `config.json`'s `image_order` array will be processed
+- Sheets are processed in the exact order specified in the `image_order` array
+- Generated images are saved to the paths specified in `image_info.json`
+- OAuth tokens are automatically refreshed as needed using the refresh token

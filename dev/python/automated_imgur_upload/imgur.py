@@ -8,20 +8,34 @@ import requests
 
 
 def load_config():
-    with open("automated_imgur_upload/config/config.json", "r") as file:
+    config_file = "automated_imgur_upload/config.json"
+    if not os.path.exists(config_file):
+        default_config = {
+            "client_id": "YOUR_CLIENT_ID",
+            "client_secret": "YOUR_CLIENT_SECRET",
+            "image_order": [],
+        }
+        with open(config_file, "w") as file:
+            json.dump(default_config, file, indent=2)
+        print(f"✨ Created default config at {config_file}")
+        print("❗ Please edit it with your client_id and client_secret")
+        return default_config
+
+    with open(config_file, "r") as file:
         return json.load(file)
 
 
 def load_tokens():
-    token_file = "automated_imgur_upload/config/tokens.json"
-    if os.path.exists(token_file):
-        with open(token_file, "r") as file:
-            return json.load(file)
-    return None
+    token_file = "automated_imgur_upload/tokens.json"
+    if not os.path.exists(token_file):
+        return None
+
+    with open(token_file, "r") as file:
+        return json.load(file)
 
 
 def save_tokens(tokens):
-    token_file = "automated_imgur_upload/config/tokens.json"
+    token_file = "automated_imgur_upload/tokens.json"
     os.makedirs(os.path.dirname(token_file), exist_ok=True)
 
     tokens["expires_at"] = (
@@ -30,6 +44,10 @@ def save_tokens(tokens):
 
     with open(token_file, "w") as file:
         json.dump(tokens, file, indent=2)
+
+def load_image_info():
+    with open("automated_imgur_upload/image_info.json", "r") as file:
+        return json.load(file)
 
 
 def is_token_valid(tokens):
@@ -206,9 +224,7 @@ def imgur():
     access_token = get_valid_access_token(client_id, client_secret)
 
     image_order = config["image_order"]
-
-    with open("automated_imgur_upload/config/image_info.json", "r") as file:
-        image_info = json.load(file)
+    image_info = load_image_info()
 
     delete_all_images_from_album(album_id, access_token)
     print("✅ Finished Deletion")

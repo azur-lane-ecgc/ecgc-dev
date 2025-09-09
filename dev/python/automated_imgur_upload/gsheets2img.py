@@ -6,15 +6,17 @@ from pathlib import Path
 import requests
 from playwright.sync_api import sync_playwright
 
-config_path = Path(__file__).parent / "config/default.json"
-with open(config_path, "r") as f:
-    config = json.load(f)
-
-gsheets2img = config["gsheets2img"]
-sheet_id = gsheets2img["sheetID"]
-output_dir = Path(__file__).parent / Path(gsheets2img["outputDir"])
-include_sheets = gsheets2img.get("includeSheets", [])
-exclude_sheets = gsheets2img.get("excludeSheets", [])
+# Hardcoded constants
+sheet_id = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"
+output_dir = Path(__file__).parent.parent.parent.parent / "public/images/equip_misc/"
+include_sheets = []
+exclude_sheets = [
+    "(WiP) SS RLD Chart",
+    "Copy of BB Guns",
+    "(WiP) OpSi Image Guide Pt4",
+    "Ammo Modifiers Chart",
+    "(WiP) Rikka Specific Guide"
+]
 resolved_output_dir = output_dir.resolve()
 
 def download(sheet_id):
