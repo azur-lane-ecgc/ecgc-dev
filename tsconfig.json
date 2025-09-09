@@ -1,7 +1,7 @@
 {
 	"extends": "./node_modules/astro/tsconfigs/strict.json",
 	"include": [".astro/types.d.ts", "**/*"],
-	"exclude": ["dist", "dev/_backup/*", "dev/python/*"],
+	"exclude": ["dist", "_backup/*", "dev/python/*"],
 	"compilerOptions": {
 		"types": ["vite/client", "bun"],
 		"allowJs": true,
@@ -19,7 +19,7 @@
 			"@db/*": ["src/db/*"],
 			"@store/*": ["src/store/*"],
 			"@tools/*": ["dev/*"],
-			"@ALData/*": ["AzurLaneData/*"]
+			"@ALData/*": ["packages/AzurLaneData/*"]
 		}
 	}
 }
