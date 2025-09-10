@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "update": "bun upgrade && bun update && bun install",
-    "rebuild": "git pull origin main --rebase && git push -f && rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
+    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bash dev/python/gsheets2imgur.sh -g",
@@ -51,7 +51,7 @@
     "sharp": "^0.34.3",
     "typescript": "^5.9.2",
     "vite": "^7.1.5",
-    "wrangler": "^4.34.0"
+    "wrangler": "^4.35.0"
   },
   "private": true,
   "trustedDependencies": [
