@@ -28,8 +28,7 @@ export const shipSamvaluationParse = (ship: string): SamvaluationProps => {
       "https://azurlane.koumakan.jp/wiki/Category:Ships",
   }
   const evaluation =
-    shipData.evaluation?.trim() ??
-    "N/A. Come back when this ship gets an Unique Augment or gets good :)"
+    shipData.evaluation?.trim() ?? "N/A. Will get updated at a later time."
   const preloadText = shipData.preload ?? ""
 
   let reduction = 0
