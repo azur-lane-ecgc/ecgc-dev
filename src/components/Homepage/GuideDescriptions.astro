@@ -65,54 +65,56 @@ import { pageInfo } from "src/constants"
 <div id="images" class="hidden md:block">
   <div class="-mx-3 flex flex-wrap">
     {
-      pageInfo.map((guide) => (
-        <div class="gridcell-list-style mt-3 w-full px-3 text-left sm:mt-0">
-          <div class="mt-1 flex">
-            <div class="w-[80px] shrink-0">
-              <a href={guide.link} target="_self" rel="noopener noreferrer">
-                <img
-                  loading="lazy"
-                  class="h-[100px] rounded object-cover shadow-lg"
-                  src={guide.image}
-                  alt={`${guide.title} cover`}
-                />
-              </a>
-            </div>
-            <div class="ml-4 mt-1 grow">
-              <a href={guide.link} target="_self" rel="noopener noreferrer">
-                <div class="guide-title mb-4 text-sm font-bold uppercase">
-                  {guide.title}
-                </div>
-              </a>
-              <div class="mod-gridcell-details-style mb-4 text-xs text-gray-600">
-                <div>
-                  <i class="fas fa-pencil-alt mr-1" />
-                  {guide.authors.length > 0
-                    ? guide.authors.map((author, index) => (
-                        <span>
-                          {author}
-                          {index < guide.authors.length - 1 ? ", " : ""}
-                        </span>
-                      ))
-                    : false}
-                </div>
+      pageInfo
+        .filter((guide) => !!guide.homepageDisplay)
+        .map((guide) => (
+          <div class="gridcell-list-style mt-3 w-full px-3 text-left sm:mt-0">
+            <div class="mt-1 flex">
+              <div class="w-[80px] shrink-0">
+                <a href={guide.link} target="_self" rel="noopener noreferrer">
+                  <img
+                    loading="lazy"
+                    class="h-[100px] rounded object-cover shadow-lg"
+                    src={guide.image}
+                    alt={`${guide.title} cover`}
+                  />
+                </a>
+              </div>
+              <div class="ml-4 mt-1 grow">
+                <a href={guide.link} target="_self" rel="noopener noreferrer">
+                  <div class="guide-title mb-4 text-sm font-bold uppercase">
+                    {guide.title}
+                  </div>
+                </a>
+                <div class="mod-gridcell-details-style mb-4 text-xs text-gray-600">
+                  <div>
+                    <i class="fas fa-pencil-alt mr-1" />
+                    {guide.authors.length > 0
+                      ? guide.authors.map((author, index) => (
+                          <span>
+                            {author}
+                            {index < guide.authors.length - 1 ? ", " : ""}
+                          </span>
+                        ))
+                      : false}
+                  </div>
 
-                <div>
-                  <i class="fas fa-sync mr-1" />
-                  {guide.lastUpdated}
+                  <div>
+                    <i class="fas fa-sync mr-1" />
+                    {guide.lastUpdated}
+                  </div>
+                  <div>Revision {guide.revision}</div>
                 </div>
-                <div>Revision {guide.revision}</div>
+              </div>
+            </div>
+            <div class="mt-2">
+              <div class="guide-text">
+                <br />
+                <p set:html={guide.description} />
               </div>
             </div>
           </div>
-          <div class="mt-2">
-            <div class="guide-text">
-              <br />
-              <p set:html={guide.description} />
-            </div>
-          </div>
-        </div>
-      ))
+        ))
     }
   </div>
 </div>
