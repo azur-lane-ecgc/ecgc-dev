@@ -158,6 +158,14 @@ const RNTechPoints: FleetTechData = {
       isShipyard: true,
     },
     {
+      ship: "Pompeo Magno",
+      rarity: 4,
+      location: [{ event: "Virtual Tower", stages: ["B3", "D3*"] }],
+      investment: "Collection",
+      techPoints: 26,
+      isShipyard: false,
+    },
+    {
       ship: "Duca degli Abruzzi",
       rarity: 4,
       location: [{ event: "Daedalian Hymn", stages: ["B3", "D3*"] }],
