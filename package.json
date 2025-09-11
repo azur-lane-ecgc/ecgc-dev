@@ -42,7 +42,6 @@
     "@types/bun": "^1.2.21",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
-    "astro-meta-tags": "^0.4.0",
     "knip": "^5.63.1",
     "lefthook": "^1.12.4",
     "prettier": "^3.6.2",
