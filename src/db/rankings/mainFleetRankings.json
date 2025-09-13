@@ -433,10 +433,10 @@
     },
     {
       "nameNote": "with some IJNs",
-      "notes": "Assumed to be with Shinano or Haku, and optionally Unzen. Decent crossfleet.",
+      "notes": "Assumed to be with Shinano or Hakuhou, and optionally Unzen. Decent crossfleet.",
       "hardarbiter": "SS",
       "meta": "S*",
-      "cm": "S",
+      "cm": "SS*",
       "w14mob": "D",
       "w14boss": "S",
       "w15mob": "D",
@@ -1649,7 +1649,7 @@
   "Daisen": [
     {
       "nameNote": "",
-      "notes": "Best gold BB as of late 2025, with an inconsistent vanguard heal in w13+. Fs5 gives +9% dmg.",
+      "notes": "Inconsistent vanguard heal in w13+. Fs5 gives +9% dmg.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "B",
@@ -2711,6 +2711,62 @@
       "rammers": null,
       "othermain": null,
       "vgsurvival": null
+    }
+  ],
+  "Hakuhou": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Top heavy damage, but no offensive fleet buffs.",
+      "hardarbiter": "S",
+      "meta": "S*",
+      "cm": "S*",
+      "w14mob": "S",
+      "w14boss": "S",
+      "w15mob": "C",
+      "w15boss": "A",
+      "ex": "A",
+      "consistency": null,
+      "fleetreq": -2,
+      "gearreq": -1,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 4,
+      "heavydmg": 5,
+      "aoedmg": 4,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": 1
+    },
+    {
+      "nameNote": "with AmagiCV",
+      "notes": "zTENTATIVE Top heavy damage, but no offensive fleet buffs.",
+      "hardarbiter": "SS",
+      "meta": "S*",
+      "cm": "SS*",
+      "w14mob": "D",
+      "w14boss": "S",
+      "w15mob": "D",
+      "w15boss": "A",
+      "ex": "A",
+      "consistency": null,
+      "fleetreq": -2,
+      "gearreq": -1,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 5,
+      "heavydmg": 6,
+      "aoedmg": 5,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": 1
     }
   ],
   "Hakuryuu": [
@@ -5055,7 +5111,7 @@
     },
     {
       "nameNote": "with 🌈IJN CVs",
-      "notes": "Assumed to be buffing two rainbow IJN CVs. Shinano, Hakuryuu, or Amagi (CV).",
+      "notes": "Assumed to be buffing two rainbow IJN CVs. Shinano, Haku, or Amagi (CV).",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
@@ -5427,6 +5483,35 @@
       "rammers": null,
       "othermain": null,
       "vgsurvival": null
+    }
+  ],
+  "Oumi": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Use DD gun for max DPS against bosses that wander into her range. Still good against bosses that don't.",
+      "hardarbiter": "A",
+      "meta": "B",
+      "cm": "A",
+      "w14mob": "A",
+      "w14boss": "A",
+      "w15mob": "C",
+      "w15boss": "B",
+      "ex": "C",
+      "consistency": -3,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": -4,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 4,
+      "dmguptime": 1,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": 1
     }
   ],
   "Owari": [
@@ -6500,7 +6585,7 @@
       "vgsurvival": 1
     },
     {
-      "nameNote": "with Haku and/or AmagiCV",
+      "nameNote": "with Hakuhou and/or AmagiCV",
       "notes": "Requires 3 IJN ships.",
       "hardarbiter": "S",
       "meta": "A",

@@ -8654,8 +8654,8 @@
     "id": 163,
     "ship": "Shiratsuyu",
     "faction": "IJN",
-    "rarity": 2,
-    "isKai": false,
+    "rarity": 3,
+    "isKai": true,
     "hullType": "DD",
     "fleetType": "vg",
     "LBBonus": "Reduced torpedo spread.",
@@ -8667,13 +8667,13 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.5,
+        "efficiency": 1.55,
         "mounts": 2
       },
       {
         "type": ["AA Gun"],
-        "efficiency": 0.75,
-        "mounts": 1
+        "efficiency": 1.2,
+        "mounts": 2
       },
       {
         "type": ["Auxiliary", "ASW Equipment"],
@@ -38802,6 +38802,342 @@
         {
           "name": "Secrets of the Abyss",
           "href": "Secrets_of_the_Abyss"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "703": {
+    "id": 703,
+    "ship": "Hakuhou",
+    "faction": "IJN",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter", "Torpedo Bomber", "Dive Bomber"],
+        "efficiency": 1.1,
+        "mounts": 2
+      },
+      {
+        "type": ["Dive Bomber"],
+        "efficiency": 1.15,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.55,
+        "mounts": 5
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Dance for Amahara Above",
+          "href": "A_Dance_for_Amahara_Above"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "704": {
+    "id": 704,
+    "ship": "Taekaze",
+    "faction": "IJN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.55,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.75,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Dance for Amahara Above",
+          "href": "A_Dance_for_Amahara_Above"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "705": {
+    "id": 705,
+    "ship": "I-404",
+    "faction": "IJN",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "SSV",
+    "fleetType": "ss",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Submarine Torpedo"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["Submarine Torpedo"],
+        "efficiency": 1.35,
+        "mounts": 2
+      },
+      {
+        "type": ["Seaplane"],
+        "efficiency": 1.8,
+        "mounts": 3
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Kunai", "Dagger"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Dance for Amahara Above",
+          "href": "A_Dance_for_Amahara_Above"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "706": {
+    "id": 706,
+    "ship": "Oumi",
+    "faction": "IJN",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.4,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "TopDmg", "DefSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Dance for Amahara Above",
+          "href": "A_Dance_for_Amahara_Above"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "707": {
+    "id": 707,
+    "ship": "Asama",
+    "faction": "IJN",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun"],
+        "efficiency": 1.4,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.85,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatsword", "Lance"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Dance for Amahara Above",
+          "href": "A_Dance_for_Amahara_Above"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "708": {
+    "id": 708,
+    "ship": "Minase",
+    "faction": "IJN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.65,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.15,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "A Dance for Amahara Above",
+          "href": "A_Dance_for_Amahara_Above"
         }
       ],
       "other": [],

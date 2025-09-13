@@ -8151,6 +8151,33 @@
       "defensivebuff": 2
     }
   ],
+  "Minase": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Minazuki": [
     {
       "nameNote": "",
@@ -11416,6 +11443,33 @@
       "aa": 1,
       "asw": null,
       "defensivebuff": null
+    }
+  ],
+  "Taekaze": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
     }
   ],
   "Tai Yuan": [
