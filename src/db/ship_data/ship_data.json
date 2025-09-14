@@ -39015,7 +39015,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {
