@@ -620,6 +620,33 @@
       "defensivebuff": null
     }
   ],
+  "Asama": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE TRP buff. The first CA-specific torp buffer, but better to just debuff the boss with a better ship like Noshiro Muse.",
+      "hardarbiter": "C",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 2,
+      "offensivebuff": 1,
+      "selfsurvival": 2,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Asanagi": [
     {
       "nameNote": "",
@@ -5226,9 +5253,9 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 3,
+      "lightdmg": 2,
       "mediumdmg": 3,
-      "heavydmg": 4,
+      "heavydmg": 3,
       "aoedmg": 3,
       "offensivebuff": null,
       "selfsurvival": 2,
@@ -10854,7 +10881,7 @@
   "Shiratsuyu": [
     {
       "nameNote": "",
-      "notes": "TRP buff.",
+      "notes": "TRP buff. Even with Retrofit + Augment, she doesn't meet the thresholds for the second lowest tier.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10863,7 +10890,7 @@
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",
-      "consistency": null,
+      "consistency": -1,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
@@ -10875,7 +10902,7 @@
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
-      "defensivebuff": null
+      "defensivebuff": 3
     }
   ],
   "Shirayuki": [

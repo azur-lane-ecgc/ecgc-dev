@@ -39,7 +39,7 @@
     "@astrojs/sitemap": "^3.5.1",
     "astro-meta-tags": "^0.4.0",
     "@tailwindcss/vite": "^4.1.13",
-    "@types/bun": "^1.2.21",
+    "@types/bun": "^1.2.22",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "knip": "^5.63.1",
@@ -50,7 +50,7 @@
     "sharp": "^0.34.3",
     "typescript": "^5.9.2",
     "vite": "^7.1.5",
-    "wrangler": "^4.36.0"
+    "wrangler": "^4.37.0"
   },
   "private": true,
   "trustedDependencies": [
