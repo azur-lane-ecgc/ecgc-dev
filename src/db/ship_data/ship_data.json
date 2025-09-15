@@ -8689,7 +8689,7 @@
     "augments": ["Watch Your Head!", "Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DefSupport", "OffSupport", "Meh"],
     "locations": {
       "events": [],
       "other": [],
@@ -39071,7 +39071,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -43643,7 +43643,7 @@
     "augments": ["Blade of the Holy Mountain", "Greatsword", "Lance"],
     "samEval": "Ibuki is a damage-oriented CA with good stats and great skills. She only has 1 MGM, but her double preloaded torpedoes allow her to frontload a large portion of damage. Her self-buffs to her torpedo damage boost it from middling to amazing, especially when combined with her high torpedo mount efficiency. Her Skill 2 barrage is amazing, especially after her Augment Module improved its damage and increased its trigger rate to 100%. The invulrunability gained from her Skill 2 is nice, but not too relevant for her. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [],
       "other": [
