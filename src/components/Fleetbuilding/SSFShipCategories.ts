@@ -8,6 +8,7 @@ export interface SSEntry {
  * International Submarine Fleet
  */
 export const internationalFleetMain: SSEntry[] = [
+  { name: "I-404", descriptionNote: "Best SS" },
   { name: "Leonardo da Vinci" },
   { name: "Flasher", iconNote: "Flagship" },
   { name: "Maggiore Baracca" },
@@ -33,6 +34,7 @@ export const internationalFleetSub: SSEntry[] = [
  * KMS "Wolfpack" Submarine Fleet
  */
 export const kmsWolfpackFleetMain: SSEntry[] = [
+  { name: "I-404", descriptionNote: "Best SS" },
   { name: "U-552" },
   { name: "U-96", descriptionNote: "w/ Augment" },
   { name: "U-37" },
@@ -52,6 +54,7 @@ export const kmsWolfpackFleetSub: SSEntry[] = [
  * USS "Fishpack" Submarine Fleet
  */
 export const ussFishpackFleetMain: SSEntry[] = [
+  { name: "I-404", descriptionNote: "Best SS" },
   { name: "Archerfish" },
   { name: "Flasher", iconNote: "Flagship" },
   { name: "Albacore", descriptionNote: "w/ Augment" },

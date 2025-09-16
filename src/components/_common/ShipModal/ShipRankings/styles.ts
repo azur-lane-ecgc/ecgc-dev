@@ -32,6 +32,7 @@ export const numberRankColor = (
     "4": "bg-red-400",
     "5": "bg-red-500",
     "6": "bg-red-600",
+    "7": "bg-red-700",
   }
 
   return rank !== null ? (getNumberRankColor[rank?.toString() ?? ""] ?? "") : ""
