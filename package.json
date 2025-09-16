@@ -14,6 +14,7 @@
     "compress": "bash dev/typescript/compressImages.sh",
     "smol_format": "bunx --bun prettier --write \"src/**/*.{astro,json}\" \"dev/**/*.{astro,json}\" --ignore-path .prettierignore",
     "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" \"dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
+    "lint": "bunx --bun oxlint@latest",
     "devtools": "bun run submodule && bash dev/runAllTools.sh && bun run smol_format",
     "build": "bunx --bun astro check && bunx astro build",
     "compress-build": "bun run build && bun run compress",
