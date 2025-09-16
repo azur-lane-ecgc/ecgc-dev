@@ -31,13 +31,6 @@
       "percentSD": "100.00%"
     }
   ],
-  "Gouden Leeuw": [
-    {
-      "name": "Gouden Leeuw",
-      "totalAA": "3617",
-      "percentSD": "126.93%"
-    }
-  ],
   "Isuzu": [
     {
       "name": "Isuzu (150Gun)",
@@ -55,6 +48,13 @@
       "name": "De Zeven Provinciën",
       "totalAA": "3679",
       "percentSD": "129.11%"
+    }
+  ],
+  "Gouden Leeuw": [
+    {
+      "name": "Gouden Leeuw",
+      "totalAA": "3617",
+      "percentSD": "126.93%"
     }
   ],
   "Z52": [
@@ -112,18 +112,25 @@
       "percentSD": "100.21%"
     }
   ],
+  "Bellona": [
+    {
+      "name": "Bellona",
+      "totalAA": "2729",
+      "percentSD": "95.76%"
+    }
+  ],
+  "Trafalgar": [
+    {
+      "name": "Trafalgar",
+      "totalAA": "2618",
+      "percentSD": "91.88%"
+    }
+  ],
   "Little Cheshire": [
     {
       "name": "Little Cheshire",
       "totalAA": "2522",
       "percentSD": "88.53%"
-    }
-  ],
-  "Rikka Takarada": [
-    {
-      "name": "Rikka Takarada (Sky Vitter)",
-      "totalAA": "2267",
-      "percentSD": "79.58%"
     }
   ],
   "Akashi": [
@@ -154,13 +161,6 @@
       "percentSD": "67.75%"
     }
   ],
-  "Reisalin Stout": [
-    {
-      "name": "Reisalin Stout (Laute Plajig)",
-      "totalAA": "1912",
-      "percentSD": "67.10%"
-    }
-  ],
   "Reno": [
     {
       "name": "Reno",
@@ -168,25 +168,18 @@
       "percentSD": "66.51%"
     }
   ],
-  "Trafalgar": [
-    {
-      "name": "Trafalgar",
-      "totalAA": "2618",
-      "percentSD": "91.88%"
-    }
-  ],
-  "Cleopatra": [
-    {
-      "name": "Cleopatra",
-      "totalAA": "1047",
-      "percentSD": "36.74%"
-    }
-  ],
   "Hammann II": [
     {
       "name": "Hammann II",
       "totalAA": "1832",
       "percentSD": "64.29%"
+    }
+  ],
+  "Rikka Takarada": [
+    {
+      "name": "Rikka Takarada (Sky Vitter)",
+      "totalAA": "1823",
+      "percentSD": "63.98%"
     }
   ],
   "Allen M. Sumner": [
@@ -210,13 +203,6 @@
       "percentSD": "61.60%"
     }
   ],
-  "Yat Sen": [
-    {
-      "name": "Yat Sen",
-      "totalAA": "1753",
-      "percentSD": "61.51%"
-    }
-  ],
   "Seattle": [
     {
       "name": "Seattle",
@@ -229,6 +215,13 @@
       "name": "Maya",
       "totalAA": "1677",
       "percentSD": "58.87%"
+    }
+  ],
+  "Reisalin Stout": [
+    {
+      "name": "Reisalin Stout (Laute Plajig)",
+      "totalAA": "1675",
+      "percentSD": "58.78%"
     }
   ],
   "San Juan": [
@@ -299,6 +292,13 @@
       "percentSD": "36.70%"
     }
   ],
+  "Vanguard": [
+    {
+      "name": "Vanguard",
+      "totalAA": "1352",
+      "percentSD": "47.44%"
+    }
+  ],
   "Dido μ": [
     {
       "name": "Dido μ",
@@ -327,6 +327,13 @@
       "percentSD": "43.65%"
     }
   ],
+  "Yat Sen": [
+    {
+      "name": "Yat Sen",
+      "totalAA": "1243",
+      "percentSD": "43.63%"
+    }
+  ],
   "New Jersey": [
     {
       "name": "New Jersey",
@@ -334,11 +341,11 @@
       "percentSD": "43.63%"
     }
   ],
-  "Bellona": [
+  "Shiratsuyu": [
     {
-      "name": "Bellona",
-      "totalAA": "1236",
-      "percentSD": "43.36%"
+      "name": "Shiratsuyu",
+      "totalAA": "1229",
+      "percentSD": "43.14%"
     }
   ],
   "Amazon": [
@@ -383,13 +390,6 @@
       "percentSD": "38.59%"
     }
   ],
-  "Vanguard": [
-    {
-      "name": "Vanguard",
-      "totalAA": "1098",
-      "percentSD": "38.54%"
-    }
-  ],
   "Bremerton": [
     {
       "name": "Bremerton",
@@ -409,6 +409,13 @@
       "name": "Leipzig",
       "totalAA": "1050",
       "percentSD": "36.84%"
+    }
+  ],
+  "Cleopatra": [
+    {
+      "name": "Cleopatra",
+      "totalAA": "1047",
+      "percentSD": "36.74%"
     }
   ],
   "Birmingham": [
@@ -4063,13 +4070,6 @@
       "name": "Shigure",
       "totalAA": "354",
       "percentSD": "12.44%"
-    }
-  ],
-  "Shiratsuyu": [
-    {
-      "name": "Shiratsuyu",
-      "totalAA": "1229",
-      "percentSD": "43.14%"
     }
   ],
   "Z16": [

@@ -167,6 +167,13 @@
       "std": "22.02%"
     }
   ],
+  "Gouden Leeuw": [
+    {
+      "name": "Gouden Leeuw",
+      "totalEHP": "134.78%",
+      "std": "30.91%"
+    }
+  ],
   "Fancy": [
     {
       "name": "Fancy (3 Gear)",
@@ -313,13 +320,6 @@
       "std": "26.23%"
     }
   ],
-  "Gouden Leeuw": [
-    {
-      "name": "Gouden Leeuw",
-      "totalEHP": "118.56%",
-      "std": "27.43%"
-    }
-  ],
   "Yume Minami": [
     {
       "name": "Yume Minami",
@@ -344,6 +344,13 @@
       "name": "Tallinn",
       "totalEHP": "115.67%",
       "std": "27.75%"
+    }
+  ],
+  "Dimitri Donskoi": [
+    {
+      "name": "Dimitri Donskoi",
+      "totalEHP": "115.60%",
+      "std": "31.79%"
     }
   ],
   "Fargo": [
@@ -401,6 +408,13 @@
       "name": "Adventure Galley (2 Gear)",
       "totalEHP": "99.13%",
       "std": "26.92%"
+    }
+  ],
+  "Duca degli Abruzzi": [
+    {
+      "name": "Duca degli Abruzzi",
+      "totalEHP": "112.55%",
+      "std": "32.31%"
     }
   ],
   "Chien Wu": [
@@ -489,13 +503,6 @@
       "name": "Kasumi (Venus Vacation)",
       "totalEHP": "110.13%",
       "std": "33.59%"
-    }
-  ],
-  "Duca degli Abruzzi": [
-    {
-      "name": "Duca degli Abruzzi",
-      "totalEHP": "109.64%",
-      "std": "31.21%"
     }
   ],
   "Giuseppe Garibaldi": [
@@ -734,13 +741,6 @@
       "std": "24.79%"
     }
   ],
-  "Dimitri Donskoi": [
-    {
-      "name": "Dimitri Donskoi",
-      "totalEHP": "102.22%",
-      "std": "28.69%"
-    }
-  ],
   "Blücher": [
     {
       "name": "Blücher",
@@ -943,6 +943,13 @@
       "std": "32.13%"
     }
   ],
+  "Yuudachi META": [
+    {
+      "name": "Yuudachi META",
+      "totalEHP": "95.86%",
+      "std": "38.87%"
+    }
+  ],
   "Ikaruga": [
     {
       "name": "Ikaruga",
@@ -955,6 +962,13 @@
       "name": "Yuudachi (Retrofit)",
       "totalEHP": "95.77%",
       "std": "41.26%"
+    }
+  ],
+  "Isla von Duerer": [
+    {
+      "name": "Isla von Duerer",
+      "totalEHP": "95.54%",
+      "std": "27.66%"
     }
   ],
   "Duisburg": [
@@ -1130,6 +1144,13 @@
       "name": "Helena META (No Helena)",
       "totalEHP": "80.49%",
       "std": "23.44%"
+    }
+  ],
+  "Le Hardi": [
+    {
+      "name": "Le Hardi",
+      "totalEHP": "91.47%",
+      "std": "37.57%"
     }
   ],
   "Phoenix": [
@@ -1447,6 +1468,13 @@
       "std": "26.54%"
     }
   ],
+  "Duqesne": [
+    {
+      "name": "Duqesne",
+      "totalEHP": "85.50%",
+      "std": "29.37%"
+    }
+  ],
   "Jeanne d'Arc": [
     {
       "name": "Jeanne d'Arc",
@@ -1494,13 +1522,6 @@
       "name": "Kirov",
       "totalEHP": "85.04%",
       "std": "25.84%"
-    }
-  ],
-  "Isla von Duerer": [
-    {
-      "name": "Isla von Duerer",
-      "totalEHP": "84.97%",
-      "std": "25.12%"
     }
   ],
   "Reno": [
@@ -1607,6 +1628,13 @@
       "name": "Monica",
       "totalEHP": "83.29%",
       "std": "26.58%"
+    }
+  ],
+  "Vittorio Cuniberti": [
+    {
+      "name": "Vittorio Cuniberti",
+      "totalEHP": "83.25%",
+      "std": "31.59%"
     }
   ],
   "Little Bel": [
@@ -1726,6 +1754,13 @@
       "std": "26.38%"
     }
   ],
+  "Asama": [
+    {
+      "name": "Asama",
+      "totalEHP": "81.54%",
+      "std": "22.47%"
+    }
+  ],
   "Baltimore μ": [
     {
       "name": "Baltimore μ",
@@ -1752,6 +1787,13 @@
       "name": "Hamakaze (Retrofit)",
       "totalEHP": "81.04%",
       "std": "32.28%"
+    }
+  ],
+  "Lenja": [
+    {
+      "name": "Lenja",
+      "totalEHP": "81.01%",
+      "std": "33.50%"
     }
   ],
   "Glowworm": [
@@ -1895,6 +1937,13 @@
       "name": "Isuzu (Retrofit)",
       "totalEHP": "78.99%",
       "std": "26.18%"
+    }
+  ],
+  "Duguay-Trouin": [
+    {
+      "name": "Duguay-Trouin",
+      "totalEHP": "78.99%",
+      "std": "27.72%"
     }
   ],
   "Yorck": [
@@ -2119,13 +2168,6 @@
       "std": "23.34%"
     }
   ],
-  "Vittorio Cuniberti": [
-    {
-      "name": "Vittorio Cuniberti",
-      "totalEHP": "75.77%",
-      "std": "29.36%"
-    }
-  ],
   "Bache": [
     {
       "name": "Bache",
@@ -2288,13 +2330,6 @@
       "name": "Grozny",
       "totalEHP": "74.14%",
       "std": "27.23%"
-    }
-  ],
-  "Lenja": [
-    {
-      "name": "Lenja",
-      "totalEHP": "74.09%",
-      "std": "31.36%"
     }
   ],
   "Épée": [
@@ -2557,6 +2592,13 @@
       "name": "Urakaze",
       "totalEHP": "70.91%",
       "std": "25.59%"
+    }
+  ],
+  "Taekaze": [
+    {
+      "name": "Taekaze",
+      "totalEHP": "70.88%",
+      "std": "28.08%"
     }
   ],
   "Beagle": [
@@ -3294,6 +3336,18 @@
       "std": "24.77%"
     }
   ],
+  "Shiratsuyu": [
+    {
+      "name": "Shiratsuyu (Retrofit)",
+      "totalEHP": "63.34%",
+      "std": "25.85%"
+    },
+    {
+      "name": "Shiratsuyu",
+      "totalEHP": "56.20%",
+      "std": "23.47%"
+    }
+  ],
   "Aoba": [
     {
       "name": "Aoba",
@@ -3488,6 +3542,13 @@
       "name": "Z20",
       "totalEHP": "60.90%",
       "std": "24.11%"
+    }
+  ],
+  "Minase": [
+    {
+      "name": "Minase",
+      "totalEHP": "60.84%",
+      "std": "22.08%"
     }
   ],
   "Kagerou": [
@@ -3717,13 +3778,6 @@
       "name": "Naka",
       "totalEHP": "56.23%",
       "std": "20.92%"
-    }
-  ],
-  "Shiratsuyu": [
-    {
-      "name": "Shiratsuyu",
-      "totalEHP": "56.20%",
-      "std": "23.47%"
     }
   ],
   "McCall": [
