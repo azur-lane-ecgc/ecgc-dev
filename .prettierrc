@@ -2,7 +2,7 @@
   "semi": false,
   "singleQuote": false,
   "trailingComma": "all",
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  "plugins": ["@prettier/plugin-oxc","prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   "useTabs": false,
   "tabWidth": 2,
   "endOfLine": "lf",

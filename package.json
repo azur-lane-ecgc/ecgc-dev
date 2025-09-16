@@ -33,11 +33,12 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/sitemap": "^3.5.1",
-    "astro-meta-tags": "^0.4.0",
+    "@prettier/plugin-oxc": "^0.0.4",
     "@tailwindcss/vite": "^4.1.13",
     "@types/bun": "^1.2.22",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
+    "astro-meta-tags": "^0.4.0",
     "knip": "^5.63.1",
     "lefthook": "^1.13.0",
     "prettier": "^3.6.2",
