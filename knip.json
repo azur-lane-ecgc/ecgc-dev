@@ -1,4 +1,0 @@
-{
-  "project": ["src/**/*"],
-  "ignore": ["packages/AzurLaneData/**", "dev/**"]
-}
