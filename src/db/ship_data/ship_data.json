@@ -30350,7 +30350,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Bellona is a support-oriented CL with good stats and great skills. Bulk is alright, AA is pretty high but not carry level, but her damage output is mediocre. The only redeeming factor about her is the Air Raid Assistance CV buff, combined with her higher than average AA. HMS buff is not worth for the most part due to how situational and bad it is. Overall, she is good as a carrier buffer and for AA support, but not worth using outside this niche.",
     "fastLoad": null,
-    "roles": ["AA", "OffSupport"],
+    "roles": ["AA", "AACarry", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -38959,7 +38959,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -41601,7 +41601,7 @@
     "augments": ["Primal Accepter", "Crossbow", "Sword"],
     "samEval": "Rikka Takarada is a damage-oriented CL with great stats and amazing skills. She possesses multiple strong, piercing laser barrages that deal great damage against huge waves of enemies in a row; however, during her downtime her damage is pretty underwhelming. In addition, she can equip multiple Auxiliary equipment at once, although ideally 3 of those slots are the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Battle_Tracto_Max\" title=\"Battle Tracto Max\" >Battle Tracto Max</a >, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Buster_Borr\" title=\"Buster Borr\" >Buster Borr</a >, and Gridman Calibur to get the most barrage benefits possible. Her bulk is also good enough to mob-tank most content reliably. The Augment interaction between her and Chise / Yume is not worth using them together for. Overall, she is an amazing ships when mobbing, and a great ship outside of it.",
     "fastLoad": null,
-    "roles": ["AA", "AACarry", "Meh"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -48804,7 +48804,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Come back when this ship gets an Unique Augment or gets good :)",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
