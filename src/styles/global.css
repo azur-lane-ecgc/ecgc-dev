@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "./fontawesome/css/brands.css";
+@import "./fontawesome/css/fontawesome.css";
+@import "./fontawesome/css/solid.css";
+@import "./fontawesome/poppins_font.css";
 
 /* Old button behavior */
 @layer base {
