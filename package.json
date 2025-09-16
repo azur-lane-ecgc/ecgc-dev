@@ -48,9 +48,5 @@
     "vite": "^7.1.5",
     "wrangler": "^4.37.0"
   },
-  "private": true,
-  "trustedDependencies": [
-    "@tailwindcss/oxide",
-    "oxc-resolver"
-  ]
+  "private": true
 }
