@@ -155,7 +155,7 @@ export const shipLocationParse = (
   const other = dropData.other
     ?.map((otherId) => parseOtherLocation(name, otherId))
     .filter(Boolean) as shipLocation[]
-  const construction = parseConstruction(dropData || {})
+  const construction = parseConstruction(dropData)
   const permanent = dropData?.maps?.some((chapter) => chapter.length > 0)
     ? [
         {
