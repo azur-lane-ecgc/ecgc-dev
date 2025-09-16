@@ -5,7 +5,7 @@ const shipModules = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 )
 
-const shipIcons = Object.fromEntries(
+export const shipIcons = Object.fromEntries(
   Object.entries(shipModules).map(([path, module]) => {
     const filename = path
       .split("/")

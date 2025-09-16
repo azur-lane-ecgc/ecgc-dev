@@ -1,6 +1,9 @@
 import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
 import { Input } from "@components/_common/Input"
-import { ThreeToggleButton } from "@components/_common/ToggleButton"
+import {
+  ThreeToggleButton,
+  TwoToggleButton,
+} from "@components/_common/ToggleButton"
 import { CustomToggleButton } from "@components/_common/ToggleButton/CustomToggleButton"
 
 import {
@@ -300,6 +303,24 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
           }
           reset={state.reset}
         />
+
+        {import.meta.env.DEV && (
+          <TwoToggleButton
+            title="Icon Status"
+            options={[
+              { title: "All Ships", payload: "false" },
+              { title: "Missing Icon", payload: "true" },
+            ]}
+            initialValue={0}
+            onSelect={(nextOption) =>
+              dispatch({
+                type: "SET_FILTER",
+                payload: { missingIconOnly: nextOption === "true" },
+              })
+            }
+            reset={state.reset}
+          />
+        )}
 
         {/* Search Bar */}
         <Input

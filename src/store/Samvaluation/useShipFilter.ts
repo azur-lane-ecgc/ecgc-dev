@@ -26,6 +26,7 @@ import {
   fleetTypeMapping,
   hasUniqueAugment,
   getHighestValue,
+  shipIcons,
 } from "@utils/ships"
 
 export interface ShipFilterProps {
@@ -47,6 +48,7 @@ export interface ShipFilterProps {
       logic: boolean | null
     }
     event: string
+    missingIconOnly: boolean
   }
   reset: string
   loading: boolean
@@ -189,7 +191,17 @@ const fetchFilteredShips = async (
     ships = ships.filter((ship) => filters.rarity.includes(String(ship.rarity)))
   }
 
-  // 10) Ranking sort filter (adjusted to supply an object with mfRankings/vgRankings/ssRankings)
+  // 10) Missing icon only filter
+  if (filters.missingIconOnly) {
+    ships = ships.filter((ship) => {
+      const shipKey = `${decodeURIComponent(ship.ship)}${
+        ship.isKai ? "Kai" : ""
+      }Icon`.normalize("NFC")
+      return !shipIcons[shipKey]
+    })
+  }
+
+  // 11) Ranking sort filter (adjusted to supply an object with mfRankings/vgRankings/ssRankings)
   if (filters.rankingSort.value && filters.rankingSort.logic !== null) {
     const shipsWithRankings = ships.map((ship) => {
       let mfRankings: MainFleetRankingProps[] | null = null
@@ -257,7 +269,7 @@ const fetchFilteredShips = async (
     return result
   }
 
-  // 11) If no rankingSort but rarity filters were applied, maintain grouping by rarity sequence
+  // 12) If no rankingSort but rarity filters were applied, maintain grouping by rarity sequence
   if (filters.rarity.length > 0) {
     // First sort by id so we can extract in id order
     ships = ships.sort((a, b) => a.id - b.id)
@@ -268,7 +280,7 @@ const fetchFilteredShips = async (
     return byRarity
   }
 
-  // 12) Default: sort by id ascending
+  // 13) Default: sort by id ascending
   return ships.sort((a, b) => a.id - b.id)
 }
 
@@ -289,6 +301,7 @@ export const initialFilters: ShipFilterProps["filters"] = {
     logic: null,
   },
   event: "",
+  missingIconOnly: false,
 }
 
 // main filtering hook
