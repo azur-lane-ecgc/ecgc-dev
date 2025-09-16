@@ -303,6 +303,38 @@
       "offensivebuff": null
     }
   ],
+  "I-404": [
+    {
+      "nameNote": "Base",
+      "notes": "zTENTATIVE Inconsistent movement. Can get merked by planes in campaign if unlucky timing.",
+      "hardarbiter": "SS",
+      "cm": "SS",
+      "campaign": "S",
+      "consistency": -1,
+      "fleetreq": -1,
+      "flagreq": -2,
+      "lightdmg": 4,
+      "mediumdmg": 6,
+      "heavydmg": 7,
+      "offensivebuff": 3
+    }
+  ],
+  "I-404 pack": [
+    {
+      "nameNote": "Base",
+      "notes": "Pick 2 from Flasher > Archer(w/ Flasher), Albacore, Homura, Amity(light only) > Baracca, da Vinci, I-58, I-19 > wolves.",
+      "hardarbiter": "SS",
+      "cm": "SS",
+      "campaign": "S",
+      "consistency": -1,
+      "fleetreq": null,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 5,
+      "heavydmg": 6,
+      "offensivebuff": 2
+    }
+  ],
   "I-56": [
     {
       "nameNote": "Base",
@@ -333,22 +365,6 @@
       "mediumdmg": 1,
       "heavydmg": 2,
       "offensivebuff": 1
-    }
-  ],
-  "IJN Subs": [
-    {
-      "nameNote": "Base",
-      "notes": "I-19 plus two of (I-13, I-168, I-58). Plus one tier if buffed by Amagi(CV).",
-      "hardarbiter": "B",
-      "cm": "B",
-      "campaign": "B",
-      "consistency": null,
-      "fleetreq": null,
-      "flagreq": null,
-      "lightdmg": 1,
-      "mediumdmg": 2,
-      "heavydmg": 3,
-      "offensivebuff": null
     }
   ],
   "Leonardo da Vinci": [
@@ -465,7 +481,7 @@
   ],
   "Solos": [
     {
-      "nameNote": "Base",
+      "nameNote": "I-404 Not Found",
       "notes": "Flasher (flag) and Homura plus (U-556 META, Leonardo, or Baracca). Kick Homura if campaign.",
       "hardarbiter": "S",
       "cm": "A",
@@ -479,7 +495,7 @@
       "offensivebuff": null
     }
   ],
-  "Solos without Flasher/Homura": [
+  "Solos without I-404/Flasher/Homura": [
     {
       "nameNote": "Base",
       "notes": "U-556 META, Leonardo da Vinci, and Maggiore Baracca.",
