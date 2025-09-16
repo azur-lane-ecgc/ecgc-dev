@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "prepare": "bunx lefthook install",
     "update": "bun upgrade && bun update && bun install",
     "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
@@ -15,16 +16,11 @@
     "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" \"dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
     "devtools": "bun run submodule && bash dev/runAllTools.sh && bun run smol_format",
     "build": "bunx --bun astro check && bunx astro build",
-    "cf-build": "bunx astro build",
     "compress-build": "bun run build && bun run compress",
-    "open": "bash dev/open-link.sh http://localhost:4321/",
-    "cf-open": "bash dev/open-link.sh http://localhost:4321/",
     "dev": "bunx astro dev",
     "cf-dev": "bunx wrangler dev",
-    "start": "bun run devtools && bun run build && bun run open && bun run dev",
-    "cf-start": "bun run devtools && bun run build && bun run cf-open && bun run cf-dev",
-    "deploy": "bun run compress-build && bunx wrangler deploy",
-    "prepare": "bunx lefthook install"
+    "start": "NODE_ENV=PRODUCTION bunx astro preview",
+    "deploy": "bun run compress-build && bunx wrangler deploy"
   },
   "dependencies": {
     "@astrojs/react": "^4.3.1",
