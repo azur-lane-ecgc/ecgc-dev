@@ -9,7 +9,7 @@ export const fastLoadRole = (): Set<string> => {
 
   for (const key in samvaluationData) {
     const shipProps = samvaluationData[key]
-    if (shipProps.preload && shipProps.preload.trim() !== "") {
+    if (shipProps?.preload && shipProps.preload.trim() !== "") {
       fastLoadSet.add(key)
     }
   }

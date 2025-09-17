@@ -30,18 +30,19 @@ const SlotMap: { [key: number]: string } = {
 }
 
 export const shipSlotParse = (
-  shipSlotData: SlotData[],
+  shipSlotData: SlotData[] | undefined,
   retroSlots?: Partial<SlotData>[],
 ): SlotProps[] => {
+  if (!shipSlotData) return []
   return shipSlotData.map((data, index) => {
     const retroSlot = retroSlots?.[index]
 
-    const equipType = (retroSlot?.types || data.types).map(
-      (typeId) => SlotMap[typeId],
-    )
+    const equipType = (retroSlot?.types || data.types)
+      .map((typeId) => SlotMap[typeId])
+      .filter(Boolean) as string[]
 
     // 100% Auxiliary efficiency, else calc from data
-    const efficiency = equipType.includes(SlotMap[10])
+    const efficiency = equipType.includes(SlotMap[10] ?? "")
       ? 1
       : (data.efficiency || 1) + (retroSlot?.efficiency || 0)
 

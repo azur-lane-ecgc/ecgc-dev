@@ -34,6 +34,7 @@ export const main = async () => {
 
   Object.keys(ships).forEach((id) => {
     const mrLarData = ships[+id]
+    if (!mrLarData) return
 
     const ship = shipNameParse(mrLarData.id, mrLarData.name)
     const faction = shipFactionParse(mrLarData.nation)
@@ -48,16 +49,17 @@ export const main = async () => {
     const hullType = shipHullTypeParse(hull)
     const fleetType: "main" | "ss" | "vg" = shipFleetTypeParse(hull)
 
-    const LBBonus = shipLBBonusParse(mrLarData?.specific_buff)
+    const LBBonus = shipLBBonusParse(mrLarData?.specific_buff || null)
     const slots = shipSlotParse(
       mrLarData.slots[mrLarData.slots.length - 1],
       mrLarData.retro?.slots,
     )
 
     const augments = (() => {
-      const uniqueAugment = mrLarData?.unique_aug
-        ? augmentData[mrLarData.unique_aug].name
-        : ""
+      const uniqueAugmentData = mrLarData?.unique_aug
+        ? augmentData[mrLarData.unique_aug]
+        : undefined
+      const uniqueAugment = uniqueAugmentData ? uniqueAugmentData.name : ""
 
       const normalAugments = shipDefaultAugmentParse(hull)
 

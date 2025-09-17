@@ -10,6 +10,7 @@
       "src/content/**/*.mdx",
       "src/middleware.{js,ts}",
       "src/actions/index.{js,ts}",
+      "packages/dev/main.{js,ts}",
     ],
     "project": ["src/**/*", "dev/typescript/**/*"],
   },

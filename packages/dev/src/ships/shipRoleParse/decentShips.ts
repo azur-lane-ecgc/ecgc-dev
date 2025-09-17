@@ -44,7 +44,8 @@ export const isDecentVG = (shipName: string): boolean => {
       if (typeof value === "number" && value - 1 >= 1) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
-        if (s && priorityOrder[s] >= 1) return true
+        if (s && priorityOrder[s] !== undefined && priorityOrder[s] >= 1)
+          return true
       }
     }
   }
@@ -60,7 +61,8 @@ export const isDecentMainFleet = (shipName: string): boolean => {
       if (typeof value === "number" && value - 1 >= 1) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
-        if (s && priorityOrder[s] >= 1) return true
+        if (s && priorityOrder[s] !== undefined && priorityOrder[s] >= 1)
+          return true
       }
     }
   }
@@ -76,7 +78,8 @@ export const isDecentSSFleet = (shipName: string): boolean => {
       if (typeof value === "number" && value - 1 >= 1) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
-        if (s && priorityOrder[s] >= 1) return true
+        if (s && priorityOrder[s] !== undefined && priorityOrder[s] >= 1)
+          return true
       }
     }
   }
@@ -94,7 +97,8 @@ export const isGoodVGFleet = (shipName: string): boolean => {
       if (typeof value === "number" && value - 1 >= 3) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
-        if (s && priorityOrder[s] >= 3) return true
+        if (s && priorityOrder[s] !== undefined && priorityOrder[s] >= 3)
+          return true
       }
     }
   }
@@ -110,7 +114,8 @@ export const isGoodMainFleet = (shipName: string): boolean => {
       if (typeof value === "number" && value - 1 >= 3) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
-        if (s && priorityOrder[s] >= 3) return true
+        if (s && priorityOrder[s] !== undefined && priorityOrder[s] >= 3)
+          return true
       }
     }
   }
@@ -126,7 +131,8 @@ export const isGoodSSFleet = (shipName: string): boolean => {
       if (typeof value === "number" && value - 1 >= 3) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
-        if (s && priorityOrder[s] >= 3) return true
+        if (s && priorityOrder[s] !== undefined && priorityOrder[s] >= 3)
+          return true
       }
     }
   }

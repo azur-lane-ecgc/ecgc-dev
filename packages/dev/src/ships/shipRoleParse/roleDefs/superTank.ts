@@ -15,13 +15,15 @@ export const superTankRole = (): Set<string> => {
 
   for (const shipName of Object.keys(shipEHPData)) {
     const statsArray = shipEHPData[shipName]
-    for (const stats of statsArray) {
-      const totalEHP = parseFloat(stats.totalEHP.replace("%", ""))
-      const std = parseFloat(stats.std.replace("%", ""))
+    if (statsArray) {
+      for (const stats of statsArray) {
+        const totalEHP = parseFloat(stats.totalEHP.replace("%", ""))
+        const std = parseFloat(stats.std.replace("%", ""))
 
-      if (totalEHP - std >= 100) {
-        tankSet.add(shipName)
-        break
+        if (totalEHP - std >= 100) {
+          tankSet.add(shipName)
+          break
+        }
       }
     }
 

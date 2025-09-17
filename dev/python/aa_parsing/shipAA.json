@@ -1,4 +1,18 @@
 {
+  "22": [
+    {
+      "name": "22",
+      "totalAA": "448",
+      "percentSD": "15.71%"
+    }
+  ],
+  "33": [
+    {
+      "name": "33",
+      "totalAA": "448",
+      "percentSD": "15.71%"
+    }
+  ],
   "San Diego": [
     {
       "name": "San Diego (NoAug)",
@@ -3536,20 +3550,6 @@
   "Princeton META": [
     {
       "name": "Princeton META",
-      "totalAA": "448",
-      "percentSD": "15.71%"
-    }
-  ],
-  "22": [
-    {
-      "name": "22",
-      "totalAA": "448",
-      "percentSD": "15.71%"
-    }
-  ],
-  "33": [
-    {
-      "name": "33",
       "totalAA": "448",
       "percentSD": "15.71%"
     }

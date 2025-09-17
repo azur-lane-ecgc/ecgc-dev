@@ -21,11 +21,14 @@ export const main = async () => {
       if (!bucket.has(key)) {
         bucket.set(key, { location: loc, dates: [] })
       }
-      bucket.get(key)!.dates.push(ship.date)
+      if (ship.date) {
+        bucket.get(key)!.dates.push(ship.date)
+      }
     }
   }
 
-  function mode(nums: number[]): number {
+  const mode = (nums: number[]): number | undefined => {
+    if (nums.length === 0) return undefined
     const freq = new Map<number, number>()
     let bestNum = nums[0],
       bestCount = 0
@@ -45,7 +48,7 @@ export const main = async () => {
       location,
       modeDate: mode(dates),
     }))
-    .sort((a, b) => b.modeDate - a.modeDate)
+    .sort((a, b) => (b.modeDate || 0) - (a.modeDate || 0))
     .map(({ location }) => location)
 
   await Bun.write(OUTPUT_PATH, JSON.stringify(sortedLocations, null, 2))

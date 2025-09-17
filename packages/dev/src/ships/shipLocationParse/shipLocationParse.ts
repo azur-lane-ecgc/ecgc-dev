@@ -81,7 +81,10 @@ const parseOtherLocation = (name: string, id: number): shipLocation | null => {
   }
 }
 
-const parseConstruction = (dropData: ShipDropData): shipLocation[] => {
+const parseConstruction = (
+  dropData: ShipDropData | undefined,
+): shipLocation[] => {
+  if (!dropData) return []
   const categories = []
   if (dropData?.light) categories.push("Light")
   if (dropData?.heavy) categories.push("Heavy")
@@ -97,7 +100,11 @@ const parseConstruction = (dropData: ShipDropData): shipLocation[] => {
     : []
 }
 
-const parseEvents = (name: string, events: string[]): shipLocation[] => {
+const parseEvents = (
+  name: string,
+  events: string[] | undefined,
+): shipLocation[] => {
+  if (!events) return []
   const filteredEvents = events.filter(
     (event) => !excludedEvents.includes(event),
   )
@@ -122,11 +129,13 @@ const parseEvents = (name: string, events: string[]): shipLocation[] => {
     ]
   }
 
+  const firstEvent = filteredEvents[0]
+  if (!firstEvent) return []
   // Rest of ships
   return [
     {
-      name: filteredEvents[0].replace(/Rerun/g, "").trim(),
-      href: parseLocation(filteredEvents[0]),
+      name: firstEvent.replace(/Rerun/g, "").trim(),
+      href: parseLocation(firstEvent),
     },
   ]
 }
@@ -151,8 +160,8 @@ export const shipLocationParse = (
   }
 
   const dropData = shipDropData[id]
-  const events = parseEvents(name, dropData.events)
-  const other = dropData.other
+  const events = parseEvents(name, dropData?.events)
+  const other = dropData?.other
     ?.map((otherId) => parseOtherLocation(name, otherId))
     .filter(Boolean) as shipLocation[]
   const construction = parseConstruction(dropData)
@@ -187,7 +196,7 @@ export const isPermanent = (
   const dropData = shipDropData[id]
   if (!dropData) return { isPermanent: false, isCollab: false }
 
-  const qualifies = (ship: ShipDropData): boolean => {
+  const qualifies = (ship: ShipDropData | undefined): boolean => {
     if (!ship) return false
 
     // rule 1: ship is available in light / heavy / special construction

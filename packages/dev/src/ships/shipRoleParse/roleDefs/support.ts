@@ -49,7 +49,7 @@ export const offensiveSupport = (): Set<string> => {
     }
 
     const ssRankings = SSFleetRankingData[shipName]
-    if (SSFleetRankingData[shipName] && isDecentSSFleet(shipName)) {
+    if (ssRankings && isDecentSSFleet(shipName)) {
       for (const ranking of ssRankings) {
         if (ranking.offensivebuff) {
           offensiveSupport.add(shipName)

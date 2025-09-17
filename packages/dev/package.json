@@ -4,9 +4,15 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.2.22"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "googleapis": "^160.0.0",
+    "jszip": "^3.10.1",
+    "open": "^10.2.0",
+    "playwright": "^1.55.0"
   }
 }

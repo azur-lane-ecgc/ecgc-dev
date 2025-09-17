@@ -9,7 +9,7 @@ export const preloadRole = (): Set<string> => {
 
   for (const key in samvaluationData) {
     const shipProps = samvaluationData[key]
-    if (shipProps.preload && shipProps.preload.match("Preloaded")) {
+    if (shipProps?.preload && shipProps.preload.match("Preloaded")) {
       preloadSet.add(key)
     }
   }

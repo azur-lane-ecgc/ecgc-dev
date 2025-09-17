@@ -28,5 +28,5 @@ const factionMap: Record<number, string> = {
 }
 
 export const shipFactionParse = (faction: number): string => {
-  return factionMap[faction] ?? factionMap[0]
+  return factionMap[faction] ?? (factionMap[0] as string)
 }

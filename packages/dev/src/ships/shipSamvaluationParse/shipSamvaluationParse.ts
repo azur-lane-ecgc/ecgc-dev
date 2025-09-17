@@ -43,20 +43,21 @@ export const shipSamvaluationParse = (ship: string): SamvaluationProps => {
       reduction = 100
 
       const qtyMatch = preloadText.match(/(\d+)\s*preloaded/i)
-      quantity = qtyMatch ? parseInt(qtyMatch[1], 10) : 0
+      quantity = qtyMatch && qtyMatch[1] ? parseInt(qtyMatch[1], 10) : 0
     }
     // fast_load
     else {
       const pctMatch = preloadText.match(/(\d+)%/)
-      reduction = pctMatch ? parseInt(pctMatch[1], 10) : 0
+      reduction = pctMatch && pctMatch[1] ? parseInt(pctMatch[1], 10) : 0
 
       const qtyAfterPct = preloadText.match(/%\s*(\d+)/)
-      quantity = qtyAfterPct ? parseInt(qtyAfterPct[1], 10) : 0
+      quantity =
+        qtyAfterPct && qtyAfterPct[1] ? parseInt(qtyAfterPct[1], 10) : 0
     }
 
     // condition
     const condMatch = preloadText.match(/\(([^)]+)\)/)
-    conditional = condMatch ? condMatch[1].trim() : ""
+    conditional = condMatch && condMatch[1] ? condMatch[1].trim() : ""
   }
   let preload2 = null
 
