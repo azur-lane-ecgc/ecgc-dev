@@ -1,7 +1,7 @@
 import { pageInfo } from "../_pageInfo"
 
 const hardCodedPaths = [
-  "packages/frontend/src/components/Equipment/AugmentModules.astro",
+  "../frontend/src/components/Equipment/AugmentModules.astro",
 ]
 
 const replaceWikiLinks = (content: string): string => {

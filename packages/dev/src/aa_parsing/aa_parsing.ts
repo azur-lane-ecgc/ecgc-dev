@@ -4,7 +4,7 @@ import path from "path"
 const SERVICE_ACCOUNT_FILE = "credentials.json"
 const SPREADSHEET_ID = "1rb_uXVmDnK2YKe-0YRTrf3VUcQi8mKwEMYKCBFmVXCc"
 const SHEET_NAMES = ["List"]
-const OUTPUT_PATHS = ["packages/dev/src/aa_parsing/shipAA.json"]
+const OUTPUT_PATHS = ["src/aa_parsing/shipAA.json"]
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 

@@ -7,7 +7,7 @@ export const main = async () => {
   ).then((m) => m.default)) as Record<number, ShipData>
 
   const OUTPUT_PATH =
-    "packages/frontend/src/utils/ships/events/azurLaneEvents.json"
+    "../frontend/src/utils/ships/events/azurLaneEvents.json"
 
   // Bucket: href -> { location, dates[] }
   const bucket = new Map<

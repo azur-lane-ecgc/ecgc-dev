@@ -1,7 +1,7 @@
 import { google } from "googleapis"
 
 const SERVICE_ACCOUNT_FILE = "credentials.json"
-const CHANGELOG_PATH = "packages/frontend/src/constants/lastUpdated.ts"
+const CHANGELOG_PATH = "../frontend/src/constants/lastUpdated.ts"
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 const SPREADSHEETS = [

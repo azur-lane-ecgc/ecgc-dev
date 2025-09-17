@@ -4,7 +4,7 @@ import path from "path"
 const SERVICE_ACCOUNT_FILE = "credentials.json"
 const SPREADSHEET_ID = "1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
 const SHEET_NAMES = ["eHP 3"]
-const OUTPUT_PATHS = ["packages/frontend/src/db/ehp/shipEHP.json"]
+const OUTPUT_PATHS = ["../frontend/src/db/ehp/shipEHP.json"]
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
