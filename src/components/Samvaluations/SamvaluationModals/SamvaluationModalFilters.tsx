@@ -1,16 +1,16 @@
-import { ComboBox, MultiSelectCombobox } from "@components/_common/ComboBox"
-import { Input } from "@components/_common/Input"
+import { ComboBox, MultiSelectCombobox } from "@/components/_common/ComboBox"
+import { Input } from "@/components/_common/Input"
 import {
   ThreeToggleButton,
   TwoToggleButton,
-} from "@components/_common/ToggleButton"
-import { CustomToggleButton } from "@components/_common/ToggleButton/CustomToggleButton"
+} from "@/components/_common/ToggleButton"
+import { CustomToggleButton } from "@/components/_common/ToggleButton/CustomToggleButton"
 
 import {
   initialFilters,
   type ShipAction,
   type ShipFilterProps,
-} from "@store/Samvaluation/useShipFilter"
+} from "@/store/Samvaluation/useShipFilter"
 
 import {
   allHullTypes,
@@ -21,7 +21,7 @@ import {
   allRoles,
   allEvents,
   rankingTypes,
-} from "@utils/ships"
+} from "@/utils/ships"
 
 interface ModalFilterProps {
   state: ShipFilterProps

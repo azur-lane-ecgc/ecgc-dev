@@ -3,8 +3,8 @@ import type {
   VanguardFleetRankingProps,
   MainFleetRankingProps,
   SSFleetRankingProps,
-} from "@db/types"
-import type { ShipFilterProps } from "@store/Samvaluation/useShipFilter"
+} from "@/db/types"
+import type { ShipFilterProps } from "@/store/Samvaluation/useShipFilter"
 
 export const rankingTypes: Record<string, string> = {
   "Light DMG": "lightdmg",

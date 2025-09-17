@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react"
-import { useDebounce } from "@utils/useDebounce"
+import { useDebounce } from "@/utils/useDebounce"
 
 interface InputProps {
   className?: string

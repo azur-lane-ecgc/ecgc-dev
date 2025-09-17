@@ -1,12 +1,12 @@
-import type { ShipEHPProps } from "@db/types"
-import type { VanguardFleetRankingProps } from "@db/types"
+import type { ShipEHPProps } from "@/db/types"
+import type { VanguardFleetRankingProps } from "@/db/types"
 
-const shipEHPData = (await import("@db/ehp/shipEHP.json").then(
+const shipEHPData = (await import("@/db/ehp/shipEHP.json").then(
   (module) => module.default,
 )) as Record<string, ShipEHPProps[]>
 
 const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@db/rankings/vgFleetRankings.json").then(
+  (await import("@/db/rankings/vgFleetRankings.json").then(
     (module) => module.default,
   )) as Record<string, VanguardFleetRankingProps[]>
 

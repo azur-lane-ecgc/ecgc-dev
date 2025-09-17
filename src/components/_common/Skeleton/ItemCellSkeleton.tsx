@@ -1,4 +1,4 @@
-import "@components/_common/ItemCell/styles.css"
+import "@/components/_common/ItemCell/styles.css"
 import { Skeleton } from "./Skeleton"
 
 interface itemSkeletonProps {

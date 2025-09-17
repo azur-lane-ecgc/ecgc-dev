@@ -1,17 +1,17 @@
 import { dirname } from "path"
 import { existsSync, mkdirSync } from "fs"
 
-import type { ShipData } from "@ALData/types/ships"
-import type { AugmentData } from "@ALData/types/augments"
+import type { ShipData } from "@/packages/AzurLaneData/types/ships"
+import type { AugmentData } from "@/packages/AzurLaneData/types/augments"
 const ships: Record<number, ShipData> = (await import(
-  "@ALData/data/ships.json"
+  "@/packages/AzurLaneData/data/ships.json"
 ).then((module) => module.default)) as Record<number, ShipData>
 
 const augmentData: Record<number, AugmentData> = (await import(
-  "@ALData/data/augments.json"
+  "@/packages/AzurLaneData/data/augments.json"
 ).then((module) => module.default)) as Record<number, AugmentData>
 
-import type { ShipData as ProcessedShipData } from "@db/types"
+import type { ShipData as ProcessedShipData } from "@/db/types"
 import {
   isPermanent,
   shipDefaultAugmentParse,

@@ -1,6 +1,6 @@
 import { endGameRankingsUpdateDate } from "src/constants"
 
-import { formatDate } from "@utils/formatDate"
+import { formatDate } from "@/utils/formatDate"
 
 export const RankingHeader: React.FC = () => {
   return (

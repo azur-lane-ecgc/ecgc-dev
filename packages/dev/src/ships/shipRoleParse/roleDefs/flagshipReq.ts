@@ -1,7 +1,7 @@
-import type { MainFleetRankingProps } from "@db/types"
+import type { MainFleetRankingProps } from "@/db/types"
 
 const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
-  (await import("@db/rankings/mainFleetRankings.json").then(
+  (await import("@/db/rankings/mainFleetRankings.json").then(
     (module) => module.default,
   )) as Record<string, MainFleetRankingProps[]>
 

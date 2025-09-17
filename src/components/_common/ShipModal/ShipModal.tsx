@@ -1,19 +1,19 @@
 import { useState } from "react"
 import { useTrackVisibility } from "react-intersection-observer-hook"
 
-import "@components/_common/ItemCell/styles.css"
-import { HR } from "@components/_common/HR"
-import { ItemTable } from "@components/_common/ItemTable"
-import { IconSkeleton } from "@components/_common/Skeleton"
+import "@/components/_common/ItemCell/styles.css"
+import { HR } from "@/components/_common/HR"
+import { ItemTable } from "@/components/_common/ItemTable"
+import { IconSkeleton } from "@/components/_common/Skeleton"
 
-import type { ShipData } from "@db/types"
+import type { ShipData } from "@/db/types"
 
 import {
   useBodyOverflow,
   useModalFocus,
   // useModalHistory,
-} from "@utils/modalHooks"
-import { parseEquipHref, shipImageParse } from "@utils/ships"
+} from "@/utils/modalHooks"
+import { parseEquipHref, shipImageParse } from "@/utils/ships"
 
 import { ShipTags } from "./ShipTags"
 import {

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 
-import { truncateString } from "@utils/string"
+import { truncateString } from "@/utils/string"
 
 interface ComboBoxProps {
   className?: string

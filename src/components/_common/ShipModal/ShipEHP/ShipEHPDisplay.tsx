@@ -1,14 +1,14 @@
-import { HR } from "@components/_common/HR"
-import { ItemTable } from "@components/_common/ItemTable"
+import { HR } from "@/components/_common/HR"
+import { ItemTable } from "@/components/_common/ItemTable"
 import { ehpUpdateDate } from "src/constants"
 
-import type { ShipEHPProps } from "@db/types"
-const ehp = (await import("@db/ehp/shipEHP.json")).default as Record<
+import type { ShipEHPProps } from "@/db/types"
+const ehp = (await import("@/db/ehp/shipEHP.json")).default as Record<
   string,
   ShipEHPProps[]
 >
 
-import { formatDate } from "@utils/formatDate"
+import { formatDate } from "@/utils/formatDate"
 
 import { getEHPColor, getSTDColor } from "./gradient"
 

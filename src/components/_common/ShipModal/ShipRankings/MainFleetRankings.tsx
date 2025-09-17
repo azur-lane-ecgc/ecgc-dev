@@ -1,10 +1,10 @@
 import { useState } from "react"
 
-import { ItemTable } from "@components/_common/ItemTable"
-import { HR } from "@components/_common/HR"
+import { ItemTable } from "@/components/_common/ItemTable"
+import { HR } from "@/components/_common/HR"
 
-import type { MainFleetRankingProps } from "@db/types"
-const mainFleetRankings = (await import("@db/rankings/mainFleetRankings.json"))
+import type { MainFleetRankingProps } from "@/db/types"
+const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
   .default as Record<string, MainFleetRankingProps[]>
 
 import { RankingHeader } from "./RankingHeader"

@@ -1,4 +1,4 @@
-import type { ShipData } from "@db/types"
+import type { ShipData } from "@/db/types"
 
 export const hasUniqueAugment = (
   augments: ShipData["augments"] | null,

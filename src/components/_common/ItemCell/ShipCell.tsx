@@ -1,6 +1,6 @@
 import { useMemo } from "react"
 
-import { shipImageParse } from "@utils/ships"
+import { shipImageParse } from "@/utils/ships"
 
 import { ItemCell } from "./ItemCell"
 import "./styles.css"

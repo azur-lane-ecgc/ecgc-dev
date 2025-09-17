@@ -6,28 +6,28 @@ import type {
   VanguardFleetRankingProps,
   SSFleetRankingProps,
   // ShipEHPProps,
-} from "@db/types"
-const shipData = (await import("@db/ship_data/ship_data.json"))
+} from "@/db/types"
+const shipData = (await import("@/db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
-const mainFleetRankings = (await import("@db/rankings/mainFleetRankings.json"))
+const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
   .default as Record<string, MainFleetRankingProps[]>
-const vgFleetRankings = (await import("@db/rankings/vgFleetRankings.json"))
+const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
   .default as Record<string, VanguardFleetRankingProps[]>
-const ssFleetRankings = (await import("@db/rankings/ssFleetRankings.json"))
+const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
   .default as Record<string, SSFleetRankingProps[]>
-// const ehp = (await import("@db/ehp/shipEHP.json")).default as Record<
+// const ehp = (await import("@/db/ehp/shipEHP.json")).default as Record<
 //   string,
 //   ShipEHPProps[]
 // >
 
-import { normalizeString } from "@utils/string"
+import { normalizeString } from "@/utils/string"
 import {
   allianceFactionsMap,
   fleetTypeMapping,
   hasUniqueAugment,
   getHighestValue,
   shipIcons,
-} from "@utils/ships"
+} from "@/utils/ships"
 
 export interface ShipFilterProps {
   visibleShips: ShipData[]

@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { ComboBox } from "@components/_common/ComboBox"
+import { ComboBox } from "@/components/_common/ComboBox"
 
 import { ToolTable } from "./ToolTable"
 

@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-import { factionLink } from "@utils/factionLink"
-import { hullTypeLink, trimRoles } from "@utils/ships"
+import { factionLink } from "@/utils/factionLink"
+import { hullTypeLink, trimRoles } from "@/utils/ships"
 
 import { getFactionIcon } from "./FactionIcons"
 import { RoleIcons } from "./RoleIcons"

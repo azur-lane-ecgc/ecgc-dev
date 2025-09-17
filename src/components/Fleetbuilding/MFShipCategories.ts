@@ -1,10 +1,10 @@
-import type { ShipData, MainFleetRankingProps } from "@db/types"
-const shipData = (await import("@db/ship_data/ship_data.json"))
+import type { ShipData, MainFleetRankingProps } from "@/db/types"
+const shipData = (await import("@/db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
-const mainFleetRankings = (await import("@db/rankings/mainFleetRankings.json"))
+const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
   .default as Record<string, MainFleetRankingProps[]>
 
-import { shipSort } from "@utils/ships"
+import { shipSort } from "@/utils/ships"
 
 // fast load ships
 const fastLoadShips: ShipData[] = shipSort(

@@ -1,10 +1,10 @@
 import { useState } from "react"
 
-import { ItemTable } from "@components/_common/ItemTable"
-import { HR } from "@components/_common/HR"
+import { ItemTable } from "@/components/_common/ItemTable"
+import { HR } from "@/components/_common/HR"
 
-import type { VanguardFleetRankingProps } from "@db/types"
-const vgFleetRankings = (await import("@db/rankings/vgFleetRankings.json"))
+import type { VanguardFleetRankingProps } from "@/db/types"
+const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
   .default as Record<string, VanguardFleetRankingProps[]>
 
 import { RankingHeader } from "./RankingHeader"

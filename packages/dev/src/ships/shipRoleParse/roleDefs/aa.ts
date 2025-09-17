@@ -1,22 +1,22 @@
 import type {
   VanguardFleetRankingProps,
   MainFleetRankingProps,
-} from "@db/types"
+} from "@/db/types"
 import type { ShipAAProps } from "dev/python/aa_parsing/types"
 
 import { isDecentMainFleet, isDecentVG } from "../decentShips"
 
-const shipAAData = (await import("@tools/python/aa_parsing/shipAA.json").then(
+const shipAAData = (await import("dev/python/aa_parsing/shipAA.json").then(
   (module) => module.default,
 )) as Record<string, ShipAAProps[]>
 
 const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@db/rankings/vgFleetRankings.json").then(
+  (await import("@/db/rankings/vgFleetRankings.json").then(
     (module) => module.default,
   )) as Record<string, VanguardFleetRankingProps[]>
 
 const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
-  (await import("@db/rankings/mainFleetRankings.json").then(
+  (await import("@/db/rankings/mainFleetRankings.json").then(
     (module) => module.default,
   )) as Record<string, MainFleetRankingProps[]>
 

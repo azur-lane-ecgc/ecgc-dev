@@ -1,17 +1,17 @@
 ---
-import { HR } from "@components/_common/HR"
-import { ImageCarousel } from "@components/_common/ImageCarousel"
-import { ItemCell, ItemContainer } from "@components/_common/ItemCell"
-import { ItemTable } from "@components/_common/ItemTable"
-import { ShipModal } from "@components/_common/ShipModal"
-import { LocationItem } from "@components/_common/ShipModal/ShipLocations"
-import WikiLink from "@components/_common/WikiLink.astro"
+import { HR } from "@/components/_common/HR"
+import { ImageCarousel } from "@/components/_common/ImageCarousel"
+import { ItemCell, ItemContainer } from "@/components/_common/ItemCell"
+import { ItemTable } from "@/components/_common/ItemTable"
+import { ShipModal } from "@/components/_common/ShipModal"
+import { LocationItem } from "@/components/_common/ShipModal/ShipLocations"
+import WikiLink from "@/components/_common/WikiLink.astro"
 
-import type { ShipData } from "@db/types"
+import type { ShipData } from "@/db/types"
 
-import StarterFleet from "@assets/newbie_tips/starter_fleet.png"
+import StarterFleet from "@/assets/newbie_tips/starter_fleet.png"
 
-const shipData = (await import("@db/ship_data/ship_data.json"))
+const shipData = (await import("@/db/ship_data/ship_data.json"))
   .default as Record<number, ShipData>
 
 const newJerseyData = shipData[68]

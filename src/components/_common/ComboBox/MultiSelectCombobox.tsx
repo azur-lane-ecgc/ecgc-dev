@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react"
 
-import { useDebounce } from "@utils/useDebounce"
-import { truncateArray } from "@utils/string"
+import { useDebounce } from "@/utils/useDebounce"
+import { truncateArray } from "@/utils/string"
 
 interface MultiComboBoxProps {
   className?: string

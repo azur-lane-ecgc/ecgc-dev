@@ -1,4 +1,4 @@
-import { getTotalGuaranteed } from "@utils/commonResource"
+import { getTotalGuaranteed } from "@/utils/commonResource"
 import type { ResourceProps } from "./types"
 
 const AugmentModuleCoreData: ResourceProps = {

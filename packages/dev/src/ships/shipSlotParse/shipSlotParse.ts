@@ -1,4 +1,4 @@
-import type { SlotData } from "@ALData/types/ships"
+import type { SlotData } from "@/packages/AzurLaneData/types/ships"
 
 interface SlotProps {
   type: string[]

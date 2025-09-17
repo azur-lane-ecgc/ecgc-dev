@@ -28,18 +28,15 @@
 
     "baseUrl": "../..",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@pages/*": ["src/pages/*"],
-      "@styles/*": ["src/styles/*"],
-      "@utils/*": ["src/utils/*"],
-      "@constants/*": ["src/constants/*"],
-      "@store/*": ["src/store/*"],
-      "@db/*": ["src/db/*"],
-      "@ALData/*": ["packages/AzurLaneData/*"],
-      "@tools/*": ["dev/*"],
-      "@pkgdev/*": ["packages/dev/src/*"]
+      "@/assets/*": ["src/assets/*"],
+      "@/components/*": ["src/components/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/db/*": ["src/db/*"],
+      "@/store/*": ["src/store/*"],
+      "@/packages/*": ["packages/*"],
+      "@/tools/*": ["packages/dev/src/*"]
     }
   }
 }

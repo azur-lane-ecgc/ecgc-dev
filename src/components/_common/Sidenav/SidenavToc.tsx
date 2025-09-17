@@ -1,4 +1,4 @@
-import { HR } from "@components/_common/HR"
+import { HR } from "@/components/_common/HR"
 import { TocLink } from "./TocLink"
 import globalTOC from "./TocContent.json"
 

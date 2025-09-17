@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react"
 import { ToolData } from "./toolData"
 
-import "@components/_common/ItemTable/styles.css"
+import "@/components/_common/ItemTable/styles.css"
 
 const tableInfo = [
   { colName: "Tool", colWidth: "42%", key: "tool", limiter: true },

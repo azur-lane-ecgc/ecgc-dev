@@ -1,4 +1,4 @@
-import type { ShipData } from "@db/types"
+import type { ShipData } from "@/db/types"
 
 export const shipSort = (ships: ShipData[]): ShipData[] => {
   return [...ships].sort((a, b) => {

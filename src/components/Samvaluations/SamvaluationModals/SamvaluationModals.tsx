@@ -1,25 +1,25 @@
-import { HR } from "@components/_common/HR"
-import { ItemContainer } from "@components/_common/ItemCell"
-import { ShipModal } from "@components/_common/ShipModal"
+import { HR } from "@/components/_common/HR"
+import { ItemContainer } from "@/components/_common/ItemCell"
+import { ShipModal } from "@/components/_common/ShipModal"
 
 import type {
   MainFleetRankingProps,
   VanguardFleetRankingProps,
   SSFleetRankingProps,
-} from "@db/types"
-const mainFleetRankings = (await import("@db/rankings/mainFleetRankings.json"))
+} from "@/db/types"
+const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
   .default as Record<string, MainFleetRankingProps[]>
-const vgFleetRankings = (await import("@db/rankings/vgFleetRankings.json"))
+const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
   .default as Record<string, VanguardFleetRankingProps[]>
-const ssFleetRankings = (await import("@db/rankings/ssFleetRankings.json"))
+const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
   .default as Record<string, SSFleetRankingProps[]>
 
 import {
   initialFilters,
   useShipFilter,
-} from "@store/Samvaluation/useShipFilter"
+} from "@/store/Samvaluation/useShipFilter"
 
-import { getHighestValue, numberToLetterRank } from "@utils/ships"
+import { getHighestValue, numberToLetterRank } from "@/utils/ships"
 
 import { SamvaluationModalFilters } from "./SamvaluationModalFilters"
 
