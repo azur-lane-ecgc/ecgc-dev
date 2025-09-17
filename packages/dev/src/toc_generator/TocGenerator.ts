@@ -1,6 +1,7 @@
 import { pageInfo } from "../_pageInfo.js"
 
-const outputFilePath = "src/components/_common/Sidenav/TocContent.json"
+const outputFilePath =
+  "packages/frontend/src/components/_common/Sidenav/TocContent.json"
 
 const initializeJsonFile = async () => {
   await Bun.write(outputFilePath, JSON.stringify([], null, 2))

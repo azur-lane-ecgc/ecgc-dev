@@ -1,16 +1,16 @@
 import { $ } from "bun"
 
 const toolFiles = [
-  "packages/dev/src/ehp_parsing/ehp.ts",
-  "packages/dev/src/aa_parsing/aa_parsing.ts",
-  "packages/dev/src/end_game_al_rankings/mainfleetrankings.ts",
-  "packages/dev/src/end_game_al_rankings/vgfleetrankings.ts",
-  "packages/dev/src/end_game_al_rankings/ssfleetrankings.ts",
-  "packages/dev/src/events/azurLaneEvents.ts",
-  "packages/dev/src/replace_links/replaceLinks.ts",
-  "packages/dev/src/toc_generator/TocGenerator.ts",
-  "packages/dev/src/changelog/changelog.ts",
-  "packages/dev/src/ship_data/ship_json_generator.ts",
+  "src/ehp_parsing/ehp.ts",
+  "src/aa_parsing/aa_parsing.ts",
+  "src/end_game_al_rankings/mainfleetrankings.ts",
+  "src/end_game_al_rankings/vgfleetrankings.ts",
+  "src/end_game_al_rankings/ssfleetrankings.ts",
+  "src/events/azurLaneEvents.ts",
+  "src/replace_links/replaceLinks.ts",
+  "src/toc_generator/TocGenerator.ts",
+  "src/changelog/changelog.ts",
+  "src/ship_data/ship_json_generator.ts",
 ]
 
 const runStandardTools = async () => {

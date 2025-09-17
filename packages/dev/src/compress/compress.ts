@@ -1,4 +1,4 @@
-import { readdir, stat } from "fs/promises"
+import { readdir, stat, readFile, writeFile } from "fs/promises"
 import { join, extname, resolve, relative } from "path"
 import sharp from "sharp"
 
@@ -53,59 +53,88 @@ const getAllImages = async (dir: string): Promise<string[]> => {
 }
 
 const compressImage = async (file: string, base: string) => {
-  const ext = extname(file).slice(1).toLowerCase()
-  const fmt = extensionMap[ext] || ext
-  const opts = compressionSettings[fmt]
-  if (!opts) return
-
   const relPath = relative(base, file).replace(/\\/g, "/")
-  const origSize = (await stat(file)).size
 
-  const inBuf = Buffer.from(await Bun.file(file).arrayBuffer())
-  let img = sharp(inBuf, {
-    failOn: "error",
-    sequentialRead: true,
-    unlimited: true,
-  })
+  try {
+    console.log(`Processing: ${relPath}`)
 
-  switch (fmt) {
-    case "avif":
-      img = img.avif(opts as any)
-      break
-    case "gif":
-      img = img.gif(opts as any)
-      break
-    case "jpeg":
-      img = img.jpeg(opts as any)
-      break
-    case "png":
-      img = img.png(opts as any)
-      break
-    case "tiff":
-      img = img.tiff(opts as any)
-      break
-    case "webp":
-      img = img.webp(opts as any)
-      break
-    case "heif":
-      img = img.heif(opts as any)
-      break
+    const ext = extname(file).slice(1).toLowerCase()
+    const fmt = extensionMap[ext] || ext
+    const opts = compressionSettings[fmt]
+    if (!opts) {
+      console.log(`Skipping unsupported format: ${relPath}`)
+      return
+    }
+
+    // Get original file size
+    const origStats = await stat(file)
+    const origSize = origStats.size
+
+    // Read file using Node.js fs
+    const inBuf = await readFile(file)
+
+    // Validate that sharp can read this image
+    let img
+    try {
+      img = sharp(inBuf, {
+        failOn: "error",
+        sequentialRead: true,
+        unlimited: true,
+      })
+
+      // Test if sharp can actually process this image by getting metadata
+      await img.metadata()
+    } catch (sharpError) {
+      console.log(
+        `Skipping file with unsupported format: ${relPath} (${sharpError})`,
+      )
+      return
+    }
+
+    switch (fmt) {
+      case "avif":
+        img = img.avif(opts as any)
+        break
+      case "gif":
+        img = img.gif(opts as any)
+        break
+      case "jpeg":
+        img = img.jpeg(opts as any)
+        break
+      case "png":
+        img = img.png(opts as any)
+        break
+      case "tiff":
+        img = img.tiff(opts as any)
+        break
+      case "webp":
+        img = img.webp(opts as any)
+        break
+      case "heif":
+        img = img.heif(opts as any)
+        break
+    }
+
+    const outBuf = await img.toBuffer()
+    await writeFile(file, outBuf)
+
+    // Get new file size
+    const newStats = await stat(file)
+    const newSize = newStats.size
+    const saved = (((origSize - newSize) / origSize) * 100).toFixed(1)
+
+    console.log(
+      `${relPath}: ${(origSize / 1024).toFixed(1)}KB → ${(
+        newSize / 1024
+      ).toFixed(1)}KB (${saved}% saved)`,
+    )
+  } catch (error) {
+    console.error(`Error processing ${relPath}:`, error)
   }
-
-  const outBuf = await img.toBuffer()
-  await Bun.write(file, outBuf)
-
-  const newSize = (await stat(file)).size
-  const saved = (((origSize - newSize) / origSize) * 100).toFixed(1)
-  console.log(
-    `${relPath}: ${(origSize / 1024).toFixed(1)}KB → ${(newSize / 1024).toFixed(
-      1,
-    )}KB (${saved}% saved)`,
-  )
 }
 
 const main = async () => {
-  const base = resolve("dist")
+  const base = resolve("../frontend/dist")
   console.log("Scanning for images under", base)
   let images: string[] = []
   try {
@@ -120,11 +149,7 @@ const main = async () => {
   }
   console.log(`Found ${images.length} images. Compressing…`)
   for (const img of images) {
-    try {
-      await compressImage(img, base)
-    } catch (err) {
-      console.error(`Error compressing ${img}:`, err)
-    }
+    await compressImage(img, base)
   }
   console.log("Done compressing images.")
 }

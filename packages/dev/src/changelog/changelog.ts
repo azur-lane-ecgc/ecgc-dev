@@ -1,7 +1,7 @@
 import { google } from "googleapis"
 
 const SERVICE_ACCOUNT_FILE = "credentials.json"
-const CHANGELOG_PATH = "src/constants/lastUpdated.ts"
+const CHANGELOG_PATH = "packages/frontend/src/constants/lastUpdated.ts"
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 const SPREADSHEETS = [
@@ -75,7 +75,8 @@ const getChangelogDate = async (
 const updateConstantsFile = async (updates: Record<string, string>) => {
   let fileContent = ""
   for (const [key, new_date] of Object.entries(updates)) {
-    fileContent += `export const ${key} = "${new_date}"\n`
+    fileContent += `export const ${key} = "${new_date}"
+`
   }
 
   await Bun.write(CHANGELOG_PATH, fileContent)

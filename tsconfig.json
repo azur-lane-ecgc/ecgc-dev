@@ -1,7 +1,12 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "_backup/*", "dev/python/*", "packages/AzurLaneData/*"],
+  "exclude": [
+    "packages/frontend/dist",
+    "packages/AzurLaneData",
+    "packages/gsheets2img",
+    ".venv"
+  ],
   "compilerOptions": {
     "types": ["vite/client", "bun"],
     "allowJs": true,
@@ -11,13 +16,14 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "paths": {
-      "@/assets/*": ["src/assets/*"],
-      "@/components/*": ["src/components/*"],
-      "@/layouts/*": ["src/layouts/*"],
-      "@/styles/*": ["src/styles/*"],
-      "@/utils/*": ["src/utils/*"],
-      "@/db/*": ["src/db/*"],
-      "@/store/*": ["src/store/*"],
+      "@/assets/*": ["packages/frontend/src/assets/*"],
+      "@/components/*": ["packages/frontend/src/components/*"],
+      "@/constants/*": ["packages/frontend/src/constants/*"],
+      "@/db/*": ["packages/frontend/src/db/*"],
+      "@/layouts/*": ["packages/frontend/src/layouts/*"],
+      "@/styles/*": ["packages/frontend/src/styles/*"],
+      "@/store/*": ["packages/frontend/src/store/*"],
+      "@/utils/*": ["packages/frontend/src/utils/*"],
       "@/packages/*": ["packages/*"],
       "@/tools/*": ["packages/dev/src/*"]
     }

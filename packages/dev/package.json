@@ -3,6 +3,10 @@
   "module": "main.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "compress": "bun run src/compress/compress.ts",
+    "main": "bun run main.ts"
+  },
   "devDependencies": {
     "@types/bun": "^1.2.22"
   },

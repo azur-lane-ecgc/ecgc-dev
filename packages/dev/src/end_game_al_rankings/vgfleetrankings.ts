@@ -4,7 +4,7 @@ import path from "path"
 const SERVICE_ACCOUNT_FILE = "credentials.json"
 const SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 const SHEET_NAME = "VG (no img)"
-const OUTPUT_PATH = "src/db/rankings/vgFleetRankings.json"
+const OUTPUT_PATH = "packages/frontend/src/db/rankings/vgFleetRankings.json"
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 const priorityOrder: Record<string, number> = {

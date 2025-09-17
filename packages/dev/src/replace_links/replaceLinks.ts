@@ -1,10 +1,12 @@
 import { pageInfo } from "../_pageInfo"
 
-const hardCodedPaths = ["src/components/Equipment/AugmentModules.astro"]
+const hardCodedPaths = [
+  "packages/frontend/src/components/Equipment/AugmentModules.astro",
+]
 
 const replaceWikiLinks = (content: string): string => {
   const regex =
-    /<a\s*\n*\s*rel="noopener noreferrer"\s*\n*\s*target="_blank"\s*\n*\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^\"]+)"\s*\n*\s*title="([^\"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
+    /<a\s*\n*\s*rel=\"noopener noreferrer\"\s*\n*\s*target=\"_blank\"\s*\n*\s*href=\"https:\/\/azurlane\.koumakan\.jp\/wiki\/([^\"]+)\"\s*\n*\s*title=\"([^\"]+)\"\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
 
   return content.replace(regex, (match, hrefTitle, title, linkContent) => {
     if (match) {
@@ -18,7 +20,7 @@ const replaceWikiLinks = (content: string): string => {
 
 const replaceWikiLinksTwo = (content: string): string => {
   const regex2 =
-    /<a\s*\n*\s*rel="noopener noreferrer"\s*\n*\s*target="_blank"\s*\n*\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^\"]+)"\s*\n*\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
+    /<a\s*\n*\s*rel=\"noopener noreferrer\"\s*\n*\s*target=\"_blank\"\s*\n*\s*href=\"https:\/\/azurlane\.koumakan\.jp\/wiki\/([^\"]+)\"\s*\n*\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
   return content.replace(regex2, (match, hrefTitle, linkContent) => {
     if (match) {
       {

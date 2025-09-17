@@ -27,7 +27,7 @@ import {
   shipSlotParse,
 } from "../ships"
 
-const OUTPUT_PATH = "src/db/ship_data/ship_data.json"
+const OUTPUT_PATH = "packages/frontend/src/db/ship_data/ship_data.json"
 
 export const main = async () => {
   const processedData: Record<number, ProcessedShipData> = {}

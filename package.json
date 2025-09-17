@@ -1,45 +1,33 @@
 {
-  "name": "ecgc-dev",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "ecgc-dev-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/dev",
+    "packages/frontend"
+  ],
   "scripts": {
     "prepare": "bunx lefthook install",
     "update": "bun upgrade && bun update && bun install",
-    "rebuild": "rm -rf node_modules && rm -rf .astro && rm -rf dist && bun run update",
+    "rebuild": "rm -rf node_modules && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && rm -rf .venv && bun update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bash packages/gsheets2img/gsheets2img.sh -g",
     "imgur": "bash packages/gsheets2img/gsheets2img.sh -i",
     "gsheets2imgur": "bash packages/gsheets2img/gsheets2img.sh -gi",
-    "compress": "bun run packages/dev/src/compress/compress.ts",
-    "smol-format": "bunx --bun prettier --write \"src/**/*.{astro,json}\" \"packages/dev/**/*.{astro,json}\" --ignore-path .prettierignore",
-    "format": "bunx --bun prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" \"packages/dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
+    "compress": "bun --filter dev compress",
+    "smol-format": "bunx --bun prettier --write \"packages/**/*.{astro,json}\" --ignore-path .prettierignore",
+    "format": "bunx --bun prettier --write \"packages/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
     "lint": "bunx --bun oxlint@latest",
-    "devtools": "bun run submodule && bun run packages/dev/main.ts && bun run smol-format",
-    "build": "bunx --bun astro check && bunx astro build",
+    "devtools": "bun run submodule && bun --filter dev main && bun run smol-format",
+    "build": "bun --filter frontend build",
     "compress-build": "bun run build && bun run compress",
-    "dev": "bunx astro dev",
+    "dev": "bun --filter frontend dev",
     "cf-dev": "bunx wrangler dev",
-    "start": "NODE_ENV=PRODUCTION bunx astro preview",
+    "start": "NODE_ENV=PRODUCTION bun --filter frontend preview",
     "deploy": "bun run compress-build && bunx wrangler deploy"
   },
-  "dependencies": {
-    "@astrojs/react": "^4.3.1",
-    "astro": "^5.13.7",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-intersection-observer-hook": "^4.0.0",
-    "tailwindcss": "^4.1.13"
-  },
   "devDependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/sitemap": "^3.5.1",
     "@prettier/plugin-oxc": "^0.0.4",
-    "@tailwindcss/vite": "^4.1.13",
-    "@types/bun": "^1.2.22",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "astro-meta-tags": "^0.4.0",
     "knip": "^5.63.1",
     "lefthook": "^1.13.0",
     "prettier": "^3.6.2",
@@ -47,10 +35,7 @@
     "prettier-plugin-astro-organize-imports": "^0.4.11",
     "prettier-plugin-organize-imports": "^4.2.0",
     "prettier-plugin-tailwindcss": "^0.6.14",
-    "sharp": "^0.34.3",
     "typescript": "^5.9.2",
-    "vite": "^7.1.5",
     "wrangler": "^4.37.1"
-  },
-  "private": true
+  }
 }
