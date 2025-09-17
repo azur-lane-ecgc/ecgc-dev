@@ -8,7 +8,7 @@ import requests
 
 
 def load_config():
-    config_file = "dev/python/automated_imgur_upload/config.json"
+    config_file = "packages/gsheets2img/config.json"
     if not os.path.exists(config_file):
         default_config = {
             "client_id": "YOUR_CLIENT_ID",
@@ -26,7 +26,7 @@ def load_config():
 
 
 def load_tokens():
-    token_file = "dev/python/automated_imgur_upload/tokens.json"
+    token_file = "packages/gsheets2img/tokens.json"
     if not os.path.exists(token_file):
         return None
 
@@ -35,7 +35,7 @@ def load_tokens():
 
 
 def save_tokens(tokens):
-    token_file = "dev/python/automated_imgur_upload/tokens.json"
+    token_file = "packages/gsheets2img/tokens.json"
     os.makedirs(os.path.dirname(token_file), exist_ok=True)
 
     tokens["expires_at"] = (
@@ -46,7 +46,7 @@ def save_tokens(tokens):
         json.dump(tokens, file, indent=2)
 
 def load_image_info():
-    with open("dev/python/automated_imgur_upload/image_info.json", "r") as file:
+    with open("packages/gsheets2img/image_info.json", "r") as file:
         return json.load(file)
 
 

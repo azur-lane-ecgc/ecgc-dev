@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 
 # Hardcoded constants
 sheet_id = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"
-output_dir = Path(__file__).parent.parent.parent.parent / "public/images/equip_misc/"
+output_dir = "public/images/equip_misc/"
 include_sheets = []
 exclude_sheets = [
     "(WiP) SS RLD Chart",
@@ -17,7 +17,7 @@ exclude_sheets = [
     "Ammo Modifiers Chart",
     "(WiP) Rikka Specific Guide"
 ]
-resolved_output_dir = output_dir.resolve()
+resolved_output_dir = Path(output_dir).resolve()
 
 def download(sheet_id):
     temp_dir = Path(tempfile.mkdtemp(prefix="gs2imgz-"))
