@@ -105,3 +105,8 @@ export const main = async () => {
 
   console.log(`Ship data has been written to ${OUTPUT_PATH}`)
 }
+
+main().catch((err) => {
+  console.error("An error occurred", err)
+  process.exit(1)
+})

@@ -129,4 +129,7 @@ const main = async () => {
   console.log("Done compressing images.")
 }
 
-main().catch(console.error)
+main().catch((err) => {
+  console.error("An error occurred", err)
+  process.exit(1)
+})

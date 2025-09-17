@@ -104,3 +104,8 @@ export const main = async () => {
     )
   }
 }
+
+main().catch((err) => {
+  console.error("An error occurred", err)
+  process.exit(1)
+})

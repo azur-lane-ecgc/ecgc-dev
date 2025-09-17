@@ -57,3 +57,8 @@ export const main = async () => {
     `Wrote ${sortedLocations.length} unique event locations to ${OUTPUT_PATH}`,
   )
 }
+
+main().catch((err) => {
+  console.error("An error occurred", err)
+  process.exit(1)
+})

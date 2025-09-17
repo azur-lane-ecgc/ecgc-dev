@@ -49,3 +49,8 @@ export const main = async () => {
     ...hardCodedPaths.map((path) => processFile(path, path)),
   ])
 }
+
+main().catch((err) => {
+  console.error("An error occurred", err)
+  process.exit(1)
+})
