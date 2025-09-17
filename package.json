@@ -50,7 +50,7 @@
     "sharp": "^0.34.3",
     "typescript": "^5.9.2",
     "vite": "^7.1.5",
-    "wrangler": "^4.37.0"
+    "wrangler": "^4.37.1"
   },
   "private": true
 }
