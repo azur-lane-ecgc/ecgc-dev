@@ -1,7 +1,7 @@
-import { main as replaceLinksMain } from "./replace_links/replaceLinks.ts"
-import { main as shipJsonGeneratorMain } from "./ship_data/ship_json_generator.ts"
-import { main as tocGeneratorMain } from "./toc_generator/TocGenerator.ts"
-import { main as azurLaneEventsMain } from "./events/azurLaneEvents.ts"
+import { main as replaceLinksMain } from "./src/replace_links/replaceLinks.ts"
+import { main as shipJsonGeneratorMain } from "./src/ship_data/ship_json_generator.ts"
+import { main as tocGeneratorMain } from "./src/toc_generator/TocGenerator.ts"
+import { main as azurLaneEventsMain } from "./src/events/azurLaneEvents.ts"
 
 const runAll = async () => {
   console.log("Running: replace_links/replaceLinks.ts")

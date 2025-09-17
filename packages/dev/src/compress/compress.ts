@@ -105,7 +105,7 @@ const compressImage = async (file: string, base: string) => {
 }
 
 const main = async () => {
-  const base = resolve("../../dist")
+  const base = resolve("dist")
   console.log("Scanning for images under", base)
   let images: string[] = []
   try {

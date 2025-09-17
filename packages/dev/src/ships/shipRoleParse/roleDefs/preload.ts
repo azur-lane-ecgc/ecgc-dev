@@ -1,7 +1,7 @@
-import type { SamvaluationProps } from "dev/typescript/samvaluation/types"
+import type { SamvaluationProps } from "@pkgdev/samvaluation/types"
 
 const samvaluationData = (await import(
-  "dev/typescript/samvaluation/samvaluationData.json"
+  "@pkgdev/samvaluation/samvaluationData.json"
 ).then((module) => module.default)) as Record<string, SamvaluationProps>
 
 export const preloadRole = (): Set<string> => {

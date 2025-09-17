@@ -14,7 +14,7 @@ export interface SamvaluationProps {
 }
 
 const samvaluationData = (await import(
-  "dev/typescript/samvaluation/samvaluationData.json"
+  "@pkgdev/samvaluation/samvaluationData.json"
 ).then((module) => module.default)) as Record<string, SamvaluationProps>
 
 export const shipSamvaluationParse = (ship: string): SamvaluationProps => {

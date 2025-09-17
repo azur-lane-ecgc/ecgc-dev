@@ -73,4 +73,4 @@ fi
 
 echo -e "
 Running typescript tools..."
-bun run dev/typescript/main.ts
+bun run packages/dev/main.ts
