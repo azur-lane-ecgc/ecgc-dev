@@ -45,14 +45,9 @@ const processFile = async (inputFilePath: string, outputFilePath: string) => {
   }
 }
 
-export const replaceLinks = () => {
-  for (const page of pageInfo) {
-    processFile(`../../${page.path}`, `../../${page.path}`)
-  }
-
-  for (const path of hardCodedPaths) {
-    processFile(`../../${path}`, `../../${path}`)
-  }
+export const main = async () => {
+  await Promise.all([
+    ...pageInfo.map((page) => processFile(page.path, page.path)),
+    ...hardCodedPaths.map((path) => processFile(path, path)),
+  ])
 }
-
-replaceLinks()

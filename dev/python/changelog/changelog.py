@@ -3,8 +3,8 @@ from datetime import datetime
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
-SERVICE_ACCOUNT_FILE = "../../credentials.json"
-CHANGELOG_PATH = "../../src/constants/lastUpdated.ts"
+SERVICE_ACCOUNT_FILE = "credentials.json"
+CHANGELOG_PATH = "src/constants/lastUpdated.ts"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 # Define 2 sheets to parse
@@ -61,8 +61,7 @@ def update_constants_file(updates):
         for key, new_date in updates.items():
             file.write(f'export const {key} = "{new_date}"\n')
 
-
-if __name__ == "__main__":
+def main():
     updates = {}
 
     for sheet_config in SPREADSHEETS:

@@ -5,7 +5,7 @@ import { pageInfo } from "../_pageInfo.js"
 
 const outputFilePath = path.join(
   process.cwd(),
-  "../../src/components/_common/Sidenav/TocContent.json",
+  "src/components/_common/Sidenav/TocContent.json",
 )
 
 const initializeJsonFile = async () => {
@@ -85,7 +85,7 @@ const processFiles = async () => {
 
   for (const page of pageInfo) {
     try {
-      const content = await fs.promises.readFile(`../../${page.path}`, "utf8")
+      const content = await fs.promises.readFile(page.path, "utf8")
       const fileHeadings = extractHeadings(content)
 
       tocData.push({
@@ -109,9 +109,7 @@ const processFiles = async () => {
   console.log(`Table of Contents saved to ${outputFilePath}`)
 }
 
-export const ToCGenerator = async () => {
+export const main = async () => {
   await initializeJsonFile()
   await processFiles()
 }
-
-ToCGenerator()

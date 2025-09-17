@@ -6,10 +6,10 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 # Constants
-SERVICE_ACCOUNT_FILE = "../../credentials.json"
+SERVICE_ACCOUNT_FILE = "credentials.json"
 SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 SHEET_NAMES = ["MAIN (no img)"]
-OUTPUT_PATHS = ["../../src/db/rankings/mainFleetRankings.json"]
+OUTPUT_PATHS = ["src/db/rankings/mainFleetRankings.json"]
 
 
 # Authenticate and initialize the Sheets API
@@ -36,12 +36,12 @@ def parse_fleet_key(fleet_key):
         if fleet_key.startswith(exception):
             return {
                 "shipName": exception,
-                "nameNote": fleet_key[len(exception) :].strip().strip("()"),
+                "nameNote": fleet_key[len(exception) :].strip().strip("()")
             }
 
     match = re.match(r"^(.*?)\s*\((.*?)\)$", fleet_key)
     return (
-        {"shipName": match.group(1).strip(), "nameNote": match.group(2).strip()}
+        {"shipName": match.group(1).strip(), "nameNote": match.group(2).strip()} 
         if match
         else {"shipName": fleet_key.strip(), "nameNote": ""}
     )
@@ -155,7 +155,7 @@ def process_sheet(sheet_name):
 
 
 # Main logic to process sheets and save as separate JSON files
-if __name__ == "__main__":
+def main():
     # Ensure we have matching output paths for each sheet
     if len(SHEET_NAMES) != len(OUTPUT_PATHS):
         raise ValueError("Number of sheet names must match number of output paths")

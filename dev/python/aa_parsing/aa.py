@@ -5,11 +5,11 @@ import re
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
-SERVICE_ACCOUNT_FILE = "../../credentials.json"
+SERVICE_ACCOUNT_FILE = "credentials.json"
 SPREADSHEET_ID = "1rb_uXVmDnK2YKe-0YRTrf3VUcQi8mKwEMYKCBFmVXCc"
 SHEET_NAMES = ["List"]
 OUTPUT_PATHS = [
-    "aa_parsing/shipAA.json",
+    "dev/python/aa_parsing/shipAA.json",
 ]
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -70,8 +70,7 @@ def process_sheet(sheet_name):
 
     return data_dict
 
-
-if __name__ == "__main__":
+def main():
     if len(SHEET_NAMES) != len(OUTPUT_PATHS):
         raise ValueError("Number of sheet names must match number of output paths")
 
