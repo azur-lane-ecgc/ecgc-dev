@@ -2,7 +2,7 @@ import { $ } from "bun"
 
 const toolFiles = [
   "packages/dev/src/ehp_parsing/ehp.ts",
-  "packages/dev/src/aa_parsing/aa.ts",
+  "packages/dev/src/aa_parsing/aa_parsing.ts",
   "packages/dev/src/end_game_al_rankings/mainfleetrankings.ts",
   "packages/dev/src/end_game_al_rankings/vgfleetrankings.ts",
   "packages/dev/src/end_game_al_rankings/ssfleetrankings.ts",
