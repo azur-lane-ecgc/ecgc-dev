@@ -1,6 +1,8 @@
 # build output
 dist/
 
+.venv/
+
 # generated types
 .astro/
 .wrangler
