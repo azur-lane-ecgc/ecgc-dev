@@ -71,7 +71,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
         />
         <MultiSelectCombobox
           title="Faction"
-          options={[...allFactionOptions.map((option) => option.label)]}
+          options={allFactionOptions.map((option) => option.label)}
           initialOptions={initialFilters.faction}
           onSelect={(selectedLabels) =>
             dispatch({
