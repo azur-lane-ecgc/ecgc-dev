@@ -12,6 +12,7 @@
 ### Code Quality Commands
 
 - **Lint**: `bun run lint` (uses oxlint)
+- **Type check**: `bun run check` (runs type checking for frontend and dev packages)
 - **Format code**: `bun run format` (prettier with astro, tailwind, import organization)
 - **Format specific files**: `bun run smol-format`
 

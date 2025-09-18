@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "bunx astro dev",
     "build": "bunx astro check && bunx astro build",
+    "check": "bunx astro check",
     "preview": "bunx astro preview",
     "astro": "bunx astro"
   },

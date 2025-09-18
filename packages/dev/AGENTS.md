@@ -7,9 +7,6 @@ This package contains TypeScript development scripts and tools for processing Az
 ## Build & Run Commands
 
 - **Run all dev tools**: `bun run devtools` (executes all data processing scripts sequentially)
-- **Type checking**: `bun run build` (from repo root, includes this package via TypeScript)
-- **Individual scripts**: Run via `bun run <script-name>` from repo root (e.g., `bun run aa-parsing`)
-- **Clean build**: `bun run clean` (removes generated files)
 
 ## Key Scripts and Directories
 
@@ -30,7 +27,7 @@ This package contains TypeScript development scripts and tools for processing Az
 - **Credentials**: Requires `credentials.json` (Google Cloud service account key from `credentials.json.example`)
 - **Environment**: TypeScript strict mode with ES modules, path aliases (`@/tools/*` → `src/*`)
 - **Dependencies**: Managed via root `bun.lock`, includes Google APIs client libraries
-- **Output**: Processed data written to `packages/AzurLaneData/data/` and `packages/frontend/src/db/`
+- **Output**: Processed data written to `packages/frontend/src/db/`
 
 ## Data Processing Workflow
 
@@ -65,8 +62,7 @@ This package contains TypeScript development scripts and tools for processing Az
 
 ## Development Tips
 
-- Test individual scripts with `bun run <script>` before running full pipeline
-- Check generated data in `packages/AzurLaneData/data/` for correctness
+- Make sure `packages/AzurLaneData/` is up-to-date
 - Use `console.log` for debugging, remove before committing
 - Follow TypeScript strict typing for all data structures
 

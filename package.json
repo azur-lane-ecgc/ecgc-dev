@@ -20,6 +20,7 @@
     "lint": "bunx --bun oxlint --fix",
     "devtools": "bun run submodule && bun --filter dev main && bun run smol-format",
     "build": "bun --filter frontend build",
+    "check": "bun --filter frontend check && bun --filter dev typecheck",
     "compress-build": "bun run build && bun run compress",
     "dev": "bun --filter frontend dev",
     "cf-dev": "bunx wrangler dev",
@@ -29,7 +30,7 @@
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.0.4",
     "knip": "^5.63.1",
-    "lefthook": "^1.13.0",
+    "lefthook": "^1.13.1",
     "oxlint": "^1.16.0",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",

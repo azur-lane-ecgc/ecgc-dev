@@ -6,11 +6,10 @@ This is the main Astro-based frontend application for the ECGC project. It provi
 
 ## Build Commands
 
-- **Development server**: `bun run dev` (serves at http://localhost:4321)
+- **Development server**: `bun dev` (serves at http://localhost:4321)
 - **Full build**: `bun run build` (includes type checking via `astro check`)
 - **Compressed build**: `bun run compress-build` (production optimized with compression)
-- **Cloudflare dev**: `bun run cf-dev` (with Cloudflare Wrangler for edge deployment)
-- **Preview build**: `bun run preview` (preview production build locally)
+- **Preview build**: `bun start` (preview production build locally)
 
 ## Tech Stack
 
@@ -37,6 +36,7 @@ This is the main Astro-based frontend application for the ECGC project. It provi
 ## Component Patterns
 
 - Use functional components with TypeScript interfaces for all props
+- Use the arrow function structure for functions and components whenever possible.
 - Strongly type all props with dedicated interfaces (e.g., `ComboBoxProps`)
 - Prefer React hooks: `useState`, `useEffect`, `useRef`, `useMemo`
 - Implement lazy loading for large lists using `React.lazy` or virtual scrolling
@@ -73,7 +73,7 @@ This is the main Astro-based frontend application for the ECGC project. It provi
 
 - Type checking: Automatic during `bun run build` via `astro check`
 - Manual testing: Recommended for UI components and user flows
-- Code quality: Run `bun run lint` (oxlint) and `bun run format` (Prettier) before commits
+- Code quality: Run `bun run lint` (oxlint with custom config) and `bun run format` (Prettier) before commits
 - Pre-commit hooks: lefthook manages automatic formatting and linting
 - Accessibility: Ensure components are keyboard navigable and screen reader friendly
 
