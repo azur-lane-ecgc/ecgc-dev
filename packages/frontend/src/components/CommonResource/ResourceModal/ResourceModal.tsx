@@ -65,7 +65,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
       <div
         id={`${name.replaceAll(" ", "_")}`}
         className={`${modalTriggerStyle} ${
-          !!trigger?.hasBorder ? "border-gray-400" : "border-transparent"
+          trigger?.hasBorder ? "border-gray-400" : "border-transparent"
         }`}
         onClick={handleOpen}
         tabIndex={0}

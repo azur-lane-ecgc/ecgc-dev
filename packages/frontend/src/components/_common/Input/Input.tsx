@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, useCallback } from "react"
 import { useDebounce } from "@/utils/useDebounce"
 
 interface InputProps {
@@ -26,31 +26,31 @@ export const Input: React.FC<InputProps> = ({
   const inputRef = useRef<HTMLInputElement | null>(null)
   const debouncedSearchTerm = useDebounce(searchTerm, debounceTimer)
 
-  useEffect(() => {
-    if (!!initialValue) {
-      onSelect(initialValue)
-    }
-  }, [])
-
-  useEffect(() => {
-    onSelect(debouncedSearchTerm)
-  }, [debouncedSearchTerm])
-
-  useEffect(() => {
-    if (!!reset) {
-      handleClear()
-      inputRef.current?.blur()
-    }
-  }, [reset])
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value)
-  }
-
-  const handleClear = () => {
+  const handleClear = useCallback(() => {
     setSearchTerm("")
     onSelect("")
     inputRef.current?.focus()
+  }, [onSelect])
+
+  useEffect(() => {
+    if (initialValue) {
+      onSelect(initialValue)
+    }
+  }, [initialValue, onSelect])
+
+  useEffect(() => {
+    onSelect(debouncedSearchTerm)
+  }, [debouncedSearchTerm, onSelect])
+
+  useEffect(() => {
+    if (reset) {
+      handleClear()
+      inputRef.current?.blur()
+    }
+  }, [reset, handleClear])
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(event.target.value)
   }
 
   return (

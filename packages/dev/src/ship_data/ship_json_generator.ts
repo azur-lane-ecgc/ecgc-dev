@@ -76,7 +76,7 @@ export const main = async (
 
       const normalAugments = shipDefaultAugmentParse(hull)
 
-      if (!!uniqueAugment) {
+      if (uniqueAugment) {
         return [uniqueAugment, ...normalAugments]
       }
 

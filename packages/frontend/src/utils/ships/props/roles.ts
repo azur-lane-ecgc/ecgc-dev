@@ -4,11 +4,10 @@ const shipData = (await import("@/db/ship_data/ship_data.json"))
 
 export const allRoles = Array.from(
   new Set(
-    [
-      ...Object.values(shipData)
-        .map((ship) => ship.roles)
-        .flat(),
-    ].filter((role) => role !== "Bad" && role !== "Meh"),
+    Object.values(shipData)
+      .map((ship) => ship.roles)
+      .flat()
+      .filter((role) => role !== "Bad" && role !== "Meh"),
   ),
 ).sort()
 

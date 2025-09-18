@@ -37,7 +37,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
   const optionsCount = options.length
 
   useEffect(() => {
-    if (!!reset) {
+    if (reset) {
       setSelectedIndex(initialValue)
     }
   }, [reset, initialValue])

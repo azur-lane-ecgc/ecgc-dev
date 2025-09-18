@@ -4,15 +4,13 @@ const shipData = (await import("@/db/ship_data/ship_data.json"))
 
 import { factionToWikiMap } from "@/utils/factionLink"
 
-const allFactions = [
-  ...Array.from(
-    new Set([
-      ...Object.values(shipData).map(
-        (ship) => factionToWikiMap[ship.faction] ?? "Universal",
-      ),
-    ]),
+const allFactions = Array.from(
+  new Set(
+    Object.values(shipData).map(
+      (ship) => factionToWikiMap[ship.faction] ?? "Universal",
+    ),
   ),
-]
+)
 
 const azurLaneFactions = ["USS", "HMS", "DE", "SN", "FFNF"]
 const crimsonAxisFactions = ["IJN", "KMS", "MNF", "RN"]

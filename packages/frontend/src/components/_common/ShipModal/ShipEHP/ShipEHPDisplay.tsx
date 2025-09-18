@@ -19,7 +19,7 @@ interface ShipEHPDisplayProps {
 export const ShipEHPDisplay: React.FC<ShipEHPDisplayProps> = ({ ship }) => {
   const shipEHP = ehp[ship]
 
-  if (!!!shipEHP) {
+  if (!shipEHP) {
     return false
   }
 

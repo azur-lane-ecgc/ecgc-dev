@@ -20,7 +20,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
     if (activeDropdown !== page.name.toLowerCase()) {
       setIsOpen(false)
     }
-  }, [activeDropdown])
+  }, [activeDropdown, page.name])
 
   const dropdownActive =
     page.isDropdown &&

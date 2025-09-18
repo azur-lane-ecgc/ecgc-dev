@@ -71,7 +71,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
         />
         <MultiSelectCombobox
           title="Faction"
-          options={[...allFactionOptions.map((option) => option.label)]}
+          options={allFactionOptions.map((option) => option.label)}
           initialOptions={initialFilters.faction}
           onSelect={(selectedLabels) =>
             dispatch({
@@ -181,7 +181,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
 
           <CustomToggleButton
             className={`absolute top-[37.5px] left-0 m-1 flex justify-center rounded bg-fuchsia-200 px-1.5 py-1 text-xs ${
-              !!!state.filters.rankingSort.value
+              !state.filters.rankingSort.value
                 ? "pointer-events-none hidden select-none"
                 : ""
             }`}
