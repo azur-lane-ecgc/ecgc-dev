@@ -4,6 +4,8 @@ First off, thank you for considering contributing to this project! Any and all h
 
 This is a monorepo, which means that it contains multiple packages in the `packages` directory. Each package has its own `package.json` file and can be managed independently.
 
+> **Note**: For detailed development guidelines including build commands, code style, and quality assurance practices, see [AGENTS.md](./AGENTS.md).
+
 ## Project Layout
 
 The project is a monorepo with the following structure:
@@ -76,21 +78,59 @@ The project is a monorepo with the following structure:
 
 The `package.json` file contains a number of scripts for common tasks:
 
-- `prepare`: Installs lefthook, a git hooks manager.
-- `update`: Updates all dependencies.
-- `rebuild`: Removes all `node_modules` and other build artifacts and reinstalls dependencies.
-- `reset`: Rebuilds the project and runs the devtools script.
-- `submodule`: Updates the git submodules.
-- `gsheets2img`: Converts google sheets to images.
-- `imgur`: Uploads images to imgur.
-- `gsheets2imgur`: Converts google sheets to images and uploads them to imgur.
-- `compress`: Compresses the build output.
-- `smol-format`: Formats the code with prettier.
-- `format`: Formats the code with prettier.
-- `lint`: Lints the code with oxlint.
-- `devtools`: Runs the devtools script.
-- `build`: Builds the frontend.
-- `compress-build`: Builds the frontend and compresses the output.
-- `dev`: Starts the development server.
-- `cf-dev`: Starts the development server with wrangler.
-- `start`: Starts the production server.
+### Development & Build
+
+- `dev`: Starts the Astro development server at `http://localhost:4321`
+- `build`: Builds the frontend with type checking
+- `compress-build`: Builds the frontend and compresses the output
+- `cf-dev`: Starts the development server with Cloudflare Wrangler
+- `start`: Starts the production server
+
+### Code Quality
+
+- `lint`: Lints the code with oxlint
+- `format`: Formats the code with prettier (includes astro, tailwindcss, and import organization)
+- `smol-format`: Formats specific file types with prettier
+
+### Maintenance
+
+- `prepare`: Installs lefthook git hooks manager
+- `update`: Updates all dependencies
+- `rebuild`: Removes all `node_modules` and build artifacts, then reinstalls
+- `reset`: Full rebuild and runs devtools
+- `submodule`: Updates git submodules
+
+### Data Processing
+
+- `devtools`: Runs all development data processing scripts
+- `compress`: Compresses build output
+- `gsheets2img`: Converts Google Sheets to images
+- `imgur`: Uploads images to Imgur
+- `gsheets2imgur`: Converts Google Sheets to images and uploads to Imgur
+
+## Development Practices
+
+### Code Style
+
+- Follow the formatting rules defined in `.prettierrc.json`
+- Use path aliases (`@/components/*`, `@/utils/*`, etc.) for imports
+- Prefer async/await over promises
+- Use TypeScript strict mode with proper type definitions
+- Keep components and utilities organized by feature/domain
+
+### Quality Assurance
+
+- Pre-commit hooks automatically format staged files
+- Run `bun run lint` before committing
+- Type checking is performed during build via `astro check`
+- Test UI components manually during development
+
+### Workflow
+
+1. Make changes following the established patterns
+2. Run `bun run format` to ensure consistent styling
+3. Test changes in development server (`bun run dev`)
+4. Commit with descriptive messages
+5. Create pull request for review
+
+For detailed coding standards and additional development guidelines, refer to [AGENTS.md](./AGENTS.md).
