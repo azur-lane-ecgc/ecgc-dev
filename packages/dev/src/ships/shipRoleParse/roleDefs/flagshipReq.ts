@@ -1,13 +1,12 @@
 import type { MainFleetRankingProps } from "@/db/types"
 
-const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
-  (await import("@/db/rankings/mainFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, MainFleetRankingProps[]>
-
 const strictHulls: string[] = ["BB", "BC", "BBV", "BM"]
 
-export const flagshipReq = (shipName: string, hullType: string): boolean => {
+export const flagshipReq = (
+  shipName: string,
+  hullType: string,
+  MainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+): boolean => {
   const mainFleetRankings = MainFleetRankingData[shipName]
 
   if (mainFleetRankings) {

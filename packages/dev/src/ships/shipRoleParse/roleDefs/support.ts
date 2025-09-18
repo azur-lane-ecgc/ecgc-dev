@@ -6,21 +6,11 @@ import type {
 
 import { isDecentMainFleet, isDecentVG, isDecentSSFleet } from "../decentShips"
 
-const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@/db/rankings/vgFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, VanguardFleetRankingProps[]>
-
-const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
-  (await import("@/db/rankings/mainFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, MainFleetRankingProps[]>
-
-const SSFleetRankingData: Record<string, SSFleetRankingProps[]> = (await import(
-  "@/db/rankings/ssFleetRankings.json"
-).then((module) => module.default)) as Record<string, SSFleetRankingProps[]>
-
-export const offensiveSupport = (): Set<string> => {
+export const offensiveSupport = (
+  VGFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+  MainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+  SSFleetRankingData: Record<string, SSFleetRankingProps[]>,
+): Set<string> => {
   const offensiveSupport = new Set<string>()
 
   for (const shipName of new Set([
@@ -29,7 +19,7 @@ export const offensiveSupport = (): Set<string> => {
     ...Object.keys(SSFleetRankingData),
   ])) {
     const vgRankings = VGFleetRankingData[shipName]
-    if (vgRankings && isDecentVG(shipName)) {
+    if (vgRankings && isDecentVG(shipName, VGFleetRankingData)) {
       for (const ranking of vgRankings) {
         if (ranking.offensivebuff) {
           offensiveSupport.add(shipName)
@@ -39,7 +29,7 @@ export const offensiveSupport = (): Set<string> => {
     }
 
     const mainRankings = MainFleetRankingData[shipName]
-    if (mainRankings && isDecentMainFleet(shipName)) {
+    if (mainRankings && isDecentMainFleet(shipName, MainFleetRankingData)) {
       for (const ranking of mainRankings) {
         if (ranking.offensivebuff) {
           offensiveSupport.add(shipName)
@@ -49,7 +39,7 @@ export const offensiveSupport = (): Set<string> => {
     }
 
     const ssRankings = SSFleetRankingData[shipName]
-    if (ssRankings && isDecentSSFleet(shipName)) {
+    if (ssRankings && isDecentSSFleet(shipName, SSFleetRankingData)) {
       for (const ranking of ssRankings) {
         if (ranking.offensivebuff) {
           offensiveSupport.add(shipName)
@@ -62,7 +52,10 @@ export const offensiveSupport = (): Set<string> => {
   return offensiveSupport
 }
 
-export const defensiveSupport = (): Set<string> => {
+export const defensiveSupport = (
+  VGFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+  MainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+): Set<string> => {
   const defensiveSupport = new Set<string>()
 
   for (const shipName of new Set([
@@ -70,7 +63,7 @@ export const defensiveSupport = (): Set<string> => {
     ...Object.keys(MainFleetRankingData),
   ])) {
     const vgRankings = VGFleetRankingData[shipName]
-    if (vgRankings && isDecentVG(shipName)) {
+    if (vgRankings && isDecentVG(shipName, VGFleetRankingData)) {
       for (const ranking of vgRankings) {
         if (ranking.defensivebuff) {
           defensiveSupport.add(shipName)
@@ -80,7 +73,7 @@ export const defensiveSupport = (): Set<string> => {
     }
 
     const mainRankings = MainFleetRankingData[shipName]
-    if (mainRankings && isDecentMainFleet(shipName)) {
+    if (mainRankings && isDecentMainFleet(shipName, MainFleetRankingData)) {
       for (const ranking of mainRankings) {
         if (ranking.othermain || ranking.vgsurvival) {
           defensiveSupport.add(shipName)

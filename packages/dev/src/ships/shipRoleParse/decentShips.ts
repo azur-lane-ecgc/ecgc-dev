@@ -4,20 +4,6 @@ import type {
   SSFleetRankingProps,
 } from "@/db/types"
 
-const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@/db/rankings/vgFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, VanguardFleetRankingProps[]>
-
-const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
-  (await import("@/db/rankings/mainFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, MainFleetRankingProps[]>
-
-const SSFleetRankingData: Record<string, SSFleetRankingProps[]> = (await import(
-  "@/db/rankings/ssFleetRankings.json"
-).then((module) => module.default)) as Record<string, SSFleetRankingProps[]>
-
 const priorityOrder: Record<string, number> = {
   SS: 5,
   S: 4,
@@ -35,7 +21,10 @@ const sanitizeString = (str: string | null | undefined): string | null => {
 
 /* Decent helpers (≥ 1) */
 
-export const isDecentVG = (shipName: string): boolean => {
+export const isDecentVG = (
+  shipName: string,
+  VGFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+): boolean => {
   const rankings = VGFleetRankingData[shipName]
   if (!rankings) return false
 
@@ -52,7 +41,10 @@ export const isDecentVG = (shipName: string): boolean => {
   return false
 }
 
-export const isDecentMainFleet = (shipName: string): boolean => {
+export const isDecentMainFleet = (
+  shipName: string,
+  MainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+): boolean => {
   const rankings = MainFleetRankingData[shipName]
   if (!rankings) return false
 
@@ -69,7 +61,10 @@ export const isDecentMainFleet = (shipName: string): boolean => {
   return false
 }
 
-export const isDecentSSFleet = (shipName: string): boolean => {
+export const isDecentSSFleet = (
+  shipName: string,
+  SSFleetRankingData: Record<string, SSFleetRankingProps[]>,
+): boolean => {
   const rankings = SSFleetRankingData[shipName]
   if (!rankings) return false
 
@@ -88,7 +83,10 @@ export const isDecentSSFleet = (shipName: string): boolean => {
 
 /* Good helpers (≥ 3) */
 
-export const isGoodVGFleet = (shipName: string): boolean => {
+export const isGoodVGFleet = (
+  shipName: string,
+  VGFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+): boolean => {
   const rankings = VGFleetRankingData[shipName]
   if (!rankings) return false
 
@@ -105,7 +103,10 @@ export const isGoodVGFleet = (shipName: string): boolean => {
   return false
 }
 
-export const isGoodMainFleet = (shipName: string): boolean => {
+export const isGoodMainFleet = (
+  shipName: string,
+  MainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+): boolean => {
   const rankings = MainFleetRankingData[shipName]
   if (!rankings) return false
 
@@ -122,7 +123,10 @@ export const isGoodMainFleet = (shipName: string): boolean => {
   return false
 }
 
-export const isGoodSSFleet = (shipName: string): boolean => {
+export const isGoodSSFleet = (
+  shipName: string,
+  SSFleetRankingData: Record<string, SSFleetRankingProps[]>,
+): boolean => {
   const rankings = SSFleetRankingData[shipName]
   if (!rankings) return false
 

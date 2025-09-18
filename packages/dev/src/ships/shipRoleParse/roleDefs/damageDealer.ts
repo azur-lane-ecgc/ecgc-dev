@@ -6,20 +6,6 @@ import type {
 
 import { isDecentVG, isDecentMainFleet, isDecentSSFleet } from "../decentShips"
 
-const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@/db/rankings/vgFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, VanguardFleetRankingProps[]>
-
-const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
-  (await import("@/db/rankings/mainFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, MainFleetRankingProps[]>
-
-const SSFleetRankingData: Record<string, SSFleetRankingProps[]> = (await import(
-  "@/db/rankings/ssFleetRankings.json"
-).then((module) => module.default)) as Record<string, SSFleetRankingProps[]>
-
 const isDamageDealer = (
   rankings: { lightdmg: number; mediumdmg: number; heavydmg: number }[],
 ) => {
@@ -32,7 +18,11 @@ const isDamageDealer = (
   })
 }
 
-export const damageDealer = (): Set<string> => {
+export const damageDealer = (
+  VGFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+  MainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+  SSFleetRankingData: Record<string, SSFleetRankingProps[]>,
+): Set<string> => {
   const dmgDealerSet = new Set<string>()
 
   for (const shipName of new Set([
@@ -43,7 +33,7 @@ export const damageDealer = (): Set<string> => {
     // vg fleet dmg dealer
     if (
       VGFleetRankingData[shipName] &&
-      isDecentVG(shipName) &&
+      isDecentVG(shipName, VGFleetRankingData) &&
       isDamageDealer(VGFleetRankingData[shipName])
     ) {
       dmgDealerSet.add(shipName)
@@ -52,7 +42,7 @@ export const damageDealer = (): Set<string> => {
     // main fleet dmg dealer
     else if (
       MainFleetRankingData[shipName] &&
-      isDecentMainFleet(shipName) &&
+      isDecentMainFleet(shipName, MainFleetRankingData) &&
       isDamageDealer(MainFleetRankingData[shipName])
     ) {
       dmgDealerSet.add(shipName)
@@ -61,7 +51,7 @@ export const damageDealer = (): Set<string> => {
     // ss fleet dmg dealer
     else if (
       SSFleetRankingData[shipName] &&
-      isDecentSSFleet(shipName) &&
+      isDecentSSFleet(shipName, SSFleetRankingData) &&
       isDamageDealer(SSFleetRankingData[shipName])
     ) {
       dmgDealerSet.add(shipName)

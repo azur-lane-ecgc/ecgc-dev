@@ -82,7 +82,7 @@ const updateConstantsFile = async (updates: Record<string, string>) => {
   await Bun.write(CHANGELOG_PATH, fileContent)
 }
 
-export const main = async () => {
+export const main = async (): Promise<Record<string, string>> => {
   const updates: Record<string, string> = {}
 
   for (const sheetConfig of SPREADSHEETS) {
@@ -103,9 +103,6 @@ export const main = async () => {
   } else {
     console.log("No valid dates found, skipping update.")
   }
-}
 
-main().catch((err) => {
-  console.error("An error occurred", err)
-  process.exit(1)
-})
+  return updates
+}

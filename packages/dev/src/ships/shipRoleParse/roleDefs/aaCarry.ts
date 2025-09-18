@@ -6,21 +6,11 @@ import type { ShipAAProps } from "@/tools/aa_parsing/types"
 
 import { isDecentMainFleet, isDecentVG } from "../decentShips"
 
-const shipAAData = (await import("@/tools/aa_parsing/shipAA.json").then(
-  (module) => module.default,
-)) as Record<string, ShipAAProps[]>
-
-const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@/db/rankings/vgFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, VanguardFleetRankingProps[]>
-
-const MainFleetRankingData: Record<string, MainFleetRankingProps[]> =
-  (await import("@/db/rankings/mainFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, MainFleetRankingProps[]>
-
-export const aaCarryRole = (): Set<string> => {
+export const aaCarryRole = (
+  shipAAData: Record<string, ShipAAProps[]>,
+  VGFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+  MainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+): Set<string> => {
   const aaSet = new Set<string>()
 
   for (const shipName of Object.keys(shipAAData)) {
@@ -36,7 +26,7 @@ export const aaCarryRole = (): Set<string> => {
     }
 
     const vgRankings = VGFleetRankingData[shipName]
-    if (vgRankings && isDecentVG(shipName)) {
+    if (vgRankings && isDecentVG(shipName, VGFleetRankingData)) {
       for (const ranking of vgRankings) {
         if (ranking.aa && ranking.aa >= 3) {
           aaSet.add(shipName)
@@ -46,7 +36,7 @@ export const aaCarryRole = (): Set<string> => {
     }
 
     const mainRankings = MainFleetRankingData[shipName]
-    if (mainRankings && isDecentMainFleet(shipName)) {
+    if (mainRankings && isDecentMainFleet(shipName, MainFleetRankingData)) {
       for (const ranking of mainRankings) {
         if (ranking.aa && ranking.aa >= 2) {
           aaSet.add(shipName)

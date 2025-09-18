@@ -1,16 +1,10 @@
 import type { ShipEHPProps } from "@/db/types"
 import type { VanguardFleetRankingProps } from "@/db/types"
 
-const shipEHPData = (await import("@/db/ehp/shipEHP.json").then(
-  (module) => module.default,
-)) as Record<string, ShipEHPProps[]>
-
-const VGFleetRankingData: Record<string, VanguardFleetRankingProps[]> =
-  (await import("@/db/rankings/vgFleetRankings.json").then(
-    (module) => module.default,
-  )) as Record<string, VanguardFleetRankingProps[]>
-
-export const superTankRole = (): Set<string> => {
+export const superTankRole = (
+  shipEHPData: Record<string, ShipEHPProps[]>,
+  VGFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+): Set<string> => {
   const tankSet = new Set<string>()
 
   for (const shipName of Object.keys(shipEHPData)) {

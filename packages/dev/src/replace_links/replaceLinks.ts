@@ -45,14 +45,9 @@ const processFile = async (inputFilePath: string, outputFilePath: string) => {
   }
 }
 
-export const main = async () => {
+export const main = async (): Promise<void> => {
   await Promise.all([
     ...pageInfo.map((page) => processFile(page.path, page.path)),
     ...hardCodedPaths.map((path) => processFile(path, path)),
   ])
 }
-
-main().catch((err) => {
-  console.error("An error occurred", err)
-  process.exit(1)
-})

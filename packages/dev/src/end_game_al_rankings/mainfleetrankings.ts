@@ -139,7 +139,7 @@ const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
   return dataDict
 }
 
-export const main = async () => {
+export const main = async (): Promise<Record<string, any[]>> => {
   const auth = await getAuthToken()
   const sheetData = await processSheet(auth)
 
@@ -157,9 +157,6 @@ export const main = async () => {
       OUTPUT_PATH,
     )}`,
   )
-}
 
-main().catch((err) => {
-  console.error("An error occurred", err)
-  process.exit(1)
-})
+  return sortedSheetData
+}

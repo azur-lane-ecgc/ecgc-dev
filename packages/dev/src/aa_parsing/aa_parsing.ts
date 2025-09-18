@@ -46,7 +46,7 @@ const processSheet = async (sheetName: string, auth: any) => {
 
   const values = res.data.values
   if (!values) {
-    return {}
+    return {} as Record<string, any[]>
   }
 
   const dataDict: Record<string, any[]> = {}
@@ -77,7 +77,7 @@ const processSheet = async (sheetName: string, auth: any) => {
   return dataDict
 }
 
-export const main = async () => {
+export const main = async (): Promise<Record<string, any[]>> => {
   if (SHEET_NAMES.length !== OUTPUT_PATHS.length) {
     throw new Error("Number of sheet names must match number of output paths")
   }
@@ -102,10 +102,9 @@ export const main = async () => {
         outputPath,
       )}`,
     )
-  }
-}
 
-main().catch((err) => {
-  console.error("An error occurred", err)
-  process.exit(1)
-})
+    return sheetData
+  }
+
+  return {}
+}

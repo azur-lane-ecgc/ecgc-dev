@@ -101,12 +101,7 @@ const processFiles = async () => {
   console.log(`Table of Contents saved to ${outputFilePath}`)
 }
 
-export const main = async () => {
+export const main = async (): Promise<void> => {
   await initializeJsonFile()
   await processFiles()
 }
-
-main().catch((err) => {
-  console.error("An error occurred", err)
-  process.exit(1)
-})

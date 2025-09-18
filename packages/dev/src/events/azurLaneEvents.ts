@@ -1,7 +1,7 @@
 import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 import { shipNameParse, shipLocationParse } from "../ships"
 
-export const main = async () => {
+export const main = async (): Promise<any[]> => {
   const ships: Record<number, ShipData> = (await import(
     "@/packages/AzurLaneData/data/ships.json"
   ).then((m) => m.default)) as Record<number, ShipData>
@@ -56,9 +56,6 @@ export const main = async () => {
   console.log(
     `Wrote ${sortedLocations.length} unique event locations to ${OUTPUT_PATH}`,
   )
-}
 
-main().catch((err) => {
-  console.error("An error occurred", err)
-  process.exit(1)
-})
+  return sortedLocations
+}

@@ -12,6 +12,13 @@ const augmentData: Record<number, AugmentData> = (await import(
 ).then((module) => module.default)) as Record<number, AugmentData>
 
 import type { ShipData as ProcessedShipData } from "@/db/types"
+import type {
+  ShipEHPProps,
+  MainFleetRankingProps,
+  VanguardFleetRankingProps,
+  SSFleetRankingProps,
+} from "@/db/types"
+import type { ShipAAProps } from "@/tools/aa_parsing/types"
 import {
   isPermanent,
   shipDefaultAugmentParse,
@@ -29,7 +36,13 @@ import {
 
 const OUTPUT_PATH = "../frontend/src/db/ship_data/ship_data.json"
 
-export const main = async () => {
+export const main = async (
+  shipEHPData: Record<string, ShipEHPProps[]>,
+  shipAAData: Record<string, ShipAAProps[]>,
+  mainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+  vgFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+  ssFleetRankingData: Record<string, SSFleetRankingProps[]>,
+): Promise<void> => {
   const processedData: Record<number, ProcessedShipData> = {}
 
   Object.keys(ships).forEach((id) => {
@@ -76,7 +89,16 @@ export const main = async () => {
     const samvaluationData = shipSamvaluationParse(ship)
     const samEval = samvaluationData.evaluation
     const fastLoad = samvaluationData?.preload2 || null
-    const roles = shipRoleParse(ship, fleetType, hullType)
+    const roles = shipRoleParse(
+      ship,
+      fleetType,
+      hullType,
+      shipEHPData,
+      shipAAData,
+      mainFleetRankingData,
+      vgFleetRankingData,
+      ssFleetRankingData,
+    )
 
     processedData[+id] = {
       id: +id,
@@ -105,8 +127,3 @@ export const main = async () => {
 
   console.log(`Ship data has been written to ${OUTPUT_PATH}`)
 }
-
-main().catch((err) => {
-  console.error("An error occurred", err)
-  process.exit(1)
-})
