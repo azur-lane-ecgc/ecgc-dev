@@ -1,19 +1,11 @@
 {
   "pre-commit": {
-    "parallel": false,
+    "parallel": true,
     "commands": {
-      "lint": {
-        "glob": [
-          "packages/dev/src/**/*.{js,jsx,ts,tsx,json}",
-          "packages/frontend/src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
-        ],
-        "run": "bunx --bun oxlint --fix {staged_files}",
-        "stage_fixed": true
-      },
       "prettier": {
         "glob": [
-          "packages/dev/src/**/*.{js,jsx,ts,tsx,json}",
-          "packages/frontend/src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
+          "dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
+          "src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
         ],
         "run": "bunx --bun prettier --write {staged_files}",
         "stage_fixed": true

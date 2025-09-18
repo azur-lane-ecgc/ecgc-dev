@@ -21,7 +21,7 @@ export const CustomToggleButton: React.FC<CustomToggleButtonProps> = ({
   const optionsCount = options.length
 
   useEffect(() => {
-    if (reset) {
+    if (!!reset) {
       setSelectedIndex(initialValue)
     }
   }, [reset, initialValue])

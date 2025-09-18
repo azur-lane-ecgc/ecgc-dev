@@ -10,7 +10,7 @@ interface MarkProps {
 export const Mark: React.FC<MarkProps> = ({ mark, className = "" }) => (
   <div
     className={`${className} ${
-      mark
+      !!mark
         ? "absolute top-0 left-1 !text-sm sm:text-base md:!text-lg"
         : "block !text-3xl"
     } font-bold !text-black`}

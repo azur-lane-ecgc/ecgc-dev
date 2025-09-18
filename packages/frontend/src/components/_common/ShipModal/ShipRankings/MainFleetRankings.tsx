@@ -21,7 +21,7 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
 
   const rankings = mainFleetRankings[ship]
 
-  if (!rankings) {
+  if (!!!rankings) {
     return <p>This ship doesn't have rankings currently. Come back later!</p>
   }
 

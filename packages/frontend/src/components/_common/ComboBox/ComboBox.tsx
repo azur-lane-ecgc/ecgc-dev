@@ -52,7 +52,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
     }
-  }, [initialOption, onSelect])
+  }, [])
 
   useEffect(() => {
     if (showOptions) {
@@ -69,11 +69,11 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   }, [showOptions])
 
   useEffect(() => {
-    if (reset) {
+    if (!!reset) {
       setSelected(initialOption || null)
       setInput("")
     }
-  }, [reset, initialOption])
+  }, [reset])
 
   useEffect(() => {
     if (disabled) {
@@ -81,7 +81,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       setInput("")
       onSelect(null)
     }
-  }, [disabled, initialOption, onSelect])
+  }, [disabled])
 
   const filteredOptions = (() => {
     const baseOptions = input
