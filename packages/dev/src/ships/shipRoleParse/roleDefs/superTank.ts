@@ -22,7 +22,7 @@ export const superTankRole = (
     }
 
     const rankings = VGFleetRankingData[shipName]
-    if (!!rankings) {
+    if (rankings) {
       for (const ranking of rankings) {
         if (ranking.selfsurvival && ranking.selfsurvival >= 5) {
           tankSet.add(shipName)

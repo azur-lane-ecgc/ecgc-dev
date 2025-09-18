@@ -71,7 +71,7 @@ const parseOtherLocation = (name: string, id: number): shipLocation | null => {
     locName = OTHER_LOCATIONS[id]
   }
 
-  if (!!!locName) {
+  if (!locName) {
     return null
   }
 
