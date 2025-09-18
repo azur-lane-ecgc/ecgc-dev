@@ -1,7 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["unicorn", "typescript", "oxc"],
-  "categories": {},
   "rules": {
     "for-direction": "warn",
     "no-async-promise-executor": "warn",
@@ -133,9 +132,7 @@
   "env": {
     "builtin": true
   },
-  "globals": {},
   "ignorePatterns": [
-    "packages/frontend/dist/**",
     "packages/gsheets2img/**",
     "packages/AzurLaneData/**",
     "**/node_modules/**",
