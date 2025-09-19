@@ -1,5 +1,5 @@
 {
-  "name": "ecgc-dev-monorepo",
+  "name": "ecgc-dev",
   "private": true,
   "workspaces": [
     "packages/dev",

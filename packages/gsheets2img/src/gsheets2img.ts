@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path"
-import tmp from "tmp"
+import os from "os"
+import crypto from "crypto"
 import AdmZip from "adm-zip"
 import { firefox } from "playwright"
 
@@ -17,32 +18,34 @@ const excludeSheets = [
 ]
 const resolvedOutputDir = path.resolve(outputDir)
 
-async function download(sheetId: string): Promise<string> {
-  const tempDir = tmp.dirSync({ prefix: "gs2imgz-" })
-  const zipPath = path.join(tempDir.name, `${sheetId}.zip`)
+const download = async (sheetId: string): Promise<string> => {
+  const tempDirName = path.join(os.tmpdir(), `gs2imgz-${crypto.randomUUID()}`)
+  await fs.promises.mkdir(tempDirName, { recursive: true })
+  const zipPath = path.join(tempDirName, `${sheetId}.zip`)
   const url = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=zip`
   const response = await fetch(url)
   if (!response.ok) {
     throw new Error(`Failed to download: ${response.statusText}`)
   }
   const buffer = await response.arrayBuffer()
-  fs.writeFileSync(zipPath, Buffer.from(buffer))
+  await Bun.write(zipPath, Buffer.from(buffer))
   return zipPath
 }
 
-function unzip(zipPath: string): string {
-  const tempDir = tmp.dirSync({ prefix: "gs2imgx-" })
+const unzip = async (zipPath: string): Promise<string> => {
+  const tempDirName = path.join(os.tmpdir(), `gs2imgx-${crypto.randomUUID()}`)
+  await fs.promises.mkdir(tempDirName, { recursive: true })
   const zip = new AdmZip(zipPath)
-  zip.extractAllTo(tempDir.name, true)
-  fs.rmSync(path.dirname(zipPath), { recursive: true, force: true })
-  return tempDir.name
+  zip.extractAllTo(tempDirName, true)
+  await fs.promises.rm(path.dirname(zipPath), { recursive: true, force: true })
+  return tempDirName
 }
 
-async function screenshot(
+const screenshot = async (
   htmlPath: string,
   pngPath: string,
   browser: any,
-): Promise<void> {
+): Promise<void> => {
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
     deviceScaleFactor: 2,
@@ -98,16 +101,16 @@ async function screenshot(
   await page.close()
 }
 
-async function processSheets(
+const processSheets = async (
   sheetNames: string[],
   extractedDir: string,
   browser: any,
-): Promise<void> {
+): Promise<void> => {
   for (const sheetName of sheetNames) {
     const fileName = sheetName.replace(/ /g, "_") + ".jpeg"
     const htmlPath = path.join(extractedDir, `${sheetName}.html`)
     const pngPath = path.join(resolvedOutputDir, fileName)
-    if (!fs.existsSync(htmlPath)) {
+    if (!(await Bun.file(htmlPath).exists())) {
       console.log(`Skipping ${sheetName}: HTML file not found.`)
       continue
     }
@@ -115,12 +118,11 @@ async function processSheets(
   }
 }
 
-export async function main(): Promise<void> {
-  fs.mkdirSync(resolvedOutputDir, { recursive: true })
+export const main = async (): Promise<void> => {
+  await fs.promises.mkdir(resolvedOutputDir, { recursive: true })
   const zipPath = await download(sheetId)
-  const extractedDir = unzip(zipPath)
-  const files = fs
-    .readdirSync(extractedDir)
+  const extractedDir = await unzip(zipPath)
+  const files = (await fs.promises.readdir(extractedDir))
     .filter((f) => f.endsWith(".html"))
     .map((f) => path.join(extractedDir, f))
   const sheetNames = files
@@ -140,7 +142,7 @@ export async function main(): Promise<void> {
     await browser.close()
   }
 
-  fs.rmSync(extractedDir, { recursive: true, force: true })
+  await fs.promises.rm(extractedDir, { recursive: true, force: true })
   console.log("Finished uploading images.")
 }
 

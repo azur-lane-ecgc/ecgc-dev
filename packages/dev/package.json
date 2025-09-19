@@ -2,6 +2,8 @@
   "name": "dev",
   "module": "main.ts",
   "type": "module",
+  "description": "AzurLaneData parsing scripts",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "compress": "bun src/compress/compress.ts",
@@ -16,7 +18,6 @@
   },
   "dependencies": {
     "googleapis": "^160.0.0",
-    "jszip": "^3.10.1",
     "open": "^10.2.0"
   }
 }

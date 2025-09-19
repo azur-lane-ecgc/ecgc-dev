@@ -1,7 +1,7 @@
 import { main as gsheetsMain } from "./src/gsheets2img"
 import { imgur as imgurMain } from "./src/imgur"
 
-async function main() {
+const main = async () => {
   const args = process.argv.slice(2)
   const runGsheets = args.includes("-g") || args.includes("-gi")
   const runImgur = args.includes("-i") || args.includes("-gi")
