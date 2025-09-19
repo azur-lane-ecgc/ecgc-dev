@@ -1,0 +1,1330 @@
+---
+import { HR } from "@/components/_common/HR"
+import {
+  ItemCell,
+  ItemContainer,
+  ShipCell,
+} from "@/components/_common/ItemCell"
+import WikiLink from "@/components/_common/WikiLink.astro"
+---
+
+<h2 id="introduction">Introduction</h2>
+<HR />
+<p>
+  Goes over all the permanent shops in Azur Lane, and what to obtain from them!
+</p>
+<br />
+
+<div class="h2" id="notes">Notes:</div>
+<HR />
+<ul>
+  <li>
+    <p>
+      For the full shop list, see
+      <WikiLink page="Shops#Core Exchange" title="Core Data"
+        >this wiki page</WikiLink
+      >.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b
+        >To view Resource Income, see the
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="/common_resource"
+          title="Common Resource Guide">Common Resource Guide</a
+        >.</b
+      >
+    </p>
+  </li>
+  <li>
+    <p>All times listed are in Azur Lane EN Server time (UTC-7).</p>
+  </li>
+  <li>
+    <p>
+      Never refresh a shop using
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/gem.png"
+        width="25px"
+        alt="Gems"
+      />. It is not worth it.
+    </p>
+  </li>
+  <li>
+    <p>To view the wiki page for a specific item, click on its image.</p>
+  </li>
+  <li>
+    <p>
+      <b
+        >If you already have enough of an item, feel free to skip it in
+        subsequent months</b
+      >. There is no point in buying extra items you will never use.
+    </p>
+  </li>
+  <li>
+    <p><b>Key:</b></p>
+    <ul>
+      <li>
+        <p>
+          <b style="color: lightcoral">Red Outline:</b> - Highly recommended purchase,
+          very general use.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b style="color: palegreen">Green Outline:</b> - Really good in specific
+          scenarios; niche; only good on a few ships.
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      Items are ordered from left to right, top to bottom. Depending on your
+      situation, items marked with a
+      <b style="color: palegreen">Green</b> outline could be
+      <u>higher or lower</u> priority than listed.
+    </p>
+  </li>
+  <li>
+    <h5>The tables are scrollable horizontally!!</h5>
+  </li>
+  <li>
+    <h5>You can click images to open in a new tab!!</h5>
+  </li>
+</ul>
+<br />
+
+<h2 id="supply">Supply</h2>
+<HR />
+
+<h3 id="coin">
+  <WikiLink page="Shops#General Shop" title="Munitions Shop">Shop</WikiLink>
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/coin.png"
+        width="25px"
+        alt="Coin"
+      />
+    </p>
+  </li>
+  <li>
+    <p>
+      Reset: Daily at <b>00:00</b>, <b>12:00</b>, <b>18:00</b> (UTC-7).
+    </p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p>
+      Coins <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/coin.png"
+        width="25px"
+        alt="Coin"
+      /> are in high demand, so don't worry about buying anything from here if you
+      don't have spare coins. Ideally, check for discounts and buy good items on
+      discount.
+    </p>
+  </li><li>
+    <p>
+      <i>
+        <b
+          >Never buy items in this shop using
+          <img
+            loading="lazy"
+            class="inline-block"
+            src="/images/materials/gem.png"
+            width="25px"
+            alt="Gems"
+          />. It is not worth it, regardless of how low the price is.</b
+        >
+      </i>
+    </p>
+  </li>
+</ul>
+
+<ItemContainer>
+  <ItemCell
+    item="Wisdom Cube"
+    wikiLink="Construction"
+    itemImg="materials/wisdom_cube.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="Tech Boxes"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/t4_box.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Eagle Union > Rest<br />New Players Only."
+  />
+
+  <ItemCell
+    item="Iris Tech Box"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/iris_tech_box.png"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="For <a href='https://azurlane.koumakan.jp/wiki/Gear_Lab' target='_blank' rel='noopener noreferrer' title='Gear Lab'>Gear Lab</a> prerequisites."
+  />
+
+  <ItemCell
+    item="T3 Skill Books"
+    wikiLink="Living_Area#Tactical_Class"
+    itemImg="materials/unknown_t3_book.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+
+  <ItemCell
+    item="T3 Plates"
+    wikiLink="Equipment#Upgrade_(Enhance)"
+    itemImg="materials/unknown_t3_plate.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="General > Main Gun / Aircraft."
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="Full Course"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/full_course.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+
+  <ItemCell
+    item="Royal Gourmet"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/royal_gourmet.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+
+  <ItemCell
+    item="Naval Curry"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/naval_curry.png"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+</ItemContainer>
+<br />
+
+<h3 id="merit">
+  <WikiLink page="Shops#Merit Shop" title="Merit Shop">Merit Shop</WikiLink>
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/merit.png"
+        width="25px"
+        alt="Merit"
+      />
+    </p>
+  </li>
+  <li>
+    <p>Reset: Daily at <b>00:00</b> (UTC-7).</p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p>
+      <i
+        >Some ships in this shop could be necessary for
+        <WikiLink page="Fleet Technology" title="Fleet Technology"
+          >Fleet Technology</WikiLink
+        >
+        purposes, see the
+        <a href="/research#tech_points" target="_self" rel="noopener noreferrer"
+          >Research Guide</a
+        >
+        for more details.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Do NOT buy duplicate ship copies here; it is more expensive than buying
+        a Prototype Bulin MKII (Gold Bulin).</i
+      >
+    </p>
+  </li>
+</ul>
+
+<ItemContainer>
+  <ItemCell
+    item="Prototype Bulin MKII"
+    wikiLink="Dockyard#Limit_Break"
+    itemImg="materials/gold_bulin.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+
+  <ItemCell
+    item="Wisdom Cube"
+    wikiLink="Construction"
+    itemImg="materials/wisdom_cube.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ShipCell
+    ship="Eldridge"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if you have her Retrofit item."
+  />
+
+  <ItemCell
+    item="Tech Boxes"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/t4_box.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Eagle Union > Rest<br />New Players Only."
+  />
+
+  <ItemCell
+    item="Iris Orthodoxy Gear Development Pack"
+    altItemName="Iris Tech Box"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/iris_tech_box.png"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="For <a href='https://azurlane.koumakan.jp/wiki/Gear_Lab' target='_blank' rel='noopener noreferrer' title='Gear Lab'>Gear Lab</a> prerequisites."
+  />
+
+  <ItemCell
+    item="Universal Bulin"
+    wikiLink="Dockyard#Limit_Break"
+    itemImg="materials/purple_bulin.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if needed."
+  />
+</ItemContainer>
+<br />
+
+<h3 id="guild">
+  <WikiLink page="Shops#Guild Shop" title="Guild Shop">Guild Shop</WikiLink>
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/guild_token.png"
+        width="25px"
+        alt="Guild Coin"
+      />
+    </p>
+  </li>
+  <li>
+    <p>
+      Reset: Monday and Friday at <b>00:00</b> (UTC-7). In addition, you get <b
+        >1</b
+      > manual refresh for 50
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/guild_token.png"
+        width="25px"
+        alt="Guild Coin"
+      />
+      between resets.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p>
+      <i
+        >Some ships in this shop could be necessary for
+        <WikiLink page="Fleet Technology" title="Fleet Technology"
+          >Fleet Technology</WikiLink
+        >
+        purposes, see the
+        <a href="/research#tech_points" target="_self" rel="noopener noreferrer"
+          >Research Guide</a
+        >
+        for more details.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <b
+          >Buying duplicate ship copies here for
+          <WikiLink page="Dockyard#Limit Break">Limit Breaks</WikiLink>
+          is fine!</b
+        >
+      </i>
+    </p>
+  </li>
+</ul>
+
+<ItemContainer>
+  <ShipCell
+    ship="Unicorn"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+    descriptionNote="VERY IMPORTANT.<br/>RETROFIT ASAP!"
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ShipCell
+    ship="Helena"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+  <ShipCell
+    ship="Portland"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+  <ShipCell
+    ship="Pennsylvania"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if lacking BBs."
+  />
+  <ItemCell
+    item="Tech Boxes"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/t4_box.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Eagle Union > Rest<br />New Players Only."
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="T4 Plates"
+    wikiLink="Equipment#Upgrade_(Enhance)"
+    itemImg="materials/unknown_t4_plate.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+    descriptionNote="Main Gun / Aircraft preferred."
+  />
+  <ShipCell
+    ship="Tai Yuan"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if lacking DDs."
+  />
+  <ItemCell
+    item="Cognitive Chips"
+    wikiLink="Dockyard#Cognitive_Awakening"
+    itemImg="materials/cognitive_chip.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+  <ItemCell
+    item="T3 Skill Books"
+    wikiLink="Living_Area#Tactical_Class"
+    itemImg="materials/unknown_t3_book.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="Offense > Support"
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="T3 Retrofit Blueprint"
+    wikiLink="Dockyard#Retrofit"
+    itemImg="materials/unknown_t3_bp.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="If needed."
+  />
+  <ItemCell
+    item="T3 Plates"
+    wikiLink="Equipment#Upgrade_(Enhance)"
+    itemImg="materials/unknown_t3_plate.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="General > Main Gun / Aircraft."
+  />
+  <ItemCell
+    item="T2 Retrofit Blueprint"
+    wikiLink="Dockyard#Retrofit"
+    itemImg="materials/unknown_t2_bp.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="If needed."
+  />
+  <ItemCell
+    item="T2 Skill Books"
+    wikiLink="Living_Area#Tactical_Class"
+    itemImg="materials/unknown_t2_book.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="Offense > Support"
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="Full Course"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/full_course.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+  <ItemCell
+    item="Royal Gourmet"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/royal_gourmet.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+</ItemContainer>
+<br />
+
+<h3 id="other">META & Prize Shops</h3>
+<p>
+  Everything in these shops is collection only. Just buy what you want / need
+  from them.
+</p>
+<br />
+
+<h2 id="monthly">Monthly</h2>
+<HR />
+
+<h3 id="core_data">
+  <WikiLink page="Shops#Core Exchange" title="Core Data Shop"
+    >Core Data Shop</WikiLink
+  >
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/core_data.png"
+        width="25px"
+        alt="Core Data"
+      />
+    </p>
+  </li>
+  <li>
+    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).</p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href="/images/equip_misc/Core_Data_Priority.jpeg"
+  title="Core Data Shop"
+>
+  <img
+    class="equip_misc_img"
+    src="/images/equip_misc/Core_Data_Priority.jpeg"
+  />
+</a>
+<br />
+
+<h3 id="medal">
+  <WikiLink page="Shops#Medal Shop" title="Medal Shop">Medal Shop</WikiLink>
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/medal.png"
+        width="25px"
+        alt="Medal of Honor"
+      />
+    </p>
+  </li>
+  <li>
+    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).</p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p class="fs-5">
+      <i>
+        <b
+          ><WikiLink page="Requisition">Requisition</WikiLink>
+          is NOT worth it!</b
+        >
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Some ships in this shop could be necessary for
+        <WikiLink page="Fleet Technology" title="Fleet Technology"
+          >Fleet Technology</WikiLink
+        >
+        purposes, see the
+        <a href="/research#tech_points" target="_self" rel="noopener noreferrer"
+          >Research Guide</a
+        >
+        for more details.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >For information regarding ship viability, see the
+        <a href="/fleetbuilding" rel="noopener noreferrer" target="_self"
+          >Fleetbuilding Guide</a
+        >
+        or the
+        <a
+          href="https://slaimuda.github.io/ectl/#/home"
+          rel="noopener noreferrer"
+          target="_blank">English Community Tier List</a
+        >.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <b
+          >Buying duplicate ship copies here for
+          <WikiLink page="Dockyard#Limit Break">Limit Breaks</WikiLink>
+          is fine!</b
+        >
+      </i>
+    </p>
+  </li>
+</ul>
+
+<ItemContainer>
+  <ItemCell
+    item="Prototype Bulin MKII"
+    wikiLink="Dockyard#Limit_Break"
+    itemImg="materials/gold_bulin.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+  />
+  <ShipCell
+    ship="Enterprise"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote='If not Max <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Break</a>.'
+  />
+  <ShipCell
+    ship="Hood"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote='If not Max <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Break</a>.'
+  />
+  <ShipCell
+    ship="Sirius"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote='If not Max <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Break</a>.'
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ShipCell
+    ship="Bismarck"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote='For <a href="https://azurlane.koumakan.jp/wiki/Fleet_Technology" target="_blank" rel="noopener noreferrer" title="Fleet Technology">Fleet Technology</a> ONLY.'
+  />
+  <ShipCell
+    ship="Tirpitz"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote='For <a href="https://azurlane.koumakan.jp/wiki/Fleet_Technology" target="_blank" rel="noopener noreferrer" title="Fleet Technology">Fleet Technology</a> ONLY.'
+  />
+  <ShipCell
+    ship="Kazagumo"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote='If not Max <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Break</a>.'
+  />
+  <ItemCell
+    item="Universal Bulin"
+    wikiLink="Dockyard#Limit_Break"
+    itemImg="materials/purple_bulin.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if needed."
+  />
+  <ItemCell
+    item="Iris Orthodoxy Gear Development Pack"
+    altItemName="Iris Tech Box"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/iris_tech_box.png"
+    rarity={2}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote='For <a href="https://azurlane.koumakan.jp/wiki/Gear_Lab" target="_blank" rel="noopener noreferrer" title="Gear Lab">Gear Lab</a> prerequisites.'
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="T3 Skill Books"
+    wikiLink="Living_Area#Tactical_Class"
+    itemImg="materials/unknown_t3_book.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="Offense > Support > Defense"
+  />
+  <ItemCell
+    item="DR6 Blueprints"
+    wikiLink="Research"
+    itemImg="materials/pr6_bp.png"
+    rarity={5}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+  <ItemCell
+    item="PR6 Blueprints"
+    wikiLink="Research"
+    itemImg="materials/pr6_bp.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+  <ItemCell
+    item="Specialized Core"
+    wikiLink="Shops#Specialized_Core_Collection_Plan"
+    itemImg="materials/specialized_core.png"
+    rarity={5}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if needed."
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="T3 Plates"
+    wikiLink="Equipment#Upgrade_(Enhance)"
+    itemImg="materials/unknown_t3_plate.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="General > Main Gun / Aircraft."
+  />
+  <ItemCell
+    item="Full Course"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/full_course.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+  <ItemCell
+    item="Royal Gourmet"
+    wikiLink="Living_Area#Refilling_Supplies"
+    itemImg="materials/royal_gourmet.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+  />
+</ItemContainer>
+<br />
+
+<h3 id="protocore">
+  <WikiLink page="Shops#Prototype Shop" title="Prototype Shop"
+    >Prototype Shop</WikiLink
+  >
+</h3>
+
+<div class="mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/protocore.png"
+        width="25px"
+        alt="Prototype Core"
+      />
+    </p>
+  </li>
+  <li>
+    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).</p>
+  </li>
+</ul>
+<br />
+
+<h4>Priority:</h4>
+<p>
+  <i>
+    See also: <a href="/research#protocore_spending">Protocore Spending</a>
+  </i>
+</p>
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href="/images/equip_misc/Prototype_Core_Priority.jpeg"
+  title="Prototype Core Priority"
+>
+  <img
+    class="equip_misc_img"
+    src="/images/equip_misc/Prototype_Core_Priority.jpeg"
+  />
+</a>
+<br />
+
+<h3 id="voucher">
+  <WikiLink page="Operation Siren#Exchange Shop" title="Exchange Shop"
+    >Operation Siren Exchange Shop</WikiLink
+  >
+</h3>
+
+<div class="row mb-2"></div>
+
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/opsi_voucher.png"
+        width="25px"
+        alt="OpSi Voucher"
+      />
+    </p>
+  </li>
+  <li>
+    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).</p>
+  </li>
+</ul>
+<br />
+
+<!-- Shop Priority -->
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p>
+      <i>If you have extra vouchers, you can buy items not listed below.</i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >It costs 13,060
+        <img
+          loading="lazy"
+          class="inline-block"
+          src="/images/materials/opsi_voucher.png"
+          width="25px"
+          alt="OpSi Voucher"
+        />
+        to clear the entire shop.</i
+      >
+    </p>
+  </li>
+</ul>
+
+<ItemContainer>
+  <ItemCell
+    item="R6 Siren Coordinate Logger"
+    wikiLink="Operation_Siren#Abyssal"
+    itemImg="materials/opsi_r6_abyssal_logger.png"
+    rarity={5}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="Only if you can clear this zone."
+  />
+  <ItemCell
+    item="R5 Siren Coordinate Logger"
+    wikiLink="Operation_Siren#Abyssal"
+    itemImg="materials/opsi_r5_abyssal_logger.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="Only if you can clear this zone."
+  />
+  <ItemCell
+    item="Coordinate Logger"
+    wikiLink="Operation_Siren#Hidden"
+    itemImg="materials/opsi_hidden_logger.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="Only if you can clear this zone."
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="T4 Skill Books"
+    wikiLink="Living_Area#Tactical_Class"
+    itemImg="materials/unknown_t4_book.png"
+    rarity={5}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="Offense > Support > Defense"
+  />
+  <ItemCell
+    item="Crystal Fragments"
+    wikiLink="Shops#META_Shop"
+    itemImg="materials/crystal_fragment.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote="Has limited usage currently."
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="Classified Files Mission Logger"
+    wikiLink="Operation_Siren#File_Zones"
+    itemImg="materials/opsi_classified_logger.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="One-Time purchase per Logger."
+  />
+</ItemContainer>
+<br />
+
+<h5>Quality of Life ONLY:</h5>
+
+<ItemContainer>
+  <ItemCell
+    item="Operation Siren Data Logger"
+    wikiLink="Operation_Siren#Data_Loggers"
+    itemImg="materials/opsi_data_logger.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote={`5000 <img loading="lazy" class="inline-block" src="/images/materials/oil.png" width="25px" alt="Oil" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <WikiLink page="Operation Siren#Explorable" title="Explorable Zone">Explorable Zones</WikiLink>.`}
+  />
+  <ItemCell
+    item="Hidden Zone Data Logger"
+    wikiLink="Operation_Siren#Data_Loggers"
+    itemImg="materials/opsi_hidden_zone_data_logger.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote={`1000 <img loading="lazy" class="inline-block" src="/images/materials/opsi_voucher.png" width="25px" alt="OpSi Voucher" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <WikiLink page="Operation Siren#Hidden" title="Hidden Zone">Hidden Zones</WikiLink>.`}
+  />
+</ItemContainer>
+<br />
+
+<h2 id="event">Event</h2>
+<HR />
+
+<h3 id="major_event">
+  <WikiLink page="Shops#Event Shop" title="Major Event Shop"
+    >Major Event Shop</WikiLink
+  >
+</h3>
+
+<!-- Buffer -->
+<div class="row mb-2"></div>
+
+<!-- Shop Information -->
+<h4>Information:</h4>
+<ul>
+  <li>
+    <p>
+      Currency:
+      <img
+        loading="lazy"
+        class="inline-block"
+        src="/images/materials/InvolutedSealPt.png"
+        width="25px"
+        alt="Event Currency"
+        title="Event Currency"
+      />
+    </p>
+  </li>
+  <li>
+    <p>Shop is removed <b>1 Week after Event ends</b>.</p>
+  </li>
+</ul>
+<br />
+
+<!-- Shop Priority -->
+<h4>Priority:</h4>
+<ul>
+  <li>
+    <p>
+      <i
+        >Only get ONE (1) copy of the Event Ship. You can use bulins instead of
+        duplicates.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Most Events take <b>~100,000</b>
+        <WikiLink page="Shops#Event_Shop" title="Event Currency">
+          <img
+            loading="lazy"
+            class="inline-block"
+            src="/images/materials/InvolutedSealPt.png"
+            width="25px"
+            alt="Event Currency"
+          />
+        </WikiLink>
+        to clear out the entire shop (assuming 1 copy of the Event Ship).</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Equipment costs can differ based on the rarity of the gear, and whether
+        the gear is in print or equipment form.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p><i>T4 Eagle Union Tech Boxes &gt; All other T4 Tech Boxes.</i></p>
+  </li>
+</ul>
+
+<ItemContainer>
+  <ItemCell
+    item="Event Ship"
+    wikiLink="Building#Time_Limited_Construction"
+    itemImg="materials/UnknownShip.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+    descriptionNote={`<p> 8000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> (1 Copy)</p>`}
+  />
+
+  <ItemCell
+    item="Equipment"
+    wikiLink="Equipment"
+    itemImg="materials/unknown_gear_bp.png"
+    rarity={5}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="high-priority"
+    descriptionNote={`<p> 10000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+  />
+
+  <ItemCell
+    item="Tech Boxes"
+    wikiLink="Equipment#Nation-specific_boxes"
+    itemImg="materials/t4_box.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote={`<p> 4800 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> USS > Rest<br />New Players Only.</p>`}
+  />
+
+  <ItemCell
+    item="Augment Module Cores"
+    wikiLink="Augmentation"
+    itemImg="materials/augment_module_core.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote={`<p> 1500 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> Only if needed.</p>`}
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="Cognitive Chips"
+    wikiLink="Dockyard#Cognitive_Awakening"
+    itemImg="materials/cognitive_chip.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote={`<p>3000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+  />
+
+  <ItemCell
+    item="Cognitive Arrays"
+    wikiLink="Dockyard#Cognitive_Awakening"
+    itemImg="materials/cognitive_array.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote={`<p>5000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+  />
+
+  <ItemCell
+    item="DR6 Blueprints"
+    wikiLink="Research"
+    itemImg="materials/pr6_bp.png"
+    rarity={5}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote={`<p>10000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+  />
+
+  <ItemCell
+    item="PR6 Blueprints"
+    wikiLink="Research"
+    itemImg="materials/pr6_bp.png"
+    rarity={4}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote={`<p>15000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+  />
+</ItemContainer>
+
+<ItemContainer>
+  <ItemCell
+    item="T3 Plates"
+    wikiLink="Equipment#Upgrade_(Enhance)"
+    itemImg="materials/unknown_t3_plate.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /><br />General > Main Gun / Aircraft.</p>`}
+  />
+
+  <ItemCell
+    item="Coins"
+    wikiLink="Shops"
+    itemImg="materials/coin.png"
+    rarity={1}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote={`<p>2500 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+  />
+
+  <ItemCell
+    item="Oil"
+    wikiLink="Oil_Cost"
+    itemImg="materials/oil.png"
+    rarity={1}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote={`<p>2250 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+  />
+
+  <ItemCell
+    item="Augment Enhance Stones"
+    wikiLink="Augmentation"
+    itemImg="materials/t2_augment_enhance.png"
+    rarity={3}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /><br />Only if needed.</p>`}
+  />
+</ItemContainer>
+<br />

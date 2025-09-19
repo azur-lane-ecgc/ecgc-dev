@@ -1,0 +1,35 @@
+---
+import WikiLink from "@/components/_common/WikiLink.astro"
+
+import { allFactionData } from "./factionTech"
+
+interface Props {
+  faction: string
+}
+
+const { faction } = Astro.props
+
+const factionData = allFactionData.find(
+  (data) => data.faction.toLowerCase() === faction.toLowerCase(),
+)
+---
+
+{
+  factionData ? (
+    <ul>
+      {factionData.thresholds
+        .sort((a, b) => a.techPoints - b.techPoints)
+        .map(({ ship, techPoints, note }) => (
+          <li>
+            <p class="!italic">
+              <WikiLink page={ship}>{ship}</WikiLink>
+              {` - ${techPoints}`}
+              {note && ` (${note})`}
+            </p>
+          </li>
+        ))}
+    </ul>
+  ) : (
+    <p>Faction {faction} has no point thresholds currently.</p>
+  )
+}

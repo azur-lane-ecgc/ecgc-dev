@@ -1,0 +1,236 @@
+---
+import { ItemCell } from "@/components/_common/ItemCell"
+import { ItemTable } from "@/components/_common/ItemTable"
+import WikiLink from "@/components/_common/WikiLink.astro"
+---
+
+<style>
+  .hull-heading {
+    color: rgba(127, 255, 212, 0.836);
+    font-weight: bold;
+  }
+</style>
+
+<p>
+  <i
+    >See also:
+    <WikiLink
+      page="Augmentation#Equipment (Augment Modules)"
+      title="Augmentation">Equipment (Augment Modules)</WikiLink
+    ></i
+  >
+</p>
+
+<p class="h5 text-light">
+  For Ships with a Unique Augment Module, use their Unique Augment Module on
+  them!
+</p>
+<ul>
+  <li>
+    <p>
+      <i
+        >On
+        <b><WikiLink page="U-557">U-557</WikiLink></b>
+        and
+        <b><WikiLink page="Minneapolis">Minneapolis</WikiLink></b>, their Unique
+        Augments are sidegrades to Universal Augments, so there is no need to
+        craft them.</i
+      >
+    </p>
+  </li>
+</ul>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Hull Type", colWidth: "10%" },
+    { colName: "Rarity", colWidth: "15%" },
+    { colName: "Description", limiter: true },
+  ]}
+>
+  <tr>
+    <td class="hull-heading" rowspan="2">DD / DDG</td>
+    <td>
+      <ItemCell
+        item="Dual Swords"
+        wikiLink="Dual Swords"
+        itemImg="augments/dual_swords.png"
+        rarity={3}
+      />
+    </td>
+    <td>
+      <p>
+        Best general-use DD augment; used on all DDs that aren't heavily reliant
+        on Torpedo Damage.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ItemCell
+        item="Hammer"
+        wikiLink="Hammer"
+        itemImg="augments/hammer.png"
+        rarity={3}
+      />
+    </td>
+    <td><p>Best on DDs who are heavily reliant on Torpedo damage.</p></td>
+  </tr>
+  <tr>
+    <td class="hull-heading" rowspan="2">CL</td>
+    <td>
+      <ItemCell
+        item="Crossbow"
+        wikiLink="https://azurlane.koumakan.jp/wiki/Crossbow"
+        itemImg="augments/crossbow.png"
+        rarity={3}
+      />
+    </td>
+    <td>
+      <p>
+        Offensive-oriented CL augment. Not much difference between <WikiLink
+          page="Crossbow">Crossbow</WikiLink
+        >
+        and
+        <WikiLink page="Sword">Sword</WikiLink>
+        in practice.
+      </p>
+    </td>
+    <tr>
+      <td>
+        <ItemCell
+          item="Sword"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Sword"
+          itemImg="augments/sword.png"
+          rarity={3}
+        />
+      </td>
+      <td>
+        <p>
+          Defensive-oriented CL augment. Not much difference between <WikiLink
+            page="Crossbow">Crossbow</WikiLink
+          > and <WikiLink page="Sword">Sword</WikiLink> in practice.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="hull-heading" rowspan="2">CB / CA / AE</td>
+      <td>
+        <ItemCell
+          item="Greatsword"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Greatsword"
+          itemImg="augments/greatsword.png"
+          rarity={3}
+        />
+      </td>
+      <td><p>Best general-use CA augment.</p></td>
+    </tr>
+    <tr>
+      <td>
+        <ItemCell
+          item="Lance"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Lance"
+          itemImg="augments/lance.png"
+          rarity={3}
+        />
+      </td>
+      <td>
+        <p>
+          Better than <WikiLink page="Greatsword">Greatsword</WikiLink> if you need
+          the ACC stat, otherwise it's enhance fodder.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="hull-heading" rowspan="2">BB / BC / BBV</td>
+      <td>
+        <ItemCell
+          item="Officer's Sword"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Officer's_Sword"
+          itemImg="augments/officers_sword.png"
+          rarity={3}
+        />
+      </td>
+      <td><p>Best general-use BB augment.</p></td>
+    </tr>
+    <tr>
+      <td>
+        <ItemCell
+          item="Bowgun"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Bowgun"
+          itemImg="augments/bowgun.png"
+          rarity={3}
+        />
+      </td>
+      <td>
+        <p>
+          Outperforms <WikiLink page="Officer's Sword">Officer's Sword</WikiLink
+          > in the following cases (do your own research for breakpoints): against
+          Heavy Armor bosses, against certain low-Evasion bosses, and/or when equipped
+          on high-ACC ships.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="hull-heading" rowspan="2">CV / CVL</td>
+      <td>
+        <ItemCell
+          item="Scepter"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Scepter"
+          itemImg="augments/scepter.png"
+          rarity={3}
+        />
+      </td>
+      <td>
+        <p>
+          Always equip at least one per fleet. Not much difference between <WikiLink
+            page="Scepter">Scepter</WikiLink
+          > and <WikiLink page="Hunting Bow">Hunting Bow</WikiLink> in practice.
+          <b><i>Equip to all CV / CVL in Chapter 14</i></b>.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ItemCell
+          item="Hunting Bow"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Hunting_Bow"
+          itemImg="augments/hunting_bow.png"
+          rarity={3}
+        />
+      </td>
+      <td>
+        <p>
+          Equip to all CV / CVL that aren't using <WikiLink page="Scepter"
+            >Scepter</WikiLink
+          >. Not much difference between <WikiLink page="Scepter"
+            >Scepter</WikiLink
+          > and <WikiLink page="Hunting Bow">Hunting Bow</WikiLink> in practice.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="hull-heading" rowspan="2">SS / SSV</td>
+      <td>
+        <ItemCell
+          item="Dagger"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Dagger"
+          itemImg="augments/dagger.png"
+          rarity={3}
+        />
+      </td>
+      <td><p>Best general-use SS augment.</p></td>
+    </tr>
+    <tr>
+      <td>
+        <ItemCell
+          item="Kunai"
+          wikiLink="https://azurlane.koumakan.jp/wiki/Kunai"
+          itemImg="augments/kunai.png"
+          rarity={3}
+        />
+      </td>
+      <td><p>Never craft this; always use as enhance fodder.</p></td>
+    </tr>
+  </tr>
+</ItemTable>

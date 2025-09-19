@@ -1,0 +1,53 @@
+import { pageInfo } from "../_pageInfo"
+
+const hardCodedPaths = [
+  "../frontend/src/components/Equipment/AugmentModules.astro",
+]
+
+const replaceWikiLinks = (content: string): string => {
+  const regex =
+    /<a\s*\n*\s*rel="noopener noreferrer"\s*\n*\s*target="_blank"\s*\n*\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n*\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
+
+  return content.replace(regex, (match, hrefTitle, title, linkContent) => {
+    if (match) {
+      {
+        false //compiler hopefully optimizes this out
+      }
+    }
+    return `<WikiLink page="${hrefTitle.replace(/_/g, " ")}" title="${title.trim()}">${linkContent.trim()}</WikiLink>`
+  })
+}
+
+const replaceWikiLinksTwo = (content: string): string => {
+  const regex2 =
+    /<a\s*\n*\s*rel="noopener noreferrer"\s*\n*\s*target="_blank"\s*\n*\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n*\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
+  return content.replace(regex2, (match, hrefTitle, linkContent) => {
+    if (match) {
+      {
+        false //compiler hopefully optimizes this out
+      }
+    }
+    return `<WikiLink page="${hrefTitle.replace(/_/g, " ")}">${linkContent.trim()}</WikiLink>`
+  })
+}
+
+const processFile = async (inputFilePath: string, outputFilePath: string) => {
+  try {
+    const data = await Bun.file(inputFilePath).text()
+
+    let updatedContent = replaceWikiLinks(data)
+    updatedContent = replaceWikiLinksTwo(updatedContent)
+
+    await Bun.write(outputFilePath, updatedContent)
+    console.log(`Successfully updated file: ${outputFilePath}`)
+  } catch (err) {
+    console.error(`Error: ${err}`)
+  }
+}
+
+export const main = async (): Promise<void> => {
+  await Promise.all([
+    ...pageInfo.map((page) => processFile(page.path, page.path)),
+    ...hardCodedPaths.map((path) => processFile(path, path)),
+  ])
+}

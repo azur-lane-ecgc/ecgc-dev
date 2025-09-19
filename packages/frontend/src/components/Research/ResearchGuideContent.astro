@@ -1,0 +1,1771 @@
+---
+import { HR } from "@/components/_common/HR"
+import { ImageCarousel } from "@/components/_common/ImageCarousel"
+import { ItemCell } from "@/components/_common/ItemCell"
+import { ItemTable } from "@/components/_common/ItemTable"
+import WikiLink from "@/components/_common/WikiLink.astro"
+
+//images
+import ProtocoreConversion from "@/assets/research_guide/protocore_conversion_window.png"
+import ProtocoreShop from "@/assets/research_guide/prototype_shop_window.png"
+import ResearchFocus from "@/assets/research_guide/research_focus_window.png"
+import ResearchProject from "@/assets/research_guide/research_project_window.png"
+import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
+---
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const catchupToggleFunction = () => {
+      const content = document.getElementById("catchupToggleContent")
+      const icon = document.getElementById("catchupToggle")
+      if (content && icon) {
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden")
+          content.setAttribute("aria-hidden", "false")
+          icon.classList.remove("fa-angle-down")
+          icon.classList.add("fa-angle-up")
+        } else {
+          content.classList.add("hidden")
+          content.setAttribute("aria-hidden", "true")
+          icon.classList.remove("fa-angle-up")
+          icon.classList.add("fa-angle-down")
+        }
+      }
+    }
+
+    document
+      ?.getElementById("catchupButton")
+      ?.addEventListener("click", catchupToggleFunction)
+  })
+</script>
+
+<style>
+  .catchup-button {
+    font-size: 1rem;
+    background-color: transparent;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    transition:
+      color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+  }
+
+  .catchup-button:hover {
+    background-color: #ffc107;
+    color: black;
+  }
+</style>
+
+<h2 id="introduction">Introduction</h2>
+<HR />
+<p>
+  Research is one of the most confusing aspects about Azur Lane. This guide
+  hopes to give players a comprehensive overview of the <WikiLink
+    page="Fleet Technology"
+    title="Fleet Technology">Fleet Technology</WikiLink
+  >,
+  <WikiLink page="Research Academy" title="Research Academy"
+    >Research Academy</WikiLink
+  >, and <WikiLink page="Shipyard" title="Shipyard">Shipyard</WikiLink>
+  tabs of the <WikiLink page="Research" title="Research">Lab</WikiLink>.
+</p>
+<br />
+
+<h2 id="fleet_technology">Fleet Technology</h2>
+<HR />
+<p>
+  <i>
+    Main Article: <a
+      rel="noopener noreferrer"
+      target="_blank"
+      href="/fleet_technology"
+      title="Fleet Technology Guide">Fleet Technology Guide</a
+    >
+  </i>
+</p>
+<br />
+
+<h2 id="shipyard">Shipyard</h2>
+<HR />
+<ul>
+  <li>
+    <p>
+      <i>
+        See the <a
+          href="/fleetbuilding"
+          target="_self"
+          rel="noopener noreferrer">Fleetbuilding Guide</a
+        >
+        to see how ships fit into your fleet.</i
+      >
+    </p>
+  </li>
+</ul>
+<br />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "50px" }}
+  data={[
+    {
+      src: ShipyardWindow.src,
+      caption: "Shipyard UI",
+      alt: "Shipyard UI",
+    },
+  ]}
+/>
+<br />
+
+<p>
+  This is where you unlock and develop <WikiLink
+    page="Shipyard"
+    title="Shipyard">Shipyard</WikiLink
+  > ships.
+</p>
+<br />
+
+<h3 id="coin-up">Coin-up</h3>
+<p>
+  All PR1, PR2/DR2, PR3/DR3, and PR4 ships can have their prints be bought with
+  coins! PR and DR Coin-up are seperate. See <WikiLink
+    page="Shipyard#Enhancing"
+    title="Enhancing With Coins">this wiki page</WikiLink
+  > for more information.
+</p>
+<br />
+
+<h3 id="shipyard_priority">Recommended Development Order</h3>
+
+<h5>High Priority:</h5>
+<ul>
+  <li>
+    <p>
+      <WikiLink page="Friedrich der Große" title="Friedrich der Große"
+        >Friedrich der Große</WikiLink
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <WikiLink page="Anchorage" title="Anchorage">Anchorage</WikiLink>
+    </p>
+  </li>
+</ul>
+<p>
+  Unfortunately, it is very unrealistic to start with the High Priority targets.
+  Therefore, here are other priorities to focus on.
+</p>
+<br />
+
+<h5>Other Priorities:</h5>
+<ul>
+  <li>
+    <p>
+      <h5>
+        <a href="#coin-up" rel="noopener noreferrer" target="_self">Coin-up</a> ships.
+      </h5>
+    </p>
+    <ul>
+      <li>
+        <p>
+          Any PR1, PR2 / DR2, PR3 / DR3, PR4 / DR4, and PR5 ship can be enhanced
+          efficiently through <a
+            href="#coin-up"
+            rel="noopener noreferrer"
+            target="_self">Coin-up</a
+          >, making them good to start with.
+        </p>
+      </li>
+      <li>
+        <p>
+          <i
+            >If you need <a
+              href="/fleet_technology"
+              target="_self"
+              rel="noopener noreferrer">Tech Points</a
+            > for <WikiLink
+              page="Friedrich der Große"
+              title="Friedrich der Große">Friedrich der Große</WikiLink
+            >, pick <WikiLink page="Roon" title="Roon">Roon</WikiLink>.
+            Otherwise, it doesn't matter who is selected.</i
+          >
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <h5>Ships you have a lot of blueprints for.</h5>
+    </p>
+    <ul>
+      <li>
+        <p>
+          <b
+            ><WikiLink page="Shipyard" title="Shipyard">Shipyard</WikiLink> ships
+            are useless at lower Development Levels!</b
+          >
+          Therefore, focusing ships you have a lot of blueprints for is best, as
+          you can use them faster compared to other ships.
+        </p>
+      </li>
+      <li>
+        <p>
+          Ships you have selected for your <a
+            href="#catch-up"
+            target="_self"
+            rel="noopener noreferrer">Catch-up</a
+          > fall into this category.
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <h5>
+        Ships for <WikiLink page="Commander Handbook#Development Missions"
+          >Commander Handbook Missions</WikiLink
+        >.
+      </h5>
+    </p>
+    <ul>
+      <li>
+        <p>
+          You need 1 ship each from PR1-PR6 due to <WikiLink
+            page="Commander Handbook#Development Missions"
+            >Commander Handbook Missions</WikiLink
+          >. DR ships count for this as well.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<br />
+
+<h3 id="shipyard_priority_by_season">Shipyard Priority by Season</h3>
+<ul>
+  <li>
+    <p>
+      PR1: <WikiLink page="Izumo" title="Izumo">Izumo</WikiLink> &gt;= <WikiLink
+        page="Ibuki"
+        title="Ibuki">Ibuki</WikiLink
+      > =
+      <WikiLink page="Roon" title="Roon">Roon</WikiLink> &gt;
+      <WikiLink page="Saint Louis" title="Saint Louis">Saint Louis</WikiLink> =
+      <WikiLink page="Monarch" title="Monarch">Monarch</WikiLink> &gt; rest
+    </p>
+  </li>
+  <li>
+    <p>
+      PR2: <WikiLink page="Kitakaze" title="Kitakaze">Kitakaze</WikiLink> =
+      <WikiLink page="Gascogne" title="Gascogne">Gascogne</WikiLink> &gt; rest
+    </p>
+  </li>
+  <li>
+    <p>
+      PR3: <WikiLink page="Cheshire" title="Cheshire">Cheshire</WikiLink>
+      &gt;
+      <WikiLink page="Odin" title="Odin">Odin</WikiLink> &gt;
+      <WikiLink page="Mainz" title="Mainz">Mainz</WikiLink> &gt; rest
+    </p>
+  </li>
+  <li>
+    <p>
+      PR4: <b
+        ><WikiLink page="Anchorage" title="Anchorage">Anchorage</WikiLink></b
+      > &gt;=
+      <WikiLink page="August von Parseval" title="August von Parseval"
+        >August von Parseval</WikiLink
+      > &gt;=
+      <WikiLink page="Marco Polo" title="Marco Polo">Marco Polo</WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      PR5: <WikiLink page="Harbin" title="Harbin">Harbin</WikiLink> =
+      <WikiLink page="Chkalov" title="Chkalov">Chkalov</WikiLink> &gt;
+      <WikiLink page="Prinz Rupprecht" title="Prinz Rupprecht"
+        >Prinz Rupprecht</WikiLink
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      PR6: <b><WikiLink page="Shimanto" title="Shimanto">Shimanto</WikiLink></b>
+      &gt;
+      <WikiLink page="Felix Schultz" title="Felix Schultz"
+        >Felix Schultz</WikiLink
+      > =
+      <WikiLink page="Flandre" title="Flandre">Flandre</WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      PR7: <WikiLink page="Bayard" title="Bayard">Bayard</WikiLink> &gt;=
+      <WikiLink page="Daisen" title="Daisen">Daisen</WikiLink> &gt;
+      <WikiLink page="Halford" title="Halford">Halford</WikiLink>
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i>PR7 Catch-up is not released yet.</i>
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      PR8: <WikiLink page="Kansas" title="Kansas">Kansas</WikiLink> =
+      <WikiLink page="Vittorio Cuniberti" title="Vittorio Cuniberti"
+        >Vittorio Cuniberti</WikiLink
+      > =
+      <WikiLink page="Dmitri Donskoi" title="Dmitri Donskoi"
+        >Dmitri Donskoi</WikiLink
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i>PR8 Catch-up is not released yet.</i>
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      DRs: <b
+        ><WikiLink page="Friedrich der Große" title="Friedrich der Große"
+          >Friedrich der Große</WikiLink
+        ></b
+      > &gt;
+      <!-- <b
+        ><WikiLink page="Azuma" title="Azuma">Azuma</WikiLink></b
+      > &gt;
+      <WikiLink page="Plymouth" title="Plymouth">Plymouth</WikiLink> &gt;
+      <WikiLink page="Ägir" title="Ägir">Ägir</WikiLink> &gt;  -->
+      rest
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i
+            >Since FdG has coin-up, she is the highest priority to acquire. Some
+            other DR ships also have coin-up, but they are worse value compared
+            to FdG.</i
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <i
+            ><b>Get all other DRs at your own pace.</b> Since they take forever to
+            max, there is no rush.</i
+          >
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<br />
+
+<h5>Notes:</h5>
+<ul>
+  <li>
+    <p>
+      Bolded ships are the recommended <a
+        rel="noopener noreferrer"
+        target="_self"
+        href="#catch-up"
+        title="Catch-up">Catch-up</a
+      > selections for that season.
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i
+            >If a ship is not listed, but has a Catch-up (ex. <WikiLink
+              page="Drake"
+              title="Drake">Drake</WikiLink
+            >), do it last.</i
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <i
+            >For PR Catch-up Min-Maxing, read <a
+              rel="noopener noreferrer"
+              target="_self"
+              href="#catch-up_min_max"
+              title="Catch-up Min-Max">this section</a
+            > for more information.</i
+          >
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<br />
+
+<h3 id="exp_farming">Shipyard EXP Farming</h3>
+<HR />
+<p>
+  <i>
+    Main Article: <a
+      rel="noopener noreferrer"
+      target="_blank"
+      href="/farming#for_exp_campaign"
+      title="Farming Guide">Farming Guide</a
+    >
+  </i>
+</p>
+<br />
+
+<h2 id="research_academy">Research Academy</h2>
+<HR />
+<p>
+  <i>
+    See also: <WikiLink page="Research Academy" title="Research Academy"
+      >Research Academy</WikiLink
+    >
+  </i>
+</p>
+<br />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "50px" }}
+  data={[
+    {
+      src: ResearchProject.src,
+      caption: "Research Academy UI",
+      alt: "Research Academy UI",
+    },
+    {
+      src: ResearchFocus.src,
+      caption: "Research Focus UI",
+      alt: "Research Focus UI",
+    },
+  ]}
+/>
+<br />
+
+<h3>Research Focus and Catch-up are seperate!!!</h3>
+<p>
+  Notice in the <b>"Research Focus UI"</b> image, "Research Focus" is listed seperately!
+  Read the below sections for more information.
+</p>
+<br />
+
+<h3 id="research_purpose">Purpose of Research</h3>
+<p>
+  To get <b>PR / DR Blueprints</b> to use in <WikiLink
+    page="Shipyard"
+    title="Shipyard">Shipyard</WikiLink
+  >, as well as
+  <b>Equipment Designs</b> to <WikiLink
+    page="Design (Craft)"
+    title="Design (Craft)">craft</WikiLink
+  > into gear.
+</p>
+<br />
+
+<h3 id="research_focus">Research Focus</h3>
+<p>
+  When a season is focused, <b>at least 3</b> out of the 5 available Research Projects
+  will be from that season.
+</p>
+<br />
+
+<h5>Research Focus Optimization:</h5>
+<p>
+  Select any season PR5 or higher unless you know what you are doing. They have
+  the best ships and gear.
+</p>
+<ul>
+  <li>
+    <p>
+      <b>PR6</b> is slightly worse than the other options due to having similar ships
+      but worse gear. Still fine to set as a focus, however.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h5>Why not PR1, PR2, PR3, PR4?</h5>
+<ul>
+  <li>
+    <p>
+      All the PR ships in PR1, PR2, PR3, PR4 can have their ship blueprints
+      bought with coins directly, instead of having to research for them.
+    </p>
+  </li>
+  <li>
+    <p>
+      All the DR ships in DR2 and DR3 can have their ship blueprints bought with
+      coins directly, instead of having to research for them.
+    </p>
+  </li>
+  <li>
+    <p>
+      All the gear in PR1, PR2, PR3, PR4 (and most later seasons) are found in
+      the <WikiLink page="Prototype Shop" title="Prototype Shop"
+        >Prototype Shop</WikiLink
+      > and/or the <WikiLink page="Gear Lab" title="Gear Lab">Gear Lab</WikiLink
+      >.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="catch-up">Catch-up</h3>
+<p>
+  When a ship is selected for catch-up, every research you complete will always
+  give a minimum of 1
+  <b>additional</b> print that is for the catch-up ship selected.
+</p>
+<br />
+
+<h5>What you get from Catch-up:</h5>
+<ul>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 6 PR1 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 4 PR2 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 4 PR3 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 3 PR4 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 3 PR5 ships.
+    </p>
+  </li>
+  <li>
+    <p>
+      300 total (PR) prints for a <b>combination</b> of any of the 3 PR6 ships.
+    </p>
+  </li>
+  <ul>
+    <li>
+      <p>
+        <i
+          >It's recommended that all 300 prints are for the same ship, until the
+          ship reaches Development Level 30.</i
+        >
+      </p>
+    </li>
+  </ul>
+  <li>
+    <p>
+      150 (DR) prints for <WikiLink page="Friedrich der Große"
+        >Friedrich der Große</WikiLink
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <WikiLink page="Azuma">Azuma</WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <WikiLink page="Drake">Drake</WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <WikiLink page="Ägir">Ägir</WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <WikiLink page="Hakuryuu">Hakuryuu</WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <WikiLink page="Kearsarge">Kearsarge</WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      150 (DR) prints for <WikiLink page="Hindenburg">Hindenburg</WikiLink>
+    </p>
+  </li>
+</ul>
+<p>
+  You can only do one catch-up at a time, but there is no time limit. <i
+    >It is recommended to do the PR catch-ups before the DR catch-ups, as DR
+    ships use a lot more prints.</i
+  >
+</p>
+<br />
+
+<p>
+  <b>Recommended Catch-up selections:</b> See <a
+    rel="noopener noreferrer"
+    target="_self"
+    href="#shipyard_priority_by_season"
+    title="Shipyard Priority">this section</a
+  > for more information.
+</p>
+<p>
+  <b>For PR Catch-up Min-Maxing:</b> See <a
+    rel="noopener noreferrer"
+    target="_self"
+    href="#catch-up_min_max"
+    title="Catch-up Min-Max">this section</a
+  > for more information.
+</p>
+<br />
+
+<h2 id="research_project_priority">Optimal Research Academy Projects</h2>
+<HR />
+<p>
+  <b>Notes:</b>
+</p>
+<ul>
+  <li>
+    <p>
+      <i>Projects <b>ARE</b> rated within a tier!</i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >For D researches, Rainbow Ship Blueprints &gt; Gold Ship Blueprints,
+        regardless of the research length / rarity color.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Only spend cubes on research if you have a large (400+ cubes or higher)
+        surplus, and are willing to risk your gacha chances.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i
+        >Avoid taking H-type or D-type projects once all ships in that season
+        are maxed. The protocore gained is not worth it.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p><i>Always have a research running at all times, even if it's bad!</i></p>
+  </li>
+</ul>
+<br />
+
+<h3 id="s_tier">S-Tier Projects</h3>
+<ItemTable
+  tableInfo={[
+    { colName: "Name", colWidth: "25%" },
+    { colName: "Associated Names", colWidth: "30%" },
+    { colName: "Length", colWidth: "20%" },
+    { colName: "Rewards", colWidth: "25%" },
+  ]}
+>
+  <tr>
+    <td class="rarity-5">
+      <p class="!text-black">
+        <b>D-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Soul Forming, D-UL, Rainbow-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="!text-black">
+        <b>D-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Soul Forming, D-UL, Gold-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="!text-black">
+        <b>Q-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>30 min Rigging Analysis, Q-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="!text-black">
+        <b>H-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>30 min H, H-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Ship Prints, Cognitive Chips</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="a_tier">A-Tier Projects</h3>
+<ItemTable
+  tableInfo={[
+    { colName: "Name", colWidth: "20%" },
+    { colName: "Associated Names", colWidth: "30%" },
+    { colName: "Length", colWidth: "20%" },
+    { colName: "Rewards", colWidth: "30%" },
+  ]}
+>
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>H-387-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue H, 1 Hour H</p>
+    </td>
+    <td>
+      <p>1 Hour</p>
+    </td>
+    <td>
+      <p>Ship Prints, Cognitive Chips</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>D-7XX-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue D, Blue Face, 2.5 Hour Face</p>
+    </td>
+    <td>
+      <p>2.5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="!text-black">
+        <b>D-3XX-MI</b>
+        <br />
+        <b>Medium Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple D, Purple Face, 5 Hour Face</p>
+    </td>
+    <td>
+      <p>5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="!text-black">
+        <b>D-4XX-RF</b>
+        <br />
+        <b>Large Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Gold D, Gold Face, 8 Hour Face</p>
+    </td>
+    <td>
+      <p>8 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="!text-black">
+        <b>Q-0XX-MI</b>
+        <br />
+        <b>Medium Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple Q, 4 Hour Q</p>
+    </td>
+    <td>
+      <p>4 Hours</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="b_tier">B-Tier Projects</h3>
+<ItemTable
+  tableInfo={[
+    { colName: "Name", colWidth: "20%" },
+    { colName: "Associated Names", colWidth: "30%" },
+    { colName: "Length", colWidth: "20%" },
+    { colName: "Rewards", colWidth: "30%" },
+  ]}
+>
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>Q-3XX-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 1 Hour Q, 1 Hour Q</p>
+    </td>
+    <td>
+      <p>1 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>Q-2XX-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 2 Hour Q, 2 Hour Q</p>
+    </td>
+    <td>
+      <p>2 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="!text-black">
+        <b>G-531-MI</b>
+        <br />
+        <b>Medium Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple G, 4 Hour G</p>
+    </td>
+    <td>
+      <p>4 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="!text-black">
+        <b>E-315-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple 2 Hour E, 2 Hour E</p>
+    </td>
+    <td>
+      <p>2 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>E-031-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 2 Hour E, 2 Hour E</p>
+    </td>
+    <td>
+      <p>2 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>G-412-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 1.5 Hour G, 1.5 Hour G</p>
+    </td>
+    <td>
+      <p>1.5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="!text-black">
+        <b>G-236-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 2.5 Hour G, 2.5 Hour G</p>
+    </td>
+    <td>
+      <p>2.5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="c_tier">C-Tier Projects</h3>
+<p>
+  <b>Everything else</b> falls into this category. If you are forced to pick one
+  due to all the options being terrible, pick the shortest option <i
+    >that doesn't cost cubes</i
+  >, regardless of if the ships in the season are maxed or not. Save your
+  refresh button for times like these.
+</p>
+<br />
+
+<h2 id="protocore">Protocore</h2>
+<HR />
+<p>
+  Protocore is a resource used to buy goods in the <WikiLink
+    page="Prototype Shop"
+    title="Prototype Shop">Prototype Shop</WikiLink
+  >.
+</p>
+<br />
+
+<ImageCarousel
+  client:visible={{ rootMargin: "50px" }}
+  data={[
+    {
+      src: ProtocoreShop.src,
+      caption: "Prototype Shop UI",
+      alt: "Prototype Shop UI",
+    },
+    {
+      src: ProtocoreConversion.src,
+      caption: "Protocore Conversion UI",
+      alt: "Protocore Conversion UI",
+    },
+  ]}
+/>
+<br />
+
+<h3 id="protocore_spending">Protocore Spending</h3>
+<p><b>Notes:</b></p>
+<ul>
+  <li>
+    <p>
+      <i
+        >See <a
+          rel="noopener noreferrer"
+          target="_self"
+          href="/shop_priority#protocore"
+          title="Shop Priority">Shop Priority</a
+        > for a more general priority chart.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        You can only purchase <b>20</b> Gold Rarity prints per season, per month.
+        Be sure to double check your existing print counts, and print-income estimates,
+        before spending Prototype Core here.
+      </i>
+    </p>
+  </li>
+</ul>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Gear", colWidth: "15%", limiter: true },
+    { colName: "Season", colWidth: "15%", limiter: true },
+    { colName: "Recommended Quantity", colWidth: "15%", limiter: true },
+    { colName: "Cost (in Protocore)", colWidth: "15%", limiter: true },
+    { colName: "Description", colWidth: "40%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Triple 406mm/50 Main Gun Mount"
+        wikiLink="Triple_406mm_(Mle_1938_Prototype)"
+        itemImg="equipment/triple_406_mle.png"
+        rarity={4}
+        caption={false}
+      />
+      <WikiLink
+        page="Triple 406mm (Mle 1938 Prototype)"
+        title="Triple 406mm/50 Main Gun Mount"
+        >Prototype Triple 406mm/50 Main Gun Mount</WikiLink
+      >
+    </td>
+    <td><p>PR3</p></td>
+    <td><p>2 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>
+        750 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            loading="lazy"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Best 20s reload AP BB gun.</p>
+      <p style="font-size:small">
+        <i>Found under "Prototype Weapon Blueprint - Series 3."</i>
+      </p>
+      <p>
+        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Triple 380mm Mle 1935 Main Gun Mount"
+        wikiLink="Triple_380mm_(Mle_1935_Prototype)"
+        itemImg="equipment/triple_380_mle.png"
+        rarity={4}
+        caption={false}
+      />
+      <WikiLink
+        page="Triple 380mm (Mle 1935 Prototype)"
+        title="Prototype Triple 380mm Mle 1935 Main Gun Mount"
+        >Prototype Triple 380mm Mle 1935 Main Gun Mount</WikiLink
+      >
+    </td>
+    <td><p>PR6</p></td>
+    <td><p>1 Equipment<br />(25 Prints)</p></td>
+    <td>
+      <p>
+        375 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            loading="lazy"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Best 20s reload AP BB gun.</p>
+      <p style="font-size:small">
+        <i>Found under "Prototype Weapon Blueprint - Series 6."</i>
+      </p>
+      <!-- <p>
+        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+      </p> -->
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype BF-109G"
+        wikiLink="Messerschmitt_Bf_109G_(Carrier-based_Prototype)"
+        itemImg="equipment/bf109g.png"
+        rarity={4}
+        caption={false}
+      />
+      <WikiLink
+        page="Messerschmitt Bf 109G (Carrier-based Prototype)"
+        title="Prototype BF-109G">Prototype BF-109G</WikiLink
+      >
+    </td>
+    <td><p>PR4</p></td>
+    <td><p>3 Equipment<br />(75 Prints)</p></td>
+    <td>
+      <p>
+        1125 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            loading="lazy"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Top fighter against Light or Medium Armor bosses.</p>
+      <p style="font-size:small">
+        <i>Found under "Prototype Weapon Blueprint - Series 4."</i>
+      </p>
+      <p>
+        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Tenrai"
+        wikiLink="Nakajima_J5N_Tenrai_(Dive_Bomber_Prototype)"
+        itemImg="equipment/tenrai.png"
+        rarity={5}
+        caption={false}
+      />
+      <WikiLink
+        page="Nakajima J5N Tenrai (Dive Bomber Prototype)"
+        title="Prototype Tenrai">Prototype Tenrai</WikiLink
+      >
+    </td>
+    <td><p>PR4</p></td>
+    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>
+        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            loading="lazy"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Best General-Use Dive Bomber.</p>
+      <p>
+        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Twin 457mm Mk A Main Gun Mount"
+        wikiLink="Twin_457mm_(Mark_A_Prototype)"
+        itemImg="equipment/twin_457.png"
+        rarity={5}
+        caption={false}
+      />
+      <WikiLink
+        page="Twin 457mm (Mark A Prototype)"
+        title="Twin 457mm (Mark A Prototype)"
+        >Prototype Twin 457mm Mk A Main Gun Mount</WikiLink
+      >
+    </td>
+    <td><p>PR2</p></td>
+    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>
+        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            loading="lazy"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>
+        Best 18s AP BB Gun, also really good when Mobbing.<br /><i
+          >Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i
+        >
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <ItemCell
+        item="Prototype Quadruple 152mm Main Gun Mount"
+        wikiLink="Prototype_Quadruple_152mm_Main_Gun_Mount"
+        itemImg="equipment/quad_152.png"
+        rarity={5}
+        caption={false}
+      />
+      <WikiLink
+        page="Prototype Quadruple 152mm Main Gun Mount"
+        title="Prototype Quadruple 152mm Main Gun Mount"
+        >Prototype Quadruple 152mm Main Gun Mount</WikiLink
+      >
+    </td>
+    <td><p>PR5</p></td>
+    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>
+        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
+          ><img
+            loading="lazy"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Protocore"
+            class="rarity-4 inline-block"
+          />
+        </WikiLink>
+      </p>
+    </td>
+    <td>
+      <p>Best General-Use CL Gun.</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="protocore_income">Protocore Income</h3>
+<p><b>Notes:</b></p>
+<ul>
+  <li>
+    <p>
+      <i
+        >See <a
+          rel="noopener noreferrer"
+          target="_self"
+          href="/common_resource"
+          title="Common Resource Guide">Common Resource Guide</a
+        > for a more general resource-income chart.</i
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      1 Combat Data Pack <WikiLink page="Shops#Prototype_Core" title="Protocore"
+        ><img
+          loading="lazy"
+          class="rarity-4 inline-block"
+          src="/images/materials/combat_data_pack.png"
+          width="25px"
+          alt="Combat Data Pack"
+        /></WikiLink
+      > -&gt; 2 Protocore <WikiLink
+        page="Shops#Prototype_Core"
+        title="Protocore"
+        ><img
+          loading="lazy"
+          class="rarity-4 inline-block"
+          src="/images/materials/protocore.png"
+          width="25px"
+          alt="Prototype Core"
+        /></WikiLink
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      1 PR Print <WikiLink page="Shipyard" title="Shipyard"
+        ><img
+          loading="lazy"
+          class="rarity-4 inline-block"
+          src="/images/materials/pr6_bp.png"
+          width="25px"
+          alt="PR Blueprint"
+        /></WikiLink
+      > -&gt; 5 Protocore<WikiLink page="Shops#Prototype_Core" title="Protocore"
+        ><img
+          loading="lazy"
+          class="rarity-4 inline-block"
+          src="/images/materials/protocore.png"
+          width="25px"
+          alt="Prototype Core"
+        /></WikiLink
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      1 DR Print<WikiLink page="Shipyard" title="Shipyard"
+        ><img
+          loading="lazy"
+          class="rarity-5 inline-block"
+          src="/images/materials/pr6_bp.png"
+          width="25px"
+          alt="PR Blueprint"
+        /></WikiLink
+      > -&gt; 20 Protocore <WikiLink
+        page="Shops#Prototype_Core"
+        title="Protocore"
+        ><img
+          loading="lazy"
+          class="rarity-4 inline-block"
+          src="/images/materials/protocore.png"
+          width="25px"
+          alt="Prototype Core"
+        /></WikiLink
+      >
+    </p>
+  </li>
+</ul>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Method", colWidth: "25%", limiter: true },
+    { colName: "Income (in Protocore)", colWidth: "20%", limiter: true },
+    { colName: "Total Income", colWidth: "10%", limiter: true },
+    { colName: "Notes", colWidth: "45%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <p>
+        <b><WikiLink page="Cruise Missions">Cruise Missions</WikiLink></b>
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>200</b>
+        <WikiLink page="Shops#Prototype_Core" title="Protocore"
+          ><img
+            loading="lazy"
+            class="rarity-4 inline-block"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></WikiLink
+        > / 2 Months
+      </p>
+    </td>
+    <td>
+      <p>-</p>
+    </td>
+    <td>
+      <p>
+        Obtained by converting <img
+          loading="lazy"
+          class="rarity-4 inline-block"
+          src="/images/materials/combat_data_pack.png"
+          width="25px"
+          alt="Combat Data Pack"
+        />.
+        <br />
+        Only repeatable source of Prototype Core.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        <b
+          ><WikiLink page="Commander Handbook#Development Missions"
+            >Commander Handbook</WikiLink
+          ></b
+        >
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>800</b>
+        <WikiLink page="Shops#Prototype_Core" title="Protocore"
+          ><img
+            loading="lazy"
+            class="rarity-4 inline-block"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></WikiLink
+        > / PR Season
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>5600</b>
+        <WikiLink page="Shops#Prototype_Core" title="Protocore"
+          ><img
+            loading="lazy"
+            class="rarity-4 inline-block"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></WikiLink
+        >
+      </p>
+    </td>
+    <td>
+      <p>
+        Development Missions section.
+        <br />
+        Obtained by converting <img
+          loading="lazy"
+          class="rarity-4 inline-block"
+          src="/images/materials/combat_data_pack.png"
+          width="25px"
+          alt="Combat Data Pack"
+        />.
+        <br />
+        Once per series (PR1 twice, PR2, PR3, PR4, PR5, PR6).
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        <b
+          ><a
+            rel="noopener noreferrer"
+            target="_self"
+            href="#catch-up_min_max"
+            title="Catch-up Min-Max">PR Catch-up Min-maxing**</a
+          ></b
+        >
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>1500</b>
+        <WikiLink page="Shops#Prototype_Core" title="Protocore"
+          ><img
+            loading="lazy"
+            class="rarity-4 inline-block"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></WikiLink
+        > / PR Catch-up
+      </p>
+    </td>
+    <td>
+      <p>
+        <b>3000</b>
+        <WikiLink page="Shops#Prototype_Core" title="Protocore"
+          ><img
+            loading="lazy"
+            class="rarity-4 inline-block"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></WikiLink
+        >
+      </p>
+    </td>
+    <td>
+      <p>
+        Obtained by converting <img
+          loading="lazy"
+          class="rarity-5 inline-block"
+          src="/images/materials/pr6_bp.png"
+          width="25px"
+          alt="PR Blueprint"
+        />.
+        <br />
+        Only converted 2 PR Catch-ups worth of prints. See <a
+          rel="noopener noreferrer"
+          target="_self"
+          href="#catch-up_min_max"
+          title="Catch-up Min-Max">this section</a
+        > for more information about PR Catch-up Min-Maxing.
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="catch-up_min_max" class="flex">
+  PR Catch-up Min-Maxing
+
+  <span class="mx-1"></span>
+
+  <button
+    id="catchupButton"
+    class="catchup-button"
+    onclick="catchupToggleFunction()"
+    role="button"
+  >
+    <i id="catchupToggle" class="fa fa-angle-down"></i>
+  </button>
+</h3>
+<ul>
+  <li>
+    <p>
+      <i><b>This is NOT necessary</b>. You will be fine if you don't do this.</i
+      >
+    </p>
+  </li>
+</ul>
+
+<div id="catchupToggleContent" class="hidden" aria-hidden="true">
+  <p>
+    This method involves manipulating Research to allow you to convert all the
+    Catch-up prints from a season into Prototype Core. <i
+      >You can do it for any season with catch-up active. <b
+        >Do NOT do this with any of the DR Catch-ups!</b
+      ></i
+    >
+  </p>
+  <ol>
+    <li>
+      <p>
+        Set your Catch-up to any PR season that doesn't have Coin-up available,
+        or any DR ship.
+      </p>
+      <ul>
+        <li>
+          <p>
+            See <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="#shipyard_priority">Shipyard Priority</a
+            > for more information.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Research a PR ship that is of the same season that you want to convert
+        Catch-up prints for. Any PR ship works. For example, if I wanted to
+        convert <WikiLink page="Monarch" /> prints, I would research and develop
+        <WikiLink page="Monarch" />.
+      </p>
+    </li>
+    <li>
+      <p>
+        While your valuable (PR, DR) Catch-up prints are slowly trickling in,
+        obtain and develop the ship from Step 2 using coins until the ship is
+        development level 30. This entire process should take about 50 days or
+        less, assuming you are spending 3000 <WikiLink
+          page="Shops"
+          title="Shops"
+          ><img
+            loading="lazy"
+            class="rarity-1 inline-block"
+            src="/images/materials/coin.png"
+            width="25px"
+            alt="Coin"
+          /></WikiLink
+        > Coins daily.
+      </p>
+      <ul>
+        <li>
+          <p>
+            After the ship is obtained, feel free to go back and develop a ship
+            from a different, less-valuable (PR1, PR2) Catch-up season, or a
+            different ship from any season. Always have a ship being developed
+            at all times!
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        After the ship from Step 2 is Development Level 30, set your Catch-up to
+        that ship.
+      </p>
+      <ul>
+        <li>
+          <p>
+            If you are not finished with the valuable Catch-up prints, it is
+            fine to remain on the valuable Catch-up and come back to this step
+            later.
+          </p>
+        </li>
+        <li>
+          <p>
+            You do <b>NOT</b> need to focus on Fate Simulation for this ship.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Convert all prints of that ship into <WikiLink
+          page="Shops#Prototype_Shop"
+          title="Protocore"
+          ><img
+            loading="lazy"
+            class="rarity-4 inline-block"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></WikiLink
+        > Prototype Core in the <WikiLink page="Shops#Blueprint Analysis"
+          >Prototype Shop</WikiLink
+        >. This should take about 2 months to convert all the prints.
+      </p>
+      <ul>
+        <li>
+          <p>
+            While these prints are trickling in, feel free to continue
+            developing more PR/DR ships on the side.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Repeat these steps until all desired Catch-up prints are converted into <WikiLink
+          page="Shops#Prototype_Shop"
+          title="Protocore"
+          ><img
+            loading="lazy"
+            class="rarity-4 inline-block"
+            src="/images/materials/protocore.png"
+            width="25px"
+            alt="Prototype Core"
+          /></WikiLink
+        > Prototype Core.
+      </p>
+    </li>
+  </ol>
+</div>
+<br />
+
+<h3 id="optimizing_protocore">Optimizing Protocore</h3>
+<p>
+  Ideally, the total Protocore income is <b>5000</b>
+  <WikiLink page="Shops#Prototype_Core" title="Protocore"
+    ><img
+      loading="lazy"
+      class="rarity-4 inline-block"
+      src="/images/materials/protocore.png"
+      width="25px"
+      alt="Prototype Core"
+    /></WikiLink
+  > from the methods listed above.
+</p>
+<ul>
+  <li>
+    <p>
+      High Priority Purchases (<b>4125</b>
+      <WikiLink page="Shops#Prototype_Core" title="Protocore"
+        ><img
+          loading="lazy"
+          class="rarity-4 inline-block"
+          src="/images/materials/protocore.png"
+          width="25px"
+          alt="Prototype Core"
+        /></WikiLink
+      >): <WikiLink
+        page="Triple 406mm (Mle 1938 Prototype)"
+        title="Prototype Triple 406mm/50 Main Gun Mount"
+        >Prototype Triple 406mm/50 Main Gun Mount</WikiLink
+      > (x2), <WikiLink
+        page="Triple 380mm (Mle 1935 Prototype)"
+        title="Prototype Triple 380mm Mle 1935 Main Gun Mount"
+        >Prototype Triple 380mm Mle 1935 Main Gun Mount</WikiLink
+      > (x1),
+      <WikiLink
+        page="Nakajima J5N Tenrai (Dive Bomber Prototype)"
+        title="Prototype Tenrai">Prototype Tenrai</WikiLink
+      > (x1).
+    </p>
+  </li>
+  <li>
+    <p>
+      With the rest of your currency, you can consider buying some of the other
+      gear listed <a
+        rel="noopener noreferrer"
+        target="_self"
+        href="#protocore_spending">above</a
+      >.
+    </p>
+  </li>
+</ul>
+<br />

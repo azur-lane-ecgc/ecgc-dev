@@ -1,0 +1,4397 @@
+{
+  "22": [
+    {
+      "name": "22",
+      "totalAA": "448",
+      "percentSD": "15.71%"
+    }
+  ],
+  "33": [
+    {
+      "name": "33",
+      "totalAA": "448",
+      "percentSD": "15.71%"
+    }
+  ],
+  "San Diego": [
+    {
+      "name": "San Diego (NoAug)",
+      "totalAA": "2849",
+      "percentSD": "100.00%"
+    },
+    {
+      "name": "San Diego (150Gun)",
+      "totalAA": "4214",
+      "percentSD": "147.91%"
+    },
+    {
+      "name": "San Diego (+100 AA)",
+      "totalAA": "3682",
+      "percentSD": "129.23%"
+    },
+    {
+      "name": "San Diego (EU AA)",
+      "totalAA": "3411",
+      "percentSD": "119.71%"
+    },
+    {
+      "name": "San Diego",
+      "totalAA": "3237",
+      "percentSD": "113.62%"
+    },
+    {
+      "name": "San Diego (NoAug)",
+      "totalAA": "2849",
+      "percentSD": "100.00%"
+    }
+  ],
+  "Isuzu": [
+    {
+      "name": "Isuzu (150Gun)",
+      "totalAA": "3734",
+      "percentSD": "131.07%"
+    },
+    {
+      "name": "Isuzu",
+      "totalAA": "3294",
+      "percentSD": "115.62%"
+    }
+  ],
+  "De Zeven Provinciën": [
+    {
+      "name": "De Zeven Provinciën",
+      "totalAA": "3679",
+      "percentSD": "129.11%"
+    }
+  ],
+  "Gouden Leeuw": [
+    {
+      "name": "Gouden Leeuw",
+      "totalAA": "3617",
+      "percentSD": "126.93%"
+    }
+  ],
+  "Z52": [
+    {
+      "name": "Z52 (twin 100) (Z1 AA Buff)",
+      "totalAA": "3528",
+      "percentSD": "123.82%"
+    },
+    {
+      "name": "Z52 (twin 100)",
+      "totalAA": "2635",
+      "percentSD": "92.47%"
+    },
+    {
+      "name": "Z52 (pewpew gun)",
+      "totalAA": "2537",
+      "percentSD": "89.04%"
+    }
+  ],
+  "Shimanto": [
+    {
+      "name": "Shimanto (Fate) (150Gun)",
+      "totalAA": "3490",
+      "percentSD": "122.49%"
+    },
+    {
+      "name": "Shimanto (Fate)",
+      "totalAA": "2805",
+      "percentSD": "98.43%"
+    },
+    {
+      "name": "Shimanto",
+      "totalAA": "2525",
+      "percentSD": "88.60%"
+    }
+  ],
+  "Guam": [
+    {
+      "name": "Guam",
+      "totalAA": "3406",
+      "percentSD": "119.53%"
+    }
+  ],
+  "Laffey II": [
+    {
+      "name": "Laffey II",
+      "totalAA": "3092",
+      "percentSD": "108.50%"
+    }
+  ],
+  "Cheshire": [
+    {
+      "name": "Cheshire",
+      "totalAA": "2855",
+      "percentSD": "100.21%"
+    }
+  ],
+  "Bellona": [
+    {
+      "name": "Bellona",
+      "totalAA": "2729",
+      "percentSD": "95.76%"
+    }
+  ],
+  "Trafalgar": [
+    {
+      "name": "Trafalgar",
+      "totalAA": "2618",
+      "percentSD": "91.88%"
+    }
+  ],
+  "Little Cheshire": [
+    {
+      "name": "Little Cheshire",
+      "totalAA": "2522",
+      "percentSD": "88.53%"
+    }
+  ],
+  "Akashi": [
+    {
+      "name": "Akashi",
+      "totalAA": "2080",
+      "percentSD": "73.01%"
+    }
+  ],
+  "Vestal": [
+    {
+      "name": "Vestal",
+      "totalAA": "2033",
+      "percentSD": "71.34%"
+    }
+  ],
+  "Vestal META": [
+    {
+      "name": "Vestal META",
+      "totalAA": "2028",
+      "percentSD": "71.16%"
+    }
+  ],
+  "Juneau": [
+    {
+      "name": "Juneau",
+      "totalAA": "1930",
+      "percentSD": "67.75%"
+    }
+  ],
+  "Reno": [
+    {
+      "name": "Reno",
+      "totalAA": "1895",
+      "percentSD": "66.51%"
+    }
+  ],
+  "Hammann II": [
+    {
+      "name": "Hammann II",
+      "totalAA": "1832",
+      "percentSD": "64.29%"
+    }
+  ],
+  "Rikka Takarada": [
+    {
+      "name": "Rikka Takarada (Sky Vitter)",
+      "totalAA": "1823",
+      "percentSD": "63.98%"
+    }
+  ],
+  "Allen M. Sumner": [
+    {
+      "name": "Allen M. Sumner",
+      "totalAA": "1809",
+      "percentSD": "63.48%"
+    }
+  ],
+  "Eldridge": [
+    {
+      "name": "Eldridge (Retrofit)",
+      "totalAA": "1782",
+      "percentSD": "62.54%"
+    }
+  ],
+  "Atlanta": [
+    {
+      "name": "Atlanta",
+      "totalAA": "1755",
+      "percentSD": "61.60%"
+    }
+  ],
+  "Seattle": [
+    {
+      "name": "Seattle",
+      "totalAA": "1746",
+      "percentSD": "61.29%"
+    }
+  ],
+  "Maya": [
+    {
+      "name": "Maya",
+      "totalAA": "1677",
+      "percentSD": "58.87%"
+    }
+  ],
+  "Reisalin Stout": [
+    {
+      "name": "Reisalin Stout (Laute Plajig)",
+      "totalAA": "1675",
+      "percentSD": "58.78%"
+    }
+  ],
+  "San Juan": [
+    {
+      "name": "San Juan",
+      "totalAA": "1613",
+      "percentSD": "56.63%"
+    }
+  ],
+  "Scylla": [
+    {
+      "name": "Scylla",
+      "totalAA": "1559",
+      "percentSD": "54.72%"
+    }
+  ],
+  "Dido": [
+    {
+      "name": "Dido",
+      "totalAA": "1514",
+      "percentSD": "53.15%"
+    }
+  ],
+  "Pittsburgh": [
+    {
+      "name": "Pittsburgh",
+      "totalAA": "1514",
+      "percentSD": "53.13%"
+    }
+  ],
+  "Charybdis": [
+    {
+      "name": "Charybdis",
+      "totalAA": "1492",
+      "percentSD": "52.35%"
+    }
+  ],
+  "Curacoa": [
+    {
+      "name": "Curacoa",
+      "totalAA": "1475",
+      "percentSD": "51.77%"
+    }
+  ],
+  "Curlew": [
+    {
+      "name": "Curlew",
+      "totalAA": "1417",
+      "percentSD": "49.72%"
+    }
+  ],
+  "Li'l Sandy": [
+    {
+      "name": "Li'l Sandy",
+      "totalAA": "1411",
+      "percentSD": "49.53%"
+    }
+  ],
+  "Z46": [
+    {
+      "name": "Z46 (Z1)",
+      "totalAA": "1374",
+      "percentSD": "48.23%"
+    },
+    {
+      "name": "Z46",
+      "totalAA": "1046",
+      "percentSD": "36.70%"
+    }
+  ],
+  "Vanguard": [
+    {
+      "name": "Vanguard",
+      "totalAA": "1352",
+      "percentSD": "47.44%"
+    }
+  ],
+  "Dido μ": [
+    {
+      "name": "Dido μ",
+      "totalAA": "1328",
+      "percentSD": "46.61%"
+    }
+  ],
+  "Nürnberg": [
+    {
+      "name": "Nürnberg",
+      "totalAA": "1303",
+      "percentSD": "45.72%"
+    }
+  ],
+  "Newcastle": [
+    {
+      "name": "Newcastle",
+      "totalAA": "1258",
+      "percentSD": "44.15%"
+    }
+  ],
+  "Harbin": [
+    {
+      "name": "Harbin",
+      "totalAA": "1244",
+      "percentSD": "43.65%"
+    }
+  ],
+  "Yat Sen": [
+    {
+      "name": "Yat Sen",
+      "totalAA": "1243",
+      "percentSD": "43.63%"
+    }
+  ],
+  "New Jersey": [
+    {
+      "name": "New Jersey",
+      "totalAA": "1243",
+      "percentSD": "43.63%"
+    }
+  ],
+  "Shiratsuyu": [
+    {
+      "name": "Shiratsuyu",
+      "totalAA": "1229",
+      "percentSD": "43.14%"
+    }
+  ],
+  "Amazon": [
+    {
+      "name": "Amazon",
+      "totalAA": "1220",
+      "percentSD": "42.83%"
+    }
+  ],
+  "Houston II": [
+    {
+      "name": "Houston II",
+      "totalAA": "1214",
+      "percentSD": "42.61%"
+    }
+  ],
+  "Hermione": [
+    {
+      "name": "Hermione",
+      "totalAA": "1189",
+      "percentSD": "41.72%"
+    }
+  ],
+  "Montpelier": [
+    {
+      "name": "Montpelier",
+      "totalAA": "1167",
+      "percentSD": "40.97%"
+    }
+  ],
+  "Santa Fe": [
+    {
+      "name": "Santa Fe",
+      "totalAA": "1144",
+      "percentSD": "40.15%"
+    }
+  ],
+  "Ingraham": [
+    {
+      "name": "Ingraham",
+      "totalAA": "1100",
+      "percentSD": "38.59%"
+    }
+  ],
+  "Bremerton": [
+    {
+      "name": "Bremerton",
+      "totalAA": "1056",
+      "percentSD": "37.05%"
+    }
+  ],
+  "Black Prince": [
+    {
+      "name": "Black Prince",
+      "totalAA": "1051",
+      "percentSD": "36.90%"
+    }
+  ],
+  "Leipzig": [
+    {
+      "name": "Leipzig",
+      "totalAA": "1050",
+      "percentSD": "36.84%"
+    }
+  ],
+  "Cleopatra": [
+    {
+      "name": "Cleopatra",
+      "totalAA": "1047",
+      "percentSD": "36.74%"
+    }
+  ],
+  "Birmingham": [
+    {
+      "name": "Birmingham",
+      "totalAA": "1038",
+      "percentSD": "36.43%"
+    }
+  ],
+  "Sirius": [
+    {
+      "name": "Sirius",
+      "totalAA": "1026",
+      "percentSD": "36.01%"
+    }
+  ],
+  "Cleveland μ": [
+    {
+      "name": "Cleveland μ",
+      "totalAA": "1013",
+      "percentSD": "35.55%"
+    }
+  ],
+  "Regensburg": [
+    {
+      "name": "Regensburg",
+      "totalAA": "1000",
+      "percentSD": "35.08%"
+    }
+  ],
+  "Cleveland": [
+    {
+      "name": "Cleveland",
+      "totalAA": "995",
+      "percentSD": "34.92%"
+    }
+  ],
+  "Columbia": [
+    {
+      "name": "Columbia",
+      "totalAA": "995",
+      "percentSD": "34.92%"
+    }
+  ],
+  "Denver": [
+    {
+      "name": "Denver",
+      "totalAA": "991",
+      "percentSD": "34.78%"
+    }
+  ],
+  "Hammann": [
+    {
+      "name": "Hammann",
+      "totalAA": "979",
+      "percentSD": "34.35%"
+    }
+  ],
+  "Magdeburg": [
+    {
+      "name": "Magdeburg",
+      "totalAA": "978",
+      "percentSD": "34.33%"
+    }
+  ],
+  "Massachusetts": [
+    {
+      "name": "Massachusetts",
+      "totalAA": "973",
+      "percentSD": "34.16%"
+    }
+  ],
+  "Suzutsuki": [
+    {
+      "name": "Suzutsuki",
+      "totalAA": "973",
+      "percentSD": "34.14%"
+    }
+  ],
+  "Biloxi": [
+    {
+      "name": "Biloxi",
+      "totalAA": "967",
+      "percentSD": "33.95%"
+    }
+  ],
+  "Bayard": [
+    {
+      "name": "Bayard",
+      "totalAA": "962",
+      "percentSD": "33.77%"
+    }
+  ],
+  "Penelope": [
+    {
+      "name": "Penelope",
+      "totalAA": "952",
+      "percentSD": "33.43%"
+    }
+  ],
+  "Clevelad": [
+    {
+      "name": "Clevelad",
+      "totalAA": "951",
+      "percentSD": "33.37%"
+    }
+  ],
+  "Kinu": [
+    {
+      "name": "Kinu",
+      "totalAA": "941",
+      "percentSD": "33.03%"
+    }
+  ],
+  "Helena": [
+    {
+      "name": "Helena",
+      "totalAA": "938",
+      "percentSD": "32.92%"
+    }
+  ],
+  "Bristol": [
+    {
+      "name": "Bristol",
+      "totalAA": "936",
+      "percentSD": "32.84%"
+    }
+  ],
+  "Guichen": [
+    {
+      "name": "Guichen",
+      "totalAA": "934",
+      "percentSD": "32.78%"
+    }
+  ],
+  "Northampton II": [
+    {
+      "name": "Northampton II",
+      "totalAA": "931",
+      "percentSD": "32.69%"
+    }
+  ],
+  "Köln": [
+    {
+      "name": "Köln",
+      "totalAA": "928",
+      "percentSD": "32.58%"
+    }
+  ],
+  "Karlsruhe": [
+    {
+      "name": "Karlsruhe",
+      "totalAA": "928",
+      "percentSD": "32.58%"
+    }
+  ],
+  "Baltimore μ": [
+    {
+      "name": "Baltimore μ",
+      "totalAA": "920",
+      "percentSD": "32.29%"
+    }
+  ],
+  "Glasgow": [
+    {
+      "name": "Glasgow",
+      "totalAA": "920",
+      "percentSD": "32.27%"
+    }
+  ],
+  "Hatsuzuki": [
+    {
+      "name": "Hatsuzuki",
+      "totalAA": "916",
+      "percentSD": "32.16%"
+    }
+  ],
+  "Georgia": [
+    {
+      "name": "Georgia",
+      "totalAA": "905",
+      "percentSD": "31.75%"
+    }
+  ],
+  "Baltimore": [
+    {
+      "name": "Baltimore (with CV)",
+      "totalAA": "886",
+      "percentSD": "31.08%"
+    }
+  ],
+  "Fargo": [
+    {
+      "name": "Fargo",
+      "totalAA": "879",
+      "percentSD": "30.85%"
+    }
+  ],
+  "Yura": [
+    {
+      "name": "Yura",
+      "totalAA": "877",
+      "percentSD": "30.76%"
+    }
+  ],
+  "Hass": [
+    {
+      "name": "Hass",
+      "totalAA": "875",
+      "percentSD": "30.69%"
+    }
+  ],
+  "Memphis META": [
+    {
+      "name": "Memphis META",
+      "totalAA": "871",
+      "percentSD": "30.56%"
+    }
+  ],
+  "Aurora": [
+    {
+      "name": "Aurora",
+      "totalAA": "868",
+      "percentSD": "30.47%"
+    }
+  ],
+  "Königsberg": [
+    {
+      "name": "Königsberg",
+      "totalAA": "868",
+      "percentSD": "30.47%"
+    }
+  ],
+  "Plymouth": [
+    {
+      "name": "Plymouth",
+      "totalAA": "868",
+      "percentSD": "30.47%"
+    }
+  ],
+  "Hanazuki": [
+    {
+      "name": "Hanazuki",
+      "totalAA": "866",
+      "percentSD": "30.41%"
+    }
+  ],
+  "Chapayev": [
+    {
+      "name": "Chapayev",
+      "totalAA": "865",
+      "percentSD": "30.35%"
+    }
+  ],
+  "Z47": [
+    {
+      "name": "Z47",
+      "totalAA": "861",
+      "percentSD": "30.22%"
+    }
+  ],
+  "Kii": [
+    {
+      "name": "Kii",
+      "totalAA": "861",
+      "percentSD": "30.21%"
+    }
+  ],
+  "Kuybyshev": [
+    {
+      "name": "Kuybyshev",
+      "totalAA": "860",
+      "percentSD": "30.19%"
+    }
+  ],
+  "Duca degli Abruzzi": [
+    {
+      "name": "Duca degli Abruzzi",
+      "totalAA": "853",
+      "percentSD": "29.95%"
+    }
+  ],
+  "Arethusa": [
+    {
+      "name": "Arethusa",
+      "totalAA": "851",
+      "percentSD": "29.87%"
+    }
+  ],
+  "Galatea": [
+    {
+      "name": "Galatea",
+      "totalAA": "851",
+      "percentSD": "29.87%"
+    }
+  ],
+  "Émile Bertin": [
+    {
+      "name": "Émile Bertin (Retrofit)",
+      "totalAA": "847",
+      "percentSD": "29.71%"
+    }
+  ],
+  "Ning Hai": [
+    {
+      "name": "Ning Hai",
+      "totalAA": "846",
+      "percentSD": "29.71%"
+    }
+  ],
+  "Leander": [
+    {
+      "name": "Leander",
+      "totalAA": "846",
+      "percentSD": "29.69%"
+    }
+  ],
+  "Wakatsuki": [
+    {
+      "name": "Wakatsuki",
+      "totalAA": "846",
+      "percentSD": "29.68%"
+    }
+  ],
+  "Swiftsure": [
+    {
+      "name": "Swiftsure",
+      "totalAA": "843",
+      "percentSD": "29.60%"
+    }
+  ],
+  "Portland": [
+    {
+      "name": "Portland",
+      "totalAA": "839",
+      "percentSD": "29.46%"
+    }
+  ],
+  "Sims": [
+    {
+      "name": "Sims",
+      "totalAA": "838",
+      "percentSD": "29.39%"
+    }
+  ],
+  "Constellation": [
+    {
+      "name": "Constellation",
+      "totalAA": "836",
+      "percentSD": "29.33%"
+    }
+  ],
+  "Niizuki": [
+    {
+      "name": "Niizuki",
+      "totalAA": "834",
+      "percentSD": "29.26%"
+    }
+  ],
+  "Monica": [
+    {
+      "name": "Monica",
+      "totalAA": "832",
+      "percentSD": "29.20%"
+    }
+  ],
+  "Voroshilov": [
+    {
+      "name": "Voroshilov",
+      "totalAA": "832",
+      "percentSD": "29.20%"
+    }
+  ],
+  "Yuubari": [
+    {
+      "name": "Yuubari",
+      "totalAA": "832",
+      "percentSD": "29.19%"
+    }
+  ],
+  "Helena META": [
+    {
+      "name": "Helena META",
+      "totalAA": "824",
+      "percentSD": "28.91%"
+    }
+  ],
+  "Brest": [
+    {
+      "name": "Brest",
+      "totalAA": "821",
+      "percentSD": "28.83%"
+    }
+  ],
+  "Alabama": [
+    {
+      "name": "Alabama",
+      "totalAA": "821",
+      "percentSD": "28.82%"
+    }
+  ],
+  "St. Louis": [
+    {
+      "name": "St. Louis",
+      "totalAA": "818",
+      "percentSD": "28.70%"
+    }
+  ],
+  "Morrison": [
+    {
+      "name": "Morrison",
+      "totalAA": "812",
+      "percentSD": "28.49%"
+    }
+  ],
+  "North Carolina": [
+    {
+      "name": "North Carolina",
+      "totalAA": "810",
+      "percentSD": "28.45%"
+    }
+  ],
+  "South Dakota": [
+    {
+      "name": "South Dakota",
+      "totalAA": "810",
+      "percentSD": "28.45%"
+    }
+  ],
+  "Washington": [
+    {
+      "name": "Washington",
+      "totalAA": "810",
+      "percentSD": "28.45%"
+    }
+  ],
+  "Noshiro μ": [
+    {
+      "name": "Noshiro μ",
+      "totalAA": "805",
+      "percentSD": "28.27%"
+    }
+  ],
+  "Bache": [
+    {
+      "name": "Bache",
+      "totalAA": "804",
+      "percentSD": "28.23%"
+    }
+  ],
+  "Lena": [
+    {
+      "name": "Lena",
+      "totalAA": "800",
+      "percentSD": "28.08%"
+    }
+  ],
+  "Concord": [
+    {
+      "name": "Concord",
+      "totalAA": "800",
+      "percentSD": "28.07%"
+    }
+  ],
+  "Murmansk": [
+    {
+      "name": "Murmansk",
+      "totalAA": "796",
+      "percentSD": "27.94%"
+    }
+  ],
+  "Natori": [
+    {
+      "name": "Natori",
+      "totalAA": "794",
+      "percentSD": "27.85%"
+    }
+  ],
+  "Indianapolis": [
+    {
+      "name": "Indianapolis",
+      "totalAA": "793",
+      "percentSD": "27.82%"
+    }
+  ],
+  "Halsey Powell": [
+    {
+      "name": "Halsey Powell",
+      "totalAA": "792",
+      "percentSD": "27.79%"
+    }
+  ],
+  "Ping Hai": [
+    {
+      "name": "Ping Hai",
+      "totalAA": "789",
+      "percentSD": "27.71%"
+    }
+  ],
+  "Bush": [
+    {
+      "name": "Bush",
+      "totalAA": "789",
+      "percentSD": "27.69%"
+    }
+  ],
+  "Bismarck Zwei": [
+    {
+      "name": "Bismarck Zwei",
+      "totalAA": "786",
+      "percentSD": "27.60%"
+    }
+  ],
+  "Stanly": [
+    {
+      "name": "Stanly",
+      "totalAA": "786",
+      "percentSD": "27.59%"
+    }
+  ],
+  "New Orleans": [
+    {
+      "name": "New Orleans",
+      "totalAA": "785",
+      "percentSD": "27.56%"
+    }
+  ],
+  "Marblehead": [
+    {
+      "name": "Marblehead",
+      "totalAA": "784",
+      "percentSD": "27.52%"
+    }
+  ],
+  "Giuseppe Garibaldi": [
+    {
+      "name": "Giuseppe Garibaldi",
+      "totalAA": "784",
+      "percentSD": "27.52%"
+    }
+  ],
+  "San Francisco": [
+    {
+      "name": "San Francisco",
+      "totalAA": "782",
+      "percentSD": "27.44%"
+    }
+  ],
+  "Misaki": [
+    {
+      "name": "Misaki",
+      "totalAA": "781",
+      "percentSD": "27.42%"
+    }
+  ],
+  "Iori Minase": [
+    {
+      "name": "Iori Minase",
+      "totalAA": "777",
+      "percentSD": "27.29%"
+    }
+  ],
+  "Omaha": [
+    {
+      "name": "Omaha",
+      "totalAA": "776",
+      "percentSD": "27.22%"
+    }
+  ],
+  "Raleigh": [
+    {
+      "name": "Raleigh",
+      "totalAA": "776",
+      "percentSD": "27.22%"
+    }
+  ],
+  "Richmond": [
+    {
+      "name": "Richmond",
+      "totalAA": "776",
+      "percentSD": "27.22%"
+    }
+  ],
+  "Bailey": [
+    {
+      "name": "Bailey",
+      "totalAA": "776",
+      "percentSD": "27.22%"
+    }
+  ],
+  "Prototype Bulin MKII": [
+    {
+      "name": "Prototype Bulin MKII",
+      "totalAA": "774",
+      "percentSD": "27.15%"
+    }
+  ],
+  "Specialized Bulin Custom MKIII": [
+    {
+      "name": "Specialized Bulin Custom MKIII",
+      "totalAA": "774",
+      "percentSD": "27.15%"
+    }
+  ],
+  "Universal Bulin": [
+    {
+      "name": "Universal Bulin",
+      "totalAA": "774",
+      "percentSD": "27.15%"
+    }
+  ],
+  "Haruka Amami": [
+    {
+      "name": "Haruka Amami",
+      "totalAA": "771",
+      "percentSD": "27.06%"
+    }
+  ],
+  "Prinz Rupprecht": [
+    {
+      "name": "Prinz Rupprecht",
+      "totalAA": "771",
+      "percentSD": "27.06%"
+    }
+  ],
+  "London": [
+    {
+      "name": "London",
+      "totalAA": "770",
+      "percentSD": "27.01%"
+    }
+  ],
+  "Memphis": [
+    {
+      "name": "Memphis",
+      "totalAA": "769",
+      "percentSD": "26.99%"
+    }
+  ],
+  "Owari": [
+    {
+      "name": "Owari",
+      "totalAA": "766",
+      "percentSD": "26.87%"
+    }
+  ],
+  "Mainz": [
+    {
+      "name": "Mainz",
+      "totalAA": "764",
+      "percentSD": "26.81%"
+    }
+  ],
+  "Bell": [
+    {
+      "name": "Bell",
+      "totalAA": "763",
+      "percentSD": "26.76%"
+    }
+  ],
+  "Miller": [
+    {
+      "name": "Miller",
+      "totalAA": "761",
+      "percentSD": "26.70%"
+    }
+  ],
+  "Huan Ch'ang": [
+    {
+      "name": "Huan Ch'ang",
+      "totalAA": "761",
+      "percentSD": "26.70%"
+    }
+  ],
+  "Sheffield": [
+    {
+      "name": "Sheffield",
+      "totalAA": "759",
+      "percentSD": "26.65%"
+    }
+  ],
+  "Sheffield μ": [
+    {
+      "name": "Sheffield μ",
+      "totalAA": "759",
+      "percentSD": "26.65%"
+    }
+  ],
+  "Drake": [
+    {
+      "name": "Drake",
+      "totalAA": "759",
+      "percentSD": "26.64%"
+    }
+  ],
+  "Charles Ausburne": [
+    {
+      "name": "Charles Ausburne",
+      "totalAA": "758",
+      "percentSD": "26.62%"
+    }
+  ],
+  "Nicholas": [
+    {
+      "name": "Nicholas",
+      "totalAA": "758",
+      "percentSD": "26.62%"
+    }
+  ],
+  "Warspite": [
+    {
+      "name": "Warspite",
+      "totalAA": "757",
+      "percentSD": "26.59%"
+    }
+  ],
+  "Minneapolis": [
+    {
+      "name": "Minneapolis",
+      "totalAA": "756",
+      "percentSD": "26.52%"
+    }
+  ],
+  "Quincy": [
+    {
+      "name": "Quincy",
+      "totalAA": "755",
+      "percentSD": "26.50%"
+    }
+  ],
+  "Vincennes": [
+    {
+      "name": "Vincennes",
+      "totalAA": "755",
+      "percentSD": "26.50%"
+    }
+  ],
+  "Sheffield META": [
+    {
+      "name": "Sheffield META",
+      "totalAA": "752",
+      "percentSD": "26.40%"
+    }
+  ],
+  "Kirov": [
+    {
+      "name": "Kirov",
+      "totalAA": "749",
+      "percentSD": "26.30%"
+    }
+  ],
+  "Nagara": [
+    {
+      "name": "Nagara",
+      "totalAA": "749",
+      "percentSD": "26.28%"
+    }
+  ],
+  "Astoria": [
+    {
+      "name": "Astoria",
+      "totalAA": "748",
+      "percentSD": "26.26%"
+    }
+  ],
+  "Boise": [
+    {
+      "name": "Boise",
+      "totalAA": "747",
+      "percentSD": "26.22%"
+    }
+  ],
+  "Jintsuu META": [
+    {
+      "name": "Jintsuu META",
+      "totalAA": "747",
+      "percentSD": "26.21%"
+    }
+  ],
+  "Kimberly": [
+    {
+      "name": "Kimberly",
+      "totalAA": "746",
+      "percentSD": "26.18%"
+    }
+  ],
+  "Akane Shinjo": [
+    {
+      "name": "Akane Shinjo",
+      "totalAA": "746",
+      "percentSD": "26.18%"
+    }
+  ],
+  "Kirov META": [
+    {
+      "name": "Kirov META",
+      "totalAA": "745",
+      "percentSD": "26.14%"
+    }
+  ],
+  "Marco Polo": [
+    {
+      "name": "Marco Polo",
+      "totalAA": "743",
+      "percentSD": "26.07%"
+    }
+  ],
+  "Fubuki (Senran Kagura)": [
+    {
+      "name": "Fubuki (Senran Kagura)",
+      "totalAA": "742",
+      "percentSD": "26.04%"
+    }
+  ],
+  "Abukuma": [
+    {
+      "name": "Abukuma",
+      "totalAA": "741",
+      "percentSD": "26.00%"
+    }
+  ],
+  "Odin": [
+    {
+      "name": "Odin",
+      "totalAA": "741",
+      "percentSD": "25.99%"
+    }
+  ],
+  "Patricia Abelheim": [
+    {
+      "name": "Patricia Abelheim",
+      "totalAA": "741",
+      "percentSD": "25.99%"
+    }
+  ],
+  "Noshiro": [
+    {
+      "name": "Noshiro",
+      "totalAA": "735",
+      "percentSD": "25.79%"
+    }
+  ],
+  "Sakawa": [
+    {
+      "name": "Sakawa",
+      "totalAA": "735",
+      "percentSD": "25.79%"
+    }
+  ],
+  "Hyuuga": [
+    {
+      "name": "Hyuuga",
+      "totalAA": "734",
+      "percentSD": "25.75%"
+    }
+  ],
+  "Ise": [
+    {
+      "name": "Ise",
+      "totalAA": "734",
+      "percentSD": "25.75%"
+    }
+  ],
+  "Halford": [
+    {
+      "name": "Halford",
+      "totalAA": "732",
+      "percentSD": "25.69%"
+    }
+  ],
+  "Sovetsky Soyuz": [
+    {
+      "name": "Sovetsky Soyuz",
+      "totalAA": "732",
+      "percentSD": "25.68%"
+    }
+  ],
+  "Manchester": [
+    {
+      "name": "Manchester",
+      "totalAA": "730",
+      "percentSD": "25.63%"
+    }
+  ],
+  "Yoizuki": [
+    {
+      "name": "Yoizuki",
+      "totalAA": "729",
+      "percentSD": "25.58%"
+    }
+  ],
+  "Jamaica": [
+    {
+      "name": "Jamaica",
+      "totalAA": "727",
+      "percentSD": "25.53%"
+    }
+  ],
+  "King George V": [
+    {
+      "name": "King George V",
+      "totalAA": "726",
+      "percentSD": "25.48%"
+    }
+  ],
+  "Kitakaze": [
+    {
+      "name": "Kitakaze",
+      "totalAA": "723",
+      "percentSD": "25.39%"
+    }
+  ],
+  "Asuka": [
+    {
+      "name": "Asuka",
+      "totalAA": "723",
+      "percentSD": "25.39%"
+    }
+  ],
+  "Scharnhorst META": [
+    {
+      "name": "Scharnhorst META",
+      "totalAA": "722",
+      "percentSD": "25.35%"
+    }
+  ],
+  "Stephen Potter": [
+    {
+      "name": "Stephen Potter",
+      "totalAA": "718",
+      "percentSD": "25.20%"
+    }
+  ],
+  "Harutsuki": [
+    {
+      "name": "Harutsuki",
+      "totalAA": "718",
+      "percentSD": "25.20%"
+    }
+  ],
+  "Le Triomphant": [
+    {
+      "name": "Le Triomphant",
+      "totalAA": "718",
+      "percentSD": "25.19%"
+    }
+  ],
+  "Elegant Kizuna AI": [
+    {
+      "name": "Elegant Kizuna AI",
+      "totalAA": "716",
+      "percentSD": "25.13%"
+    }
+  ],
+  "Prince of Wales": [
+    {
+      "name": "Prince of Wales",
+      "totalAA": "715",
+      "percentSD": "25.11%"
+    }
+  ],
+  "Jintsuu": [
+    {
+      "name": "Jintsuu",
+      "totalAA": "715",
+      "percentSD": "25.09%"
+    }
+  ],
+  "Boise μ": [
+    {
+      "name": "Boise μ",
+      "totalAA": "714",
+      "percentSD": "25.06%"
+    }
+  ],
+  "Gloucester": [
+    {
+      "name": "Gloucester",
+      "totalAA": "710",
+      "percentSD": "24.92%"
+    }
+  ],
+  "Liverpool": [
+    {
+      "name": "Liverpool",
+      "totalAA": "710",
+      "percentSD": "24.92%"
+    }
+  ],
+  "Smalley": [
+    {
+      "name": "Smalley",
+      "totalAA": "709",
+      "percentSD": "24.89%"
+    }
+  ],
+  "Neptune": [
+    {
+      "name": "Neptune",
+      "totalAA": "708",
+      "percentSD": "24.83%"
+    }
+  ],
+  "Hood": [
+    {
+      "name": "Hood",
+      "totalAA": "706",
+      "percentSD": "24.79%"
+    }
+  ],
+  "Cooper": [
+    {
+      "name": "Cooper",
+      "totalAA": "702",
+      "percentSD": "24.63%"
+    }
+  ],
+  "Flandre": [
+    {
+      "name": "Flandre",
+      "totalAA": "698",
+      "percentSD": "24.51%"
+    }
+  ],
+  "Z43": [
+    {
+      "name": "Z43",
+      "totalAA": "696",
+      "percentSD": "24.41%"
+    }
+  ],
+  "Southampton": [
+    {
+      "name": "Southampton",
+      "totalAA": "696",
+      "percentSD": "24.41%"
+    }
+  ],
+  "La Galissonnière META": [
+    {
+      "name": "La Galissonnière META",
+      "totalAA": "694",
+      "percentSD": "24.36%"
+    }
+  ],
+  "Naka": [
+    {
+      "name": "Naka",
+      "totalAA": "694",
+      "percentSD": "24.35%"
+    }
+  ],
+  "Yume Minami": [
+    {
+      "name": "Yume Minami",
+      "totalAA": "694",
+      "percentSD": "24.35%"
+    }
+  ],
+  "West Virginia": [
+    {
+      "name": "West Virginia",
+      "totalAA": "691",
+      "percentSD": "24.26%"
+    }
+  ],
+  "Alvitr": [
+    {
+      "name": "Alvitr",
+      "totalAA": "690",
+      "percentSD": "24.23%"
+    }
+  ],
+  "Hindenburg": [
+    {
+      "name": "Hindenburg",
+      "totalAA": "690",
+      "percentSD": "24.21%"
+    }
+  ],
+  "Brennus": [
+    {
+      "name": "Brennus",
+      "totalAA": "690",
+      "percentSD": "24.21%"
+    }
+  ],
+  "Saint Louis": [
+    {
+      "name": "Saint Louis",
+      "totalAA": "690",
+      "percentSD": "24.21%"
+    }
+  ],
+  "Brünhilde": [
+    {
+      "name": "Brünhilde",
+      "totalAA": "688",
+      "percentSD": "24.14%"
+    }
+  ],
+  "Tamaki": [
+    {
+      "name": "Tamaki",
+      "totalAA": "688",
+      "percentSD": "24.14%"
+    }
+  ],
+  "Alsace": [
+    {
+      "name": "Alsace",
+      "totalAA": "686",
+      "percentSD": "24.09%"
+    }
+  ],
+  "Brooklyn": [
+    {
+      "name": "Brooklyn",
+      "totalAA": "684",
+      "percentSD": "24.00%"
+    }
+  ],
+  "Honolulu": [
+    {
+      "name": "Honolulu",
+      "totalAA": "684",
+      "percentSD": "24.00%"
+    }
+  ],
+  "Phoenix": [
+    {
+      "name": "Phoenix",
+      "totalAA": "684",
+      "percentSD": "24.00%"
+    }
+  ],
+  "Gneisenau META": [
+    {
+      "name": "Gneisenau META",
+      "totalAA": "681",
+      "percentSD": "23.90%"
+    }
+  ],
+  "Unzen": [
+    {
+      "name": "Unzen",
+      "totalAA": "680",
+      "percentSD": "23.85%"
+    }
+  ],
+  "Sendai": [
+    {
+      "name": "Sendai",
+      "totalAA": "679",
+      "percentSD": "23.81%"
+    }
+  ],
+  "Enterprise (Royal Navy)": [
+    {
+      "name": "Enterprise (Royal Navy)",
+      "totalAA": "678",
+      "percentSD": "23.81%"
+    }
+  ],
+  "Howe": [
+    {
+      "name": "Howe",
+      "totalAA": "678",
+      "percentSD": "23.78%"
+    }
+  ],
+  "Dewey": [
+    {
+      "name": "Dewey",
+      "totalAA": "676",
+      "percentSD": "23.73%"
+    }
+  ],
+  "Sovetskaya Belorussiya": [
+    {
+      "name": "Sovetskaya Belorussiya",
+      "totalAA": "676",
+      "percentSD": "23.73%"
+    }
+  ],
+  "Aylwin": [
+    {
+      "name": "Aylwin",
+      "totalAA": "671",
+      "percentSD": "23.55%"
+    }
+  ],
+  "Fiji": [
+    {
+      "name": "Fiji",
+      "totalAA": "671",
+      "percentSD": "23.54%"
+    }
+  ],
+  "Pola": [
+    {
+      "name": "Pola",
+      "totalAA": "668",
+      "percentSD": "23.44%"
+    }
+  ],
+  "Grozny": [
+    {
+      "name": "Grozny",
+      "totalAA": "668",
+      "percentSD": "23.44%"
+    }
+  ],
+  "Kearsarge": [
+    {
+      "name": "Kearsarge",
+      "totalAA": "667",
+      "percentSD": "23.40%"
+    }
+  ],
+  "Dorsetshire": [
+    {
+      "name": "Dorsetshire",
+      "totalAA": "665",
+      "percentSD": "23.35%"
+    }
+  ],
+  "Richelieu": [
+    {
+      "name": "Richelieu",
+      "totalAA": "665",
+      "percentSD": "23.35%"
+    }
+  ],
+  "Kimberly META": [
+    {
+      "name": "Kimberly META",
+      "totalAA": "662",
+      "percentSD": "23.25%"
+    }
+  ],
+  "Attilio Regolo": [
+    {
+      "name": "Attilio Regolo",
+      "totalAA": "658",
+      "percentSD": "23.08%"
+    }
+  ],
+  "Fletcher": [
+    {
+      "name": "Fletcher",
+      "totalAA": "654",
+      "percentSD": "22.95%"
+    }
+  ],
+  "Hazelwood": [
+    {
+      "name": "Hazelwood",
+      "totalAA": "654",
+      "percentSD": "22.95%"
+    }
+  ],
+  "Jenkins": [
+    {
+      "name": "Jenkins",
+      "totalAA": "654",
+      "percentSD": "22.95%"
+    }
+  ],
+  "Mullany": [
+    {
+      "name": "Mullany",
+      "totalAA": "654",
+      "percentSD": "22.95%"
+    }
+  ],
+  "Radford": [
+    {
+      "name": "Radford",
+      "totalAA": "654",
+      "percentSD": "22.95%"
+    }
+  ],
+  "Thatcher": [
+    {
+      "name": "Thatcher",
+      "totalAA": "654",
+      "percentSD": "22.95%"
+    }
+  ],
+  "Agano": [
+    {
+      "name": "Agano",
+      "totalAA": "653",
+      "percentSD": "22.93%"
+    }
+  ],
+  "Norfolk": [
+    {
+      "name": "Norfolk",
+      "totalAA": "653",
+      "percentSD": "22.90%"
+    }
+  ],
+  "Marseillaise": [
+    {
+      "name": "Marseillaise",
+      "totalAA": "651",
+      "percentSD": "22.84%"
+    }
+  ],
+  "Pompeo Magno": [
+    {
+      "name": "Pompeo Magno",
+      "totalAA": "650",
+      "percentSD": "22.83%"
+    }
+  ],
+  "Aulick": [
+    {
+      "name": "Aulick",
+      "totalAA": "650",
+      "percentSD": "22.83%"
+    }
+  ],
+  "Foote": [
+    {
+      "name": "Foote",
+      "totalAA": "650",
+      "percentSD": "22.83%"
+    }
+  ],
+  "Spence": [
+    {
+      "name": "Spence",
+      "totalAA": "650",
+      "percentSD": "22.83%"
+    }
+  ],
+  "Azusa Miura": [
+    {
+      "name": "Azusa Miura",
+      "totalAA": "650",
+      "percentSD": "22.82%"
+    }
+  ],
+  "Exeter": [
+    {
+      "name": "Exeter",
+      "totalAA": "650",
+      "percentSD": "22.80%"
+    }
+  ],
+  "Zara": [
+    {
+      "name": "Zara",
+      "totalAA": "647",
+      "percentSD": "22.69%"
+    }
+  ],
+  "Cassin": [
+    {
+      "name": "Cassin",
+      "totalAA": "645",
+      "percentSD": "22.64%"
+    }
+  ],
+  "Downes": [
+    {
+      "name": "Downes",
+      "totalAA": "645",
+      "percentSD": "22.64%"
+    }
+  ],
+  "Z35": [
+    {
+      "name": "Z35",
+      "totalAA": "645",
+      "percentSD": "22.64%"
+    }
+  ],
+  "Arkhangelsk": [
+    {
+      "name": "Arkhangelsk",
+      "totalAA": "641",
+      "percentSD": "22.48%"
+    }
+  ],
+  "Edinburgh": [
+    {
+      "name": "Edinburgh",
+      "totalAA": "640",
+      "percentSD": "22.47%"
+    }
+  ],
+  "Rodney META": [
+    {
+      "name": "Rodney META",
+      "totalAA": "639",
+      "percentSD": "22.43%"
+    }
+  ],
+  "Monarch": [
+    {
+      "name": "Monarch",
+      "totalAA": "639",
+      "percentSD": "22.42%"
+    }
+  ],
+  "Purple Heart": [
+    {
+      "name": "Purple Heart",
+      "totalAA": "639",
+      "percentSD": "22.42%"
+    }
+  ],
+  "Maury": [
+    {
+      "name": "Maury",
+      "totalAA": "639",
+      "percentSD": "22.41%"
+    }
+  ],
+  "Z36": [
+    {
+      "name": "Z36",
+      "totalAA": "639",
+      "percentSD": "22.41%"
+    }
+  ],
+  "Laffey": [
+    {
+      "name": "Laffey",
+      "totalAA": "635",
+      "percentSD": "22.30%"
+    }
+  ],
+  "La Galissonnière": [
+    {
+      "name": "La Galissonnière",
+      "totalAA": "635",
+      "percentSD": "22.28%"
+    }
+  ],
+  "Luna": [
+    {
+      "name": "Luna",
+      "totalAA": "635",
+      "percentSD": "22.28%"
+    }
+  ],
+  "The 2nd": [
+    {
+      "name": "The 2nd",
+      "totalAA": "635",
+      "percentSD": "22.28%"
+    }
+  ],
+  "Nelson": [
+    {
+      "name": "Nelson",
+      "totalAA": "635",
+      "percentSD": "22.28%"
+    }
+  ],
+  "Azuma": [
+    {
+      "name": "Azuma",
+      "totalAA": "633",
+      "percentSD": "22.22%"
+    }
+  ],
+  "Colorado": [
+    {
+      "name": "Colorado",
+      "totalAA": "632",
+      "percentSD": "22.18%"
+    }
+  ],
+  "Perseus": [
+    {
+      "name": "Perseus",
+      "totalAA": "632",
+      "percentSD": "22.17%"
+    }
+  ],
+  "Gridley": [
+    {
+      "name": "Gridley",
+      "totalAA": "630",
+      "percentSD": "22.12%"
+    }
+  ],
+  "Hunter META": [
+    {
+      "name": "Hunter META",
+      "totalAA": "629",
+      "percentSD": "22.08%"
+    }
+  ],
+  "Tallinn": [
+    {
+      "name": "Tallinn",
+      "totalAA": "629",
+      "percentSD": "22.07%"
+    }
+  ],
+  "Queen Elizabeth META": [
+    {
+      "name": "Queen Elizabeth META",
+      "totalAA": "628",
+      "percentSD": "22.05%"
+    }
+  ],
+  "Benson": [
+    {
+      "name": "Benson",
+      "totalAA": "627",
+      "percentSD": "22.01%"
+    }
+  ],
+  "Craven": [
+    {
+      "name": "Craven",
+      "totalAA": "627",
+      "percentSD": "22.01%"
+    }
+  ],
+  "Hobby": [
+    {
+      "name": "Hobby",
+      "totalAA": "627",
+      "percentSD": "22.01%"
+    }
+  ],
+  "Kalk": [
+    {
+      "name": "Kalk",
+      "totalAA": "627",
+      "percentSD": "22.01%"
+    }
+  ],
+  "McCall": [
+    {
+      "name": "McCall",
+      "totalAA": "627",
+      "percentSD": "22.01%"
+    }
+  ],
+  "Neptune (Neptunia)": [
+    {
+      "name": "Neptune (Neptunia)",
+      "totalAA": "624",
+      "percentSD": "21.91%"
+    }
+  ],
+  "Queen Elizabeth": [
+    {
+      "name": "Queen Elizabeth",
+      "totalAA": "621",
+      "percentSD": "21.79%"
+    }
+  ],
+  "Arizona META": [
+    {
+      "name": "Arizona META",
+      "totalAA": "619",
+      "percentSD": "21.73%"
+    }
+  ],
+  "Daisen": [
+    {
+      "name": "Daisen",
+      "totalAA": "619",
+      "percentSD": "21.73%"
+    }
+  ],
+  "Jeanne d'Arc": [
+    {
+      "name": "Jeanne d'Arc",
+      "totalAA": "616",
+      "percentSD": "21.63%"
+    }
+  ],
+  "Achilles": [
+    {
+      "name": "Achilles",
+      "totalAA": "615",
+      "percentSD": "21.59%"
+    }
+  ],
+  "Ajax": [
+    {
+      "name": "Ajax",
+      "totalAA": "615",
+      "percentSD": "21.59%"
+    }
+  ],
+  "Le Terrible": [
+    {
+      "name": "Le Terrible",
+      "totalAA": "615",
+      "percentSD": "21.57%"
+    }
+  ],
+  "Ägir": [
+    {
+      "name": "Ägir",
+      "totalAA": "613",
+      "percentSD": "21.51%"
+    }
+  ],
+  "Belfast": [
+    {
+      "name": "Belfast",
+      "totalAA": "612",
+      "percentSD": "21.50%"
+    }
+  ],
+  "Wichita META": [
+    {
+      "name": "Wichita META",
+      "totalAA": "610",
+      "percentSD": "21.40%"
+    }
+  ],
+  "Renown META": [
+    {
+      "name": "Renown META",
+      "totalAA": "609",
+      "percentSD": "21.37%"
+    }
+  ],
+  "Sovetskaya Rossiya": [
+    {
+      "name": "Sovetskaya Rossiya",
+      "totalAA": "605",
+      "percentSD": "21.22%"
+    }
+  ],
+  "Anchorage": [
+    {
+      "name": "Anchorage",
+      "totalAA": "603",
+      "percentSD": "21.15%"
+    }
+  ],
+  "Oklahoma": [
+    {
+      "name": "Oklahoma",
+      "totalAA": "602",
+      "percentSD": "21.13%"
+    }
+  ],
+  "Mogador": [
+    {
+      "name": "Mogador",
+      "totalAA": "600",
+      "percentSD": "21.07%"
+    }
+  ],
+  "Little Bel": [
+    {
+      "name": "Little Bel",
+      "totalAA": "599",
+      "percentSD": "21.03%"
+    }
+  ],
+  "Wichita": [
+    {
+      "name": "Wichita",
+      "totalAA": "599",
+      "percentSD": "21.01%"
+    }
+  ],
+  "Littorio": [
+    {
+      "name": "Littorio",
+      "totalAA": "598",
+      "percentSD": "20.99%"
+    }
+  ],
+  "Vittorio Veneto": [
+    {
+      "name": "Vittorio Veneto",
+      "totalAA": "598",
+      "percentSD": "20.99%"
+    }
+  ],
+  "Friedrich der Große": [
+    {
+      "name": "Friedrich der Große",
+      "totalAA": "595",
+      "percentSD": "20.89%"
+    }
+  ],
+  "Nevada": [
+    {
+      "name": "Nevada",
+      "totalAA": "595",
+      "percentSD": "20.89%"
+    }
+  ],
+  "Roma": [
+    {
+      "name": "Roma",
+      "totalAA": "595",
+      "percentSD": "20.89%"
+    }
+  ],
+  "Louisville": [
+    {
+      "name": "Louisville",
+      "totalAA": "593",
+      "percentSD": "20.82%"
+    }
+  ],
+  "Napoli": [
+    {
+      "name": "Napoli",
+      "totalAA": "593",
+      "percentSD": "20.82%"
+    }
+  ],
+  "York": [
+    {
+      "name": "York",
+      "totalAA": "593",
+      "percentSD": "20.82%"
+    }
+  ],
+  "Prinz Eugen": [
+    {
+      "name": "Prinz Eugen",
+      "totalAA": "592",
+      "percentSD": "20.79%"
+    }
+  ],
+  "Marie Rose": [
+    {
+      "name": "Marie Rose",
+      "totalAA": "586",
+      "percentSD": "20.56%"
+    }
+  ],
+  "Roon": [
+    {
+      "name": "Roon",
+      "totalAA": "585",
+      "percentSD": "20.54%"
+    }
+  ],
+  "Roon μ": [
+    {
+      "name": "Roon μ",
+      "totalAA": "585",
+      "percentSD": "20.54%"
+    }
+  ],
+  "L'Indomptable": [
+    {
+      "name": "L'Indomptable",
+      "totalAA": "584",
+      "percentSD": "20.51%"
+    }
+  ],
+  "Kala Ideas": [
+    {
+      "name": "Kala Ideas",
+      "totalAA": "583",
+      "percentSD": "20.45%"
+    }
+  ],
+  "Houston": [
+    {
+      "name": "Houston",
+      "totalAA": "582",
+      "percentSD": "20.43%"
+    }
+  ],
+  "Little Prinz Eugen": [
+    {
+      "name": "Little Prinz Eugen",
+      "totalAA": "581",
+      "percentSD": "20.40%"
+    }
+  ],
+  "Murasaki Shion": [
+    {
+      "name": "Murasaki Shion",
+      "totalAA": "581",
+      "percentSD": "20.38%"
+    }
+  ],
+  "Musashi": [
+    {
+      "name": "Musashi",
+      "totalAA": "579",
+      "percentSD": "20.34%"
+    }
+  ],
+  "Royal Oak": [
+    {
+      "name": "Royal Oak",
+      "totalAA": "579",
+      "percentSD": "20.34%"
+    }
+  ],
+  "Fusou": [
+    {
+      "name": "Fusou",
+      "totalAA": "577",
+      "percentSD": "20.24%"
+    }
+  ],
+  "Yamashiro": [
+    {
+      "name": "Yamashiro",
+      "totalAA": "577",
+      "percentSD": "20.24%"
+    }
+  ],
+  "Gorizia": [
+    {
+      "name": "Gorizia",
+      "totalAA": "576",
+      "percentSD": "20.20%"
+    }
+  ],
+  "Haruna": [
+    {
+      "name": "Haruna",
+      "totalAA": "575",
+      "percentSD": "20.18%"
+    }
+  ],
+  "Hiei": [
+    {
+      "name": "Hiei",
+      "totalAA": "575",
+      "percentSD": "20.18%"
+    }
+  ],
+  "Kirishima": [
+    {
+      "name": "Kirishima",
+      "totalAA": "575",
+      "percentSD": "20.18%"
+    }
+  ],
+  "Kongou": [
+    {
+      "name": "Kongou",
+      "totalAA": "575",
+      "percentSD": "20.18%"
+    }
+  ],
+  "Kongou μ": [
+    {
+      "name": "Kongou μ",
+      "totalAA": "575",
+      "percentSD": "20.18%"
+    }
+  ],
+  "Duke of York": [
+    {
+      "name": "Duke of York",
+      "totalAA": "574",
+      "percentSD": "20.15%"
+    }
+  ],
+  "Chicago": [
+    {
+      "name": "Chicago",
+      "totalAA": "574",
+      "percentSD": "20.14%"
+    }
+  ],
+  "Northampton": [
+    {
+      "name": "Northampton",
+      "totalAA": "574",
+      "percentSD": "20.14%"
+    }
+  ],
+  "Chang Chun": [
+    {
+      "name": "Chang Chun",
+      "totalAA": "573",
+      "percentSD": "20.12%"
+    }
+  ],
+  "Little Friedrich": [
+    {
+      "name": "Little Friedrich",
+      "totalAA": "571",
+      "percentSD": "20.04%"
+    }
+  ],
+  "Trento META": [
+    {
+      "name": "Trento META",
+      "totalAA": "570",
+      "percentSD": "20.01%"
+    }
+  ],
+  "Lützow": [
+    {
+      "name": "Lützow",
+      "totalAA": "569",
+      "percentSD": "19.97%"
+    }
+  ],
+  "Ognevoy": [
+    {
+      "name": "Ognevoy",
+      "totalAA": "568",
+      "percentSD": "19.93%"
+    }
+  ],
+  "Jervis": [
+    {
+      "name": "Jervis",
+      "totalAA": "567",
+      "percentSD": "19.90%"
+    }
+  ],
+  "Casablanca": [
+    {
+      "name": "Casablanca",
+      "totalAA": "566",
+      "percentSD": "19.87%"
+    }
+  ],
+  "Arizona": [
+    {
+      "name": "Arizona",
+      "totalAA": "565",
+      "percentSD": "19.83%"
+    }
+  ],
+  "Rodney": [
+    {
+      "name": "Rodney",
+      "totalAA": "565",
+      "percentSD": "19.83%"
+    }
+  ],
+  "Foch": [
+    {
+      "name": "Foch",
+      "totalAA": "564",
+      "percentSD": "19.80%"
+    }
+  ],
+  "Pensacola": [
+    {
+      "name": "Pensacola",
+      "totalAA": "564",
+      "percentSD": "19.80%"
+    }
+  ],
+  "Salt Lake City": [
+    {
+      "name": "Salt Lake City",
+      "totalAA": "564",
+      "percentSD": "19.80%"
+    }
+  ],
+  "Nakiri Ayame": [
+    {
+      "name": "Nakiri Ayame",
+      "totalAA": "563",
+      "percentSD": "19.75%"
+    }
+  ],
+  "Maryland": [
+    {
+      "name": "Maryland",
+      "totalAA": "562",
+      "percentSD": "19.74%"
+    }
+  ],
+  "Sussex": [
+    {
+      "name": "Sussex",
+      "totalAA": "562",
+      "percentSD": "19.74%"
+    }
+  ],
+  "Stremitelny": [
+    {
+      "name": "Stremitelny",
+      "totalAA": "562",
+      "percentSD": "19.72%"
+    }
+  ],
+  "Murasaki": [
+    {
+      "name": "Murasaki",
+      "totalAA": "561",
+      "percentSD": "19.69%"
+    }
+  ],
+  "Suruga": [
+    {
+      "name": "Suruga",
+      "totalAA": "561",
+      "percentSD": "19.69%"
+    }
+  ],
+  "Honoka": [
+    {
+      "name": "Honoka",
+      "totalAA": "560",
+      "percentSD": "19.64%"
+    }
+  ],
+  "Nubian": [
+    {
+      "name": "Nubian",
+      "totalAA": "559",
+      "percentSD": "19.60%"
+    }
+  ],
+  "Kumano": [
+    {
+      "name": "Kumano",
+      "totalAA": "558",
+      "percentSD": "19.57%"
+    }
+  ],
+  "Mogami": [
+    {
+      "name": "Mogami",
+      "totalAA": "557",
+      "percentSD": "19.55%"
+    }
+  ],
+  "Pennsylvania": [
+    {
+      "name": "Pennsylvania",
+      "totalAA": "557",
+      "percentSD": "19.55%"
+    }
+  ],
+  "Revenge": [
+    {
+      "name": "Revenge",
+      "totalAA": "557",
+      "percentSD": "19.55%"
+    }
+  ],
+  "Valiant": [
+    {
+      "name": "Valiant",
+      "totalAA": "557",
+      "percentSD": "19.55%"
+    }
+  ],
+  "Vincenzo Gioberti": [
+    {
+      "name": "Vincenzo Gioberti",
+      "totalAA": "556",
+      "percentSD": "19.52%"
+    }
+  ],
+  "L'Audacieux": [
+    {
+      "name": "L'Audacieux",
+      "totalAA": "556",
+      "percentSD": "19.51%"
+    }
+  ],
+  "Ritsuko Akizuki": [
+    {
+      "name": "Ritsuko Akizuki",
+      "totalAA": "555",
+      "percentSD": "19.47%"
+    }
+  ],
+  "California": [
+    {
+      "name": "California",
+      "totalAA": "554",
+      "percentSD": "19.46%"
+    }
+  ],
+  "Chen Hai": [
+    {
+      "name": "Chen Hai",
+      "totalAA": "554",
+      "percentSD": "19.46%"
+    }
+  ],
+  "Tennessee": [
+    {
+      "name": "Tennessee",
+      "totalAA": "554",
+      "percentSD": "19.46%"
+    }
+  ],
+  "Lyon": [
+    {
+      "name": "Lyon",
+      "totalAA": "552",
+      "percentSD": "19.36%"
+    }
+  ],
+  "Sevastopol": [
+    {
+      "name": "Sevastopol",
+      "totalAA": "552",
+      "percentSD": "19.36%"
+    }
+  ],
+  "Svirepy": [
+    {
+      "name": "Svirepy",
+      "totalAA": "552",
+      "percentSD": "19.36%"
+    }
+  ],
+  "Kiev": [
+    {
+      "name": "Kiev",
+      "totalAA": "552",
+      "percentSD": "19.36%"
+    }
+  ],
+  "Yūyaki": [
+    {
+      "name": "Yūyaki",
+      "totalAA": "552",
+      "percentSD": "19.36%"
+    }
+  ],
+  "Shropshire": [
+    {
+      "name": "Shropshire",
+      "totalAA": "550",
+      "percentSD": "19.32%"
+    }
+  ],
+  "Prinz Eugen μ": [
+    {
+      "name": "Prinz Eugen μ",
+      "totalAA": "550",
+      "percentSD": "19.29%"
+    }
+  ],
+  "Suzuya": [
+    {
+      "name": "Suzuya",
+      "totalAA": "549",
+      "percentSD": "19.26%"
+    }
+  ],
+  "Ulrich von Hutten": [
+    {
+      "name": "Ulrich von Hutten",
+      "totalAA": "549",
+      "percentSD": "19.26%"
+    }
+  ],
+  "Le Malin": [
+    {
+      "name": "Le Malin",
+      "totalAA": "548",
+      "percentSD": "19.24%"
+    }
+  ],
+  "Janus": [
+    {
+      "name": "Janus",
+      "totalAA": "547",
+      "percentSD": "19.21%"
+    }
+  ],
+  "Acasta": [
+    {
+      "name": "Acasta",
+      "totalAA": "547",
+      "percentSD": "19.21%"
+    }
+  ],
+  "Ardent": [
+    {
+      "name": "Ardent",
+      "totalAA": "547",
+      "percentSD": "19.21%"
+    }
+  ],
+  "Fortune": [
+    {
+      "name": "Fortune",
+      "totalAA": "547",
+      "percentSD": "19.21%"
+    }
+  ],
+  "Algérie": [
+    {
+      "name": "Algérie",
+      "totalAA": "546",
+      "percentSD": "19.18%"
+    }
+  ],
+  "Algérie META": [
+    {
+      "name": "Algérie META",
+      "totalAA": "546",
+      "percentSD": "19.18%"
+    }
+  ],
+  "Friedrich Carl": [
+    {
+      "name": "Friedrich Carl",
+      "totalAA": "546",
+      "percentSD": "19.18%"
+    }
+  ],
+  "Kasumi (Venus Vacation)": [
+    {
+      "name": "Kasumi (Venus Vacation)",
+      "totalAA": "546",
+      "percentSD": "19.17%"
+    }
+  ],
+  "Gromky": [
+    {
+      "name": "Gromky",
+      "totalAA": "546",
+      "percentSD": "19.16%"
+    }
+  ],
+  "Soobrazitelny": [
+    {
+      "name": "Soobrazitelny",
+      "totalAA": "546",
+      "percentSD": "19.16%"
+    }
+  ],
+  "Suffren": [
+    {
+      "name": "Suffren",
+      "totalAA": "545",
+      "percentSD": "19.12%"
+    }
+  ],
+  "Le Malin μ": [
+    {
+      "name": "Le Malin μ",
+      "totalAA": "543",
+      "percentSD": "19.07%"
+    }
+  ],
+  "Comet": [
+    {
+      "name": "Comet",
+      "totalAA": "542",
+      "percentSD": "19.01%"
+    }
+  ],
+  "Crescent": [
+    {
+      "name": "Crescent",
+      "totalAA": "542",
+      "percentSD": "19.01%"
+    }
+  ],
+  "Cygnet": [
+    {
+      "name": "Cygnet",
+      "totalAA": "542",
+      "percentSD": "19.01%"
+    }
+  ],
+  "Foxhound": [
+    {
+      "name": "Foxhound",
+      "totalAA": "542",
+      "percentSD": "19.01%"
+    }
+  ],
+  "Gangut": [
+    {
+      "name": "Gangut",
+      "totalAA": "541",
+      "percentSD": "19.00%"
+    }
+  ],
+  "Super Gamer Kizuna AI": [
+    {
+      "name": "Super Gamer Kizuna AI",
+      "totalAA": "539",
+      "percentSD": "18.90%"
+    }
+  ],
+  "Independence": [
+    {
+      "name": "Independence",
+      "totalAA": "538",
+      "percentSD": "18.86%"
+    }
+  ],
+  "Unicorn": [
+    {
+      "name": "Unicorn",
+      "totalAA": "538",
+      "percentSD": "18.86%"
+    }
+  ],
+  "Maestrale": [
+    {
+      "name": "Maestrale",
+      "totalAA": "536",
+      "percentSD": "18.80%"
+    }
+  ],
+  "Ikaruga": [
+    {
+      "name": "Ikaruga",
+      "totalAA": "534",
+      "percentSD": "18.75%"
+    }
+  ],
+  "Tashkent": [
+    {
+      "name": "Tashkent",
+      "totalAA": "534",
+      "percentSD": "18.73%"
+    }
+  ],
+  "Champagne": [
+    {
+      "name": "Champagne",
+      "totalAA": "533",
+      "percentSD": "18.71%"
+    }
+  ],
+  "Izumo": [
+    {
+      "name": "Izumo",
+      "totalAA": "531",
+      "percentSD": "18.64%"
+    }
+  ],
+  "Mujina": [
+    {
+      "name": "Mujina",
+      "totalAA": "531",
+      "percentSD": "18.62%"
+    }
+  ],
+  "Dupleix": [
+    {
+      "name": "Dupleix",
+      "totalAA": "530",
+      "percentSD": "18.58%"
+    }
+  ],
+  "Fu Shun": [
+    {
+      "name": "Fu Shun",
+      "totalAA": "529",
+      "percentSD": "18.58%"
+    }
+  ],
+  "Tai Yuan": [
+    {
+      "name": "Tai Yuan",
+      "totalAA": "529",
+      "percentSD": "18.58%"
+    }
+  ],
+  "Ibuki": [
+    {
+      "name": "Ibuki",
+      "totalAA": "527",
+      "percentSD": "18.50%"
+    }
+  ],
+  "An Shan": [
+    {
+      "name": "An Shan",
+      "totalAA": "527",
+      "percentSD": "18.48%"
+    }
+  ],
+  "Black Heart": [
+    {
+      "name": "Black Heart",
+      "totalAA": "526",
+      "percentSD": "18.45%"
+    }
+  ],
+  "Libeccio": [
+    {
+      "name": "Libeccio",
+      "totalAA": "526",
+      "percentSD": "18.45%"
+    }
+  ],
+  "Hermes": [
+    {
+      "name": "Hermes",
+      "totalAA": "525",
+      "percentSD": "18.43%"
+    }
+  ],
+  "Nachi": [
+    {
+      "name": "Nachi",
+      "totalAA": "524",
+      "percentSD": "18.39%"
+    }
+  ],
+  "Kronshtadt": [
+    {
+      "name": "Kronshtadt",
+      "totalAA": "523",
+      "percentSD": "18.35%"
+    }
+  ],
+  "Fusou META": [
+    {
+      "name": "Fusou META",
+      "totalAA": "522",
+      "percentSD": "18.33%"
+    }
+  ],
+  "Bolzano": [
+    {
+      "name": "Bolzano",
+      "totalAA": "521",
+      "percentSD": "18.30%"
+    }
+  ],
+  "Hero": [
+    {
+      "name": "Hero",
+      "totalAA": "521",
+      "percentSD": "18.29%"
+    }
+  ],
+  "Mutsu": [
+    {
+      "name": "Mutsu",
+      "totalAA": "520",
+      "percentSD": "18.25%"
+    }
+  ],
+  "Gremyashchy": [
+    {
+      "name": "Gremyashchy",
+      "totalAA": "520",
+      "percentSD": "18.24%"
+    }
+  ],
+  "Kizuna AI": [
+    {
+      "name": "Kizuna AI",
+      "totalAA": "520",
+      "percentSD": "18.24%"
+    }
+  ],
+  "Vampire META": [
+    {
+      "name": "Vampire META",
+      "totalAA": "520",
+      "percentSD": "18.24%"
+    }
+  ],
+  "Long Island": [
+    {
+      "name": "Long Island",
+      "totalAA": "519",
+      "percentSD": "18.23%"
+    }
+  ],
+  "Ying Swei": [
+    {
+      "name": "Ying Swei",
+      "totalAA": "519",
+      "percentSD": "18.20%"
+    }
+  ],
+  "Natsuiro Matsuri": [
+    {
+      "name": "Natsuiro Matsuri",
+      "totalAA": "518",
+      "percentSD": "18.19%"
+    }
+  ],
+  "Glowworm": [
+    {
+      "name": "Glowworm",
+      "totalAA": "517",
+      "percentSD": "18.14%"
+    }
+  ],
+  "Grenville": [
+    {
+      "name": "Grenville",
+      "totalAA": "517",
+      "percentSD": "18.14%"
+    }
+  ],
+  "Abercrombie": [
+    {
+      "name": "Abercrombie",
+      "totalAA": "516",
+      "percentSD": "18.11%"
+    }
+  ],
+  "Nagato": [
+    {
+      "name": "Nagato",
+      "totalAA": "516",
+      "percentSD": "18.11%"
+    }
+  ],
+  "Hiei-chan": [
+    {
+      "name": "Hiei-chan",
+      "totalAA": "514",
+      "percentSD": "18.04%"
+    }
+  ],
+  "Devonshire": [
+    {
+      "name": "Devonshire",
+      "totalAA": "513",
+      "percentSD": "18.02%"
+    }
+  ],
+  "Bogue": [
+    {
+      "name": "Bogue",
+      "totalAA": "513",
+      "percentSD": "18.00%"
+    }
+  ],
+  "Prinz Heinrich": [
+    {
+      "name": "Prinz Heinrich",
+      "totalAA": "512",
+      "percentSD": "17.98%"
+    }
+  ],
+  "Fortune META": [
+    {
+      "name": "Fortune META",
+      "totalAA": "511",
+      "percentSD": "17.95%"
+    }
+  ],
+  "Javelin": [
+    {
+      "name": "Javelin",
+      "totalAA": "511",
+      "percentSD": "17.95%"
+    }
+  ],
+  "Hatakaze META": [
+    {
+      "name": "Hatakaze META",
+      "totalAA": "509",
+      "percentSD": "17.85%"
+    }
+  ],
+  "Prinz Adalbert": [
+    {
+      "name": "Prinz Adalbert",
+      "totalAA": "508",
+      "percentSD": "17.84%"
+    }
+  ],
+  "Alfredo Oriani": [
+    {
+      "name": "Alfredo Oriani",
+      "totalAA": "506",
+      "percentSD": "17.75%"
+    }
+  ],
+  "Hardy": [
+    {
+      "name": "Hardy",
+      "totalAA": "506",
+      "percentSD": "17.75%"
+    }
+  ],
+  "Hunter": [
+    {
+      "name": "Hunter",
+      "totalAA": "506",
+      "percentSD": "17.75%"
+    }
+  ],
+  "Jersey": [
+    {
+      "name": "Jersey",
+      "totalAA": "505",
+      "percentSD": "17.71%"
+    }
+  ],
+  "Juno": [
+    {
+      "name": "Juno",
+      "totalAA": "505",
+      "percentSD": "17.71%"
+    }
+  ],
+  "Jupiter": [
+    {
+      "name": "Jupiter",
+      "totalAA": "505",
+      "percentSD": "17.71%"
+    }
+  ],
+  "Vampire": [
+    {
+      "name": "Vampire",
+      "totalAA": "505",
+      "percentSD": "17.71%"
+    }
+  ],
+  "Nagisa": [
+    {
+      "name": "Nagisa",
+      "totalAA": "504",
+      "percentSD": "17.70%"
+    }
+  ],
+  "Poltava": [
+    {
+      "name": "Poltava",
+      "totalAA": "504",
+      "percentSD": "17.70%"
+    }
+  ],
+  "Choukai": [
+    {
+      "name": "Choukai",
+      "totalAA": "504",
+      "percentSD": "17.68%"
+    }
+  ],
+  "Noire": [
+    {
+      "name": "Noire",
+      "totalAA": "502",
+      "percentSD": "17.63%"
+    }
+  ],
+  "Tashkent μ": [
+    {
+      "name": "Tashkent μ",
+      "totalAA": "502",
+      "percentSD": "17.61%"
+    }
+  ],
+  "Erebus": [
+    {
+      "name": "Erebus",
+      "totalAA": "502",
+      "percentSD": "17.60%"
+    }
+  ],
+  "Minsk": [
+    {
+      "name": "Minsk",
+      "totalAA": "502",
+      "percentSD": "17.60%"
+    }
+  ],
+  "Terror": [
+    {
+      "name": "Terror",
+      "totalAA": "502",
+      "percentSD": "17.60%"
+    }
+  ],
+  "Pamiat' Merkuria META": [
+    {
+      "name": "Pamiat' Merkuria META",
+      "totalAA": "501",
+      "percentSD": "17.60%"
+    }
+  ],
+  "Gascogne": [
+    {
+      "name": "Gascogne",
+      "totalAA": "500",
+      "percentSD": "17.53%"
+    }
+  ],
+  "Echo": [
+    {
+      "name": "Echo",
+      "totalAA": "499",
+      "percentSD": "17.51%"
+    }
+  ],
+  "Blücher": [
+    {
+      "name": "Blücher",
+      "totalAA": "499",
+      "percentSD": "17.51%"
+    }
+  ],
+  "Erebus META": [
+    {
+      "name": "Erebus META",
+      "totalAA": "499",
+      "percentSD": "17.51%"
+    }
+  ],
+  "Namiko": [
+    {
+      "name": "Namiko",
+      "totalAA": "499",
+      "percentSD": "17.51%"
+    }
+  ],
+  "Kent": [
+    {
+      "name": "Kent",
+      "totalAA": "498",
+      "percentSD": "17.47%"
+    }
+  ],
+  "Lila Decyrus": [
+    {
+      "name": "Lila Decyrus",
+      "totalAA": "498",
+      "percentSD": "17.47%"
+    }
+  ],
+  "Suffolk": [
+    {
+      "name": "Suffolk",
+      "totalAA": "498",
+      "percentSD": "17.47%"
+    }
+  ],
+  "Foch META": [
+    {
+      "name": "Foch META",
+      "totalAA": "497",
+      "percentSD": "17.43%"
+    }
+  ],
+  "Beagle": [
+    {
+      "name": "Beagle",
+      "totalAA": "496",
+      "percentSD": "17.41%"
+    }
+  ],
+  "Bulldog": [
+    {
+      "name": "Bulldog",
+      "totalAA": "496",
+      "percentSD": "17.41%"
+    }
+  ],
+  "Bismarck": [
+    {
+      "name": "Bismarck",
+      "totalAA": "495",
+      "percentSD": "17.39%"
+    }
+  ],
+  "Tirpitz": [
+    {
+      "name": "Tirpitz",
+      "totalAA": "495",
+      "percentSD": "17.39%"
+    }
+  ],
+  "Haguro": [
+    {
+      "name": "Haguro",
+      "totalAA": "492",
+      "percentSD": "17.28%"
+    }
+  ],
+  "Z1": [
+    {
+      "name": "Z1",
+      "totalAA": "490",
+      "percentSD": "17.21%"
+    }
+  ],
+  "Tosa": [
+    {
+      "name": "Tosa",
+      "totalAA": "486",
+      "percentSD": "17.05%"
+    }
+  ],
+  "Le Téméraire μ": [
+    {
+      "name": "Le Téméraire μ",
+      "totalAA": "483",
+      "percentSD": "16.93%"
+    }
+  ],
+  "Eskimo": [
+    {
+      "name": "Eskimo",
+      "totalAA": "482",
+      "percentSD": "16.91%"
+    }
+  ],
+  "Icarus": [
+    {
+      "name": "Icarus",
+      "totalAA": "482",
+      "percentSD": "16.91%"
+    }
+  ],
+  "Matchless": [
+    {
+      "name": "Matchless",
+      "totalAA": "482",
+      "percentSD": "16.91%"
+    }
+  ],
+  "Musketeer": [
+    {
+      "name": "Musketeer",
+      "totalAA": "482",
+      "percentSD": "16.91%"
+    }
+  ],
+  "Fei Yuen": [
+    {
+      "name": "Fei Yuen",
+      "totalAA": "480",
+      "percentSD": "16.83%"
+    }
+  ],
+  "Myoukou": [
+    {
+      "name": "Myoukou",
+      "totalAA": "479",
+      "percentSD": "16.82%"
+    }
+  ],
+  "Pamiat' Merkuria": [
+    {
+      "name": "Pamiat' Merkuria",
+      "totalAA": "479",
+      "percentSD": "16.80%"
+    }
+  ],
+  "Repulse META": [
+    {
+      "name": "Repulse META",
+      "totalAA": "479",
+      "percentSD": "16.80%"
+    }
+  ],
+  "Shouhou": [
+    {
+      "name": "Shouhou",
+      "totalAA": "478",
+      "percentSD": "16.79%"
+    }
+  ],
+  "Trieste": [
+    {
+      "name": "Trieste",
+      "totalAA": "478",
+      "percentSD": "16.77%"
+    }
+  ],
+  "Furutaka": [
+    {
+      "name": "Furutaka",
+      "totalAA": "477",
+      "percentSD": "16.73%"
+    }
+  ],
+  "Kako": [
+    {
+      "name": "Kako",
+      "totalAA": "477",
+      "percentSD": "16.73%"
+    }
+  ],
+  "Clemenceau": [
+    {
+      "name": "Clemenceau",
+      "totalAA": "476",
+      "percentSD": "16.70%"
+    }
+  ],
+  "Chao Ho": [
+    {
+      "name": "Chao Ho",
+      "totalAA": "475",
+      "percentSD": "16.67%"
+    }
+  ],
+  "Little Renown": [
+    {
+      "name": "Little Renown",
+      "totalAA": "475",
+      "percentSD": "16.67%"
+    }
+  ],
+  "Z23": [
+    {
+      "name": "Z23",
+      "totalAA": "475",
+      "percentSD": "16.66%"
+    }
+  ],
+  "Nicoloso da Recco": [
+    {
+      "name": "Nicoloso da Recco",
+      "totalAA": "473",
+      "percentSD": "16.62%"
+    }
+  ],
+  "Admiral Hipper": [
+    {
+      "name": "Admiral Hipper",
+      "totalAA": "473",
+      "percentSD": "16.59%"
+    }
+  ],
+  "Admiral Hipper μ": [
+    {
+      "name": "Admiral Hipper μ",
+      "totalAA": "473",
+      "percentSD": "16.59%"
+    }
+  ],
+  "Chikuma": [
+    {
+      "name": "Chikuma",
+      "totalAA": "473",
+      "percentSD": "16.59%"
+    }
+  ],
+  "Bataan": [
+    {
+      "name": "Bataan",
+      "totalAA": "472",
+      "percentSD": "16.57%"
+    }
+  ],
+  "Ryuuhou": [
+    {
+      "name": "Ryuuhou",
+      "totalAA": "472",
+      "percentSD": "16.57%"
+    }
+  ],
+  "San Jacinto": [
+    {
+      "name": "San Jacinto",
+      "totalAA": "472",
+      "percentSD": "16.57%"
+    }
+  ],
+  "Amagi": [
+    {
+      "name": "Amagi",
+      "totalAA": "470",
+      "percentSD": "16.51%"
+    }
+  ],
+  "Kaga": [
+    {
+      "name": "Kaga (Battleship)",
+      "totalAA": "470",
+      "percentSD": "16.51%"
+    }
+  ],
+  "Mikuma": [
+    {
+      "name": "Mikuma",
+      "totalAA": "469",
+      "percentSD": "16.45%"
+    }
+  ],
+  "Trento": [
+    {
+      "name": "Trento",
+      "totalAA": "469",
+      "percentSD": "16.45%"
+    }
+  ],
+  "Emanuele Pessagno": [
+    {
+      "name": "Emanuele Pessagno",
+      "totalAA": "468",
+      "percentSD": "16.44%"
+    }
+  ],
+  "Langley II": [
+    {
+      "name": "Langley II",
+      "totalAA": "468",
+      "percentSD": "16.42%"
+    }
+  ],
+  "Yamashiro META": [
+    {
+      "name": "Yamashiro META",
+      "totalAA": "468",
+      "percentSD": "16.42%"
+    }
+  ],
+  "Elbe": [
+    {
+      "name": "Elbe",
+      "totalAA": "464",
+      "percentSD": "16.27%"
+    }
+  ],
+  "Jade": [
+    {
+      "name": "Jade",
+      "totalAA": "464",
+      "percentSD": "16.27%"
+    }
+  ],
+  "Zuihou": [
+    {
+      "name": "Zuihou",
+      "totalAA": "459",
+      "percentSD": "16.12%"
+    }
+  ],
+  "Weser": [
+    {
+      "name": "Weser",
+      "totalAA": "459",
+      "percentSD": "16.12%"
+    }
+  ],
+  "Atago": [
+    {
+      "name": "Atago",
+      "totalAA": "458",
+      "percentSD": "16.08%"
+    }
+  ],
+  "Takao": [
+    {
+      "name": "Takao",
+      "totalAA": "458",
+      "percentSD": "16.08%"
+    }
+  ],
+  "Chitose": [
+    {
+      "name": "Chitose",
+      "totalAA": "456",
+      "percentSD": "16.01%"
+    }
+  ],
+  "Chiyoda": [
+    {
+      "name": "Chiyoda",
+      "totalAA": "456",
+      "percentSD": "16.01%"
+    }
+  ],
+  "Chaser": [
+    {
+      "name": "Chaser",
+      "totalAA": "452",
+      "percentSD": "15.86%"
+    }
+  ],
+  "Renown": [
+    {
+      "name": "Renown",
+      "totalAA": "450",
+      "percentSD": "15.79%"
+    }
+  ],
+  "Argus": [
+    {
+      "name": "Argus",
+      "totalAA": "450",
+      "percentSD": "15.79%"
+    }
+  ],
+  "Princeton": [
+    {
+      "name": "Princeton",
+      "totalAA": "450",
+      "percentSD": "15.79%"
+    }
+  ],
+  "Saraana": [
+    {
+      "name": "Saraana",
+      "totalAA": "449",
+      "percentSD": "15.75%"
+    }
+  ],
+  "Uruuru": [
+    {
+      "name": "Uruuru",
+      "totalAA": "449",
+      "percentSD": "15.75%"
+    }
+  ],
+  "Princeton META": [
+    {
+      "name": "Princeton META",
+      "totalAA": "448",
+      "percentSD": "15.71%"
+    }
+  ],
+  "Ashigara": [
+    {
+      "name": "Ashigara",
+      "totalAA": "447",
+      "percentSD": "15.71%"
+    }
+  ],
+  "Ryuujou": [
+    {
+      "name": "Ryuujou",
+      "totalAA": "446",
+      "percentSD": "15.64%"
+    }
+  ],
+  "Aoba": [
+    {
+      "name": "Aoba",
+      "totalAA": "444",
+      "percentSD": "15.57%"
+    }
+  ],
+  "Kinugasa": [
+    {
+      "name": "Kinugasa",
+      "totalAA": "444",
+      "percentSD": "15.57%"
+    }
+  ],
+  "Repulse": [
+    {
+      "name": "Repulse",
+      "totalAA": "443",
+      "percentSD": "15.53%"
+    }
+  ],
+  "Princess Hime": [
+    {
+      "name": "Princess Hime",
+      "totalAA": "441",
+      "percentSD": "15.47%"
+    }
+  ],
+  "Shimakaze": [
+    {
+      "name": "Shimakaze",
+      "totalAA": "440",
+      "percentSD": "15.43%"
+    }
+  ],
+  "Seydlitz": [
+    {
+      "name": "Seydlitz",
+      "totalAA": "439",
+      "percentSD": "15.40%"
+    }
+  ],
+  "Amagi-chan": [
+    {
+      "name": "Amagi-chan",
+      "totalAA": "438",
+      "percentSD": "15.36%"
+    }
+  ],
+  "Andrea Doria": [
+    {
+      "name": "Andrea Doria",
+      "totalAA": "432",
+      "percentSD": "15.16%"
+    }
+  ],
+  "Admiral Graf Spee": [
+    {
+      "name": "Admiral Graf Spee",
+      "totalAA": "425",
+      "percentSD": "14.92%"
+    }
+  ],
+  "Deutschland": [
+    {
+      "name": "Deutschland",
+      "totalAA": "425",
+      "percentSD": "14.92%"
+    }
+  ],
+  "Little Spee": [
+    {
+      "name": "Little Spee",
+      "totalAA": "425",
+      "percentSD": "14.92%"
+    }
+  ],
+  "Gneisenau": [
+    {
+      "name": "Gneisenau",
+      "totalAA": "423",
+      "percentSD": "14.85%"
+    }
+  ],
+  "Scharnhorst": [
+    {
+      "name": "Scharnhorst",
+      "totalAA": "423",
+      "percentSD": "14.85%"
+    }
+  ],
+  "Jean Bart": [
+    {
+      "name": "Jean Bart",
+      "totalAA": "418",
+      "percentSD": "14.66%"
+    }
+  ],
+  "Felix Schultz": [
+    {
+      "name": "Felix Schultz",
+      "totalAA": "415",
+      "percentSD": "14.57%"
+    }
+  ],
+  "Kawakaze": [
+    {
+      "name": "Kawakaze",
+      "totalAA": "414",
+      "percentSD": "14.53%"
+    }
+  ],
+  "Gascogne μ": [
+    {
+      "name": "Gascogne μ",
+      "totalAA": "413",
+      "percentSD": "14.50%"
+    }
+  ],
+  "Strasbourg": [
+    {
+      "name": "Strasbourg",
+      "totalAA": "413",
+      "percentSD": "14.50%"
+    }
+  ],
+  "Le Mars": [
+    {
+      "name": "Le Mars",
+      "totalAA": "413",
+      "percentSD": "14.49%"
+    }
+  ],
+  "Yuudachi": [
+    {
+      "name": "Yuudachi",
+      "totalAA": "410",
+      "percentSD": "14.37%"
+    }
+  ],
+  "L'Opiniâtre": [
+    {
+      "name": "L'Opiniâtre",
+      "totalAA": "409",
+      "percentSD": "14.35%"
+    }
+  ],
+  "Kamikaze": [
+    {
+      "name": "Kamikaze",
+      "totalAA": "409",
+      "percentSD": "14.34%"
+    }
+  ],
+  "Elbing": [
+    {
+      "name": "Elbing",
+      "totalAA": "407",
+      "percentSD": "14.27%"
+    }
+  ],
+  "Ariake": [
+    {
+      "name": "Ariake",
+      "totalAA": "404",
+      "percentSD": "14.19%"
+    }
+  ],
+  "Hatsuharu": [
+    {
+      "name": "Hatsuharu",
+      "totalAA": "404",
+      "percentSD": "14.19%"
+    }
+  ],
+  "Hatsushimo": [
+    {
+      "name": "Hatsushimo",
+      "totalAA": "404",
+      "percentSD": "14.19%"
+    }
+  ],
+  "Yuugure": [
+    {
+      "name": "Yuugure",
+      "totalAA": "404",
+      "percentSD": "14.19%"
+    }
+  ],
+  "Dunkerque": [
+    {
+      "name": "Dunkerque",
+      "totalAA": "404",
+      "percentSD": "14.17%"
+    }
+  ],
+  "Kisaragi": [
+    {
+      "name": "Kisaragi",
+      "totalAA": "402",
+      "percentSD": "14.12%"
+    }
+  ],
+  "Mutsuki": [
+    {
+      "name": "Mutsuki",
+      "totalAA": "402",
+      "percentSD": "14.12%"
+    }
+  ],
+  "Matsukaze": [
+    {
+      "name": "Matsukaze",
+      "totalAA": "399",
+      "percentSD": "14.01%"
+    }
+  ],
+  "Forbin": [
+    {
+      "name": "Forbin",
+      "totalAA": "397",
+      "percentSD": "13.94%"
+    }
+  ],
+  "Kazagumo": [
+    {
+      "name": "Kazagumo",
+      "totalAA": "390",
+      "percentSD": "13.68%"
+    }
+  ],
+  "Kursk": [
+    {
+      "name": "Kursk",
+      "totalAA": "387",
+      "percentSD": "13.57%"
+    }
+  ],
+  "Épée": [
+    {
+      "name": "Épée",
+      "totalAA": "386",
+      "percentSD": "13.55%"
+    }
+  ],
+  "Z28": [
+    {
+      "name": "Z28",
+      "totalAA": "385",
+      "percentSD": "13.50%"
+    }
+  ],
+  "Maillé Brézé": [
+    {
+      "name": "Maillé Brézé",
+      "totalAA": "384",
+      "percentSD": "13.49%"
+    }
+  ],
+  "Fleuret": [
+    {
+      "name": "Fleuret",
+      "totalAA": "383",
+      "percentSD": "13.45%"
+    }
+  ],
+  "Kasumi META": [
+    {
+      "name": "Kasumi META",
+      "totalAA": "379",
+      "percentSD": "13.31%"
+    }
+  ],
+  "Isokaze": [
+    {
+      "name": "Isokaze",
+      "totalAA": "379",
+      "percentSD": "13.30%"
+    }
+  ],
+  "Le Téméraire": [
+    {
+      "name": "Le Téméraire",
+      "totalAA": "377",
+      "percentSD": "13.24%"
+    }
+  ],
+  "Kersaint": [
+    {
+      "name": "Kersaint",
+      "totalAA": "375",
+      "percentSD": "13.14%"
+    }
+  ],
+  "Asanagi": [
+    {
+      "name": "Asanagi",
+      "totalAA": "367",
+      "percentSD": "12.87%"
+    }
+  ],
+  "Carabiniere": [
+    {
+      "name": "Carabiniere",
+      "totalAA": "365",
+      "percentSD": "12.82%"
+    }
+  ],
+  "Otto von Alvensleben": [
+    {
+      "name": "Otto von Alvensleben",
+      "totalAA": "365",
+      "percentSD": "12.82%"
+    }
+  ],
+  "Yukikaze": [
+    {
+      "name": "Yukikaze",
+      "totalAA": "365",
+      "percentSD": "12.82%"
+    }
+  ],
+  "Giulio Cesare": [
+    {
+      "name": "Giulio Cesare",
+      "totalAA": "365",
+      "percentSD": "12.81%"
+    }
+  ],
+  "Kasumi": [
+    {
+      "name": "Kasumi",
+      "totalAA": "361",
+      "percentSD": "12.68%"
+    }
+  ],
+  "Kashino": [
+    {
+      "name": "Kashino",
+      "totalAA": "361",
+      "percentSD": "12.68%"
+    }
+  ],
+  "Makinami": [
+    {
+      "name": "Makinami",
+      "totalAA": "360",
+      "percentSD": "12.65%"
+    }
+  ],
+  "Naganami": [
+    {
+      "name": "Naganami",
+      "totalAA": "360",
+      "percentSD": "12.65%"
+    }
+  ],
+  "Nekone": [
+    {
+      "name": "Nekone",
+      "totalAA": "360",
+      "percentSD": "12.62%"
+    }
+  ],
+  "Hibiki": [
+    {
+      "name": "Hibiki",
+      "totalAA": "358",
+      "percentSD": "12.58%"
+    }
+  ],
+  "Nowaki": [
+    {
+      "name": "Nowaki",
+      "totalAA": "358",
+      "percentSD": "12.58%"
+    }
+  ],
+  "Tanikaze": [
+    {
+      "name": "Tanikaze",
+      "totalAA": "358",
+      "percentSD": "12.58%"
+    }
+  ],
+  "White Heart": [
+    {
+      "name": "White Heart",
+      "totalAA": "358",
+      "percentSD": "12.58%"
+    }
+  ],
+  "Z2": [
+    {
+      "name": "Z2",
+      "totalAA": "358",
+      "percentSD": "12.58%"
+    }
+  ],
+  "Z25": [
+    {
+      "name": "Z25",
+      "totalAA": "358",
+      "percentSD": "12.58%"
+    }
+  ],
+  "Z26": [
+    {
+      "name": "Z26",
+      "totalAA": "358",
+      "percentSD": "12.58%"
+    }
+  ],
+  "Vauquelin": [
+    {
+      "name": "Vauquelin",
+      "totalAA": "357",
+      "percentSD": "12.52%"
+    }
+  ],
+  "Thüringen": [
+    {
+      "name": "Thüringen",
+      "totalAA": "356",
+      "percentSD": "12.49%"
+    }
+  ],
+  "Conte di Cavour": [
+    {
+      "name": "Conte di Cavour",
+      "totalAA": "355",
+      "percentSD": "12.45%"
+    }
+  ],
+  "Akatsuki": [
+    {
+      "name": "Akatsuki",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Hamakaze": [
+    {
+      "name": "Hamakaze",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Ikazuchi": [
+    {
+      "name": "Ikazuchi",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Inazuma": [
+    {
+      "name": "Inazuma",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Kagerou": [
+    {
+      "name": "Kagerou",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Kuroshio": [
+    {
+      "name": "Kuroshio",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Michishio": [
+    {
+      "name": "Michishio",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Ooshio": [
+    {
+      "name": "Ooshio",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Oyashio": [
+    {
+      "name": "Oyashio",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Shigure": [
+    {
+      "name": "Shigure",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Z16": [
+    {
+      "name": "Z16",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Z24": [
+    {
+      "name": "Z24",
+      "totalAA": "354",
+      "percentSD": "12.44%"
+    }
+  ],
+  "Arashio": [
+    {
+      "name": "Arashio",
+      "totalAA": "353",
+      "percentSD": "12.40%"
+    }
+  ],
+  "Asashio": [
+    {
+      "name": "Asashio",
+      "totalAA": "353",
+      "percentSD": "12.40%"
+    }
+  ],
+  "Urakaze": [
+    {
+      "name": "Urakaze",
+      "totalAA": "353",
+      "percentSD": "12.40%"
+    }
+  ],
+  "Z18": [
+    {
+      "name": "Z18",
+      "totalAA": "353",
+      "percentSD": "12.40%"
+    }
+  ],
+  "Z19": [
+    {
+      "name": "Z19",
+      "totalAA": "353",
+      "percentSD": "12.40%"
+    }
+  ],
+  "Blanc": [
+    {
+      "name": "Blanc",
+      "totalAA": "352",
+      "percentSD": "12.37%"
+    }
+  ],
+  "Rurutie": [
+    {
+      "name": "Rurutie",
+      "totalAA": "352",
+      "percentSD": "12.37%"
+    }
+  ],
+  "Ayanami": [
+    {
+      "name": "Ayanami",
+      "totalAA": "350",
+      "percentSD": "12.30%"
+    }
+  ],
+  "Fubuki": [
+    {
+      "name": "Fubuki",
+      "totalAA": "350",
+      "percentSD": "12.30%"
+    }
+  ],
+  "Miyuki": [
+    {
+      "name": "Miyuki",
+      "totalAA": "350",
+      "percentSD": "12.30%"
+    }
+  ],
+  "Shirayuki": [
+    {
+      "name": "Shirayuki",
+      "totalAA": "350",
+      "percentSD": "12.30%"
+    }
+  ],
+  "Uranami": [
+    {
+      "name": "Uranami",
+      "totalAA": "350",
+      "percentSD": "12.30%"
+    }
+  ],
+  "Shiranui": [
+    {
+      "name": "Shiranui",
+      "totalAA": "349",
+      "percentSD": "12.27%"
+    }
+  ],
+  "Wakaba": [
+    {
+      "name": "Wakaba",
+      "totalAA": "349",
+      "percentSD": "12.27%"
+    }
+  ],
+  "Z20": [
+    {
+      "name": "Z20",
+      "totalAA": "349",
+      "percentSD": "12.27%"
+    }
+  ],
+  "Z21": [
+    {
+      "name": "Z21",
+      "totalAA": "349",
+      "percentSD": "12.27%"
+    }
+  ],
+  "Avrora": [
+    {
+      "name": "Avrora",
+      "totalAA": "346",
+      "percentSD": "12.16%"
+    }
+  ],
+  "Tartu": [
+    {
+      "name": "Tartu",
+      "totalAA": "346",
+      "percentSD": "12.13%"
+    }
+  ],
+  "Hu Pen": [
+    {
+      "name": "Hu Pen",
+      "totalAA": "344",
+      "percentSD": "12.09%"
+    }
+  ],
+  "Lung Wu": [
+    {
+      "name": "Lung Wu",
+      "totalAA": "344",
+      "percentSD": "12.09%"
+    }
+  ],
+  "Hatakaze": [
+    {
+      "name": "Hatakaze",
+      "totalAA": "344",
+      "percentSD": "12.06%"
+    }
+  ],
+  "Umikaze": [
+    {
+      "name": "Umikaze",
+      "totalAA": "344",
+      "percentSD": "12.06%"
+    }
+  ],
+  "Yamakaze": [
+    {
+      "name": "Yamakaze",
+      "totalAA": "344",
+      "percentSD": "12.06%"
+    }
+  ],
+  "Kiyonami": [
+    {
+      "name": "Kiyonami",
+      "totalAA": "343",
+      "percentSD": "12.02%"
+    }
+  ],
+  "Mikazuki": [
+    {
+      "name": "Mikazuki",
+      "totalAA": "343",
+      "percentSD": "12.02%"
+    }
+  ],
+  "Minazuki": [
+    {
+      "name": "Minazuki",
+      "totalAA": "343",
+      "percentSD": "12.02%"
+    }
+  ],
+  "Uzuki": [
+    {
+      "name": "Uzuki",
+      "totalAA": "343",
+      "percentSD": "12.02%"
+    }
+  ],
+  "Kuon": [
+    {
+      "name": "Kuon",
+      "totalAA": "340",
+      "percentSD": "11.92%"
+    }
+  ],
+  "Oite": [
+    {
+      "name": "Oite",
+      "totalAA": "335",
+      "percentSD": "11.74%"
+    }
+  ],
+  "Fumizuki": [
+    {
+      "name": "Fumizuki",
+      "totalAA": "333",
+      "percentSD": "11.67%"
+    }
+  ],
+  "Nagatsuki": [
+    {
+      "name": "Nagatsuki",
+      "totalAA": "333",
+      "percentSD": "11.67%"
+    }
+  ],
+  "Hwah Jah": [
+    {
+      "name": "Hwah Jah",
+      "totalAA": "331",
+      "percentSD": "11.60%"
+    }
+  ],
+  "Hai Chi": [
+    {
+      "name": "Hai Chi",
+      "totalAA": "36",
+      "percentSD": "1.26%"
+    }
+  ],
+  "Hai Tien": [
+    {
+      "name": "Hai Tien",
+      "totalAA": "35",
+      "percentSD": "1.23%"
+    }
+  ],
+  "Adventure Galley": [
+    {
+      "name": "Adventure Galley",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "Chi An": [
+    {
+      "name": "Chi An",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "Emden": [
+    {
+      "name": "Emden",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "Golden Hind": [
+    {
+      "name": "Golden Hind",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "Mikasa": [
+    {
+      "name": "Mikasa",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "Ranger": [
+    {
+      "name": "Ranger",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "São Martinho": [
+    {
+      "name": "São Martinho",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "Shirakami Fubuki": [
+    {
+      "name": "Shirakami Fubuki",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "Ting An": [
+    {
+      "name": "Ting An",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ],
+  "Yorck": [
+    {
+      "name": "Yorck",
+      "totalAA": "0",
+      "percentSD": "0.00%"
+    }
+  ]
+}

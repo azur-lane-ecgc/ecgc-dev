@@ -1,0 +1,5 @@
+{
+  "client_id": "CLIENT ID FROM IMGUR",
+  "client_secret": "CLIENT SECRET FROM IMGUR HAHA",
+  "image_order": ["image1", "image2", ..., "imageLast"]
+}

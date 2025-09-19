@@ -1,0 +1,63 @@
+---
+import { pageInfo } from "@/constants/index"
+import { formatDate } from "@/utils/formatDate"
+
+interface Props {
+  title: string
+}
+const { title } = Astro.props
+
+const currPage = pageInfo.find((page) => page.title === title)
+---
+
+<style>
+  /* Page Title */
+
+  .title-subheading {
+    font-size: inherit;
+  }
+
+  .title-subheading > span.author-name {
+    color: rgb(250, 212, 117);
+  }
+
+  .title-subheading > span.version-number,
+  .title-subheading > .last-updated {
+    color: cyan;
+  }
+</style>
+
+<div class="mt-[10px] pb-3 text-center">
+  <h1>
+    <b>
+      <u>{title}</u>
+    </b>
+  </h1>
+
+  {
+    currPage ? (
+      <p class="title-subheading nospace text-center">
+        <b>Author(s)</b>:{" "}
+        <span class="author-name">
+          {currPage.authors.length > 0
+            ? currPage.authors.map((author, index) => (
+                <span>
+                  {author}
+                  {index < currPage.authors.length - 1 ? ", " : ""}
+                </span>
+              ))
+            : false}
+        </span>
+        <br />
+        <b>Current Version</b>:{" "}
+        <span class="version-number">{currPage.revision}</span> |{" "}
+        <b>Last Updated</b>:{" "}
+        <span class="last-updated">{formatDate(currPage.lastUpdated)}</span>
+      </p>
+    ) : (
+      false
+    )
+  }
+
+  <slot />
+</div>
