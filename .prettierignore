@@ -1,8 +1,10 @@
 .astro
+**/.astro
 .wrangler
 .venv
 **/.venv
 node_modules
+**/node_modules
 dist
-
-dev/_backup
+**/dist
+packages/AzurLaneData

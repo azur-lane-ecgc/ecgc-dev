@@ -1,0 +1,67 @@
+---
+// Import the necessary components
+import HomePageLayout from "@/layouts/homepage/HomePageLayout.astro"
+import "@/styles/home_page.css"
+
+import AnimatedSquares from "@/components/_common/AnimatedSquares.astro"
+import ContributorTile from "@/components/Contributors/ContributorTile.astro"
+---
+
+<style>
+  h3.contributor-title-custom {
+    line-height: 1.4em;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 0.8);
+    margin-top: 1rem;
+    text-decoration: underline;
+    z-index: 999;
+  }
+
+  .main {
+    position: relative;
+    width: 100%;
+  }
+</style>
+
+<HomePageLayout
+  title="Contributors"
+  activePage="contributors"
+  metaUrl="contributors"
+  metaDescription="ECGC Contributors"
+>
+  <!-- Content -->
+  <div class="index-page relative min-h-[100vh] overflow-hidden">
+    <!-- Animation Stuff -->
+    <AnimatedSquares />
+    <div class="main">
+      <div class="container mx-auto">
+        <h3
+          class="contributor-title-custom mb-10 text-center text-3xl md:text-4xl"
+        >
+          ECGC Contributors
+        </h3>
+
+        <div
+          class="mx-auto mb-5 flex flex-wrap justify-center gap-4 text-center"
+        >
+          <ContributorTile
+            name="Samheart564"
+            discord="samheart564"
+            position="Lead Developer, Guide Writer, Editor"
+            description="Too much work, not enough time."
+            imageSrc="/images/contributor_icons/samheart564_icon.jpg"
+            kofiLink="https://ko-fi.com/samheart564"
+          />
+
+          <ContributorTile
+            name="Riceist"
+            discord="riceist"
+            position="Former Guide Writer"
+            description="I hate this game."
+            imageSrc="/images/contributor_icons/riceist_icon.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</HomePageLayout>

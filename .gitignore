@@ -1,6 +1,8 @@
 # build output
 dist/
 
+.venv/
+
 # generated types
 .astro/
 .wrangler
@@ -24,3 +26,14 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 .vscode
+
+credentials.json
+**/credentials.json
+credentials.json.base64
+**/credentials.json.base64
+tokens.json
+**/tokens.json
+config.json
+**/config.json
+
+_backup

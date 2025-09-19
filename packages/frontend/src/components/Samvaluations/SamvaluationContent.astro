@@ -1,0 +1,167 @@
+---
+import { HR } from "@/components/_common/HR"
+import WikiLink from "@/components/_common/WikiLink.astro"
+
+import { SamvaluationModals } from "./SamvaluationModals"
+---
+
+<h2 id="introduction">Introduction</h2>
+<HR />
+<p>
+  This list compiles all my ship evaluations (Samvaluations), ever since I
+  started doing them.
+</p>
+<br />
+
+<h2 id="notes">Notes</h2>
+<HR />
+<ul>
+  <li>
+    <h6>
+      See the <a href="#third_party" target="_self" rel="noopener noreferrer"
+        >Third-Party Tools</a
+      > section of this guide for more information on their criteria.
+    </h6>
+  </li>
+  <li>
+    <p>
+      Ships are listed with their Retrofit and/or Augment included. The rankings
+      / other descriptions assume both are included unless clearly stated
+      otherwise.
+    </p>
+  </li>
+  <li>
+    <p>
+      For a full list of Unique Augment Modules, see the <WikiLink
+        page="Augmentation"
+        title="Augmentation">Augmentation</WikiLink
+      > wiki page.
+    </p>
+  </li>
+  <li>
+    <p>
+      Evaluations for ships that were added to War Archives before
+      <WikiLink page="Ashen Simulacrum" title="Ashen Simulacrum"
+        >Ashen Simulacrum</WikiLink
+      >
+      will get added at my earliest convinence
+      <span class="line-through">(which means probably never)</span>.
+    </p>
+  </li>
+  <li class="pt-3">
+    <h6>
+      MOST DESCRIPTIONS HAVEN'T BEEN UPDATED SINCE THAT SHIP'S EVENT. IF THERE
+      ARE ANY MISTAKES/CONCERNS/ETC. CONTACT ME ON DISCORD SO I CAN ADDRESS THEM
+      ASAP.
+    </h6>
+  </li>
+</ul>
+<br />
+
+<h2 id="evaluations">Evaluations</h2>
+<HR />
+
+<SamvaluationModals client:visible={{ rootMargin: "50px" }} />
+<br />
+
+<h2 id="third_party">Third-Party Tools</h2>
+<HR />
+
+<h3 id="suchiguma">
+  <a
+    href="https://docs.google.com/spreadsheets/d/13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0/edit?gid=0#gid=0"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="by Suchiguma and his team"
+    aria-label="Rankings for End Game Azur Lane (by Suchiguma)"
+  >
+    Rankings for End Game Azur Lane
+  </a>
+</h3>
+<p>
+  These are rankings about how a ship performs in End Game Azur Lane content,
+  such as the following:
+</p>
+<ul>
+  <li>
+    <p>
+      <WikiLink page="Operation_Siren#Arbiter" title="Hard Arbiter"
+        >Hard Arbiter</WikiLink
+      >
+    </p>
+  </li>
+  <li>
+    <p>
+      <WikiLink page="META Showdown">META Showdown</WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      <WikiLink page="Chapter 14">Chapter 14</WikiLink> (Mob & Boss)
+    </p>
+  </li>
+  <li>
+    <p>
+      <WikiLink page="Chapter 15">Chapter 15</WikiLink> (Mob & Boss)
+    </p>
+  </li>
+  <li>
+    <p>and more!</p>
+  </li>
+</ul>
+<p>
+  They also rank a ship's damage and support capabilities against one another as
+  well. Click the link in the heading for more details.
+</p>
+<br />
+
+<h3 id="mebot">
+  <a
+    href="https://docs.google.com/spreadsheets/d/1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="by Mebot"
+    aria-label="EHP V3 by Mebot"
+  >
+    EHP V3
+  </a>
+</h3>
+<p>
+  These are quantitative measurements about how tanky a ship is, with a lot of
+  math and assumptions. Click the link in the heading for more details.
+</p>
+<br />
+
+<button
+  id="evaluationScrollBtn"
+  onclick="document.getElementById('samvaluationModalScroll').scrollIntoView({ behavior: 'smooth' })"
+  class="fixed right-4 hidden rounded bg-pink-300 px-2 py-1 text-black shadow-lg transition-opacity duration-300"
+  aria-label="button"
+>
+  <i class="fa fa-arrow-up"></i>
+</button>
+
+<script>
+  document.addEventListener("scroll", () => {
+    const button = document.getElementById("evaluationScrollBtn")
+    const scrollY = window.scrollY
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+    const threshold = 70
+
+    if (button) {
+      if (scrollY > 100) {
+        button.classList.remove("hidden")
+        button.classList.add("opacity-100")
+      } else {
+        button.classList.add("hidden")
+        button.classList.remove("opacity-100")
+      }
+
+      if (maxScroll - scrollY <= threshold) {
+        button.style.bottom = `${threshold}px`
+      } else {
+        button.style.bottom = "1rem"
+      }
+    }
+  })
+</script>

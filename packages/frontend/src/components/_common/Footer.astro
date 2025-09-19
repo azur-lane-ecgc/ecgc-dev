@@ -1,0 +1,64 @@
+---
+// no props
+---
+
+<style>
+  .footer {
+    border: none !important;
+    box-shadow: 0 -1px 7px 0 #333;
+    background: none;
+    background-color: #222a42 !important;
+    position: relative;
+    z-index: 60;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer-style {
+    padding: 4px;
+    margin: 8px;
+    float: right;
+  }
+
+  .footer-style-two {
+    padding: 4px;
+    margin: 8px;
+    float: left;
+  }
+
+  h6 {
+    font-size: 0.75rem;
+    color: hsla(0, 0%, 100%, 0.9);
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 640px) {
+    h6 {
+      font-size: 0.69rem;
+    }
+  }
+</style>
+
+<footer class="footer">
+  <div class="mx-auto w-full overflow-auto pt-1 pb-1">
+    <div class="grid grid-cols-2 px-4">
+      <div class="text-left">
+        <h6 class="footer-style-two !font-semibold">
+          Media taken from
+          <a
+            href="https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-400 underline hover:text-blue-600"
+          >
+            Azur Lane English Wiki
+          </a>.
+        </h6>
+      </div>
+      <div class="text-right">
+        <h6 class="footer-style !font-semibold">
+          © {new Date().getFullYear()}, coded by samheart564
+        </h6>
+      </div>
+    </div>
+  </div>
+</footer>

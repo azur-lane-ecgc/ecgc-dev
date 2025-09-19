@@ -1,0 +1,23 @@
+{
+  "name": "dev",
+  "module": "main.ts",
+  "type": "module",
+  "description": "AzurLaneData parsing scripts",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "compress": "bun src/compress/compress.ts",
+    "main": "bun ./main.ts",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.22"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "googleapis": "^160.0.0",
+    "open": "^10.2.0"
+  }
+}

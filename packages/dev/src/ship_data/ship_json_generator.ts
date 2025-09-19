@@ -1,0 +1,129 @@
+import { dirname } from "path"
+import { existsSync, mkdirSync } from "fs"
+
+import type { ShipData } from "@/packages/AzurLaneData/types/ships"
+import type { AugmentData } from "@/packages/AzurLaneData/types/augments"
+const ships: Record<number, ShipData> = (await import(
+  "@/packages/AzurLaneData/data/ships.json"
+).then((module) => module.default)) as Record<number, ShipData>
+
+const augmentData: Record<number, AugmentData> = (await import(
+  "@/packages/AzurLaneData/data/augments.json"
+).then((module) => module.default)) as Record<number, AugmentData>
+
+import type { ShipData as ProcessedShipData } from "@/db/types"
+import type {
+  ShipEHPProps,
+  MainFleetRankingProps,
+  VanguardFleetRankingProps,
+  SSFleetRankingProps,
+} from "@/db/types"
+import type { ShipAAProps } from "@/tools/aa_parsing/types"
+import {
+  isPermanent,
+  shipDefaultAugmentParse,
+  shipFactionParse,
+  shipFleetTypeParse,
+  shipHullTypeParse,
+  shipLBBonusParse,
+  shipLocationParse,
+  shipNameParse,
+  shipRarityParse,
+  shipRoleParse,
+  shipSamvaluationParse,
+  shipSlotParse,
+} from "../ships"
+
+const OUTPUT_PATH = "../frontend/src/db/ship_data/ship_data.json"
+
+export const main = async (
+  shipEHPData: Record<string, ShipEHPProps[]>,
+  shipAAData: Record<string, ShipAAProps[]>,
+  mainFleetRankingData: Record<string, MainFleetRankingProps[]>,
+  vgFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+  ssFleetRankingData: Record<string, SSFleetRankingProps[]>,
+): Promise<void> => {
+  const processedData: Record<number, ProcessedShipData> = {}
+
+  Object.keys(ships).forEach((id) => {
+    const mrLarData = ships[+id]
+    if (!mrLarData) return
+
+    const ship = shipNameParse(mrLarData.id, mrLarData.name)
+    const faction = shipFactionParse(mrLarData.nation)
+
+    let rarity = shipRarityParse(mrLarData.rarity)
+    const isKai = mrLarData.hasOwnProperty("retro")
+    if (isKai) {
+      rarity++
+    }
+
+    const hull = mrLarData?.retro?.hull ?? mrLarData.hull
+    const hullType = shipHullTypeParse(hull)
+    const fleetType: "main" | "ss" | "vg" = shipFleetTypeParse(hull)
+
+    const LBBonus = shipLBBonusParse(mrLarData?.specific_buff || null)
+    const slots = shipSlotParse(
+      mrLarData.slots[mrLarData.slots.length - 1],
+      mrLarData.retro?.slots,
+    )
+
+    const augments = (() => {
+      const uniqueAugmentData = mrLarData?.unique_aug
+        ? augmentData[mrLarData.unique_aug]
+        : undefined
+      const uniqueAugment = uniqueAugmentData ? uniqueAugmentData.name : ""
+
+      const normalAugments = shipDefaultAugmentParse(hull)
+
+      if (uniqueAugment) {
+        return [uniqueAugment, ...normalAugments]
+      }
+
+      return normalAugments.length <= 0 ? null : normalAugments
+    })()
+
+    const locations = shipLocationParse(ship, +id)
+    const permanent = isPermanent(+id)
+
+    const samvaluationData = shipSamvaluationParse(ship)
+    const samEval = samvaluationData.evaluation
+    const fastLoad = samvaluationData?.preload2 || null
+    const roles = shipRoleParse(
+      ship,
+      fleetType,
+      hullType,
+      shipEHPData,
+      shipAAData,
+      mainFleetRankingData,
+      vgFleetRankingData,
+      ssFleetRankingData,
+    )
+
+    processedData[+id] = {
+      id: +id,
+      ship,
+      faction,
+      rarity,
+      isKai,
+      hullType,
+      fleetType,
+      LBBonus,
+      slots,
+      augments,
+      samEval,
+      fastLoad: fastLoad,
+      roles,
+      locations,
+      permanent,
+    }
+  })
+
+  if (!existsSync(dirname(OUTPUT_PATH))) {
+    mkdirSync(dirname(OUTPUT_PATH), { recursive: true })
+  }
+
+  await Bun.write(OUTPUT_PATH, JSON.stringify(processedData, null, 2))
+
+  console.log(`Ship data has been written to ${OUTPUT_PATH}`)
+}
