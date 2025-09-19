@@ -9,12 +9,16 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/config/*": ["config/*"]
+    },
     "outDir": "./dist",
     "rootDir": "./",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true
   },
-  "include": ["*.ts"],
+  "include": ["*.ts", "src/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

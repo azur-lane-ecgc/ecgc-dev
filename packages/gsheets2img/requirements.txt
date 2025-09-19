@@ -1,5 +1,0 @@
-aiohttp
-google-auth
-google-api-python-client
-playwright
-requests

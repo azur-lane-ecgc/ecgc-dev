@@ -133,7 +133,6 @@
     "builtin": true
   },
   "ignorePatterns": [
-    "packages/gsheets2img/**",
     "packages/AzurLaneData/**",
     "**/node_modules/**",
     "**/.venv/**",

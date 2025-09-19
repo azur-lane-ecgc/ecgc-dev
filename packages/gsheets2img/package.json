@@ -1,15 +1,13 @@
 {
-  "name": "gsheets2img-ts",
-  "version": "1.0.0",
-  "description": "TypeScript version of gsheets2img and imgur scripts",
-  "main": "gsheets2img.ts",
+  "name": "gsheets2img",
+  "module": "main.ts",
   "type": "module",
+  "description": "TypeScript version of gsheets2img and imgur scripts",
+  "private": true,
   "scripts": {
-    "postinstall": "npx playwright install firefox",
-    "build": "tsc",
+    "main": "bun ./main.ts",
     "check": "tsc --noEmit",
-    "run-gsheets2img": "bun ./gsheets2img.ts",
-    "imgur": "bun imgur.ts"
+    "postinstall": "bunx playwright install firefox"
   },
   "dependencies": {
     "adm-zip": "^0.5.16",

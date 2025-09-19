@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "compress": "bun run src/compress/compress.ts",
-    "main": "bun run main.ts",
-    "typecheck": "tsc --noEmit"
+    "compress": "bun src/compress/compress.ts",
+    "main": "bun ./main.ts",
+    "check": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/bun": "^1.2.22"

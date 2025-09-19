@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": [
     "packages/dev",
-    "packages/frontend"
+    "packages/frontend",
+    "packages/gsheets2img"
   ],
   "scripts": {
     "prepare": "bunx lefthook install",
@@ -11,16 +12,16 @@
     "rebuild": "rm -rf node_modules && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && rm -rf .venv && bun update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
-    "gsheets2img": "bash packages/gsheets2img/gsheets2img.sh -g",
-    "imgur": "bash packages/gsheets2img/gsheets2img.sh -i",
-    "gsheets2imgur": "bash packages/gsheets2img/gsheets2img.sh -gi",
+    "gsheets2img": "bun --filter gsheets2img main -g",
+    "imgur": "bun --filter gsheets2img main -i",
+    "gsheets2imgur": "bun --filter gsheets2img main -gi",
     "compress": "bun --filter dev compress",
     "smol-format": "bunx --bun prettier --write \"packages/**/*.{astro,json}\" --ignore-path .prettierignore",
     "format": "bunx --bun prettier --write \"packages/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
     "lint": "bunx --bun oxlint --fix",
     "devtools": "bun run submodule && bun --filter dev main && bun run smol-format",
     "build": "bun --filter frontend build",
-    "check": "bun --filter frontend check && bun --filter dev typecheck",
+    "check": "bun --filter frontend check && bun --filter dev check && bun --filter gsheets2img check",
     "compress-build": "bun run build && bun run compress",
     "dev": "bun --filter frontend dev",
     "cf-dev": "bunx wrangler dev",
