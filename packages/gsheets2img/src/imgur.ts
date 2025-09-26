@@ -1,8 +1,9 @@
 import fs from "fs"
 import path from "path"
 import { createInterface } from "readline"
-
 import open from "open"
+
+import config from "@/config/config.json"
 
 interface Config {
   client_id: string
@@ -24,21 +25,7 @@ interface ImageInfo {
 }
 
 const loadConfig = async (): Promise<Config> => {
-  const configFile = "../config.json"
-  const file = Bun.file(configFile)
-  if (!(await file.exists())) {
-    const defaultConfig: Config = {
-      client_id: "YOUR_CLIENT_ID",
-      client_secret: "YOUR_CLIENT_SECRET",
-      image_order: [],
-    }
-    await Bun.write(configFile, JSON.stringify(defaultConfig, null, 2))
-    console.log(`✨ Created default config at ${configFile}`)
-    console.log("❗ Please edit it with your client_id and client_secret")
-    return defaultConfig
-  }
-  const content = await file.text()
-  return JSON.parse(content)
+  return config
 }
 
 const loadTokens = async (): Promise<Tokens | null> => {
