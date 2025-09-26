@@ -46820,13 +46820,17 @@
         {
           "name": "Cruise Pass",
           "href": "Cruise_Missions"
+        },
+        {
+          "name": "META Shop",
+          "href": "META_Shop"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -46936,13 +46940,17 @@
         {
           "name": "Cruise Pass",
           "href": "Cruise_Missions"
+        },
+        {
+          "name": "META Shop",
+          "href": "META_Shop"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -48816,6 +48824,62 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30052": {
+    "id": 30052,
+    "ship": "Dewey META",
+    "faction": "META",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "+30% stats gained from Auxiliary Equipment.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.3,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Cruise Pass",
+          "href": "Cruise_Missions"
         }
       ],
       "construction": [],
