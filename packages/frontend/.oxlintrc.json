@@ -32,7 +32,6 @@
   },
   "ignorePatterns": [
     "**/node_modules/**",
-    "**/.venv/**",
     "**/*.astro",
     "**/*.svelte",
     "**/*.vue"

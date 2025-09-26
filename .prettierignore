@@ -1,10 +1,12 @@
-.astro
-**/.astro
-.wrangler
-.venv
-**/.venv
-node_modules
-**/node_modules
-dist
-**/dist
-packages/AzurLaneData
+# Cache and temp directories
+.astro/
+.wrangler/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Submodules
+packages/AzurLaneData/

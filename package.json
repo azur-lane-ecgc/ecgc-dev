@@ -9,7 +9,7 @@
   "scripts": {
     "prepare": "bunx lefthook install",
     "update": "bun upgrade && bun update --latest && bun install",
-    "rebuild": "rm -rf node_modules && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && rm -rf .venv && bun run update",
+    "rebuild": "rm -rf node_modules && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bun --filter gsheets2img main -g",
@@ -40,5 +40,8 @@
     "prettier-plugin-tailwindcss": "^0.6.14",
     "typescript": "^5.9.2",
     "wrangler": "^4.40.1"
-  }
+  },
+  "trustedDependencies": [
+    "gsheets2img"
+  ]
 }

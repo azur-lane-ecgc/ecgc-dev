@@ -5,7 +5,6 @@
     "packages/frontend/dist",
     "packages/AzurLaneData",
     "packages/gsheets2img",
-    ".venv"
   ],
   "compilerOptions": {
     "types": ["vite/client", "bun"],

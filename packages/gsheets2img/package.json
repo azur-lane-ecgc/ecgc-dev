@@ -6,14 +6,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "main": "bun ./main.ts",
+    "main": "bun main.ts",
     "check": "tsc --noEmit",
     "postinstall": "bunx playwright install firefox"
   },
   "dependencies": {
     "adm-zip": "^0.5.16",
     "open": "^10.2.0",
-    "playwright": "^1.55.0"
+    "playwright": "^1.55.1"
   },
   "devDependencies": {
     "@types/adm-zip": "^0.5.7",

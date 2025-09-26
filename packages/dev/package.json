@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "compress": "bun src/compress/compress.ts",
-    "main": "bun ./main.ts",
+    "main": "bun main.ts",
     "check": "tsc --noEmit"
   },
   "devDependencies": {

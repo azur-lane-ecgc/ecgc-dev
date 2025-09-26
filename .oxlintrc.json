@@ -135,7 +135,6 @@
   "ignorePatterns": [
     "packages/AzurLaneData/**",
     "**/node_modules/**",
-    "**/.venv/**",
     "**/*.astro",
     "**/*.svelte",
     "**/*.vue"
