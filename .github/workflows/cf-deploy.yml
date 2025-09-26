@@ -3,11 +3,12 @@ name: Deploy to Cloudflare Workers
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - "dev/**"
-      - "bun.lock"
-      - "package-lock.json"
-      - ".github/workflows/automated-site-updates.yml"
+    paths:
+      - "packages/frontend/**"
+      - "packages/AzurLaneData/**"
+      # - "wrangler.jsonc"
+      # - "package.json"
+      # - ".github/workflows/cf-deploy.yml"
   workflow_dispatch:
 
 jobs:
@@ -15,27 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v5
         with:
           submodules: recursive
 
-      - name: Setup Bun
+      - name: Set up Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
-
-      - name: Check for only devDependency changes
-        id: dev-deps
-        run: |
-          git fetch origin main --depth=1
-          git diff origin/main HEAD -- package.json > changes.diff
-          if [ -s changes.diff ]; then
-            if jq -e '(.dependencies // {}) == (input | .dependencies // {})' package.json origin/main:package.json >/dev/null; then
-              echo "Only devDependencies changed. Skipping deploy."
-              echo "skip=true" >> $GITHUB_OUTPUT
-            fi
-          fi
+          bun-version: "1.2.20"
 
       - name: Install dependencies
         run: bun install
