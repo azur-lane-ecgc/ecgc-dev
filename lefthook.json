@@ -5,7 +5,8 @@
       "oxlint": {
         "glob": [
           "packages/dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
-          "packages/frontend/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
+          "packages/frontend/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
+          "packages/gsheets2img/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
         ],
         "run": "bunx --bun oxlint --fix {staged_files}",
         "stage_fixed": true
@@ -13,7 +14,8 @@
       "prettier": {
         "glob": [
           "packages/dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
-          "packages/frontend/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
+          "packages/frontend/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
+          "packages/gsheets2img/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
         ],
         "run": "bunx --bun prettier --write {staged_files}",
         "stage_fixed": true
