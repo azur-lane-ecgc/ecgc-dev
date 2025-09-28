@@ -48817,7 +48817,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "TopDmg"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -48873,7 +48873,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DefSupport", "Meh"],
     "locations": {
       "events": [],
       "other": [

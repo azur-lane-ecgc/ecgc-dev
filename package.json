@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.0.4",
-    "knip": "^5.64.0",
+    "knip": "^5.64.1",
     "lefthook": "^1.13.4",
     "oxlint": "^1.18.0",
     "prettier": "^3.6.2",
@@ -39,7 +39,7 @@
     "prettier-plugin-organize-imports": "^4.3.0",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "typescript": "^5.9.2",
-    "wrangler": "^4.40.1"
+    "wrangler": "^4.40.2"
   },
   "trustedDependencies": [
     "gsheets2img"

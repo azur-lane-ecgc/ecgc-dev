@@ -2699,6 +2699,33 @@
       "defensivebuff": 1
     }
   ],
+  "Dewey META": [
+    {
+      "nameNote": "",
+      "notes": "Requires a CV or CVL for her double torpedo too.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": -1,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 2
+    }
+  ],
   "Dido": [
     {
       "nameNote": "",
@@ -12733,7 +12760,7 @@
       "heavydmg": 3,
       "aoedmg": 4,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
