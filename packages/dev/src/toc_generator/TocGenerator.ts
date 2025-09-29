@@ -4,7 +4,7 @@ const outputFilePath =
   "../frontend/src/components/_common/Sidenav/TocContent.json"
 
 const initializeJsonFile = async () => {
-  await Bun.write(outputFilePath, JSON.stringify([], null, 2))
+  await Bun.write(outputFilePath, JSON.stringify([], null, 2) + "\n")
 }
 
 type Heading = {
@@ -96,7 +96,7 @@ const processFiles = async () => {
       tocData.sort((a, b) => a.fileName.localeCompare(b.fileName)),
       null,
       2,
-    ),
+    ) + "\n",
   )
   console.log(`Table of Contents saved to ${outputFilePath}`)
 }

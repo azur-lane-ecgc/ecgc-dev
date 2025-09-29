@@ -123,7 +123,7 @@ export const main = async (
     mkdirSync(dirname(OUTPUT_PATH), { recursive: true })
   }
 
-  await Bun.write(OUTPUT_PATH, JSON.stringify(processedData, null, 2))
+  await Bun.write(OUTPUT_PATH, JSON.stringify(processedData, null, 2) + "\n")
 
   console.log(`Ship data has been written to ${OUTPUT_PATH}`)
 }

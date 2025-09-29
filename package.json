@@ -16,8 +16,8 @@
     "imgur": "bun --filter gsheets2img main -i",
     "gsheets2imgur": "bun --filter gsheets2img main -gi",
     "compress": "bun --filter dev compress",
-    "smol-format": "bunx --bun prettier --write \"packages/**/*.{astro,json}\" --ignore-path .prettierignore",
-    "format": "bunx --bun prettier --write \"packages/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\" --ignore-path .prettierignore",
+    "smol-format": "bunx --bun prettier --write \"packages/**/*.{astro,json}\"",
+    "format": "bunx --bun prettier --write \"packages/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\"",
     "lint": "bunx --bun oxlint --fix",
     "devtools": "bun run submodule && bun --filter dev main && bun run smol-format",
     "build": "bun --filter frontend build",
@@ -42,6 +42,12 @@
     "wrangler": "^4.40.2"
   },
   "trustedDependencies": [
-    "gsheets2img"
+    "@tailwindcss/oxide",
+    "esbuild",
+    "gsheets2img",
+    "lefthook",
+    "oxc-resolver",
+    "sharp",
+    "workerd"
   ]
 }

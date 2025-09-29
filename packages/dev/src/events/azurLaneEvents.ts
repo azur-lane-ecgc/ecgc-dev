@@ -51,7 +51,7 @@ export const main = async (): Promise<any[]> => {
     .sort((a, b) => (b.modeDate || 0) - (a.modeDate || 0))
     .map(({ location }) => location)
 
-  await Bun.write(OUTPUT_PATH, JSON.stringify(sortedLocations, null, 2))
+  await Bun.write(OUTPUT_PATH, JSON.stringify(sortedLocations, null, 2) + "\n")
 
   console.log(
     `Wrote ${sortedLocations.length} unique event locations to ${OUTPUT_PATH}`,
