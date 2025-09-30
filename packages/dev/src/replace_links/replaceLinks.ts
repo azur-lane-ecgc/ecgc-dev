@@ -8,12 +8,7 @@ const replaceWikiLinks = (content: string): string => {
   const regex =
     /<a\s*\n*\s*rel="noopener noreferrer"\s*\n*\s*target="_blank"\s*\n*\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n*\s*title="([^"]+)"\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
 
-  return content.replace(regex, (match, hrefTitle, title, linkContent) => {
-    if (match) {
-      {
-        false //compiler hopefully optimizes this out
-      }
-    }
+  return content.replace(regex, (_match, hrefTitle, title, linkContent) => {
     return `<WikiLink page="${hrefTitle.replace(/_/g, " ")}" title="${title.trim()}">${linkContent.trim()}</WikiLink>`
   })
 }
@@ -21,12 +16,7 @@ const replaceWikiLinks = (content: string): string => {
 const replaceWikiLinksTwo = (content: string): string => {
   const regex2 =
     /<a\s*\n*\s*rel="noopener noreferrer"\s*\n*\s*target="_blank"\s*\n*\s*href="https:\/\/azurlane\.koumakan\.jp\/wiki\/([^"]+)"\s*\n*\s*>\s*([^<]+)\s*<\/a\s*\n*\s*>/g
-  return content.replace(regex2, (match, hrefTitle, linkContent) => {
-    if (match) {
-      {
-        false //compiler hopefully optimizes this out
-      }
-    }
+  return content.replace(regex2, (_match, hrefTitle, linkContent) => {
     return `<WikiLink page="${hrefTitle.replace(/_/g, " ")}">${linkContent.trim()}</WikiLink>`
   })
 }

@@ -67,10 +67,13 @@ export const useBodyOverflow = (open: boolean) => {
   useEffect(() => {
     const bodyClass = document.body.classList
     if (open) {
-      !bodyClass.contains("overflow-hidden") && bodyClass.add("overflow-hidden")
+      if (!bodyClass.contains("overflow-hidden")) {
+        bodyClass.add("overflow-hidden")
+      }
     } else {
-      bodyClass.contains("overflow-hidden") &&
+      if (bodyClass.contains("overflow-hidden")) {
         bodyClass.remove("overflow-hidden")
+      }
     }
   }, [open])
 }
