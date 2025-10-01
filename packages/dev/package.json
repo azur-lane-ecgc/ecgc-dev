@@ -17,7 +17,6 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "googleapis": "^160.0.0",
-    "open": "^10.2.0"
+    "googleapis": "^160.0.0"
   }
 }

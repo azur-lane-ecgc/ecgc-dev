@@ -2,7 +2,7 @@
   "name": "gsheets2img",
   "module": "main.ts",
   "type": "module",
-  "description": "TypeScript version of gsheets2img and imgur scripts",
+  "description": "TypeScript version of gsheets2img script",
   "version": "0.0.1",
   "private": true,
   "scripts": {
