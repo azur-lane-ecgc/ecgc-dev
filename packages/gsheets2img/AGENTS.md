@@ -19,7 +19,7 @@ TypeScript package for converting Google Sheets data to images. This tool genera
 
 ## Usage Commands
 
-- **Convert sheets to images**: `bun main.ts -g` (processes all configured sheets)
+- **Convert sheets to images**: `bun main.ts` (processes all configured sheets)
 - **From root**: `bun run gsheets2img` (via package.json scripts)
 
 ## Key Files and Scripts
