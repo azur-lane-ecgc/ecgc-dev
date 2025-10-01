@@ -33,8 +33,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Equipment Guide",
     authors: ["Samheart564"],
-    lastUpdated: "9/16/2025",
-    revision: "1.18.0",
+    lastUpdated: "9/30/2025",
+    revision: "1.18.1",
     description: `Goes over the optimal equipment to use in Azur Lane, in an easy-to-read image format!`,
     link: "equipment",
     image: "/images/misc/equipment_guide_cover.jpg",

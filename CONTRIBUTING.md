@@ -13,7 +13,7 @@ The project is a monorepo with the following structure:
 - `packages/AzurLaneData`: A [submodule](https://github.com/MrLar/AzurLaneData) containing data for the game Azur Lane.
 - `packages/dev`: Contains development scripts and tools for the project.
 - `packages/frontend`: The frontend of the project, built with Astro.
-- `packages/gsheets2img`: A collection of python scripts to convert google sheets to images and upload them to imgur.
+- `packages/gsheets2img`: A TypeScript script to convert google sheets to images.
 - `CONTRIBUTING.md`: This file.
 - `README.md`: The main README file for the project.
 
@@ -36,9 +36,8 @@ The project is a monorepo with the following structure:
 
 3.  **Configure environment:**
 
-    There are two configuration files that you need to create:
+    There is one configuration file that you need to create:
     - `packages/dev/credentials.json`: This file contains the credentials for the Google Cloud service account used by the development scripts. You can create a service account in the [Google Cloud Console](https://console.cloud.google.com/) and download the credentials as a JSON file. An example of what this file should look like is provided in `packages/dev/credentials.json.example`.
-    - `packages/gsheets2img/config.json`: This file contains the client ID and secret for the Imgur API, which is used to upload images. You can create an Imgur application [here](https://api.imgur.com/oauth2/addclient) to get your client ID and secret. An example of what this file should look like is provided in `packages/gsheets2img/config.json.example`.
 
 4.  **Run the development server:**
 
@@ -105,8 +104,6 @@ The `package.json` file contains a number of scripts for common tasks:
 - `devtools`: Runs all development data processing scripts
 - `compress`: Compresses build output
 - `gsheets2img`: Converts Google Sheets to images
-- `imgur`: Uploads images to Imgur
-- `gsheets2imgur`: Converts Google Sheets to images and uploads to Imgur
 
 ## Development Practices
 
