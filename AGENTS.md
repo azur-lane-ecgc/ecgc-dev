@@ -108,3 +108,7 @@
 - **Branch naming**: Descriptive feature branch names
 - **Commit messages**: Clear, descriptive messages
 - **Pull requests**: Include context and testing notes
+
+### IMPORTANT RULES
+
+NEVER PUSH TO THE "MAIN" BRANCH AT ALL UNDER ANY CIRCUMSTANCES.
