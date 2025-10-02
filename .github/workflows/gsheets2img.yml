@@ -7,6 +7,9 @@ jobs:
   run-gsheets2img:
     runs-on: ubuntu-latest
     name: Run gsheets2img Script and Verify Output
+    defaults:
+      run:
+        working-directory: ./packages/gsheets2img
 
     steps:
       - name: Checkout repository
@@ -25,19 +28,13 @@ jobs:
           bun-version: "1.2.20"
 
       - name: Install dependencies
-        run: |
-          cd packages/gsheets2img
-          bun install
+        run: bun install
 
       - name: Delete existing images
-        run: |
-          cd packages/gsheets2img
-          rm -rf ../../frontend/public/images/equip_misc/*
+        run: rm -rf ../frontend/public/images/equip_misc/*
 
       - name: Run gsheets2img
-        run: |
-          cd packages/gsheets2img
-          bun main.ts
+        run: bun main.ts
 
       - name: Check for file changes
         run: |
@@ -51,6 +48,5 @@ jobs:
 
       - name: Verify output
         run: |
-          cd packages/gsheets2img
           echo "Listing images in equip_misc:"
-          ls -la ../../frontend/public/images/equip_misc/ | head -20
+          ls -la ../frontend/public/images/equip_misc/ | head -20
