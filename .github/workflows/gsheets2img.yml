@@ -1,0 +1,56 @@
+name: Manual GSheets to Images
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-gsheets2img:
+    runs-on: ubuntu-latest
+    name: Run gsheets2img Script and Verify Output
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22.2.0"
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.2.20"
+
+      - name: Install dependencies
+        run: |
+          cd packages/gsheets2img
+          bun install
+
+      - name: Delete existing images
+        run: |
+          cd packages/gsheets2img
+          rm -rf ../../frontend/public/images/equip_misc/*
+
+      - name: Run gsheets2img
+        run: |
+          cd packages/gsheets2img
+          bun main.ts
+
+      - name: Check for file changes
+        run: |
+          CHANGES=$(git status --porcelain)
+          if [[ -n "$CHANGES" ]]; then
+              echo "Files were updated:"
+              echo "$CHANGES"
+          else
+              echo "No file changes detected."
+          fi
+
+      - name: Verify output
+        run: |
+          cd packages/gsheets2img
+          echo "Listing images in equip_misc:"
+          ls -la ../../frontend/public/images/equip_misc/ | head -20
