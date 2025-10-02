@@ -1,4 +1,4 @@
-name: Manual GSheets to Images
+name: Google Sheets to Images (Equip & Misc.)
 
 on:
   workflow_dispatch:
