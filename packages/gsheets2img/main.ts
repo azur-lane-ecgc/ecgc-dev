@@ -53,65 +53,37 @@ const screenshot = async (
   console.log(`Processing ${path.basename(htmlPath)}...`)
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
-    deviceScaleFactor: 1,
+    deviceScaleFactor: 2,
   })
   console.log(`Page created for ${path.basename(htmlPath)}.`)
-  await page.goto(`file://${htmlPath}`, { timeout: 60000 })
-  await page.waitForLoadState("domcontentloaded")
-  console.log(`Page loaded for ${path.basename(htmlPath)}.`)
+  await page.goto(`file://${htmlPath}`, { timeout: 0 })
 
-  const rowHeader = await page.$(".row-header-wrapper")
-  if (!rowHeader) {
-    console.log(
-      `Skipping ${path.basename(htmlPath)}: row-header-wrapper not found.`,
-    )
+  try {
+    const rowHeader = await page.$(".row-header-wrapper")
+    const { width: rowHeaderWidth } = await rowHeader.boundingBox()
+    const tbody = await page.$("tbody")
+    const boundingBox = await tbody.boundingBox()
+    const clipArea = {
+      x: boundingBox.x + rowHeaderWidth + 1,
+      y: boundingBox.y,
+      width: boundingBox.width - rowHeaderWidth - 1,
+      height: boundingBox.height,
+    }
+
+    await page.setViewportSize({
+      width: Math.max(1920, Math.floor(clipArea.width) + 100),
+      height: Math.max(1080, Math.floor(clipArea.height) + 100),
+    })
+
+    console.log(`Uploading ${path.parse(htmlPath).name}`)
+    await page.screenshot({ path: pngPath, clip: clipArea })
+  } catch (e) {
+    console.error(e)
+  } finally {
     await page.close()
-    return
   }
 
-  const rowHeaderBox = await rowHeader.boundingBox()
-  if (!rowHeaderBox) {
-    console.log(`Skipping ${path.basename(htmlPath)}: bounding box not found.`)
-    await page.close()
-    return
-  }
-
-  const tbody = await page.$("tbody")
-  if (!tbody) {
-    console.log(`Skipping ${path.basename(htmlPath)}: tbody not found.`)
-    await page.close()
-    return
-  }
-
-  const boundingBox = await tbody.boundingBox()
-  if (!boundingBox) {
-    console.log(`Skipping ${path.basename(htmlPath)}: bounding box not found.`)
-    await page.close()
-    return
-  }
-
-  const rowHeaderWidth = rowHeaderBox.width
-
-  const clipArea = {
-    x: boundingBox.x + rowHeaderWidth + 1,
-    y: boundingBox.y,
-    width: boundingBox.width - rowHeaderWidth - 1,
-    height: boundingBox.height,
-  }
-
-  const maxWidth = 4096
-  const maxHeight = 4096
-  await page.setViewportSize({
-    width: Math.min(maxWidth, Math.max(1920, Math.floor(clipArea.width) + 100)),
-    height: Math.min(
-      maxHeight,
-      Math.max(1080, Math.floor(clipArea.height) + 100),
-    ),
-  })
-
-  console.log(`Uploading ${path.parse(htmlPath).name}`)
-  await page.screenshot({ path: pngPath, clip: clipArea })
-  await page.close()
+  console.log(`Uploaded ${path.parse(htmlPath).name}`)
 }
 
 const processSheets = async (
