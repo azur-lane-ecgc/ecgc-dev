@@ -1,10 +1,10 @@
 import { createWriteStream } from "node:fs"
-import { mkdir, mkdtemp, readdir, rm } from "node:fs/promises"
-import { basename, dirname, extname, join, normalize } from "node:path"
+import { mkdir, mkdtemp, rm } from "node:fs/promises"
+import { join } from "node:path"
 import { tmpdir } from "node:os"
 import { Readable } from "node:stream"
 import { pipeline } from "node:stream/promises"
-import yauzl from "yauzl-promise"
+import { google } from "googleapis"
 import { firefox, Browser } from "playwright"
 
 // Hardcoded constants
@@ -20,40 +20,54 @@ const excludeSheets = [
 ]
 const concurrency = 5
 
-const download = async (sheetID: string) => {
-  const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
-  const zipPath = join(dir, sheetID + ".zip")
-  const res = await fetch(
-    `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=zip`,
-  )
-  if (!res.body) throw new Error("No response body")
-  await pipeline(Readable.fromWeb(res.body as any), createWriteStream(zipPath))
-  return zipPath
+const auth = new google.auth.GoogleAuth({
+  keyFile: join(import.meta.dir, "../dev/credentials.json"),
+  scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+})
+const sheetsAPI = google.sheets({ version: "v4", auth })
+
+const getSheets = async (sheetID: string) => {
+  const res = await sheetsAPI.spreadsheets.get({ spreadsheetId: sheetID })
+  if (!res.data.sheets) return []
+  return res.data.sheets
+    .filter(
+      (s) =>
+        s.properties &&
+        s.properties.title &&
+        s.properties.sheetId !== undefined,
+    )
+    .map((s) => ({
+      name: s.properties!.title!,
+      gid: s.properties!.sheetId!,
+    }))
 }
 
-const unzip = async (zipPath: string) => {
-  const extractedDir = await mkdtemp(join(tmpdir(), "gs2imgx-"))
-  const zip = await yauzl.open(zipPath)
-
+const downloadSheet = async (sheetID: string, gid: number, name: string) => {
+  const dir = await mkdtemp(join(tmpdir(), "gs2img-"))
+  const htmlPath = join(dir, name.replace(/ /g, "_") + ".html")
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), 120000) // 2 minutes
   try {
-    for await (const entry of zip) {
-      const targetPath = join(extractedDir, entry.filename)
-      if (entry.filename.endsWith("/")) {
-        // directory
-        await mkdir(targetPath, { recursive: true })
-      } else {
-        // file
-        const readStream = await entry.openReadStream()
-        await mkdir(dirname(targetPath), { recursive: true })
-        await pipeline(readStream, createWriteStream(targetPath))
-      }
+    const res = await fetch(
+      `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=html&gid=${gid}`,
+      { signal: controller.signal },
+    )
+    clearTimeout(timeoutId)
+    if (!res.ok) {
+      throw new Error(
+        `Failed to download ${name}: ${res.status} ${res.statusText}`,
+      )
     }
-  } finally {
-    await zip.close()
+    if (!res.body) throw new Error("No response body")
+    await pipeline(
+      Readable.fromWeb(res.body as any),
+      createWriteStream(htmlPath),
+    )
+    return { htmlPath, dir }
+  } catch (e) {
+    clearTimeout(timeoutId)
+    throw e
   }
-
-  await rm(dirname(zipPath), { force: true, recursive: true })
-  return extractedDir
 }
 
 const screenshot = async (
@@ -97,42 +111,46 @@ const screenshot = async (
   }
 }
 
-download(sheetId)
-  .then(unzip)
-  .then(async (extractedDir) => {
-    await mkdir(outputDir, { recursive: true })
+getSheets(sheetId).then(async (sheetList) => {
+  await mkdir(outputDir, { recursive: true })
 
-    const files = await readdir(extractedDir)
-    const sheetNames = files
-      .filter((x) => extname(x) == ".html")
-      .map((x) => basename(x).slice(0, -5))
-      .filter(
-        (x) =>
-          (!Array.isArray(includeSheets) ||
-            !includeSheets.length ||
-            includeSheets.includes(x)) &&
-          (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
+  const filteredSheets = sheetList
+    .filter((s) => !excludeSheets.includes(s.name))
+    .map((s) => ({ ...s, name: s.name.replace(/ /g, "_") }))
+
+  const downloaded = []
+  for (const sheet of filteredSheets) {
+    try {
+      const { htmlPath, dir } = await downloadSheet(
+        sheetId,
+        sheet.gid,
+        sheet.name,
       )
-      .map((x) => x.replace(/ /g, "_"))
-    const browser = await firefox.launch()
-    const promises = new Set<Promise<void>>()
-
-    for (const sheetName of sheetNames) {
-      const promise = screenshot(
-        join(extractedDir, sheetName + ".html"),
-        join(outputDir, sheetName + ".jpeg"),
-        browser,
-      ).then(() => {
-        promises.delete(promise)
-      })
-      promises.add(promise)
-
-      if (promises.size >= concurrency) {
-        await Promise.race(promises)
-      }
+      downloaded.push({ name: sheet.name, htmlPath, dir })
+    } catch (e) {
+      console.error(`Skipping ${sheet.name}`)
     }
+  }
 
-    await Promise.all(promises)
-    await browser.close()
-    await rm(extractedDir, { force: true, recursive: true })
-  })
+  const browser = await firefox.launch()
+  const promises = new Set<Promise<void>>()
+
+  for (const { name, htmlPath, dir } of downloaded) {
+    const promise = screenshot(
+      htmlPath,
+      join(outputDir, name + ".jpeg"),
+      browser,
+    ).then(() => {
+      promises.delete(promise)
+      rm(dir, { force: true, recursive: true })
+    })
+    promises.add(promise)
+
+    if (promises.size >= concurrency) {
+      await Promise.race(promises)
+    }
+  }
+
+  await Promise.all(promises)
+  await browser.close()
+})
