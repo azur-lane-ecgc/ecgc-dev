@@ -11,13 +11,12 @@
     "postinstall": "bunx playwright install firefox"
   },
   "dependencies": {
-    "adm-zip": "^0.5.16",
-    "open": "^10.2.0",
-    "playwright": "^1.55.1"
+    "playwright": "^1.55.1",
+    "unzipper": "^0.12.3"
   },
   "devDependencies": {
-    "@types/adm-zip": "^0.5.7",
     "@types/node": "^24.5.2",
+    "@types/unzipper": "^0.10.11",
     "tsx": "^4.19.1",
     "typescript": "^5.9.2"
   }
