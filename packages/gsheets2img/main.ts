@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import os from "os"
+import { tmpdir } from "os"
 import crypto from "crypto"
 import AdmZip from "adm-zip"
 import { firefox } from "playwright"
@@ -20,7 +20,7 @@ const resolvedOutputDir = path.resolve(outputDir)
 
 const download = async (sheetId: string): Promise<string> => {
   console.log("Starting download...")
-  const tempDirName = path.join(os.tmpdir(), `gs2imgz-${crypto.randomUUID()}`)
+  const tempDirName = path.join(tmpdir(), `gs2imgz-${crypto.randomUUID()}`)
   await fs.promises.mkdir(tempDirName, { recursive: true })
   const zipPath = path.join(tempDirName, `${sheetId}.zip`)
   const url = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=zip`
@@ -29,14 +29,14 @@ const download = async (sheetId: string): Promise<string> => {
     throw new Error(`Failed to download: ${response.statusText}`)
   }
   const buffer = await response.arrayBuffer()
-  await Bun.write(zipPath, Buffer.from(buffer))
+  await fs.promises.writeFile(zipPath, Buffer.from(buffer))
   console.log("Download completed.")
   return zipPath
 }
 
 const unzip = async (zipPath: string): Promise<string> => {
   console.log("Starting unzip...")
-  const tempDirName = path.join(os.tmpdir(), `gs2imgx-${crypto.randomUUID()}`)
+  const tempDirName = path.join(tmpdir(), `gs2imgx-${crypto.randomUUID()}`)
   await fs.promises.mkdir(tempDirName, { recursive: true })
   const zip = new AdmZip(zipPath)
   zip.extractAllTo(tempDirName, true)
@@ -125,7 +125,7 @@ const processSheets = async (
     const fileName = sheetName.replace(/ /g, "_") + ".jpeg"
     const htmlPath = path.join(extractedDir, `${sheetName}.html`)
     const pngPath = path.join(resolvedOutputDir, fileName)
-    if (!(await Bun.file(htmlPath).exists())) {
+    if (!fs.existsSync(htmlPath)) {
       console.log(`Skipping ${sheetName}: HTML file not found.`)
       continue
     }
