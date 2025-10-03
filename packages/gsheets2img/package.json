@@ -11,8 +11,8 @@
     "yauzl-promise": "^4.0.0"
   },
   "scripts": {
-    "postinstall": "bunx playwright install firefox",
-    "main": "node index.js",
-    "check": "tsc --noEmit"
+    "main": "bun main.ts",
+    "check": "tsc --noEmit",
+    "postinstall": "bunx playwright install firefox"
   }
 }
