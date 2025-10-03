@@ -19,6 +19,7 @@ const excludeSheets = [
 const resolvedOutputDir = path.resolve(outputDir)
 
 const download = async (sheetId: string): Promise<string> => {
+  console.log("Starting download...")
   const tempDirName = path.join(os.tmpdir(), `gs2imgz-${crypto.randomUUID()}`)
   await fs.promises.mkdir(tempDirName, { recursive: true })
   const zipPath = path.join(tempDirName, `${sheetId}.zip`)
@@ -29,15 +30,18 @@ const download = async (sheetId: string): Promise<string> => {
   }
   const buffer = await response.arrayBuffer()
   await Bun.write(zipPath, Buffer.from(buffer))
+  console.log("Download completed.")
   return zipPath
 }
 
 const unzip = async (zipPath: string): Promise<string> => {
+  console.log("Starting unzip...")
   const tempDirName = path.join(os.tmpdir(), `gs2imgx-${crypto.randomUUID()}`)
   await fs.promises.mkdir(tempDirName, { recursive: true })
   const zip = new AdmZip(zipPath)
   zip.extractAllTo(tempDirName, true)
   await fs.promises.rm(path.dirname(zipPath), { recursive: true, force: true })
+  console.log("Unzip completed.")
   return tempDirName
 }
 
@@ -46,11 +50,15 @@ const screenshot = async (
   pngPath: string,
   browser: any,
 ): Promise<void> => {
+  console.log(`Processing ${path.basename(htmlPath)}...`)
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
-    deviceScaleFactor: 2,
+    deviceScaleFactor: 1,
   })
-  await page.goto(`file://${htmlPath}`, { timeout: 0 })
+  console.log(`Page created for ${path.basename(htmlPath)}.`)
+  await page.goto(`file://${htmlPath}`, { timeout: 60000 })
+  await page.waitForLoadState("domcontentloaded")
+  console.log(`Page loaded for ${path.basename(htmlPath)}.`)
 
   const rowHeader = await page.$(".row-header-wrapper")
   if (!rowHeader) {
@@ -91,9 +99,14 @@ const screenshot = async (
     height: boundingBox.height,
   }
 
+  const maxWidth = 4096
+  const maxHeight = 4096
   await page.setViewportSize({
-    width: Math.max(1920, Math.floor(clipArea.width) + 100),
-    height: Math.max(1080, Math.floor(clipArea.height) + 100),
+    width: Math.min(maxWidth, Math.max(1920, Math.floor(clipArea.width) + 100)),
+    height: Math.min(
+      maxHeight,
+      Math.max(1080, Math.floor(clipArea.height) + 100),
+    ),
   })
 
   console.log(`Uploading ${path.parse(htmlPath).name}`)
@@ -106,7 +119,9 @@ const processSheets = async (
   extractedDir: string,
   browser: any,
 ): Promise<void> => {
+  console.log("Starting to process sheets...")
   for (const sheetName of sheetNames) {
+    console.log(`Processing sheet: ${sheetName}`)
     const fileName = sheetName.replace(/ /g, "_") + ".jpeg"
     const htmlPath = path.join(extractedDir, `${sheetName}.html`)
     const pngPath = path.join(resolvedOutputDir, fileName)
@@ -116,6 +131,7 @@ const processSheets = async (
     }
     await screenshot(htmlPath, pngPath, browser)
   }
+  console.log("Finished processing sheets.")
 }
 
 export const main = async (): Promise<void> => {
@@ -135,7 +151,16 @@ export const main = async (): Promise<void> => {
 
   console.log(`Found ${sheetNames.length} sheets to process.`)
 
-  const browser = await firefox.launch()
+  console.log("Launching Firefox...")
+  const browser = await firefox.launch({
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+    ],
+  })
+  console.log("Firefox launched.")
   try {
     await processSheets(sheetNames, extractedDir, browser)
   } finally {
@@ -146,6 +171,4 @@ export const main = async (): Promise<void> => {
   console.log("Finished uploading images.")
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  main().catch(console.error)
-}
+main().catch(console.error)
