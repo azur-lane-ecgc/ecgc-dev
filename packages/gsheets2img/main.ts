@@ -63,7 +63,7 @@ const screenshot = async (
 ) => {
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
-    deviceScaleFactor: 2,
+    deviceScaleFactor: 1,
   })
   await page.goto("file://" + htmlPath, { timeout: 0 })
 
