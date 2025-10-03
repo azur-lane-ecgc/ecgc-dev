@@ -5,19 +5,14 @@
   "description": "TypeScript version of gsheets2img script",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "main": "tsx main.ts",
-    "check": "tsc --noEmit",
-    "postinstall": "bunx playwright install firefox"
-  },
   "dependencies": {
-    "playwright": "^1.55.1",
-    "unzipper": "^0.12.3"
+    "@types/yauzl-promise": "^4.0.1",
+    "playwright": "^1.41.1",
+    "yauzl-promise": "^4.0.0"
   },
-  "devDependencies": {
-    "@types/node": "^24.5.2",
-    "@types/unzipper": "^0.10.11",
-    "tsx": "^4.19.1",
-    "typescript": "^5.9.2"
+  "scripts": {
+    "postinstall": "bunx playwright install firefox",
+    "main": "node index.js",
+    "check": "tsc --noEmit"
   }
 }

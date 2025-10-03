@@ -1,9 +1,11 @@
-import fs from "fs"
-import path from "path"
-import { tmpdir } from "os"
-import crypto from "crypto"
-import unzipper from "unzipper"
-import { firefox } from "playwright"
+import { createWriteStream } from "node:fs"
+import { mkdir, mkdtemp, readdir, rm } from "node:fs/promises"
+import { basename, dirname, extname, join, normalize } from "node:path"
+import { tmpdir } from "node:os"
+import { Readable } from "node:stream"
+import { pipeline } from "node:stream/promises"
+import yauzl from "yauzl-promise"
+import { firefox, Browser } from "playwright"
 
 // Hardcoded constants
 const sheetId = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"
@@ -16,53 +18,65 @@ const excludeSheets = [
   "Ammo Modifiers Chart",
   "(WiP) Rikka Specific Guide",
 ]
-const resolvedOutputDir = path.resolve(outputDir)
+const concurrency = 5
 
-const download = async (sheetId: string): Promise<string> => {
-  console.log("Starting download...")
-  const tempDirName = path.join(tmpdir(), `gs2imgz-${crypto.randomUUID()}`)
-  await fs.promises.mkdir(tempDirName, { recursive: true })
-  const zipPath = path.join(tempDirName, `${sheetId}.zip`)
-  const url = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=zip`
-  const response = await fetch(url)
-  if (!response.ok) {
-    throw new Error(`Failed to download: ${response.statusText}`)
-  }
-  const buffer = await response.arrayBuffer()
-  await fs.promises.writeFile(zipPath, Buffer.from(buffer))
-  console.log("Download completed.")
+const download = async (sheetID: string) => {
+  const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
+  const zipPath = join(dir, sheetID + ".zip")
+  const res = await fetch(
+    `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=zip`,
+  )
+  if (!res.body) throw new Error("No response body")
+  await pipeline(Readable.fromWeb(res.body as any), createWriteStream(zipPath))
   return zipPath
 }
 
-const unzip = async (zipPath: string): Promise<string> => {
-  console.log("Starting unzip...")
-  const tempDirName = path.join(tmpdir(), `gs2imgx-${crypto.randomUUID()}`)
-  await fs.promises.mkdir(tempDirName, { recursive: true })
-  const directory = await unzipper.Open.file(zipPath)
-  await directory.extract({ path: tempDirName })
-  await fs.promises.rm(path.dirname(zipPath), { recursive: true, force: true })
-  console.log("Unzip completed.")
-  return tempDirName
+const unzip = async (zipPath: string) => {
+  const extractedDir = await mkdtemp(join(tmpdir(), "gs2imgx-"))
+  const zip = await yauzl.open(zipPath)
+
+  try {
+    for await (const entry of zip) {
+      const targetPath = join(extractedDir, entry.filename)
+      if (entry.filename.endsWith("/")) {
+        // directory
+        await mkdir(targetPath, { recursive: true })
+      } else {
+        // file
+        const readStream = await entry.openReadStream()
+        await mkdir(dirname(targetPath), { recursive: true })
+        await pipeline(readStream, createWriteStream(targetPath))
+      }
+    }
+  } finally {
+    await zip.close()
+  }
+
+  await rm(dirname(zipPath), { force: true, recursive: true })
+  return extractedDir
 }
 
 const screenshot = async (
   htmlPath: string,
   pngPath: string,
-  browser: any,
-): Promise<void> => {
-  console.log(`Processing ${path.basename(htmlPath)}...`)
+  browser: Browser,
+) => {
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
     deviceScaleFactor: 2,
   })
-  console.log(`Page created for ${path.basename(htmlPath)}.`)
-  await page.goto(`file://${htmlPath}`, { timeout: 0 })
+  await page.goto("file://" + htmlPath, { timeout: 0 })
 
   try {
     const rowHeader = await page.$(".row-header-wrapper")
-    const { width: rowHeaderWidth } = await rowHeader.boundingBox()
+    if (!rowHeader) return
+    const rowHeaderBox = await rowHeader.boundingBox()
+    if (!rowHeaderBox) return
+    const { width: rowHeaderWidth } = rowHeaderBox
     const tbody = await page.$("tbody")
+    if (!tbody) return
     const boundingBox = await tbody.boundingBox()
+    if (!boundingBox) return
     const clipArea = {
       x: boundingBox.x + rowHeaderWidth + 1,
       y: boundingBox.y,
@@ -75,72 +89,49 @@ const screenshot = async (
       height: Math.max(1080, Math.floor(clipArea.height) + 100),
     })
 
-    console.log(`Uploading ${path.parse(htmlPath).name}`)
     await page.screenshot({ path: pngPath, clip: clipArea })
   } catch (e) {
     console.error(e)
   } finally {
     await page.close()
   }
-
-  console.log(`Uploaded ${path.parse(htmlPath).name}`)
 }
 
-const processSheets = async (
-  sheetNames: string[],
-  extractedDir: string,
-  browser: any,
-): Promise<void> => {
-  console.log("Starting to process sheets...")
-  for (const sheetName of sheetNames) {
-    console.log(`Processing sheet: ${sheetName}`)
-    const fileName = sheetName.replace(/ /g, "_") + ".jpeg"
-    const htmlPath = path.join(extractedDir, `${sheetName}.html`)
-    const pngPath = path.join(resolvedOutputDir, fileName)
-    if (!fs.existsSync(htmlPath)) {
-      console.log(`Skipping ${sheetName}: HTML file not found.`)
-      continue
+download(sheetId)
+  .then(unzip)
+  .then(async (extractedDir) => {
+    await mkdir(outputDir, { recursive: true })
+
+    const files = await readdir(extractedDir)
+    const sheetNames = files
+      .filter((x) => extname(x) == ".html")
+      .map((x) => basename(x).slice(0, -5))
+      .filter(
+        (x) =>
+          (!Array.isArray(includeSheets) ||
+            !includeSheets.length ||
+            includeSheets.includes(x)) &&
+          (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
+      )
+    const browser = await firefox.launch()
+    const promises = new Set<Promise<void>>()
+
+    for (const sheetName of sheetNames) {
+      const promise = screenshot(
+        join(extractedDir, sheetName + ".html"),
+        join(outputDir, sheetName + ".jpeg"),
+        browser,
+      ).then(() => {
+        promises.delete(promise)
+      })
+      promises.add(promise)
+
+      if (promises.size >= concurrency) {
+        await Promise.race(promises)
+      }
     }
-    await screenshot(htmlPath, pngPath, browser)
-  }
-  console.log("Finished processing sheets.")
-}
 
-export const main = async (): Promise<void> => {
-  await fs.promises.mkdir(resolvedOutputDir, { recursive: true })
-  const zipPath = await download(sheetId)
-  const extractedDir = await unzip(zipPath)
-  const files = (await fs.promises.readdir(extractedDir))
-    .filter((f) => f.endsWith(".html"))
-    .map((f) => path.join(extractedDir, f))
-  const sheetNames = files
-    .map((f) => path.parse(f).name)
-    .filter(
-      (name) =>
-        (!includeSheets.length || includeSheets.includes(name)) &&
-        !excludeSheets.includes(name),
-    )
-
-  console.log(`Found ${sheetNames.length} sheets to process.`)
-
-  console.log("Launching Firefox...")
-  const browser = await firefox.launch({
-    headless: true,
-    args: [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-    ],
-  })
-  console.log("Firefox launched.")
-  try {
-    await processSheets(sheetNames, extractedDir, browser)
-  } finally {
+    await Promise.all(promises)
     await browser.close()
-  }
-
-  await fs.promises.rm(extractedDir, { recursive: true, force: true })
-  console.log("Finished uploading images.")
-}
-
-main().catch(console.error)
+    await rm(extractedDir, { force: true, recursive: true })
+  })
