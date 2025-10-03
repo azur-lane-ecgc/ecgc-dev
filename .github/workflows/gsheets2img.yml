@@ -27,6 +27,12 @@ jobs:
       - name: Install dependencies
         run: cd packages/gsheets2img && bun install
 
+      - name: Restore credentials
+        run: |
+          echo "$GOOGLE_CREDENTIALS_BASE64" | base64 -d > packages/dev/credentials.json
+        env:
+          GOOGLE_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
+
       - name: Delete existing images
         run: rm -rf packages/frontend/public/images/equip_misc/*
 
@@ -47,6 +53,11 @@ jobs:
         run: |
           echo "Listing images in equip_misc:"
           ls -la packages/frontend/public/images/equip_misc/ | head -20
+
+      - name: Clean up credentials
+        if: always()
+        run: |
+          rm -f packages/dev/credentials.json
 
       - name: Upload generated images
         id: upload
