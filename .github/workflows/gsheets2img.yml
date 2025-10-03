@@ -7,9 +7,6 @@ jobs:
   run-gsheets2img:
     runs-on: ubuntu-latest
     name: Run gsheets2img Script and Verify Output
-    defaults:
-      run:
-        working-directory: ./packages/gsheets2img
 
     steps:
       - name: Checkout repository
@@ -28,13 +25,13 @@ jobs:
           bun-version: "1.2.20"
 
       - name: Install dependencies
-        run: bun install
+        run: cd packages/gsheets2img && bun install
 
       - name: Delete existing images
-        run: rm -rf ../frontend/public/images/equip_misc/*
+        run: rm -rf frontend/public/images/equip_misc/*
 
       - name: Run gsheets2img
-        run: bun run main
+        run: cd packages/gsheets2img && bun run main
 
       - name: Check for file changes
         run: |
@@ -49,14 +46,14 @@ jobs:
       - name: Verify output
         run: |
           echo "Listing images in equip_misc:"
-          ls -la ../frontend/public/images/equip_misc/ | head -20
+          ls -la frontend/public/images/equip_misc/ | head -20
 
       - name: Upload generated images
         id: upload
         uses: actions/upload-artifact@v4
         with:
           name: equip-misc-images
-          path: ../frontend/public/images/equip_misc/
+          path: frontend/public/images/equip_misc/
           retention-days: 1
 
       - name: Print artifact URL
