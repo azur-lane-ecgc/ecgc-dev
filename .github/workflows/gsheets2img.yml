@@ -28,7 +28,7 @@ jobs:
         run: cd packages/gsheets2img && bun install
 
       - name: Delete existing images
-        run: rm -rf frontend/public/images/equip_misc/*
+        run: rm -rf packages/frontend/public/images/equip_misc/*
 
       - name: Run gsheets2img
         run: cd packages/gsheets2img && bun run main
@@ -46,14 +46,14 @@ jobs:
       - name: Verify output
         run: |
           echo "Listing images in equip_misc:"
-          ls -la frontend/public/images/equip_misc/ | head -20
+          ls -la packages/frontend/public/images/equip_misc/ | head -20
 
       - name: Upload generated images
         id: upload
         uses: actions/upload-artifact@v4
         with:
           name: equip-misc-images
-          path: frontend/public/images/equip_misc/
+          path: packages/frontend/public/images/equip_misc/
           retention-days: 1
 
       - name: Print artifact URL
