@@ -113,6 +113,7 @@ download(sheetId)
             includeSheets.includes(x)) &&
           (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
       )
+      .map((x) => x.replace(/ /g, "_"))
     const browser = await firefox.launch()
     const promises = new Set<Promise<void>>()
 
