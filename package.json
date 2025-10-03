@@ -9,7 +9,7 @@
   "scripts": {
     "prepare": "bunx lefthook install",
     "update": "bun upgrade && bun update --recursive --latest && bun install",
-    "rebuild": "rm -rf node_modules && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && bun run update",
+    "rebuild": "rm -rf node_modules && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bun --filter gsheets2img main",

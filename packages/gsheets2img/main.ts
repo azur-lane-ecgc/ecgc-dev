@@ -2,7 +2,7 @@ import fs from "fs"
 import path from "path"
 import { tmpdir } from "os"
 import crypto from "crypto"
-import AdmZip from "adm-zip"
+import unzipper from "unzipper"
 import { firefox } from "playwright"
 
 // Hardcoded constants
@@ -38,8 +38,8 @@ const unzip = async (zipPath: string): Promise<string> => {
   console.log("Starting unzip...")
   const tempDirName = path.join(tmpdir(), `gs2imgx-${crypto.randomUUID()}`)
   await fs.promises.mkdir(tempDirName, { recursive: true })
-  const zip = new AdmZip(zipPath)
-  zip.extractAllTo(tempDirName, true)
+  const directory = await unzipper.Open.file(zipPath)
+  await directory.extract({ path: tempDirName })
   await fs.promises.rm(path.dirname(zipPath), { recursive: true, force: true })
   console.log("Unzip completed.")
   return tempDirName
