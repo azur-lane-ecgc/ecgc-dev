@@ -23,8 +23,11 @@ const concurrency = 5
 const download = async (sheetID: string) => {
   const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
   const zipPath = join(dir, sheetID + ".zip")
+  const controller = new AbortController()
+  setTimeout(() => controller.abort(), 600000)
   const res = await fetch(
     `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=zip`,
+    { signal: controller.signal, verbose: true },
   )
   if (!res.body) throw new Error("No response body")
   await pipeline(Readable.fromWeb(res.body as any), createWriteStream(zipPath))
