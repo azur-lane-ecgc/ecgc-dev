@@ -68,39 +68,61 @@ const screenshot = async (
     viewport: { width: 10000, height: 10000 },
     deviceScaleFactor: 1,
   })
-  await page.goto("file://" + htmlPath, { timeout: 0 })
+
+  // Set a longer timeout for navigation
+  await page.goto("file://" + htmlPath, {
+    timeout: 0,
+    waitUntil: "networkidle",
+  })
 
   try {
-    // // Wait for images to load with a generous timeout
-    // await page.evaluate(() => {
-    //   return new Promise<void>((resolve) => {
-    //     const images = Array.from(document.images)
-    //     if (images.length === 0) {
-    //       resolve()
-    //       return
-    //     }
+    // Wait for the table body to be present
+    await page.waitForSelector("tbody", { timeout: 10000 })
 
-    //     let loadedCount = 0
-    //     const checkComplete = () => {
-    //       loadedCount++
-    //       if (loadedCount === images.length) {
-    //         resolve()
-    //       }
-    //     }
+    // Wait for all images to load
+    await page.waitForLoadState("load")
 
-    //     images.forEach((img) => {
-    //       if (img.complete && img.naturalHeight !== 0) {
-    //         checkComplete()
-    //       } else {
-    //         img.addEventListener("load", checkComplete)
-    //         img.addEventListener("error", checkComplete)
-    //       }
-    //     })
-    //   })
-    // })
+    // Wait for images with proper error handling
+    await page.evaluate(() => {
+      return new Promise<void>((resolve) => {
+        const images = Array.from(document.images)
+        if (images.length === 0) {
+          resolve()
+          return
+        }
 
-    // Additional wait to ensure all content is rendered
-    await page.waitForTimeout(2000)
+        let loadedCount = 0
+        const totalImages = images.length
+
+        const checkComplete = () => {
+          loadedCount++
+          if (loadedCount === totalImages) {
+            resolve()
+          }
+        }
+
+        images.forEach((img) => {
+          if (img.complete) {
+            checkComplete()
+          } else {
+            img.addEventListener("load", checkComplete, { once: true })
+            img.addEventListener("error", checkComplete, { once: true })
+            // Force reload if src is set but not loading
+            if (img.src && !img.complete) {
+              const src = img.src
+              img.src = ""
+              img.src = src
+            }
+          }
+        })
+
+        // Timeout after 30 seconds
+        setTimeout(() => resolve(), 30000)
+      })
+    })
+
+    // Additional wait to ensure all content is fully rendered
+    await page.waitForTimeout(3000)
 
     const rowHeader = await page.$(".row-header-wrapper")
     if (!rowHeader) return
@@ -118,12 +140,16 @@ const screenshot = async (
       height: boundingBox.height,
     }
 
+    // Set viewport to accommodate full content
     await page.setViewportSize({
-      width: Math.max(3840, Math.floor(clipArea.width) + 100),
-      height: Math.max(2160, Math.floor(clipArea.height) + 100),
+      width: Math.max(10000, Math.floor(clipArea.x + clipArea.width) + 100),
+      height: Math.max(10000, Math.floor(clipArea.y + clipArea.height) + 100),
     })
 
-    await page.screenshot({ path: pngPath, clip: clipArea })
+    // Wait a bit more after viewport change
+    await page.waitForTimeout(1000)
+
+    await page.screenshot({ path: pngPath, clip: clipArea, fullPage: false })
   } catch (e) {
     console.error(e)
   } finally {
