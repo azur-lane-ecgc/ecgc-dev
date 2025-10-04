@@ -1,6 +1,6 @@
 import { createWriteStream } from "node:fs"
 import { mkdir, mkdtemp, readdir, rm } from "node:fs/promises"
-import { basename, dirname, extname, join, normalize } from "node:path"
+import { basename, dirname, extname, join } from "node:path"
 import { tmpdir } from "node:os"
 import { Readable } from "node:stream"
 import { pipeline } from "node:stream/promises"
@@ -103,24 +103,27 @@ download(sheetId)
     await mkdir(outputDir, { recursive: true })
 
     const files = await readdir(extractedDir)
-    const sheetNames = files
+    const sheets = files
       .filter((x) => extname(x) == ".html")
       .map((x) => basename(x).slice(0, -5))
       .filter(
-        (x) =>
+        (name) =>
           (!Array.isArray(includeSheets) ||
             !includeSheets.length ||
-            includeSheets.includes(x)) &&
-          (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
+            includeSheets.includes(name)) &&
+          (!Array.isArray(excludeSheets) || !excludeSheets.includes(name)),
       )
-      .map((x) => x.replace(/ /g, "_"))
+      .map((name) => ({
+        original: name + ".html",
+        modified: name.replace(/ /g, "_"),
+      }))
     const browser = await firefox.launch()
     const promises = new Set<Promise<void>>()
 
-    for (const sheetName of sheetNames) {
+    for (const { original, modified } of sheets) {
       const promise = screenshot(
-        join(extractedDir, sheetName + ".html"),
-        join(outputDir, sheetName + ".jpeg"),
+        join(extractedDir, original),
+        join(outputDir, modified + ".jpeg"),
         browser,
       ).then(() => {
         promises.delete(promise)
