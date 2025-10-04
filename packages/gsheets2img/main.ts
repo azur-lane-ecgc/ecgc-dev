@@ -65,12 +65,43 @@ const screenshot = async (
   browser: Browser,
 ) => {
   const page = await browser.newPage({
-    viewport: { width: 1920, height: 1080 },
+    viewport: { width: 10000, height: 10000 },
     deviceScaleFactor: 1,
   })
   await page.goto("file://" + htmlPath, { timeout: 0 })
 
   try {
+    // // Wait for images to load with a generous timeout
+    // await page.evaluate(() => {
+    //   return new Promise<void>((resolve) => {
+    //     const images = Array.from(document.images)
+    //     if (images.length === 0) {
+    //       resolve()
+    //       return
+    //     }
+
+    //     let loadedCount = 0
+    //     const checkComplete = () => {
+    //       loadedCount++
+    //       if (loadedCount === images.length) {
+    //         resolve()
+    //       }
+    //     }
+
+    //     images.forEach((img) => {
+    //       if (img.complete && img.naturalHeight !== 0) {
+    //         checkComplete()
+    //       } else {
+    //         img.addEventListener("load", checkComplete)
+    //         img.addEventListener("error", checkComplete)
+    //       }
+    //     })
+    //   })
+    // })
+
+    // Additional wait to ensure all content is rendered
+    await page.waitForTimeout(2000)
+
     const rowHeader = await page.$(".row-header-wrapper")
     if (!rowHeader) return
     const rowHeaderBox = await rowHeader.boundingBox()
@@ -88,8 +119,8 @@ const screenshot = async (
     }
 
     await page.setViewportSize({
-      width: Math.max(1920, Math.floor(clipArea.width) + 100),
-      height: Math.max(1080, Math.floor(clipArea.height) + 100),
+      width: Math.max(3840, Math.floor(clipArea.width) + 100),
+      height: Math.max(2160, Math.floor(clipArea.height) + 100),
     })
 
     await page.screenshot({ path: pngPath, clip: clipArea })
