@@ -8,7 +8,7 @@ import yauzl from "yauzl-promise"
 import { firefox } from "playwright"
 
 const SHEET_ID = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"
-const OUTPUT_DIR = "output/"
+const OUTPUT_DIR = "../frontend/public/images/equip_misc/"
 const INCLUDE_SHEETS = []
 const EXCLUDE_SHEETS = [
   "(WiP) SS RLD Chart",
@@ -17,9 +17,9 @@ const EXCLUDE_SHEETS = [
   "Ammo Modifiers Chart",
   "(WiP) Rikka Specific Guide",
 ]
-const CONCURRENCY = 5
+const CONCURRENCY = 1
 
-async function download(sheetID) {
+const download = async (sheetID) => {
   const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
   const zipPath = join(dir, sheetID + ".zip")
   const res = await fetch(
@@ -29,7 +29,7 @@ async function download(sheetID) {
   return zipPath
 }
 
-async function unzip(zipPath) {
+const unzip = async (zipPath) => {
   const extractedDir = await mkdtemp(join(tmpdir(), "gs2imgx-"))
   const zip = await yauzl.open(zipPath)
 
@@ -54,12 +54,20 @@ async function unzip(zipPath) {
   return extractedDir
 }
 
-async function screenshot(htmlPath, pngPath, browser) {
+const screenshot = async (htmlPath, pngPath, browser) => {
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
     deviceScaleFactor: 2,
   })
   await page.goto("file://" + htmlPath, { timeout: 0 })
+
+  await page.waitForLoadState("load")
+
+  await page.evaluate(() => {
+    window.scrollTo(0, document.body.scrollHeight)
+  })
+
+  await page.waitForTimeout(5000)
 
   try {
     const rowHeader = await page.$(".row-header-wrapper")
@@ -105,13 +113,13 @@ download(SHEET_ID)
             includeSheets.includes(x)) &&
           (!Array.isArray(excludeSheets) || !excludeSheets.includes(x)),
       )
-    const browser = await firefox.launch()
+    const browser = await firefox.launch({ args: ["--disable-web-security"] })
     const promises = []
 
     for (const sheetName of sheetNames) {
       const promise = screenshot(
         join(extractedDir, sheetName + ".html"),
-        join(outputDir, sheetName + ".jpg"),
+        join(outputDir, sheetName.replaceAll(" ", "_") + ".jpeg"),
         browser,
       ).then(() => promises.splice(promises.indexOf(promise), 1))
       promises.push(promise)

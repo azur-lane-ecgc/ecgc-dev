@@ -10,7 +10,8 @@
     "yauzl-promise": "^4.0.0"
   },
   "scripts": {
-    "main": "node index.js",
-    "postinstall": "npm exec playwright install firefox"
+    "playwright-install": "npm exec playwright install firefox",
+    "main": "npm run playwright-install && node index.js",
+    "postinstall": "npm run playwright-install"
   }
 }
