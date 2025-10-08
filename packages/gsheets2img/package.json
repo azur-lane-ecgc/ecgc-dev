@@ -1,18 +1,16 @@
 {
   "name": "gsheets2img",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "author": "blead",
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "config": "^4.1.1",
     "playwright": "^1.56.0",
     "yauzl-promise": "^4.0.0"
   },
   "scripts": {
-    "postinstall": "npm exec playwright install firefox",
-    "main": "node index.js"
+    "main": "node index.js",
+    "postinstall": "npm exec playwright install firefox"
   }
 }
