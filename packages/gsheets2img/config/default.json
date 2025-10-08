@@ -1,9 +1,0 @@
-{
-  "gsheets2img": {
-    "sheetID": "",
-    "outputDir": "./output",
-    "includeSheets": [],
-    "excludeSheets": [],
-    "concurrency": 5
-  }
-}

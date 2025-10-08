@@ -4,9 +4,20 @@ import { basename, dirname, extname, join, normalize } from "node:path"
 import { tmpdir } from "node:os"
 import { Readable } from "node:stream"
 import { pipeline } from "node:stream/promises"
-import config from "config"
 import yauzl from "yauzl-promise"
 import { firefox } from "playwright"
+
+const SHEET_ID = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"
+const OUTPUT_DIR = "output/"
+const INCLUDE_SHEETS = []
+const EXCLUDE_SHEETS = [
+  "(WiP) SS RLD Chart",
+  "Copy of BB Guns",
+  "(WiP) OpSi Image Guide Pt4",
+  "Ammo Modifiers Chart",
+  "(WiP) Rikka Specific Guide",
+]
+const CONCURRENCY = 5
 
 async function download(sheetID) {
   const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
@@ -75,15 +86,15 @@ async function screenshot(htmlPath, pngPath, browser) {
   }
 }
 
-download(config.get("gsheets2img.sheetID"))
+download(SHEET_ID)
   .then(unzip)
   .then(async (extractedDir) => {
-    const outputDir = normalize(config.get("gsheets2img.outputDir"))
+    const outputDir = normalize(OUTPUT_DIR)
     await mkdir(outputDir, { recursive: true })
 
     const files = await readdir(extractedDir)
-    const includeSheets = config.get("gsheets2img.includeSheets")
-    const excludeSheets = config.get("gsheets2img.excludeSheets")
+    const includeSheets = INCLUDE_SHEETS
+    const excludeSheets = EXCLUDE_SHEETS
     const sheetNames = files
       .filter((x) => extname(x) == ".html")
       .map((x) => basename(x).slice(0, -5))
@@ -105,7 +116,7 @@ download(config.get("gsheets2img.sheetID"))
       ).then(() => promises.splice(promises.indexOf(promise), 1))
       promises.push(promise)
 
-      if (promises.length >= config.get("gsheets2img.concurrency")) {
+      if (promises.length >= CONCURRENCY) {
         await Promise.race(promises)
       }
     }
