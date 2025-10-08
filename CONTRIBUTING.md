@@ -37,7 +37,7 @@ The project is a monorepo with the following structure:
 3.  **Configure environment:**
 
     There is one configuration file that you need to create:
-    - `packages/dev/credentials.json`: This file contains the credentials for the Google Cloud service account used by the development scripts. You can create a service account in the [Google Cloud Console](https://console.cloud.google.com/) and download the credentials as a JSON file. An example of what this file should look like is provided in `packages/dev/credentials.json.example`.
+    - `packages/credentials.json`: This file contains the credentials for the Google Cloud service account used by the development scripts. You can create a service account in the [Google Cloud Console](https://console.cloud.google.com/) and download the credentials as a JSON file. An example of what this file should look like is provided in `packages/credentials.json.example`.
 
 4.  **Run the development server:**
 
