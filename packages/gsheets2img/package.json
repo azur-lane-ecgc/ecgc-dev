@@ -1,7 +1,7 @@
 {
   "name": "gsheets2img",
   "version": "0.0.1",
-  "description": "",
+  "description": "gsheets2img",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
