@@ -11,12 +11,12 @@
     "check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/bun": "^1.2.22"
+    "@types/bun": "^1.2.23"
   },
   "peerDependencies": {
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "googleapis": "^160.0.0"
+    "googleapis": "^161.0.0"
   }
 }

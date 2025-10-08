@@ -8,11 +8,11 @@
   "type": "module",
   "dependencies": {
     "config": "^4.1.1",
-    "playwright": "^1.41.1",
+    "playwright": "^1.56.0",
     "yauzl-promise": "^4.0.0"
   },
   "scripts": {
-    "postinstall": "npx playwright install firefox",
-    "start": "node index.js"
+    "postinstall": "npm exec playwright install firefox",
+    "main": "node index.js"
   }
 }
