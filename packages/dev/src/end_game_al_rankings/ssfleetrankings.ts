@@ -1,7 +1,7 @@
 import { google } from "googleapis"
 import path from "path"
 
-const SERVICE_ACCOUNT_FILE = "credentials.json"
+const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 const SHEET_NAME = "subs (no img)"
 const OUTPUT_PATH = "../frontend/src/db/rankings/ssFleetRankings.json"

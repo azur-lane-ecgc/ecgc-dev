@@ -27,7 +27,7 @@ jobs:
 
       - name: Restore credentials
         run: |
-          echo "$GOOGLE_CREDENTIALS_BASE64" | base64 -d > packages/dev/credentials.json
+          echo "$GOOGLE_CREDENTIALS_BASE64" | base64 -d > packages/credentials.json
         env:
           GOOGLE_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
 
@@ -51,4 +51,4 @@ jobs:
       - name: Clean up credentials
         if: always()
         run: |
-          rm -f packages/dev/credentials.json
+          rm -f packages/credentials.json

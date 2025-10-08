@@ -1,0 +1,9 @@
+{
+  "gsheets2img": {
+    "sheetID": "aBC-123_xYz",
+    "outputDir": "/path/to/output/dir",
+    "includeSheets": ["Sheet1", "Sheet3", "My Sheet", "Copy of My Sheet", "All sheets are included if includeSheets is empty"],
+    "excludeSheets": ["Sheet3", "Copy of My Sheet", "If an included sheet is in excludeSheets, it becomes excluded"],
+    "concurrency": 2
+  }
+}

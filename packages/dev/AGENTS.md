@@ -24,7 +24,7 @@ This package contains TypeScript development scripts and tools for processing Az
 
 ## Configuration
 
-- **Credentials**: Requires `credentials.json` (Google Cloud service account key from `credentials.json.example`)
+- **Credentials**: Requires `credentials.json` (Google Cloud service account key from `../credentials.json.example`)
 - **Environment**: TypeScript strict mode with ES modules, path aliases (`@/tools/*` → `src/*`)
 - **Dependencies**: Managed via root `bun.lock`, includes Google APIs client libraries
 - **Output**: Processed data written to `packages/frontend/src/db/`
