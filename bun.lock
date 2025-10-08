@@ -54,9 +54,8 @@
     },
     "packages/gsheets2img": {
       "name": "gsheets2img",
-      "version": "0.0.2",
+      "version": "0.0.1",
       "dependencies": {
-        "config": "^4.1.1",
         "playwright": "^1.56.0",
         "yauzl-promise": "^4.0.0",
       },
@@ -663,8 +662,6 @@
     "comma-separated-tokens": ["comma-separated-tokens@2.0.3", "", {}, "sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg=="],
 
     "common-ancestor-path": ["common-ancestor-path@1.0.1", "", {}, "sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w=="],
-
-    "config": ["config@4.1.1", "", { "dependencies": { "json5": "^2.2.3" } }, "sha512-jljfwqNZ7QHwAW9Z9NDZdJARFiu5pjLqQO0K4ooY22iY/bIY78n0afI4ANEawfgQOxri0K/3oTayX8XIauWcLA=="],
 
     "convert-source-map": ["convert-source-map@2.0.0", "", {}, "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg=="],
 
