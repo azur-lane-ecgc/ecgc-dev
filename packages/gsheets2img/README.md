@@ -1,65 +1,27 @@
 # gsheets2img
 
-A Node.js utility that converts Google Sheets documents into high-resolution images by taking automated screenshots of individual sheets. This tool downloads a Google Sheets document as HTML, extracts each sheet, and captures clean screenshots of the table content using Playwright.
+This is a TypeScript conversion of [gsheets2img](https://github.com/blead/gsheets2img), used under the MIT license. Now integrated as a monorepo package.
 
-## Features
+## Installation and Setup
 
-- Downloads Google Sheets documents as ZIP archives
-- Extracts and processes individual sheet HTML files
-- Takes high-resolution screenshots of table content (excluding row headers)
-- Configurable sheet inclusion/exclusion filters
-- Concurrent processing with configurable concurrency limits
-- Automatic cleanup of temporary files
-
-## Installation
-
-This package is part of the ECGC monorepo. Install dependencies from the root:
-
-```bash
-bun install
-```
-
-The package includes a postinstall script that automatically installs Playwright's Firefox browser.
+1. Ensure Bun is installed
+2. Run `bun install` from the monorepo root
 
 ## Usage
 
-Run the main script:
+Run from the monorepo root:
 
-```bash
-bun run main
-```
+- **Generate images from Google Sheets**: `bun run gsheets2img`
 
-Or directly:
+Or run directly in the package:
 
-```bash
-node index.js
-```
+- `bun main.ts`
 
-## Configuration
+## File Structure
 
-The tool is configured via constants at the top of `index.js`:
+- `main.ts`: Google Sheets to image conversion using Playwright
+- `package.json`: Dependencies and scripts
 
-- `SHEET_ID`: Google Sheets document ID to process
-- `OUTPUT_DIR`: Directory to save generated images (default: "output/")
-- `INCLUDE_SHEETS`: Array of sheet names to include (empty array includes all)
-- `EXCLUDE_SHEETS`: Array of sheet names to exclude from processing
-- `CONCURRENCY`: Maximum number of concurrent screenshot operations (default: 5)
+## Processing Behavior
 
-## Output
-
-Generates JPG images in the output directory, one per sheet, with filenames matching the sheet names.
-
-## Dependencies
-
-- `playwright`: For browser automation and screenshot capture
-- `yauzl-promise`: For ZIP file extraction
-
-## Requirements
-
-- Node.js with ES modules support
-- Firefox browser (automatically installed via postinstall script)
-- Internet connection for downloading Google Sheets data
-
-## License
-
-MIT License - This is a fork of [gsheets2img](https://github.com/blead/gsheets2img)
+- Google Sheets processing uses hardcoded sheet IDs and outputs to `../frontend/public/images/equip_misc/`
