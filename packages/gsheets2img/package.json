@@ -1,17 +1,18 @@
 {
   "name": "gsheets2img",
-  "version": "0.0.1",
-  "description": "gsheets2img",
-  "main": "index.js",
-  "license": "MIT",
+  "module": "main.ts",
   "type": "module",
+  "description": "TypeScript version of gsheets2img script",
+  "version": "0.0.1",
+  "private": true,
   "dependencies": {
-    "playwright": "^1.56.0",
+    "@types/yauzl-promise": "^4.0.1",
+    "playwright": "^1.41.1",
     "yauzl-promise": "^4.0.0"
   },
   "scripts": {
-    "playwright-install": "npm exec playwright install firefox",
-    "main": "npm run playwright-install && node index.js",
-    "postinstall": "npm run playwright-install"
+    "main": "npm exec playwright install firefox && bun main.ts",
+    "check": "tsc --noEmit",
+    "postinstall": "npm exec playwright install firefox"
   }
 }

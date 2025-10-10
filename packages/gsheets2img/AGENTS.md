@@ -2,77 +2,65 @@
 
 ## Overview
 
-This package provides a Node.js utility for converting Google Sheets documents into high-resolution images. It downloads sheets as HTML, extracts individual sheet files, and uses Playwright to capture clean screenshots of table content, excluding row headers. The tool is designed for automated processing of spreadsheet data into visual formats for documentation or presentation purposes.
+TypeScript package for converting Google Sheets data to images. This tool generates visual representations of spreadsheet data for embedding in documentation and guides, particularly for complex tables that are better displayed as images. Now integrated as a monorepo package with CLI flag support.
 
-## Build & Run Commands
+## Dependencies
 
-- **Run main script**: `bun run main` or `node index.js`
-- **Postinstall setup**: `npm exec playwright install firefox` (runs automatically)
-
-## Tech Stack
-
-- **Runtime**: Node.js with ES modules
-- **Browser Automation**: Playwright with Firefox for screenshot capture
-- **ZIP Processing**: yauzl-promise for archive extraction
-- **File Operations**: Node.js fs/promises for async file handling
-
-## Key Functions
-
-- `download(sheetID)`: Downloads Google Sheets document as ZIP archive
-- `unzip(zipPath)`: Extracts ZIP contents to temporary directory
-- `screenshot(htmlPath, pngPath, browser)`: Captures table screenshot excluding row headers
+- **Runtime**: Bun (for execution and package management)
+- **Language**: TypeScript with strict mode
+- **Requirements**: Listed in `package.json` (includes playwright, adm-zip, etc.)
+- **External APIs**: Google Sheets API v4
+- **System Dependencies**: Playwright for browser automation, Node.js for runtime
 
 ## Configuration
 
-- **Sheet ID**: Hardcoded `SHEET_ID` constant for target Google Sheets document
-- **Output Directory**: Configurable `OUTPUT_DIR` (default: "output/")
-- **Sheet Filtering**: `INCLUDE_SHEETS` and `EXCLUDE_SHEETS` arrays for selective processing
-- **Concurrency**: `CONCURRENCY` limit for parallel screenshot operations (default: 5)
+- **Google Sheets**: Uses service account credentials from parent `packages/dev/credentials.json`
+- **Permissions**: Google Sheets read access
 
-## Processing Workflow
+## Usage Commands
 
-1. Download Google Sheets document as ZIP using export API
-2. Extract ZIP to temporary directory containing HTML files
-3. Filter sheets based on include/exclude configuration
-4. Launch Firefox browser instance via Playwright
-5. Process sheets concurrently, taking screenshots of table content
-6. Save JPG images to output directory
-7. Clean up temporary files and close browser
+- **Convert sheets to images**: `bun main.ts` (processes all configured sheets)
+- **From root**: `bun run gsheets2img` (via package.json scripts)
 
-## Screenshot Details
+## Key Files and Scripts
 
-- **Viewport**: 1920x1080 with 2x device scale factor for high resolution
-- **Clipping**: Automatically detects and excludes row headers from screenshots
-- **Format**: JPG output with table content only
-- **Dynamic Sizing**: Adjusts viewport to accommodate full table dimensions
+- `main.ts`: Entry point with CLI flag parsing and sheet processing logic
+- `package.json`: Dependencies and scripts
+
+## Workflow Details
+
+1. Authenticate with Google Sheets API using service account credentials
+2. Download spreadsheet as ZIP and extract HTML files
+3. Use Playwright to screenshot individual sheets as high-resolution PNG images
+4. Process images for optimization and save to `../frontend/public/images/equip_misc/`
+5. Frontend documentation references these images for visual tables
 
 ## Error Handling
 
-- Network timeouts handled via fetch API
-- Browser launch failures logged with error context
-- Screenshot failures caught and logged without stopping processing
-- Automatic cleanup of temporary directories on completion or error
-- Graceful handling of malformed HTML or missing table elements
+- Validate API credentials and permissions before operations
+- Implement retry logic for transient network failures
+- Check for network connectivity and API availability
+- Log detailed errors with timestamps and context for troubleshooting
+- Graceful degradation if individual sheets fail to process
 
 ## Security Notes
 
-- No authentication required (uses public Google Sheets export API)
-- Temporary files created in system temp directory with random names
-- No sensitive data processing or external API keys required
-- All operations are read-only and local file system operations
+- Use HTTPS for all API communications
+- Validate all API responses for authenticity and integrity
+- Rotate API keys periodically and monitor usage
 
-## Development Tips
+## Development and Testing
 
-- Modify `SHEET_ID` constant to target different Google Sheets documents
-- Adjust `EXCLUDE_SHEETS` array to skip work-in-progress or irrelevant sheets
-- Increase `CONCURRENCY` for faster processing on powerful machines
-- Use `console.error` for debugging screenshot issues
-- Test with small sheet sets before processing large documents
+- Test with sample sheets before production runs
+- Verify image quality and readability after conversion
+- Monitor API usage to avoid rate limits
+- Update dependencies regularly for security patches
+- Run `bun run lint` and `bun run check` for code quality
 
-## Dependencies Management
+## Output Integration
 
-- Playwright Firefox automatically installed via postinstall script
-- Dependencies managed via root monorepo `bun.lock`
-- No additional system dependencies required beyond Node.js
+- Images stored locally in `../frontend/public/images/equip_misc/`
+- Frontend documentation embeds these images using local paths
+- Supports JPEG format optimized for table readability
 
-See root [AGENTS.md](../../AGENTS.md) for general coding standards and build commands.
+See root [AGENTS.md](../../AGENTS.md) for general project guidelines.
