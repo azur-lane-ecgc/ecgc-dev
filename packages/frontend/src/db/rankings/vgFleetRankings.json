@@ -8640,7 +8640,7 @@
   "Myoukou": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Still bad after augment.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10417,6 +10417,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": 1
+    }
+  ],
+  "Ryu Lion": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Improved barrage when multiple enemies. Can use Single 150, though Quad 152 slightly better.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "A",
+      "w14mob": "A",
+      "w14boss": "A",
+      "w15mob": "B",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 3,
+      "heavydmg": 3,
+      "aoedmg": 4,
+      "offensivebuff": null,
+      "selfsurvival": 3,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
     }
   ],
   "Saint Louis": [

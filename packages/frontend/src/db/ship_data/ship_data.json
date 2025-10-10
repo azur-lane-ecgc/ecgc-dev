@@ -10351,7 +10351,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Protector of Order", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["Meh"],
@@ -21166,10 +21166,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Anchor of Fortune", "Bowgun", "Officer's Sword"],
     "samEval": "Alabama is a flagship-oriented BB with good stats and skills. Her barrage is good, and it is timed, allowing her to stagger her damage more easily. She is best used in a mobbing fleet due to her gaining more buffs as the sortie progresses. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "Bad"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -43486,6 +43486,118 @@
         {
           "name": "The Alchemist and the Tower of Horizons",
           "href": "The_Alchemist_and_the_Tower_of_Horizons"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "10141": {
+    "id": 10141,
+    "ship": "Hestia",
+    "faction": "Universal",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "AR",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Hestia's String", "Crossbow"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DefSupport", "OffSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "An Encounter Beneath Clear Skies",
+          "href": "An_Encounter_Beneath_Clear_Skies"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "10142": {
+    "id": 10142,
+    "ship": "Ryu Lion",
+    "faction": "Universal",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.55,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Alf's Justitia", "Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg"],
+    "locations": {
+      "events": [
+        {
+          "name": "An Encounter Beneath Clear Skies",
+          "href": "An_Encounter_Beneath_Clear_Skies"
         }
       ],
       "other": [],
