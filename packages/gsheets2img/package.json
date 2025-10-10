@@ -6,9 +6,8 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@types/yauzl-promise": "^4.0.1",
-    "playwright": "^1.41.1",
-    "yauzl-promise": "^4.0.0"
+    "googleapis": "^162.0.0",
+    "playwright": "^1.41.1"
   },
   "scripts": {
     "main": "npm exec playwright install firefox && bun main.ts",
