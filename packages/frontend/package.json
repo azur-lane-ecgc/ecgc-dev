@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
-    "astro": "^5.14.1",
+    "astro": "^5.14.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-intersection-observer-hook": "^4.0.0",
