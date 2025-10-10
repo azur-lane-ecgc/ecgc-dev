@@ -109,6 +109,10 @@
 - **Commit messages**: Clear, descriptive messages
 - **Pull requests**: Include context and testing notes
 
+## Package Management
+
+- **Adding/Removing packages**: Always use `cd` to the specific package directory, then `bun add` or `bun remove` to add or remove packages from monorepo packages.
+
 ### IMPORTANT RULES
 
 NEVER PUSH TO THE "MAIN" BRANCH AT ALL UNDER ANY CIRCUMSTANCES.
