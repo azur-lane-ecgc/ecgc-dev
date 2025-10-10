@@ -24,7 +24,7 @@
     "dev": "bun --filter frontend dev",
     "cf-dev": "bunx wrangler dev",
     "start": "NODE_ENV=PRODUCTION bun --filter frontend preview",
-    "deploy": "bun run compress-build && bunx wrangler deploy"
+    "deploy": "bun run compress-build && bunx wrangler deploy --env production"
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.0.4",
