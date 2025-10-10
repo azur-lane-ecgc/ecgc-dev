@@ -22,83 +22,6 @@ const portlandData = shipData[44]
 const pennData = shipData[54]
 ---
 
-<h2 id="good_yt_guides">Good Azur Lane Youtbers</h2>
-<HR />
-<p>
-  A majority of YouTube Azur Lane gameplay-related guides are often outdated,
-  contain misinformation, and/or clickbait for views (or all of the above). Your
-  best sources of information will come from people who actually play the game
-  on a regular basis.
-</p>
-
-<p>
-  Below are Azur Lane YouTubers that actively upload good videos. Even for these
-  creators, some videos could be outdated or contain misinformation. Use your
-  best judgement, and always reference more than one source for information.
-</p>
-<ol>
-  <li>
-    <p class="!mb-1">
-      <a
-        href="https://www.youtube.com/@JimmyAL"
-        target="_blank"
-        rel="noopener noreferrer">Jimmy (@JimmyAL)</a
-      >: His content is more geared towards mid-late game Azur Lane players and
-      not beginners, but he actively reviews ships every event. Additionally, he
-      has a very informative series called <a
-        href="https://www.youtube.com/playlist?list=PL6bdftzB8jLRAD0fxDuMVOhycooXxjEtE"
-        target="_blank"
-        rel="noopener noreferrer">In-depth Equipment Guides</a
-      >, which go over why some equipment are better than others, among other
-      content. If you want a deep understanding of game mechanics, I recommend
-      you check him out!
-    </p>
-    <ul>
-      <li>
-        <p>
-          <i>
-            I even did a <a
-              href="https://www.youtube.com/watch?v=tImzZpSzUT0"
-              target="_blank"
-              rel="noopener noreferrer">podcast episode</a
-            > with him back in February 2025, which was a ton of fun!</i
-          >
-        </p>
-      </li>
-    </ul>
-  </li>
-  <li class="!mb-1">
-    <p>
-      <a
-        href="https://www.youtube.com/@Suchiguma"
-        target="_blank"
-        rel="noopener noreferrer">Suchiguma (@Suchiguma)</a
-      >: Similar to Jimmy, he is focused more towards mid-late game players, and
-      actively reviews ships every event. He also has videos showing optimal (or
-      bare minimum) fleets against a variety of game bosses. Check him out!
-    </p>
-  </li>
-  <li class="!mb-1">
-    <p>
-      <a
-        href="https://www.youtube.com/@GuardianEPlays"
-        target="_blank"
-        rel="noopener noreferrer">GuardianE (@GuardianEPlays)</a
-      >: He doesn't really upload gameplay videos of Azur Lane, but he is a very
-      good source of information regarding Azur Lane updates, skin reviews,
-      livestream recaps, and anything that's not gameplay. He also plays other
-      games besides Azur Lane as well.
-    </p>
-  </li>
-</ol>
-
-<p>
-  If you prefer live human interaction, good Discord servers for help are Azur
-  Lane Official, English Community Tier List, and English Community Guide
-  Compendium.
-</p>
-<br />
-
 <h2 id="rerolling">Rerolling</h2>
 <HR />
 <p>
@@ -108,20 +31,6 @@ const pennData = shipData[54]
 <p>
   Only consider rerolling if you start during a UR event where the UR is the
   rate-up ship.
-</p>
-<br />
-
-<h2 id="mail">Mail is a Bank!</h2>
-<HR />
-<p>
-  When you claim Mail rewards, all Oil and Coin rewards are stored in
-  <b>Mail Storage</b>. The caps are <b>600K Oil</b> and <b>1.8M Coins</b> respectively.
-  <b>Leave ALL Oil / Coins inside Mail Storage until you need it</b>. This helps
-  prevent your
-  <WikiLink page="Living Area#Canteen and Merchant" title="Canteen and Merchant"
-    >Canteen and Merchant</WikiLink
-  >
-  from filling up. You can withdraw from Mail Storage as needed.
 </p>
 <br />
 
@@ -159,108 +68,6 @@ const pennData = shipData[54]
     </p>
   </li>
 </ul>
-<br />
-
-<h2 id="permanent_ur">Permanent UR Pity is a TRAP!</h2>
-<HR />
-<p>
-  <i
-    >Main Article:
-    <WikiLink
-      page="Building#UR Ships Construction"
-      title="UR Ships Construction">UR Ships Construction</WikiLink
-    ></i
-  >
-</p>
-<p>
-  You get UR pity gradually from pulling on permanent banners, as well as event
-  banners <b>that do NOT have a rate-up UR ship already on them</b> (read the wiki
-  page linked above for more information). Do not pull specifically for Permanent
-  URs or the permanent UR pity. Most Permanent URs powercreep faster than limited
-  URs; save UR Bulins for limited banner UR ships, and use the permanent pity to
-  target duplicate copies for limit breaks.
-</p>
-<p>
-  Even if you do snag a typical Permanent UR, she is weak until limit-broken.
-  Most non-MLB URs perform worse than many SRs. It's almost always better to
-  pull on events and get Permanent URs as byproducts.
-</p>
-<ul>
-  <li>
-    <p>
-      To farm UR Bulins, see the
-      <a href="/common_resource" target="_self">Common Resource Guide</a>.
-    </p>
-  </li>
-</ul>
-<br />
-
-<h3 id="commander_handbook_ur">
-  <WikiLink page="Commander Handbook">Commander Handbook</WikiLink> UR
-</h3>
-
-<p>
-  The <WikiLink page="Commander Handbook" /> gives you a free UR ship upon completing
-  all the missions. As mentioned earlier, the UR ship (regardless of which ship you
-  select) will not be good until they are max limit break.
-</p>
-<br />
-
-<ItemTable
-  tableInfo={[
-    { colName: "Ship", colWidth: "22%" },
-    { colName: "Location", colWidth: "25%" },
-    { colName: "Description", colWidth: "53%", limiter: true },
-  ]}
->
-  <tr>
-    <td>
-      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
-        <ShipModal
-          client:visible={{ rootMargin: "50px" }}
-          shipData={shinanoData}
-          uniqueID="handbook-Shinano"
-        />
-      </div>
-    </td>
-    <td>
-      <LocationItem locations={shinanoData.locations.other} />
-      <LocationItem locations={shinanoData.locations.construction} />
-    </td>
-    <td>
-      <p><b>Pick Shinano if you don't have her!</b></p>
-      <br />
-      <p>
-        Amazing damage-oriented CV. Also buffs IJN CVs when paired alongside
-        her, and buffs all DDs in the Vanguard Fleet.
-      </p>
-      <p><i>Ideally used alongside 2+ other IJN ships.</i></p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
-        <ShipModal
-          client:visible={{ rootMargin: "50px" }}
-          shipData={newJerseyData}
-          uniqueID="handbook-NJ"
-        />
-      </div>
-    </td>
-    <td>
-      <LocationItem locations={newJerseyData.locations.other} />
-      <LocationItem locations={newJerseyData.locations.construction} />
-    </td>
-    <td>
-      <p>
-        Amazing off-flag damage-oriented BB. Worse than modern URs, but still
-        better than most non-URs.
-      </p>
-    </td>
-  </tr>
-</ItemTable>
-<br />
 <br />
 
 <h2 id="guild_shop"><WikiLink page="Guild Shop">Guild Shop</WikiLink></h2>
@@ -396,29 +203,6 @@ const pennData = shipData[54]
   remaining two. You'll use these ships (except
   <WikiLink page="Pennsylvania">Pennsylvania</WikiLink>) for a long time!
 </p>
-<p>
-  Ideally have <WikiLink page="Pennsylvania">Pennsylvania</WikiLink> as Flagship
-  (middle slot) and <WikiLink page="Portland">Portland</WikiLink> as Main Tank (left
-  slot). Use your starter ship in rookie missions if needed.
-</p>
-<p>
-  Depending on when you start and/or what rate-up ships you pulled for, you
-  might have better options than the ones listed. In that case, feel free to
-  swap out
-  <WikiLink page="Pennsylvania">Pennsylvania</WikiLink> or
-  <WikiLink page="Enterprise">Enterprise</WikiLink>, but don't overinvest in
-  high-rarity ships. SR Bulins are scarce early on.
-</p>
-
-<ImageCarousel
-  client:visible={{ rootMargin: "50px" }}
-  data={[
-    {
-      src: StarterFleet.src,
-      caption: "Example starting fleet.",
-    },
-  ]}
-/>
 <br />
 
 <p>Other worthwhile Guild Shop purchases:</p>
@@ -463,61 +247,30 @@ const pennData = shipData[54]
 </ul>
 <br />
 
-<h2 id="shops">Shop Priority</h2>
-<HR />
+<h3 id="starter_fleet">Starter Fleet</h3>
 <p>
-  <i
-    >Main Article:
-    <a href="/shop_priority" target="_self" rel="noopener noreferrer"
-      >Shop Priority</a
-    ></i
-  >
-</p>
-<br />
-
-<h2 id="basic_fleetbuilding">Basic Fleetbuilding</h2>
-<HR />
-<p>
-  <i
-    >For a detailed Fleetbuilding guide, read the
-    <a href="/fleetbuilding" target="_self" rel="noopener noreferrer"
-      >Fleetbuilding Guide</a
-    > on this website!</i
-  >
+  Ideally have <WikiLink page="Pennsylvania">Pennsylvania</WikiLink> as Flagship
+  (middle slot) and <WikiLink page="Portland">Portland</WikiLink> as Main Tank (left
+  slot). Use your starter ship in rookie missions if needed.
 </p>
 
-<h3 id="hull_type">Ship Hull Types</h3>
-<p>
-  Ship Hull types are <b>irrelevant</b> to determining if a ship is good or not.
-  The Azur Lane developers have released ships of all different viabilities, shapes,
-  and sizes in all hull types. You need to look at stats and skills to determine
-  if a ship is good or not.
-</p>
+<ImageCarousel
+  client:visible={{ rootMargin: "50px" }}
+  data={[
+    {
+      src: StarterFleet.src,
+      caption: "Example starting fleet.",
+    },
+  ]}
+/>
 <br />
 
-<h5 id="ship_types">Hull Type Abbreviations</h5>
-<a
-  rel="noopener noreferrer"
-  target="_blank"
-  href="/images/equip_misc/Ship_Type_Abbrev..jpeg"
-  title="Ship Type Abbreviations"
->
-  <img
-    loading="lazy"
-    class="equip-misc-img"
-    src="/images/equip_misc/Ship_Type_Abbrev..jpeg"
-    alt="Ship Type Abbrev."
-  />
-</a>
-<br />
-<br />
-
-<h3 id="limit_breaks">
+<h2 id="limit_breaks">
   <WikiLink page="Dockyard#Limit Break" title="Limit Break"
     >Limit Breaks</WikiLink
   >
-</h3>
-
+</h2>
+<HR />
 <p>
   <WikiLink page="Dockyard#Limit Break">Limit Break</WikiLink> ships you frequently
   use
@@ -541,106 +294,106 @@ const pennData = shipData[54]
 </ul>
 <br />
 
-<h3 id="fleet_positionings">Fleet Positionings</h3>
+<h2 id="permanent_ur">Permanent UR Pity is a TRAP!</h2>
+<HR />
 <p>
-  Positions matter: some slots take more damage and affect barrage placement.
-</p>
-<p>Specifically, two are critical:</p>
-<ul>
-  <li>
-    <p>
-      <b>Flagship:</b> The middle slot in your Main Fleet (gold-colored square).
-      Usually a BB is placed here due to their secondary guns helping to defend against
-      suicide enemies. Additionally, many BB barrages deal maximum damage when placed
-      in this slot.
-    </p>
-  </li>
-  <li>
-    <p>
-      <b>Main Tank:</b> The leftmost slot in your Vanguard Fleet. Pick your tankiest
-      Vanguard here, as it takes the most damage.
-    </p>
-  </li>
-</ul>
-<br />
-
-<h3 id="faction_fleets">Faction Fleets SUCK</h3>
-<p>Running faction fleets has multiple downsides:</p>
-<ul>
-  <li>
-    <p>They demand far more Bulins than generic fleets, slowing progression.</p>
-  </li>
-  <li>
-    <p>There is no extra synergy bonus simply for using same-faction ships.</p>
-  </li>
-  <li>
-    <p>
-      Few faction buffers are meaningfully good; you're usually better off
-      running a high-quality "good" ship rather than a faction ship that relies
-      on buffing. (Example: <WikiLink page="Bismarck">Bismarck</WikiLink> vs. a standalone
-      strong ship like <WikiLink page="Richelieu">Richelieu</WikiLink>.)
-    </p>
-  </li>
-</ul>
-<br />
-
-<h3 id="early_hyperlevelling">Hyper-Levelling & Early Fleets</h3>
-<p>
-  Run a single strong fleet through Chapters 1-8. Missions calling for two
-  fleets can use a "throwaway" Fleet 2 until Chapter 9, where you start
-  investing in a proper second fleet.
-</p>
-<ul>
-  <li>
-    <p>
-      "Fleet Power" and "Total Stats" are just vanity numbers, just ignore them.
-      Focus on matching ship composition to stage mechanics.
-    </p>
-  </li>
-</ul>
-<br />
-
-<h3 id="submarine_fleet">Submarine Fleet (Optional)</h3>
-<p>
-  You do not need to invest in submarines early. You can clear Lv. 65 Supply
-  Line Disruption with minimal sub investment.
-</p>
-<p>
-  Here is a
-  <a
-    href="https://www.youtube.com/watch?v=cxC2Iy4XVfE"
-    target="_blank"
-    rel="noopener noreferrer">Video demo</a
-  > by Suchiguma showing how it is done.
-</p>
-
-<!-- <div class="mx-auto aspect-video w-full">
-  <iframe
-    class="h-full w-full rounded-xl shadow-lg"
-    src="https://www.youtube-nocookie.com/embed/cxC2Iy4XVfE?mute=1"
-    title="Suchiguma Video Demo"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen></iframe>
-</div> -->
-<br />
-
-<h3 id="retrofit_ships">Retrofitting Ships</h3>
-<p>
-  Your highest priority retrofit is
-  <WikiLink page="Unicorn">Unicorn</WikiLink>. After that, retrofit any other
-  core ship you use daily.
-</p>
-<br />
-
-<h3 id="skill_upgrades">Skill Upgrades</h3>
-<p>
-  Upgrade only on ships you use. Read skills for more information; you can
-  likely tell if a skill is useful or not based on the description.
   <i
-    >(See also:
-    <WikiLink page="Living_Area#Tactical_Class">Tactical Class</WikiLink>.)</i
+    >Main Article:
+    <WikiLink
+      page="Building#UR Ships Construction"
+      title="UR Ships Construction">UR Ships Construction</WikiLink
+    ></i
   >
 </p>
+<p>
+  You get UR pity gradually from pulling on permanent banners, as well as event
+  banners <b>that do NOT have a rate-up UR ship already on them</b> (read the wiki
+  page linked above for more information). Do not pull specifically for Permanent
+  URs or the permanent UR pity. Most Permanent URs powercreep faster than limited
+  URs; save UR Bulins for limited banner UR ships, and use the permanent pity to
+  target duplicate copies for limit breaks.
+</p>
+<p>
+  Even if you do snag a typical Permanent UR, she is weak until limit-broken.
+  Most non-MLB URs perform worse than many SRs. It's almost always better to
+  pull on events and get Permanent URs as byproducts.
+</p>
+<ul>
+  <li>
+    <p>
+      To farm UR Bulins, see the
+      <a href="/common_resource" target="_self">Common Resource Guide</a>.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="commander_handbook_ur">
+  <WikiLink page="Commander Handbook">Commander Handbook</WikiLink> UR
+</h3>
+
+<p>
+  The <WikiLink page="Commander Handbook" /> gives you a free UR ship upon completing
+  all the missions. As mentioned earlier, the UR ship (regardless of which ship you
+  select) will not be good until they are max limit break.
+</p>
+<br />
+
+<ItemTable
+  tableInfo={[
+    { colName: "Ship", colWidth: "22%" },
+    { colName: "Location", colWidth: "25%" },
+    { colName: "Description", colWidth: "53%", limiter: true },
+  ]}
+>
+  <tr>
+    <td>
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={shinanoData}
+          uniqueID="handbook-Shinano"
+        />
+      </div>
+    </td>
+    <td>
+      <LocationItem locations={shinanoData.locations.other} />
+      <LocationItem locations={shinanoData.locations.construction} />
+    </td>
+    <td>
+      <p><b>Pick Shinano if you don't have her!</b></p>
+      <br />
+      <p>
+        Amazing damage-oriented CV. Also buffs IJN CVs when paired alongside
+        her, and buffs all DDs in the Vanguard Fleet.
+      </p>
+      <p><i>Ideally used alongside 2+ other IJN ships.</i></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="mx-[7px] my-[10px] flex flex-wrap justify-center">
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          shipData={newJerseyData}
+          uniqueID="handbook-NJ"
+        />
+      </div>
+    </td>
+    <td>
+      <LocationItem locations={newJerseyData.locations.other} />
+      <LocationItem locations={newJerseyData.locations.construction} />
+    </td>
+    <td>
+      <p>
+        Amazing off-flag damage-oriented BB. Worse than modern URs, but still
+        better than most non-URs.
+      </p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
 <br />
 
 <h2 id="push_campaign">Push Campaign</h2>
@@ -754,6 +507,147 @@ const pennData = shipData[54]
 <p>
   Your fleet can still fight with 0 Ammo; they just do reduced damage. Read the
   linked Wiki page for more information.
+</p>
+<br />
+
+<h2 id="basic_fleetbuilding">Basic Fleetbuilding</h2>
+<HR />
+<p>
+  <i
+    >For a detailed Fleetbuilding guide, read the
+    <a href="/fleetbuilding" target="_self" rel="noopener noreferrer"
+      >Fleetbuilding Guide</a
+    > on this website!</i
+  >
+</p>
+
+<h3 id="hull_type">Ship Hull Types</h3>
+<p>
+  Ship Hull types are <b>irrelevant</b> to determining if a ship is good or not.
+  The Azur Lane developers have released ships of all different viabilities, shapes,
+  and sizes in all hull types. You need to look at stats and skills to determine
+  if a ship is good or not.
+</p>
+<br />
+
+<h5 id="ship_types">Hull Type Abbreviations</h5>
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href="/images/equip_misc/Ship_Type_Abbrev..jpeg"
+  title="Ship Type Abbreviations"
+>
+  <img
+    loading="lazy"
+    class="equip-misc-img"
+    src="/images/equip_misc/Ship_Type_Abbrev..jpeg"
+    alt="Ship Type Abbrev."
+  />
+</a>
+<br />
+<br />
+
+<h3 id="fleet_positionings">Fleet Positionings</h3>
+<p>
+  Positions matter: some slots take more damage and affect barrage placement.
+</p>
+<p>Specifically, two are critical:</p>
+<ul>
+  <li>
+    <p>
+      <b>Flagship:</b> The middle slot in your Main Fleet (gold-colored square).
+      Usually a BB is placed here due to their secondary guns helping to defend against
+      suicide enemies. Additionally, many BB barrages deal maximum damage when placed
+      in this slot.
+    </p>
+  </li>
+  <li>
+    <p>
+      <b>Main Tank:</b> The leftmost slot in your Vanguard Fleet. Pick your tankiest
+      Vanguard here, as it takes the most damage.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="faction_fleets">Faction Fleets SUCK</h3>
+<p>Running faction fleets has multiple downsides:</p>
+<ul>
+  <li>
+    <p>They demand far more Bulins than generic fleets, slowing progression.</p>
+  </li>
+  <li>
+    <p>There is no extra synergy bonus simply for using same-faction ships.</p>
+  </li>
+  <li>
+    <p>
+      Few faction buffers are meaningfully good; you're usually better off
+      running a high-quality "good" ship rather than a faction ship that relies
+      on buffing. (Example: <WikiLink page="Bismarck">Bismarck</WikiLink> vs. a standalone
+      strong ship like <WikiLink page="Richelieu">Richelieu</WikiLink>.)
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="early_hyperlevelling">Hyper-Levelling & Early Fleets</h3>
+<p>
+  Run a single strong fleet through Chapters 1-8. Missions calling for two
+  fleets can use a "throwaway" Fleet 2 until Chapter 9, where you start
+  investing in a proper second fleet.
+</p>
+<ul>
+  <li>
+    <p>
+      "Fleet Power" and "Total Stats" are just vanity numbers, just ignore them.
+      Focus on matching ship composition to stage mechanics.
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="submarine_fleet">Submarine Fleet (Optional)</h3>
+<p>
+  You do not need to invest in submarines early. You can clear Lv. 65 Supply
+  Line Disruption with minimal sub investment.
+</p>
+<p>
+  Here is a
+  <a
+    href="https://www.youtube.com/watch?v=cxC2Iy4XVfE"
+    target="_blank"
+    rel="noopener noreferrer">Video demo</a
+  > by Suchiguma showing how it is done.
+</p>
+
+<!-- <div class="mx-auto aspect-video w-full">
+  <iframe
+    class="h-full w-full rounded-xl shadow-lg"
+    src="https://www.youtube-nocookie.com/embed/cxC2Iy4XVfE?mute=1"
+    title="Suchiguma Video Demo"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</div> -->
+<br />
+
+<h3 id="retrofit_ships">Retrofitting Ships</h3>
+<p>
+  Your highest priority retrofit is
+  <WikiLink page="Unicorn">Unicorn</WikiLink>. After that, retrofit any other
+  core ship you use daily.
+</p>
+<br />
+
+<h3 id="skill_upgrades">Skill Upgrades</h3>
+<p>
+  <i
+    >See also:
+    <WikiLink page="Living_Area#Tactical_Class">Tactical Class</WikiLink></i
+  >
+</p>
+<p>
+  Upgrade only on ships you use. Read skills for more information; you can
+  likely tell if a skill is useful or not based on the description.
 </p>
 <br />
 
@@ -952,6 +846,18 @@ const pennData = shipData[54]
 </p>
 <br />
 
+<h2 id="shops">Shop Priority</h2>
+<HR />
+<p>
+  <i
+    >Main Article:
+    <a href="/shop_priority" target="_self" rel="noopener noreferrer"
+      >Shop Priority</a
+    ></i
+  >
+</p>
+<br />
+
 <h2 id="upgradable_resources">Upgradable Resources</h2>
 <HR />
 <p>
@@ -1124,6 +1030,20 @@ const pennData = shipData[54]
 </ItemTable>
 <br />
 
+<h2 id="mail">Mail is a Bank!</h2>
+<HR />
+<p>
+  When you claim Mail rewards, all Oil and Coin rewards are stored in
+  <b>Mail Storage</b>. The caps are <b>600K Oil</b> and <b>1.8M Coins</b> respectively.
+  <b>Leave ALL Oil / Coins inside Mail Storage until you need it</b>. This helps
+  prevent your
+  <WikiLink page="Living Area#Canteen and Merchant" title="Canteen and Merchant"
+    >Canteen and Merchant</WikiLink
+  >
+  from filling up. You can withdraw from Mail Storage as needed.
+</p>
+<br />
+
 <h2 id="combat_data_packs">Grind Shipyard EXP Manually</h2>
 <HR />
 <p>
@@ -1182,6 +1102,83 @@ const pennData = shipData[54]
 </ol>
 <p>
   If you don't see mobs on entering, be sure to <b>turn Clearing Mode off</b>.
+</p>
+<br />
+
+<h2 id="good_yt_guides">Good Azur Lane Youtbers</h2>
+<HR />
+<p>
+  A majority of YouTube Azur Lane gameplay-related guides are often outdated,
+  contain misinformation, and/or clickbait for views (or all of the above). Your
+  best sources of information will come from people who actually play the game
+  on a regular basis.
+</p>
+
+<p>
+  Below are Azur Lane YouTubers that actively upload good videos. Even for these
+  creators, some videos could be outdated or contain misinformation. Use your
+  best judgement, and always reference more than one source for information.
+</p>
+<ol>
+  <li>
+    <p class="!mb-1">
+      <a
+        href="https://www.youtube.com/@JimmyAL"
+        target="_blank"
+        rel="noopener noreferrer">Jimmy (@JimmyAL)</a
+      >: His content is more geared towards mid-late game Azur Lane players and
+      not beginners, but he actively reviews ships every event. Additionally, he
+      has a very informative series called <a
+        href="https://www.youtube.com/playlist?list=PL6bdftzB8jLRAD0fxDuMVOhycooXxjEtE"
+        target="_blank"
+        rel="noopener noreferrer">In-depth Equipment Guides</a
+      >, which go over why some equipment are better than others, among other
+      content. If you want a deep understanding of game mechanics, I recommend
+      you check him out!
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i>
+            I even did a <a
+              href="https://www.youtube.com/watch?v=tImzZpSzUT0"
+              target="_blank"
+              rel="noopener noreferrer">podcast episode</a
+            > with him back in February 2025, which was a ton of fun!</i
+          >
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li class="!mb-1">
+    <p>
+      <a
+        href="https://www.youtube.com/@Suchiguma"
+        target="_blank"
+        rel="noopener noreferrer">Suchiguma (@Suchiguma)</a
+      >: Similar to Jimmy, he is focused more towards mid-late game players, and
+      actively reviews ships every event. He also has videos showing optimal (or
+      bare minimum) fleets against a variety of game bosses. Check him out!
+    </p>
+  </li>
+  <li class="!mb-1">
+    <p>
+      <a
+        href="https://www.youtube.com/@GuardianEPlays"
+        target="_blank"
+        rel="noopener noreferrer">GuardianE (@GuardianEPlays)</a
+      >: He doesn't really upload gameplay videos of Azur Lane, but he is a very
+      good source of information regarding Azur Lane updates, skin reviews,
+      livestream recaps, and anything that's not gameplay. He also plays other
+      games besides Azur Lane as well.
+    </p>
+  </li>
+</ol>
+
+<p>
+  If you prefer live human interaction, good Discord servers for help are Azur
+  Lane Official, English Community Tier List, and English Community Guide
+  Compendium.
 </p>
 <br />
 
