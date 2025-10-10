@@ -33,7 +33,7 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Equipment Guide",
     authors: ["Samheart564"],
-    lastUpdated: "9/30/2025",
+    lastUpdated: "10/10/2025",
     revision: "1.18.1",
     description: `Goes over the optimal equipment to use in Azur Lane, in an easy-to-read image format!`,
     link: "equipment",
@@ -53,8 +53,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Fleetbuilding Guide",
     authors: ["Samheart564"],
-    lastUpdated: "9/16/2025",
-    revision: "1.14.0",
+    lastUpdated: "10/10/2025",
+    revision: "1.14.1",
     description: `Goes over how to make fleets for both Campaign and <a href="https://azurlane.koumakan.jp/wiki/Operation Siren" target="_blank" rel="noopener noreferrer">Operation Siren</a> in Azur Lane.`,
     link: "fleetbuilding",
     image: "/images/misc/fleetbuilding_guide_cover.png",
@@ -73,8 +73,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Newbie Tips",
     authors: ["Samheart564"],
-    lastUpdated: "9/16/2025",
-    revision: "2.0.2",
+    lastUpdated: "10/10/2025",
+    revision: "2.1.0",
     description: `Goes over basic advice and mistakes to avoid for new players!`,
     link: "newbie_tips",
     image: "/images/misc/newbie_tips_cover.jpg",
