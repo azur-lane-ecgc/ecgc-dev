@@ -1,14 +1,12 @@
-import { createWriteStream } from "node:fs"
-import { mkdir, mkdtemp, readdir, rm } from "node:fs/promises"
-import { basename, dirname, extname, join } from "node:path"
-import { tmpdir } from "node:os"
-import { Readable } from "node:stream"
-import { pipeline } from "node:stream/promises"
-import yauzl from "yauzl-promise"
+import { mkdir, readFile } from "node:fs/promises"
+import { join } from "node:path"
+import { google } from "googleapis"
 import { firefox, Browser } from "playwright"
 
 // Hardcoded constants
 const sheetId = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"
+const publishedId =
+  "2PACX-1vRbKeR7WCSeg1FUx_jQ0e972FtA9tvgW8jHaiLQCPGtJEokVrSGBEZznr2qptelhxF-TXHh86yYQEUa"
 const outputDir = "../frontend/public/images/equip_misc/"
 const includeSheets: string[] = []
 const excludeSheets = [
@@ -20,136 +18,81 @@ const excludeSheets = [
 ]
 const concurrency = 5
 
-const download = async (sheetID: string) => {
-  const dir = await mkdtemp(join(tmpdir(), "gs2imgz-"))
-  const zipPath = join(dir, sheetID + ".zip")
-  const controller = new AbortController()
-  setTimeout(() => controller.abort(), 600000)
-  const res = await fetch(
-    `https://docs.google.com/spreadsheets/d/${sheetID}/export?format=zip`,
-    { signal: controller.signal, verbose: true },
-  )
-  if (!res.body) throw new Error("No response body")
-  await pipeline(Readable.fromWeb(res.body as any), createWriteStream(zipPath))
-  return zipPath
+interface SheetInfo {
+  name: string
+  gid: string
 }
 
-const unzip = async (zipPath: string) => {
-  const extractedDir = await mkdtemp(join(tmpdir(), "gs2imgx-"))
-  const zip = await yauzl.open(zipPath)
+const getAuthClient = async () => {
+  const credentialsPath = join(import.meta.dir, "..", "credentials.json")
+  const credentials = JSON.parse(await readFile(credentialsPath, "utf-8"))
 
-  try {
-    for await (const entry of zip) {
-      const targetPath = join(extractedDir, entry.filename)
-      if (entry.filename.endsWith("/")) {
-        // directory
-        await mkdir(targetPath, { recursive: true })
-      } else {
-        // file
-        const readStream = await entry.openReadStream()
-        await mkdir(dirname(targetPath), { recursive: true })
-        await pipeline(readStream, createWriteStream(targetPath))
-      }
-    }
-  } finally {
-    await zip.close()
+  return new google.auth.GoogleAuth({
+    credentials,
+    scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+  })
+}
+
+const getSheets = async (sheetID: string): Promise<SheetInfo[]> => {
+  const auth = await getAuthClient()
+  const sheets = google.sheets({ version: "v4", auth })
+
+  const response = await sheets.spreadsheets.get({
+    spreadsheetId: sheetID,
+  })
+
+  if (!response.data.sheets) {
+    throw new Error("No sheets found in spreadsheet")
   }
 
-  await rm(dirname(zipPath), { force: true, recursive: true })
-  return extractedDir
+  return response.data.sheets
+    .filter(
+      (sheet) =>
+        sheet.properties?.title && sheet.properties?.sheetId !== undefined,
+    )
+    .map((sheet) => ({
+      name: sheet.properties!.title!,
+      gid: String(sheet.properties!.sheetId!),
+    }))
 }
 
 const screenshot = async (
-  htmlPath: string,
+  sheetUrl: string,
+  sheetName: string,
   pngPath: string,
   browser: Browser,
 ) => {
   const page = await browser.newPage({
-    viewport: { width: 10000, height: 10000 },
-    deviceScaleFactor: 1,
+    viewport: { width: 1920, height: 1080 },
+    deviceScaleFactor: 2,
   })
 
-  // Set a longer timeout for navigation
-  await page.goto("file://" + htmlPath, {
-    timeout: 0,
-    waitUntil: "networkidle",
-  })
+  console.log(`Processing: ${sheetName}`)
+
+  await page.goto(sheetUrl, { timeout: 0 })
 
   try {
-    // Wait for the table body to be present
-    await page.waitForSelector("tbody", { timeout: 10000 })
+    // Wait for the table body to ensure content is loaded
+    await page.waitForSelector("tbody", { timeout: 30000 })
 
-    // Wait for all images to load
-    await page.waitForLoadState("load")
-
-    // Wait for images with proper error handling
-    await page.evaluate(() => {
-      return new Promise<void>((resolve) => {
-        const images = Array.from(document.images)
-        if (images.length === 0) {
-          resolve()
-          return
-        }
-
-        let loadedCount = 0
-        const totalImages = images.length
-
-        const checkComplete = () => {
-          loadedCount++
-          if (loadedCount === totalImages) {
-            resolve()
-          }
-        }
-
-        images.forEach((img) => {
-          if (img.complete) {
-            checkComplete()
-          } else {
-            img.addEventListener("load", checkComplete, { once: true })
-            img.addEventListener("error", checkComplete, { once: true })
-            // Force reload if src is set but not loading
-            if (img.src && !img.complete) {
-              const src = img.src
-              img.src = ""
-              img.src = src
-            }
-          }
-        })
-
-        // Timeout after 30 seconds
-        setTimeout(() => resolve(), 30000)
-      })
-    })
-
-    // Additional wait to ensure all content is fully rendered
-    await page.waitForTimeout(3000)
-
-    const rowHeader = await page.$(".row-header-wrapper")
-    if (!rowHeader) return
-    const rowHeaderBox = await rowHeader.boundingBox()
-    if (!rowHeaderBox) return
-    const { width: rowHeaderWidth } = rowHeaderBox
+    // Get the table body that holds the actual sheet data
     const tbody = await page.$("tbody")
-    if (!tbody) return
-    const boundingBox = await tbody.boundingBox()
-    if (!boundingBox) return
+    const boundingBox = (await tbody!.boundingBox())!
+
+    // Simple clip area - just use the tbody as-is
     const clipArea = {
-      x: boundingBox.x + rowHeaderWidth + 1,
+      x: boundingBox.x,
       y: boundingBox.y,
-      width: boundingBox.width - rowHeaderWidth - 1,
+      width: boundingBox.width,
       height: boundingBox.height,
     }
 
-    // Set viewport to accommodate full content
     await page.setViewportSize({
-      width: Math.max(10000, Math.floor(clipArea.x + clipArea.width) + 100),
-      height: Math.max(10000, Math.floor(clipArea.y + clipArea.height) + 100),
+      width: Math.max(1920, Math.floor(clipArea.width) + 100),
+      height: Math.max(1080, Math.floor(clipArea.height) + 100),
     })
 
-    // Wait a bit more after viewport change
-    await page.waitForTimeout(1000)
-
-    await page.screenshot({ path: pngPath, clip: clipArea, fullPage: false })
+    await page.screenshot({ path: pngPath, clip: clipArea })
   } catch (e) {
     console.error(e)
   } finally {
@@ -157,33 +100,39 @@ const screenshot = async (
   }
 }
 
-download(sheetId)
-  .then(unzip)
-  .then(async (extractedDir) => {
+console.log(`Starting Google Sheets to Image conversion...`)
+console.log(`Fetching sheet list...\n`)
+
+getSheets(sheetId)
+  .then(async (allSheets) => {
     await mkdir(outputDir, { recursive: true })
 
-    const files = await readdir(extractedDir)
-    const sheets = files
-      .filter((x) => extname(x) == ".html")
-      .map((x) => basename(x).slice(0, -5))
+    const sheets = allSheets
       .filter(
-        (name) =>
+        (sheet) =>
           (!Array.isArray(includeSheets) ||
             !includeSheets.length ||
-            includeSheets.includes(name)) &&
-          (!Array.isArray(excludeSheets) || !excludeSheets.includes(name)),
+            includeSheets.includes(sheet.name)) &&
+          (!Array.isArray(excludeSheets) ||
+            !excludeSheets.includes(sheet.name)),
       )
-      .map((name) => ({
-        original: name + ".html",
-        modified: name.replace(/ /g, "_"),
+      .map((sheet) => ({
+        name: sheet.name,
+        gid: sheet.gid,
+        url: `https://docs.google.com/spreadsheets/u/0/d/e/${publishedId}/pubhtml/sheet?headers=false&gid=${sheet.gid}`,
+        outputName: sheet.name.replace(/[ /]/g, "_"),
       }))
+
+    console.log(`Found ${sheets.length} sheets to process\n`)
+
     const browser = await firefox.launch()
     const promises = new Set<Promise<void>>()
 
-    for (const { original, modified } of sheets) {
+    for (const { url, name, outputName } of sheets) {
       const promise = screenshot(
-        join(extractedDir, original),
-        join(outputDir, modified + ".jpeg"),
+        url,
+        name,
+        join(outputDir, outputName + ".jpeg"),
         browser,
       ).then(() => {
         promises.delete(promise)
@@ -197,5 +146,10 @@ download(sheetId)
 
     await Promise.all(promises)
     await browser.close()
-    await rm(extractedDir, { force: true, recursive: true })
+
+    console.log(`\nAll done! Images saved to: ${outputDir}`)
+  })
+  .catch((error) => {
+    console.error(`\nError: ${error.message}`)
+    process.exit(1)
   })
