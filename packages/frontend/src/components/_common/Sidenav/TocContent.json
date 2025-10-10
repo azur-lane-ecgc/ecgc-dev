@@ -138,6 +138,11 @@
     "fileName": "Changelog2025",
     "toc": [
       {
+        "id": "10-10-2025",
+        "content": "October 10th, 2025",
+        "subheadings": []
+      },
+      {
         "id": "9-16-2025",
         "content": "September 16th, 2025",
         "subheadings": []
@@ -787,23 +792,28 @@
     "fileName": "Newbie Tips",
     "toc": [
       {
-        "id": "good_yt_guides",
-        "content": "Good Azur Lane Youtbers",
-        "subheadings": []
-      },
-      {
         "id": "rerolling",
         "content": "Rerolling",
         "subheadings": []
       },
       {
-        "id": "mail",
-        "content": "Mail is a Bank!",
+        "id": "gacha",
+        "content": "Gacha Advice",
         "subheadings": []
       },
       {
-        "id": "gacha",
-        "content": "Gacha Advice",
+        "id": "guild_shop",
+        "content": "Guild Shop",
+        "subheadings": [
+          {
+            "id": "starter_fleet",
+            "content": "Starter Fleet"
+          }
+        ]
+      },
+      {
+        "id": "limit_breaks",
+        "content": "Limit Breaks",
         "subheadings": []
       },
       {
@@ -817,13 +827,22 @@
         ]
       },
       {
-        "id": "guild_shop",
-        "content": "Guild Shop",
-        "subheadings": []
+        "id": "push_campaign",
+        "content": "Push Campaign",
+        "subheadings": [
+          {
+            "id": "do_not_farm_3_4",
+            "content": "Do Not Farm 3-4"
+          },
+          {
+            "id": "war_archives",
+            "content": "War Archives"
+          }
+        ]
       },
       {
-        "id": "shops",
-        "content": "Shop Priority",
+        "id": "out_of_ammo",
+        "content": "My Fleet Is Out of Ammo!",
         "subheadings": []
       },
       {
@@ -833,10 +852,6 @@
           {
             "id": "hull_type",
             "content": "Ship Hull Types"
-          },
-          {
-            "id": "limit_breaks",
-            "content": "Limit Breaks"
           },
           {
             "id": "fleet_positionings",
@@ -865,25 +880,6 @@
         ]
       },
       {
-        "id": "push_campaign",
-        "content": "Push Campaign",
-        "subheadings": [
-          {
-            "id": "do_not_farm_3_4",
-            "content": "Do Not Farm 3-4"
-          },
-          {
-            "id": "war_archives",
-            "content": "War Archives"
-          }
-        ]
-      },
-      {
-        "id": "out_of_ammo",
-        "content": "My Fleet Is Out of Ammo!",
-        "subheadings": []
-      },
-      {
         "id": "gear",
         "content": "Early Game Equipment Tips",
         "subheadings": [
@@ -906,8 +902,18 @@
         ]
       },
       {
+        "id": "shops",
+        "content": "Shop Priority",
+        "subheadings": []
+      },
+      {
         "id": "upgradable_resources",
         "content": "Upgradable Resources",
+        "subheadings": []
+      },
+      {
+        "id": "mail",
+        "content": "Mail is a Bank!",
         "subheadings": []
       },
       {
@@ -918,6 +924,11 @@
       {
         "id": "hard_mode_cheese",
         "content": "Hard Mode Cheese",
+        "subheadings": []
+      },
+      {
+        "id": "good_yt_guides",
+        "content": "Good Azur Lane Youtbers",
         "subheadings": []
       },
       {
