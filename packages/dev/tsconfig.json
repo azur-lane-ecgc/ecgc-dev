@@ -4,7 +4,6 @@
     "target": "ESNext",
     "module": "Preserve",
     "moduleDetection": "force",
-    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -18,15 +17,13 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "types": ["bun"],
     "baseUrl": "../..",
     "paths": {
-      "@/assets/*": ["packages/frontend/src/assets/*"],
-      "@/components/*": ["packages/frontend/src/components/*"],
-      "@/layouts/*": ["packages/frontend/src/layouts/*"],
-      "@/styles/*": ["packages/frontend/src/styles/*"],
-      "@/utils/*": ["packages/frontend/src/utils/*"],
       "@/db/*": ["packages/frontend/src/db/*"],
-      "@/store/*": ["packages/frontend/src/store/*"],
+      "@/utils/*": ["packages/frontend/src/utils/*"],
       "@/packages/*": ["packages/*"],
       "@/tools/*": ["packages/dev/src/*"]
     }
