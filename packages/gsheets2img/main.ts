@@ -78,7 +78,15 @@ const screenshot = async (
 
     // Get the table body that holds the actual sheet data
     const tbody = await page.$("tbody")
-    const boundingBox = (await tbody!.boundingBox())!
+    if (!tbody) {
+      throw new Error("Table body element not found on the page")
+    }
+    const boundingBox = await tbody.boundingBox()
+    if (!boundingBox) {
+      throw new Error(
+        "Bounding box could not be obtained for the table body element",
+      )
+    }
 
     // Simple clip area - just use the tbody as-is
     const clipArea = {
