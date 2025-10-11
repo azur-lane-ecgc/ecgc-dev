@@ -101,6 +101,7 @@
 - **Input validation**: Sanitize user inputs
 - **API keys**: Store in environment variables or secure config files
 - **HTTPS**: Use HTTPS URLs for external resources
+- **Credentials file**: Note that there is a `packages/credentials.json` file (parallel to `packages/credentials.json.example`) that contains sensitive information and is in .gitignore. Assume it always exists at `packages/credentials.json`.
 
 ### Git Workflow
 
