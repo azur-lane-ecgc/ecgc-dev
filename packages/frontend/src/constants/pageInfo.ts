@@ -83,8 +83,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Research Guide",
     authors: ["Samheart564"],
-    lastUpdated: "9/16/2025",
-    revision: "1.7.0",
+    lastUpdated: "10/10/2025",
+    revision: "1.7.1",
     description:
       'Goes over the <a href="https://azurlane.koumakan.jp/wiki/Research" target="_blank" rel="noopener noreferrer">Research</a> mechanics in Azur Lane, including optimal Research Projects to take, and how Catchup / Coin-up work.',
     link: "research",
