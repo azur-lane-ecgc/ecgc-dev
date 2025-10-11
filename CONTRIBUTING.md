@@ -28,7 +28,7 @@ The project is a monorepo with the following structure:
 
 2.  **Install dependencies:**
 
-    This project uses `bun` for package management.
+    This project uses [`Bun`](https://bun.sh/) for package management.
 
     ```bash
     bun install
