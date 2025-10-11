@@ -1,7 +1,8 @@
 import { mkdir, readFile } from "node:fs/promises"
 import { join } from "node:path"
 import { google } from "googleapis"
-import { firefox, Browser } from "playwright"
+import { firefox } from "playwright"
+import type { Browser } from "playwright"
 
 // Hardcoded constants
 const sheetId = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"

@@ -1,13 +1,19 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": [
-    "packages/frontend/dist",
-    "packages/AzurLaneData",
-    "packages/gsheets2img",
-  ],
   "compilerOptions": {
-    "types": ["vite/client", "bun"],
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "Preserve",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "types": ["bun"],
     "allowJs": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -15,16 +21,14 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "paths": {
-      "@/assets/*": ["packages/frontend/src/assets/*"],
-      "@/components/*": ["packages/frontend/src/components/*"],
-      "@/constants/*": ["packages/frontend/src/constants/*"],
-      "@/db/*": ["packages/frontend/src/db/*"],
-      "@/layouts/*": ["packages/frontend/src/layouts/*"],
-      "@/styles/*": ["packages/frontend/src/styles/*"],
-      "@/store/*": ["packages/frontend/src/store/*"],
-      "@/utils/*": ["packages/frontend/src/utils/*"],
       "@/packages/*": ["packages/*"],
       "@/tools/*": ["packages/dev/src/*"]
     }
-  }
+  },
+  "exclude": [
+    "packages/frontend/dist",
+    "packages/frontend/.astro",
+    "packages/AzurLaneData",
+    "node_modules"
+  ]
 }

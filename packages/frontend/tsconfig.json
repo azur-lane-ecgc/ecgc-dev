@@ -1,3 +1,20 @@
 {
-  "extends": "../../tsconfig.json"
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "verbatimModuleSyntax": true,
+    "baseUrl": "../..",
+    "paths": {
+      "@/assets/*": ["packages/frontend/src/assets/*"],
+      "@/components/*": ["packages/frontend/src/components/*"],
+      "@/constants/*": ["packages/frontend/src/constants/*"],
+      "@/db/*": ["packages/frontend/src/db/*"],
+      "@/layouts/*": ["packages/frontend/src/layouts/*"],
+      "@/styles/*": ["packages/frontend/src/styles/*"],
+      "@/store/*": ["packages/frontend/src/store/*"],
+      "@/utils/*": ["packages/frontend/src/utils/*"]
+    }
+  }
 }
