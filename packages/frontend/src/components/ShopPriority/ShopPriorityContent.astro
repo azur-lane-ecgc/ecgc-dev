@@ -756,6 +756,20 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     hover={true}
     className="high-priority"
   />
+  <ItemCell
+    item="Specialized Core"
+    wikiLink="Shops#Specialized_Core_Collection_Plan"
+    itemImg="materials/specialized_core.png"
+    rarity={5}
+    inGroup={true}
+    hasBorder={true}
+    hover={true}
+    className="niche-priority"
+    descriptionNote="Only if needed."
+  />
+</ItemContainer>
+
+<ItemContainer>
   <ShipCell
     ship="Enterprise"
     rarity={4}
@@ -866,17 +880,6 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-  />
-  <ItemCell
-    item="Specialized Core"
-    wikiLink="Shops#Specialized_Core_Collection_Plan"
-    itemImg="materials/specialized_core.png"
-    rarity={5}
-    inGroup={true}
-    hasBorder={true}
-    hover={true}
-    className="niche-priority"
-    descriptionNote="Only if needed."
   />
 </ItemContainer>
 
@@ -1158,17 +1161,19 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     <ul>
       <li>
         <p>
-          You should save <b>8,000</b>
-          <WikiLink page="Shops#Event_Shop" title="Event Currency">
-            <img
-              loading="lazy"
-              class="inline-block"
-              src="/images/materials/InvolutedSealPt.png"
-              width="25px"
-              alt="Event Currency"
-            />
-          </WikiLink> event currency until the event is about to end, as you could
-          have gotten the Event Ship from Map Drop rewards.
+          <i>
+            You should save <b>8,000</b>
+            <WikiLink page="Shops#Event_Shop" title="Event Currency">
+              <img
+                loading="lazy"
+                class="inline-block"
+                src="/images/materials/InvolutedSealPt.png"
+                width="25px"
+                alt="Event Currency"
+              />
+            </WikiLink> event currency until the event is about to end, as you could
+            have gotten the Event Ship from Map Drop rewards.
+          </i>
         </p>
       </li>
     </ul>
