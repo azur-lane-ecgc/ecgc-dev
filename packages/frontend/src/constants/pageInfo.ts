@@ -104,8 +104,8 @@ export const pageInfo: PageInfoItem[] = [
   {
     title: "Shop Priority Guide",
     authors: ["Samheart564"],
-    lastUpdated: "9/16/2025",
-    revision: "1.9.0",
+    lastUpdated: "10/10/2025",
+    revision: "1.9.1",
     description: `Goes over all the permanent shops in Azur Lane, and what to obtain from them.`,
     link: "shop_priority",
     image: "/images/misc/no_cover.jpg",
