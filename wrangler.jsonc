@@ -5,15 +5,4 @@
   "assets": {
     "directory": "./packages/frontend/dist",
   },
-  "workers_dev": true,
-  "env": {
-    "production": {
-      "routes": [
-        {
-          "pattern": "azurlaneecgc.com",
-          "custom_domain": true,
-        },
-      ],
-    },
-  },
 }
