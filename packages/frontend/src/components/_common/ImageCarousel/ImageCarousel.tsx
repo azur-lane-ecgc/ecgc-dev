@@ -26,11 +26,10 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
   // automatic looping
   useEffect(() => {
     if (play) {
-      const interval = setInterval(() => {
+      const interval = window.setInterval(() => {
         slideChange(1)
       }, 6000)
-
-      return () => clearInterval(interval)
+      return () => window.clearInterval(interval)
     }
   }, [play, slide])
 
