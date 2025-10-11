@@ -55,7 +55,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="options-menu"
-              className="py-1 whitespace-nowrap"
+              className="whitespace-nowrap py-1"
             >
               {page.dropdownItems?.map((item, idx) => (
                 <a
