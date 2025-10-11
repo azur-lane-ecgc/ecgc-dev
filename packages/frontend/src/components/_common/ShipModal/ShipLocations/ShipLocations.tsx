@@ -14,7 +14,7 @@ export const LocationItem: React.FC<{ locations: shipLocation[] }> = ({
   return (
     <>
       {locations.map((loc, index) => (
-        <div key={index} className="inline text-base text-wrap">
+        <div key={index} className="inline text-wrap text-base">
           <a
             rel="noopener noreferrer"
             target="_blank"

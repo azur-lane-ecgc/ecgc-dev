@@ -116,7 +116,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       {/* combobox button */}
       <p
         title={disabledMessage}
-        className={`!mb-2 font-bold ${disabled ? "cursor-pointer text-red-300/90! underline!" : ""}`}
+        className={`!mb-2 font-bold ${disabled ? "text-red-300/90! underline! cursor-pointer" : ""}`}
       >
         {title}
       </p>
@@ -139,7 +139,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
           >
             {selected ? truncateString(selected, 18) : `${title}...`}
           </span>
-          <div className="m-0 flex flex-col justify-center space-y-0 space-x-0 *:!leading-[0.35]">
+          <div className="m-0 flex flex-col justify-center space-x-0 space-y-0 *:!leading-[0.35]">
             {showOptions ? (
               <i className="fa fa-caret-up text-sm text-cyan-300"></i>
             ) : (
@@ -165,7 +165,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
           />
           <div className="my-1 max-h-64 overflow-auto px-1">
             {filteredOptions.length === 0 ? (
-              <div className="mx-auto my-auto flex h-[32px] cursor-default items-center justify-center rounded-md p-1 text-sm text-gray-300 italic">
+              <div className="mx-auto my-auto flex h-[32px] cursor-default items-center justify-center rounded-md p-1 text-sm italic text-gray-300">
                 Nothing found.
               </div>
             ) : (
@@ -201,7 +201,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
 
           {/* Close message */}
           <span
-            className={`pointer-events-none fixed top-[7px] left-1/2 z-30 w-full -translate-x-1/2 transform bg-transparent py-2 text-center font-bold text-fuchsia-400 transition-all duration-300 ${
+            className={`pointer-events-none fixed left-1/2 top-[7px] z-30 w-full -translate-x-1/2 transform bg-transparent py-2 text-center font-bold text-fuchsia-400 transition-all duration-300 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-4 opacity-0"
@@ -229,7 +229,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             />
             <div className="h-72 max-h-72 overflow-auto px-1 py-2">
               {filteredOptions.length === 0 ? (
-                <div className="mx-auto my-auto flex h-[50px] cursor-default items-center justify-center rounded-md p-1 text-sm text-gray-300 italic">
+                <div className="mx-auto my-auto flex h-[50px] cursor-default items-center justify-center rounded-md p-1 text-sm italic text-gray-300">
                   Nothing found.
                 </div>
               ) : (

@@ -161,10 +161,10 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
                     onClick={() => handleSort(col.key)}
                   >
                     <div className="flex cursor-pointer">
-                      <span className="w-full flex-1 justify-center pr-2 pl-[8.75px] text-center align-middle">
+                      <span className="w-full flex-1 justify-center pl-[8.75px] pr-2 text-center align-middle">
                         {col.colName}
                       </span>
-                      <div className="m-0 flex flex-col justify-center space-y-0 space-x-0 *:!leading-[0.35]">
+                      <div className="m-0 flex flex-col justify-center space-x-0 space-y-0 *:!leading-[0.35]">
                         <i
                           className={`fa fa-caret-up text-sm ${
                             sortConfig.column === col.key

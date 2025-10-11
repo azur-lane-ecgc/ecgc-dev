@@ -61,7 +61,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
         onClick={handleClick}
       >
         <div className="relative flex items-center">
-          <div className="absolute right-0 -left-2 text-center font-bold text-orange-400">
+          <div className="absolute -left-2 right-0 text-center font-bold text-orange-400">
             {options[selectedIndex].title}
           </div>
           <div className="flex w-full items-center justify-between">

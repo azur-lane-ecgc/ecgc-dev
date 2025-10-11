@@ -21,7 +21,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       {/* Small Screen Tag Trigger */}
       <button
         onClick={() => setRoleDropdown(!roleDropdownOpen)}
-        className={`absolute top-0 left-0 flex items-center space-x-2 rounded-lg border-2 border-gray-400 bg-[#3b444bb9] p-[4px] text-base text-gray-300 ${
+        className={`absolute left-0 top-0 flex items-center space-x-2 rounded-lg border-2 border-gray-400 bg-[#3b444bb9] p-[4px] text-base text-gray-300 ${
           roleDropdownOpen ? "border-pink-300 text-amber-500" : ""
         } hover:border-amber-500 hover:text-cyan-300 md:hidden`}
       >
@@ -36,7 +36,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       <div
         className={`${
           roleDropdownOpen ? "max-h-[500px] border" : "max-h-0 border-0"
-        } absolute top-[31px] left-0 z-50 w-[150px] overflow-hidden border-gray-400 bg-slate-800 text-center shadow-2xl transition-all duration-300 ease-in-out md:hidden`}
+        } absolute left-0 top-[31px] z-50 w-[150px] overflow-hidden border-gray-400 bg-slate-800 text-center shadow-2xl transition-all duration-300 ease-in-out md:hidden`}
       >
         {/* Faction Icon */}
         <div className="flex w-full justify-between border border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
@@ -99,7 +99,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       </div>
 
       {/* Tags (Larger Screen) */}
-      <div className="absolute top-0 left-0 hidden translate-x-0 transform md:inline-block">
+      <div className="absolute left-0 top-0 hidden translate-x-0 transform md:inline-block">
         {/* Faction + Hull Icons */}
         <div className="mt-1 flex space-x-1 pl-1">
           <a
