@@ -70,9 +70,9 @@ const screenshot = async (
 
   console.log(`Processing: ${sheetName}`)
 
-  await page.goto(sheetUrl, { timeout: 0 })
-
   try {
+    await page.goto(sheetUrl, { timeout: 0 })
+
     // Wait for the table body to ensure content is loaded
     await page.waitForSelector("tbody", { timeout: 30000 })
 
