@@ -18,7 +18,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    name: CF-Deploy
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5

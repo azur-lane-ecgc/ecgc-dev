@@ -59,6 +59,7 @@ jobs:
           rm -f packages/credentials.json
 
   deploy:
+    name: Deploy
     needs: update-ecgc
     if: needs.update-ecgc.outputs.has_changes == 'true'
     uses: ./.github/workflows/cf-deploy.yml
