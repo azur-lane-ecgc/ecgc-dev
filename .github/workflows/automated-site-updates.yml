@@ -9,6 +9,8 @@ jobs:
   update-ecgc:
     runs-on: ubuntu-latest
     name: Run ECGC Devtools and Commit Changes
+    outputs:
+      has_changes: ${{ steps.commit.outputs.has_changes }}
 
     steps:
       - name: Checkout repository
@@ -35,6 +37,7 @@ jobs:
         run: bun run devtools
 
       - name: Commit and push changes if any
+        id: commit
         run: |
           git config --global user.name "ECGC Bot"
           git config --global user.email "ecgc-bot@users.noreply.github.com"
@@ -44,8 +47,10 @@ jobs:
               git add .
               git commit -m "Chore(ecgc): Automated Site Update: $DATE"
               git push -f
+              echo "has_changes=true" >> $GITHUB_OUTPUT
           else
               echo "No changes to commit."
+              echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Clean up credentials
@@ -55,6 +60,7 @@ jobs:
 
   deploy:
     needs: update-ecgc
+    if: needs.update-ecgc.outputs.has_changes == 'true'
     uses: ./.github/workflows/cf-deploy.yml
     secrets:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
