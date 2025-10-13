@@ -5,7 +5,7 @@ on:
 
 jobs:
   run-gsheets2img:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     name: Run gsheets2img Script and Verify Output
 
     steps:
@@ -22,14 +22,16 @@ jobs:
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: "1.2.20"
+          bun-version: "1.3.0"
 
       - name: Install dependencies
-        run: cd packages/gsheets2img && bun install
+        run: |
+          cd packages/gsheets2img
+          bun install
 
       - name: Restore credentials
         run: |
-          echo "$GOOGLE_CREDENTIALS_BASE64" | base64 -d > packages/credentials.json
+          echo "$GOOGLE_CREDENTIALS_BASE64" | base64 --decode > packages/credentials.json
         env:
           GOOGLE_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
 
@@ -37,7 +39,9 @@ jobs:
         run: rm -rf packages/frontend/public/images/equip_misc/*
 
       - name: Run gsheets2img
-        run: cd packages/gsheets2img && bun run main
+        run: |
+          cd packages/gsheets2img
+          bun run main
 
       - name: Check for file changes
         run: |
@@ -56,8 +60,7 @@ jobs:
 
       - name: Clean up credentials
         if: always()
-        run: |
-          rm -f packages/credentials.json
+        run: rm -f packages/credentials.json
 
       - name: Upload generated images
         id: upload
