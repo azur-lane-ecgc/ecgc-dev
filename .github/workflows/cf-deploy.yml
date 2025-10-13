@@ -9,10 +9,6 @@ on:
       # - "wrangler.jsonc"
       # - "package.json"
       # - ".github/workflows/cf-deploy.yml"
-  workflow_call:
-    secrets:
-      CLOUDFLARE_API_TOKEN:
-        required: true
   workflow_dispatch:
 
 jobs:
