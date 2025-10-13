@@ -1011,7 +1011,7 @@
   "Bois Belleau": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE First airstrike is staggered, but further ones may be close to Unicorn. Requires USS or Iris plane.",
+      "notes": "First airstrike is staggered, but further ones may be close to Unicorn. Prefers USS or Iris plane.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -4740,11 +4740,11 @@
   "Maryland": [
     {
       "nameNote": "",
-      "notes": "Debuff for 10% EVA is something but not enough for a 1 in Offense Buff.",
+      "notes": "Debuff for 10% EVA is something but not enough for a 1 in Offense Buff. Bugged since retrofit, 4.5% HIT instead of 12%.",
       "hardarbiter": "C",
-      "meta": "C",
+      "meta": "D",
       "cm": "C",
-      "w14mob": "B",
+      "w14mob": "C",
       "w14boss": "C",
       "w15mob": "D",
       "w15boss": "D",
@@ -4753,10 +4753,10 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": -2,
-      "lightdmg": 3,
-      "mediumdmg": 3,
+      "lightdmg": 2,
+      "mediumdmg": 2,
       "heavydmg": 2,
-      "aoedmg": 3,
+      "aoedmg": 2,
       "dmguptime": null,
       "offensivebuff": null,
       "selfsurvival": null,

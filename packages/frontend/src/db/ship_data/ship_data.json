@@ -43592,7 +43592,7 @@
     "augments": ["Alf's Justitia", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
