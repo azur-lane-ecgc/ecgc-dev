@@ -20,7 +20,7 @@
     "devtools": "bun run submodule && bun --filter dev main && bun run smol-format",
     "build": "bun --filter frontend build",
     "check": "bun --filter frontend check && bun --filter dev check && bun --filter gsheets2img check",
-    "compress-build": "bun run build && bun run compress",
+    "cf-build": "bun run build && bun run compress",
     "dev": "bun --filter frontend dev",
     "cf-dev": "bunx wrangler dev",
     "start": "NODE_ENV=PRODUCTION bun --filter frontend preview",
