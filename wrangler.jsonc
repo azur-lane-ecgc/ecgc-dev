@@ -2,6 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "ecgc-dev",
   "compatibility_date": "2025-10-10",
+  "preview_urls": true,
   "assets": {
     "directory": "./packages/frontend/dist",
   },
