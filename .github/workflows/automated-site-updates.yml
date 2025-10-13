@@ -10,7 +10,7 @@ on:
 
 jobs:
   update-ecgc:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     name: Run ECGC Devtools and Commit Changes
     outputs:
       has_changes: ${{ steps.commit.outputs.has_changes }}
@@ -20,6 +20,11 @@ jobs:
         uses: actions/checkout@v5
         with:
           submodules: recursive
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22.2.0"
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
@@ -32,9 +37,14 @@ jobs:
 
       - name: Restore credentials
         run: |
-          echo "$GOOGLE_CREDENTIALS_BASE64" | base64 -d > packages/credentials.json
+          echo "$GOOGLE_CREDENTIALS_BASE64" | base64 --decode > packages/credentials.json
         env:
           GOOGLE_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
+
+      - name: Run gsheets2img
+        run: |
+          rm -rf packages/frontend/public/images/equip_misc/*
+          bun run gsheets2img
 
       - name: Run devtools
         run: bun run devtools
@@ -60,6 +70,18 @@ jobs:
         if: always()
         run: |
           rm -f packages/credentials.json
+
+      - name: Upload generated images
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: equip-misc-images
+          path: packages/frontend/public/images/equip_misc/
+          retention-days: 1
+
+      - name: Print artifact URL
+        run: |
+          echo "Artifact URL: ${{ steps.upload.outputs.artifact-url }}"
 
   deploy:
     name: Deploy
