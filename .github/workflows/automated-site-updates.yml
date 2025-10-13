@@ -47,6 +47,7 @@ jobs:
         run: |
           rm -rf packages/frontend/public/images/equip_misc/*
           bun run gsheets2img
+          bun run compress
 
       - name: Run devtools
         run: bun run devtools
