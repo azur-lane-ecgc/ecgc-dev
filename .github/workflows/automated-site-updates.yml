@@ -33,7 +33,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          bun install
+          bun ci
 
       - name: Restore credentials
         run: |
