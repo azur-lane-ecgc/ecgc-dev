@@ -33,10 +33,10 @@ This project is not affiliated with Manjuu Co., Ltd., YongShi Co., Ltd., and Yos
 
 ## Star History
 
-<a href="https://www.star-history.com/#samheart564/ecgc-dev&Date">
+<a href="https://www.star-history.com/#azur-lane-ecgc/ecgc-dev&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=samheart564/ecgc-dev&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=samheart564/ecgc-dev&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=samheart564/ecgc-dev&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=azur-lane-ecgc/ecgc-dev&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=azur-lane-ecgc/ecgc-dev&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=azur-lane-ecgc/ecgc-dev&type=Date" />
  </picture>
 </a>
