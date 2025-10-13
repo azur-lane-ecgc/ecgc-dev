@@ -1,5 +1,8 @@
 name: Automated ECGC Updates
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   schedule:
@@ -46,7 +49,7 @@ jobs:
               DATE=$(date +"%m/%d/%Y")
               git add .
               git commit -m "Chore(ecgc): Automated Site Update: $DATE"
-              git push -f
+              git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
               echo "has_changes=true" >> $GITHUB_OUTPUT
           else
               echo "No changes to commit."
