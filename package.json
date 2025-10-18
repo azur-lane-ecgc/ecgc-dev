@@ -17,7 +17,7 @@
     "smol-format": "bunx --bun prettier --write \"packages/**/*.{astro,json}\"",
     "format": "bunx --bun prettier --write \"packages/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}\"",
     "lint": "bunx --bun oxlint --fix",
-    "devtools": "bun run submodule && bun --filter dev main && bun run smol-format",
+    "devtools": "bun run submodule && bun --filter dev main && bun run format",
     "build": "bun --filter frontend build",
     "check": "bun --filter frontend check && bun --filter dev check && bun --filter gsheets2img check",
     "cf-build": "bun run build && bun run compress",
@@ -35,9 +35,9 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-astro-organize-imports": "^0.4.11",
     "prettier-plugin-organize-imports": "^4.3.0",
-    "prettier-plugin-tailwindcss": "^0.6.14",
+    "prettier-plugin-tailwindcss": "^0.7.0",
     "typescript": "^5.9.3",
-    "wrangler": "^4.42.2"
+    "wrangler": "^4.43.0"
   },
   "trustedDependencies": [
     "@tailwindcss/oxide",
