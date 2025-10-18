@@ -97,11 +97,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
         {/* Mobile Dropdown Menu */}
         <div
           ref={dropdownRef}
-          className={`absolute left-0 top-[47px] z-[71] w-full overflow-hidden bg-[#222a42] transition-[max-height] duration-300 ease-in-out md:hidden ${
+          className={`absolute top-[47px] left-0 z-[71] w-full overflow-hidden bg-[#222a42] transition-[max-height] duration-300 ease-in-out md:hidden ${
             isNavCollapsed ? "max-h-0" : "max-h-screen"
           }`}
         >
-          <div className="container mx-auto space-y-1 pb-3 pt-2">
+          <div className="container mx-auto space-y-1 pt-2 pb-3">
             {navbarPages.map((page, index) => (
               <MobileNavItem
                 key={index}
@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
       </nav>
       {!isNavCollapsed && (
         <div
-          className={`fixed left-0 top-0 z-[69] h-full w-full bg-black/40 md:hidden`}
+          className={`fixed top-0 left-0 z-[69] h-full w-full bg-black/40 md:hidden`}
           aria-hidden="true"
           onClick={collapseAll}
         />
