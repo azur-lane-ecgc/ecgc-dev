@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-This website and its derivatives ("ECGC", "ecgc-dev", "test_ecgc" and "test_ecgc_2") is owned, made and maintained by Sam K. (samheart564). All rights are reserved by the aforementioned person; there is **no license** granted for the original source code in this repository.
+This website and its derivatives ("ECGC", "ecgc-dev", "test_ecgc" and "test_ecgc_2") is owned, made and maintained by Sam K. (therealsamyak). All rights are reserved by the aforementioned person; there is **no license** granted for the original source code in this repository.
 
 Unauthorized copying, redistributing, or modifying of files served by this website (and its derivatives) in any way, shape, or form is strictly prohibited unless explicit written permission is granted by the aforementioned person.
 

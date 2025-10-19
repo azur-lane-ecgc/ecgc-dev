@@ -22,7 +22,7 @@ The project is a monorepo with the following structure:
 1.  **Clone the repository:**
 
     ```bash
-    git clone --recurse-submodules https://github.com/your-username/ecgc-dev.git
+    git clone --recurse-submodules https://github.com/azur-lane-ecgc/ecgc-dev.git
     cd ecgc-dev
     ```
 
