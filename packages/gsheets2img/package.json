@@ -5,20 +5,20 @@
   "description": "TypeScript version of gsheets2img script",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "main": "bun run postinstall && bun main.ts",
+    "check": "tsc --noEmit",
+    "postinstall": "bunx playwright install firefox"
+  },
   "dependencies": {
-    "googleapis": "^162.0.0",
-    "playwright": "^1.56.0"
+    "googleapis": "^164.0.0",
+    "playwright": "^1.56.1"
   },
   "devDependencies": {
     "@types/bun": "^1.3.0",
-    "@types/node": "^24.7.2"
+    "@types/node": "^24.8.1"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
-  },
-  "scripts": {
-    "main": "bunx playwright install firefox && bun main.ts",
-    "check": "tsc --noEmit",
-    "postinstall": "bunx playwright install firefox"
   }
 }
