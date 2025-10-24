@@ -39174,6 +39174,286 @@
       "isCollab": false
     }
   },
+  "709": {
+    "id": 709,
+    "ship": "Queen Anne's Revenge",
+    "faction": "MOT",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "IXm",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.15,
+        "mounts": 6
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.75,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.75,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Evening Rose"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Tempesta and Islas de Libertád",
+          "href": "Tempesta_and_Islas_de_Libertád"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "710": {
+    "id": 710,
+    "ship": "Lyme",
+    "faction": "MOT",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "IXv",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Spear of Order and Judgment"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Tempesta and Islas de Libertád",
+          "href": "Tempesta_and_Islas_de_Libertád"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "711": {
+    "id": 711,
+    "ship": "Pearl",
+    "faction": "MOT",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "IXm",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.1,
+        "mounts": 6
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.75,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.75,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Heart of Pearl"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Tempesta and Islas de Libertád",
+          "href": "Tempesta_and_Islas_de_Libertád"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "712": {
+    "id": 712,
+    "ship": "Royal James",
+    "faction": "MOT",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "IXv",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Seeker's Saber"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Tempesta and Islas de Libertád",
+          "href": "Tempesta_and_Islas_de_Libertád"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "713": {
+    "id": 713,
+    "ship": "Adventure",
+    "faction": "MOT",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "IXs",
+    "fleetType": "ss",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.15,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Adventure's Staff"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Tempesta and Islas de Libertád",
+          "href": "Tempesta_and_Islas_de_Libertád"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
   "10001": {
     "id": 10001,
     "ship": "Neptune (Neptunia)",
