@@ -107,6 +107,18 @@
       "std": "35.28%"
     }
   ],
+  "Lyme": [
+    {
+      "name": "Lyme (3 gear)",
+      "totalEHP": "155.88%",
+      "std": "36.38%"
+    },
+    {
+      "name": "Lyme (2 gear)",
+      "totalEHP": "138.67%",
+      "std": "34.31%"
+    }
+  ],
   "Laffey II": [
     {
       "name": "Laffey II",
@@ -374,6 +386,18 @@
       "std": "33.93%"
     }
   ],
+  "Royal James": [
+    {
+      "name": "Royal James (3 gear)",
+      "totalEHP": "113.93%",
+      "std": "30.87%"
+    },
+    {
+      "name": "Royal James (2 gear)",
+      "totalEHP": "99.45%",
+      "std": "28.84%"
+    }
+  ],
   "Plymouth": [
     {
       "name": "Plymouth",
@@ -519,6 +543,13 @@
       "std": "33.59%"
     }
   ],
+  "Ryu Lion": [
+    {
+      "name": "Ryu Lion",
+      "totalEHP": "109.95%",
+      "std": "31.89%"
+    }
+  ],
   "Giuseppe Garibaldi": [
     {
       "name": "Giuseppe Garibaldi",
@@ -642,38 +673,6 @@
       "name": "New Orleans",
       "totalEHP": "105.77%",
       "std": "28.93%"
-    }
-  ],
-  "Mogador": [
-    {
-      "name": "Mogador (no dashcalc)",
-      "totalEHP": "105.72%",
-      "std": "40.31%"
-    },
-    {
-      "name": "Mogador (-1)",
-      "totalEHP": "98.67%",
-      "std": "38.94%"
-    },
-    {
-      "name": "Mogador (-2)",
-      "totalEHP": "91.63%",
-      "std": "37.53%"
-    },
-    {
-      "name": "Mogador (-5, Invul)",
-      "totalEHP": "88.23%",
-      "std": "42.83%"
-    },
-    {
-      "name": "Mogador (-3)",
-      "totalEHP": "84.58%",
-      "std": "36.05%"
-    },
-    {
-      "name": "Mogador (-4)",
-      "totalEHP": "77.53%",
-      "std": "34.52%"
     }
   ],
   "Trinidad": [
@@ -807,6 +806,18 @@
       "name": "Brennus",
       "totalEHP": "99.87%",
       "std": "28.43%"
+    }
+  ],
+  "Myoukou": [
+    {
+      "name": "Myoukou (if same uptime)",
+      "totalEHP": "99.53%",
+      "std": "24.81%"
+    },
+    {
+      "name": "Myoukou",
+      "totalEHP": "93.34%",
+      "std": "22.44%"
     }
   ],
   "Kuybyshev": [
@@ -1158,6 +1169,13 @@
       "name": "Helena META (No Helena)",
       "totalEHP": "80.49%",
       "std": "23.44%"
+    }
+  ],
+  "Mogador": [
+    {
+      "name": "Mogador",
+      "totalEHP": "91.62%",
+      "std": "44.69%"
     }
   ],
   "Le Hardi": [
@@ -1820,13 +1838,6 @@
       "name": "Glowworm (Retrofit)",
       "totalEHP": "54.01%",
       "std": "27.93%"
-    }
-  ],
-  "Myoukou": [
-    {
-      "name": "Myoukou",
-      "totalEHP": "80.54%",
-      "std": "20.79%"
     }
   ],
   "Cassin": [
@@ -3133,6 +3144,13 @@
       "std": "26.93%"
     }
   ],
+  "Dewey META": [
+    {
+      "name": "Dewey META",
+      "totalEHP": "65.69%",
+      "std": "26.42%"
+    }
+  ],
   "Foch META": [
     {
       "name": "Foch META",
@@ -3355,11 +3373,6 @@
       "name": "Shiratsuyu (Retrofit)",
       "totalEHP": "63.34%",
       "std": "25.85%"
-    },
-    {
-      "name": "Shiratsuyu",
-      "totalEHP": "56.20%",
-      "std": "23.47%"
     }
   ],
   "Aoba": [

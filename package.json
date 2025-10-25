@@ -9,7 +9,7 @@
   "scripts": {
     "prepare": "bunx lefthook install",
     "update": "bun update --latest && find packages -name package.json -not -path '*/node_modules/*' -execdir bash -c 'echo Updating $(pwd); bun update --latest && bun install' ';'",
-    "rebuild": "rm -rf node_modules && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && bun run update",
+    "rebuild": "rm -rf node_modules && rm -rf .wrangler && rm -rf packages/AzurLaneData && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bun --filter gsheets2img main",
@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.0.4",
-    "knip": "^5.65.0",
-    "lefthook": "^1.13.6",
+    "knip": "^5.66.2",
+    "lefthook": "^2.0.0",
     "oxlint": "^1.23.0",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
@@ -37,7 +37,7 @@
     "prettier-plugin-organize-imports": "^4.3.0",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "typescript": "^5.9.3",
-    "wrangler": "^4.43.0"
+    "wrangler": "^4.44.0"
   },
   "trustedDependencies": [
     "@tailwindcss/oxide",

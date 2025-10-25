@@ -39269,7 +39269,7 @@
     "augments": ["Spear of Order and Judgment"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Tank", "SuperTank", "Bad"],
     "locations": {
       "events": [
         {
@@ -39381,7 +39381,7 @@
     "augments": ["Seeker's Saber"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Tank", "Bad"],
     "locations": {
       "events": [
         {
@@ -43897,7 +43897,7 @@
     "augments": ["Alf's Justitia", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
