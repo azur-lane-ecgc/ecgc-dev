@@ -63,3 +63,4 @@ config.json
 # Other
 _backup
 .eslintcache
+.opencode
