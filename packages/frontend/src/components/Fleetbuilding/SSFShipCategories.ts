@@ -88,4 +88,5 @@ export const tempestaFleetMain: SSEntry[] = [
 export const tempestaFleetSub: SSEntry[] = [
   { name: "Whydah", descriptionNote: "w/ Augment" },
   { name: "Dolphin", descriptionNote: "w/ Augment" },
+  { name: "Adventure", descriptionNote: "w/ Augment" },
 ]
