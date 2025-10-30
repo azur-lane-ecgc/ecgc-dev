@@ -1,4 +1,20 @@
 {
+  "Adventure": [
+    {
+      "nameNote": "Base",
+      "notes": "IXs are not suitable for use against high-damage enemies.",
+      "hardarbiter": "D",
+      "cm": "D",
+      "campaign": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "flagreq": -1,
+      "lightdmg": 2,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "offensivebuff": null
+    }
+  ],
   "Albacore": [
     {
       "nameNote": "Base",

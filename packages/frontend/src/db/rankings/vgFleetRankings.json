@@ -195,7 +195,7 @@
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
-      "w14mob": "D",
+      "w14mob": "C",
       "w14boss": "D",
       "w15mob": "D",
       "w15boss": "D",
@@ -3341,7 +3341,7 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 4,
+      "selfsurvival": 3,
       "aa": -1,
       "asw": null,
       "defensivebuff": null
@@ -4062,14 +4062,14 @@
       "w15boss": "D",
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": -4,
       "flagreq": null,
       "lightdmg": 2,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 2,
       "aa": -1,
       "asw": null,
@@ -7665,6 +7665,33 @@
       "defensivebuff": 1
     }
   ],
+  "Lyme": [
+    {
+      "nameNote": "",
+      "notes": "Can +1 ammo, but is weak to planes and uses IX-exclusive guns.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "A",
+      "w14boss": "C",
+      "w15mob": "C",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": -4,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": 4,
+      "aa": -1,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Maestrale": [
     {
       "nameNote": "",
@@ -9927,7 +9954,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 1,
       "aa": -1,
       "asw": null,
       "defensivebuff": 1
@@ -10415,6 +10442,33 @@
       "offensivebuff": 1,
       "selfsurvival": 2,
       "aa": null,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
+  "Royal James": [
+    {
+      "nameNote": "",
+      "notes": "Can +1 ammo, but is weak to planes and uses IX-exclusive guns.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "C",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": -4,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": -1,
       "asw": null,
       "defensivebuff": 1
     }

@@ -5630,6 +5630,35 @@
       "vgsurvival": null
     }
   ],
+  "Pearl": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Does not have access to good guns and auxiliaries.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": -5,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 2,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": -1,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": 1
+    }
+  ],
   "Pennsylvania": [
     {
       "nameNote": "",
@@ -5860,6 +5889,35 @@
       "rammers": null,
       "othermain": 1,
       "vgsurvival": 1
+    }
+  ],
+  "Queen Anne's Revenge": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Does not have access to good guns and auxiliaries. Prefers another MOT ship. Buffs MOT.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": -2,
+      "gearreq": -5,
+      "flagreq": -2,
+      "lightdmg": 3,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 2,
+      "dmguptime": null,
+      "offensivebuff": 1,
+      "selfsurvival": null,
+      "aa": -1,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
     }
   ],
   "Queen Elizabeth": [
