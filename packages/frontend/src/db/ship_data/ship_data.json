@@ -8342,12 +8342,17 @@
           "href": "Violet_Tempest,_Blooming_Lycoris"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Merit Shop",
+          "href": "Merit_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -10545,11 +10550,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Heavy)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -11593,12 +11603,22 @@
           "href": "Violet_Tempest,_Blooming_Lycoris"
         }
       ],
-      "other": [],
-      "construction": [],
+      "other": [
+        {
+          "name": "Permanent Ultra Rare Pity",
+          "href": "Building#UR_Ships_Construction"
+        }
+      ],
+      "construction": [
+        {
+          "name": "Construction (Heavy, Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -16479,11 +16499,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -17480,7 +17505,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Kunai", "Dagger"],
+    "augments": ["Alarmtauchen!", "Kunai", "Dagger"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["DmgDealer", "TopDmg"],
@@ -19716,7 +19741,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Scepter", "Hunting Bow"],
+    "augments": ["Going for the Bullseye", "Scepter", "Hunting Bow"],
     "samEval": "Independence (Retrofit) is a support-oriented CV with great stats and skills. Her personal damage is really good due to an 8 plane loadaout and an on-strike barrage. She also buffs CVs both inside and outside of your fleet, and gets a self-cooldown reduction on her first airstrike. Overall, she is an amazing CV.",
     "fastLoad": {
       "text": "25% 1st Airstrike Cooldown Reduction.",
@@ -31264,11 +31289,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
