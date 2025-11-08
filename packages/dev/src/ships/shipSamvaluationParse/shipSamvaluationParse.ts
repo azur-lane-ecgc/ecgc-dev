@@ -1,4 +1,4 @@
-export interface SamvaluationProps {
+interface SamvaluationProps {
   event?: {
     name: string
     href: string

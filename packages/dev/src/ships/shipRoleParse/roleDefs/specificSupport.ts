@@ -5,7 +5,7 @@
 
 // Main Fleet
 
-export const uniKai = new Set(["Unicorn"])
+const _uniKai = new Set(["Unicorn"])
 
 export const mainHealSupport = new Set([
   "Unicorn",
@@ -16,7 +16,7 @@ export const mainHealSupport = new Set([
   "Painlevé",
 ])
 
-export const mainSmallHealSupport = new Set([
+const _mainSmallHealSupport = new Set([
   "Aquila",
   "Volga",
   "Klaudia Valentz",
@@ -25,18 +25,18 @@ export const mainSmallHealSupport = new Set([
   "Honoka",
 ])
 
-export const mainAllSlowSupport = new Set([
+const _mainAllSlowSupport = new Set([
   "Admiral Nakhimov",
   "August von Parseval",
   "Implacable",
   "Ark Royal",
 ])
 
-export const mainMainDmgSupport = new Set(["Sovetsky Soyuz", "Alsace"])
+const _mainMainDmgSupport = new Set(["Sovetsky Soyuz", "Alsace"])
 
-export const mainBBDmgSupport = new Set(["Mikasa", "Vanguard"])
+const _mainBBDmgSupport = new Set(["Mikasa", "Vanguard"])
 
-export const mainCVDmgSupport = new Set([
+const _mainCVDmgSupport = new Set([
   "Shinano",
   "Nagato",
   "Yorktown II",
@@ -47,15 +47,15 @@ export const mainCVDmgSupport = new Set([
 
 // Vanguard Fleet
 
-export const vgAllDmgSupport = new Set(["Helena", "Aurora", "Z52"])
+const _vgAllDmgSupport = new Set(["Helena", "Aurora", "Z52"])
 
-export const vgBBDmgSupport = new Set(["Plymouth", "Trafalgar"])
+const _vgBBDmgSupport = new Set(["Plymouth", "Trafalgar"])
 
-export const vgCVDmgSupport = new Set(["Kazagumo", "Sirius"])
+const _vgCVDmgSupport = new Set(["Kazagumo", "Sirius"])
 
-export const vgAllSlowSupport = new Set(["Eldridge", "Ägir"])
+const _vgAllSlowSupport = new Set(["Eldridge", "Ägir"])
 
-export const vgVgTRPSupport = new Set([
+const _vgVgTRPSupport = new Set([
   "Noshiro",
   "Jintsuu",
   "Jintsuu META",
@@ -64,7 +64,7 @@ export const vgVgTRPSupport = new Set([
   "Fubuki",
 ])
 
-export const vgVgBulkSupport = new Set([
+const _vgVgBulkSupport = new Set([
   "Eldridge",
   "Jeanne d'Arc",
   "Napoli",

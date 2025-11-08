@@ -2,6 +2,14 @@
   "pre-commit": {
     "parallel": false,
     "commands": {
+      "knip": {
+        "glob": [
+          "packages/dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
+          "packages/frontend/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
+          "packages/gsheets2img/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
+        ],
+        "run": "bun knip --fix"
+      },
       "oxlint": {
         "glob": [
           "packages/dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
