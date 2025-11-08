@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.0.4",
-    "knip": "^5.66.4",
+    "knip": "^5.67.1",
     "lefthook": "^2.0.2",
     "oxlint": "^1.25.0",
     "prettier": "^3.6.2",
