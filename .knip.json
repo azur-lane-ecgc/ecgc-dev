@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "workspaces": {
+    "packages/frontend": {
+      "entry": ["src/pages/**/*.astro", "src/pages/**/*.ts"],
+      "project": ["**/*"]
+    },
+    "packages/dev": {
+      "project": ["**/*"]
+    },
+    "packages/gsheets2img": {
+      "project": ["**/*"]
+    }
+  },
+  "ignoreWorkspaces": ["packages/AzurLaneData"],
+  "ignoreDependencies": ["oxlint"]
+}
