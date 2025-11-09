@@ -706,7 +706,7 @@
   "U-552": [
     {
       "nameNote": "Base",
-      "notes": "Best bossing wolf by a little. Requires KMS wolfpack. Bonus against light. Inconsistent movement. Dies in difficult mobbing.",
+      "notes": "Requires KMS wolfpack. Bonus against light. Inconsistent movement. Dies in difficult mobbing.",
       "hardarbiter": "S",
       "cm": "S",
       "campaign": "C",
@@ -738,7 +738,7 @@
   "U-556 META": [
     {
       "nameNote": "Base",
-      "notes": "Bonus against light armor.",
+      "notes": "Bonus against light armor. Not a KMS wolf!!!",
       "hardarbiter": "S",
       "cm": "A",
       "campaign": "A",
@@ -788,7 +788,7 @@
       "nameNote": "Base",
       "notes": "Requires KMS wolfpack. Bonus against carriers.",
       "hardarbiter": "S",
-      "cm": "A",
+      "cm": "S",
       "campaign": "A",
       "consistency": -2,
       "fleetreq": -2,
@@ -834,7 +834,7 @@
   "Wolfpack": [
     {
       "nameNote": "Base",
-      "notes": "U-552 (flag) plus two of (96, 81, 101). U-37 or 47 are worse. Lower oxy-rld suffers in CM/Campaign. KICK 552 IF Campaign.",
+      "notes": "Three of (96, 81, 101, 552). U-37 or 47 are worse. Lower oxy-rld suffers in CM/Campaign. KICK 552 IF Campaign.",
       "hardarbiter": "S",
       "cm": "A",
       "campaign": "A",

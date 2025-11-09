@@ -19749,7 +19749,14 @@
       "quantity": 1,
       "conditional": ""
     },
-    "roles": ["DmgDealer", "AA", "FastLoad", "OffSupport"],
+    "roles": [
+      "DmgDealer",
+      "TopDmg",
+      "AA",
+      "FastLoad",
+      "DefSupport",
+      "OffSupport"
+    ],
     "locations": {
       "events": [
         {
