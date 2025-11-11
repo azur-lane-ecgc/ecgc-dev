@@ -4515,7 +4515,12 @@
     "fastLoad": null,
     "roles": ["DefSupport", "OffSupport", "Meh"],
     "locations": {
-      "events": [],
+      "events": [
+        {
+          "name": "Glorious Battle",
+          "href": "Glorious_Battle"
+        }
+      ],
       "other": [],
       "construction": [
         {
