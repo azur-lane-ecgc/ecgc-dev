@@ -4302,6 +4302,35 @@
       "vgsurvival": null
     }
   ],
+  "Kotori Itsuka": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Like Patricia, super tanky BB.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": -2,
+      "lightdmg": 3,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Langley": [
     {
       "nameNote": "",
@@ -5508,6 +5537,35 @@
       "dmguptime": null,
       "offensivebuff": null,
       "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
+  "Origami Tobiichi": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE 8% more damage vs enemies with < 43 speed.",
+      "hardarbiter": "A",
+      "meta": "B",
+      "cm": "A",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": -1,
+      "lightdmg": 3,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 3,
+      "dmguptime": 1,
+      "offensivebuff": 1,
+      "selfsurvival": 1,
       "aa": null,
       "rammers": null,
       "othermain": null,
@@ -8195,6 +8253,35 @@
       "rammers": null,
       "othermain": null,
       "vgsurvival": null
+    }
+  ],
+  "Yoshino": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Pseudo-healer with the highest damage but is squishy herself. Random slows.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "C",
+      "w15mob": "C",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": 1,
+      "offensivebuff": 1,
+      "selfsurvival": -1,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": 2
     }
   ],
   "Yui Kotegawa": [

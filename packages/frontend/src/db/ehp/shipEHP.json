@@ -200,6 +200,13 @@
       "std": "30.91%"
     }
   ],
+  "Kaguya Yamai and Yuzuru Yamai": [
+    {
+      "name": "Kaguya Yamai and Yuzuru Yamai",
+      "totalEHP": "132.34%",
+      "std": "36.25%"
+    }
+  ],
   "Fancy": [
     {
       "name": "Fancy (3 Gear)",
@@ -222,6 +229,13 @@
       "name": "Kala Ideas",
       "totalEHP": "118.28%",
       "std": "28.33%"
+    }
+  ],
+  "Tohka Yatogami": [
+    {
+      "name": "Tohka Yatogami",
+      "totalEHP": "128.45%",
+      "std": "36.91%"
     }
   ],
   "Bayard": [
@@ -258,6 +272,13 @@
       "name": "Jervis",
       "totalEHP": "125.87%",
       "std": "49.79%"
+    }
+  ],
+  "Toksaki Kurumi": [
+    {
+      "name": "Toksaki Kurumi",
+      "totalEHP": "124.19%",
+      "std": "31.44%"
     }
   ],
   "Otto von Alvensleben": [
@@ -1197,6 +1218,13 @@
       "name": "Juneau (Retrofit)",
       "totalEHP": "91.28%",
       "std": "23.94%"
+    }
+  ],
+  "Boise META": [
+    {
+      "name": "Boise META",
+      "totalEHP": "91.22%",
+      "std": "25.15%"
     }
   ],
   "Attilio Regolo": [
@@ -3102,6 +3130,13 @@
       "std": "23.54%"
     }
   ],
+  "Dewey META": [
+    {
+      "name": "Dewey META",
+      "totalEHP": "66.00%",
+      "std": "26.48%"
+    }
+  ],
   "Louisville": [
     {
       "name": "Louisville",
@@ -3142,13 +3177,6 @@
       "name": "Hatsushimo (Retrofit)",
       "totalEHP": "65.74%",
       "std": "26.93%"
-    }
-  ],
-  "Dewey META": [
-    {
-      "name": "Dewey META",
-      "totalEHP": "65.69%",
-      "std": "26.42%"
     }
   ],
   "Foch META": [
