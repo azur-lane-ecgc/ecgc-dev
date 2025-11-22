@@ -43995,7 +43995,7 @@
     "augments": ["Sandalphon", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "Bad"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {

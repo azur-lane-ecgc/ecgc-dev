@@ -11850,6 +11850,33 @@
       "defensivebuff": null
     }
   ],
+  "Tohka Yatogami": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Both damage and tankiness. Needs unique augment. 10% flagship cover.",
+      "hardarbiter": "A",
+      "meta": "A",
+      "cm": "A",
+      "w14mob": "S",
+      "w14boss": "S",
+      "w15mob": "B",
+      "w15boss": "B",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 5,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 4,
+      "offensivebuff": null,
+      "selfsurvival": 4,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "Trafalgar": [
     {
       "nameNote": "",
