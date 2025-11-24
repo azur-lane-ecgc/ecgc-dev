@@ -44219,7 +44219,7 @@
     "augments": ["Zafkiel", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -44275,7 +44275,7 @@
     "augments": ["Raphael", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -49724,7 +49724,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DefSupport", "Meh"],
     "locations": {
       "events": [],
       "other": [
