@@ -663,7 +663,7 @@
   "Argus": [
     {
       "nameNote": "",
-      "notes": "Budget Independence.",
+      "notes": "Poverty Independence.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3588,7 +3588,7 @@
       "cm": "C",
       "w14mob": "S",
       "w14boss": "S",
-      "w15mob": "B",
+      "w15mob": "A",
       "w15boss": "S",
       "ex": "D",
       "consistency": null,
@@ -7920,8 +7920,8 @@
       "cm": "C",
       "w14mob": "S",
       "w14boss": "A",
-      "w15mob": "A",
-      "w15boss": "A",
+      "w15mob": "B",
+      "w15boss": "B",
       "ex": "D",
       "consistency": -2,
       "fleetreq": null,
