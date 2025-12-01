@@ -623,7 +623,7 @@
   "Asama": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE TRP buff. The first CA-specific torp buffer, but better to just debuff the boss with a better ship like Noshiro Muse.",
+      "notes": "TRP buff. The first CA-specific torp buffer, but better to just debuff the boss with a better ship like Noshiro Muse.",
       "hardarbiter": "C",
       "meta": "D",
       "cm": "D",
@@ -5483,7 +5483,7 @@
   "Isla von Duerer": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Slightly benefits from Yumia faction ships, not required. Special armor break with 60% uptime.",
+      "notes": "Slightly benefits from Yumia faction ships, not required. Special armor break with 60% uptime.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -5915,7 +5915,7 @@
   "Kaguya Yamai・Yuzuru Yamai": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Inconsistent pulls at fixed times, generic damage and tank ship. Synergy with Oumi against rare boss who doesn't move.",
+      "notes": "Inconsistent pulls at fixed times, generic damage and tank ship. Synergy with Oumi against rare boss who doesn't move.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -6725,7 +6725,7 @@
   "Kurumi Tokisaki": [
     {
       "nameNote": "",
-      "notes": "zSUPERTENTATIVE Doesn't die if clone is alive, stops rammers/subs randomly, better mob, but healers less effective on her.",
+      "notes": "Doesn't die if clone is alive, stops rammers/subs randomly, better in mob, but healers less effective on her.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -6742,10 +6742,10 @@
       "mediumdmg": 3,
       "heavydmg": 2,
       "aoedmg": 3,
-      "offensivebuff": null,
-      "selfsurvival": 4,
+      "offensivebuff": 1,
+      "selfsurvival": 5,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": null
     }
   ],
@@ -7049,7 +7049,7 @@
   "Le Hardi": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Prefers Iris gear, prefers Iris main tank.",
+      "notes": "Prefers Iris gear, prefers Iris main tank.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "C",
@@ -7346,7 +7346,7 @@
   "Lenja": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Prefers mobbing for sinking low HPs. But mobbing = nearby enemies = bad AoA. Prefers Heavenly Armillary aux.",
+      "notes": "Prefers mobbing for sinking low HPs. But mobbing = nearby enemies = bad AoA. Prefers Heavenly Armillary aux.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -7371,7 +7371,7 @@
     },
     {
       "nameNote": "with any Yumia ship",
-      "notes": "zTENTATIVE Prefers mobbing for sinking low HPs. But mobbing = nearby enemies = bad AoA. Prefers Heavenly Armillary aux.",
+      "notes": "Prefers mobbing for sinking low HPs. But mobbing = nearby enemies = bad AoA. Prefers Heavenly Armillary aux.",
       "hardarbiter": "C",
       "meta": "D",
       "cm": "C",
@@ -11934,7 +11934,7 @@
   "Tohka Yatogami": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Both damage and tankiness. Needs unique augment. 10% flagship cover.",
+      "notes": "Both damage and tankiness. Needs unique augment. 10% flagship cover.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -13066,7 +13066,7 @@
   "Z13": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE",
+      "notes": null,
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",

@@ -1620,7 +1620,7 @@
   "DEAD MASTER": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE",
+      "notes": null,
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -2716,7 +2716,7 @@
   "Hakuhou": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Top heavy damage, but no offensive fleet buffs.",
+      "notes": "Top heavy damage, but no offensive fleet buffs.",
       "hardarbiter": "S",
       "meta": "S*",
       "cm": "S*",
@@ -2743,7 +2743,7 @@
     },
     {
       "nameNote": "with AmagiCV",
-      "notes": "zTENTATIVE Top heavy damage, but no offensive fleet buffs.",
+      "notes": "Top heavy damage, but no offensive fleet buffs.",
       "hardarbiter": "SS",
       "meta": "S*",
       "cm": "SS*",
@@ -3988,7 +3988,7 @@
   "Kansas": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE 10% worse than Owari vs M/H bosses. Not forced to 24s, can use 20s guns.",
+      "notes": "10% worse than Owari vs M/H bosses. Not forced to 24s, can use 20s guns.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "C",
@@ -5578,7 +5578,7 @@
       "notes": "zTENTATIVE Use DD gun for max DPS against bosses that wander into her range. Still good against bosses that don't.",
       "hardarbiter": "A",
       "meta": "B",
-      "cm": "A",
+      "cm": "S*",
       "w14mob": "A",
       "w14boss": "A",
       "w15mob": "C",
@@ -8345,7 +8345,7 @@
   "Yumia Liessfeldt": [
     {
       "nameNote": "damage",
-      "notes": "zTENTATIVE Endemeteo for CV boss dmg. And/or Superior Grimoire for stagger or extra airstrike. Or Granshine for campaign.",
+      "notes": "Endemeteo for CV boss dmg. And/or Superior Grimoire for stagger or extra airstrike. Or Granshine for campaign.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -8372,7 +8372,7 @@
     },
     {
       "nameNote": "healer",
-      "notes": "zTENTATIVE Panacea Sphere only. 2.5% vanguard heal every 8s. Need fleet with good AA for Chapter 15.",
+      "notes": "Panacea Sphere only. 2.5% vanguard heal every 8s. Need fleet with good AA for Chapter 15.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "B",
