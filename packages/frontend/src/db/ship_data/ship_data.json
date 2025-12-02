@@ -29640,7 +29640,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Kronshtadt is a tank-oriented CB with amazing stats and skills. Her personal damage is high due to MGM+1 CB Guns, as well as multiple skill barrages. She should be equipping a high-caliber Main Gun for faster Skill 1 barrages. She should also be equipping a Northern Parliament equipment to massively increase her secondary gun damage. Her bulk is also very high as well due to her raw stats, as well as minor buffs from her Skill 2 and Skill 3 further augmenting it. Her crossfleet is also nice, but not necessary for her viability. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -34128,7 +34128,15 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Guam is a tank-oriented CB with amazing stats and skills. Her personal damage is high due to MGM+1 CB Guns, as well as multiple skill barrages. Her bulk is also very high as well due to her raw stats, as well as her Skill 2 barrier further augmenting it. Her AA capabilities are near the top of the game due to AA+1, as well as her raw AA stat plus her self-buffs. The 15% buff to AA that Guam grants to low AA ships is nice, but not necessary for her to be viable. Her crossfleet is also nice, but not necessary for her viability. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["Tank", "SuperTank", "DmgDealer", "AA", "AACarry", "OffSupport"],
+    "roles": [
+      "Tank",
+      "SuperTank",
+      "DmgDealer",
+      "TopDmg",
+      "AA",
+      "AACarry",
+      "OffSupport"
+    ],
     "locations": {
       "events": [
         {
@@ -44835,7 +44843,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Azuma is a tank-oriented CB with amazing stats and skills. Her bulk is very high, and she can equip the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/VH_Armor_Plating\" title=\"VH Armor Plating\" >VH Armor Plating</a > to situationally improve it. Her personal damage is also very good, with MGM+1 CB Guns and good barrages. She is ideally equipped with a CB gun to take full advantage of her self-buffs. Overall, she is an amazing ship, but not high priority if you have other UR CBs already.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -45792,7 +45800,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Brest is an extremely tanky CB with great stats and skills. Her damage output is around the other CBs due to MGM+1 CB Guns, but is still high in the grand scheme of tanks. She has a heal that can support the fleet, but it shouldn't be the only heal used. Her backwards secondary gun is effectively useless for all intents and purposes. Overall, she is an amazing ship, but not high priority if you have other UR CBs already.",
     "fastLoad": null,
-    "roles": ["Tank", "SuperTank", "DmgDealer", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -46642,7 +46650,15 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "SuperTank", "DmgDealer", "AA", "AACarry", "DefSupport"],
+    "roles": [
+      "Tank",
+      "SuperTank",
+      "DmgDealer",
+      "TopDmg",
+      "AA",
+      "AACarry",
+      "DefSupport"
+    ],
     "locations": {
       "events": [],
       "other": [
