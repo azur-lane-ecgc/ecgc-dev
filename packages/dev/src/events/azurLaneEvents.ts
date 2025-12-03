@@ -2,9 +2,10 @@ import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 import { shipNameParse, shipLocationParse } from "../ships"
 
 export const main = async (): Promise<any[]> => {
-  const ships: Record<number, ShipData> = (await import(
-    "@/packages/AzurLaneData/data/ships.json"
-  ).then((m) => m.default)) as Record<number, ShipData>
+  const ships: Record<number, ShipData> =
+    (await import("@/packages/AzurLaneData/data/ships.json").then(
+      (m) => m.default,
+    )) as Record<number, ShipData>
 
   const OUTPUT_PATH = "../frontend/src/utils/ships/events/azurLaneEvents.json"
 

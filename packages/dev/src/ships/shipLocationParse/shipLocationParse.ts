@@ -4,9 +4,10 @@ import { parseLocation } from "@/utils/parseLocation"
 
 import { shipSeriesMap } from "./shipSeriesMap"
 
-const shipDropData: Record<number, ShipDropData> = (await import(
-  "@/packages/AzurLaneData/data/ship_drops.json"
-).then((module) => module.default)) as Record<number, ShipDropData>
+const shipDropData: Record<number, ShipDropData> =
+  (await import("@/packages/AzurLaneData/data/ship_drops.json").then(
+    (module) => module.default,
+  )) as Record<number, ShipDropData>
 
 const excludedEvents = [
   "Opposite-Colored",
