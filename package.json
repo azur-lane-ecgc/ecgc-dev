@@ -27,17 +27,17 @@
     "deploy": "bun run compress-build && bunx wrangler deploy"
   },
   "devDependencies": {
-    "@prettier/plugin-oxc": "^0.0.4",
-    "knip": "^5.69.1",
-    "lefthook": "^2.0.4",
-    "oxlint": "^1.28.0",
-    "prettier": "^3.6.2",
+    "@prettier/plugin-oxc": "^0.1.3",
+    "knip": "^5.71.0",
+    "lefthook": "^2.0.7",
+    "oxlint": "^1.31.0",
+    "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-astro-organize-imports": "^0.4.11",
     "prettier-plugin-organize-imports": "^4.3.0",
-    "prettier-plugin-tailwindcss": "^0.7.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "^5.9.3",
-    "wrangler": "^4.47.0"
+    "wrangler": "^4.52.1"
   },
   "trustedDependencies": [
     "@tailwindcss/oxide",
