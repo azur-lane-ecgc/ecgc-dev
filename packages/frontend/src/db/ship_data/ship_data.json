@@ -2438,10 +2438,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Eyes Out for Danger", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DefSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -7953,10 +7953,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Scepter", "Hunting Bow"],
+    "augments": ["A Lady's Hallmark (Perhaps)", "Scepter", "Hunting Bow"],
     "samEval": "Formidable is a support / damage-oriented CV with great stats and skills. As a support, she offers a timestop that other ships can take advantage of to improve their geometric accuracy against bosses. As a damage-dealer, when equipped with the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Fairey_Albacore\" title=\"Fairey Albacore\" >Fairey Albacore</a > Torpedo Bomber, she has great screen-wide barrages on airstrike, which along with her loadout help clear out enemy waves well. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["OffSupport", "Meh"],
+    "roles": ["DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -16431,7 +16431,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["Auspicious Dragonfly", "Crossbow", "Sword"],
     "samEval": "Noshiro is a mob-tank oriented CL with solid stats and great skills. Her personal damage (Main gun + Torpedo + Barrage) is solid. Her blue skill improves her survivability, and her yellow skill provides one of the best torpedo buffs to your fleet. Overall, she is a great option, best used as a torpedo-buffer / mob-tank.",
     "fastLoad": null,
     "roles": ["Tank", "DefSupport", "OffSupport", "Meh"],
@@ -21861,10 +21861,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Laureled Timepiece", "Bowgun", "Officer's Sword"],
     "samEval": "Giulio Cesare is an off-flag damage-oriented BB with bad stats and skills. Collection only. Gives +1 BB ACC Fleet Technology.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "Bad"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -26172,10 +26172,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Eisen", "Greatsword", "Lance"],
     "samEval": "Prinz Heinrich is a tank-oriented CA with great stats and skills. Her personal damage is great due to her skill barrages and high FP stat and efficiencies. She can equip the Triple 283mm CB gun to help deal with shielded enemies. Her bulk is also good enough to Main Tank most content in the game. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "Meh"],
+    "roles": ["Tank", "DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
