@@ -731,7 +731,7 @@
   "Astoria": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Buffs USS air by not enough for +1 in Offense Buff.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -741,10 +741,10 @@
       "w15boss": "D",
       "ex": "D",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 1,
+      "lightdmg": 2,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
@@ -752,7 +752,7 @@
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
-      "defensivebuff": null
+      "defensivebuff": 1
     }
   ],
   "Asuka": [
@@ -1514,7 +1514,7 @@
   "Blücher": [
     {
       "nameNote": "",
-      "notes": "Was a decent gold-level tank for 2022, but it's now 2025.",
+      "notes": "Was a decent gold-level tank for 2022.",
       "hardarbiter": "C",
       "meta": "D",
       "cm": "D",
@@ -9398,9 +9398,9 @@
       "nameNote": "",
       "notes": "TRP buff.",
       "hardarbiter": "C",
-      "meta": "D",
-      "cm": "D",
-      "w14mob": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "B",
       "w14boss": "D",
       "w15mob": "D",
       "w15boss": "D",
@@ -9411,7 +9411,7 @@
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
-      "heavydmg": 1,
+      "heavydmg": 2,
       "aoedmg": 1,
       "offensivebuff": 2,
       "selfsurvival": 3,
@@ -10071,7 +10071,7 @@
   "Prinz Adalbert": [
     {
       "nameNote": "",
-      "notes": "Was a decent gold-level tank for 2022, but it's now 2025.",
+      "notes": "Was a decent gold-level tank for 2022.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -10152,10 +10152,10 @@
   "Prinz Heinrich": [
     {
       "nameNote": "",
-      "notes": "Was a decent gold-level tank for 2021-2022, but it's now 2025.",
+      "notes": "Was a decent gold-level tank for 2021-2022, and a mediocre unique augment in 2025 didn't fix her.",
       "hardarbiter": "C",
       "meta": "C",
-      "cm": "D",
+      "cm": "C",
       "w14mob": "C",
       "w14boss": "C",
       "w15mob": "D",
@@ -10165,10 +10165,10 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 1,
-      "mediumdmg": 1,
+      "lightdmg": 2,
+      "mediumdmg": 2,
       "heavydmg": 1,
-      "aoedmg": 1,
+      "aoedmg": 2,
       "offensivebuff": null,
       "selfsurvival": 3,
       "aa": null,
