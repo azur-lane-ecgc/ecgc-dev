@@ -22956,12 +22956,17 @@
           "href": "Lunar_New_Year_2020"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
