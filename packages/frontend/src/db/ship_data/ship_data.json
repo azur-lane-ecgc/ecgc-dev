@@ -48737,13 +48737,17 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        },
+        {
+          "name": "Dossier Analysis",
+          "href": "META_Showdown#Dossier_Analysis"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -49752,6 +49756,62 @@
         {
           "name": "Cruise Pass",
           "href": "Cruise_Missions"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30054": {
+    "id": 30054,
+    "ship": "Yorktown META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.35,
+        "mounts": 3
+      },
+      {
+        "type": ["Dive Bomber"],
+        "efficiency": 1.25,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "META Showdown",
+          "href": "META_Showdown"
         }
       ],
       "construction": [],
