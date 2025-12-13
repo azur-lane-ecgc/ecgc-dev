@@ -7956,7 +7956,7 @@
     "augments": ["A Lady's Hallmark (Perhaps)", "Scepter", "Hunting Bow"],
     "samEval": "Formidable is a support / damage-oriented CV with great stats and skills. As a support, she offers a timestop that other ships can take advantage of to improve their geometric accuracy against bosses. As a damage-dealer, when equipped with the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Fairey_Albacore\" title=\"Fairey Albacore\" >Fairey Albacore</a > Torpedo Bomber, she has great screen-wide barrages on airstrike, which along with her loadout help clear out enemy waves well. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["DmgDealer", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -49805,7 +49805,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "OffSupport", "Meh"],
     "locations": {
       "events": [],
       "other": [
