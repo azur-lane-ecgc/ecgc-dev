@@ -40,11 +40,7 @@ const maxVgSurvival = (name: string): number =>
   )
 
 export const healerShips: ShipData[] = Object.values(shipData)
-  .filter(
-    (s) =>
-      s.fleetType === "main" &&
-      (s.roles.includes("Healer") || /Klaudia/i.test(s.ship)),
-  )
+  .filter((s) => s.fleetType === "main" && s.roles.includes("Healer"))
   .sort((a, b) => maxVgSurvival(b.ship) - maxVgSurvival(a.ship))
 
 // utils
