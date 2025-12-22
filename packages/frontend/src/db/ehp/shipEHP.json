@@ -200,13 +200,6 @@
       "std": "30.91%"
     }
   ],
-  "Kaguya Yamai and Yuzuru Yamai": [
-    {
-      "name": "Kaguya Yamai and Yuzuru Yamai",
-      "totalEHP": "132.34%",
-      "std": "36.25%"
-    }
-  ],
   "Fancy": [
     {
       "name": "Fancy (3 Gear)",
@@ -229,13 +222,6 @@
       "name": "Kala Ideas",
       "totalEHP": "118.28%",
       "std": "28.33%"
-    }
-  ],
-  "Tohka Yatogami": [
-    {
-      "name": "Tohka Yatogami",
-      "totalEHP": "128.45%",
-      "std": "36.91%"
     }
   ],
   "Bayard": [
@@ -272,13 +258,6 @@
       "name": "Jervis",
       "totalEHP": "125.87%",
       "std": "49.79%"
-    }
-  ],
-  "Toksaki Kurumi": [
-    {
-      "name": "Toksaki Kurumi",
-      "totalEHP": "124.19%",
-      "std": "31.44%"
     }
   ],
   "Otto von Alvensleben": [
@@ -400,6 +379,13 @@
       "std": "31.79%"
     }
   ],
+  "Kaguya Yamai and Yuzuru Yamai": [
+    {
+      "name": "Kaguya Yamai and Yuzuru Yamai",
+      "totalEHP": "114.57%",
+      "std": "33.73%"
+    }
+  ],
   "Fargo": [
     {
       "name": "Fargo",
@@ -469,6 +455,18 @@
       "std": "26.92%"
     }
   ],
+  "William D Porter": [
+    {
+      "name": "William D Porter",
+      "totalEHP": "112.65%",
+      "std": "34.46%"
+    },
+    {
+      "name": "William D Porter (NoPlanes)",
+      "totalEHP": "95.76%",
+      "std": "27.75%"
+    }
+  ],
   "Duca degli Abruzzi": [
     {
       "name": "Duca degli Abruzzi",
@@ -507,6 +505,13 @@
       "name": "San Diego (Retrofit)",
       "totalEHP": "112.26%",
       "std": "36.80%"
+    }
+  ],
+  "Tohka Yatogami": [
+    {
+      "name": "Tohka Yatogami",
+      "totalEHP": "112.16%",
+      "std": "34.47%"
     }
   ],
   "Jintsuu META": [
@@ -773,6 +778,13 @@
       "name": "Roon",
       "totalEHP": "99.06%",
       "std": "24.79%"
+    }
+  ],
+  "Toksaki Kurumi": [
+    {
+      "name": "Toksaki Kurumi",
+      "totalEHP": "101.89%",
+      "std": "28.48%"
     }
   ],
   "Blücher": [
@@ -1192,6 +1204,13 @@
       "std": "23.44%"
     }
   ],
+  "Pasadena": [
+    {
+      "name": "Pasadena",
+      "totalEHP": "91.67%",
+      "std": "26.77%"
+    }
+  ],
   "Mogador": [
     {
       "name": "Mogador",
@@ -1218,13 +1237,6 @@
       "name": "Juneau (Retrofit)",
       "totalEHP": "91.28%",
       "std": "23.94%"
-    }
-  ],
-  "Boise META": [
-    {
-      "name": "Boise META",
-      "totalEHP": "91.22%",
-      "std": "25.15%"
     }
   ],
   "Attilio Regolo": [
@@ -1258,6 +1270,13 @@
       "name": "Kashino",
       "totalEHP": "90.30%",
       "std": "21.14%"
+    }
+  ],
+  "Maury": [
+    {
+      "name": "Maury (Retrofit)",
+      "totalEHP": "90.21%",
+      "std": "39.27%"
     }
   ],
   "Kirov META": [
@@ -1317,6 +1336,13 @@
       "name": "Oleg",
       "totalEHP": "89.74%",
       "std": "27.62%"
+    }
+  ],
+  "Cleveland META": [
+    {
+      "name": "Cleveland META",
+      "totalEHP": "89.65%",
+      "std": "25.57%"
     }
   ],
   "Santa Fe": [
@@ -2076,6 +2102,13 @@
       "std": "26.18%"
     }
   ],
+  "Boise META": [
+    {
+      "name": "Boise META",
+      "totalEHP": "77.43%",
+      "std": "23.17%"
+    }
+  ],
   "Black Prince": [
     {
       "name": "Black Prince",
@@ -2537,11 +2570,11 @@
       "std": "27.29%"
     }
   ],
-  "Maury": [
+  "Clarence K Bronson": [
     {
-      "name": "Maury",
-      "totalEHP": "72.02%",
-      "std": "31.15%"
+      "name": "Clarence K Bronson",
+      "totalEHP": "71.99%",
+      "std": "28.52%"
     }
   ],
   "Asanagi": [
@@ -3130,13 +3163,6 @@
       "std": "23.54%"
     }
   ],
-  "Dewey META": [
-    {
-      "name": "Dewey META",
-      "totalEHP": "66.00%",
-      "std": "26.48%"
-    }
-  ],
   "Louisville": [
     {
       "name": "Louisville",
@@ -3177,6 +3203,13 @@
       "name": "Hatsushimo (Retrofit)",
       "totalEHP": "65.74%",
       "std": "26.93%"
+    }
+  ],
+  "Dewey META": [
+    {
+      "name": "Dewey META",
+      "totalEHP": "65.69%",
+      "std": "26.42%"
     }
   ],
   "Foch META": [

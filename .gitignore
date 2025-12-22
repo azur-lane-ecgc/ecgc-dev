@@ -64,3 +64,4 @@ config.json
 _backup
 .eslintcache
 .opencode
+.serena

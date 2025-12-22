@@ -1586,7 +1586,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 2,
+      "selfsurvival": 1,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -2240,6 +2240,33 @@
       "defensivebuff": null
     }
   ],
+  "Clarence K. Bronson": [
+    {
+      "nameNote": "",
+      "notes": "ARA for CV fleet, requires another Eagle Union ship.",
+      "hardarbiter": "B",
+      "meta": "C",
+      "cm": "B",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "C*",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": 1,
+      "defensivebuff": null
+    }
+  ],
   "Cleopatra": [
     {
       "nameNote": "",
@@ -2317,6 +2344,33 @@
       "offensivebuff": 2,
       "selfsurvival": 2,
       "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Cleveland META": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Buffs CLs' FP and AA and prefers being with a CL.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": -2,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 3,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": 1,
       "asw": null,
       "defensivebuff": null
     }
@@ -5933,7 +5987,7 @@
       "heavydmg": 3,
       "aoedmg": 4,
       "offensivebuff": 1,
-      "selfsurvival": 4,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -8073,11 +8127,11 @@
   "Maury": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "RNG for survival. Higher speed is usually not a good thing.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
-      "w14mob": "D",
+      "w14mob": "C",
       "w14boss": "D",
       "w15mob": "D",
       "w15boss": "D",
@@ -8086,12 +8140,12 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 1,
-      "mediumdmg": 1,
-      "heavydmg": 1,
-      "aoedmg": 1,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 3,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -9771,6 +9825,33 @@
       "defensivebuff": null
     }
   ],
+  "Pasadena": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "Penelope": [
     {
       "nameNote": "",
@@ -11397,7 +11478,7 @@
       "notes": "ARA for CV fleet.",
       "hardarbiter": "B",
       "meta": "B",
-      "cm": "A",
+      "cm": "B",
       "w14mob": "D",
       "w14boss": "D",
       "w15mob": "D",
@@ -11952,7 +12033,7 @@
       "heavydmg": 3,
       "aoedmg": 4,
       "offensivebuff": null,
-      "selfsurvival": 4,
+      "selfsurvival": 3,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -12604,6 +12685,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": null
+    }
+  ],
+  "William D. Porter": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Buffs fleet AA and dmg, especially USS. Sync torps before main for boss, or use fast torps for mob. Can use fast gun.",
+      "hardarbiter": "S",
+      "meta": "S",
+      "cm": "S",
+      "w14mob": "A",
+      "w14boss": "A",
+      "w15mob": "A",
+      "w15boss": "A",
+      "ex": "B*",
+      "consistency": null,
+      "fleetreq": -2,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "offensivebuff": 3,
+      "selfsurvival": 2,
+      "aa": 4,
+      "asw": 1,
+      "defensivebuff": 1
     }
   ],
   "Yamakaze": [
