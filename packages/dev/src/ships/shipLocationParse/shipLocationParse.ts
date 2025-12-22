@@ -39,9 +39,11 @@ const collabEvents = [
   "The Ninja Scrolls: Azur Flash",
   "Dangerous Inventions Incoming!",
   "Illusory Drifters",
+  "The Alchemist and the Tower of Horizons",
+  "DATE A LANE",
 ]
 
-const exceptionShips = ["Formidable", "Mary Celeste"]
+const exceptionShips = ["Formidable", "Mary Celeste", "Amity"]
 
 const OTHER_LOCATIONS: Record<number, string | null> = {
   0: "Guild Shop",
