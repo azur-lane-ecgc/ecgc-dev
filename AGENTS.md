@@ -1,121 +1,65 @@
-# ECGC-Dev Agent Guidelines
+# ECGC Development Agent Guidelines
 
-## Build, Lint & Test Commands
+## Build Commands
 
-### Build Commands
+**Root level:**
 
-- **Full build with type checking**: `bun run build`
-- **Development build**: `bun run dev`
-- **Compressed production build**: `bun run compress-build`
-- **"DB" generation**: `bun run devtools`
+- `bun run devtools` - Run all data processing scripts (dev package)
+- `bun run build` - Build frontend for production
+- `bun run lint` - Run oxlint with auto-fix (enforced by pre-commit)
+- `bun run format` - Format code with Prettier (enforced by pre-commit)
+- `bun run check` - Type check all packages
+- `bun run dev` - Start development server (http://localhost:4321)
 
-### Code Quality Commands
+**Package-specific:**
 
-- **Lint**: `bun run lint` (uses oxlint)
-- **Type check**: `bun run check` (runs type checking for frontend and dev packages)
-- **Format code**: `bun run format` (prettier with astro, tailwind, import organization)
-- **Format specific files**: `bun run smol-format`
+- Frontend: `bun --filter frontend build/check/dev`
+- Dev: `bun --filter dev main/compress/check`
 
-### Testing
+## Code Style
 
-- **Type checking**: Automatic during `bun run build` via `astro check`
-- **No dedicated test runner** - Manual testing recommended for UI components
+**Formatting:**
 
-## Code Style Guidelines
+- No semicolons, double quotes, trailing commas
+- 2-space tabs, LF line endings
+- Prettier with import organization (auto-runs on commit)
 
-### TypeScript Configuration
+**TypeScript:**
 
-- **Strict mode**: Enabled via `astro/tsconfigs/strict`
-- **JSX**: `react-jsx` with `react` as import source
-- **Module resolution**: ES modules with JSON module support
-- **Path aliases**: Use `@/` prefixes for clean imports:
-  - `@/components/*` → `packages/frontend/src/components/*`
-  - `@/utils/*` → `packages/frontend/src/utils/*`
-  - `@/assets/*` → `packages/frontend/src/assets/*`
-  - `@/tools/*` → `packages/dev/src/*`
+- Strict mode enabled, no implicit any
+- Interfaces for all props/objects
+- Arrow functions preferred
+- Path aliases: `@/packages/*`, `@/tools/*`
 
-### Formatting (Prettier)
+**React/Astro:**
 
-- **Semicolons**: Disabled (`semi: false`)
-- **Quotes**: Double quotes (`singleQuote: false`)
-- **Trailing commas**: All (`trailingComma: "all"`)
-- **Indentation**: 2 spaces (`tabWidth: 2`, `useTabs: false`)
-- **Line endings**: LF (`endOfLine: "lf"`)
-- **Plugins**: astro, tailwindcss, organize-imports, astro-organize-imports
+- Functional components with TypeScript
+- `React.FC` for components, strong typing
+- React hooks (useState, useEffect, etc.)
+- `.astro` for static, `.tsx` for interactive
 
-### Naming Conventions
+**Error Handling:**
 
-- **Files**: PascalCase for components (`.tsx`, `.astro`), camelCase for utilities
-- **Components**: PascalCase (e.g., `ComboBox`, `ShipModal`)
-- **Functions**: camelCase (e.g., `extractBaseName`, `processSheet`)
-- **Constants**: UPPER_SNAKE_CASE (e.g., `SERVICE_ACCOUNT_FILE`)
-- **Types/Interfaces**: PascalCase (e.g., `ComboBoxProps`)
+- Validate inputs before processing
+- Handle null/undefined data
+- Graceful error boundaries in React
+- Log with context for debugging
 
-### Import Organization
+**Data Processing:**
 
-- **External libraries first**, then internal imports
-- **Group by type**: React imports, then utilities, then components
-- **Use path aliases** instead of relative imports
-- **Auto-organized** by prettier-plugin-organize-imports
+- Never commit credentials.json
+- Use Maps/Sets for large datasets
+- Implement lazy loading where appropriate
+- Cache static data in memory
 
-### Error Handling
+## Project Structure
 
-- **Async functions**: Use try/catch with descriptive error messages
-- **API calls**: Handle failures gracefully with user feedback
-- **Validation**: Check for null/undefined values before processing
-- **Logging**: Use `console.error` for errors, `console.log` for info
+- `packages/frontend/` - Astro/React frontend
+- `packages/dev/` - Data processing scripts
+- `packages/gsheets2img/` - Image processing
+- `packages/AzurLaneData/` - Raw game data (submodule)
 
-### React/TypeScript Patterns
+## Quality Gates
 
-- **Functional components** with TypeScript interfaces
-- **Hooks**: `useState`, `useEffect`, `useRef` as primary patterns
-- **Props**: Strongly typed interfaces for all component props
-- **Event handlers**: Arrow functions or named functions
-- **Conditional rendering**: Use logical AND (`&&`) or ternary operators
-- **Lists**: Always use `key` props with stable identifiers
-
-### File Organization
-
-- **Components**: Group by feature in subdirectories
-- **Utilities**: Organized by domain (`commonResource/`, `factionLink/`)
-- **Types**: Separate `.d.ts` files or inline interfaces
-- **Constants**: Dedicated files like `constants/index.ts`
-
-### Astro-Specific Guidelines
-
-- **Framework**: Astro for static site generation
-- **Component mixing**: Combine `.astro`, `.tsx`, `.jsx` as needed
-- **Frontmatter**: Use for component-scoped logic
-- **Imports**: Follow same organization as React components
-
-### Performance Considerations
-
-- **Bundle optimization**: Automatic via Astro build
-- **Image handling**: Use Astro's built-in image optimization
-- **Lazy loading**: Implement for large lists/components
-- **Memoization**: Use `React.memo` for expensive components
-
-### Security Best Practices
-
-- **Secrets**: Never commit credentials or API keys
-- **Input validation**: Sanitize user inputs
-- **API keys**: Store in environment variables or secure config files
-- **HTTPS**: Use HTTPS URLs for external resources
-- **Credentials file**: Note that there is a `packages/credentials.json` file (parallel to `packages/credentials.json.example`) that contains sensitive information and is in .gitignore. Assume it always exists at `packages/credentials.json`.
-
-### Git Workflow
-
-- **Pre-commit hooks**: `lefthook` manages formatting/linting
-- **Branch naming**: Descriptive feature branch names
-- **Commit messages**: Clear, descriptive messages
-- **Pull requests**: Include context and testing notes
-
-## Package Management
-
-- **Adding/Removing packages**: Always use `cd` to the specific package directory, then `bun add` or `bun remove` to add or remove packages from monorepo packages.
-
-### IMPORTANT RULES
-
-NEVER PUSH TO THE "MAIN" BRANCH AT ALL UNDER ANY CIRCUMSTANCES.
-
-NEVER USE EMOJIS UNLESS PROMPTED BY THE USER
+Pre-commit hooks run automatically: knip → oxlint → prettier
+All must pass before commits are allowed.
