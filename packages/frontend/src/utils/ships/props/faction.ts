@@ -27,6 +27,8 @@ const collaborationFactions = [
   "Senran Kagura",
   "To LOVE-Ru",
   "BLACK★ROCK SHOOTER",
+  "Atelier Yumia",
+  "Date A Live",
 ]
 
 export const allianceFactionsMap: Record<string, string[]> = {
