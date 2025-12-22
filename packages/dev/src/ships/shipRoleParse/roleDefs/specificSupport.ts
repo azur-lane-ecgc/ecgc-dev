@@ -19,7 +19,9 @@ export const mainHealSupport = new Set([
 const _mainSmallHealSupport = new Set([
   "Aquila",
   "Volga",
+  "Cowpens",
   "Klaudia Valentz",
+  // gap between top and bottom
   "Raffaelo",
   "Daisen",
   "Honoka",
