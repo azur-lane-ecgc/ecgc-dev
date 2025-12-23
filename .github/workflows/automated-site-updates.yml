@@ -17,12 +17,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           submodules: recursive
+          token: ${{ secrets.SUBMODULE_PAT }}
 
       - name: Set up Node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: "22.2.0"
 
@@ -73,7 +74,7 @@ jobs:
 
       - name: Upload generated images
         id: upload
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: equip-misc-images
           path: packages/frontend/public/images/equip_misc/
