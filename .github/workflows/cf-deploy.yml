@@ -17,9 +17,10 @@ jobs:
     name: CF-Deploy
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           submodules: recursive
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
