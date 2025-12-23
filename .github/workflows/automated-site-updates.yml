@@ -59,7 +59,7 @@ jobs:
           if [[ -n $(git status --porcelain) ]]; then
               DATE=$(date +"%m/%d/%Y")
               git add .
-              git commit -m "Chore(ecgc): Automated Site Update: $DATE"
+              git commit -m "Chore(ecgc): Automated Site Update: $DATE [skip ci]"
               git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
               echo "has_changes=true" >> $GITHUB_OUTPUT
           else
