@@ -985,7 +985,7 @@
       "meta": "S",
       "cm": "SS",
       "w14mob": "S",
-      "w14boss": "SS",
+      "w14boss": "S",
       "w15mob": "A",
       "w15boss": "A",
       "ex": "A",
@@ -4483,7 +4483,7 @@
       "hardarbiter": "SS",
       "meta": "SS",
       "cm": "SS",
-      "w14mob": "S",
+      "w14mob": "SS",
       "w14boss": "S",
       "w15mob": "A",
       "w15boss": "A",
@@ -8318,7 +8318,7 @@
   "Yoshino": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Pseudo-healer with good damage but is squishy herself. Random slows.",
+      "notes": "zTENTATIVE Pseudo-healer with high damage but is squishy herself. Random slows.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
