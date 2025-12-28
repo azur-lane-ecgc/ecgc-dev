@@ -12,6 +12,5 @@
       "project": ["**/*"]
     }
   },
-  "ignoreWorkspaces": ["packages/AzurLaneData"],
-  "ignoreDependencies": ["oxlint"]
+  "ignoreWorkspaces": ["packages/AzurLaneData"]
 }

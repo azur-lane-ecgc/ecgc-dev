@@ -52,8 +52,6 @@ interface ShipModalProps {
 /**
  * ShipModal component that displays a modal with information about a ship.
  *
- * @component
- *
  * @param {ShipModalProps} props - The props for configuring the ship modal.
  * @param {ShipData} props.shipData - Complete data regarding the ship including rankings and EHP
  * @param {TriggerProps} [props.trigger] - trigger control (iconNote, descriptionNote, largeDescNote)

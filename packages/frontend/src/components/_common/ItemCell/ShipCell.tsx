@@ -38,7 +38,7 @@ export const ShipCell: React.FC<ShipCellProps> = ({
 
   className = "",
 }) => {
-  const shipImg = useMemo(() => shipImageParse(ship, isKai), [])
+  const shipImg = useMemo(() => shipImageParse(ship, isKai), [ship, isKai])
 
   return (
     <ItemCell

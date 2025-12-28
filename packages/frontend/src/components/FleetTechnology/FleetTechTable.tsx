@@ -60,7 +60,7 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
         ) => sum + (obj.techPoints || 0),
         0,
       )
-  }, [faction, excludeShipyard])
+  }, [factionData, excludeShipyard])
 
   // sort function
   const handleSort = (columnKey: string) => {

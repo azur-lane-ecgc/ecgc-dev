@@ -1,39 +1,12 @@
 {
   "extends": ["../../.oxlintrc.json"],
+  "plugins": ["react", "react-perf", "jsdoc"],
   "rules": {
     "no-extra-boolean-cast": "off"
   },
-  "settings": {
-    "jsx-a11y": {
-      "polymorphicPropName": null,
-      "components": {},
-      "attributes": {}
-    },
-    "next": {
-      "rootDir": []
-    },
-    "react": {
-      "formComponents": [],
-      "linkComponents": []
-    },
-    "jsdoc": {
-      "ignorePrivate": false,
-      "ignoreInternal": false,
-      "ignoreReplacesDocs": true,
-      "overrideReplacesDocs": true,
-      "augmentsExtendsReplacesDocs": false,
-      "implementsReplacesDocs": false,
-      "exemptDestructuredRootsFromChecks": false,
-      "tagNamePreference": {}
-    }
-  },
   "env": {
-    "builtin": true
+    "builtin": true,
+    "browser": true
   },
-  "ignorePatterns": [
-    "**/node_modules/**",
-    "**/*.astro",
-    "**/*.svelte",
-    "**/*.vue"
-  ]
+  "ignorePatterns": ["**/node_modules/**", "**/*.astro"]
 }
