@@ -39,7 +39,11 @@ export const Sidenav: React.FC<SidenavProps> = ({
     <>
       {/* <!-- Overlay --> */}
       {isToggle && window.innerWidth < 1016 && (
-        <div className="overlay visible" onClick={toggleFunction}></div>
+        <button
+          className="overlay visible"
+          onClick={toggleFunction}
+          aria-label="Close sidenav"
+        ></button>
       )}
 
       {/* <!-- Sidenav Button --> */}
