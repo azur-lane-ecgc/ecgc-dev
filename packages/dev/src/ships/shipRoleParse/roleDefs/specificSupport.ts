@@ -9,11 +9,11 @@ const _uniKai = new Set(["Unicorn"])
 
 export const mainHealSupport = new Set([
   "Unicorn",
-  "Perseus",
+  "Cowpens",
   "Zuihou",
+  "Aquila",
+  "Perseus",
   "Ryuuhou",
-  "Shouhou",
-  "Painlevé",
 ])
 
 const _mainSmallHealSupport = new Set([
