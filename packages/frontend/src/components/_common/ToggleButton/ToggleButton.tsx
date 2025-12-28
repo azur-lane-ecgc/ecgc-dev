@@ -42,7 +42,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
     }
   }, [reset, initialValue])
 
-  const handleClick = () => {
+  const selectNextOption = () => {
     const nextIndex = (selectedIndex + 1) % optionsCount
     setSelectedIndex(nextIndex)
     onSelect(options[nextIndex].payload)
@@ -58,7 +58,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
       <p className="!mb-2 font-bold">{title}</p>
       <button
         className="w-36 rounded-xl border border-green-800 bg-gray-950 px-1 py-2 shadow-lg hover:bg-gray-800 sm:w-40 md:w-48"
-        onClick={handleClick}
+        onClick={selectNextOption}
       >
         <div className="relative flex items-center">
           <div className="absolute right-0 -left-2 text-center font-bold text-orange-400">

@@ -14,7 +14,7 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "types": ["bun"],
-    "allowJs": true,
+
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "baseUrl": ".",
