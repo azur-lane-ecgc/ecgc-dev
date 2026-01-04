@@ -4,11 +4,11 @@ on:
   # push:
   #   branches: [main]
   #   paths:
-  #     - "packages/frontend/**"
+  #     - "apps/web/**"
   #     - "packages/AzurLaneData/**"
-  #     - "wrangler.jsonc"
-  #     - "package.json"
-  #     - ".github/workflows/cf-deploy.yml"
+  #     # - "wrangler.jsonc"
+  #     # - "package.json"
+  #     # - ".github/workflows/cf-deploy.yml"
   workflow_dispatch:
 
 jobs:
