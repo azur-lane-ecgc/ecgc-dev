@@ -7,7 +7,8 @@ export const main = async (): Promise<any[]> => {
       (m) => m.default,
     )) as Record<number, ShipData>
 
-  const OUTPUT_PATH = "../frontend/src/utils/ships/events/azurLaneEvents.json"
+  const OUTPUT_PATH =
+    "../../apps/web/src/utils/ships/events/azurLaneEvents.json"
 
   // Bucket: href -> { location, dates[] }
   const bucket = new Map<

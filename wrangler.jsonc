@@ -4,6 +4,6 @@
   "compatibility_date": "2025-10-10",
   "preview_urls": true,
   "assets": {
-    "directory": "./packages/frontend/dist",
+    "directory": "./apps/web/dist",
   },
 }

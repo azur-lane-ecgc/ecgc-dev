@@ -13,15 +13,15 @@
 
 **Package-specific:**
 
-- Frontend: `bun --filter frontend build/check/dev`
+- Frontend: `bun --filter web build/check/dev`
 - Dev: `bun --filter dev main/compress/check`
 - GSheets2Img: `bun run gsheets2img` (from root)
 
 ## Project Structure
 
-- `packages/frontend/` - Astro/React frontend. Static site for Azur Lane game data, ship databases, equipment guides, farming calculators. Consumes JSON data from dev package. Built for Cloudflare Workers.
-- `packages/dev/` - Data processing pipeline. TypeScript scripts that fetch/transform game data from Google Sheets, calculate EHP/rankings, generate ship databases. Outputs JSON to frontend/src/db/.
-- `packages/gsheets2img/` - Converts Google Sheets to images. Uses Playwright to screenshot published sheets as JPEGs for documentation tables. Outputs to frontend/public/images/equip_misc/.
+- `apps/web/` - Astro/React frontend. Static site for Azur Lane game data, ship databases, equipment guides, farming calculators. Consumes JSON data from dev package. Built for Cloudflare Workers.
+- `packages/dev/` - Data processing pipeline. TypeScript scripts that fetch/transform game data from Google Sheets, calculate EHP/rankings, generate ship databases. Outputs JSON to apps/web/src/db/.
+- `packages/gsheets2img/` - Converts Google Sheets to images. Uses Playwright to screenshot published sheets as JPEGs for documentation tables. Outputs to apps/web/public/images/equip_misc/.
 - `packages/AzurLaneData/` - Raw game data submodule. Git submodule containing official Azur Lane game data (ships.json, skills.json, etc.). Must be kept up-to-date.
 
 ## Critical
@@ -81,11 +81,11 @@ React code requires fetch to be in useEffect, but most things should use Tanstac
 A context provider and its useContext hook belog together, not split up into components and hooks directories
 Sorting your codebase by what each function looks like means small changes will span many directories.
 
-<!-- 
+<!--
 Ignored rules:
 
 🚩 css files
 
-One CSS file for global styling (ex. when using shadcn/ui) is fine. If you need more CSS files, that's the red flag. 
+One CSS file for global styling (ex. when using shadcn/ui) is fine. If you need more CSS files, that's the red flag.
 
 -->

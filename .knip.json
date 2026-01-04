@@ -1,7 +1,7 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "workspaces": {
-    "packages/frontend": {
+    "apps/web": {
       "entry": ["src/pages/**/*.astro", "src/pages/**/*.ts"],
       "project": ["**/*"]
     },
