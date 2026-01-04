@@ -12,7 +12,7 @@ The project is a monorepo with the following structure:
 
 - `packages/AzurLaneData`: A [submodule](https://github.com/MrLar/AzurLaneData) containing data for the game Azur Lane.
 - `packages/dev`: Contains development scripts and tools for the project.
-- `packages/frontend`: The frontend of the project, built with Astro.
+- `apps/web`: The frontend of the project, built with Astro.
 - `packages/gsheets2img`: A TypeScript script to convert google sheets to images.
 - `CONTRIBUTING.md`: This file.
 - `README.md`: The main README file for the project.

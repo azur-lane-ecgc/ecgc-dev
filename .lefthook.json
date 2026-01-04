@@ -5,7 +5,7 @@
       "knip": {
         "glob": [
           "packages/dev/**/*.{astro,html,md,ts,tsx,json,css}",
-          "packages/frontend/**/*.{astro,html,md,ts,tsx,json,css}",
+          "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
           "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
         "run": "bun knip --fix"
@@ -13,7 +13,7 @@
       "oxlint": {
         "glob": [
           "packages/dev/**/*.{astro,html,md,ts,tsx,json,css}",
-          "packages/frontend/**/*.{astro,html,md,ts,tsx,json,css}",
+          "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
           "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
         "run": "bunx --bun oxlint --fix {staged_files}",
@@ -22,7 +22,7 @@
       "prettier": {
         "glob": [
           "packages/dev/**/*.{astro,html,md,ts,tsx,json,css}",
-          "packages/frontend/**/*.{astro,html,md,ts,tsx,json,css}",
+          "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
           "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
         "run": "bunx --bun prettier --write {staged_files}",

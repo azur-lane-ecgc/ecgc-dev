@@ -24,8 +24,8 @@
     }
   },
   "exclude": [
-    "packages/frontend/dist",
-    "packages/frontend/.astro",
+    "apps/web/dist",
+    "apps/web/.astro",
     "packages/AzurLaneData",
     "node_modules"
   ]
