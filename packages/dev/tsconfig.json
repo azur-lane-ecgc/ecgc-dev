@@ -22,8 +22,8 @@
     "types": ["bun"],
     "baseUrl": "../..",
     "paths": {
-      "@/db/*": ["packages/frontend/src/db/*"],
-      "@/utils/*": ["packages/frontend/src/utils/*"],
+      "@/db/*": ["apps/web/src/db/*"],
+      "@/utils/*": ["apps/web/src/utils/*"],
       "@/packages/*": ["packages/*"],
       "@/tools/*": ["packages/dev/src/*"]
     }

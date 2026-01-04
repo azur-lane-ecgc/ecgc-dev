@@ -44,7 +44,7 @@ jobs:
 
       - name: Run gsheets2img
         run: |
-          rm -rf packages/frontend/public/images/equip_misc/*
+          rm -rf apps/web/public/images/equip_misc/*
           bun run gsheets2img
 
       - name: Run devtools
@@ -77,7 +77,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: equip-misc-images
-          path: packages/frontend/public/images/equip_misc/
+          path: apps/web/public/images/equip_misc/
           retention-days: 1
 
       - name: Print artifact URL

@@ -20,5 +20,5 @@
   "useTabs": false,
   "tabWidth": 2,
   "endOfLine": "lf",
-  "tailwindStylesheet": "packages/frontend/src/styles/global.css"
+  "tailwindStylesheet": "apps/web/src/styles/global.css"
 }

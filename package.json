@@ -3,13 +3,13 @@
   "private": true,
   "workspaces": [
     "packages/dev",
-    "packages/frontend",
+    "apps/web",
     "packages/gsheets2img"
   ],
   "scripts": {
     "prepare": "bunx lefthook install",
     "update": "bun update --latest && find packages -name package.json -not -path '*/node_modules/*' -execdir bash -c 'echo Updating $(pwd); bun update --latest && bun install' ';'",
-    "rebuild": "rm -rf node_modules && rm -rf .wrangler && rm -rf packages/AzurLaneData && rm -rf packages/frontend/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf packages/frontend/dist && rm -rf packages/frontend/.astro && bun run update",
+    "rebuild": "rm -rf node_modules && rm -rf .wrangler && rm -rf packages/AzurLaneData && rm -rf apps/web/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf apps/web/dist && rm -rf apps/web/.astro && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bun --filter gsheets2img main",
