@@ -40,7 +40,7 @@ const CoreData: ResourceProps = {
         {
           name: "Campaign Hard Mode",
           wikiLink: "Combat#Hard_Mode",
-          quantity: { amount: 90, timeFrame: "daily" },
+          quantity: { amount: 96, timeFrame: "daily" },
         },
       ],
       checkMark: {
