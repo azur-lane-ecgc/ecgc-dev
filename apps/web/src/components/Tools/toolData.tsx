@@ -50,7 +50,7 @@ export const ToolData: ToolProps[] = [
     ),
   },
   {
-    tool: "MrLar's Azur Lane Tools",
+    tool: "Azur Lane Database",
     category: ["data"],
     toolLink: "https://azurlane.mrlar.dev/",
     authors: ["MrLar"],
@@ -230,6 +230,19 @@ export const ToolData: ToolProps[] = [
     toolLink: "https://renhex.github.io/AzurLaneFleet/",
     authors: ["Renhex"],
     description: <>Easily build and share Azur Lane fleets.</>,
+  },
+  {
+    tool: "Azur Lane: Guide to G00nermaxxing",
+    category: ["fun"],
+    toolLink:
+      "https://docs.google.com/spreadsheets/d/1sjtMMQzfVNG_Ntd-wE_h-QmJ5fBzRbH15OAvjZfQBaY",
+    authors: ["Café Frontline Alliance"],
+    description: (
+      <>
+        Simple and summarized instruction rundown on Live2D and Dynamic skin
+        interactions.
+      </>
+    ),
   },
   {
     tool: "Azur Lane Fleet Tech Tracker",
