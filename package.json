@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "prepare": "bunx lefthook install",
-    "update": "bun update --latest && find packages -name package.json -not -path '*/node_modules/*' -execdir bash -c 'echo Updating $(pwd); bun update --latest && bun install' ';'",
+    "update": "bun update --latest && find packages apps -name package.json -not -path '*/node_modules/*' -execdir bash -c 'echo Updating $(pwd); bun update --latest && bun install' ';'",
     "rebuild": "rm -rf node_modules && rm -rf .wrangler && rm -rf packages/AzurLaneData && rm -rf apps/web/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf apps/web/dist && rm -rf apps/web/.astro && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.1.3",
-    "knip": "^5.78.0",
+    "knip": "^5.79.0",
     "lefthook": "^2.0.13",
     "oxlint": "^1.36.0",
     "prettier": "^3.7.4",
