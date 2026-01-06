@@ -4,27 +4,53 @@ const contributorsUrl = "contributors"
 const discordUrl = "https://discord.gg/wKJKxq5WQt"
 
 const buttonStyle =
-  "homepage-button flex items-center justify-center w-full py-[10px] text-lg border transition"
+  "homepage-button flex items-center justify-center w-full py-[10px] text-lg border rounded-lg transition-all duration-150 ease-in-out no-underline cursor-pointer"
 ---
 
 <style>
+  :root {
+    --button-border: #0d63fe;
+    --button-shadow: #094bb8;
+  }
+
   .homepage-button {
+    background-color: transparent;
+    border-color: var(--button-border);
     color: pink;
-    background-color: transparent;
-    text-decoration: none;
-    border-color: #0d63fe;
-    border-radius: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0px 4px var(--button-shadow);
+    transform: translateY(-4px);
   }
+
   .homepage-button:visited {
-    color: orange;
     background-color: transparent;
-    text-decoration: none;
+    border-color: var(--button-border);
+    color: orange;
   }
+
   .homepage-button:hover {
-    color: cyan !important;
-    text-decoration: underline;
-    border-color: limegreen;
     background-color: #0d63fe;
+    border-color: limegreen;
+    color: cyan;
+    text-decoration: underline;
+  }
+
+  .homepage-button:active {
+    box-shadow: 0px 0px var(--button-shadow);
+    transform: translateY(0px);
+    animation: buttonClicked 0.15s;
+  }
+
+  @keyframes buttonClicked {
+    0% {
+      transform: translateY(-4px);
+      box-shadow: 0px 4px var(--button-shadow);
+    }
+    100% {
+      transform: translateY(0px);
+      box-shadow: 0px 0px var(--button-shadow);
+    }
   }
 </style>
 
