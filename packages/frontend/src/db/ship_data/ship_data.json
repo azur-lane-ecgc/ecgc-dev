@@ -6836,7 +6836,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Sworn Knight's Sword", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["Bad"],
@@ -10617,7 +10617,12 @@
           "href": "Construction"
         }
       ],
-      "permanent": []
+      "permanent": [
+        {
+          "name": "Map Drop (check Wiki)",
+          "href": "Haguro"
+        }
+      ]
     },
     "permanent": {
       "isPermanent": true,
@@ -10985,7 +10990,12 @@
           "href": "Construction"
         }
       ],
-      "permanent": []
+      "permanent": [
+        {
+          "name": "Map Drop (check Wiki)",
+          "href": "Hiei"
+        }
+      ]
     },
     "permanent": {
       "isPermanent": true,
@@ -17635,7 +17645,12 @@
         }
       ],
       "construction": [],
-      "permanent": []
+      "permanent": [
+        {
+          "name": "Map Drop (check Wiki)",
+          "href": "Dace"
+        }
+      ]
     },
     "permanent": {
       "isPermanent": true,
@@ -20132,7 +20147,12 @@
           "href": "Construction"
         }
       ],
-      "permanent": []
+      "permanent": [
+        {
+          "name": "Map Drop (check Wiki)",
+          "href": "Suzuya"
+        }
+      ]
     },
     "permanent": {
       "isPermanent": true,
@@ -28828,7 +28848,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["Claw and Ribbon", "Crossbow", "Sword"],
     "samEval": "Magdeburg is a damage-oriented CL with good stats and skills. Her personal damage is middling due to only 1 MGM. Her barrage can make it better, but it requires winning 2 battles to improve it to a good level. Her self-buffs are also reliant on winning battles throughout the sortie. Her bulk is fine; nothing special but not awful either. Her AA is fine; nothing special. Overall, she is a good CL.",
     "fastLoad": null,
     "roles": ["Bad"],
@@ -39820,6 +39840,62 @@
     },
     "permanent": {
       "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "723": {
+    "id": 723,
+    "ship": "Fujinami",
+    "faction": "IJN",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.85,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.6,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Map Drop (check Wiki)",
+          "href": "Fujinami"
+        }
+      ]
+    },
+    "permanent": {
+      "isPermanent": true,
       "isCollab": false
     }
   },
