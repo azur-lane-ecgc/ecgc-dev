@@ -16500,7 +16500,7 @@
     "augments": ["Auspicious Dragonfly", "Crossbow", "Sword"],
     "samEval": "Noshiro is a mob-tank oriented CL with solid stats and great skills. Her personal damage (Main gun + Torpedo + Barrage) is solid. Her blue skill improves her survivability, and her yellow skill provides one of the best torpedo buffs to your fleet. Overall, she is a great option, best used as a torpedo-buffer / mob-tank.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport", "OffSupport", "Meh"],
+    "roles": ["Tank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
