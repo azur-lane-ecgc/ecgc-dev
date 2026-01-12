@@ -67,7 +67,7 @@ export const Input: React.FC<InputProps> = ({
           value={searchTerm}
           onChange={handleChange}
           placeholder={placeholder || `Search ${title.toLowerCase()}...`}
-          className="w-full rounded-md border border-green-800 bg-[#212529] px-3 py-2 pr-10 font-medium text-blue-200 placeholder-gray-400 shadow-lg focus:ring-1 focus:ring-orange-500 focus:outline-none"
+          className="w-full rounded-md border-green-800 bg-[#212529] px-3 py-2 pr-10 font-medium text-blue-200 placeholder-gray-400 shadow-lg focus:ring-1 focus:ring-orange-500 focus:outline-none"
         />
         {searchTerm && (
           <button

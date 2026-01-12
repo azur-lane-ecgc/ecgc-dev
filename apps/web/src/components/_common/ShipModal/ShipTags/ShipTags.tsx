@@ -39,7 +39,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         } absolute top-[31px] left-0 z-50 w-[150px] overflow-hidden border-gray-400 bg-slate-800 text-center shadow-2xl transition-all duration-300 ease-in-out md:hidden`}
       >
         {/* Faction Icon */}
-        <div className="flex w-full justify-between border border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
+        <div className="flex w-full justify-between border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
           <span className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden">
             {getFactionIcon(faction)}
           </span>
@@ -55,7 +55,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         </div>
 
         {/* HullType Icon */}
-        <div className="flex w-full justify-between border border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
+        <div className="flex w-full justify-between border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
           <span className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden">
             <img
               loading="lazy"
@@ -80,7 +80,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         {displayRoles.map((role) => (
           <div
             key={role}
-            className="flex w-full justify-between border border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]"
+            className="flex w-full justify-between border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]"
           >
             <span
               className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"

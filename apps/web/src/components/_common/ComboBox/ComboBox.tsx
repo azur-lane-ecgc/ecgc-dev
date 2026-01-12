@@ -152,7 +152,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
 
       {/* combobox menu (desktop) */}
       {showOptions && (
-        <div className="absolute z-10 mt-1 hidden w-48 max-w-48 rounded-xl border border-gray-500 bg-[#212529] shadow-md sm:block">
+        <div className="absolute z-10 mt-1 hidden w-48 max-w-48 rounded-xl border-gray-500 bg-[#212529] shadow-md sm:block">
           <input
             id={`${title}ComboBoxDesktop`}
             ref={inputRef}

@@ -36,7 +36,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
     <>
       <div className="mb-3">
         <button
-          className="rounded-xl border border-pink-800 bg-purple-400 px-4 py-2 shadow-lg hover:bg-purple-300"
+          className="rounded-xl border-pink-800 bg-purple-400 px-4 py-2 shadow-lg hover:bg-purple-300"
           onClick={() => dispatch({ type: "RESET_FILTER", payload: null })}
         >
           <div className="text-center font-bold text-black">Clear Filters</div>
