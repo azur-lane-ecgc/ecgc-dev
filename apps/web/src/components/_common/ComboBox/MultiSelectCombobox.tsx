@@ -137,7 +137,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
       {/* combobox button */}
       <p
         title={disabledMessage}
-        className={`!mb-2 font-bold ${disabled ? "cursor-pointer text-red-300/90! underline!" : ""}`}
+        className={`mb-2! font-bold ${disabled ? "cursor-pointer text-red-300/90! underline!" : ""}`}
       >
         {title}
       </p>
