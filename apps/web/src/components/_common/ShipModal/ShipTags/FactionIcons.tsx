@@ -104,7 +104,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/96.webp"
       alt="MOT"
       title="Faction: MOT"
-      className="h-auto w-[40px] !bg-[#fafafa]"
+      className="h-auto w-[40px] bg-[#fafafa]!"
     />
   ),
   META: (
@@ -113,7 +113,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/97.webp"
       alt="META"
       title="Faction: META"
-      className="h-auto w-[37px] !bg-[#fafafa]"
+      className="h-auto w-[37px] bg-[#fafafa]!"
     />
   ),
   Neptunia: (
@@ -122,7 +122,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/101.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="h-auto w-[40px] !bg-[#fafafa]"
+      className="h-auto w-[40px] bg-[#fafafa]!"
     />
   ),
   Bilibili: (
@@ -131,7 +131,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/102.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="h-auto w-[40px] !bg-[#fafafa]"
+      className="h-auto w-[40px] bg-[#fafafa]!"
     />
   ),
   default: (
@@ -140,7 +140,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/100.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="h-auto w-[40px] !bg-[#fafafa]"
+      className="h-auto w-[40px] bg-[#fafafa]!"
     />
   ),
 }
