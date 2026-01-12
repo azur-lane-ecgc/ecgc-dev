@@ -8,24 +8,25 @@ export const useModalFocus = (
   shipID?: string,
 ) => {
   const hasMounted = useRef(false)
+  const prevOpen = useRef(open)
 
   useEffect(() => {
     if (!hasMounted.current) {
       hasMounted.current = true
-      if (shipID && window.location.hash.includes(shipID)) {
-        const triggerButton = document.getElementById(triggerButtonID)
-        if (triggerButton) {
-          triggerButton.focus()
-        }
-      }
-      return
     }
+  }, [shipID, triggerButtonID])
 
-    const elementId = open ? modalID : triggerButtonID
-    const element = document.getElementById(elementId)
+  useEffect(() => {
+    if (hasMounted.current) {
+      if (open && !prevOpen.current) {
+        const modal = document.getElementById(modalID)
+        if (modal) modal.focus()
+      } else if (!open && prevOpen.current) {
+        const trigger = document.getElementById(triggerButtonID)
+        if (trigger) trigger.focus()
+      }
 
-    if (element) {
-      element.focus()
+      prevOpen.current = open
     }
   }, [open, modalID, triggerButtonID])
 }
