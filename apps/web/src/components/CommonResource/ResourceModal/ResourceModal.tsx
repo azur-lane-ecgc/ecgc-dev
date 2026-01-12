@@ -133,7 +133,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
           {/* Modal Window */}
           <div
             id={`resourceModal${name}`}
-            className={`${modalStyle} !max-w-[800px]`}
+            className={`${modalStyle} max-w-[800px]!`}
             onClick={(e) => e.stopPropagation()}
             role="document"
           >
@@ -249,25 +249,25 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                       >
                         <tr>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.daily}
                             </span>
                             {item.total.daily !== "N/A" && " / Day"}
                           </td>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.weekly}
                             </span>
                             {item.total.weekly !== "N/A" && " / Week"}
                           </td>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.monthly}
                             </span>
                             {item.total.monthly !== "N/A" && " / Month"}
                           </td>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.bimonthly}
                             </span>
                             {item.total.bimonthly !== "N/A" && " / 2 Months"}
@@ -299,31 +299,31 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                       >
                         <tr>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.daily}
                             </span>
                             {item.total.daily !== "N/A" && " / Day"}
                           </td>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.weekly}
                             </span>
                             {item.total.weekly !== "N/A" && " / Week"}
                           </td>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.monthly}
                             </span>
                             {item.total.monthly !== "N/A" && " / Month"}
                           </td>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.bimonthly}
                             </span>
                             {item.total.bimonthly !== "N/A" && " / 2 Months"}
                           </td>
                           <td className="font-bold">
-                            <span className="!text-yellow-400">
+                            <span className="text-yellow-400!">
                               {item.total.oneTime}
                             </span>
                           </td>
@@ -373,25 +373,25 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                     >
                       <tr>
                         <td className="font-bold">
-                          <span className="!text-yellow-400">
+                          <span className="text-yellow-400!">
                             {item.total.daily}
                           </span>
                           {item.total.daily !== "N/A" && " / Day"}
                         </td>
                         <td className="font-bold">
-                          <span className="!text-yellow-400">
+                          <span className="text-yellow-400!">
                             {item.total.weekly}
                           </span>
                           {item.total.weekly !== "N/A" && " / Week"}
                         </td>
                         <td className="font-bold">
-                          <span className="!text-yellow-400">
+                          <span className="text-yellow-400!">
                             {item.total.monthly}
                           </span>
                           {item.total.monthly !== "N/A" && " / Month"}
                         </td>
                         <td className="font-bold">
-                          <span className="!text-yellow-400">
+                          <span className="text-yellow-400!">
                             {item.total.bimonthly}
                           </span>
                           {item.total.bimonthly !== "N/A" && " / 2 Months"}
@@ -405,7 +405,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
               {item.notes && (
                 <p
                   dangerouslySetInnerHTML={{ __html: `Note: ${item.notes}` }}
-                  className="mt-3 !text-sm"
+                  className="mt-3 text-sm!"
                 ></p>
               )}
               <HR />

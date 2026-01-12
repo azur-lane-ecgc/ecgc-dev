@@ -193,11 +193,11 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
             <tbody>
               {sortedData.map((row, index) => (
                 <tr key={index}>
-                  <td className="!py-2">
+                  <td className="py-2!">
                     <ShipCell
                       ship={row.ship}
                       rarity={row.rarity}
-                      className="!p-0"
+                      className="p-0!"
                     />
                   </td>
                   <td>
