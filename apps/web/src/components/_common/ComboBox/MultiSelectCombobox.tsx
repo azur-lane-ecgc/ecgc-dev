@@ -36,14 +36,15 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
 
   const wrapperRef = useRef<HTMLDivElement | null>(null)
   const inputRef = useRef<HTMLInputElement | null>(null)
+  const onSelectRef = useRef(onSelect)
 
   const debouncedSelected: string[] = useDebounce(selected, 190)
 
   useEffect(() => {
-    if (initialOptions && onSelect) {
-      onSelect(initialOptions)
-    }
+    onSelectRef.current = onSelect
+  }, [onSelect])
 
+  useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         wrapperRef.current &&
@@ -60,7 +61,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   }, [])
 
   useEffect(() => {
-    onSelect(debouncedSelected.length > 0 ? debouncedSelected : [])
+    onSelectRef.current(debouncedSelected.length > 0 ? debouncedSelected : [])
   }, [debouncedSelected])
 
   useEffect(() => {
@@ -82,15 +83,15 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
       setSelected(initialOptions || [])
       setInput("")
     }
-  }, [reset])
+  }, [reset, initialOptions])
 
   useEffect(() => {
     if (disabled) {
       setSelected(initialOptions || [])
       setInput("")
-      onSelect([])
+      onSelectRef.current([])
     }
-  }, [disabled])
+  }, [disabled, initialOptions])
 
   const filteredOptions = (() => {
     const baseOptions = input
