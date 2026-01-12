@@ -11,7 +11,7 @@
     "postinstall": "bunx playwright install firefox"
   },
   "dependencies": {
-    "googleapis": "^169.0.0",
+    "googleapis": "^170.0.0",
     "playwright": "^1.57.0"
   },
   "devDependencies": {
