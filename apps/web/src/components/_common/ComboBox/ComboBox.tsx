@@ -38,9 +38,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
     if (initialOption && onSelect) {
       onSelect(initialOption)
     }
-  }, [initialOption, onSelect])
 
-  useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         wrapperRef.current &&
@@ -75,7 +73,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       setSelected(initialOption || null)
       setInput("")
     }
-  }, [reset, initialOption])
+  }, [reset])
 
   useEffect(() => {
     if (disabled) {
@@ -83,7 +81,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       setInput("")
       onSelect(null)
     }
-  }, [disabled, initialOption, onSelect])
+  }, [disabled])
 
   const filteredOptions = (() => {
     const baseOptions = input
