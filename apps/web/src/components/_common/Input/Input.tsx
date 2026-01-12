@@ -24,21 +24,21 @@ export const Input: React.FC<InputProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState<string>(initialValue)
   const inputRef = useRef<HTMLInputElement | null>(null)
+  const onSelectRef = useRef(onSelect)
   const debouncedSearchTerm = useDebounce(searchTerm, debounceTimer)
 
   useEffect(() => {
-    if (!!initialValue) {
-      onSelect(initialValue)
-    }
-  }, [])
+    onSelectRef.current = onSelect
+  }, [onSelect])
 
   useEffect(() => {
-    onSelect(debouncedSearchTerm)
+    onSelectRef.current(debouncedSearchTerm)
   }, [debouncedSearchTerm])
 
   useEffect(() => {
     if (!!reset) {
-      handleClear()
+      setSearchTerm("")
+      onSelectRef.current("")
       inputRef.current?.blur()
     }
   }, [reset])
@@ -49,7 +49,7 @@ export const Input: React.FC<InputProps> = ({
 
   const handleClear = () => {
     setSearchTerm("")
-    onSelect("")
+    onSelectRef.current("")
     inputRef.current?.focus()
   }
 
