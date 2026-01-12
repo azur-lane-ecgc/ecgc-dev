@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 import "./styles.css"
 
@@ -19,12 +19,9 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
   const [caption, setCaption] = useState(true)
   const [userInteract, setuserInteract] = useState(false)
 
-  const slideChange = useCallback(
-    (newIndex: number) => {
-      setSlide((slide + newIndex + data.length) % data.length)
-    },
-    [data, slide],
-  )
+  const slideChange = (newIndex: number) => {
+    setSlide((slide + newIndex + data.length) % data.length)
+  }
 
   // automatic looping
   useEffect(() => {
@@ -34,7 +31,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
       }, 6000)
       return () => window.clearInterval(interval)
     }
-  }, [play, slide, slideChange])
+  }, [play, slide])
 
   // automatically disable / enable caption at small screen size transition
   useEffect(() => {
@@ -52,7 +49,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
     return () => {
       window.removeEventListener("resize", handleResize)
     }
-  }, [caption, userInteract])
+  }, [caption])
 
   return (
     <div className="carousel">
