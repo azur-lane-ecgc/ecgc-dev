@@ -123,7 +123,7 @@ export const ToolTable: React.FC<ToolTableProps> = ({ category }) => {
                   <span className="w-full flex-1 justify-center pr-2 pl-[8.75px] text-center align-middle">
                     {col.colName}
                   </span>
-                  <div className="m-0 flex flex-col justify-center space-y-0 space-x-0 *:!leading-[0.35]">
+                  <div className="m-0 flex flex-col justify-center space-y-0 space-x-0 *:leading-[0.35]!">
                     <i
                       className={`fa fa-caret-up text-sm ${
                         sortConfig.column === col.key
@@ -152,7 +152,7 @@ export const ToolTable: React.FC<ToolTableProps> = ({ category }) => {
         <tbody>
           {sortedData.map((row, index) => (
             <tr key={index}>
-              <td className="!py-4">
+              <td className="py-4!">
                 <span className="text-lg">
                   <a
                     href={row.toolLink}

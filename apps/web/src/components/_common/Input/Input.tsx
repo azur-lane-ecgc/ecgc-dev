@@ -56,7 +56,7 @@ export const Input: React.FC<InputProps> = ({
   return (
     <div>
       {!!visibleTitle && (
-        <p className="!mb-2 font-bold text-fuchsia-400">{title}</p>
+        <p className="mb-2! font-bold text-fuchsia-400">{title}</p>
       )}
       <div className={`relative ${className}`}>
         <input

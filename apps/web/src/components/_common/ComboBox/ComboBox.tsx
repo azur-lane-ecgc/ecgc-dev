@@ -115,7 +115,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
       {/* combobox button */}
       <p
         title={disabledMessage}
-        className={`!mb-2 font-bold ${disabled ? "cursor-pointer text-red-300/90! underline!" : ""}`}
+        className={`mb-2! font-bold ${disabled ? "cursor-pointer text-red-300/90! underline!" : ""}`}
       >
         {title}
       </p>
