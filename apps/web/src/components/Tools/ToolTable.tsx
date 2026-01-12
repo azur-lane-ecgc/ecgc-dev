@@ -98,7 +98,7 @@ export const ToolTable: React.FC<ToolTableProps> = ({ category }) => {
     })
 
     return sorted
-  }, [sortConfig, filteredData])
+  }, [sortConfig, category])
 
   return (
     <div className="table-responsive">
