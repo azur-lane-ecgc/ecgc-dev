@@ -27,7 +27,7 @@ export const useModalFocus = (
     if (element) {
       element.focus()
     }
-  }, [open, modalID, triggerButtonID, shipID])
+  }, [open, modalID, triggerButtonID])
 }
 
 // hook to manage history and popstate
