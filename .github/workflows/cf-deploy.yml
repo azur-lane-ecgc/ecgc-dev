@@ -1,14 +1,14 @@
 name: Deploy to Cloudflare Workers
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "packages/frontend/**"
-      - "packages/AzurLaneData/**"
-      # - "wrangler.jsonc"
-      # - "package.json"
-      # - ".github/workflows/cf-deploy.yml"
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - "packages/frontend/**"
+  #     - "packages/AzurLaneData/**"
+  #     - "wrangler.jsonc"
+  #     - "package.json"
+  #     - ".github/workflows/cf-deploy.yml"
   workflow_dispatch:
 
 jobs:
