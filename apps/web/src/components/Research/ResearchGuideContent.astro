@@ -628,7 +628,7 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <ul>
   <li>
     <p>
-      <i>Projects <b>ARE</b> rated within a tier!</i>
+      <i>Projects <b>ARE</b> rated within a focus area!</i>
     </p>
   </li>
   <li>
@@ -658,10 +658,28 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <li>
     <p><i>Always have a research running at all times, even if it's bad!</i></p>
   </li>
+  <li>
+    <p>
+      <i
+        ><b
+          >If all of the options are terrible, pick the shortest option that
+          doesn't cost cubes, regardless of if ships in the season are maxed or
+          not.</b
+        ></i
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <i><b>Save your refresh button for times like these.</b></i>
+        </p>
+      </li>
+    </ul>
+  </li>
 </ul>
 <br />
 
-<h3 id="s_tier">S-Tier Projects</h3>
+<h3 id="ship_focus">Ship Focus</h3>
 <ItemTable
   tableInfo={[
     { colName: "Name", colWidth: "25%" },
@@ -711,25 +729,6 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <tr>
     <td class="rarity-4">
       <p class="text-black!">
-        <b>Q-0XX-UL</b>
-        <br />
-        <b>Small Project</b>
-      </p>
-    </td>
-    <td>
-      <p>30 min Rigging Analysis, Q-UL</p>
-    </td>
-    <td>
-      <p>30 Minutes</p>
-    </td>
-    <td>
-      <p>Gear Prints</p>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="rarity-4">
-      <p class="text-black!">
         <b>H-0XX-UL</b>
         <br />
         <b>Small Project</b>
@@ -745,34 +744,23 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
       <p>Ship Prints, Cognitive Chips</p>
     </td>
   </tr>
-</ItemTable>
-<br />
 
-<h3 id="a_tier">A-Tier Projects</h3>
-<ItemTable
-  tableInfo={[
-    { colName: "Name", colWidth: "20%" },
-    { colName: "Associated Names", colWidth: "30%" },
-    { colName: "Length", colWidth: "20%" },
-    { colName: "Rewards", colWidth: "30%" },
-  ]}
->
   <tr>
-    <td class="rarity-2">
+    <td class="rarity-4">
       <p class="text-black!">
-        <b>H-387-MI</b>
+        <b>Q-0XX-UL</b>
         <br />
         <b>Small Project</b>
       </p>
     </td>
     <td>
-      <p>Blue H, 1 Hour H</p>
+      <p>30 min Rigging Analysis, Q-UL</p>
     </td>
     <td>
-      <p>1 Hour</p>
+      <p>30 Minutes</p>
     </td>
     <td>
-      <p>Ship Prints, Cognitive Chips</p>
+      <p>Gear Prints</p>
     </td>
   </tr>
 
@@ -836,6 +824,112 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <tr>
     <td class="rarity-3">
       <p class="text-black!">
+        <b>G-531-MI</b>
+        <br />
+        <b>Medium Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Purple G, 4 Hour G</p>
+    </td>
+    <td>
+      <p>4 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="text-black!">
+        <b>G-412-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 1.5 Hour G, 1.5 Hour G</p>
+    </td>
+    <td>
+      <p>1.5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+</ItemTable>
+<br />
+
+<h3 id="gear_focus">Gear Focus</h3>
+<ItemTable
+  tableInfo={[
+    { colName: "Name", colWidth: "25%" },
+    { colName: "Associated Names", colWidth: "30%" },
+    { colName: "Length", colWidth: "20%" },
+    { colName: "Rewards", colWidth: "25%" },
+  ]}
+>
+  <tr>
+    <td class="rarity-4">
+      <p class="text-black!">
+        <b>Q-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>30 min Rigging Analysis, Q-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-5">
+      <p class="text-black!">
+        <b>D-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Soul Forming, D-UL, Rainbow-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-4">
+      <p class="text-black!">
+        <b>D-0XX-UL</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Soul Forming, D-UL, Gold-UL</p>
+    </td>
+    <td>
+      <p>30 Minutes</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-3">
+      <p class="text-black!">
         <b>Q-0XX-MI</b>
         <br />
         <b>Medium Project</b>
@@ -846,36 +940,6 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     </td>
     <td>
       <p>4 Hours</p>
-    </td>
-    <td>
-      <p>Gear Prints</p>
-    </td>
-  </tr>
-</ItemTable>
-<br />
-
-<h3 id="b_tier">B-Tier Projects</h3>
-<ItemTable
-  tableInfo={[
-    { colName: "Name", colWidth: "20%" },
-    { colName: "Associated Names", colWidth: "30%" },
-    { colName: "Length", colWidth: "20%" },
-    { colName: "Rewards", colWidth: "30%" },
-  ]}
->
-  <tr>
-    <td class="rarity-2">
-      <p class="text-black!">
-        <b>Q-3XX-MI</b>
-        <br />
-        <b>Small Project</b>
-      </p>
-    </td>
-    <td>
-      <p>Blue 1 Hour Q, 1 Hour Q</p>
-    </td>
-    <td>
-      <p>1 Hour</p>
     </td>
     <td>
       <p>Gear Prints</p>
@@ -895,6 +959,25 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     </td>
     <td>
       <p>2 Hour</p>
+    </td>
+    <td>
+      <p>Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="text-black!">
+        <b>Q-3XX-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 1 Hour Q, 1 Hour Q</p>
+    </td>
+    <td>
+      <p>1 Hour</p>
     </td>
     <td>
       <p>Gear Prints</p>
@@ -942,6 +1025,25 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <tr>
     <td class="rarity-2">
       <p class="text-black!">
+        <b>G-412-MI</b>
+        <br />
+        <b>Small Project</b>
+      </p>
+    </td>
+    <td>
+      <p>Blue 1.5 Hour G, 1.5 Hour G</p>
+    </td>
+    <td>
+      <p>1.5 Hours</p>
+    </td>
+    <td>
+      <p>Ship Prints, Gear Prints</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rarity-2">
+      <p class="text-black!">
         <b>E-031-MI</b>
         <br />
         <b>Small Project</b>
@@ -961,16 +1063,16 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <tr>
     <td class="rarity-2">
       <p class="text-black!">
-        <b>G-412-MI</b>
+        <b>D-7XX-MI</b>
         <br />
         <b>Small Project</b>
       </p>
     </td>
     <td>
-      <p>Blue 1.5 Hour G, 1.5 Hour G</p>
+      <p>Blue D, Blue Face, 2.5 Hour Face</p>
     </td>
     <td>
-      <p>1.5 Hours</p>
+      <p>2.5 Hours</p>
     </td>
     <td>
       <p>Ship Prints, Gear Prints</p>
@@ -996,16 +1098,6 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     </td>
   </tr>
 </ItemTable>
-<br />
-
-<h3 id="c_tier">C-Tier Projects</h3>
-<p>
-  <b>Everything else</b> falls into this category. If you are forced to pick one due
-  to all the options being terrible, pick the shortest option <i
-    >that doesn't cost cubes</i
-  >, regardless of if the ships in the season are maxed or not. Save your
-  refresh button for times like these.
-</p>
 <br />
 
 <h2 id="protocore">Protocore</h2>
