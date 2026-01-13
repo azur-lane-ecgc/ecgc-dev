@@ -831,6 +831,14 @@
         "content": "Push Campaign",
         "subheadings": [
           {
+            "id": "event_farming",
+            "content": "Limited-time Event Farming"
+          },
+          {
+            "id": "campaign_farming",
+            "content": "Campaign Farming"
+          },
+          {
             "id": "do_not_farm_3_4",
             "content": "Do Not Farm 3-4"
           },
