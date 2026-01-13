@@ -991,20 +991,12 @@
         "content": "Optimal Research Academy Projects",
         "subheadings": [
           {
-            "id": "s_tier",
-            "content": "S-Tier Projects"
+            "id": "ship_focus",
+            "content": "Ship Focus"
           },
           {
-            "id": "a_tier",
-            "content": "A-Tier Projects"
-          },
-          {
-            "id": "b_tier",
-            "content": "B-Tier Projects"
-          },
-          {
-            "id": "c_tier",
-            "content": "C-Tier Projects"
+            "id": "gear_focus",
+            "content": "Gear Focus"
           }
         ]
       },
