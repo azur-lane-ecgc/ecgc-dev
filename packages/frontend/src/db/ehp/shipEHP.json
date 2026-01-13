@@ -315,6 +315,13 @@
       "std": "31.14%"
     }
   ],
+  "Yukikaze": [
+    {
+      "name": "Yukikaze",
+      "totalEHP": "120.82%",
+      "std": "50.37%"
+    }
+  ],
   "L'Indomptable": [
     {
       "name": "L'Indomptable",
@@ -673,18 +680,18 @@
       "std": "25.44%"
     }
   ],
-  "Montpelier": [
-    {
-      "name": "Montpelier",
-      "totalEHP": "105.96%",
-      "std": "32.54%"
-    }
-  ],
   "Pamiat' Merkuria META": [
     {
       "name": "Pamiat' Merkuria META",
       "totalEHP": "105.96%",
       "std": "40.70%"
+    }
+  ],
+  "Montpelier": [
+    {
+      "name": "Montpelier",
+      "totalEHP": "105.96%",
+      "std": "32.54%"
     }
   ],
   "Prinz Adalbert": [
@@ -943,13 +950,6 @@
       "name": "Trafalgar",
       "totalEHP": "97.36%",
       "std": "37.29%"
-    }
-  ],
-  "Yukikaze": [
-    {
-      "name": "Yukikaze",
-      "totalEHP": "97.34%",
-      "std": "40.73%"
     }
   ],
   "Suzutsuki": [
@@ -2537,6 +2537,13 @@
       "std": "24.09%"
     }
   ],
+  "Fujinami": [
+    {
+      "name": "Fujinami",
+      "totalEHP": "72.44%",
+      "std": "27.87%"
+    }
+  ],
   "Penelope": [
     {
       "name": "Penelope",
@@ -3100,18 +3107,18 @@
       "std": "30.66%"
     }
   ],
-  "Z43": [
-    {
-      "name": "Z43",
-      "totalEHP": "66.49%",
-      "std": "25.84%"
-    }
-  ],
   "Hai Tien": [
     {
       "name": "Hai Tien",
       "totalEHP": "66.49%",
       "std": "23.83%"
+    }
+  ],
+  "Z43": [
+    {
+      "name": "Z43",
+      "totalEHP": "66.49%",
+      "std": "25.84%"
     }
   ],
   "Kinu": [
