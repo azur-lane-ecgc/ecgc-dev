@@ -1,10 +1,10 @@
 {
   "name": "gsheets2img",
-  "module": "main.ts",
-  "type": "module",
-  "description": "TypeScript version of gsheets2img script",
   "version": "0.0.1",
   "private": true,
+  "description": "TypeScript version of 'gsheets2img' by blead",
+  "type": "module",
+  "module": "main.ts",
   "scripts": {
     "main": "bun run postinstall && bun main.ts",
     "check": "tsc --noEmit",
