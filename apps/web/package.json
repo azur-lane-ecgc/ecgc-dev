@@ -1,9 +1,9 @@
 {
   "name": "frontend",
-  "type": "module",
-  "description": "Astro frontend",
   "version": "0.0.1",
   "private": true,
+  "description": "ECGC Frontend Website built with Astro + React",
+  "type": "module",
   "scripts": {
     "dev": "bunx astro dev",
     "build": "bunx astro check && bunx astro build",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
-    "astro": "^5.16.8",
+    "astro": "^5.16.9",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-intersection-observer-hook": "^4.0.1",
