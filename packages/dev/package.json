@@ -1,10 +1,10 @@
 {
   "name": "dev",
-  "module": "main.ts",
-  "type": "module",
-  "description": "AzurLaneData parsing scripts",
   "version": "0.0.1",
   "private": true,
+  "description": "ECGC Dev Tools for parsing and generating data",
+  "type": "module",
+  "module": "main.ts",
   "scripts": {
     "compress": "bun src/compress/compress.ts",
     "main": "bun main.ts",
