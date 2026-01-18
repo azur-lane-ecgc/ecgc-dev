@@ -4,27 +4,28 @@
   "workspaces": [
     "packages/dev",
     "apps/web",
-    "packages/gsheets2img"
+    "packages/gsheets2img",
+    "packages/compress"
   ],
   "scripts": {
     "prepare": "bunx lefthook install",
     "update": "bun update --latest && find packages apps -name package.json -not -path '*/node_modules/*' -execdir bash -c 'echo Updating $(pwd); bun update --latest && bun install' ';'",
-    "rebuild": "rm -rf node_modules && rm -rf .wrangler && rm -rf packages/AzurLaneData && rm -rf apps/web/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf apps/web/dist && rm -rf apps/web/.astro && bun run update",
+    "rebuild": "rm -rf node_modules && rm -rf .wrangler && rm -rf packages/AzurLaneData && rm -rf apps/web/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf packages/compress/node_modules && rm -rf apps/web/dist && rm -rf apps/web/.astro && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
     "submodule": "git submodule update --recursive --remote",
     "gsheets2img": "bun --filter gsheets2img main",
-    "compress": "bun --filter dev compress",
+    "compress": "bun --filter compress compress",
     "smol-format": "bunx --bun prettier --write \"packages/**/*.{astro,json}\" \"apps/**/*.{astro,json}\"",
     "format": "bunx --bun prettier --write \"packages/**/*.{astro,html,md,ts,tsx,json,css}\" \"apps/**/*.{astro,html,md,ts,tsx,json,css}\"",
     "lint": "bunx --bun oxlint --fix packages apps",
     "devtools": "bun run submodule && bun --filter dev main && bun run format",
     "build": "bun --filter frontend build",
-    "check": "bun --filter frontend check && bun --filter dev check && bun --filter gsheets2img check",
+    "check": "bun --filter frontend check && bun --filter dev check && bun --filter gsheets2img check && bun --filter compress check",
     "cf-build": "bun run build && bun run compress",
     "dev": "bun --filter frontend dev",
     "cf-dev": "bunx wrangler dev",
     "start": "NODE_ENV=PRODUCTION bun --filter frontend preview",
-    "deploy": "bun run compress-build && bunx wrangler deploy"
+    "deploy": "bun run cf-build && bunx wrangler deploy"
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.1.3",
