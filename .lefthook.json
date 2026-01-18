@@ -6,7 +6,8 @@
         "glob": [
           "packages/dev/**/*.{astro,html,md,ts,tsx,json,css}",
           "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
-          "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}"
+          "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/compress/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
         "run": "bun knip --fix"
       },
@@ -14,7 +15,8 @@
         "glob": [
           "packages/dev/**/*.{astro,html,md,ts,tsx,json,css}",
           "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
-          "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}"
+          "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/compress/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
         "run": "bunx --bun oxlint --fix {staged_files}",
         "stage_fixed": true
@@ -23,7 +25,8 @@
         "glob": [
           "packages/dev/**/*.{astro,html,md,ts,tsx,json,css}",
           "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
-          "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}"
+          "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/compress/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
         "run": "bunx --bun prettier --write {staged_files}",
         "stage_fixed": true
