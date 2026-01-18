@@ -1,16 +1,16 @@
 {
-  "name": "dev",
+  "name": "compress",
   "version": "0.0.1",
   "private": true,
-  "description": "ECGC Dev Tools for parsing and generating data",
+  "description": "Image compression utilities for build optimization",
   "type": "module",
-  "module": "main.ts",
+  "module": "index.ts",
   "scripts": {
-    "main": "bun main.ts",
+    "compress": "bun index.ts",
     "check": "tsc --noEmit"
   },
   "dependencies": {
-    "googleapis": "^170.0.0"
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@types/bun": "^1.3.6",
