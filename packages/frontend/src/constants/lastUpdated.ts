@@ -1,2 +1,2 @@
-export const ehpUpdateDate = "01/12/2026"
-export const endGameRankingsUpdateDate = "01/10/2026"
+export const ehpUpdateDate = "01/20/2026"
+export const endGameRankingsUpdateDate = "01/20/2026"

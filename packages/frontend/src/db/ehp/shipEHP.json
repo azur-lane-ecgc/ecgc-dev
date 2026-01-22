@@ -2046,6 +2046,13 @@
       "std": "21.73%"
     }
   ],
+  "Fujinami": [
+    {
+      "name": "Fujinami",
+      "totalEHP": "78.52%",
+      "std": "29.02%"
+    }
+  ],
   "Sirius": [
     {
       "name": "Sirius",
@@ -2535,13 +2542,6 @@
       "name": "Königsberg",
       "totalEHP": "72.72%",
       "std": "24.09%"
-    }
-  ],
-  "Fujinami": [
-    {
-      "name": "Fujinami",
-      "totalEHP": "72.44%",
-      "std": "27.87%"
     }
   ],
   "Penelope": [
