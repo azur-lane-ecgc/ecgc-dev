@@ -3887,6 +3887,33 @@
       "defensivebuff": 3
     }
   ],
+  "Fujinami": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Buffs IJN DDs and requires 2 other IJN ships. Can use cheap blue Single 76mm or expensive Single 113mm.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": -3,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 2,
+      "heavydmg": 3,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "Fumizuki": [
     {
       "nameNote": "",
@@ -7857,7 +7884,7 @@
   "Magdeburg": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Mob ship only. Augment improves damage by 29%, but she's still bad.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -12922,7 +12949,7 @@
       "heavydmg": 2,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 4,
       "aa": null,
       "asw": null,
       "defensivebuff": 2
