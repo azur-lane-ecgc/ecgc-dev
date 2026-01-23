@@ -752,7 +752,7 @@
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
-      "w14mob": "B",
+      "w14mob": "A",
       "w14boss": "C",
       "w15mob": "D",
       "w15boss": "D",
@@ -771,7 +771,7 @@
       "aa": null,
       "rammers": 3,
       "othermain": null,
-      "vgsurvival": null
+      "vgsurvival": 1
     }
   ],
   "Ark Royal": [
@@ -2106,6 +2106,35 @@
       "vgsurvival": null
     }
   ],
+  "Francesco Caracciolo": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Heals herself, decent damage but 80% barrage is inconsistent.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "C",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 3,
+      "heavydmg": 3,
+      "aoedmg": 3,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Franklin": [
     {
       "nameNote": "",
@@ -2229,7 +2258,7 @@
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
-      "w14mob": "C",
+      "w14mob": "B",
       "w14boss": "B",
       "w15mob": "D",
       "w15boss": "D",
@@ -4311,7 +4340,7 @@
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
-      "w14mob": "B",
+      "w14mob": "A",
       "w14boss": "B",
       "w15mob": "D",
       "w15boss": "D",
@@ -5983,9 +6012,9 @@
       "nameNote": "",
       "notes": null,
       "hardarbiter": "B",
-      "meta": "C",
-      "cm": "C",
-      "w14mob": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "A",
       "w14boss": "B",
       "w15mob": "C",
       "w15boss": "D",
@@ -6708,8 +6737,8 @@
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
-      "w14mob": "C",
-      "w14boss": "C",
+      "w14mob": "B",
+      "w14boss": "B",
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",

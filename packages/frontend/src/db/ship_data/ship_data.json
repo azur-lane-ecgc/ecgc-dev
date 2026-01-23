@@ -39843,6 +39843,174 @@
       "isCollab": false
     }
   },
+  "720": {
+    "id": 720,
+    "ship": "Francesco Caracciolo",
+    "faction": "RN",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.4,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg"],
+    "locations": {
+      "events": [
+        {
+          "name": "Light & Shadow Fashion Shoot!",
+          "href": "Light_&_Shadow_Fashion_Shoot!"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "721": {
+    "id": 721,
+    "ship": "Alberto di Giussano",
+    "faction": "RN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.5,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Light & Shadow Fashion Shoot!",
+          "href": "Light_&_Shadow_Fashion_Shoot!"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "722": {
+    "id": 722,
+    "ship": "Ugolino Vivaldi",
+    "faction": "RN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "All Out Assault activation requirement halved.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.5,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.85,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DefSupport", "Meh"],
+    "locations": {
+      "events": [
+        {
+          "name": "Light & Shadow Fashion Shoot!",
+          "href": "Light_&_Shadow_Fashion_Shoot!"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
   "723": {
     "id": 723,
     "ship": "Fujinami",
@@ -44510,7 +44678,7 @@
     "augments": ["Camael", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "DmgDealer", "Meh"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -46027,7 +46195,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Prinz Rupprecht is a flagship-oriented BC with solid stats and skills. Her barrage is solid, and has a high proc chance. She has a long range ghost gun for more free damage, as well as a great torpedo barrage off of it. She ideally prefers to be flagship due to her barrage pattern. Her heal is irrelevant when paired with a good healer like Unicorn. Overall, she is a great BB/BC option.",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer", "TopDmg", "DefSupport", "Meh"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -48079,7 +48247,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Arizona META is a damage-oriented BB with great stats, proximity barrages and great support. The zone from Skill 1 is decently big as well. Good BB overall.",
     "fastLoad": null,
-    "roles": ["FlagPref"],
+    "roles": ["FlagPref", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
