@@ -6712,7 +6712,7 @@
     "augments": ["Order of the White Rose", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -8327,10 +8327,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Shirayuki's Snowbunny", "Dual Swords", "Hammer"],
     "samEval": "Shirayuki has FP and TRP boosts from skills, but stats and efficiencies are underwhelming compared to others. Collection only.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -8811,7 +8811,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Yuudachi (Retrofit) is a damage-oriented DD with amazing stats and skills. Her personal damage is very high due to MGM+1 DD Guns, high torpedo stat and efficiency, and great self-buffs. In addition, she does more damage to burned enemies, and her barrage applies burns, allowing her kit to be maximized without supports. Her bulk is also high due to her Skill 3 self-buffs as well. Her support is nice, but buffing other ships is not needed to make her worth using. Overall, she is an amazing DD.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
@@ -13705,7 +13705,7 @@
       "events": [
         {
           "name": "Lunar New Year (every year)",
-          "href": "Happy_Lunar_New_Year_2025"
+          "href": "Happy_Lunar_New_Year_2026"
         }
       ],
       "other": [],
@@ -13761,7 +13761,7 @@
       "events": [
         {
           "name": "Lunar New Year (every year)",
-          "href": "Happy_Lunar_New_Year_2025"
+          "href": "Happy_Lunar_New_Year_2026"
         }
       ],
       "other": [],
@@ -15180,7 +15180,7 @@
     "augments": ["The Guardian's Bestowed Sword", "Dual Swords", "Hammer"],
     "samEval": "Kawakaze is a damage-oriented DD with great stats and skills. With her Augment module, she has great personal damage against all armor types due to her Skill 2 and her Augment module barrage. Her bulk is also decent as well due to the Augment module. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -16500,7 +16500,7 @@
     "augments": ["Auspicious Dragonfly", "Crossbow", "Sword"],
     "samEval": "Noshiro is a mob-tank oriented CL with solid stats and great skills. Her personal damage (Main gun + Torpedo + Barrage) is solid. Her blue skill improves her survivability, and her yellow skill provides one of the best torpedo buffs to your fleet. Overall, she is a great option, best used as a torpedo-buffer / mob-tank.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -26835,15 +26835,15 @@
     "id": 493,
     "ship": "Ying Swei",
     "faction": "DE",
-    "rarity": 3,
-    "isKai": false,
+    "rarity": 4,
+    "isKai": true,
     "hullType": "CL",
     "fleetType": "vg",
     "LBBonus": null,
     "slots": [
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1,
+        "efficiency": 1.15,
         "mounts": 2
       },
       {
@@ -26853,7 +26853,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 0.8,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
@@ -26870,7 +26870,7 @@
     "augments": ["Ambrosial Violet Whispers", "Crossbow", "Sword"],
     "samEval": "Ying Swei is a damage-oriented CL with bad stats and skills. Her lack of an AA Gun Mount, forcing her to use her Ghost AA Gun, actively hurts your fleet's AA capabilities. Collection only.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -26900,15 +26900,15 @@
     "id": 494,
     "ship": "Chao Ho",
     "faction": "DE",
-    "rarity": 3,
-    "isKai": false,
+    "rarity": 4,
+    "isKai": true,
     "hullType": "CL",
     "fleetType": "vg",
     "LBBonus": null,
     "slots": [
       {
         "type": ["CL Main Gun"],
-        "efficiency": 1,
+        "efficiency": 1.15,
         "mounts": 2
       },
       {
@@ -26918,7 +26918,7 @@
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 0.8,
+        "efficiency": 0.85,
         "mounts": 1
       },
       {
@@ -26935,7 +26935,7 @@
     "augments": ["Plum-Red Silksteps", "Crossbow", "Sword"],
     "samEval": "Chao Hao is a damage-oriented CL with bad stats and skills. Her lack of an AA Gun Mount, forcing her to use her Ghost AA Gun, actively hurts your fleet's AA capabilities. Collection only.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -32235,12 +32235,22 @@
           "href": "Revelations_of_Dust"
         }
       ],
-      "other": [],
-      "construction": [],
+      "other": [
+        {
+          "name": "Permanent Ultra Rare Pity",
+          "href": "Building#UR_Ships_Construction"
+        }
+      ],
+      "construction": [
+        {
+          "name": "Construction (Heavy, Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -32292,11 +32302,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Heavy)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -32353,11 +32368,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -32409,11 +32429,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -32464,12 +32489,17 @@
           "href": "Revelations_of_Dust"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Merit Shop",
+          "href": "Merit_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -37216,7 +37246,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -37395,7 +37425,7 @@
       "other": [],
       "construction": [
         {
-          "name": "Construction (Light)",
+          "name": "Construction (Heavy)",
           "href": "Construction"
         }
       ],
@@ -37575,7 +37605,12 @@
           "href": "Happy_Lunar_New_Year_2025"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
@@ -37903,7 +37938,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -38078,7 +38113,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "AA", "AACarry", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "AA", "AACarry", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -38986,7 +39021,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -40064,6 +40099,352 @@
     },
     "permanent": {
       "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "725": {
+    "id": 725,
+    "ship": "Chang Wu",
+    "faction": "DE",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatsword", "Lance"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg"],
+    "locations": {
+      "events": [
+        {
+          "name": "Spring Auction Adventure",
+          "href": "Spring_Auction_Adventure"
+        }
+      ],
+      "other": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "726": {
+    "id": 726,
+    "ship": "Hai Chou",
+    "faction": "DE",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.9,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Spring Auction Adventure",
+          "href": "Spring_Auction_Adventure"
+        }
+      ],
+      "other": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "727": {
+    "id": 727,
+    "ship": "Moskva",
+    "faction": "SN",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatsword", "Lance"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg"],
+    "locations": {
+      "events": [
+        {
+          "name": "Springtide Inn Online",
+          "href": "Springtide_Inn_Online"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "728": {
+    "id": 728,
+    "ship": "Ozornoy",
+    "faction": "SN",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "All Out Assault activation requirement halved.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.6,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Springtide Inn Online",
+          "href": "Springtide_Inn_Online"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "729": {
+    "id": 729,
+    "ship": "Krasny Kavkaz",
+    "faction": "SN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.5,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Springtide Inn Online",
+          "href": "Springtide_Inn_Online"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "730": {
+    "id": 730,
+    "ship": "Bogatyr",
+    "faction": "SN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Springtide Inn Online",
+          "href": "Springtide_Inn_Online"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
       "isCollab": false
     }
   },
@@ -43033,7 +43414,7 @@
     "augments": ["Sparkling Reverie", "Crossbow", "Sword"],
     "samEval": "Ryza is a damage-oriented mobbing CL with amazing clearing potential within the first 30s of a battle. Her stats are very solid, and coupled with MGM+1 give her good damage output from her Main Guns. Her skills immensely buff the damage potential of all her Auxiliary barrages, and her unique Augment Module adds more barrages to the mix. You want all the Atelier Ryza Bombs equipped on Ryza, due to the +20% crit rate buff to by barrages when equipped by her for applying \"Item Mark\" to enemies, and for the \"Fatal Drive\" unique Augment Module barrage. After all her barrages are exhausted, she is painfully average. Amazing CL for mobbing.",
     "fastLoad": null,
-    "roles": ["OffSupport", "Meh"],
+    "roles": ["DmgDealer", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -45238,7 +45619,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Seattle is a damage-oriented CL with great stats and skills. Her personal damage is great due to MGM+1 CL Guns, self-buffs, and a good AoA barrage. Her bulk (when placed in the off-tank position), is also high, despite her being Light Armor. Her AA is not at the same level as AA carries, but is still above average. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["AA", "Meh"],
+    "roles": ["DmgDealer", "AA", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -45291,10 +45672,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Georgia Beam!", "Bowgun", "Officer's Sword"],
     "samEval": "Georgia is an off-flag damage-oriented BB with good stats and good skills. Her shelling damage is nothing special since she only has MGM+1 Main Guns, instead of the usual MGM+2. Her barrage is very strong when it lands, but it is very narrow and prone to missing, not to mention it not having a 100% proc chance. Overall, she is a good ship, but can be a sidegrade to most modern event BBs.",
     "fastLoad": null,
-    "roles": ["FlagPref", "Meh"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -50083,7 +50464,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -50430,6 +50811,118 @@
           "href": "Category:Ships"
         }
       ]
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30056": {
+    "id": 30056,
+    "ship": "Carabiniere META",
+    "faction": "META",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "All Out Assault activation requirement halved.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.65,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.2,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.75,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DefSupport", "OffSupport", "Meh"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Unobtainable",
+          "href": "Category:Ships"
+        }
+      ]
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30057": {
+    "id": 30057,
+    "ship": "Gangut META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.3,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Springtide Inn Online",
+          "href": "Springtide_Inn_Online"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
     },
     "permanent": {
       "isPermanent": false,

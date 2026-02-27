@@ -1,5 +1,13 @@
 [
   {
+    "name": "Springtide Inn Online",
+    "href": "Springtide_Inn_Online"
+  },
+  {
+    "name": "Spring Auction Adventure",
+    "href": "Spring_Auction_Adventure"
+  },
+  {
     "name": "Light & Shadow Fashion Shoot!",
     "href": "Light_&_Shadow_Fashion_Shoot!"
   },
@@ -64,7 +72,7 @@
     "href": "Paradiso_of_Shackled_Light"
   },
   {
-    "name": "Lunar New Year (every year)",
+    "name": "Happy Lunar New Year 2025",
     "href": "Happy_Lunar_New_Year_2025"
   },
   {
@@ -450,6 +458,10 @@
   {
     "name": "Winter's Crown",
     "href": "Winter's_Crown_Rerun"
+  },
+  {
+    "name": "Lunar New Year (every year)",
+    "href": "Happy_Lunar_New_Year_2026"
   },
   {
     "name": "Visitors from Another Dimension",
