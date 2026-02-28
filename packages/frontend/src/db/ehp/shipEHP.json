@@ -1,18 +1,4 @@
 {
-  "22": [
-    {
-      "name": "22",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
-    }
-  ],
-  "33": [
-    {
-      "name": "33",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
-    }
-  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -124,6 +110,13 @@
       "name": "Laffey II",
       "totalEHP": "153.97%",
       "std": "54.98%"
+    }
+  ],
+  "Moskva": [
+    {
+      "name": "Moskva",
+      "totalEHP": "153.62%",
+      "std": "36.52%"
     }
   ],
   "Brest": [
@@ -590,6 +583,13 @@
       "std": "31.74%"
     }
   ],
+  "Krasny Kavkaz": [
+    {
+      "name": "Krasny Kavkaz",
+      "totalEHP": "109.37%",
+      "std": "33.71%"
+    }
+  ],
   "Bolzano META": [
     {
       "name": "Bolzano META (alone)",
@@ -801,6 +801,13 @@
       "std": "31.82%"
     }
   ],
+  "Bogatyr": [
+    {
+      "name": "Bogatyr",
+      "totalEHP": "101.22%",
+      "std": "34.49%"
+    }
+  ],
   "Little Anchorage": [
     {
       "name": "Little Anchorage",
@@ -978,6 +985,13 @@
       "name": "Choukai",
       "totalEHP": "96.88%",
       "std": "31.86%"
+    }
+  ],
+  "Chang Wu": [
+    {
+      "name": "Chang Wu",
+      "totalEHP": "96.75%",
+      "std": "29.15%"
     }
   ],
   "Rikka Takarada": [
@@ -1491,6 +1505,18 @@
       "std": "39.47%"
     }
   ],
+  "Chao Ho": [
+    {
+      "name": "Chao Ho (Retrofit)",
+      "totalEHP": "86.87%",
+      "std": "37.05%"
+    },
+    {
+      "name": "Chao Ho",
+      "totalEHP": "61.53%",
+      "std": "25.56%"
+    }
+  ],
   "Algérie": [
     {
       "name": "Algérie",
@@ -1622,6 +1648,18 @@
       "std": "23.64%"
     }
   ],
+  "Ying Swei": [
+    {
+      "name": "Ying Swei (Retrofit)",
+      "totalEHP": "84.79%",
+      "std": "34.06%"
+    },
+    {
+      "name": "Ying Swei",
+      "totalEHP": "62.93%",
+      "std": "26.95%"
+    }
+  ],
   "An Shan": [
     {
       "name": "An Shan (Retrofit)",
@@ -1646,6 +1684,13 @@
       "name": "Halford (NoPlane)",
       "totalEHP": "82.60%",
       "std": "31.57%"
+    }
+  ],
+  "Ugolino Vivaldi": [
+    {
+      "name": "Ugolino Vivaldi",
+      "totalEHP": "84.50%",
+      "std": "34.18%"
     }
   ],
   "Fletcher": [
@@ -3443,6 +3488,13 @@
       "std": "25.85%"
     }
   ],
+  "Alberto di Giussano": [
+    {
+      "name": "Alberto di Giussano",
+      "totalEHP": "63.31%",
+      "std": "21.24%"
+    }
+  ],
   "Aoba": [
     {
       "name": "Aoba",
@@ -3499,13 +3551,6 @@
       "std": "26.84%"
     }
   ],
-  "Ying Swei": [
-    {
-      "name": "Ying Swei",
-      "totalEHP": "62.93%",
-      "std": "26.95%"
-    }
-  ],
   "Lena": [
     {
       "name": "Lena",
@@ -3518,13 +3563,6 @@
       "name": "Ariake (Retrofit)",
       "totalEHP": "62.73%",
       "std": "25.36%"
-    }
-  ],
-  "Chao Ho": [
-    {
-      "name": "Chao Ho",
-      "totalEHP": "62.69%",
-      "std": "26.18%"
     }
   ],
   "Kuroshio": [
@@ -3625,6 +3663,13 @@
       "std": "18.30%"
     }
   ],
+  "3300.00%": [
+    {
+      "name": "3300.00%",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Z20": [
     {
       "name": "Z20",
@@ -3686,6 +3731,13 @@
       "name": "Shiranui (Retrofit)",
       "totalEHP": "60.30%",
       "std": "24.36%"
+    }
+  ],
+  "2200.00%": [
+    {
+      "name": "2200.00%",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
     }
   ],
   "Jersey": [

@@ -40263,7 +40263,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg", "AA"],
     "locations": {
       "events": [
         {
@@ -40375,7 +40375,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Tank", "Bad"],
     "locations": {
       "events": [
         {
@@ -50912,7 +50912,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {

@@ -2367,6 +2367,35 @@
       "vgsurvival": null
     }
   ],
+  "Gangut META": [
+    {
+      "nameNote": "",
+      "notes": "zTENTATIVE Will not kill 3 every salvo in higher chapters. So alternate slow and fast, but bad AA and low HP make her a poor choice. The damage rating of 2 assumes ST bossing without mobs.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "A",
+      "w14boss": "B",
+      "w15mob": null,
+      "w15boss": null,
+      "ex": "D",
+      "consistency": -3,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": 2,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Ganj-i-Sawai": [
     {
       "nameNote": "",
