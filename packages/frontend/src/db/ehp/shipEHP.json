@@ -1,4 +1,18 @@
 {
+  "22": [
+    {
+      "name": "22",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
+    }
+  ],
+  "33": [
+    {
+      "name": "33",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -708,6 +722,13 @@
       "std": "28.93%"
     }
   ],
+  "Bogatyr": [
+    {
+      "name": "Bogatyr",
+      "totalEHP": "105.00%",
+      "std": "36.13%"
+    }
+  ],
   "Trinidad": [
     {
       "name": "Trinidad (Mobbing)",
@@ -799,13 +820,6 @@
       "name": "Blücher",
       "totalEHP": "101.78%",
       "std": "31.82%"
-    }
-  ],
-  "Bogatyr": [
-    {
-      "name": "Bogatyr",
-      "totalEHP": "101.22%",
-      "std": "34.49%"
     }
   ],
   "Little Anchorage": [
@@ -1218,6 +1232,13 @@
       "std": "23.44%"
     }
   ],
+  "Jeanne d'Arc": [
+    {
+      "name": "Jeanne d'Arc",
+      "totalEHP": "91.91%",
+      "std": "30.18%"
+    }
+  ],
   "Pasadena": [
     {
       "name": "Pasadena",
@@ -1484,6 +1505,13 @@
       "std": "24.90%"
     }
   ],
+  "Ozornoy": [
+    {
+      "name": "Ozornoy",
+      "totalEHP": "87.36%",
+      "std": "31.47%"
+    }
+  ],
   "Dido": [
     {
       "name": "Dido",
@@ -1585,13 +1613,6 @@
       "name": "Duqesne",
       "totalEHP": "85.50%",
       "std": "29.37%"
-    }
-  ],
-  "Jeanne d'Arc": [
-    {
-      "name": "Jeanne d'Arc",
-      "totalEHP": "85.47%",
-      "std": "27.56%"
     }
   ],
   "Clevelad": [
@@ -1698,6 +1719,13 @@
       "name": "Fletcher",
       "totalEHP": "84.38%",
       "std": "33.09%"
+    }
+  ],
+  "Charles Ausburne": [
+    {
+      "name": "Charles Ausburne (Retrofit)",
+      "totalEHP": "84.28%",
+      "std": "33.08%"
     }
   ],
   "Bremerton": [
@@ -2334,13 +2362,6 @@
       "std": "31.41%"
     }
   ],
-  "Charles Ausburne": [
-    {
-      "name": "Charles Ausburne (Retrofit)",
-      "totalEHP": "75.40%",
-      "std": "29.30%"
-    }
-  ],
   "Leander": [
     {
       "name": "Leander (Retrofit)",
@@ -2606,6 +2627,13 @@
       "name": "Maestrale",
       "totalEHP": "72.41%",
       "std": "31.32%"
+    }
+  ],
+  "Carabiniere META": [
+    {
+      "name": "Carabiniere META",
+      "totalEHP": "72.23%",
+      "std": "28.18%"
     }
   ],
   "Suzuya": [
@@ -3663,13 +3691,6 @@
       "std": "18.30%"
     }
   ],
-  "3300.00%": [
-    {
-      "name": "3300.00%",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
-    }
-  ],
   "Z20": [
     {
       "name": "Z20",
@@ -3731,13 +3752,6 @@
       "name": "Shiranui (Retrofit)",
       "totalEHP": "60.30%",
       "std": "24.36%"
-    }
-  ],
-  "2200.00%": [
-    {
-      "name": "2200.00%",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
     }
   ],
   "Jersey": [
