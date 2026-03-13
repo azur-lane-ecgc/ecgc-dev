@@ -8579,10 +8579,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Undying Demon", "Dual Swords", "Hammer"],
     "samEval": "Hibiki doesn't have any relevant stat buffs from her skills to make up for her subpar base stats, and her self heal doesn't add much to her bulk. Collection only.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -13708,12 +13708,17 @@
           "href": "Happy_Lunar_New_Year_2026"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -13764,12 +13769,17 @@
           "href": "Happy_Lunar_New_Year_2026"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Guild Shop",
+          "href": "Guild_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -14229,7 +14239,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Twins of a Rigging", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["Bad"],
@@ -25005,10 +25015,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["The Steps to Becoming a Lady", "Crossbow", "Sword"],
     "samEval": "Hermione is a damage-oriented CL with meh stats and skills. Her personal damage is mediocre due to 1 MGM and decent barrages. self-buffs. She ideally is not sortied as the Main Tank due to her Skill 2 self-buffs. Overall, she is a mediocre ship. Collection only.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -26750,10 +26760,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Snowball Trio", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -45896,10 +45906,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Staff of Machinery & Logic", "Bowgun", "Officer's Sword"],
     "samEval": "Gascogne is a flagship damage-oriented BB with great stats and skills. Her personal damage is good, despite MGM+1 Main Guns, since her barrage has a 100% proc rate and her Main Guns independently aim. Her Skill 1 healing is nice, and can help her stay alive slightly more easily against stages with significant backline pressure. Overall, she is a great ship, but can be a sidegrade to some modern Event BBs.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "Meh"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -49792,13 +49802,17 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        },
+        {
+          "name": "Dossier Analysis",
+          "href": "META_Showdown#Dossier_Analysis"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -50921,6 +50935,62 @@
         }
       ],
       "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30058": {
+    "id": 30058,
+    "ship": "Regensburg META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.45,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.35,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "DefSupport", "Meh"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "META Showdown",
+          "href": "META_Showdown"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
