@@ -2,7 +2,7 @@
   "Abercrombie": [
     {
       "nameNote": "",
-      "notes": "Bad.",
+      "notes": "Bad. Even for low-oil purposes, which monitors (BMs) aren't used often for, Abercrombie is the worst BM.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -23,7 +23,7 @@
       "offensivebuff": null,
       "selfsurvival": -2,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -31,8 +31,8 @@
   "Admiral Nakhimov": [
     {
       "nameNote": "",
-      "notes": "Assumed to have her freeze condition met. She is credited with a freeze, but she only turns slow into freeze.",
-      "hardarbiter": "S",
+      "notes": "One of the highest damage ships against medium armor, she also has good damage against heavy armor enemies. When she launches an airstrike, she slows the enemies from 1.5s after her airstrike to 6.5s after. If the enemy is slowed by another Northern Parliament ship, then the period from 1.5s to 4.0s becomes a freeze. Nakhimov also gains +40% crit damage against enemies slowed by other NP ships, which is worth about 10% more damage. This makes her somewhat dependent on being run with another Nothern Parliment ship that can slow enemies (usually Soyuz or Moskva).  These tiers and damage ratings <strong>assume that there is no such slow</strong> in the fleet. See Nakhimov's pairing for an idea of how she performs with a good Northern Parliament ship who has a slow.",
+      "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
       "w14mob": "S",
@@ -41,7 +41,7 @@
       "w15boss": null,
       "ex": "A",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
@@ -49,7 +49,7 @@
       "heavydmg": 4,
       "aoedmg": 4,
       "dmguptime": null,
-      "offensivebuff": 5,
+      "offensivebuff": 3,
       "selfsurvival": 1,
       "aa": null,
       "rammers": null,
@@ -57,8 +57,8 @@
       "vgsurvival": null
     },
     {
-      "nameNote": "with Soyuz",
-      "notes": "Freeze and crit buff when timed with Soyuz. She is credited with a freeze, but she only turns slow into freeze.",
+      "nameNote": "with Moskva or Soyuz",
+      "notes": "When Admiral Nakhimov launches an airstrike, she slows the enemies from 1.5s after her airstrike to 6.5s after. If the enemy is slowed by another Northern Parliament ship, then the period from 1.5s to 4.0s becomes a freeze. Nakhimov also gains +40% crit damage against enemies slowed by other NP ships, and this is worth about 10% more damage. Thus, her tiers and damage ratings assume that Moskva's permanent or Soyuz's 6 second slow is active for the whole period from 1.5s after Nakhimov's airstrike until Nakhimov's payload hits. For the Offense Buff, she is credited with a freeze, but she only turns slow into freeze.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "S",
@@ -66,15 +66,15 @@
       "w14boss": "S",
       "w15mob": null,
       "w15boss": null,
-      "ex": "S",
+      "ex": "A",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 5,
-      "mediumdmg": 6,
-      "heavydmg": 6,
-      "aoedmg": 5,
+      "lightdmg": 4,
+      "mediumdmg": 5,
+      "heavydmg": 5,
+      "aoedmg": 4,
       "dmguptime": null,
       "offensivebuff": 5,
       "selfsurvival": 1,
@@ -108,15 +108,15 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Akagi": [
     {
       "nameNote": "",
-      "notes": "Requires pair with a Kaga.",
+      "notes": "Should use Echoes of Relinquished Time instead of Catapult for more damage. Not assumed, but can be paired with Kaga or Kaga (BB) to make Akagi as strong as Akagi μ.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -126,7 +126,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -4,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -145,7 +145,7 @@
   "Akagi μ": [
     {
       "nameNote": "",
-      "notes": "Requires muse ships or gear in the fleet.",
+      "notes": "Assume there are 3 muse ships in the fleet for 30% AVI. Ships can use Cosmic Kicks or Celestial Body to be considered as muse ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -184,7 +184,7 @@
       "w15boss": null,
       "ex": "C*",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -196,8 +196,8 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Akane Shinjo": [
@@ -224,7 +224,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -253,9 +253,9 @@
       "offensivebuff": null,
       "selfsurvival": -2,
       "aa": 2,
-      "rammers": null,
+      "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Alabama": [
@@ -282,7 +282,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -290,7 +290,7 @@
   "Albion": [
     {
       "nameNote": "",
-      "notes": "Small bonus for 3 HMS ships. Is held back in boss battles by her Skyraider needs and lack of CVL cat buffs.",
+      "notes": "Assume there are 3 Royal Navy ships for 10% AVI.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
@@ -311,15 +311,15 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": 1,
-      "rammers": null,
-      "othermain": 1,
+      "rammers": 1,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
   "Alsace": [
     {
       "nameNote": "",
-      "notes": "Very strong in shorter battles. Very strong crossfleet.",
+      "notes": "One of the best all around UR BBs in the game currently. She has good damage output against all armor types with a preload (however her damage on a per slavo basis is somewhat weaker compared to other UR BBs) and she’s one of the few BBs with salvo capacity +1 so she isn’t affected by absolute cooldowns making her quicker to reload her main guns in practice compared to other BBs. Her barrage can also incflict a 12% damage debuff on enemies it hits for 10 seconds. She also has a zombie heal when one of the ships in your fleet falls below 30% HP. Alsace doesn’t have any real weaknesses persay but she’s not the absolute best at any one thing.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -340,7 +340,7 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -369,7 +369,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -377,7 +377,7 @@
   "Amagi": [
     {
       "nameNote": "",
-      "notes": "Prefers 4 IJN ships.",
+      "notes": "Prefers 4 IJN ships, not assumed here.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -387,26 +387,26 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": -1,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "dmguptime": 1,
+      "dmguptime": null,
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": 2,
-      "vgsurvival": 1
+      "rammers": 2,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Amagi(CV)": [
     {
       "nameNote": "",
-      "notes": "Permanent minor debuffs for enemies and buffs IJN torps and TBs. Decent crossfleet.",
+      "notes": "Amagi(CV) buffs all Sakura Empire torpedoes, including those from torpedo bombers, by 15%. This focus on TBs skews her against heavy armor bosses. Although she can do damage solo, she prefers to be paired with other Sakura Empire CV(s) to buff their TBs and receive their buffs. She also applies permanent debuffs stacking up to -9% stats to enemies, and these stats improve your fleet's offense by a slight amount and survivability by more. Put Amagi not in the flagship position to squeeze 0.5% more damage out of her distance skill.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -419,7 +419,7 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 3,
+      "lightdmg": 4,
       "mediumdmg": 5,
       "heavydmg": 5,
       "aoedmg": 4,
@@ -427,13 +427,13 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": 1,
+      "othermain": 1,
+      "vgsurvival": null
     },
     {
-      "nameNote": "with some IJNs",
-      "notes": "Assumed to be with Shinano or Hakuhou, and optionally Unzen. Decent crossfleet.",
+      "nameNote": "with Shinano or Hakuhou",
+      "notes": "Assumed to be with Shinano or Hakuhou. Amagi(CV) buffs all Sakura Empire torpedoes, including those from torpedo bombers, by 15%. This focus on TBs skews her against heavy armor bosses. She also applies permanent debuffs stacking up to -9% stats to enemies, and these stats improve your fleet's offense by a slight amount and survivability by more. Put Amagi not in the flagship position to squeeze 0.5% more damage out of her distance skill.",
       "hardarbiter": "SS",
       "meta": "S*",
       "cm": "SS*",
@@ -447,16 +447,16 @@
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 4,
-      "mediumdmg": 6,
-      "heavydmg": 6,
+      "mediumdmg": 5,
+      "heavydmg": 5,
       "aoedmg": 5,
       "dmguptime": null,
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": 1,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Amagi-chan": [
@@ -483,7 +483,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -520,7 +520,7 @@
   "Andrea Doria": [
     {
       "nameNote": "",
-      "notes": "Assumed to be buffing multiple RN 🍕 ships.",
+      "notes": "Has a small buff for Sardegna Empire ships and prefers to have another Sardegna BB in the fleet. Assume that she is buffing several Sardegna ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -530,7 +530,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -4,
+      "fleetreq": -3,
       "gearreq": null,
       "flagreq": -2,
       "lightdmg": 1,
@@ -541,7 +541,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -549,7 +549,7 @@
   "Andrea Doria META": [
     {
       "nameNote": "",
-      "notes": "Needs another META ship for +10% dmg.",
+      "notes": "Assuming there is another META ship for +10% dmg.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "C",
@@ -570,15 +570,15 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 2,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": 1,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Anniversary Kizuna AI": [
     {
       "nameNote": "",
-      "notes": "Requires another Kizuna AI ship for Assault Carrier.",
+      "notes": "Not assumed, but requires another Kizuna AI ship for Assault Carrier.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -588,7 +588,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -4,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -607,7 +607,7 @@
   "Aquila": [
     {
       "nameNote": "Dive Bomber",
-      "notes": "Preload.",
+      "notes": "Aquila equips a dive bomber in her second slot to gain a preloaded airstrike and do more damage. The preload for fast farming is the only thing she's good for in this mode.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -634,7 +634,7 @@
     },
     {
       "nameNote": "Fighter",
-      "notes": "Target heal lowest HP.",
+      "notes": "Secondary healer. Aquila equips a fighter in her second slot to heal and protect the lowest HP% ship in both vanguard and main fleet.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -655,13 +655,13 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": 1,
-      "rammers": null,
+      "rammers": 3,
       "othermain": 3,
-      "vgsurvival": 3
+      "vgsurvival": null
     },
     {
       "nameNote": "with Musashi, Fighter",
-      "notes": "Target heal lowest HP. Great pair with Musashi for tanking airplanes or shelling.",
+      "notes": "Secondary healer. Aquila equips a fighter in her second slot to heal and protect the lowest HP% ship in both vanguard and main fleet. This makes her a great pair with Musashi for tanking all forms of damage to your main fleet.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -682,9 +682,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": 1,
-      "rammers": null,
+      "rammers": 3,
       "othermain": 3,
-      "vgsurvival": 3
+      "vgsurvival": null
     }
   ],
   "Argus": [
@@ -711,8 +711,8 @@
       "offensivebuff": 2,
       "selfsurvival": -1,
       "aa": null,
-      "rammers": null,
-      "othermain": 1,
+      "rammers": 1,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -740,15 +740,15 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 2
+      "rammers": null,
+      "othermain": 2,
+      "vgsurvival": null
     }
   ],
   "Arizona META": [
     {
       "nameNote": "",
-      "notes": "Has a large timeable one-time debuff for EX if you left her at level 1 for some reason.",
+      "notes": "Bugged only 50% slow but still very good for defending against ramming ships. Has a large timeable one-time debuff for EX if you left her at level 1 for some reason.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -769,9 +769,9 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 3,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": 2,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Ark Royal": [
@@ -835,7 +835,7 @@
   "Arkhangelsk": [
     {
       "nameNote": "",
-      "notes": "Prefers 3 HMS/SN ships",
+      "notes": "Assumes there are 3 Royal Navy or Northern Parliament ships for 15% FP.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -856,7 +856,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -914,7 +914,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -951,7 +951,7 @@
   "Bismarck": [
     {
       "nameNote": "",
-      "notes": "Assumed to be buffing multiple KMS ships.",
+      "notes": "Assumed to be buffing multiple KMS ships. So Bismarck is still bad unless the buffed ships are super strong.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -961,7 +961,7 @@
       "w15boss": null,
       "ex": "C*",
       "consistency": -1,
-      "fleetreq": -4,
+      "fleetreq": -3,
       "gearreq": null,
       "flagreq": -3,
       "lightdmg": 1,
@@ -972,7 +972,7 @@
       "offensivebuff": 3,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -980,7 +980,7 @@
   "Bismarck Zwei": [
     {
       "nameNote": "",
-      "notes": "Groups up and \"freezes\" bosses. Not tiered here, but can bring Certificate in mob for third star.",
+      "notes": "One of the best all around UR BBs in the game currently. She has good damage output against all armor types on top of a 3 second black hole which can pull enemies together and root them in place. The duration of the black hole is a bit on the short side though so if you want to take full advantage if it your syncing needs to very tight. Other than that, she doesn’t have any real weaknesses persay but she’s not the absolute best at any one thing. Note though it’s not accounted for her ratings she can also run the auxiliary Certificate of Sponsorship which reduces the Out of Ammo debuff for your main fleet by 15%.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "SS",
@@ -1001,7 +1001,7 @@
       "offensivebuff": 3,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1088,7 +1088,7 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1204,7 +1204,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1241,7 +1241,7 @@
   "Centaur": [
     {
       "nameNote": "",
-      "notes": "Requires 3 HMS ships. Delayed slow. Needs to launch airstrike before other main fleet ships. Aug's eff is bugged, only +1%.",
+      "notes": "Assumes there are 3 Royal Navy ships for 10% more damage. Delayed slow. Needs to launch airstrike before other main fleet ships.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
@@ -1291,7 +1291,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1349,8 +1349,8 @@
       "offensivebuff": null,
       "selfsurvival": -2,
       "aa": null,
-      "rammers": null,
-      "othermain": 1,
+      "rammers": 1,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -1386,7 +1386,7 @@
   "Chihaya Kisaragi": [
     {
       "nameNote": "",
-      "notes": "An iM@S pairing gives a bonus but there's no good candidate.",
+      "notes": "Not assumed because there's no good candidate, but an iM@S pairing gives a bonus.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -1396,7 +1396,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -1437,14 +1437,14 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Chitose": [
     {
       "nameNote": "",
-      "notes": "Requires an IJN CVL. Needs to launch airstrike before other main fleet ships.",
+      "notes": "Not assumed, but can sortie with another IJN CVL to double her barrage damage. Needs to launch airstrike before other main fleet ships to buff them.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -1454,7 +1454,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -1473,7 +1473,7 @@
   "Chiyoda": [
     {
       "nameNote": "",
-      "notes": "Requires an IJN CVL.",
+      "notes": "Not assumed, but can sortie with another IJN CVL to double her barrage damage.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -1483,7 +1483,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -4,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -1531,7 +1531,7 @@
   "Clemenceau": [
     {
       "nameNote": "",
-      "notes": "Requires various MNF ships.",
+      "notes": "Requires various MNF ships. Assumes there is a Vichya vanguard ship and an Iris Orthodoxy gear.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -1541,10 +1541,10 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": -2,
       "gearreq": -1,
       "flagreq": null,
-      "lightdmg": 2,
+      "lightdmg": 3,
       "mediumdmg": 2,
       "heavydmg": 2,
       "aoedmg": 2,
@@ -1552,7 +1552,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1560,7 +1560,7 @@
   "Colorado": [
     {
       "nameNote": "",
-      "notes": "Requires another BB.",
+      "notes": "Assumes there is another BB for 12% FP and HIT.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -1581,7 +1581,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1610,7 +1610,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1639,7 +1639,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1668,9 +1668,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
-      "othermain": 2,
-      "vgsurvival": 3
+      "rammers": 2,
+      "othermain": 3,
+      "vgsurvival": null
     }
   ],
   "DEAD MASTER": [
@@ -1726,9 +1726,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 3
+      "rammers": null,
+      "othermain": 3,
+      "vgsurvival": null
     }
   ],
   "Duke of York": [
@@ -1755,7 +1755,7 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1784,9 +1784,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Dunkerque META": [
@@ -1813,9 +1813,9 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Eagle": [
@@ -1929,7 +1929,7 @@
       "offensivebuff": null,
       "selfsurvival": -2,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1958,7 +1958,7 @@
       "offensivebuff": null,
       "selfsurvival": -2,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -1966,7 +1966,7 @@
   "Essex": [
     {
       "nameNote": "",
-      "notes": "Prefers USS carriers.",
+      "notes": "Essex is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option. Although not assumed for these ratings, she slightly prefers to be with Eagle Union carriers for 5% AVI each. She is also one of the best support fleet carriers in late campaign.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -1976,47 +1976,47 @@
       "w15boss": null,
       "ex": "B",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
       "mediumdmg": 5,
-      "heavydmg": 4,
+      "heavydmg": 5,
       "aoedmg": 4,
       "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     },
     {
       "nameNote": "combo",
-      "notes": "Combo with Kear, YorkII, and/or LexII massively buffs Essex but limits her to light bosses.",
-      "hardarbiter": "SS*",
+      "notes": "Being in a fleet with Kearsarge, Yorktown II, and/or Lexington II massively buffs Essex but limits her to light armor bosses. In such a fleet, Essex only does damage and doesn't buff the fleet. That, combined with her lower anti-light damage relative to other Eagle Union UR CVs, makes her a transitional option.",
+      "hardarbiter": "S",
       "meta": "S*",
       "cm": "S*",
       "w14mob": "D",
       "w14boss": "A",
       "w15mob": null,
       "w15boss": null,
-      "ex": "C",
+      "ex": "B",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 5,
-      "mediumdmg": 6,
-      "heavydmg": 6,
+      "lightdmg": 4,
+      "mediumdmg": 5,
+      "heavydmg": 5,
       "aoedmg": 5,
       "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Flandre": [
@@ -2043,7 +2043,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2080,7 +2080,7 @@
   "Formidable μ": [
     {
       "nameNote": "",
-      "notes": "Preload if 3 Muse.",
+      "notes": "Assumes there are 3 muse ships for a preload. Ships can equip Cosmic Kicks or Celestial Body to be considered as muse ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2130,7 +2130,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2138,7 +2138,7 @@
   "Franklin": [
     {
       "nameNote": "",
-      "notes": "About equal to 70% proc Enterprise in bossing.",
+      "notes": "About equal to 70% proc Enterprise in bossing. Assumes there is another Eagle Union main fleet ship for 10% damage.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2167,7 +2167,7 @@
   "Friedrich der Große": [
     {
       "nameNote": "",
-      "notes": "Requires taking damage or having nearby enemies to reach this damage potential.",
+      "notes": "One of the oldest Rainbows in the game, and unfortunately it shows. She’s the weakest of the UR BBs in damage across all 3 armor types except Vanguard, and she doesn’t have any equivalent to Vanguard’s massive damage buffs and debuff to compensate. And to top it all off to reach her damage potential as shown in her ratings she needs to consistently take damage and/or have enemies nearby to proc her proxy barrage. Her wide barrages however do still make her an above average choice for W14 though even there she has been powercrept pretty hard.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "B",
@@ -2188,7 +2188,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 2,
+      "rammers": 1,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2196,7 +2196,7 @@
   "Fritz Rumey": [
     {
       "nameNote": "",
-      "notes": "L/M Damage CV who can use 8 fighters. High RLD but inflexible timing. Also strongest w15 support.",
+      "notes": "Arguably the most flexible of the UR carriers, she is excellent against light and medium armor bosses thanks to her ability to equip 8 fighters (or 4 fighters and 4 Skyraiders). This also enables her to more easily get off 4 airstrikes in 80 seconds META showdowns compared to other carriers without gimping her damage too much. Her main weakness is that she’s more reliant on having good equipment (even compared to other carriers) and, to a lesser extent, tech to get the most out of her, since she only has 2 aircraft slots, each of which consists of 4 aircraft and getting HVARs, Skyraiders, and La-9s in quantity isn’t that easy. She's also the best ship for W15 and W16 support fleets. \n Also strongest w15 support.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -2275,7 +2275,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2333,7 +2333,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2362,7 +2362,7 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2399,7 +2399,7 @@
   "Ganj-i-Sawai": [
     {
       "nameNote": "",
-      "notes": "Does not have access to good guns and auxiliaries. Requires another MOT ship for better healing.",
+      "notes": "Does not have access to good guns and auxiliaries. Assumes there is another Tempesta ship for better healing.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2420,9 +2420,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": -1,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 2
+      "rammers": null,
+      "othermain": 2,
+      "vgsurvival": null
     }
   ],
   "Gascogne": [
@@ -2449,7 +2449,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2478,7 +2478,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2507,7 +2507,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2536,7 +2536,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2565,7 +2565,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2595,8 +2595,8 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Glorious META": [
@@ -2624,8 +2624,8 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Gneisenau": [
@@ -2710,7 +2710,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2718,7 +2718,7 @@
   "Graf Zeppelin": [
     {
       "nameNote": "",
-      "notes": "Prefers 3 KMS ships.",
+      "notes": "Assumes there are 3 Iron Blood ships for 15% AVI. Assumes she equipped an Iron Blood plane for 30% efficiency for all slots.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2739,9 +2739,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
+      "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Green Heart": [
@@ -2776,15 +2776,15 @@
   "Hakuhou": [
     {
       "nameNote": "",
-      "notes": "Top heavy damage, but no offensive fleet buffs.",
+      "notes": "Hakuhou has top anti-heavy damage but no offensive fleet buffs. She also does about 9% more damage for every other Sakura Empire main fleet ship who reloads at roughly the same time as her. These ratings assume that there is one other Sakura Empire main fleet ship. Vanguard ships in the fleet enjoy up to 7% damage reduction, with DD/CL main guns reaching the 7% easily. She requires a Sakura Empire TB in her first slot for bossing against all armor types.",
       "hardarbiter": "S",
-      "meta": "S*",
-      "cm": "S*",
-      "w14mob": "S",
+      "meta": "A",
+      "cm": "A",
+      "w14mob": "A",
       "w14boss": "S",
       "w15mob": null,
       "w15boss": null,
-      "ex": "A",
+      "ex": "B",
       "consistency": null,
       "fleetreq": -2,
       "gearreq": -1,
@@ -2795,15 +2795,15 @@
       "aoedmg": 4,
       "dmguptime": null,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     },
     {
-      "nameNote": "with AmagiCV",
-      "notes": "Top heavy damage, but no offensive fleet buffs.",
+      "nameNote": "with Shinano or AmagiCV",
+      "notes": "Hakuhou has top anti-heavy damage but no offensive fleet buffs. She also does about 9% more damage for every other Sakura Empire main fleet ship who reloads at roughly the same time as her. Pairing her with Shinano or Amagi(CV) forms a top anti-heavy fleet. Vanguard ships in the fleet enjoy up to 7% damage reduction, with DD/CL main guns reaching the 7% easily. She requires a Sakura Empire TB in her first slot for bossing against all armor types.",
       "hardarbiter": "SS",
       "meta": "S*",
       "cm": "SS*",
@@ -2813,37 +2813,37 @@
       "w15boss": null,
       "ex": "A",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": -1,
       "flagreq": null,
       "lightdmg": 3,
-      "mediumdmg": 5,
-      "heavydmg": 6,
-      "aoedmg": 5,
+      "mediumdmg": 4,
+      "heavydmg": 5,
+      "aoedmg": 4,
       "dmguptime": null,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Hakuryuu": [
     {
       "nameNote": "",
-      "notes": "Generic rainbow CV.",
+      "notes": "Like Essex, Hakuryuu is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option. After fate simulation, she needs a Sakura Empire gear or ally. Before fate simulation, the requirement is stricter. Assume that she has a Sakura Empire plane or another Sakura ship.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
-      "w14mob": "S",
+      "w14mob": "A",
       "w14boss": "S",
       "w15mob": null,
       "w15boss": null,
-      "ex": "A",
+      "ex": "B",
       "consistency": null,
-      "fleetreq": null,
-      "gearreq": null,
+      "fleetreq": -1,
+      "gearreq": -1,
       "flagreq": null,
       "lightdmg": 4,
       "mediumdmg": 4,
@@ -2859,23 +2859,23 @@
     },
     {
       "nameNote": "with Shinano or AmagiCV",
-      "notes": "Is being fed by Shinano or Amagi.",
+      "notes": "Since Hakuryuu is the worst Sakura Empire rainbow CV for bossing, she can be fed by Shinano or Amagi(CV) before you get the others. Like Essex, Hakuryuu is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option.",
       "hardarbiter": "S",
       "meta": "A",
-      "cm": "A",
+      "cm": "S*",
       "w14mob": "D",
       "w14boss": "S",
       "w15mob": null,
       "w15boss": null,
-      "ex": "A",
+      "ex": "B",
       "consistency": null,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 5,
-      "mediumdmg": 5,
-      "heavydmg": 6,
-      "aoedmg": 5,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 4,
+      "aoedmg": 4,
       "dmguptime": 1,
       "offensivebuff": 1,
       "selfsurvival": null,
@@ -2909,7 +2909,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -2938,9 +2938,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Hermes": [
@@ -2996,9 +2996,9 @@
       "offensivebuff": 1,
       "selfsurvival": -2,
       "aa": 2,
-      "rammers": null,
-      "othermain": 1,
-      "vgsurvival": 4
+      "rammers": 1,
+      "othermain": 4,
+      "vgsurvival": null
     }
   ],
   "Hiei": [
@@ -3025,7 +3025,7 @@
       "offensivebuff": 3,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -3054,8 +3054,8 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": 1,
+      "rammers": 2,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -3083,7 +3083,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -3091,7 +3091,7 @@
   "Hiryuu": [
     {
       "nameNote": "",
-      "notes": "Requires a Souryuu.",
+      "notes": "Not assumed to be with any Souryuu for 35% AVI.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3101,7 +3101,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -3178,7 +3178,7 @@
   "Hiyou META": [
     {
       "nameNote": "",
-      "notes": "Requires a Junyou.",
+      "notes": "Not assumed to be with any Junyou.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3188,7 +3188,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -3230,7 +3230,7 @@
       "aa": null,
       "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Hood": [
@@ -3257,7 +3257,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -3373,8 +3373,8 @@
       "offensivebuff": 1,
       "selfsurvival": -2,
       "aa": null,
-      "rammers": null,
-      "othermain": 2,
+      "rammers": 2,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -3410,7 +3410,7 @@
   "Howe": [
     {
       "nameNote": "",
-      "notes": "Desynced BB buffs.",
+      "notes": "Desynced BB buffs. Assumed to be with any King George V-class BB, Monarch, or any 3 Royal Navy ships.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -3431,7 +3431,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -3460,7 +3460,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -3468,7 +3468,7 @@
   "Hwah Jah": [
     {
       "nameNote": "",
-      "notes": "Chen Hai Pro Plus Max. Top 3 w15 support.",
+      "notes": "Chen Hai Pro Plus Max. Top 3 w15 support. Assumes there is another carrier for 10% efficiencies but not any other Dragon Empery ships.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -3478,7 +3478,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -3490,8 +3490,8 @@
       "selfsurvival": -2,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Hyuuga": [
@@ -3548,8 +3548,8 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 3
+      "othermain": 3,
+      "vgsurvival": null
     }
   ],
   "Illustrious μ": [
@@ -3605,15 +3605,15 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
-      "othermain": 1,
+      "rammers": 1,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
   "Implacable": [
     {
       "nameNote": "",
-      "notes": "Very flexible to time for freeze.",
+      "notes": "One of the first Roots in this game, and that’s pretty much the main reason you’d use her as her damage output compared to other UR CVs is significantly lower. Unfortunately, she has not aged well as ships such as Lexington ll and Nahkimov, 2 other ships with roots (albeit conditional ones) have significantly higher damage output. About the only thing Implacable has over those 2 are there are no conditions to fullfill to activate her root.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -3642,7 +3642,7 @@
   "Independence": [
     {
       "nameNote": "",
-      "notes": "Buffs carriers but desynced, so good for campaign and less for single bosses. Good crossfleet for CV(L).",
+      "notes": "Buffs carriers but desynced, so good for campaign and less for single bosses. Good crossfleet for CV(L). Not assuming there is a Cleveland class ship.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
@@ -3652,7 +3652,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": -2,
       "flagreq": null,
       "lightdmg": 3,
@@ -3663,9 +3663,9 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": 1,
-      "rammers": null,
+      "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Indiana": [
@@ -3779,7 +3779,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -3837,7 +3837,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -3961,7 +3961,7 @@
   "Junyou META": [
     {
       "nameNote": "",
-      "notes": "Requires a Hiyou and an IJN plane.",
+      "notes": "Assumes she equips a Sakura Empire plane but is not sorted with a Hiyou. Not that it would matter with how weak she is.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3971,7 +3971,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": -1,
       "flagreq": null,
       "lightdmg": 1,
@@ -3990,7 +3990,7 @@
   "Kaga": [
     {
       "nameNote": "",
-      "notes": "Requires pair with an Akagi.",
+      "notes": "Not assumed to be with an Akagi for 35% AVI.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4000,7 +4000,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -4,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -4040,7 +4040,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4069,7 +4069,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4128,14 +4128,14 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": 1,
-      "othermain": 1,
-      "vgsurvival": 2
+      "othermain": 2,
+      "vgsurvival": null
     }
   ],
   "Kearsarge": [
     {
-      "nameNote": "as BB",
-      "notes": "Usually needs USS or SN fighter to debuff early before BBs fire. In campaign, must have another BB.",
+      "nameNote": "",
+      "notes": "The only rainbow Aviation Battleship in the game currency, Kearsarge’s loadout is unique among rainbow battleships as she trades her auxiliary gun slot for 4 fighters. This means she’s very lacking in self-defense, making her unsuited for the main campaign (her lack of an aux gun means she can’t kill suicide boats, so you really don’t wanna run her as the flagship, and in campaign carriers tend to be preferred for off-flag, especially in plain heavy content). Her damage against light and medium armor bosses is good and she applies a 4% damage debuff to enemies hit by her main guns (8% if the enemy has been inflicted with an AA stat debuff) though bear in mind her reload stat is low for a UR BB. The main reason you’d run her though is with other Eagle Union Carriers, mainly Lexington and Yorktown 2 as she synergizes very well with them (she has Air Raid Assistance skill but it only activates when she’s run with another USN main fleet). Kearsarge needs an Eagle Union or Northern Parliament main gun and she also needs those factions' fighters in order to apply the shelling buff earlier than the BBs fire however.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -4143,10 +4143,10 @@
       "w14boss": "B",
       "w15mob": null,
       "w15boss": null,
-      "ex": "C",
+      "ex": "B",
       "consistency": null,
       "fleetreq": null,
-      "gearreq": -1,
+      "gearreq": -2,
       "flagreq": null,
       "lightdmg": 5,
       "mediumdmg": 5,
@@ -4161,8 +4161,8 @@
       "vgsurvival": null
     },
     {
-      "nameNote": "combo",
-      "notes": "Combo with YorkII, LexII, and/or Lion. In campaign, must have another BB.",
+      "nameNote": "with USS CV",
+      "notes": "Kearsarge greatly buffs carriers when there is another Eagle Union main fleet ship and an AA debuff on the boss. Do not bring another source of Air Raid Assistance as Kearsarge's buff already provides that. She forms an anti-light fleet with Yorktown II, Lexington II, and/or Lion. Kearsarge needs an Eagle Union or Northern Parliament main gun and also prefers those factions' fighters for various self-buffs. Fortunately, the current best bossing fighters happen to be of those factions. Do not expect Kearsarge to deal with suicide boats.",
       "hardarbiter": "SS*",
       "meta": "S*",
       "cm": "A",
@@ -4170,7 +4170,7 @@
       "w14boss": "B",
       "w15mob": null,
       "w15boss": null,
-      "ex": "B",
+      "ex": "A",
       "consistency": null,
       "fleetreq": -1,
       "gearreq": -2,
@@ -4191,7 +4191,7 @@
   "Kii": [
     {
       "nameNote": "",
-      "notes": "Requires 3 IJN ships. TRP buff.",
+      "notes": "Assumed to be sortied with 3 Sakura Empire ships for 10% self FP and 10% TRP buff. The TRP buff could be useful for EX, with Kii working at level 1.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4212,7 +4212,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4233,15 +4233,15 @@
       "fleetreq": -1,
       "gearreq": -4,
       "flagreq": -2,
-      "lightdmg": 1,
-      "mediumdmg": 1,
-      "heavydmg": 1,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
       "aoedmg": 1,
       "dmguptime": 2,
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4270,7 +4270,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4299,9 +4299,9 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
-      "othermain": 1,
-      "vgsurvival": 5
+      "rammers": 1,
+      "othermain": 5,
+      "vgsurvival": null
     }
   ],
   "Kongou": [
@@ -4328,7 +4328,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4336,7 +4336,7 @@
   "Kongou μ": [
     {
       "nameNote": "",
-      "notes": "Prefers another muse ship or normal ship with special gear.",
+      "notes": "Assumes there is another muse ship or normal ship with special gear.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4357,7 +4357,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4480,36 +4480,9 @@
   ],
   "Lexington II": [
     {
-      "nameNote": "combo",
-      "notes": "zTENTATIVE Combo with YorkII, Kear, and/or Lion. Needs AA debuff and 3 USS, with USS main, for incr dmg and freeze.",
-      "hardarbiter": "SS",
-      "meta": "S*",
-      "cm": "S",
-      "w14mob": "D",
-      "w14boss": "S",
-      "w15mob": null,
-      "w15boss": null,
-      "ex": "A",
-      "consistency": null,
-      "fleetreq": -3,
-      "gearreq": null,
-      "flagreq": null,
-      "lightdmg": 6,
-      "mediumdmg": 6,
-      "heavydmg": 5,
-      "aoedmg": 5,
-      "dmguptime": null,
-      "offensivebuff": 4,
-      "selfsurvival": null,
-      "aa": null,
-      "rammers": null,
-      "othermain": null,
-      "vgsurvival": null
-    },
-    {
-      "nameNote": "solo",
-      "notes": "zTENTATIVE Buffs Lexi/Essex-class anti-light. Assumed to not have AA debuff and 3 USS. See other row for that.",
-      "hardarbiter": "S",
+      "nameNote": "",
+      "notes": "These ratings assume the condition of AA debuff and 3 Eagle Union ships is not met. Lexington II applies a 40% slow under this assumption. See her pairing for upgrading the slow to a freeze.\n\nLexington ll is one of the best ships in the game against light armor enemies with good damage against medium armor as well. She can also provide a 4-second root (provided she is sortied with one other EU main fleet and the enemy has had its AA stat debuffed when she launched her airstrike) for the fleet, removing the need to run Implacable or Nahkimov with them. Lexington ll also has a very useful utility in the main campaign. If your fleet shoots down 17 aircraft or she looses 25% of her HP, she gains 1 stack of her blue skill, and once she gains 4 stacks, she can reduce the damage your main fleet takes from enemy aircraft by 100%. This benefit is not relevant in mob battles but is in campaign boss battles. Lexington ll in addition to the AA stat debuff for her root does want to be sortied with 2 other EU ships to proc a 12% damage buff for herself, at least one of which should be a main fleet.",
+      "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
       "w14mob": "A",
@@ -4528,7 +4501,34 @@
       "dmguptime": null,
       "offensivebuff": 2,
       "selfsurvival": null,
-      "aa": null,
+      "aa": 3,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    },
+    {
+      "nameNote": "combo",
+      "notes": "These ratings assume there are 3 Eagle Union ships, including Kearsarge, Yorktown II, or both. Lion can substitute for one of them. There must also be an AA debuff in the fleet, which Yorktown II provides. Lexington II freezes the enemy under these conditions. This forms a top anti-light boss fleet that can also fight medium armor decently.",
+      "hardarbiter": "SS",
+      "meta": "S*",
+      "cm": "S",
+      "w14mob": "D",
+      "w14boss": "S",
+      "w15mob": null,
+      "w15boss": null,
+      "ex": "A",
+      "consistency": null,
+      "fleetreq": -1,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 5,
+      "mediumdmg": 5,
+      "heavydmg": 4,
+      "aoedmg": 4,
+      "dmguptime": null,
+      "offensivebuff": 5,
+      "selfsurvival": null,
+      "aa": 3,
       "rammers": null,
       "othermain": null,
       "vgsurvival": null
@@ -4537,7 +4537,7 @@
   "Lion": [
     {
       "nameNote": "",
-      "notes": "Top BB damage, 10% debuff for all enemies.",
+      "notes": "One of the most broken ships in the game currently (March 2026). She delivers the highest overall solo damage of any ship in the game. Furthermore, she applies a permanent 10% damage debuff to any enemy afflicted by her burn (which lasts for the duration of the target's life). And to add the cherry on top she is one of the few BBs with salvo capacity +1 so she isn’t affected by absolute cooldowns making her quicker to reload her main guns in practice compared to other BBs. While she may not be the \"absolute best\" choice for every specific niche or composition, her raw output is so immense that she consistently features in the top three to five meta comps for all relevant content. No other Ultra Rare (UR) dominates the game quite like she does; she is an absolute top-priority investment.",
       "hardarbiter": "SS",
       "meta": "SS",
       "cm": "SS",
@@ -4558,7 +4558,7 @@
       "offensivebuff": 2,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4645,7 +4645,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4682,7 +4682,7 @@
   "Little Renown": [
     {
       "nameNote": "",
-      "notes": "Requires multiple HMS ships.",
+      "notes": "Assume there are multiple HMS ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4703,7 +4703,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4732,7 +4732,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4761,7 +4761,7 @@
       "offensivebuff": 1,
       "selfsurvival": -2,
       "aa": null,
-      "rammers": null,
+      "rammers": 1,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4819,7 +4819,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4848,7 +4848,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4877,7 +4877,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4906,7 +4906,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4935,7 +4935,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4964,7 +4964,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -4972,7 +4972,7 @@
   "Mecklenburg": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE. Top BB damage against heavy. Assumed to be not with Bismarck Zwei.",
+      "notes": "One of the best all around UR BBs in the game currently. She has good damage against light armor and outstanding damage against medium and heavy armor. She’s one of the few BBs with salvo capacity +1 so she isn’t affected by absolute cooldowns making her quicker to reload her main guns in practice compared to other BBs. Her skills do give her a preference to be sortied with Bismarck Zwei for a 15% reload buff for herself and to apply 5% damage debuff for the fleet but this is very much a case of nice to have than an outright necessity for her to perform well.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "S",
@@ -4982,24 +4982,24 @@
       "w15boss": null,
       "ex": "S",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 5,
-      "mediumdmg": 5,
+      "mediumdmg": 6,
       "heavydmg": 6,
       "aoedmg": 5,
       "dmguptime": 1,
       "offensivebuff": 1,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 1,
-      "othermain": 1,
+      "rammers": 2,
+      "othermain": null,
       "vgsurvival": null
     },
     {
       "nameNote": "with Bismarck Zwei",
-      "notes": "zTENTATIVE. Top BB damage against heavy.",
+      "notes": "Top BB damage, especially against heavy. She has a 5% buff for the fleet for 8s when she fires, so she prefers firing first, but 5% may not beat good sync if she can't easily fire first. When synced with Bismarck Zwei, Mecklenburg gives the fleet another up to 5% more damage.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "SS",
@@ -5007,9 +5007,9 @@
       "w14boss": "S",
       "w15mob": null,
       "w15boss": null,
-      "ex": "C",
+      "ex": "A",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 5,
@@ -5020,15 +5020,15 @@
       "offensivebuff": 1,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 1,
-      "othermain": 1,
+      "rammers": 2,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
   "Mikasa": [
     {
       "nameNote": "",
-      "notes": "Assumed to not be buffing Musashi. Better for IJN BBs. Also the lowest power BB for filling requirements.",
+      "notes": "Mikasa is bad at everything besides buffing BBs through a 60% chance and buffing Sakura Empire ships. These ratings assume she is being used to buff non-Sakura BBs. For EX, she should be used purely as a buff bot at level 1. She is also the lowest power BB for filling requirements, beating common rarity BBs.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5049,13 +5049,13 @@
       "offensivebuff": 2,
       "selfsurvival": -1,
       "aa": -1,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     },
     {
       "nameNote": "with Musashi",
-      "notes": "Assumed to be buffing Musashi. Worse for non-IJN BBs. Also the lowest power BB for filling requirements.",
+      "notes": "Mikasa is bad at everything besides buffing BBs through a 60% chance and buffing Sakura Empire ships. These ratings assume she is being used to buff Musashi. For EX, she should be used purely as a buff bot at level 1. She is also the lowest power BB for filling requirements, beating common rarity BBs.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -5076,7 +5076,7 @@
       "offensivebuff": 4,
       "selfsurvival": -1,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5105,7 +5105,7 @@
       "offensivebuff": 2,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5134,7 +5134,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5200,7 +5200,7 @@
   "Musashi": [
     {
       "nameNote": "",
-      "notes": "Requires IJN main gun. Optionally pair with Aquila for best defense. Strong crossfleet.",
+      "notes": "One of the best battleship in late Main Campaign Stages thanks to her ability to tank damage for the main fleet, if she’s equipped appropriately and sortied with the right ships she can drastically improve the effective HP of your main fleet ships. However, it can also easily get her killed more quickly if appropriate measures are not taken (i.e. giving her defensive gear like a Rudder or Fire Extinguisher and pair her with targeted healers like Cowpens or Aquila, or flagship defenders like Z52 or William D. Porter). Outside of the main campaign though and against single target bosses, her performance (relative to newer UR BBs) is somewhat lacking due in no small part to her low reload stat (for a UR BB) and her requirement for an IJN main gun. The upside to that though is one her best guns for the Main Campaign is a purple gun you can get from tech boxes.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -5220,9 +5220,9 @@
       "dmguptime": null,
       "offensivebuff": 1,
       "selfsurvival": 1,
-      "aa": 1,
-      "rammers": 2,
-      "othermain": 2,
+      "aa": 2,
+      "rammers": 3,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -5250,7 +5250,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5258,7 +5258,7 @@
   "Nagato": [
     {
       "nameNote": "",
-      "notes": "Assumed to be buffing non-rainbow IJN CVs.",
+      "notes": "Nagato has a decent offensive buff for Sakura Empire ships and a huge offensive buff for Sakura Empire carriers. These ratings assume she's not with any Sakura main fleet ships, and her buff for Sakura vanguard ships is usually not significant.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5268,7 +5268,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -3,
-      "fleetreq": -3,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": -5,
       "lightdmg": 2,
@@ -5276,24 +5276,24 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "dmguptime": null,
-      "offensivebuff": 3,
+      "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     },
     {
-      "nameNote": "with 🌈IJN CVs",
-      "notes": "Assumed to be buffing two rainbow IJN CVs. Shinano, Haku, or Amagi (CV).",
-      "hardarbiter": "B",
-      "meta": "B",
-      "cm": "C",
+      "nameNote": "with UR IJN CVs",
+      "notes": "Nagato has a decent offensive buff for Sakura Empire ships and a huge offensive buff for Sakura Empire carriers. These ratings assume she's buffing two rainbow IJN CVs, which include Shinano, Hakuhou, Amagi(CV), and Hakuryuu. The 20% reload buff enables these CVs to complete 4 airstrikes in META Showdown (80 seconds) without heavily griefing their airplane choices. As a BB, Nagato also enables bringing Trafalgar, or other buffers who require a BB flagship, in the Sakura CV fleet. Note that without a freeze, such a fleet is only good if timed to the boss's natural stop times.",
+      "hardarbiter": "S*",
+      "meta": "A*",
+      "cm": "A*",
       "w14mob": "D",
-      "w14boss": "D",
+      "w14boss": "B",
       "w15mob": null,
       "w15boss": null,
-      "ex": "B*",
+      "ex": "A*",
       "consistency": -3,
       "fleetreq": -1,
       "gearreq": null,
@@ -5303,10 +5303,10 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "dmguptime": null,
-      "offensivebuff": 3,
+      "offensivebuff": 4,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5314,7 +5314,7 @@
   "Nagato META": [
     {
       "nameNote": "",
-      "notes": "Prefers zero IJN ships in fleet.",
+      "notes": "Assume there are zero IJN ships in fleet.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "C",
@@ -5335,7 +5335,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5364,7 +5364,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5393,7 +5393,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5422,7 +5422,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5451,7 +5451,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5459,7 +5459,7 @@
   "New Jersey": [
     {
       "nameNote": "",
-      "notes": "Likes but does not require another USS ship.",
+      "notes": "Assumed to be with another USS ship for 10% FP.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -5469,7 +5469,7 @@
       "w15boss": null,
       "ex": "B",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": -2,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 5,
@@ -5480,7 +5480,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": 1,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5488,7 +5488,7 @@
   "Nina Friede": [
     {
       "nameNote": "",
-      "notes": "Slight bonus for having another Atelier Yumia ship.",
+      "notes": "Not assumed, but slight bonus for having another Atelier Yumia ship.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -5498,7 +5498,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": -1,
       "lightdmg": 4,
@@ -5509,7 +5509,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5538,9 +5538,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": 1,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 3
+      "rammers": null,
+      "othermain": 3,
+      "vgsurvival": null
     }
   ],
   "Nyotengu": [
@@ -5596,7 +5596,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5625,7 +5625,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5683,9 +5683,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Owari": [
@@ -5713,7 +5713,7 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": 1,
-      "othermain": 1,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -5742,8 +5742,8 @@
       "selfsurvival": 1,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 4
+      "othermain": 4,
+      "vgsurvival": null
     }
   ],
   "Patricia Abelheim": [
@@ -5770,7 +5770,7 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5799,9 +5799,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": -1,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Pennsylvania": [
@@ -5828,7 +5828,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5857,15 +5857,15 @@
       "offensivebuff": null,
       "selfsurvival": -1,
       "aa": null,
-      "rammers": null,
-      "othermain": 2,
-      "vgsurvival": 5
+      "rammers": 2,
+      "othermain": 5,
+      "vgsurvival": null
     }
   ],
   "Peter Strasser": [
     {
       "nameNote": "",
-      "notes": "Strongly prefers 4 KMS ships. A 3s freeze means her own TBs still miss.",
+      "notes": "Assumed to be with 4 Iron Blood ships for reduced Iron Blood carrier reload times. A 3s freeze means her own TBs still miss.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -5915,7 +5915,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -5923,7 +5923,7 @@
   "Prince of Wales": [
     {
       "nameNote": "",
-      "notes": "Needs 3 USS/HMS ships, and buffs USS/HMS carriers.",
+      "notes": "Needs 3 other USS/HMS ships, and buffs USS/HMS carriers.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -5936,15 +5936,15 @@
       "fleetreq": -3,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 2,
-      "mediumdmg": 2,
+      "lightdmg": 3,
+      "mediumdmg": 3,
       "heavydmg": 2,
       "aoedmg": 2,
       "dmguptime": null,
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": 1,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6031,15 +6031,15 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": null,
+      "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Queen Anne's Revenge": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Does not have access to good guns and auxiliaries. Prefers another MOT ship. Buffs MOT.",
+      "notes": "Does not have access to good guns and auxiliaries. Assumed to be with another Tempesta ship. Buffs Tempesta ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6060,7 +6060,7 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": -1,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6068,7 +6068,7 @@
   "Queen Elizabeth": [
     {
       "nameNote": "",
-      "notes": "Assumed to be buffing multiple HMS ships.",
+      "notes": "Assumed to be buffing multiple HMS ships. So she is bad either way.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6089,15 +6089,15 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Queen Elizabeth META": [
     {
       "nameNote": "",
-      "notes": "Prefers up to 2 other META ships.",
+      "notes": "Assumes there are 2 other META ships.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -6118,7 +6118,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6126,7 +6126,7 @@
   "Raffaello": [
     {
       "nameNote": "",
-      "notes": "Subpar UR BB for bossing, but extremely great for mob. Heal is inconsistent but strong on average. Poor AA.",
+      "notes": "One of the best battleship in late Main Campaign Stages thanks to her ability to shield and heal your vanguards effectively making her a pseudo healer on top of good damage output. Her performance against bosses however is wanting thanks to her relatively low damage output (relative to other UR BBs).",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -6147,9 +6147,9 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 3
+      "rammers": null,
+      "othermain": 3,
+      "vgsurvival": null
     }
   ],
   "Ranger": [
@@ -6184,7 +6184,7 @@
   "Renown": [
     {
       "nameNote": "",
-      "notes": "Prefers another HMS ship.",
+      "notes": "Assumes there is another HMS ship for +30% barrage chance.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6205,7 +6205,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6234,7 +6234,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6263,7 +6263,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6292,7 +6292,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6321,7 +6321,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6329,8 +6329,8 @@
   "Richelieu": [
     {
       "nameNote": "",
-      "notes": "She is usable without other FFNF/MNF ships but loses the Offense Buff bonus.",
-      "hardarbiter": "D",
+      "notes": "Richelieu is the Iris Orthodoxy (Iris Libre + Vichya) faction buffer. These ratings assume that she is buffing 1 or 2 other Iris Orthodoxy ships. She is usable without other Iris ships but loses the Offense Buff bonus.",
+      "hardarbiter": "C",
       "meta": "D",
       "cm": "D",
       "w14mob": "C",
@@ -6347,16 +6347,16 @@
       "heavydmg": 1,
       "aoedmg": 2,
       "dmguptime": 1,
-      "offensivebuff": 2,
+      "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
+      "rammers": null,
+      "othermain": 1,
       "vgsurvival": null
     },
     {
       "nameNote": "with Alsace",
-      "notes": "Assumed to be buffing Alsace.",
+      "notes": "Richelieu is the Iris Orthodoxy (Iris Libre + Vichya) faction buffer. These ratings assume that she is buffing Alsace. Richelieu can be max level or level 1 in EX.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "C",
@@ -6366,7 +6366,7 @@
       "w15boss": null,
       "ex": "S*",
       "consistency": -2,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": -5,
       "lightdmg": 2,
@@ -6377,8 +6377,8 @@
       "offensivebuff": 3,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
+      "rammers": null,
+      "othermain": 1,
       "vgsurvival": null
     }
   ],
@@ -6406,7 +6406,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6435,7 +6435,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 2,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6464,7 +6464,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -6494,7 +6494,7 @@
       "selfsurvival": 2,
       "aa": null,
       "rammers": 1,
-      "othermain": 1,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -6522,9 +6522,9 @@
       "offensivebuff": null,
       "selfsurvival": -1,
       "aa": null,
-      "rammers": null,
-      "othermain": 1,
-      "vgsurvival": 4
+      "rammers": 1,
+      "othermain": 4,
+      "vgsurvival": null
     }
   ],
   "Ryuujou": [
@@ -6580,8 +6580,8 @@
       "offensivebuff": null,
       "selfsurvival": -1,
       "aa": null,
-      "rammers": null,
-      "othermain": 1,
+      "rammers": 1,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -6646,7 +6646,7 @@
   "Scharnhorst META": [
     {
       "nameNote": "",
-      "notes": "Requries another META or KMS ship.",
+      "notes": "Assumes there is another META or Iron Blood ship for +12% FP.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6727,13 +6727,13 @@
       "aa": null,
       "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Seydlitz": [
     {
       "nameNote": "",
-      "notes": "Requires another KMS ship.",
+      "notes": "Assumes there is another Iron Blood ship for +18% FP and RLD.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6791,9 +6791,9 @@
   "Shinano": [
     {
       "nameNote": "",
-      "notes": "Requires 3 IJN ships.",
+      "notes": "Shinano has minor buffs for everyone. She prefers 3 Sakura Empire ships, including herself, to give +15% AVI and HIT to all Sakura carriers, including herself. With strong torpedo bombers and weak fighters, she leans to anti-heavy bossing. These ratings assume that she has 2 Sakura friends who aren't carriers.",
       "hardarbiter": "A",
-      "meta": "A",
+      "meta": "A*",
       "cm": "A",
       "w14mob": "S",
       "w14boss": "S",
@@ -6813,15 +6813,15 @@
       "selfsurvival": 1,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     },
     {
-      "nameNote": "with Hakuhou and/or AmagiCV",
-      "notes": "Requires 3 IJN ships.",
-      "hardarbiter": "S",
-      "meta": "A",
-      "cm": "S",
+      "nameNote": "with Hakuhou/AmagiCV",
+      "notes": "Shinano has minor buffs for everyone. She requires 3 Sakura Empire ships, including herself, to give +15% AVI and HIT to all Sakura carriers, including herself. Assumed to be with Amagi(CV) or Hakuhou. Shinano greatly buffs them while having respectable damage herself. With strong torpedo bombers and weak fighters, the whole fleet is good against heavy armor bosses.",
+      "hardarbiter": "SS",
+      "meta": "S*",
+      "cm": "SS*",
       "w14mob": "D",
       "w14boss": "S",
       "w15mob": null,
@@ -6833,15 +6833,15 @@
       "flagreq": null,
       "lightdmg": 3,
       "mediumdmg": 4,
-      "heavydmg": 5,
+      "heavydmg": 4,
       "aoedmg": 4,
       "dmguptime": null,
       "offensivebuff": 3,
       "selfsurvival": 1,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Shinano-chan": [
@@ -6898,41 +6898,14 @@
       "selfsurvival": -2,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 4
+      "othermain": 4,
+      "vgsurvival": null
     }
   ],
   "Shoukaku": [
     {
-      "nameNote": "with Zuikaku",
-      "notes": "Dmg +8% for Zuikaku and self. Needs to launch airstrike before other main fleet ships.",
-      "hardarbiter": "B",
-      "meta": "B",
-      "cm": "A",
-      "w14mob": "D",
-      "w14boss": "B",
-      "w15mob": null,
-      "w15boss": null,
-      "ex": "D",
-      "consistency": null,
-      "fleetreq": -3,
-      "gearreq": null,
-      "flagreq": null,
-      "lightdmg": 2,
-      "mediumdmg": 3,
-      "heavydmg": 3,
-      "aoedmg": 3,
-      "dmguptime": null,
-      "offensivebuff": 2,
-      "selfsurvival": null,
-      "aa": null,
-      "rammers": null,
-      "othermain": 1,
-      "vgsurvival": 1
-    },
-    {
-      "nameNote": "without Zuikaku",
-      "notes": "Needs to launch airstrike before other main fleet ships.",
+      "nameNote": "",
+      "notes": "Needs to launch airstrike before other main fleet ships. It's not assumed here, but Shoukaku does 8% more damage if with Zuikaku.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -6946,22 +6919,22 @@
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
-      "mediumdmg": 2,
-      "heavydmg": 2,
-      "aoedmg": 2,
+      "mediumdmg": 3,
+      "heavydmg": 3,
+      "aoedmg": 3,
       "dmguptime": null,
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
+      "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Souryuu": [
     {
       "nameNote": "",
-      "notes": "Requires a Hiryuu.",
+      "notes": "Not assumed to be with a Hiryuu for +35% AVI.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6971,7 +6944,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -6990,7 +6963,7 @@
   "Souryuu META": [
     {
       "nameNote": "",
-      "notes": "IJN plane is easy to include.",
+      "notes": "Assumed to equip a Sakura Empire plane OR be sortied with any Hiryuu.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -7000,7 +6973,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": null,
+      "fleetreq": -1,
       "gearreq": -1,
       "flagreq": -1,
       "lightdmg": 3,
@@ -7041,7 +7014,7 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": 1,
-      "othermain": 2,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -7069,15 +7042,15 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Sovetskaya Rossiya": [
     {
       "nameNote": "",
-      "notes": "Prefers multiple SN or ROC ships. Augment gives ~25% more damage.",
+      "notes": "Assumes there is another Northern Parliament ship. Prefers more Northern Parliament or Dragon Empery ships. Augment gives ~25% more damage.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -7098,7 +7071,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7106,11 +7079,11 @@
   "Sovetsky Soyuz": [
     {
       "nameNote": "with BBs",
-      "notes": "Minor boss debuff when with BBs. Decent slow. Very strong crossfleet.",
+      "notes": "When with BBs (fewer than 2 carriers), Soyuz has a decent slow and a minor fleet buff. She also has a very strong crossfleet.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
-      "w14mob": "S",
+      "w14mob": "A",
       "w14boss": "S",
       "w15mob": null,
       "w15boss": null,
@@ -7127,13 +7100,13 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     },
     {
       "nameNote": "with CVs",
-      "notes": "Sizeable buff for CVs, huge buff for Nakhimov. Very strong crossfleet. Not assumed to be buffing Nakhimov.",
+      "notes": "When with two carriers, Soyuz offers a sizeable buff for the carriers at the cost of some personal damage. She also has a very strong crossfleet. Not assumed to be buffing Nakhimov.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -7148,19 +7121,19 @@
       "flagreq": null,
       "lightdmg": 4,
       "mediumdmg": 5,
-      "heavydmg": 4,
+      "heavydmg": 3,
       "aoedmg": 4,
       "dmguptime": null,
       "offensivebuff": 3,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     },
     {
       "nameNote": "with Nakhimov",
-      "notes": "Sizeable buff for CVs, huge buff for Nakhimov. Very strong crossfleet.",
+      "notes": "Soyuz has a huge buff for Nakhimov and enables Nakhimov's freeze if synced properly. The third main fleet ship can be a carrier or not a carrier, whatever ship is best for the job. Just use a calculator to ensure Soyuz is synced with Nakhimov considering the existence or lack of 10% reload stat. Soyuz also has a very strong crossfleet.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "S",
@@ -7175,13 +7148,13 @@
       "flagreq": null,
       "lightdmg": 4,
       "mediumdmg": 5,
-      "heavydmg": 4,
+      "heavydmg": 3,
       "aoedmg": 4,
       "dmguptime": null,
       "offensivebuff": 4,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7189,7 +7162,7 @@
   "Strasbourg": [
     {
       "nameNote": "",
-      "notes": "Requires 2 other MNF ships. Offense Buff reaches 1 only if there are 4 to 6 MNF ships.",
+      "notes": "Assumes there are 2 other Vichya Dominion ships. Offense Buff reaches 1 only if there are 4 to 6 MNF ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -7210,7 +7183,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7239,7 +7212,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7268,8 +7241,8 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": 1,
+      "rammers": null,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -7392,7 +7365,7 @@
   "Taihou μ": [
     {
       "nameNote": "",
-      "notes": "Requires muse ships or gear in the fleet.",
+      "notes": "Assumed to have up to 3 other muse ships in the fleet. Ships can equip certain muse gear to be counted as muse ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -7471,9 +7444,9 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Tennessee": [
@@ -7500,7 +7473,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7529,7 +7502,7 @@
       "offensivebuff": null,
       "selfsurvival": -2,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7559,8 +7532,8 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Theseus": [
@@ -7605,7 +7578,7 @@
       "w15boss": null,
       "ex": "C*",
       "consistency": -2,
-      "fleetreq": -3,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -7616,7 +7589,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7645,15 +7618,15 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "rammers": null,
-      "othermain": 1,
+      "rammers": 1,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
   "Tirpitz": [
     {
       "nameNote": "",
-      "notes": "Requires no other non-KMS BB/BC.",
+      "notes": "Assumes there is no other BB/BC, though Iron Blood BB/BCs are ok.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -7674,7 +7647,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7732,7 +7705,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7761,8 +7734,8 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 2,
-      "othermain": null,
+      "rammers": null,
+      "othermain": 1,
       "vgsurvival": null
     }
   ],
@@ -7790,9 +7763,9 @@
       "offensivebuff": null,
       "selfsurvival": -1,
       "aa": null,
-      "rammers": null,
-      "othermain": 1,
-      "vgsurvival": 5
+      "rammers": 1,
+      "othermain": 5,
+      "vgsurvival": null
     }
   ],
   "Valiant": [
@@ -7819,7 +7792,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7848,7 +7821,7 @@
       "offensivebuff": 3,
       "selfsurvival": null,
       "aa": 1,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7906,9 +7879,9 @@
       "offensivebuff": null,
       "selfsurvival": -2,
       "aa": 2,
-      "rammers": null,
+      "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Vestal META": [
@@ -7935,9 +7908,9 @@
       "offensivebuff": null,
       "selfsurvival": -2,
       "aa": 2,
-      "rammers": null,
+      "rammers": 1,
       "othermain": 1,
-      "vgsurvival": 1
+      "vgsurvival": null
     }
   ],
   "Victorious": [
@@ -7972,7 +7945,7 @@
   "Vittorio Veneto": [
     {
       "nameNote": "",
-      "notes": "Assumed to be with multiple RN 🍕 ships.",
+      "notes": "Assumed to be buffing multiple Sardegna Empire ships.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -7993,9 +7966,9 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
-      "othermain": null,
-      "vgsurvival": 1
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Volga": [
@@ -8022,9 +7995,9 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
-      "othermain": 2,
-      "vgsurvival": 3
+      "rammers": 2,
+      "othermain": 3,
+      "vgsurvival": null
     }
   ],
   "Warspite": [
@@ -8051,7 +8024,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -8080,7 +8053,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -8088,7 +8061,7 @@
   "Wasp": [
     {
       "nameNote": "",
-      "notes": "Lowest power CV for filling requirements.",
+      "notes": "Lowest power CV for filling requirements. Assumed to not be with a Royal Navy ship, though it doesn't matter either way.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -8098,7 +8071,7 @@
       "w15boss": null,
       "ex": "C*",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -8167,7 +8140,7 @@
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -8225,7 +8198,7 @@
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
-      "rammers": 1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -8262,7 +8235,7 @@
   "Yorktown II": [
     {
       "nameNote": "",
-      "notes": "Requires a USS plane and 3 USS ships. Assume she is not with Kearsarge or Yorktown/Essex-class.",
+      "notes": "These ratings assume that she has an Eagle Union airplane equipped and is sortied with 2 other Eagle ships but she is not with Kearsarge or Yorktown/Essex-class.\nYorktown II is one of the best ships in the game against light armor enemies with excellent damage against medium armor as well. She has a unique ability which allows her to decrease the airstrike cooldowns of Yorktown and Essex class carries in the same fleet as her by 10% when she launches her own airstrike which is very useful for syncing your Yorktown and Essex class ships (and why she prefers to launch first as if she launches after your other Yorktown and Essex class ships her skill causes them to desync) and for getting off 4th airstrikes in META showdowns. Bear in mind however she that she wants to be sortied with 2 other EU ships to proc a 15% AVI and Accuracy buff for herself.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -8289,7 +8262,7 @@
     },
     {
       "nameNote": "combo",
-      "notes": "Kear, LexII, and/or Essex. Requires a USS plane and 3 USS ships. Easy carrier syncs as long as other CV is slower than her.",
+      "notes": "Requires an Eagle Union airplane and 3 Eagle ships. Strong fighters, weak TBs, and a Skyraider barrage make her good against light bosses and poor against heavy bosses. These ratings assume that all conditions are met and she is with Kearsarge, Lexington II, and/or Essex. It's extremely easy to sync Yorktown-class or Essex-class CVs to launch just after Yorktown II because there's a window of 8% or 10% of the reload time.",
       "hardarbiter": "SS*",
       "meta": "S*",
       "cm": "S*",
@@ -8300,11 +8273,11 @@
       "ex": "B",
       "consistency": null,
       "fleetreq": -2,
-      "gearreq": -2,
+      "gearreq": -1,
       "flagreq": null,
-      "lightdmg": 6,
-      "mediumdmg": 6,
-      "heavydmg": 4,
+      "lightdmg": 4,
+      "mediumdmg": 5,
+      "heavydmg": 3,
       "aoedmg": 4,
       "dmguptime": null,
       "offensivebuff": 3,
@@ -8369,8 +8342,8 @@
       "selfsurvival": -1,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 2
+      "othermain": 2,
+      "vgsurvival": null
     }
   ],
   "Yui Kotegawa": [
@@ -8398,8 +8371,8 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 1
+      "othermain": 1,
+      "vgsurvival": null
     }
   ],
   "Yumi": [
@@ -8444,7 +8417,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": -1,
       "flagreq": null,
       "lightdmg": 2,
@@ -8461,7 +8434,7 @@
     },
     {
       "nameNote": "healer",
-      "notes": "Panacea Sphere only. 2.5% vanguard heal every 8s. Need fleet with good AA for Chapter 15.",
+      "notes": "Yumia can bring Panacea Sphere as the only item effect to get 2.5% vanguard heal every 8s. Because there is no main fleet healing, you will need a fleet with good AA or anti-shelling.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "B",
@@ -8471,7 +8444,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": -1,
       "flagreq": null,
       "lightdmg": 2,
@@ -8483,14 +8456,14 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": null,
-      "vgsurvival": 3
+      "othermain": 3,
+      "vgsurvival": null
     }
   ],
   "Zeppy": [
     {
       "nameNote": "",
-      "notes": "Strongly prefers many KMS ships.",
+      "notes": "Assumes there are many KMS ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -8540,42 +8513,15 @@
       "offensivebuff": 1,
       "selfsurvival": -2,
       "aa": null,
-      "rammers": null,
-      "othermain": 2,
-      "vgsurvival": 4
+      "rammers": 2,
+      "othermain": 4,
+      "vgsurvival": null
     }
   ],
   "Zuikaku": [
     {
-      "nameNote": "with Shoukaku",
-      "notes": "Requires Shoukaku and prefers 3 IJN ships. Ramp up time favors longer battles.",
-      "hardarbiter": "B",
-      "meta": "B",
-      "cm": "B",
-      "w14mob": "D",
-      "w14boss": "B",
-      "w15mob": null,
-      "w15boss": null,
-      "ex": "D",
-      "consistency": null,
-      "fleetreq": -3,
-      "gearreq": null,
-      "flagreq": null,
-      "lightdmg": 2,
-      "mediumdmg": 3,
-      "heavydmg": 3,
-      "aoedmg": 3,
-      "dmguptime": null,
-      "offensivebuff": null,
-      "selfsurvival": null,
-      "aa": null,
-      "rammers": null,
-      "othermain": null,
-      "vgsurvival": null
-    },
-    {
-      "nameNote": "without Shoukaku",
-      "notes": "Misses out on 20% AVI. Prefers 3 IJN ships. Ramp up time favors longer battles.",
+      "nameNote": "",
+      "notes": "Prefers 3 Sakura Empire ships. Ramp up time favors longer battles. These ratings assume she is with 3 Sakura ships but not with Shoukaku, missing out on 20% AVI.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "C",
@@ -8585,7 +8531,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -4,
+      "fleetreq": -3,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,

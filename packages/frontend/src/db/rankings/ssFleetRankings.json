@@ -82,7 +82,7 @@
   "Archerfish": [
     {
       "nameNote": "Base",
-      "notes": "Bonus against heavy armor. Requires another USS sub.",
+      "notes": "Bonus against heavy armor and buffs Eagle Union subs. Assume there is another Eagle Union sub.",
       "hardarbiter": "A",
       "cm": "A",
       "campaign": "S",
@@ -114,12 +114,12 @@
   "Cavalla": [
     {
       "nameNote": "Base",
-      "notes": "Bonus against CV. Prefers Albacore. Do not put in bottom position.",
+      "notes": "Bonus against CV. Not assumed, but prefers being with Albacore. Do not put in bottom position.",
       "hardarbiter": "C",
       "cm": "C",
       "campaign": "B",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "flagreq": -2,
       "lightdmg": 1,
       "mediumdmg": 2,
@@ -194,12 +194,12 @@
   "Flasher": [
     {
       "nameNote": "Base",
-      "notes": "Absolutely requires flag if not with Gato-class (Albacore).",
+      "notes": "Absolutely requires flag if not with Gato-class (Albacore). Usually you'd want to put Flasher flag anyways.",
       "hardarbiter": "S",
       "cm": "S",
       "campaign": "S",
       "consistency": -2,
-      "fleetreq": -1,
+      "fleetreq": null,
       "flagreq": -3,
       "lightdmg": 2,
       "mediumdmg": 4,
@@ -322,12 +322,12 @@
   "I-404": [
     {
       "nameNote": "Base",
-      "notes": "zTENTATIVE Inconsistent movement. Can get merked by planes in campaign if unlucky timing.",
+      "notes": "Inconsistent movement. Can get merked by planes in campaign if unlucky timing. Not assumed, but she buffs Sakura Empire subs more.",
       "hardarbiter": "SS",
       "cm": "SS",
       "campaign": "S",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "flagreq": -2,
       "lightdmg": 4,
       "mediumdmg": 6,
@@ -375,7 +375,7 @@
       "cm": "C",
       "campaign": "B",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "flagreq": -2,
       "lightdmg": 1,
       "mediumdmg": 1,
@@ -455,7 +455,7 @@
       "cm": "B",
       "campaign": "C",
       "consistency": -1,
-      "fleetreq": -2,
+      "fleetreq": null,
       "flagreq": -3,
       "lightdmg": 1,
       "mediumdmg": 2,

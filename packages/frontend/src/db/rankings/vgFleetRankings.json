@@ -49,8 +49,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": 1
     }
   ],
   "Achilles": [
@@ -120,14 +120,14 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
       "asw": null,
@@ -238,8 +238,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Ajax": [
@@ -272,7 +272,7 @@
   "Akatsuki": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Is bad with or without Hibiki, Ikazuchi, or Inazuma.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -282,7 +282,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -589,8 +589,8 @@
       "offensivebuff": 2,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Arethusa": [
@@ -704,7 +704,7 @@
   "Asashio": [
     {
       "nameNote": "",
-      "notes": "Buffs the ships mentioned in the skill.",
+      "notes": "Not assumed, but buffs the ships mentioned in the skill.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -714,14 +714,14 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -4,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
@@ -785,7 +785,7 @@
   "Asuka": [
     {
       "nameNote": "",
-      "notes": "Buffs Senran Kagura ships, likes Senran Kagura ships.",
+      "notes": "Buffs Senran Kagura ships. Assumed to be with another Senran Kagura ship for +15% EVA.",
       "hardarbiter": "C",
       "meta": "D",
       "cm": "C",
@@ -1038,7 +1038,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -1048,8 +1048,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Azuma": [
@@ -1102,8 +1102,8 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Bache": [
@@ -1163,7 +1163,7 @@
   "Baltimore": [
     {
       "nameNote": "",
-      "notes": "For CV fleet with multiple USS CVs. Augment is decent and now has a small buff for Kearsarge's FP damage.",
+      "notes": "Assumed to be in CV fleet with multiple USS CVs. Augment is decent and now has a small buff for Kearsarge's FP damage.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -1173,7 +1173,7 @@
       "w15boss": null,
       "ex": "B*",
       "consistency": -1,
-      "fleetreq": -2,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
@@ -1190,7 +1190,7 @@
   "Baltimore μ": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Requires another CV, CVL, or Muse ship.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -1362,7 +1362,7 @@
       "w15boss": null,
       "ex": "B*",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -1426,7 +1426,7 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -1487,7 +1487,7 @@
   "Black Prince": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Assumed to be with an Eagle Union ship, large buff but still bad.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -1524,7 +1524,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -4,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -1804,7 +1804,7 @@
       "offensivebuff": null,
       "selfsurvival": 5,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -1848,7 +1848,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -1929,7 +1929,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -2000,7 +2000,7 @@
   "Chang Chun": [
     {
       "nameNote": "",
-      "notes": "DDG plus faction buffs. Assumed to be buffing some SN or Dragon Empery ships.",
+      "notes": "DDG plus faction buffs. Not assumed to be buffing Northern Parliament or Dragon Empery ships.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2010,14 +2010,14 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 5,
       "mediumdmg": 4,
       "heavydmg": 2,
       "aoedmg": 4,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
@@ -2027,7 +2027,7 @@
   "Chang Feng": [
     {
       "nameNote": "",
-      "notes": "Purple and bad.",
+      "notes": "Purple and bad. Assumed to be with another Dragon Empery ship.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2054,7 +2054,7 @@
   "Chang Wu": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE She NEEDS 3 Dragon Empery ships in the fleet. It gives +60% DPS and a little survivability.",
+      "notes": "Not assumed because it's too difficult, but if there are 3 Dragon Empery ships in the fleet, Chang Wu gains +60% DPS and a little survivability.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -2064,13 +2064,13 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -4,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 6,
-      "mediumdmg": 5,
-      "heavydmg": 4,
-      "aoedmg": 5,
+      "lightdmg": 4,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 3,
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": -1,
@@ -2081,7 +2081,7 @@
   "Chao Ho": [
     {
       "nameNote": "",
-      "notes": "With augment, no longer griefs the fleet's AA. Her AA is still bad though.",
+      "notes": "With augment, no longer griefs the fleet's AA. Her AA is still bad though. Assume there is another Dragon Empery ship.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -2135,7 +2135,7 @@
   "Charles Ausburne": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Assumes that beaver badge is equipped on a DD or herself.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2145,15 +2145,15 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -3,
-      "gearreq": null,
+      "fleetreq": null,
+      "gearreq": -3,
       "flagreq": null,
-      "lightdmg": 1,
+      "lightdmg": 2,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 1,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 2
@@ -2216,7 +2216,7 @@
   "Chi An": [
     {
       "nameNote": "",
-      "notes": "Requires a Dragon Empery ship.",
+      "notes": "Assumed to be with another Dragon Empery ship.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2280,14 +2280,14 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
       "mediumdmg": 2,
       "heavydmg": 1,
       "aoedmg": 2,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 3,
       "aa": -1,
       "asw": null,
@@ -2297,7 +2297,7 @@
   "Chikuma": [
     {
       "nameNote": "",
-      "notes": "Requires an IJN CV and buffs CVs. Weak slow. Additional RNG debuff.",
+      "notes": "Assumed to be with an IJN CV. She buffs CVs. Weak slow. Additional RNG debuff.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -2371,7 +2371,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": null
     }
   ],
@@ -2415,7 +2415,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -4,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -2459,7 +2459,7 @@
   "Cleveland META": [
     {
       "nameNote": "",
-      "notes": "Buffs CLs' FP and AA and prefers being with a CL.",
+      "notes": "Buffs CLs' FP and AA. Assumed to be with a CL.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2533,8 +2533,8 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Comet": [
@@ -2550,7 +2550,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -2776,7 +2776,7 @@
       "offensivebuff": null,
       "selfsurvival": 3,
       "aa": 4,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -2847,7 +2847,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -2,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -2884,8 +2884,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Dewey META": [
@@ -2911,14 +2911,14 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Dido": [
     {
       "nameNote": "",
-      "notes": "Requires another HMS ship.",
+      "notes": "Assumes there's another Royal Navy ship for large buffs. Not assuming there is a Queen Elizabeth.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2972,7 +2972,7 @@
   "Dmitri Donskoi": [
     {
       "nameNote": "",
-      "notes": "Generic ship, has weak fleet AP buff.",
+      "notes": "zTENTATIVE Generic ship, has weak fleet AP buff.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2982,7 +2982,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": -1,
       "flagreq": null,
       "lightdmg": 3,
@@ -3225,7 +3225,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -3316,7 +3316,7 @@
       "offensivebuff": 2,
       "selfsurvival": 4,
       "aa": null,
-      "asw": 3,
+      "asw": null,
       "defensivebuff": 5
     }
   ],
@@ -3333,7 +3333,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -3387,7 +3387,7 @@
       "w15boss": null,
       "ex": "C*",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
@@ -3559,7 +3559,7 @@
       "offensivebuff": null,
       "selfsurvival": 3,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -3576,7 +3576,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -3647,7 +3647,7 @@
   "Fletcher": [
     {
       "nameNote": "",
-      "notes": "For Fletcher fleet.",
+      "notes": "Not assumed to be buffing Fletchers.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3657,24 +3657,24 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -5,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": 2,
+      "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
       "asw": null,
-      "defensivebuff": 3
+      "defensivebuff": null
     }
   ],
   "Fleuret": [
     {
       "nameNote": "",
-      "notes": "Buffs Le Hardi class. Do you know who is in Le Hardi class? Me neither.",
+      "notes": "Buffs Le Hardi class. Do you know who is in Le Hardi class? Me neither. Assumes there is a BB/BC in the fleet.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3684,18 +3684,18 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -3,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Foch": [
@@ -3782,7 +3782,7 @@
   "Forbin": [
     {
       "nameNote": "",
-      "notes": "Vanguard fleet is limited to Iris Libre and Vichya Dominion.",
+      "notes": "Assumes the whole vanguard fleet is limited to Iris Libre and Vichya Dominion.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3802,7 +3802,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
+      "asw": 2,
       "defensivebuff": 2
     }
   ],
@@ -3829,8 +3829,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 3
+      "asw": 3,
+      "defensivebuff": null
     }
   ],
   "Fortune META": [
@@ -3857,7 +3857,7 @@
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
-      "defensivebuff": 1
+      "defensivebuff": null
     }
   ],
   "Foxhound": [
@@ -3883,8 +3883,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 3
+      "asw": 3,
+      "defensivebuff": null
     }
   ],
   "Friedrich Carl": [
@@ -3927,7 +3927,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -3998,7 +3998,7 @@
   "Fujinami": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Buffs IJN DDs and requires 2 other IJN ships. Can use cheap blue Single 76mm or expensive Single 113mm.",
+      "notes": "Buffs Sakura Empire DDs and assumes there are 2 other Sakura Empire ships. Can use cheap blue Single 76mm or expensive Single 113mm.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4154,7 +4154,7 @@
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
-      "defensivebuff": 1
+      "defensivebuff": null
     }
   ],
   "Giuseppe Garibaldi": [
@@ -4342,7 +4342,7 @@
       "offensivebuff": null,
       "selfsurvival": 3,
       "aa": 4,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -4440,7 +4440,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -4477,7 +4477,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -4521,7 +4521,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
@@ -4538,7 +4538,7 @@
   "Guichen": [
     {
       "nameNote": "",
-      "notes": "Can do short timeable freezes if with another FFNF/MNF ship.",
+      "notes": "Not assumed, but can do short timeable freezes if with another FFNF/MNF ship.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4548,14 +4548,14 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
       "mediumdmg": 2,
       "heavydmg": 1,
       "aoedmg": 2,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 3,
       "aa": null,
       "asw": null,
@@ -4592,7 +4592,7 @@
   "Hai Chi": [
     {
       "nameNote": "",
-      "notes": "Prefers another Dragon Empery ship. Smokes.",
+      "notes": "Assumed to have another Dragon Empery ship for +12% damage. Smokes.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4612,8 +4612,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": -1,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 1,
+      "defensivebuff": 1
     }
   ],
   "Hai Chou": [
@@ -4646,7 +4646,7 @@
   "Hai Tien": [
     {
       "nameNote": "",
-      "notes": "Prefers another Dragon Empery ship. Can technically be used as a buffer for DDGs",
+      "notes": "Assumed to have another Dragon Empery ship for +12% damage.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4656,7 +4656,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": -3,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -4683,7 +4683,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -4694,7 +4694,7 @@
       "selfsurvival": 1,
       "aa": -1,
       "asw": null,
-      "defensivebuff": 1
+      "defensivebuff": null
     }
   ],
   "Halford": [
@@ -4720,8 +4720,8 @@
       "offensivebuff": 1,
       "selfsurvival": 2,
       "aa": null,
-      "asw": 1,
-      "defensivebuff": 1
+      "asw": null,
+      "defensivebuff": null
     }
   ],
   "Halsey Powell": [
@@ -4802,7 +4802,7 @@
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
-      "defensivebuff": 2
+      "defensivebuff": null
     }
   ],
   "Hammann II": [
@@ -4829,7 +4829,7 @@
       "selfsurvival": 1,
       "aa": 2,
       "asw": 2,
-      "defensivebuff": 2
+      "defensivebuff": null
     }
   ],
   "Hanazuki": [
@@ -4936,7 +4936,7 @@
       "offensivebuff": 1,
       "selfsurvival": 3,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -5017,8 +5017,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Hatakaze META": [
@@ -5044,7 +5044,7 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 2
     }
   ],
@@ -5098,14 +5098,14 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 3
+      "asw": 3,
+      "defensivebuff": null
     }
   ],
   "Hatsuzuki": [
     {
       "nameNote": "",
-      "notes": "Prefers 2 other IJN ships.",
+      "notes": "Assumed to be with 2 other Sakura Empire ships for small FP and RLD buff.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5115,7 +5115,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": -2,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -5125,8 +5125,8 @@
       "offensivebuff": null,
       "selfsurvival": 3,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 1,
+      "defensivebuff": 1
     }
   ],
   "Hazelwood": [
@@ -5213,7 +5213,7 @@
   "Hermione": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Assumed to be with another Royal Navy ship for +8% damage.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -5260,7 +5260,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": null
     }
   ],
@@ -5277,7 +5277,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -3,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -5503,7 +5503,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": null
     }
   ],
@@ -5601,7 +5601,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -5628,7 +5628,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -5709,7 +5709,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -5736,7 +5736,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -5780,7 +5780,7 @@
   "Jamaica": [
     {
       "nameNote": "",
-      "notes": "Requires and buffs any version of Sheffield.",
+      "notes": "Not assumed, but requires and buffs any version of Sheffield.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5790,14 +5790,14 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
       "asw": null,
@@ -5807,7 +5807,7 @@
   "Janus": [
     {
       "nameNote": "",
-      "notes": "Buffs DD/CLs, especially J-class. Prefers 2 other HMS ships, especially a J-class.",
+      "notes": "Buffs DD/CLs, especially J-class. Assumed to be with 2 other Royal Navy ships, especially a J-class.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5827,7 +5827,7 @@
       "offensivebuff": 1,
       "selfsurvival": 2,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": 1
     }
   ],
@@ -5925,7 +5925,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -5942,7 +5942,7 @@
   "Jervis": [
     {
       "nameNote": "",
-      "notes": "Buffs HMS DDs if with 2 other HMS ships. Prefers fleet of DD/CLs only.",
+      "notes": "Buffs Royal Navy DDs if with 2 other Royal Navy ships. Assumed to be in a vanguard fleet of DD/CLs only.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5962,7 +5962,7 @@
       "offensivebuff": null,
       "selfsurvival": 4,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": 1
     }
   ],
@@ -6043,7 +6043,7 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": 2,
-      "asw": null,
+      "asw": 4,
       "defensivebuff": 4
     }
   ],
@@ -6097,8 +6097,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Kagerou": [
@@ -6195,7 +6195,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -6303,7 +6303,7 @@
       "w15boss": null,
       "ex": "B*",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 0,
@@ -6475,8 +6475,8 @@
       "offensivebuff": 2,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Kent": [
@@ -6897,7 +6897,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -6988,7 +6988,7 @@
       "offensivebuff": 1,
       "selfsurvival": 5,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": null
     }
   ],
@@ -7042,7 +7042,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": null
     }
   ],
@@ -7076,7 +7076,7 @@
   "L'Audacieux": [
     {
       "nameNote": "",
-      "notes": "Buffs DDs, especially FFNF/MNF DDs. Requires another FFNF/MNF ship. Worse in short battles.",
+      "notes": "Buffs DDs, especially FFNF/MNF DDs. Assumes there is another FFNF/MNF ship. Worse in short battles.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "B",
@@ -7150,8 +7150,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "La Galissonnière": [
@@ -7167,7 +7167,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -7258,7 +7258,7 @@
       "offensivebuff": null,
       "selfsurvival": 5,
       "aa": 3,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": 1
     }
   ],
@@ -7275,7 +7275,7 @@
       "w15boss": null,
       "ex": "C*",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 4,
@@ -7292,7 +7292,7 @@
   "Le Hardi": [
     {
       "nameNote": "",
-      "notes": "Prefers Iris gear, prefers Iris main tank.",
+      "notes": "Assumes she equips an Iris gear and there is an Iris main tank.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "C",
@@ -7312,8 +7312,8 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": 1
     }
   ],
   "Le Malin": [
@@ -7373,7 +7373,7 @@
   "Le Mars": [
     {
       "nameNote": "",
-      "notes": "Vanguard fleet is limited to Iris Libre and Vichya Dominion.",
+      "notes": "Assumes the vanguard fleet is limited to Iris Libre and Vichya Dominion.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -7410,7 +7410,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -7464,7 +7464,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -7589,32 +7589,7 @@
   "Lenja": [
     {
       "nameNote": "",
-      "notes": "Prefers mobbing for sinking low HPs. But mobbing = nearby enemies = bad AoA. Prefers Heavenly Armillary aux.",
-      "hardarbiter": "D",
-      "meta": "D",
-      "cm": "D",
-      "w14mob": "C",
-      "w14boss": "D",
-      "w15mob": null,
-      "w15boss": null,
-      "ex": "D",
-      "consistency": null,
-      "fleetreq": null,
-      "gearreq": -1,
-      "flagreq": null,
-      "lightdmg": 2,
-      "mediumdmg": 2,
-      "heavydmg": 2,
-      "aoedmg": 2,
-      "offensivebuff": null,
-      "selfsurvival": 1,
-      "aa": null,
-      "asw": null,
-      "defensivebuff": null
-    },
-    {
-      "nameNote": "with any Yumia ship",
-      "notes": "Prefers mobbing for sinking low HPs. But mobbing = nearby enemies = bad AoA. Prefers Heavenly Armillary aux.",
+      "notes": "Prefers mobbing for sinking low HPs. But mobbing = nearby enemies = bad AoA. Prefers Heavenly Armillary aux. These ratings assume that there is another Yumia collab ship generating Environmental Mana.",
       "hardarbiter": "C",
       "meta": "D",
       "cm": "C",
@@ -7678,7 +7653,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -7695,7 +7670,7 @@
   "Lila Decyrus": [
     {
       "nameNote": "",
-      "notes": "Requires another Atelier ship to generate enough AP for her.",
+      "notes": "Assumes there is another Atelier ship to generate enough AP for her.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -7705,7 +7680,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -7769,7 +7744,7 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -7958,8 +7933,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Lung Wu": [
@@ -7985,7 +7960,7 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -8029,7 +8004,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -8083,7 +8058,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -8245,14 +8220,14 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 3,
       "aa": null,
       "asw": null,
@@ -8434,7 +8409,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -8444,7 +8419,7 @@
       "offensivebuff": 1,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -8471,8 +8446,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Mikazuki": [
@@ -8525,8 +8500,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Miller": [
@@ -8552,8 +8527,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Minase": [
@@ -8677,7 +8652,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 4,
@@ -8785,7 +8760,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
@@ -8876,8 +8851,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": 1,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Moskva": [
@@ -9244,7 +9219,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -9369,7 +9344,7 @@
   "Neptune (Neptunia)": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Assumes there is another Neptunia ship.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -9531,7 +9506,7 @@
   "Ning Hai": [
     {
       "nameNote": "",
-      "notes": "Requires Yat Sen.",
+      "notes": "Assumes and REQUIRES Yat Sen.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -9639,7 +9614,7 @@
   "Northampton II": [
     {
       "nameNote": "",
-      "notes": "Slow for CV fleet with a USS CV flagship.",
+      "notes": "Assumed to be in a CV fleet with a USS CV flagship.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "C",
@@ -9649,7 +9624,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
@@ -9767,7 +9742,7 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": null
     }
   ],
@@ -9811,7 +9786,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -2,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
@@ -9838,7 +9813,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -9848,7 +9823,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -9990,7 +9965,7 @@
   "Ozornoy": [
     {
       "nameNote": "",
-      "notes": "Requires another NP ship. Depending on your device, you might get 2 or 3 barrages per proc, a 10% DPS difference.",
+      "notes": "Assumes there's another NP ship. Depending on your device, you might get 2 or 3 barrages per proc, a 10% DPS difference.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -10091,7 +10066,7 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -10179,7 +10154,7 @@
   "Ping Hai": [
     {
       "nameNote": "",
-      "notes": "Requires Yat Sen.",
+      "notes": "Assumes and REQUIRES Yat Sen.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -10243,7 +10218,7 @@
       "w15boss": null,
       "ex": "B*",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 5,
@@ -10260,7 +10235,7 @@
   "Pola": [
     {
       "nameNote": "",
-      "notes": "Requires another RN 🍕 ship. Buffs RN 🍕 vanguard, especially Zara class.",
+      "notes": "Assumed to be with another Sardegna Empire ship. Buffs Sardegna Empire vanguard, especially Zara class.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10324,7 +10299,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -10361,7 +10336,7 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": -1,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -10378,14 +10353,14 @@
       "w15boss": null,
       "ex": "C*",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 0,
       "aoedmg": 1,
-      "offensivebuff": 2,
+      "offensivebuff": 1,
       "selfsurvival": 4,
       "aa": null,
       "asw": null,
@@ -10449,7 +10424,7 @@
   "Prinz Eugen μ": [
     {
       "nameNote": "",
-      "notes": "Buffs vanguard damage, and prefers a muse ship.",
+      "notes": "Buffs vanguard damage. Assumes there is a muse ship for a small damage buff.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10638,7 +10613,7 @@
   "Regensburg": [
     {
       "nameNote": "",
-      "notes": "Requires another KMS ship. Desynced buff for KMS.",
+      "notes": "Assumes there is another Iron Blood ship. Desynced buff for Iron Blood.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10692,7 +10667,7 @@
   "Reisalin Stout": [
     {
       "nameNote": "",
-      "notes": "Can ignore buffs for Atelier ships. Stronger in shorter battles. 40s damage is 3/2/2, 80s damage is 2/1/1. Uses special gear.",
+      "notes": "Can ignore buffs for Atelier ships. Stronger in shorter battles. 40s damage is 3/3/2, 80s damage is 2/2/1. Uses special gear.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10702,7 +10677,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": -1,
       "flagreq": null,
       "lightdmg": 2,
@@ -10719,7 +10694,7 @@
   "Reno": [
     {
       "nameNote": "",
-      "notes": "Requires more carriers in fleet.",
+      "notes": "Assumes there are more carriers in fleet.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10729,7 +10704,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -10739,8 +10714,8 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": 2,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Richmond": [
@@ -10773,7 +10748,7 @@
   "Rikka Takarada": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Uses special gear.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10783,8 +10758,8 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
-      "gearreq": -1,
+      "fleetreq": null,
+      "gearreq": -2,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,
@@ -10908,7 +10883,7 @@
   "Ryu Lion": [
     {
       "nameNote": "",
-      "notes": "Improved barrage when multiple enemies. Can use Single 150, though Quad 152 slightly better.",
+      "notes": "zTENTATIVE Improved barrage when multiple enemies. Can use Single 150, though Quad 152 slightly better.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -11144,8 +11119,8 @@
       "offensivebuff": 1,
       "selfsurvival": 2,
       "aa": 2,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Seattle": [
@@ -11296,7 +11271,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -11306,8 +11281,8 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 3
+      "asw": 2,
+      "defensivebuff": 2
     }
   ],
   "Shimakaze": [
@@ -11414,8 +11389,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Shiratsuyu": [
@@ -11441,8 +11416,8 @@
       "offensivebuff": 1,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 3
+      "asw": 3,
+      "defensivebuff": null
     }
   ],
   "Shirayuki": [
@@ -11539,7 +11514,7 @@
       "w15boss": null,
       "ex": "B*",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -11576,8 +11551,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 3
+      "asw": 3,
+      "defensivebuff": null
     }
   ],
   "Soobrazitelny": [
@@ -11593,7 +11568,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -11917,7 +11892,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -3,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -12160,7 +12135,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -3,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -12187,7 +12162,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 4,
@@ -12305,8 +12280,8 @@
       "offensivebuff": null,
       "selfsurvival": 3,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Trafalgar": [
@@ -12322,7 +12297,7 @@
       "w15boss": null,
       "ex": "B*",
       "consistency": null,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
@@ -12332,7 +12307,7 @@
       "offensivebuff": 3,
       "selfsurvival": 2,
       "aa": 3,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": null
     }
   ],
@@ -12447,7 +12422,7 @@
   "Ugolino Vivaldi": [
     {
       "nameNote": "",
-      "notes": "Requires 3 Sardegna ships.",
+      "notes": "Assumed there are 3 Sardegna Empire ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -12700,7 +12675,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -12771,7 +12746,7 @@
   "Vittorio Cuniberti": [
     {
       "nameNote": "",
-      "notes": "Use fast torps. High DPS but squishy.",
+      "notes": "zTENTATIVE Use fast torps. High DPS but squishy.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -12872,14 +12847,14 @@
       "offensivebuff": null,
       "selfsurvival": 2,
       "aa": null,
-      "asw": 2,
-      "defensivebuff": null
+      "asw": null,
+      "defensivebuff": 2
     }
   ],
   "Watarase": [
     {
       "nameNote": "",
-      "notes": "Requires IJN flagship. Damage depends on the reload time of the flagship.",
+      "notes": "Assumes there is a Sakura Empire flagship with under 20s reload (4 in 80s). Damage depends on the reload time of the flagship.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -12997,18 +12972,18 @@
       "w15boss": null,
       "ex": "B*",
       "consistency": null,
-      "fleetreq": -2,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 2,
       "mediumdmg": 2,
       "heavydmg": 2,
       "aoedmg": 2,
-      "offensivebuff": 3,
+      "offensivebuff": 2,
       "selfsurvival": 2,
       "aa": 4,
-      "asw": 2,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Yamakaze": [
@@ -13034,7 +13009,7 @@
       "offensivebuff": 1,
       "selfsurvival": 1,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": null
     }
   ],
@@ -13061,7 +13036,7 @@
       "offensivebuff": null,
       "selfsurvival": 5,
       "aa": 1,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     },
     {
@@ -13086,14 +13061,14 @@
       "offensivebuff": null,
       "selfsurvival": 5,
       "aa": 1,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 5
     }
   ],
   "Ying Swei": [
     {
       "nameNote": "",
-      "notes": "With augment, no longer griefs the fleet's AA. Her ASW is still bad though.",
+      "notes": "With augment, no longer griefs the fleet's AA. Her ASW is still bad though. Assume there is another Dragon Empery ship.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "B",
@@ -13221,8 +13196,8 @@
       "offensivebuff": null,
       "selfsurvival": 4,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Yume Minami": [
@@ -13265,7 +13240,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -13454,7 +13429,7 @@
       "w15boss": null,
       "ex": "D",
       "consistency": -1,
-      "fleetreq": -1,
+      "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
       "lightdmg": 1,
@@ -13734,8 +13709,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Z26": [
@@ -13950,8 +13925,8 @@
       "offensivebuff": 1,
       "selfsurvival": 4,
       "aa": 3,
-      "asw": null,
-      "defensivebuff": 2
+      "asw": 2,
+      "defensivebuff": null
     }
   ],
   "Z9": [
@@ -13977,8 +13952,8 @@
       "offensivebuff": null,
       "selfsurvival": 1,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Zara": [
