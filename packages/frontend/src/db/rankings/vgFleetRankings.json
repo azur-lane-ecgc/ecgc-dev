@@ -10631,7 +10631,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": 1,
-      "selfsurvival": 3,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -10658,7 +10658,7 @@
       "heavydmg": 2,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": 3,
+      "selfsurvival": 2,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
