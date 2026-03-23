@@ -1,18 +1,4 @@
 {
-  "22": [
-    {
-      "name": "22",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
-    }
-  ],
-  "33": [
-    {
-      "name": "33",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
-    }
-  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -469,18 +455,6 @@
       "std": "26.92%"
     }
   ],
-  "William D Porter": [
-    {
-      "name": "William D Porter",
-      "totalEHP": "112.65%",
-      "std": "34.46%"
-    },
-    {
-      "name": "William D Porter (NoPlanes)",
-      "totalEHP": "95.76%",
-      "std": "27.75%"
-    }
-  ],
   "Duca degli Abruzzi": [
     {
       "name": "Duca degli Abruzzi",
@@ -680,13 +654,6 @@
       "std": "26.80%"
     }
   ],
-  "Regensburg": [
-    {
-      "name": "Regensburg",
-      "totalEHP": "106.72%",
-      "std": "28.20%"
-    }
-  ],
   "Little Prinz Eugen": [
     {
       "name": "Little Prinz Eugen",
@@ -777,6 +744,18 @@
       "std": "31.86%"
     }
   ],
+  "William D. Porter": [
+    {
+      "name": "William D. Porter",
+      "totalEHP": "103.10%",
+      "std": "32.96%"
+    },
+    {
+      "name": "William D. Porter (NoPlanes)",
+      "totalEHP": "87.64%",
+      "std": "26.55%"
+    }
+  ],
   "Unzen": [
     {
       "name": "Unzen",
@@ -808,9 +787,14 @@
       "std": "24.79%"
     }
   ],
-  "Toksaki Kurumi": [
+  "Tokisaki Kurumi": [
     {
-      "name": "Toksaki Kurumi",
+      "name": "Tokisaki Kurumi (Boss)",
+      "totalEHP": "101.89%",
+      "std": "28.48%"
+    },
+    {
+      "name": "Tokisaki Kurumi (Mob)",
       "totalEHP": "101.89%",
       "std": "28.48%"
     }
@@ -1352,6 +1336,13 @@
       "std": "24.98%"
     }
   ],
+  "Regensburg META": [
+    {
+      "name": "Regensburg META",
+      "totalEHP": "89.85%",
+      "std": "27.63%"
+    }
+  ],
   "Lung Wu": [
     {
       "name": "Lung Wu",
@@ -1512,6 +1503,13 @@
       "std": "31.47%"
     }
   ],
+  "Regensburg": [
+    {
+      "name": "Regensburg",
+      "totalEHP": "87.29%",
+      "std": "25.46%"
+    }
+  ],
   "Dido": [
     {
       "name": "Dido",
@@ -1531,18 +1529,6 @@
       "name": "Kizuna AI",
       "totalEHP": "86.88%",
       "std": "39.47%"
-    }
-  ],
-  "Chao Ho": [
-    {
-      "name": "Chao Ho (Retrofit)",
-      "totalEHP": "86.87%",
-      "std": "37.05%"
-    },
-    {
-      "name": "Chao Ho",
-      "totalEHP": "61.53%",
-      "std": "25.56%"
     }
   ],
   "Algérie": [
@@ -1674,11 +1660,6 @@
       "name": "Ying Swei (Retrofit)",
       "totalEHP": "84.79%",
       "std": "34.06%"
-    },
-    {
-      "name": "Ying Swei",
-      "totalEHP": "62.93%",
-      "std": "26.95%"
     }
   ],
   "An Shan": [
@@ -2131,6 +2112,13 @@
       "name": "Sirius",
       "totalEHP": "78.46%",
       "std": "24.61%"
+    }
+  ],
+  "Chao Ho": [
+    {
+      "name": "Chao Ho (Retrofit)",
+      "totalEHP": "78.35%",
+      "std": "32.75%"
     }
   ],
   "Sheffield META": [
@@ -2650,9 +2638,9 @@
       "std": "27.29%"
     }
   ],
-  "Clarence K Bronson": [
+  "Clarence K. Bronson": [
     {
-      "name": "Clarence K Bronson",
+      "name": "Clarence K. Bronson",
       "totalEHP": "71.99%",
       "std": "28.52%"
     }
@@ -3691,6 +3679,13 @@
       "std": "18.30%"
     }
   ],
+  "3300.00%": [
+    {
+      "name": "3300.00%",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Z20": [
     {
       "name": "Z20",
@@ -3752,6 +3747,13 @@
       "name": "Shiranui (Retrofit)",
       "totalEHP": "60.30%",
       "std": "24.36%"
+    }
+  ],
+  "2200.00%": [
+    {
+      "name": "2200.00%",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
     }
   ],
   "Jersey": [
@@ -3841,6 +3843,13 @@
       "name": "Z16",
       "totalEHP": "59.27%",
       "std": "22.81%"
+    }
+  ],
+  "Hai Chou": [
+    {
+      "name": "Hai Chou",
+      "totalEHP": "59.12%",
+      "std": "20.30%"
     }
   ],
   "Shirayuki": [
