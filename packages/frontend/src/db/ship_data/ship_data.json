@@ -32888,7 +32888,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Regensburg is a damage-oriented CL with great stats and interesting skills. Her skills incentivize her being in a KMS fleet, which is suboptimal. In addition, her skill locks on to enemies every 15s, which doesn't sync well with current options. Furthermore, her skills give her more bonuses if there is a locked on enemy alive at the time of activation, which is unreliable outside of bossing. Her barrages are pretty good, but only 1 MGM hurts her damage. Overall, she is a good CL.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport", "OffSupport", "Meh"],
+    "roles": ["DefSupport", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -47744,7 +47744,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Ark Royal META is a damage-oriented CV with great stats and good skills. Her per strike damage is very high, especially against single-target enemies where all her Torpedo Bombers can land. Her slow support is nice, but the slow percentage is too small to enable consistent CV support. Her on-strike barrages are a bit weak as well. Overall, she is a good ship, but outclassed by <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Ark_Royal\" title=\"Ark Royal\" >Ark Royal (Retrofit)</a >.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["FlagPref", "DmgDealer", "Meh"],
     "locations": {
       "events": [],
       "other": [
