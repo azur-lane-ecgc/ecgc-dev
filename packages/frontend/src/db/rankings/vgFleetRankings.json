@@ -2972,7 +2972,7 @@
   "Dmitri Donskoi": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Generic ship, has weak fleet AP buff.",
+      "notes": "Generic ship, has weak fleet AP buff.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -4322,7 +4322,7 @@
   "Gouden Leeuw": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE. CB but not CB, with amazing AA. 5% HE buff for fleet. Guam with worse tanking and much better LDmg.",
+      "notes": "CB but not CB, with amazing AA. 5% HE buff for fleet. Guam with worse tanking and much better LDmg.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -8858,7 +8858,7 @@
   "Moskva": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Can pair with Nakhimov. Main tank with high DPS. Use NP gear to ignore shields. Not consider sinking NP ships.",
+      "notes": "Moskva can pair with Nakhimov to activate her freeze. Main tank with high DPS. Use any Northern Parliament gear, like her own UR gun, to ignore shields. We don't consider sinking Northern Parliament ships.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -10640,7 +10640,7 @@
   "Regensburg META": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE",
+      "notes": null,
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -10883,7 +10883,7 @@
   "Ryu Lion": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Improved barrage when multiple enemies. Can use Single 150, though Quad 152 slightly better.",
+      "notes": "Improved barrage when there are multiple enemies. Can use Single 150, though Quad 152 slightly better.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -12746,7 +12746,7 @@
   "Vittorio Cuniberti": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Use fast torps. High DPS but squishy.",
+      "notes": "Use fast torps. High DPS but squishy.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -12962,7 +12962,7 @@
   "William D. Porter": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Buffs fleet AA and dmg, especially USS. Sync torps before main for boss, or use fast torps for mob. Can use fast gun.",
+      "notes": "Buffs fleet AA and damage, especially USS. Sync torps before main for boss, or use fast torps for mob. Can use fast gun.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -13311,7 +13311,7 @@
   "Yuudachi META": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE",
+      "notes": null,
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
