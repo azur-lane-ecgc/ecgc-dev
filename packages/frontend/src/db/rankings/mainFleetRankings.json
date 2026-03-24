@@ -319,7 +319,7 @@
   "Alsace": [
     {
       "nameNote": "",
-      "notes": "One of the best all around UR BBs in the game currently. She has good damage output against all armor types with a preload (however her damage on a per slavo basis is somewhat weaker compared to other UR BBs) and she’s one of the few BBs with salvo capacity +1 so she isn’t affected by absolute cooldowns making her quicker to reload her main guns in practice compared to other BBs. Her barrage can also incflict a 12% damage debuff on enemies it hits for 10 seconds. She also has a zombie heal when one of the ships in your fleet falls below 30% HP. Alsace doesn’t have any real weaknesses persay but she’s not the absolute best at any one thing.",
+      "notes": "One of the best all around UR BBs in the game currently. She has good damage output against all armor types with a preload (however her damage on a per-salvo basis is somewhat weaker compared to other UR BBs) and she’s one of the few BBs with salvo capacity +1 so she isn’t affected by absolute cooldowns, making her quicker to reload her main guns in practice compared to other BBs. She also inflicts a 12% damage debuff on a priority enemy for 10 seconds. She also has a zombie heal when one of the ships in your fleet falls below 30% HP. Alsace doesn’t have any real weaknesses per se but she’s not the absolute best at any one thing but early damage.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -980,7 +980,7 @@
   "Bismarck Zwei": [
     {
       "nameNote": "",
-      "notes": "One of the best all around UR BBs in the game currently. She has good damage output against all armor types on top of a 3 second black hole which can pull enemies together and root them in place. The duration of the black hole is a bit on the short side though so if you want to take full advantage if it your syncing needs to very tight. Other than that, she doesn’t have any real weaknesses persay but she’s not the absolute best at any one thing. Note though it’s not accounted for her ratings she can also run the auxiliary Certificate of Sponsorship which reduces the Out of Ammo debuff for your main fleet by 15%.",
+      "notes": "One of the best all-around UR BBs in the game currently. She has good damage output against all armor types on top of a 3 second black hole which can pull enemies together and act as a short freeze. The duration of the black hole is a bit on the short side though so if you want to take full advantage if it, your syncing needs to be very tight. Even with the best sync, the black hole would only help about half of the volleys in a triple BB fleet. Other than that, she doesn’t have any real weaknesses, but she’s not the absolute best at any one thing. Although not reflected in her ratings, she can also run the auxiliary Certificate of Sponsorship which reduces the Out of Ammo debuff for your main fleet by 15%, useful when getting the third star in campaign.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "SS",
@@ -1647,7 +1647,7 @@
   "Cowpens": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Milk is good for health. Fast reload, good damage, targeted heal.",
+      "notes": "Milk is good for health. Fast reload, good damage, targeted heal.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
@@ -2109,7 +2109,7 @@
   "Francesco Caracciolo": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Heals herself, decent damage but 80% barrage is inconsistent.",
+      "notes": "Heals herself and has decent damage, but 80% barrage is inconsistent.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2167,7 +2167,7 @@
   "Friedrich der Große": [
     {
       "nameNote": "",
-      "notes": "One of the oldest Rainbows in the game, and unfortunately it shows. She’s the weakest of the UR BBs in damage across all 3 armor types except Vanguard, and she doesn’t have any equivalent to Vanguard’s massive damage buffs and debuff to compensate. And to top it all off to reach her damage potential as shown in her ratings she needs to consistently take damage and/or have enemies nearby to proc her proxy barrage. Her wide barrages however do still make her an above average choice for W14 though even there she has been powercrept pretty hard.",
+      "notes": "One of the oldest rainbows in the game, and unfortunately it shows. She’s the weakest of the UR BBs except Vanguard in damage across all 3 armor types, and she doesn’t have any equivalent to Vanguard’s massive damage buffs and debuff to compensate. And to top it all off, to reach her damage potential as shown in these ratings, she needs to consistently take damage and/or have enemies nearby to proc her proximity barrage. Her screen-wide barrages do still make her an above average choice for W14, but even there she has been powercrept pretty hard.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "B",
@@ -2196,7 +2196,7 @@
   "Fritz Rumey": [
     {
       "nameNote": "",
-      "notes": "Arguably the most flexible of the UR carriers, she is excellent against light and medium armor bosses thanks to her ability to equip 8 fighters (or 4 fighters and 4 Skyraiders). This also enables her to more easily get off 4 airstrikes in 80 seconds META showdowns compared to other carriers without gimping her damage too much. Her main weakness is that she’s more reliant on having good equipment (even compared to other carriers) and, to a lesser extent, tech to get the most out of her, since she only has 2 aircraft slots, each of which consists of 4 aircraft and getting HVARs, Skyraiders, and La-9s in quantity isn’t that easy. She's also the best ship for W15 and W16 support fleets. \n Also strongest w15 support.",
+      "notes": "Arguably the most flexible of the UR carriers, she is excellent against light and medium armor bosses thanks to her ability to equip 8 fighters (or 4 fighters and 4 Skyraiders). This also enables her to more easily get off 4 airstrikes in 80 seconds META showdowns compared to other carriers without gimping her damage too much. Her main weakness is that she’s more reliant on having good equipment (even compared to other carriers), and getting HVARcats, Skyraiders, and La-9s in quantity isn’t that easy. She's also the best carrier for W15 and W16 support fleets.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -2370,7 +2370,7 @@
   "Gangut META": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Will not kill 3 every salvo in higher chapters. So alternate slow and fast, but bad AA and low HP make her a poor choice. The damage rating of 2 assumes ST bossing without mobs.",
+      "notes": "Will not kill 3 every salvo in higher chapters. So alternate slow and fast, but bad AA and low HP make her a poor choice. The damage rating of 2 assumes ST bossing without mobs.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -2859,7 +2859,7 @@
     },
     {
       "nameNote": "with Shinano or AmagiCV",
-      "notes": "Since Hakuryuu is the worst Sakura Empire rainbow CV for bossing, she can be fed by Shinano or Amagi(CV) before you get the others. Like Essex, Hakuryuu is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option.",
+      "notes": "Since Hakuryuu is the worst Sakura Empire rainbow CV for bossing, she can pair or be carried by Shinano or Amagi(CV) before you get the better ones. Like Essex, Hakuryuu is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "S*",
@@ -3613,7 +3613,7 @@
   "Implacable": [
     {
       "nameNote": "",
-      "notes": "One of the first Roots in this game, and that’s pretty much the main reason you’d use her as her damage output compared to other UR CVs is significantly lower. Unfortunately, she has not aged well as ships such as Lexington ll and Nahkimov, 2 other ships with roots (albeit conditional ones) have significantly higher damage output. About the only thing Implacable has over those 2 are there are no conditions to fullfill to activate her root.",
+      "notes": "One of the first good freezes in this game, and that’s the main reason you’d use her, because her damage output compared to other UR CVs is significantly lower. Unfortunately, she has not aged well, because ships like Lexington ll and Nahkimov have significantly higher damage output. The only advantage Implacable has over those 2 is that there are no conditions for her freeze.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -3700,7 +3700,7 @@
   "Indomitable": [
     {
       "nameNote": "",
-      "notes": "Illustrious with damage skills. Rocket barrage and 6 fighter slots gives good L/M dmg. One of the best W15 support CVs.",
+      "notes": "Illustrious with damage skills. Rocket barrage and 6 fighter slots gives good L/M dmg. One of the best W15/16 support CVs.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -4135,7 +4135,7 @@
   "Kearsarge": [
     {
       "nameNote": "",
-      "notes": "The only rainbow Aviation Battleship in the game currency, Kearsarge’s loadout is unique among rainbow battleships as she trades her auxiliary gun slot for 4 fighters. This means she’s very lacking in self-defense, making her unsuited for the main campaign (her lack of an aux gun means she can’t kill suicide boats, so you really don’t wanna run her as the flagship, and in campaign carriers tend to be preferred for off-flag, especially in plain heavy content). Her damage against light and medium armor bosses is good and she applies a 4% damage debuff to enemies hit by her main guns (8% if the enemy has been inflicted with an AA stat debuff) though bear in mind her reload stat is low for a UR BB. The main reason you’d run her though is with other Eagle Union Carriers, mainly Lexington and Yorktown 2 as she synergizes very well with them (she has Air Raid Assistance skill but it only activates when she’s run with another USN main fleet). Kearsarge needs an Eagle Union or Northern Parliament main gun and she also needs those factions' fighters in order to apply the shelling buff earlier than the BBs fire however.",
+      "notes": "The only rainbow Aviation Battleship in the game currently, Kearsarge’s loadout is unique among rainbow battleships as she trades her auxiliary gun slot for 4 fighters. This means she’s very lacking in self-defense, making her unsuited for the main campaign (her lack of an aux gun means she can’t kill suicide boats, so you really don’t wanna run her as the flagship, and in campaign carriers tend to be preferred for off-flag, especially in plain heavy content). Her damage against light and medium armor bosses is good and she offers various damage buffs for the main fleet, though bear in mind her reload stat is low for a UR BB. The main reason you’d run her is with Eagle Union carriers, so see her other entry. Kearsarge needs an Eagle Union or Northern Parliament main gun and she also needs those factions' fighters in order to apply the shelling buff earlier than the BBs fire.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -4365,7 +4365,7 @@
   "Kotori Itsuka": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Like Patricia, super tanky BB.",
+      "notes": "Like Patricia, super tanky BB.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -4481,7 +4481,7 @@
   "Lexington II": [
     {
       "nameNote": "",
-      "notes": "These ratings assume the condition of AA debuff and 3 Eagle Union ships is not met. Lexington II applies a 40% slow under this assumption. See her pairing for upgrading the slow to a freeze.\n\nLexington ll is one of the best ships in the game against light armor enemies with good damage against medium armor as well. She can also provide a 4-second root (provided she is sortied with one other EU main fleet and the enemy has had its AA stat debuffed when she launched her airstrike) for the fleet, removing the need to run Implacable or Nahkimov with them. Lexington ll also has a very useful utility in the main campaign. If your fleet shoots down 17 aircraft or she looses 25% of her HP, she gains 1 stack of her blue skill, and once she gains 4 stacks, she can reduce the damage your main fleet takes from enemy aircraft by 100%. This benefit is not relevant in mob battles but is in campaign boss battles. Lexington ll in addition to the AA stat debuff for her root does want to be sortied with 2 other EU ships to proc a 12% damage buff for herself, at least one of which should be a main fleet.",
+      "notes": "These ratings assume that there is no AA debuff and there are fewer than 3 Eagle Union ships. Lexington II applies a 40% slow under this assumption. See her pairing for upgrading the slow to a freeze. Lexington ll is one of the best ships in the game against light armor enemies with good damage against medium armor as well. Lexington ll also has a very useful utility in the main campaign. If your fleet shoots down 17 aircraft or she looses 25% of her HP, she gains 1 stack of her blue skill, and once she gains 4 stacks, she can reduce the damage your main fleet takes from enemy aircraft by 100%. This benefit is not relevant in mob battles but is in campaign boss battles.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -4508,7 +4508,7 @@
     },
     {
       "nameNote": "combo",
-      "notes": "These ratings assume there are 3 Eagle Union ships, including Kearsarge, Yorktown II, or both. Lion can substitute for one of them. There must also be an AA debuff in the fleet, which Yorktown II provides. Lexington II freezes the enemy under these conditions. This forms a top anti-light boss fleet that can also fight medium armor decently.",
+      "notes": "These ratings assume there are 3 Eagle Union ships, including another Eagle Union main fleet ship. She will usually be with Kearsarge, Yorktown II, or both. Lion can substitute for one of them. There must also be an AA debuffer in the fleet, which Yorktown II or some vanguard ships provide. Lexington II can then provide a 4-second freeze for the fleet, removing the need to run Implacable or Nahkimov, who have notably worse anti-light damage. This forms a top anti-light boss fleet that can also fight medium armor decently.",
       "hardarbiter": "SS",
       "meta": "S*",
       "cm": "S",
@@ -4537,7 +4537,7 @@
   "Lion": [
     {
       "nameNote": "",
-      "notes": "One of the most broken ships in the game currently (March 2026). She delivers the highest overall solo damage of any ship in the game. Furthermore, she applies a permanent 10% damage debuff to any enemy afflicted by her burn (which lasts for the duration of the target's life). And to add the cherry on top she is one of the few BBs with salvo capacity +1 so she isn’t affected by absolute cooldowns making her quicker to reload her main guns in practice compared to other BBs. While she may not be the \"absolute best\" choice for every specific niche or composition, her raw output is so immense that she consistently features in the top three to five meta comps for all relevant content. No other Ultra Rare (UR) dominates the game quite like she does; she is an absolute top-priority investment.",
+      "notes": "One of the most broken ships in the game currently, Lion delivers the highest overall solo damage of any ship in the game. Furthermore, she applies a permanent 10% damage debuff to any enemy afflicted by her burn, which is also permanent. And to add the cherry on top, she is one of the few BBs with salvo capacity +1, making her quicker to reload her main guns in practice compared to other BBs. While she may not be the absolute best choice for every specific niche or composition, her raw output is so immense that she consistently features in the top one to five meta comps for all relevant content. No other UR ship dominates the game quite like she does; she is an absolute top-priority investment.",
       "hardarbiter": "SS",
       "meta": "SS",
       "cm": "SS",
@@ -4972,7 +4972,7 @@
   "Mecklenburg": [
     {
       "nameNote": "",
-      "notes": "One of the best all around UR BBs in the game currently. She has good damage against light armor and outstanding damage against medium and heavy armor. She’s one of the few BBs with salvo capacity +1 so she isn’t affected by absolute cooldowns making her quicker to reload her main guns in practice compared to other BBs. Her skills do give her a preference to be sortied with Bismarck Zwei for a 15% reload buff for herself and to apply 5% damage debuff for the fleet but this is very much a case of nice to have than an outright necessity for her to perform well.",
+      "notes": "One of the best all-around UR BBs in the game currently. She has good damage against light armor and outstanding damage against medium and heavy armor. She's one of the few BBs with salvo capacity +1, making her quicker to reload her main guns in practice compared to other BBs. She has a 5% buff for the fleet for 8s when she fires, so she prefers firing first, but 5% may not beat good sync if she can't easily fire first. Her skills do give her a preference to be sortied with Bismarck Zwei (see Mecklenburg's other entry), but this is very much a case of nice to have than a necessity for her to perform well.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "S",
@@ -4999,7 +4999,7 @@
     },
     {
       "nameNote": "with Bismarck Zwei",
-      "notes": "Top BB damage, especially against heavy. She has a 5% buff for the fleet for 8s when she fires, so she prefers firing first, but 5% may not beat good sync if she can't easily fire first. When synced with Bismarck Zwei, Mecklenburg gives the fleet another up to 5% more damage.",
+      "notes": "One of the best all-around UR BBs in the game currently. She has good damage against light armor and outstanding damage against medium and heavy armor. She's one of the few BBs with salvo capacity +1, making her quicker to reload her main guns in practice compared to other BBs. She has a 5% buff for the fleet for 8s when she fires, so she prefers firing first, but 5% may not beat good sync if she can't easily fire first. When synced with Bismarck Zwei, Mecklenburg gains 15% RLD and gives the fleet another up to 5% more damage.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "SS",
@@ -5200,7 +5200,7 @@
   "Musashi": [
     {
       "nameNote": "",
-      "notes": "One of the best battleship in late Main Campaign Stages thanks to her ability to tank damage for the main fleet, if she’s equipped appropriately and sortied with the right ships she can drastically improve the effective HP of your main fleet ships. However, it can also easily get her killed more quickly if appropriate measures are not taken (i.e. giving her defensive gear like a Rudder or Fire Extinguisher and pair her with targeted healers like Cowpens or Aquila, or flagship defenders like Z52 or William D. Porter). Outside of the main campaign though and against single target bosses, her performance (relative to newer UR BBs) is somewhat lacking due in no small part to her low reload stat (for a UR BB) and her requirement for an IJN main gun. The upside to that though is one her best guns for the Main Campaign is a purple gun you can get from tech boxes.",
+      "notes": "One of the best battleship in late Main Campaign stages thanks to her ability to tank damage for the main fleet. If she’s equipped appropriately and sortied with the right ships, she can drastically improve the effective HP of your main fleet ships. However, her skill can also easily get her killed more quickly if appropriate measures are not taken (i.e. giving her defensive gear like a Rudder or Fire Extinguisher and pairing her with targeted healers like Cowpens/Aquila or flagship defenders like Z52/Porter). Outside of the main campaign, against single target bosses, her performance is somewhat lacking relative to newer UR BBs due to her low reload stat and her requirement for a Sakura Empire main gun.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -5633,7 +5633,7 @@
   "Origami Tobiichi": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE 8% more damage vs enemies with < 43 speed.",
+      "notes": "8% more damage vs enemies with < 43 speed.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -5662,7 +5662,7 @@
   "Oumi": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Use DD gun for max DPS against bosses that wander into her range. Still good against bosses that don't.",
+      "notes": "Oumi should use a DD gun for max DPS against bosses that wander into her range, but she is still good against bosses that don't. Stick to standard aux guns in campaign for shooting suicide boats before she reaches max stacks.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "S*",
@@ -5778,7 +5778,7 @@
   "Pearl": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Does not have access to good guns and auxiliaries.",
+      "notes": "Does not have access to good guns and auxiliaries.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6126,7 +6126,7 @@
   "Raffaello": [
     {
       "nameNote": "",
-      "notes": "One of the best battleship in late Main Campaign Stages thanks to her ability to shield and heal your vanguards effectively making her a pseudo healer on top of good damage output. Her performance against bosses however is wanting thanks to her relatively low damage output (relative to other UR BBs).",
+      "notes": "One of the best battleship in late campaign thanks to her ability to shield and heal your vanguards, effectively making her a pseudo healer on top of good damage output. However, her performance against bosses is wanting thanks to her relatively low damage output relative to other UR BBs.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -8003,7 +8003,7 @@
   "Warspite": [
     {
       "nameNote": "",
-      "notes": "A REAL UR NOW. But still the worst UR BB by a little.",
+      "notes": "Warspite is a REAL UR now with her augment. But she is still among the worst UR BBs because she has no fleet buffs and has significant staggered barrages that miss moving bosses.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -8235,7 +8235,7 @@
   "Yorktown II": [
     {
       "nameNote": "",
-      "notes": "These ratings assume that she has an Eagle Union airplane equipped and is sortied with 2 other Eagle ships but she is not with Kearsarge or Yorktown/Essex-class.\nYorktown II is one of the best ships in the game against light armor enemies with excellent damage against medium armor as well. She has a unique ability which allows her to decrease the airstrike cooldowns of Yorktown and Essex class carries in the same fleet as her by 10% when she launches her own airstrike which is very useful for syncing your Yorktown and Essex class ships (and why she prefers to launch first as if she launches after your other Yorktown and Essex class ships her skill causes them to desync) and for getting off 4th airstrikes in META showdowns. Bear in mind however she that she wants to be sortied with 2 other EU ships to proc a 15% AVI and Accuracy buff for herself.",
+      "notes": "These ratings assume that she has an Eagle Union airplane equipped and is sortied with 2 other Eagle ships, but that she is not with Kearsarge or Yorktown/Essex-class. Yorktown II is one of the best ships in the game against light armor enemies with excellent damage against medium armor as well. She has a unique ability which allows her to decrease the airstrike cooldowns of Yorktown and Essex class carries, so check out her other entry. She also wants to be sortied with 2 other Eagle Union ships to proc a 15% AVI and HIT buff for herself.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -8262,7 +8262,7 @@
     },
     {
       "nameNote": "combo",
-      "notes": "Requires an Eagle Union airplane and 3 Eagle ships. Strong fighters, weak TBs, and a Skyraider barrage make her good against light bosses and poor against heavy bosses. These ratings assume that all conditions are met and she is with Kearsarge, Lexington II, and/or Essex. It's extremely easy to sync Yorktown-class or Essex-class CVs to launch just after Yorktown II because there's a window of 8% or 10% of the reload time.",
+      "notes": "Requires an Eagle Union airplane and 3 Eagle ships. Strong fighters, weak TBs, and a Skyraider barrage make her good against light bosses and poor against heavy bosses. These ratings assume that all conditions are met and she is with Kearsarge, Lexington II, and/or Essex. She has a unique ability which allows her to decrease the airstrike cooldowns of Yorktown and Essex class carries in the same fleet as her by 10% when she launches her own airstrike, which is very useful for syncing your Yorktown and Essex class ships and for getting off 4th airstrikes in META showdowns. The window of 8% or 10% of the reload time makes syncing them extremely easy. This skill is also why she prefers to launch first in bossing, otherwise the fleet gets very desynced.",
       "hardarbiter": "SS*",
       "meta": "S*",
       "cm": "S*",
@@ -8291,7 +8291,7 @@
   "Yorktown META": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE 10% AA/EVA debuff, buffs any Yorktown, buffs Framework of Logic.",
+      "notes": "10% AA/EVA debuff, buffs any Yorktown, buffs Framework of Logic.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -8320,7 +8320,7 @@
   "Yoshino": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE Pseudo-healer with high damage but is squishy herself. Random slows.",
+      "notes": "Pseudo-healer with high damage but is squishy herself. Random slows.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
