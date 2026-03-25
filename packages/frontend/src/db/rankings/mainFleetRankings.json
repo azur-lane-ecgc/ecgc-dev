@@ -31,7 +31,7 @@
   "Admiral Nakhimov": [
     {
       "nameNote": "",
-      "notes": "One of the highest damage ships against medium armor, she also has good damage against heavy armor enemies. When she launches an airstrike, she slows the enemies from 1.5s after her airstrike to 6.5s after. If the enemy is slowed by another Northern Parliament ship, then the period from 1.5s to 4.0s becomes a freeze. Nakhimov also gains +40% crit damage against enemies slowed by other NP ships, which is worth about 10% more damage. This makes her somewhat dependent on being run with another Nothern Parliment ship that can slow enemies (usually Soyuz or Moskva).  These tiers and damage ratings <strong>assume that there is no such slow</strong> in the fleet. See Nakhimov's pairing for an idea of how she performs with a good Northern Parliament ship who has a slow.",
+      "notes": "One of the highest damage ships against medium armor, she also has good damage against heavy armor enemies. When she launches an airstrike, she slows the enemies from 1.5s after her airstrike to 6.5s after. If the enemy is slowed by another Northern Parliament ship, then the period from 1.5s to 4.0s becomes a freeze. Nakhimov also gains +40% crit damage against enemies slowed by other NP ships, which is worth about 10% more damage. This makes her somewhat dependent on being run with another Nothern Parliament ship that can slow enemies (usually Soyuz or Moskva).  These tiers and damage ratings <strong>assume that there is no such slow</strong> in the fleet. See Nakhimov's pairing for an idea of how she performs with a good Northern Parliament ship who has a slow.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -58,7 +58,7 @@
     },
     {
       "nameNote": "with Moskva or Soyuz",
-      "notes": "When Admiral Nakhimov launches an airstrike, she slows the enemies from 1.5s after her airstrike to 6.5s after. If the enemy is slowed by another Northern Parliament ship, then the period from 1.5s to 4.0s becomes a freeze. Nakhimov also gains +40% crit damage against enemies slowed by other NP ships, and this is worth about 10% more damage. Thus, her tiers and damage ratings assume that Moskva's permanent or Soyuz's 6 second slow is active for the whole period from 1.5s after Nakhimov's airstrike until Nakhimov's payload hits. For the Offense Buff, she is credited with a freeze, but she only turns slow into freeze.",
+      "notes": "When Admiral Nakhimov launches an airstrike, she slows the enemies from 1.5s after her airstrike to 6.5s after. If the enemy is slowed by another Northern Parliament ship, then the period from 1.5s to 4.0s becomes a freeze. Nakhimov also gains +40% crit damage against enemies slowed by other NP ships, and this is worth about 10% more damage. Thus, her tiers and damage ratings assume that Moskva's permanent or Soyuz's 6 second slow is active for the whole period from 1.5s after Nakhimov's air strike until Nakhimov's payload hits. For the Offense Buff, she is credited with a freeze, but she only turns slow into freeze.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "S",
@@ -1241,7 +1241,7 @@
   "Centaur": [
     {
       "nameNote": "",
-      "notes": "Assumes there are 3 Royal Navy ships for 10% more damage. Delayed slow. Needs to launch airstrike before other main fleet ships.",
+      "notes": "Assumes there are 3 Royal Navy ships for 10% more damage. Delayed slow. Needs to launch air strike before other main fleet ships.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
