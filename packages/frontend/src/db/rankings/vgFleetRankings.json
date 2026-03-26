@@ -3296,7 +3296,7 @@
   "Eldridge": [
     {
       "nameNote": "",
-      "notes": "Consistent slow and RNG massive buff to vanguard survivability. Also a free +10 Hedgehog.",
+      "notes": "Consistent slow and RNG massive buff to vanguard survivability. Also a free +10 Hedgehog. WHY TF DO PEOPLE PUT HER MIDDLE. Middle is the worst position for Eldridge in PvE, all it does is make her eat torpedoes instead of do the one thing she's meant to do.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -6803,6 +6803,33 @@
       "defensivebuff": null
     }
   ],
+  "Kizu": [
+    {
+      "nameNote": "",
+      "notes": "Prefers more Sakura Empire vanguard ships in the fleet. These ratings assume there is one other, for two total. Kizu has worse damage and survivability than Nayoro.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": null,
+      "w15boss": null,
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 59,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Kizuna AI": [
     {
       "nameNote": "",
@@ -7022,7 +7049,7 @@
   "Köln": [
     {
       "nameNote": "",
-      "notes": "Chooses from 10 possible barrages.",
+      "notes": "Chooses from 10 possible barrages. More ASW if she equips the Fl 282 Kolibri helicopter.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -7041,6 +7068,33 @@
       "aoedmg": 1,
       "offensivebuff": null,
       "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Köln META": [
+    {
+      "nameNote": "",
+      "notes": "More ASW if she equips the Fl 282 Kolibri helicopter.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": null,
+      "w15boss": null,
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 76,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -9309,6 +9363,33 @@
       "aoedmg": 1,
       "offensivebuff": null,
       "selfsurvival": 1,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Nayoro": [
+    {
+      "nameNote": "",
+      "notes": "Much of Nayoro's damage comes from her timed skill barrage, making her a reasonable choice for new players without good gear. She can replace Laffey/Javelin/Z23.",
+      "hardarbiter": "C",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": null,
+      "w15boss": null,
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 67,
       "aa": null,
       "asw": null,
       "defensivebuff": null

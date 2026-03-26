@@ -7768,6 +7768,35 @@
       "vgsurvival": null
     }
   ],
+  "Unryuu": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "A",
+      "w14boss": "B",
+      "w15mob": null,
+      "w15boss": null,
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 2,
+      "dmguptime": 2,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Valiant": [
     {
       "nameNote": "",
