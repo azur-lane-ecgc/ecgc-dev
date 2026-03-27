@@ -7094,7 +7094,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 76,
+      "selfsurvival": 77,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -9372,7 +9372,7 @@
     {
       "nameNote": "",
       "notes": "Much of Nayoro's damage comes from her timed skill barrage, making her a reasonable choice for new players without good gear. She can replace Laffey/Javelin/Z23.",
-      "hardarbiter": "C",
+      "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
       "w14mob": "D",
