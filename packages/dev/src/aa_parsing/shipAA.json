@@ -45,18 +45,25 @@
       "percentSD": "100.00%"
     }
   ],
-  "Moskva": [
+  "Akashi": [
     {
-      "name": "Moskva",
-      "totalAA": "1076",
-      "percentSD": "37.78%"
+      "name": "Akashi",
+      "totalAA": "3791",
+      "percentSD": "133.05%"
     }
   ],
-  "William D Porter": [
+  "Vestal": [
     {
-      "name": "William D Porter",
-      "totalAA": "2086",
-      "percentSD": "73.23%"
+      "name": "Vestal",
+      "totalAA": "3744",
+      "percentSD": "131.38%"
+    }
+  ],
+  "Vestal META": [
+    {
+      "name": "Vestal META",
+      "totalAA": "3738",
+      "percentSD": "131.20%"
     }
   ],
   "Isuzu": [
@@ -161,25 +168,11 @@
       "percentSD": "88.53%"
     }
   ],
-  "Akashi": [
+  "William D Porter": [
     {
-      "name": "Akashi",
-      "totalAA": "2080",
-      "percentSD": "73.01%"
-    }
-  ],
-  "Vestal": [
-    {
-      "name": "Vestal",
-      "totalAA": "2033",
-      "percentSD": "71.34%"
-    }
-  ],
-  "Vestal META": [
-    {
-      "name": "Vestal META",
-      "totalAA": "2028",
-      "percentSD": "71.16%"
+      "name": "William D Porter",
+      "totalAA": "2086",
+      "percentSD": "73.23%"
     }
   ],
   "Juneau": [
@@ -252,18 +245,18 @@
       "percentSD": "58.78%"
     }
   ],
-  "San Juan": [
-    {
-      "name": "San Juan",
-      "totalAA": "1613",
-      "percentSD": "56.63%"
-    }
-  ],
   "Scylla": [
     {
       "name": "Scylla",
       "totalAA": "1614",
       "percentSD": "56.64%"
+    }
+  ],
+  "San Juan": [
+    {
+      "name": "San Juan",
+      "totalAA": "1613",
+      "percentSD": "56.63%"
     }
   ],
   "Dido": [
@@ -416,6 +409,13 @@
       "name": "Ingraham",
       "totalAA": "1100",
       "percentSD": "38.59%"
+    }
+  ],
+  "Moskva": [
+    {
+      "name": "Moskva",
+      "totalAA": "1076",
+      "percentSD": "37.78%"
     }
   ],
   "Bremerton": [
