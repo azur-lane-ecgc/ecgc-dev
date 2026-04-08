@@ -40,8 +40,8 @@ export const shipRoleParse = (
   vgFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
   ssFleetRankingData: Record<string, SSFleetRankingProps[]>,
 ): string[] => {
-  const tanks = tankRole(shipEHPData, vgFleetRankingData)
-  const superTanks = superTankRole(shipEHPData, vgFleetRankingData)
+  const tanks = tankRole(shipEHPData)
+  const superTanks = superTankRole(shipEHPData)
   const fastLoadShips = fastLoadRole()
   const preloadShips = preloadRole()
   const aaShips = aaRole(shipAAData, vgFleetRankingData, mainFleetRankingData)
