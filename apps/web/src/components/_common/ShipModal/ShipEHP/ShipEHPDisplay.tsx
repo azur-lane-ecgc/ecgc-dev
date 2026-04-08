@@ -54,20 +54,20 @@ export const ShipEHPDisplay: React.FC<ShipEHPDisplayProps> = ({ ship }) => {
 
           return (
             <tr key={ehpItem.name}>
-              <td className="hover:!bg-gray-800">
+              <td className="hover:bg-gray-800!">
                 <span className="text-base font-bold text-lime-400/90">
                   {ehpItem.name}
                 </span>
               </td>
               <td
                 style={{ backgroundColor: getEHPColor(totalEHP) }}
-                className="!font-bold !text-black"
+                className="font-bold! text-black!"
               >
                 {totalEHP}%
               </td>
               <td
                 style={{ backgroundColor: getSTDColor(std) }}
-                className="!font-bold !text-black"
+                className="font-bold! text-black!"
               >
                 {std}%
               </td>

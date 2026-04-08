@@ -43,7 +43,7 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
             )}`}
             title={location.name}
             aria-label={location.name}
-            className="bg-transparent font-bold !text-[#0047ab] no-underline hover:!text-[#3c5679] hover:underline active:!text-[#3c5679] active:underline"
+            className="bg-transparent font-bold text-[#0047ab]! no-underline hover:text-[#3c5679]! hover:underline active:text-[#3c5679]! active:underline"
           >
             {location.name}
           </a>{" "}
