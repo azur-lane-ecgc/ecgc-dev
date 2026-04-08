@@ -63,9 +63,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
 
   return (
     <>
-      <nav className="sticky top-0 z-[70] bg-[#222a42] text-white">
+      <nav className="sticky top-0 z-70 bg-[#222a42] text-white">
         <div className="container mx-auto py-2">
-          <div className="flex h-[40px] items-center justify-between">
+          <div className="flex h-10 items-center justify-between">
             <a
               aria-label="site-icon"
               href={`/`}
@@ -86,7 +86,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
             </div>
             {/* Mobile Menu Button */}
             <button
-              className="flex items-center justify-center rounded p-2 text-white hover:bg-white/15 hover:shadow-lg focus:outline-none md:hidden"
+              className="flex items-center justify-center rounded p-2 text-white hover:bg-white/15 hover:shadow-lg focus:outline-hidden md:hidden"
               onClick={toggleNavCollapse}
             >
               <i className="fas fa-bars text-xl" />
@@ -97,7 +97,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
         {/* Mobile Dropdown Menu */}
         <div
           ref={dropdownRef}
-          className={`absolute top-[47px] left-0 z-[71] w-full overflow-hidden bg-[#222a42] transition-[max-height] duration-300 ease-in-out md:hidden ${
+          className={`absolute top-11.75 left-0 z-71 w-full overflow-hidden bg-[#222a42] transition-[max-height] duration-300 ease-in-out md:hidden ${
             isNavCollapsed ? "max-h-0" : "max-h-screen"
           }`}
         >
@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
       </nav>
       {!isNavCollapsed && (
         <div
-          className={`fixed top-0 left-0 z-[69] h-full w-full bg-black/40 md:hidden`}
+          className={`fixed top-0 left-0 z-69 h-full w-full bg-black/40 md:hidden`}
           aria-hidden="true"
           onClick={collapseAll}
         />

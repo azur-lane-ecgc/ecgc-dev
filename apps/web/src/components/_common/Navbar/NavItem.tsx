@@ -50,7 +50,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
           </span>
         </button>
         {isOpen && (
-          <div className="absolute left-0 z-[70] mt-2 min-w-fit rounded-md bg-[#222a42] shadow-lg ring-1 ring-black/5">
+          <div className="absolute left-0 z-70 mt-2 min-w-fit rounded-md bg-[#222a42] shadow-lg ring-1 ring-black/5">
             <div
               role="menu"
               aria-orientation="vertical"
@@ -63,8 +63,8 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
                   key={idx}
                   href={item?.external ? `${item.href}` : `/${item.href}`}
                   className={`block px-3 py-1 text-[1rem] ${
-                    activePage === item.href ? "navbar-active !text-white" : ""
-                  } transition-colors duration-200 hover:!bg-white/15 hover:text-cyan-400`}
+                    activePage === item.href ? "navbar-active text-white!" : ""
+                  } transition-colors duration-200 hover:bg-white/15! hover:text-cyan-400`}
                   role="menuitem"
                 >
                   {item.name}
@@ -81,7 +81,7 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
     <a
       aria-label={page.href}
       href={page?.external ? `${page.href}` : `/${page.href}`}
-      className={`navbar-link flex min-h-[40px] items-center rounded-md px-2 py-2 text-base font-medium ${
+      className={`navbar-link flex min-h-10 items-center rounded-md px-2 py-2 text-base font-medium ${
         activePage === page.href ? "navbar-active" : ""
       } transition-colors duration-200`}
       target={page.external ? "_blank" : "_self"}

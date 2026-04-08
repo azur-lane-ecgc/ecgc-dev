@@ -138,7 +138,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
           >
             {selected ? truncateString(selected, 18) : `${title}...`}
           </span>
-          <div className="m-0 flex flex-col justify-center space-y-0 space-x-0 *:!leading-[0.35]">
+          <div className="m-0 flex flex-col justify-center space-y-0 space-x-0 *:leading-[0.35]!">
             {showOptions ? (
               <i className="fa fa-caret-up text-sm text-cyan-300"></i>
             ) : (
@@ -160,11 +160,11 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             placeholder={`Search ${title.toLowerCase()}...`}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="w-full rounded-t-xl border-transparent bg-[#444d55] py-1 pl-2 text-gray-200 focus:outline-none"
+            className="w-full rounded-t-xl border-transparent bg-[#444d55] py-1 pl-2 text-gray-200 focus:outline-hidden"
           />
           <div className="my-1 max-h-64 overflow-auto px-1">
             {filteredOptions.length === 0 ? (
-              <div className="mx-auto my-auto flex h-[32px] cursor-default items-center justify-center rounded-md p-1 text-sm text-gray-300 italic">
+              <div className="mx-auto my-auto flex h-8 cursor-default items-center justify-center rounded-md p-1 text-sm text-gray-300 italic">
                 Nothing found.
               </div>
             ) : (
@@ -189,7 +189,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
 
       {/* Combobox menu (mobile) */}
       {shouldRenderMobile && (
-        <div className="fixed inset-0 z-[80] block sm:hidden">
+        <div className="fixed inset-0 z-80 block sm:hidden">
           {/* Overlay with fade animation */}
           <div
             className={`fixed inset-0 bg-black transition-all duration-300 ease-in-out ${
@@ -200,7 +200,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
 
           {/* Close message */}
           <span
-            className={`pointer-events-none fixed top-[7px] left-1/2 z-30 w-full -translate-x-1/2 transform bg-transparent py-2 text-center font-bold text-fuchsia-400 transition-all duration-300 ${
+            className={`pointer-events-none fixed top-1.75 left-1/2 z-30 w-full -translate-x-1/2 transform bg-transparent py-2 text-center font-bold text-fuchsia-400 transition-all duration-300 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-4 opacity-0"
@@ -224,11 +224,11 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
               placeholder={`Search ${title.toLowerCase()}...`}
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className="w-full rounded-t-xl border-transparent bg-[#444d55] py-3 pl-2 text-gray-200 focus:outline-none"
+              className="w-full rounded-t-xl border-transparent bg-[#444d55] py-3 pl-2 text-gray-200 focus:outline-hidden"
             />
             <div className="h-72 max-h-72 overflow-auto px-1 py-2">
               {filteredOptions.length === 0 ? (
-                <div className="mx-auto my-auto flex h-[50px] cursor-default items-center justify-center rounded-md p-1 text-sm text-gray-300 italic">
+                <div className="mx-auto my-auto flex h-12.5 cursor-default items-center justify-center rounded-md p-1 text-sm text-gray-300 italic">
                   Nothing found.
                 </div>
               ) : (
@@ -238,7 +238,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
                     onClick={() => handleSelect(item)}
                     className={`${
                       selected === item ? "text-orange-400" : "text-gray-300"
-                    } flex h-[40px] cursor-pointer items-center justify-between rounded-md p-3 font-semibold hover:bg-[#444d55]`}
+                    } flex h-10 cursor-pointer items-center justify-between rounded-md p-3 font-semibold hover:bg-[#444d55]`}
                   >
                     {item}
                     {selected === item && (

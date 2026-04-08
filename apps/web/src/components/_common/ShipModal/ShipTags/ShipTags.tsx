@@ -26,7 +26,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         } hover:border-amber-500 hover:text-cyan-300 md:hidden`}
       >
         <i
-          className={`fa-solid translate-y-[1px] ${
+          className={`fa-solid translate-y-0.25 ${
             roleDropdownOpen ? "fa-angle-up" : "fa-angle-down"
           }`}
         />
@@ -35,12 +35,12 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
       {/* Tags (Smaller Screen) */}
       <div
         className={`${
-          roleDropdownOpen ? "max-h-[500px] border" : "max-h-0 border-0"
-        } absolute top-[31px] left-0 z-50 w-[150px] overflow-hidden border-gray-400 bg-slate-800 text-center shadow-2xl transition-all duration-300 ease-in-out md:hidden`}
+          roleDropdownOpen ? "max-h-125 border" : "max-h-0 border-0"
+        } absolute top-7.75 left-0 z-50 w-37.5 overflow-hidden border-gray-400 bg-slate-800 text-center shadow-2xl transition-all duration-300 ease-in-out md:hidden`}
       >
         {/* Faction Icon */}
         <div className="flex w-full justify-between border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
-          <span className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden">
+          <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden">
             {getFactionIcon(faction)}
           </span>
           <a
@@ -56,7 +56,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
 
         {/* HullType Icon */}
         <div className="flex w-full justify-between border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]">
-          <span className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden">
+          <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden">
             <img
               loading="lazy"
               src={`/images/ship_type/${hullType}.png`}
@@ -83,7 +83,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             className="flex w-full justify-between border-transparent border-b-gray-600 px-3 py-1 hover:border-[#ffa500] hover:bg-[#3b444bb9]"
           >
             <span
-              className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"
+              className="relative flex h-10 w-10 items-center justify-center overflow-hidden"
               title={role}
             >
               {RoleIcons[role]}
@@ -103,7 +103,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
         {/* Faction + Hull Icons */}
         <div className="mt-1 flex space-x-1 pl-1">
           <a
-            className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"
+            className="relative flex h-10 w-10 items-center justify-center overflow-hidden"
             href={factionLink(faction)}
             target="_blank"
             title={"Faction: " + faction}
@@ -112,7 +112,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
             {getFactionIcon(faction)}
           </a>
           <a
-            className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"
+            className="relative flex h-10 w-10 items-center justify-center overflow-hidden"
             href={hullTypeLink(hullType)}
             target="_blank"
             title={"Hull: " + hullType}
@@ -135,7 +135,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
               aria-label={role}
               title={role}
               key={role}
-              className="relative flex h-[40px] w-[40px] items-center justify-center overflow-hidden"
+              className="relative flex h-10 w-10 items-center justify-center overflow-hidden"
             >
               {RoleIcons[role] || RoleIcons["default"]}
             </div>

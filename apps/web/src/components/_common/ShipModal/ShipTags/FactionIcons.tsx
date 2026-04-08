@@ -5,7 +5,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/0.webp"
       alt="Universal"
       title="Faction: Universal"
-      className="h-auto w-[32px]"
+      className="h-auto w-8"
     />
   ),
   USS: (
@@ -23,7 +23,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/2.webp"
       alt="HMS"
       title="Faction: HMS"
-      className="h-auto w-[30px]"
+      className="h-auto w-7.5"
     />
   ),
   IJN: (
@@ -32,7 +32,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/3.webp"
       alt="IJN"
       title="Faction: IJN"
-      className="h-auto w-[40px]"
+      className="h-auto w-10"
     />
   ),
   KMS: (
@@ -41,7 +41,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/4.webp"
       alt="KMS"
       title="Faction: KMS"
-      className="h-auto w-[32px]"
+      className="h-auto w-8"
     />
   ),
   DE: (
@@ -50,7 +50,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/5.webp"
       alt="DE"
       title="Faction: DE"
-      className="h-auto w-[33px]"
+      className="h-auto w-8.25"
     />
   ),
   RN: (
@@ -59,7 +59,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/6.webp"
       alt="RN"
       title="Faction: RN"
-      className="h-auto w-[40px]"
+      className="h-auto w-10"
     />
   ),
   SN: (
@@ -68,7 +68,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/7.webp"
       alt="SN"
       title="Faction: SN"
-      className="h-auto w-[40px]"
+      className="h-auto w-10"
     />
   ),
   FFNF: (
@@ -77,7 +77,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/8.webp"
       alt="FFNF"
       title="Faction: FFNF"
-      className="h-auto w-[30px]"
+      className="h-auto w-7.5"
     />
   ),
   MNF: (
@@ -86,7 +86,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/9.webp"
       alt="MNF"
       title="Faction: MNF"
-      className="h-auto w-[30px]"
+      className="h-auto w-7.5"
     />
   ),
   HNLMS: (
@@ -95,7 +95,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/11.webp"
       alt="HNLMS"
       title="Faction: HNLMS"
-      className="h-auto w-[30px]"
+      className="h-auto w-7.5"
     />
   ),
   MOT: (
@@ -104,7 +104,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/96.webp"
       alt="MOT"
       title="Faction: MOT"
-      className="h-auto w-[40px] bg-[#fafafa]!"
+      className="h-auto w-10 bg-[#fafafa]!"
     />
   ),
   META: (
@@ -113,7 +113,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/97.webp"
       alt="META"
       title="Faction: META"
-      className="h-auto w-[37px] bg-[#fafafa]!"
+      className="h-auto w-9.25 bg-[#fafafa]!"
     />
   ),
   Neptunia: (
@@ -122,7 +122,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/101.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="h-auto w-[40px] bg-[#fafafa]!"
+      className="h-auto w-10 bg-[#fafafa]!"
     />
   ),
   Bilibili: (
@@ -131,7 +131,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/102.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="h-auto w-[40px] bg-[#fafafa]!"
+      className="h-auto w-10 bg-[#fafafa]!"
     />
   ),
   default: (
@@ -140,7 +140,7 @@ const FactionIcons: { [key: string]: React.JSX.Element } = {
       src="https://al.mrlar.dev/icons/nation/100.webp"
       alt="Collab"
       title="Faction: Collab"
-      className="h-auto w-[40px] bg-[#fafafa]!"
+      className="h-auto w-10 bg-[#fafafa]!"
     />
   ),
 }
