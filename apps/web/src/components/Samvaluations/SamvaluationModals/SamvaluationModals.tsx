@@ -91,7 +91,7 @@ export const SamvaluationModals: React.FC = () => {
           })}
         </ItemContainer>
       ) : (
-        <div className="container mx-auto mt-5 w-9/12 border-t !border-t-gray-400 pt-4 text-center">
+        <div className="container mx-auto mt-5 w-9/12 border-t border-t-gray-400! pt-4 text-center">
           <span className="font-bold text-red-400">
             There are no ships that meet this criteria.
           </span>

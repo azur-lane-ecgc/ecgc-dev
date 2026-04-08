@@ -133,7 +133,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
           {/* Modal Window */}
           <div
             id={`resourceModal${name}`}
-            className={`${modalStyle} max-w-[800px]!`}
+            className={`${modalStyle} max-w-200!`}
             onClick={(e) => e.stopPropagation()}
             role="document"
           >
@@ -420,7 +420,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 ]}
                 allActive={true}
               >
-                <tr className="h-[175px] min-h-[175px]">
+                <tr className="h-43.75 min-h-43.75">
                   <td className={getCellColor(drops.academy?.checkMark.color)}>
                     <Mark mark={drops.academy?.checkMark} />
                     <LocationLinks locations={drops.academy?.locations} />
@@ -456,7 +456,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 ]}
                 allActive={true}
               >
-                <tr className="h-[175px] min-h-[175px]">
+                <tr className="h-43.75 min-h-43.75">
                   <td
                     className={getCellColor(
                       drops.campaignDrop?.checkMark.color,
@@ -498,7 +498,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 ]}
                 allActive={true}
               >
-                <tr className="h-[175px] min-h-[175px]">
+                <tr className="h-43.75 min-h-43.75">
                   <td
                     className={getCellColor(drops.generalShop?.checkMark.color)}
                   >
@@ -535,7 +535,7 @@ export const ResourceModal: React.FC<ResourceModalProps> = ({
                 ]}
                 allActive={true}
               >
-                <tr className="h-[175px] min-h-[175px]">
+                <tr className="h-43.75 min-h-43.75">
                   <td
                     className={getCellColor(
                       drops.coreDataShop?.checkMark.color,
