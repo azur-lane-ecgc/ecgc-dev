@@ -70,11 +70,11 @@ import { pageInfo } from "@/constants/index"
         .map((guide) => (
           <div class="gridcell-list-style mt-3 w-full px-3 text-left sm:mt-0">
             <div class="mt-1 flex">
-              <div class="w-[80px] shrink-0">
+              <div class="w-20 shrink-0">
                 <a href={guide.link} target="_self" rel="noopener noreferrer">
                   <img
                     loading="lazy"
-                    class="h-[100px] rounded object-cover shadow-lg"
+                    class="h-25 rounded object-cover shadow-lg"
                     src={guide.image}
                     alt={`${guide.title} cover`}
                   />
@@ -133,7 +133,7 @@ import { pageInfo } from "@/constants/index"
           >
             <img
               loading="lazy"
-              class="mx-auto h-[200px] w-[150px] rounded object-cover shadow-lg"
+              class="mx-auto h-50 w-37.5 rounded object-cover shadow-lg"
               src={guide.image}
               alt={guide.title}
             />

@@ -21,7 +21,7 @@ const factionData = allFactionData.find(
         .sort((a, b) => a.techPoints - b.techPoints)
         .map(({ ship, techPoints, note }) => (
           <li>
-            <p class="!italic">
+            <p class="italic!">
               <WikiLink page={ship}>{ship}</WikiLink>
               {` - ${techPoints}`}
               {note && ` (${note})`}
