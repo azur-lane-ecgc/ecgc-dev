@@ -15,8 +15,8 @@ export const rankingTypes: Record<string, string> = {
   CM: "cm",
   "W14 Mob": "w14mob",
   "W14 Boss": "w14boss",
-  "W15 Mob": "w15mob",
-  "W15 Boss": "w15boss",
+  "W15/16 Mob": "w15mob",
+  "W15/16 Boss": "w15boss",
   "Event EX": "ex",
 }
 
