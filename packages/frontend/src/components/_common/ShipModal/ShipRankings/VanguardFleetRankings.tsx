@@ -208,20 +208,12 @@ export const VanguardFleetRanking: React.FC<VGFleetComponentRankingProps> = ({
           {/* Defense Table */}
           <ItemTable
             tableInfo={[
-              { colName: "Self Survival", colWidth: "5%" },
               { colName: "AA", colWidth: "5%" },
               { colName: "ASW", colWidth: "5%" },
               { colName: "Def. Buff", colWidth: "5%" },
             ]}
           >
             <tr className="*:text-base">
-              <td
-                className={`${numberRankColor(
-                  ranking.selfsurvival,
-                )} font-semibold !text-black`}
-              >
-                {ranking.selfsurvival ?? "\u200B"}
-              </td>
               <td
                 className={`${numberRankColor(
                   ranking.aa,

@@ -1,9 +1,7 @@
 import type { ShipEHPProps } from "@/db/types"
-import type { VanguardFleetRankingProps } from "@/db/types"
 
 export const superTankRole = (
   shipEHPData: Record<string, ShipEHPProps[]>,
-  VGFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
 ): Set<string> => {
   const tankSet = new Set<string>()
 
@@ -15,16 +13,6 @@ export const superTankRole = (
         const std = parseFloat(stats.std.replace("%", ""))
 
         if (totalEHP - std >= 100) {
-          tankSet.add(shipName)
-          break
-        }
-      }
-    }
-
-    const rankings = VGFleetRankingData[shipName]
-    if (rankings) {
-      for (const ranking of rankings) {
-        if (ranking.selfsurvival && ranking.selfsurvival >= 5) {
           tankSet.add(shipName)
           break
         }
