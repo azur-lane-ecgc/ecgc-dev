@@ -259,13 +259,6 @@
       "percentSD": "56.63%"
     }
   ],
-  "Scylla": [
-    {
-      "name": "Scylla",
-      "totalAA": "1614",
-      "percentSD": "56.64%"
-    }
-  ],
   "Dido": [
     {
       "name": "Dido",
