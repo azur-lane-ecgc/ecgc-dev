@@ -13,7 +13,7 @@ export const ItemCellSkeleton: React.FC<itemSkeletonProps> = ({ id }) => {
     >
       <div className="relative">
         {/* IMG Skeleton HERE */}
-        <Skeleton className="mx-auto my-1.5 mb-2 h-[60px] w-[60px] overflow-hidden p-0.5 shadow-[0_10px_25px_0_rgb(0,0,0)]" />
+        <Skeleton className="mx-auto my-1.5 mb-2 h-15 w-15 overflow-hidden p-0.5 shadow-[0_10px_25px_0_rgb(0,0,0)]" />
         {/* TEXT SKELETON HERE */}
         <div className="flex flex-col items-center justify-center">
           <Skeleton className="mb-1 h-2 w-[69%]" />

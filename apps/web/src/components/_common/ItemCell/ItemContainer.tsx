@@ -3,5 +3,5 @@ interface ItemContainerProps {
 }
 
 export const ItemContainer: React.FC<ItemContainerProps> = ({ children }) => {
-  return <div className="mx-[10px] my-[20px] flex flex-wrap">{children}</div>
+  return <div className="mx-2.5 my-5 flex flex-wrap">{children}</div>
 }
