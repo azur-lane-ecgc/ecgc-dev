@@ -1,0 +1,24 @@
+---
+import GuideHeading from "@/components/_common/GuideHeading.astro"
+import Changelog2026Content from "@/components/Changelog/Changelog2026Content.astro"
+import GuidePageLayout from "@/layouts/guides/GuidePageLayout.astro"
+
+const year = 2026
+---
+
+<GuidePageLayout
+  title="Changelog"
+  activePage="changelog"
+  canonical="changelog/2026"
+  tocID={`Changelog${year}`}
+  metaUrl="changelog"
+  metaDescription="ECGC Changelog"
+>
+  <GuideHeading title={`Changelog (${year})`}>
+    <p>
+      &lt;&lt; <a href="/changelog/2025">2025</a>
+    </p>
+  </GuideHeading>
+
+  <Changelog2026Content />
+</GuidePageLayout>
