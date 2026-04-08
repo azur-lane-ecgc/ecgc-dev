@@ -29,7 +29,7 @@ export const RoleIcons: { [key: string]: React.JSX.Element } = {
       loading="lazy"
       src="https://al.mrlar.dev/icons/stats/asw.webp"
       alt="icon"
-      className="h-auto w-[32px] text-red-300"
+      className="h-auto w-8 text-red-300"
     />
   ),
   DmgDealer: (
