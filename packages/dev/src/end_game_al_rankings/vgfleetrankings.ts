@@ -101,8 +101,8 @@ const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
       cm: rowData["CM"] || null,
       w14mob: rowData["W14 Mob"] || null,
       w14boss: rowData["W14 Boss"] || null,
-      w15mob: rowData["W15 Mob"] || null,
-      w15boss: rowData["W15 Boss"] || null,
+      w15mob: rowData["W15/16 Mob"] || null,
+      w15boss: rowData["W15/16 Boss"] || null,
       ex: rowData["EX"] || null,
       consistency: rowData["Consistency"]
         ? parseInt(rowData["Consistency"])
