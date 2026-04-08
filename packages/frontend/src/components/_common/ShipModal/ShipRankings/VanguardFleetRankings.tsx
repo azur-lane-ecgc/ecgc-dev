@@ -55,8 +55,8 @@ export const VanguardFleetRanking: React.FC<VGFleetComponentRankingProps> = ({
               { colName: "CM", colWidth: "5%" },
               { colName: "W14 Mob", colWidth: "5%" },
               { colName: "W14 Boss", colWidth: "5%" },
-              { colName: "W15 Mob", colWidth: "5%" },
-              { colName: "W15 Boss", colWidth: "5%" },
+              { colName: "W15/16 Mob", colWidth: "5%" },
+              { colName: "W15/16 Boss", colWidth: "5%" },
               { colName: "EX", colWidth: "5%" },
             ]}
           >
