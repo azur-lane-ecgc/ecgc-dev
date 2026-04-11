@@ -23885,7 +23885,7 @@
     "augments": ["Nanotech Repulsor", "Crossbow", "Sword"],
     "samEval": "Reno is an AA-oriented CL with meh stats and skills. Her AA output is really high, but not good enough to AA carry. Her personal damage and bulk are both average at best. Collection only.",
     "fastLoad": null,
-    "roles": ["ASW", "AA"],
+    "roles": ["ASW", "DmgDealer", "AA"],
     "locations": {
       "events": [
         {
