@@ -3207,11 +3207,11 @@
   "Honoka": [
     {
       "nameNote": "",
-      "notes": "Random heals.",
+      "notes": "Because of the heal and delayed barrage, Honoka is more suited for mob fleet flagship. She heals two random ships, which is inconsistent in a full fleet of six ships. In a 1:1 low oil fleet, she would always heal herself and the vanguard ship, but Honoka's oil cost of 15 is not suitable for low oil purposes.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
-      "w14mob": "D",
+      "w14mob": "C",
       "w14boss": "D",
       "w15mob": "D",
       "w15boss": "D",
@@ -3220,10 +3220,10 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": -2,
-      "lightdmg": 2,
+      "lightdmg": 3,
       "mediumdmg": 2,
-      "heavydmg": 1,
-      "aoedmg": 1,
+      "heavydmg": 2,
+      "aoedmg": 2,
       "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": null,
@@ -4769,7 +4769,7 @@
   "Luna": [
     {
       "nameNote": "",
-      "notes": "First airstrike is staggered, but further ones may be close to Unicorn.",
+      "notes": "Luna has two 50% reload time airstrikes, so she is not a true stagger from other carriers like Independence is. The first airstrike is staggered but later ones may be close to Unicorn. She can be used for farming fast in Operation Siren while not being terrible at Strongholds or bosses, but overall Independence just does everything better.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5343,7 +5343,7 @@
   "Nagisa": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "In bossing, Nagisa should fire before the other main fleet ships to apply a 30% slow and 10% EVA debuff.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5546,7 +5546,7 @@
   "Nyotengu": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Some bombs delayed by 5 seconds after her airstrike could be useful in mobbing...if she manages to kill anything with her poor stats. To add insult to injury, Nyotengu's unique augment only improves her damage by 9%.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5563,7 +5563,7 @@
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "dmguptime": null,
+      "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
@@ -7423,11 +7423,11 @@
   "Tamaki": [
     {
       "nameNote": "",
-      "notes": "Armor Break not limited to heavy armor.",
-      "hardarbiter": "C",
-      "meta": "C",
-      "cm": "C",
-      "w14mob": "C",
+      "notes": "Tamaki's extended secondary gun range of 80 is good for dealing with Bombing Ships in all of campaign and Kagerou Productions in Chapter 14. However, 80 range does not reach 99% of bosses. The guaranteed Armor Break on barrage hit is not limited to heavy armor, giving her +1 Offense Buff against light and medium armor bosses.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
       "w14boss": "B",
       "w15mob": "D",
       "w15boss": "D",
@@ -7440,7 +7440,7 @@
       "mediumdmg": 3,
       "heavydmg": 3,
       "aoedmg": 3,
-      "dmguptime": null,
+      "dmguptime": 1,
       "offensivebuff": 1,
       "selfsurvival": null,
       "aa": null,
