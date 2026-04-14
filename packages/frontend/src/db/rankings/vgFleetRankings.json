@@ -6347,7 +6347,7 @@
   "Kasumi (Venus Vacation)": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Kasumi is like Portland with slightly better survivability, better offense with less reliance on rainbow guns, and 4 gold bulins and 6k augment exp in debt.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -8237,7 +8237,7 @@
   "Marie Rose": [
     {
       "nameNote": "",
-      "notes": "Better in shorter battles (60 seconds).",
+      "notes": "Marie Rose's skills mean that she is stronger in shorter battles. Her large torpedo damage buff expires after 3 torpedo salvos, which takes about 40 seconds, and her other buffs expire after 60 seconds.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -8697,10 +8697,10 @@
     {
       "nameNote": "",
       "notes": "Buffs DOA ships and prefers another DOA ship.",
-      "hardarbiter": "D",
-      "meta": "D",
-      "cm": "D",
-      "w14mob": "D",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "C",
       "w14boss": "D",
       "w15mob": "D",
       "w15boss": "D",
@@ -8831,7 +8831,7 @@
   "Monica": [
     {
       "nameNote": "",
-      "notes": "Desynced debuff.",
+      "notes": "To buff fleet torpedo and AA, Monica needs 5 enemy airplanes to die in the AA range. Only 1/4 of her 15s barrage applies the 10% damage taken debuff. So each time, the barrage has an approximately 44% chance to apply that debuff.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
