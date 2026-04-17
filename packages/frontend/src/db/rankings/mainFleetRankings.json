@@ -6873,6 +6873,35 @@
       "vgsurvival": null
     }
   ],
+  "Shizuku": [
+    {
+      "nameNote": "",
+      "notes": "Shizuku buffs fleet FP, AA, and EVA. Do not be baited into using worse longer-reload guns just for a tiny increase in these buffs. She does have a 100% chance barrage on main gun salvo, so using slower guns will also nerf that damage. Shizuku also has various minor bits of healing that aren't tied to her main gun salvos. The minor bits are a mix of targeting random and targeting lowest percentage HP, and they add up to about 4% per main fleet ship and 13% per vanguard ship in expectation, assuming a vanguard ship usually has the lowest percentage HP remaining. The small AA and EVA buffs further boost her whole-fleet protection. This is quite solid in both mobbing and bossing, though of course Shizuku does not excuse Unicorn from your mob fleet. Lastly, not mentioned in the skill text is that her barrage has a chance to apply a Richelieu burn, which decreases enemy FP, TRP, and AVI by 5%.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": -3,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 2,
+      "dmguptime": null,
+      "offensivebuff": 1,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": 3,
+      "vgsurvival": null
+    }
+  ],
   "Shouhou": [
     {
       "nameNote": "",
