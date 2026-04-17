@@ -11258,6 +11258,33 @@
       "defensivebuff": null
     }
   ],
+  "Shandy": [
+    {
+      "nameNote": "",
+      "notes": "Shandy offers various buffs for the vanguard, where each effect is active 4/15 of the time on each ship in expectation. They are worth about 8% damage increase and 4% survivability for the vanguard.",
+      "hardarbiter": null,
+      "meta": null,
+      "cm": null,
+      "w14mob": null,
+      "w14boss": null,
+      "w15mob": null,
+      "w15boss": null,
+      "ex": null,
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "Sheffield": [
     {
       "nameNote": "",

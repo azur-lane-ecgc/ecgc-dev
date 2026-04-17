@@ -479,6 +479,22 @@
       "offensivebuff": 1
     }
   ],
+  "Patty": [
+    {
+      "nameNote": "Base",
+      "notes": "Patty has one of the highest oxygen and reload combinations of all submarines, increasing consistency compared to other submarines with the same gear or allowing Oxytorp in some cases. Although she has strong barrages, she has basically zero buffs for her equipped torpedoes beyond the implicit oxygen and reload bonus. Patty's only saving grace is a 20% slow for 8 seconds at the start, which is worse than Flasher's 30% slow that lasts for only 4 seconds but can activate 2 or 3 times, once per salvo. Her other skill effects are not significant enough to be called out.",
+      "hardarbiter": "A",
+      "cm": "A",
+      "campaign": "S",
+      "consistency": null,
+      "fleetreq": null,
+      "flagreq": -3,
+      "lightdmg": 1,
+      "mediumdmg": 3,
+      "heavydmg": 4,
+      "offensivebuff": 1
+    }
+  ],
   "Royal Fortune": [
     {
       "nameNote": "Base",
