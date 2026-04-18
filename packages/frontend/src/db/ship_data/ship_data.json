@@ -45444,6 +45444,349 @@
       "isCollab": true
     }
   },
+  "10990": {
+    "id": 10990,
+    "ship": "Elise",
+    "faction": "Venus Vacation",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.35,
+        "mounts": 3
+      },
+      {
+        "type": ["Dive Bomber"],
+        "efficiency": 1.25,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Stollen", "Scepter", "Hunting Bow"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "OffSupport", "Meh"],
+    "locations": {
+      "events": [
+        {
+          "name": "Vacation Lane - Beachside Brilliance",
+          "href": "Vacation_Lane_-_Beachside_Brilliance"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "10991": {
+    "id": 10991,
+    "ship": "Shizuku",
+    "faction": "Venus Vacation",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Shishamo Tempura", "Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": [
+      "FlagPref",
+      "FlagReq",
+      "DmgDealer",
+      "DefSupport",
+      "OffSupport",
+      "Meh"
+    ],
+    "locations": {
+      "events": [
+        {
+          "name": "Vacation Lane - Beachside Brilliance",
+          "href": "Vacation_Lane_-_Beachside_Brilliance"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "10992": {
+    "id": 10992,
+    "ship": "Shandy",
+    "faction": "Venus Vacation",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.65,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.05,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Chili Crab", "Greatsword", "Lance"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "DefSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "Vacation Lane - Beachside Brilliance",
+          "href": "Vacation_Lane_-_Beachside_Brilliance"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "10993": {
+    "id": 10993,
+    "ship": "Tsukushi",
+    "faction": "Venus Vacation",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.15,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Cup Ramen", "Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer"],
+    "locations": {
+      "events": [
+        {
+          "name": "Vacation Lane - Beachside Brilliance",
+          "href": "Vacation_Lane_-_Beachside_Brilliance"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "10994": {
+    "id": 10994,
+    "ship": "Patty",
+    "faction": "Venus Vacation",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "SS",
+    "fleetType": "ss",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Submarine Torpedo"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["Submarine Torpedo"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.75,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Hamburger", "Kunai", "Dagger"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "OffSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "Vacation Lane - Beachside Brilliance",
+          "href": "Vacation_Lane_-_Beachside_Brilliance"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "10995": {
+    "id": 10995,
+    "ship": "Yukino",
+    "faction": "Venus Vacation",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.7,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Matcha Ice Cream", "Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg", "DefSupport", "OffSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "Vacation Lane - Beachside Brilliance",
+          "href": "Vacation_Lane_-_Beachside_Brilliance"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
   "20001": {
     "id": 20001,
     "ship": "Neptune",

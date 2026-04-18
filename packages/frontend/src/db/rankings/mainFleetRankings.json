@@ -1876,6 +1876,35 @@
       "vgsurvival": null
     }
   ],
+  "Elise": [
+    {
+      "nameNote": "",
+      "notes": "Elise buffs other main fleet ships by 5% damage and 10% FP or AVI stat. If there is another Venus Vacation ship, then she does about 3% more damage. She likes to expose herself, which could be bad in campaign or Challenge Mode.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "D",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": -1,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": 1,
+      "offensivebuff": 2,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Enterprise": [
     {
       "nameNote": "",
