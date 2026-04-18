@@ -1,4 +1,18 @@
 {
+  "22": [
+    {
+      "name": "22",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
+    }
+  ],
+  "33": [
+    {
+      "name": "33",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -117,6 +131,18 @@
       "name": "Moskva",
       "totalEHP": "153.62%",
       "std": "36.52%"
+    }
+  ],
+  "Tokisaki Kurumi": [
+    {
+      "name": "Tokisaki Kurumi (Mob)",
+      "totalEHP": "152.51%",
+      "std": "34.84%"
+    },
+    {
+      "name": "Tokisaki Kurumi (Boss)",
+      "totalEHP": "120.06%",
+      "std": "30.92%"
     }
   ],
   "Brest": [
@@ -393,6 +419,13 @@
       "std": "33.93%"
     }
   ],
+  "Jintsuu META": [
+    {
+      "name": "Jintsuu META",
+      "totalEHP": "114.06%",
+      "std": "39.98%"
+    }
+  ],
   "Royal James": [
     {
       "name": "Royal James (3 gear)",
@@ -469,13 +502,6 @@
       "std": "34.12%"
     }
   ],
-  "Hatsuzuki": [
-    {
-      "name": "Hatsuzuki",
-      "totalEHP": "112.45%",
-      "std": "43.43%"
-    }
-  ],
   "Shimanto": [
     {
       "name": "Shimanto (Fate)",
@@ -500,13 +526,6 @@
       "name": "Tohka Yatogami",
       "totalEHP": "112.16%",
       "std": "34.47%"
-    }
-  ],
-  "Jintsuu META": [
-    {
-      "name": "Jintsuu META",
-      "totalEHP": "111.75%",
-      "std": "39.05%"
     }
   ],
   "Chikuma": [
@@ -564,6 +583,13 @@
       "std": "31.89%"
     }
   ],
+  "Admiral Hipper META": [
+    {
+      "name": "Admiral Hipper META",
+      "totalEHP": "109.94%",
+      "std": "30.36%"
+    }
+  ],
   "Giuseppe Garibaldi": [
     {
       "name": "Giuseppe Garibaldi",
@@ -619,13 +645,6 @@
       "name": "San Francisco (Back)",
       "totalEHP": "89.90%",
       "std": "26.15%"
-    }
-  ],
-  "Admiral Hipper META": [
-    {
-      "name": "Admiral Hipper META",
-      "totalEHP": "107.69%",
-      "std": "29.54%"
     }
   ],
   "Noshiro": [
@@ -787,23 +806,25 @@
       "std": "24.79%"
     }
   ],
-  "Tokisaki Kurumi": [
-    {
-      "name": "Tokisaki Kurumi (Boss)",
-      "totalEHP": "101.89%",
-      "std": "28.48%"
-    },
-    {
-      "name": "Tokisaki Kurumi (Mob)",
-      "totalEHP": "101.89%",
-      "std": "28.48%"
-    }
-  ],
   "Blücher": [
     {
       "name": "Blücher",
       "totalEHP": "101.78%",
       "std": "31.82%"
+    }
+  ],
+  "Hatsuzuki": [
+    {
+      "name": "Hatsuzuki",
+      "totalEHP": "101.52%",
+      "std": "37.74%"
+    }
+  ],
+  "Shandy": [
+    {
+      "name": "Shandy",
+      "totalEHP": "101.19%",
+      "std": "30.22%"
     }
   ],
   "Little Anchorage": [
@@ -1150,6 +1171,13 @@
       "std": "26.53%"
     }
   ],
+  "Tsukushi": [
+    {
+      "name": "Tsukushi",
+      "totalEHP": "93.70%",
+      "std": "37.28%"
+    }
+  ],
   "Tashkent": [
     {
       "name": "Tashkent",
@@ -1221,6 +1249,13 @@
       "name": "Jeanne d'Arc",
       "totalEHP": "91.91%",
       "std": "30.18%"
+    }
+  ],
+  "Yukino": [
+    {
+      "name": "Yukino",
+      "totalEHP": "91.87%",
+      "std": "27.89%"
     }
   ],
   "Pasadena": [
@@ -1643,6 +1678,13 @@
       "std": "25.84%"
     }
   ],
+  "Hatakaze META": [
+    {
+      "name": "Hatakaze META",
+      "totalEHP": "85.01%",
+      "std": "33.35%"
+    }
+  ],
   "Reno": [
     {
       "name": "Reno",
@@ -1740,13 +1782,6 @@
       "name": "Rurutie",
       "totalEHP": "83.77%",
       "std": "24.34%"
-    }
-  ],
-  "Hatakaze META": [
-    {
-      "name": "Hatakaze META",
-      "totalEHP": "83.72%",
-      "std": "32.75%"
     }
   ],
   "Javelin": [
@@ -2093,6 +2128,20 @@
       "std": "23.46%"
     }
   ],
+  "Memphis META": [
+    {
+      "name": "Memphis META",
+      "totalEHP": "78.65%",
+      "std": "26.60%"
+    }
+  ],
+  "Boise META": [
+    {
+      "name": "Boise META",
+      "totalEHP": "78.58%",
+      "std": "23.67%"
+    }
+  ],
   "Dorsetshire": [
     {
       "name": "Dorsetshire",
@@ -2135,6 +2184,13 @@
       "std": "25.60%"
     }
   ],
+  "Matchless": [
+    {
+      "name": "Matchless",
+      "totalEHP": "77.98%",
+      "std": "32.89%"
+    }
+  ],
   "Kumano": [
     {
       "name": "Kumano",
@@ -2161,20 +2217,6 @@
       "name": "Hanazuki",
       "totalEHP": "77.69%",
       "std": "29.20%"
-    }
-  ],
-  "Memphis META": [
-    {
-      "name": "Memphis META",
-      "totalEHP": "77.68%",
-      "std": "26.18%"
-    }
-  ],
-  "Boise META": [
-    {
-      "name": "Boise META",
-      "totalEHP": "77.43%",
-      "std": "23.17%"
     }
   ],
   "Black Prince": [
@@ -2329,6 +2371,13 @@
       "std": "28.42%"
     }
   ],
+  "Koln META": [
+    {
+      "name": "Koln META",
+      "totalEHP": "75.75%",
+      "std": "24.68%"
+    }
+  ],
   "Natori": [
     {
       "name": "Natori",
@@ -2423,13 +2472,6 @@
       "name": "Hass",
       "totalEHP": "74.54%",
       "std": "23.71%"
-    }
-  ],
-  "Matchless": [
-    {
-      "name": "Matchless",
-      "totalEHP": "74.52%",
-      "std": "31.13%"
     }
   ],
   "Kawakaze": [
@@ -2563,6 +2605,13 @@
       "std": "25.23%"
     }
   ],
+  "Carabiniere META": [
+    {
+      "name": "Carabiniere META",
+      "totalEHP": "73.32%",
+      "std": "28.72%"
+    }
+  ],
   "Kimberly": [
     {
       "name": "Kimberly",
@@ -2615,13 +2664,6 @@
       "name": "Maestrale",
       "totalEHP": "72.41%",
       "std": "31.32%"
-    }
-  ],
-  "Carabiniere META": [
-    {
-      "name": "Carabiniere META",
-      "totalEHP": "72.23%",
-      "std": "28.18%"
     }
   ],
   "Suzuya": [
@@ -3119,6 +3161,13 @@
       "std": "26.10%"
     }
   ],
+  "Nayoro": [
+    {
+      "name": "Nayoro",
+      "totalEHP": "66.82%",
+      "std": "23.64%"
+    }
+  ],
   "Atlanta": [
     {
       "name": "Atlanta",
@@ -3152,6 +3201,13 @@
       "name": "Deutschland",
       "totalEHP": "66.72%",
       "std": "19.97%"
+    }
+  ],
+  "Dewey META": [
+    {
+      "name": "Dewey META",
+      "totalEHP": "66.68%",
+      "std": "26.92%"
     }
   ],
   "Foxhound": [
@@ -3271,13 +3327,6 @@
       "name": "Hatsushimo (Retrofit)",
       "totalEHP": "65.74%",
       "std": "26.93%"
-    }
-  ],
-  "Dewey META": [
-    {
-      "name": "Dewey META",
-      "totalEHP": "65.69%",
-      "std": "26.42%"
     }
   ],
   "Foch META": [
@@ -3672,18 +3721,23 @@
       "std": "19.61%"
     }
   ],
+  "Kizu": [
+    {
+      "name": "Kizu (3 IJN)",
+      "totalEHP": "61.32%",
+      "std": "22.16%"
+    },
+    {
+      "name": "Kizu (<3 IJN)",
+      "totalEHP": "58.53%",
+      "std": "21.65%"
+    }
+  ],
   "Kent": [
     {
       "name": "Kent",
       "totalEHP": "61.07%",
       "std": "18.30%"
-    }
-  ],
-  "3300.00%": [
-    {
-      "name": "3300.00%",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
     }
   ],
   "Z20": [
@@ -3747,13 +3801,6 @@
       "name": "Shiranui (Retrofit)",
       "totalEHP": "60.30%",
       "std": "24.36%"
-    }
-  ],
-  "2200.00%": [
-    {
-      "name": "2200.00%",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
     }
   ],
   "Jersey": [

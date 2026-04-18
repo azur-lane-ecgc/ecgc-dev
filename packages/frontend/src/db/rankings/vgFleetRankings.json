@@ -2461,8 +2461,8 @@
       "nameNote": "",
       "notes": "Buffs CLs' FP and AA. Assumed to be with a CL.",
       "hardarbiter": "B",
-      "meta": "B",
-      "cm": "B",
+      "meta": "C",
+      "cm": "C",
       "w14mob": "B",
       "w14boss": "B",
       "w15mob": "C",
@@ -11262,14 +11262,14 @@
     {
       "nameNote": "",
       "notes": "Shandy offers various buffs for the vanguard, where each effect is active 4/15 of the time on each ship in expectation. They are worth about 8% damage increase and 4% survivability for the vanguard.",
-      "hardarbiter": null,
-      "meta": null,
-      "cm": null,
-      "w14mob": null,
-      "w14boss": null,
-      "w15mob": null,
-      "w15boss": null,
-      "ex": null,
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
       "consistency": -1,
       "fleetreq": null,
       "gearreq": null,
@@ -11279,7 +11279,7 @@
       "heavydmg": 2,
       "aoedmg": 2,
       "offensivebuff": null,
-      "selfsurvival": null,
+      "selfsurvival": 101,
       "aa": null,
       "asw": null,
       "defensivebuff": 1
@@ -12527,6 +12527,33 @@
       "defensivebuff": null
     }
   ],
+  "Tsukushi": [
+    {
+      "nameNote": "",
+      "notes": "Tsukushi relies on a very powerful barrage every 20 seconds to do damage. Her augment is extremely strong despite being bugged negatively in the first version. She gets a small bonus for being with up to two other Venus Vacation ships, so these ratings assume there is one other ship.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "B",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": -2,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 3,
+      "heavydmg": 3,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": 94,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Ugolino Vivaldi": [
     {
       "nameNote": "",
@@ -13306,6 +13333,33 @@
       "aa": null,
       "asw": 2,
       "defensivebuff": null
+    }
+  ],
+  "Yukino": [
+    {
+      "nameNote": "",
+      "notes": "Yukino offers various buffs: 10% zombie heal twice, armor break every 15 seconds, 8% damage for a main fleet ship twice, and a torpedo buff not worth mentioning. These ratings assume that vanguard ships are the first to go below 20% HP and be healed.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "C",
+      "w14mob": "B",
+      "w14boss": "C",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "C*",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 2,
+      "aoedmg": 3,
+      "offensivebuff": 1,
+      "selfsurvival": 92,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 2
     }
   ],
   "Yume Minami": [
