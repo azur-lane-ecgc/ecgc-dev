@@ -2832,7 +2832,7 @@
     },
     {
       "nameNote": "with Shinano or AmagiCV",
-      "notes": "Hakuhou has top anti-heavy damage but no offensive fleet buffs. She also does about 9% more damage for every other Sakura Empire main fleet ship who reloads at roughly the same time as her. Pairing her with Shinano or Amagi(CV) forms a top anti-heavy fleet. Vanguard ships in the fleet enjoy up to 7% damage reduction, with DD/CL main guns reaching the 7% easily. She requires a Sakura Empire TB in her first slot for bossing against all armor types.",
+      "notes": "Hakuhou has top anti-heavy damage but no offensive fleet buffs. She also does about 9% more damage for every other Sakura Empire main fleet ship who reloads at roughly the same time as her. Pairing her with Shinano or Amagi(CV) forms a top anti-heavy fleet. Vanguard ships in the fleet enjoy up to 7% damage reduction, with DD/CL main guns reaching the 7% easily. She requires a Sakura Empire TB in her first slot for bossing against all armor types.\nNote: When this ship is sortied with Amagi CV, the latter's damage buff to torpedoes from Sakura Empire ships makes converging torpedo bombers better than BF-109Gs against medium armor (assuming they hit the boss reliably) and parallel torpedo bombers relatively better than dive bombers in campaign in their flexible slots.",
       "hardarbiter": "SS",
       "meta": "S*",
       "cm": "SS*",
@@ -2888,7 +2888,7 @@
     },
     {
       "nameNote": "with Shinano or AmagiCV",
-      "notes": "Since Hakuryuu is the worst Sakura Empire rainbow CV for bossing, she can pair or be carried by Shinano or Amagi(CV) before you get the better ones. Like Essex, Hakuryuu is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option.",
+      "notes": "Since Hakuryuu is the worst Sakura Empire rainbow CV for bossing, she can pair or be carried by Shinano or Amagi(CV) before you get the better ones. Like Essex, Hakuryuu is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option.\nNote: When this ship is sortied with Amagi CV, the latter's damage buff to torpedoes from Sakura Empire ships makes converging torpedo bombers better than BF-109Gs against medium armor (assuming they hit the boss reliably) and parallel torpedo bombers relatively better than dive bombers in campaign in their flexible slots.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "S*",
@@ -6847,7 +6847,7 @@
     },
     {
       "nameNote": "with Hakuhou/AmagiCV",
-      "notes": "Shinano has minor buffs for everyone. She requires 3 Sakura Empire ships, including herself, to give +15% AVI and HIT to all Sakura carriers, including herself. Assumed to be with Amagi(CV) or Hakuhou. Shinano greatly buffs them while having respectable damage herself. With strong torpedo bombers and weak fighters, the whole fleet is good against heavy armor bosses.",
+      "notes": "Shinano has minor buffs for everyone. She requires 3 Sakura Empire ships, including herself, to give +15% AVI and HIT to all Sakura carriers, including herself. Assumed to be with Amagi(CV) or Hakuhou. Shinano greatly buffs them while having respectable damage herself. With strong torpedo bombers and weak fighters, the whole fleet is good against heavy armor bosses.\nNote: When this ship is sortied with Amagi CV, the latter's damage buff to torpedoes from Sakura Empire ships makes converging torpedo bombers better than BF-109Gs against medium armor (assuming they hit the boss reliably) and parallel torpedo bombers relatively better than dive bombers in campaign in their flexible slots.",
       "hardarbiter": "SS",
       "meta": "S*",
       "cm": "SS*",
@@ -6876,7 +6876,7 @@
   "Shinano-chan": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Note: When this ship is sortied with Amagi CV, the latter's damage buff to torpedoes from Sakura Empire ships makes converging torpedo bombers better than BF-109Gs against medium armor (assuming they hit the boss reliably) and parallel torpedo bombers relatively better than dive bombers in campaign in their flexible slots.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
