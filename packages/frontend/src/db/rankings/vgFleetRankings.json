@@ -1055,7 +1055,7 @@
   "Azuma": [
     {
       "nameNote": "",
-      "notes": "Generic CB. Similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
+      "notes": "Generic CB whose skills highly favor equipping a CB gun, which is already reflected in the gear here. Similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -14148,7 +14148,7 @@
   "Ägir": [
     {
       "nameNote": "",
-      "notes": "Tank with armor break for any boss and inconsistent slow.",
+      "notes": "Tank with armor break for any boss, not just heavy armor bosses. She also slows enemies when her torpedoes hit, which is inconsistent because she doesn't have high HIT, and torpedo hits are hard to sync for multiple rounds because they have travel time.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
