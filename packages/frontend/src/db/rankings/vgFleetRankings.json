@@ -10748,7 +10748,7 @@
   "Reisalin Stout": [
     {
       "nameNote": "",
-      "notes": "Can ignore buffs for Atelier ships. Stronger in shorter battles. 40s damage is 3/3/2, 80s damage is 2/2/1. Uses special gear.",
+      "notes": "Can ignore buffs for Atelier ships. Stronger in shorter battles. 40s damage is 3/3/2, 80s damage is 2/2/1. Grand Bomb MUST be in Slot 2 (the usual torpedo slot), and Laute Plajig MUST be in Slot 3 (the usual AA slot). Do not put them in any other slot! They do not need to be enhanced to improve the weapons, but enhancing gear does give stats.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10829,7 +10829,7 @@
   "Rikka Takarada": [
     {
       "nameNote": "",
-      "notes": "Uses special gear.",
+      "notes": "Uses special gear. Battle Tracto Max, Buster Borr, and Sky Vitter should be enhanced to +10 and MUST be equipped in the correct slots for their respective special weapons. There is another improvement at +13, but do mind your gold plate usage, and the gain from +10 to +13 is less than for normal weapons. If with Yume Minami and Chise Asukagawa, the special fusion Gridman is good for dumping damage in short battles.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10849,8 +10849,8 @@
       "offensivebuff": null,
       "selfsurvival": 96,
       "aa": null,
-      "asw": null,
-      "defensivebuff": null
+      "asw": 1,
+      "defensivebuff": 1
     }
   ],
   "Ritsuko Akizuki": [
@@ -11614,7 +11614,7 @@
       "nameNote": "",
       "notes": "Requires multiple carriers. Buffs carriers, especially against DD, CL, and CA.",
       "hardarbiter": "S",
-      "meta": "S*",
+      "meta": "A",
       "cm": "S",
       "w14mob": "D",
       "w14boss": "D",
@@ -13475,7 +13475,7 @@
       "nameNote": "",
       "notes": null,
       "hardarbiter": "A",
-      "meta": "A",
+      "meta": "B",
       "cm": "A",
       "w14mob": "S",
       "w14boss": "A",
