@@ -5255,6 +5255,35 @@
       "vgsurvival": null
     }
   ],
+  "Musashi-chan": [
+    {
+      "nameNote": "",
+      "notes": "Unlike her mom, she's not limited to a Sakura Empire main gun.",
+      "hardarbiter": null,
+      "meta": null,
+      "cm": null,
+      "w14mob": null,
+      "w14boss": null,
+      "w15mob": null,
+      "w15boss": null,
+      "ex": null,
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": null,
+      "mediumdmg": null,
+      "heavydmg": null,
+      "aoedmg": null,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
+    }
+  ],
   "Mutsu": [
     {
       "nameNote": "",

@@ -30552,12 +30552,17 @@
           "href": "A_Cookie_For_Mew!"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Core Data Shop",
+          "href": "Core_Data_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -40637,6 +40642,62 @@
         {
           "name": "The Vagabond's Recruitment Plan",
           "href": "The_Vagabond's_Recruitment_Plan"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "734": {
+    "id": 734,
+    "ship": "Musashi-chan",
+    "faction": "IJN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.55,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2.2,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "The Budding Guardian",
+          "href": "The_Budding_Guardian"
         }
       ],
       "other": [],
