@@ -2312,7 +2312,7 @@
   "Fusou": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "<strong>Fully retrofitting Fusou and Yamashiro makes them much weaker.</strong> But they're bottom tier with or without retrofit. If you want maximum performance from them, retrofit until the Modernization node, do not complete Modernization. For collection percentage or historical reasons, just complete the retrofit.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -2324,7 +2324,7 @@
       "consistency": -2,
       "fleetreq": null,
       "gearreq": null,
-      "flagreq": null,
+      "flagreq": -3,
       "lightdmg": 1,
       "mediumdmg": 1,
       "heavydmg": 1,
@@ -8264,7 +8264,7 @@
   "Yamashiro": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "<strong>Fully retrofitting Fusou and Yamashiro makes them much weaker.</strong> But they're bottom tier with or without retrofit. If you want maximum performance from them, retrofit until the Modernization node, do not complete Modernization. For collection percentage or historical reasons, just complete the retrofit.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -8293,7 +8293,7 @@
   "Yamashiro META": [
     {
       "nameNote": "",
-      "notes": "Requires an IJN gear.",
+      "notes": "Should use any Sakura Empire gear for 10% more damage. Contrary to what the game says, she does 10% more damage to enemies hit by her barrage, and the 10% damage is not limited to the barrage.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",

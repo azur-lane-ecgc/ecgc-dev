@@ -11158,7 +11158,7 @@
     "augments": ["Shichi-Go-San Exorcism Bells", "Bowgun", "Officer's Sword"],
     "samEval": "Fusou (Retrofit) is a flagship-oriented BB with good stats and skills. Her Augment Module makes her Retrofit more viable, due to her barrage being good. Her personal damage is decent due to good self-buffs and stats, especially for a lower rarity ship. The cost to get this investment can be a bit steep, however. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["FlagPref", "FlagReq", "Bad"],
     "locations": {
       "events": [],
       "other": [],

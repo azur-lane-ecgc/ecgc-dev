@@ -7292,7 +7292,7 @@
   "Laffey II": [
     {
       "nameNote": "",
-      "notes": "AA debuff. Very tanky, especially against fewer high-damage hits.",
+      "notes": "If Laffey II sinks, you are probably doing something wrong. She's among the best tanks in the game, especially against fewer high-damage hits like torpedoes.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
@@ -7481,7 +7481,7 @@
   "Le Triomphant": [
     {
       "nameNote": "",
-      "notes": "Please do not use as main tank.",
+      "notes": "When Le Triomphant is the main tank, she does more damage at the cost of worse AA. But please do not use her as main tank. Dead ships don't do damage.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -8804,7 +8804,7 @@
   "Momo Belia Deviluke": [
     {
       "nameNote": "",
-      "notes": "Extremely consistently blocks ramming ships. Delayed 25% slow x2 on AoA. Can use Plymouth gun or Single 150mm.",
+      "notes": "Momo's flowers block ramming ships (both normal Bombing Ships and the fat Kagerou Productions) extremely consistently. She must use her unique augment to spawn a second flower. She also has two delayed 25% slows after her \"All Out Assault\". Can use Plymouth gun or Single 150mm.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -8912,7 +8912,7 @@
   "Moskva": [
     {
       "nameNote": "",
-      "notes": "Moskva can pair with Nakhimov to activate her freeze. Main tank with high DPS. Use any Northern Parliament gear, like her own UR gun, to ignore shields. We don't consider sinking Northern Parliament ships.",
+      "notes": "Moskva can pair with Nakhimov to activate her freeze. Main tank with high DPS. Use any Northern Parliament gear, like her own UR gun, to ignore shields. We ignore her second skill which requires making your own Northern Parliament ships sink.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
