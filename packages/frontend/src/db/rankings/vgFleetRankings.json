@@ -488,7 +488,7 @@
   "Anchorage": [
     {
       "nameNote": "",
-      "notes": "Somewhat timable smokescreen and invincibility.",
+      "notes": "A very high eHP tank. Her smokescreen also helps to improve the rest of the vanguard's eHP a bit. However, her damage and AA are lackluster, so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
@@ -920,7 +920,7 @@
   "Aurora": [
     {
       "nameNote": "",
-      "notes": "For use against enemy DD/CL bosses only, Aurora is usually the highest rDPS vanguard ship in the game, even beating Helena's expected 24% main fleet damage. By taking your fleet's hit rate from 70% to 90%, Aurora offers a 29% damage buff. Carriers often have around 70% hit rate against endgame bosses. Aurora's buff will be a bit less for vanguard ships and BBs with higher than 70% hit rate. Her low surviability can prove an issue though since she needs to live for her debuff to apply.",
+      "notes": "An otherwise mediocre purple ship with one of the most powerful debuffs in the game. Against enemy DD/CL bosses, Aurora is usually the highest rDPS vanguard ship in the game, even beating Helena's expected 24% main fleet damage. By taking your fleet's hit rate from 70% to 90%, Aurora offers a 29% damage buff. Carriers often have around 70% hit rate against endgame bosses. Aurora's buff will be a bit less for vanguard ships and BBs with higher than 70% hit rate. Her low survivability can prove an issue though since she needs to live for her debuff to apply. Outside of DD and CL bosses, she is a very mediocre ship.",
       "hardarbiter": "S*",
       "meta": "S*",
       "cm": "S*",
@@ -1055,7 +1055,7 @@
   "Azuma": [
     {
       "nameNote": "",
-      "notes": "Generic CB whose skills highly favor equipping a CB gun, which is already reflected in the gear here. Similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
+      "notes": "A very eHP tank with decent damage output. Her AA is lackluster so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses. Similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -1244,7 +1244,7 @@
   "Bayard": [
     {
       "nameNote": "",
-      "notes": "How much barrage? Yes. Fs5 gives +13% dmg.",
+      "notes": "Overall, a really solid vanguard, especially for an SR. She still has excellent damage output, eHP (not enough to consistently main tank). A lot of her damage comes from untargeted barrages, making her less susceptible to the effects of concealment mechanics in later campaign stages. Her AA is lackluster, however, so she does need to be supplemented by ships with good AA in late plane-heavy content.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -1784,7 +1784,7 @@
   "Brest": [
     {
       "nameNote": "",
-      "notes": "CB with minor healing. Prefers Iris gear for better AA. For damage, just ignore the Iris gear and use FP AA.",
+      "notes": "A very high eHP tank with decent damage output and a small amount of healing. Her AA is lackluster, so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses. Brest prefers to use at least one Iris gear for better AA, but for damage, just ignore this Iris gear buff.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "B",
@@ -2756,7 +2756,7 @@
   "De Zeven Provinciën": [
     {
       "nameNote": "",
-      "notes": "Top level AA.",
+      "notes": "A solid choice for late campaign stages. She has some of the best AA in the game, decent damage output, and a small amount of healing for the fleet. She has just enough eHP to not be a liability in late campaign stages, but compared to most other cruisers you’d consider, she’s a bit fragile. However, her lack of damage buffs for the fleet makes her a relatively lackluster choice for single-target bossing.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -3296,7 +3296,7 @@
   "Eldridge": [
     {
       "nameNote": "",
-      "notes": "Consistent slow and RNG massive buff to vanguard survivability. Also a free +10 Hedgehog. WHY TF DO PEOPLE PUT HER MIDDLE. Middle is the worst position for Eldridge in PvE, all it does is make her eat torpedoes instead of do the one thing she's meant to do.",
+      "notes": "Eldridge has one of the most powerful and unique abilities in the game, which is to make your vanguard invulnerable to damage for 10 seconds at a time. On top of that, when your flagship fires its main guns/launches an airstrike, she applies a 60% slow to all enemies on the screen for 5 seconds. She also comes equipped with Hedgehog, and she has decent AA, though her personal damage is abysmal. Her biggest weakness is that her invulnerability skill is reliant on RNG to proc. While the activation chance isn't low enough for this to be an issue most of the time, you do sometimes get those runs where she just refuses to proc and effectively becomes dead weight. She’s extremely powerful when your vanguard is struggling to live, but when it isn't, she becomes pretty useless. <strong>Do not put her in the middle position.</strong> Middle is the worst position for Eldridge in PvE, all it does is make her eat torpedoes instead of do the one thing she's meant to do.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -4322,7 +4322,7 @@
   "Gouden Leeuw": [
     {
       "nameNote": "",
-      "notes": "CB but not CB, with amazing AA. 5% HE buff for fleet. Guam with worse tanking and much better LDmg.",
+      "notes": "Gouden Leeuw is a tank with extremely high AA, making her an excellent choice for late campaign stages. She has above average damage and a 5% damage buff to HE shells for the fleet. She's an okay choice for single target bossing, but do note that her airstrikes can jam BB salvos.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -4511,7 +4511,7 @@
   "Guam": [
     {
       "nameNote": "",
-      "notes": "CB with amazing AA. Consistent armor break for BB fleets.",
+      "notes": "Guam is a tank with extremely high AA, making her an excellent choice for late campaign stages. She can also apply consistent armor breaks to bosses (it's a standard armor break but not limited to heavy armor), making her a decent choice for single target bosses though her own damage output isn't anything to write home about.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "A",
@@ -5159,7 +5159,7 @@
   "Helena": [
     {
       "nameNote": "",
-      "notes": "Huge Offense Buff averages to 24% timed main fleet damage and 12% vanguard damage.",
+      "notes": "One of the most powerful debuffers in the game, Helena’s debuff (which averages to a 24% buff to main fleet damage when properly timed and a 12% buff to vanguard damage) is still worth building single-wave boss fleets around. However, over the years, more ships have been introduced with individually less powerful but significantly more consistent debuffs, which have reduced her value somewhat, particularly for those who value consistency. None of them are as easily accessible as Helena, though, so for newer players, she will be a staple in their boss fleets for quite some time. She is not suited for late campaign stages, however, due to her low eHP, unremarkable AA, the inconsistency of her debuff to proc, and the emphasis later campaign stages put on clearing waves of mobs over defeating a single high eHP boss.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -5294,7 +5294,7 @@
   "Hindenburg": [
     {
       "nameNote": "",
-      "notes": "Pure DPS vanguard. Assume the third slot is a CA gun, not an AA gun.",
+      "notes": "Hindenburg is a pure DPS vanguard. She has among the highest damage output for vanguard ships in the game. However, she effectively has no AA, her survivability is relatively low, and she has no damage buffs for the fleet. Compared to newer rainbow vanguard ships who might have lower damage but have buffs for the fleet, Hindenburg's total damage contribution to the fleet is often lower.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "S",
@@ -6887,7 +6887,7 @@
   "Kronshtadt": [
     {
       "nameNote": "",
-      "notes": "Generic CB. Requires NP gear.",
+      "notes": "A very high eHP tank with decent damage output. Her AA is lackluster, so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -6995,7 +6995,7 @@
   "Kurumi Tokisaki": [
     {
       "nameNote": "",
-      "notes": "Doesn't die if clone is alive, stops rammers/subs randomly, better in campaign, but healers less effective on her.",
+      "notes": "The budget version of Laffey 2, she fulfills a very similar role, an almost unkillable cockroach. She does this by generating clones (these clones can also slow down or stop suicide boats from reaching the main fleet) and stealing their HP whenever she’s about to die. She’s a very good tank for campaign stages, but she isn’t quite as tanky as Laffey II; her AA isn’t nearly as good, but her damage output is a bit better, but not enough to make her a compelling choice for single-target bossing. She also lacks any damage buffs for the fleet.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -7292,7 +7292,7 @@
   "Laffey II": [
     {
       "nameNote": "",
-      "notes": "If Laffey II sinks, you are probably doing something wrong. She's among the best tanks in the game, especially against fewer high-damage hits like torpedoes.",
+      "notes": "The cockroach of Azur Lane, Laffey II is among the tankiest ships in the game in a very unique way, to the point where she can main tank Chapters 15 and 16 while running two ASW auxiliaries. If Laffey II sinks, you are probably doing something wrong. Her AA is also above average, making her an excellent ship for late campaign stages. However, her own damage is lackluster, and she lacks any significant damage buff or debuff for the fleet, so she’s not an ideal choice single-target bosses.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
@@ -8750,7 +8750,7 @@
   "Mogador": [
     {
       "nameNote": "",
-      "notes": "Buffs torps/TBs. Desynced and very short freeze.",
+      "notes": "The horniest ship in the game. She has high overall damage output and buffs torpedo damage (including torpedo bombers) by 6%. She has a desynced and very short freeze which can be synced with for one rotation at best in practice, making its value rather dubious. Her AA is nothing special, and her eHP is relatively low, so she's not a brilliant choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -8912,7 +8912,7 @@
   "Moskva": [
     {
       "nameNote": "",
-      "notes": "Moskva can pair with Nakhimov to activate her freeze. Main tank with high DPS. Use any Northern Parliament gear, like her own UR gun, to ignore shields. We ignore her second skill which requires making your own Northern Parliament ships sink.",
+      "notes": "One of the strongest overall vanguards in the game, she combines really high eHP with some of the best vanguard damage in the game. She also buffs the fleet AA circle’s range by 5, which is very useful for the fleet’s AA and the consistency of shooting down planes, though her own AA is lackluster. Moskva can also be paired with Nakhimov to activate the latter's freeze.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -9290,7 +9290,7 @@
   "Napoli": [
     {
       "nameNote": "",
-      "notes": "CB with CA hull type. Smokes for herself very well, making her the tankiest vanguard ship in general.",
+      "notes": "Napoli is one of the tankiest vanguard currently in the game and she has decent damage output. However, her AA is lackluster, so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet, making her a relatively lackluster choice for single target bosses.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "A",
@@ -10289,7 +10289,7 @@
   "Plymouth": [
     {
       "nameNote": "",
-      "notes": "Buffs BB flagship.",
+      "notes": "Overall a really solid vanguard still. She still has excellent damage output, decent survivability (enough to main tank some but not all endgame content), and an 18% damage buff to your flagship if she's a battleship. Her AA is lackluster, however, so she does need to be supplemented by ships with good AA in plane-heavy late campaign.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -11072,7 +11072,7 @@
   "San Diego": [
     {
       "nameNote": "",
-      "notes": "No. 1 AA. Her augment barrage is bugged and will probably never be fixed, but her damage is still high.",
+      "notes": "San Diego has some of the best AA in the game. That, combined with decent damage output and eHP (not enough to main tank), makes her an excellent ship for late campaign stages. However, her own damage is lackluster, and she lacks any significant damage buff or debuff for the fleet, so she’s not an ideal choice for single-target bosses. Her augment barrage is bugged and will probably never be fixed, but her damage is serviceable.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -11423,7 +11423,7 @@
   "Shimanto": [
     {
       "nameNote": "",
-      "notes": "Does a bit of everything and can stop your main fleet from burning too long.",
+      "notes": "An excellent ship for late campaign stages. She has excellent AA, a small amount of healing/shielding for the vanguard, decent damage output, the ability to extinguish burns set on your main fleet, and she has decent eHP (not enough to main tank). However, her lack of damage buffs for the fleet makes her a relatively lackluster choice for single-target bossing.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -12395,7 +12395,7 @@
   "Trafalgar": [
     {
       "nameNote": "",
-      "notes": "Single 113 >= Single 76 >= 100 kai. Timed EVA Rate debuff, perma 15% slow. Requires flagship with main gun.",
+      "notes": "Trafalgar is one of the best universal debuffers in the game if your flagship has main guns. Her 10% evasion rate debuff is almost unrivaled for consistently increasing the damage your fleet deals against bosses. Although there are greater debuffs like Helena's or Aurora's, they are not as consistent or universally applicable as Trafalgar's. She also applies 15% slow effectively permanently. She's a decent option for late campaign stages thanks to her good AA and decent personal damage, though do note she has relatively low eHP for a UR DD.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -12638,7 +12638,7 @@
   "Unzen": [
     {
       "nameNote": "",
-      "notes": "Pure DPS vanguard.",
+      "notes": "Unzen is a pure DPS vanguard. She has among the highest damage output for vanguards in the game. She has poor AA, her eHP is relatively low, and she has no damage buffs for the fleet. Compared to newer UR vanguards which might have lower damage output but buffs for the fleet, Unzen's total damage contribution to the fleet is often lower.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -13097,7 +13097,7 @@
   "William D. Porter": [
     {
       "nameNote": "",
-      "notes": "Buffs fleet AA and damage, especially USS. Sync torps before main for boss, or use fast torps for mob. Can use fast gun.",
+      "notes": "An interesting ship, to say the least. Willy D has excellent AA, a skill that reduces the damage taken by your flagship, and a universal 5% damage debuff that is effectively permanent. Additionally, when she fires her torpedoes, she buffs the damage of your flagship and Eagle Union ships by 10% for 10 seconds. However, compared to other rainbow DDs, her damage output is noticeably lower, and her survivability can vary depending on what torpedoes you equip her with and where you're using her.  Large chunks of her survivability are conditional; she relies on a 15% damage reduction triggered when the fleet is shooting at planes, along with an 8% self-heal after she fires her torpedoes. Consequently, if she isn't in an environment with high plane density—or if she's equipped with slower-reloading torpedoes to sync her buffs—she becomes noticeably squishier, potentially becoming a liability.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -14067,7 +14067,7 @@
   "Z52": [
     {
       "nameNote": "",
-      "notes": "Single 113 >= Single 76 >= 100 kai. FlagshipCover. Slash. Heal lowest by 6%. Fleet buff almost 5%. Best use Goldburn.",
+      "notes": "Jack of all trades, master of none pretty much sums up Z52. She has good personal damage, good AA, and the Flagship Cover skill (-25% damage received by your flagship). She’s pretty tanky and can main tank a decent amount of endgame content. On top of all of that, she has a 5% universal damage debuff that lasts for 10 seconds when your upper main fleet ship launches an attack. Because she can do just about everything with no weaknesses, she's incredibly versatile for just about any fleet.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -14148,7 +14148,7 @@
   "Ägir": [
     {
       "nameNote": "",
-      "notes": "Tank with armor break for any boss, not just heavy armor bosses. She also slows enemies when her torpedoes hit, which is inconsistent because she doesn't have high HIT, and torpedo hits are hard to sync for multiple rounds because they have travel time.",
+      "notes": "A very high eHP tank with decent damage output. She can apply a standard armor break and apply a 60% slow with her torps. The latter is difficult to make use of however due to the difficulty of syncing the torpedoes for multiple salvos / airstrikes. They also need to hit the boss in order to apply the slow and she doesn't have very high HIT stat. Her AA is also lackluster so in plane heavy content she will need to be paired with ships with good AA.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
