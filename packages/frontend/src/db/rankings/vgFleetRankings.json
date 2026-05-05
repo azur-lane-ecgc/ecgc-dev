@@ -461,7 +461,7 @@
   "An Shan": [
     {
       "nameNote": "",
-      "notes": "DDG plus some armor break. Buffs An Shan class.",
+      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. She can buff other An Shan class ships and apply a standard Armor Break to enemies. But she is fragile, and her AA is lackluster, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -488,7 +488,7 @@
   "Anchorage": [
     {
       "nameNote": "",
-      "notes": "A very high eHP tank. Her smokescreen also helps to improve the rest of the vanguard's eHP a bit. However, her damage and AA are lackluster, so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses.",
+      "notes": "A very high eHP tank. Her smokescreen also helps to improve the rest of the vanguard's eHP a bit. However, her AA is lackluster, so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet and her own damage output is mediocre making her a relatively lackluster choice for single target bosses.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
@@ -1055,7 +1055,7 @@
   "Azuma": [
     {
       "nameNote": "",
-      "notes": "A very eHP tank with decent damage output. Her AA is lackluster so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses. Similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
+      "notes": "A very eHP tank with decent damage output. Her AA is lackluster so in plane heavy content she will need to be paired with ships with good AA. She lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses. She's similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2000,7 +2000,7 @@
   "Chang Chun": [
     {
       "nameNote": "",
-      "notes": "DDG plus faction buffs. Not assumed to be buffing Northern Parliament or Dragon Empery ships.",
+      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. She can buff Dragon Empery and Northern Parliament ships. But she’s very fragile, and her AA is lackluster, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2108,7 +2108,7 @@
   "Chapayev": [
     {
       "nameNote": "",
-      "notes": "Large fleet buff against DDs, and buffs vanguard damage against all.",
+      "notes": "Something of a specialist against destroyers (permenant enemy of Ark Royal), she decreases the evasion rate of enemy destroyers by 10%, which is a significant damage buff for the main fleet. She also buffs her own damage against DDs by 20%. Otherwise, though, she’s a pretty middle-of-the-road SR vanguard. She has okay damage output, but she is not that tanky, and her AA is lackluster. She does have a potentially powerful damage buff for your vanguards, but proccing it is inconsistent and the uptime isn't great.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "B*",
@@ -2756,7 +2756,7 @@
   "De Zeven Provinciën": [
     {
       "nameNote": "",
-      "notes": "A solid choice for late campaign stages. She has some of the best AA in the game, decent damage output, and a small amount of healing for the fleet. She has just enough eHP to not be a liability in late campaign stages, but compared to most other cruisers you’d consider, she’s a bit fragile. However, her lack of damage buffs for the fleet makes her a relatively lackluster choice for single-target bossing.",
+      "notes": "A solid choice for late campaign stages. She has some of the best AA in the game, decent damage output, and a small amount of healing for the fleet. She isn't that tanky however so she will need some babysitting. Her lack of damage buffs for the fleet makes her a relatuvely mediocre choice for single-target bossing.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2972,7 +2972,7 @@
   "Dmitri Donskoi": [
     {
       "nameNote": "",
-      "notes": "Generic ship, has weak fleet AP buff.",
+      "notes": "Overall, a solid vanguard ship.  She still has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in plane-heavy content.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -3053,7 +3053,7 @@
   "Drake": [
     {
       "nameNote": "",
-      "notes": "Drek b**. Use Drake's normal Triple 234mm or Unzen's HE Triple 203mm/55.",
+      "notes": "#DrakeBad. In all seriousness, she has decent damage overall and is decently tanky (not enough to main tank). However, her AA is lackluster, and she lacks any damage buffs for the fleet. Despite what her background might lead you to believe, she’s outclassed by a decent number of 2025 SR vanguards to speak nothing of newer UR vanguards.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -3944,7 +3944,7 @@
   "Fu Shun": [
     {
       "nameNote": "",
-      "notes": "Squishiest and highest dmg DDG. No help for teammates.",
+      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. However, she is very fragile, has luckluster AA, and no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -4862,7 +4862,7 @@
   "Harbin": [
     {
       "nameNote": "",
-      "notes": "Good smoke and DPS.",
+      "notes": "Overall, a solid vanguard ship.  She still has solid damage output and a smokescreen, which improves the rest of the vanguard’s eHP. However, she isn’t that tanky and her AA is lackluster, so she does need to be supplemented by ships with good AA in late plane-heavy content. She also doesn’t have damage buffs for the fleet making her a luckluster choice for single target boss fleets.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -5159,7 +5159,7 @@
   "Helena": [
     {
       "nameNote": "",
-      "notes": "One of the most powerful debuffers in the game, Helena’s debuff (which averages to a 24% buff to main fleet damage when properly timed and a 12% buff to vanguard damage) is still worth building single-wave boss fleets around. However, over the years, more ships have been introduced with individually less powerful but significantly more consistent debuffs, which have reduced her value somewhat, particularly for those who value consistency. None of them are as easily accessible as Helena, though, so for newer players, she will be a staple in their boss fleets for quite some time. She is not suited for late campaign stages, however, due to her low eHP, unremarkable AA, the inconsistency of her debuff to proc, and the emphasis later campaign stages put on clearing waves of mobs over defeating a single high eHP boss.",
+      "notes": "One of the most powerful debuffers in the game, Helena’s debuff (which averages to a 24% buff to main fleet damage when properly timed and a 12% buff to vanguard damage) is worth building single-target boss fleets around. However, more ships have been introduced with individually less powerful but significantly more consistent debuffs, which have reduced her value somewhat, particularly for those who value consistency. None of them are as easily accessible as Helena, though, so for newer players, she will be a staple in their boss fleets for quite some time. She is not suited for late campaign stages, however, due to her low eHP, unremarkable AA, the inconsistency of her debuff to proc, and the emphasis later campaign stages put on clearing waves of mobs over defeating a single high eHP boss.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -6131,7 +6131,7 @@
   "Kaguya Yamai・Yuzuru Yamai": [
     {
       "nameNote": "",
-      "notes": "Inconsistent pulls at fixed times, generic damage and tank ship. Synergy with Oumi against rare boss who doesn't move.",
+      "notes": "Overall, a really solid vanguard ship. They have excellent damage output and eHP (not enough to consistently main tank late game content). Their AA is lackluster, however, so she does need to be supplemented by ships with good AA in late plane-heavy content. They can, albeit inconsistently, pull stationary enemies close enough to be within the improved range of Oumi’s auxiliary guns.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -6455,7 +6455,7 @@
   "Kazagumo": [
     {
       "nameNote": "",
-      "notes": "ARA for CV fleet. Great for Shinano, but that's not assumed here.",
+      "notes": "A somewhat mediocre ship on first impression, she sees a lot of use because she’s one of the least terrible ships with the Air Raid Assistance skill. She’s also a Sakura Empire ship, so she can help proc Shinano’s buffs for IJN CVs. Otherwise, she’s actually pretty mediocre with bad damage output, she’s very fragile, and she has bad AA. She only exists to buff the damage of your CVs against single target bosses and while she continues to be powercrept in this role she is much more easily obtainable than her alternatives.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -6995,7 +6995,7 @@
   "Kurumi Tokisaki": [
     {
       "nameNote": "",
-      "notes": "The budget version of Laffey 2, she fulfills a very similar role, an almost unkillable cockroach. She does this by generating clones (these clones can also slow down or stop suicide boats from reaching the main fleet) and stealing their HP whenever she’s about to die. She’s a very good tank for campaign stages, but she isn’t quite as tanky as Laffey II; her AA isn’t nearly as good, but her damage output is a bit better, but not enough to make her a compelling choice for single-target bossing. She also lacks any damage buffs for the fleet.",
+      "notes": "The budget version of Laffey 2, she fulfills a very similar role being an almost unkillable cockroach. She does this by generating clones (these clones can also slow down or stop suicide boats from reaching the main fleet) and stealing their HP whenever she’s about to die. She’s a very good tank for campaign stages, but she isn’t quite as tanky as Laffey II and her AA isn’t nearly as good. Her damage output is a bit better, but it's still not that high and she lacks damage buffs for the fleet so she's a lackluster choice for single-target bossing.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -8912,7 +8912,7 @@
   "Moskva": [
     {
       "nameNote": "",
-      "notes": "One of the strongest overall vanguards in the game, she combines really high eHP with some of the best vanguard damage in the game. She also buffs the fleet AA circle’s range by 5, which is very useful for the fleet’s AA and the consistency of shooting down planes, though her own AA is lackluster. Moskva can also be paired with Nakhimov to activate the latter's freeze.",
+      "notes": "One of the strongest overall vanguards in the game, she combines really high eHP with some of the best vanguard damage in the game. She also buffs the fleet AA circle’s range by 5, which is very useful for the fleet’s AA and the consistency of shooting down planes, though her own AA is lackluster so she needs to paired with ships that have good AA in plane heavy content. Moskva can also be paired with Nakhimov to activate the latter's freeze.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -9587,7 +9587,7 @@
   "Ning Hai": [
     {
       "nameNote": "",
-      "notes": "Assumes and REQUIRES Yat Sen.",
+      "notes": "When sortied with Yat Sen, she is one of the tankiest vanguards in the game, but her damage output and AA are bad, and they lack damage buffs for the fleet. It's a niche pairing that is seldom used. When not sortied with Yat Sen she's very bad.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -10235,7 +10235,7 @@
   "Ping Hai": [
     {
       "nameNote": "",
-      "notes": "Assumes and REQUIRES Yat Sen.",
+      "notes": "When sortied with Yat Sen, she is one of the tankiest vanguards in the game, but her damage output and AA are bad, and they lack damage buffs for the fleet. It's a niche pairing that is seldom used. When not sortied with Yat Sen she's very bad.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -10964,7 +10964,7 @@
   "Ryu Lion": [
     {
       "nameNote": "",
-      "notes": "Improved barrage when there are multiple enemies. Can use Single 150, though Quad 152 slightly better.",
+      "notes": "Overall, a solid vanguard ship.  She still has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in late plane-heavy content.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -11072,7 +11072,7 @@
   "San Diego": [
     {
       "nameNote": "",
-      "notes": "San Diego has some of the best AA in the game. That, combined with decent damage output and eHP (not enough to main tank), makes her an excellent ship for late campaign stages. However, her own damage is lackluster, and she lacks any significant damage buff or debuff for the fleet, so she’s not an ideal choice for single-target bosses. Her augment barrage is bugged and will probably never be fixed, but her damage is serviceable.",
+      "notes": "San Diego has some of the best AA in the game. That, combined with decent damage output and eHP (not enough to main tank), makes her an excellent ship for late campaign stages. However, her own damage is lackluster, and she lacks any significant damage buff or debuff for the fleet, so she’s not an ideal choice for single-target bosses. Her augment barrage is bugged and will probably never be fixed, but her damage is serviceable.\n\nNote: Her retrofit is VERY expensive and she needs her Unique Augment on top of it. If you're new, just craft her unique augment and skip the retrofit until you get to W12 in the main campaign.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -11396,7 +11396,7 @@
   "Shimakaze": [
     {
       "nameNote": "",
-      "notes": "TRP fleet damager. Uses cheap blue Single 76mm. Or expensive Single 113mm.",
+      "notes": "Something of a one-trick pony, she has excellent (but not top-tier) damage against heavy armor enemies and 2 preloaded torpedo salvos, which are very useful for clearing the first mob wave in a fight. In every other aspect, though, she’s rather mediocre; her damage against light and medium armor enemies isn’t great, she’s fairly fragile, her AA is bad, and she doesn’t have damage buffs for the fleet. If you want 2 preloaded torpedoes salvos for clearing trash mobs, Ibuki is cheaper and better at it.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
@@ -11477,7 +11477,7 @@
   "Shiranui": [
     {
       "nameNote": "",
-      "notes": "Very rarely drops collectible trophy boxes.",
+      "notes": "For battles that Shiranui with her unique augment (probably has to be maxed, but we don't know) participates in, a tech pack (does it have to be T3 or T4?) in the rewards can very rarely be replaced by a special T3 Sakura Tech Pack (Display Sample). It's basically a trophy sitting in your depot. Many details are unknown since the drop rate is so low and the logic is all server-side.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -11612,7 +11612,7 @@
   "Sirius": [
     {
       "nameNote": "",
-      "notes": "Requires multiple carriers. Buffs carriers, especially against DD, CL, and CA.",
+      "notes": "A somewhat mediocre ship on first impression, Sirius sees a a decent amount of use because she’s one of the relatively few ships with generic buffs for carriers, and said buffs are quite strong against DD, CL, or CA bosses. She only exists to buff the damage of your CVs. Otherwise, she has bad damage output, she’s fragile, and she has lackluster AA. Fortunately, her buffs persist for the whole battle even if she sinks.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "S",
@@ -12125,7 +12125,7 @@
   "Tai Yuan": [
     {
       "nameNote": "",
-      "notes": "DDG plus some shields. Requires full fleet.",
+      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. She provided some shields for the vanguard but she’s fragile, has luckluster AA, and no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -12368,7 +12368,7 @@
   "Tohka Yatogami": [
     {
       "nameNote": "",
-      "notes": "Both damage and tankiness. Needs unique augment. 10% flagship cover.",
+      "notes": "Overall, a really solid vanguard ship. She still has excellent damage output, eHP (not enough to consistently main tank late game content), and 10% damage reduction for the flagship. Her AA is lackluster, however, so she does need to be supplemented by ships with good AA in late plane-heavy content.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -13151,7 +13151,7 @@
   "Yat Sen": [
     {
       "nameNote": "",
-      "notes": "Requires and buffs DE ships. Requires her special aux. Not with Ping Hai or Ning Hai (see other row).",
+      "notes": "One of the tankiest vanguards in the game, with the caveat that she sortied with another Dragon Empery ship. While her AA is slightly above average, her damage output is mediocre, and she lacks significant damage buffs for the fleet. When sortied with just another  Dragon Empery ship, she’s fairly mediocre. However, when sortied with Ping Hai and/or Ning Hai, she buffs their eHP significantly, turning them into some of the tankiest vanguards in the game. This pairing is fairly niche, however, as all 3 have very bad damage output, mediocre AA, and no damage buffs for the main fleet.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -13176,7 +13176,7 @@
     },
     {
       "nameNote": "with Ning or Ping",
-      "notes": "Requires and buffs DE ships. Requires her special aux. HUGE buff to Ping Hai or Ning Hai.",
+      "notes": "One of the tankiest vanguards in the game, with the caveat that she sortied with another Dragon Empery ship. While her AA is slightly above average, her damage output is mediocre, and she lacks significant damage buffs for the fleet. When sortied with just another  Dragon Empery ship, she’s fairly mediocre. However, when sortied with Ping Hai and/or Ning Hai, she buffs their eHP significantly, turning them into some of the tankiest vanguards in the game. This pairing is fairly niche, however, as all 3 have very bad damage output, mediocre AA, and no damage buffs for the main fleet.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -13446,7 +13446,7 @@
   "Yuudachi": [
     {
       "nameNote": "",
-      "notes": "Generic balanced DPS.",
+      "notes": "A decent all-around vanguard, she has decent damage overall. However, she isn't that tanky, her AA is bad, and she lacks any damage buffs for the fleet. Despite what her background might lead you to believe, she’s closer in performance to 2026 SR vanguards than 2026 UR vanguards.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -13473,7 +13473,7 @@
   "Yuudachi META": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "A decent all-around vanguard, she has solid damage output overall However, she isn't that tanky, her AA is bad, and she lacks any damage buffs for the fleet.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -14148,7 +14148,7 @@
   "Ägir": [
     {
       "nameNote": "",
-      "notes": "A very high eHP tank with decent damage output. She can apply a standard armor break and apply a 60% slow with her torps. The latter is difficult to make use of however due to the difficulty of syncing the torpedoes for multiple salvos / airstrikes. They also need to hit the boss in order to apply the slow and she doesn't have very high HIT stat. Her AA is also lackluster so in plane heavy content she will need to be paired with ships with good AA.",
+      "notes": "A very high eHP tank with decent damage output. She can apply a standard armor break and apply a 60% slow with her torps. However, the latter is difficult to make use of due to the difficulty of syncing the torpedoes for multiple salvos / airstrikes. They also need to hit the boss in order to apply the slow and she doesn't have very high HIT stat. Her AA is lackluster so in plane heavy content she will need to be paired with ships with good AA.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
