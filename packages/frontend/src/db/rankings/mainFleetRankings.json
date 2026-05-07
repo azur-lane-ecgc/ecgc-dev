@@ -1647,7 +1647,7 @@
   "Cowpens": [
     {
       "nameNote": "",
-      "notes": "Milk is good for health. Fast reload, good damage, targeted heal.",
+      "notes": "One of the best healers in the game. She has very good damage output, especially for a healer. Her heals scale with her own HP Pool rather than the target’s, which does make her better at healing low HP ships like DDs and CLs, but worse for main fleet ships and CAs / CBs. She’s a very useful ship to have for all campaign stages.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
@@ -7829,7 +7829,7 @@
   "Unicorn": [
     {
       "nameNote": "",
-      "notes": "The best full-vanguard healer as of 2026.",
+      "notes": "One of the best healers in the game, still, she’s practically an auto slot in your mob fleet for the vast majority of your time pushing content. She does fall off a bit in the very late game as her low damage does start to show, especially with more healers with good damage output being added. Nonetheless, she remains a very strong choice for mobbing and campaigning. You can obtain her right after you finish the tutorial (from the Guild Shop), a must pick up for new players.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "C",

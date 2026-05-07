@@ -23337,7 +23337,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Kirov is a damage-oriented CL with good stats and great skills. Her personal damage is pretty good due to multiple skill barrages and her increased Main Gun range. Her bulk is also decent. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {

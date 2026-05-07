@@ -1055,7 +1055,7 @@
   "Azuma": [
     {
       "nameNote": "",
-      "notes": "A very eHP tank with decent damage output. However, her AA is lackluster. She also lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses. She's similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
+      "notes": "A tank with decent damage output. However, her AA is lackluster. She also lacks any damage buffs for the fleet, making her a relatively lackluster choice for single target bosses. She's similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2756,7 +2756,7 @@
   "De Zeven Provinciën": [
     {
       "nameNote": "",
-      "notes": "A solid choice for late campaign stages. She has some of the best AA in the game, decent damage output, and a small amount of healing for the fleet. She isn't that tanky however so she will need some babysitting. Her lack of damage buffs for the fleet makes her a relatuvely mediocre choice for single-target bossing.",
+      "notes": "D7P has some of the best AA in the game, decent damage output, and a small amount of healing for the fleet, making her a solid choice for late campaign stages. However, she doesn't have enough eHP to main tank those stages, and her lack of damage buffs for the fleet makes her a relatively mediocre choice for single-target bossing.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -3053,7 +3053,7 @@
   "Drake": [
     {
       "nameNote": "",
-      "notes": "#DrakeBad. In all seriousness, she has decent damage overall and is decently tanky (not enough to main tank). However, her AA is lackluster, and she lacks any damage buffs for the fleet. Despite what her background might lead you to believe, she’s outclassed by a decent number of 2025 SR vanguards to speak nothing of newer UR vanguards.",
+      "notes": "#DrakeBad. In all seriousness, she has decent damage overall and is decently tanky (not enough to main tank). However, her AA is lackluster, and she lacks any damage buffs for the fleet. Despite what her background might lead you to believe, she’s outclassed by a decent number of 2025 SR vanguards, to speak nothing of newer UR vanguards.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -3944,7 +3944,7 @@
   "Fu Shun": [
     {
       "nameNote": "",
-      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. However, she is very fragile, has luckluster AA, and no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
+      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. However, she is very fragile, has luckluster AA, and has no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -4376,7 +4376,7 @@
   "Grenville": [
     {
       "nameNote": "",
-      "notes": "Buffs DD FP.",
+      "notes": "Buffs vanguard FP.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4389,7 +4389,7 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 1,
+      "lightdmg": 2,
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
@@ -4862,7 +4862,7 @@
   "Harbin": [
     {
       "nameNote": "",
-      "notes": "Overall, a solid vanguard ship.  She still has solid damage output and a smokescreen, which improves the rest of the vanguard’s eHP. However, she isn’t that tanky and her AA is lackluster. She also doesn’t have damage buffs for the fleet making her a luckluster choice for single target boss fleets.",
+      "notes": "Harbin has solid damage output and a smokescreen, which improves the rest of the vanguard’s eHP. However, she isn’t that tanky and her AA is lackluster. She also doesn’t have damage buffs for the fleet.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -5159,7 +5159,7 @@
   "Helena": [
     {
       "nameNote": "",
-      "notes": "One of the most powerful debuffers in the game, Helena’s debuff (which averages to a 24% buff to main fleet damage when properly timed and a 12% buff to vanguard damage) is worth building single-target boss fleets around. However, more ships have been introduced with individually less powerful but significantly more consistent debuffs, which have reduced her value somewhat, particularly for those who value consistency. None of them are as easily accessible as Helena, though, so for newer players, she will be a staple in their boss fleets for quite some time. She is not suited for late campaign stages, however, due to her low eHP, unremarkable AA, the inconsistency of her debuff to proc, and the emphasis later campaign stages put on clearing waves of mobs over defeating a single high eHP boss. \n\nNote: She should use SG Radar whenever you run her with Battleship equipped with ~20 second cooldown main guns and Admiralty Fire Control Table / High Standard Fire Control Radar.",
+      "notes": "Helena has one of the most powerful boss debuffs in the game. It's an expected 24% increase in main fleet damage when properly timed and 12% increase in vanguard damage, and this debuff window is worth building single-wave bossing fleets around. However, more ships have been introduced with less powerful but more consistent debuffs, reducing her value particularly for players who value consistency. But none of them are as easily accessible as Helena, so for newer players, she will be a staple in boss fleets for a long time. Helena is not suited for late campaign stages, even campaign bosses, due to her low eHP, unremarkable AA, inconsistency, and inability to help clear waves of enemies that spawn before the boss. <strong>Note: Helena should equip SG Radar whenever your main fleet attacks faster than 20 seconds, including but not limited to BBs equipped with ~20 second cooldown main guns and Admiralty Fire Control Table / High Standard Fire Control Radar.</strong>",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -6131,7 +6131,7 @@
   "Kaguya Yamai・Yuzuru Yamai": [
     {
       "nameNote": "",
-      "notes": "Overall, a really solid vanguard ship. They have excellent damage output and eHP (not enough to consistently main tank late game content). However, their AA is lackluster. They can, albeit inconsistently, pull stationary enemies close enough to be within the improved range of Oumi’s auxiliary guns.",
+      "notes": "Overall, a really solid vanguard ship. They have excellent damage output and eHP (not enough to consistently main tank late game content). However, their AA is lackluster. Their most noteworthy ability is to temporarily and inconsistently pull stationary bosses close enough to be within the improved range of Oumi’s auxiliary guns.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -6455,7 +6455,7 @@
   "Kazagumo": [
     {
       "nameNote": "",
-      "notes": "A somewhat mediocre ship on first impression, she sees a lot of use because she’s one of the least terrible ships with the Air Raid Assistance skill. She’s also a Sakura Empire ship, so she can help proc Shinano’s buffs for IJN CVs. Otherwise, she’s actually pretty mediocre with bad damage output, she’s very fragile, and she has bad AA. She only exists to buff the damage of your CVs against single target bosses and while she continues to be powercrept in this role she is much more easily obtainable than her alternatives.",
+      "notes": "A somewhat mediocre ship on first impression, Kazagumo sees a lot of use because she’s one of the least terrible ships with the Air Raid Assistance skill. She’s also a Sakura Empire ship, so she can help proc Shinano’s buffs for IJN CVs. She only exists to buff the damage of your CVs against single target bosses and is being powercrept in this role slowly but surely. On the bright side, she is much more easily obtainable than her alternatives.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -6672,22 +6672,22 @@
     {
       "nameNote": "",
       "notes": "One-time 15% debuff.",
-      "hardarbiter": "C",
-      "meta": "D",
-      "cm": "D",
-      "w14mob": "D",
-      "w14boss": "D",
-      "w15mob": "D",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "C",
+      "w15mob": "C",
       "w15boss": "D",
       "ex": "S*",
       "consistency": null,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 1,
-      "mediumdmg": 1,
-      "heavydmg": 1,
-      "aoedmg": 1,
+      "lightdmg": 4,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 3,
       "offensivebuff": 1,
       "selfsurvival": 85,
       "aa": null,
@@ -6995,7 +6995,7 @@
   "Kurumi Tokisaki": [
     {
       "nameNote": "",
-      "notes": "The budget version of Laffey 2, she fulfills a very similar role being an almost unkillable cockroach. She does this by generating clones (these clones can also slow down or stop suicide boats from reaching the main fleet) and stealing their HP whenever she’s about to die. She’s a very good tank for campaign stages, but she isn’t quite as tanky as Laffey II and her AA isn’t nearly as good. Her damage output is a bit better, but it's still not that high and she lacks damage buffs for the fleet so she's a lackluster choice for single-target bossing.",
+      "notes": "Kurumi is the budget (but limited) version of Laffey II. She fulfills a very similar role, being an almost unkillable cockroach. She does this by generating clones and switching to a clone when she sinks, and she can generate clones faster when there are more enemies on screen. These clones can also inconsistently body-block suicide boats from reaching the main fleet. Furthermore, her Time-Eating Castle zones can slow down or stop submarines and suicide boats. These skills make her an extremely good tank for campaign stages, though her AA and ASW aren’t as good as Laffey II's.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -9587,7 +9587,7 @@
   "Ning Hai": [
     {
       "nameNote": "",
-      "notes": "When sortied with Yat Sen, she is one of the tankiest vanguards in the game, but her damage output and AA are bad, and they lack damage buffs for the fleet. It's a niche pairing that is seldom used. When not sortied with Yat Sen she's very bad.",
+      "notes": "Yat Sen with Ning Hai or Ping Hai, known as the Great Wall of China, is extremely tanky but has poor damage output and bad AA and ASW. It's a niche pairing that is seldom used. When not sortied with Yat Sen, Ning Hai and Ping Hai are very bad.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -10235,7 +10235,7 @@
   "Ping Hai": [
     {
       "nameNote": "",
-      "notes": "When sortied with Yat Sen, she is one of the tankiest vanguards in the game, but her damage output and AA are bad, and they lack damage buffs for the fleet. It's a niche pairing that is seldom used. When not sortied with Yat Sen she's very bad.",
+      "notes": "Yat Sen with Ning Hai or Ping Hai, known as the Great Wall of China, is extremely tanky but has poor damage output and bad AA and ASW. It's a niche pairing that is seldom used. When not sortied with Yat Sen, Ning Hai and Ping Hai are very bad.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -10964,7 +10964,7 @@
   "Ryu Lion": [
     {
       "nameNote": "",
-      "notes": "Overall, a solid vanguard ship.  She still has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in late plane-heavy content.",
+      "notes": "Overall, a solid vanguard ship. She still has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in late plane-heavy content.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
