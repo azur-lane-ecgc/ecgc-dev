@@ -5084,7 +5084,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Ace's Decisive Revolver", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["Meh"],
@@ -23334,7 +23334,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["Blade of Nobility and Honor", "Crossbow", "Sword"],
     "samEval": "Kirov is a damage-oriented CL with good stats and great skills. Her personal damage is pretty good due to multiple skill barrages and her increased Main Gun range. Her bulk is also decent. Overall, she is a good ship.",
     "fastLoad": null,
     "roles": ["DmgDealer", "OffSupport"],
@@ -33268,11 +33268,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
