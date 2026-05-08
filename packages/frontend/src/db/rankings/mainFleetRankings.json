@@ -116,7 +116,7 @@
   "Akagi": [
     {
       "nameNote": "",
-      "notes": "Should use Echoes of Relinquished Time instead of Catapult for more damage. Not assumed, but can be paired with Kaga or Kaga (BB) to make Akagi as strong as Akagi μ.",
+      "notes": "A mediocre SR CV. If you really want her wait until you're further along into the game when you can farm her and her sister efficiently.\n\nNote: Not assumed, but can be paired with Kaga or Kaga (BB) to make Akagi as strong as Akagi μ.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -261,7 +261,7 @@
   "Alabama": [
     {
       "nameNote": "",
-      "notes": "Needs mob ramp up in a sortie, but also does acceptable damage against single bosses.",
+      "notes": "A solid battleship for new pllayers. She does prefer to be in the mob fleet, but also does acceptable damage against single bosses.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -864,7 +864,7 @@
   "August von Parseval": [
     {
       "nameNote": "",
-      "notes": "Freeze. Strongly prefers a KMS plane. Bonus damage against CL/CA, worse buff against heavy.",
+      "notes": "A decent SR carrier and one of the few ships in the game with the ability to root enemies in place. While there are better roots out there, namely Implacable, AvP is still one of the most cost effective options as she doesn't require UR Bulins. If you don't have any ships that can root yet, August von Parseval is a solid pick up.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -1908,7 +1908,7 @@
   "Enterprise": [
     {
       "nameNote": "",
-      "notes": "For an average 70% proc rate, she is high gold CV level. With 100% rate, rainbow CV damage (but no support).",
+      "notes": "One of the best main fleet ships a new player is likely to get. For an average 70% proc rate, her damage sits at the high end for an SR CV. If you get lucky with 100% proc rate on her skill, she can match the damage of some rainbow CVs. She will fall off with time as you get ships that are able to match or exceed her damage output consistently but when you're new there's few ships that are better.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "B",
@@ -3671,7 +3671,7 @@
   "Independence": [
     {
       "nameNote": "",
-      "notes": "Buffs carriers but desynced, so good for campaign and less for single bosses. Good crossfleet for CV(L). Not assuming there is a Cleveland class ship.",
+      "notes": "A very good carrier for the main campaign. She has solid damage output combined with good AA, buffs for carriers in your fleet and in other fleets, and defensive buffs for EU ships. She's a very good alternative to UR Carriers in late campaign stages. She's less suited for single target bosses primarily because her airstrikes will be desynced from the rest of the fleet. She's not a ship you should necessarily pick up early in the game because she does a lot of investment (a retrofit and unique augment) to be good but absolutely someone you want to pick up later on.  \n\nNote: Not assuming there is a Cleveland class ship.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
@@ -4019,7 +4019,7 @@
   "Kaga": [
     {
       "nameNote": "",
-      "notes": "Not assumed to be with an Akagi for 35% AVI.",
+      "notes": "A mediocre SR CV. If you really want her wait until you're further along into the game when you can farm her and her sister efficiently.\n\nNote: Not assumed to be with an Akagi for 35% AVI.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4307,7 +4307,7 @@
   "Klaudia Valentz": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "A solid CV healer. Compared to Unicorn though she lacks a preload and the total amount of healing is less.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "C",
@@ -4914,7 +4914,7 @@
   "Maryland": [
     {
       "nameNote": "",
-      "notes": "Debuff for 10% EVA is something but not enough for a 1 in Offense Buff. Bugged since retrofit, 4.5% HIT instead of 12%.",
+      "notes": "A solid battleship for new pllayers. Note she does require her retrofit.\n\nNote: Debuff for 10% EVA is something but not enough for a 1 in Offense Buff. Bugged since retrofit, 4.5% HIT instead of 12%.",
       "hardarbiter": "C",
       "meta": "D",
       "cm": "C",
@@ -5430,7 +5430,7 @@
   "Nelson": [
     {
       "nameNote": "",
-      "notes": "Requires Nelson's Pennant.",
+      "notes": "A solid battleship for new pllayers. Note she does need to be retrofitted.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5894,7 +5894,7 @@
   "Perseus": [
     {
       "nameNote": "",
-      "notes": "In W15 Boss, good for 15-4 second boss ONLY if doing mob-boss-mob fleet.",
+      "notes": "A solid healer CV. She is however worse than Unicorn retrofit in most aspects especially in long fights. Not a ship that you need to get. \n\nNote: In W15 Boss fleets, she's good for 15-4 second boss ONLY if doing mob-boss-mob fleet.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "C*",
@@ -8090,7 +8090,7 @@
   "Volga": [
     {
       "nameNote": "",
-      "notes": "Semi-targeted heal that is strong for low HP ships like DDs. Secondary healer, decent damage.",
+      "notes": "A decent SR CV with some healing. Her heals scale with her own HP Pool rather than the target’s, which does make her better at healing low HP ships like DDs, but worse for main fleet ships and cruisers. The total amount of healing provides is relatively low however and it's targeting is a bit random so some heals could be wasted. She's a decent option of you're lacking healers but there are better ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "C",
@@ -8608,7 +8608,7 @@
   "Zuihou": [
     {
       "nameNote": "",
-      "notes": "Ryuuhou Pro Max. Asterisk means the fleet is DD/CL or low-HP focused. Like a tanky DD for main tank.",
+      "notes": "One of the best healers in the game. She has very good damage output, especially for a healer. Her heals scale with her own HP Pool rather than the target’s, which does make her better at healing low HP ships like DDs, but worse for main fleet ships and cruisers. She’s a very useful ship to have for late campaign stages she has been powercept in this niche by Cowpens.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
