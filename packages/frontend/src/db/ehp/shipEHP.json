@@ -193,13 +193,6 @@
       "std": "59.85%"
     }
   ],
-  "Princess Hime": [
-    {
-      "name": "Princess Hime",
-      "totalEHP": "135.77%",
-      "std": "36.68%"
-    }
-  ],
   "Neptune": [
     {
       "name": "Neptune (Fate)",
@@ -270,6 +263,13 @@
       "name": "Azuma",
       "totalEHP": "107.46%",
       "std": "22.60%"
+    }
+  ],
+  "Princess Hime": [
+    {
+      "name": "Princess Hime",
+      "totalEHP": "126.41%",
+      "std": "33.35%"
     }
   ],
   "Jervis": [
@@ -1512,13 +1512,6 @@
       "std": "25.61%"
     }
   ],
-  "Ritsuko Akizuki": [
-    {
-      "name": "Ritsuko Akizuki",
-      "totalEHP": "87.58%",
-      "std": "24.41%"
-    }
-  ],
   "Portsmouth Adventure": [
     {
       "name": "Portsmouth Adventure (3 Gear)",
@@ -1728,6 +1721,13 @@
       "name": "Halford (NoPlane)",
       "totalEHP": "82.60%",
       "std": "31.57%"
+    }
+  ],
+  "Ritsuko Akizuki": [
+    {
+      "name": "Ritsuko Akizuki",
+      "totalEHP": "84.53%",
+      "std": "23.98%"
     }
   ],
   "Ugolino Vivaldi": [
@@ -2413,6 +2413,13 @@
       "std": "27.43%"
     }
   ],
+  "Ting An": [
+    {
+      "name": "Ting An",
+      "totalEHP": "75.33%",
+      "std": "28.02%"
+    }
+  ],
   "Kitakaze": [
     {
       "name": "Kitakaze (Fate)",
@@ -2909,13 +2916,6 @@
       "std": "28.80%"
     }
   ],
-  "Ting An": [
-    {
-      "name": "Ting An",
-      "totalEHP": "70.14%",
-      "std": "27.04%"
-    }
-  ],
   "Ayanami": [
     {
       "name": "Ayanami (Retrofit)",
@@ -3301,18 +3301,18 @@
       "std": "27.72%"
     }
   ],
-  "Carabiniere": [
-    {
-      "name": "Carabiniere",
-      "totalEHP": "65.85%",
-      "std": "28.10%"
-    }
-  ],
   "Trento META": [
     {
       "name": "Trento META",
       "totalEHP": "65.85%",
       "std": "19.58%"
+    }
+  ],
+  "Carabiniere": [
+    {
+      "name": "Carabiniere",
+      "totalEHP": "65.85%",
+      "std": "28.10%"
     }
   ],
   "Hai Chi": [
