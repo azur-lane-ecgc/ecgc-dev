@@ -31,7 +31,7 @@
   "Admiral Nakhimov": [
     {
       "nameNote": "",
-      "notes": "One of the highest damage ships against medium armor, she also has good damage against heavy armor enemies. When she launches an airstrike, she slows the enemies from 1.5s after her airstrike to 6.5s after. If the enemy is slowed by another Northern Parliament ship, then the period from 1.5s to 4.0s becomes a freeze. Nakhimov also gains +40% crit damage against enemies slowed by other NP ships, which is worth about 10% more damage. This makes her somewhat dependent on being run with another Nothern Parliament ship that can slow enemies (usually Soyuz or Moskva).  These tiers and damage ratings <strong>assume that there is no such slow</strong> in the fleet. See Nakhimov's pairing for an idea of how she performs with a good Northern Parliament ship who has a slow.",
+      "notes": "One of the highest damage ships against medium armor, she also has good damage against heavy armor enemies. When she launches an airstrike, she slows the enemies from 1.5s after her airstrike to 6.5s after. If the enemy is slowed by another Northern Parliament ship, then the period from 1.5s to 4.0s becomes a freeze. Nakhimov also gains +40% crit damage against enemies slowed by other NP ships, which is worth about 10% more damage. This makes her somewhat dependent on being run with another Northern Parliament ship that can slow enemies (usually Soyuz or Moskva).  These tiers and damage ratings <strong>assume that there is no such slow</strong> in the fleet. See Nakhimov's pairing for an idea of how she performs with a good Northern Parliament ship who has a slow.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -261,7 +261,7 @@
   "Alabama": [
     {
       "nameNote": "",
-      "notes": "A solid battleship for new pllayers. She does prefer to be in the mob fleet, but also does acceptable damage against single bosses.",
+      "notes": "A solid battleship for new players. She does prefer to be in the mob fleet, but also does acceptable damage against single bosses.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -319,7 +319,7 @@
   "Alsace": [
     {
       "nameNote": "",
-      "notes": "One of the best all around UR BBs in the game currently. She has good damage output against all armor types with a preload (however her damage on a per-salvo basis is somewhat weaker compared to other UR BBs) and she’s one of the few BBs with salvo capacity +1 so she isn’t affected by absolute cooldowns, making her quicker to reload her main guns in practice compared to other BBs. She also inflicts a 12% damage debuff on a priority enemy for 10 seconds. She also has a zombie heal when one of the ships in your fleet falls below 30% HP. Alsace doesn’t have any real weaknesses per se but she’s not the absolute best at any one thing but early damage.",
+      "notes": "One of the best all around UR BBs in the game currently. She has good damage output against all armor types with a preload (however her damage on a per-salvo basis is somewhat weaker compared to other UR BBs) and she’s one of the few BBs with salvo capacity +1 so she isn't affected by absolute cooldowns, making her quicker to reload her main guns in practice compared to other BBs. She also inflicts a 12% damage debuff on a priority enemy for 10 seconds. She also has a zombie heal when one of the ships in your fleet falls below 30% HP. Alsace doesn't have any real weaknesses per se but she’s not the absolute best at any one thing but early damage.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -607,7 +607,7 @@
   "Aquila": [
     {
       "nameNote": "Dive Bomber",
-      "notes": "Aquila equips a dive bomber in her second slot to gain a preloaded airstrike and do more damage. The preload for fast farming is the only thing she's good for in this mode.",
+      "notes": "Aquila can be run in one of 2 configurations, a pre-load (dive bomber in her second slot) or healer (fighter in her second slot) node. Her pre-load node is pretty useless for endgame content, so for the most part, she will be run as a healer. Her total healing in comparison to other healers is a bit low, so it’s best to pair her with another healer like Unicorn. Her healing scales off of her target’s max HP, so she’s better at healing main fleets and high HP vanguards. She has excellent synergy with Musashi, who can tank damage for the main fleet, and Aquila’s heals can keep her healthy.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -634,7 +634,7 @@
     },
     {
       "nameNote": "Fighter",
-      "notes": "Secondary healer. Aquila equips a fighter in her second slot to heal and protect the lowest HP% ship in both vanguard and main fleet.",
+      "notes": "Aquila can be run in one of 2 configurations, a pre-load (dive bomber in her second slot) or healer (fighter in her second slot) node. Her pre-load node is pretty useless for endgame content, so for the most part, she will be run as a healer. Her total healing in comparison to other healers is a bit low, so it’s best to pair her with another healer like Unicorn. Her healing scales off of her target’s max HP, so she’s better at healing main fleets and high HP vanguards. She has excellent synergy with Musashi, who can tank damage for the main fleet, and Aquila’s heals can keep her healthy.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -661,7 +661,7 @@
     },
     {
       "nameNote": "with Musashi, Fighter",
-      "notes": "Secondary healer. Aquila equips a fighter in her second slot to heal and protect the lowest HP% ship in both vanguard and main fleet. This makes her a great pair with Musashi for tanking all forms of damage to your main fleet.",
+      "notes": "Aquila can be run in one of 2 configurations, a pre-load (dive bomber in her second slot) or healer (fighter in her second slot) node. Her pre-load node is pretty useless for endgame content, so for the most part, she will be run as a healer. Her total healing in comparison to other healers is a bit low, so it’s best to pair her with another healer like Unicorn. Her healing scales off of her target’s max HP, so she’s better at healing main fleets and high HP vanguards. She has excellent synergy with Musashi, who can tank damage for the main fleet, and Aquila’s heals can keep her healthy.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -864,7 +864,7 @@
   "August von Parseval": [
     {
       "nameNote": "",
-      "notes": "A decent SR carrier and one of the few ships in the game with the ability to root enemies in place. While there are better roots out there, namely Implacable, AvP is still one of the most cost effective options as she doesn't require UR Bulins. If you don't have any ships that can root yet, August von Parseval is a solid pick up.",
+      "notes": "A decent SR carrier and one of the few ships in the game with the ability to root enemies in place. While there are better roots out there, namely Implacable, August von Parseval is still one of the most cost effective options as she doesn't require UR Bulins. If you don't have any ships that can root yet, August von Parseval is a solid pick up.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -980,7 +980,7 @@
   "Bismarck Zwei": [
     {
       "nameNote": "",
-      "notes": "One of the best all-around UR BBs in the game currently. She has good damage output against all armor types on top of a 3 second black hole which can pull enemies together and act as a short freeze. The duration of the black hole is a bit on the short side though so if you want to take full advantage if it, your syncing needs to be very tight. Even with the best sync, the black hole would only help about half of the volleys in a triple BB fleet. Other than that, she doesn’t have any real weaknesses, but she’s not the absolute best at any one thing. Although not reflected in her ratings, she can also run the auxiliary Certificate of Sponsorship which reduces the Out of Ammo debuff for your main fleet by 15%, useful when getting the third star in campaign.",
+      "notes": "One of the best all-around UR BBs in the game currently. She has good damage output against all armor types on top of a 3 second black hole which can pull enemies together and act as a short freeze. The duration of the black hole is a bit on the short side though so if you want to take full advantage if it, your syncing needs to be very tight. Even with the best sync, the black hole would only help about half of the volleys in a triple BB fleet. Other than that, she doesn't have any real weaknesses, but she’s not the absolute best at any one thing. Although not reflected in her ratings, she can also run the auxiliary Certificate of Sponsorship which reduces the Out of Ammo debuff for your main fleet by 15%, useful when getting the third star in campaign.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "SS",
@@ -1995,7 +1995,7 @@
   "Essex": [
     {
       "nameNote": "",
-      "notes": "Essex is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option. Although not assumed for these ratings, she slightly prefers to be with Eagle Union carriers for 5% AVI each. She is also one of the best support fleet carriers in late campaign.",
+      "notes": "Essex is a jack of all trades, master of none relative to other rainbow ships. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option. Although not assumed for these ratings, she slightly prefers to be with Eagle Union carriers for 5% AVI each. She is also one of the best support fleet carriers in late campaign.\n\nNote: Her retrofit is VERY expensive.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -2022,7 +2022,7 @@
     },
     {
       "nameNote": "combo",
-      "notes": "Being in a fleet with Kearsarge, Yorktown II, and/or Lexington II massively buffs Essex but limits her to light armor bosses. In such a fleet, Essex only does damage and doesn't buff the fleet. That, combined with her lower anti-light damage relative to other Eagle Union UR CVs, makes her a transitional option.",
+      "notes": "Being in a fleet with Kearsarge, Yorktown II, and/or Lexington II massively buffs Essex but limits her to light armor bosses. In such a fleet, Essex only does damage and doesn't buff the fleet. That, combined with her lower anti-light damage relative to other Eagle Union UR CVs, makes her a transitional option.\n\nNote: Her retrofit is VERY expensive.",
       "hardarbiter": "S",
       "meta": "S*",
       "cm": "S*",
@@ -2225,7 +2225,7 @@
   "Fritz Rumey": [
     {
       "nameNote": "",
-      "notes": "Arguably the most flexible of the UR carriers, she is excellent against light and medium armor bosses thanks to her ability to equip 8 fighters (or 4 fighters and 4 Skyraiders). This also enables her to more easily get off 4 airstrikes in 80 seconds META showdowns compared to other carriers without gimping her damage too much. Her main weakness is that she’s more reliant on having good equipment (even compared to other carriers), and getting HVARcats, Skyraiders, and La-9s in quantity isn’t that easy. She's also the best carrier for W15 and W16 support fleets.",
+      "notes": "Arguably the most flexible of the UR carriers, she is excellent against light and medium armor bosses thanks to her ability to equip 8 fighters (or 4 fighters and 4 Skyraiders). This also enables her to more easily get off 4 airstrikes in 80 seconds META showdowns compared to other carriers without gimping her damage too much. Her main weakness is that she’s more reliant on having good equipment (even compared to other carriers), and getting HVARcats, Skyraiders, and La-9s in quantity isn't that easy. She's also the best carrier for W15 and W16 support fleets.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -3004,7 +3004,7 @@
   "Hestia": [
     {
       "nameNote": "",
-      "notes": "zTENTATIVE A repair ship who actually heals, and +1 ammo is very nice for mob. From AA barge to healer AA barge.",
+      "notes": "A repair ship who actually heals, and +1 ammo is very nice for mob. From AA barge to healer AA barge.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4249,7 +4249,7 @@
   "King George V": [
     {
       "nameNote": "",
-      "notes": "Althought KGV's unique augment has mutually exclusive effects, it is a definite improvement to her performance. Let's think about the gun first and then the fleet. If KGV is using her historical Quadruple 356mm main gun mount, then she benefits from the existence of another Royal Navy ally. If KGV is not using the Quadruple 356mm, then she benefits from there being no other Royal Navy ship. Note that the converse is not necessarily true; if there is another Royal Navy ship, the appropriate rainbow guns are still better than the Quadruple 356mm. If you have enough of the appropriate rainbow guns to equip other BBs as well as KGV, then KGV should always use those guns. If you're poor and still want to use KGV, then the Quadruple 356mm is a decent option.",
+      "notes": "Although KGV's unique augment has mutually exclusive effects, it is a definite improvement to her performance. Let's think about the gun first and then the fleet. If KGV is using her historical Quadruple 356mm main gun mount, then she benefits from the existence of another Royal Navy ally. If KGV is not using the Quadruple 356mm, then she benefits from there being no other Royal Navy ship. Note that the converse is not necessarily true; if there is another Royal Navy ship, the appropriate rainbow guns are still better than the Quadruple 356mm. If you have enough of the appropriate rainbow guns to equip other BBs as well as KGV, then KGV should always use those guns. If you're poor and still want to use KGV, then the Quadruple 356mm is a decent option.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4510,7 +4510,7 @@
   "Lexington II": [
     {
       "nameNote": "",
-      "notes": "These ratings assume that there is no AA debuff and there are fewer than 3 Eagle Union ships. Lexington II applies a 40% slow under this assumption. See her pairing for upgrading the slow to a freeze. Lexington ll is one of the best ships in the game against light armor enemies with good damage against medium armor as well. Lexington ll also has a very useful utility in the main campaign. If your fleet shoots down 17 aircraft or she looses 25% of her HP, she gains 1 stack of her blue skill, and once she gains 4 stacks, she can reduce the damage your main fleet takes from enemy aircraft by 100%. This benefit is not relevant in mob battles but is in campaign boss battles.",
+      "notes": "These ratings assume that there is no AA debuff and there are fewer than 3 Eagle Union ships. Lexington II applies a 40% slow under this assumption. See her pairing for upgrading the slow to a freeze. Lexington ll is one of the best ships in the game against light armor enemies with good damage against medium armor as well. Lexington ll also has a very useful utility in the main campaign. If your fleet shoots down 17 aircraft or she loses 25% of her HP, she gains 1 stack of her blue skill, and once she gains 4 stacks, she can reduce the damage your main fleet takes from enemy aircraft by 100%. This benefit is not relevant in mob battles but is in campaign boss battles.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -4914,7 +4914,7 @@
   "Maryland": [
     {
       "nameNote": "",
-      "notes": "A solid battleship for new pllayers. Note she does require her retrofit.\n\nNote: Debuff for 10% EVA is something but not enough for a 1 in Offense Buff. Bugged since retrofit, 4.5% HIT instead of 12%.",
+      "notes": "A solid battleship for new players. Note she does require her retrofit.\n\nNote: Debuff for 10% EVA is something but not enough for a 1 in Offense Buff. Bugged since retrofit, 4.5% HIT instead of 12%.",
       "hardarbiter": "C",
       "meta": "D",
       "cm": "C",
@@ -5430,7 +5430,7 @@
   "Nelson": [
     {
       "nameNote": "",
-      "notes": "A solid battleship for new pllayers. Note she does need to be retrofitted.",
+      "notes": "A solid battleship for new players. Note she does need to be retrofitted.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5517,7 +5517,7 @@
   "New Jersey": [
     {
       "nameNote": "",
-      "notes": "A solid all around BB still but she's that has been powercrept in just about every metric and now sits at the bottom end of UR BBs. If you like her by all means use her but from a purely objective standpoint with the constant influx of new UR BBs it's very dififcult to justify spending UR Bulins on her.",
+      "notes": "A solid all around BB still but she's that has been powercrept in just about every metric and now sits at the bottom end of UR BBs. If you like her by all means use her but from a purely objective standpoint with the constant influx of new UR BBs it's very difficult to justify spending UR Bulins on her.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -5720,7 +5720,7 @@
   "Oumi": [
     {
       "nameNote": "",
-      "notes": "Oumi should use a DD gun for max DPS against bosses that wander into her range, but she is still good against bosses that don't. Stick to standard aux guns in campaign for shooting suicide boats before she reaches max stacks.",
+      "notes": "An SR Battleship with unusually high potential damage output due to her long-range auxiliary gun. If the boss sits in range of her auxiliary guns for extended amounts of time, they will take noticeably more damage from them. She is still good even if she isn’t able to bring her secondaries in range. Stick to standard aux guns in campaign for shooting suicide boats before she reaches max stacks on her aux gun range buff.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "S*",
@@ -5894,7 +5894,7 @@
   "Perseus": [
     {
       "nameNote": "",
-      "notes": "A solid healer CV. She is however worse than Unicorn retrofit in most aspects especially in long fights. Not a ship that you need to get. \n\nNote: In W15 Boss fleets, she's good for 15-4 second boss ONLY if doing mob-boss-mob fleet.",
+      "notes": "A solid healer CV. She is however worse than Unicorn retrofit in most aspects especially in long fights due to the massive penalty on her airstrike cooldown. Not a ship that you need to get. \n\nNote: In W15 Boss fleets, she's good for 15-4 second boss ONLY if doing mob-boss-mob fleet.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "C*",
@@ -7166,7 +7166,7 @@
   "Sovetsky Soyuz": [
     {
       "nameNote": "with BBs",
-      "notes": "When with BBs (fewer than 2 carriers), Soyuz has a decent slow and a minor fleet buff. She also has a very strong crossfleet.",
+      "notes": "Soyuz is an overall UR battleship. When she’s sortied with at least one other Battleship, buffs her own damage, crit rate, and reload by 10%. When she’s sortied with 2 CVs, she loses these self buffs but buffs the accuracy and damage output of your CVs by 10%. She has particularly strong synergy with Admiral Nahkimov as she can proc the latter’s root with her barrage, which slows the enemies hit by it. She’s a very strong and flexible ship still, but she has overall fallen behind newer UR battleships.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -7193,7 +7193,7 @@
     },
     {
       "nameNote": "with CVs",
-      "notes": "When with two carriers, Soyuz offers a sizeable buff for the carriers at the cost of some personal damage. She also has a very strong crossfleet. Not assumed to be buffing Nakhimov.",
+      "notes": "When with two carriers, Soyuz offers a sizeable buff for the carriers at the cost of some Soyuz is an overall UR battleship. When she’s sortied with at least one other Battleship, buffs her own damage, crit rate, and reload by 10%. When she’s sortied with 2 CVs, she loses these self buffs but buffs the accuracy and damage output of your CVs by 10%. She has particularly strong synergy with Admiral Nahkimov as she can proc the latter’s root with her barrage, which slows the enemies hit by it. She’s a very strong and flexible ship still, but she has overall fallen behind newer UR battleships. \ndamage. She also has a very strong crossfleet. Not assumed to be buffing Nakhimov.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "A",
@@ -7220,7 +7220,7 @@
     },
     {
       "nameNote": "with Nakhimov",
-      "notes": "Soyuz has a huge buff for Nakhimov and enables Nakhimov's freeze if synced properly. The third main fleet ship can be a carrier or not a carrier, whatever ship is best for the job. Just use a calculator to ensure Soyuz is synced with Nakhimov considering the existence or lack of 10% reload stat. Soyuz also has a very strong crossfleet.",
+      "notes": "Soyuz is an overall UR battleship. When she’s sortied with at least one other Battleship, buffs her own damage, crit rate, and reload by 10%. When she’s sortied with 2 CVs, she loses these self buffs but buffs the accuracy and damage output of your CVs by 10%. She has particularly strong synergy with Admiral Nahkimov as she can proc the latter’s root with her barrage, which slows the enemies hit by it. She’s a very strong and flexible ship still, but she has overall fallen behind newer UR battleships.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "S",
@@ -7800,7 +7800,7 @@
   "Ulrich von Hutten": [
     {
       "nameNote": "",
-      "notes": "A solid all around BB still but she's that has been powercrept in just about every metric and now sits at the bottom end of UR BBs. She has a unqiue gimick of firing twice as often as most other UR BBs when she's placed off flag but this often works against her. Half her salvos will not be abled to be timed with debuffs such as Trafalgar's EVA rate debuff. You could solve this by running has as the flagship but overall damage output is worse. Spamming salvos that much also does keep her revealed in W14 making her more likely to be targeted and focused down by enemy BBs. Her damage reduction to her main gun damage when off flag also stacks additively with the out of ammo debuff menaing she only deals 5% main gun damage when the fleet she's in is out of ammo and she's placed off flag.  If you like her by all means use her but from a purely objective standpoint with the constant influx of new UR BBs it's very dififcult to justify spending UR Bulins on her.\nRequires off-flag except when mobbing with 0 ammo. Weak slow. Use any high-DPS gun, don't care about sync.",
+      "notes": "A solid all around BB still but she's that has been powercrept in just about every metric and now sits at the bottom end of UR BBs. She has a unique gimmick of firing twice as often as most other UR BBs when she's placed off flag but this often works against her. Half her salvos will not be able to be timed with debuffs such as Trafalgar's EVA rate debuff. You could solve this by running has as the flagship but overall damage output is worse. Spamming salvos that much also does keep her revealed in W14 making her more likely to be targeted and focused down by enemy BBs. Her damage reduction to her main gun damage when off flag also stacks additively with the out of ammo debuff meaning she only deals 5% main gun damage when the fleet she's in is out of ammo and she's placed off flag.  If you like her by all means use her but from a purely objective standpoint with the constant influx of new UR BBs it's very difficult to justify spending UR Bulins on her.\nRequires off-flag except when mobbing with 0 ammo. Weak slow. Use any high-DPS gun, don't care about sync.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -8119,7 +8119,7 @@
   "Warspite": [
     {
       "nameNote": "",
-      "notes": "Warspite is a REAL UR now with her augment. But she is still among the worst UR BBs because she has no fleet buffs and has significant staggered barrages that miss moving bosses.",
+      "notes": "Warspite is a REAL UR now with her augment. But she is still among the worst UR BBs because she has no fleet buffs and has significant staggered barrages that miss moving bosses.\n\nNote: Her retrofit is VERY expensive and she needs her Unique Augment on top of it.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -8351,7 +8351,7 @@
   "Yorktown II": [
     {
       "nameNote": "",
-      "notes": "These ratings assume that she has an Eagle Union airplane equipped and is sortied with 2 other Eagle ships, but that she is not with Kearsarge or Yorktown/Essex-class. Yorktown II is one of the best ships in the game against light armor enemies with excellent damage against medium armor as well. She has a unique ability which allows her to decrease the airstrike cooldowns of Yorktown and Essex class carries, so check out her other entry. She also wants to be sortied with 2 other Eagle Union ships to proc a 15% AVI and HIT buff for herself.",
+      "notes": "These ratings assume that she has an Eagle Union airplane equipped and is sortied with 2 other Eagle ships, but that she is not with Kearsarge or Yorktown/Essex-class. Yorktown II is one of the best ships in the game against light armor enemies with excellent damage against medium armor as well. She has a unique ability which allows her to decrease the airstrike cooldowns of Yorktown and Essex class carriers, so check out her other entry. She also wants to be sortied with 2 other Eagle Union ships to proc a 15% AVI and HIT buff for herself.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -8378,7 +8378,7 @@
     },
     {
       "nameNote": "combo",
-      "notes": "Requires an Eagle Union airplane and 3 Eagle ships. Strong fighters, weak TBs, and a Skyraider barrage make her good against light bosses and poor against heavy bosses. These ratings assume that all conditions are met and she is with Kearsarge, Lexington II, and/or Essex. She has a unique ability which allows her to decrease the airstrike cooldowns of Yorktown and Essex class carries in the same fleet as her by 10% when she launches her own airstrike, which is very useful for syncing your Yorktown and Essex class ships and for getting off 4th airstrikes in META showdowns. The window of 8% or 10% of the reload time makes syncing them extremely easy. This skill is also why she prefers to launch first in bossing, otherwise the fleet gets very desynced.",
+      "notes": "Requires an Eagle Union airplane and 3 Eagle ships. Strong fighters, weak TBs, and a Skyraider barrage make her good against light bosses and poor against heavy bosses. These ratings assume that all conditions are met and she is with Kearsarge, Lexington II, and/or Essex. She has a unique ability which allows her to decrease the airstrike cooldowns of Yorktown and Essex class carriers in the same fleet as her by 10% when she launches her own airstrike, which is very useful for syncing your Yorktown and Essex class ships and for getting off 4th airstrikes in META showdowns. The window of 8% or 10% of the reload time makes syncing them extremely easy. This skill is also why she prefers to launch first in bossing, otherwise the fleet gets very desynced.",
       "hardarbiter": "SS*",
       "meta": "S*",
       "cm": "S*",
