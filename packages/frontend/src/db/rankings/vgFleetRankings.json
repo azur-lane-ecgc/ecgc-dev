@@ -3296,7 +3296,7 @@
   "Eldridge": [
     {
       "nameNote": "",
-      "notes": "Eldridge has one of the most powerful and unique abilities in the game, which is to make your vanguard invulnerable to damage for 10 seconds at a time. On top of that, when your flagship fires its main guns/launches an airstrike, she applies a 60% slow to all enemies on the screen for 5 seconds. She also comes equipped with Hedgehog, and she has decent AA, though her personal damage is abysmal. Her biggest weakness is that her invulnerability skill is reliant on RNG to proc. While the activation chance isn't low enough for this to be an issue most of the time, you do sometimes get those runs where she just refuses to proc and effectively becomes dead weight. She’s extremely powerful when your vanguard is struggling to live, but when it isn't, she becomes pretty useless. <strong>Do not put her in the middle position.</strong> Middle is the worst position for Eldridge in PvE, all it does is make her eat torpedoes instead of do the one thing she's meant to do.",
+      "notes": "Eldridge has one of the most powerful and unique abilities in the game, which is to make your vanguard invulnerable to damage for 10 seconds at a time. On top of that, when your flagship fires its main guns/launches an airstrike, she applies a 60% slow to all enemies on the screen for 5 seconds. She also comes equipped with Hedgehog, and she has decent AA, though her personal damage is abysmal. Her biggest weakness is that her invulnerability skill is reliant on RNG to proc. While the activation chance isn't low enough for this to be an issue most of the time, you do sometimes get those runs where she just refuses to proc and effectively becomes dead weight. She’s extremely powerful when your vanguard is struggling to live, but when it isn't, she becomes pretty useless. <strong>Do not put her in the middle position.</strong> Middle is the worst position for Eldridge in PvE, all it does is make her eat torpedoes instead of do the one thing she's meant to do.\n\nNote: Her retrofit is VERY expensive.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -3944,7 +3944,7 @@
   "Fu Shun": [
     {
       "nameNote": "",
-      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. However, she is very fragile, has luckluster AA, and has no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
+      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. However, she is very fragile, has lackluster AA, and has no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -4862,7 +4862,7 @@
   "Harbin": [
     {
       "nameNote": "",
-      "notes": "Harbin has solid damage output and a smokescreen, which improves the rest of the vanguard’s eHP. However, she isn’t that tanky and her AA is lackluster. She also doesn’t have damage buffs for the fleet.",
+      "notes": "Harbin has solid damage output and a smokescreen, which improves the rest of the vanguard’s eHP. However, she isn't that tanky and her AA is lackluster. She also doesn’t have damage buffs for the fleet.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -5861,7 +5861,7 @@
   "Jeanne d'Arc": [
     {
       "nameNote": "",
-      "notes": "Massive buff to vanguard survivability.",
+      "notes": "Effectively, Eldridge retrofit light. She buffs the survivability of your vanguard significantly. However, in just about every other aspect, she’s quite mediocre. Her damage and AA are bad, and she’s not that tanky.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -5942,7 +5942,7 @@
   "Jervis": [
     {
       "nameNote": "",
-      "notes": "Buffs Royal Navy DDs if with 2 other Royal Navy ships. Assumed to be in a vanguard fleet of DD/CLs only.",
+      "notes": "Buffs Royal Navy DDs if with 2 other Royal Navy ships. Assumed to be in a vanguard fleet of DD/CLs only.\n\nNote: Her eHP assumes she's run as the main tank.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -11396,7 +11396,7 @@
   "Shimakaze": [
     {
       "nameNote": "",
-      "notes": "Something of a one-trick pony, she has excellent (but not top-tier) damage against heavy armor enemies and 2 preloaded torpedo salvos, which are very useful for clearing the first mob wave in a fight. In every other aspect, though, she’s rather mediocre; her damage against light and medium armor enemies isn’t great, she’s fairly fragile, her AA is bad, and she doesn’t have damage buffs for the fleet. If you want 2 preloaded torpedoes salvos for clearing trash mobs, Ibuki is cheaper and better at it.",
+      "notes": "Something of a one-trick pony, she has excellent (but not top-tier) damage against heavy armor enemies and 2 preloaded torpedo salvos, which are very useful for clearing the first mob wave in a fight. In every other aspect, though, she’s rather mediocre; her damage against light and medium armor enemies isn't great, she’s fairly fragile, her AA is bad, and she doesn’t have damage buffs for the fleet. If you want 2 preloaded torpedoes salvos for clearing trash mobs, Ibuki is cheaper and better at it.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
@@ -11612,7 +11612,7 @@
   "Sirius": [
     {
       "nameNote": "",
-      "notes": "A somewhat mediocre ship on first impression, Sirius sees a a decent amount of use because she’s one of the relatively few ships with generic buffs for carriers, and said buffs are quite strong against DD, CL, or CA bosses. She only exists to buff the damage of your CVs. Otherwise, she has bad damage output, she’s fragile, and she has lackluster AA. Fortunately, her buffs persist for the whole battle even if she sinks.",
+      "notes": "A somewhat mediocre ship on first impression, Sirius sees a decent amount of use because she’s one of the relatively few ships with generic buffs for carriers, and said buffs are quite strong against DD, CL, or CA bosses. She only exists to buff the damage of your CVs. Otherwise, she has bad damage output, she’s fragile, and she has lackluster AA. Fortunately, her buffs persist for the whole battle even if she sinks.",
       "hardarbiter": "S",
       "meta": "A",
       "cm": "S",
@@ -12125,7 +12125,7 @@
   "Tai Yuan": [
     {
       "nameNote": "",
-      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. She provided some shields for the vanguard but she’s fragile, has luckluster AA, and no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
+      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. She provided some shields for the vanguard but she’s fragile, has lackluster AA, and no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
