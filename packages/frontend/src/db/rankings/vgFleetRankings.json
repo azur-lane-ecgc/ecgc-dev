@@ -5942,7 +5942,7 @@
   "Jervis": [
     {
       "nameNote": "",
-      "notes": "Buffs Royal Navy DDs if with 2 other Royal Navy ships. Assumed to be in a vanguard fleet of DD/CLs only.\n\nNote: Her eHP assumes she's run as the main tank.",
+      "notes": "Buffs Royal Navy DDs if with 2 other Royal Navy ships. Assumed to be in a vanguard fleet of DD/CLs only.\n\nNote: Her listed eHP assumes she's run as the main tank.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10478,7 +10478,7 @@
   "Prinz Eugen": [
     {
       "nameNote": "",
-      "notes": "All tank but extremely poor damage.",
+      "notes": "An all around mediocre SR heavy cruiser. She has good eHP but is terrible in every other aspect. You get her from login in rewards, you can use her if you really desire but it is not recommended.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -10559,7 +10559,7 @@
   "Prototype Bulin MKII": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "This \"ship\" is strictly used as limit breaking fodder for SR ships. DO NOT use them for combat outside of the one mission that requires it. They are really bad at it.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -11207,7 +11207,7 @@
   "Seattle": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Note: Seattle gains a 15% damage reduction when sortied in the off tank (right most slot) position which is not reflected in her listed eHP.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -11720,7 +11720,7 @@
   "Specialized Bulin Custom MKIII": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "This \"ship\" is strictly used as limit breaking fodder for UR ships. DO NOT use them for combat, they are really bad at it.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -12611,7 +12611,7 @@
   "Universal Bulin": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "This \"ship\" is strictly used as limit breaking fodder for Common, Rare and Elite ships. DO NOT use them for combat outside of the one mission that requires it. They are really bad at it.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
