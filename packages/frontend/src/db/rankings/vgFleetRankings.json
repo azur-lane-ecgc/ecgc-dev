@@ -488,7 +488,7 @@
   "Anchorage": [
     {
       "nameNote": "",
-      "notes": "A very high eHP tank. Her smokescreen also helps to improve the rest of the vanguard's eHP a bit. However, her AA is lackluster.  She lacks any damage buffs for the fleet and her own damage output is mediocre making her a relatively lackluster choice for single target bosses.",
+      "notes": "A very high eHP tank. Her smokescreen also helps to improve the rest of the vanguard's eHP a bit. However, her AA is lackluster.  She lacks any damage buffs for the fleet and her own damage output is mediocre, making her a relatively lackluster choice for single target bosses.",
       "hardarbiter": "B",
       "meta": "A",
       "cm": "B",
@@ -920,7 +920,7 @@
   "Aurora": [
     {
       "nameNote": "",
-      "notes": "Aurora offers one of the most powerful debuffs in the game with mediocre to poor stats and everything else. Against enemy DD/CL bosses, Aurora is usually the highest rDPS vanguard ship in the game, even beating Helena's expected 24% main fleet damage. By taking your fleet's hit rate from 70% to 90%, Aurora offers a 29% damage buff. Carriers often have around 70% hit rate against endgame bosses, so Aurora's buff will be a bit less than 29% for vanguard ships and BBs with higher than 70% hit rate. Her low survivability can be an issue since she needs to live for her debuff to apply. Outside of DD and CL bosses, she is a bad ship.",
+      "notes": "Aurora offers one of the most powerful debuffs in the game with mediocre/poor stats and everything else. Against enemy DD/CL bosses, Aurora is usually the highest rDPS vanguard ship in the game, even beating Helena's expected 24% main fleet damage. By taking your fleet's hit rate from 70% to 90%, Aurora offers a 29% damage buff. Carriers often have around 70% hit rate against endgame bosses, so Aurora's buff will be a bit less than 29% for vanguard ships and BBs with higher than 70% hit rate. Her low survivability can often be an issue since she needs to live for her debuff to apply. Outside of DD and CL bosses, she is a bad ship.",
       "hardarbiter": "S*",
       "meta": "S*",
       "cm": "S*",
@@ -1055,7 +1055,7 @@
   "Azuma": [
     {
       "nameNote": "",
-      "notes": "A tank with decent damage output. However, her AA is lackluster. She also lacks any damage buffs for the fleet, making her a relatively lackluster choice for single target bosses. She's similar to Drake in cost and performance, but the rainbow CB gun is event limited.",
+      "notes": "A tank with decent damage output. However, her AA is mediocre. She also has no damage buffs for the fleet, making her a relatively lackluster choice for single target bosses. She's similar to Drake in cost and performance.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -1244,7 +1244,7 @@
   "Bayard": [
     {
       "nameNote": "",
-      "notes": "Overall, a really solid vanguard, especially for a gold ship. She still has excellent damage output and eHP (not enough to consistently main tank). A lot of her damage comes from non-targeted barrages, making her less susceptible to the effects of concealment mechanics in later campaign stages. However, her AA is lackluster.",
+      "notes": "Overall, a really solid vanguard ship, especially for a gold ship. She still has excellent damage output and good eHP. A lot of her damage comes from non-targeted barrages, making her less susceptible to the effects of concealment mechanics in later campaign stages. However, her AA is lackluster.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -1784,7 +1784,7 @@
   "Brest": [
     {
       "nameNote": "",
-      "notes": "A very high eHP tank with decent damage output and a small amount of healing. However, her AA is lackluster. She also lacks any damage buffs for the fleet, making her a relatively lackluster choice for single target bosses. Brest prefers to use at least one Iris gear for better AA, but for damage, just ignore this Iris gear buff.",
+      "notes": "Brest is a very high eHP tank with decent damage output and a small amount of healing. However, her AA is not notable. She also lacks any damage buffs for the fleet, making her a relatively lackluster choice for single target bosses. Brest prefers to use at least one Iris gear for better AA, but for damage, just ignore this Iris gear buff.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "B",
@@ -2000,7 +2000,7 @@
   "Chang Chun": [
     {
       "nameNote": "",
-      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. She can buff Dragon Empery and Northern Parliament ships and is weaker than her sisters if not doing so. But she’s very fragile, and her AA is lackluster, making her a mediocre choice for late campaign stages.",
+      "notes": "Chang Chun is one of the highest damage vanguards against light and medium armor in the game currently. She can buff Dragon Empery and Northern Parliament ships and is weaker than her sisters if not doing so. But her eHP and AA are poor, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2108,7 +2108,7 @@
   "Chapayev": [
     {
       "nameNote": "",
-      "notes": "As something of a specialist against destroyers (permanent enemy of Ark Royal), Chapayev decreases the evasion rate of enemy DDs by 10%, which is a significant damage buff for the main fleet. She also buffs her own damage against DDs by 20%. Otherwise, though, she’s a pretty middle-of-the-road gold vanguard ship. She has okay damage output, but she is not that tanky, and her AA is lackluster. She does have a potentially powerful damage buff for your vanguards, but proccing it is inconsistent, and the uptime isn't great.",
+      "notes": "As something of a specialist against destroyers, Chapayev decreases the evasion rate of enemy DDs by 10%, which is a significant damage buff for the main fleet and makes her Ark Royal's permanent enemy. She also buffs her own damage against DDs by 20%. Otherwise, though, she’s a pretty middle-of-the-road gold vanguard ship. She has okay damage output, but she is not that tanky, and her AA is lackluster. She does have a potentially powerful damage buff for your vanguards, but proccing it is inconsistent, and the uptime isn't great.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "B*",
@@ -2972,7 +2972,7 @@
   "Dmitri Donskoi": [
     {
       "nameNote": "",
-      "notes": "Overall, a solid vanguard ship.  She still has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in plane-heavy content.",
+      "notes": "Overall, Dmitri is a solid vanguard ship. She has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in plane-heavy content. Check back in August 2026 (expected) to see how good her Fate Simulation makes her.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -3053,7 +3053,7 @@
   "Drake": [
     {
       "nameNote": "",
-      "notes": "#DrakeBad. In all seriousness, she has decent damage overall and is decently tanky (not enough to main tank). However, her AA is lackluster, and she lacks any damage buffs for the fleet. Despite what her background might lead you to believe, she’s outclassed by a decent number of 2025 SR vanguards, to speak nothing of newer UR vanguards.",
+      "notes": "#DrakeBad. In all seriousness, she has decent damage overall and is decently tanky. However, her AA is lackluster, and she lacks any damage buffs for the fleet. Despite what her background color might lead you to believe, she’s outclassed by a decent number of 2025 gold vanguard ships, to speak nothing of rainbow ships newer than her.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -3296,7 +3296,7 @@
   "Eldridge": [
     {
       "nameNote": "",
-      "notes": "Eldridge has one of the most powerful and unique abilities in the game, which is to make your vanguard invulnerable to damage for 10 seconds at a time. On top of that, when your flagship fires its main guns/launches an airstrike, she applies a 60% slow to all enemies on the screen for 5 seconds. She also comes equipped with Hedgehog, and she has decent AA, though her personal damage is abysmal. Her biggest weakness is that her invulnerability skill is reliant on RNG to proc. While the activation chance isn't low enough for this to be an issue most of the time, you do sometimes get those runs where she just refuses to proc and effectively becomes dead weight. She’s extremely powerful when your vanguard is struggling to live, but when it isn't, she becomes pretty useless. <strong>Do not put her in the middle position.</strong> Middle is the worst position for Eldridge in PvE, all it does is make her eat torpedoes instead of do the one thing she's meant to do.\n\nNote: Her retrofit is VERY expensive.",
+      "notes": "Eldridge has one of the most powerful and unique abilities in the game, which is to make your vanguard invulnerable to damage for 10 seconds at a time. On top of that, when your flagship fires her main guns or launches an airstrike, she applies a 60% slow to one priority enemy on the screen for 5 seconds. She also has an extra +10 Hedgehog for ASW, and she has decent AA, but her personal DPS is poor. Her biggest weakness is that her invulnerability skill is reliant on RNG to proc. While the activation chance isn't low enough for this to be an issue most of the time, you do sometimes get a run where she just refuses to proc and effectively becomes dead weight. She’s extremely powerful when your vanguard is struggling to live, but when it isn't, she becomes pretty useless. <strong>Do not put her in the middle position.</strong> Middle is the worst position for Eldridge in PvE, all it does is make her eat torpedoes instead of do the one thing she's meant to do. Note that her retrofit is VERY expensive.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -3782,7 +3782,7 @@
   "Forbin": [
     {
       "nameNote": "",
-      "notes": "The fleet protection ratings assume the whole vanguard fleet is limited to Iris Libre and Vichya Dominion.",
+      "notes": "The fleet protection ratings assume the whole vanguard fleet is limited to Iris Libre and Vichya Dominion ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3944,7 +3944,7 @@
   "Fu Shun": [
     {
       "nameNote": "",
-      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. However, she is very fragile, has lackluster AA, and has no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
+      "notes": "Fu Shun is one of the highest damage vanguard ships against light and medium armor in the game. However, she is very fragile, has lackluster AA, and has no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -4862,7 +4862,7 @@
   "Harbin": [
     {
       "nameNote": "",
-      "notes": "Harbin has solid damage output and a smokescreen, which improves the rest of the vanguard’s eHP. However, she isn't that tanky and her AA is lackluster. She also doesn’t have damage buffs for the fleet.",
+      "notes": "Harbin has solid damage output and a smokescreen, which improves the rest of the vanguard’s eHP. However, she isn't that tanky, and her AA is lackluster. She also doesn’t have damage buffs for the fleet.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -5159,7 +5159,7 @@
   "Helena": [
     {
       "nameNote": "",
-      "notes": "Helena has one of the most powerful boss debuffs in the game. It's an expected 24% increase in main fleet damage when properly timed and 12% increase in vanguard damage, and this debuff window is worth building single-wave bossing fleets around. However, more ships have been introduced with less powerful but more consistent debuffs, reducing her value particularly for players who value consistency. But none of them are as easily accessible as Helena, so for newer players, she will be a staple in boss fleets for a long time. Helena is not suited for late campaign stages, even campaign bosses, due to her low eHP, unremarkable AA, inconsistency, and inability to help clear waves of enemies that spawn before the boss. <strong>Note: Helena should equip SG Radar whenever your main fleet attacks faster than 20 seconds, including but not limited to BBs equipped with ~20 second cooldown main guns and Admiralty Fire Control Table / High Standard Fire Control Radar.</strong>",
+      "notes": "Helena has one of the most powerful boss debuffs in the game. It's an expected 24% increase in main fleet damage when properly timed and 12% increase in vanguard damage, and this debuff window is worth building single-wave bossing fleets around. However, as newer ships have been introduced with less powerful but more consistent debuffs, Helena's value has gone down for players who value consistency. But none of them are as easily accessible as Helena, so for newer players, she will be a staple in boss fleets for a long time. Helena is not suited for late campaign stages, even campaign bosses, due to her low eHP, unremarkable AA, inconsistency, and inability to help clear waves of enemies that spawn before the boss. <strong>Note: Helena should equip SG Radar whenever your main fleet attacks faster than 20 seconds, including but not limited to BBs equipped with ~20 second cooldown main guns and Admiralty Fire Control Table / High Standard Fire Control Radar.</strong>",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -5861,7 +5861,7 @@
   "Jeanne d'Arc": [
     {
       "nameNote": "",
-      "notes": "Effectively, Eldridge retrofit light. She buffs the survivability of your vanguard significantly. However, in just about every other aspect, she’s quite mediocre. Her damage and AA are bad, and she’s not that tanky.",
+      "notes": "JdA is effectively Eldridge Retrofit Lite because she significantly buffs the survivability of your vanguard. However, she’s quite mediocre in every other aspect.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -5942,7 +5942,7 @@
   "Jervis": [
     {
       "nameNote": "",
-      "notes": "Buffs Royal Navy DDs if with 2 other Royal Navy ships. Assumed to be in a vanguard fleet of DD/CLs only.\n\nNote: Her listed eHP assumes she's run as the main tank.",
+      "notes": "Jervis buffs Royal Navy DDs if with 2 other Royal Navy ships. Assumed to be in a vanguard fleet of DD/CLs only. Her listed eHP assumes she's being used as the main tank.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6347,7 +6347,7 @@
   "Kasumi (Venus Vacation)": [
     {
       "nameNote": "",
-      "notes": "Kasumi is like Portland with slightly better survivability, better offense with less reliance on rainbow guns, and 4 gold bulins and 6k augment exp in debt.",
+      "notes": "Kasumi is like Portland with slightly better survivability, better offense with less reliance on rainbow guns, and 4 gold Bulins and 6k augment exp in debt.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6887,7 +6887,7 @@
   "Kronshtadt": [
     {
       "nameNote": "",
-      "notes": "A very high eHP tank with decent damage output. However, her AA is lackluster.  She also lacks any damage buffs for the fleet making her a relatively lackluster choice for single target bosses.",
+      "notes": "Kronshtadt is a very high eHP tank with decent damage output. She lacks any damage buffs for the fleet, making her a relatively lackluster choice for single target bosses.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -9290,7 +9290,7 @@
   "Napoli": [
     {
       "nameNote": "",
-      "notes": "Napoli is one of the tankiest vanguard currently in the game and she has decent damage output. However, her AA is lackluster. She also lacks any damage buffs for the fleet, making her a relatively lackluster choice for single target bosses.",
+      "notes": "Napoli is one of the tankiest vanguard currently in the game, and she has decent damage output. However, her AA is lackluster. She also lacks any damage buffs for the fleet, making her an unimpressive choice for single target bossing.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "A",
@@ -10289,7 +10289,7 @@
   "Plymouth": [
     {
       "nameNote": "",
-      "notes": "Overall a really solid vanguard still. She still has excellent damage output, decent survivability (enough to main tank some but not all endgame content), and an 18% damage buff to your flagship if she's a battleship. Her AA is lackluster, however.",
+      "notes": "Plymouth has excellent damage output, decent survivability (enough to main tank some but not all endgame content), and an 18% damage buff to your flagship if she's a battleship. Her AA is lackluster, however.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -10478,7 +10478,7 @@
   "Prinz Eugen": [
     {
       "nameNote": "",
-      "notes": "An all around mediocre SR heavy cruiser. She has good eHP but is terrible in every other aspect. You get her from login in rewards, you can use her if you really desire but it is not recommended.",
+      "notes": "Eugen is an all-around mediocre gold heavy cruiser. She has good eHP but is terrible in every other aspect. You get her from login in rewards, and you can use her if you really desire, but it is not recommended.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "D",
@@ -10559,7 +10559,7 @@
   "Prototype Bulin MKII": [
     {
       "nameNote": "",
-      "notes": "This \"ship\" is strictly used as limit breaking fodder for SR ships. DO NOT use them for combat outside of the one mission that requires it. They are really bad at it.",
+      "notes": "This \"ship\" is strictly used as limit break fodder for gold ships. DO NOT use her for combat outside of the one mission that requires it. Bulins are really weak.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10964,7 +10964,7 @@
   "Ryu Lion": [
     {
       "nameNote": "",
-      "notes": "Overall, a solid vanguard ship. She still has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in late plane-heavy content.",
+      "notes": "Ryu Lion has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in plane-heavy late campaign stages.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "A",
@@ -10991,7 +10991,7 @@
   "Saint Louis": [
     {
       "nameNote": "",
-      "notes": "Requires HE gun. Augment is huge, +15% main gun, ok barrage, another +10% all dmg, another +15% to L/M.",
+      "notes": "Saint Louis requires an HE gun. Her augment is huge, giving +15% main gun, an ok barrage, another +10% all dmg, and another +15% to light/medium damage.",
       "hardarbiter": "B*",
       "meta": "B*",
       "cm": "C",
@@ -11072,7 +11072,7 @@
   "San Diego": [
     {
       "nameNote": "",
-      "notes": "San Diego has some of the best AA in the game. That, combined with decent damage output and eHP (not enough to main tank), makes her an excellent ship for late campaign stages. However, her own damage is lackluster, and she lacks any significant damage buff or debuff for the fleet, so she’s not an ideal choice for single-target bosses. Her augment barrage is bugged and will probably never be fixed, but her damage is serviceable.\n\nNote: Her retrofit is VERY expensive and she needs her Unique Augment on top of it. If you're new, just craft her unique augment and skip the retrofit until you get to W12 in the main campaign.",
+      "notes": "San Diego has some of the best AA in the game. That, combined with decent damage output and eHP, makes her an excellent ship for late campaign stages. However, her own damage is lackluster, and she lacks buffs for the fleet, so she’s not an ideal choice for single-target bosses. Her augment barrage is bugged and will probably never be fixed, but her damage is serviceable. Her retrofit is VERY expensive, and she needs her Unique Augment on top of it. If you're new, just craft her unique augment and skip the retrofit until you get to Chapter 12.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -11207,7 +11207,7 @@
   "Seattle": [
     {
       "nameNote": "",
-      "notes": "Note: Seattle gains a 15% damage reduction when sortied in the off tank (right most slot) position which is not reflected in her listed eHP.",
+      "notes": "Seattle has a 15% damage reduction when sortied in the off tank (right most slot) position, and this is not reflected in her listed eHP.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -11396,7 +11396,7 @@
   "Shimakaze": [
     {
       "nameNote": "",
-      "notes": "Something of a one-trick pony, she has excellent (but not top-tier) damage against heavy armor enemies and 2 preloaded torpedo salvos, which are very useful for clearing the first mob wave in a fight. In every other aspect, though, she’s rather mediocre; her damage against light and medium armor enemies isn't great, she’s fairly fragile, her AA is bad, and she doesn’t have damage buffs for the fleet. If you want 2 preloaded torpedoes salvos for clearing trash mobs, Ibuki is cheaper and better at it.",
+      "notes": "Something of a one-trick pony, Shimakaze has excellent (but not top-tier) damage against heavy armor enemies and 2 preloaded torpedo salvos, which are very useful for clearing the first mob wave in a fight. In every other aspect, she’s rather mediocre; she’s fairly fragile, her AA is bad, and she doesn’t have damage buffs for the fleet. If you want 2 preloaded torpedoes salvos for clearing trash mobs quickly, Ibuki is better at it and cheaper to invest in.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
@@ -11423,7 +11423,7 @@
   "Shimanto": [
     {
       "nameNote": "",
-      "notes": "An excellent ship for late campaign stages. She has excellent AA, a small amount of healing/shielding for the vanguard, decent damage output, the ability to extinguish burns set on your main fleet, and she has decent eHP (not enough to main tank). However, her lack of damage buffs for the fleet makes her a relatively lackluster choice for single-target bossing.",
+      "notes": "Shimanto is a very good ship for late campaign stages because she has excellent AA, a small amount of healing/shielding for the vanguard, decent damage output, the ability to extinguish fires on your main fleet ships, and decent eHP. However, her lack of damage buffs for the fleet makes her unimpressive for single-target bossing.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -11720,7 +11720,7 @@
   "Specialized Bulin Custom MKIII": [
     {
       "nameNote": "",
-      "notes": "This \"ship\" is strictly used as limit breaking fodder for UR ships. DO NOT use them for combat, they are really bad at it.",
+      "notes": "This \"ship\" is strictly used as limit break fodder for rainbow ships. DO NOT use her for combat. Bulins are really weak.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -12125,7 +12125,7 @@
   "Tai Yuan": [
     {
       "nameNote": "",
-      "notes": "One of the highest damage vanguards against light and medium armor in the game currently. She provided some shields for the vanguard but she’s fragile, has lackluster AA, and no damage buffs for the fleet, making her a mediocre choice for late campaign stages.",
+      "notes": "Tai Yuan is one of the highest damage vanguard ships against light and medium armor. She provides some shields for the vanguard but is fragile and has lackluster AA, making her a mediocre choice for late campaign stages.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -12368,7 +12368,7 @@
   "Tohka Yatogami": [
     {
       "nameNote": "",
-      "notes": "Overall, a really solid vanguard ship. She still has excellent damage output, eHP (not enough to consistently main tank late game content), and 10% damage reduction for the flagship. Her AA is lackluster, however, so she does need to be supplemented by ships with good AA in late plane-heavy content.",
+      "notes": "Tokha has excellent damage output, good eHP, and 10% damage reduction for the flagship. Her AA is lackluster, however, so she does need to be supplemented by ships with good AA in late plane-heavy content.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -12395,7 +12395,7 @@
   "Trafalgar": [
     {
       "nameNote": "",
-      "notes": "Trafalgar is one of the best universal debuffers in the game if your flagship has main guns. Her 10% evasion rate debuff is almost unrivaled for consistently increasing the damage your fleet deals against bosses. Although there are greater debuffs like Helena's or Aurora's, they are not as consistent or universally applicable as Trafalgar's. She also applies 15% slow effectively permanently. She's a decent option for late campaign stages thanks to her good AA and decent personal damage, though do note she has relatively low eHP for a UR DD.",
+      "notes": "Trafalgar is one of the best universal debuffers in the game if your flagship has main guns. Her 10% evasion rate debuff is almost unrivaled for consistently increasing the damage your fleet deals against bosses. Although there are greater debuffs like Helena's or Aurora's, they are not as consistent or universally applicable as Trafalgar's. She also applies 15% slow effectively permanently. She's a decent option for late campaign stages thanks to her good AA and decent personal damage, though do note she has relatively low eHP for a rainbow DD.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -12611,7 +12611,7 @@
   "Universal Bulin": [
     {
       "nameNote": "",
-      "notes": "This \"ship\" is strictly used as limit breaking fodder for Common, Rare and Elite ships. DO NOT use them for combat outside of the one mission that requires it. They are really bad at it.",
+      "notes": "This \"ship\" is strictly used as limit breaking fodder for gray, blue, or purple ships. DO NOT use her for combat outside of the one mission that requires it. Bulins are really weak.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -12638,7 +12638,7 @@
   "Unzen": [
     {
       "nameNote": "",
-      "notes": "Unzen is a pure DPS vanguard. She has among the highest damage output for vanguards in the game. She has poor AA, her eHP is relatively low, and she has no damage buffs for the fleet. Compared to newer UR vanguards which might have lower damage output but buffs for the fleet, Unzen's total damage contribution to the fleet is often lower.",
+      "notes": "Unzen is a pure DPS vanguard. She has among the highest damage output for vanguards in the game. She has poor AA, her eHP is relatively low, and she has no damage buffs for the fleet. Compared to newer rainbow vanguards which might have lower damage output but buffs for the fleet, Unzen's total damage contribution to the fleet is often lower.",
       "hardarbiter": "S",
       "meta": "S",
       "cm": "S",
@@ -12881,7 +12881,7 @@
   "Vittorio Cuniberti": [
     {
       "nameNote": "",
-      "notes": "Use fast torps. High DPS but squishy.",
+      "notes": "Use fast torps. High DPS but squishy. Check back in August 2026 (expected) to see how good her Fate Simulation makes her.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -13151,7 +13151,7 @@
   "Yat Sen": [
     {
       "nameNote": "",
-      "notes": "One of the tankiest vanguards in the game, with the caveat that she sortied with another Dragon Empery ship. While her AA is slightly above average, her damage output is mediocre, and she lacks significant damage buffs for the fleet. When sortied with just another  Dragon Empery ship, she’s fairly mediocre. However, when sortied with Ping Hai and/or Ning Hai, she buffs their eHP significantly, turning them into some of the tankiest vanguards in the game. This pairing is fairly niche, however, as all 3 have very bad damage output, mediocre AA, and no damage buffs for the main fleet.",
+      "notes": "Yat Sen is one of the tankiest vanguard ships in the game with the caveat that she is sortied with another Dragon Empery ship. While her AA is slightly above average, her damage output is mediocre, and she lacks significant damage buffs for the fleet.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -13176,7 +13176,7 @@
     },
     {
       "nameNote": "with Ning or Ping",
-      "notes": "One of the tankiest vanguards in the game, with the caveat that she sortied with another Dragon Empery ship. While her AA is slightly above average, her damage output is mediocre, and she lacks significant damage buffs for the fleet. When sortied with just another  Dragon Empery ship, she’s fairly mediocre. However, when sortied with Ping Hai and/or Ning Hai, she buffs their eHP significantly, turning them into some of the tankiest vanguards in the game. This pairing is fairly niche, however, as all 3 have very bad damage output, mediocre AA, and no damage buffs for the main fleet.",
+      "notes": "Yat Sen is one of the tankiest vanguard ships in the game with the caveat that she is sortied with another Dragon Empery ship. While her AA is slightly above average, her damage output is mediocre, and she lacks significant damage buffs for the fleet. When sortied with just another Dragon Empery ship, she’s fairly mediocre. However, when sortied with Ping Hai and/or Ning Hai, she buffs their eHP significantly, forming the Great Wall of China. This pairing is fairly niche, however, as all 3 have bad damage output, mediocre AA, and no damage buffs for the main fleet.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -13446,7 +13446,7 @@
   "Yuudachi": [
     {
       "nameNote": "",
-      "notes": "A decent all-around vanguard, she has decent damage overall. However, she isn't that tanky, her AA is bad, and she lacks any damage buffs for the fleet. Despite what her background might lead you to believe, she’s closer in performance to 2026 SR vanguards than 2026 UR vanguards.",
+      "notes": "A decent all-around vanguard, she has decent damage overall. However, she isn't that tanky, her AA is bad, and she lacks any damage buffs for the fleet. Despite what her background might lead you to believe, she’s closer in performance to 2026 gold vanguards than 2026 rainbow vanguards.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "B",
@@ -13473,7 +13473,7 @@
   "Yuudachi META": [
     {
       "nameNote": "",
-      "notes": "A decent all-around vanguard, she has solid damage output overall However, she isn't that tanky, her AA is bad, and she lacks any damage buffs for the fleet.",
+      "notes": "A decent all-around vanguard ship, Yuudachi META has solid damage output. However, she isn't that tanky, her AA is bad, and she lacks any damage buffs for the fleet.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
