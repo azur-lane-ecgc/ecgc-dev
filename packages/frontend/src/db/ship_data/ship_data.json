@@ -262,7 +262,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -328,7 +328,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -587,7 +587,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -648,7 +648,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -714,7 +714,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "ASW", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -770,7 +770,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Charles Ausburne (Retrofit) is a damage-oriented DD with good stats and skills. Since Beaver Squadron Tag is wasted on DDs compared to tank cruisers, all aspects requiring it are practically useless. Her damage got buffed from her base form, and she gained a new barrage to further improve it, but it still doesn't make her better than starter retrofits. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -1334,7 +1334,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Eldridge (Retrofit) is a support-oriented DD with good stats and amazing skills. Despite having 2 AA Guns post-retrofit, her AA is not enough to solo-carry a fleet; however, it is still above average. Upon retrofit, she gains a special ASW weapon with stats similar to a +10 Hedgehog, which drastically increases her ASW capabilities. Her Skill 1 provides complete immunity for all Vanguard damage taken, although the trigger condition can be hard to satisfy if she is in the center of the Vanguard Fleet. Her retrofit enhances this skill to prevent DoT or other self-damage from happening. The Skill 1 Barrage is also good. Her Skill 2 gives her a barrage whenever the Flagship launches their main weapons, which is aimed and does good damage. Her AoA is improved upon retrofit to also do more damage, which is nice; no AoA reduction hurts though. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -1588,7 +1588,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -1789,7 +1789,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Juneau (Retrofit) is an AA-oriented CL with surprisingly decent damage on the side. The retrofit doubled her surface damage output, while also increasing her AA capabilities further. She is now vastly more viable in PvE than before. Overall, she is great as an AA ship, with decent damage to go along with it.",
     "fastLoad": null,
-    "roles": ["ASW", "AA", "DefSupport"],
+    "roles": ["Tank", "ASW", "AA", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -1855,7 +1855,7 @@
     "augments": ["Star Blaster", "Crossbow", "Sword"],
     "samEval": "San Diego (Retrofit) is a damage-oriented AND AA-oriented CL with amazing stats and skills. Her personal damage is very high with MGM+1 DD Guns and great barrages (Skill 1 with Augment, Skill 2, and AoA). In particular, her Skill 1 barrage can ignore shields and is triggered individually per Main Gun, making its frequency very fast. You always want to equip her with a fast-firing and high damage DD Gun; never give her a CL gun. In addition, her ASW stat is one of the highest amongst vanguard ships, allowing her to act as a ASW carry. Her AA stat is very high, and when paired with her Skill 1 and very high AA gun efficiency, allows her to act as an AA carry for the fleet. Her bulk is also solid as well, especially with her Augment Module skill. Overall, she is an amazing ship, if a bit expensive to max fully.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "AA", "AACarry"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "AA", "AACarry"],
     "locations": {
       "events": [],
       "other": [
@@ -1920,7 +1920,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -1985,7 +1985,7 @@
     "augments": ["Super Bubblegum Pro Max", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW"],
+    "roles": ["Tank", "ASW"],
     "locations": {
       "events": [],
       "other": [],
@@ -2361,7 +2361,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [],
       "other": [
@@ -2431,7 +2431,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -2741,7 +2741,7 @@
     "augments": ["The Ace's Card", "Greatsword", "Lance"],
     "samEval": "Baltimore is a damage-oriented CA with great stats and skills. She modifies her ammo type, so she prefers guns with the highest raw damage. Can be sortied with or without USS carriers. Her personal damage is also good. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -4438,7 +4438,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -4762,7 +4762,7 @@
     "augments": ["Shining Comet", "Dual Swords", "Hammer"],
     "samEval": "Comet (Retrofit) is a damage-oriented DD with meh stats and skills. Her Skill 1 barrage is servicable, but that's her only form of damage, making her overall damage mediocre. Her torpedo buff to other DDs is nice, but not that important. Her Skill 2 smokescreen is unreliable due to how smokescreens work. Overall, she is a mediocre ship.",
     "fastLoad": null,
-    "roles": ["DefSupport", "OffSupport"],
+    "roles": ["Tank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -4894,7 +4894,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -5026,7 +5026,7 @@
     "augments": ["Halo of Fortune", "Dual Swords", "Hammer"],
     "samEval": "Fortune (Retrofit) is a damage-oriented DD with bad stats and skills. Collection only",
     "fastLoad": null,
-    "roles": ["ASW"],
+    "roles": ["Tank", "ASW"],
     "locations": {
       "events": [],
       "other": [
@@ -5148,7 +5148,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -5326,7 +5326,7 @@
     "augments": ["Full Burst Javelin", "Dual Swords", "Hammer"],
     "samEval": "Javelin (Retrofit) is a damage-oriented DD with good stats and skills. Her bulk is pretty good, especially for a DD. Her damage is very good due to her Augment module barrage, and she has great mixed damage from her Main Guns and Torpedoes as well. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -5509,7 +5509,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -5707,7 +5707,7 @@
     "augments": ["Don't Throw Me Away", "Crossbow", "Sword"],
     "samEval": "Dido is a damage-oriented CL with great stats and great skills. Her personal damage is amazing when sortied with at least 1 other HMS ship, due to her AoA barrage being very strong and self-buffs. Her Skill 2 can buff Queen Elizabeth or Queen Elizabeth META, but this isn't required for her to be good. With her Augment, she herself can get those buffs and increased Main Gun CRIT Rate, but since her Main Gun damage is not that massive, it isn't necessary for her to be viable. Her Augment also drastically increases her AoA damage. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["AA"],
+    "roles": ["Tank", "AA"],
     "locations": {
       "events": [],
       "other": [
@@ -5828,7 +5828,7 @@
     "augments": ["Cherished Cleaning Equipment", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -5893,7 +5893,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Manchester is a damage-oriented CL with average FP, bad Torpedoes, and good skills.<br /><b>Positives</b>: Both her skills are very good; boosting her self damage and faster torpedoes are great.<br /><b>Negatives</b>': Her personal damage is lackluster due to a mediocre AoA and only 1 CL Main Gun Mount. The Torpedo stat is so bad that it doesn't make up for the lack of bullet damage.<br /><b>Verdict</b>': Waifu only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -5954,7 +5954,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -6014,7 +6014,7 @@
     "augments": ["Another Precious Thing", "Crossbow", "Sword"],
     "samEval": "Edinburgh is a damage-oriented CL with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -6074,7 +6074,7 @@
     "augments": ["Afternoon of Surging Elegance", "Crossbow", "Sword"],
     "samEval": "Belfast is a damage-oriented CL with good stats and skills. Her personal damage is hindered by 1 MGM, but her self-buffs are enough to bring it up to acceptable levels. She also has a smokescreen, which can situationally be useful. She is ideally equipped with an HE CL gun to take full advantage of her self-buff. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -6519,7 +6519,7 @@
     "augments": ["The Sweetness of Cloudwatching", "Greatsword", "Lance"],
     "samEval": "Suffolk (Retrofit) is a damage-oriented CA with meh stats and skills. She has great damage for an Elite ship, but her bulk is very frail, even with her self heal. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -6585,7 +6585,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -6651,7 +6651,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -8582,7 +8582,7 @@
     "augments": ["Undying Demon", "Dual Swords", "Hammer"],
     "samEval": "Hibiki doesn't have any relevant stat buffs from her skills to make up for her subpar base stats, and her self heal doesn't add much to her bulk. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -8811,7 +8811,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Yuudachi (Retrofit) is a damage-oriented DD with amazing stats and skills. Her personal damage is very high due to MGM+1 DD Guns, high torpedo stat and efficiency, and great self-buffs. In addition, she does more damage to burned enemies, and her barrage applies burns, allowing her kit to be maximized without supports. Her bulk is also high due to her Skill 3 self-buffs as well. Her support is nice, but buffing other ships is not needed to make her worth using. Overall, she is an amazing DD.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
@@ -8867,7 +8867,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Tank", "ASW", "DefSupport"],
     "locations": {
       "events": [],
       "other": [],
@@ -8923,7 +8923,7 @@
     "augments": ["Noble, Lucky, and Invincible", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "ASW", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -9415,7 +9415,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport", "OffSupport"],
+    "roles": ["ASW", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -9714,7 +9714,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["AA", "AACarry"],
+    "roles": ["Tank", "AA", "AACarry"],
     "locations": {
       "events": [],
       "other": [],
@@ -9770,7 +9770,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Natori is a damage-oriented CL with meh stats and good skills. During the first 30s of battle, her personal damage is actually pretty good due to multiple great barrages, including a mini carpet-bomb that does great damage. Her bulk is also pretty good as well, with a good shield as well as damage reduction for all CLs in the fleet. Overall, she is a good ship, especially when mobbing.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -10004,7 +10004,7 @@
     "augments": ["Sister's Care Package", "Greatsword", "Lance"],
     "samEval": "Mogami (Retrofit) is a damage-oriented CA with great stats and skills. Her personal damage is pretty good due to MGM+1 CA guns, as well as her self-buffs. Her Augment module adds to her bulk, making her pretty tanky for an off-tank. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -10359,7 +10359,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Chikuma is a tank-oriented CA with good stats and skills. Her bulk is really high due to her self buff granting her +EVA Rate whenever her skill conditions activate. Her personal damage is meh due to only 1 MGM and middling barrages. Her support is also lackluster, with the AVI damage taken debuff being RNG reliant. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "SuperTank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -10420,7 +10420,7 @@
     "augments": ["Protector of Order", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -10476,7 +10476,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Nachi (Retrofit) is a tank-oriented CA with good stats and skills. Her bulk is good enough to tank most content, and she has great fleet support, especially with other CA/CL/CB. Her personal damage is meh due to only 1 MGM. Her Skill 1 can be both situationally good or bad, depending on the damage of the stage she is on, so be wary. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -10602,7 +10602,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Haguro is a tank-oriented CA best used as a main tank. She has good enough HP, which coupled with her great Luck and Evasion (which can get boosted further from her torpedoes!) gives her high bulk. She also has a self-heal when the skill barrage activation fails. Her barrages and MGM are very mediocre for the role, however. Overall, she is a great pure tank, but has bad damage output for the role.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -10668,7 +10668,7 @@
     "augments": ["Bright Moon After the Rain", "Greatsword", "Lance"],
     "samEval": "Takao is a mob-tank oriented CA with good stats and skills. Her personal damage is decent, thanks to her Augment Module granting her a barrage every 10s that is good. In addition, her bulk is also good due to her high luck and +EVA Rate from her AoA. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [],
       "other": [
@@ -10733,7 +10733,7 @@
     "augments": ["Ryuuki Full Moon", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -10798,7 +10798,7 @@
     "augments": ["Trayastrimsa-Heaven White Scarf", "Greatsword", "Lance"],
     "samEval": "Maya is an AA-oriented CA with good stats and skills. Her AA is very high due to an additional AA gun mount from her Augment, and a massive AA self-buff. Her personal damage is also decent now with double Torpedo launches from her Augment module skill upgrade. Her bulk is also good due to her Evasion and Evasion Rate buffs, and stats. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["AA"],
+    "roles": ["Tank", "AA"],
     "locations": {
       "events": [],
       "other": [],
@@ -10858,7 +10858,7 @@
     ],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -12628,7 +12628,7 @@
     "augments": ["The One and Only Style", "Dual Swords", "Hammer"],
     "samEval": "Z1 is a damage-oriented DD with good stats and skills. Her buffs are only for KMS DDs, which makes them very niche. Her personal damage is alright, but nothing special. Overall, she is a good ship, but can be a sidegrade/downgrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["DefSupport", "OffSupport"],
+    "roles": ["Tank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -12693,7 +12693,7 @@
     ],
     "samEval": "Z23 (Retrofit) is a damage-oriented DD with good stats and skills. Her personal damage is great due to her stats and self-buffs, and her AoA requirement halved. Her bulk is decent, but nothing special. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [],
@@ -12946,7 +12946,7 @@
     "augments": ["Public-Private Schedule", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -13012,7 +13012,7 @@
     "augments": ["Guardian Fishy", "Crossbow", "Sword"],
     "samEval": "Leipzig (Retrofit) is a support-oriented CL with good damage and skills. Her personal damage is good, despite only 1 MGM, due to her self buffs, good Torpedoes and the Skill 1 barrage. Her support is also good, but only works on CB / CA / CLs. Overall, she is a good ship, but can be a sidegrade / downgrade to other easily accessible options.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -13073,7 +13073,7 @@
     "augments": ["Tunken der Liebe", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -13138,7 +13138,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Blücher is a great tank-oriented CA. She has great damage output from her self-buffs, barrages, and ghost guns. She also has decent bulk from her stats and skills. Due to her damage absorption, she might not tank high-damage output bosses that well; this needs more testing. Overall, she is a very solid tank. Typical event SR.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -13199,7 +13199,7 @@
     "augments": ["Lucky Ship's \"Punishers\"", "Greatsword", "Lance"],
     "samEval": "Prinz Eugen is a tank-oriented CA with great stats and meh skills. Her bulk is very high compared to other tank CAs, but her damage is very very low compared to other tank CAs. Her Augment Module armor break is nice, but doesn't fix her abysmal damage output. Overall, she is a good ship, but is outclassed by other easily accessible options in most situations.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -13698,7 +13698,7 @@
     "augments": null,
     "samEval": "An Shan (Retrofit) is a damage-oriented DD with amazing stats and skills. Her personal damage is amazing due to great self-buffs, MGM+1 DD Guns, a Missile, and multiple good barrages. Never use her in Main Fleet Mode; Vanguard Fleet Mode is a lot better for her self-damage. The Missile Strike is nice, but is not necessary for her viability. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -13820,7 +13820,7 @@
     "augments": null,
     "samEval": "Chang Chun (Retrofit) is a damage-oriented DD with amazing stats and skills. Her personal damage is amazing due to great self-buffs, MGM+1 DD Guns, a Missile, and multiple good barrages. Never use her in Main Fleet Mode; Vanguard Fleet Mode is a lot better for her self-damage. Her buff to other Dragon Empery and Northern Parliament ships is nice, but not necessary for her viability. The Missile Strike is nice, but is not necessary for her viability. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -13885,7 +13885,7 @@
     "augments": null,
     "samEval": "Tai Yuan (Retrofit) is a damage-oriented DD with amazing stats and skills. Her personal damage is amazing due to great self-buffs, MGM+1 DD Guns, a Missile, and multiple good barrages. The shield from her Skill 2 barrage is nice, but not necessary for her viability. Never use her in Main Fleet Mode; Vanguard Fleet Mode is a lot better for her self-damage. The Missile Strike is nice, but is not necessary for her viability. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -13950,7 +13950,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Yat Sen (Retrofit) is a damage-oriented CL with great stats and skills. She always had enough bulk to main tank most mob content, but now that doesn't require Ning/Ping Hai. Her personal damage is vastly increased due to higher gun efficiencies and FP stat. In addition, she loses reliance on Ning/Ping Hai for her own bulk, although you still need her to buff Ning/Pings bulk in China Wall teams. Retrofit skill fires a decent barrage every 12s as well, which is decent free damage. Great improvement over base Yat Sen, and an above-average CL overall.",
     "fastLoad": null,
-    "roles": ["Tank", "ASW", "AA", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "AA", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -14011,7 +14011,7 @@
     "augments": ["Da Bao", "Crossbow", "Sword"],
     "samEval": "Ning Hai (Retrofit) is a tank-oriented CL with good stats and skills. Her bulk when paired with Yat Sen is exceptional; one of the highest in the game. Their AoA becomes both aimed and can ignore shields, which is a great buff. Her personal damage becomes even better when sortied with Yat Sen; however, she loses a lot of bulk as a tradeoff. Overall, she is a great ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [],
       "other": [
@@ -14067,7 +14067,7 @@
     "augments": ["Baobao", "Crossbow", "Sword"],
     "samEval": "Ping Hai (Retrofit) is a tank-oriented CL with good stats and skills. Her bulk when paired with Yat Sen is exceptional; one of the highest in the game. Their AoA becomes both aimed and can ignore shields, which is a great buff. Her personal damage becomes even better when sortied with Yat Sen; however, she loses a lot of bulk as a tradeoff. Overall, she is a great ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [],
       "other": [
@@ -14413,7 +14413,7 @@
     "augments": ["What Once Was Her World", "Dual Swords", "Hammer"],
     "samEval": "Z46 is a damage-oriented DD with great stats and skills. Her personal damage is really good due to her self-buffs and AoA. She is ideally equipped with an AP main gun to take full advantage of her self-buffs. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -14478,7 +14478,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Shimakaze is a damage-oriented DD with amazing stats and skills. Her personal damage is really high due to her high torpedo stat, high efficiencies, great self buffs and enemy resistence shread, and multiple good barrages. Since her Main Gun damage is bad, you want to run a very high reload Main Gun on her to maximize her barrage damage. Her bulk is fine, but not the greatest. Her crossfleet support is nice as well, but not required to make her worth using. Overall, she is an amazing DD.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -14544,7 +14544,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -15366,7 +15366,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -15431,7 +15431,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -15608,7 +15608,7 @@
     "augments": ["To Become Statuesque?", "Dual Swords", "Hammer"],
     "samEval": "Nicholas (Retrofit) is a damage-oriented DD with good stats and great skills. Her personal damage is good due to having good FP and a lot of self-buffs, but only 1 MGM and lackluster barrages hurt her potential. Her bulk is nothing special as well. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -15776,7 +15776,7 @@
     "augments": ["Lucky Lou", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [],
@@ -16270,7 +16270,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -16331,7 +16331,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [],
       "other": [],
@@ -16508,7 +16508,7 @@
     "augments": ["Auspicious Dragonfly", "Crossbow", "Sword"],
     "samEval": "Noshiro is a mob-tank oriented CL with solid stats and great skills. Her personal damage (Main gun + Torpedo + Barrage) is solid. Her blue skill improves her survivability, and her yellow skill provides one of the best torpedo buffs to your fleet. Overall, she is a great option, best used as a torpedo-buffer / mob-tank.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -16569,7 +16569,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Sakawa is a torpedo-oriented CL, best used as an off-tank/Mob main-tank. While she only has 1 MGM, her 2 barrages help keep her damage at respectable levels. She also has great bulk, and great potential to increase both her bulk and damage as the battle drags on. Overall, she is solid; nothing spectacular but not awful either.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -16630,7 +16630,7 @@
     "augments": ["Totally Helpless Bunny Pouch", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -16817,7 +16817,7 @@
     "augments": ["Speed S", "Crossbow", "Sword"],
     "samEval": "Jamaica is a damage-oriented CL with bad stats and skill. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -16882,7 +16882,7 @@
     "augments": ["Just Like Cleve", "Crossbow", "Sword"],
     "samEval": "Montpelier is a damage-oriented CL with great stats and skills. She is a very balanced ship, with a great combination of damage, bulk, and AA granted by her skills and Augment Module. She also can buff other CL/CA/CB in the fleet from her Skill 1, however supporting other CL/CA/CB is not required for her to be good. She is ideally sortied with a <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Improved_Hydraulic_Rudder\" title=\"Improved Hydraulic Rudder\" >High Performance Hydraulic Steering Gear</a > for maximum bulk as well as her skill requirement. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [],
       "other": [],
@@ -16938,7 +16938,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -17246,7 +17246,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Tank", "ASW", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -17956,7 +17956,7 @@
     "augments": ["Knight-Princess's Gauntlets", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -18082,7 +18082,7 @@
     "augments": ["Fantastic Loop", "Crossbow", "Sword"],
     "samEval": "Émile Bertin (Retrofit) is a damage-oriented CL with bad stats and skills. Her Augment module is an improvement over the default Augment modules, but doesn't improve her enough to be viable. Collection only.",
     "fastLoad": null,
-    "roles": ["DefSupport", "OffSupport"],
+    "roles": ["Tank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -18829,7 +18829,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -18951,7 +18951,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -19012,7 +19012,7 @@
     "augments": ["Hunter's Insignia", "Greatsword", "Lance"],
     "samEval": "Minneapolis is a mob-tank oriented CA with great stats and skills. Her personal damage is pretty good due to MGM+1 CA guns and her self-buffs when she sinks an enemy. She has average bulk with her base stats, but her Skill 2 further enhances her bulk (and the Vanguard Fleet's bulk with her Augment module). Her Augment Module isn't that amazing, and is a sidegrade to the default Elite Augment modules. Overall, she is a great ship, but can be redundant with other easily accessible options.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -19446,7 +19446,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -19698,7 +19698,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -20682,7 +20682,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -20855,7 +20855,7 @@
     "augments": ["Poisonous Elegance", "Dual Swords", "Hammer"],
     "samEval": "Le Malin is a damage-oriented DD with good stats and skills. Her personal damage is fine, but nothing spectacular with only 1 MGM and a good AoA. Her Skill 1 gives a great debuff, but the activation condition is hard to achieve before the enemy dies, and the duration of the debuff is low too. The barrage that it triggers is good, but nothing amazing as well. The stack based on killing enemies is also hard to achieve, since the other 5 ships in the fleet can easily kill steal from her. Her Skill 2 is basically useless since it debuffs her as the battle goes on. Overall, she is a good ship, but can be a sidegrade / downgrade to other easily-accessible options.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -21472,7 +21472,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "San Juan is an AA-oriented CL with bad stats and skills. She has great AA, but it is not enough to justify using her over a damage option (to outdamage the enemy before their planes kill you). Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -21533,7 +21533,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Birmingham is a damage-oriented CL with good stats and skills. She is relatively bulky for her hull type, and she has good damage to go along with it. Her Skill 1 even offers minor fleet support due to reducing flagship Burn duration. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -21654,7 +21654,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -21710,7 +21710,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -21770,7 +21770,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [],
@@ -22013,7 +22013,7 @@
     "augments": ["Fabulous Fioretto", "Greatsword", "Lance"],
     "samEval": "Zara is a mob-tank oriented CA with great stats and good skills. Her personal damage is mediocre since outside of her MGM+1 she has no good skill barrages. Her bulk is decent due to her shields, and her unique Augment Module further giving her evasion and minor healing. Her Skill 2 doesn't affect her Main Gun choices against enemies. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -22460,7 +22460,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Cleveland μ is a damage-oriented CL with meh stats and bad skills. The ammo change to μ Purple actively hinders her damage output, since the armor modifiers are worse than typical CL HE guns. In addition, she lacks any self-buffs to damaging stats. Collection only.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -22525,7 +22525,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Sheffield μ is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -22586,7 +22586,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Admiral Hipper μ is a tank-oriented CA with good stats but bad skills. Her bulk is good, but her bad personal damage doesn't justify using her over other options. Collection only.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -22651,7 +22651,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [],
@@ -22707,7 +22707,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -22967,7 +22967,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Tank", "ASW", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -23032,7 +23032,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -23154,7 +23154,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Minsk is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -23215,7 +23215,7 @@
     "augments": ["The Ice Sprite's Kindness", "Dual Swords", "Hammer"],
     "samEval": "Tashkent is a damage-oriented DD with great stats and skills. Her personal damage is pretty good against Light Armor enemies and mobbing despite having 1 MGM, due to her summon and her barrage. Her Skill 1 summon is a decent part of her overall damage output, and also slows enemies hit which is a nice bonus. Her Augment Module doubles her summons duration and damage, which are massive buffs to her personal damage. Her torpedo damage is pretty bad, limiting her potential against Medium and Heavy armor enemies. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -23276,7 +23276,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Pamiat' Merkuria is a tank-oriented CL with good stats and skills. Her personal damage is decent due to MGM+1 DD guns and a solid barrage. Her bulk is really high, especially when RNG rolls her way. Due to the RNG nature of her bulk, her tanking ability, esepcially when bossing, can be in doubt. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -23337,7 +23337,7 @@
     "augments": ["Blade of Nobility and Honor", "Crossbow", "Sword"],
     "samEval": "Kirov is a damage-oriented CL with good stats and great skills. Her personal damage is pretty good due to multiple skill barrages and her increased Main Gun range. Her bulk is also decent. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -23398,7 +23398,7 @@
     "augments": ["The White Cavalier's Reins", "Crossbow", "Sword"],
     "samEval": "Chapayev is a damage-oriented CL with great stats and skills. Her personal damage is pretty good with MGM+1, her barrages, and her self-buffs. Her Skill 1 gives a vanguard-wide damage buff to enemies hit by her barrage, but the barrage is not guaranteed, and the buff is short. Her Skill 2 increases her damage against DDs specifically by a large amount, but it is not near the top of all CLs despite the buffs. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -23763,7 +23763,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Bremerton is a mob-tank oriented CA with great stats and skills. Her bulk is good enough to mob-tank most content due to her self-buffs. Her personal damage is also good due to her Skill 1 as well. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -23885,7 +23885,7 @@
     "augments": ["Nanotech Repulsor", "Crossbow", "Sword"],
     "samEval": "Reno is an AA-oriented CL with meh stats and skills. Her AA output is really high, but not good enough to AA carry. Her personal damage and bulk are both average at best. Collection only.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer", "AA"],
+    "roles": ["Tank", "ASW", "DmgDealer", "AA"],
     "locations": {
       "events": [
         {
@@ -24134,7 +24134,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -24464,7 +24464,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Jeanne d'Arc is a support-oriented CL with great stats and skills. Her personal damage is very mediocre at best, but she makes up for it with her Vanguard Fleet supportive capabilities. Against most bosses, her prescence can increase the survaviblity of your Vanguard Fleet by a sizable amount. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -24525,7 +24525,7 @@
     "augments": ["Bludgeon of Faith", "Greatsword", "Lance"],
     "samEval": "Algérie is a damage-oriented CA with great stats and meh skills. Her damage output is good due to her skill barrage having a proc change on every Main Gun shot. Her bulk is fine, but not enough to tank any hard content reliably. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -24586,7 +24586,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "La Galissonnière is a damage-oriented CL with bad stats and skills. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -24835,7 +24835,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -25023,7 +25023,7 @@
     "augments": ["The Steps to Becoming a Lady", "Crossbow", "Sword"],
     "samEval": "Hermione is a damage-oriented CL with meh stats and skills. Her personal damage is mediocre due to 1 MGM and decent barrages. self-buffs. She ideally is not sortied as the Main Tank due to her Skill 2 self-buffs. Overall, she is a mediocre ship. Collection only.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -25332,7 +25332,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Suzutsuki is a damage-oriented DD with great stats, skills, and barrages, and solid efficiencies. She has MGM+1, alongside solid Torpedo stat/efficiency, giving her great mixed damage. Her self-heal adds to her bulk as well. Smokescreen is a bit situational, but is always nice when it works. Overall she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -25393,7 +25393,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -25576,7 +25576,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Has solid bulk, but lack of damage output hurts her a lot. Her potential support capabiliities from Cargo gear are also lackluster. Collection only.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -25763,7 +25763,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Tashkent μ is a damage-oriented DD with good stats and skills. Her personal damage is pretty good due to multiple skill barrages, and her summon makes up for only having 1 MGM. Her self-buffs are pretty bad outside of the summon, however. Overall, she is a good ship",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -25828,7 +25828,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Dido μ is an AA-oriented CL with good stats and skills. Her AA is really high, but not enough to act as an AA carry. Her personal damage is good due to her skill barrages. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["AA"],
+    "roles": ["Tank", "AA"],
     "locations": {
       "events": [
         {
@@ -25958,7 +25958,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Baltimore μ is a damage-oriented CA with meh stats and skills. Her personal damage is mediocre due to a lack of good self-buffs, and she doesn't have any relevant fleet-wide support. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -26023,7 +26023,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Roon μ is a tank-oriented CA with great stats and skills. Her personal damage is really good due to MGM+1 CA guns and good skill barrages. Her support is a bit unreliable due to its awkward timing and pattern, but it is nice to have. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DefSupport", "OffSupport"],
+    "roles": ["Tank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -26145,7 +26145,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Le Malin μ is a damage-oriented DD with good stats and skills. Her personal damage is good due to multiple, reliable skill barrages. Her bulk is also pretty good due to multiple self-buffs and small heals throughout her kit. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -26271,7 +26271,7 @@
     "augments": ["Eisen", "Greatsword", "Lance"],
     "samEval": "Prinz Heinrich is a tank-oriented CA with great stats and skills. Her personal damage is great due to her skill barrages and high FP stat and efficiencies. She can equip the Triple 283mm CB gun to help deal with shielded enemies. Her bulk is also good enough to Main Tank most content in the game. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -26459,7 +26459,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Nürnberg is an AA-oriented CL with meh stats and skills. Her AA is good but not high enough to AA carry as a dedicated AA unit. Her personal damage is bad, and her SS EXP buff is situational at best, since calling in SS is unreliable on auto-battle. Overall, she is a meh ship.",
     "fastLoad": null,
-    "roles": ["AA"],
+    "roles": ["Tank", "AA"],
     "locations": {
       "events": [
         {
@@ -26642,7 +26642,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Pola is a mob-tank oriented CA with great stats and skills. Her personal damage is good due to MGM+1 CA guns, plus her skill barrages. Her bulk is also good for mobbing due to her self-buffs. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -26885,7 +26885,7 @@
     "augments": ["Ambrosial Violet Whispers", "Crossbow", "Sword"],
     "samEval": "Ying Swei is a damage-oriented CL with bad stats and skills. Her lack of an AA Gun Mount, forcing her to use her Ghost AA Gun, actively hurts your fleet's AA capabilities. Collection only.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -26950,7 +26950,7 @@
     "augments": ["Plum-Red Silksteps", "Crossbow", "Sword"],
     "samEval": "Chao Hao is a damage-oriented CL with bad stats and skills. Her lack of an AA Gun Mount, forcing her to use her Ghost AA Gun, actively hurts your fleet's AA capabilities. Collection only.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -27080,7 +27080,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Tallinn is a tank-oriented CA with great stats and skills. Her personal damage is alright due to her self-buffs and barrages, but it is still on the lower end of tank damage. Her bulk is really high due to her stats and barrier, enabling her to Main Tank any content with no issues. She is ideally equipped with a Northern Parliament or Iron Blood Main Gun for her skill. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -27390,7 +27390,7 @@
     "augments": ["Pursuer's Proof", "Crossbow", "Sword"],
     "samEval": "Duca degli Abruzzi is a damage-oriented CL with great stats and skills. Her personal damage is very balanced due to decent Main Guns, barrages, and her great torpedo damage. Her bulk is also pretty good as well due to her stats, and her Skill 2 adds to it further. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -27700,7 +27700,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Nicoloso da Recco is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -27822,7 +27822,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Allen M. Sumner is a damage-oriented DD with great stats and skills. She has higher AA than most ships, but it is not AA-carry level. She has great damage due to her stats, efficiencies, and barrages, giving her a well-rounded kit suitable for any fleet. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["AA"],
+    "roles": ["Tank", "AA"],
     "locations": {
       "events": [
         {
@@ -27887,7 +27887,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Stephen Potter is a support-oriented DD with meh stats and great skills. Her personal damage is pretty awful, but her skills more than make up for it. Her Skill 1 gives both other Vanguard ships a great buff, and her Skill 2 gives all CVs a Damage buff of their own. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -28074,7 +28074,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "San Francisco is a versatile CA with great stats and skills. Her personal damage is pretty good due to her stats, barrages, and MGM+1, and it is further amplified when in the Off-Tank position. As a Main Tank, she gains damage reduction to further amplify her bulk. In the Middle position, she gives your Vanguard a heal once per battle. As an Off-Tank, she further amplifies the damage your Vanguard Fleet does. Overall, she is a great ship, regardless of which mode she is in.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -28196,7 +28196,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Boise is a damage-oriented CL with average stats and skills. Her personal damage is good with MGM+1 CL guns and a barrage. Her self-buffs are nothing special, however. Overall, she is an alright ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -28444,7 +28444,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Ingraham is a support-oriented DD with good stats and skills. Her personal damage is good, but not amazing. Her support is also good at keeping your Vanguard Fleet healthy. Her AA is good, but not enough to AA carry an entire fleet. There is no need to focus +TRP auxiliary equipment to increase her AA self-buff. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["AA"],
+    "roles": ["Tank", "AA"],
     "locations": {
       "events": [
         {
@@ -28627,7 +28627,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [],
@@ -28683,7 +28683,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Le Terrible is a damage-oriented DD with great stats and skills. Her damage is good due to her multiple skill barrages and self-buffs. She is ideally sortied as the only DD in your vanguard for the RLD and DMG reduction buffs. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -28866,7 +28866,7 @@
     "augments": ["Claw and Ribbon", "Crossbow", "Sword"],
     "samEval": "Magdeburg is a damage-oriented CL with good stats and skills. Her personal damage is middling due to only 1 MGM. Her barrage can make it better, but it requires winning 2 battles to improve it to a good level. Her self-buffs are also reliant on winning battles throughout the sortie. Her bulk is fine; nothing special but not awful either. Her AA is fine; nothing special. Overall, she is a good CL.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -28988,7 +28988,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Prinz Adalbert is a tank-oriented CA with great stats and skills. Her personal damage is great due to her skill barrages and high FP stat and efficiencies. She can equip the Triple 283mm CB gun to help deal with shielded enemies. Her bulk is also good enough to Main Tank most content in the game. Her Skill 2 can also redirect damage that was intended for other Vanguard ships, making her have utility even outside of the Main Tank position. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -29181,7 +29181,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Charybdis is a support-oriented CL with meh stats and skills. Her personal damage is bad due to only 1 MGM and bad barrages. Her AA damage is good, but nothing special. Her Skill 1 whirlpool is very underwhelming and has a small AoE. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -29364,7 +29364,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Bristol is a damage-oriented DD with good stats and skills. Her personal damage is alright despite 1 MGM, since her barrages are good and she has AoA reduction. Her AA is also good, due to having a relatively high AA stat and efficiencies compared to other DDs. Her lanturn debuff is amazing if it lands, but due to the zone spawing in front of Bristol, it is unreliable to trigger on auto-battle. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -29492,7 +29492,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Kiev is a damage-oriented DD with good stats and skills. Her personal damage is good, despite only 1 MGM, due to multiple good barrages. The Skill 1 barrage is only buffed on the 2nd and 3rd activations, making her slightly more mobbing-oriented. Her Skill 2 gives her minor self-buffs, but you will realistically never use her as a solo vanguard. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -29614,7 +29614,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Soobrazitelny is a damage-oriented DD with bad stats and skills. Her Skill 1 has a smokescreen, which is very rng. Her Skill 2 is alright, but the heal is only to SN DDs, AND limited in activation chances. The Skill 2 barrage is nothing special as well. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -29868,7 +29868,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Pompeo Magno is a damage-oriented DD with good stats and skills. Her personal damage is good due to MGM+1 DD Guns and good FP. Her torpedo damage is not good, and neither is her barrage damage. Her Skill 1 special burn is not that special, as it does little damage. Her Skill 2 buffs her torpedo damage, but it isn't enough to make her torpedo damage stand out. Her bulk is also decent due to gaining 30% more stats from auxiliaries. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -30178,7 +30178,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Has meh bulk for a tank, but damage is lacking. Worse than Portland Kai as a tank, therefore not really worth using outside waifu. She's bad, but it could be worse. Waifu only. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -30239,7 +30239,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Emden is a damage-oriented CL with great stats and skills. She has top CL damage due to her strong barrages and guns, plus an interesting torpedo gimmick. CL gun mode has more damage, but DD gun mode has slightly less damage for solid utility. Either mode works extremely well. Bulk is average, but DD gun mode's heal helps. Overall, she is VERY good. <b >No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds</b >.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -30361,7 +30361,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Little Eugen is basically a normal Eugen sidegrade. Since normal Eugen is only tank and nothing else, Little Eugen falls into the same category. Waifu Protecc only.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -30422,7 +30422,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Jervis is a mob-tank oriented DD with great stats and skills. Her AoA barrage is good, making her damage output solid even though she only has 1 MGM. Her heal is nice, however it's not enough to support an entire fleet on its own. Her Skill 1 buffs are very situational, with the HMS support being practically useless, and the \"only in DD/CL fleet\" buff being W14 / W15 specific. Her Skill 2 gives her great bulk when placed in the tank position;however, with her low HP her bulk against bosses is in doubt. She also has 30% Aux stat gain which helps add to her bulk. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -30483,7 +30483,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Bellona is a support-oriented CL with good stats and great skills. Bulk is alright, AA is pretty high but not carry level, but her damage output is mediocre. The only redeeming factor about her is the Air Raid Assistance CV buff, combined with her higher than average AA. HMS buff is not worth for the most part due to how situational and bad it is. Overall, she is good as a carrier buffer and for AA support, but not worth using outside this niche.",
     "fastLoad": null,
-    "roles": ["AA", "AACarry", "OffSupport"],
+    "roles": ["Tank", "AA", "AACarry", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -30544,7 +30544,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Little Cheshire is an AA-oriented CA with good stats and skills. Her bulk and surface damage output are alright, and the AA output remains close to normal Cheshire. Has a self-heal skill as well. Overall she's one of the better loli ships, but outside AA heavy areas she is not useful.",
     "fastLoad": null,
-    "roles": ["AA", "AACarry"],
+    "roles": ["Tank", "AA", "AACarry"],
     "locations": {
       "events": [
         {
@@ -30788,7 +30788,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "L'Indomptable is a solid DD with great FP and Main Gun Efficiency. Her Torpedo Stat and Torpedo Efficiency sucks, but her skills bring them back up to respectable levels. Skill 2 is practically useless in PvE (since if ships are almost dying something has gone wrong), and is mainly for stall memeing. Barrages are solid, and work great with AoA shot reduction. Solid DD, worthy of being an event SR.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -30849,7 +30849,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "What did you expect from a purple torpedo focused CL with meh Stats, Skills, and Efficiencies? Her saving grace is that her AoA barrage is alright. She's bad, just like a typical event purple. Waifu only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -30971,7 +30971,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Giuseppe is a solid CL, with solid stats and skills. Her skills give her great self-buffs, although some expire at 60s into the battle and others only activate 20s in. Due to only 1 MGM, she is torpedo and barrage oriented for her damage output. The instant AoA when sortied with 3 Italians is nice if you can fulfil the requirements, but is not mandatory.Overall seems great, but is nothing exceptional; typical event SR",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -31220,7 +31220,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Emanuele Pessagno is a bad DD with alright FP, but meh/bad other stats. Her skills are decent, and her high main gun efficiency give her decent damage despite 1 MGM. The second skill is all situational at best. Overall she is bad, but it could be worse; collection only.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -31403,7 +31403,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Wakatsuki is a hybrid-oriented DD best used as a middle-position damage dealer. She has solid stats with multiple barrages and MGM+1, which give her great bullet spam. She also has a secondary built-in ASW mount, which is nice in submarine-heavy areas but useless outside of that. Ignore the Akizuki-class sortie buff when using her, it is not needed at all for her to be good. Overall, she is solid; one of the best DDs currently.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -31520,7 +31520,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Janus is a damage-oriented DD with great stats and barrages, but average skills.<br /><b>Positives</b>: Skill 2 is amazing, and when coupled with her stats and amazing barrages make her damage output (both direct and indirect) on the higher end for DDs.<br /><b >Negatives</b >': Only 1 Main Gun Mount hinders damage output a bit. Skill requirements ruin fleetbuilding. The shield benefit is nice but requires 2 other HMS ships in the fleet, and the self-buff requires her sister, which is impractical in most cases.<br /><b >Verdict</b >': Above average DD; starter level or better.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -31891,7 +31891,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Northampton is a damage/support-oriented CA. She has enough bulk to off-tank most content. She buffs other cruisers in the same fleet (inlcuding herself), and has a 50% slow when used in a fleet that has a USS CV/CVL as flagship. In addition, MGM+1 coupled with great stats and barrages make her damage really high for a CA. Great CA, highly worth getting.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -31952,7 +31952,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hammann II is a support-oriented DD that has bad surface damage but more than makes up for it with utility. She has a CV damage buff, flagship protection, and high enough AA to keep CVs hidden most of the time. She even has a special ASW mount to buff her damage there. Bad surface damage drags her down, along with subpar bulk. Great CV buffer.",
     "fastLoad": null,
-    "roles": ["ASW", "AA", "OffSupport"],
+    "roles": ["Tank", "ASW", "AA", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -32013,7 +32013,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Kuybyshev is a damage-oriented CL with great stats and skills. She has MGM+1 along with multiple decent barrages, giving her great damage. She also has decent bulk, especially when paired with another SN ship. The Northern Parliament vanguard critical damage boost, while nice, is not a game-changer in practice. Great event SSR, highly worth getting.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -32196,7 +32196,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Ting An is a support-oriented AE with bad personal damage. Her stats are not very good, since her AVI is too low to do any personal damage even with barrages. In addition, her HP is too low for her to main tank. Her Skill 1 buffs are very rng reliant on getting the right ones, and even then other buffers can do the job way better. Just use a ship that has high personal damage instead. Collection only.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -32450,7 +32450,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Scylla is a damage-oriented CL with great stats and skills. Her equipment loadout is nothing to write home about, but her barrages are all very good, making her damage really high. Her supportive capabilities are all worse than existing good ships. Her AA is above average. Overall, highly worth getting.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer", "AA", "OffSupport"],
+    "roles": ["Tank", "ASW", "DmgDealer", "AA", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -32572,7 +32572,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Kursk is a damage-oriented CA with decent stats and very unique skills. Her damage is above average, but nothing exceptional. The AoA is decent, the bombs are also decent, and the special submarines fire a decent number of torpedoes, all giving her great damage alongside the MGM+1 main gun. Overall, she is a great CA.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -32684,7 +32684,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Voroshilov is a damage-oriented CL with great stats and skills. Her special secondary gun is really good, and mostly compensates for her lack of a 2nd MGM. Her barrages are also really good, and her bulk is excellent to boot. Her Frozen debuff is nice, but not needed for her to be amazing. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -32796,7 +32796,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Otto von Alvensleben is a mob-tank oriented DD with great damage and skills. Her Skill 1 gives her a great barrage every 15s, which is where the majority of her damage comes from. Her Skill 2 greately increases her bulk along with the 30% auxiliary stat boost from max limit-break. Despite the AoA reduction when using a CL gun, a DD gun will be better the majority of the time. Overall, she is a great DD.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -32908,7 +32908,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Regensburg is a damage-oriented CL with great stats and interesting skills. Her skills incentivize her being in a KMS fleet, which is suboptimal. In addition, her skill locks on to enemies every 15s, which doesn't sync well with current options. Furthermore, her skills give her more bonuses if there is a locked on enemy alive at the time of activation, which is unreliable outside of bossing. Her barrages are pretty good, but only 1 MGM hurts her damage. Overall, she is a good CL.",
     "fastLoad": null,
-    "roles": ["DefSupport", "OffSupport"],
+    "roles": ["Tank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -33137,7 +33137,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Regolo is a damage-oriented DD with great stats and skills. She has MGM+1 with AoA reduction, making her gun damage pretty good. In addition, her Skill 1 further adds on to her gun damage. Improving the proc chance of her Skill 2 by using RN ships is not relevant to her viability. Her AoA is also pretty good. Overall, she is a great DD.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -33198,7 +33198,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Goriza is a mob-tank/damage-oriented CA with great stats and and skills. Her main gun damage is pretty solid since she has MGM+1 with good FP. She is ideally sortied with an RN equipment to improve the proc chance of her Skill 1 barrage. Her Skill 2 also adds to her bulk a bit. Overall, she is a great CA.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -33259,7 +33259,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Marseillaise is a mob-tank oriented CL with good stats and great skills. Her stats are pretty average for a gold CL, but her skills give her a lot of bulk to make up for it. Her damage is alright due to her barrages but only 1 MGM hurts. She also buffs French ships in the same fleet, however there aren't enough French ships currently to make this worthwhile. Overall she is a great CL, especially given that she is free for everyone!",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -33376,7 +33376,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Suffren is a damage-oriented CA with meh stats and skills. Her skills boost her damage by a decent bit, however her base damage is so low with only 1 MGM and low torpedo stats that it doesn't really make a difference. Her bulk is also not good enough to act as a tank for neither a boss nor mob fleet. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -33544,7 +33544,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Guichen is a mob-tank oriented CL with great stats and skills. Her damage is above average for a 1 MGM CL due to a good AoA which ignores shields and pierces, as well as her Skill 1. Her bulk is good enough to mob-tank, but not good enough against bosses. Her stop is not worth building a fleet around. Overall, she is a good CL.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -33661,7 +33661,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Unzen is a damage-oriented CA with amazing stats and skills. Her personal damage is very high due to MGM+1 CA Guns, multiple barrages, and amazing torpedo self-buffs. Her torpedo damage is very high due to the CRIT Rate and CRIT DMG bonuses given to them. Her bulk is not good enough to Main Tank hard content, but it is more than enough to Off-Tank or put her in the middle Vanguard position. Due to her low base torpedo stat when compared to other torpedo ships, using a <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Type_93_Pure_Oxygen_Torpedo#Type_3-0\" title=\"Type 93 Pure Oxygen Torpedo\" >Type 93 Pure Oxygen Torpedo</a > gives her a very sizable damage increase compared to using it on other ships, and she has enough bulk even while equipping one to be fine, especially in the middle position. Her crossfleet skill is nice but unimportant. Overall, she is an amazing CA, suitable for any fleet.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -33773,7 +33773,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hatsuzuki is a damage-oriented DD with great stats and skills. Her personal damage is very balanced, with MGM+1 and solid torpedoes, as well as multiple barrages comprised of both shells and torpedoes. Her bulk is also pretty good for a DD, as she has some EVA and EVARate self buffs; however, her HP is still somewhat low. Her fleetwide damage-reduction is nice to have. She is ideally sortied with multiple IJN ships to make use of her Skill 1 Stack requirements. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "ASW", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -33885,7 +33885,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Houston II is a damage-oriented CL with great stats and skills. Her personal damage is great due to MGM+1 supplemented with good barrages. Her bulk is pretty good as well, with her Skill 2 giving her a lifeline once she is at low health. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "AA"],
+    "roles": ["Tank", "DmgDealer", "AA"],
     "locations": {
       "events": [],
       "other": [],
@@ -33941,7 +33941,7 @@
     "augments": ["Land's End Helm"],
     "samEval": "Golden Hind is a damage-oriented IXV with great stats and skills. Her personal damage is great, with MGM+2 DD guns as well as a great barrage. Her bulk is a bit on the frail side, but that is made up for by 3 auxiliary slots. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -34067,7 +34067,7 @@
     "augments": ["Handwritten Note"],
     "samEval": "Adventure Galley is a damage-oriented IXV with good stats and skills. Her damage is alright due to MGM+1, as well as a decent skill barrage. Her bulk is on the frailer side, but 3 auxiliary equipment slots somewhat offset that. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a good ship, but at best she is a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["Tank", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -34255,7 +34255,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Laffey II is a damage-oriented DD with amazing stats and skills. Her personal damage is very high; despite only having 1 MGM, she has 2 summons as well as multiple skill barrages to augment her damage further. Her Skill 2 grants her a special AA gun, as well as AA self-buffs, that raise her AA to very high levels when combined with her existing 180% AA mount. You want to equip her with a USS equipment due to her Skill 2. In addition, she can also keep USS CVs hidden more easily due to reducing their detection gauge. Her Skill 3 adds to her bulk significantly. Despite her Skill 1 self barrage starting at 70%, for all procs after the first one it is very easy for it to maintain 100% proc chance. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "AA", "AACarry", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "AA", "AACarry", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -34721,7 +34721,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Lung Wu is a damage-oriented DD with bad stats and skills. She has double the torpedo launches of a normal ship, but because of her stats being bad, this doesn't improve her viability. Collection only.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Tank", "ASW", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -34782,7 +34782,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hu Pen is a damage-oriented DD with bad stats and skills. She has double the torpedo launches of a normal ship, but because of her stats being bad, this doesn't improve her viability. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -34904,7 +34904,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Ognevoy is a damage-oriented DD with good stats and great skills. Her self-buffs are great due to all 3 of her skills granting her an FP buff of some sort. Combined with her barrages, and her damage is great. Her Skill 2 triggering multiple times due to sinking enemies is nice, but unreliable due to the 70% proc rate of the original barrage. Her bulk is on the frailer end, so she is ideally sortied in the middle position of the Vanguard Fleet. Her Skill 1 heal is basically equivalent to a Repair Toolkit for the majority of battles, and is unable to solo-sustain a fleet during difficult content. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -34960,7 +34960,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Svirepy is a damage-oriented DD with meh stats and skills. She has few self-buffs, and only 1 MGM, making her damage mediocre. Her barrages are alright, but nothing special. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -35072,7 +35072,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Nubian is a damage-oriented DD with great stats and skills. Her personal damage is good due to MGM+1 DD Guns, and multiple barrages. She gains increased CRIT Rate / DMG as the battle goes on for longer, which is a solid buff. The slash attack is nice as it ignores shields, and clears bullets / torpedoes in its way. Her Skill 2 debuff is good, but the sonar is not that useful for the majority of content in the game. Furthermore, the debuff does not have a 100% proc rate. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -35128,7 +35128,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Liverpool is a damage-oriented CL with meh stats and skills. Her damage is mediocre outside of her Skill 1 barrage. She is ideally equipped with a fast torpedo to trigger her Skill 1 barrage more often. Her Skill 2 can generate a barrier when she is at low health, but she is still on the average side in terms of bulk. Her FP buff to other Vanguard Fleet ships is nice, but not worth her slot in the fleet. Overall, she is a meh ship, and is a sidegrade to other easily accessible options.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -35184,7 +35184,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Devonshire is a damage-oriented CA with meh stats and skills. Her damage is mediocre outside of her Skill 1 barrage, but that alone is not enough to carry her. Her heal is alright, but nothing special as it's only 8% of her HP once per battle. Her Skill 2 is great, but doesn't have a 100% proc rate, and her equipped weapons are not strong enough to take advantage significantly. Overall, she is a meh ship, and is a sidegrade to other easily accessible options.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -35301,7 +35301,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Eugen μ is a mob tank-oriented CA with great stats and skills. Her personal damage is good due to her skill barrages and AoA. Her Skill 1 drains her own HP to give buffs to your other characters, which can hinder her bulk if not paired with a healer. Despite this, her bulk is still fairly good. Her Skill 2 increases her personal damage by a sizable amount, and has a chance to fire a barrage; unfortunately the barrage doesn't have a 100% proc chance. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -35357,7 +35357,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Noshiro μ is a support-oriented CL with great stats and skills. Her personal damage is good, despite only 1 MGM, due to her skill barrages and torpedoes. Her bulk is also fairly high due to her Skill 1, although it is not high enough to main tank hard content. Her Skill 2 is very good, inflicting a torpedo damage taken debuff to all enemies guaranteed. Overall, she is a great ship, best used in torpedo-oriented vanguards.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -35525,7 +35525,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Boise μ is a damage-oriented CL with good stats and skills. Her personal damage is good due to MGM+1 CL guns and a 100% chance barrage from her Skill 1. Her Skill 2 offers a small heal to all ships in your fleet, which can be nice but is unreliable if used as the only heal in the fleet. The reload buff it gives is a nice minor buff as well. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -35637,7 +35637,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Friedrich Carl is a tank-oriented CA with great stats and skills. Her personal damage is high, despite only having 1 MGM, due to possessing a special secondary gun, and having multiple aimed barrages from her Skill 2. She can equip the Triple 283mm CB Gun to bypass shields more effectively, along with her barrages already ignoring shields inherantly. She is ideally sortied in a full vanguard so she can give the off-tank Tuning. The heal from her Skill 1 is negligable, due to how little it will contribute over the course of the battle. Her bulk is also high due to her high HP, EVA self-buffs, and EVA Rate self-buffs. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -35754,7 +35754,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Mogador is a damage-oriented DD with amazing stats and skills. Her personal damage is high with MGM+1 DD Guns, a good AoA, and multiple additional Main Gun shots from her skills. Her bulk can be suspect due to her Skill 1 lunging her forward, but any form of minor healing is enough to negate this. Her Skill 2 improves her bulk by a decent amount, and also allows her to fire 1 additional Main Gun shot every 3s. Her Skill 3 is also mainly for the additional Main Gun shot every 2s when hitting an enemy afflicted with a DoT. Overall, Mogador is an amazing ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -35810,7 +35810,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Brennus is a mob-tank oriented CA with great stats and good skills. Her personal damage is great due to MGM+1 CA Guns, and a good AoA. Her skills orient around her summoning swords (shields), and depending on how many of them remain intact, triggering certain effects. Due to the nature of shields in Azur Lane, chances are the majority of them will get destroyed before the 20s check, causing her Skill 2 barrage to do barely any damage. Due to the timings of the swords and the skill check not lining up, she will only have the swords active for 15s out of a 20s skill rotation. Her bulk is also good, but nothing exceptional, especially without any shields. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -36090,7 +36090,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Z47 is a damage-oriented DD with great stats and skills. Her personal damage is great despite 1 MGM due to a really good AoA barrage, with her Skill 1 Torpedoes adding on to it. It's recommended to equip a fast-firing Main Gun on her to maximize her barrage damage, such as the Twin 100 Kai or Twin 114; the blue fast guns are also not bad as transitional options. Her Skill 1 can increase her Torpedo Efficiency by 10% when equipped with any KMS weapon, which is easily doable with her Torpedoes. Her Skill 2 increases her damage against Light Armor enemies by a large amount if they are nearby, which is very good when it can activate. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -36319,7 +36319,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "L'Audacieux is a damage-oriented DD with great stats and skills. Her personal damage is great, despite only 1 MGM, due to multiple good barrages and AoA reduction. Her skill 1 applies a debuff to enemies every 10s, indirectly increasing her own personal damage. Her skill 1 also gives her a self-buff that stacks as the battle goes on, which is really good. Her skill 2 is nice, but unreliable to proc. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -36431,7 +36431,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Pittsburgh is a damage-oriented CA with great stats and skills. Her personal damage is great due to MGM+1 CA Guns and her Skill 1 barrage. Her bulk is also good enough to off-tank. Her Skill 1 also inflicts a special burn on enemies, which can then trigger Armor Break when your flagship BB/BC/BBV fires a Main Gun shot, which is nice. Her Skill 2 AA gun is nice, but her AA is still not at the level of other AA carriers. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "AA", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "AA", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -36487,7 +36487,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Fargo is a support-oriented CL with great stats and skills. Her personal damage is good due to MGM+1 CL Guns, and her Skill 2 barrage. Unfortunately, the Skill 2 barrage being a 70% trigger rate is not ideal. Her Skill 1 drops cargo on the field, which gives nice supplemental healing to your fleet. Her Skill 2 also provides a small buff to your Flagship's damage, which is better than nothing. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "ASW", "DmgDealer", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "ASW", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -36716,7 +36716,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -36940,7 +36940,7 @@
     "augments": ["Inhuman Heart"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -37056,7 +37056,7 @@
     "augments": ["Special Spirits"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Tank", "ASW", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -37226,6 +37226,7 @@
     "fastLoad": null,
     "roles": [
       "Tank",
+      "SuperTank",
       "ASW",
       "DmgDealer",
       "TopDmg",
@@ -37288,7 +37289,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -37456,7 +37457,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -37868,7 +37869,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -37980,7 +37981,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -38155,7 +38156,15 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer", "TopDmg", "AA", "AACarry", "DefSupport"],
+    "roles": [
+      "Tank",
+      "ASW",
+      "DmgDealer",
+      "TopDmg",
+      "AA",
+      "AACarry",
+      "DefSupport"
+    ],
     "locations": {
       "events": [
         {
@@ -38267,7 +38276,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -38323,7 +38332,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "AA", "AACarry", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "AA", "AACarry", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -38379,7 +38388,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "AA"],
+    "roles": ["Tank", "DmgDealer", "AA"],
     "locations": {
       "events": [
         {
@@ -38491,7 +38500,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -38547,7 +38556,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -38778,7 +38787,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -39007,7 +39016,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer", "DefSupport"],
+    "roles": ["Tank", "ASW", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -39063,7 +39072,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -39343,7 +39352,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -39623,7 +39632,7 @@
     "augments": ["Seeker's Saber"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -39903,7 +39912,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Tank", "ASW", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -40071,7 +40080,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -40127,7 +40136,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [],
       "other": [],
@@ -40183,7 +40192,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -40361,7 +40370,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -40417,7 +40426,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -40473,7 +40482,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -40753,7 +40762,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -40977,7 +40986,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -41425,7 +41434,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Tank", "Bad"],
     "locations": {
       "events": [
         {
@@ -41649,7 +41658,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -41705,7 +41714,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -42377,7 +42386,7 @@
     "augments": ["Strawberry Mille-Feuille", "Greatsword", "Lance"],
     "samEval": "Kasumi (DoA) is a tank-oriented CA with good stats and great skills. Her damage is below average for a tank, but her bulk is amazing to compensate. You want to use magnetic torpedoes to help proc her Skill 1. Her augment greatly improves her tank ability. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -42433,7 +42442,7 @@
     "augments": ["Mango Vanilla Crepe", "Crossbow", "Sword"],
     "samEval": "Misaki is a damage-oriented CL with good stats and skills. Her damage is pretty good with MGM+1 coupled with the self-buffs and augments, and her bulk is fine as well. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -42601,7 +42610,7 @@
     "augments": ["Papanasi", "Crossbow", "Sword"],
     "samEval": "Monica is worse than easily acquirable good ships at her role. Collection only.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -42774,7 +42783,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Haruka Amami is a support-oriented CL with average stats and skills. Her personal damage is a bit lackluster due to only 1 MGM and the skill barrage not being enough to make up for it. Her support is also not enough to justify using her over other damage options that can kill the enemy faster. Overall, she is a good ship, but she is a sidegrade / downgrade to easily accessible options.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "ASW", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -42947,7 +42956,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Azusa Miura is a tank-oriented CA with great stats and skills. Her bulk is a bit on the lower side for a tank. However, she has MGM+1 CA Guns, great self-buffs, and a skill barrage to make her damage above average for a tank. She is ideally sortied with multiple other Vanguard ships to avoid the negative effect of her Skill 3. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer"],
+    "roles": ["Tank", "ASW", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -43003,7 +43012,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Ritsuko is a support-oriented AE with good stats and skills. Her personal damage is decent due to her high FP stat, and she can equip <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/List_of_Cargo\" title=\"Cargo\" >Cargo</a > gear to offer fleet support. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -43171,7 +43180,7 @@
     "augments": ["Primal Accepter", "Crossbow", "Sword"],
     "samEval": "Rikka Takarada is a damage-oriented CL with great stats and amazing skills. She possesses multiple strong, piercing laser barrages that deal great damage against huge waves of enemies in a row; however, during her downtime her damage is pretty underwhelming. In addition, she can equip multiple Auxiliary equipment at once, although ideally 3 of those slots are the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Battle_Tracto_Max\" title=\"Battle Tracto Max\" >Battle Tracto Max</a >, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Buster_Borr\" title=\"Buster Borr\" >Buster Borr</a >, and Gridman Calibur to get the most barrage benefits possible. Her bulk is also good enough to mob-tank most content reliably. The Augment interaction between her and Chise / Yume is not worth using them together for. Overall, she is an amazing ships when mobbing, and a great ship outside of it.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Tank", "ASW", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -43395,7 +43404,7 @@
     "augments": ["Dyna Wing", "Greatsword", "Lance"],
     "samEval": "Yume Minami is a tank-oriented CA with great stats and skills. Her bulk is a bit on the lower side for a tank, but she has above average damage to make up for it. She has multiple barrages tied to both her guns and skills, giving her great damage variety. The Augment interaction between her and Rikka is not worth using them together for. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -43624,7 +43633,7 @@
     "augments": ["Dragon Ornament", "Greatsword", "Lance"],
     "samEval": "Princess Hime is a tank / support-oriented AE with great stats and skills. Her personal damage is alright due to MGM+1 DD guns and some self-buffs. Her support is really good, allowing her to equip both normal <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/List_of_Cargo\" title=\"Cargo\" >Cargo</a > and Gridman specific <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/List_of_Cargo\" title=\"Cargo\" >Cargo</a > at the same time. She also has enough bulk to Main Tank most content, however her being Light Armor leaves her a bit suspect to high damage HE bullets. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -43680,7 +43689,7 @@
     "augments": ["Sparkling Reverie", "Crossbow", "Sword"],
     "samEval": "Ryza is a damage-oriented mobbing CL with amazing clearing potential within the first 30s of a battle. Her stats are very solid, and coupled with MGM+1 give her good damage output from her Main Guns. Her skills immensely buff the damage potential of all her Auxiliary barrages, and her unique Augment Module adds more barrages to the mix. You want all the Atelier Ryza Bombs equipped on Ryza, due to the +20% crit rate buff to by barrages when equipped by her for applying \"Item Mark\" to enemies, and for the \"Fatal Drive\" unique Augment Module barrage. After all her barrages are exhausted, she is painfully average. Amazing CL for mobbing.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -43848,7 +43857,7 @@
     "augments": ["Oren Herald", "Greatsword", "Lance"],
     "samEval": "Lila is a damage-oriented CA with decent bulk but high damage potential. Her stats, skills, and Augment give her decent bulk. With enough stacks of her skills, her damage can really ramp up over time. She is ideally sortied with other Ryza ships to give her maximum damage potential. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [
         {
@@ -43960,7 +43969,7 @@
     "augments": ["Elder Lily", "Greatsword", "Lance"],
     "samEval": "Kala is a tank-oriented CB with amazing bulk and decent damage. Her stats and skills make her very tanky, and her damage output is alright with MGM+1 CB guns and some barrages. The RNG element from her Augment Skill to save her from death is a nice bonus. Top non-rainbow tank option.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [
         {
@@ -44016,7 +44025,7 @@
     "augments": ["Twin Blades - Two-Sided Winding Flash", "Crossbow", "Sword"],
     "samEval": "Asuka is a damage-oriented CL with great stats and skills. Her personal damage is high due to MGM+1, multiple barrages, and great self-buffs. To gain the most value of her self-buffs, she needs to be sortied in a Senran Kagura fleet. Even outside of a Senran Kagura fleet, she is still good. Her bulk is also fine due to her stats combined with the life-steal from her Skill 2. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -44076,7 +44085,7 @@
     ],
     "samEval": "Ikaruga is a tank-oriented CA with great stats and skills. Her personal damage is great due to MGM+1, and good barrages. Her bulk is also good due to her stat spread, as well as her self-buffs and Skill 1 barrier. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -44373,7 +44382,7 @@
     "augments": ["Tachis - Hankane", "Greatsword", "Lance"],
     "samEval": "Yūyaki is a damage-oriented CA with good stats and skills. Her personal damage is good due to MGM+1, good self-buffs, and her Skill 2's second main gun shot. Her barrage is good, but the range is very short so its hard to hit. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -44429,7 +44438,7 @@
     "augments": ["Omnitool", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -44485,7 +44494,7 @@
     "augments": ["Animal Attack", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -44541,7 +44550,7 @@
     "augments": ["Burst Flower", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -44933,7 +44942,7 @@
     "augments": ["Secret Triaina", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -45045,7 +45054,7 @@
     "augments": ["Hellion Mantis", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -45157,7 +45166,7 @@
     "augments": ["Alf's Justitia", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -45213,7 +45222,7 @@
     "augments": ["Sandalphon", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "ASW", "DmgDealer", "TopDmg"],
+    "roles": ["Tank", "SuperTank", "ASW", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -45668,7 +45677,7 @@
     "augments": ["Chili Crab", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -45724,7 +45733,7 @@
     "augments": ["Cup Ramen", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -45836,7 +45845,7 @@
     "augments": ["Matcha Ice Cream", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -46004,7 +46013,7 @@
     "augments": ["Blade of the Holy Mountain", "Greatsword", "Lance"],
     "samEval": "Ibuki is a damage-oriented CA with good stats and great skills. She only has 1 MGM, but her double preloaded torpedoes allow her to frontload a large portion of damage. Her self-buffs to her torpedo damage boost it from middling to amazing, especially when combined with her high torpedo mount efficiency. Her Skill 2 barrage is amazing, especially after her Augment Module improved its damage and increased its trigger rate to 100%. The invulrunability gained from her Skill 2 is nice, but not too relevant for her. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -46116,7 +46125,7 @@
     "augments": ["Purse of Everyday Items", "Greatsword", "Lance"],
     "samEval": "Roon is a tank-oriented CA with good stats and skills. Her bulk is good, which combined with her shields give her a solid amount of survivability. Her personal damage is also good, with MGM+1 CA guns combined with her self-buffs that get larger as the battle progresses. Overall, she is a good ship, but can be a sidegrade to other easily accessible options.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "DefSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -46172,7 +46181,7 @@
     "augments": ["Holy Lance of Judgment", "Greatsword", "Lance"],
     "samEval": "Saint Louis is a mob-tank / damage-oriented CA with good stats and skills. Her bulk is good while her Skill 2 is up, but middling after. Her personal damage is good, with MGM+1 CA guns combined with her self-buffs when equipping an HE gun. You want to equip an HE gun to get the most value from her Skill 1. Overall, she is a good ship, but can be a sidegrade to other easily accessible options.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -46228,7 +46237,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Seattle is a damage-oriented CL with great stats and skills. Her personal damage is great due to MGM+1 CL Guns, self-buffs, and a good AoA barrage. Her bulk (when placed in the off-tank position), is also high, despite her being Light Armor. Her AA is not at the same level as AA carries, but is still above average. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "AA"],
+    "roles": ["Tank", "DmgDealer", "AA"],
     "locations": {
       "events": [],
       "other": [
@@ -46396,7 +46405,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Azuma is a tank-oriented CB with amazing stats and skills. Her bulk is very high, and she can equip the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/VH_Armor_Plating\" title=\"VH Armor Plating\" >VH Armor Plating</a > to situationally improve it. Her personal damage is also very good, with MGM+1 CB Guns and good barrages. She is ideally equipped with a CB gun to take full advantage of her self-buffs. Overall, she is an amazing ship, but not high priority if you have other UR CBs already.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -46564,7 +46573,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Cheshire is a tank-oriented CA with great stats and skills. Her bulk is high, and is more than sufficient to off-tank all content, and main-tank most content. Her AA is amazing, and is enough to AA-carry all content by herself. Her personal damage is mediocre, despite her skill barrages. Her fast-loaded torpedoes are nice, but since her torpedo damage is mediocre it is nothing special. You will likely max stack her Skill 2 effect in all battles. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "AA", "AACarry"],
+    "roles": ["Tank", "SuperTank", "AA", "AACarry"],
     "locations": {
       "events": [],
       "other": [
@@ -46620,7 +46629,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Drake is a damage-oriented CA with amazing stats and skills. Her personal damage is very high due to MGM+1 CA Guns, plus her improved Ammo Modifiers from her Skill 1. Her Skill 1 changing her secondary gun modifiers is not that useful, however. She is ideally sortied with a Normal or HE ammo Main Gun to take advantage of the improved armor modifiers. Her Skill 2 barrage is very nice, but the heal is minor in practice. Her bulk is good, but isn't enough to Main Tank in very hard bossing content. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "SuperTank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [
@@ -46676,7 +46685,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Mainz is a damage-oriented CL with great stats and skills. Her personal damage is high due to MGM+1 CL Guns, multiple good skill barrages, and her self-buffs. Her bulk is high enough to tank most content in the game, but isn't enough to main-tank in very hard bossing content. Her Fate Simulation removes her positional requirements, which is a very nice bonus to her personal damage when tanking. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -47129,7 +47138,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Plymouth is a damage-oriented CL with high stats, great bulk, great skills, and an amazing loadout. She has MGM+2 CL guns with two strong barrages, making her a top overall damage vanguard in the entire game. Her skills give your flagship a huge damage boost as well. As one of the highest damage vanguard ships in the game, she is very worth getting.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "TopDmg", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -47241,7 +47250,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Harbin is a damage-oriented CL with great stats and amazing skills. She has great balanced damage from her MGM+1 DD guns, double Torpedo Launches, and double solid barrages. Her bulk is a bit on the frailer side, but her smokescreens help mitogate it and offer decent fleet support as well. Overall, she is an amazing CL.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -47470,7 +47479,15 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Shimanto is a damage-oriented CL with great stats and skills. Her damage is great with MGM+1, double torpedo reloads, and multiple barrages. Her AA is also really good; using her gun to proc her skill can be useful situationally, but is not recommended for general use. Her Skill 1 can be situationally useful, especially when protecting backline ships. Her Skill 2 ghost AA gun is good, and the stacking from the third part of it should happen very fast. Her Fate Simulation unconditionally grants her the Skill 2 self-buffs, and adds minor shields. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "TopDmg", "AA", "AACarry", "DefSupport"],
+    "roles": [
+      "Tank",
+      "SuperTank",
+      "DmgDealer",
+      "TopDmg",
+      "AA",
+      "AACarry",
+      "DefSupport"
+    ],
     "locations": {
       "events": [],
       "other": [
@@ -47582,7 +47599,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Hindenburg is a damage-oriented CA with amazing stats and skills. She has enough bulk to mob-tank in a pinch, but it is not recommended for her to tank over other good options. Her damage output is among the best in the game for vanguard ships due to multiple main gun mounts, as well as her shield-ignoring ability from her skills. Her Skill 2's special attack is very consistent especially against boss enemies. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "TopDmg"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -47699,7 +47716,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Halford is a damage-oriented DD with great stats and skills. Her personal damage is great, despite only 1 MGM, due to her ability to equip the F8F Bearcat (Floatplane), and take advantage of its skill. Her Skill 1 additionally grants her a 15s Seaplane barrage, which both has good damage and has a guaranteed debuff when it lands. Due to how great the F8F Bearcat (Floatplane) is, you want to always be equipping one in Slot 3 over AA guns. Her Skill 2 has self-buffs and an additional barrage when not equipping a Seaplane, but the benefits of the Seaplane (damage, passive interception, screen-clear), outweigh the gains from Skill 2. The benefits from Skill 2 when equipping a Seaplane are nice, but nothing exceptional. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -47923,7 +47940,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Bayard is a damage-oriented CL with great stats and skills. Her personal damage is high due to MGM+1 CL Guns, her Skill 1 barrage, and her AoA. Her Skill 1 drastically increases her survivability for half her uptime, in addition to firing a great barrage. Her Skill 2 gives her great self-buffs, although the lower HP -> +DMG Dealt buff is unreliable due to how relatively tanky she is. The decrease all enemy ACC debuff is useless due to it's effect and activation condition being awful. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "TopDmg"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -48091,7 +48108,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -48388,7 +48405,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Helena META is a damage dealer / support-oriented CL with great stats and skills. Her Skill 2 zone is useless due to how unreliable it is to set up, especially on auto-battle. Her Skill 1 allows her to support her entire fleet, however you want to not be equipping an Eagle Union gear to enable 20s timing, as 15s timing is very niche to sync around. Her personal damage and bulk are both pretty good, especially due to her self-buffs and her skill barrages. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -48873,7 +48890,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Memphis META is a damage-oriented CL with meh stats and skills. Stats are okay, but damage is lackluster, and skills are bad. The slow is gimmicky, as well as the damage boost to certain factions. The +EVA to some meta ships is a joke since it doesn't improve their survivability significantly. Collection tier only.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "ASW", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -49298,7 +49315,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Sheffield META is a damage-oriented CL with a bit of support on the side. Since she only has 1 MGM, her barrages aren't good enough to make up for the lack of damage compared to other CLs. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank"],
     "locations": {
       "events": [],
       "other": [
@@ -49590,7 +49607,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Algérie META is a damage-oriented CA with great stats and interesting skills. Since she only has 1 MGM, her damage is average at best. Her skills are also decent, with good barrages and burns, but they are unreliable and don't improve her damage that much. Overall, she is an average CA.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Tank", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -49650,7 +49667,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Hatakaze META is a damage-oriented DD with meh stats and skills. Collection only.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Tank", "ASW", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -49710,7 +49727,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Jintsuu META is a support-oriented CL with great stats and skills. Her torpedo support is slightly worse than original Jintsuu, but her bulk and personal damage are a lot higher to compensate for it. Both her barrages (S1, AoA) have priority targetting, which also help her personal damage out. Overall, she is a great CL.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -49882,7 +49899,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Kirov META is a damage-oriented CL with great stats and skills. Her personal damage is high due to her summon, in addition to a aimed barrage every 15s. Her AoA is also good as well. Her bulk is fine; nothing special. The increased range to her Main Gun makes her damage more consistent. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -49998,7 +50015,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Pamiat' Merkuria META is a damage-oriented CL with great stats and skills. Her personal damage is good due to MGM+1 DD Guns, and multiple barrages (including her AoA that can ignore shields!). Her Skill 3 slows enemies within a reasonably sized radius of her, which is nice but somewhat unreliable. Her bulk is also very good due to her Skill 2 allowing her to evade damage, but her relatively lower bulk stats compared to other tanks makes her overall bulk worse than it seems. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -50347,7 +50364,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Kasumi META is a support-oriented DD with good stats and skills. Her personal damage is good, despite only 1 MGM, due to her Torpedo stat being very high. Her Skill 1 both supports all Torpedo DDs, and gives her a decent barrage. Her Skill 2 is basically useless since your Vanguard Fleet rarely dies every battle. Overall, she is a good ship, best used in manual-battle Torpedo-oriented fleets.",
     "fastLoad": null,
-    "roles": ["DefSupport", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -50687,7 +50704,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -50743,7 +50760,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank"],
+    "roles": ["Tank", "SuperTank"],
     "locations": {
       "events": [],
       "other": [
@@ -51079,7 +51096,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -51191,7 +51208,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -51303,7 +51320,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -51415,7 +51432,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [],
       "other": [],
@@ -51583,7 +51600,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
