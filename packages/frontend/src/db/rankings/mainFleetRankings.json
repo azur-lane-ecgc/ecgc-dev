@@ -490,7 +490,7 @@
   ],
   "An Shan": [
     {
-      "nameNote": "Main",
+      "nameNote": "Retrofit) (Main",
       "notes": "Not assumed, but can buff An Shan class.",
       "hardarbiter": "D",
       "meta": "D",
@@ -777,7 +777,7 @@
   "Ark Royal": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit, Ark Royal loses a small AA debuff and minimal damage. Her main use of a strong 60% slow with very generous timing still applies. (can still be used by new players as a...) / (should not be used because...).",
+      "notes": "Without her retrofit, Ark Royal loses a small AA debuff and minimal damage. Her main use of a strong 60% slow with very generous timing still applies.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -1325,7 +1325,7 @@
   ],
   "Chang Chun": [
     {
-      "nameNote": "Main",
+      "nameNote": "Retrofit) (Main",
       "notes": null,
       "hardarbiter": "D",
       "meta": "D",
@@ -1587,7 +1587,7 @@
   "Colorado": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit she's just a mediocre Purple BB.",
+      "notes": "Without her retrofit, she's just a mediocre Purple BB.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -1643,7 +1643,7 @@
   "Constellation": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit she's just a mediocre Purple BB.",
+      "notes": "Requires enemy to have lower speed than her.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
@@ -2049,7 +2049,7 @@
   "Essex": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit, Essex is a mediocre SR CV.",
+      "notes": "Without her retrofit, Essex is a mediocre gold CV.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -2075,33 +2075,6 @@
       "vgsurvival": null
     },
     {
-      "nameNote": "combo",
-      "notes": "Being in a fleet with Kearsarge, Yorktown II, and/or Lexington II massively buffs Essex but limits her to light armor bosses. In such a fleet, Essex only does damage and doesn't buff the fleet. That, combined with her lower anti-light damage relative to other Eagle Union rainbow CVs, makes her a transitional option. Note that her retrofit is VERY expensive.",
-      "hardarbiter": "S",
-      "meta": "S*",
-      "cm": "S*",
-      "w14mob": "D",
-      "w14boss": "A",
-      "w15mob": "D",
-      "w15boss": "S",
-      "ex": "B",
-      "consistency": null,
-      "fleetreq": null,
-      "gearreq": null,
-      "flagreq": null,
-      "lightdmg": 4,
-      "mediumdmg": 5,
-      "heavydmg": 5,
-      "aoedmg": 5,
-      "dmguptime": 1,
-      "offensivebuff": null,
-      "selfsurvival": null,
-      "aa": null,
-      "rammers": null,
-      "othermain": 1,
-      "vgsurvival": null
-    },
-    {
       "nameNote": "Retrofit",
       "notes": "Relative to other rainbow CVs, Essex is a jack of all trades, master of none. She doesn't really have any strong synergies, but on the bright side, that means she fits well in any fleet as a transitional option. Although not assumed for these ratings, she slightly prefers to be with Eagle Union carriers for 5% AVI each. She is also one of the best support fleet carriers in late campaign. Note that her retrofit is VERY expensive.",
       "hardarbiter": "S",
@@ -2120,6 +2093,33 @@
       "mediumdmg": 5,
       "heavydmg": 5,
       "aoedmg": 4,
+      "dmguptime": 1,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": 1,
+      "vgsurvival": null
+    },
+    {
+      "nameNote": "Retrofit) (combo",
+      "notes": "Being in a fleet with Kearsarge, Yorktown II, and/or Lexington II massively buffs Essex but limits her to light armor bosses. In such a fleet, Essex only does damage and doesn't buff the fleet. That, combined with her lower anti-light damage relative to other Eagle Union rainbow CVs, makes her a transitional option. Note that her retrofit is VERY expensive.",
+      "hardarbiter": "S",
+      "meta": "S*",
+      "cm": "S*",
+      "w14mob": "D",
+      "w14boss": "A",
+      "w15mob": "D",
+      "w15boss": "S",
+      "ex": "B",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 5,
+      "heavydmg": 5,
+      "aoedmg": 5,
       "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": null,
@@ -2334,7 +2334,7 @@
   ],
   "Fu Shun": [
     {
-      "nameNote": "Main",
+      "nameNote": "Retrofit) (Main",
       "notes": null,
       "hardarbiter": "D",
       "meta": "D",
@@ -3089,9 +3089,9 @@
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
-      "w14mob": "D",
+      "w14mob": "C",
       "w14boss": "D",
-      "w15mob": "D",
+      "w15mob": "C",
       "w15boss": "D",
       "ex": "D",
       "consistency": -1,
@@ -3752,7 +3752,7 @@
   "Independence": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit she is a very mediocre Purple CVL.",
+      "notes": "Without her retrofit, Independence is a very mediocre purple CVL.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5022,7 +5022,7 @@
   "Maryland": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit she's just a mediocre Purple BB.",
+      "notes": "Without her retrofit, Maryland is just a mediocre purple BB.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -5565,7 +5565,7 @@
   "Nelson": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Without her retrofit, Nelson is just a mediocre purple BB.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6808,7 +6808,7 @@
   "Saratoga": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Without her retrofit, Saratoga loses some damage but still fulfills her role of continuous AoE bombing. Using her unique augment, Saratoga offers continuous damage with mini-airstrikes every 10 seconds. This, combined with her dive bomber-focused loadout, makes her more suited for campaign than single-wave bosses. Even without her unique augment, she is still strong for new players due to how good purple Helldivers are.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6835,7 +6835,7 @@
     },
     {
       "nameNote": "Retrofit",
-      "notes": null,
+      "notes": "Using her unique augment, Saratoga offers continuous damage with mini-airstrikes every 10 seconds. This, combined with her dive bomber-focused loadout, makes her more suited for campaign than single-wave bosses.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -7152,11 +7152,38 @@
   "Shouhou": [
     {
       "nameNote": "",
-      "notes": "Needs to launch airstrike before other main fleet ships.",
+      "notes": "Shouhou without retrofit is outclassed by Unicorn in every way. Needs to launch airstrike before other main fleet ships.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
       "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": -2,
+      "aa": null,
+      "rammers": null,
+      "othermain": 4,
+      "vgsurvival": null
+    },
+    {
+      "nameNote": "Retrofit",
+      "notes": "Shouhou with retrofit is outclassed by even a partially retrofitted Unicorn. Needs to launch airstrike before other main fleet ships.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "C",
       "w14boss": "D",
       "w15mob": "D",
       "w15boss": "D",
@@ -7553,7 +7580,7 @@
   ],
   "Tai Yuan": [
     {
-      "nameNote": "Main",
+      "nameNote": "Retrofit) (Main",
       "notes": null,
       "hardarbiter": "D",
       "meta": "D",
@@ -8018,14 +8045,14 @@
   "Unicorn": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit Unicorn is a decent but underwhelming healer. Her retrofit is a noticable upgrade.",
+      "notes": "Without her retrofit, Unicorn is a decent but underwhelming healer. Her retrofit is a noticeable upgrade.",
       "hardarbiter": "D",
       "meta": "D",
-      "cm": null,
-      "w14mob": null,
+      "cm": "D",
+      "w14mob": "C",
       "w14boss": "D",
-      "w15mob": null,
-      "w15boss": null,
+      "w15mob": "D",
+      "w15boss": "D",
       "ex": "D",
       "consistency": null,
       "fleetreq": null,
@@ -8035,7 +8062,7 @@
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "dmguptime": 1,
+      "dmguptime": null,
       "offensivebuff": null,
       "selfsurvival": -1,
       "aa": null,
@@ -8335,12 +8362,12 @@
   "Warspite": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit Warspite is one of the worst SR BBs in the game.",
-      "hardarbiter": "D",
-      "meta": "D",
-      "cm": "D",
+      "notes": "Without her retrofit, Warspite needs her unique augment to be a below average gold BB. With neither retrofit nor unique augment, she's one of the worst gold BBs in the game.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
       "w14mob": "D",
-      "w14boss": "D",
+      "w14boss": "C",
       "w15mob": "D",
       "w15boss": "D",
       "ex": "D",
@@ -8348,11 +8375,11 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": null,
-      "mediumdmg": null,
-      "heavydmg": null,
-      "aoedmg": null,
-      "dmguptime": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": null,
       "aa": null,
@@ -8362,7 +8389,7 @@
     },
     {
       "nameNote": "Retrofit",
-      "notes": "Warspite is a REAL rainbow ship now with her augment. But she is still among the worst rainbow BBs because she has no fleet buffs and has significant staggered barrages that miss moving bosses. Her retrofit is VERY expensive, and she needs her Unique Augment on top of it.",
+      "notes": "Warspite is a REAL rainbow ship now with her augment. But she is still among the worst rainbow BBs because she has no fleet buffs and has significant staggered barrages that miss moving bosses. Her retrofit is VERY expensive, and she needs her unique augment on top of it.",
       "hardarbiter": "A",
       "meta": "A",
       "cm": "A",
@@ -8478,7 +8505,7 @@
   "West Virginia": [
     {
       "nameNote": "",
-      "notes": "Without her retrofit she's just a mediocre Purple BB.",
+      "notes": "Without her retrofit, West Virginia is just a mediocre purple BB.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -8491,10 +8518,10 @@
       "fleetreq": null,
       "gearreq": null,
       "flagreq": -2,
-      "lightdmg": null,
-      "mediumdmg": null,
-      "heavydmg": null,
-      "aoedmg": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
       "dmguptime": null,
       "offensivebuff": null,
       "selfsurvival": null,
