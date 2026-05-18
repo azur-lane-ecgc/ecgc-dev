@@ -932,7 +932,7 @@
       "consistency": null,
       "fleetreq": null,
       "gearreq": null,
-      "flagreq": null,
+      "flagreq": -1,
       "lightdmg": 3,
       "mediumdmg": 3,
       "heavydmg": 3,

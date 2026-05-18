@@ -835,14 +835,14 @@
   "Asuka": [
     {
       "nameNote": "",
-      "notes": "Buffs Senran Kagura ships. Assumed to be with another Senran Kagura ship for +15% EVA.",
+      "notes": "On paper, Asuka's numerous barrages and follow-up barrages can let her wipe entire mob waves by herself. And that is true, when the enemy is weak. In Chapter 15 and above, she generally procs follow-up attacks zero or one time per battle. She is also limited by fleet requirements because there needs to be another Senran Kagura ship in the fleet for Asuka to gain 15% EVA and some more minor damage. These ratings assume she is with another Senran Kagura ship for +15% EVA.",
       "hardarbiter": "C",
-      "meta": "D",
+      "meta": "C",
       "cm": "C",
       "w14mob": "B",
       "w14boss": "B",
-      "w15mob": "D",
-      "w15boss": "D",
+      "w15mob": "C",
+      "w15boss": "C",
       "ex": "D",
       "consistency": null,
       "fleetreq": -2,
