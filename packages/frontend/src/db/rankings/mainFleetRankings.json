@@ -2883,6 +2883,35 @@
       "vgsurvival": null
     }
   ],
+  "Götz von Berlichingen": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": null,
+      "meta": null,
+      "cm": null,
+      "w14mob": null,
+      "w14boss": null,
+      "w15mob": null,
+      "w15boss": null,
+      "ex": null,
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": null,
+      "mediumdmg": null,
+      "heavydmg": null,
+      "aoedmg": null,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Hakuhou": [
     {
       "nameNote": "",
