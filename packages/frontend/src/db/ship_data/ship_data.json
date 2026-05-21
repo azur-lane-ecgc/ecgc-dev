@@ -13038,20 +13038,20 @@
     "id": 242,
     "ship": "Admiral Hipper",
     "faction": "KMS",
-    "rarity": 3,
-    "isKai": false,
+    "rarity": 4,
+    "isKai": true,
     "hullType": "CA",
     "fleetType": "vg",
     "LBBonus": null,
     "slots": [
       {
         "type": ["CA Main Gun"],
-        "efficiency": 1.3,
-        "mounts": 1
+        "efficiency": 1.2,
+        "mounts": 2
       },
       {
         "type": ["Torpedo"],
-        "efficiency": 1.6,
+        "efficiency": 1.75,
         "mounts": 2
       },
       {
@@ -13073,7 +13073,7 @@
     "augments": ["Tunken der Liebe", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -40714,6 +40714,286 @@
       "isCollab": false
     }
   },
+  "735": {
+    "id": 735,
+    "ship": "Götz von Berlichingen",
+    "faction": "KMS",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.6,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 2.1,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 0.9,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "Alliance Before the Hagiobull",
+          "href": "Alliance_Before_the_Hagiobull"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "736": {
+    "id": 736,
+    "ship": "U-2501",
+    "faction": "KMS",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "SS",
+    "fleetType": "ss",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Submarine Torpedo"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["Submarine Torpedo"],
+        "efficiency": 1.35,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Kunai", "Dagger"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "Alliance Before the Hagiobull",
+          "href": "Alliance_Before_the_Hagiobull"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "737": {
+    "id": 737,
+    "ship": "Prinz Moritz",
+    "faction": "KMS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun", "CB Main Gun"],
+        "efficiency": 1.55,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.35,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatsword", "Lance"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Meh"],
+    "locations": {
+      "events": [
+        {
+          "name": "Alliance Before the Hagiobull",
+          "href": "Alliance_Before_the_Hagiobull"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "738": {
+    "id": 738,
+    "ship": "Z14",
+    "faction": "KMS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.75,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DefSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "Alliance Before the Hagiobull",
+          "href": "Alliance_Before_the_Hagiobull"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "739": {
+    "id": 739,
+    "ship": "Z15",
+    "faction": "KMS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "Reduced torpedo spread.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.75,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Meh"],
+    "locations": {
+      "events": [
+        {
+          "name": "Alliance Before the Hagiobull",
+          "href": "Alliance_Before_the_Hagiobull"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
   "10001": {
     "id": 10001,
     "ship": "Neptune (Neptunia)",
@@ -44541,7 +44821,7 @@
     "augments": ["Burst Flower", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
+    "roles": ["ASW", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -51650,6 +51930,62 @@
       ],
       "construction": [],
       "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30061": {
+    "id": 30061,
+    "ship": "Elbe META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CVL",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.65,
+        "mounts": 3
+      },
+      {
+        "type": ["Dive Bomber"],
+        "efficiency": 1.35,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Plane"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Plane"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "DefSupport", "Meh"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Unobtainable",
+          "href": "Category:Ships"
+        }
+      ]
     },
     "permanent": {
       "isPermanent": false,
