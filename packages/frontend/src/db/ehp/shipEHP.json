@@ -1,4 +1,18 @@
 {
+  "22": [
+    {
+      "name": "22",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
+    }
+  ],
+  "33": [
+    {
+      "name": "33",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -386,6 +400,13 @@
       "name": "Drake",
       "totalEHP": "108.88%",
       "std": "26.23%"
+    }
+  ],
+  "Prinz Moritz": [
+    {
+      "name": "Prinz Moritz",
+      "totalEHP": "118.28%",
+      "std": "32.34%"
     }
   ],
   "Yume Minami": [
@@ -939,6 +960,18 @@
       "name": "Z23",
       "totalEHP": "72.34%",
       "std": "27.22%"
+    }
+  ],
+  "Admiral Hipper": [
+    {
+      "name": "Admiral Hipper (Retrofit)",
+      "totalEHP": "99.06%",
+      "std": "25.83%"
+    },
+    {
+      "name": "Admiral Hipper",
+      "totalEHP": "87.70%",
+      "std": "24.43%"
     }
   ],
   "Watarase": [
@@ -1550,13 +1583,6 @@
       "name": "Soobrazitelny",
       "totalEHP": "87.72%",
       "std": "33.04%"
-    }
-  ],
-  "Admiral Hipper": [
-    {
-      "name": "Admiral Hipper",
-      "totalEHP": "87.70%",
-      "std": "24.43%"
     }
   ],
   "Denver": [
@@ -4116,13 +4142,6 @@
       "std": "18.30%"
     }
   ],
-  "3300.00%": [
-    {
-      "name": "3300.00%",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
-    }
-  ],
   "Z20": [
     {
       "name": "Z20",
@@ -4163,6 +4182,13 @@
       "std": "24.56%"
     }
   ],
+  "Z14": [
+    {
+      "name": "Z14",
+      "totalEHP": "60.71%",
+      "std": "23.45%"
+    }
+  ],
   "Curlew": [
     {
       "name": "Curlew (Retrofit)",
@@ -4199,13 +4225,6 @@
       "name": "Shiranui",
       "totalEHP": "56.79%",
       "std": "22.88%"
-    }
-  ],
-  "2200.00%": [
-    {
-      "name": "2200.00%",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
     }
   ],
   "Jersey": [
@@ -4389,6 +4408,13 @@
       "name": "Z21",
       "totalEHP": "56.67%",
       "std": "21.89%"
+    }
+  ],
+  "Z15": [
+    {
+      "name": "Z15",
+      "totalEHP": "56.48%",
+      "std": "21.53%"
     }
   ],
   "Naka": [

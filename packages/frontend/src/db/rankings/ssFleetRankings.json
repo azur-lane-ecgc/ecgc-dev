@@ -639,6 +639,22 @@
       "offensivebuff": null
     }
   ],
+  "U-2501": [
+    {
+      "nameNote": "Base",
+      "notes": null,
+      "hardarbiter": null,
+      "cm": null,
+      "campaign": null,
+      "consistency": -1,
+      "fleetreq": null,
+      "flagreq": -2,
+      "lightdmg": 5,
+      "mediumdmg": 6,
+      "heavydmg": 7,
+      "offensivebuff": null
+    }
+  ],
   "U-31": [
     {
       "nameNote": "Base",
