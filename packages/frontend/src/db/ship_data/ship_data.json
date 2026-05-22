@@ -40809,7 +40809,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -40865,7 +40865,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {
