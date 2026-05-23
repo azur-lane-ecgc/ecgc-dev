@@ -17531,7 +17531,7 @@
     "augments": ["Hydrophone Calibration Device", "Kunai", "Dagger"],
     "samEval": "I-58 is a damage-oriented SS with average stats and great skills. Her personal damage is pretty good for an Elite SS due to her self-buffs. Her buff to other IJN SS is nice, but not needed for her viability. Overall, she is a good SS, especially for newer players, but worse than all the relevant SR SS options.",
     "fastLoad": null,
-    "roles": ["OffSupport", "Meh"],
+    "roles": ["OffSupport"],
     "locations": {
       "events": [],
       "other": [],
@@ -34002,7 +34002,7 @@
     "augments": ["Ghost Ship's Scythe"],
     "samEval": "Mary Celeste is a damage-oriented IXS with great stats and skills. Her personal damage is very high, but it is heavily skewed towards Light and Medium Armor enemies. Her support is also decent, although the effectiveness of her \"Ghost Ship\" at redirecting enemy damage is to be determined. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
