@@ -44296,7 +44296,7 @@
     "augments": ["Twin Blades - Two-Sided Winding Flash", "Crossbow", "Sword"],
     "samEval": "Asuka is a damage-oriented CL with great stats and skills. Her personal damage is high due to MGM+1, multiple barrages, and great self-buffs. To gain the most value of her self-buffs, she needs to be sortied in a Senran Kagura fleet. Even outside of a Senran Kagura fleet, she is still good. Her bulk is also fine due to her stats combined with the life-steal from her Skill 2. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Tank", "DmgDealer"],
     "locations": {
       "events": [
         {

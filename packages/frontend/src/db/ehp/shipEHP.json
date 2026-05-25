@@ -599,6 +599,13 @@
       "std": "26.08%"
     }
   ],
+  "Asuka": [
+    {
+      "name": "Asuka",
+      "totalEHP": "110.55%",
+      "std": "35.34%"
+    }
+  ],
   "Little Ägir": [
     {
       "name": "Little Ägir",
@@ -879,13 +886,6 @@
       "name": "Little Anchorage",
       "totalEHP": "101.09%",
       "std": "25.68%"
-    }
-  ],
-  "Asuka": [
-    {
-      "name": "Asuka",
-      "totalEHP": "100.76%",
-      "std": "33.73%"
     }
   ],
   "Takao": [
