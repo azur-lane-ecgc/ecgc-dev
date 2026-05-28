@@ -7427,6 +7427,33 @@
       "defensivebuff": null
     }
   ],
+  "Königsberg META": [
+    {
+      "nameNote": "",
+      "notes": "Königsberg META buffs vanguard RLD by 15% and damage by about 5%, not significant enough for Offense Buff rating.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 80,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "L'Audacieux": [
     {
       "nameNote": "",
@@ -13209,6 +13236,33 @@
       "aoedmg": 4,
       "offensivebuff": null,
       "selfsurvival": 103,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Unzen-chan": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 2,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": 81,
       "aa": null,
       "asw": null,
       "defensivebuff": null
