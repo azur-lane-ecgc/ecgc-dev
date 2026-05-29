@@ -40994,6 +40994,62 @@
       "isCollab": false
     }
   },
+  "740": {
+    "id": 740,
+    "ship": "Unzen-chan",
+    "faction": "IJN",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun"],
+        "efficiency": 1.1,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatsword", "Lance"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer"],
+    "locations": {
+      "events": [
+        {
+          "name": "The Young Recluse's Treasure Hunt",
+          "href": "The_Young_Recluse's_Treasure_Hunt"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
   "10001": {
     "id": 10001,
     "ship": "Neptune (Neptunia)",
@@ -50057,13 +50113,17 @@
         {
           "name": "Cruise Pass",
           "href": "Cruise_Missions"
+        },
+        {
+          "name": "Dossier Analysis",
+          "href": "META_Showdown#Dossier_Analysis"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -51920,6 +51980,62 @@
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["Meh"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Cruise Pass",
+          "href": "Cruise_Missions"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30060": {
+    "id": 30060,
+    "ship": "Königsberg META",
+    "faction": "META",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.7,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.3,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DefSupport"],
     "locations": {
       "events": [],
       "other": [
