@@ -20855,7 +20855,7 @@
     "augments": ["Poisonous Elegance", "Dual Swords", "Hammer"],
     "samEval": "Le Malin is a damage-oriented DD with good stats and skills. Her personal damage is fine, but nothing spectacular with only 1 MGM and a good AoA. Her Skill 1 gives a great debuff, but the activation condition is hard to achieve before the enemy dies, and the duration of the debuff is low too. The barrage that it triggers is good, but nothing amazing as well. The stack based on killing enemies is also hard to achieve, since the other 5 ships in the fleet can easily kill steal from her. Her Skill 2 is basically useless since it debuffs her as the battle goes on. Overall, she is a good ship, but can be a sidegrade / downgrade to other easily-accessible options.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -44765,7 +44765,7 @@
     "augments": ["Omnitool", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
