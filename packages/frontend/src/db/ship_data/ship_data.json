@@ -19901,7 +19901,7 @@
     "augments": ["Explorer's Eye", "Scepter", "Hunting Bow"],
     "samEval": "Shangri-La is a damage-oriented CV with great stats and skills. Her personal damage is very good due to her damage ramping self-buffs, as well as an on-strike barrage (which is unfortunately RNG). Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
