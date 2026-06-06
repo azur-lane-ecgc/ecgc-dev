@@ -1910,6 +1910,33 @@
       "defensivebuff": null
     }
   ],
+  "Bristol META": [
+    {
+      "nameNote": "",
+      "notes": "Bristol META's lantern has a 86% chance for a boss to get -10% evasion rate for 10s every 20s, far better than Bristol's lantern due to the double circle and increased size.",
+      "hardarbiter": "A",
+      "meta": "A",
+      "cm": "A",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "C*",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 4,
+      "offensivebuff": 2,
+      "selfsurvival": 86,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Brooklyn": [
     {
       "nameNote": "",
