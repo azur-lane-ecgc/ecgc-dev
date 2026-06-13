@@ -1130,7 +1130,7 @@
   "Azuma": [
     {
       "nameNote": "",
-      "notes": "A tank with decent damage output. However, her AA is mediocre. She also has no damage buffs for the fleet, making her a relatively lackluster choice for single target bosses. She's similar to Drake in cost and performance.",
+      "notes": "A tank with decent damage output. However, her AA is mediocre. She also has no damage buffs for the fleet, making her a relatively lackluster choice for single target bosses.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -2262,8 +2262,8 @@
       "nameNote": "",
       "notes": "As something of a specialist against destroyers, Chapayev decreases the evasion rate of enemy DDs by 10%, which is a significant damage buff for the main fleet and makes her Ark Royal's permanent enemy. She also buffs her own damage against DDs by 20%. Otherwise, though, she’s a pretty middle-of-the-road gold vanguard ship. She has okay damage output, but she is not that tanky, and her AA is lackluster. She does have a potentially powerful damage buff for your vanguards, but proccing it is inconsistent, and the uptime isn't great.",
       "hardarbiter": "C",
-      "meta": "C",
-      "cm": "B*",
+      "meta": "S*",
+      "cm": "A*",
       "w14mob": "B",
       "w14boss": "C*",
       "w15mob": "D",
@@ -2987,7 +2987,7 @@
   "Deutschland": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Deutschland should be main tank when she has her Unique Augment and not main tank when she doesn't.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3005,7 +3005,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 67,
+      "selfsurvival": 95,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -3230,25 +3230,25 @@
   "Drake": [
     {
       "nameNote": "",
-      "notes": "#DrakeBad. In all seriousness, she has decent damage overall and is decently tanky. However, her AA is lackluster, and she lacks any damage buffs for the fleet. Despite what her background color might lead you to believe, she’s outclassed by a decent number of 2025 gold vanguard ships, to speak nothing of rainbow ships newer than her.",
-      "hardarbiter": "B",
-      "meta": "B",
-      "cm": "B",
-      "w14mob": "A",
-      "w14boss": "A",
-      "w15mob": "C",
-      "w15boss": "C",
+      "notes": "PRake is dead, long live DRake! Drake has very high damage and is decently tanky. Using a flagship who attacks often like Götz further increases her DPS by up to 20%, though that is not assumed by these ratings. However, her AA is lackluster, and she lacks any damage buffs for the fleet.",
+      "hardarbiter": "S",
+      "meta": "S",
+      "cm": "S",
+      "w14mob": "S",
+      "w14boss": "SS",
+      "w15mob": "B",
+      "w15boss": "B",
       "ex": "D",
       "consistency": null,
       "fleetreq": null,
       "gearreq": -2,
       "flagreq": null,
-      "lightdmg": 3,
-      "mediumdmg": 3,
-      "heavydmg": 2,
-      "aoedmg": 3,
+      "lightdmg": 5,
+      "mediumdmg": 5,
+      "heavydmg": 5,
+      "aoedmg": 5,
       "offensivebuff": null,
-      "selfsurvival": 119,
+      "selfsurvival": 128,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -7070,7 +7070,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 52,
+      "selfsurvival": 68,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -7673,7 +7673,7 @@
   "Lala Satalin Deviluke": [
     {
       "nameNote": "",
-      "notes": "Discount black hole on AoA, and minor air buff. Drake sidegrade otherwise.",
+      "notes": "Discount black hole on AoA, and minor air buff.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "B",
@@ -11013,7 +11013,7 @@
   "Prinz Moritz": [
     {
       "nameNote": "",
-      "notes": "Yes, follow the gear recommendations. Yes, purple Triple 283mm is better than all rainbow CA guns for Moritz. Yes, she with a purple gun matches the performance of shiny Drake with shiny gun.",
+      "notes": "Yes, follow the gear recommendations. Yes, purple Triple 283mm is better than all rainbow CA guns for Moritz. Yes, she with a purple gun matches the performance of shiny Azuma with shiny gun.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
