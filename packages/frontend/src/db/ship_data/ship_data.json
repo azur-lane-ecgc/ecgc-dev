@@ -12372,10 +12372,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Scepter", "Hunting Bow"],
+    "augments": ["Auspicious Crane's Uchigatana", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -13266,7 +13266,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Highborn Princess's Command", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["Meh"],
@@ -14718,7 +14718,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Safety Bell and Butterfly Bow", "Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["Meh"],
@@ -21352,10 +21352,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Kunai", "Dagger"],
+    "augments": ["Blacktail Diving Goggles", "Kunai", "Dagger"],
     "samEval": "Cavalla is a damage-oriented SS with good stats and skills. She prefers to be paired with <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Albacore\" title=\"Albacore\" >Albacore</a > and/or <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://azurlane.koumakan.jp/wiki/Archerfish\" title=\"Archerfish\" >Archerfish</a > for best results. Her personal damage is also pretty good. Overall, she is a good SS.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -32805,11 +32805,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -32860,12 +32865,17 @@
           "href": "Confluence_of_Nothingness"
         }
       ],
-      "other": [],
+      "other": [
+        {
+          "name": "Merit Shop",
+          "href": "Merit_Shop"
+        }
+      ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -32917,11 +32927,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Light)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -32972,12 +32987,22 @@
           "href": "Confluence_of_Nothingness"
         }
       ],
-      "other": [],
-      "construction": [],
+      "other": [
+        {
+          "name": "Permanent Ultra Rare Pity",
+          "href": "Building#UR_Ships_Construction"
+        }
+      ],
+      "construction": [
+        {
+          "name": "Construction (Heavy, Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -46953,10 +46978,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Privateer's Heroism", "Greatsword", "Lance"],
     "samEval": "Drake is a damage-oriented CA with amazing stats and skills. Her personal damage is very high due to MGM+1 CA Guns, plus her improved Ammo Modifiers from her Skill 1. Her Skill 1 changing her secondary gun modifiers is not that useful, however. She is ideally sortied with a Normal or HE ammo Main Gun to take advantage of the improved armor modifiers. Her Skill 2 barrage is very nice, but the heal is minor in practice. Her bulk is good, but isn't enough to Main Tank in very hard bossing content. Overall, she is an amazing ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -49819,11 +49844,16 @@
         }
       ],
       "other": [],
-      "construction": [],
+      "construction": [
+        {
+          "name": "Construction (Special)",
+          "href": "Construction"
+        }
+      ],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -50978,13 +51008,17 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        },
+        {
+          "name": "Dossier Analysis",
+          "href": "META_Showdown#Dossier_Analysis"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },

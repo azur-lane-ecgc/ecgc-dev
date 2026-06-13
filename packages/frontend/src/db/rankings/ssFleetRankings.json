@@ -114,16 +114,16 @@
   "Cavalla": [
     {
       "nameNote": "Base",
-      "notes": "Bonus against CV. Not assumed, but does more damage by a very small amount for being with Albacore. Do not put in the bottom (third) position.",
-      "hardarbiter": "D",
-      "cm": "D",
-      "campaign": "B",
+      "notes": "Bonus against CV. Not assumed, but does more barrage damage for being with Albacore. Put Cavalla in the top (second) position, not the bottom (third) position. Both of her barrages are angled flat and downwards.",
+      "hardarbiter": "B",
+      "cm": "B",
+      "campaign": "S",
       "consistency": null,
       "fleetreq": null,
       "flagreq": -2,
-      "lightdmg": 1,
-      "mediumdmg": 2,
-      "heavydmg": 2,
+      "lightdmg": 2,
+      "mediumdmg": 3,
+      "heavydmg": 4,
       "offensivebuff": null
     }
   ],
