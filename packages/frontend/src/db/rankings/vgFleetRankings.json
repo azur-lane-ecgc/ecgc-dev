@@ -10529,7 +10529,7 @@
   "Pamiat' Merkuria META": [
     {
       "nameNote": "",
-      "notes": "Weak slow.",
+      "notes": "Weak 20% slow. Contrary to what the game claims, it is 27.5 range, not 55 range. So the slow is also inconsistent with about 40% chance.",
       "hardarbiter": "D",
       "meta": "C",
       "cm": "D",
@@ -10546,7 +10546,7 @@
       "mediumdmg": 2,
       "heavydmg": 1,
       "aoedmg": 2,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 106,
       "aa": null,
       "asw": null,
