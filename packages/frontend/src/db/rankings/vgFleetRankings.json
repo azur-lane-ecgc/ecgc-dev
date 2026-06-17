@@ -1886,7 +1886,7 @@
   "Bristol": [
     {
       "nameNote": "",
-      "notes": "Bristol's lantern (her main selling point) relies on RNG in vanguard and boss movement. With the speed of a typical vanguard, and with Bristol in the middle, the lantern may have 50% success rate on a boss.",
+      "notes": "Bristol's lantern (her main selling point) relies on RNG in vanguard and boss movement. With the speed of a typical vanguard, and with Bristol in the middle, the lantern may have 22% success rate on a boss.",
       "hardarbiter": "C",
       "meta": "D",
       "cm": "C",
@@ -1903,7 +1903,7 @@
       "mediumdmg": 1,
       "heavydmg": 1,
       "aoedmg": 1,
-      "offensivebuff": 1,
+      "offensivebuff": null,
       "selfsurvival": 82,
       "aa": null,
       "asw": null,
