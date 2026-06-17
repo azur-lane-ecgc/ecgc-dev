@@ -29364,7 +29364,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Bristol is a damage-oriented DD with good stats and skills. Her personal damage is alright despite 1 MGM, since her barrages are good and she has AoA reduction. Her AA is also good, due to having a relatively high AA stat and efficiencies compared to other DDs. Her lanturn debuff is amazing if it lands, but due to the zone spawing in front of Bristol, it is unreliable to trigger on auto-battle. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["OffSupport"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
