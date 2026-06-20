@@ -56,7 +56,7 @@
   "Achilles": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "The Giant Hunter skill description is scuffed. See ALDB for the correct effects.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3014,7 +3014,7 @@
   "Devonshire": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "A fourth of Devonshire's damage requires that the flagship is a carrier.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
