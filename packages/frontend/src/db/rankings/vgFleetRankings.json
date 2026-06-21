@@ -270,7 +270,7 @@
   "Ajax": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "The Giant Hunter skill description is scuffed. See ALDB for the correct effects.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -4434,8 +4434,8 @@
       "offensivebuff": null,
       "selfsurvival": 81,
       "aa": null,
-      "asw": null,
-      "defensivebuff": 1
+      "asw": 1,
+      "defensivebuff": null
     }
   ],
   "Gloucester": [
@@ -11691,9 +11691,9 @@
       "meta": "C",
       "cm": "B",
       "w14mob": "B",
-      "w14boss": "D",
-      "w15mob": "C",
-      "w15boss": "D",
+      "w14boss": "C",
+      "w15mob": "B",
+      "w15boss": "B",
       "ex": "D",
       "consistency": null,
       "fleetreq": null,
