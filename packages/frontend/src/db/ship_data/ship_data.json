@@ -22651,7 +22651,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["ASW"],
     "locations": {
       "events": [],
       "other": [],
