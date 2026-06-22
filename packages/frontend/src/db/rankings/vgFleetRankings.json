@@ -7889,7 +7889,7 @@
   "Le Téméraire μ": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Both barrages have two torpedoes with ~40% geometric hit rate, so Le Téméraire μ heals the main fleet for an insignificant amount and heals ~9% of one vanguard ship.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -8152,7 +8152,7 @@
       "offensivebuff": null,
       "selfsurvival": 83,
       "aa": null,
-      "asw": 1,
+      "asw": null,
       "defensivebuff": 1
     }
   ],
@@ -8965,7 +8965,7 @@
   "Miller": [
     {
       "nameNote": "",
-      "notes": "Very bad tankiness but needs to main tank for minor buffs. All she has Carrier Escort, which doesn't even proc immediately.",
+      "notes": "Miller needs to be main tank for some minor buffs, but she has very bad tankiness, so you just have to give up those buffs. All she has Carrier Escort, which doesn't even proc immediately.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -9397,7 +9397,7 @@
   "Musketeer": [
     {
       "nameNote": "",
-      "notes": "Needs a long time to ramp up her Damage.",
+      "notes": "Needs a long time to ramp up her damage.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -12573,7 +12573,7 @@
   "Suzuya": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "Although Suzuya gains a massive 75% RLD and 15% FP buff after hitting enemies enough times, it is not significant enough to change the relative ranking of recommended guns just to reach the max stacks a few seconds earlier. Therefore, the recommendations are standard, without considering CL vs CA gun reload or shell count.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -13093,7 +13093,7 @@
       "ex": "D",
       "consistency": -3,
       "fleetreq": null,
-      "gearreq": null,
+      "gearreq": -2,
       "flagreq": null,
       "lightdmg": 1,
       "mediumdmg": 1,

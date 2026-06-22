@@ -10602,7 +10602,7 @@
     "augments": ["Greatsword", "Lance"],
     "samEval": "Haguro is a tank-oriented CA best used as a main tank. She has good enough HP, which coupled with her great Luck and Evasion (which can get boosted further from her torpedoes!) gives her high bulk. She also has a self-heal when the skill barrage activation fails. Her barrages and MGM are very mediocre for the role, however. Overall, she is a great pure tank, but has bad damage output for the role.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["Tank", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -17246,7 +17246,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["DefSupport"],
     "locations": {
       "events": [
         {
