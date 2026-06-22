@@ -266,6 +266,18 @@
       "std": "28.33%"
     }
   ],
+  "Drake": [
+    {
+      "name": "Drake (Fate)",
+      "totalEHP": "127.60%",
+      "std": "31.75%"
+    },
+    {
+      "name": "Drake",
+      "totalEHP": "116.60%",
+      "std": "29.01%"
+    }
+  ],
   "Bayard": [
     {
       "name": "Bayard",
@@ -388,18 +400,6 @@
       "name": "Sakawa",
       "totalEHP": "116.19%",
       "std": "37.16%"
-    }
-  ],
-  "Drake": [
-    {
-      "name": "Drake (Fate)",
-      "totalEHP": "118.74%",
-      "std": "28.66%"
-    },
-    {
-      "name": "Drake",
-      "totalEHP": "108.88%",
-      "std": "26.23%"
     }
   ],
   "Prinz Moritz": [
@@ -701,6 +701,13 @@
       "name": "Noshiro",
       "totalEHP": "107.45%",
       "std": "38.85%"
+    }
+  ],
+  "Haguro": [
+    {
+      "name": "Haguro",
+      "totalEHP": "107.32%",
+      "std": "31.62%"
     }
   ],
   "Cheshire": [
@@ -1059,13 +1066,6 @@
       "std": "34.12%"
     }
   ],
-  "Haguro": [
-    {
-      "name": "Haguro",
-      "totalEHP": "96.94%",
-      "std": "30.05%"
-    }
-  ],
   "Mogami": [
     {
       "name": "Mogami (Retrofit)",
@@ -1213,6 +1213,18 @@
       "name": "Le Terrible (No DD's)",
       "totalEHP": "88.35%",
       "std": "37.28%"
+    }
+  ],
+  "Deutschland": [
+    {
+      "name": "Deutschland (Front)",
+      "totalEHP": "94.54%",
+      "std": "32.48%"
+    },
+    {
+      "name": "Deutschland (NotFront)",
+      "totalEHP": "66.72%",
+      "std": "19.97%"
     }
   ],
   "Le Triomphant": [
@@ -3518,13 +3530,6 @@
       "std": "25.23%"
     }
   ],
-  "Deutschland": [
-    {
-      "name": "Deutschland",
-      "totalEHP": "66.72%",
-      "std": "19.97%"
-    }
-  ],
   "Dewey META": [
     {
       "name": "Dewey META",
@@ -4452,6 +4457,18 @@
       "std": "16.61%"
     }
   ],
+  "Kisaragi": [
+    {
+      "name": "Kisaragi (Retrofit)",
+      "totalEHP": "55.28%",
+      "std": "22.21%"
+    },
+    {
+      "name": "Kisaragi",
+      "totalEHP": "51.76%",
+      "std": "21.45%"
+    }
+  ],
   "Chang Feng": [
     {
       "name": "Chang Feng",
@@ -4492,18 +4509,6 @@
       "name": "Minazuki",
       "totalEHP": "52.43%",
       "std": "23.01%"
-    }
-  ],
-  "Kisaragi": [
-    {
-      "name": "Kisaragi (Retrofit)",
-      "totalEHP": "52.05%",
-      "std": "21.55%"
-    },
-    {
-      "name": "Kisaragi",
-      "totalEHP": "48.55%",
-      "std": "20.78%"
     }
   ],
   "Mikazuki": [
