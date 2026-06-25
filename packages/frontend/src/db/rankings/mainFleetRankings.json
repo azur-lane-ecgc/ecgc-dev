@@ -888,6 +888,35 @@
       "vgsurvival": null
     }
   ],
+  "Arromanches": [
+    {
+      "nameNote": "",
+      "notes": "Arromanches has decent DPS around the level of an average Enterprise, but like Albion, she suffers in single-wave bossing fleets because she may reload too quickly to sync with buffs and freezes. Arromanches is also worse than Albion in campaign with slightly worse damage and no fleet defense.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "C",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "D",
+      "w15boss": "C",
+      "ex": "A",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 3,
+      "heavydmg": 3,
+      "aoedmg": 3,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "August von Parseval": [
     {
       "nameNote": "",
