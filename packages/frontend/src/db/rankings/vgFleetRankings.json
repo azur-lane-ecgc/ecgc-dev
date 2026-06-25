@@ -2338,6 +2338,33 @@
       "defensivebuff": null
     }
   ],
+  "Cherbourg": [
+    {
+      "nameNote": "",
+      "notes": "A tank with poor damage output, mediocre AA, and no damage buffs for the fleet, making her a relatively lackluster choice for anything.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": -1,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 2,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 129,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "Cheshire": [
     {
       "nameNote": "",
@@ -7533,6 +7560,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": 1
+    }
+  ],
+  "L'Intrépide": [
+    {
+      "nameNote": "",
+      "notes": "No better than the baseline unretrofitted, unaugmented starter DDs, L'Intrépide should be avoided by new players.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 68,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
     }
   ],
   "L'Opiniâtre": [
