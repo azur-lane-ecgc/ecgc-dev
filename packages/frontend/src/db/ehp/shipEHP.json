@@ -266,6 +266,18 @@
       "std": "28.33%"
     }
   ],
+  "Cherbourg": [
+    {
+      "name": "Cherbourg (VH)",
+      "totalEHP": "128.78%",
+      "std": "32.27%"
+    },
+    {
+      "name": "Cherbourg",
+      "totalEHP": "116.73%",
+      "std": "26.95%"
+    }
+  ],
   "Drake": [
     {
       "name": "Drake (Fate)",
@@ -3413,6 +3425,13 @@
       "name": "Honolulu",
       "totalEHP": "68.02%",
       "std": "21.48%"
+    }
+  ],
+  "L'Intrépide": [
+    {
+      "name": "L'Intrépide",
+      "totalEHP": "67.99%",
+      "std": "28.43%"
     }
   ],
   "Namiko": [
