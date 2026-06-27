@@ -5196,7 +5196,7 @@
   "Mecklenburg": [
     {
       "nameNote": "",
-      "notes": "One of the best all-around rainbow BBs in the game currently. She has good damage against light armor and outstanding damage against medium and heavy armor. She's one of the few BBs with salvo capacity +1, making her quicker to reload her main guns in practice compared to other BBs. She has a 5% buff for the fleet for 8s when she fires, so she prefers firing first, but 5% may not beat good sync if she can't easily fire first. Her skills do give her a preference to be sortied with Bismarck Zwei (see Mecklenburg's other entry), but this is very much a case of nice to have than a necessity for her to perform well.",
+      "notes": "One of the best all-around rainbow BBs in the game currently. She has good damage against light armor and outstanding damage against medium and heavy armor. She's one of the few BBs with salvo capacity +1, making her quicker to reload her main guns in practice compared to other BBs. She has a 5% buff for the fleet for 8s when she fires, so she prefers firing first, but 5% may not beat good sync if she can't easily fire first. Her skills do give her a preference to be sortied with Bismarck Zwei or Götz, but this is very much a case of nice to have than a necessity for her to perform well.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "S",
@@ -6400,7 +6400,7 @@
       "offensivebuff": 2,
       "selfsurvival": null,
       "aa": null,
-      "rammers": null,
+      "rammers": 1,
       "othermain": 3,
       "vgsurvival": null
     }
