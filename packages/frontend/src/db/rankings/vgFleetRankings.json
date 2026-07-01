@@ -11751,7 +11751,7 @@
       "ex": "D",
       "consistency": null,
       "fleetreq": null,
-      "gearreq": 1,
+      "gearreq": null,
       "flagreq": null,
       "lightdmg": 3,
       "mediumdmg": 2,
