@@ -7744,7 +7744,7 @@
       "mediumdmg": 4,
       "heavydmg": 2,
       "aoedmg": 3,
-      "offensivebuff": 2,
+      "offensivebuff": 1,
       "selfsurvival": 108,
       "aa": null,
       "asw": null,
@@ -14929,7 +14929,7 @@
       "selfsurvival": 123,
       "aa": 3,
       "asw": 2,
-      "defensivebuff": null
+      "defensivebuff": 1
     }
   ],
   "Z9": [
@@ -15006,7 +15006,7 @@
       "mediumdmg": 3,
       "heavydmg": 2,
       "aoedmg": 2,
-      "offensivebuff": 2,
+      "offensivebuff": 1,
       "selfsurvival": 155,
       "aa": null,
       "asw": null,
