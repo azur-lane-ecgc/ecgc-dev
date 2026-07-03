@@ -1207,7 +1207,7 @@
     "augments": ["Sims' Playtime", "Dual Swords", "Hammer"],
     "samEval": "Sims (Retrofit) is a damage-oriented DD with meh stats and skills. Her damage is very meh, and her support, while good, is not worth using her for over other damage-oriented options. Collection only.",
     "fastLoad": null,
-    "roles": ["DefSupport", "OffSupport"],
+    "roles": ["DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -1334,7 +1334,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "Eldridge (Retrofit) is a support-oriented DD with good stats and amazing skills. Despite having 2 AA Guns post-retrofit, her AA is not enough to solo-carry a fleet; however, it is still above average. Upon retrofit, she gains a special ASW weapon with stats similar to a +10 Hedgehog, which drastically increases her ASW capabilities. Her Skill 1 provides complete immunity for all Vanguard damage taken, although the trigger condition can be hard to satisfy if she is in the center of the Vanguard Fleet. Her retrofit enhances this skill to prevent DoT or other self-damage from happening. The Skill 1 Barrage is also good. Her Skill 2 gives her a barrage whenever the Flagship launches their main weapons, which is aimed and does good damage. Her AoA is improved upon retrofit to also do more damage, which is nice; no AoA reduction hurts though. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport", "OffSupport"],
+    "roles": ["Tank", "AA", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -1723,7 +1723,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["AA"],
     "locations": {
       "events": [],
       "other": [
@@ -19901,7 +19901,7 @@
     "augments": ["Explorer's Eye", "Scepter", "Hunting Bow"],
     "samEval": "Shangri-La is a damage-oriented CV with great stats and skills. Her personal damage is very good due to her damage ramping self-buffs, as well as an on-strike barrage (which is unfortunately RNG). Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [
         {
@@ -21472,7 +21472,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "San Juan is an AA-oriented CL with bad stats and skills. She has great AA, but it is not enough to justify using her over a damage option (to outdamage the enemy before their planes kill you). Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["AA"],
     "locations": {
       "events": [
         {
@@ -22967,7 +22967,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DefSupport"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -29181,7 +29181,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Charybdis is a support-oriented CL with meh stats and skills. Her personal damage is bad due to only 1 MGM and bad barrages. Her AA damage is good, but nothing special. Her Skill 1 whirlpool is very underwhelming and has a small AoE. Collection only.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["AA"],
     "locations": {
       "events": [
         {
@@ -45926,7 +45926,7 @@
     "augments": ["Zadkiel", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport", "Meh"],
+    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -48524,7 +48524,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer", "TopDmg"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [],
       "other": [
