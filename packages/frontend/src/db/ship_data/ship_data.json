@@ -2038,7 +2038,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["OK! Cap", "Greatsword", "Lance"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["DmgDealer"],
@@ -26639,7 +26639,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Grazia e Disciplina", "Greatsword", "Lance"],
     "samEval": "Pola is a mob-tank oriented CA with great stats and skills. Her personal damage is good due to MGM+1 CA guns, plus her skill barrages. Her bulk is also good for mobbing due to her self-buffs. Overall, she is a great ship.",
     "fastLoad": null,
     "roles": ["DmgDealer", "TopDmg", "DefSupport"],
@@ -48764,6 +48764,286 @@
         {
           "name": "Shipyard (PR8)",
           "href": "Shipyard#Series_8"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "20043": {
+    "id": 20043,
+    "ship": "Duncan",
+    "faction": "HMS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "BC",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.45,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun", "CL Main Gun"],
+        "efficiency": 1.8,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Shipyard (PRundefined)",
+          "href": "Shipyard_(PRundefined)"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "20044": {
+    "id": 20044,
+    "ship": "Takahashi",
+    "faction": "IJN",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.3,
+        "mounts": 2
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.5,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.75,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Shipyard (PRundefined)",
+          "href": "Shipyard_(PRundefined)"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "20045": {
+    "id": 20045,
+    "ship": "Max Immelmann",
+    "faction": "KMS",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.6,
+        "mounts": 3
+      },
+      {
+        "type": ["Dive Bomber", "Torpedo Bomber"],
+        "efficiency": 1.6,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber", "Fighter"],
+        "efficiency": 1.6,
+        "mounts": 3
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Shipyard (PRundefined)",
+          "href": "Shipyard_(PRundefined)"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "20046": {
+    "id": 20046,
+    "ship": "Orage",
+    "faction": "FFNF",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "+30% stats gained from Auxiliary Equipment.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.7,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Shipyard (PRundefined)",
+          "href": "Shipyard_(PRundefined)"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "20047": {
+    "id": 20047,
+    "ship": "Valparaíso",
+    "faction": "Universal",
+    "rarity": 5,
+    "isKai": false,
+    "hullType": "BB",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.4,
+        "mounts": 3
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.5,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun", "Timed Fuze AA Gun"],
+        "efficiency": 1.5,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Bowgun", "Officer's Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Shipyard (PRundefined)",
+          "href": "Shipyard_(PRundefined)"
         }
       ],
       "construction": [],
