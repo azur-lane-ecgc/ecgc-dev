@@ -133,6 +133,18 @@
       "percentSD": "119.53%"
     }
   ],
+  "Takahashi": [
+    {
+      "name": "Takahashi (150gun)",
+      "totalAA": "3232",
+      "percentSD": "113.45%"
+    },
+    {
+      "name": "Takahashi",
+      "totalAA": "2455",
+      "percentSD": "86.17%"
+    }
+  ],
   "Laffey II": [
     {
       "name": "Laffey II",
@@ -196,13 +208,6 @@
       "percentSD": "64.29%"
     }
   ],
-  "Rikka Takarada": [
-    {
-      "name": "Rikka Takarada (Sky Vitter)",
-      "totalAA": "926",
-      "percentSD": "32.51%"
-    }
-  ],
   "Allen M. Sumner": [
     {
       "name": "Allen M. Sumner",
@@ -238,13 +243,6 @@
       "percentSD": "58.87%"
     }
   ],
-  "Reisalin Stout": [
-    {
-      "name": "Reisalin Stout (Laute Plajig)",
-      "totalAA": "891",
-      "percentSD": "31.27%"
-    }
-  ],
   "Scylla": [
     {
       "name": "Scylla",
@@ -257,6 +255,13 @@
       "name": "San Juan",
       "totalAA": "1613",
       "percentSD": "56.63%"
+    }
+  ],
+  "Ingraham": [
+    {
+      "name": "Ingraham",
+      "totalAA": "1608",
+      "percentSD": "56.43%"
     }
   ],
   "Dido": [
@@ -402,13 +407,6 @@
       "name": "Santa Fe",
       "totalAA": "1144",
       "percentSD": "40.15%"
-    }
-  ],
-  "Ingraham": [
-    {
-      "name": "Ingraham",
-      "totalAA": "1608",
-      "percentSD": "56.43%"
     }
   ],
   "Moskva": [
@@ -600,6 +598,13 @@
       "percentSD": "32.58%"
     }
   ],
+  "Rikka Takarada": [
+    {
+      "name": "Rikka Takarada (Sky Vitter)",
+      "totalAA": "926",
+      "percentSD": "32.51%"
+    }
+  ],
   "Baltimore μ": [
     {
       "name": "Baltimore μ",
@@ -626,6 +631,13 @@
       "name": "Georgia",
       "totalAA": "905",
       "percentSD": "31.75%"
+    }
+  ],
+  "Reisalin Stout": [
+    {
+      "name": "Reisalin Stout (Laute Plajig)",
+      "totalAA": "891",
+      "percentSD": "31.27%"
     }
   ],
   "Baltimore": [
