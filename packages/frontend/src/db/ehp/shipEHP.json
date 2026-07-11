@@ -297,6 +297,18 @@
       "std": "38.17%"
     }
   ],
+  "Z52": [
+    {
+      "name": "Z52 (pewpew)",
+      "totalEHP": "127.18%",
+      "std": "43.32%"
+    },
+    {
+      "name": "Z52 (Twin 100)",
+      "totalEHP": "121.12%",
+      "std": "42.28%"
+    }
+  ],
   "Azuma": [
     {
       "name": "Azuma (Fate) (VH)",
@@ -343,18 +355,6 @@
       "name": "Otto von Alvensleben (114/PlyGun)",
       "totalEHP": "110.93%",
       "std": "39.08%"
-    }
-  ],
-  "Z52": [
-    {
-      "name": "Z52 (pewpew)",
-      "totalEHP": "123.41%",
-      "std": "41.78%"
-    },
-    {
-      "name": "Z52 (Twin 100)",
-      "totalEHP": "117.54%",
-      "std": "40.77%"
     }
   ],
   "Prinz Eugen μ": [
@@ -452,6 +452,13 @@
       "name": "Dimitri Donskoi",
       "totalEHP": "115.60%",
       "std": "31.79%"
+    }
+  ],
+  "Takahashi": [
+    {
+      "name": "Takahashi",
+      "totalEHP": "114.93%",
+      "std": "25.28%"
     }
   ],
   "Kaguya Yamai and Yuzuru Yamai": [
@@ -1095,6 +1102,13 @@
       "name": "Choukai",
       "totalEHP": "96.88%",
       "std": "31.86%"
+    }
+  ],
+  "Orage": [
+    {
+      "name": "Orage",
+      "totalEHP": "96.83%",
+      "std": "36.18%"
     }
   ],
   "Chang Wu": [
@@ -1938,6 +1952,18 @@
       "std": "24.34%"
     }
   ],
+  "Z47": [
+    {
+      "name": "Z47 (VS Light)",
+      "totalEHP": "83.58%",
+      "std": "31.05%"
+    },
+    {
+      "name": "Z47 (VS Other)",
+      "totalEHP": "71.04%",
+      "std": "25.13%"
+    }
+  ],
   "Javelin": [
     {
       "name": "Javelin (Retrofit)",
@@ -2167,18 +2193,6 @@
       "name": "Cassin",
       "totalEHP": "71.66%",
       "std": "26.89%"
-    }
-  ],
-  "Z47": [
-    {
-      "name": "Z47 (VS Light)",
-      "totalEHP": "80.38%",
-      "std": "29.55%"
-    },
-    {
-      "name": "Z47 (VS Other)",
-      "totalEHP": "68.32%",
-      "std": "23.83%"
     }
   ],
   "Eskimo": [
@@ -3077,11 +3091,25 @@
       "std": "27.28%"
     }
   ],
+  "Pensacola": [
+    {
+      "name": "Pensacola",
+      "totalEHP": "71.02%",
+      "std": "21.13%"
+    }
+  ],
   "Hero": [
     {
       "name": "Hero",
       "totalEHP": "71.00%",
       "std": "30.47%"
+    }
+  ],
+  "Z13": [
+    {
+      "name": "Z13",
+      "totalEHP": "70.97%",
+      "std": "26.79%"
     }
   ],
   "Dupleix": [
@@ -3232,6 +3260,13 @@
       "std": "28.80%"
     }
   ],
+  "L'Intrépide": [
+    {
+      "name": "L'Intrépide",
+      "totalEHP": "70.07%",
+      "std": "29.52%"
+    }
+  ],
   "Ayanami": [
     {
       "name": "Ayanami (Retrofit)",
@@ -3380,13 +3415,6 @@
       "std": "21.18%"
     }
   ],
-  "Z13": [
-    {
-      "name": "Z13",
-      "totalEHP": "68.41%",
-      "std": "25.54%"
-    }
-  ],
   "Aulick": [
     {
       "name": "Aulick",
@@ -3425,13 +3453,6 @@
       "name": "Honolulu",
       "totalEHP": "68.02%",
       "std": "21.48%"
-    }
-  ],
-  "L'Intrépide": [
-    {
-      "name": "L'Intrépide",
-      "totalEHP": "67.99%",
-      "std": "28.43%"
     }
   ],
   "Namiko": [
@@ -3578,6 +3599,13 @@
       "name": "Crescent",
       "totalEHP": "56.81%",
       "std": "26.49%"
+    }
+  ],
+  "Z9": [
+    {
+      "name": "Z9",
+      "totalEHP": "66.61%",
+      "std": "26.92%"
     }
   ],
   "Hai Tien": [
@@ -3865,13 +3893,6 @@
       "std": "19.41%"
     }
   ],
-  "Z9": [
-    {
-      "name": "Z9",
-      "totalEHP": "64.11%",
-      "std": "25.63%"
-    }
-  ],
   "White Heart": [
     {
       "name": "White Heart",
@@ -3985,6 +4006,13 @@
       "name": "Hardy",
       "totalEHP": "63.26%",
       "std": "26.45%"
+    }
+  ],
+  "Z14": [
+    {
+      "name": "Z14",
+      "totalEHP": "63.09%",
+      "std": "24.68%"
     }
   ],
   "Yura": [
@@ -4206,13 +4234,6 @@
       "std": "24.56%"
     }
   ],
-  "Z14": [
-    {
-      "name": "Z14",
-      "totalEHP": "60.71%",
-      "std": "23.45%"
-    }
-  ],
   "Curlew": [
     {
       "name": "Curlew (Retrofit)",
@@ -4352,6 +4373,13 @@
       "std": "20.30%"
     }
   ],
+  "Z15": [
+    {
+      "name": "Z15",
+      "totalEHP": "58.56%",
+      "std": "22.61%"
+    }
+  ],
   "Shirayuki": [
     {
       "name": "Shirayuki",
@@ -4434,13 +4462,6 @@
       "std": "21.89%"
     }
   ],
-  "Z15": [
-    {
-      "name": "Z15",
-      "totalEHP": "56.48%",
-      "std": "21.53%"
-    }
-  ],
   "Naka": [
     {
       "name": "Naka",
@@ -4460,13 +4481,6 @@
       "name": "Z2",
       "totalEHP": "55.96%",
       "std": "21.13%"
-    }
-  ],
-  "Pensacola": [
-    {
-      "name": "Pensacola",
-      "totalEHP": "55.68%",
-      "std": "16.81%"
     }
   ],
   "Salt Lake City": [
