@@ -26642,7 +26642,7 @@
     "augments": ["Grazia e Disciplina", "Greatsword", "Lance"],
     "samEval": "Pola is a mob-tank oriented CA with great stats and skills. Her personal damage is good due to MGM+1 CA guns, plus her skill barrages. Her bulk is also good for mobbing due to her self-buffs. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -32135,7 +32135,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Hwa-Jah is supposed to be a damage-oriented CVL, but with 6 Seaplanes her personal damage is awful. The barrage isn't good enough to carry. Collection-only. Note: She has CV RLD+1 fleet technology at Level 120.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "Meh"],
+    "roles": ["DmgDealer", "AA", "DefSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -48828,7 +48828,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -48884,7 +48884,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "AA", "AACarry", "Bad"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "AA", "AACarry", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -48940,7 +48940,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -48996,7 +48996,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -49052,7 +49052,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
