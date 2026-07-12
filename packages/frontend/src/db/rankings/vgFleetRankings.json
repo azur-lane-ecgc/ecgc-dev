@@ -6107,7 +6107,7 @@
   "Isuzu": [
     {
       "nameNote": "",
-      "notes": "Requires even more life support to be used in Chapter 15.",
+      "notes": "Isuzu contributes very little surface damage and requires even more life support to be used in Chapter 15 or higher.",
       "hardarbiter": "F",
       "meta": "F",
       "cm": "F",
@@ -6132,7 +6132,7 @@
     },
     {
       "nameNote": "Retrofit",
-      "notes": "Requires life support to be used in Chapter 15.",
+      "notes": "Isuzu contributes very little surface damage and requires life support to be used in Chapter 15 or higher.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -10547,6 +10547,33 @@
       "defensivebuff": null
     }
   ],
+  "Orage": [
+    {
+      "nameNote": "",
+      "notes": "Orage has flashy torpedo barrages but no relevant fleet buffs or AA.",
+      "hardarbiter": "B",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "A",
+      "w14boss": "A",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 3,
+      "heavydmg": 3,
+      "aoedmg": 4,
+      "offensivebuff": null,
+      "selfsurvival": 97,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Otto von Alvensleben": [
     {
       "nameNote": "",
@@ -10900,10 +10927,10 @@
     {
       "nameNote": "",
       "notes": "Assumed to be with another Sardegna Empire ship. Buffs Sardegna Empire vanguard, especially Zara class.",
-      "hardarbiter": "B",
-      "meta": "B",
-      "cm": "B",
-      "w14mob": "B",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "C",
       "w14boss": "B",
       "w15mob": "C",
       "w15boss": "C",
@@ -10920,7 +10947,7 @@
       "selfsurvival": 92,
       "aa": null,
       "asw": null,
-      "defensivebuff": 1
+      "defensivebuff": null
     }
   ],
   "Pompeo Magno": [
@@ -12884,6 +12911,33 @@
       "defensivebuff": null
     }
   ],
+  "Takahashi": [
+    {
+      "nameNote": "",
+      "notes": "Takahashi is a very good ship for late campaign stages because she has excellent AA buff and good AA, a small amount of shielding for the vanguard, good damage output, and decent eHP. However, her only damage buff for the fleet is a 40% slow that is not synced to typical main fleets, making her unimpressive for single-target bossing. When there is more than one enemy, Takahashi can do around 10% more damage than the numbers shown here.",
+      "hardarbiter": "A",
+      "meta": "B",
+      "cm": "A",
+      "w14mob": "S",
+      "w14boss": "S",
+      "w15mob": "A",
+      "w15boss": "A",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": -1,
+      "flagreq": null,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 4,
+      "aoedmg": 5,
+      "offensivebuff": null,
+      "selfsurvival": 120,
+      "aa": 4,
+      "asw": null,
+      "defensivebuff": 1
+    }
+  ],
   "Takao": [
     {
       "nameNote": "",
@@ -13674,7 +13728,7 @@
       "cm": "B",
       "w14mob": "A",
       "w14boss": "B",
-      "w15mob": "D",
+      "w15mob": "C",
       "w15boss": "D",
       "ex": "D",
       "consistency": null,

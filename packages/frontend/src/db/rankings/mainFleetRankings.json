@@ -51,7 +51,7 @@
       "dmguptime": null,
       "offensivebuff": 3,
       "selfsurvival": 1,
-      "aa": null,
+      "aa": 1,
       "rammers": null,
       "othermain": null,
       "vgsurvival": null
@@ -78,7 +78,7 @@
       "dmguptime": null,
       "offensivebuff": 5,
       "selfsurvival": 1,
-      "aa": null,
+      "aa": 1,
       "rammers": null,
       "othermain": null,
       "vgsurvival": null
@@ -1317,7 +1317,7 @@
       "dmguptime": null,
       "offensivebuff": 2,
       "selfsurvival": null,
-      "aa": null,
+      "aa": 1,
       "rammers": null,
       "othermain": null,
       "vgsurvival": null
@@ -1843,6 +1843,35 @@
       "vgsurvival": null
     }
   ],
+  "Duncan": [
+    {
+      "nameNote": "",
+      "notes": "Duncan is a strong but not top-level gold BC. Plenty of BBs and BCs from previous research seasons are equal to or stronger than Duncan. Her skills may seem contradictory because her barrage prefers the flagship position while her main guns prefer off-flag. Duncan should be kept off-flag unless she is your only BB/BC in campaign to shoot rushing enemies.",
+      "hardarbiter": "B",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 3,
+      "mediumdmg": 3,
+      "heavydmg": 3,
+      "aoedmg": 3,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Dunkerque": [
     {
       "nameNote": "",
@@ -2154,7 +2183,7 @@
       "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": null,
-      "aa": null,
+      "aa": 1,
       "rammers": null,
       "othermain": 1,
       "vgsurvival": null
@@ -2181,7 +2210,7 @@
       "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": null,
-      "aa": null,
+      "aa": 1,
       "rammers": null,
       "othermain": 1,
       "vgsurvival": null
@@ -2384,7 +2413,7 @@
       "dmguptime": 2,
       "offensivebuff": 2,
       "selfsurvival": null,
-      "aa": null,
+      "aa": 1,
       "rammers": 1,
       "othermain": null,
       "vgsurvival": null
@@ -3685,7 +3714,7 @@
       "dmguptime": 1,
       "offensivebuff": null,
       "selfsurvival": -2,
-      "aa": null,
+      "aa": 1,
       "rammers": null,
       "othermain": 1,
       "vgsurvival": null
@@ -5220,6 +5249,35 @@
       "vgsurvival": null
     }
   ],
+  "Max Immelmann": [
+    {
+      "nameNote": "",
+      "notes": "Defining a completely new tier of damage for carriers upon her release, Max Immelmann is a very straightforward damage dealer. She also has powerful defensive skills that remove some RNG from late campaign boss battles, and she would become indispensable for mob battles too if stacking healers becomes no longer necessary (which unfortunately won't be anytime soon).",
+      "hardarbiter": "SS",
+      "meta": "S",
+      "cm": "SS",
+      "w14mob": "S",
+      "w14boss": "SS",
+      "w15mob": "B",
+      "w15boss": "S",
+      "ex": "A",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 6,
+      "mediumdmg": 7,
+      "heavydmg": 6,
+      "aoedmg": 6,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": 1,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Mecklenburg": [
     {
       "nameNote": "",
@@ -5231,7 +5289,7 @@
       "w14boss": "S",
       "w15mob": "A",
       "w15boss": "A",
-      "ex": "S",
+      "ex": "A",
       "consistency": null,
       "fleetreq": null,
       "gearreq": null,
@@ -8213,6 +8271,35 @@
       "aa": null,
       "rammers": null,
       "othermain": null,
+      "vgsurvival": null
+    }
+  ],
+  "Valparaíso": [
+    {
+      "nameNote": "",
+      "notes": "Valparaíso is Raffaello with more damage and less healing. Valparaíso's campaign performance is unknown due to how differently her damage is distributed, but she will very probably be around the level of Musashi and Raffaello. Using fast DD guns for healing in campaign means she has poor Bombing Ship defense in the first 20 seconds of the battle, but this is a necessary cost to improve both healing and Bombing Ship defense later in the battle. Like Oumi, her performance in bossing heavily depends on whether the boss is sitting still for most of the battle. These ratings assume the boss is moving half the time at 25 speed.",
+      "hardarbiter": "SS",
+      "meta": "S",
+      "cm": "S",
+      "w14mob": "SS",
+      "w14boss": "A",
+      "w15mob": "S",
+      "w15boss": "A",
+      "ex": "A",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": -1,
+      "flagreq": null,
+      "lightdmg": 6,
+      "mediumdmg": 5,
+      "heavydmg": 5,
+      "aoedmg": 5,
+      "dmguptime": 2,
+      "offensivebuff": null,
+      "selfsurvival": 2,
+      "aa": 1,
+      "rammers": 1,
+      "othermain": 1,
       "vgsurvival": null
     }
   ],
