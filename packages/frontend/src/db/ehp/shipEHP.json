@@ -1,18 +1,4 @@
 {
-  "22": [
-    {
-      "name": "22",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
-    }
-  ],
-  "33": [
-    {
-      "name": "33",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
-    }
-  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -414,6 +400,18 @@
       "std": "37.16%"
     }
   ],
+  "Takahashi": [
+    {
+      "name": "Takahashi (Mobbing)",
+      "totalEHP": "119.93%",
+      "std": "25.82%"
+    },
+    {
+      "name": "Takahashi",
+      "totalEHP": "114.93%",
+      "std": "25.28%"
+    }
+  ],
   "Prinz Moritz": [
     {
       "name": "Prinz Moritz",
@@ -452,13 +450,6 @@
       "name": "Dimitri Donskoi",
       "totalEHP": "115.60%",
       "std": "31.79%"
-    }
-  ],
-  "Takahashi": [
-    {
-      "name": "Takahashi",
-      "totalEHP": "114.93%",
-      "std": "25.28%"
     }
   ],
   "Kaguya Yamai and Yuzuru Yamai": [
@@ -1394,6 +1385,18 @@
       "std": "44.69%"
     }
   ],
+  "Charles Ausburne": [
+    {
+      "name": "Charles Ausburne (Retrofit)",
+      "totalEHP": "91.51%",
+      "std": "35.09%"
+    },
+    {
+      "name": "Charles Ausburne",
+      "totalEHP": "78.02%",
+      "std": "29.76%"
+    }
+  ],
   "Le Hardi": [
     {
       "name": "Le Hardi",
@@ -1586,6 +1589,13 @@
       "name": "Atago",
       "totalEHP": "88.75%",
       "std": "28.38%"
+    }
+  ],
+  "Bristol META": [
+    {
+      "name": "Bristol META",
+      "totalEHP": "88.13%",
+      "std": "33.39%"
     }
   ],
   "Cleveland": [
@@ -1788,16 +1798,11 @@
       "std": "38.69%"
     }
   ],
-  "Charles Ausburne": [
+  "Unzen Chan": [
     {
-      "name": "Charles Ausburne",
-      "totalEHP": "85.24%",
-      "std": "33.23%"
-    },
-    {
-      "name": "Charles Ausburne (Retrofit)",
-      "totalEHP": "84.28%",
-      "std": "33.08%"
+      "name": "Unzen Chan",
+      "totalEHP": "85.35%",
+      "std": "23.16%"
     }
   ],
   "Janus": [
@@ -2117,6 +2122,13 @@
       "name": "Purple Heart",
       "totalEHP": "81.58%",
       "std": "26.38%"
+    }
+  ],
+  "Königsberg META": [
+    {
+      "name": "Königsberg META",
+      "totalEHP": "81.55%",
+      "std": "25.52%"
     }
   ],
   "Asama": [
@@ -3415,6 +3427,18 @@
       "std": "21.18%"
     }
   ],
+  "Kisaragi": [
+    {
+      "name": "Kisaragi (Retrofit)",
+      "totalEHP": "68.45%",
+      "std": "24.71%"
+    },
+    {
+      "name": "Kisaragi",
+      "totalEHP": "64.08%",
+      "std": "23.87%"
+    }
+  ],
   "Aulick": [
     {
       "name": "Aulick",
@@ -4194,6 +4218,13 @@
       "std": "18.30%"
     }
   ],
+  "3300.00%": [
+    {
+      "name": "3300.00%",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Z20": [
     {
       "name": "Z20",
@@ -4270,6 +4301,13 @@
       "name": "Shiranui",
       "totalEHP": "56.79%",
       "std": "22.88%"
+    }
+  ],
+  "2200.00%": [
+    {
+      "name": "2200.00%",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
     }
   ],
   "Jersey": [
@@ -4488,18 +4526,6 @@
       "name": "Salt Lake City",
       "totalEHP": "55.29%",
       "std": "16.61%"
-    }
-  ],
-  "Kisaragi": [
-    {
-      "name": "Kisaragi (Retrofit)",
-      "totalEHP": "55.28%",
-      "std": "22.21%"
-    },
-    {
-      "name": "Kisaragi",
-      "totalEHP": "51.76%",
-      "std": "21.45%"
     }
   ],
   "Chang Feng": [
