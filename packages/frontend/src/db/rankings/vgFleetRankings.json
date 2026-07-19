@@ -2,7 +2,7 @@
   "2B": [
     {
       "nameNote": "",
-      "notes": "In a multi-battle sortie, 2B effectively gets 20% damage reduction as long as her shield doesn't fully break. However, healing her is \"delayed\" by one battle, so her max \"HP\" is effectively some fraction of her nominal max, depending on how difficult the mob battles are. All it takes an unlucky battle for her to explode beyond repair. In a single battle, 2B's survivability behaves like normal ships except that she can't be healed by Toolkit or other sources.",
+      "notes": "In a multi-battle sortie, 2B effectively gets 20% damage reduction as long as her shield doesn't fully break. However, healing her is \"delayed\" by one battle, so her max \"HP\" is effectively some fraction of her nominal max, depending on how difficult the mob battles are. All it takes is one unlucky battle for her to explode beyond repair. In a single battle, 2B's survivability behaves like normal ships except that she can't be healed by Toolkit or other sources.",
       "hardarbiter": "B",
       "meta": "C",
       "cm": "D",
@@ -32,7 +32,7 @@
       "notes": "Because Berserk procs immediately and lasts for 40 seconds, A2 is slightly stronger in shorter battles, but she is not as biased as the double preloaded torpedo-focused ships like Ibuki and Shimakaze.",
       "hardarbiter": "B",
       "meta": "B",
-      "cm": "B",
+      "cm": "C",
       "w14mob": "B",
       "w14boss": "B",
       "w15mob": "C",
@@ -47,7 +47,7 @@
       "heavydmg": 3,
       "aoedmg": 4,
       "offensivebuff": null,
-      "selfsurvival": 90,
+      "selfsurvival": 85,
       "aa": null,
       "asw": null,
       "defensivebuff": null
