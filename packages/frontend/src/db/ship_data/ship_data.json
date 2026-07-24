@@ -41274,6 +41274,174 @@
       "isCollab": false
     }
   },
+  "746": {
+    "id": 746,
+    "ship": "Superb",
+    "faction": "HMS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.55,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.55,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg", "AA"],
+    "locations": {
+      "events": [
+        {
+          "name": "Authentic Horror Story: Escape from White Night Manor!",
+          "href": "Authentic_Horror_Story:_Escape_from_White_Night_Manor!"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "747": {
+    "id": 747,
+    "ship": "Surrey",
+    "faction": "HMS",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CA",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CA Main Gun"],
+        "efficiency": 1.7,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.1,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.65,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatsword", "Lance"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer"],
+    "locations": {
+      "events": [
+        {
+          "name": "Authentic Horror Story: Escape from White Night Manor!",
+          "href": "Authentic_Horror_Story:_Escape_from_White_Night_Manor!"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "748": {
+    "id": 748,
+    "ship": "Griffin",
+    "faction": "HMS",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "DD",
+    "fleetType": "vg",
+    "LBBonus": "+30% stats gained from Auxiliary Equipment.",
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Torpedo"],
+        "efficiency": 1.35,
+        "mounts": 2
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.05,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Dual Swords", "Hammer"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DefSupport"],
+    "locations": {
+      "events": [
+        {
+          "name": "Authentic Horror Story: Escape from White Night Manor!",
+          "href": "Authentic_Horror_Story:_Escape_from_White_Night_Manor!"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
   "10001": {
     "id": 10001,
     "ship": "Neptune (Neptunia)",
