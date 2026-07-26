@@ -3008,7 +3008,7 @@
     "augments": ["No More Tears", "Bowgun", "Officer's Sword"],
     "samEval": "Arizona is a support-oriented BB with meh stats and skills. Her personal damage is pretty underwhelming, and her healing is too RNG to support a full fleet, even with her Augment module. Collection only.",
     "fastLoad": null,
-    "roles": ["DefSupport", "Meh"],
+    "roles": ["DefSupport"],
     "locations": {
       "events": [],
       "other": [

@@ -719,7 +719,7 @@
   "Arizona": [
     {
       "nameNote": "",
-      "notes": null,
+      "notes": "In expectation, Arizona heals all vanguard ships for 5% max HP per salvo, but her consistency and damage are really bad.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -741,7 +741,7 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": null,
-      "othermain": 2,
+      "othermain": 4,
       "vgsurvival": null
     }
   ],
@@ -758,7 +758,7 @@
       "w15boss": "D",
       "ex": "A*",
       "consistency": -1,
-      "fleetreq": null,
+      "fleetreq": -1,
       "gearreq": null,
       "flagreq": -1,
       "lightdmg": 1,
