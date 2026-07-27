@@ -45,11 +45,18 @@
       "percentSD": "100.00%"
     }
   ],
+  "Surrey": [
+    {
+      "name": "Surrey",
+      "totalAA": "1422",
+      "percentSD": "49.91%"
+    }
+  ],
   "Superb": [
     {
       "name": "Superb",
-      "totalAA": "1621",
-      "percentSD": "56.89%"
+      "totalAA": "966",
+      "percentSD": "33.90%"
     }
   ],
   "Akashi": [
