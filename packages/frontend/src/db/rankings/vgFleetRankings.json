@@ -12753,33 +12753,8 @@
   ],
   "Superb": [
     {
-      "nameNote": "with 7s reload flagship",
-      "notes": "Another Götz beneficiary, Superb's personal damage scales very greatly with the flagship's reload speed. By being paired with a flagship who reloads in 7 seconds rather than 18 seconds, Superb's DPS increases by a massive 50% to reach the high end of all vanguard ships.",
-      "hardarbiter": "A",
-      "meta": "B",
-      "cm": "B",
-      "w14mob": "A",
-      "w14boss": "B",
-      "w15mob": "B",
-      "w15boss": "B",
-      "ex": "D",
-      "consistency": null,
-      "fleetreq": null,
-      "gearreq": null,
-      "flagreq": null,
-      "lightdmg": 5,
-      "mediumdmg": 5,
-      "heavydmg": 5,
-      "aoedmg": 5,
-      "offensivebuff": null,
-      "selfsurvival": 85,
-      "aa": 1,
-      "asw": null,
-      "defensivebuff": null
-    },
-    {
       "nameNote": "",
-      "notes": "Superb's personal damage scales very greatly with the flagship's reload speed. When with a flagship who reloads in 18 seconds, Superb is a generic non-tank vanguard ship who has decent AA.",
+      "notes": "Superb's personal damage scales very greatly with the flagship's reload speed. When with a flagship who reloads in 18 seconds, Superb is a generic non-tank vanguard ship who has decent AA. Or, by being paired with a flagship who reloads in 7 seconds like Götz rather than 18 seconds, Superb's DPS increases by a massive 50% to reach the high end of all vanguard ships.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
@@ -12825,7 +12800,7 @@
       "aoedmg": 3,
       "offensivebuff": null,
       "selfsurvival": 100,
-      "aa": 2,
+      "aa": 1,
       "asw": null,
       "defensivebuff": null
     }
