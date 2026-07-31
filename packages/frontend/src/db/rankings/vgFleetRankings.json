@@ -10493,6 +10493,33 @@
       "defensivebuff": null
     }
   ],
+  "Nürnberg META": [
+    {
+      "nameNote": "",
+      "notes": "There needs to be enemy airplanes so that Nürnberg META doesn't lose ~11% eHP.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 89,
+      "aa": 2,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Ognevoy": [
     {
       "nameNote": "",
