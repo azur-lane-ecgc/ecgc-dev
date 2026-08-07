@@ -10473,7 +10473,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Wear It With Flair", "Greatsword", "Lance"],
     "samEval": "Nachi (Retrofit) is a tank-oriented CA with good stats and skills. Her bulk is good enough to tank most content, and she has great fleet support, especially with other CA/CL/CB. Her personal damage is meh due to only 1 MGM. Her Skill 1 can be both situationally good or bad, depending on the damage of the stage she is on, so be wary. Overall, she is a good ship, but can be a sidegrade to more easily accessible options.",
     "fastLoad": null,
     "roles": ["Meh"],
@@ -24893,10 +24893,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Bowgun", "Officer's Sword"],
+    "augments": ["Ovenforged Pride", "Bowgun", "Officer's Sword"],
     "samEval": "Howe is an off-flag damage-oriented BB with great stats and skills. She has a 100% chance timed barrage that does decent damage, while also providing minor RLD support to herself and other BB/BC/BBVs. She is ideally sortied to make full use of her Skill 2 self-buffs; however, that is not fully necessary for her to be good. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "OffSupport", "Meh"],
+    "roles": ["DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
