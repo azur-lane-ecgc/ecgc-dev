@@ -912,6 +912,13 @@
       "std": "33.40%"
     }
   ],
+  "Surrey": [
+    {
+      "name": "Surrey",
+      "totalEHP": "100.38%",
+      "std": "29.93%"
+    }
+  ],
   "De Zeven Provinciën": [
     {
       "name": "De Zeven Provinciën",
@@ -1076,6 +1083,18 @@
       "std": "34.12%"
     }
   ],
+  "Nachi": [
+    {
+      "name": "Nachi (Retrofit)",
+      "totalEHP": "96.94%",
+      "std": "26.22%"
+    },
+    {
+      "name": "Nachi",
+      "totalEHP": "92.32%",
+      "std": "25.57%"
+    }
+  ],
   "Mogami": [
     {
       "name": "Mogami (Retrofit)",
@@ -1107,6 +1126,13 @@
       "name": "Chang Wu",
       "totalEHP": "96.75%",
       "std": "29.15%"
+    }
+  ],
+  "2B": [
+    {
+      "name": "2B",
+      "totalEHP": "96.58%",
+      "std": "27.81%"
     }
   ],
   "Rikka Takarada": [
@@ -1444,6 +1470,13 @@
       "std": "21.14%"
     }
   ],
+  "A2": [
+    {
+      "name": "A2",
+      "totalEHP": "90.29%",
+      "std": "26.14%"
+    }
+  ],
   "Maury": [
     {
       "name": "Maury (Retrofit)",
@@ -1563,6 +1596,13 @@
       "name": "Dido μ (Mobbing)",
       "totalEHP": "89.43%",
       "std": "28.24%"
+    }
+  ],
+  "Nürnberg META": [
+    {
+      "name": "Nürnberg META",
+      "totalEHP": "89.34%",
+      "std": "27.82%"
     }
   ],
   "Emden": [
@@ -1812,6 +1852,13 @@
       "std": "33.57%"
     }
   ],
+  "Superb": [
+    {
+      "name": "Superb",
+      "totalEHP": "85.22%",
+      "std": "26.64%"
+    }
+  ],
   "Shigure": [
     {
       "name": "Shigure (Retrofit)",
@@ -1929,18 +1976,6 @@
       "name": "Bremerton (Not Front)",
       "totalEHP": "79.69%",
       "std": "21.76%"
-    }
-  ],
-  "Nachi": [
-    {
-      "name": "Nachi (Retrofit)",
-      "totalEHP": "83.92%",
-      "std": "21.07%"
-    },
-    {
-      "name": "Nachi",
-      "totalEHP": "79.93%",
-      "std": "20.54%"
     }
   ],
   "Sheffield μ": [
@@ -2783,6 +2818,13 @@
       "name": "Kawakaze",
       "totalEHP": "74.49%",
       "std": "32.39%"
+    }
+  ],
+  "Griffin": [
+    {
+      "name": "Griffin",
+      "totalEHP": "74.46%",
+      "std": "30.88%"
     }
   ],
   "Jenkins": [
