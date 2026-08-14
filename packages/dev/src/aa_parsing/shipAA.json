@@ -45,6 +45,23 @@
       "percentSD": "100.00%"
     }
   ],
+  "Belfast": [
+    {
+      "name": "Belfast (Retrofit)",
+      "totalAA": "2411",
+      "percentSD": "84.61%"
+    },
+    {
+      "name": "Belfast",
+      "totalAA": "612",
+      "percentSD": "21.50%"
+    },
+    {
+      "name": "Belfast",
+      "totalAA": "612",
+      "percentSD": "21.50%"
+    }
+  ],
   "Surrey": [
     {
       "name": "Surrey",
@@ -2087,13 +2104,6 @@
       "name": "Ägir",
       "totalAA": "613",
       "percentSD": "21.51%"
-    }
-  ],
-  "Belfast": [
-    {
-      "name": "Belfast",
-      "totalAA": "612",
-      "percentSD": "21.50%"
     }
   ],
   "Wichita META": [
