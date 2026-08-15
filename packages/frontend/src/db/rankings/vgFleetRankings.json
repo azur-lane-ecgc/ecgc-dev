@@ -1474,6 +1474,31 @@
       "aa": null,
       "asw": null,
       "defensivebuff": 1
+    },
+    {
+      "nameNote": "Retrofit",
+      "notes": "Requires HE gun. Smokes.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "C",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -2,
+      "fleetreq": null,
+      "gearreq": -2,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 99,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
     }
   ],
   "Bell": [
@@ -2793,6 +2818,33 @@
       "defensivebuff": null
     }
   ],
+  "Collett": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": null,
+      "meta": null,
+      "cm": null,
+      "w14mob": null,
+      "w14boss": null,
+      "w15mob": null,
+      "w15boss": null,
+      "ex": null,
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": null,
+      "mediumdmg": null,
+      "heavydmg": null,
+      "aoedmg": null,
+      "offensivebuff": null,
+      "selfsurvival": 82,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Columbia": [
     {
       "nameNote": "",
@@ -3280,9 +3332,9 @@
   "Dmitri Donskoi": [
     {
       "nameNote": "",
-      "notes": "Overall, Dmitri is a solid vanguard ship. She has decent damage output and is decently tanky (not enough to consistently main tank late game content). However, her AA is lackluster, so she does need to be supplemented by ships with good AA in plane-heavy content. Check back in August 2026 (expected) to see how good her Fate Simulation makes her.",
-      "hardarbiter": "B",
-      "meta": "C",
+      "notes": "Overall, Dmitri is a solid vanguard ship. She has decent damage output and is decently tanky (not enough to consistently main tank late game content). With her fate simulation, you now have some control over which BB her buffs are tied to. For best results, ensure that Götz (as of late 2026) is the BB/BC with the highest FP in your fleet.",
+      "hardarbiter": "A",
+      "meta": "B",
       "cm": "B",
       "w14mob": "A",
       "w14boss": "A",
@@ -3293,12 +3345,12 @@
       "fleetreq": null,
       "gearreq": -1,
       "flagreq": null,
-      "lightdmg": 3,
-      "mediumdmg": 2,
-      "heavydmg": 2,
-      "aoedmg": 2,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "aoedmg": 4,
       "offensivebuff": null,
-      "selfsurvival": 116,
+      "selfsurvival": 120,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -3543,7 +3595,7 @@
       "offensivebuff": null,
       "selfsurvival": 65,
       "aa": null,
-      "asw": null,
+      "asw": 1,
       "defensivebuff": 1
     }
   ],
@@ -5211,7 +5263,7 @@
       "offensivebuff": null,
       "selfsurvival": 68,
       "aa": null,
-      "asw": null,
+      "asw": 2,
       "defensivebuff": null
     }
   ],
@@ -5321,6 +5373,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": null
+    }
+  ],
+  "Harrison": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": null,
+      "meta": null,
+      "cm": null,
+      "w14mob": null,
+      "w14boss": null,
+      "w15mob": null,
+      "w15boss": null,
+      "ex": null,
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": null,
+      "mediumdmg": null,
+      "heavydmg": null,
+      "aoedmg": null,
+      "offensivebuff": null,
+      "selfsurvival": 68,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
     }
   ],
   "Haruka Amami": [
@@ -6478,6 +6557,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": 1
+    }
+  ],
+  "John Rodgers": [
+    {
+      "nameNote": "",
+      "notes": "3% heal for a random ship every 20 seconds is not enough for Rodgers to get a 1 in Main Fleet or Vanguard Protection.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 1,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 78,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
     }
   ],
   "Juneau": [
@@ -13827,6 +13933,33 @@
       "defensivebuff": 1
     }
   ],
+  "Vicksburg": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": null,
+      "meta": null,
+      "cm": null,
+      "w14mob": null,
+      "w14boss": null,
+      "w15mob": null,
+      "w15boss": null,
+      "ex": null,
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": null,
+      "mediumdmg": null,
+      "heavydmg": null,
+      "aoedmg": null,
+      "offensivebuff": null,
+      "selfsurvival": 90,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Vincennes": [
     {
       "nameNote": "",
@@ -13884,25 +14017,25 @@
   "Vittorio Cuniberti": [
     {
       "nameNote": "",
-      "notes": "Use fast torps. High DPS but squishy. Check back in August 2026 (expected) to see how good her Fate Simulation makes her.",
-      "hardarbiter": "B",
-      "meta": "C",
-      "cm": "B",
-      "w14mob": "A",
-      "w14boss": "B",
-      "w15mob": "C",
+      "notes": "Cuniberti's fate simulation solidly increases her damage and survivability. She now has high DPS and middling survivability. Use fast torps as shown in the recommended gear.",
+      "hardarbiter": "A",
+      "meta": "B",
+      "cm": "A",
+      "w14mob": "S",
+      "w14boss": "A",
+      "w15mob": "B",
       "w15boss": "D",
       "ex": "D",
       "consistency": null,
       "fleetreq": null,
       "gearreq": null,
       "flagreq": null,
-      "lightdmg": 4,
-      "mediumdmg": 4,
-      "heavydmg": 3,
+      "lightdmg": 5,
+      "mediumdmg": 5,
+      "heavydmg": 5,
       "aoedmg": 4,
       "offensivebuff": null,
-      "selfsurvival": 83,
+      "selfsurvival": 91,
       "aa": null,
       "asw": null,
       "defensivebuff": null

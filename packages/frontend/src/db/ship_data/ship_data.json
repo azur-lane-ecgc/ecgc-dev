@@ -1268,7 +1268,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["ASW"],
     "locations": {
       "events": [],
       "other": [
@@ -20565,7 +20565,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DefSupport"],
+    "roles": ["ASW", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -41481,7 +41481,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -41537,7 +41537,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DefSupport"],
     "locations": {
       "events": [
         {
@@ -41593,7 +41593,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -41705,7 +41705,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["Meh"],
     "locations": {
       "events": [
         {
@@ -49099,7 +49099,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer", "TopDmg", "Meh"],
+    "roles": ["FlagPref", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -49267,7 +49267,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
