@@ -1004,6 +1004,35 @@
       "vgsurvival": null
     }
   ],
+  "Bennington": [
+    {
+      "nameNote": "",
+      "notes": "Bennington must be used with at least 2 other Eagle Union ships in the fleet when bossing to activate her freeze. While there are better freezers out there, namely Implacable, Bennington is still one of the most cost effective options as she doesn't require rainbow Bulins.",
+      "hardarbiter": "A",
+      "meta": "B",
+      "cm": "A",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "C",
+      "ex": "C",
+      "consistency": null,
+      "fleetreq": -2,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2,
+      "mediumdmg": 3,
+      "heavydmg": 2,
+      "aoedmg": 2,
+      "dmguptime": null,
+      "offensivebuff": 4,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Bismarck": [
     {
       "nameNote": "",
@@ -4307,7 +4336,7 @@
       "cm": "B",
       "w14mob": "B",
       "w14boss": "B",
-      "w15mob": "B",
+      "w15mob": "C",
       "w15boss": "C",
       "ex": "D",
       "consistency": null,
