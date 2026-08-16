@@ -6074,7 +6074,14 @@
     "augments": ["Afternoon of Surging Elegance", "Crossbow", "Sword"],
     "samEval": "Belfast is a damage-oriented CL with good stats and skills. Her personal damage is hindered by 1 MGM, but her self-buffs are enough to bring it up to acceptable levels. She also has a smokescreen, which can situationally be useful. She is ideally equipped with an HE CL gun to take full advantage of her self-buff. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["AA", "AACarry", "DefSupport"],
+    "roles": [
+      "DmgDealer",
+      "TopDmg",
+      "AA",
+      "AACarry",
+      "DefSupport",
+      "OffSupport"
+    ],
     "locations": {
       "events": [],
       "other": [
@@ -41481,7 +41488,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["ASW", "DmgDealer"],
     "locations": {
       "events": [
         {
@@ -41593,7 +41600,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -41649,7 +41656,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -41705,7 +41712,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["ASW"],
     "locations": {
       "events": [
         {
@@ -48590,7 +48597,15 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Shimanto is a damage-oriented CL with great stats and skills. Her damage is great with MGM+1, double torpedo reloads, and multiple barrages. Her AA is also really good; using her gun to proc her skill can be useful situationally, but is not recommended for general use. Her Skill 1 can be situationally useful, especially when protecting backline ships. Her Skill 2 ghost AA gun is good, and the stacking from the third part of it should happen very fast. Her Fate Simulation unconditionally grants her the Skill 2 self-buffs, and adds minor shields. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "TopDmg", "AA", "AACarry", "DefSupport"],
+    "roles": [
+      "Tank",
+      "ASW",
+      "DmgDealer",
+      "TopDmg",
+      "AA",
+      "AACarry",
+      "DefSupport"
+    ],
     "locations": {
       "events": [],
       "other": [
