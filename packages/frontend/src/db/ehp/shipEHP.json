@@ -1,4 +1,18 @@
 {
+  "22": [
+    {
+      "name": "22",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
+    }
+  ],
+  "33": [
+    {
+      "name": "33",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -343,6 +357,18 @@
       "std": "39.08%"
     }
   ],
+  "Belfast": [
+    {
+      "name": "Belfast (Retrofit)",
+      "totalEHP": "123.14%",
+      "std": "38.04%"
+    },
+    {
+      "name": "Belfast",
+      "totalEHP": "98.91%",
+      "std": "32.32%"
+    }
+  ],
   "Prinz Eugen μ": [
     {
       "name": "Prinz Eugen μ (mobbing)",
@@ -412,6 +438,18 @@
       "std": "25.28%"
     }
   ],
+  "Dmitri Donskoi": [
+    {
+      "name": "Dmitri Donskoi (Fate)",
+      "totalEHP": "119.33%",
+      "std": "33.16%"
+    },
+    {
+      "name": "Dmitri Donskoi",
+      "totalEHP": "115.60%",
+      "std": "31.79%"
+    }
+  ],
   "Prinz Moritz": [
     {
       "name": "Prinz Moritz",
@@ -443,13 +481,6 @@
       "name": "Tallinn",
       "totalEHP": "115.67%",
       "std": "27.75%"
-    }
-  ],
-  "Dimitri Donskoi": [
-    {
-      "name": "Dimitri Donskoi",
-      "totalEHP": "115.60%",
-      "std": "31.79%"
     }
   ],
   "Kaguya Yamai and Yuzuru Yamai": [
@@ -633,6 +664,13 @@
       "name": "Kasumi (Venus Vacation)",
       "totalEHP": "110.13%",
       "std": "33.59%"
+    }
+  ],
+  "Houston II": [
+    {
+      "name": "Houston II",
+      "totalEHP": "110.06%",
+      "std": "30.12%"
     }
   ],
   "Ryu Lion": [
@@ -1005,13 +1043,6 @@
       "std": "33.74%"
     }
   ],
-  "Belfast": [
-    {
-      "name": "Belfast",
-      "totalEHP": "98.91%",
-      "std": "32.32%"
-    }
-  ],
   "Pamiat' Merkuria": [
     {
       "name": "Pamiat' Merkuria (Retrofit)",
@@ -1041,6 +1072,18 @@
       "name": "Azusa Miura",
       "totalEHP": "93.24%",
       "std": "25.84%"
+    }
+  ],
+  "Vittorio Cuniberti": [
+    {
+      "name": "Vittorio Cuniberti (Fate)",
+      "totalEHP": "97.82%",
+      "std": "35.89%"
+    },
+    {
+      "name": "Vittorio Cuniberti",
+      "totalEHP": "88.02%",
+      "std": "33.20%"
     }
   ],
   "Pittsburgh": [
@@ -1291,13 +1334,6 @@
       "std": "33.09%"
     }
   ],
-  "Houston II": [
-    {
-      "name": "Houston II",
-      "totalEHP": "93.95%",
-      "std": "27.83%"
-    }
-  ],
   "Ibuki": [
     {
       "name": "Ibuki (Fate)",
@@ -1461,6 +1497,13 @@
       "name": "Cleopatra",
       "totalEHP": "90.43%",
       "std": "28.14%"
+    }
+  ],
+  "Vicksburg": [
+    {
+      "name": "Vicksburg",
+      "totalEHP": "90.40%",
+      "std": "25.70%"
     }
   ],
   "Kashino": [
@@ -1810,9 +1853,9 @@
       "std": "25.78%"
     }
   ],
-  "Duqesne": [
+  "Duquesne": [
     {
-      "name": "Duqesne",
+      "name": "Duquesne",
       "totalEHP": "85.50%",
       "std": "29.37%"
     }
@@ -2030,13 +2073,6 @@
       "std": "26.58%"
     }
   ],
-  "Vittorio Cuniberti": [
-    {
-      "name": "Vittorio Cuniberti",
-      "totalEHP": "83.25%",
-      "std": "31.59%"
-    }
-  ],
   "Little Bel": [
     {
       "name": "Little Bel",
@@ -2117,6 +2153,13 @@
       "name": "Ognevoy",
       "totalEHP": "81.98%",
       "std": "30.41%"
+    }
+  ],
+  "Collett": [
+    {
+      "name": "Collett",
+      "totalEHP": "81.94%",
+      "std": "31.37%"
     }
   ],
   "Bristol": [
@@ -2482,6 +2525,13 @@
       "name": "Hanazuki",
       "totalEHP": "77.69%",
       "std": "29.20%"
+    }
+  ],
+  "John Rodgers": [
+    {
+      "name": "John Rodgers",
+      "totalEHP": "77.50%",
+      "std": "29.98%"
     }
   ],
   "Black Prince": [
@@ -3528,6 +3578,13 @@
       "std": "19.84%"
     }
   ],
+  "Harrison": [
+    {
+      "name": "Harrison",
+      "totalEHP": "67.92%",
+      "std": "24.84%"
+    }
+  ],
   "Fortune META": [
     {
       "name": "Fortune META",
@@ -4260,13 +4317,6 @@
       "std": "18.30%"
     }
   ],
-  "3300.00%": [
-    {
-      "name": "3300.00%",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
-    }
-  ],
   "Z20": [
     {
       "name": "Z20",
@@ -4343,13 +4393,6 @@
       "name": "Shiranui",
       "totalEHP": "56.79%",
       "std": "22.88%"
-    }
-  ],
-  "2200.00%": [
-    {
-      "name": "2200.00%",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
     }
   ],
   "Jersey": [
