@@ -6075,6 +6075,7 @@
     "samEval": "Belfast is a damage-oriented CL with good stats and skills. Her personal damage is hindered by 1 MGM, but her self-buffs are enough to bring it up to acceptable levels. She also has a smokescreen, which can situationally be useful. She is ideally equipped with an HE CL gun to take full advantage of her self-buff. Overall, she is a good ship.",
     "fastLoad": null,
     "roles": [
+      "Tank",
       "DmgDealer",
       "TopDmg",
       "AA",
@@ -33932,7 +33933,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "Houston II is a damage-oriented CL with great stats and skills. Her personal damage is great due to MGM+1 supplemented with good barrages. Her bulk is pretty good as well, with her Skill 2 giving her a lifeline once she is at low health. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "AA"],
+    "roles": ["Tank", "DmgDealer", "AA"],
     "locations": {
       "events": [],
       "other": [],
@@ -49282,7 +49283,7 @@
     "augments": ["Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
