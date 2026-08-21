@@ -3930,8 +3930,8 @@
       "cm": "B",
       "w14mob": "B",
       "w14boss": "B",
-      "w15mob": "C",
-      "w15boss": "C",
+      "w15mob": "B",
+      "w15boss": "B",
       "ex": "D",
       "consistency": -2,
       "fleetreq": null,
@@ -4402,7 +4402,7 @@
       "selfsurvival": 65,
       "aa": null,
       "asw": null,
-      "defensivebuff": 3
+      "defensivebuff": 2
     }
   ],
   "Fujinami": [
@@ -5331,7 +5331,7 @@
       "w14mob": "S",
       "w14boss": "A",
       "w15mob": "B",
-      "w15boss": "C",
+      "w15boss": "B",
       "ex": "D",
       "consistency": null,
       "fleetreq": null,
@@ -12000,14 +12000,14 @@
   "San Francisco": [
     {
       "nameNote": "",
-      "notes": "Read her skills. The bonus columns do not all apply simultaneously.",
+      "notes": "Read her skills. The ratings do not all apply simultaneously, choose between tanking, healing, and damage.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "C",
       "w14mob": "B",
       "w14boss": "C",
       "w15mob": "D",
-      "w15boss": "D",
+      "w15boss": "C",
       "ex": "D",
       "consistency": null,
       "fleetreq": null,
@@ -13188,8 +13188,8 @@
       "cm": "A",
       "w14mob": "S",
       "w14boss": "S",
-      "w15mob": "A",
-      "w15boss": "A",
+      "w15mob": "S",
+      "w15boss": "S",
       "ex": "D",
       "consistency": null,
       "fleetreq": null,
@@ -13199,7 +13199,7 @@
       "mediumdmg": 4,
       "heavydmg": 4,
       "aoedmg": 5,
-      "offensivebuff": null,
+      "offensivebuff": 1,
       "selfsurvival": 120,
       "aa": 4,
       "asw": null,
@@ -14119,7 +14119,7 @@
       "selfsurvival": 93,
       "aa": null,
       "asw": null,
-      "defensivebuff": 2
+      "defensivebuff": 1
     }
   ],
   "Watarase": [
@@ -14531,7 +14531,7 @@
       "w14mob": "A",
       "w14boss": "B",
       "w15mob": "B",
-      "w15boss": "C",
+      "w15boss": "B",
       "ex": "C*",
       "consistency": null,
       "fleetreq": null,
