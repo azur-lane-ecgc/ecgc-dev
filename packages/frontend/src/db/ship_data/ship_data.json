@@ -4368,7 +4368,7 @@
     "augments": ["Crossbow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["AA", "AACarry", "DefSupport", "Meh"],
+    "roles": ["AA", "AACarry", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -12575,7 +12575,7 @@
     "augments": ["Crossbow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["AA", "AACarry", "DefSupport", "Meh"],
+    "roles": ["AA", "AACarry", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -50959,7 +50959,7 @@
     "augments": ["Crossbow"],
     "samEval": "The opportunity cost of using Vestal META over any other easily-acquirable backline ship is not worth it, due to her support not being that worthwhile and her damage being lackluster. Collection only.",
     "fastLoad": null,
-    "roles": ["AA", "AACarry", "DefSupport", "Meh"],
+    "roles": ["AA", "AACarry", "DefSupport"],
     "locations": {
       "events": [],
       "other": [
