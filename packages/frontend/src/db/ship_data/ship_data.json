@@ -7767,7 +7767,7 @@
       "quantity": 1,
       "conditional": "Dive Bomber in Slot 3"
     },
-    "roles": ["FastLoad", "Meh"],
+    "roles": ["FastLoad", "Bad"],
     "locations": {
       "events": [
         {
@@ -12089,7 +12089,7 @@
       "quantity": 1,
       "conditional": "with Kaga"
     },
-    "roles": ["FastLoad", "Meh"],
+    "roles": ["FastLoad", "Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -12150,7 +12150,7 @@
       "quantity": 1,
       "conditional": "with Akagi"
     },
-    "roles": ["FastLoad", "Meh"],
+    "roles": ["FastLoad", "Bad"],
     "locations": {
       "events": [],
       "other": [],
@@ -29123,7 +29123,7 @@
       "quantity": 0,
       "conditional": "Off-Flag"
     },
-    "roles": ["DmgDealer", "TopDmg", "FastLoad", "DefSupport", "OffSupport"],
+    "roles": ["DmgDealer", "TopDmg", "FastLoad", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -45333,7 +45333,7 @@
       "quantity": 1,
       "conditional": ""
     },
-    "roles": ["FastLoad", "Meh"],
+    "roles": ["FastLoad", "Bad"],
     "locations": {
       "events": [
         {
