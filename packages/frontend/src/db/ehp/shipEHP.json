@@ -1232,13 +1232,6 @@
       "std": "32.23%"
     }
   ],
-  "Kalk": [
-    {
-      "name": "Kalk",
-      "totalEHP": "95.30%",
-      "std": "40.50%"
-    }
-  ],
   "Saint Louis": [
     {
       "name": "Saint Louis (Fate)",
@@ -2622,6 +2615,13 @@
       "name": "Harutsuki",
       "totalEHP": "76.75%",
       "std": "28.77%"
+    }
+  ],
+  "Kalk": [
+    {
+      "name": "Kalk",
+      "totalEHP": "76.74%",
+      "std": "31.17%"
     }
   ],
   "Hermione": [
