@@ -510,6 +510,33 @@
       "defensivebuff": null
     }
   ],
+  "Amatsukaze": [
+    {
+      "nameNote": "",
+      "notes": "Amatsukaze is quite tanky with poor damage, though her damage is not as bad as Eugen's. She loses around 8% damage if there is no other Sakura Empire ship in the fleet. Her torpedo barrage can freeze enemies for 1 second and slow them for another 0.5 seconds, but that is not useful against bosses as it is difficult to time and is too short in duration.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "C",
+      "w15mob": "B",
+      "w15boss": "C",
+      "ex": "C*",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1,
+      "mediumdmg": 1,
+      "heavydmg": 2,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 122,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Amazon": [
     {
       "nameNote": "",
@@ -6804,13 +6831,13 @@
     {
       "nameNote": "",
       "notes": null,
-      "hardarbiter": "D",
-      "meta": "D",
-      "cm": "D",
+      "hardarbiter": "F",
+      "meta": "F",
+      "cm": "F",
       "w14mob": "D",
       "w14boss": "D",
-      "w15mob": "D",
-      "w15boss": "D",
+      "w15mob": "F",
+      "w15boss": "F",
       "ex": "D",
       "consistency": -1,
       "fleetreq": null,
@@ -6821,7 +6848,7 @@
       "heavydmg": 1,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 95,
+      "selfsurvival": 77,
       "aa": null,
       "asw": null,
       "defensivebuff": null
