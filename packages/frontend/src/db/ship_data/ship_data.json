@@ -3974,7 +3974,7 @@
     "augments": ["Sister Sara's Magic Wand!", "Scepter", "Hunting Bow"],
     "samEval": "Saratoga (Retrofit) is a damage-oriented CV with great stats and amazing skills. Her personal damage is very good due to great on-strike damage, her on-strike barrage with DoT, and a desynced 10s barrage that also does good damage. Her Vanguard Fleet support is nice, but not necessary for her to be good. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -6979,7 +6979,7 @@
     "augments": ["Dame's Medal of Grace", "Bowgun", "Officer's Sword"],
     "samEval": "Hood is a flagship-oriented BC with good stats and amazing skills. Her barrage is very strong, and has a 100% proc rate, making her a great damage option. She also provides a Reload buff to all Main Fleet ships upon her barrage triggering. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "Meh"],
+    "roles": ["FlagPref", "FlagReq", "Bad"],
     "locations": {
       "events": [],
       "other": [
@@ -12379,7 +12379,7 @@
     "augments": ["Call of a Thousand Cranes", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "DefSupport", "OffSupport", "Meh"],
+    "roles": ["DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -23649,7 +23649,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Sovetskaya Belorussiya is a flagship-oriented BB with great stats and skills. Her barrage is strong, and has a good pattern; although, it is a bit farther back than normal. She also has multiple heals for self-sutain over the course of fights, and even helps your Vanguard Fleet a little bit as well. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "Bad"],
+    "roles": ["FlagPref", "FlagReq", "DefSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -29876,7 +29876,7 @@
       "quantity": 1,
       "conditional": "Fighter in Slot 1"
     },
-    "roles": ["DmgDealer", "FastLoad"],
+    "roles": ["DmgDealer", "FastLoad", "Meh"],
     "locations": {
       "events": [
         {
@@ -39035,7 +39035,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -43413,7 +43413,7 @@
     "augments": ["Cream Puff", "Bowgun", "Officer's Sword"],
     "samEval": "Honoka is a flagship-oriented BB with great stats and interesting skills. Her Skill 1 has good self-buffs; although some of the possible barrages are better than others. Her Skill 2 has a nice damage 100% proc rate barrage which does good damage. The healing is unreliable, but it is a nice cushion alongside an actual healer-oriented ship. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "DmgDealer", "DefSupport", "Meh"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -45801,7 +45801,7 @@
     "augments": ["Banner of Order", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["FlagPref", "Bad"],
+    "roles": ["FlagPref", "DefSupport", "OffSupport", "Meh"],
     "locations": {
       "events": [
         {
@@ -46417,7 +46417,7 @@
     "augments": ["Camael", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
@@ -46809,14 +46809,7 @@
     "augments": ["Shishamo Tempura", "Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": [
-      "FlagPref",
-      "FlagReq",
-      "DmgDealer",
-      "DefSupport",
-      "OffSupport",
-      "Meh"
-    ],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "DefSupport", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -47712,7 +47705,7 @@
     "augments": ["Staff of Machinery & Logic", "Bowgun", "Officer's Sword"],
     "samEval": "Gascogne is a flagship damage-oriented BB with great stats and skills. Her personal damage is good, despite MGM+1 Main Guns, since her barrage has a 100% proc rate and her Main Guns independently aim. Her Skill 1 healing is nice, and can help her stay alive slightly more easily against stages with significant backline pressure. Overall, she is a great ship, but can be a sidegrade to some modern Event BBs.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -49768,7 +49761,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Hiryuu META is a damage-oriented CV with great stats and skills. Her per-strike damage is great due to multiple skill barrages, and her 8 plane loadout. Since the barrages are centered around her, she ideally prefers flagship position for maximum effectiveness, but is still fine off-flag, especially when you are using Flagship BBs. She ideally is sortied with IJN Equipment to trigger her self-buffs. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["FlagPref", "DmgDealer"],
+    "roles": ["FlagPref", "DmgDealer", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -51912,7 +51905,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "Nagato META is a flagship-oriented BB with great stats and skills. Her personal damage is great due to MGM+2 BB Guns, and an amazing barrage. Her Skill 1 is good, but the IJN benefits gained are outweighted from the benefits from not using an IJN ship in her Skill 3. Her Skill 2 gives a nice buff to all Vanguard Ships, and can even trigger on equipment heals like Repair Toolkit. Her Skill 3 gives her a guaranteed on-fire barrage. Ideally, she is sortied with no IJN ships to maximize the power of this barrage, as it removes the RNG requirement. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "DmgDealer"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -51972,7 +51965,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "DmgDealer", "OffSupport", "Meh"],
+    "roles": ["FlagPref", "FlagReq", "DmgDealer", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -52648,7 +52641,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["FlagPref", "FlagReq", "Bad"],
+    "roles": ["FlagPref", "FlagReq", "DefSupport", "OffSupport", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -53040,7 +53033,7 @@
     "augments": ["Bowgun", "Officer's Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer"],
+    "roles": ["DmgDealer", "Meh"],
     "locations": {
       "events": [
         {
