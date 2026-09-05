@@ -3974,7 +3974,7 @@
     "augments": ["Sister Sara's Magic Wand!", "Scepter", "Hunting Bow"],
     "samEval": "Saratoga (Retrofit) is a damage-oriented CV with great stats and amazing skills. Her personal damage is very good due to great on-strike damage, her on-strike barrage with DoT, and a desynced 10s barrage that also does good damage. Her Vanguard Fleet support is nice, but not necessary for her to be good. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "Meh"],
+    "roles": ["DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [],
       "other": [
@@ -5951,7 +5951,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Crossbow", "Sword"],
+    "augments": ["The Instructor's Discipline", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["OffSupport"],
@@ -20505,7 +20505,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Kunai", "Dagger"],
+    "augments": ["Scarlet Scarf of Speed", "Kunai", "Dagger"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["DmgDealer", "Meh"],
@@ -23768,10 +23768,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Scepter", "Hunting Bow"],
+    "augments": ["Particle Actualizer", "Scepter", "Hunting Bow"],
     "samEval": "Intrepid is a damage-oriented CV with good stats and skills. She has a good loadout (8 planes) and an on-strike barrage; however, the barrage is nothing special compared to other recently released CVs in 2023. She also doesn't have as many self-buffs compared to the top of her hull. Overall, she is a good ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [
         {
@@ -27146,10 +27146,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Greatsword", "Lance"],
+    "augments": ["Glacial Morningstar", "Greatsword", "Lance"],
     "samEval": "Tallinn is a tank-oriented CA with great stats and skills. Her personal damage is alright due to her self-buffs and barrages, but it is still on the lower end of tank damage. Her bulk is really high due to her stats and barrier, enabling her to Main Tank any content with no issues. She is ideally equipped with a Northern Parliament or Iron Blood Main Gun for her skill. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Tank", "DefSupport"],
+    "roles": ["Tank", "DmgDealer", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -47534,10 +47534,10 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Currently on Duty", "Dual Swords", "Hammer"],
     "samEval": "Kitakaze is a damage-oriented DD with great stats and skills. Her personal damage is very good due to MGM+1 DD Guns, good torpedoes, and good barrages. Her skill changes her Main Guns to do drastically more against Heavy Armored enemies in exchange for being slightly worse against Light Armored enemies, which is a worthwhile tradeoff. She is ideally equipped with a Sakura Empire (IJN) Main Gun for her Skill 1 buff. You do NOT want her to be in the frontmost (tank) position for her skill condition; FS5 removes it anyways. Overall, she is a great ship.",
     "fastLoad": null,
-    "roles": ["Meh"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [
@@ -52368,13 +52368,17 @@
         {
           "name": "META Showdown",
           "href": "META_Showdown"
+        },
+        {
+          "name": "Dossier Analysis",
+          "href": "META_Showdown#Dossier_Analysis"
         }
       ],
       "construction": [],
       "permanent": []
     },
     "permanent": {
-      "isPermanent": false,
+      "isPermanent": true,
       "isCollab": false
     }
   },
@@ -53370,6 +53374,62 @@
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
     "roles": ["Meh"],
+    "locations": {
+      "events": [],
+      "other": [
+        {
+          "name": "Cruise Pass",
+          "href": "Cruise_Missions"
+        }
+      ],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "30064": {
+    "id": 30064,
+    "ship": "Saratoga META",
+    "faction": "META",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CV",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.25,
+        "mounts": 3
+      },
+      {
+        "type": ["Dive Bomber"],
+        "efficiency": 1.4,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.4,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Scepter", "Hunting Bow"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["DmgDealer", "TopDmg", "Meh"],
     "locations": {
       "events": [],
       "other": [
