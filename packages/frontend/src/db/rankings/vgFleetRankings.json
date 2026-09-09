@@ -4356,7 +4356,7 @@
   "Fu Shun": [
     {
       "nameNote": "Retrofit",
-      "notes": "With her retrofit, Fu Shun is one of the highest damage vanguard ships against light and medium armor in the game. However, she is very fragile, has lackluster AA, and has no damage buffs for the fleet, making her a mediocre choice for late campaign stages. <strong>If you use her retrofit skin, avoid fast-reloading guns like Twin 100mm or Twin 100mm Kai.</strong>",
+      "notes": "With her retrofit, Fu Shun is one of the highest damage vanguard ships against light and medium armor in the game. However, she is very fragile, has lackluster AA, and has no damage buffs for the fleet, making her a mediocre choice for late campaign stages. <strong>If you use her retrofit skin, avoid fast-reloading guns like Twin 100mm or Twin 100mm Kai.</strong> Her retrofit skin does not have animation time, which means that her weapons can rapid fire without pausing. This greatly increases her main gun DPS relative to other vanguard ships, but if the guns are too fast, then the missiles may get delayed or never fire. So by using the best guns that aren't reloading too fast, Fu Shun cheats to get higher DPS.",
       "hardarbiter": "A",
       "meta": "B",
       "cm": "A",
@@ -13443,6 +13443,33 @@
       "offensivebuff": null,
       "selfsurvival": 70,
       "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
+  "Tiger": [
+    {
+      "nameNote": "",
+      "notes": "Tiger, the not-so-glass glass cannon. Hindenburg too weak? No problem, give her 20% more DPS, 15% more tankiness, and strong AA.",
+      "hardarbiter": "S",
+      "meta": "S",
+      "cm": "S",
+      "w14mob": "SS",
+      "w14boss": "SS",
+      "w15mob": "A",
+      "w15boss": "S",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 3200,
+      "mediumdmg": 2175,
+      "heavydmg": 2200,
+      "aoedmg": 6,
+      "offensivebuff": null,
+      "selfsurvival": 113,
+      "aa": 3,
       "asw": null,
       "defensivebuff": null
     }
