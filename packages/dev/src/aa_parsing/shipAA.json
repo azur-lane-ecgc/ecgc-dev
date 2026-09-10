@@ -45,6 +45,13 @@
       "percentSD": "100.00%"
     }
   ],
+  "Tiger": [
+    {
+      "name": "Tiger",
+      "totalAA": "2618",
+      "percentSD": "91.90%"
+    }
+  ],
   "Belfast": [
     {
       "name": "Belfast (Retrofit)",
