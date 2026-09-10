@@ -946,6 +946,35 @@
       "vgsurvival": null
     }
   ],
+  "Azuchi": [
+    {
+      "nameNote": "",
+      "notes": "One of the most broken ships in the game currently, Azuchi deals damage that is among the best, and she effectively permanently increases main fleet damage by 12%. And to add the cherry on top, she is one of the few BBs with salvo capacity +1, making her quicker to reload her main guns in practice compared to other BBs. While she may not be the absolute best choice for every specific niche or composition, her raw output is so immense that she consistently features in the top one to five meta comps for all relevant content. No other rainbow ship dominates quite like Lion and Azuchi do; they are absolute top-priority investments.",
+      "hardarbiter": "SS",
+      "meta": "SS",
+      "cm": "SS",
+      "w14mob": "SS",
+      "w14boss": "SS",
+      "w15mob": "A",
+      "w15boss": "A",
+      "ex": "S",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": -1,
+      "flagreq": null,
+      "lightdmg": 5338,
+      "mediumdmg": 5191,
+      "heavydmg": 4465,
+      "aoedmg": 6,
+      "dmguptime": 1,
+      "offensivebuff": 2,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 2,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "BLACK★ROCK SHOOTER": [
     {
       "nameNote": "",
@@ -3002,7 +3031,7 @@
   "Götz von Berlichingen": [
     {
       "nameNote": "",
-      "notes": "Ulrich von Hutten Zwei has exceptional damage against medium armor and a fleet buff of 8% damage with about 2/3 uptime. She fires her main guns (and barrage) twice as often, but her main guns do 45% less damage. The benefit is in clearing waves of enemies, providing consistent recurring damage against certain boss battles that require it, and having less reliance on the same equipped guns as other BBs. The downside is that she loses many timed fleet buffs on half of her salvos, and she becomes near-useless when the fleet is out of ammo.",
+      "notes": "Ulrich von Hutten Zwei has exceptional damage against medium armor and a fleet buff of 8% damage with about 2/3 uptime. She fires her main guns (and barrage) twice as often, but her main guns do 45% less damage. The benefit is in clearing waves of enemies, providing consistent recurring damage against certain boss battles that require it, and having less reliance on the same equipped guns as other BBs. The downside is that she loses many timed fleet buffs on half of her salvos, and she becomes near-useless when the fleet is out of ammo. One of the most broken ships in the game currently, she is an absolute top-priority investment.",
       "hardarbiter": "SS",
       "meta": "SS",
       "cm": "S",
@@ -4819,7 +4848,7 @@
   "Lion": [
     {
       "nameNote": "",
-      "notes": "One of the most broken ships in the game currently, Lion delivers the highest overall solo damage of any ship in the game. Furthermore, she applies a permanent 10% damage debuff to any enemy afflicted by her burn, which is also permanent. And to add the cherry on top, she is one of the few BBs with salvo capacity +1, making her quicker to reload her main guns in practice compared to other BBs. While she may not be the absolute best choice for every specific niche or composition, her raw output is so immense that she consistently features in the top one to five meta comps for all relevant content. No other rainbow ship dominates the game quite like she does; she is an absolute top-priority investment.",
+      "notes": "One of the most broken ships in the game currently, Lion deals damage that is among the best, and she applies a permanent 10% damage debuff to any enemy afflicted by her burn, which is also permanent. And to add the cherry on top, she is one of the few BBs with salvo capacity +1, making her quicker to reload her main guns in practice compared to other BBs. While she may not be the absolute best choice for every specific niche or composition, her raw output is so immense that she consistently features in the top one to five meta comps for all relevant content. No other rainbow ship dominates quite like Lion and Azuchi do; they are absolute top-priority investments.",
       "hardarbiter": "SS",
       "meta": "SS",
       "cm": "SS",
