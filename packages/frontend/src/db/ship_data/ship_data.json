@@ -5265,7 +5265,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -42029,7 +42029,7 @@
     "augments": ["Kunai", "Dagger"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer"],
     "locations": {
       "events": [
         {
@@ -42085,7 +42085,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["ASW", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -53795,7 +53795,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
