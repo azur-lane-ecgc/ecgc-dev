@@ -8535,6 +8535,35 @@
       "vgsurvival": null
     }
   ],
+  "Victorious META": [
+    {
+      "nameNote": "",
+      "notes": "Victorious META does 20% more damage to BBs (not BCs) and buffs other carriers by 10% against BBs too; these are not credited in her damage and Offense Buff.",
+      "hardarbiter": "B*",
+      "meta": "C",
+      "cm": "C",
+      "w14mob": "C",
+      "w14boss": "B",
+      "w15mob": "D",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2400,
+      "mediumdmg": 2850,
+      "heavydmg": 2950,
+      "aoedmg": 3,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": 1,
+      "aa": null,
+      "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Vittorio Veneto": [
     {
       "nameNote": "",

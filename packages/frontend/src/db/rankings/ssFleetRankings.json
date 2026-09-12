@@ -255,6 +255,22 @@
       "offensivebuff": 1
     }
   ],
+  "I-14": [
+    {
+      "nameNote": "Base",
+      "notes": "With low oxyreload and an ignorable surface fleet buff targeting vanguard ships, I-14 is comparable to I-19 in damage.",
+      "hardarbiter": "B",
+      "cm": "B",
+      "campaign": "A",
+      "consistency": null,
+      "fleetreq": null,
+      "flagreq": -2,
+      "lightdmg": 1,
+      "mediumdmg": 3,
+      "heavydmg": 4,
+      "offensivebuff": null
+    }
+  ],
   "I-168": [
     {
       "nameNote": "Base",
