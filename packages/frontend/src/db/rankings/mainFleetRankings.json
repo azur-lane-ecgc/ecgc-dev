@@ -8364,13 +8364,13 @@
   "Valparaíso": [
     {
       "nameNote": "",
-      "notes": "Valparaíso is Raffaello with more damage and less healing. Valparaíso's campaign performance is unknown due to how differently her damage is distributed, but she will very probably be around the level of Musashi and Raffaello. Using fast DD guns for healing in campaign means she has poor Bombing Ship defense in the first 20 seconds of the battle, but this is a necessary cost to improve both healing and Bombing Ship defense later in the battle. Like Oumi, her performance in bossing heavily depends on whether the boss is sitting still for most of the battle. These ratings assume the boss is moving half the time at 25 speed.",
+      "notes": "Valparaíso is Raffaello with more damage and much less healing. Valparaíso's campaign performance does not reach the level of Musashi and Raffaello because her damage is not better by enough to justify the loss in healing or protection. Using fast DD guns for healing in campaign means she has poor Bombing Ship defense in the first 20 seconds of the battle, but this is a necessary cost to improve both healing and Bombing Ship defense later in the battle. Like Oumi, her performance in bossing heavily depends on whether the boss is sitting still for most of the battle. These Single-Wave Bossing ratings assume the boss is moving half the time at 25 speed.",
       "hardarbiter": "SS",
       "meta": "S",
       "cm": "S",
       "w14mob": "SS",
-      "w14boss": "A",
-      "w15mob": "S",
+      "w14boss": "S",
+      "w15mob": "A",
       "w15boss": "A",
       "ex": "A",
       "consistency": null,

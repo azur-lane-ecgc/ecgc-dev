@@ -5384,7 +5384,7 @@
       "cm": "C",
       "w14mob": "B",
       "w14boss": "C",
-      "w15mob": "D",
+      "w15mob": "C",
       "w15boss": "D",
       "ex": "D",
       "consistency": null,
@@ -5396,7 +5396,7 @@
       "heavydmg": 1300,
       "aoedmg": 4,
       "offensivebuff": null,
-      "selfsurvival": 80,
+      "selfsurvival": 84,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -5556,7 +5556,7 @@
       "heavydmg": 600,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 66,
+      "selfsurvival": 64,
       "aa": null,
       "asw": 3,
       "defensivebuff": null
@@ -5986,7 +5986,7 @@
       "heavydmg": 527,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 66,
+      "selfsurvival": 64,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -7467,7 +7467,7 @@
       "heavydmg": 1539,
       "aoedmg": 4,
       "offensivebuff": null,
-      "selfsurvival": 88,
+      "selfsurvival": 85,
       "aa": null,
       "asw": null,
       "defensivebuff": null
@@ -10915,7 +10915,7 @@
       "heavydmg": 816,
       "aoedmg": 1,
       "offensivebuff": null,
-      "selfsurvival": 111,
+      "selfsurvival": 119,
       "aa": null,
       "asw": null,
       "defensivebuff": null
