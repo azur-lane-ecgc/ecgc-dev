@@ -12747,6 +12747,33 @@
       "defensivebuff": null
     }
   ],
+  "Soobrazitelny META": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "C",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "C",
+      "w14boss": "D",
+      "w15mob": "C",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 956,
+      "mediumdmg": 724,
+      "heavydmg": 630,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 96,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Southampton": [
     {
       "nameNote": "",
@@ -14630,7 +14657,7 @@
   "Yukikaze": [
     {
       "nameNote": "",
-      "notes": "Use fast torps.",
+      "notes": "Yukikaze is tanky and makes your main fleet tankier too. Use fast torps as recommended.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "C",
