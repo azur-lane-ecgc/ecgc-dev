@@ -16,6 +16,7 @@ interface MultiComboBoxProps {
   reset?: any
 }
 
+// Render a multiple selection combo box with a mobile option menu.
 export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   className,
   title,
@@ -67,10 +68,11 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   useEffect(() => {
     if (showOptions) {
       setShouldRenderMobile(true)
-      setTimeout(() => setIsVisible(true), 75)
+      const timer = window.setTimeout(() => setIsVisible(true), 75)
       if (inputRef.current) {
         inputRef.current.focus()
       }
+      return () => window.clearTimeout(timer)
     } else {
       setIsVisible(false)
       const timer = setTimeout(() => setShouldRenderMobile(false), 300)
