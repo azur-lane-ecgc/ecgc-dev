@@ -1,3 +1,5 @@
+import imageMaterialsMerit from "@/assets/materials/merit.png"
+import imageMaterialsCoreData from "@/assets/materials/core_data.png"
 import type { FleetTechData } from "./types"
 
 const MNFTechPoints: FleetTechData = {
@@ -21,7 +23,7 @@ const MNFTechPoints: FleetTechData = {
             `5,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,
@@ -46,7 +48,7 @@ const MNFTechPoints: FleetTechData = {
             `1,000 <img
           loading="lazy"
           class="inline-block"
-          src="/images/materials/core_data.png"
+          src="${imageMaterialsCoreData.src}"
           width="20px"
           alt="Core Data"
         />`,

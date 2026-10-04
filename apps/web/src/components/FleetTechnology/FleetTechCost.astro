@@ -1,5 +1,8 @@
 ---
+import imageMaterialsCoreData from "@/assets/materials/core_data.png"
+import imageMaterialsMerit from "@/assets/materials/merit.png"
 import WikiLink from "@/components/_common/WikiLink.astro"
+import { Image } from "astro:assets"
 
 import { allFactionData } from "./factionTech"
 
@@ -20,14 +23,14 @@ if (!factionData) {
 const MATERIAL_MAPPINGS = {
   "Merit Shop": {
     material: "merit",
-    image: "/images/materials/merit.png",
+    image: imageMaterialsMerit,
     alt: "Merit",
     wikiPage: "Merit Shop",
     wikiTitle: "Merit Shop",
   },
   "Core Data Shop": {
     material: "core_data",
-    image: "/images/materials/core_data.png",
+    image: imageMaterialsCoreData,
     alt: "Core Data",
     wikiPage: "Shops#Core Exchange",
     wikiTitle: "Core Data Shop",
@@ -70,33 +73,31 @@ const formatNumber = (num: number): string => {
 }
 ---
 
-{
-  factionData && Object.keys(materialCosts).length > 0 && (
-    <p>
-      <i>
-        It costs{" "}
-        {Object.entries(materialCosts).map(([_, data], index, array) => (
-          <span>
-            {formatNumber(data.total)}{" "}
-            <WikiLink page={data.config.wikiPage} title={data.config.wikiTitle}>
-              <img
-                loading="lazy"
-                class="inline-block"
-                src={data.config.image}
-                width="20px"
-                alt={data.config.alt}
-              />
-            </WikiLink>
-            {index < array.length - 2
-              ? ", "
-              : index === array.length - 2
-                ? " and "
-                : ""}
-          </span>
-        ))}{" "}
-        to acquire all ships here.
-        <slot />
-      </i>
-    </p>
-  )
-}
+{factionData && Object.keys(materialCosts).length > 0 && (
+  <p>
+    <i>
+      It costs{" "}
+      {Object.entries(materialCosts).map(([_, data], index, array) => (
+        <span>
+          {formatNumber(data.total)}{" "}
+          <WikiLink page={data.config.wikiPage} title={data.config.wikiTitle}>
+            <Image
+              loading="lazy"
+              class="inline-block"
+              src={data.config.image}
+              width={20}
+              alt={data.config.alt}
+            />
+          </WikiLink>
+          {index < array.length - 2
+            ? ", "
+            : index === array.length - 2
+              ? " and "
+              : ""}
+        </span>
+      ))}{" "}
+      to acquire all ships here.
+      <slot />
+    </i>
+  </p>
+)}

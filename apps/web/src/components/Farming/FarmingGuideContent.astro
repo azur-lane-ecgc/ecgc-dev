@@ -1,9 +1,14 @@
 ---
+import imageEquipMiscOpSiImageGuidePt1 from "@/assets/equip_misc/OpSi_Image_Guide_Pt1.jpeg"
+import imageEquipMiscOpSiImageGuidePt2 from "@/assets/equip_misc/OpSi_Image_Guide_Pt2.jpeg"
+import imageEquipMiscOpSiImageGuidePt3 from "@/assets/equip_misc/OpSi_Image_Guide_Pt3.jpeg"
+import imageMaterialsInvolutedSealPt from "@/assets/materials/InvolutedSealPt.png"
 import { HR } from "@/components/_common/HR"
 import { ImageCarousel } from "@/components/_common/ImageCarousel"
 import { ShipCell } from "@/components/_common/ItemCell"
 import { ItemTable } from "@/components/_common/ItemTable"
 import WikiLink from "@/components/_common/WikiLink.astro"
+import { Image } from "astro:assets"
 
 // images
 import OneOneFleet from "@/assets/farming_guide/1-1_fleet_example.png"
@@ -30,9 +35,9 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   <li>
     <p>
       <b>
-        <WikiLink page="Oil_Cost#Fuel_Cost_Limit" title="Oil-Cap"
-          >Oil-Cap</WikiLink
-        >
+        <WikiLink page="Oil_Cost#Fuel_Cost_Limit" title="Oil-Cap">
+          Oil-Cap
+        </WikiLink>
       </b>
       (cost-limit) - Limits the amount of oil spent per battle.
     </p>
@@ -75,9 +80,10 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <HR />
 <p>
   <i>
-    See also: <a rel="noopener noreferrer" target="_blank" href="/fleetbuilding"
-      >Fleetbuilding Guide</a
-    >
+    See also:{" "}
+    <a rel="noopener noreferrer" target="_blank" href="/fleetbuilding">
+      Fleetbuilding Guide
+    </a>
   </i>
 </p>
 
@@ -104,12 +110,12 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <ul>
   <li>
     <p>
-      Ships that are capped due to <WikiLink
-        page="Dockyard#Cognitive Awakening"
-        title="Cognitive Awakening">Cognitive Awakening</WikiLink
-      >
-      are fine to use, as any EXP overflow will carry over to subsequent levels (up
-      to 3,000,000 EXP).
+      Ships that are capped due to{" "}
+      <WikiLink page="Dockyard#Cognitive Awakening" title="Cognitive Awakening">
+        Cognitive Awakening
+      </WikiLink>
+      are fine to use, as any EXP overflow will carry over to subsequent levels
+      (up to 3,000,000 EXP).
     </p>
   </li>
 </ul>
@@ -142,19 +148,19 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   </li>
 </ul>
 <p>
-  <i
-    >Note: Some ships (ex. Unicorn) fall into multiple categories. READ SKILLS
-    FOR MORE INFORMATION!</i
-  >
+  <i>
+    Note: Some ships (ex. Unicorn) fall into multiple categories. READ SKILLS
+    FOR MORE INFORMATION!
+  </i>
 </p>
 <p>Remember:</p>
 <ul>
   <li>
     <p>
-      <b
-        >Do NOT choose ships for farming fleets based off of ONLY these
-        qualities.</b
-      >
+      <b>
+        Do NOT choose ships for farming fleets based off of ONLY these
+        qualities.
+      </b>
     </p>
     <ul>
       <li>
@@ -166,10 +172,10 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   </li>
   <li>
     <p>
-      <b
-        >Do NOT use oil cost as a consideration when determining what ships to
-        use.</b
-      >
+      <b>
+        Do NOT use oil cost as a consideration when determining what ships to
+        use.
+      </b>
     </p>
     <ul>
       <li>
@@ -203,19 +209,21 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <ul>
   <li>
     <p>
-      If the stage has an <WikiLink
-        page="Oil Cost#Fuel Cost Limit"
-        title="Oil-Cap">Oil-Cap</WikiLink
-      >: Use a <b>3:3</b>
+      If the stage has an{" "}
+      <WikiLink page="Oil Cost#Fuel Cost Limit" title="Oil-Cap">
+        Oil-Cap
+      </WikiLink>
+      : Use a <b>3:3</b>
       fleet.
     </p>
   </li>
   <li>
     <p>
-      If the stage doesn't have an <WikiLink
-        page="Oil Cost#Fuel Cost Limit"
-        title="Oil-Cap">Oil-Cap</WikiLink
-      >: Use a <b>1:1</b>
+      If the stage doesn't have an{" "}
+      <WikiLink page="Oil Cost#Fuel Cost Limit" title="Oil-Cap">
+        Oil-Cap
+      </WikiLink>
+      : Use a <b>1:1</b>
       fleet.
       <ul>
         <li>
@@ -239,12 +247,16 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 
 <p>
   Farming stages specifically for gear is not useful. You are better off trying
-  to brute force stages with <WikiLink
+  to brute force stages with{" "}
+  <WikiLink
     page="Combat#Level Advantage & Threat Level"
-    title="Level Advantage">Level Advantage</WikiLink
-  >, as you acquire gear from other sources (<WikiLink page="Gear Lab"
-    >Gear Lab</WikiLink
-  >, <WikiLink page="Research">Research</WikiLink>, etc.).
+    title="Level Advantage"
+  >
+    Level Advantage
+  </WikiLink>
+  , as you acquire gear from other sources (
+  <WikiLink page="Gear Lab">Gear Lab</WikiLink>,{" "}
+  <WikiLink page="Research">Research</WikiLink>, etc.).
 </p>
 <br />
 
@@ -254,43 +266,59 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <h4 class="farming_guide">Stages:</h4>
 <ul>
   <li>
-    <p>Before Chapter 9: <b>Highest stage you can do safely</b>.</p>
+    <p>
+      Before Chapter 9: <b>Highest stage you can do safely</b>.
+    </p>
     <ul>
       <li>
         <p>
-          If you can do <WikiLink page="Passionate Polaris" /> SP5 or <WikiLink
-            page="Universe in Unison"
-          /> SP5 from the <WikiLink page="War Archives" /> SP section, do them instead.
-          They are about as good as Chapter 9 stages.
+          If you can do <WikiLink page="Passionate Polaris" /> SP5 or{" "}
+          <WikiLink page="Universe in Unison" /> SP5 from the{" "}
+          <WikiLink page="War Archives" /> SP section, do them instead. They are
+          about as good as Chapter 9 stages.
         </p>
       </li>
     </ul>
   </li>
   <li>
-    <p>Before Chapter 11: <b>9-1</b>.</p>
+    <p>
+      Before Chapter 11: <b>9-1</b>.
+    </p>
   </li>
   <li>
-    <p>In Chapter 11: <b>11-1</b>.</p>
+    <p>
+      In Chapter 11: <b>11-1</b>.
+    </p>
   </li>
   <li>
-    <p>After Chapter 11: <b>12-1</b> (or higher).</p>
+    <p>
+      After Chapter 11: <b>12-1</b> (or higher).
+    </p>
     <ul>
       <li>
         <p>
           12-1 and above are significantly better than any stage under them.
-          This is because they have a chance to drop <WikiLink
+          This is because they have a chance to drop{" "}
+          <WikiLink
             page="Dockyard#Cognitive Awakening"
-            title="Cognitive Awakening">Cognitive Chips</WikiLink
-          > and <WikiLink page="Augmentation">Augmentation</WikiLink> Materials in
+            title="Cognitive Awakening"
+          >
+            Cognitive Chips
+          </WikiLink>{" "}
+          and <WikiLink page="Augmentation">Augmentation</WikiLink> Materials in
           addition to everything else.
         </p>
       </li>
       <li>
         <p>
-          Chapter 12 is the highest stage that drops <WikiLink
+          Chapter 12 is the highest stage that drops{" "}
+          <WikiLink
             page="Equipment#Upgrade (Enhance)"
-            title="Equipment Enhancing">T1 Upgrade Parts</WikiLink
-          >, so you might run out of them if you don't grind Chapter 12 (or
+            title="Equipment Enhancing"
+          >
+            T1 Upgrade Parts
+          </WikiLink>
+          , so you might run out of them if you don't grind Chapter 12 (or
           lower).
         </p>
       </li>
@@ -304,21 +332,24 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   </li>
   <li>
     <p>
-      <WikiLink page="Equipment#Upgrade (Enhance)" title="Equipment Enhancing"
-        >T3 Upgrade Parts</WikiLink
-      > drop from Chapter 6 onward.
+      <WikiLink page="Equipment#Upgrade (Enhance)" title="Equipment Enhancing">
+        T3 Upgrade Parts
+      </WikiLink>{" "}
+      drop from Chapter 6 onward.
     </p>
   </li>
 </ul>
 <br />
 
 <h3 id="for_coggies">
-  For <WikiLink page="Dockyard#Cognitive Awakening" title="Cognitive Awakening"
-    >Cognitive Chips</WikiLink
-  > and
-  <WikiLink page="Augmentation#Crafting and Enhancing" title="Augmentation"
-    >Augment Module Stones</WikiLink
-  >
+  For{" "}
+  <WikiLink page="Dockyard#Cognitive Awakening" title="Cognitive Awakening">
+    Cognitive Chips
+  </WikiLink>{" "}
+  and
+  <WikiLink page="Augmentation#Crafting and Enhancing" title="Augmentation">
+    Augment Module Stones
+  </WikiLink>
 </h3>
 <h4 class="farming_guide">Stages:</h4>
 <ul>
@@ -335,20 +366,22 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <p>
   Grind the highest hard mode stage that you can do, that also drops the print
   type that you need. Double-check the stage drops to make sure you are grinding
-  the right stage! <b
-    >The higher the better, due to the stage dropping more Core Data!</b
-  >
+  the right stage!{" "}
+  <b>The higher the better, due to the stage dropping more Core Data!</b>
 </p>
 <br />
 
 <h3 id="for_drop_ships_campaign">For Drop Ships</h3>
 <p>
   <i>
-    Main Article: <a
+    Main Article:{" "}
+    <a
       rel="noopener noreferrer"
       target="_blank"
-      href="/early_ship_recommendations">Early Ship Recommendations Guide</a
+      href="/early_ship_recommendations"
     >
+      Early Ship Recommendations Guide
+    </a>
   </i>
 </p>
 <h4 class="farming_guide">Stages:</h4>
@@ -359,8 +392,8 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <ul>
   <li>
     <p>
-      Ships listed below are ships that <b>only</b> drop from a few specific stages
-      and/or are build only.
+      Ships listed below are ships that <b>only</b> drop from a few specific
+      stages and/or are build only.
     </p>
   </li>
   <li>
@@ -374,12 +407,12 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   <li>
     <p>
       <b>Consult a ship tierlist for information about ship viability!</b>
-      <i
-        >All ships besides <WikiLink page="Yuudachi"
-          >Yuudachi (Retrofit)</WikiLink
-        > are sidegrades to other easily accessible options, or outright worse than
-        other easily accessible options.</i
-      >
+      <i>
+        All ships besides{" "}
+        <WikiLink page="Yuudachi">Yuudachi (Retrofit)</WikiLink> are sidegrades
+        to other easily accessible options, or outright worse than other easily
+        accessible options.
+      </i>
     </p>
   </li>
 </ul>
@@ -693,8 +726,8 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 </p>
 <h4 class="farming_guide">Stages:</h4>
 <p>
-  Check the <WikiLink page="War Archives">War Archives</WikiLink> wiki page for a
-  list of drop-only ships and their locations.
+  Check the <WikiLink page="War Archives">War Archives</WikiLink> wiki page for
+  a list of drop-only ships and their locations.
 </p>
 <br />
 
@@ -717,48 +750,51 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   <li>
     <p>
       If you have enough time: Aim for about <b>55,000</b>
-      <WikiLink page="Shops#Event_Shop" title="Event Currency"
-        ><img
+      <WikiLink page="Shops#Event_Shop" title="Event Currency">
+        <Image
           loading="lazy"
-          src="/images/materials/InvolutedSealPt.png"
-          width="25px"
+          src={imageMaterialsInvolutedSealPt}
+          width={25}
           alt="Event Currency"
           class="inline-block"
         />
-      </WikiLink>, that should get you everything relevant from the event.
+      </WikiLink>
+      , that should get you everything relevant from the event.
     </p>
   </li>
   <li>
     <p>
       If you are in a time crunch: Aim for about <b>18,000 - 20,000</b>
-      <WikiLink page="Shops#Event_Shop" title="Event Currency"
-        ><img
+      <WikiLink page="Shops#Event_Shop" title="Event Currency">
+        <Image
           loading="lazy"
-          src="/images/materials/InvolutedSealPt.png"
-          width="25px"
+          src={imageMaterialsInvolutedSealPt}
+          width={25}
           alt="Event Currency"
           class="inline-block"
         />
-      </WikiLink>, that will get you the Event Ships (Shop + Point Milestone),
-      and the Event Gear (if there is any).
+      </WikiLink>
+      , that will get you the Event Ships (Shop + Point Milestone), and the
+      Event Gear (if there is any).
     </p>
   </li>
 </ul>
 <p>
-  See <a href="/shop_priority#event" target="_self" rel="noopener noreferrer"
-    >Event Shop Priority</a
-  > for more detailed information.
+  See{" "}
+  <a href="/shop_priority#event" target="_self" rel="noopener noreferrer">
+    Event Shop Priority
+  </a>{" "}
+  for more detailed information.
 </p>
 <br />
 
 <h3 id="event_shop_priority">Event Shop Priority</h3>
 <p>
   <i>
-    Main Article: <a
-      href="/shop_priority#event"
-      target="_self"
-      rel="noopener noreferrer">Event Shop Priority</a
-    >
+    Main Article:{" "}
+    <a href="/shop_priority#event" target="_self" rel="noopener noreferrer">
+      Event Shop Priority
+    </a>
   </i>
 </p>
 <br />
@@ -808,9 +844,10 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <h3 id="opsi_fleetbuilding">Operation Siren Fleetbuilding</h3>
 <p>
   <i>
-    See also: <a rel="noopener noreferrer" target="_blank" href="/fleetbuilding"
-      >Fleetbuilding Guide</a
-    >
+    See also:{" "}
+    <a rel="noopener noreferrer" target="_blank" href="/fleetbuilding">
+      Fleetbuilding Guide
+    </a>
   </i>
 </p>
 
@@ -818,10 +855,10 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <ul>
   <li>
     <p>
-      Unlike previous stages, the <b>rarity</b> and <b>level</b> of the <WikiLink
-        page="Meowfficer">Meowfficer</WikiLink
-      >'s in your farming fleet matters! Make sure the Meowfficers are SR
-      Rarity, and as high level as possible; the talents don't matter.
+      Unlike previous stages, the <b>rarity</b> and <b>level</b> of the{" "}
+      <WikiLink page="Meowfficer">Meowfficer</WikiLink>'s in your farming fleet
+      matters! Make sure the Meowfficers are SR Rarity, and as high level as
+      possible; the talents don't matter.
     </p>
   </li>
 </ul>
@@ -834,8 +871,8 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
       As the Corrosion Level of zones increase, the minimum tuning requirement
       of your fleets also increases. Make sure that the Roman Numeral is at
       minimum equal to (ideally above) the Corrosion Level of the zone you are
-      on. There are no additional benefits for being above <b>203 / 203 / 156</b
-      > tuning.
+      on. There are no additional benefits for being above{" "}
+      <b>203 / 203 / 156</b> tuning.
     </p>
   </li>
 </ul>
@@ -847,11 +884,14 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   <li>
     <p>
       If you have excess oil, buying the Operation Siren Data Logger (available
-      from the <WikiLink
+      from the{" "}
+      <WikiLink
         page="Operation Siren#Exchange Shop"
         title="Operation Siren Exchange Shop"
-        >Operation Siren Exchange Shop</WikiLink
-      >) allows you to strategic search this process with ease.
+      >
+        Operation Siren Exchange Shop
+      </WikiLink>
+      ) allows you to strategic search this process with ease.
     </p>
   </li>
 </ul>
@@ -871,26 +911,37 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   </li>
   <li>
     <p>
-      Buying and completing as many <WikiLink
+      Buying and completing as many{" "}
+      <WikiLink
         page="Operation Siren#File Zones"
-        title="Operation Siren File Zones">File Zones</WikiLink
-      > as possible (available from the <WikiLink
+        title="Operation Siren File Zones"
+      >
+        File Zones
+      </WikiLink>{" "}
+      as possible (available from the{" "}
+      <WikiLink
         page="Operation Siren#Exchange Shop"
         title="Operation Siren Exchange Shop"
-        >Operation Siren Exchange Shop</WikiLink
-      >) is highly recommended. These are all auto-searchable.
+      >
+        Operation Siren Exchange Shop
+      </WikiLink>
+      ) is highly recommended. These are all auto-searchable.
     </p>
   </li>
   <li>
     <p>
-      Buying the Hidden Zone data logger (available from the <WikiLink
+      Buying the Hidden Zone data logger (available from the{" "}
+      <WikiLink
         page="Operation Siren#Exchange Shop"
         title="Operation Siren Exchange Shop"
-        >Operation Siren Exchange Shop</WikiLink
-      >) allows you to strategic search all <WikiLink
-        page="Operation Siren#Hidden"
-        title="Hidden Zones">Hidden Zones</WikiLink
-      >. Highly recommended to purchase if you have the vouchers to spare.
+      >
+        Operation Siren Exchange Shop
+      </WikiLink>
+      ) allows you to strategic search all{" "}
+      <WikiLink page="Operation Siren#Hidden" title="Hidden Zones">
+        Hidden Zones
+      </WikiLink>
+      . Highly recommended to purchase if you have the vouchers to spare.
     </p>
   </li>
 </ul>
@@ -918,9 +969,11 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <p>
   In Operation Siren, stars allow you to get one-time rewards depending on
   number of stars obtained. These stars are heavily RNG; only hyper-focus them
-  if you have spare time. Read the <WikiLink
-    page="List of Operation Siren Zones">list of Operation Siren Zones</WikiLink
-  > wiki page for more information.
+  if you have spare time. Read the{" "}
+  <WikiLink page="List of Operation Siren Zones">
+    list of Operation Siren Zones
+  </WikiLink>{" "}
+  wiki page for more information.
 </p>
 <br />
 
@@ -932,18 +985,18 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <ul>
   <li>
     <p>
-      <i
-        >Note: Some stars are RNG only on the first monthly clear (explorable).
-        Be careful!</i
-      >
+      <i>
+        Note: Some stars are RNG only on the first monthly clear (explorable).
+        Be careful!
+      </i>
     </p>
   </li>
 </ul>
 <p>
-  <b
-    >If you are in the middle of the month, make sure to have some AP leftover
-    for future Stronghold / Coordinate Zones / Daily Missions.</b
-  >
+  <b>
+    If you are in the middle of the month, make sure to have some AP leftover
+    for future Stronghold / Coordinate Zones / Daily Missions.
+  </b>
 </p>
 <br />
 
@@ -966,30 +1019,30 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
   rewards outside of "The Bare Minimum" are lackluster.
 </p>
 <p>
-  <b
-    >If you are in the middle of the month, make sure to have some AP leftover
-    for future Stronghold / Coordinate Zones / Daily Missions.</b
-  >
+  <b>
+    If you are in the middle of the month, make sure to have some AP leftover
+    for future Stronghold / Coordinate Zones / Daily Missions.
+  </b>
 </p>
 <br />
 
 <h3 id="opsi_image_guides">Operation Siren Image Guides</h3>
 <p>
-  Below are a list of image guides that explain <WikiLink page="Operation Siren"
-    >Operation Siren</WikiLink
-  > mechanics!
+  Below are a list of image guides that explain{" "}
+  <WikiLink page="Operation Siren">Operation Siren</WikiLink> mechanics!
 </p>
 
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/OpSi_Image_Guide_Pt1.jpeg"
+  href={imageEquipMiscOpSiImageGuidePt1.src}
   title="Operation Siren Image Guide Part 1"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip_misc_img"
-    src="/images/equip_misc/OpSi_Image_Guide_Pt1.jpeg"
+    src={imageEquipMiscOpSiImageGuidePt1}
+    alt="Operation Siren image guide, part 1"
   />
 </a>
 <br />
@@ -997,13 +1050,14 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/OpSi_Image_Guide_Pt2.jpeg"
+  href={imageEquipMiscOpSiImageGuidePt2.src}
   title="Operation Siren Image Guide Part 2"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip_misc_img"
-    src="/images/equip_misc/OpSi_Image_Guide_Pt2.jpeg"
+    src={imageEquipMiscOpSiImageGuidePt2}
+    alt="Operation Siren image guide, part 2"
   />
 </a>
 <br />
@@ -1011,13 +1065,14 @@ import TuningExample from "@/assets/farming_guide/Tuning_example.png"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/OpSi_Image_Guide_Pt3.jpeg"
+  href={imageEquipMiscOpSiImageGuidePt3.src}
   title="Operation Siren Image Guide Part 3"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip_misc_img"
-    src="/images/equip_misc/OpSi_Image_Guide_Pt3.jpeg"
+    src={imageEquipMiscOpSiImageGuidePt3}
+    alt="Operation Siren image guide, part 3"
   />
 </a>
 <br />

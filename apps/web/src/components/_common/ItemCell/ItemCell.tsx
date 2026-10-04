@@ -1,3 +1,4 @@
+import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import "./styles.css"
 
 interface ItemCellProps {
@@ -64,7 +65,7 @@ export const ItemCell: React.FC<ItemCellProps> = ({
               width={56}
               height={56}
               loading="lazy"
-              src={!imgOverride ? `/images/${itemImg}` : itemImg}
+              src={!imgOverride ? getImageAssetUrl(itemImg) : itemImg}
               alt={`${item}`}
             />
           </div>

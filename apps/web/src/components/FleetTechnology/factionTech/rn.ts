@@ -1,3 +1,4 @@
+import imageMaterialsMerit from "@/assets/materials/merit.png"
 import type { FleetTechData } from "./types"
 
 const RNTechPoints: FleetTechData = {
@@ -52,7 +53,7 @@ const RNTechPoints: FleetTechData = {
             `5,000 <img
           loading="lazy"
           class="inline-block"
-          src="/images/materials/merit.png"
+          src="${imageMaterialsMerit.src}"
           width="20px"
           alt="Merit"
         />`,
@@ -74,7 +75,7 @@ const RNTechPoints: FleetTechData = {
             `5,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,
@@ -95,7 +96,7 @@ const RNTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,
@@ -116,7 +117,7 @@ const RNTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,
@@ -137,7 +138,7 @@ const RNTechPoints: FleetTechData = {
             `20,000 <img
           loading="lazy"
           class="inline-block"
-          src="/images/materials/merit.png"
+          src="${imageMaterialsMerit.src}"
           width="20px"
           alt="Merit"
         />`,
@@ -191,7 +192,7 @@ const RNTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,

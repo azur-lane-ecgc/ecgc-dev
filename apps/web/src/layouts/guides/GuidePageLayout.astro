@@ -1,4 +1,8 @@
 ---
+import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
+import imageMiscNoCover from "@/assets/misc/no_cover.jpg"
+import imageMiscSiteIconIco from "@/assets/misc/SiteIcon.ico"
+import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import { ClientRouter } from "astro:transitions"
 
 // user style sheets
@@ -52,16 +56,17 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{metaTitle || title} - ECGC</title>
 
-    <script is:inline type="application/ld+json">
-      {
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Azur Lane ECGC",
-        "url": "https://azurlaneecgc.com/",
-        "image": "https://azurlaneecgc.com/images/misc/SiteIcon.png"
-      }
-    </script>
-
+        name: "Azur Lane ECGC",
+        url: "https://azurlaneecgc.com/",
+        image: new URL(imageMiscSiteIcon.src, "https://azurlaneecgc.com").href,
+      })}
+    />
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
@@ -71,16 +76,21 @@ const {
     />
     <meta
       property="og:image"
-      content={`https://azurlaneecgc.com${metaImage ? `/images/${metaImage}` : pageInfo.find((page) => page.title === title)?.image ? pageInfo.find((page) => page.title === title)?.image : "/images/misc/no_cover.jpg"}`}
+      content={
+        new URL(
+          metaImage
+            ? getImageAssetUrl(metaImage)
+            : pageInfo.find((page) => page.title === title)?.image.src ||
+                imageMiscNoCover.src,
+          "https://azurlaneecgc.com",
+        ).href
+      }
     />
     <meta property="og:description" content={metaDescription} />
 
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://azurlaneecgc.com/images/misc/SiteIcon.ico"
-    />
-  </head><span data-astro-transition-persist="someId">
+    <link rel="icon" type="image/x-icon" href={imageMiscSiteIconIco} />
+  </head>
+  <span data-astro-transition-persist="someId">
     <noscript>Your browser does not support JavaScript!</noscript>
   </span>
 
@@ -110,6 +120,4 @@ const {
       }
     }
   </style>
-
-
 </html>
