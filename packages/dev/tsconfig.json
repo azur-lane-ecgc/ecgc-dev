@@ -20,12 +20,11 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "types": ["bun"],
-    "baseUrl": "../..",
     "paths": {
-      "@/db/*": ["apps/web/src/db/*"],
-      "@/utils/*": ["apps/web/src/utils/*"],
-      "@/packages/*": ["packages/*"],
-      "@/tools/*": ["packages/dev/src/*"]
+      "@/db/*": ["../../apps/web/src/db/*"],
+      "@/utils/*": ["../../apps/web/src/utils/*"],
+      "@/packages/*": ["../../packages/*"],
+      "@/tools/*": ["../../packages/dev/src/*"]
     }
   }
 }
