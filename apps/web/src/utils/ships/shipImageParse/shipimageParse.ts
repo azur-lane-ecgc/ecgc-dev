@@ -1,3 +1,4 @@
+import imageMaterialsUnknownShip from "@/assets/materials/UnknownShip.png"
 import type { ImageMetadata } from "astro"
 
 const shipModules = import.meta.glob<{ default: ImageMetadata }>(
@@ -22,5 +23,5 @@ export const shipImageParse = (ship: string, isKai?: boolean): string => {
   const shipKey =
     `${decodeURIComponent(ship)}${isKai ? "Kai" : ""}Icon`.normalize("NFC")
 
-  return shipIcons[shipKey] ?? "/images/materials/UnknownShip.png"
+  return shipIcons[shipKey] ?? imageMaterialsUnknownShip.src
 }

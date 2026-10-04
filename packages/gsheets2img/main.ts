@@ -1,5 +1,6 @@
 import { mkdir, readFile } from "node:fs/promises"
 import { join } from "node:path"
+import { fileURLToPath } from "node:url"
 import { google } from "googleapis"
 import { firefox } from "playwright"
 import type { Browser } from "playwright"
@@ -8,7 +9,9 @@ import type { Browser } from "playwright"
 const sheetId = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"
 const publishedId =
   "2PACX-1vRbKeR7WCSeg1FUx_jQ0e972FtA9tvgW8jHaiLQCPGtJEokVrSGBEZznr2qptelhxF-TXHh86yYQEUa"
-const outputDir = "../../apps/web/public/images/equip_misc/"
+const outputDir = fileURLToPath(
+  new URL("../../apps/web/src/assets/equip_misc/", import.meta.url),
+)
 const includeSheets: string[] = []
 const excludeSheets = [
   "(WiP) SS RLD Chart",

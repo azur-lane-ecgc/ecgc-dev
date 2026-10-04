@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets"
 const { name, discord, position, description, imageSrc, kofiLink } = Astro.props
 ---
 
@@ -65,10 +66,8 @@ const { name, discord, position, description, imageSrc, kofiLink } = Astro.props
   }
 </style>
 
-<div
-  class="contributor-tile relative w-75 text-center sm:max-w-87.5 md:max-w-100"
->
-  <img
+<div class="contributor-tile relative w-75 text-center sm:max-w-87.5 md:max-w-100">
+  <Image
     loading="lazy"
     src={imageSrc}
     alt={`${name}'s icon`}
@@ -87,19 +86,17 @@ const { name, discord, position, description, imageSrc, kofiLink } = Astro.props
     <h4 class="contributor-details-custom mb-1">{position}</h4>
     <small class="contributor-small-custom">"{description}"</small>
 
-    {
-      kofiLink && (
-        <a
-          href={kofiLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="kofi mt-5"
-        >
-          <small class="contributor-small-custom mb-2">
-            <i class="fa fa-coffee"> Buy me a coffee!</i>
-          </small>
-        </a>
-      )
-    }
+    {kofiLink && (
+      <a
+        href={kofiLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="kofi mt-5"
+      >
+        <small class="contributor-small-custom mb-2">
+          <i class="fa fa-coffee"> Buy me a coffee!</i>
+        </small>
+      </a>
+    )}
   </div>
 </div>

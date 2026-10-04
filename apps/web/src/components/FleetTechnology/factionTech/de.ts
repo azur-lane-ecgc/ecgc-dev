@@ -1,3 +1,4 @@
+import imageMaterialsCoreData from "@/assets/materials/core_data.png"
 import type { FleetTechData } from "./types"
 
 const DETechPoints: FleetTechData = {
@@ -67,7 +68,7 @@ const DETechPoints: FleetTechData = {
             `1,200 <img
           loading="lazy"
           class="inline-block"
-          src="/images/materials/core_data.png"
+          src="${imageMaterialsCoreData.src}"
           width="20px"
           alt="Core Data"
         />`,
@@ -88,7 +89,7 @@ const DETechPoints: FleetTechData = {
             `1,200 <img
           loading="lazy"
           class="inline-block"
-          src="/images/materials/core_data.png"
+          src="${imageMaterialsCoreData.src}"
           width="20px"
           alt="Core Data"
         />`,
@@ -129,7 +130,7 @@ const DETechPoints: FleetTechData = {
             `1,200 <img
           loading="lazy"
           class="inline-block"
-          src="/images/materials/core_data.png"
+          src="${imageMaterialsCoreData.src}"
           width="20px"
           alt="Core Data"
         />`,
@@ -150,7 +151,7 @@ const DETechPoints: FleetTechData = {
             `1,200 <img
           loading="lazy"
           class="inline-block"
-          src="/images/materials/core_data.png"
+          src="${imageMaterialsCoreData.src}"
           width="20px"
           alt="Core Data"
         />`,
