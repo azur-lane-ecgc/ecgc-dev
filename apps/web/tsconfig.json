@@ -5,16 +5,15 @@
   "compilerOptions": {
     "types": ["vite/client"],
     "verbatimModuleSyntax": true,
-    "baseUrl": "../..",
     "paths": {
-      "@/assets/*": ["apps/web/src/assets/*"],
-      "@/components/*": ["apps/web/src/components/*"],
-      "@/constants/*": ["apps/web/src/constants/*"],
-      "@/db/*": ["apps/web/src/db/*"],
-      "@/layouts/*": ["apps/web/src/layouts/*"],
-      "@/styles/*": ["apps/web/src/styles/*"],
-      "@/store/*": ["apps/web/src/store/*"],
-      "@/utils/*": ["apps/web/src/utils/*"]
+      "@/assets/*": ["./src/assets/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/constants/*": ["./src/constants/*"],
+      "@/db/*": ["./src/db/*"],
+      "@/layouts/*": ["./src/layouts/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/store/*": ["./src/store/*"],
+      "@/utils/*": ["./src/utils/*"]
     }
   }
 }
