@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "module": "Preserve",
     "moduleDetection": "force",
     "moduleResolution": "bundler",
@@ -15,19 +13,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
-    "types": [
-      "bun"
-    ],
+    "types": ["bun"],
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
     "paths": {
-      "@/packages/*": [
-        "packages/*"
-      ],
-      "@/tools/*": [
-        "packages/dev/src/*"
-      ]
+      "@/packages/*": ["./packages/*"],
+      "@/tools/*": ["./packages/dev/src/*"]
     }
   },
   "exclude": [

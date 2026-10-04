@@ -11,6 +11,7 @@ import metaTags from "astro-meta-tags"
 import tailwindcss from "@tailwindcss/vite"
 
 // https://astro.build/config
+// Configure the guide site build and preserve spaces between inline elements.
 export default defineConfig({
   // adapter: cloudflare({imageService: 'compile'}),
   site: "https://azurlaneecgc.com",
@@ -26,6 +27,7 @@ export default defineConfig({
   ],
   base: "/",
   output: "static",
+  compressHTML: true,
   trailingSlash: "ignore",
   vite: {
     json: {
