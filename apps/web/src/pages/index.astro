@@ -1,4 +1,6 @@
 ---
+import imageMiscPattern1 from "@/assets/misc/pattern1.png"
+import { Image } from "astro:assets"
 import HomePageLayout from "@/layouts/homepage/HomePageLayout.astro"
 
 import { HR } from "@/components/_common/HR"
@@ -28,11 +30,11 @@ import HomePageHeading from "@/components/Homepage/HomePageHeading.astro"
     <HomePageHeading />
 
     <div class="relative overflow-hidden p-0 pt-17.5">
-      <img
+      <Image
         loading="lazy"
-        alt="..."
+        alt=""
         class="home-page-pattern"
-        src="/images/misc/pattern1.png"
+        src={imageMiscPattern1}
       />
 
       <!-- Main Content -->
