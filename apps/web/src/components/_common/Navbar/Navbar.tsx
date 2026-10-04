@@ -1,3 +1,4 @@
+import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
 import { useState, useEffect, useRef } from "react"
 
 import { navbarPages, MobileNavItem, NavItem } from "../Navbar"
@@ -72,7 +73,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
               className="flex items-center text-white hover:bg-white/15"
             >
               <img
-                src="/images/misc/SiteIcon.png"
+                src={imageMiscSiteIcon.src}
                 width="40"
                 alt="ECGC"
                 className="mr-2"

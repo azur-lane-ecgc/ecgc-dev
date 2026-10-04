@@ -29,6 +29,9 @@ export default defineConfig({
   output: "static",
   compressHTML: true,
   trailingSlash: "ignore",
+  image: {
+    layout: "constrained",
+  },
   vite: {
     json: {
       stringify: true,

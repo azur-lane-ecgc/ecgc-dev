@@ -1,3 +1,4 @@
+import imageMaterialsMerit from "@/assets/materials/merit.png"
 import type { FleetTechData } from "./types"
 
 const KMSTechPoints: FleetTechData = {
@@ -66,7 +67,7 @@ const KMSTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,
@@ -126,7 +127,7 @@ const KMSTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,
@@ -293,7 +294,7 @@ const KMSTechPoints: FleetTechData = {
             `20,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,
@@ -316,7 +317,7 @@ const KMSTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,
@@ -353,7 +354,7 @@ const KMSTechPoints: FleetTechData = {
             `8,000 <img
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
+        src="${imageMaterialsMerit.src}"
         width="20px"
         alt="Merit"
       />`,

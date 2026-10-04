@@ -1,3 +1,4 @@
+import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import { useState } from "react"
 
 import { factionLink } from "@/utils/factionLink"
@@ -59,7 +60,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
           <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden">
             <img
               loading="lazy"
-              src={`/images/ship_type/${hullType}.png`}
+              src={getImageAssetUrl(`ship_type/${hullType}.png`)}
               alt={hullType}
               title={"Hull: " + hullType}
               className="h-full w-full object-contain"
@@ -120,7 +121,7 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
           >
             <img
               loading="lazy"
-              src={`/images/ship_type/${hullType}.png`}
+              src={getImageAssetUrl(`ship_type/${hullType}.png`)}
               alt={hullType}
               title={"Hull: " + hullType}
               className="h-auto w-full"
