@@ -1,6 +1,37 @@
 ---
+import imageEquipMisc13Priority from "@/assets/equip_misc/+13_Priority.jpeg"
+import imageEquipMiscAAGuns from "@/assets/equip_misc/AA_Guns.jpeg"
+import imageEquipMiscAARangeChart from "@/assets/equip_misc/AA_Range_Chart.jpeg"
+import imageEquipMiscAEAuxes from "@/assets/equip_misc/AE_Auxes.jpeg"
+import imageEquipMiscARAuxes from "@/assets/equip_misc/AR_Auxes.jpeg"
+import imageEquipMiscASWEquips from "@/assets/equip_misc/ASW_Equips.jpeg"
+import imageEquipMiscBBBCBBVAuxes from "@/assets/equip_misc/BB_BC_BBV_Auxes.jpeg"
+import imageEquipMiscBBBCBBVGuns from "@/assets/equip_misc/BB_BC_BBV_Guns.jpeg"
+import imageEquipMiscCAGuns from "@/assets/equip_misc/CA_Guns.jpeg"
+import imageEquipMiscCBCACLAuxes from "@/assets/equip_misc/CB_CA_CL_Auxes.jpeg"
+import imageEquipMiscCBGuns from "@/assets/equip_misc/CB_Guns.jpeg"
+import imageEquipMiscCLGuns from "@/assets/equip_misc/CL_Guns.jpeg"
+import imageEquipMiscCosmeticDecorativeAuxes from "@/assets/equip_misc/Cosmetic_Decorative_Auxes.jpeg"
+import imageEquipMiscCVCVLAuxes from "@/assets/equip_misc/CV_CVL_Auxes.jpeg"
+import imageEquipMiscDDAuxes from "@/assets/equip_misc/DD_Auxes.jpeg"
+import imageEquipMiscDDGuns from "@/assets/equip_misc/DD_Guns.jpeg"
+import imageEquipMiscDiveBombers from "@/assets/equip_misc/Dive_Bombers.jpeg"
+import imageEquipMiscFighters from "@/assets/equip_misc/Fighters.jpeg"
+import imageEquipMiscGearLabPriority from "@/assets/equip_misc/Gear_Lab_Priority.jpeg"
+import imageEquipMiscGenAmmoOverview from "@/assets/equip_misc/Gen._Ammo_Overview.jpeg"
+import imageEquipMiscGlossary from "@/assets/equip_misc/Glossary.jpeg"
+import imageEquipMiscIXAuxes from "@/assets/equip_misc/IX_Auxes.jpeg"
+import imageEquipMiscIXGuns from "@/assets/equip_misc/IX_Guns.jpeg"
+import imageEquipMiscMainFleetAuxGuns from "@/assets/equip_misc/Main_Fleet_Aux_Guns.jpeg"
+import imageEquipMiscReconPlanes from "@/assets/equip_misc/Recon_Planes.jpeg"
+import imageEquipMiscShipTypeAbbrev from "@/assets/equip_misc/Ship_Type_Abbrev..jpeg"
+import imageEquipMiscSSAuxes from "@/assets/equip_misc/SS_Auxes.jpeg"
+import imageEquipMiscSSTorpedoes from "@/assets/equip_misc/SS_Torpedoes.jpeg"
+import imageEquipMiscSurfaceTorpedoes from "@/assets/equip_misc/Surface_Torpedoes.jpeg"
+import imageEquipMiscTorpedoBombers from "@/assets/equip_misc/Torpedo_Bombers.jpeg"
 import { HR } from "@/components/_common/HR"
 import WikiLink from "@/components/_common/WikiLink.astro"
+import { Image } from "astro:assets"
 
 import AugmentModules from "./AugmentModules.astro"
 import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
@@ -43,13 +74,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Ship_Type_Abbrev..jpeg"
+  href={imageEquipMiscShipTypeAbbrev.src}
   title="Ship Type Abbreviations"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Ship_Type_Abbrev..jpeg"
+    src={imageEquipMiscShipTypeAbbrev}
     alt="Ship Type Abbrev."
   />
 </a>
@@ -60,13 +91,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Gen._Ammo_Overview.jpeg"
+  href={imageEquipMiscGenAmmoOverview.src}
   title="Ammo Type Abbreviations"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Gen._Ammo_Overview.jpeg"
+    src={imageEquipMiscGenAmmoOverview}
     alt="Gen. Ammo Overview"
   />
 </a>
@@ -77,13 +108,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Glossary.jpeg"
+  href={imageEquipMiscGlossary.src}
   title="Glossary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Glossary.jpeg"
+    src={imageEquipMiscGlossary}
     alt="Glossary"
   />
 </a>
@@ -102,13 +133,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Gear_Lab_Priority.jpeg"
+  href={imageEquipMiscGearLabPriority.src}
   title="Gear Lab Priority"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Gear_Lab_Priority.jpeg"
+    src={imageEquipMiscGearLabPriority}
     alt="Gear Lab Priority"
   />
 </a>
@@ -128,13 +159,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/+13_Priority.jpeg"
+  href={imageEquipMisc13Priority.src}
   title="Gear Lab Priority"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/+13_Priority.jpeg"
+    src={imageEquipMisc13Priority}
     alt="+13 Priority"
   />
 </a>
@@ -147,13 +178,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/BB_BC_BBV_Guns.jpeg"
+  href={imageEquipMiscBBBCBBVGuns.src}
   title="BB / BC / BBV Guns"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/BB_BC_BBV_Guns.jpeg"
+    src={imageEquipMiscBBBCBBVGuns}
     alt="BB BC BBV Guns"
   />
 </a>
@@ -165,13 +196,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/BB_BC_BBV_Auxes.jpeg"
+  href={imageEquipMiscBBBCBBVAuxes.src}
   title="BB / BC / BBV Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/BB_BC_BBV_Auxes.jpeg"
+    src={imageEquipMiscBBBCBBVAuxes}
     alt="BB BC BBV Auxes"
   />
 </a>
@@ -183,13 +214,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Main_Fleet_Aux_Guns.jpeg"
+  href={imageEquipMiscMainFleetAuxGuns.src}
   title="Main Fleet Secondary Guns"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Main_Fleet_Aux_Guns.jpeg"
+    src={imageEquipMiscMainFleetAuxGuns}
     alt="Main Fleet Aux Guns"
   />
 </a>
@@ -201,13 +232,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/CB_Guns.jpeg"
+  href={imageEquipMiscCBGuns.src}
   title="CB Guns"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/CB_Guns.jpeg"
+    src={imageEquipMiscCBGuns}
     alt="CB Guns"
   />
 </a>
@@ -219,13 +250,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/CA_Guns.jpeg"
+  href={imageEquipMiscCAGuns.src}
   title="CA Guns"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/CA_Guns.jpeg"
+    src={imageEquipMiscCAGuns}
     alt="CA Guns"
   />
 </a>
@@ -237,13 +268,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/CL_Guns.jpeg"
+  href={imageEquipMiscCLGuns.src}
   title="CL Guns"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/CL_Guns.jpeg"
+    src={imageEquipMiscCLGuns}
     alt="CL Guns"
   />
 </a>
@@ -255,13 +286,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/CB_CA_CL_Auxes.jpeg"
+  href={imageEquipMiscCBCACLAuxes.src}
   title="CB / CA / CL Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/CB_CA_CL_Auxes.jpeg"
+    src={imageEquipMiscCBCACLAuxes}
     alt="CB CA CL Auxes"
   />
 </a>
@@ -273,13 +304,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/DD_Guns.jpeg"
+  href={imageEquipMiscDDGuns.src}
   title="DD Guns"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/DD_Guns.jpeg"
+    src={imageEquipMiscDDGuns}
     alt="DD Guns"
   />
 </a>
@@ -291,13 +322,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/DD_Auxes.jpeg"
+  href={imageEquipMiscDDAuxes.src}
   title="DD Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/DD_Auxes.jpeg"
+    src={imageEquipMiscDDAuxes}
     alt="DD Auxes"
   />
 </a>
@@ -309,13 +340,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Surface_Torpedoes.jpeg"
+  href={imageEquipMiscSurfaceTorpedoes.src}
   title="Surface Torpedoes"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Surface_Torpedoes.jpeg"
+    src={imageEquipMiscSurfaceTorpedoes}
     alt="Surface Torpedoes"
   />
 </a>
@@ -327,13 +358,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/AA_Guns.jpeg"
+  href={imageEquipMiscAAGuns.src}
   title="AA Guns"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/AA_Guns.jpeg"
+    src={imageEquipMiscAAGuns}
     alt="AA Guns"
   />
 </a>
@@ -345,13 +376,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/AA_Range_Chart.jpeg"
+  href={imageEquipMiscAARangeChart.src}
   title="AA Range Chart"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/AA_Range_Chart.jpeg"
+    src={imageEquipMiscAARangeChart}
     alt="AA Range Chart"
   />
 </a>
@@ -363,13 +394,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Fighters.jpeg"
+  href={imageEquipMiscFighters.src}
   title="Fighters"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Fighters.jpeg"
+    src={imageEquipMiscFighters}
     alt="Fighters"
   />
 </a>
@@ -381,13 +412,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Dive_Bombers.jpeg"
+  href={imageEquipMiscDiveBombers.src}
   title="Dive Bombers"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Dive_Bombers.jpeg"
+    src={imageEquipMiscDiveBombers}
     alt="Dive Bombers"
   />
 </a>
@@ -399,13 +430,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Torpedo_Bombers.jpeg"
+  href={imageEquipMiscTorpedoBombers.src}
   title="Torpedo Bombers"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Torpedo_Bombers.jpeg"
+    src={imageEquipMiscTorpedoBombers}
     alt="Torpedo Bombers"
   />
 </a>
@@ -417,13 +448,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/CV_CVL_Auxes.jpeg"
+  href={imageEquipMiscCVCVLAuxes.src}
   title="CV / CVL Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/CV_CVL_Auxes.jpeg"
+    src={imageEquipMiscCVCVLAuxes}
     alt="CV CVL Auxes"
   />
 </a>
@@ -435,13 +466,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/SS_Torpedoes.jpeg"
+  href={imageEquipMiscSSTorpedoes.src}
   title="SS Torpedo"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/SS_Torpedoes.jpeg"
+    src={imageEquipMiscSSTorpedoes}
     alt="SS Torpedoes"
   />
 </a>
@@ -453,13 +484,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/SS_Auxes.jpeg"
+  href={imageEquipMiscSSAuxes.src}
   title="SS Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/SS_Auxes.jpeg"
+    src={imageEquipMiscSSAuxes}
     alt="SS Auxes"
   />
 </a>
@@ -471,13 +502,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/IX_Guns.jpeg"
+  href={imageEquipMiscIXGuns.src}
   title="IX Guns"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/IX_Guns.jpeg"
+    src={imageEquipMiscIXGuns}
     alt="IX Guns"
   />
 </a>
@@ -489,13 +520,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/IX_Auxes.jpeg"
+  href={imageEquipMiscIXAuxes.src}
   title="IX Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/IX_Auxes.jpeg"
+    src={imageEquipMiscIXAuxes}
     alt="IX Auxes"
   />
 </a>
@@ -507,13 +538,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Recon_Planes.jpeg"
+  href={imageEquipMiscReconPlanes.src}
   title="Recon Planes"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Recon_Planes.jpeg"
+    src={imageEquipMiscReconPlanes}
     alt="Recon Planes"
   />
 </a>
@@ -525,13 +556,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/ASW_Equips.jpeg"
+  href={imageEquipMiscASWEquips.src}
   title="ASW Equipment"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/ASW_Equips.jpeg"
+    src={imageEquipMiscASWEquips}
     alt="ASW Equips"
   />
 </a>
@@ -543,13 +574,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/AE_Auxes.jpeg"
+  href={imageEquipMiscAEAuxes.src}
   title="AE Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/AE_Auxes.jpeg"
+    src={imageEquipMiscAEAuxes}
     alt="AE Auxes"
   />
 </a>
@@ -561,13 +592,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/AR_Auxes.jpeg"
+  href={imageEquipMiscARAuxes.src}
   title="AR Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/AR_Auxes.jpeg"
+    src={imageEquipMiscARAuxes}
     alt="AR Auxes"
   />
 </a>
@@ -579,13 +610,13 @@ import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Cosmetic_Decorative_Auxes.jpeg"
+  href={imageEquipMiscCosmeticDecorativeAuxes.src}
   title="Cosmetic Auxiliary"
 >
-  <img
+  <Image
     loading="lazy"
     class="equip-misc-img"
-    src="/images/equip_misc/Cosmetic_Decorative_Auxes.jpeg"
+    src={imageEquipMiscCosmeticDecorativeAuxes}
     alt="Cosmetic Decorative Auxes"
   />
 </a>

@@ -1,4 +1,7 @@
 ---
+import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
+import imageMiscSiteIconIco from "@/assets/misc/SiteIcon.ico"
+import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import { ClientRouter } from "astro:transitions"
 
 // user style sheets
@@ -46,35 +49,40 @@ const { title, activePage, canonical, metaUrl, metaImage, metaDescription } =
       property="og:url"
       content={`https://azurlaneecgc.com/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
     />
-    {
-      metaImage ? (
-        <meta
-          property="og:image"
-          content={`https://azurlaneecgc.com/images/${metaImage}`}
-        />
-      ) : (
-        <meta
-          property="og:image"
-          content="https://azurlaneecgc.com/images/misc/SiteIcon.png"
-        />
-      )
-    }
+    {metaImage ? (
+      <meta
+        property="og:image"
+        content={
+          new URL(getImageAssetUrl(metaImage), "https://azurlaneecgc.com").href
+        }
+      />
+    ) : (
+      <meta
+        property="og:image"
+        content={
+          new URL(imageMiscSiteIcon.src, "https://azurlaneecgc.com").href
+        }
+      />
+    )}
     <meta name="og:description" content={metaDescription} />
 
-    <link rel="icon" type="image/x-icon" href="/images/misc/SiteIcon.ico" />
+    <link rel="icon" type="image/x-icon" href={imageMiscSiteIconIco} />
 
-    <script is:inline type="application/ld+json">
-      {
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Azur Lane ECGC",
-        "url": "https://azurlaneecgc.com/",
-        "image": "https://azurlaneecgc.com/images/misc/SiteIcon.png"
-      }
-    </script>
-  </head><span data-astro-transition-persist="someId2">
-    <noscript data-astro-transition-persist="someId2"
-      >Your browser does not support JavaScript!
+        name: "Azur Lane ECGC",
+        url: "https://azurlaneecgc.com/",
+        image: new URL(imageMiscSiteIcon.src, "https://azurlaneecgc.com").href,
+      })}
+    />
+  </head>
+  <span data-astro-transition-persist="someId2">
+    <noscript data-astro-transition-persist="someId2">
+      Your browser does not support JavaScript!
     </noscript>
   </span>
 
@@ -85,6 +93,4 @@ const { title, activePage, canonical, metaUrl, metaImage, metaDescription } =
     <slot />
   </body>
   <Footer />
-
-
 </html>

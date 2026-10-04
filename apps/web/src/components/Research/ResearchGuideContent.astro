@@ -1,4 +1,9 @@
 ---
+import imageMaterialsProtocore from "@/assets/materials/protocore.png"
+import imageMaterialsCombatDataPack from "@/assets/materials/combat_data_pack.png"
+import imageMaterialsPr7Bp from "@/assets/materials/pr7_bp.png"
+import imageMaterialsCoin from "@/assets/materials/coin.png"
+import { Image } from "astro:assets"
 import { HR } from "@/components/_common/HR"
 import { ImageCarousel } from "@/components/_common/ImageCarousel"
 import { ItemCell } from "@/components/_common/ItemCell"
@@ -62,24 +67,33 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <h2 id="introduction">Introduction</h2>
 <HR />
 <p>
-  <i
-    ><b
-      >It is highly recommended not to make Research a main focus until you get
-      to W12 due to the lack of spare resources to put into Research until then.</b
-    ></i
-  >
+  <i>
+    <b>
+      It is highly recommended not to make Research a main focus until you get
+      to W12 due to the lack of spare resources to put into Research until then.
+    </b>
+  </i>
 </p>
 <br />
 <p>
   Research is one of the most confusing aspects about Azur Lane. This guide
-  hopes to give players a comprehensive overview of the <WikiLink
-    page="Fleet Technology"
-    title="Fleet Technology">Fleet Technology</WikiLink
-  >,
-  <WikiLink page="Research Academy" title="Research Academy"
-    >Research Academy</WikiLink
-  >, and <WikiLink page="Shipyard" title="Shipyard">Shipyard</WikiLink> tabs of the
-  <WikiLink page="Research" title="Research">Lab</WikiLink>.
+  hopes to give players a comprehensive overview of the{" "}
+  <WikiLink page="Fleet Technology" title="Fleet Technology">
+    Fleet Technology
+  </WikiLink>
+  ,
+  <WikiLink page="Research Academy" title="Research Academy">
+    Research Academy
+  </WikiLink>
+  , and{" "}
+  <WikiLink page="Shipyard" title="Shipyard">
+    Shipyard
+  </WikiLink>{" "}
+  tabs of the
+  <WikiLink page="Research" title="Research">
+    Lab
+  </WikiLink>
+  .
 </p>
 <br />
 
@@ -87,12 +101,15 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <HR />
 <p>
   <i>
-    Main Article: <a
+    Main Article:{" "}
+    <a
       rel="noopener noreferrer"
       target="_blank"
       href="/fleet_technology"
-      title="Fleet Technology Guide">Fleet Technology Guide</a
+      title="Fleet Technology Guide"
     >
+      Fleet Technology Guide
+    </a>
   </i>
 </p>
 <br />
@@ -103,13 +120,12 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <li>
     <p>
       <i>
-        See the <a
-          href="/fleetbuilding"
-          target="_self"
-          rel="noopener noreferrer">Fleetbuilding Guide</a
-        >
-        to see how ships fit into your fleet.</i
-      >
+        See the{" "}
+        <a href="/fleetbuilding" target="_self" rel="noopener noreferrer">
+          Fleetbuilding Guide
+        </a>
+        to see how ships fit into your fleet.
+      </i>
     </p>
   </li>
 </ul>
@@ -128,20 +144,22 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <br />
 
 <p>
-  This is where you unlock and develop <WikiLink
-    page="Shipyard"
-    title="Shipyard">Shipyard</WikiLink
-  > ships.
+  This is where you unlock and develop{" "}
+  <WikiLink page="Shipyard" title="Shipyard">
+    Shipyard
+  </WikiLink>{" "}
+  ships.
 </p>
 <br />
 
 <h3 id="coin-up">Coin-up</h3>
 <p>
   All PR1, PR2/DR2, PR3/DR3, and PR4 ships can have their prints be bought with
-  coins! PR and DR Coin-up are seperate. See <WikiLink
-    page="Shipyard#Enhancing"
-    title="Enhancing With Coins">this wiki page</WikiLink
-  > for more information.
+  coins! PR and DR Coin-up are seperate. See{" "}
+  <WikiLink page="Shipyard#Enhancing" title="Enhancing With Coins">
+    this wiki page
+  </WikiLink>{" "}
+  for more information.
 </p>
 <br />
 
@@ -151,39 +169,48 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <ul>
   <li>
     <p>
-      <WikiLink page="Friedrich der Große" title="Friedrich der Große"
-        >Friedrich der Große</WikiLink
-      >
+      <WikiLink page="Friedrich der Große" title="Friedrich der Große">
+        Friedrich der Große
+      </WikiLink>
     </p>
   </li>
   <li>
     <p>
-      <WikiLink page="Anchorage" title="Anchorage">Anchorage</WikiLink>
+      <WikiLink page="Anchorage" title="Anchorage">
+        Anchorage
+      </WikiLink>
     </p>
   </li>
   <li>
     <p>
-      <WikiLink page="Plymouth" title="Plymouth">Plymouth</WikiLink>
+      <WikiLink page="Plymouth" title="Plymouth">
+        Plymouth
+      </WikiLink>
     </p>
   </li>
   <li>
     <p>
-      <WikiLink page="August von Parseval" title="August von Parseval"
-        >August von Parseval</WikiLink
-      >
+      <WikiLink page="August von Parseval" title="August von Parseval">
+        August von Parseval
+      </WikiLink>
     </p>
   </li>
   <li>
     <p>
-      <WikiLink page="Shimanto" title="Shimanto">Shimanto</WikiLink>
+      <WikiLink page="Shimanto" title="Shimanto">
+        Shimanto
+      </WikiLink>
     </p>
   </li>
   <li>
     <p>
-      <WikiLink page="Ägir" title="Ägir">Ägir</WikiLink> / <WikiLink
-        page="Brest"
-        title="Brest">Brest</WikiLink
-      >
+      <WikiLink page="Ägir" title="Ägir">
+        Ägir
+      </WikiLink>{" "}
+      /{" "}
+      <WikiLink page="Brest" title="Brest">
+        Brest
+      </WikiLink>
     </p>
   </li>
 </ul>
@@ -198,33 +225,44 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <li>
     <p>
       <h5>
-        <a href="#coin-up" rel="noopener noreferrer" target="_self">Coin-up</a> ships.
+        <a href="#coin-up" rel="noopener noreferrer" target="_self">
+          Coin-up
+        </a>{" "}
+        ships.
       </h5>
     </p>
     <ul>
       <li>
         <p>
           Any PR1, PR2 / DR2, PR3 / DR3, PR4 / DR4, and PR5 ship can be enhanced
-          efficiently through <a
-            href="#coin-up"
-            rel="noopener noreferrer"
-            target="_self">Coin-up</a
-          >, making them good to start with.
+          efficiently through{" "}
+          <a href="#coin-up" rel="noopener noreferrer" target="_self">
+            Coin-up
+          </a>
+          , making them good to start with.
         </p>
       </li>
       <li>
         <p>
-          <i
-            >If you need <a
+          <i>
+            If you need{" "}
+            <a
               href="/fleet_technology"
               target="_self"
-              rel="noopener noreferrer">Tech Points</a
-            > for <WikiLink
-              page="Friedrich der Große"
-              title="Friedrich der Große">Friedrich der Große</WikiLink
-            >, pick <WikiLink page="Roon" title="Roon">Roon</WikiLink>.
-            Otherwise, it doesn't matter who is selected.</i
-          >
+              rel="noopener noreferrer"
+            >
+              Tech Points
+            </a>{" "}
+            for{" "}
+            <WikiLink page="Friedrich der Große" title="Friedrich der Große">
+              Friedrich der Große
+            </WikiLink>
+            , pick{" "}
+            <WikiLink page="Roon" title="Roon">
+              Roon
+            </WikiLink>
+            . Otherwise, it doesn't matter who is selected.
+          </i>
         </p>
       </li>
     </ul>
@@ -236,21 +274,23 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     <ul>
       <li>
         <p>
-          <b
-            ><WikiLink page="Shipyard" title="Shipyard">Shipyard</WikiLink> ships
-            are useless at lower Development Levels!</b
-          >
-          Therefore, focusing ships you have a lot of blueprints for is best, as you
-          can use them faster compared to other ships.
+          <b>
+            <WikiLink page="Shipyard" title="Shipyard">
+              Shipyard
+            </WikiLink>{" "}
+            ships are useless at lower Development Levels!
+          </b>
+          Therefore, focusing ships you have a lot of blueprints for is best, as
+          you can use them faster compared to other ships.
         </p>
       </li>
       <li>
         <p>
-          Ships you have selected for your <a
-            href="#catch-up"
-            target="_self"
-            rel="noopener noreferrer">Catch-up</a
-          > fall into this category.
+          Ships you have selected for your{" "}
+          <a href="#catch-up" target="_self" rel="noopener noreferrer">
+            Catch-up
+          </a>{" "}
+          fall into this category.
         </p>
       </li>
     </ul>
@@ -258,18 +298,21 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <li>
     <p>
       <h5>
-        Ships for <WikiLink page="Commander Handbook#Development Missions"
-          >Commander Handbook Missions</WikiLink
-        >.
+        Ships for{" "}
+        <WikiLink page="Commander Handbook#Development Missions">
+          Commander Handbook Missions
+        </WikiLink>
+        .
       </h5>
     </p>
     <ul>
       <li>
         <p>
-          You need 1 ship each from PR1-PR6 due to <WikiLink
-            page="Commander Handbook#Development Missions"
-            >Commander Handbook Missions</WikiLink
-          >. DR ships count for this as well.
+          You need 1 ship each from PR1-PR6 due to{" "}
+          <WikiLink page="Commander Handbook#Development Missions">
+            Commander Handbook Missions
+          </WikiLink>
+          . DR ships count for this as well.
         </p>
       </li>
     </ul>
@@ -281,64 +324,125 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <ul>
   <li>
     <p>
-      PR1: <WikiLink page="Monarch" title="Monarch">Monarch</WikiLink> &gt;= <WikiLink
-        page="Ibuki"
-        title="Ibuki">Ibuki</WikiLink
-      > =
-      <WikiLink page="Roon" title="Roon">Roon</WikiLink> &gt;
-      <WikiLink page="Saint Louis" title="Saint Louis">Saint Louis</WikiLink> =
-      <WikiLink page="Izumo" title="Izumo">Izumo</WikiLink> &gt; rest
-    </p>
-  </li>
-  <li>
-    <p>
-      PR2: <WikiLink page="Kitakaze" title="Kitakaze">Kitakaze</WikiLink> =
-      <WikiLink page="Gascogne" title="Gascogne">Gascogne</WikiLink> &gt; rest
-    </p>
-  </li>
-  <li>
-    <p>
-      PR3: <WikiLink page="Cheshire" title="Cheshire">Cheshire</WikiLink>
+      PR1:{" "}
+      <WikiLink page="Monarch" title="Monarch">
+        Monarch
+      </WikiLink>{" "}
+      &gt;={" "}
+      <WikiLink page="Ibuki" title="Ibuki">
+        Ibuki
+      </WikiLink>{" "}
+      =
+      <WikiLink page="Roon" title="Roon">
+        Roon
+      </WikiLink>{" "}
       &gt;
-      <WikiLink page="Odin" title="Odin">Odin</WikiLink> &gt;
-      <WikiLink page="Mainz" title="Mainz">Mainz</WikiLink> &gt; rest
+      <WikiLink page="Saint Louis" title="Saint Louis">
+        Saint Louis
+      </WikiLink>{" "}
+      =
+      <WikiLink page="Izumo" title="Izumo">
+        Izumo
+      </WikiLink>{" "}
+      &gt; rest
     </p>
   </li>
   <li>
     <p>
-      PR4: <b
-        ><WikiLink page="Anchorage" title="Anchorage">Anchorage</WikiLink></b
-      > &gt;=
-      <WikiLink page="August von Parseval" title="August von Parseval"
-        >August von Parseval</WikiLink
-      > &gt;=
-      <WikiLink page="Marco Polo" title="Marco Polo">Marco Polo</WikiLink>
+      PR2:{" "}
+      <WikiLink page="Kitakaze" title="Kitakaze">
+        Kitakaze
+      </WikiLink>{" "}
+      =
+      <WikiLink page="Gascogne" title="Gascogne">
+        Gascogne
+      </WikiLink>{" "}
+      &gt; rest
     </p>
   </li>
   <li>
     <p>
-      PR5: <WikiLink page="Harbin" title="Harbin">Harbin</WikiLink> =
-      <WikiLink page="Chkalov" title="Chkalov">Chkalov</WikiLink> &gt;
-      <WikiLink page="Prinz Rupprecht" title="Prinz Rupprecht"
-        >Prinz Rupprecht</WikiLink
-      >
-    </p>
-  </li>
-  <li>
-    <p>
-      PR6: <b><WikiLink page="Shimanto" title="Shimanto">Shimanto</WikiLink></b>
+      PR3:{" "}
+      <WikiLink page="Cheshire" title="Cheshire">
+        Cheshire
+      </WikiLink>
       &gt;
-      <WikiLink page="Felix Schultz" title="Felix Schultz"
-        >Felix Schultz</WikiLink
-      > =
-      <WikiLink page="Flandre" title="Flandre">Flandre</WikiLink>
+      <WikiLink page="Odin" title="Odin">
+        Odin
+      </WikiLink>{" "}
+      &gt;
+      <WikiLink page="Mainz" title="Mainz">
+        Mainz
+      </WikiLink>{" "}
+      &gt; rest
     </p>
   </li>
   <li>
     <p>
-      PR7: <WikiLink page="Bayard" title="Bayard">Bayard</WikiLink> &gt;=
-      <WikiLink page="Daisen" title="Daisen">Daisen</WikiLink> &gt;
-      <WikiLink page="Halford" title="Halford">Halford</WikiLink>
+      PR4:{" "}
+      <b>
+        <WikiLink page="Anchorage" title="Anchorage">
+          Anchorage
+        </WikiLink>
+      </b>{" "}
+      &gt;=
+      <WikiLink page="August von Parseval" title="August von Parseval">
+        August von Parseval
+      </WikiLink>{" "}
+      &gt;=
+      <WikiLink page="Marco Polo" title="Marco Polo">
+        Marco Polo
+      </WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      PR5:{" "}
+      <WikiLink page="Harbin" title="Harbin">
+        Harbin
+      </WikiLink>{" "}
+      =
+      <WikiLink page="Chkalov" title="Chkalov">
+        Chkalov
+      </WikiLink>{" "}
+      &gt;
+      <WikiLink page="Prinz Rupprecht" title="Prinz Rupprecht">
+        Prinz Rupprecht
+      </WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      PR6:{" "}
+      <b>
+        <WikiLink page="Shimanto" title="Shimanto">
+          Shimanto
+        </WikiLink>
+      </b>
+      &gt;
+      <WikiLink page="Felix Schultz" title="Felix Schultz">
+        Felix Schultz
+      </WikiLink>{" "}
+      =
+      <WikiLink page="Flandre" title="Flandre">
+        Flandre
+      </WikiLink>
+    </p>
+  </li>
+  <li>
+    <p>
+      PR7:{" "}
+      <WikiLink page="Bayard" title="Bayard">
+        Bayard
+      </WikiLink>{" "}
+      &gt;=
+      <WikiLink page="Daisen" title="Daisen">
+        Daisen
+      </WikiLink>{" "}
+      &gt;
+      <WikiLink page="Halford" title="Halford">
+        Halford
+      </WikiLink>
     </p>
     <ul>
       <li>
@@ -350,13 +454,18 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   </li>
   <li>
     <p>
-      PR8: <WikiLink page="Kansas" title="Kansas">Kansas</WikiLink> =
-      <WikiLink page="Vittorio Cuniberti" title="Vittorio Cuniberti"
-        >Vittorio Cuniberti</WikiLink
-      > =
-      <WikiLink page="Dmitri Donskoi" title="Dmitri Donskoi"
-        >Dmitri Donskoi</WikiLink
-      >
+      PR8:{" "}
+      <WikiLink page="Kansas" title="Kansas">
+        Kansas
+      </WikiLink>{" "}
+      =
+      <WikiLink page="Vittorio Cuniberti" title="Vittorio Cuniberti">
+        Vittorio Cuniberti
+      </WikiLink>{" "}
+      =
+      <WikiLink page="Dmitri Donskoi" title="Dmitri Donskoi">
+        Dmitri Donskoi
+      </WikiLink>
     </p>
     <ul>
       <li>
@@ -368,11 +477,13 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   </li>
   <li>
     <p>
-      DRs: <b
-        ><WikiLink page="Friedrich der Große" title="Friedrich der Große"
-          >Friedrich der Große</WikiLink
-        ></b
-      > &gt;
+      DRs:{" "}
+      <b>
+        <WikiLink page="Friedrich der Große" title="Friedrich der Große">
+          Friedrich der Große
+        </WikiLink>
+      </b>{" "}
+      &gt;
       <!-- <b
         ><WikiLink page="Azuma" title="Azuma">Azuma</WikiLink></b
       > &gt;
@@ -383,19 +494,19 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     <ul>
       <li>
         <p>
-          <i
-            >Since FdG has coin-up, she is the highest priority to acquire. Some
+          <i>
+            Since FdG has coin-up, she is the highest priority to acquire. Some
             other DR ships also have coin-up, but they are worse value compared
-            to FdG.</i
-          >
+            to FdG.
+          </i>
         </p>
       </li>
       <li>
         <p>
-          <i
-            ><b>Get all other DRs at your own pace.</b> Since they take forever to
-            max, there is no rush.</i
-          >
+          <i>
+            <b>Get all other DRs at your own pace.</b> Since they take forever
+            to max, there is no rush.
+          </i>
         </p>
       </li>
     </ul>
@@ -407,42 +518,52 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <ul>
   <li>
     <p>
-      Bolded ships are the recommended <a
+      Bolded ships are the recommended{" "}
+      <a
         rel="noopener noreferrer"
         target="_self"
         href="#catch-up"
-        title="Catch-up">Catch-up</a
-      > selections for that season.
+        title="Catch-up"
+      >
+        Catch-up
+      </a>{" "}
+      selections for that season.
     </p>
     <ul>
       <li>
         <p>
-          <i
-            >If a ship is not listed, but has a Catch-up (ex. <WikiLink
-              page="Drake"
-              title="Drake">Drake</WikiLink
-            >), do it last.</i
-          >
+          <i>
+            If a ship is not listed, but has a Catch-up (ex.{" "}
+            <WikiLink page="Drake" title="Drake">
+              Drake
+            </WikiLink>
+            ), do it last.
+          </i>
         </p>
       </li>
       <li>
         <p>
-          <i
-            >For PR Catch-up Min-Maxing, read <a
+          <i>
+            For PR Catch-up Min-Maxing, read{" "}
+            <a
               rel="noopener noreferrer"
               target="_self"
               href="#catch-up_min_max"
-              title="Catch-up Min-Max">this section</a
-            > for more information.</i
-          >
+              title="Catch-up Min-Max"
+            >
+              this section
+            </a>{" "}
+            for more information.
+          </i>
         </p>
       </li>
     </ul>
   </li>
   <li>
     <p>
-      Ensure that there is always 1 <WikiLink page="Shipyard">Shipyard</WikiLink
-      > ship in development at all times, no matter what. This gives you maximum uptime.
+      Ensure that there is always 1{" "}
+      <WikiLink page="Shipyard">Shipyard</WikiLink> ship in development at all
+      times, no matter what. This gives you maximum uptime.
     </p>
   </li>
 </ul>
@@ -452,21 +573,24 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <HR />
 <p>
   <i>
-    Main Article: <a
+    Main Article:{" "}
+    <a
       rel="noopener noreferrer"
       target="_blank"
       href="/farming#for_exp_campaign"
-      title="Farming Guide">Farming Guide</a
+      title="Farming Guide"
     >
+      Farming Guide
+    </a>
   </i>
 </p>
 <p>
   Make sure when farming that you use ships that meet the requirements for the
   PR ship you are grinding. The entire fleet does not have to meet the
   requirements, only the Main / Vanguard Fleet respectively. Some ships swap
-  their requirements between Combat Data Collection I and II (ex. <WikiLink
-    page="Ägir"
-  />), so be careful.
+  their requirements between Combat Data Collection I and II (ex.{" "}
+  <WikiLink page="Ägir" />
+  ), so be careful.
 </p>
 <br />
 
@@ -474,9 +598,10 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <HR />
 <p>
   <i>
-    See also: <WikiLink page="Research Academy" title="Research Academy"
-      >Research Academy</WikiLink
-    >
+    See also:{" "}
+    <WikiLink page="Research Academy" title="Research Academy">
+      Research Academy
+    </WikiLink>
   </i>
 </p>
 <br />
@@ -500,28 +625,30 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 
 <h3>Research Focus and Catch-up are seperate!!!</h3>
 <p>
-  Notice in the <b>"Research Focus UI"</b> image, "Research Focus" is listed seperately!
-  Read the below sections for more information.
+  Notice in the <b>"Research Focus UI"</b> image, "Research Focus" is listed
+  seperately! Read the below sections for more information.
 </p>
 <br />
 
 <h3 id="research_purpose">Purpose of Research</h3>
 <p>
-  To get <b>PR / DR Blueprints</b> to use in <WikiLink
-    page="Shipyard"
-    title="Shipyard">Shipyard</WikiLink
-  >, as well as
-  <b>Equipment Designs</b> to <WikiLink
-    page="Design (Craft)"
-    title="Design (Craft)">craft</WikiLink
-  > into gear.
+  To get <b>PR / DR Blueprints</b> to use in{" "}
+  <WikiLink page="Shipyard" title="Shipyard">
+    Shipyard
+  </WikiLink>
+  , as well as
+  <b>Equipment Designs</b> to{" "}
+  <WikiLink page="Design (Craft)" title="Design (Craft)">
+    craft
+  </WikiLink>{" "}
+  into gear.
 </p>
 <br />
 
 <h3 id="research_focus">Research Focus</h3>
 <p>
-  When a season is focused, <b>at least 3</b> out of the 5 available Research Projects
-  will be from that season.
+  When a season is focused, <b>at least 3</b> out of the 5 available Research
+  Projects will be from that season.
 </p>
 <br />
 
@@ -531,8 +658,10 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <a
     rel="noopener noreferrer"
     target="_blank"
-    href="https://suchiguma.github.io/miniguides/research-focus">this guide</a
+    href="https://suchiguma.github.io/miniguides/research-focus"
   >
+    this guide
+  </a>
   for more information about what to research focus and why.
 </p>
 <br />
@@ -540,8 +669,8 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <h3 id="catch-up">Catch-up</h3>
 <p>
   When a ship is selected for catch-up, every research you complete will always
-  give a minimum of 1
-  <b>additional</b> print that is for the catch-up ship selected.
+  give a minimum of 1<b>additional</b> print that is for the catch-up ship
+  selected.
 </p>
 <br />
 
@@ -580,18 +709,17 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <ul>
     <li>
       <p>
-        <i
-          >It's recommended that all 300 prints are for the same ship, until the
-          ship reaches Development Level 30.</i
-        >
+        <i>
+          It's recommended that all 300 prints are for the same ship, until the
+          ship reaches Development Level 30.
+        </i>
       </p>
     </li>
   </ul>
   <li>
     <p>
-      150 (DR) prints for <WikiLink page="Friedrich der Große"
-        >Friedrich der Große</WikiLink
-      >
+      150 (DR) prints for{" "}
+      <WikiLink page="Friedrich der Große">Friedrich der Große</WikiLink>
     </p>
   </li>
   <li>
@@ -626,28 +754,37 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   </li>
 </ul>
 <p>
-  You can only do one catch-up at a time, but there is no time limit. <i
-    >It is recommended to do the PR catch-ups before the DR catch-ups, as DR
-    ships use a lot more prints.</i
-  >
+  You can only do one catch-up at a time, but there is no time limit.{" "}
+  <i>
+    It is recommended to do the PR catch-ups before the DR catch-ups, as DR
+    ships use a lot more prints.
+  </i>
 </p>
 <br />
 
 <p>
-  <b>Recommended Catch-up selections:</b> See <a
+  <b>Recommended Catch-up selections:</b> See{" "}
+  <a
     rel="noopener noreferrer"
     target="_self"
     href="#shipyard_priority_by_season"
-    title="Shipyard Priority">this section</a
-  > for more information.
+    title="Shipyard Priority"
+  >
+    this section
+  </a>{" "}
+  for more information.
 </p>
 <p>
-  <b>For PR Catch-up Min-Maxing:</b> See <a
+  <b>For PR Catch-up Min-Maxing:</b> See{" "}
+  <a
     rel="noopener noreferrer"
     target="_self"
     href="#catch-up_min_max"
-    title="Catch-up Min-Max">this section</a
-  > for more information.
+    title="Catch-up Min-Max"
+  >
+    this section
+  </a>{" "}
+  for more information.
 </p>
 <br />
 
@@ -659,50 +796,56 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <ul>
   <li>
     <p>
-      <i>Projects <b>ARE</b> rated within a focus area!</i>
+      <i>
+        Projects <b>ARE</b> rated within a focus area!
+      </i>
     </p>
   </li>
   <li>
     <p>
-      <i
-        >For D researches, Rainbow Ship Blueprints &gt; Gold Ship Blueprints,
-        regardless of the research length / rarity color.</i
-      >
+      <i>
+        For D researches, Rainbow Ship Blueprints &gt; Gold Ship Blueprints,
+        regardless of the research length / rarity color.
+      </i>
     </p>
   </li>
   <li>
     <p>
-      <i
-        >Only spend cubes on research if you have a large (400+ cubes or higher)
-        surplus, and are willing to risk your gacha chances.</i
-      >
+      <i>
+        Only spend cubes on research if you have a large (400+ cubes or higher)
+        surplus, and are willing to risk your gacha chances.
+      </i>
     </p>
   </li>
   <li>
     <p>
-      <i
-        >Avoid taking H-type or D-type projects once all ships in that season
-        are maxed. The protocore gained is not worth it.</i
-      >
+      <i>
+        Avoid taking H-type or D-type projects once all ships in that season are
+        maxed. The protocore gained is not worth it.
+      </i>
     </p>
   </li>
   <li>
-    <p><i>Always have a research running at all times, even if it's bad!</i></p>
+    <p>
+      <i>Always have a research running at all times, even if it's bad!</i>
+    </p>
   </li>
   <li>
     <p>
-      <i
-        ><b
-          >If all of the options are terrible, pick the shortest option that
+      <i>
+        <b>
+          If all of the options are terrible, pick the shortest option that
           doesn't cost cubes, regardless of if ships in the season are maxed or
-          not.</b
-        ></i
-      >
+          not.
+        </b>
+      </i>
     </p>
     <ul>
       <li>
         <p>
-          <i><b>Save your refresh button for times like these.</b></i>
+          <i>
+            <b>Save your refresh button for times like these.</b>
+          </i>
         </p>
       </li>
     </ul>
@@ -1134,10 +1277,11 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <h2 id="protocore">Protocore</h2>
 <HR />
 <p>
-  Protocore is a resource used to buy goods in the <WikiLink
-    page="Prototype Shop"
-    title="Prototype Shop">Prototype Shop</WikiLink
-  >.
+  Protocore is a resource used to buy goods in the{" "}
+  <WikiLink page="Prototype Shop" title="Prototype Shop">
+    Prototype Shop
+  </WikiLink>
+  .
 </p>
 <br />
 
@@ -1159,26 +1303,32 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <br />
 
 <h3 id="protocore_spending">Protocore Spending</h3>
-<p><b>Notes:</b></p>
+<p>
+  <b>Notes:</b>
+</p>
 <ul>
   <li>
     <p>
-      <i
-        >See <a
+      <i>
+        See{" "}
+        <a
           rel="noopener noreferrer"
           target="_self"
           href="/shop_priority#protocore"
-          title="Shop Priority">Shop Priority</a
-        > for a more general priority chart.</i
-      >
+          title="Shop Priority"
+        >
+          Shop Priority
+        </a>{" "}
+        for a more general priority chart.
+      </i>
     </p>
   </li>
   <li>
     <p>
       <i>
-        You can only purchase <b>20</b> Gold Rarity prints per season, per month.
-        Be sure to double check your existing print counts, and print-income estimates,
-        before spending Prototype Core here.
+        You can only purchase <b>20</b> Gold Rarity prints per season, per
+        month. Be sure to double check your existing print counts, and
+        print-income estimates, before spending Prototype Core here.
       </i>
     </p>
   </li>
@@ -1206,18 +1356,28 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
       <WikiLink
         page="Triple 406mm (Mle 1938 Prototype)"
         title="Triple 406mm/50 Main Gun Mount"
-        >Prototype Triple 406mm/50 Main Gun Mount</WikiLink
       >
+        Prototype Triple 406mm/50 Main Gun Mount
+      </WikiLink>
     </td>
-    <td><p>PR3</p></td>
-    <td><p>2 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>PR3</p>
+    </td>
     <td>
       <p>
-        750 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
-          ><img
+        2 Equipment
+        <br />
+        (50 Prints)
+      </p>
+    </td>
+    <td>
+      <p>
+        750{" "}
+        <WikiLink page="Shops#Prototype_Shop" title="Protocore">
+          <Image
             loading="lazy"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Protocore"
             class="rarity-4 inline-block"
           />
@@ -1230,7 +1390,9 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
         <i>Found under "Prototype Weapon Blueprint - Series 3."</i>
       </p>
       <p>
-        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+        <i>
+          Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink>
+        </i>
       </p>
     </td>
   </tr>
@@ -1247,18 +1409,28 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
       <WikiLink
         page="Triple 380mm (Mle 1935 Prototype)"
         title="Prototype Triple 380mm Mle 1935 Main Gun Mount"
-        >Prototype Triple 380mm Mle 1935 Main Gun Mount</WikiLink
       >
+        Prototype Triple 380mm Mle 1935 Main Gun Mount
+      </WikiLink>
     </td>
-    <td><p>PR6</p></td>
-    <td><p>1 Equipment<br />(25 Prints)</p></td>
+    <td>
+      <p>PR6</p>
+    </td>
     <td>
       <p>
-        375 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
-          ><img
+        1 Equipment
+        <br />
+        (25 Prints)
+      </p>
+    </td>
+    <td>
+      <p>
+        375{" "}
+        <WikiLink page="Shops#Prototype_Shop" title="Protocore">
+          <Image
             loading="lazy"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Protocore"
             class="rarity-4 inline-block"
           />
@@ -1287,18 +1459,29 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
       />
       <WikiLink
         page="Messerschmitt Bf 109G (Carrier-based Prototype)"
-        title="Prototype BF-109G">Prototype BF-109G</WikiLink
+        title="Prototype BF-109G"
       >
+        Prototype BF-109G
+      </WikiLink>
     </td>
-    <td><p>PR4</p></td>
-    <td><p>3 Equipment<br />(75 Prints)</p></td>
+    <td>
+      <p>PR4</p>
+    </td>
     <td>
       <p>
-        1125 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
-          ><img
+        3 Equipment
+        <br />
+        (75 Prints)
+      </p>
+    </td>
+    <td>
+      <p>
+        1125{" "}
+        <WikiLink page="Shops#Prototype_Shop" title="Protocore">
+          <Image
             loading="lazy"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Protocore"
             class="rarity-4 inline-block"
           />
@@ -1311,7 +1494,9 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
         <i>Found under "Prototype Weapon Blueprint - Series 4."</i>
       </p>
       <p>
-        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+        <i>
+          Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink>
+        </i>
       </p>
     </td>
   </tr>
@@ -1327,18 +1512,29 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
       />
       <WikiLink
         page="Nakajima J5N Tenrai (Dive Bomber Prototype)"
-        title="Prototype Tenrai">Prototype Tenrai</WikiLink
+        title="Prototype Tenrai"
       >
+        Prototype Tenrai
+      </WikiLink>
     </td>
-    <td><p>PR4</p></td>
-    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>PR4</p>
+    </td>
     <td>
       <p>
-        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
-          ><img
+        1 Equipment
+        <br />
+        (50 Prints)
+      </p>
+    </td>
+    <td>
+      <p>
+        3000{" "}
+        <WikiLink page="Shops#Prototype_Shop" title="Protocore">
+          <Image
             loading="lazy"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Protocore"
             class="rarity-4 inline-block"
           />
@@ -1348,7 +1544,9 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     <td>
       <p>Best General-Use Dive Bomber.</p>
       <p>
-        <i>Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i>
+        <i>
+          Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink>
+        </i>
       </p>
     </td>
   </tr>
@@ -1365,18 +1563,28 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
       <WikiLink
         page="Twin 457mm (Mark A Prototype)"
         title="Twin 457mm (Mark A Prototype)"
-        >Prototype Twin 457mm Mk A Main Gun Mount</WikiLink
       >
+        Prototype Twin 457mm Mk A Main Gun Mount
+      </WikiLink>
     </td>
-    <td><p>PR2</p></td>
-    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>PR2</p>
+    </td>
     <td>
       <p>
-        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
-          ><img
+        1 Equipment
+        <br />
+        (50 Prints)
+      </p>
+    </td>
+    <td>
+      <p>
+        3000{" "}
+        <WikiLink page="Shops#Prototype_Shop" title="Protocore">
+          <Image
             loading="lazy"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Protocore"
             class="rarity-4 inline-block"
           />
@@ -1385,9 +1593,11 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     </td>
     <td>
       <p>
-        Best 18s AP BB Gun, also really good when Mobbing.<br /><i
-          >Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink></i
-        >
+        Best 18s AP BB Gun, also really good when Mobbing.
+        <br />
+        <i>
+          Craftable in <WikiLink page="Gear Lab">Gear Lab.</WikiLink>
+        </i>
       </p>
     </td>
   </tr>
@@ -1404,18 +1614,28 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
       <WikiLink
         page="Prototype Quadruple 152mm Main Gun Mount"
         title="Prototype Quadruple 152mm Main Gun Mount"
-        >Prototype Quadruple 152mm Main Gun Mount</WikiLink
       >
+        Prototype Quadruple 152mm Main Gun Mount
+      </WikiLink>
     </td>
-    <td><p>PR5</p></td>
-    <td><p>1 Equipment<br />(50 Prints)</p></td>
+    <td>
+      <p>PR5</p>
+    </td>
     <td>
       <p>
-        3000 <WikiLink page="Shops#Prototype_Shop" title="Protocore"
-          ><img
+        1 Equipment
+        <br />
+        (50 Prints)
+      </p>
+    </td>
+    <td>
+      <p>
+        3000{" "}
+        <WikiLink page="Shops#Prototype_Shop" title="Protocore">
+          <Image
             loading="lazy"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Protocore"
             class="rarity-4 inline-block"
           />
@@ -1430,85 +1650,96 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <br />
 
 <h3 id="protocore_income">Protocore Income</h3>
-<p><b>Notes:</b></p>
+<p>
+  <b>Notes:</b>
+</p>
 <ul>
   <li>
     <p>
-      <i
-        >See <a
+      <i>
+        See{" "}
+        <a
           rel="noopener noreferrer"
           target="_self"
           href="/common_resource"
-          title="Common Resource Guide">Common Resource Guide</a
-        > for a more general resource-income chart.</i
-      >
+          title="Common Resource Guide"
+        >
+          Common Resource Guide
+        </a>{" "}
+        for a more general resource-income chart.
+      </i>
     </p>
   </li>
   <li>
     <p>
-      1 Combat Data Pack <WikiLink page="Shops#Prototype_Core" title="Protocore"
-        ><img
+      1 Combat Data Pack{" "}
+      <WikiLink page="Shops#Prototype_Core" title="Protocore">
+        <Image
           loading="lazy"
           class="rarity-4 inline-block"
-          src="/images/materials/combat_data_pack.png"
-          width="25px"
+          src={imageMaterialsCombatDataPack}
+          width={25}
           alt="Combat Data Pack"
-        /></WikiLink
-      > -&gt; 2 Protocore <WikiLink
-        page="Shops#Prototype_Core"
-        title="Protocore"
-        ><img
+        />
+      </WikiLink>{" "}
+      -&gt; 2 Protocore{" "}
+      <WikiLink page="Shops#Prototype_Core" title="Protocore">
+        <Image
           loading="lazy"
           class="rarity-4 inline-block"
-          src="/images/materials/protocore.png"
-          width="25px"
+          src={imageMaterialsProtocore}
+          width={25}
           alt="Prototype Core"
-        /></WikiLink
-      >
+        />
+      </WikiLink>
     </p>
   </li>
   <li>
     <p>
-      1 PR Print <WikiLink page="Shipyard" title="Shipyard"
-        ><img
+      1 PR Print{" "}
+      <WikiLink page="Shipyard" title="Shipyard">
+        <Image
           loading="lazy"
           class="rarity-4 inline-block"
-          src="/images/materials/pr7_bp.png"
-          width="25px"
+          src={imageMaterialsPr7Bp}
+          width={25}
           alt="PR Blueprint"
-        /></WikiLink
-      > -&gt; 5 Protocore<WikiLink page="Shops#Prototype_Core" title="Protocore"
-        ><img
+        />
+      </WikiLink>{" "}
+      -&gt; 5 Protocore
+      <WikiLink page="Shops#Prototype_Core" title="Protocore">
+        <Image
           loading="lazy"
           class="rarity-4 inline-block"
-          src="/images/materials/protocore.png"
-          width="25px"
+          src={imageMaterialsProtocore}
+          width={25}
           alt="Prototype Core"
-        /></WikiLink
-      >
+        />
+      </WikiLink>
     </p>
   </li>
   <li>
     <p>
-      1 DR Print<WikiLink page="Shipyard" title="Shipyard"
-        ><img
+      1 DR Print
+      <WikiLink page="Shipyard" title="Shipyard">
+        <Image
           loading="lazy"
           class="rarity-5 inline-block"
-          src="/images/materials/pr7_bp.png"
-          width="25px"
+          src={imageMaterialsPr7Bp}
+          width={25}
           alt="PR Blueprint"
-        /></WikiLink
-      > -&gt; 20 Protocore <WikiLink
-        page="Shops#Prototype_Core"
-        title="Protocore"
-        ><img
+        />
+      </WikiLink>{" "}
+      -&gt; 20 Protocore{" "}
+      <WikiLink page="Shops#Prototype_Core" title="Protocore">
+        <Image
           loading="lazy"
           class="rarity-4 inline-block"
-          src="/images/materials/protocore.png"
-          width="25px"
+          src={imageMaterialsProtocore}
+          width={25}
           alt="Prototype Core"
-        /></WikiLink
-      >
+        />
+      </WikiLink>
     </p>
   </li>
 </ul>
@@ -1525,21 +1756,24 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <tr>
     <td>
       <p>
-        <b><WikiLink page="Cruise Missions">Cruise Missions</WikiLink></b>
+        <b>
+          <WikiLink page="Cruise Missions">Cruise Missions</WikiLink>
+        </b>
       </p>
     </td>
     <td>
       <p>
         <b>200</b>
-        <WikiLink page="Shops#Prototype_Core" title="Protocore"
-          ><img
+        <WikiLink page="Shops#Prototype_Core" title="Protocore">
+          <Image
             loading="lazy"
             class="rarity-4 inline-block"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Prototype Core"
-          /></WikiLink
-        > / 2 Months
+          />
+        </WikiLink>{" "}
+        / 2 Months
       </p>
     </td>
     <td>
@@ -1547,13 +1781,15 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     </td>
     <td>
       <p>
-        Obtained by converting <img
+        Obtained by converting{" "}
+        <Image
           loading="lazy"
           class="rarity-4 inline-block"
-          src="/images/materials/combat_data_pack.png"
-          width="25px"
+          src={imageMaterialsCombatDataPack}
+          width={25}
           alt="Combat Data Pack"
-        />.
+        />
+        .
         <br />
         Only repeatable source of Prototype Core.
       </p>
@@ -1563,52 +1799,55 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <tr>
     <td>
       <p>
-        <b
-          ><WikiLink page="Commander Handbook#Development Missions"
-            >Commander Handbook</WikiLink
-          ></b
-        >
+        <b>
+          <WikiLink page="Commander Handbook#Development Missions">
+            Commander Handbook
+          </WikiLink>
+        </b>
       </p>
     </td>
     <td>
       <p>
         <b>800</b>
-        <WikiLink page="Shops#Prototype_Core" title="Protocore"
-          ><img
+        <WikiLink page="Shops#Prototype_Core" title="Protocore">
+          <Image
             loading="lazy"
             class="rarity-4 inline-block"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Prototype Core"
-          /></WikiLink
-        > / PR Season
+          />
+        </WikiLink>{" "}
+        / PR Season
       </p>
     </td>
     <td>
       <p>
         <b>5600</b>
-        <WikiLink page="Shops#Prototype_Core" title="Protocore"
-          ><img
+        <WikiLink page="Shops#Prototype_Core" title="Protocore">
+          <Image
             loading="lazy"
             class="rarity-4 inline-block"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Prototype Core"
-          /></WikiLink
-        >
+          />
+        </WikiLink>
       </p>
     </td>
     <td>
       <p>
         Development Missions section.
         <br />
-        Obtained by converting <img
+        Obtained by converting{" "}
+        <Image
           loading="lazy"
           class="rarity-4 inline-block"
-          src="/images/materials/combat_data_pack.png"
-          width="25px"
+          src={imageMaterialsCombatDataPack}
+          width={25}
           alt="Combat Data Pack"
-        />.
+        />
+        .
         <br />
         Once per series (PR1 twice, PR2, PR3, PR4, PR5, PR6).
       </p>
@@ -1618,60 +1857,69 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
   <tr>
     <td>
       <p>
-        <b
-          ><a
+        <b>
+          <a
             rel="noopener noreferrer"
             target="_self"
             href="#catch-up_min_max"
-            title="Catch-up Min-Max">PR Catch-up Min-maxing**</a
-          ></b
-        >
+            title="Catch-up Min-Max"
+          >
+            PR Catch-up Min-maxing**
+          </a>
+        </b>
       </p>
     </td>
     <td>
       <p>
         <b>1500</b>
-        <WikiLink page="Shops#Prototype_Core" title="Protocore"
-          ><img
+        <WikiLink page="Shops#Prototype_Core" title="Protocore">
+          <Image
             loading="lazy"
             class="rarity-4 inline-block"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Prototype Core"
-          /></WikiLink
-        > / PR Catch-up
+          />
+        </WikiLink>{" "}
+        / PR Catch-up
       </p>
     </td>
     <td>
       <p>
         <b>3000</b>
-        <WikiLink page="Shops#Prototype_Core" title="Protocore"
-          ><img
+        <WikiLink page="Shops#Prototype_Core" title="Protocore">
+          <Image
             loading="lazy"
             class="rarity-4 inline-block"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Prototype Core"
-          /></WikiLink
-        >
+          />
+        </WikiLink>
       </p>
     </td>
     <td>
       <p>
-        Obtained by converting <img
+        Obtained by converting{" "}
+        <Image
           loading="lazy"
           class="rarity-5 inline-block"
-          src="/images/materials/pr7_bp.png"
-          width="25px"
+          src={imageMaterialsPr7Bp}
+          width={25}
           alt="PR Blueprint"
-        />.
+        />
+        .
         <br />
-        Only converted 2 PR Catch-ups worth of prints. See <a
+        Only converted 2 PR Catch-ups worth of prints. See{" "}
+        <a
           rel="noopener noreferrer"
           target="_self"
           href="#catch-up_min_max"
-          title="Catch-up Min-Max">this section</a
-        > for more information about PR Catch-up Min-Maxing.
+          title="Catch-up Min-Max"
+        >
+          this section
+        </a>{" "}
+        for more information about PR Catch-up Min-Maxing.
       </p>
     </td>
   </tr>
@@ -1680,9 +1928,7 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 
 <h3 id="catch-up_min_max" class="flex">
   PR Catch-up Min-Maxing
-
   <span class="mx-1"></span>
-
   <button
     id="catchupButton"
     class="catchup-button"
@@ -1695,8 +1941,9 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <ul>
   <li>
     <p>
-      <i><b>This is NOT necessary</b>. You will be fine if you don't do this.</i
-      >
+      <i>
+        <b>This is NOT necessary</b>. You will be fine if you don't do this.
+      </i>
     </p>
   </li>
 </ul>
@@ -1704,11 +1951,11 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <div id="catchupToggleContent" class="hidden" aria-hidden="true">
   <p>
     This method involves manipulating Research to allow you to convert all the
-    Catch-up prints from a season into Prototype Core. <i
-      >You can do it for any season with catch-up active. <b
-        >Do NOT do this with any of the DR Catch-ups!</b
-      ></i
-    >
+    Catch-up prints from a season into Prototype Core.{" "}
+    <i>
+      You can do it for any season with catch-up active.{" "}
+      <b>Do NOT do this with any of the DR Catch-ups!</b>
+    </i>
   </p>
   <ol>
     <li>
@@ -1719,13 +1966,17 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
       <ul>
         <li>
           <p>
-            <b
-              >Select a ship that is <i>NOT</i> listed as <a
+            <b>
+              Select a ship that is <i>NOT</i> listed as{" "}
+              <a
                 href="#shipyard_priority"
                 target="_self"
-                rel="noopener noreferrer">High Priority</a
-              ></b
-            >.
+                rel="noopener noreferrer"
+              >
+                High Priority
+              </a>
+            </b>
+            .
           </p>
           <ul>
             <li>
@@ -1736,11 +1987,15 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
             </li>
             <li>
               <p>
-                See <a
+                See{" "}
+                <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="#shipyard_priority">Shipyard Priority</a
-                > for more information.
+                  href="#shipyard_priority"
+                >
+                  Shipyard Priority
+                </a>{" "}
+                for more information.
               </p>
             </li>
           </ul>
@@ -1760,17 +2015,17 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
         While your valuable (PR, DR) Catch-up prints are slowly trickling in,
         obtain and develop the ship from Step 2 using coins until the ship is
         development level 30. This entire process should take about 50 days or
-        less, assuming you are spending 3000 <WikiLink
-          page="Shops"
-          title="Shops"
-          ><img
+        less, assuming you are spending 3000{" "}
+        <WikiLink page="Shops" title="Shops">
+          <Image
             loading="lazy"
             class="rarity-1 inline-block"
-            src="/images/materials/coin.png"
-            width="25px"
+            src={imageMaterialsCoin}
+            width={25}
             alt="Coin"
-          /></WikiLink
-        > Coins daily.
+          />
+        </WikiLink>{" "}
+        Coins daily.
       </p>
       <ul>
         <li>
@@ -1805,19 +2060,19 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     </li>
     <li>
       <p>
-        Convert all prints of that ship into <WikiLink
-          page="Shops#Prototype_Shop"
-          title="Protocore"
-          ><img
+        Convert all prints of that ship into{" "}
+        <WikiLink page="Shops#Prototype_Shop" title="Protocore">
+          <Image
             loading="lazy"
             class="rarity-4 inline-block"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Prototype Core"
-          /></WikiLink
-        > Prototype Core in the <WikiLink page="Shops#Blueprint Analysis"
-          >Prototype Shop</WikiLink
-        >. This should take about 2 months to convert all the prints.
+          />
+        </WikiLink>{" "}
+        Prototype Core in the{" "}
+        <WikiLink page="Shops#Blueprint Analysis">Prototype Shop</WikiLink>.
+        This should take about 2 months to convert all the prints.
       </p>
       <ul>
         <li>
@@ -1830,17 +2085,17 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
     </li>
     <li>
       <p>
-        Repeat these steps until all desired Catch-up prints are converted into <WikiLink
-          page="Shops#Prototype_Shop"
-          title="Protocore"
-          ><img
+        Repeat these steps until all desired Catch-up prints are converted into{" "}
+        <WikiLink page="Shops#Prototype_Shop" title="Protocore">
+          <Image
             loading="lazy"
             class="rarity-4 inline-block"
-            src="/images/materials/protocore.png"
-            width="25px"
+            src={imageMaterialsProtocore}
+            width={25}
             alt="Prototype Core"
-          /></WikiLink
-        > Prototype Core.
+          />
+        </WikiLink>{" "}
+        Prototype Core.
       </p>
     </li>
   </ol>
@@ -1850,51 +2105,62 @@ import ShipyardWindow from "@/assets/research_guide/shipyard_window.png"
 <h3 id="optimizing_protocore">Optimizing Protocore</h3>
 <p>
   Ideally, the total Protocore income is <b>5000</b>
-  <WikiLink page="Shops#Prototype_Core" title="Protocore"
-    ><img
+  <WikiLink page="Shops#Prototype_Core" title="Protocore">
+    <Image
       loading="lazy"
       class="rarity-4 inline-block"
-      src="/images/materials/protocore.png"
-      width="25px"
+      src={imageMaterialsProtocore}
+      width={25}
       alt="Prototype Core"
-    /></WikiLink
-  > from the methods listed above.
+    />
+  </WikiLink>{" "}
+  from the methods listed above.
 </p>
 <ul>
   <li>
     <p>
       High Priority Purchases (<b>4125</b>
-      <WikiLink page="Shops#Prototype_Core" title="Protocore"
-        ><img
+      <WikiLink page="Shops#Prototype_Core" title="Protocore">
+        <Image
           loading="lazy"
           class="rarity-4 inline-block"
-          src="/images/materials/protocore.png"
-          width="25px"
+          src={imageMaterialsProtocore}
+          width={25}
           alt="Prototype Core"
-        /></WikiLink
-      >): <WikiLink
+        />
+      </WikiLink>
+      ):{" "}
+      <WikiLink
         page="Triple 406mm (Mle 1938 Prototype)"
         title="Prototype Triple 406mm/50 Main Gun Mount"
-        >Prototype Triple 406mm/50 Main Gun Mount</WikiLink
-      > (x2), <WikiLink
+      >
+        Prototype Triple 406mm/50 Main Gun Mount
+      </WikiLink>{" "}
+      (x2),{" "}
+      <WikiLink
         page="Triple 380mm (Mle 1935 Prototype)"
         title="Prototype Triple 380mm Mle 1935 Main Gun Mount"
-        >Prototype Triple 380mm Mle 1935 Main Gun Mount</WikiLink
-      > (x1),
+      >
+        Prototype Triple 380mm Mle 1935 Main Gun Mount
+      </WikiLink>{" "}
+      (x1),
       <WikiLink
         page="Nakajima J5N Tenrai (Dive Bomber Prototype)"
-        title="Prototype Tenrai">Prototype Tenrai</WikiLink
-      > (x1).
+        title="Prototype Tenrai"
+      >
+        Prototype Tenrai
+      </WikiLink>{" "}
+      (x1).
     </p>
   </li>
   <li>
     <p>
       With the rest of your currency, you can consider buying some of the other
-      gear listed <a
-        rel="noopener noreferrer"
-        target="_self"
-        href="#protocore_spending">above</a
-      >.
+      gear listed{" "}
+      <a rel="noopener noreferrer" target="_self" href="#protocore_spending">
+        above
+      </a>
+      .
     </p>
   </li>
 </ul>

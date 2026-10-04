@@ -1,4 +1,17 @@
 ---
+import imageMaterialsOil from "@/assets/materials/oil.png"
+import imageMaterialsOpsiVoucher from "@/assets/materials/opsi_voucher.png"
+import imageMaterialsInvolutedSealPt from "@/assets/materials/InvolutedSealPt.png"
+import imageMaterialsGem from "@/assets/materials/gem.png"
+import imageMaterialsCoin from "@/assets/materials/coin.png"
+import imageMaterialsMerit from "@/assets/materials/merit.png"
+import imageMaterialsGuildToken from "@/assets/materials/guild_token.png"
+import imageMaterialsCoreData from "@/assets/materials/core_data.png"
+import imageEquipMiscCoreDataPriority from "@/assets/equip_misc/Core_Data_Priority.jpeg"
+import imageMaterialsMedal from "@/assets/materials/medal.png"
+import imageMaterialsProtocore from "@/assets/materials/protocore.png"
+import imageEquipMiscPrototypeCorePriority from "@/assets/equip_misc/Prototype_Core_Priority.jpeg"
+import { Image } from "astro:assets"
 import { HR } from "@/components/_common/HR"
 import {
   ItemCell,
@@ -15,28 +28,34 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 </p>
 <br />
 
-<div class="h2" id="notes">Notes:</div>
+<div class="h2" id="notes">
+  Notes:
+</div>
 <HR />
 <ul>
   <li>
     <p>
       For the full shop list, see
-      <WikiLink page="Shops#Core Exchange" title="Core Data"
-        >this wiki page</WikiLink
-      >.
+      <WikiLink page="Shops#Core Exchange" title="Core Data">
+        this wiki page
+      </WikiLink>
+      .
     </p>
   </li>
   <li>
     <p>
-      <b
-        >To view Resource Income, see the
+      <b>
+        To view Resource Income, see the
         <a
           rel="noopener noreferrer"
           target="_blank"
           href="/common_resource"
-          title="Common Resource Guide">Common Resource Guide</a
-        >.</b
-      >
+          title="Common Resource Guide"
+        >
+          Common Resource Guide
+        </a>
+        .
+      </b>
     </p>
   </li>
   <li>
@@ -45,13 +64,14 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Never refresh a shop using
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/gem.png"
-        width="25px"
+        src={imageMaterialsGem}
+        width={25}
         alt="Gems"
-      />. It is not worth it.
+      />
+      . It is not worth it.
     </p>
   </li>
   <li>
@@ -59,25 +79,28 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   </li>
   <li>
     <p>
-      <b
-        >If you already have enough of an item, feel free to skip it in
-        subsequent months</b
-      >. There is no point in buying extra items you will never use.
+      <b>
+        If you already have enough of an item, feel free to skip it in
+        subsequent months
+      </b>
+      . There is no point in buying extra items you will never use.
     </p>
   </li>
   <li>
-    <p><b>Key:</b></p>
+    <p>
+      <b>Key:</b>
+    </p>
     <ul>
       <li>
         <p>
-          <b style="color: lightcoral">Red Outline:</b> - Highly recommended purchase,
-          very general use.
+          <b style="color: lightcoral">Red Outline:</b> - Highly recommended
+          purchase, very general use.
         </p>
       </li>
       <li>
         <p>
-          <b style="color: palegreen">Green Outline:</b> - Really good in specific
-          scenarios; niche; only good on a few ships.
+          <b style="color: palegreen">Green Outline:</b> - Really good in
+          specific scenarios; niche; only good on a few ships.
         </p>
       </li>
     </ul>
@@ -85,8 +108,8 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Items are ordered from left to right, top to bottom. Depending on your
-      situation, items marked with a
-      <b style="color: palegreen">Green</b> outline could be
+      situation, items marked with a<b style="color: palegreen">Green</b>{" "}
+      outline could be
       <u>higher or lower</u> priority than listed.
     </p>
   </li>
@@ -103,7 +126,9 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <HR />
 
 <h3 id="coin">
-  <WikiLink page="Shops#General Shop" title="Munitions Shop">Shop</WikiLink>
+  <WikiLink page="Shops#General Shop" title="Munitions Shop">
+    Shop
+  </WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -113,11 +138,11 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Currency:
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/coin.png"
-        width="25px"
+        src={imageMaterialsCoin}
+        width={25}
         alt="Coin"
       />
     </p>
@@ -134,28 +159,33 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <ul>
   <li>
     <p>
-      Coins <img
+      Coins{" "}
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/coin.png"
-        width="25px"
+        src={imageMaterialsCoin}
+        width={25}
         alt="Coin"
-      /> are in high demand, so don't worry about buying anything from here if you
-      don't have spare coins. Ideally, check for discounts and buy good items on discount.
+      />{" "}
+      are in high demand, so don't worry about buying anything from here if you
+      don't have spare coins. Ideally, check for discounts and buy good items on
+      discount.
     </p>
-  </li><li>
+  </li>
+  <li>
     <p>
       <i>
-        <b
-          >Never buy items in this shop using
-          <img
+        <b>
+          Never buy items in this shop using
+          <Image
             loading="lazy"
             class="inline-block"
-            src="/images/materials/gem.png"
-            width="25px"
+            src={imageMaterialsGem}
+            width={25}
             alt="Gems"
-          />. It is not worth it, regardless of how low the price is.</b
-        >
+          />
+          . It is not worth it, regardless of how low the price is.
+        </b>
       </i>
     </p>
   </li>
@@ -255,7 +285,9 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <br />
 
 <h3 id="merit">
-  <WikiLink page="Shops#Merit Shop" title="Merit Shop">Merit Shop</WikiLink>
+  <WikiLink page="Shops#Merit Shop" title="Merit Shop">
+    Merit Shop
+  </WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -265,17 +297,19 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Currency:
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/merit.png"
-        width="25px"
+        src={imageMaterialsMerit}
+        width={25}
         alt="Merit"
       />
     </p>
   </li>
   <li>
-    <p>Reset: Daily at <b>00:00</b> (UTC-7).</p>
+    <p>
+      Reset: Daily at <b>00:00</b> (UTC-7).
+    </p>
   </li>
 </ul>
 <br />
@@ -284,25 +318,29 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <ul>
   <li>
     <p>
-      <i
-        >Some ships in this shop could be necessary for
-        <WikiLink page="Fleet Technology" title="Fleet Technology"
-          >Fleet Technology</WikiLink
-        >
+      <i>
+        Some ships in this shop could be necessary for
+        <WikiLink page="Fleet Technology" title="Fleet Technology">
+          Fleet Technology
+        </WikiLink>
         purposes, see the
-        <a href="/research#tech_points" target="_self" rel="noopener noreferrer"
-          >Research Guide</a
+        <a
+          href="/research#tech_points"
+          target="_self"
+          rel="noopener noreferrer"
         >
-        for more details.</i
-      >
+          Research Guide
+        </a>
+        for more details.
+      </i>
     </p>
   </li>
   <li>
     <p>
-      <i
-        >Do NOT buy duplicate ship copies here; it is more expensive than buying
-        a Prototype Bulin MKII (Gold Bulin).</i
-      >
+      <i>
+        Do NOT buy duplicate ship copies here; it is more expensive than buying
+        a Prototype Bulin MKII (Gold Bulin).
+      </i>
     </p>
   </li>
 </ul>
@@ -382,7 +420,9 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <br />
 
 <h3 id="guild">
-  <WikiLink page="Shops#Guild Shop" title="Guild Shop">Guild Shop</WikiLink>
+  <WikiLink page="Shops#Guild Shop" title="Guild Shop">
+    Guild Shop
+  </WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -392,25 +432,24 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Currency:
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/guild_token.png"
-        width="25px"
+        src={imageMaterialsGuildToken}
+        width={25}
         alt="Guild Coin"
       />
     </p>
   </li>
   <li>
     <p>
-      Reset: Monday and Friday at <b>00:00</b> (UTC-7). In addition, you get <b
-        >1</b
-      > manual refresh for 50
-      <img
+      Reset: Monday and Friday at <b>00:00</b> (UTC-7). In addition, you get{" "}
+      <b>1</b> manual refresh for 50
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/guild_token.png"
-        width="25px"
+        src={imageMaterialsGuildToken}
+        width={25}
         alt="Guild Coin"
       />
       between resets.
@@ -423,27 +462,31 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <ul>
   <li>
     <p>
-      <i
-        >Some ships in this shop could be necessary for
-        <WikiLink page="Fleet Technology" title="Fleet Technology"
-          >Fleet Technology</WikiLink
-        >
+      <i>
+        Some ships in this shop could be necessary for
+        <WikiLink page="Fleet Technology" title="Fleet Technology">
+          Fleet Technology
+        </WikiLink>
         purposes, see the
-        <a href="/research#tech_points" target="_self" rel="noopener noreferrer"
-          >Research Guide</a
+        <a
+          href="/research#tech_points"
+          target="_self"
+          rel="noopener noreferrer"
         >
-        for more details.</i
-      >
+          Research Guide
+        </a>
+        for more details.
+      </i>
     </p>
   </li>
   <li>
     <p>
       <i>
-        <b
-          >Buying duplicate ship copies here for
+        <b>
+          Buying duplicate ship copies here for
           <WikiLink page="Dockyard#Limit Break">Limit Breaks</WikiLink>
-          is fine!</b
-        >
+          is fine!
+        </b>
       </i>
     </p>
   </li>
@@ -621,9 +664,9 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <HR />
 
 <h3 id="core_data">
-  <WikiLink page="Shops#Core Exchange" title="Core Data Shop"
-    >Core Data Shop</WikiLink
-  >
+  <WikiLink page="Shops#Core Exchange" title="Core Data Shop">
+    Core Data Shop
+  </WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -633,17 +676,19 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Currency:
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/core_data.png"
-        width="25px"
+        src={imageMaterialsCoreData}
+        width={25}
         alt="Core Data"
       />
     </p>
   </li>
   <li>
-    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).</p>
+    <p>
+      Reset: Monthly (1st) at <b>00:00</b> (UTC-7).
+    </p>
   </li>
 </ul>
 <br />
@@ -652,18 +697,21 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Core_Data_Priority.jpeg"
+  href={imageEquipMiscCoreDataPriority.src}
   title="Core Data Shop"
 >
-  <img
+  <Image
     class="equip_misc_img"
-    src="/images/equip_misc/Core_Data_Priority.jpeg"
+    src={imageEquipMiscCoreDataPriority}
+    alt="Core Data shop priority guide"
   />
 </a>
 <br />
 
 <h3 id="medal">
-  <WikiLink page="Shops#Medal Shop" title="Medal Shop">Medal Shop</WikiLink>
+  <WikiLink page="Shops#Medal Shop" title="Medal Shop">
+    Medal Shop
+  </WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -673,17 +721,19 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Currency:
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/medal.png"
-        width="25px"
+        src={imageMaterialsMedal}
+        width={25}
         alt="Medal of Honor"
       />
     </p>
   </li>
   <li>
-    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).</p>
+    <p>
+      Reset: Monthly (1st) at <b>00:00</b> (UTC-7).
+    </p>
   </li>
 </ul>
 <br />
@@ -693,52 +743,59 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p class="fs-5">
       <i>
-        <b
-          ><WikiLink page="Requisition">Requisition</WikiLink>
-          is NOT worth it!</b
-        >
+        <b>
+          <WikiLink page="Requisition">Requisition</WikiLink>
+          is NOT worth it!
+        </b>
       </i>
     </p>
   </li>
   <li>
     <p>
-      <i
-        >Some ships in this shop could be necessary for
-        <WikiLink page="Fleet Technology" title="Fleet Technology"
-          >Fleet Technology</WikiLink
-        >
+      <i>
+        Some ships in this shop could be necessary for
+        <WikiLink page="Fleet Technology" title="Fleet Technology">
+          Fleet Technology
+        </WikiLink>
         purposes, see the
-        <a href="/research#tech_points" target="_self" rel="noopener noreferrer"
-          >Research Guide</a
-        >
-        for more details.</i
-      >
-    </p>
-  </li>
-  <li>
-    <p>
-      <i
-        >For information regarding ship viability, see the
-        <a href="/fleetbuilding" rel="noopener noreferrer" target="_self"
-          >Fleetbuilding Guide</a
-        >
-        or the
         <a
-          href="https://slaimuda.github.io/ectl/#/home"
+          href="/research#tech_points"
+          target="_self"
           rel="noopener noreferrer"
-          target="_blank">English Community Tier List</a
-        >.</i
-      >
+        >
+          Research Guide
+        </a>
+        for more details.
+      </i>
     </p>
   </li>
   <li>
     <p>
       <i>
-        <b
-          >Buying duplicate ship copies here for
-          <WikiLink page="Dockyard#Limit Break">Limit Breaks</WikiLink>
-          is fine!</b
+        For information regarding ship viability, see the
+        <a href="/fleetbuilding" rel="noopener noreferrer" target="_self">
+          Fleetbuilding Guide
+        </a>
+        or the
+        <a
+          href="https://slaimuda.github.io/ectl/#/home"
+          rel="noopener noreferrer"
+          target="_blank"
         >
+          English Community Tier List
+        </a>
+        .
+      </i>
+    </p>
+  </li>
+  <li>
+    <p>
+      <i>
+        <b>
+          Buying duplicate ship copies here for
+          <WikiLink page="Dockyard#Limit Break">Limit Breaks</WikiLink>
+          is fine!
+        </b>
       </i>
     </p>
   </li>
@@ -924,9 +981,9 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <br />
 
 <h3 id="protocore">
-  <WikiLink page="Shops#Prototype Shop" title="Prototype Shop"
-    >Prototype Shop</WikiLink
-  >
+  <WikiLink page="Shops#Prototype Shop" title="Prototype Shop">
+    Prototype Shop
+  </WikiLink>
 </h3>
 
 <div class="mb-2"></div>
@@ -936,17 +993,19 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Currency:
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/protocore.png"
-        width="25px"
+        src={imageMaterialsProtocore}
+        width={25}
         alt="Prototype Core"
       />
     </p>
   </li>
   <li>
-    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).</p>
+    <p>
+      Reset: Monthly (1st) at <b>00:00</b> (UTC-7).
+    </p>
   </li>
 </ul>
 <br />
@@ -960,20 +1019,21 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <a
   rel="noopener noreferrer"
   target="_blank"
-  href="/images/equip_misc/Prototype_Core_Priority.jpeg"
+  href={imageEquipMiscPrototypeCorePriority.src}
   title="Prototype Core Priority"
 >
-  <img
+  <Image
     class="equip_misc_img"
-    src="/images/equip_misc/Prototype_Core_Priority.jpeg"
+    src={imageEquipMiscPrototypeCorePriority}
+    alt="Prototype Core shop priority guide"
   />
 </a>
 <br />
 
 <h3 id="voucher">
-  <WikiLink page="Operation Siren#Exchange Shop" title="Exchange Shop"
-    >Operation Siren Exchange Shop</WikiLink
-  >
+  <WikiLink page="Operation Siren#Exchange Shop" title="Exchange Shop">
+    Operation Siren Exchange Shop
+  </WikiLink>
 </h3>
 
 <div class="row mb-2"></div>
@@ -983,17 +1043,19 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Currency:
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/opsi_voucher.png"
-        width="25px"
+        src={imageMaterialsOpsiVoucher}
+        width={25}
         alt="OpSi Voucher"
       />
     </p>
   </li>
   <li>
-    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).</p>
+    <p>
+      Reset: Monthly (1st) at <b>00:00</b> (UTC-7).
+    </p>
   </li>
 </ul>
 <br />
@@ -1008,17 +1070,17 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   </li>
   <li>
     <p>
-      <i
-        >It costs 13,060
-        <img
+      <i>
+        It costs 13,060
+        <Image
           loading="lazy"
           class="inline-block"
-          src="/images/materials/opsi_voucher.png"
-          width="25px"
+          src={imageMaterialsOpsiVoucher}
+          width={25}
           alt="OpSi Voucher"
         />
-        to clear the entire shop.</i
-      >
+        to clear the entire shop.
+      </i>
     </p>
   </li>
 </ul>
@@ -1103,7 +1165,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     hasBorder={true}
     hover={true}
     className="niche-priority"
-    descriptionNote={`5000 <img loading="lazy" class="inline-block" src="/images/materials/oil.png" width="25px" alt="Oil" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <WikiLink page="Operation Siren#Explorable" title="Explorable Zone">Explorable Zones</WikiLink>.`}
+    descriptionNote={`5000 <img loading="lazy" class="inline-block" src="${imageMaterialsOil.src}" width="25px" alt="Oil" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Explorable" title="Explorable Zone" rel="noopener noreferrer" target="_blank">Explorable Zones</a>.`}
   />
   <ItemCell
     item="Hidden Zone Data Logger"
@@ -1114,7 +1176,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     hasBorder={true}
     hover={true}
     className="niche-priority"
-    descriptionNote={`1000 <img loading="lazy" class="inline-block" src="/images/materials/opsi_voucher.png" width="25px" alt="OpSi Voucher" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <WikiLink page="Operation Siren#Hidden" title="Hidden Zone">Hidden Zones</WikiLink>.`}
+    descriptionNote={`1000 <img loading="lazy" class="inline-block" src="${imageMaterialsOpsiVoucher.src}" width="25px" alt="OpSi Voucher" /><br/>Allows <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Strategic_Search" rel="noopener noreferrer" target="_blank" title="Strategic Search">Strategic Search</a> for <a href="https://azurlane.koumakan.jp/wiki/Operation_Siren#Hidden" title="Hidden Zone" rel="noopener noreferrer" target="_blank">Hidden Zones</a>.`}
   />
 </ItemContainer>
 <br />
@@ -1123,9 +1185,9 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <HR />
 
 <h3 id="major_event">
-  <WikiLink page="Shops#Event Shop" title="Major Event Shop"
-    >Major Event Shop</WikiLink
-  >
+  <WikiLink page="Shops#Event Shop" title="Major Event Shop">
+    Major Event Shop
+  </WikiLink>
 </h3>
 
 <!-- Buffer -->
@@ -1137,18 +1199,20 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   <li>
     <p>
       Currency:
-      <img
+      <Image
         loading="lazy"
         class="inline-block"
-        src="/images/materials/InvolutedSealPt.png"
-        width="25px"
+        src={imageMaterialsInvolutedSealPt}
+        width={25}
         alt="Event Currency"
         title="Event Currency"
       />
     </p>
   </li>
   <li>
-    <p>Shop is removed <b>1 Week after Event ends</b>.</p>
+    <p>
+      Shop is removed <b>1 Week after Event ends</b>.
+    </p>
   </li>
 </ul>
 <br />
@@ -1158,19 +1222,19 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 <ul>
   <li>
     <p>
-      <i
-        >Only get ONE (1) copy of the Event Ship. You can use bulins instead of
-        duplicates.</i
-      >
+      <i>
+        Only get ONE (1) copy of the Event Ship. You can use bulins instead of
+        duplicates.
+      </i>
     </p>
     <ul>
       <li>
         <p>
-          <i
-            >Depending on the event, there could be multiple Event Ships in the
+          <i>
+            Depending on the event, there could be multiple Event Ships in the
             shop at various prices. Make sure to budget to get 1 copy of all of
-            them.</i
-          >
+            them.
+          </i>
         </p>
       </li>
       <li>
@@ -1178,15 +1242,16 @@ import WikiLink from "@/components/_common/WikiLink.astro"
           <i>
             You should save <b>8,000</b> (could be more)
             <WikiLink page="Shops#Event_Shop" title="Event Currency">
-              <img
+              <Image
                 loading="lazy"
                 class="inline-block"
-                src="/images/materials/InvolutedSealPt.png"
-                width="25px"
+                src={imageMaterialsInvolutedSealPt}
+                width={25}
                 alt="Event Currency"
               />
-            </WikiLink> event currency until the event is about to end, as you could
-            have gotten the Event Ship(s) from other sources (ex. Map Drop reward).
+            </WikiLink>{" "}
+            event currency until the event is about to end, as you could have
+            gotten the Event Ship(s) from other sources (ex. Map Drop reward).
           </i>
         </p>
       </li>
@@ -1194,31 +1259,33 @@ import WikiLink from "@/components/_common/WikiLink.astro"
   </li>
   <li>
     <p>
-      <i
-        >Most Events take <b>~100,000</b>
+      <i>
+        Most Events take <b>~100,000</b>
         <WikiLink page="Shops#Event_Shop" title="Event Currency">
-          <img
+          <Image
             loading="lazy"
             class="inline-block"
-            src="/images/materials/InvolutedSealPt.png"
-            width="25px"
+            src={imageMaterialsInvolutedSealPt}
+            width={25}
             alt="Event Currency"
           />
         </WikiLink>
-        to clear out the entire shop (assuming 1 copy of the Event Ship).</i
-      >
+        to clear out the entire shop (assuming 1 copy of the Event Ship).
+      </i>
     </p>
   </li>
   <li>
     <p>
-      <i
-        >Equipment costs can differ based on the rarity of the gear, and whether
-        the gear is in print or equipment form.</i
-      >
+      <i>
+        Equipment costs can differ based on the rarity of the gear, and whether
+        the gear is in print or equipment form.
+      </i>
     </p>
   </li>
   <li>
-    <p><i>T4 Eagle Union Tech Boxes &gt; All other T4 Tech Boxes.</i></p>
+    <p>
+      <i>T4 Eagle Union Tech Boxes &gt; All other T4 Tech Boxes.</i>
+    </p>
   </li>
 </ul>
 
@@ -1232,7 +1299,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     hasBorder={true}
     hover={true}
     className="high-priority"
-    descriptionNote={`<p> 8000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> (1 Copy)</p>`}
+    descriptionNote={`<p> 8000 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /> <br /> (1 Copy)</p>`}
   />
 
   <ItemCell
@@ -1244,7 +1311,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     hasBorder={true}
     hover={true}
     className="high-priority"
-    descriptionNote={`<p> 10000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p> 10000 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1256,7 +1323,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     hasBorder={true}
     hover={true}
     className="niche-priority"
-    descriptionNote={`<p> 4800 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> USS > Rest<br />New Players Only.</p>`}
+    descriptionNote={`<p> 4800 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /> <br /> USS > Rest<br />New Players Only.</p>`}
   />
 
   <ItemCell
@@ -1268,7 +1335,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     hasBorder={true}
     hover={true}
     className="niche-priority"
-    descriptionNote={`<p> 1500 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /> <br /> Only if needed.</p>`}
+    descriptionNote={`<p> 1500 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /> <br /> Only if needed.</p>`}
   />
 </ItemContainer>
 
@@ -1281,7 +1348,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>3000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>3000 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1292,7 +1359,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>5000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>5000 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1303,7 +1370,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>10000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p><p>Ignore if older.</p>`}
+    descriptionNote={`<p>10000 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /></p><p>Ignore if older.</p>`}
   />
 
   <ItemCell
@@ -1314,7 +1381,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>15000 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p><p>Ignore if older.</p>`}
+    descriptionNote={`<p>15000 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /></p><p>Ignore if older.</p>`}
   />
 </ItemContainer>
 
@@ -1327,7 +1394,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>2250 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p><p>Useful if you can spend.</p>`}
+    descriptionNote={`<p>2250 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /></p><p>Useful if you can spend.</p>`}
   />
 
   <ItemCell
@@ -1338,7 +1405,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /><br />General > Main Gun / Aircraft.</p>`}
+    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /><br />General > Main Gun / Aircraft.</p>`}
   />
 
   <ItemCell
@@ -1349,7 +1416,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>2500 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /></p>`}
+    descriptionNote={`<p>2500 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /></p>`}
   />
 
   <ItemCell
@@ -1360,7 +1427,7 @@ import WikiLink from "@/components/_common/WikiLink.astro"
     inGroup={true}
     hasBorder={true}
     hover={true}
-    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="/images/materials/InvolutedSealPt.png" width="25px" alt="Event Currency" /><br />Only if needed.</p>`}
+    descriptionNote={`<p>4500 <img loading="lazy" class="inline-block" src="${imageMaterialsInvolutedSealPt.src}" width="25px" alt="Event Currency" /><br />Only if needed.</p>`}
   />
 </ItemContainer>
 <br />
