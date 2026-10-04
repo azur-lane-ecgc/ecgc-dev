@@ -10,6 +10,10 @@
     },
     "packages/gsheets2img": {
       "project": ["**/*"]
+    },
+    "packages/compress": {
+      "entry": ["index.ts"],
+      "project": ["**/*"]
     }
   },
   "ignoreWorkspaces": ["packages/AzurLaneData"]
