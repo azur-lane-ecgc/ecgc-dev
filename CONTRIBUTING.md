@@ -14,6 +14,7 @@ The project is a monorepo with the following structure:
 - `packages/dev`: Contains development scripts and tools for the project.
 - `apps/web`: The frontend of the project, built with Astro.
 - `packages/gsheets2img`: A TypeScript script to convert google sheets to images.
+- `packages/image-downloader`: A TypeScript tool that downloads missing original ship icons.
 - `CONTRIBUTING.md`: This file.
 - `README.md`: The main README file for the project.
 
