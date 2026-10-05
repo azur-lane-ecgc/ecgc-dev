@@ -24,6 +24,7 @@ import { normalizeString } from "@/utils/string"
 import {
   allianceFactionsMap,
   fleetTypeMapping,
+  getShipIconName,
   hasUniqueAugment,
   getHighestValue,
   shipIcons,
@@ -193,12 +194,9 @@ const fetchFilteredShips = async (
 
   // 10) Missing icon only filter
   if (filters.missingIconOnly) {
-    ships = ships.filter((ship) => {
-      const shipKey = `${decodeURIComponent(ship.ship)}${
-        ship.isKai ? "Kai" : ""
-      }Icon`.normalize("NFC")
-      return !shipIcons[shipKey]
-    })
+    ships = ships.filter(
+      (ship) => !shipIcons[getShipIconName(ship.ship, ship.isKai)],
+    )
   }
 
   // 11) Ranking sort filter (adjusted to supply an object with mfRankings/vgRankings/ssRankings)
