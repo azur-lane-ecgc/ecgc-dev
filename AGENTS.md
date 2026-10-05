@@ -4,19 +4,19 @@
 
 **Root level:**
 
-- `bun run devtools` - Run all data processing scripts
-- `bun run build` - Build frontend for production
-- `bun run lint` - Run oxlint with auto-fix
-- `bun run format` - Format code with Prettier
-- `bun run check` - Type check all packages
-- `bun run dev` - Start dev server (http://localhost:4321)
+- `pnpm run devtools` - Run all data processing scripts
+- `pnpm run build` - Build frontend for production
+- `pnpm run lint` - Run oxlint with auto-fix
+- `pnpm run format` - Format code with Prettier
+- `pnpm run check` - Type check all packages
+- `pnpm run dev` - Start dev server (http://localhost:4321)
 
 **Package-specific:**
 
-- Frontend: `bun --filter frontend build/check/dev`
-- Dev: `bun --filter dev main/check`
-- Compress: `bun --filter compress compress/check`
-- GSheets2Img: `bun run gsheets2img` (from root)
+- Frontend: `pnpm --filter frontend build/check/dev`
+- Dev: `pnpm --filter dev main/check`
+- Compress: `pnpm --filter compress compress/check`
+- GSheets2Img: `pnpm run gsheets2img` (from root)
 
 ## Project Structure
 

@@ -1,31 +1,25 @@
 {
   "name": "ecgc-dev",
   "private": true,
-  "workspaces": [
-    "packages/dev",
-    "apps/web",
-    "packages/gsheets2img",
-    "packages/compress"
-  ],
   "scripts": {
-    "prepare": "bunx lefthook install",
-    "update": "bun update --recursive",
-    "rebuild": "rm -rf node_modules && rm -rf .wrangler && rm -rf packages/AzurLaneData && rm -rf apps/web/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf packages/compress/node_modules && rm -rf apps/web/dist && rm -rf apps/web/.astro && bun run update",
-    "reset": "bun run rebuild && bun run devtools && bun run build",
+    "prepare": "pnpm exec lefthook install",
+    "update": "pnpm --recursive update",
+    "rebuild": "pnpm install --force",
+    "reset": "pnpm run rebuild && pnpm run devtools && pnpm run build",
     "submodule": "git submodule update --recursive --remote",
-    "gsheets2img": "bun --filter gsheets2img main",
-    "compress": "bun --filter compress compress",
-    "smol-format": "bunx --bun prettier --write \"packages/**/*.{astro,json}\" \"apps/**/*.{astro,json}\"",
-    "format": "bunx --bun prettier --write \"packages/**/*.{astro,html,md,ts,tsx,json,css}\" \"apps/**/*.{astro,html,md,ts,tsx,json,css}\"",
-    "lint": "bunx --bun oxlint --fix packages apps",
-    "devtools": "bun run submodule && bun --filter dev main && bun run format",
-    "build": "bun --filter frontend build",
-    "check": "bun --filter frontend check && bun --filter dev check && bun --filter gsheets2img check && bun --filter compress check",
-    "cf-build": "bun run build && bun run compress",
-    "dev": "bun --filter frontend dev",
-    "cf-dev": "bunx wrangler dev",
-    "start": "NODE_ENV=PRODUCTION bun --filter frontend preview",
-    "deploy": "bun run cf-build && bunx wrangler deploy"
+    "gsheets2img": "pnpm --filter gsheets2img browser && pnpm --filter gsheets2img main",
+    "compress": "pnpm --filter compress compress",
+    "smol-format": "pnpm exec prettier --write \"packages/**/*.{astro,json}\" \"apps/**/*.{astro,json}\"",
+    "format": "pnpm exec prettier --write \"packages/**/*.{astro,html,md,ts,tsx,json,css}\" \"apps/**/*.{astro,html,md,ts,tsx,json,css}\"",
+    "lint": "pnpm exec oxlint --fix packages apps",
+    "devtools": "pnpm run submodule && pnpm --filter dev main && pnpm run format",
+    "build": "pnpm --filter frontend build",
+    "check": "pnpm --filter frontend check && pnpm --filter dev check && pnpm --filter gsheets2img check && pnpm --filter compress check",
+    "cf-build": "pnpm run build && pnpm run compress",
+    "dev": "pnpm --filter frontend dev",
+    "cf-dev": "pnpm exec wrangler dev",
+    "start": "NODE_ENV=PRODUCTION pnpm --filter frontend preview",
+    "deploy": "pnpm run cf-build && pnpm exec wrangler deploy"
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.2.3",
@@ -37,21 +31,12 @@
     "prettier-plugin-astro-organize-imports": "^0.4.14",
     "prettier-plugin-organize-imports": "^4.3.0",
     "prettier-plugin-tailwindcss": "^0.8.1",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3",
     "wrangler": "^4.147.0"
   },
-  "trustedDependencies": [
-    "@tailwindcss/oxide",
-    "esbuild",
-    "gsheets2img",
-    "lefthook",
-    "oxc-resolver",
-    "sharp",
-    "workerd"
-  ],
-  "packageManager": "bun@1.4.2",
+  "packageManager": "pnpm@12.9.1",
   "engines": {
-    "node": ">=22.12.0",
-    "bun": ">=1.4.2"
+    "node": ">=22.12.0"
   }
 }

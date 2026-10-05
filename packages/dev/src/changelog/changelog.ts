@@ -1,3 +1,4 @@
+import { writeFile } from "node:fs/promises"
 import { google } from "googleapis"
 
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
@@ -79,7 +80,7 @@ const updateConstantsFile = async (updates: Record<string, string>) => {
 `
   }
 
-  await Bun.write(CHANGELOG_PATH, fileContent)
+  await writeFile(CHANGELOG_PATH, fileContent)
 }
 
 export const main = async (): Promise<Record<string, string>> => {
