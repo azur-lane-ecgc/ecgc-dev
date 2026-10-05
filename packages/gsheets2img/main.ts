@@ -28,7 +28,10 @@ interface SheetInfo {
 }
 
 const getAuthClient = async () => {
-  const credentialsPath = join(import.meta.dir, "..", "credentials.json")
+  const credentialsPath = join(
+    fileURLToPath(new URL("..", import.meta.url)),
+    "credentials.json",
+  )
   const credentials = JSON.parse(await readFile(credentialsPath, "utf-8"))
 
   return new google.auth.GoogleAuth({
