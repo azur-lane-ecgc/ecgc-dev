@@ -2,10 +2,16 @@ import { writeFile } from "node:fs/promises"
 import { google } from "googleapis"
 import path from "path"
 
+import {
+  getGoogleSheetColumn,
+  parseGoogleSheetHeaders,
+} from "../googleSheetSchema"
+
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "1rb_uXVmDnK2YKe-0YRTrf3VUcQi8mKwEMYKCBFmVXCc"
 const SHEET_NAMES = ["List"]
 const OUTPUT_PATHS = ["src/aa_parsing/shipAA.json"]
+const REQUIRED_HEADERS = ["Ship", "%SD", "Sum"]
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
@@ -40,9 +46,21 @@ const extractBaseName = (shipName: string): string => {
 
 const processSheet = async (sheetName: string, auth: any) => {
   const sheets = google.sheets({ version: "v4", auth })
+  const headerResult = await sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `${sheetName}!A1:ZZ1`,
+  })
+  const columns = parseGoogleSheetHeaders(headerResult.data.values?.[0] ?? [])
+  const columnIndexes = Object.fromEntries(
+    REQUIRED_HEADERS.map((headerName) => [
+      headerName,
+      getGoogleSheetColumn(columns, sheetName, headerName),
+    ]),
+  )
+
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `${sheetName}!A2:C`,
+    range: `${sheetName}!A2:ZZ`,
   })
 
   const values = res.data.values
@@ -53,15 +71,11 @@ const processSheet = async (sheetName: string, auth: any) => {
   const dataDict: Record<string, any[]> = {}
 
   for (const row of values) {
-    if (row.length < 3) {
-      continue
-    }
-
-    const originalName = row[0]?.trim()
+    const originalName = String(row[columnIndexes["Ship"] ?? -1] ?? "").trim()
     if (!originalName) continue
     const baseName = extractBaseName(originalName)
-    const percentSD = row[1]?.trim()
-    const aaSum = row[2]?.trim()
+    const percentSD = String(row[columnIndexes["%SD"] ?? -1] ?? "").trim()
+    const aaSum = String(row[columnIndexes["Sum"] ?? -1] ?? "").trim()
 
     const entry = {
       name: originalName,

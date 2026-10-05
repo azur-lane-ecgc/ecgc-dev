@@ -1,4 +1,4 @@
-import { mkdir, readFile } from "node:fs/promises"
+import { mkdir, readFile, stat } from "node:fs/promises"
 import { join } from "node:path"
 import { fileURLToPath } from "node:url"
 import { google } from "googleapis"
@@ -15,7 +15,6 @@ const outputDir = fileURLToPath(
 const includeSheets: string[] = []
 const excludeSheets = [
   "(WiP) SS RLD Chart",
-  "Copy of BB Guns",
   "(WiP) OpSi Image Guide Pt4",
   "Ammo Modifiers Chart",
   "(WiP) Rikka Specific Guide",
@@ -108,8 +107,6 @@ const screenshot = async (
     })
 
     await page.screenshot({ path: pngPath, clip: clipArea })
-  } catch (e) {
-    console.error(e)
   } finally {
     await page.close()
   }
@@ -138,29 +135,49 @@ getSheets(sheetId)
         outputName: sheet.name.replace(/[ /]/g, "_"),
       }))
 
+    const outputPaths = sheets.map((sheet) =>
+      join(outputDir, sheet.outputName + ".jpeg"),
+    )
+    if (new Set(outputPaths).size !== outputPaths.length) {
+      throw new Error("Duplicate Google Sheet image output filename")
+    }
+
     console.log(`Found ${sheets.length} sheets to process\n`)
 
     const browser = await firefox.launch()
-    const promises = new Set<Promise<void>>()
+    try {
+      const promises = new Set<Promise<void>>()
 
-    for (const { url, name, outputName } of sheets) {
-      const promise = screenshot(
-        url,
-        name,
-        join(outputDir, outputName + ".jpeg"),
-        browser,
-      ).then(() => {
-        promises.delete(promise)
-      })
-      promises.add(promise)
+      for (const { url, name, outputName } of sheets) {
+        const promise = screenshot(
+          url,
+          name,
+          join(outputDir, outputName + ".jpeg"),
+          browser,
+        ).then(() => {
+          promises.delete(promise)
+        })
+        promises.add(promise)
 
-      if (promises.size >= concurrency) {
-        await Promise.race(promises)
+        if (promises.size >= concurrency) {
+          await Promise.race(promises)
+        }
       }
-    }
 
-    await Promise.all(promises)
-    await browser.close()
+      await Promise.all(promises)
+      await Promise.all(
+        outputPaths.map(async (outputPath) => {
+          const outputStat = await stat(outputPath)
+          if (outputStat.size === 0) {
+            throw new Error("Google Sheet image output is empty", {
+              cause: outputPath,
+            })
+          }
+        }),
+      )
+    } finally {
+      await browser.close()
+    }
 
     console.log(`\nAll done! Images saved to: ${outputDir}`)
   })
