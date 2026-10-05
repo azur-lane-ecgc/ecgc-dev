@@ -1,5 +1,6 @@
 import { dirname } from "path"
 import { existsSync, mkdirSync } from "fs"
+import { writeFile } from "fs/promises"
 
 import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 import type { AugmentData } from "@/packages/AzurLaneData/types/augments"
@@ -125,7 +126,7 @@ export const main = async (
     mkdirSync(dirname(OUTPUT_PATH), { recursive: true })
   }
 
-  await Bun.write(OUTPUT_PATH, JSON.stringify(processedData, null, 2) + "\n")
+  await writeFile(OUTPUT_PATH, JSON.stringify(processedData, null, 2) + "\n")
 
   console.log(`Ship data has been written to ${OUTPUT_PATH}`)
 }
