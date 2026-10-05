@@ -6,7 +6,7 @@ This package contains TypeScript development scripts and tools for processing Az
 
 ## Build & Run Commands
 
-- **Run all dev tools**: `pnpm run devtools` (executes all data processing scripts sequentially)
+- **Run all dev tools**: `bun run devtools` (executes all data processing scripts sequentially)
 
 ## Key Scripts and Directories
 
@@ -26,16 +26,16 @@ This package contains TypeScript development scripts and tools for processing Az
 
 - **Credentials**: Requires `credentials.json` (Google Cloud service account key from `../credentials.json.example`)
 - **Environment**: TypeScript strict mode with ES modules, path aliases (`@/tools/*` → `src/*`)
-- **Dependencies**: Managed via root `pnpm-lock.yaml`, includes Google APIs client libraries
+- **Dependencies**: Managed via root `bun.lock`, includes Google APIs client libraries
 - **Output**: Processed data written to `apps/web/src/db/`
 
 ## Data Processing Workflow
 
 1. Configure `credentials.json` with Google Cloud service account credentials
-2. Run `pnpm run devtools` to execute all scripts in dependency order
+2. Run `bun run devtools` to execute all scripts in dependency order
 3. Scripts fetch data from Google Sheets, process/transform it, and output JSON files
 4. Frontend package imports the generated data for display
-5. Run `pnpm run build` to ensure all scripts compile without errors
+5. Run `bun run build` to ensure all scripts compile without errors
 
 ## Key Data Outputs
 
