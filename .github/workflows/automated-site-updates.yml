@@ -22,19 +22,19 @@ jobs:
           submodules: recursive
           token: ${{ secrets.SUBMODULE_PAT }}
 
+      - name: Set up PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.9.1
+
       - name: Set up Node
         uses: actions/setup-node@v6
         with:
           node-version: "26.10.0"
-
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version-file: "package.json"
+          cache: pnpm
 
       - name: Install dependencies
-        run: |
-          bun ci
+        run: pnpm install --frozen-lockfile
 
       - name: Restore credentials
         run: |
@@ -45,10 +45,10 @@ jobs:
       - name: Run gsheets2img
         run: |
           rm -rf apps/web/src/assets/equip_misc/*
-          bun run gsheets2img
+          pnpm run gsheets2img
 
       - name: Run devtools
-        run: bun run devtools
+        run: pnpm run devtools
 
       - name: Commit and push changes if any
         id: commit
@@ -87,7 +87,7 @@ jobs:
       - name: Deploy to Cloudflare Workers
         if: steps.commit.outputs.has_changes == 'true'
         run: |
-          bun run cf-build
-          bunx wrangler deploy
+          pnpm run cf-build
+          pnpm exec wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

@@ -6,16 +6,15 @@
   "type": "module",
   "module": "main.ts",
   "scripts": {
-    "main": "bun run postinstall && bun main.ts",
+    "main": "tsx main.ts",
     "check": "tsc --noEmit",
-    "postinstall": "bunx playwright install firefox"
+    "browser": "playwright install firefox"
   },
   "dependencies": {
     "googleapis": "^183.0.0",
     "playwright": "^1.63.0"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.2",
     "@types/node": "^26.6.4"
   },
   "peerDependencies": {

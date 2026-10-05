@@ -2,7 +2,7 @@
 
 First off, thank you for considering contributing to this project! Any and all help is greatly appreciated.
 
-This repository contains Bun workspaces in the `packages` and `apps` directories. Install dependencies from the repository root with the shared `bun.lock` file.
+This repository contains PNPM workspace projects in the `apps` and `packages` directories. Install dependencies from the repository root with the shared `pnpm-lock.yaml` file.
 
 > **Note**: For detailed development guidelines including build commands, code style, and quality assurance practices, see [AGENTS.md](./AGENTS.md).
 
@@ -19,11 +19,11 @@ The project is a monorepo with the following structure:
 
 ## Local Setup
 
-Use Bun 1.4.2 and Node.js 22.12.0 or later. CI uses Node.js 26.10.0.
+Use PNPM 12.9.1 and Node.js 22.12.0 or later. CI uses Node.js 26.10.0.
 
 Keep TypeScript on version 6 until Astro's checker and import formatting plugins support version 7.
 These tools require the JavaScript compiler API that TypeScript 7 removes.
-Run `bun run update` to update all workspaces within their supported version ranges.
+Run `pnpm run update` to update all workspace projects within their supported version ranges.
 Review breaking changes before you change those ranges.
 
 1.  **Clone the repository:**
@@ -35,10 +35,10 @@ Review breaking changes before you change those ranges.
 
 2.  **Install dependencies:**
 
-    This project uses [`Bun`](https://bun.sh/) for package management.
+    This project uses [`PNPM`](https://pnpm.io/) for package management.
 
     ```bash
-    bun install
+    pnpm install
     ```
 
 3.  **Configure environment:**
@@ -49,7 +49,7 @@ Review breaking changes before you change those ranges.
 4.  **Run the development server:**
 
     ```bash
-    bun run dev
+    pnpm run dev
     ```
 
     This will start the Astro development server at `http://localhost:4321`.
@@ -102,7 +102,7 @@ The `package.json` file contains a number of scripts for common tasks:
 
 - `prepare`: Installs lefthook git hooks manager
 - `update`: Updates dependencies within supported version ranges
-- `rebuild`: Removes all `node_modules` and build artifacts, then reinstalls
+- `rebuild`: Forces a fresh dependency installation
 - `reset`: Full rebuild and runs devtools
 - `submodule`: Updates git submodules
 
@@ -125,15 +125,15 @@ The `package.json` file contains a number of scripts for common tasks:
 ### Quality Assurance
 
 - Pre-commit hooks automatically format staged files
-- Run `bun run lint` before committing
+- Run `pnpm run lint` before committing
 - Type checking is performed during build via `astro check`
 - Test UI components manually during development
 
 ### Workflow
 
 1. Make changes following the established patterns
-2. Run `bun run format` to ensure consistent styling
-3. Test changes in development server (`bun run dev`)
+2. Run `pnpm run format` to ensure consistent styling
+3. Test changes in development server (`pnpm run dev`)
 4. Commit with descriptive messages
 5. Create pull request for review
 

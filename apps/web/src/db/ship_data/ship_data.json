@@ -12086,7 +12086,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Healer", "DmgDealer", "TopDmg", "DefSupport", "OffSupport"],
+    "roles": ["DmgDealer", "TopDmg", "DefSupport", "OffSupport"],
     "locations": {
       "events": [],
       "other": [
@@ -27597,7 +27597,14 @@
       "quantity": 1,
       "conditional": "Dive Bomber"
     },
-    "roles": ["DmgDealer", "TopDmg", "FastLoad", "Preload", "DefSupport"],
+    "roles": [
+      "Healer",
+      "DmgDealer",
+      "TopDmg",
+      "FastLoad",
+      "Preload",
+      "DefSupport"
+    ],
     "locations": {
       "events": [
         {
@@ -33501,7 +33508,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "Painleve is a healer-oriented CV with great stats and skills. Her Skill 1 is great support for your fleet regardless of which version is triggered. Her Skill 2 heals both herself and the vanguard a good amount, but 5s after an airstrike is fired might be too slow for some fleet compositions. Compared to other healers, having 8 planes is a huge benefit to her own personal damage. Overall she is a great CV.",
     "fastLoad": null,
-    "roles": ["Healer", "DmgDealer", "TopDmg", "DefSupport"],
+    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -40003,7 +40010,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
+    "roles": ["Healer", "DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {

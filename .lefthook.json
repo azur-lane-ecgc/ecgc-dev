@@ -9,11 +9,11 @@
           "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}",
           "packages/compress/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
-        "run": "bun knip --fix"
+        "run": "pnpm exec knip --fix"
       },
       "oxlint": {
         "glob": ["**/*.{js,jsx,ts,tsx}"],
-        "run": "bunx --bun oxlint --fix {staged_files}",
+        "run": "pnpm exec oxlint --fix {staged_files}",
         "stage_fixed": true
       },
       "prettier": {
@@ -23,7 +23,7 @@
           "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}",
           "packages/compress/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
-        "run": "bunx --bun prettier --write {staged_files}",
+        "run": "pnpm exec prettier --write {staged_files}",
         "stage_fixed": true
       }
     }

@@ -1,10 +1,12 @@
+import { readFile, writeFile } from "node:fs/promises"
+
 import { pageInfo } from "../_pageInfo.js"
 
 const outputFilePath =
   "../../apps/web/src/components/_common/Sidenav/TocContent.json"
 
 const initializeJsonFile = async () => {
-  await Bun.write(outputFilePath, JSON.stringify([], null, 2) + "\n")
+  await writeFile(outputFilePath, JSON.stringify([], null, 2) + "\n")
 }
 
 type Heading = {
@@ -18,6 +20,13 @@ type Subheading = {
   content: string
 }
 
+const extractHeadingText = (headingContent: string): string =>
+  headingContent
+    .replace(/\{"\s*"\}/g, " ")
+    .replace(/<[^>]*>/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+
 const extractHeadings = (content: string) => {
   const headings: Heading[] = []
 
@@ -27,7 +36,7 @@ const extractHeadings = (content: string) => {
     ),
   ].map((match) => ({
     index: match.index,
-    values: [match[0], match[1], match[2]?.replace(/<[^>]*>/g, "").trim()],
+    values: [match[0], match[1], extractHeadingText(match[2] ?? "")],
   }))
 
   const h3Matches = [
@@ -36,7 +45,7 @@ const extractHeadings = (content: string) => {
     ),
   ].map((match) => ({
     index: match.index,
-    values: [match[0], match[1], match[2]?.replace(/<[^>]*>/g, "").trim()],
+    values: [match[0], match[1], extractHeadingText(match[2] ?? "")],
   }))
 
   for (let i = 0; i < h2Matches.length; i++) {
@@ -78,7 +87,7 @@ const processFiles = async () => {
 
   for (const page of pageInfo) {
     try {
-      const content = await Bun.file(page.path).text()
+      const content = await readFile(page.path, "utf8")
       const fileHeadings = extractHeadings(content)
 
       tocData.push({
@@ -90,7 +99,7 @@ const processFiles = async () => {
     }
   }
 
-  await Bun.write(
+  await writeFile(
     outputFilePath,
     JSON.stringify(
       tocData.sort((a, b) => a.fileName.localeCompare(b.fileName)),

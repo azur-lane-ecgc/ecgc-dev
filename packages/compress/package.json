@@ -6,14 +6,13 @@
   "type": "module",
   "module": "index.ts",
   "scripts": {
-    "compress": "bun index.ts",
+    "compress": "tsx index.ts",
     "check": "tsc --noEmit"
   },
   "dependencies": {
     "sharp": "^0.35.5"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.2",
     "@types/node": "^26.6.4"
   },
   "peerDependencies": {
