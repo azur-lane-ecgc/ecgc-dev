@@ -13,6 +13,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
+    "types": ["bun"],
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "paths": {

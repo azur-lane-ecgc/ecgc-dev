@@ -12,8 +12,7 @@ on:
       - "apps/web/**"
       - "packages/AzurLaneData/**"
       - "package.json"
-      - "pnpm-lock.yaml"
-      - "pnpm-workspace.yaml"
+      - "bun.lock"
       - ".github/workflows/cf-pr-deploy.yml"
 
 jobs:
@@ -26,22 +25,21 @@ jobs:
           submodules: recursive
           token: ${{ secrets.SUBMODULE_PAT}}
 
-      - name: Set up PNPM
-        uses: pnpm/action-setup@v4
-        with:
-          version: 12.9.1
-
       - name: Set up Node
         uses: actions/setup-node@v6
         with:
           node-version: "26.10.0"
-          cache: pnpm
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: "package.json"
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: bun install --frozen-lockfile
 
       - name: Compress Build
-        run: pnpm run cf-build
+        run: bun run cf-build
 
       - name: Upload Worker Version for Preview
         id: upload
@@ -54,7 +52,7 @@ jobs:
           echo "Sanitized alias: $SANITIZED_ALIAS"
 
           # Upload new version with branch-based alias for consistent preview URL
-          VERSION_OUTPUT=$(pnpm exec wrangler versions upload --preview-alias "$SANITIZED_ALIAS" 2>&1)
+          VERSION_OUTPUT=$(bunx wrangler versions upload --preview-alias "$SANITIZED_ALIAS" 2>&1)
           echo "$VERSION_OUTPUT"
 
           # Extract preview URL from wrangler output (format: <alias>-ecgc-dev.samheart564.workers.dev)

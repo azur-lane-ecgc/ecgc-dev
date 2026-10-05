@@ -19,7 +19,7 @@
     "noPropertyAccessFromIndexSignature": false,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["node"],
+    "types": ["bun"],
     "paths": {
       "@/db/*": ["../../apps/web/src/db/*"],
       "@/utils/*": ["../../apps/web/src/utils/*"],
