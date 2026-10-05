@@ -5,11 +5,11 @@
   "description": "ECGC Frontend Website built with Astro + React",
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro check && astro build",
-    "check": "astro check",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "bunx astro dev",
+    "build": "bunx astro check && bunx astro build",
+    "check": "bunx astro check",
+    "preview": "bunx astro preview",
+    "astro": "bunx astro"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.0",
