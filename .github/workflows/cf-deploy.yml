@@ -22,23 +22,24 @@ jobs:
           submodules: recursive
           token: ${{ secrets.SUBMODULE_PAT}}
 
+      - name: Set up PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.9.1
+
       - name: Set up Node
         uses: actions/setup-node@v6
         with:
           node-version: "26.10.0"
-
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version-file: "package.json"
+          cache: pnpm
 
       - name: Install dependencies
-        run: bun install
+        run: pnpm install --frozen-lockfile
 
       - name: Compress Build
-        run: bun run cf-build
+        run: pnpm run cf-build
 
       - name: Deploy to Cloudflare Workers
-        run: bunx wrangler deploy
+        run: pnpm exec wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

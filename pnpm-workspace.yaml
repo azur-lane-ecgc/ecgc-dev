@@ -1,0 +1,13 @@
+packages:
+  - packages/dev
+  - apps/web
+  - packages/gsheets2img
+  - packages/compress
+
+allowBuilds:
+  "@tailwindcss/oxide": true
+  esbuild: true
+  lefthook: true
+  oxc-resolver: true
+  sharp: true
+  workerd: true
