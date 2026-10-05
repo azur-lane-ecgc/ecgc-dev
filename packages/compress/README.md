@@ -7,30 +7,31 @@ Image compression utilities for ECGC build optimization.
 Dependencies managed via monorepo root. Run from project root:
 
 ```bash
-bun install
+pnpm install
 ```
 
 ## Usage
 
 Run from project root:
 
-- **Compress build output**: `bun run compress`
-- **Type check**: `bun --filter compress check`
+- **Compress build output**: `pnpm run compress`
+- **Type check**: `pnpm --filter compress check`
 
 Or run directly in package:
 
 ```bash
 cd packages/compress
-bun run compress
+pnpm run compress
 ```
 
 ## How It Works
 
 The compressor scans `apps/web/dist/` recursively for images and re-encodes them with optimized settings:
 
-- Supports: JPEG, PNG, WebP, AVIF, HEIF, GIF, TIFF
+- Supports: JPEG, PNG, AVIF, HEIF, GIF, TIFF
 - Uses Sharp library for high-performance processing
-- Lossless compression for WebP, AVIF, HEIF
+- Preserves WebP images optimized by Astro
+- Lossless compression for AVIF and HEIF
 - Optimized lossy settings for JPEG (mozjpeg encoder, 4:4:4 chroma)
 - Reports size savings per file
 

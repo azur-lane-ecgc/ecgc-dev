@@ -15,7 +15,7 @@
     "noImplicitOverride": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["bun"]
+    "types": ["node"]
   },
   "include": ["*.ts", "src/*.ts"],
   "exclude": ["node_modules"]

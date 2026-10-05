@@ -1,3 +1,4 @@
+import { writeFile } from "node:fs/promises"
 import { google } from "googleapis"
 import path from "path"
 
@@ -97,7 +98,7 @@ export const main = async (): Promise<Record<string, any[]>> => {
 
     const sheetData = await processSheet(sheetName, auth)
 
-    await Bun.write(outputPath, JSON.stringify(sheetData, null, 2) + "\n")
+    await writeFile(outputPath, JSON.stringify(sheetData, null, 2) + "\n")
 
     console.log(
       `Data from sheet '${sheetName}' has been written to ${path.relative(
