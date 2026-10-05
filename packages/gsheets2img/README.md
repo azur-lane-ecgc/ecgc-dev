@@ -4,19 +4,18 @@ This is loosely based on [gsheets2img](https://github.com/blead/gsheets2img), us
 
 ## Installation and Setup
 
-1. Install PNPM 12.9.1
-2. Run `pnpm install` from the monorepo root
+1. Ensure Bun is installed
+2. Run `bun install` from the monorepo root
 
 ## Usage
 
 Run from the monorepo root:
 
-- **Generate images from Google Sheets**: `pnpm run gsheets2img`
+- **Generate images from Google Sheets**: `bun run gsheets2img`
 
 Or run directly in the package:
 
-- `pnpm run browser`
-- `pnpm run main`
+- `bun main.ts`
 
 ## File Structure
 
