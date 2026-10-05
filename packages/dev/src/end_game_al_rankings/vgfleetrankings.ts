@@ -2,10 +2,39 @@ import { writeFile } from "node:fs/promises"
 import { google } from "googleapis"
 import path from "path"
 
+import {
+  getGoogleSheetColumn,
+  parseGoogleSheetHeaders,
+} from "../googleSheetSchema"
+
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 const SHEET_NAME = "VG (no img)"
 const OUTPUT_PATH = "../../apps/web/src/db/rankings/vgFleetRankings.json"
+const EXPECTED_HEADERS = [
+  "Name",
+  "Notes",
+  "Hard Arbiter",
+  "META",
+  "CM",
+  "W14 Mob",
+  "W14 Boss",
+  "W15/16 Mob",
+  "W15/16 Boss",
+  "EX",
+  "Consistency",
+  "Fleet Req.",
+  "Gear Req.",
+  "Light Dmg",
+  "Medium Dmg",
+  "Heavy Dmg",
+  "AoE Dmg",
+  "Offense Buff",
+  "Self Survival",
+  "AA",
+  "ASW",
+  "Defense Buff",
+]
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 const priorityOrder: Record<string, number> = {
@@ -55,21 +84,28 @@ const parseFleetKey = (
     : { shipName: fleetKey.trim(), nameNote: "" }
 }
 
-const getHeaders = async (auth: any): Promise<string[]> => {
+const getColumnIndexes = async (auth: any): Promise<Record<string, number>> => {
   const sheets = google.sheets({ version: "v4", auth })
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `${SHEET_NAME}!D2:AA2`,
+    range: `${SHEET_NAME}!A2:ZZ2`,
   })
-  return (res.data.values?.[0] || []).map((h: any) => h.trim())
+  const columns = parseGoogleSheetHeaders(res.data.values?.[0] ?? [])
+
+  return Object.fromEntries(
+    EXPECTED_HEADERS.map((headerName) => [
+      headerName,
+      getGoogleSheetColumn(columns, SHEET_NAME, headerName),
+    ]),
+  )
 }
 
 const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
-  const headers = await getHeaders(auth)
+  const columnIndexes = await getColumnIndexes(auth)
   const sheets = google.sheets({ version: "v4", auth })
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `${SHEET_NAME}!C3:AA`,
+    range: `${SHEET_NAME}!A3:ZZ`,
   })
 
   const values = res.data.values || []
@@ -78,16 +114,18 @@ const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
   for (const row of values) {
     if (row.length < 1) continue
 
-    const fleetKey = row[0]?.trim()
+    const fleetKey = String(row[columnIndexes["Name"] ?? -1] ?? "").trim()
     if (!fleetKey) continue
     const parsedKey = parseFleetKey(fleetKey)
 
     const rowData: Record<string, string | null> = {}
-    for (let i = 0; i < headers.length; i++) {
-      const header = headers[i]
-      if (header) {
-        rowData[header] = row[i + 1] ? row[i + 1].trim() : null
-      }
+    for (const headerName of EXPECTED_HEADERS) {
+      if (headerName === "Name") continue
+      const cellValue = row[columnIndexes[headerName] ?? -1]
+      rowData[headerName] =
+        cellValue === undefined || cellValue === null || cellValue === ""
+          ? null
+          : String(cellValue).trim()
     }
 
     if (!dataDict[parsedKey.shipName]) {
