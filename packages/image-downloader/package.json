@@ -1,0 +1,24 @@
+{
+  "name": "image-downloader",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Downloads missing original Azur Lane ship icons through agent-browser",
+  "type": "module",
+  "module": "src/main.ts",
+  "scripts": {
+    "plan": "bun src/main.ts --plan",
+    "download": "bun src/main.ts --download",
+    "browser": "agent-browser install",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "agent-browser": "0.38.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/node": "^26.6.4"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
