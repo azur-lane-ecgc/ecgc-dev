@@ -10,6 +10,8 @@
 - `bun run format` - Format code with Prettier
 - `bun run check` - Type check all packages
 - `bun run dev` - Start dev server (http://localhost:4321)
+- `bun run plan-ship-icons` - List missing ship icons
+- `bun run download-ship-icons` - Download missing original ship icons
 
 **Package-specific:**
 
@@ -17,6 +19,7 @@
 - Dev: `bun --filter dev main/check`
 - Compress: `bun --filter compress compress/check`
 - GSheets2Img: `bun run gsheets2img` (from root)
+- Image Downloader: `bun --filter image-downloader plan/download/check`
 
 ## Project Structure
 
@@ -24,6 +27,7 @@
 - `packages/dev/` - Data processing pipeline. TypeScript scripts that fetch/transform game data from Google Sheets, calculate EHP/rankings, generate ship databases. Outputs JSON to apps/web/src/db/.
 - `packages/gsheets2img/` - Converts Google Sheets to images. Uses Playwright to screenshot published sheets as JPEGs for documentation tables. Outputs to apps/web/src/assets/equip_misc/.
 - `packages/compress/` - Image compression utilities. Compresses built images in apps/web/dist/ using Sharp with optimized settings.
+- `packages/image-downloader/` - Ship icon downloader. Uses agent-browser to capture original wiki icons for ship records with listed stats. Outputs to apps/web/src/assets/ship_icons/.
 - `packages/AzurLaneData/` - Raw game data submodule. Git submodule containing official Azur Lane game data (ships.json, skills.json, etc.). Must be kept up-to-date.
 
 ## Critical
