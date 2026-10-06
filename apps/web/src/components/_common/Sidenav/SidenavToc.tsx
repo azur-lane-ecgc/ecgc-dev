@@ -1,6 +1,7 @@
 import { HR } from "@/components/_common/HR"
-import { TocLink } from "./TocLink"
+
 import globalTOC from "./TocContent.json"
+import { TocLink } from "./TocLink"
 
 interface SidenavTocProps {
   page?: string

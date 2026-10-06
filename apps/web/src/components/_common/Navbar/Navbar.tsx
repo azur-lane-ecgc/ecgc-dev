@@ -1,5 +1,6 @@
-import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
 import { useState, useEffect, useRef } from "react"
+
+import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
 
 import { navbarPages, MobileNavItem, NavItem } from "../Navbar"
 

@@ -1,4 +1,5 @@
 import { getTotalGuaranteed } from "@/utils/commonResource"
+
 import type { ResourceProps } from "./types"
 
 const T1EXPDataPackData: ResourceProps = {

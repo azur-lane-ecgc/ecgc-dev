@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 80,
+  "semi": false,
+  "singleQuote": false,
+  "trailingComma": "all",
+  "useTabs": false,
+  "tabWidth": 2,
+  "endOfLine": "lf",
+  "sortImports": true,
+  "sortPackageJson": false,
+  "sortTailwindcss": {
+    "stylesheet": "apps/web/src/styles/global.css"
+  },
+  "ignorePatterns": [
+    ".astro/",
+    ".wrangler/",
+    "node_modules/",
+    "**/dist/",
+    "packages/AzurLaneData/",
+    "patches/oxfmt/oxfmt@0.72.0.patch"
+  ]
+}

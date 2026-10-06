@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from "react"
 
-import { useComboBoxMenu } from "./useComboBoxMenu"
-import { useDebounce } from "@/utils/useDebounce"
 import { truncateArray } from "@/utils/string"
+import { useDebounce } from "@/utils/useDebounce"
+
+import { useComboBoxMenu } from "./useComboBoxMenu"
 
 interface MultiComboBoxProps {
   className?: string

@@ -13,68 +13,64 @@ const groups = {
 ---
 
 <h5>Permanently Available:</h5>
-{
-  groups.permanent.length > 0 ? (
-    <>
-      <ItemContainer>
-        {groups.permanent.map((ship) => (
-          <ShipModal
-            client:visible={{ rootMargin: "50px" }}
-            uniqueID={`${role ?? ""}-permanent-${ship.id}`}
-            shipData={ship}
-            trigger={{
-              hasBorder: true,
-              iconNote: null,
-              descriptionNote: null,
-              largeDescNote: null,
-            }}
-            loading={false}
-          />
-        ))}
-      </ItemContainer>
-      <br />
-    </>
-  ) : (
-    <>
-      <p class="font-bold text-red-400">
-        There are no ships that meet this criteria.
-      </p>
-      <br />
-    </>
-  )
-}
+{groups.permanent.length > 0 ? (
+  <>
+    <ItemContainer>
+      {groups.permanent.map((ship) => (
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          uniqueID={`${role ?? ""}-permanent-${ship.id}`}
+          shipData={ship}
+          trigger={{
+            hasBorder: true,
+            iconNote: null,
+            descriptionNote: null,
+            largeDescNote: null,
+          }}
+          loading={false}
+        />
+      ))}
+    </ItemContainer>
+    <br />
+  </>
+) : (
+  <>
+    <p class="font-bold text-red-400">
+      There are no ships that meet this criteria.
+    </p>
+    <br />
+  </>
+)}
 
 <h5>Event-Locked:</h5>
-{
-  groups.event.length > 0 ? (
-    <>
-      <ItemContainer>
-        {groups.event.map((ship) => (
-          <ShipModal
-            client:visible={{ rootMargin: "50px" }}
-            uniqueID={`${role ?? ""}-event-${ship.id}`}
-            shipData={ship}
-            trigger={{
-              hasBorder: true,
-              iconNote: null,
-              descriptionNote: null,
-              largeDescNote: null,
-            }}
-            loading={false}
-          />
-        ))}
-      </ItemContainer>
-      <br />
-    </>
-  ) : (
-    <>
-      <p class="font-bold text-red-400">
-        There are no ships that meet this criteria.
-      </p>
-      <br />
-    </>
-  )
-}
+{groups.event.length > 0 ? (
+  <>
+    <ItemContainer>
+      {groups.event.map((ship) => (
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          uniqueID={`${role ?? ""}-event-${ship.id}`}
+          shipData={ship}
+          trigger={{
+            hasBorder: true,
+            iconNote: null,
+            descriptionNote: null,
+            largeDescNote: null,
+          }}
+          loading={false}
+        />
+      ))}
+    </ItemContainer>
+    <br />
+  </>
+) : (
+  <>
+    <p class="font-bold text-red-400">
+      There are no ships that meet this criteria.
+    </p>
+    <br />
+  </>
+)}
 
 <h5>
   <a
@@ -89,33 +85,31 @@ const groups = {
   </a>
   :
 </h5>
-{
-  groups.collab.length > 0 ? (
-    <>
-      <ItemContainer>
-        {groups.collab.map((ship) => (
-          <ShipModal
-            client:visible={{ rootMargin: "50px" }}
-            uniqueID={`${role ?? ""}-collab-${ship.id}`}
-            shipData={ship}
-            trigger={{
-              hasBorder: true,
-              iconNote: null,
-              descriptionNote: null,
-              largeDescNote: null,
-            }}
-            loading={false}
-          />
-        ))}
-      </ItemContainer>
-      <br />
-    </>
-  ) : (
-    <>
-      <p class="font-bold !text-red-400">
-        There are no ships that meet this criteria.
-      </p>
-      <br />
-    </>
-  )
-}
+{groups.collab.length > 0 ? (
+  <>
+    <ItemContainer>
+      {groups.collab.map((ship) => (
+        <ShipModal
+          client:visible={{ rootMargin: "50px" }}
+          uniqueID={`${role ?? ""}-collab-${ship.id}`}
+          shipData={ship}
+          trigger={{
+            hasBorder: true,
+            iconNote: null,
+            descriptionNote: null,
+            largeDescNote: null,
+          }}
+          loading={false}
+        />
+      ))}
+    </ItemContainer>
+    <br />
+  </>
+) : (
+  <>
+    <p class="font-bold !text-red-400">
+      There are no ships that meet this criteria.
+    </p>
+    <br />
+  </>
+)}

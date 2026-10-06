@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-import { useComboBoxMenu } from "./useComboBoxMenu"
-
 import { truncateString } from "@/utils/string"
+
+import { useComboBoxMenu } from "./useComboBoxMenu"
 
 interface ComboBoxProps {
   className?: string

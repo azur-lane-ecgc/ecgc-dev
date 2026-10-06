@@ -1,4 +1,5 @@
 import imageMaterialsCoreData from "@/assets/materials/core_data.png"
+
 import type { FleetTechData } from "./types"
 
 const DETechPoints: FleetTechData = {

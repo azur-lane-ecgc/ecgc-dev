@@ -1,5 +1,4 @@
 import { endGameRankingsUpdateDate } from "@/constants/index"
-
 import { formatDate } from "@/utils/formatDate"
 
 export const RankingHeader: React.FC = () => {

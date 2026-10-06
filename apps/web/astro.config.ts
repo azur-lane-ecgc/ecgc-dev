@@ -1,14 +1,12 @@
-// @ts-nocheck
-import { defineConfig } from "astro/config"
-
 // astro plugins
 // import cloudflare from "@astrojs/cloudflare"
 import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
-import metaTags from "astro-meta-tags"
-
 // vite plugins
 import tailwindcss from "@tailwindcss/vite"
+import metaTags from "astro-meta-tags"
+// @ts-nocheck
+import { defineConfig } from "astro/config"
 
 // https://astro.build/config
 // Configure the guide site build and preserve spaces between inline elements.
