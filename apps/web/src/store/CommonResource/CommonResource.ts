@@ -1,4 +1,4 @@
-interface CommonResourceFilterState {
+export interface CommonResourceFilterState {
   selectedCategory: string | null
   selectedTimeframe: string | null
   availability: "Both" | "Infinite" | "Finite"
