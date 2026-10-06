@@ -1,16 +1,23 @@
 ---
+import { Image } from "astro:assets"
+
 import imageEquipMiscCrossFleetEffects from "@/assets/equip_misc/Cross-fleet_Effects.jpeg"
 import imageEquipMiscHardModeReqHelp from "@/assets/equip_misc/Hard_Mode_Req_Help.jpeg"
+// images
+import BBFleet from "@/assets/fleetbuilding_guide/BBFleet.png"
+import GeneralBossing from "@/assets/fleetbuilding_guide/GeneralBossing.png"
+import GeneralMobbing from "@/assets/fleetbuilding_guide/GeneralMobbing.png"
+import IJNCVFleet from "@/assets/fleetbuilding_guide/IJNCVFleet.png"
+import KMSSubFleet from "@/assets/fleetbuilding_guide/KMSSubFleet.png"
+import USSCVFleet from "@/assets/fleetbuilding_guide/USSCVFleet.png"
+import USSSubFleet from "@/assets/fleetbuilding_guide/USSSubFleet.png"
 import { HR } from "@/components/_common/HR"
 import { ImageCarousel } from "@/components/_common/ImageCarousel"
 import { ItemCell, ItemContainer } from "@/components/_common/ItemCell"
 import WikiLink from "@/components/_common/WikiLink.astro"
-import { Image } from "astro:assets"
 
 import FastLoadShipList from "./FastLoadShipList.astro"
 import FleetbuildingShipList from "./FleetbuildingShipList.astro"
-import SubmarineTable from "./SubmarineTable.astro"
-
 import {
   defSupportShips,
   dmgDealerShips,
@@ -21,18 +28,6 @@ import {
   reduction50to74Ships,
   reduction75to99Ships,
 } from "./MFShipCategories"
-
-import {
-  VGaACarryShips,
-  VGaaShips,
-  VGaswShips,
-  VGdefSupportShips,
-  VGdmgDealerShips,
-  VGoffSupportShips,
-  VGsuperTankShips,
-  VGtankShips,
-} from "./VGShipCategories"
-
 import {
   internationalFleetMain,
   internationalFleetSub,
@@ -43,15 +38,17 @@ import {
   ussFishpackFleetMain,
   ussFishpackFleetSub,
 } from "./SSFShipCategories"
-
-// images
-import BBFleet from "@/assets/fleetbuilding_guide/BBFleet.png"
-import GeneralBossing from "@/assets/fleetbuilding_guide/GeneralBossing.png"
-import GeneralMobbing from "@/assets/fleetbuilding_guide/GeneralMobbing.png"
-import IJNCVFleet from "@/assets/fleetbuilding_guide/IJNCVFleet.png"
-import KMSSubFleet from "@/assets/fleetbuilding_guide/KMSSubFleet.png"
-import USSCVFleet from "@/assets/fleetbuilding_guide/USSCVFleet.png"
-import USSSubFleet from "@/assets/fleetbuilding_guide/USSSubFleet.png"
+import SubmarineTable from "./SubmarineTable.astro"
+import {
+  VGaACarryShips,
+  VGaaShips,
+  VGaswShips,
+  VGdefSupportShips,
+  VGdmgDealerShips,
+  VGoffSupportShips,
+  VGsuperTankShips,
+  VGtankShips,
+} from "./VGShipCategories"
 ---
 
 <h2 id="introduction">Introduction</h2>
