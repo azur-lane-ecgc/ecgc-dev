@@ -48,4 +48,4 @@ Done compressing images.
 
 ## Configuration
 
-Edit `index.ts` to adjust compression settings per format.
+Edit `src/compressImages.ts` to adjust compression settings per format.
