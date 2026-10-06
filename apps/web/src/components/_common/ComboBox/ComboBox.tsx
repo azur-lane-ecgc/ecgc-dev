@@ -1,4 +1,6 @@
-import { useState, useRef, useEffect } from "react"
+import { useState } from "react"
+
+import { useComboBoxMenu } from "./useComboBoxMenu"
 
 import { truncateString } from "@/utils/string"
 
@@ -11,11 +13,11 @@ interface ComboBoxProps {
   onSelect: (option: string | null) => void
   disabled?: boolean
   disabledMessage?: string
-  reset?: any
+  reset?: string
 }
 
 // Render a single selection combo box with a mobile option menu.
-export const ComboBox: React.FC<ComboBoxProps> = ({
+const ComboBoxBase: React.FC<Omit<ComboBoxProps, "reset">> = ({
   className,
   title,
   options,
@@ -24,68 +26,18 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
   onSelect,
   disabled,
   disabledMessage,
-  reset,
 }) => {
   const [input, setInput] = useState<string>("")
   const [selected, setSelected] = useState<string | null>(initialOption || null)
-  const [showOptions, setShowOptions] = useState(false)
-  const [isVisible, setIsVisible] = useState(false)
-  const [shouldRenderMobile, setShouldRenderMobile] = useState(false)
-
-  const wrapperRef = useRef<HTMLDivElement | null>(null)
-  const inputRef = useRef<HTMLInputElement | null>(null)
-  const onSelectRef = useRef(onSelect)
-
-  useEffect(() => {
-    onSelectRef.current = onSelect
-  }, [onSelect])
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        wrapperRef.current &&
-        !wrapperRef.current.contains(event.target as Node)
-      ) {
-        setShowOptions(false)
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
-
-  useEffect(() => {
-    if (showOptions) {
-      setShouldRenderMobile(true)
-      const timer = window.setTimeout(() => setIsVisible(true), 75)
-      if (inputRef.current) {
-        inputRef.current.focus()
-      }
-      return () => window.clearTimeout(timer)
-    } else {
-      setIsVisible(false)
-      const timer = setTimeout(() => setShouldRenderMobile(false), 300)
-      return () => clearTimeout(timer)
-    }
-  }, [showOptions])
-
-  useEffect(() => {
-    if (!!reset) {
-      setSelected(initialOption || null)
-      setInput("")
-      onSelectRef.current(initialOption || null)
-    }
-  }, [reset, initialOption])
-
-  useEffect(() => {
-    if (disabled) {
-      setSelected(initialOption || null)
-      setInput("")
-      onSelectRef.current(null)
-    }
-  }, [disabled, initialOption])
+  const {
+    wrapperRef,
+    inputRef,
+    showOptions,
+    shouldRenderMobile,
+    isVisible,
+    toggleOptions,
+    closeOptions,
+  } = useComboBoxMenu()
 
   const filteredOptions = (() => {
     const baseOptions = input
@@ -108,8 +60,8 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
 
     setSelected(newSelected)
     setInput("")
-    onSelectRef.current(newSelected)
-    setShowOptions(false)
+    onSelect(newSelected)
+    closeOptions()
   }
 
   return (
@@ -128,7 +80,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
         } rounded-md border border-green-800 shadow-lg ${disabled ? "cursor-not-allowed" : "hover:bg-[#394047]"}`}
         onClick={() => {
           if (!disabled) {
-            setShowOptions((prev) => !prev)
+            toggleOptions()
           }
         }}
       >
@@ -197,7 +149,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
             className={`fixed inset-0 bg-black transition-all duration-300 ease-in-out ${
               isVisible ? "opacity-50" : "opacity-0"
             }`}
-            onClick={() => setShowOptions(false)}
+            onClick={closeOptions}
           />
 
           {/* Close message */}
@@ -256,3 +208,8 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
     </div>
   )
 }
+
+/** Renders a single-selection combo box that resets when reset or disabled changes. */
+export const ComboBox: React.FC<ComboBoxProps> = ({ reset, ...props }) => (
+  <ComboBoxBase key={`${String(reset)}-${String(props.disabled)}`} {...props} />
+)
