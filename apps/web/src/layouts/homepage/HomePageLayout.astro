@@ -1,15 +1,16 @@
 ---
-import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
-import imageMiscSiteIconIco from "@/assets/misc/SiteIcon.ico"
-import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import { ClientRouter } from "astro:transitions"
+
+import imageMiscSiteIconIco from "@/assets/misc/SiteIcon.ico"
+import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
+// components
+import Footer from "@/components/_common/Footer.astro"
 
 // user style sheets
 import "@/styles/home_page.css"
 
-// components
-import Footer from "@/components/_common/Footer.astro"
 import { Navbar } from "@/components/_common/Navbar"
+import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 
 interface Props {
   title: string
