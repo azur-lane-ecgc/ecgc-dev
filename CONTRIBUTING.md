@@ -22,7 +22,7 @@ The project is a monorepo with the following structure:
 
 Use Bun 1.4.2 and Node.js 22.12.0 or later. CI uses Node.js 26.10.0.
 
-Keep TypeScript on version 6 until Astro's checker and import formatting plugins support version 7.
+Keep TypeScript on version 6 until Astro's checker and patched Astro import organizer support version 7.
 These tools require the JavaScript compiler API that TypeScript 7 removes.
 Run `bun run update` to update all workspaces within their supported version ranges.
 Review breaking changes before you change those ranges.
@@ -96,8 +96,8 @@ The `package.json` file contains a number of scripts for common tasks:
 ### Code Quality
 
 - `lint`: Lints the code with oxlint
-- `format`: Formats the code with prettier (includes astro, tailwindcss, and import organization)
-- `smol-format`: Formats specific file types with prettier
+- `format`: Formats the code with oxfmt (includes Astro and import organization)
+- `format:check`: Checks formatting with oxfmt
 
 ### Maintenance
 
@@ -117,7 +117,7 @@ The `package.json` file contains a number of scripts for common tasks:
 
 ### Code Style
 
-- Follow the formatting rules defined in `.prettierrc.json`
+- Follow the formatting rules defined in `.oxfmtrc.json`
 - Use path aliases (`@/components/*`, `@/utils/*`, etc.) for imports
 - Prefer async/await over promises
 - Use TypeScript strict mode with proper type definitions

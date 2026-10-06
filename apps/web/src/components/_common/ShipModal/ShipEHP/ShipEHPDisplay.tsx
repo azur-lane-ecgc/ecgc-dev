@@ -1,7 +1,6 @@
 import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
 import { ehpUpdateDate } from "@/constants/index"
-
 import type { ShipEHPProps } from "@/db/types"
 const ehp = (await import("@/db/ehp/shipEHP.json")).default as Record<
   string,

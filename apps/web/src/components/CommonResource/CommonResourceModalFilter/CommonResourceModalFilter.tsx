@@ -3,15 +3,14 @@ import { useMemo, useReducer } from "react"
 import { ComboBox } from "@/components/_common/ComboBox"
 import { ItemContainer } from "@/components/_common/ItemCell"
 import { ThreeToggleButton } from "@/components/_common/ToggleButton"
-
 import {
   CommonResourceFilterReducer,
   type CommonResourceFilterState,
 } from "@/store/CommonResource"
 
 import { FiniteResourceData, InfiniteResourceData } from "../CommonResourceData"
-import { ResourceModal } from "../ResourceModal"
 import type { ResourceProps } from "../CommonResourceData/types"
+import { ResourceModal } from "../ResourceModal"
 
 const combinedData: ResourceProps[] =
   InfiniteResourceData.concat(FiniteResourceData)

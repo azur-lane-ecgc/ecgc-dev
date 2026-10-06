@@ -1,5 +1,6 @@
-import imageMaterialsMerit from "@/assets/materials/merit.png"
 import imageMaterialsCoreData from "@/assets/materials/core_data.png"
+import imageMaterialsMerit from "@/assets/materials/merit.png"
+
 import type { FleetTechData } from "./types"
 
 const MNFTechPoints: FleetTechData = {
