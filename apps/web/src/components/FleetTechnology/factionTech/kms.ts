@@ -1,4 +1,5 @@
 import imageMaterialsMerit from "@/assets/materials/merit.png"
+
 import type { FleetTechData } from "./types"
 
 const KMSTechPoints: FleetTechData = {

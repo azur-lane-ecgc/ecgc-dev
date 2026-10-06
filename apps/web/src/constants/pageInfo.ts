@@ -1,12 +1,13 @@
+import type { ImageMetadata } from "astro"
+
 import imageMiscCommonResourceCover from "@/assets/misc/common_resource_cover.jpg"
 import imageMiscEarlyShipRecsCover from "@/assets/misc/early_ship_recs_cover.png"
 import imageMiscEquipmentGuideCover from "@/assets/misc/equipment_guide_cover.jpg"
 import imageMiscFarmingGuideCover from "@/assets/misc/farming_guide_cover.jpg"
 import imageMiscFleetbuildingGuideCover from "@/assets/misc/fleetbuilding_guide_cover.png"
-import imageMiscNoCover from "@/assets/misc/no_cover.jpg"
 import imageMiscNewbieTipsCover from "@/assets/misc/newbie_tips_cover.jpg"
+import imageMiscNoCover from "@/assets/misc/no_cover.jpg"
 import imageMiscResearchGuideCover from "@/assets/misc/research_guide_cover.jpg"
-import type { ImageMetadata } from "astro"
 interface PageInfoItem {
   authors: string[]
   lastUpdated: string
