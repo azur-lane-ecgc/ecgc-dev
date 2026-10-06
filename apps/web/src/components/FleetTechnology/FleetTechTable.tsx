@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react"
 
 import { ShipCell } from "@/components/_common/ItemCell"
+import { parseLocation } from "@/utils/parseLocation"
 
 import { allFactionData } from "./factionTech"
-import { parseLocation } from "@/utils/parseLocation"
 
 import "@/components/_common/ItemTable/styles.css"
 

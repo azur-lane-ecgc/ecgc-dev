@@ -1,4 +1,5 @@
 import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
+
 import "./styles.css"
 
 interface ItemCellProps {
