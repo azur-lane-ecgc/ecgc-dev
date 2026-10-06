@@ -1,41 +1,48 @@
 # Patched oxfmt
 
-ECGC installs stock `oxfmt@0.72.0` from Bun. This folder adds complete Astro formatting.
+ECGC installs stock `oxfmt@0.72.0` from Bun. This folder adds one text package patch for complete Astro CLI formatting.
 
-## Files
+## Structure
 
-- `oxfmt@0.72.0.patch` is the Bun package patch.
-- `source/oxfmt-astro.patch` contains the maintainable Rust, TypeScript, packaging, and test changes.
-- `native/` contains patched native bindings that Bun's text patch cannot represent.
-- `install-native.ts` copies the binding for the current platform.
-- `build-source.ts` rebuilds the source patch artifacts.
+- `oxfmt@0.72.0.patch` changes only JavaScript entry files and adds the Astro formatter.
+- The root optional dependencies install the official `@oxfmt/binding-*` package for the current platform.
+- No custom native binary or Rust build is required.
 
-## Why two patches exist
+## Behavior
 
-Bun package patches are unified text patches. Its implementation does not support Git binary patches.
-Oxfmt's Astro routing and option conversion live in its native Rust binding.
-The JavaScript patch therefore works with the matching native binding stored in this folder.
+The patch intercepts `.astro` targets before the stock native CLI:
 
-## Rebuild
+- It formats complete Astro templates, frontmatter, expressions, scripts, and styles.
+- It uses stock oxfmt import sorting for Astro frontmatter.
+- It supports `--write`, `--check`, `--list-different`, and `--stdin-filepath`.
+- It supports file paths, directories, glob patterns, and negated glob exclusions.
+- It combines Astro and non-Astro exit codes.
+- The oxfmt JavaScript API also accepts `.astro` file names.
 
-Build the current platform:
+The stock native CLI handles all non-Astro files. The official native binding handles both stock formatting and Astro frontmatter.
 
-```sh
-bun patches/oxfmt/build-source.ts
-```
+## Configuration
 
-Run the Astro tests during the build:
+The patch reads the same root configuration file as oxfmt:
 
-```sh
-bun patches/oxfmt/build-source.ts --test
-```
+- `.oxfmtrc.json`
+- `.oxfmtrc.jsonc`
+- `oxfmt.config.ts`
+- `oxfmt.config.mts`
+- `oxfmt.config.js`
+- `oxfmt.config.mjs`
+- `oxfmt.config.cjs`
 
-The build requires Git, Rust, pnpm, and Bun.
-For Linux x64 on macOS, use `napi build` with `--target x86_64-unknown-linux-gnu --cross-compile`.
+JSON and JSONC files receive full support. JavaScript and TypeScript configuration files must export a plain object as their default export.
 
-## Current native platforms
+Astro options match the original Astro formatter:
 
-- macOS ARM64
-- Linux x64 GNU
+- `astroAllowShorthand`
+- `astroSkipFrontmatter`
+- `astroCompressHTML`
 
-Other platforms must build a matching binding before running oxfmt.
+## Limits
+
+- The language server still uses stock oxfmt and does not format Astro.
+- Tailwind class sorting does not change Astro classes; this matches the tested upstream Tailwind Astro transform.
+- The patch targets oxfmt `0.72.0`.
