@@ -30,7 +30,7 @@
 - `packages/compress/` - Image compression utilities. Compresses built images in apps/web/dist/ using Sharp with optimized settings.
 - `packages/image-downloader/` - Ship icon downloader. Uses agent-browser to capture original wiki icons for ship records with listed stats. Outputs to apps/web/src/assets/ship_icons/.
 - `packages/AzurLaneData/` - Raw game data submodule. Git submodule containing official Azur Lane game data (ships.json, skills.json, etc.). Must be kept up-to-date.
-- `patches/oxfmt/` - Stock oxfmt patch set. Adds complete Astro formatting and matching native bindings.
+- `patches/oxfmt/` - Stock oxfmt text patch. Adds complete Astro formatting without a custom native binary.
 
 ## Critical
 
