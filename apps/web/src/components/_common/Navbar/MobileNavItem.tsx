@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-
 import type { NavbarPage } from "./navbarPages"
 
 interface MobileNavItemProps {
@@ -14,14 +12,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
   activeDropdown,
   toggleDropdown,
 }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false)
-
-  useEffect(() => {
-    if (activeDropdown !== page.name.toLowerCase()) {
-      setIsOpen(false)
-    }
-  }, [activeDropdown, page.name])
-
+  const isOpen = activeDropdown === page.name.toLowerCase()
   const dropdownActive =
     page.isDropdown &&
     page.dropdownItems?.find((item) => item.href === activePage)
@@ -33,7 +24,6 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
           className={`navbar-link w-full rounded-md px-3 py-2 text-left text-base font-medium text-white ${dropdownActive ? "navbar-active" : ""} `}
           onClick={() => {
             toggleDropdown(page.name.toLowerCase())
-            setIsOpen(!isOpen)
           }}
         >
           <i className={`fas ${page.icon} mr-1`} />
@@ -46,7 +36,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
             />
           </span>
         </button>
-        {activeDropdown === page.name.toLowerCase() && (
+        {isOpen && (
           <div className="pl-4">
             {page.dropdownItems?.map((item, idx) => (
               <a

@@ -9,10 +9,14 @@ interface InputProps {
   placeholder?: string
   debounceTimer?: number
   onSelect: (searchTerm: string) => void
-  reset?: any
+  reset?: string
 }
 
-export const Input: React.FC<InputProps> = ({
+interface InputBaseProps extends Omit<InputProps, "reset"> {
+  resetOnMount: boolean
+}
+
+const InputBase: React.FC<InputBaseProps> = ({
   className,
   title,
   visibleTitle = true,
@@ -20,7 +24,7 @@ export const Input: React.FC<InputProps> = ({
   placeholder,
   debounceTimer = 300,
   onSelect,
-  reset,
+  resetOnMount,
 }) => {
   const [searchTerm, setSearchTerm] = useState<string>(initialValue)
   const inputRef = useRef<HTMLInputElement | null>(null)
@@ -36,12 +40,13 @@ export const Input: React.FC<InputProps> = ({
   }, [debouncedSearchTerm])
 
   useEffect(() => {
-    if (!!reset) {
-      setSearchTerm("")
-      onSelectRef.current("")
-      inputRef.current?.blur()
+    if (!resetOnMount) {
+      return
     }
-  }, [reset])
+
+    onSelectRef.current("")
+    inputRef.current?.blur()
+  }, [resetOnMount])
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value)
@@ -81,3 +86,8 @@ export const Input: React.FC<InputProps> = ({
     </div>
   )
 }
+
+/** Renders a search input that clears itself when its reset value changes. */
+export const Input: React.FC<InputProps> = ({ reset, ...props }) => (
+  <InputBase key={String(reset)} {...props} resetOnMount={Boolean(reset)} />
+)

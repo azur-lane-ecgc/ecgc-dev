@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export interface Option {
   title: string
@@ -24,23 +24,15 @@ const getDefaultSymbol = (index: number, optionsCount: number): string => {
   return ""
 }
 
-// base toggle button
-const ToggleButton: React.FC<ToggleButtonProps> = ({
+const ToggleButtonBase: React.FC<Omit<ToggleButtonProps, "reset">> = ({
   className = "",
   title,
   options,
   initialValue = 0,
   onSelect,
-  reset,
 }) => {
   const [selectedIndex, setSelectedIndex] = useState(initialValue)
   const optionsCount = options.length
-
-  useEffect(() => {
-    if (!!reset) {
-      setSelectedIndex(initialValue)
-    }
-  }, [reset, initialValue])
 
   const selectNextOption = () => {
     const nextIndex = (selectedIndex + 1) % optionsCount
@@ -83,14 +75,18 @@ interface TwoToggleButtonProps extends Omit<ToggleButtonProps, "options"> {
   options: [Option, Option]
 }
 
-export const TwoToggleButton: React.FC<TwoToggleButtonProps> = (props) => {
-  return <ToggleButton {...props} />
-}
+/** Renders a two-option toggle that resets when its reset value changes. */
+export const TwoToggleButton: React.FC<TwoToggleButtonProps> = ({
+  reset,
+  ...props
+}) => <ToggleButtonBase key={String(reset)} {...props} />
 
 interface ThreeToggleButtonProps extends Omit<ToggleButtonProps, "options"> {
   options: [Option, Option, Option]
 }
 
-export const ThreeToggleButton: React.FC<ThreeToggleButtonProps> = (props) => {
-  return <ToggleButton {...props} />
-}
+/** Renders a three-option toggle that resets when its reset value changes. */
+export const ThreeToggleButton: React.FC<ThreeToggleButtonProps> = ({
+  reset,
+  ...props
+}) => <ToggleButtonBase key={String(reset)} {...props} />

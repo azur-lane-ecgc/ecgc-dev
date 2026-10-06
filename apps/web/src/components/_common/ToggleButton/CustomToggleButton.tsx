@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 import type { Option } from "./ToggleButton"
 
@@ -10,21 +10,11 @@ interface CustomToggleButtonProps {
   reset?: any
 }
 
-export const CustomToggleButton: React.FC<CustomToggleButtonProps> = ({
-  className = "",
-  options,
-  initialValue = 0,
-  onSelect,
-  reset,
-}) => {
+const CustomToggleButtonBase: React.FC<
+  Omit<CustomToggleButtonProps, "reset">
+> = ({ className = "", options, initialValue = 0, onSelect }) => {
   const [selectedIndex, setSelectedIndex] = useState(initialValue)
   const optionsCount = options.length
-
-  useEffect(() => {
-    if (!!reset) {
-      setSelectedIndex(initialValue)
-    }
-  }, [reset, initialValue])
 
   const handleClick = () => {
     const nextIndex = (selectedIndex + 1) % optionsCount
@@ -43,3 +33,9 @@ export const CustomToggleButton: React.FC<CustomToggleButtonProps> = ({
     </button>
   )
 }
+
+/** Renders a symbol toggle that resets when its reset value changes. */
+export const CustomToggleButton: React.FC<CustomToggleButtonProps> = ({
+  reset,
+  ...props
+}) => <CustomToggleButtonBase key={String(reset)} {...props} />
