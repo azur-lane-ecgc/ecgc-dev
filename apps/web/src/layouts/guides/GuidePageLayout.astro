@@ -1,18 +1,19 @@
 ---
-import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
+import { ClientRouter } from "astro:transitions"
+
 import imageMiscNoCover from "@/assets/misc/no_cover.jpg"
 import imageMiscSiteIconIco from "@/assets/misc/SiteIcon.ico"
-import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
-import { ClientRouter } from "astro:transitions"
+import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
+// components
+import Footer from "@/components/_common/Footer.astro"
 
 // user style sheets
 import "@/styles/guide_page.css"
 
-// components
-import Footer from "@/components/_common/Footer.astro"
 import { Navbar } from "@/components/_common/Navbar"
 import { SidenavPage } from "@/components/_common/Sidenav"
 import { pageInfo } from "@/constants/index"
+import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 
 interface Props {
   title: string

@@ -9,7 +9,7 @@
     "packages/image-downloader"
   ],
   "scripts": {
-    "prepare": "bun patches/oxfmt/install-native.ts && bunx lefthook install",
+    "prepare": "bunx lefthook install",
     "update": "bun update --recursive",
     "rebuild": "rm -rf node_modules && rm -rf .wrangler && rm -rf packages/AzurLaneData && rm -rf apps/web/node_modules && rm -rf packages/dev/node_modules && rm -rf packages/gsheets2img/node_modules && rm -rf packages/compress/node_modules && rm -rf packages/image-downloader/node_modules && rm -rf apps/web/dist && rm -rf apps/web/.astro && bun run update",
     "reset": "bun run rebuild && bun run devtools && bun run build",
@@ -21,7 +21,6 @@
     "smol-format": "bunx oxfmt --write \"packages/**/*.{astro,json}\" \"apps/**/*.{astro,json}\"",
     "format": "bunx oxfmt --write packages apps patches",
     "format:check": "bunx oxfmt --check packages apps patches",
-    "build:oxfmt-patch": "bun patches/oxfmt/build-source.ts",
     "lint": "bunx --bun oxlint --fix packages apps patches",
     "devtools": "bun run submodule && bun --filter dev main && bun run format",
     "build": "bun --filter frontend build",
@@ -40,6 +39,27 @@
     "oxfmt": "0.72.0",
     "typescript": "^6.0.3",
     "wrangler": "^4.147.0"
+  },
+  "optionalDependencies": {
+    "@oxfmt/binding-darwin-arm64": "0.72.0",
+    "@oxfmt/binding-darwin-x64": "0.72.0",
+    "@oxfmt/binding-linux-arm64-gnu": "0.72.0",
+    "@oxfmt/binding-linux-arm64-musl": "0.72.0",
+    "@oxfmt/binding-linux-arm-gnueabihf": "0.72.0",
+    "@oxfmt/binding-linux-arm-musleabihf": "0.72.0",
+    "@oxfmt/binding-linux-x64-gnu": "0.72.0",
+    "@oxfmt/binding-linux-x64-musl": "0.72.0",
+    "@oxfmt/binding-linux-ppc64-gnu": "0.72.0",
+    "@oxfmt/binding-linux-riscv64-gnu": "0.72.0",
+    "@oxfmt/binding-linux-riscv64-musl": "0.72.0",
+    "@oxfmt/binding-linux-s390x-gnu": "0.72.0",
+    "@oxfmt/binding-win32-arm64-msvc": "0.72.0",
+    "@oxfmt/binding-win32-ia32-msvc": "0.72.0",
+    "@oxfmt/binding-win32-x64-msvc": "0.72.0",
+    "@oxfmt/binding-freebsd-x64": "0.72.0",
+    "@oxfmt/binding-android-arm64": "0.72.0",
+    "@oxfmt/binding-android-arm-eabi": "0.72.0",
+    "@oxfmt/binding-openharmony-arm64": "0.72.0"
   },
   "trustedDependencies": [
     "agent-browser",
