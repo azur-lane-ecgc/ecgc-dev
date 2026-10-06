@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 
+import { useComboBoxMenu } from "./useComboBoxMenu"
 import { useDebounce } from "@/utils/useDebounce"
 import { truncateArray } from "@/utils/string"
 
@@ -13,11 +14,11 @@ interface MultiComboBoxProps {
   onSelect: (option: string[] | null) => void
   disabled?: boolean
   disabledMessage?: string
-  reset?: any
+  reset?: string
 }
 
 // Render a multiple selection combo box with a mobile option menu.
-export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
+const MultiSelectComboboxBase: React.FC<Omit<MultiComboBoxProps, "reset">> = ({
   className,
   title,
   options,
@@ -27,16 +28,10 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   onSelect,
   disabled,
   disabledMessage,
-  reset,
 }) => {
   const [input, setInput] = useState<string>("")
   const [selected, setSelected] = useState<string[]>(initialOptions || [])
-  const [showOptions, setShowOptions] = useState(false)
-  const [isVisible, setIsVisible] = useState(false)
-  const [shouldRenderMobile, setShouldRenderMobile] = useState(false)
 
-  const wrapperRef = useRef<HTMLDivElement | null>(null)
-  const inputRef = useRef<HTMLInputElement | null>(null)
   const onSelectRef = useRef(onSelect)
 
   const debouncedSelected: string[] = useDebounce(selected, 190)
@@ -46,54 +41,18 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
   }, [onSelect])
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        wrapperRef.current &&
-        !wrapperRef.current.contains(event.target as Node)
-      ) {
-        setShowOptions(false)
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
-
-  useEffect(() => {
     onSelectRef.current(debouncedSelected.length > 0 ? debouncedSelected : [])
   }, [debouncedSelected])
 
-  useEffect(() => {
-    if (showOptions) {
-      setShouldRenderMobile(true)
-      const timer = window.setTimeout(() => setIsVisible(true), 75)
-      if (inputRef.current) {
-        inputRef.current.focus()
-      }
-      return () => window.clearTimeout(timer)
-    } else {
-      setIsVisible(false)
-      const timer = setTimeout(() => setShouldRenderMobile(false), 300)
-      return () => clearTimeout(timer)
-    }
-  }, [showOptions])
-
-  useEffect(() => {
-    if (!!reset) {
-      setSelected(initialOptions || [])
-      setInput("")
-    }
-  }, [reset, initialOptions])
-
-  useEffect(() => {
-    if (disabled) {
-      setSelected(initialOptions || [])
-      setInput("")
-      onSelectRef.current([])
-    }
-  }, [disabled, initialOptions])
+  const {
+    wrapperRef,
+    inputRef,
+    showOptions,
+    shouldRenderMobile,
+    isVisible,
+    toggleOptions,
+    closeOptions,
+  } = useComboBoxMenu()
 
   const filteredOptions = (() => {
     const baseOptions = input
@@ -150,7 +109,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
         } rounded-md border border-green-800 shadow-lg hover:bg-[#394047]`}
         onClick={() => {
           if (!disabled) {
-            setShowOptions((prev) => !prev)
+            toggleOptions()
           }
         }}
       >
@@ -221,7 +180,7 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
             className={`fixed inset-0 bg-black transition-all duration-300 ease-in-out ${
               isVisible ? "opacity-50" : "opacity-0"
             }`}
-            onClick={() => setShowOptions(false)}
+            onClick={closeOptions}
           />
 
           {/* Close message */}
@@ -282,3 +241,14 @@ export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
     </div>
   )
 }
+
+/** Renders a multi-selection combo box that resets when reset or disabled changes. */
+export const MultiSelectCombobox: React.FC<MultiComboBoxProps> = ({
+  reset,
+  ...props
+}) => (
+  <MultiSelectComboboxBase
+    key={`${String(reset)}-${String(props.disabled)}`}
+    {...props}
+  />
+)
