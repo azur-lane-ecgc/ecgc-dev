@@ -1,5 +1,6 @@
-import imageMaterialsUnknownShip from "@/assets/materials/UnknownShip.png"
 import type { ImageMetadata } from "astro"
+
+import imageMaterialsUnknownShip from "@/assets/materials/UnknownShip.png"
 
 import { getShipIconName } from "./shipIconName"
 

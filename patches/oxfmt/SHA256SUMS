@@ -1,0 +1,6 @@
+c556ab97c02d8be07feaa486f9d163b2332ed4d06cfa96037f01bd6a942ed52f  oxfmt@0.72.0.patch
+5b126f638cf685886b7ec4ed5714a98a8789c03a71de6331473a845f34b05f56  source/oxfmt-astro.patch
+12f08200932e9e1ef13c0c2ee41e42f654283f031e82f3cec12ecac84727845e  native/darwin-arm64/oxfmt.darwin-arm64.node
+96a38014cf0b845dc2f59c60da0d62393901a2fd9d4c06b887417c88d8063025  native/linux-x64-gnu/oxfmt.linux-x64-gnu.node
+1c566f1518d78d55b12fb7c837eb118c8a9a83ee19733340ee68cbcf0d1fb1cc  ASTRO.md
+05bd209280de3eab98d309b27fef03a38536519ad809d00c565c54119a422e3a  ASTRO-THIRD-PARTY-NOTICES.txt

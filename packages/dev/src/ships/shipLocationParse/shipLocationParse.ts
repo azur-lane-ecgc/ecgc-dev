@@ -1,5 +1,5 @@
-import type { ShipDropData } from "@/packages/AzurLaneData/types/ships"
 import type { shipLocation, ShipLocationData } from "@/db/types"
+import type { ShipDropData } from "@/packages/AzurLaneData/types/ships"
 import { parseLocation } from "@/utils/parseLocation"
 
 import { shipSeriesMap } from "./shipSeriesMap"
