@@ -5,7 +5,7 @@ ECGC installs stock `oxfmt@0.72.0` from Bun. This folder adds one text package p
 ## Structure
 
 - `oxfmt@0.72.0.patch` changes only JavaScript entry files and adds the Astro formatter.
-- The root optional dependencies install the official `@oxfmt/binding-*` package for the current platform.
+- Stock oxfmt installs the official `@oxfmt/binding-*` package for the current platform.
 - No custom native binary or Rust build is required.
 
 ## Behavior
