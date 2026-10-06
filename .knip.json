@@ -1,5 +1,6 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
+  "ignoreDependencies": ["@astrojs/compiler-rs"],
   "workspaces": {
     "apps/web": {
       "entry": ["src/pages/**/*.astro", "src/pages/**/*.ts"],

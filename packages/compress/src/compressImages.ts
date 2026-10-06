@@ -1,6 +1,7 @@
 import { readdir, stat, readFile, writeFile } from "fs/promises"
-import { fileURLToPath } from "url"
 import { join, extname, resolve, relative } from "path"
+import { fileURLToPath } from "url"
+
 import sharp from "sharp"
 
 const extensionMap: Record<string, string> = {

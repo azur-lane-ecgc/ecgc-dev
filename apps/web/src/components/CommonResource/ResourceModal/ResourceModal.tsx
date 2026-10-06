@@ -1,9 +1,9 @@
-import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import { useState } from "react"
+
+import { HR } from "@/components/_common/HR"
 
 import "@/components/_common/ItemCell/styles.css"
 
-import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
 import type { TriggerProps } from "@/components/_common/ShipModal"
 import {
@@ -14,17 +14,17 @@ import {
   shipIconStyle,
   shipLinkStyle,
 } from "@/components/_common/ShipModal/styles"
-
 import { getCellColor } from "@/utils/commonResource"
+import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import {
   useBodyOverflow,
   useModalFocus,
   useModalHistory,
 } from "@/utils/modalHooks"
 
+import type { ResourceProps } from "../CommonResourceData/types"
 import { LocationLinks } from "./LocationLinks"
 import { Mark } from "./Mark"
-import type { ResourceProps } from "../CommonResourceData/types"
 
 interface ResourceModalProps {
   item: ResourceProps

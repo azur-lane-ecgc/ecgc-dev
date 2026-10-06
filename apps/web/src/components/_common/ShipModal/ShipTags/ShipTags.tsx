@@ -1,7 +1,7 @@
-import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import { useState } from "react"
 
 import { factionLink } from "@/utils/factionLink"
+import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 import { hullTypeLink, trimRoles } from "@/utils/ships"
 
 import { getFactionIcon } from "./FactionIcons"

@@ -1,6 +1,7 @@
 import { writeFile } from "node:fs/promises"
 
 import type { ShipData } from "@/packages/AzurLaneData/types/ships"
+
 import { shipNameParse, shipLocationParse } from "../ships"
 
 export const main = async (): Promise<any[]> => {

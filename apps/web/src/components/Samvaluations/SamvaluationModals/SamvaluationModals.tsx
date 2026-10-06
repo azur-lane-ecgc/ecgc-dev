@@ -1,7 +1,6 @@
 import { HR } from "@/components/_common/HR"
 import { ItemContainer } from "@/components/_common/ItemCell"
 import { ShipModal } from "@/components/_common/ShipModal"
-
 import type {
   MainFleetRankingProps,
   VanguardFleetRankingProps,
@@ -18,7 +17,6 @@ import {
   initialFilters,
   useShipFilter,
 } from "@/store/Samvaluation/useShipFilter"
-
 import { getHighestValue, numberToLetterRank } from "@/utils/ships"
 
 import { SamvaluationModalFilters } from "./SamvaluationModalFilters"

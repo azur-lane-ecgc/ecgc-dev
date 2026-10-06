@@ -7,7 +7,8 @@
 - `bun run devtools` - Run all data processing scripts
 - `bun run build` - Build frontend for production
 - `bun run lint` - Run oxlint with auto-fix
-- `bun run format` - Format code with Prettier
+- `bun run format` - Format code with oxfmt
+- `bun run format:check` - Check formatting with oxfmt
 - `bun run check` - Type check all packages
 - `bun run dev` - Start dev server (http://localhost:4321)
 - `bun run plan-ship-icons` - List missing ship icons
@@ -29,11 +30,12 @@
 - `packages/compress/` - Image compression utilities. Compresses built images in apps/web/dist/ using Sharp with optimized settings.
 - `packages/image-downloader/` - Ship icon downloader. Uses agent-browser to capture original wiki icons for ship records with listed stats. Outputs to apps/web/src/assets/ship_icons/.
 - `packages/AzurLaneData/` - Raw game data submodule. Git submodule containing official Azur Lane game data (ships.json, skills.json, etc.). Must be kept up-to-date.
+- `patches/oxfmt/` - Stock oxfmt patch set. Adds complete Astro formatting and matching native bindings.
 
 ## Critical
 
 - Never commit credentials.json (Google Cloud service account key)
-- Pre-commit hooks run: knip → oxlint → prettier
+- Pre-commit hooks run: knip → oxlint → oxfmt
 
 ## Red flags in a React codebase
 

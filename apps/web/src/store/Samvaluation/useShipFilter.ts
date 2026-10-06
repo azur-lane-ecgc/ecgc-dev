@@ -20,7 +20,6 @@ const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
 //   ShipEHPProps[]
 // >
 
-import { normalizeString } from "@/utils/string"
 import {
   allianceFactionsMap,
   fleetTypeMapping,
@@ -29,6 +28,7 @@ import {
   getHighestValue,
   shipIcons,
 } from "@/utils/ships"
+import { normalizeString } from "@/utils/string"
 
 export interface ShipFilterProps {
   visibleShips: ShipData[]

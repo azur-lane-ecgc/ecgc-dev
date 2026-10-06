@@ -1,9 +1,9 @@
-import { dirname } from "path"
 import { existsSync, mkdirSync } from "fs"
 import { writeFile } from "fs/promises"
+import { dirname } from "path"
 
-import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 import type { AugmentData } from "@/packages/AzurLaneData/types/augments"
+import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 const ships: Record<number, ShipData> =
   (await import("@/packages/AzurLaneData/data/ships.json").then(
     (module) => module.default,
@@ -22,6 +22,7 @@ import type {
   SSFleetRankingProps,
 } from "@/db/types"
 import type { ShipAAProps } from "@/tools/aa_parsing/types"
+
 import {
   isPermanent,
   shipDefaultAugmentParse,
