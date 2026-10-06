@@ -130,8 +130,9 @@ const compressImage = async (
   return "compressed"
 }
 
-const main = async () => {
-  const base = fileURLToPath(new URL("../../apps/web/dist", import.meta.url))
+/** Compresses every supported image in the website production build. */
+export const compressImages = async (): Promise<void> => {
+  const base = fileURLToPath(new URL("../../../apps/web/dist", import.meta.url))
   console.log("Scanning for images under", base)
 
   let images: string[] = []
@@ -165,8 +166,3 @@ const main = async () => {
     `Done compressing images. Compressed: ${compressedCount}. Preserved: ${preservedCount}.`,
   )
 }
-
-main().catch((error) => {
-  console.error("An error occurred", error)
-  process.exitCode = 1
-})

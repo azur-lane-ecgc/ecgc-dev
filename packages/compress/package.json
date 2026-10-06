@@ -4,9 +4,9 @@
   "private": true,
   "description": "Image compression utilities for build optimization",
   "type": "module",
-  "module": "index.ts",
+  "module": "main.ts",
   "scripts": {
-    "compress": "bun index.ts",
+    "compress": "bun main.ts",
     "check": "tsc --noEmit"
   },
   "dependencies": {

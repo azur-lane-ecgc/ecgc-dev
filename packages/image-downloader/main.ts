@@ -1,5 +1,5 @@
-import { findMissingShipIcons } from "./missingShipIcons"
-import { downloadMissingShipIcons } from "./wikiIconDownloader"
+import { findMissingShipIcons } from "./src/missingShipIcons"
+import { downloadMissingShipIcons } from "./src/wikiIconDownloader"
 
 const mode = process.argv.includes("--plan")
   ? "plan"
