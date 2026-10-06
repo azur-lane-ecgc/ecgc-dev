@@ -314,15 +314,22 @@ const shipReducer = (
         visibleShips: action.payload,
         loading: false,
       }
-    case "SET_FILTER":
-      return {
+    case "SET_FILTER": {
+      const nextState = {
         ...state,
         filters: {
           ...state.filters,
           ...(action.payload as Partial<ShipFilterProps["filters"]>),
         },
         loading: true,
+      } satisfies ShipFilterProps
+
+      if (nextState.filters.fleetType.length !== 1) {
+        nextState.filters.rankingSort = initialFilters.rankingSort
       }
+
+      return nextState
+    }
     case "RESET_FILTER":
       return {
         ...state,
