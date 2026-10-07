@@ -5,9 +5,26 @@ import { ItemTable } from "@/components/_common/ItemTable"
 import type { SSFleetRankingProps } from "@/db/types"
 const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
   .default as Record<string, SSFleetRankingProps[]>
+const allSSFleetRankings = Object.values(ssFleetRankings).flat()
+const ssFleetDamageColorScales = {
+  lightdmg: createDamageColorScale(
+    allSSFleetRankings.map(({ lightdmg }) => lightdmg),
+  ),
+  mediumdmg: createDamageColorScale(
+    allSSFleetRankings.map(({ mediumdmg }) => mediumdmg),
+  ),
+  heavydmg: createDamageColorScale(
+    allSSFleetRankings.map(({ heavydmg }) => heavydmg),
+  ),
+}
 
 import { RankingHeader } from "./RankingHeader"
-import { letterRankColor, numberRankColor } from "./styles"
+import {
+  createDamageColorScale,
+  damageRankColor,
+  letterRankColor,
+  numberRankColor,
+} from "./styles"
 
 interface SSFleetRankingComponentProps {
   ship: string
@@ -122,22 +139,25 @@ export const SSFleetRanking: React.FC<SSFleetRankingComponentProps> = ({
           >
             <tr className="*:text-base">
               <td
-                className={`${numberRankColor(
+                className={`${damageRankColor(
                   ranking.lightdmg,
+                  ssFleetDamageColorScales.lightdmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.lightdmg ?? "\u200B"}
               </td>
               <td
-                className={`${numberRankColor(
+                className={`${damageRankColor(
                   ranking.mediumdmg,
+                  ssFleetDamageColorScales.mediumdmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.mediumdmg ?? "\u200B"}
               </td>
               <td
-                className={`${numberRankColor(
+                className={`${damageRankColor(
                   ranking.heavydmg,
+                  ssFleetDamageColorScales.heavydmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.heavydmg ?? "\u200B"}

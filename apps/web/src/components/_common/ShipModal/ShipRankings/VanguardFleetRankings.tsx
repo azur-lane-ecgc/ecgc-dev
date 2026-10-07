@@ -5,9 +5,26 @@ import { ItemTable } from "@/components/_common/ItemTable"
 import type { VanguardFleetRankingProps } from "@/db/types"
 const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
   .default as Record<string, VanguardFleetRankingProps[]>
+const allVanguardFleetRankings = Object.values(vgFleetRankings).flat()
+const vanguardFleetDamageColorScales = {
+  lightdmg: createDamageColorScale(
+    allVanguardFleetRankings.map(({ lightdmg }) => lightdmg),
+  ),
+  mediumdmg: createDamageColorScale(
+    allVanguardFleetRankings.map(({ mediumdmg }) => mediumdmg),
+  ),
+  heavydmg: createDamageColorScale(
+    allVanguardFleetRankings.map(({ heavydmg }) => heavydmg),
+  ),
+}
 
 import { RankingHeader } from "./RankingHeader"
-import { letterRankColor, numberRankColor } from "./styles"
+import {
+  createDamageColorScale,
+  damageRankColor,
+  letterRankColor,
+  numberRankColor,
+} from "./styles"
 
 interface VGFleetComponentRankingProps {
   ship: string
@@ -166,22 +183,25 @@ export const VanguardFleetRanking: React.FC<VGFleetComponentRankingProps> = ({
           >
             <tr className="*:text-base">
               <td
-                className={`${numberRankColor(
+                className={`${damageRankColor(
                   ranking.lightdmg,
+                  vanguardFleetDamageColorScales.lightdmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.lightdmg ?? "\u200B"}
               </td>
               <td
-                className={`${numberRankColor(
+                className={`${damageRankColor(
                   ranking.mediumdmg,
+                  vanguardFleetDamageColorScales.mediumdmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.mediumdmg ?? "\u200B"}
               </td>
               <td
-                className={`${numberRankColor(
+                className={`${damageRankColor(
                   ranking.heavydmg,
+                  vanguardFleetDamageColorScales.heavydmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.heavydmg ?? "\u200B"}
