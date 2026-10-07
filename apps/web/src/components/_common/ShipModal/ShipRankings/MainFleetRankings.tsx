@@ -3,28 +3,14 @@ import { useState } from "react"
 import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
 import type { MainFleetRankingProps } from "@/db/types"
+import { createDamageRankScales } from "@/utils/ships"
 const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
   .default as Record<string, MainFleetRankingProps[]>
 const allMainFleetRankings = Object.values(mainFleetRankings).flat()
-const mainFleetDamageColorScales = {
-  lightdmg: createDamageColorScale(
-    allMainFleetRankings.map(({ lightdmg }) => lightdmg),
-  ),
-  mediumdmg: createDamageColorScale(
-    allMainFleetRankings.map(({ mediumdmg }) => mediumdmg),
-  ),
-  heavydmg: createDamageColorScale(
-    allMainFleetRankings.map(({ heavydmg }) => heavydmg),
-  ),
-}
+const mainFleetDamageScales = createDamageRankScales(allMainFleetRankings)
 
 import { RankingHeader } from "./RankingHeader"
-import {
-  createDamageColorScale,
-  damageRankColor,
-  letterRankColor,
-  numberRankColor,
-} from "./styles"
+import { damageRankColor, letterRankColor, numberRankColor } from "./styles"
 
 interface MainFleetRankingComponentProps {
   ship: string
@@ -196,7 +182,7 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
                 <td
                   className={`${damageRankColor(
                     ranking.lightdmg,
-                    mainFleetDamageColorScales.lightdmg,
+                    mainFleetDamageScales.lightdmg,
                   )} font-semibold !text-black`}
                 >
                   {ranking.lightdmg ?? "\u200B"}
@@ -204,7 +190,7 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
                 <td
                   className={`${damageRankColor(
                     ranking.mediumdmg,
-                    mainFleetDamageColorScales.mediumdmg,
+                    mainFleetDamageScales.mediumdmg,
                   )} font-semibold !text-black`}
                 >
                   {ranking.mediumdmg ?? "\u200B"}
@@ -212,7 +198,7 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
                 <td
                   className={`${damageRankColor(
                     ranking.heavydmg,
-                    mainFleetDamageColorScales.heavydmg,
+                    mainFleetDamageScales.heavydmg,
                   )} font-semibold !text-black`}
                 >
                   {ranking.heavydmg ?? "\u200B"}
