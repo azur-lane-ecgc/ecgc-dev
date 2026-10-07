@@ -1,0 +1,3814 @@
+diff --git a/bin/oxfmt b/bin/oxfmt
+index 874f6269b88f6c16718b9286209f8cb86cfcffab..497cf1461cead6ab870dae47c8d7499f4f12c8bc 100755
+--- a/bin/oxfmt
++++ b/bin/oxfmt
+@@ -1,3 +1,12 @@
+ #!/usr/bin/env node
+ 
+-import "../dist/cli.js";
++import { runAstroCli } from "../dist/astro-cli.js";
++
++const astroResult = await runAstroCli();
++if (astroResult.needsNativeCli) {
++  const nativeCli = await import("../dist/cli.js");
++  await nativeCli.cliComplete;
++  process.exitCode = astroResult.exitCode || process.exitCode;
++} else if (astroResult.handled) {
++  process.exitCode = astroResult.exitCode;
++}
+diff --git a/configuration_schema.json b/configuration_schema.json
+index c355d6f5f995a828d406d9aa3d97df93d43e8ed6..d1f9a27d77dbe2a88cee6177ff6fdad8231dceed 100644
+--- a/configuration_schema.json
++++ b/configuration_schema.json
+@@ -171,13 +171,13 @@
+       "markdownDescription": "Sort Tailwind CSS classes.\n\nUsing the same algorithm as [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).\nOption names omit the `tailwind` prefix used in the original plugin (e.g., `config` instead of `tailwindConfig`).\nFor details, see each field's documentation.\n\nPass `true` or an object to enable with defaults, or omit/set `false` to disable.\n\n- Languages: JS, JSX, TS, TSX, HTML, Vue, Angular, Handlebars, CSS, SCSS, Less, Svelte\n- Default: Disabled"
+     },
+     "svelte": {
+-      "description": "Options for `prettier-plugin-svelte`.\n\nPass `true` or an object to enable `.svelte` file formatting,\nor `false` (handy in overrides) / omit to disable.\nSetting `true` resets to defaults — any options inherited from a parent scope are dropped.\n\nNOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,\nbut Oxfmt does NOT bundle or auto-install it.\nYou must install `svelte` yourself in your project, formatting will fail at runtime otherwise.\n\n- Languages: Svelte\n- Default: Disabled",
++      "description": "Options for `prettier-plugin-svelte`.\n\nPass `true` or an object to enable `.svelte` file formatting,\nor `false` (handy in overrides) / omit to disable.\nSetting `true` resets to defaults \u2014 any options inherited from a parent scope are dropped.\n\nNOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,\nbut Oxfmt does NOT bundle or auto-install it.\nYou must install `svelte` yourself in your project, formatting will fail at runtime otherwise.\n\n- Languages: Svelte\n- Default: Disabled",
+       "allOf": [
+         {
+           "$ref": "#/definitions/SvelteUserConfig"
+         }
+       ],
+-      "markdownDescription": "Options for `prettier-plugin-svelte`.\n\nPass `true` or an object to enable `.svelte` file formatting,\nor `false` (handy in overrides) / omit to disable.\nSetting `true` resets to defaults — any options inherited from a parent scope are dropped.\n\nNOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,\nbut Oxfmt does NOT bundle or auto-install it.\nYou must install `svelte` yourself in your project, formatting will fail at runtime otherwise.\n\n- Languages: Svelte\n- Default: Disabled"
++      "markdownDescription": "Options for `prettier-plugin-svelte`.\n\nPass `true` or an object to enable `.svelte` file formatting,\nor `false` (handy in overrides) / omit to disable.\nSetting `true` resets to defaults \u2014 any options inherited from a parent scope are dropped.\n\nNOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,\nbut Oxfmt does NOT bundle or auto-install it.\nYou must install `svelte` yourself in your project, formatting will fail at runtime otherwise.\n\n- Languages: Svelte\n- Default: Disabled"
+     },
+     "tabWidth": {
+       "description": "Specify the number of spaces per indentation-level.\n\n- Languages: All\n- Default: `2`\n- Overrides `.editorconfig.indent_size` (falls back to `.editorconfig.tab_width`)",
+@@ -204,6 +204,25 @@
+       "description": "Whether or not to indent the code inside `<script>` and `<style>` tags in Vue files.\n\n- Languages: Vue\n- Default: `false`",
+       "type": "boolean",
+       "markdownDescription": "Whether or not to indent the code inside `<script>` and `<style>` tags in Vue files.\n\n- Languages: Vue\n- Default: `false`"
++    },
++    "astroAllowShorthand": {
++      "description": "Convert matching attribute identifiers to shorthand or explicit attributes.\nWhen unset, retain the input attribute form.\n\n- Languages: Astro\n- Default: Unset",
++      "type": "boolean",
++      "markdownDescription": "Convert matching attribute identifiers to shorthand or explicit attributes.\nWhen unset, retain the input attribute form.\n\n- Languages: Astro\n- Default: Unset"
++    },
++    "astroCompressHTML": {
++      "description": "Apply Astro whitespace rules: `\"jsx\"`, `\"html\"`, or `\"none\"`.\nBoolean `true` selects `\"html\"`; `false` selects `\"none\"`.\n\n- Languages: Astro\n- Default: `\"jsx\"`",
++      "allOf": [
++        {
++          "$ref": "#/definitions/AstroCompressHtmlConfig"
++        }
++      ],
++      "markdownDescription": "Apply Astro whitespace rules: `\"jsx\"`, `\"html\"`, or `\"none\"`.\nBoolean `true` selects `\"html\"`; `false` selects `\"none\"`.\n\n- Languages: Astro\n- Default: `\"jsx\"`"
++    },
++    "astroSkipFrontmatter": {
++      "description": "Preserve the Astro frontmatter source without formatting it.\n\n- Languages: Astro\n- Default: `false`",
++      "type": "boolean",
++      "markdownDescription": "Preserve the Astro frontmatter source without formatting it.\n\n- Languages: Astro\n- Default: `false`"
+     }
+   },
+   "allowComments": true,
+@@ -430,13 +449,13 @@
+           "markdownDescription": "Sort Tailwind CSS classes.\n\nUsing the same algorithm as [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).\nOption names omit the `tailwind` prefix used in the original plugin (e.g., `config` instead of `tailwindConfig`).\nFor details, see each field's documentation.\n\nPass `true` or an object to enable with defaults, or omit/set `false` to disable.\n\n- Languages: JS, JSX, TS, TSX, HTML, Vue, Angular, Handlebars, CSS, SCSS, Less, Svelte\n- Default: Disabled"
+         },
+         "svelte": {
+-          "description": "Options for `prettier-plugin-svelte`.\n\nPass `true` or an object to enable `.svelte` file formatting,\nor `false` (handy in overrides) / omit to disable.\nSetting `true` resets to defaults — any options inherited from a parent scope are dropped.\n\nNOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,\nbut Oxfmt does NOT bundle or auto-install it.\nYou must install `svelte` yourself in your project, formatting will fail at runtime otherwise.\n\n- Languages: Svelte\n- Default: Disabled",
++          "description": "Options for `prettier-plugin-svelte`.\n\nPass `true` or an object to enable `.svelte` file formatting,\nor `false` (handy in overrides) / omit to disable.\nSetting `true` resets to defaults \u2014 any options inherited from a parent scope are dropped.\n\nNOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,\nbut Oxfmt does NOT bundle or auto-install it.\nYou must install `svelte` yourself in your project, formatting will fail at runtime otherwise.\n\n- Languages: Svelte\n- Default: Disabled",
+           "allOf": [
+             {
+               "$ref": "#/definitions/SvelteUserConfig"
+             }
+           ],
+-          "markdownDescription": "Options for `prettier-plugin-svelte`.\n\nPass `true` or an object to enable `.svelte` file formatting,\nor `false` (handy in overrides) / omit to disable.\nSetting `true` resets to defaults — any options inherited from a parent scope are dropped.\n\nNOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,\nbut Oxfmt does NOT bundle or auto-install it.\nYou must install `svelte` yourself in your project, formatting will fail at runtime otherwise.\n\n- Languages: Svelte\n- Default: Disabled"
++          "markdownDescription": "Options for `prettier-plugin-svelte`.\n\nPass `true` or an object to enable `.svelte` file formatting,\nor `false` (handy in overrides) / omit to disable.\nSetting `true` resets to defaults \u2014 any options inherited from a parent scope are dropped.\n\nNOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,\nbut Oxfmt does NOT bundle or auto-install it.\nYou must install `svelte` yourself in your project, formatting will fail at runtime otherwise.\n\n- Languages: Svelte\n- Default: Disabled"
+         },
+         "tabWidth": {
+           "description": "Specify the number of spaces per indentation-level.\n\n- Languages: All\n- Default: `2`\n- Overrides `.editorconfig.indent_size` (falls back to `.editorconfig.tab_width`)",
+@@ -523,9 +542,9 @@
+           "markdownDescription": "Append default values to `@param` descriptions (e.g. \"Default is `value`\").\n\n- Default: `true`"
+         },
+         "bracketSpacing": {
+-          "description": "Add spaces inside JSDoc type braces: `{string}` → `{ string }`.\n\n- Default: `false`",
++          "description": "Add spaces inside JSDoc type braces: `{string}` \u2192 `{ string }`.\n\n- Default: `false`",
+           "type": "boolean",
+-          "markdownDescription": "Add spaces inside JSDoc type braces: `{string}` → `{ string }`.\n\n- Default: `false`"
++          "markdownDescription": "Add spaces inside JSDoc type braces: `{string}` \u2192 `{ string }`.\n\n- Default: `false`"
+         },
+         "capitalizeDescriptions": {
+           "description": "Capitalize the first letter of tag descriptions.\n\n- Default: `true`",
+@@ -533,13 +552,13 @@
+           "markdownDescription": "Capitalize the first letter of tag descriptions.\n\n- Default: `true`"
+         },
+         "commentLineStrategy": {
+-          "description": "How to format comment blocks.\n\n- `\"singleLine\"` — Convert to single-line `/** content */` when possible.\n- `\"multiline\"` — Always use multi-line format.\n- `\"keep\"` — Preserve original formatting.\n\n- Default: `\"singleLine\"`",
++          "description": "How to format comment blocks.\n\n- `\"singleLine\"` \u2014 Convert to single-line `/** content */` when possible.\n- `\"multiline\"` \u2014 Always use multi-line format.\n- `\"keep\"` \u2014 Preserve original formatting.\n\n- Default: `\"singleLine\"`",
+           "allOf": [
+             {
+               "$ref": "#/definitions/CommentLineStrategyConfig"
+             }
+           ],
+-          "markdownDescription": "How to format comment blocks.\n\n- `\"singleLine\"` — Convert to single-line `/** content */` when possible.\n- `\"multiline\"` — Always use multi-line format.\n- `\"keep\"` — Preserve original formatting.\n\n- Default: `\"singleLine\"`"
++          "markdownDescription": "How to format comment blocks.\n\n- `\"singleLine\"` \u2014 Convert to single-line `/** content */` when possible.\n- `\"multiline\"` \u2014 Always use multi-line format.\n- `\"keep\"` \u2014 Preserve original formatting.\n\n- Default: `\"singleLine\"`"
+         },
+         "descriptionTag": {
+           "description": "Emit `@description` tag instead of inline description.\n\n- Default: `false`",
+@@ -557,13 +576,13 @@
+           "markdownDescription": "Preserve indentation in unparsable `@example` code.\n\n- Default: `false`"
+         },
+         "lineWrappingStyle": {
+-          "description": "Strategy for wrapping description lines at print width.\n\n- `\"greedy\"` — Always re-wrap text to fit within print width.\n- `\"balance\"` — Preserve original line breaks if all lines fit within print width.\n\n- Default: `\"greedy\"`",
++          "description": "Strategy for wrapping description lines at print width.\n\n- `\"greedy\"` \u2014 Always re-wrap text to fit within print width.\n- `\"balance\"` \u2014 Preserve original line breaks if all lines fit within print width.\n\n- Default: `\"greedy\"`",
+           "allOf": [
+             {
+               "$ref": "#/definitions/LineWrappingStyleConfig"
+             }
+           ],
+-          "markdownDescription": "Strategy for wrapping description lines at print width.\n\n- `\"greedy\"` — Always re-wrap text to fit within print width.\n- `\"balance\"` — Preserve original line breaks if all lines fit within print width.\n\n- Default: `\"greedy\"`"
++          "markdownDescription": "Strategy for wrapping description lines at print width.\n\n- `\"greedy\"` \u2014 Always re-wrap text to fit within print width.\n- `\"balance\"` \u2014 Preserve original line breaks if all lines fit within print width.\n\n- Default: `\"greedy\"`"
+         },
+         "preferCodeFences": {
+           "description": "Use fenced code blocks (```` ``` ````) instead of 4-space indentation for code without a language tag.\n\n- Default: `false`",
+@@ -716,12 +735,12 @@
+           "markdownDescription": "Define your own groups for matching very specific imports.\n\nThe `customGroups` list is ordered: The first definition that matches an element will be used.\nCustom groups have a higher priority than any predefined group.\n\nIf you want a predefined group to take precedence over a custom group,\nyou must write a custom group definition that does the same as what the predefined group does, and put it first in the list.\n\nIf you specify multiple conditions like `elementNamePattern`, `selector`, and `modifiers`,\nall conditions must be met for an import to match the custom group (AND logic).\n\nNOTE: Predefined group names (e.g. `side_effect`, `external`) and `unknown` are reserved and cannot be used as `groupName`.\n\n- Default: `[]`"
+         },
+         "groups": {
+-          "description": "Specifies a list of predefined import groups for sorting.\n\nEach import will be assigned a single group specified in the groups option (or the `unknown` group if no match is found).\nThe order of items in the `groups` option determines how groups are ordered.\n\nWithin a given group, members will be sorted according to the type, order, ignoreCase, etc. options.\n\nIndividual groups can be combined together by placing them in an array.\nThe order of groups in that array does not matter.\nAll members of the groups in the array will be sorted together as if they were part of a single group.\n\nPredefined groups are characterized by a single selector and potentially multiple modifiers.\nYou may enter modifiers in any order, but the selector must always come at the end.\n\nThe list of selectors is sorted from most to least important:\n- `type` — TypeScript type imports.\n- `side_effect_style` — Side effect style imports.\n- `side_effect` — Side effect imports.\n- `style` — Style imports.\n- `index` — Main file from the current directory.\n- `sibling` — Modules from the same directory.\n- `parent` — Modules from the parent directory.\n- `subpath` — Node.js subpath imports.\n- `internal` — Your internal modules.\n- `builtin` — Node.js Built-in Modules.\n- `external` — External modules installed in the project.\n- `import` — Any import.\n\nThe list of modifiers is sorted from most to least important:\n- `side_effect` — Side effect imports.\n- `type` — TypeScript type imports.\n- `value` — Value imports.\n- `default` — Imports containing the default specifier.\n- `wildcard` — Imports containing the wildcard (`* as`) specifier.\n- `named` — Imports containing at least one named specifier.\n\n- Default: See below\n```json\n[\n\"builtin\",\n\"external\",\n[\"internal\", \"subpath\"],\n[\"parent\", \"sibling\", \"index\"],\n\"style\",\n\"unknown\"\n]\n```\n\nAlso, you can override the global `newlinesBetween` setting for specific group boundaries\nby including a `{ \"newlinesBetween\": boolean }` marker object in the `groups` list at the desired position.",
++          "description": "Specifies a list of predefined import groups for sorting.\n\nEach import will be assigned a single group specified in the groups option (or the `unknown` group if no match is found).\nThe order of items in the `groups` option determines how groups are ordered.\n\nWithin a given group, members will be sorted according to the type, order, ignoreCase, etc. options.\n\nIndividual groups can be combined together by placing them in an array.\nThe order of groups in that array does not matter.\nAll members of the groups in the array will be sorted together as if they were part of a single group.\n\nPredefined groups are characterized by a single selector and potentially multiple modifiers.\nYou may enter modifiers in any order, but the selector must always come at the end.\n\nThe list of selectors is sorted from most to least important:\n- `type` \u2014 TypeScript type imports.\n- `side_effect_style` \u2014 Side effect style imports.\n- `side_effect` \u2014 Side effect imports.\n- `style` \u2014 Style imports.\n- `index` \u2014 Main file from the current directory.\n- `sibling` \u2014 Modules from the same directory.\n- `parent` \u2014 Modules from the parent directory.\n- `subpath` \u2014 Node.js subpath imports.\n- `internal` \u2014 Your internal modules.\n- `builtin` \u2014 Node.js Built-in Modules.\n- `external` \u2014 External modules installed in the project.\n- `import` \u2014 Any import.\n\nThe list of modifiers is sorted from most to least important:\n- `side_effect` \u2014 Side effect imports.\n- `type` \u2014 TypeScript type imports.\n- `value` \u2014 Value imports.\n- `default` \u2014 Imports containing the default specifier.\n- `wildcard` \u2014 Imports containing the wildcard (`* as`) specifier.\n- `named` \u2014 Imports containing at least one named specifier.\n\n- Default: See below\n```json\n[\n\"builtin\",\n\"external\",\n[\"internal\", \"subpath\"],\n[\"parent\", \"sibling\", \"index\"],\n\"style\",\n\"unknown\"\n]\n```\n\nAlso, you can override the global `newlinesBetween` setting for specific group boundaries\nby including a `{ \"newlinesBetween\": boolean }` marker object in the `groups` list at the desired position.",
+           "type": "array",
+           "items": {
+             "$ref": "#/definitions/SortGroupItemConfig"
+           },
+-          "markdownDescription": "Specifies a list of predefined import groups for sorting.\n\nEach import will be assigned a single group specified in the groups option (or the `unknown` group if no match is found).\nThe order of items in the `groups` option determines how groups are ordered.\n\nWithin a given group, members will be sorted according to the type, order, ignoreCase, etc. options.\n\nIndividual groups can be combined together by placing them in an array.\nThe order of groups in that array does not matter.\nAll members of the groups in the array will be sorted together as if they were part of a single group.\n\nPredefined groups are characterized by a single selector and potentially multiple modifiers.\nYou may enter modifiers in any order, but the selector must always come at the end.\n\nThe list of selectors is sorted from most to least important:\n- `type` — TypeScript type imports.\n- `side_effect_style` — Side effect style imports.\n- `side_effect` — Side effect imports.\n- `style` — Style imports.\n- `index` — Main file from the current directory.\n- `sibling` — Modules from the same directory.\n- `parent` — Modules from the parent directory.\n- `subpath` — Node.js subpath imports.\n- `internal` — Your internal modules.\n- `builtin` — Node.js Built-in Modules.\n- `external` — External modules installed in the project.\n- `import` — Any import.\n\nThe list of modifiers is sorted from most to least important:\n- `side_effect` — Side effect imports.\n- `type` — TypeScript type imports.\n- `value` — Value imports.\n- `default` — Imports containing the default specifier.\n- `wildcard` — Imports containing the wildcard (`* as`) specifier.\n- `named` — Imports containing at least one named specifier.\n\n- Default: See below\n```json\n[\n\"builtin\",\n\"external\",\n[\"internal\", \"subpath\"],\n[\"parent\", \"sibling\", \"index\"],\n\"style\",\n\"unknown\"\n]\n```\n\nAlso, you can override the global `newlinesBetween` setting for specific group boundaries\nby including a `{ \"newlinesBetween\": boolean }` marker object in the `groups` list at the desired position."
++          "markdownDescription": "Specifies a list of predefined import groups for sorting.\n\nEach import will be assigned a single group specified in the groups option (or the `unknown` group if no match is found).\nThe order of items in the `groups` option determines how groups are ordered.\n\nWithin a given group, members will be sorted according to the type, order, ignoreCase, etc. options.\n\nIndividual groups can be combined together by placing them in an array.\nThe order of groups in that array does not matter.\nAll members of the groups in the array will be sorted together as if they were part of a single group.\n\nPredefined groups are characterized by a single selector and potentially multiple modifiers.\nYou may enter modifiers in any order, but the selector must always come at the end.\n\nThe list of selectors is sorted from most to least important:\n- `type` \u2014 TypeScript type imports.\n- `side_effect_style` \u2014 Side effect style imports.\n- `side_effect` \u2014 Side effect imports.\n- `style` \u2014 Style imports.\n- `index` \u2014 Main file from the current directory.\n- `sibling` \u2014 Modules from the same directory.\n- `parent` \u2014 Modules from the parent directory.\n- `subpath` \u2014 Node.js subpath imports.\n- `internal` \u2014 Your internal modules.\n- `builtin` \u2014 Node.js Built-in Modules.\n- `external` \u2014 External modules installed in the project.\n- `import` \u2014 Any import.\n\nThe list of modifiers is sorted from most to least important:\n- `side_effect` \u2014 Side effect imports.\n- `type` \u2014 TypeScript type imports.\n- `value` \u2014 Value imports.\n- `default` \u2014 Imports containing the default specifier.\n- `wildcard` \u2014 Imports containing the wildcard (`* as`) specifier.\n- `named` \u2014 Imports containing at least one named specifier.\n\n- Default: See below\n```json\n[\n\"builtin\",\n\"external\",\n[\"internal\", \"subpath\"],\n[\"parent\", \"sibling\", \"index\"],\n\"style\",\n\"unknown\"\n]\n```\n\nAlso, you can override the global `newlinesBetween` setting for specific group boundaries\nby including a `{ \"newlinesBetween\": boolean }` marker object in the `groups` list at the desired position."
+         },
+         "ignoreCase": {
+           "description": "Specifies whether sorting should be case-sensitive.\n\n- Default: `true`",
+@@ -892,6 +911,28 @@
+         "es5",
+         "none"
+       ]
++    },
++    "AstroCompressHtmlConfig": {
++      "description": "Astro compress HTML settings match the original printer's whitespace options.",
++      "anyOf": [
++        {
++          "$ref": "#/definitions/AstroWhitespaceMode"
++        },
++        {
++          "type": "boolean"
++        }
++      ],
++      "markdownDescription": "Astro compress HTML settings match the original printer's whitespace options."
++    },
++    "AstroWhitespaceMode": {
++      "description": "Astro whitespace mode determines which template spaces the compiler removes.",
++      "type": "string",
++      "enum": [
++        "jsx",
++        "html",
++        "none"
++      ],
++      "markdownDescription": "Astro whitespace mode determines which template spaces the compiler removes."
+     }
+   },
+   "markdownDescription": "Configuration options for the Oxfmt.\n\nMost options are the same as Prettier's options, but not all of them.\nIn addition, some options are our own extensions."
+diff --git a/node_modules/oxfmt/dist/astro-cli.js b/dist/astro-cli.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..27bddb4e647b44d11b21277c20cea8e98fe3a4d9
+--- /dev/null
++++ b/dist/astro-cli.js
+@@ -0,0 +1,355 @@
++import { globSync, readFileSync, statSync, writeFileSync } from "node:fs"
++import { dirname, join, resolve } from "node:path"
++import { pathToFileURL } from "node:url"
++import { formatAstro } from "./astro-format.js"
++
++const optionValues = new Map([
++  ["-c", "config"],
++  ["--config", "config"],
++  ["--ignore-path", "ignorePath"],
++  ["--stdin-filepath", "stdinFilepath"],
++  ["--threads", "threads"],
++])
++
++const specialModes = new Set([
++  "--help",
++  "-h",
++  "--version",
++  "-V",
++  "--init",
++  "--lsp",
++  "--migrate",
++])
++
++/** Run Astro formatting before the stock native oxfmt CLI. */
++export const runAstroCli = async () => {
++  const cwd = process.cwd()
++  const args = process.argv.slice(2)
++  if (args.some((arg) => specialModes.has(arg.split("=", 1)[0]))) {
++    return { handled: false, needsNativeCli: true, exitCode: 0 }
++  }
++
++  const parsed = parseArguments(args)
++  const config = await loadOxfmtConfig(parsed.config, cwd)
++  if (parsed.stdinFilepath?.endsWith(".astro")) {
++    const exitCode = await formatStdin(
++      parsed.stdinFilepath,
++      await readStdin(),
++      config,
++    )
++    return { handled: true, needsNativeCli: false, exitCode }
++  }
++
++  const astroFiles = discoverAstroFiles(parsed.targets, cwd, config)
++  if (astroFiles.length === 0) {
++    return { handled: false, needsNativeCli: true, exitCode: 0 }
++  }
++
++  const astroExitCode = await formatAstroFiles(
++    astroFiles,
++    config,
++    parsed.mode,
++    cwd,
++  )
++
++  return {
++    handled: true,
++    needsNativeCli: hasNonAstroTargets(parsed.targets, cwd),
++    exitCode: astroExitCode,
++  }
++}
++
++const parseArguments = (args) => {
++  const parsed = { mode: "write", targets: [] }
++
++  for (let index = 0; index < args.length; index += 1) {
++    const arg = args[index]
++    if (arg === "--check") {
++      parsed.mode = "check"
++      continue
++    }
++    if (arg === "--list-different") {
++      parsed.mode = "list"
++      continue
++    }
++    if (arg === "--write") {
++      parsed.mode = "write"
++      continue
++    }
++
++    const equalsIndex = arg.indexOf("=")
++    const name = equalsIndex === -1 ? arg : arg.slice(0, equalsIndex)
++    const optionName = optionValues.get(name)
++    if (!optionName) {
++      if (!name.startsWith("-") || name.startsWith("!")) {
++        parsed.targets.push(arg)
++      }
++      continue
++    }
++
++    parsed[optionName] =
++      equalsIndex === -1 ? args[index + 1] : arg.slice(equalsIndex + 1)
++    if (equalsIndex === -1) {
++      index += 1
++    }
++  }
++
++  return parsed
++}
++
++const discoverAstroFiles = (targets, cwd, config) => {
++  const positiveTargets = targets.length === 0 ? ["."] : targets.filter(Boolean)
++  const exclude = buildExcludePatterns(targets, config)
++  const files = new Set()
++
++  for (const target of positiveTargets) {
++    if (target.startsWith("!")) {
++      continue
++    }
++
++    const matches = hasGlobMagic(target)
++      ? globSync(target, { cwd, exclude, withFileTypes: false })
++      : literalMatches(target, cwd, exclude)
++
++    for (const match of matches) {
++      if (match.endsWith(".astro")) {
++        files.add(match)
++      }
++    }
++  }
++
++  return [...files].sort()
++}
++
++const literalMatches = (target, cwd, exclude) => {
++  const absolutePath = resolve(cwd, target)
++  let targetStat
++  try {
++    targetStat = statSync(absolutePath)
++  } catch {
++    return []
++  }
++
++  if (targetStat.isFile()) {
++    return [target]
++  }
++  return globSync(join(target, "**", "*.astro").replaceAll("\\", "/"), {
++    cwd,
++    exclude,
++    withFileTypes: false,
++  })
++}
++
++const buildExcludePatterns = (targets, config) => {
++  const exclude = [
++    "**/.astro/**",
++    "**/.git/**",
++    "**/.wrangler/**",
++    "**/build/**",
++    "**/dist/**",
++    "**/node_modules/**",
++    "**/out/**",
++  ]
++
++  for (const pattern of config.ignorePatterns ?? []) {
++    exclude.push(normalizeIgnorePattern(pattern))
++  }
++  for (const pattern of targets) {
++    if (pattern.startsWith("!")) {
++      exclude.push(normalizeIgnorePattern(pattern.slice(1)))
++    }
++  }
++
++  return exclude
++}
++
++const normalizeIgnorePattern = (pattern) => {
++  const withoutSlash = pattern.endsWith("/") ? pattern.slice(0, -1) : pattern
++  return withoutSlash.endsWith("**") ? withoutSlash : `${withoutSlash}/**`
++}
++
++const hasNonAstroTargets = (targets, cwd) => {
++  if (targets.length === 0) {
++    return true
++  }
++
++  return targets.some((target) => {
++    if (target.startsWith("!")) {
++      return false
++    }
++    if (!hasGlobMagic(target)) {
++      return !target.endsWith(".astro")
++    }
++    return globSync(target, { cwd, withFileTypes: false }).some(
++      (match) => !match.endsWith(".astro"),
++    )
++  })
++}
++
++const formatAstroFiles = async (files, config, mode, cwd) => {
++  let changedCount = 0
++  let errorCount = 0
++
++  for (const file of files) {
++    const filePath = resolve(cwd, file)
++    const source = readFileSync(filePath, "utf8")
++    const result = await formatAstro(filePath, source, config)
++
++    if (result.errors.length > 0) {
++      errorCount += result.errors.length
++      console.error(`${file}: ${result.errors.join("\n")}`)
++      continue
++    }
++
++    if (result.code === source) {
++      continue
++    }
++
++    changedCount += 1
++    if (mode === "write") {
++      writeFileSync(filePath, result.code)
++    } else {
++      console.log(file)
++    }
++  }
++
++  if (mode === "write") {
++    console.log(`Formatted ${changedCount} Astro files.`)
++  } else if (changedCount === 0 && errorCount === 0) {
++    console.log("All Astro files use the correct format.")
++  }
++
++  if (mode === "write") {
++    return errorCount === 0 ? 0 : 1
++  }
++
++  return changedCount === 0 && errorCount === 0 ? 0 : 1
++}
++
++const formatStdin = async (fileName, sourceText, config) => {
++  const result = await formatAstro(
++    resolve(process.cwd(), fileName),
++    sourceText,
++    config,
++  )
++  if (result.errors.length > 0) {
++    console.error(result.errors.join("\n"))
++    return 1
++  }
++  process.stdout.write(result.code)
++  return 0
++}
++
++const readStdin = async () => {
++  process.stdin.setEncoding("utf8")
++  let sourceText = ""
++  for await (const chunk of process.stdin) {
++    sourceText += chunk
++  }
++  return sourceText
++}
++
++const loadOxfmtConfig = async (explicitPath, cwd) => {
++  const configPath = explicitPath
++    ? resolve(cwd, explicitPath)
++    : findOxfmtConfig(cwd)
++  if (!configPath) {
++    return {}
++  }
++  if (configPath.endsWith(".json") || configPath.endsWith(".jsonc")) {
++    return JSON.parse(stripJsonComments(readFileSync(configPath, "utf8")))
++  }
++  const imported = await import(`${pathToFileURL(configPath)}?cache=${Date.now()}`)
++  return imported.default ?? {}
++}
++
++const findOxfmtConfig = (cwd) => {
++  const names = [
++    ".oxfmtrc.json",
++    ".oxfmtrc.jsonc",
++    "oxfmt.config.ts",
++    "oxfmt.config.mts",
++    "oxfmt.config.js",
++    "oxfmt.config.mjs",
++    "oxfmt.config.cjs",
++  ]
++
++  for (const directory of ancestorDirectories(cwd)) {
++    for (const name of names) {
++      const candidate = join(directory, name)
++      try {
++        statSync(candidate)
++        return candidate
++      } catch {
++        continue
++      }
++    }
++  }
++  return null
++}
++
++const ancestorDirectories = function* (cwd) {
++  let current = cwd
++  while (true) {
++    yield current
++    const parent = dirname(current)
++    if (parent === current) {
++      return
++    }
++    current = parent
++  }
++}
++
++const stripJsonComments = (sourceText) => {
++  let output = ""
++  let index = 0
++  let inString = false
++
++  while (index < sourceText.length) {
++    const character = sourceText[index]
++    const next = sourceText[index + 1]
++
++    if (inString) {
++      output += character
++      if (character === "\\") {
++        output += next ?? ""
++        index += 2
++        continue
++      }
++      if (character === '"') {
++        inString = false
++      }
++      index += 1
++      continue
++    }
++
++    if (character === '"') {
++      inString = true
++      output += character
++      index += 1
++      continue
++    }
++    if (character === "/" && next === "/") {
++      index = sourceText.indexOf("\n", index)
++      if (index === -1) {
++        break
++      }
++      continue
++    }
++    if (character === "/" && next === "*") {
++      const end = sourceText.indexOf("*/", index + 2)
++      if (end === -1) {
++        break
++      }
++      index = end + 2
++      continue
++    }
++
++    output += character
++    index += 1
++  }
++
++  return output
++}
++
++const hasGlobMagic = (target) => /[*?[\]{}]/.test(target)
+diff --git a/node_modules/oxfmt/dist/astro-format.js b/dist/astro-format.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..5b8f40304c25000e298ec9ed4547736eba95da7e
+--- /dev/null
++++ b/dist/astro-format.js
+@@ -0,0 +1,90 @@
++import * as prettier from "./prettier-CFtfN2zI.js"
++import * as astroPrinter from "./astro-printer.js"
++
++const astroPlugin = {
++  name: "prettier-plugin-astro",
++  parsers: astroPrinter.parsers,
++  printers: astroPrinter.printers,
++  options: astroPrinter.options,
++  defaultOptions: astroPrinter.defaultOptions,
++}
++
++const oxfmtOnlyOptions = new Set([
++  "$schema",
++  "ignorePatterns",
++  "insertFinalNewline",
++  "overrides",
++  "sortImports",
++  "sortPackageJson",
++  "sortTailwindcss",
++])
++
++const astroOnlyOptions = new Set([
++  "astroAllowShorthand",
++  "astroCompressHTML",
++  "astroSkipFrontmatter",
++])
++
++/** Format a complete Astro source string with stock oxfmt frontmatter handling. */
++export const formatAstro = async (fileName, sourceText, options = {}) => {
++  try {
++    const prettierOptions = {
++      ...removeOxfmtOptions(options),
++      parser: "astro",
++      plugins: [astroPlugin],
++      filepath: fileName,
++      printWidth: options.printWidth ?? 100,
++    }
++
++    let code = sourceText
++    if (options.sortImports && !options.astroSkipFrontmatter) {
++      code = await formatAstroFrontmatter(fileName, code, options)
++    }
++
++    return { code: await prettier.format(code, prettierOptions), errors: [] }
++  } catch (error) {
++    const message = error instanceof Error ? error.message : String(error)
++    return { code: sourceText, errors: [message] }
++  }
++}
++
++const formatAstroFrontmatter = async (fileName, sourceText, options) => {
++  const frontmatter = sourceText.match(/^---\r?\n([\s\S]*?)\r?\n---/)
++  if (!frontmatter) {
++    return sourceText
++  }
++
++  const nativeOptions = {
++    ...removeAstroOptions(removeOxfmtOptions(options)),
++    sortImports: options.sortImports,
++  }
++  const { format: formatWithOxfmt } = await import("./index.js")
++  const result = await formatWithOxfmt(
++    `${fileName}.ts`,
++    frontmatter[1],
++    nativeOptions,
++  )
++
++  if (result.errors.length > 0) {
++    throw new Error(result.errors.join("\n"))
++  }
++
++  return [
++    "---",
++    result.code.trimEnd(),
++    "---",
++    sourceText.slice(frontmatter[0].length),
++  ].join("\n")
++}
++
++const removeOxfmtOptions = (options) => {
++  return Object.fromEntries(
++    Object.entries(options).filter(([key]) => !oxfmtOnlyOptions.has(key)),
++  )
++}
++
++const removeAstroOptions = (options) => {
++  return Object.fromEntries(
++    Object.entries(options).filter(([key]) => !astroOnlyOptions.has(key)),
++  )
++}
+diff --git a/node_modules/oxfmt/dist/astro-printer.js b/dist/astro-printer.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..df10ff5647ad8d7fa95fe3429c0d0be35c70d333
+--- /dev/null
++++ b/dist/astro-printer.js
+@@ -0,0 +1,3127 @@
++import { t as __commonJSMin } from "./rolldown-runtime-BMI-E3GI.js";
++import { n as prettierExports, t as init_prettier } from "./prettier-CFtfN2zI.js";
++const utils = prettierExports.doc.utils;
++const builders = prettierExports.doc.builders;
++import { printers as ly } from "./estree-BLDbc6Th.js";
++import { parse } from "@astrojs/compiler-rs";
++//#region ../../node_modules/.pnpm/@prettier+parse-srcset@3.1.0/node_modules/@prettier/parse-srcset/index.js
++/**
++* Srcset Parser
++*
++* By Alex Bell |  MIT License
++*
++* JS Parser for the string value that appears in markup <img srcset="here">
++*
++* @returns Array [{url: _, d: _, w: _, h:_}, ...]
++*
++* Based super duper closely on the reference algorithm at:
++* https://html.spec.whatwg.org/multipage/embedded-content.html#parse-a-srcset-attribute
++*
++* Most comments are copied in directly from the spec
++* (except for comments in parens).
++*/
++function isASCIIWhitespace(character) {
++	return character === "	" || character === "\n" || character === "\f" || character === "\r" || character === " ";
++}
++const regexLeadingSpaces = /^[ \t\n\r\u000c]+/;
++const regexLeadingCommasOrSpaces = /^[, \t\n\r\u000c]+/;
++const regexLeadingNotSpaces = /^[^ \t\n\r\u000c]+/;
++const regexTrailingCommas = /[,]+$/;
++const regexNonNegativeInteger = /^\d+$/;
++const regexFloatingPoint = /^-?(?:[0-9]+|[0-9]*\.[0-9]+)(?:[eE][+-]?[0-9]+)?$/;
++function parseSrcset(input) {
++	const inputLength = input.length;
++	let url;
++	let descriptors;
++	let currentDescriptor;
++	let state;
++	let c;
++	let position = 0;
++	let startOffset;
++	function collectCharacters(regEx) {
++		let chars;
++		const match = regEx.exec(input.substring(position));
++		if (match) {
++			[chars] = match;
++			position += chars.length;
++			return chars;
++		}
++	}
++	const candidates = [];
++	while (true) {
++		collectCharacters(regexLeadingCommasOrSpaces);
++		if (position >= inputLength) {
++			if (candidates.length === 0) throw new Error("Must contain one or more image candidate strings.");
++			return candidates;
++		}
++		startOffset = position;
++		url = collectCharacters(regexLeadingNotSpaces);
++		descriptors = [];
++		if (url.slice(-1) === ",") {
++			url = url.replace(regexTrailingCommas, "");
++			parseDescriptors();
++		} else tokenize();
++	}
++	/**
++	* Tokenizes descriptor properties prior to parsing
++	* Returns undefined.
++	*/
++	function tokenize() {
++		collectCharacters(regexLeadingSpaces);
++		currentDescriptor = "";
++		state = "in descriptor";
++		while (true) {
++			c = input.charAt(position);
++			if (state === "in descriptor") {
++				if (isASCIIWhitespace(c)) {
++					if (currentDescriptor) {
++						descriptors.push(currentDescriptor);
++						currentDescriptor = "";
++						state = "after descriptor";
++					}
++				} else if (c === ",") {
++					position += 1;
++					if (currentDescriptor) descriptors.push(currentDescriptor);
++					parseDescriptors();
++					return;
++				} else if (c === "(") {
++					currentDescriptor += c;
++					state = "in parens";
++				} else if (c === "") {
++					if (currentDescriptor) descriptors.push(currentDescriptor);
++					parseDescriptors();
++					return;
++				} else currentDescriptor += c;
++			} else if (state === "in parens") {
++				if (c === ")") {
++					currentDescriptor += c;
++					state = "in descriptor";
++				} else if (c === "") {
++					descriptors.push(currentDescriptor);
++					parseDescriptors();
++					return;
++				} else currentDescriptor += c;
++			} else if (state === "after descriptor") {
++				if (isASCIIWhitespace(c)) {} else if (c === "") {
++					parseDescriptors();
++					return;
++				} else {
++					state = "in descriptor";
++					position -= 1;
++				}
++			}
++			position += 1;
++		}
++	}
++	/**
++	* Adds descriptor properties to a candidate, pushes to the candidates array
++	* @return undefined
++	*/
++	function parseDescriptors() {
++		let pError = false;
++		let w;
++		let d;
++		let h;
++		let i;
++		const candidate = {};
++		let desc;
++		let lastChar;
++		let value;
++		let intVal;
++		let floatVal;
++		for (i = 0; i < descriptors.length; i++) {
++			desc = descriptors[i];
++			lastChar = desc[desc.length - 1];
++			value = desc.substring(0, desc.length - 1);
++			intVal = parseInt(value, 10);
++			floatVal = parseFloat(value);
++			if (regexNonNegativeInteger.test(value) && lastChar === "w") {
++				if (w || d) pError = true;
++				if (intVal === 0) pError = true;
++				else w = intVal;
++			} else if (regexFloatingPoint.test(value) && lastChar === "x") {
++				if (w || d || h) pError = true;
++				if (floatVal < 0) pError = true;
++				else d = floatVal;
++			} else if (regexNonNegativeInteger.test(value) && lastChar === "h") {
++				if (h || d) pError = true;
++				if (intVal === 0) pError = true;
++				else h = intVal;
++			} else pError = true;
++		}
++		if (!pError) {
++			candidate.source = {
++				value: url,
++				startOffset
++			};
++			if (w) candidate.width = { value: w };
++			if (d) candidate.density = { value: d };
++			if (h) candidate.height = { value: h };
++			candidates.push(candidate);
++		} else throw new Error(`Invalid srcset descriptor found in "${input}" at "${desc}".`);
++	}
++}
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/regex/regex.js
++var require_regex$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.escapeRegExp = escapeRegExp;
++	exports.isVar = isVar;
++	exports.isAtImport = isAtImport;
++	exports.isStar = isStar;
++	exports.isCssSelector = isCssSelector;
++	exports.isClassOrId = isClassOrId;
++	exports.isSelectorOperator = isSelectorOperator;
++	exports.isAdjacentSelector = isAdjacentSelector;
++	exports.isEmptyOrWhitespace = isEmptyOrWhitespace;
++	exports.isProperty = isProperty;
++	exports.isAnd = isAnd;
++	exports.isAtExtend = isAtExtend;
++	exports.isInclude = isInclude;
++	exports.isKeyframes = isKeyframes;
++	exports.isPseudo = isPseudo;
++	exports.isBracketSelector = isBracketSelector;
++	exports.isHtmlTag = isHtmlTag;
++	exports.isVoidHtmlTag = isVoidHtmlTag;
++	exports.isReset = isReset;
++	exports.isIgnore = isIgnore;
++	exports.isSassSpace = isSassSpace;
++	exports.isScssOrCss = isScssOrCss;
++	exports.isCssPseudo = isCssPseudo;
++	exports.isCssOneLiner = isCssOneLiner;
++	exports.isComment = isComment;
++	exports.isBlockCommentStart = isBlockCommentStart;
++	exports.isBlockCommentEnd = isBlockCommentEnd;
++	exports.isMoreThanOneClassOrId = isMoreThanOneClassOrId;
++	exports.isBracketOrWhitespace = isBracketOrWhitespace;
++	exports.isAtForwardOrAtUse = isAtForwardOrAtUse;
++	exports.isInterpolatedProperty = isInterpolatedProperty;
++	exports.hasPropertyValueSpace = hasPropertyValueSpace;
++	exports.getDistance = getDistance;
++	function escapeRegExp(text) {
++		return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
++	}
++	/** Check whether text is a variable: `/^[\t ]*(\$|--)\S+[\t ]*:.*/
++	function isVar(text) {
++		return /^[\t ]*(\$|--)\S+[\t ]*:.*/.test(text);
++	}
++	/** Check whether text @import: `/^[\t ]*@import/` */
++	function isAtImport(text) {
++		return /^[\t ]*@import/.test(text);
++	}
++	/** Check whether text is a \*: `/^[\t ]*?\*\/` */
++	function isStar(text) {
++		return /^[\t ]*?\*/.test(text);
++	}
++	/** Check whether text is a css selector: `/^[\t ]*[{}]?[\t ]*[#\.%@=]/` */
++	function isCssSelector(text) {
++		return /^[\t ]*[{}]?[\t ]*[#\.%@=]/.test(text);
++	}
++	/**Check whether text is class, id or placeholder: `/^[\t ]*[#\.%]/` */
++	function isClassOrId(text) {
++		return /^[\t ]*[#\.%]/.test(text);
++	}
++	/**Check whether text starts with one of [>\~]: `/^[\t ]*[>~]/` */
++	function isSelectorOperator(text) {
++		return /^[\t ]*[>~]/.test(text);
++	}
++	/**`/^[\t ]*\+[\t ]+/` */
++	function isAdjacentSelector(text) {
++		return /^[\t ]*\+[\t ]+/.test(text);
++	}
++	/**Check whether text is class, id or placeholder: `/^[\t ]*\r?\n?$/` */
++	function isEmptyOrWhitespace(text) {
++		return /^[\t ]*\r?\n?$/.test(text);
++	}
++	/** Check whether text is a property: `^[\t ]*[\w\-]+[\t ]*:` */
++	function isProperty(text) {
++		return /^[\t ]*[\w\-]+[\t ]*:/.test(text);
++	}
++	/** Check whether text starts with &: `/^[\t ]*&/` */
++	function isAnd(text) {
++		return /^[\t ]*&/.test(text);
++	}
++	/** Check whether text is a extend: `/^[\t ]*@extend/` */
++	function isAtExtend(text) {
++		return /^[\t ]*@extend/.test(text);
++	}
++	/** Check whether text is include mixin statement */
++	function isInclude(text) {
++		return /^[\t ]*(@include|\+\w)/.test(text);
++	}
++	/** Check whether text is a @keyframes: `/^[\t ]*@keyframes/` */
++	function isKeyframes(text) {
++		return /^[\t ]*@keyframes/.test(text);
++	}
++	/** Check whether text is a Pseudo selector: `/^[\t ]*\\?::?/`. */
++	function isPseudo(text) {
++		return /^[\t ]*\\?::?/.test(text);
++	}
++	/** Check whether text is bracket selector: `/^[\t ]*\[[\w=\-*'' ]*\]/`*/
++	function isBracketSelector(text) {
++		return /^[\t ]*\[[\w=\-*'' ]*\]/.test(text);
++	}
++	/** Check whether text starts with an html tag. */
++	function isHtmlTag(text) {
++		return /^[\t ]*(a|abbr|address|area|article|aside|audio|b|base|bdi|bdo|blockquote|body|br|button|canvas|caption|cite|code|col|colgroup|data|datalist|dd|del|details|dfn|dialog|div|dl|dt|em|embed|fieldset|figcaption|figure|footer|form|h1|h2|h3|h4|h5|h6|head|header|hgroup|hr|html|i|iframe|img|picture|input|ins|kbd|keygen|label|legend|li|link|main|map|mark|menu|menuitem|meta|meter|nav|noscript|object|ol|optgroup|option|output|p|param|pre|progress|q|rb|rp|rt|rtc|ruby|s|samp|script|section|select|small|source|span|strong|style|sub|summary|sup|svg|table|tbody|td|template|textarea|tfoot|th|thead|time|title|tr|track|u|ul|var|video|wbr|path|circle|ellipse|line|polygon|polyline|rect|text|slot|h[1-6]?|([a-z]+\-[a-z]+[\t ]*(?!:)))((:|::|,|\.|#|\[)[\^:$#{}()\w\-\[\]='",\.# \t+\/>]*)?[ \t]*[&]?[ \t]*{?$/.test(text);
++	}
++	/** Check whether text starts with a self closing html tag. */
++	function isVoidHtmlTag(text) {
++		return /^[\t ]*(area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr|command|keygen|menuitem|path)((:|::|,|\.|#|\[)[:$#{}()\w\-\[\]='",\.# ]*)?$/.test(text);
++	}
++	/** Check whether text starts with //R: `/^[\t ]*\/?\/\/ *R *$/` */
++	function isReset(text) {
++		return /^[\t ]*\/?\/\/ *R *$/.test(text);
++	}
++	/** Check whether text starts with //I: `/^[\t ]*\/?\/\/ *I *$/` */
++	function isIgnore(text) {
++		return /^[\t ]*\/?\/\/ *I *$/.test(text);
++	}
++	/** Check whether text starts with //S: `/^[\t ]*\/?\/\/ *S *$/` */
++	function isSassSpace(text) {
++		return /^[\t ]*\/?\/\/ *S *$/.test(text);
++	}
++	/** Returns true if the string has brackets or semicolons at the end, comments get ignored. */
++	function isScssOrCss(text) {
++		return /[;\{\}][\t ]*(\/\/.*)?$/.test(text);
++	}
++	/** `/^[\t ]*[&.#%].*:/` */
++	function isCssPseudo(text) {
++		return /^[\t ]*[&.#%].*:/.test(text);
++	}
++	/** `/^[\t ]*[&.#%][\w-]*(?!#)[\t ]*\{.*[;\}][\t ]*$/` */
++	function isCssOneLiner(text) {
++		return /^[\t ]*[&.#%][\w-]*(?!#)[\t ]*\{.*[;\}][\t ]*$/.test(text);
++	}
++	/** `/^[\t ]*::?[\w\-]+\(.*\)/` */
++	/** `/^[\t ]*(\/\/|\/\*)/` */
++	function isComment(text) {
++		return /^[\t ]*(\/\/|\/\*)/.test(text);
++	}
++	/** `/^[\t ]*(\/\*)/` */
++	function isBlockCommentStart(text) {
++		return /^[\t ]*(\/\*)/.test(text);
++	}
++	/** `/[\t ]*(\*\/)/` */
++	function isBlockCommentEnd(text) {
++		return /[\t ]*(\*\/)/.test(text);
++	}
++	/** `/^[\t ]*[\.#%].* ?, *[\.#%].*\/` */
++	function isMoreThanOneClassOrId(text) {
++		return /^[\t ]*[\.#%].* ?, *[\.#%].*/.test(text);
++	}
++	/** `/^[\t ]*[}{]+[\t }{]*$/` */
++	function isBracketOrWhitespace(text) {
++		return /^[\t ]*[}{]+[\t }{]*$/.test(text);
++	}
++	/** `/[\t ]*@forward|[\t ]*@use/` */
++	function isAtForwardOrAtUse(text) {
++		return /[\t ]*@forward|[\t ]*@use/.test(text);
++	}
++	function isInterpolatedProperty(text) {
++		return /^[\t ]*[\w-]*#\{.*?\}[\w-]*:(?!:)/.test(text);
++	}
++	function hasPropertyValueSpace(text) {
++		return /^[\t ]*([\w ]+|[\w ]*#\{.*?\}[\w ]*): [^ ]/.test(text);
++	}
++	/** returns the distance between the beginning and the first char. */
++	function getDistance(text, tabSize) {
++		let count = 0;
++		for (let i = 0; i < text.length; i++) {
++			const char = text[i];
++			if (char !== " " && char !== "	") break;
++			if (char === "	") count += tabSize;
++			else count++;
++		}
++		return count;
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/s.color@0.0.15/node_modules/s.color/lib/HandleGet.js
++var require_HandleGet = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	function HandleGetHex(type, color, options) {
++		var isLong = color.b > 1 || color.g > 1 || color.r > 1;
++		var alpha = Math.round(color.a > 1 ? color.a : color.a * 255).toString(16);
++		var red = Math.round(isLong ? color.r : color.r * 255).toString(16);
++		var green = Math.round(isLong ? color.g : color.g * 255).toString(16);
++		var blue = Math.round(isLong ? color.b : color.b * 255).toString(16);
++		if (options && options.UpperCaseHex) {
++			alpha = alpha.toUpperCase();
++			red = red.toUpperCase();
++			green = green.toUpperCase();
++			blue = blue.toUpperCase();
++		}
++		switch (type) {
++			case "hex": return "#" + (red.length === 1 ? "0" + red : red).concat(green.length === 1 ? "0" + green : green).concat(blue.length === 1 ? "0" + blue : blue).concat(alpha.length === 1 ? "0" + alpha : alpha);
++			case "hex-short": return "#" + red.substring(0, 1).concat(green.substring(0, 1)).concat(blue.substring(0, 1)).concat(alpha.substring(0, 1));
++			case "hex-without-alpha": return "#" + (red.length === 1 ? "0" + red : red).concat(green.length === 1 ? "0" + green : green).concat(blue.length === 1 ? "0" + blue : blue);
++			case "hex-without-alpha-short": return "#" + red.substring(0, 1).concat(green.substring(0, 1)).concat(blue.substring(0, 1));
++		}
++	}
++	exports.HandleGetHex = HandleGetHex;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/s.color@0.0.15/node_modules/s.color/lib/regex.js
++var require_regex = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	function isValidHex(text) {
++		return /^#[a-fA-F\d]{3,4}$|^#[a-fA-F\d]{6}$|^#[a-fA-F\d]{8}$/.test(text);
++	}
++	exports.isValidHex = isValidHex;
++	function isValidRGB(text) {
++		return /rgba?\([\d. ]+[, ][\d. ]+[, ][\d. ]+([, ][\d. ]+)?\)/.test(text);
++	}
++	exports.isValidRGB = isValidRGB;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/s.color@0.0.15/node_modules/s.color/lib/validators.js
++var require_validators = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	var regex_1 = require_regex();
++	function isValidStringColor(input) {
++		if (regex_1.isValidHex(input) || regex_1.isValidRGB(input)) return input;
++		else {
++			console.warn("[S.Color] Invalid String Input:", input);
++			return null;
++		}
++	}
++	exports.isValidStringColor = isValidStringColor;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/s.color@0.0.15/node_modules/s.color/lib/ColorTypes.js
++var require_ColorTypes = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	var validators_1 = require_validators();
++	exports.RGBColor = function() {
++		function RGBColor(r, g, b, a) {
++			this.r = r;
++			this.g = g;
++			this.b = b;
++			this.a = a !== void 0 ? a : 1;
++		}
++		return RGBColor;
++	}();
++	exports.HSVColor = function() {
++		function HSVColor(h, s, v, a) {
++			this.h = h;
++			this.s = s;
++			this.v = v;
++			this.a = a !== void 0 ? a : 1;
++		}
++		return HSVColor;
++	}();
++	exports.StringColor = function() {
++		function StringColor(color) {
++			var newColor = validators_1.isValidStringColor(color);
++			this.color = newColor !== null ? newColor : "#0000";
++		}
++		return StringColor;
++	}();
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/s.color@0.0.15/node_modules/s.color/lib/HandleSet.js
++var require_HandleSet = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	var validators_1 = require_validators();
++	var ColorTypes_1 = require_ColorTypes();
++	function ConvertString(input, return255, alpha255) {
++		if (validators_1.isValidStringColor(input)) {
++			if (input.startsWith("#")) return HandleConvertHexString(input, return255, alpha255);
++			else if (input.startsWith("rgb")) return HandleConvertRgbString(input, return255);
++		}
++	}
++	exports.ConvertString = ConvertString;
++	/**
++	* **assumes that the input is valid**
++	*/
++	function HandleConvertHexString(text, return255, alpha255) {
++		var color = {
++			red: 0,
++			green: 0,
++			blue: 0,
++			alpha: 0
++		};
++		var raw = text.replace("#", "");
++		var length = raw.length;
++		var modulo = length % 3;
++		color.red = length > 4 ? parseInt(raw.substring(0, 2), 16) : parseInt(raw.substring(0, 1).concat(raw.substring(0, 1)), 16);
++		color.green = length > 4 ? parseInt(raw.substring(2, 4), 16) : parseInt(raw.substring(1, 2).concat(raw.substring(1, 2)), 16);
++		color.blue = length > 4 ? parseInt(raw.substring(4, 6), 16) : parseInt(raw.substring(2, 3).concat(raw.substring(2, 3)), 16);
++		if (modulo) {
++			color.alpha = length > 4 ? parseInt(raw.substring(length - modulo, length), 16) : parseInt(raw.substring(length - modulo, length).concat(raw.substring(length - modulo, length)), 16);
++			color.alpha = alpha255 ? color.alpha : color.alpha / 255;
++		} else color.alpha = 1;
++		return new ColorTypes_1.RGBColor(return255 ? color.red : color.red / 255, return255 ? color.green : color.green / 255, return255 ? color.blue : color.blue / 255, color.alpha);
++	}
++	exports.HandleConvertHexString = HandleConvertHexString;
++	/**
++	* **assumes that the input is valid**
++	*/
++	function HandleConvertRgbString(text, return255) {
++		var split = text.split(/,|\b /g);
++		return new ColorTypes_1.RGBColor(parseInt(split[0].replace(/\D/g, "")) / (return255 ? 1 : 255), parseInt(split[1].replace(/\D/g, "")) / (return255 ? 1 : 255), parseInt(split[2].replace(/\D/g, "")) / (return255 ? 1 : 255), split[3] ? parseFloat(split[3].replace(/[^\.\d]/g, "")) : 1);
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/s.color@0.0.15/node_modules/s.color/lib/utils.js
++var require_utils$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	var ColorConverters_1 = require_ColorConverters();
++	var ColorTypes_1 = require_ColorTypes();
++	function GetReadableTextColor(color) {
++		if (typeof color === "string") {
++			var rgb = ColorConverters_1.StringToRGB(color);
++			return (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1e3 > .5 ? "#000" : "#fff";
++		} else if (color instanceof ColorTypes_1.StringColor) {
++			var rgb = ColorConverters_1.StringToRGB(color.color);
++			return (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1e3 > .5 ? "#000" : "#fff";
++		} else if (color instanceof ColorTypes_1.RGBColor) {
++			var v = color.b > 1 || color.g > 1 || color.r > 1 ? 255 : 1;
++			return (color.r * 299 + color.g * 587 + color.b * 114) / 1e3 > .5 ? new ColorTypes_1.RGBColor(0, 0, 0) : new ColorTypes_1.RGBColor(v, v, v);
++		} else if (color instanceof ColorTypes_1.HSVColor) {
++			var rgb = ColorConverters_1.HSVToRGB(color);
++			return (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1e3 > .5 ? new ColorTypes_1.HSVColor(0, 0, 0) : new ColorTypes_1.HSVColor(0, 0, color.s > 1 || color.v > 1 ? 100 : 1);
++		}
++	}
++	exports.GetReadableTextColor = GetReadableTextColor;
++	/**
++	* Shifts the hue of the `HSVColor` by the Value
++	*/
++	function ShiftHue(hsv, value) {
++		if (value > 360) value = value % 360;
++		else if (value < 0) value = -(Math.abs(value) % 360);
++		hsv.h = hsv.h + value <= 360 ? hsv.h + value : hsv.h + value - 360;
++		return hsv;
++	}
++	exports.ShiftHue = ShiftHue;
++	/**Returns the hex value of the color string or the input string */
++	function convertCssColorToHex(color) {
++		if (cssColors[color.toLowerCase()] !== void 0) return cssColors[color.toLowerCase()];
++		return color;
++	}
++	exports.convertCssColorToHex = convertCssColorToHex;
++	var cssColors = {
++		aliceblue: "#f0f8ff",
++		antiquewhite: "#faebd7",
++		aqua: "#00ffff",
++		aquamarine: "#7fffd4",
++		azure: "#f0ffff",
++		beige: "#f5f5dc",
++		bisque: "#ffe4c4",
++		black: "#000000",
++		blanchedalmond: "#ffebcd",
++		blue: "#0000ff",
++		blueviolet: "#8a2be2",
++		brown: "#a52a2a",
++		burlywood: "#deb887",
++		cadetblue: "#5f9ea0",
++		chartreuse: "#7fff00",
++		chocolate: "#d2691e",
++		coral: "#ff7f50",
++		cornflowerblue: "#6495ed",
++		cornsilk: "#fff8dc",
++		crimson: "#dc143c",
++		cyan: "#00ffff",
++		darkblue: "#00008b",
++		darkcyan: "#008b8b",
++		darkgoldenrod: "#b8860b",
++		darkgray: "#a9a9a9",
++		darkgreen: "#006400",
++		darkkhaki: "#bdb76b",
++		darkmagenta: "#8b008b",
++		darkolivegreen: "#556b2f",
++		darkorange: "#ff8c00",
++		darkorchid: "#9932cc",
++		darkred: "#8b0000",
++		darksalmon: "#e9967a",
++		darkseagreen: "#8fbc8f",
++		darkslateblue: "#483d8b",
++		darkslategray: "#2f4f4f",
++		darkturquoise: "#00ced1",
++		darkviolet: "#9400d3",
++		deeppink: "#ff1493",
++		deepskyblue: "#00bfff",
++		dimgray: "#696969",
++		dodgerblue: "#1e90ff",
++		firebrick: "#b22222",
++		floralwhite: "#fffaf0",
++		forestgreen: "#228b22",
++		fuchsia: "#ff00ff",
++		gainsboro: "#dcdcdc",
++		ghostwhite: "#f8f8ff",
++		gold: "#ffd700",
++		goldenrod: "#daa520",
++		gray: "#808080",
++		green: "#008000",
++		greenyellow: "#adff2f",
++		honeydew: "#f0fff0",
++		hotpink: "#ff69b4",
++		indianred: "#cd5c5c",
++		indigo: "#4b0082",
++		ivory: "#fffff0",
++		khaki: "#f0e68c",
++		lavender: "#e6e6fa",
++		lavenderblush: "#fff0f5",
++		lawngreen: "#7cfc00",
++		lemonchiffon: "#fffacd",
++		lightblue: "#add8e6",
++		lightcoral: "#f08080",
++		lightcyan: "#e0ffff",
++		lightgoldenrodyellow: "#fafad2",
++		lightgrey: "#d3d3d3",
++		lightgreen: "#90ee90",
++		lightpink: "#ffb6c1",
++		lightsalmon: "#ffa07a",
++		lightseagreen: "#20b2aa",
++		lightskyblue: "#87cefa",
++		lightslategray: "#778899",
++		lightsteelblue: "#b0c4de",
++		lightyellow: "#ffffe0",
++		lime: "#00ff00",
++		limegreen: "#32cd32",
++		linen: "#faf0e6",
++		magenta: "#ff00ff",
++		maroon: "#800000",
++		mediumaquamarine: "#66cdaa",
++		mediumblue: "#0000cd",
++		mediumorchid: "#ba55d3",
++		mediumpurple: "#9370d8",
++		mediumseagreen: "#3cb371",
++		mediumslateblue: "#7b68ee",
++		mediumspringgreen: "#00fa9a",
++		mediumturquoise: "#48d1cc",
++		mediumvioletred: "#c71585",
++		midnightblue: "#191970",
++		mintcream: "#f5fffa",
++		mistyrose: "#ffe4e1",
++		moccasin: "#ffe4b5",
++		navajowhite: "#ffdead",
++		navy: "#000080",
++		oldlace: "#fdf5e6",
++		olive: "#808000",
++		olivedrab: "#6b8e23",
++		orange: "#ffa500",
++		orangered: "#ff4500",
++		orchid: "#da70d6",
++		palegoldenrod: "#eee8aa",
++		palegreen: "#98fb98",
++		paleturquoise: "#afeeee",
++		palevioletred: "#d87093",
++		papayawhip: "#ffefd5",
++		peachpuff: "#ffdab9",
++		peru: "#cd853f",
++		pink: "#ffc0cb",
++		plum: "#dda0dd",
++		powderblue: "#b0e0e6",
++		purple: "#800080",
++		rebeccapurple: "#663399",
++		red: "#ff0000",
++		rosybrown: "#bc8f8f",
++		royalblue: "#4169e1",
++		saddlebrown: "#8b4513",
++		salmon: "#fa8072",
++		sandybrown: "#f4a460",
++		seagreen: "#2e8b57",
++		seashell: "#fff5ee",
++		sienna: "#a0522d",
++		silver: "#c0c0c0",
++		skyblue: "#87ceeb",
++		slateblue: "#6a5acd",
++		slategray: "#708090",
++		snow: "#fffafa",
++		springgreen: "#00ff7f",
++		steelblue: "#4682b4",
++		tan: "#d2b48c",
++		teal: "#008080",
++		thistle: "#d8bfd8",
++		tomato: "#ff6347",
++		turquoise: "#40e0d0",
++		violet: "#ee82ee",
++		wheat: "#f5deb3",
++		white: "#ffffff",
++		whitesmoke: "#f5f5f5",
++		yellow: "#ffff00",
++		yellowgreen: "#9acd32"
++	};
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/s.color@0.0.15/node_modules/s.color/lib/ColorConverters.js
++var require_ColorConverters = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	var ColorTypes_1 = require_ColorTypes();
++	var HandleSet_1 = require_HandleSet();
++	var validators_1 = require_validators();
++	var HandleGet_1 = require_HandleGet();
++	var utils_1 = require_utils$1();
++	/**
++	* Takes an `RGBColor` and converts it to `HSVColor`
++	*/
++	function RGBToHSV(color, is255) {
++		if (is255 ? true : color.b > 1 || color.g > 1 || color.r > 1) color = {
++			a: color.a,
++			b: color.b / 255,
++			g: color.g / 255,
++			r: color.r / 255
++		};
++		var cMax = Math.max(color.r, color.g, color.b);
++		var cMin = Math.min(color.r, color.g, color.b);
++		var diff = cMax - cMin;
++		var hue = cMax === 1 && cMin === 1 ? 0 : cMax === 0 && cMin === 0 ? 0 : cMax === color.r ? (60 * ((color.g - color.b) / diff) + 360) % 360 : cMax === color.g ? (60 * ((color.b - color.r) / diff) + 120) % 360 : cMax === color.b ? (60 * ((color.r - color.g) / diff) + 240) % 360 : 0;
++		var saturation;
++		if (cMax === 0) saturation = 0;
++		else saturation = diff / cMax * 100;
++		return new ColorTypes_1.HSVColor(hue ? hue : 0, saturation, cMax * 100, color.a);
++	}
++	exports.RGBToHSV = RGBToHSV;
++	/**
++	* Takes an `HSVColor` and converts it to `RGBColor`
++	*/
++	function HSVToRGB(hsv, is100) {
++		var isLong = is100 ? true : hsv.s > 1 || hsv.v > 1;
++		if (isLong) hsv = {
++			a: hsv.a,
++			h: hsv.h,
++			s: hsv.s / 100,
++			v: hsv.v / 100
++		};
++		var f = function(n, k) {
++			if (k === void 0) k = (n + hsv.h / 60) % 6;
++			return hsv.v - hsv.v * hsv.s * Math.max(Math.min(k, 4 - k, 1), 0);
++		};
++		if (isLong) return new ColorTypes_1.RGBColor(f(5) * 255, f(3) * 255, f(1) * 255, hsv.a);
++		else return new ColorTypes_1.RGBColor(f(5), f(3), f(1), hsv.a);
++	}
++	exports.HSVToRGB = HSVToRGB;
++	/**
++	* Takes an `StringColor` and converts it to `RGBColor`,
++	* If input string is invalid `null` will be returned.
++	*/
++	function StringToRGB(input, return255, alpha255) {
++		input = utils_1.convertCssColorToHex(input);
++		if (validators_1.isValidStringColor(input)) return HandleSet_1.ConvertString(input, return255, alpha255);
++		return null;
++	}
++	exports.StringToRGB = StringToRGB;
++	/**
++	* Takes an `StringColor` and converts it to `HSVColor`,
++	* If input string is invalid `null` will be returned.
++	*/
++	function StringToHVS(input, return255, alpha255) {
++		input = utils_1.convertCssColorToHex(input);
++		if (validators_1.isValidStringColor(input)) return RGBToHSV(HandleSet_1.ConvertString(input, return255, alpha255));
++		return null;
++	}
++	exports.StringToHVS = StringToHVS;
++	/**
++	* Takes an `HSVColor` and converts it to `String` (HEX Format)
++	*/
++	function HSVToHEX(hsv, options) {
++		if (hsv.s > 1 || hsv.v > 1 || options && options.isLong) {
++			hsv.s = hsv.s / 100;
++			hsv.v = hsv.v / 100;
++		}
++		var f = function(n, k) {
++			if (k === void 0) k = (n + hsv.h / 60) % 6;
++			return hsv.v - hsv.v * hsv.s * Math.max(Math.min(k, 4 - k, 1), 0);
++		};
++		return HandleGet_1.HandleGetHex(options && options.type ? options.type : "hex", {
++			r: f(5),
++			g: f(3),
++			b: f(1),
++			a: hsv.a
++		});
++	}
++	exports.HSVToHEX = HSVToHEX;
++	/**
++	* Takes an `RGBColor` and converts it to `String` (HEX Format)
++	*/
++	function RGBToHEX(color, type) {
++		return HandleGet_1.HandleGetHex(type ? type : "hex", {
++			r: color.r,
++			g: color.g,
++			b: color.b,
++			a: color.a
++		});
++	}
++	exports.RGBToHEX = RGBToHEX;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/s.color@0.0.15/node_modules/s.color/lib/index.js
++var require_lib = /* @__PURE__ */ __commonJSMin(((exports) => {
++	function __export(m) {
++		for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
++	}
++	Object.defineProperty(exports, "__esModule", { value: true });
++	var HandleGet_1 = require_HandleGet();
++	var HandleSet_1 = require_HandleSet();
++	var ColorTypes_1 = require_ColorTypes();
++	var ColorConverters_1 = require_ColorConverters();
++	__export(require_ColorTypes());
++	__export(require_ColorConverters());
++	__export(require_regex());
++	__export(require_validators());
++	__export(require_utils$1());
++	exports.default = function() {
++		function Color(input) {
++			this.Set(input);
++		}
++		Color.prototype.Get = function(type, options) {
++			if (type !== void 0) {
++				if (type.startsWith("hex")) return HandleGet_1.HandleGetHex(type, this.color, options);
++				else switch (type) {
++					case "rgb": return "rgb(" + Math.round(this.color.r * 255) + ", " + Math.round(this.color.g * 255) + ", " + Math.round(this.color.b * 255) + ")";
++					case "rgba": return "rgba(" + Math.round(this.color.r * 255) + ", " + Math.round(this.color.g * 255) + ", " + Math.round(this.color.b * 255) + ", " + this.color.a.toFixed(2).toString() + ")";
++					case "object": return this.color;
++					case "hsv": return ColorConverters_1.RGBToHSV(this.color);
++				}
++			} else return this.color;
++		};
++		Color.prototype.Set = function(input) {
++			if (typeof input === "object") this.color = new ColorTypes_1.RGBColor(input.r === void 0 ? 1 : input.r > 1 ? input.r / 255 : input.r, input.g === void 0 ? 1 : input.g > 1 ? input.g / 255 : input.g, input.b === void 0 ? 1 : input.b > 1 ? input.b / 255 : input.b, input.a === void 0 ? 1 : input.a > 1 ? input.a / 255 : input.a);
++			else if (typeof input === "string") {
++				var tempColor = HandleSet_1.ConvertString(input);
++				this.color = tempColor === null ? this.color : tempColor;
++			} else this.color = new ColorTypes_1.RGBColor(0, 0, 0, 0);
++		};
++		return Color;
++	}();
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/suf-log@2.5.3/node_modules/suf-log/dist/utils.js
++var require_utils = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.addReset = exports.getColumn = exports.pad = exports.removeNodeStyles = exports.maxTableColumnLength = exports.ANSICodes = exports.stringColorToAnsiColor = exports.SetLoggerEnvironment = exports.defaultLogTableOptions = exports.isBrowser = void 0;
++	var s_color_1 = require_lib();
++	exports.isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined";
++	exports.defaultLogTableOptions = {
++		padding: 0,
++		spacing: 1
++	};
++	/**
++	* Can be used to change the assumed environment
++	*/
++	function SetLoggerEnvironment(env) {
++		exports.isBrowser = env === "browser";
++	}
++	exports.SetLoggerEnvironment = SetLoggerEnvironment;
++	function stringColorToAnsiColor(type, color) {
++		if (!color) return;
++		var _a = s_color_1.StringToRGB(color, true), r = _a.r, g = _a.g, b = _a.b;
++		return ANSICodes(type) + ";2;" + r + ";" + g + ";" + b + ";";
++	}
++	exports.stringColorToAnsiColor = stringColorToAnsiColor;
++	function ANSICodes(type) {
++		switch (type) {
++			case "reset": return "0";
++			case "bold": return "1";
++			case "color": return "38";
++			case "background": return "48";
++		}
++	}
++	exports.ANSICodes = ANSICodes;
++	function maxTableColumnLength(column) {
++		var max = 0;
++		for (var i = 0; i < column.length; i++) {
++			var field = column[i];
++			if (field) {
++				var length_1 = removeNodeStyles(typeof field === "object" ? field.message : field).length;
++				max = length_1 > max ? length_1 : max;
++			}
++		}
++		return max;
++	}
++	exports.maxTableColumnLength = maxTableColumnLength;
++	function removeNodeStyles(item) {
++		return item.toString().replace(/[\033\x1b\u001b]\[.*?m/g, "");
++	}
++	exports.removeNodeStyles = removeNodeStyles;
++	function pad(text, start, end) {
++		var space = function(amount) {
++			return " ".repeat(amount);
++		};
++		return "" + space(start) + text + space(end);
++	}
++	exports.pad = pad;
++	function getColumn(matrix, col) {
++		return matrix.map(function(row) {
++			return row[col];
++		});
++	}
++	exports.getColumn = getColumn;
++	function addReset(input) {
++		return input + "\x1B[0m";
++	}
++	exports.addReset = addReset;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/suf-log@2.5.3/node_modules/suf-log/dist/transformStyles.js
++var require_transformStyles = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.transformToBrowserStyle = exports.transformToNodeStyle = void 0;
++	var utils_1 = require_utils();
++	function transformToNodeStyle(style) {
++		if (typeof style === "string") return "\x1B[" + handleUndefined(utils_1.stringColorToAnsiColor("color", style)).replace(/;$/, "") + "m";
++		else return "\x1B[" + ("" + addBoldStyle(style) + handleUndefined(utils_1.stringColorToAnsiColor("color", style.color)) + handleUndefined(utils_1.stringColorToAnsiColor("background", style.background))).replace(/;$/, "") + "m";
++	}
++	exports.transformToNodeStyle = transformToNodeStyle;
++	function addBoldStyle(style) {
++		return style["font-weight"] === "bold" ? utils_1.ANSICodes("bold") + ";" : "";
++	}
++	function handleUndefined(input) {
++		return input ? input : "";
++	}
++	function transformToBrowserStyle(style) {
++		if (style == void 0) return "";
++		if (typeof style === "string") return "color: " + style + ";";
++		var out = "";
++		if (!("display" in style)) out += "display: inline-block; ";
++		for (var key in style) if (Object.prototype.hasOwnProperty.call(style, key)) out += key + ": " + style[key] + "; ";
++		return out;
++	}
++	exports.transformToBrowserStyle = transformToBrowserStyle;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/suf-log@2.5.3/node_modules/suf-log/dist/styler.js
++var require_styler = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.styler = void 0;
++	var transformStyles_1 = require_transformStyles();
++	var utils_1 = require_utils();
++	/**
++	* this function is not browser compatible*.
++	* @example ```ts
++	* console.log(styler('test', 'red'))
++	* ```
++	*
++	* *you have to add the styles manually, use the Log function for browser compatibly.
++	*/
++	function styler(input, style) {
++		if (utils_1.isBrowser) return "%c" + input;
++		if (style) return utils_1.addReset("" + transformStyles_1.transformToNodeStyle(style) + input);
++		return input;
++	}
++	exports.styler = styler;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/suf-log@2.5.3/node_modules/suf-log/dist/loggers.js
++var require_loggers = /* @__PURE__ */ __commonJSMin(((exports) => {
++	var __assign = exports && exports.__assign || function() {
++		__assign = Object.assign || function(t) {
++			for (var s, i = 1, n = arguments.length; i < n; i++) {
++				s = arguments[i];
++				for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
++			}
++			return t;
++		};
++		return __assign.apply(this, arguments);
++	};
++	var __spreadArrays = exports && exports.__spreadArrays || function() {
++		for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
++		for (var r = Array(s), k = 0, i = 0; i < il; i++) for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++) r[k] = a[j];
++		return r;
++	};
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.LogSingle = exports.LogS = exports.LogTable = exports.Log = void 0;
++	var utils_1 = require_utils();
++	var _1 = require_dist$1();
++	var transformStyles_1 = require_transformStyles();
++	/**works in node and the browser.*/
++	function Log() {
++		var messages = [];
++		for (var _i = 0; _i < arguments.length; _i++) messages[_i] = arguments[_i];
++		var output = "";
++		var browserStyles = [];
++		for (var i = 0; i < messages.length; i++) {
++			var msg = messages[i];
++			if (typeof msg === "object") {
++				if (utils_1.isBrowser) {
++					var style = transformStyles_1.transformToBrowserStyle(msg.style);
++					if (style) browserStyles.push(style);
++				}
++				output += _1.styler(msg.message, msg.style);
++			} else output += msg;
++			if (i < messages.length - 1) output += " ";
++		}
++		console.log.apply(console, __spreadArrays([output], browserStyles));
++	}
++	exports.Log = Log;
++	/**node only*/
++	function LogTable(table, options) {
++		if (options === void 0) options = utils_1.defaultLogTableOptions;
++		if (table[0] === void 0) return;
++		var _a = __assign(__assign({}, utils_1.defaultLogTableOptions), options), padding = _a.padding, spacing = _a.spacing;
++		var output = "";
++		var maxLengths = [];
++		for (var i = 0; i < table[0].length; i++) {
++			var column = utils_1.getColumn(table, i);
++			maxLengths.push(utils_1.maxTableColumnLength(column));
++		}
++		for (var i = 0; i < table.length; i++) {
++			var row = table[i];
++			for (var j = 0; j < row.length; j++) {
++				var field = row[j];
++				var text = "";
++				var style = void 0;
++				if (typeof field === "object") {
++					style = field.style;
++					text = field.message;
++				} else text = field.toString();
++				var startPadding = j === 0 ? padding : 0;
++				var endPadding = maxLengths[j] + (j === row.length - 1 ? padding : spacing);
++				var textLength = utils_1.removeNodeStyles(text).length;
++				var paddedText = utils_1.pad(text, startPadding, endPadding - textLength);
++				if (style) output += _1.styler(paddedText, style);
++				else output += paddedText;
++			}
++			output += "\n";
++		}
++		console.log(output.replace(/\n$/, ""));
++	}
++	exports.LogTable = LogTable;
++	/**works in the browser and node. */
++	function LogS(styles) {
++		var messages = [];
++		for (var _i = 1; _i < arguments.length; _i++) messages[_i - 1] = arguments[_i];
++		var browserStyles = [];
++		var output = "";
++		for (var i = 0; i < messages.length; i++) {
++			var msg = messages[i];
++			if (utils_1.isBrowser) {
++				var style = transformStyles_1.transformToBrowserStyle(styles[i]);
++				if (style) browserStyles.push(style);
++			}
++			output += _1.styler(msg, styles[i]);
++			if (i < messages.length - 1) output += " ";
++		}
++		console.log.apply(console, __spreadArrays([output], browserStyles));
++	}
++	exports.LogS = LogS;
++	/**Log a single message with an optional style, works in the browser and node. */
++	function LogSingle(message, style) {
++		var output = _1.styler(message, style);
++		if (utils_1.isBrowser) {
++			console.log(output, transformStyles_1.transformToBrowserStyle(style) || "");
++			return;
++		}
++		console.log(output);
++	}
++	exports.LogSingle = LogSingle;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/suf-log@2.5.3/node_modules/suf-log/dist/interfaces.js
++var require_interfaces = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/suf-log@2.5.3/node_modules/suf-log/dist/index.js
++var require_dist$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
++	var __createBinding = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
++		if (k2 === void 0) k2 = k;
++		Object.defineProperty(o, k2, {
++			enumerable: true,
++			get: function() {
++				return m[k];
++			}
++		});
++	}) : (function(o, m, k, k2) {
++		if (k2 === void 0) k2 = k;
++		o[k2] = m[k];
++	}));
++	var __exportStar = exports && exports.__exportStar || function(m, exports$1) {
++		for (var p in m) if (p !== "default" && !exports$1.hasOwnProperty(p)) __createBinding(exports$1, m, p);
++	};
++	Object.defineProperty(exports, "__esModule", { value: true });
++	var utils_1 = require_utils();
++	Object.defineProperty(exports, "SetEnvironment", {
++		enumerable: true,
++		get: function() {
++			return utils_1.SetLoggerEnvironment;
++		}
++	});
++	Object.defineProperty(exports, "ANSICodes", {
++		enumerable: true,
++		get: function() {
++			return utils_1.ANSICodes;
++		}
++	});
++	Object.defineProperty(exports, "removeNodeStyles", {
++		enumerable: true,
++		get: function() {
++			return utils_1.removeNodeStyles;
++		}
++	});
++	var styler_1 = require_styler();
++	Object.defineProperty(exports, "styler", {
++		enumerable: true,
++		get: function() {
++			return styler_1.styler;
++		}
++	});
++	__exportStar(require_loggers(), exports);
++	__exportStar(require_interfaces(), exports);
++	__exportStar(require_transformStyles(), exports);
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/logger.js
++var require_logger = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.LogDebugResult = LogDebugResult;
++	exports.ResetDebugLog = ResetDebugLog;
++	exports.SetDebugLOCAL_CONTEXT = SetDebugLOCAL_CONTEXT;
++	exports.SetConvertData = SetConvertData;
++	exports.PushDebugInfo = PushDebugInfo;
++	const suf_log_1 = require_dist$1();
++	(0, suf_log_1.SetEnvironment)("node");
++	const colon = (0, suf_log_1.styler)(":", "#777");
++	const pipe = (0, suf_log_1.styler)("|", "#f64");
++	const TEXT = (text) => (0, suf_log_1.styler)(text, "#eee");
++	const NUMBER = (number) => (0, suf_log_1.styler)(number.toString(), "#f03");
++	const BOOL = (bool) => (0, suf_log_1.styler)(bool.toString(), bool ? "#4f6" : "#f03");
++	function LogDebugResult(result) {
++		const data = StoreLog.logs;
++		let out = (0, suf_log_1.styler)("FORMAT", {
++			"font-weight": "bold",
++			color: "#0af"
++		});
++		for (let i = 0; i < data.length; i++) {
++			out += "\n";
++			out += InfoLogHelper(data[i]);
++		}
++		out += `
++${pipe}${(0, suf_log_1.styler)(replaceWhitespace(result.replace(/\n/g, "|\n|")), "#c76")}${pipe}`;
++		console.log(out);
++	}
++	function ResetDebugLog() {
++		StoreLog.reset();
++	}
++	var StoreLog = class {
++		static tempConvertData;
++		static tempLOCAL_CONTEXT;
++		static resetTemp() {
++			this.tempConvertData = void 0;
++			this.tempLOCAL_CONTEXT = void 0;
++		}
++		static logs = [];
++		static reset() {
++			this.resetTemp();
++			this.logs = [];
++		}
++	};
++	function SetDebugLOCAL_CONTEXT(data) {
++		StoreLog.tempLOCAL_CONTEXT = data;
++	}
++	function SetConvertData(data) {
++		StoreLog.tempConvertData = data;
++	}
++	function PushDebugInfo(info) {
++		if (info.debug) StoreLog.logs.push({
++			info,
++			convertData: StoreLog.tempConvertData,
++			LOCAL_CONTEXT: StoreLog.tempLOCAL_CONTEXT
++		});
++		StoreLog.resetTemp();
++	}
++	function InfoLogHelper(data) {
++		const { convertData, info, LOCAL_CONTEXT } = data;
++		const notProvided = null;
++		const title = (0, suf_log_1.styler)(info.title, "#cc0");
++		const lineNumber = `${TEXT("Line Number")}${colon} ${NUMBER(info.lineNumber)}`;
++		const offset = info.offset !== void 0 ? `${TEXT("Offset")}${colon} ${NUMBER(info.offset)}` : "";
++		const originalOffset = info.originalOffset !== void 0 ? `${TEXT("Original Offset")}${colon} ${NUMBER(info.originalOffset)}` : "";
++		const nextLine = info.nextLine !== void 0 ? JSON.stringify(info.nextLine).replace(/[{}]/g, "").replace(/:/g, ": ").replace(/,/g, ", ").replace(/".*?"/g, (s) => {
++			return (0, suf_log_1.styler)(s, "#c76");
++		}) : notProvided;
++		const replace = info.replaceSpaceOrTabs !== void 0 ? BOOL(info.replaceSpaceOrTabs) : notProvided;
++		const CONVERT = convertData ? `
++      ${TEXT("Convert")}        ${colon} ${(0, suf_log_1.styler)(convertData.type, "#f64")}` : "";
++		const newText = info.newLineText ? `\n      ${TEXT("New")}            ${colon} ${(0, suf_log_1.styler)(replaceWhitespace(info.newLineText.replace(/\n/g, "\\n")), "#0af")}` : "";
++		switch (info.newLineText) {
++			case "DELETED": return ` ${title} ${lineNumber} ${TEXT("Next Line")}${colon} ${nextLine}`;
++			case "NEWLINE":
++			case "NULL": return ` ${title} ${lineNumber}`;
++			default:
++				let data = "";
++				data += nextLine !== null ? `\n      ${TEXT("Next Line")}      ${colon} ${nextLine}` : "";
++				data += replace !== null ? `\n      ${TEXT("Replace")}        ${colon} ${replace}` : "";
++				if (LOCAL_CONTEXT) {
++					data += `\n ${(0, suf_log_1.styler)("LOCAL_CONTEXT", "#f64")} ${(0, suf_log_1.styler)("{", "#777")}`;
++					for (const key in LOCAL_CONTEXT) if (Object.prototype.hasOwnProperty.call(LOCAL_CONTEXT, key)) {
++						const val = LOCAL_CONTEXT[key];
++						data += `\n    ${(0, suf_log_1.styler)(key, "#777")}${colon} ${parseValue(val)}`;
++					}
++					data += (0, suf_log_1.styler)("\n }", "#777");
++				}
++				return ` ${title} ${lineNumber} ${offset} ${originalOffset}
++      ${TEXT("Old")}            ${colon} ${(0, suf_log_1.styler)(replaceWhitespace(info.oldLineText), "#d75")}${newText}${CONVERT}${data}`;
++		}
++	}
++	function replaceWhitespace(text) {
++		return text.replace(/ /g, "·").replace(/\t/g, "⟶");
++	}
++	function parseValue(val) {
++		const type = typeof val;
++		if (type === "boolean") return BOOL(val);
++		else if (type === "string") return (0, suf_log_1.styler)(val, "#f64");
++		else if (type === "object") return (0, suf_log_1.styler)(JSON.stringify(val), "#0af");
++		return val;
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/utility.js
++var require_utility = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.getBlockHeaderOffset = getBlockHeaderOffset;
++	exports.replaceWithOffset = replaceWithOffset;
++	exports.getIndentationOffset = getIndentationOffset;
++	exports.replaceSpacesOrTabs = replaceSpacesOrTabs;
++	exports.convertLine = convertLine;
++	exports.isKeyframePointAndSetIndentation = isKeyframePointAndSetIndentation;
++	const regex_1 = require_regex$1();
++	/** returns the relative distance that the class or id should be at. */
++	function getBlockHeaderOffset(distance, tabSize, current, ignoreCurrent) {
++		if (distance === 0) return 0;
++		if (tabSize * Math.round(distance / tabSize - .1) > current && !ignoreCurrent) return current - distance;
++		return tabSize * Math.round(distance / tabSize - .1) - distance;
++	}
++	/**
++	* adds or removes whitespace based on the given offset, a positive value adds whitespace a negative value removes it.
++	*/
++	function replaceWithOffset(text, offset, STATE) {
++		if (offset < 0) {
++			text = text.replace(/\t/g, " ".repeat(STATE.CONFIG.tabSize)).replace(new RegExp(`^ {${Math.abs(offset)}}`), "");
++			if (!STATE.CONFIG.insertSpaces) text = replaceSpacesOrTabs(text, STATE, false);
++		} else text = text.replace(/^/, STATE.CONFIG.insertSpaces ? " ".repeat(offset) : "	".repeat(offset / STATE.CONFIG.tabSize));
++		return text;
++	}
++	/** returns the difference between the current indentation and the indentation of the given text. */
++	function getIndentationOffset(text, indentation, tabSize) {
++		const distance = (0, regex_1.getDistance)(text, tabSize);
++		return {
++			offset: indentation - distance,
++			distance
++		};
++	}
++	function isKeyframePoint(text, isAtKeyframe) {
++		if (isAtKeyframe === false) return false;
++		return /^[\t ]*\d+%/.test(text) || /^[\t ]*from[\t ]*$|^[\t ]*to[\t ]*$/.test(text);
++	}
++	function replaceSpacesOrTabs(text, STATE, insertSpaces) {
++		if (insertSpaces !== void 0 ? insertSpaces : STATE.CONFIG.insertSpaces) return text.replace(/\t/g, " ".repeat(STATE.CONFIG.tabSize));
++		else return text.replace(new RegExp(" ".repeat(STATE.CONFIG.tabSize), "g"), "	");
++	}
++	function convertLine(line, STATE) {
++		return STATE.CONFIG.convert && (0, regex_1.isScssOrCss)(line.get()) && !(0, regex_1.isComment)(line.get());
++	}
++	function isKeyframePointAndSetIndentation(line, STATE) {
++		const isAtKeyframesPoint = isKeyframePoint(line.get(), STATE.CONTEXT.keyframes.isIn);
++		if (STATE.CONTEXT.keyframes.isIn && isAtKeyframesPoint) STATE.CONTEXT.indentation = Math.max(0, STATE.CONTEXT.keyframes.indentation);
++		return isAtKeyframesPoint;
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/formatters/format.property.js
++var require_format_property = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.FormatProperty = FormatProperty;
++	exports.setPropertyValueSpaces = setPropertyValueSpaces;
++	const logger_1 = require_logger();
++	const regex_1 = require_regex$1();
++	const utility_1 = require_utility();
++	const format_convert_1 = require_format_convert();
++	function FormatProperty(line, STATE) {
++		let convert = false;
++		let replaceSpaceOrTabs = false;
++		let edit = line.get();
++		const isComment = (0, regex_1.isComment)(line.get());
++		line.set(setPropertyValueSpaces(STATE, line.get()));
++		if ((0, utility_1.convertLine)(line, STATE)) {
++			const convertRes = (0, format_convert_1.convertScssOrCss)(line.get(), STATE);
++			line.set(convertRes.text);
++			convert = true;
++		}
++		STATE.CONTEXT.convert.wasLastLineCss = convert;
++		const move = STATE.LOCAL_CONTEXT.indentation.offset !== 0 && !isComment;
++		if (!move && canReplaceSpacesOrTabs(STATE, line.get())) {
++			line.set((0, utility_1.replaceSpacesOrTabs)(line.get(), STATE).trimRight());
++			replaceSpaceOrTabs = true;
++		}
++		if (move) {
++			let offset = STATE.LOCAL_CONTEXT.indentation.offset;
++			const distance = STATE.LOCAL_CONTEXT.indentation.distance;
++			if (STATE.CONTEXT.wasLastHeaderIncludeMixin || STATE.CONTEXT.wasLastHeaderNestedProp) {
++				if (distance >= STATE.CONTEXT.indentation - STATE.CONFIG.tabSize) offset = (0, utility_1.getBlockHeaderOffset)(distance, STATE.CONFIG.tabSize, STATE.CONTEXT.indentation, false);
++				else {
++					offset = STATE.CONTEXT.indentation - STATE.CONFIG.tabSize - distance;
++					STATE.CONTEXT.wasLastHeaderIncludeMixin = false;
++					STATE.CONTEXT.wasLastHeaderNestedProp = false;
++					STATE.CONTEXT.indentation = STATE.CONTEXT.indentation - STATE.CONFIG.tabSize;
++				}
++			} else if (STATE.LOCAL_CONTEXT.isVariable || STATE.LOCAL_CONTEXT.isImport) offset = (0, utility_1.getBlockHeaderOffset)(distance, STATE.CONFIG.tabSize, STATE.CONTEXT.indentation, false);
++			edit = (0, utility_1.replaceWithOffset)(line.get(), offset, STATE).trimRight();
++			(0, logger_1.PushDebugInfo)({
++				title: "PROPERTY: MOVE",
++				lineNumber: STATE.currentLine,
++				oldLineText: STATE.lines[STATE.currentLine],
++				newLineText: edit,
++				debug: STATE.CONFIG.debug,
++				offset,
++				originalOffset: STATE.LOCAL_CONTEXT.indentation.offset,
++				replaceSpaceOrTabs
++			});
++		} else {
++			edit = line.get().trimRight();
++			(0, logger_1.PushDebugInfo)({
++				title: "PROPERTY: DEFAULT",
++				lineNumber: STATE.currentLine,
++				oldLineText: STATE.lines[STATE.currentLine],
++				newLineText: edit,
++				debug: STATE.CONFIG.debug,
++				replaceSpaceOrTabs
++			});
++		}
++		if (STATE.CONTEXT.keyframes.isIn && STATE.LOCAL_CONTEXT.isAtKeyframesPoint) STATE.CONTEXT.indentation = Math.max(0, STATE.CONTEXT.indentation + STATE.CONFIG.tabSize);
++		return edit;
++	}
++	function canReplaceSpacesOrTabs(STATE, text) {
++		return STATE.CONFIG.insertSpaces ? /\t/g.test(text) : new RegExp(" ".repeat(STATE.CONFIG.tabSize), "g").test(text);
++	}
++	function setPropertyValueSpaces(STATE, text) {
++		if (text && !STATE.LOCAL_CONTEXT.isHtmlTag && (STATE.LOCAL_CONTEXT.isProp || STATE.LOCAL_CONTEXT.isInterpolatedProp || STATE.LOCAL_CONTEXT.isVariable) && STATE.CONFIG.setPropertySpace) {
++			let newPropValue = "";
++			const [propName, propValue] = text.split(/:(.*)/);
++			let wasLastCharSpace = true;
++			for (let i = 0; i < propValue.length; i++) {
++				const char = propValue[i];
++				switch (char) {
++					case " ":
++						if (!wasLastCharSpace) {
++							newPropValue += char;
++							wasLastCharSpace = true;
++						}
++						break;
++					case ".":
++						wasLastCharSpace = true;
++						newPropValue += char;
++						break;
++					default:
++						wasLastCharSpace = false;
++						newPropValue += char;
++				}
++			}
++			return `${propName.trimEnd()}:${propValue ? " " + newPropValue : ""}`;
++		}
++		return text;
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/formatters/format.convert.js
++var require_format_convert = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.convertScssOrCss = convertScssOrCss;
++	const regex_1 = require_regex$1();
++	const logger_1 = require_logger();
++	const utility_1 = require_utility();
++	const format_property_1 = require_format_property();
++	/** converts scss/css to sass. */
++	function convertScssOrCss(text, STATE) {
++		const isMultiple = (0, regex_1.isMoreThanOneClassOrId)(text);
++		let lastSelector = STATE.CONTEXT.convert.lastSelector;
++		if (!/[\t ]*[#.%]\{.*?}/.test(text)) {
++			if (lastSelector && new RegExp("^.*" + (0, regex_1.escapeRegExp)(lastSelector)).test(text)) {
++				/*istanbul ignore if */
++				if (STATE.CONFIG.debug) (0, logger_1.SetConvertData)({
++					type: "LAST SELECTOR",
++					text
++				});
++				return {
++					lastSelector,
++					text: (0, utility_1.replaceWithOffset)(removeInvalidChars(text.replaceAll(lastSelector, "&")).trimEnd(), STATE.CONFIG.tabSize, STATE)
++				};
++			} else if ((0, regex_1.isCssOneLiner)(text)) {
++				/*istanbul ignore if */
++				if (STATE.CONFIG.debug) (0, logger_1.SetConvertData)({
++					type: "ONE LINER",
++					text
++				});
++				const split = text.split("{");
++				const properties = split[1].split(";");
++				STATE.LOCAL_CONTEXT.isProp = true;
++				const selector = split[0].trim();
++				return {
++					lastSelector: selector,
++					text: selector.concat("\n", properties.map((v) => (0, utility_1.replaceWithOffset)((0, format_property_1.setPropertyValueSpaces)(STATE, removeInvalidChars(v)).trim(), STATE.CONFIG.tabSize, STATE)).join("\n")).trimEnd()
++				};
++			} else if ((0, regex_1.isCssPseudo)(text) && !isMultiple) {
++				/*istanbul ignore if */
++				if (STATE.CONFIG.debug) (0, logger_1.SetConvertData)({
++					type: "PSEUDO",
++					text
++				});
++				return {
++					lastSelector,
++					text: removeInvalidChars(text).trimEnd()
++				};
++			} else if ((0, regex_1.isCssSelector)(text)) {
++				/*istanbul ignore if */
++				if (STATE.CONFIG.debug) (0, logger_1.SetConvertData)({
++					type: "SELECTOR",
++					text
++				});
++				lastSelector = removeInvalidChars(text).trimEnd();
++				return {
++					text: lastSelector,
++					lastSelector
++				};
++			}
++		}
++		/*istanbul ignore if */
++		if (STATE.CONFIG.debug) (0, logger_1.SetConvertData)({
++			type: "DEFAULT",
++			text
++		});
++		return {
++			text: removeInvalidChars(text).trimEnd(),
++			lastSelector
++		};
++	}
++	function removeInvalidChars(text) {
++		let newText = "";
++		let isInQuotes = false;
++		let isInComment = false;
++		let isInInterpolation = false;
++		let quoteChar = "";
++		for (let i = 0; i < text.length; i++) {
++			const char = text[i];
++			if (!isInQuotes && char === "/" && text[i + 1] === "/") isInComment = true;
++			else if (/['"]/.test(char)) {
++				if (!isInQuotes || char === quoteChar) {
++					isInQuotes = !isInQuotes;
++					if (isInQuotes) quoteChar = char;
++				}
++			} else if (/#/.test(char) && /{/.test(text[i + 1])) isInInterpolation = true;
++			else if (isInInterpolation && /}/.test(text[i - 1])) isInInterpolation = false;
++			if (!/[;\{\}]/.test(char) || isInQuotes || isInComment || isInInterpolation) newText += char;
++		}
++		return newText;
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/formatters/format.atForwardOrAtUse.js
++var require_format_atForwardOrAtUse = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.FormatAtForwardOrAtUse = FormatAtForwardOrAtUse;
++	const format_convert_1 = require_format_convert();
++	const utility_1 = require_utility();
++	const logger_1 = require_logger();
++	function FormatAtForwardOrAtUse(line, STATE) {
++		if ((0, utility_1.convertLine)(line, STATE)) {
++			const convertRes = (0, format_convert_1.convertScssOrCss)(line.get(), STATE);
++			line.set(convertRes.text);
++		}
++		line.set(line.get().trimStart());
++		(0, logger_1.PushDebugInfo)({
++			title: "@forward or @use",
++			lineNumber: STATE.currentLine,
++			oldLineText: STATE.lines[STATE.currentLine],
++			newLineText: line.get(),
++			debug: STATE.CONFIG.debug
++		});
++		return line.get();
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/formatters/format.blockComment.js
++var require_format_blockComment = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.FormatHandleBlockComment = FormatHandleBlockComment;
++	const utility_1 = require_utility();
++	function FormatHandleBlockComment(text, STATE) {
++		if (/^[\t ]*\/\*/.test(text)) return (0, utility_1.replaceSpacesOrTabs)(text, STATE);
++		return (0, utility_1.replaceWithOffset)(text, (0, utility_1.getIndentationOffset)(text, STATE.CONTEXT.blockCommentDistance + 1, STATE.CONFIG.tabSize).offset, STATE);
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/formatters/format.header.js
++var require_format_header = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.FormatBlockHeader = FormatBlockHeader;
++	const logger_1 = require_logger();
++	const regex_1 = require_regex$1();
++	const utility_1 = require_utility();
++	const format_convert_1 = require_format_convert();
++	function FormatBlockHeader(line, STATE) {
++		let replaceSpaceOrTabs = false;
++		let hasBeenConverted = false;
++		let edit = line.get();
++		if (STATE.CONFIG.convert && (0, regex_1.isScssOrCss)(line.get()) && !(0, regex_1.isComment)(line.get())) {
++			const convertRes = (0, format_convert_1.convertScssOrCss)(line.get(), STATE);
++			STATE.CONTEXT.convert.lastSelector = convertRes.lastSelector;
++			line.set(convertRes.text);
++			STATE.LOCAL_CONTEXT.indentation = (0, utility_1.getIndentationOffset)(line.get(), STATE.CONTEXT.indentation, STATE.CONFIG.tabSize);
++			hasBeenConverted = true;
++		}
++		let offset = STATE.LOCAL_CONTEXT.isAdjacentSelector && STATE.CONTEXT.wasLastLineSelector ? STATE.CONTEXT.lastSelectorIndentation - STATE.LOCAL_CONTEXT.indentation.distance : (0, utility_1.getBlockHeaderOffset)(STATE.LOCAL_CONTEXT.indentation.distance, STATE.CONFIG.tabSize, STATE.CONTEXT.indentation, STATE.LOCAL_CONTEXT.isReset);
++		if (STATE.LOCAL_CONTEXT.isElse && STATE.CONTEXT.if.isIn) offset = STATE.CONTEXT.if.indentation - STATE.CONFIG.tabSize - STATE.LOCAL_CONTEXT.indentation.distance;
++		else if (!STATE.LOCAL_CONTEXT.isIf) STATE.CONTEXT.keyframes.isIn = STATE.LOCAL_CONTEXT.isAtKeyframes || STATE.LOCAL_CONTEXT.isAtKeyframesPoint;
++		STATE.CONTEXT.allowSpace = false;
++		if (!hasBeenConverted && STATE.LOCAL_CONTEXT.isClassOrIdSelector) STATE.CONTEXT.convert.lastSelector = "";
++		STATE.CONTEXT.convert.wasLastLineCss = hasBeenConverted;
++		if (STATE.CONTEXT.firstCommaHeader.exists) offset = STATE.CONTEXT.firstCommaHeader.distance - STATE.LOCAL_CONTEXT.indentation.distance;
++		if (line.get().trim().endsWith(",")) {
++			if (STATE.CONTEXT.firstCommaHeader.exists !== true) STATE.CONTEXT.firstCommaHeader.distance = STATE.LOCAL_CONTEXT.indentation.distance + offset;
++			STATE.CONTEXT.firstCommaHeader.exists = true;
++		} else STATE.CONTEXT.firstCommaHeader.exists = false;
++		if (STATE.CONFIG.insertSpaces ? /\t/g.test(line.get()) : / /g.test(line.get())) {
++			line.set((0, utility_1.replaceSpacesOrTabs)(line.get(), STATE));
++			replaceSpaceOrTabs = true;
++		}
++		if (offset !== 0) {
++			edit = (0, utility_1.replaceWithOffset)(line.get(), offset, STATE).trimRight();
++			(0, logger_1.PushDebugInfo)({
++				title: "BLOCK HEADER: MOVE",
++				lineNumber: STATE.currentLine,
++				oldLineText: STATE.lines[STATE.currentLine],
++				newLineText: edit,
++				debug: STATE.CONFIG.debug,
++				replaceSpaceOrTabs,
++				offset
++			});
++		} else {
++			edit = line.get().trimRight();
++			(0, logger_1.PushDebugInfo)({
++				title: "BLOCK HEADER: DEFAULT",
++				lineNumber: STATE.currentLine,
++				oldLineText: STATE.lines[STATE.currentLine],
++				newLineText: edit,
++				debug: STATE.CONFIG.debug,
++				replaceSpaceOrTabs
++			});
++		}
++		STATE.CONTEXT.lastSelectorIndentation = Math.max(STATE.LOCAL_CONTEXT.indentation.distance + offset, 0);
++		if (STATE.LOCAL_CONTEXT.isReset) STATE.CONTEXT.indentation = Math.max(0, STATE.LOCAL_CONTEXT.indentation.distance + offset);
++		else STATE.CONTEXT.indentation = Math.max(0, STATE.LOCAL_CONTEXT.indentation.distance + offset + STATE.CONFIG.tabSize);
++		if (STATE.LOCAL_CONTEXT.isAtKeyframes) STATE.CONTEXT.keyframes.indentation = STATE.CONTEXT.indentation;
++		if (STATE.LOCAL_CONTEXT.isIf) {
++			STATE.CONTEXT.if.indentation = STATE.CONTEXT.indentation;
++			STATE.CONTEXT.if.isIn = true;
++		} else STATE.CONTEXT.if.isIn = false;
++		STATE.CONTEXT.wasLastHeaderIncludeMixin = STATE.LOCAL_CONTEXT.isInclude;
++		STATE.CONTEXT.wasLastHeaderNestedProp = STATE.LOCAL_CONTEXT.isNestPropHead;
++		return edit;
++	}
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/sassTextLine.js
++var require_sassTextLine = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.SassTextLine = void 0;
++	const regex_1 = require_regex$1();
++	var SassTextLine = class {
++		text;
++		isEmptyOrWhitespace;
++		constructor(text) {
++			this.text = text;
++			this.isEmptyOrWhitespace = (0, regex_1.isEmptyOrWhitespace)(text);
++		}
++		/**Sets the text of the line. */
++		set(text) {
++			this.text = text;
++		}
++		/**Gets the text of the line. */
++		get() {
++			return this.text;
++		}
++	};
++	exports.SassTextLine = SassTextLine;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/config.js
++var require_config = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.defaultSassFormatterConfig = void 0;
++	exports.defaultSassFormatterConfig = {
++		insertSpaces: true,
++		tabSize: 2,
++		convert: true,
++		debug: false,
++		deleteEmptyRows: true,
++		deleteWhitespace: true,
++		setPropertySpace: true,
++		lineEnding: "LF"
++	};
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/state.js
++var require_state = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.FormattingState = void 0;
++	const config_1 = require_config();
++	var FormattingState = class {
++		lines = [];
++		/** Current line index. */
++		currentLine = 0;
++		LINE_ENDING = "\n";
++		/** Formatting Result */
++		RESULT = "";
++		/** Context For Each Line. */
++		LOCAL_CONTEXT = {
++			isAdjacentSelector: false,
++			isHtmlTag: false,
++			isReset: false,
++			indentation: {
++				distance: 0,
++				offset: 0
++			},
++			isAtExtend: false,
++			isAnd: false,
++			isClassOrIdSelector: false,
++			isIf: false,
++			isElse: false,
++			isAtKeyframes: false,
++			isAtKeyframesPoint: false,
++			isProp: false,
++			isInterpolatedProp: false,
++			isInclude: false,
++			isVariable: false,
++			isImport: false,
++			isNestPropHead: false
++		};
++		CONTEXT = {
++			if: {
++				isIn: false,
++				indentation: 0
++			},
++			blockCommentDistance: 0,
++			wasLastHeaderIncludeMixin: false,
++			wasLastHeaderNestedProp: false,
++			isFirstLine: true,
++			isLastLine: false,
++			allowSpace: false,
++			isInBlockComment: false,
++			ignoreLine: false,
++			lastSelectorIndentation: 0,
++			wasLastLineSelector: false,
++			convert: {
++				lastSelector: "",
++				wasLastLineCss: false
++			},
++			keyframes: {
++				isIn: false,
++				indentation: 0
++			},
++			indentation: 0,
++			firstCommaHeader: {
++				exists: false,
++				distance: 0
++			}
++		};
++		CONFIG = config_1.defaultSassFormatterConfig;
++		setLocalContext(context) {
++			this.LOCAL_CONTEXT = context;
++		}
++	};
++	exports.FormattingState = FormattingState;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/sass-formatter@0.8.0/node_modules/sass-formatter/dist/index.js
++var require_dist = /* @__PURE__ */ __commonJSMin(((exports) => {
++	Object.defineProperty(exports, "__esModule", { value: true });
++	exports.SassFormatter = exports.defaultSassFormatterConfig = void 0;
++	const format_atForwardOrAtUse_1 = require_format_atForwardOrAtUse();
++	const format_blockComment_1 = require_format_blockComment();
++	const format_header_1 = require_format_header();
++	const format_property_1 = require_format_property();
++	const logger_1 = require_logger();
++	const regex_1 = require_regex$1();
++	const sassTextLine_1 = require_sassTextLine();
++	const state_1 = require_state();
++	const utility_1 = require_utility();
++	var config_1 = require_config();
++	Object.defineProperty(exports, "defaultSassFormatterConfig", {
++		enumerable: true,
++		get: function() {
++			return config_1.defaultSassFormatterConfig;
++		}
++	});
++	var SassFormatter = class {
++		static Format(text, config) {
++			const STATE = new state_1.FormattingState();
++			STATE.lines = text.split(/\r?\n/);
++			STATE.CONFIG = {
++				...STATE.CONFIG,
++				...config
++			};
++			STATE.LINE_ENDING = STATE.CONFIG.lineEnding === "LF" ? "\n" : "\r\n";
++			for (let i = 0; i < STATE.lines.length; i++) {
++				STATE.currentLine = i;
++				this.formatLine(new sassTextLine_1.SassTextLine(STATE.lines[i]), STATE);
++			}
++			if (!STATE.RESULT.endsWith(STATE.LINE_ENDING)) this.addNewLine(STATE);
++			if (STATE.CONFIG.debug) {
++				(0, logger_1.LogDebugResult)(STATE.RESULT);
++				(0, logger_1.ResetDebugLog)();
++			}
++			return STATE.RESULT;
++		}
++		static formatLine(line, STATE) {
++			if ((0, regex_1.isBlockCommentStart)(line.get())) {
++				STATE.CONTEXT.isInBlockComment = true;
++				STATE.CONTEXT.blockCommentDistance = (0, regex_1.getDistance)(line.get(), STATE.CONFIG.tabSize);
++			} else if (!line.isEmptyOrWhitespace && STATE.CONTEXT.isInBlockComment && STATE.CONTEXT.blockCommentDistance >= (0, regex_1.getDistance)(line.get(), STATE.CONFIG.tabSize)) {
++				STATE.CONTEXT.isInBlockComment = false;
++				STATE.CONTEXT.blockCommentDistance = 0;
++			}
++			if (STATE.CONTEXT.ignoreLine) {
++				STATE.CONTEXT.ignoreLine = false;
++				this.addNewLine(STATE);
++				STATE.RESULT += line.get();
++				(0, logger_1.PushDebugInfo)({
++					title: "IGNORED",
++					lineNumber: STATE.currentLine,
++					oldLineText: line.get(),
++					debug: STATE.CONFIG.debug,
++					newLineText: "NULL"
++				});
++			} else if (STATE.CONTEXT.isInBlockComment) this.handleCommentBlock(STATE, line);
++			else if ((0, regex_1.isIgnore)(line.get())) {
++				STATE.CONTEXT.ignoreLine = true;
++				this.addNewLine(STATE);
++				STATE.RESULT += line.get();
++				(0, logger_1.PushDebugInfo)({
++					title: "IGNORE",
++					lineNumber: STATE.currentLine,
++					oldLineText: line.get(),
++					debug: STATE.CONFIG.debug,
++					newLineText: "NULL"
++				});
++			} else {
++				if ((0, regex_1.isSassSpace)(line.get())) STATE.CONTEXT.allowSpace = true;
++				if (line.isEmptyOrWhitespace || (STATE.CONFIG.convert ? (0, regex_1.isBracketOrWhitespace)(line.get()) : false)) this.handleEmptyLine(STATE, line);
++				else {
++					STATE.setLocalContext({
++						isAtKeyframesPoint: (0, utility_1.isKeyframePointAndSetIndentation)(line, STATE),
++						indentation: (0, utility_1.getIndentationOffset)(line.get(), STATE.CONTEXT.indentation, STATE.CONFIG.tabSize),
++						isIf: /[\t ]*@if/i.test(line.get()),
++						isElse: /[\t ]*@else/i.test(line.get()),
++						isAtKeyframes: (0, regex_1.isKeyframes)(line.get()),
++						isReset: (0, regex_1.isReset)(line.get()),
++						isAnd: (0, regex_1.isAnd)(line.get()),
++						isProp: (0, regex_1.isProperty)(line.get()),
++						isAdjacentSelector: (0, regex_1.isAdjacentSelector)(line.get()),
++						isHtmlTag: (0, regex_1.isHtmlTag)(line.get()),
++						isClassOrIdSelector: (0, regex_1.isClassOrId)(line.get()),
++						isAtExtend: (0, regex_1.isAtExtend)(line.get()),
++						isInterpolatedProp: (0, regex_1.isInterpolatedProperty)(line.get()),
++						isInclude: (0, regex_1.isInclude)(line.get()),
++						isVariable: (0, regex_1.isVar)(line.get()),
++						isImport: (0, regex_1.isAtImport)(line.get()),
++						isNestPropHead: /^[\t ]* \S*[\t ]*:[\t ]*\{?$/.test(line.get())
++					});
++					if (STATE.CONFIG.debug) {
++						if (/\/\/[\t ]*info[\t ]*$/.test(line.get())) (0, logger_1.SetDebugLOCAL_CONTEXT)(STATE.LOCAL_CONTEXT);
++					}
++					if ((0, regex_1.isAtForwardOrAtUse)(line.get())) {
++						this.addNewLine(STATE);
++						STATE.RESULT += (0, format_atForwardOrAtUse_1.FormatAtForwardOrAtUse)(line, STATE);
++					} else if (this.isBlockHeader(line, STATE)) {
++						this.addNewLine(STATE);
++						STATE.RESULT += (0, format_header_1.FormatBlockHeader)(line, STATE);
++					} else if (this.isProperty(STATE)) {
++						STATE.CONTEXT.firstCommaHeader.exists = false;
++						this.addNewLine(STATE);
++						STATE.RESULT += (0, format_property_1.FormatProperty)(line, STATE);
++					} else {
++						(0, logger_1.PushDebugInfo)({
++							title: "NO CHANGE",
++							lineNumber: STATE.currentLine,
++							oldLineText: line.get(),
++							debug: STATE.CONFIG.debug,
++							newLineText: "NULL"
++						});
++						this.addNewLine(STATE);
++						STATE.RESULT += line.get();
++					}
++					STATE.CONTEXT.wasLastLineSelector = STATE.LOCAL_CONTEXT.isClassOrIdSelector || STATE.LOCAL_CONTEXT.isAdjacentSelector || STATE.LOCAL_CONTEXT.isHtmlTag;
++				}
++			}
++		}
++		static handleCommentBlock(STATE, line) {
++			this.addNewLine(STATE);
++			const edit = line.isEmptyOrWhitespace ? "" : (0, format_blockComment_1.FormatHandleBlockComment)(line.get(), STATE);
++			STATE.RESULT += edit;
++			if ((0, regex_1.isBlockCommentEnd)(line.get())) STATE.CONTEXT.isInBlockComment = false;
++			(0, logger_1.PushDebugInfo)({
++				title: "COMMENT BLOCK",
++				lineNumber: STATE.currentLine,
++				oldLineText: STATE.lines[STATE.currentLine],
++				newLineText: edit,
++				debug: STATE.CONFIG.debug
++			});
++		}
++		static handleEmptyLine(STATE, line) {
++			STATE.CONTEXT.firstCommaHeader.exists = false;
++			let pass = true;
++			/*istanbul ignore else */
++			if (STATE.CONFIG.deleteEmptyRows && !STATE.CONTEXT.isLastLine) {
++				const nextLine = new sassTextLine_1.SassTextLine(STATE.lines[STATE.currentLine + 1]);
++				const compact = !(0, regex_1.isProperty)(nextLine.get());
++				const nextLineWillBeDeleted = STATE.CONFIG.convert ? (0, regex_1.isBracketOrWhitespace)(nextLine.get()) : false;
++				if (compact && !STATE.CONTEXT.allowSpace && nextLine.isEmptyOrWhitespace || compact && !STATE.CONTEXT.allowSpace && nextLineWillBeDeleted) {
++					(0, logger_1.PushDebugInfo)({
++						title: "EMPTY LINE: DELETE",
++						nextLine,
++						lineNumber: STATE.currentLine,
++						oldLineText: STATE.lines[STATE.currentLine],
++						newLineText: "DELETED",
++						debug: STATE.CONFIG.debug
++					});
++					pass = false;
++				}
++			}
++			if (line.get().length > 0 && pass) {
++				(0, logger_1.PushDebugInfo)({
++					title: "EMPTY LINE: WHITESPACE",
++					lineNumber: STATE.currentLine,
++					oldLineText: STATE.lines[STATE.currentLine],
++					newLineText: "NEWLINE",
++					debug: STATE.CONFIG.debug
++				});
++				this.addNewLine(STATE);
++			} else if (pass) {
++				(0, logger_1.PushDebugInfo)({
++					title: "EMPTY LINE",
++					lineNumber: STATE.currentLine,
++					oldLineText: STATE.lines[STATE.currentLine],
++					newLineText: "NEWLINE",
++					debug: STATE.CONFIG.debug
++				});
++				this.addNewLine(STATE);
++			}
++		}
++		static isBlockHeader(line, STATE) {
++			return !STATE.LOCAL_CONTEXT.isInterpolatedProp && !STATE.LOCAL_CONTEXT.isAtExtend && !STATE.LOCAL_CONTEXT.isImport && (STATE.LOCAL_CONTEXT.isAdjacentSelector || STATE.LOCAL_CONTEXT.isReset || STATE.LOCAL_CONTEXT.isAnd || STATE.LOCAL_CONTEXT.isHtmlTag && !/^[\t ]*style[\t ]*:/.test(line.get()) || STATE.LOCAL_CONTEXT.isInclude || STATE.LOCAL_CONTEXT.isNestPropHead || (0, regex_1.isPseudo)(line.get()) || (0, regex_1.isSelectorOperator)(line.get()) || (0, regex_1.isStar)(line.get()) || (0, regex_1.isBracketSelector)(line.get()) || (0, regex_1.isCssSelector)(line.get()));
++		}
++		static isProperty(STATE) {
++			return STATE.LOCAL_CONTEXT.isImport || STATE.LOCAL_CONTEXT.isAtExtend || STATE.LOCAL_CONTEXT.isVariable || STATE.LOCAL_CONTEXT.isInterpolatedProp || STATE.LOCAL_CONTEXT.isProp || STATE.LOCAL_CONTEXT.isAtKeyframesPoint;
++		}
++		/** Adds new Line If not first line. */
++		static addNewLine(STATE) {
++			if (!STATE.CONTEXT.isFirstLine) STATE.RESULT += STATE.LINE_ENDING;
++			else STATE.CONTEXT.isFirstLine = false;
++		}
++	};
++	exports.SassFormatter = SassFormatter;
++}));
++//#endregion
++//#region ../../node_modules/.pnpm/prettier-plugin-astro@1.1.0_@emnapi+core@2.0.0-alpha.5_@emnapi+runtime@2.0.0-alpha.5_prettier@3.9.9/node_modules/prettier-plugin-astro/dist/index.js
++init_prettier();
++var import_dist = require_dist();
++const options = {
++	astroAllowShorthand: {
++		category: "Astro",
++		type: "boolean",
++		description: "Choose whether matching identifier attributes are normalized to shorthand or explicit form, when unset the form that was written stay as-is."
++	},
++	astroSkipFrontmatter: {
++		category: "Astro",
++		type: "boolean",
++		default: false,
++		description: "Skips the formatting of the frontmatter."
++	},
++	astroCompressHTML: {
++		category: "Astro",
++		type: "choice",
++		default: "jsx",
++		description: "Mirror of Astro's compressHTML config. Tells the formatter which whitespace the compiler will collapse.",
++		choices: [
++			{
++				value: "jsx",
++				description: "Astro's default since 7.0.0. Whitespace runs containing a newline are dropped; same-line spaces are content."
++			},
++			{
++				value: "html",
++				description: "Browser HTML whitespace rules. Equivalent to compressHTML: true."
++			},
++			{
++				value: "none",
++				description: "No collapsing. Equivalent to compressHTML: false."
++			},
++			{
++				value: true,
++				redirect: "html"
++			},
++			{
++				value: false,
++				redirect: "none"
++			}
++		]
++	}
++};
++const synthetic = Symbol.for("prettier-plugin-astro.synthetic");
++const ownChildren = Symbol.for("prettier-plugin-astro.ownChildren");
++const astroVisitorKeys = {
++	AstroRoot: ["frontmatter", "template"],
++	AstroFrontmatter: ["program"],
++	AstroScript: ["program"],
++	AstroDoctype: [],
++	AstroComment: []
++};
++const isNode = (value) => typeof value === "object" && value !== null && typeof value.type === "string";
++function tagNameOf(node) {
++	if (node.type !== "JSXElement") return null;
++	const name = node.openingElement?.name;
++	return name?.type === "JSXIdentifier" ? name.name : null;
++}
++function jsxNameOf(name) {
++	if (name.type === "JSXIdentifier") return name.name;
++	if (name.type !== "JSXMemberExpression") return null;
++	const object = jsxNameOf(name.object);
++	const property = jsxNameOf(name.property);
++	return object !== null && property !== null ? `${object}.${property}` : null;
++}
++const isComponentName = (name) => name === null || /^[A-Z]/.test(name) || name.includes(".");
++function attributesOf(node) {
++	return node.openingElement?.attributes ?? [];
++}
++function attributeNamed(node, name) {
++	return attributesOf(node).find((attribute) => attribute.type === "JSXAttribute" && attribute.name.name === name);
++}
++function attributeStringValue(node, name) {
++	const value = attributeNamed(node, name)?.value;
++	return value?.type === "Literal" && typeof value.value === "string" ? value.value : null;
++}
++const hasAttribute = (node, name) => attributeNamed(node, name) !== void 0;
++const hasSetDirective = (node) => hasAttribute(node, "set:html") || hasAttribute(node, "set:text");
++function childrenOf(node) {
++	if (node.type === "JSXElement" || node.type === "JSXFragment") return node.astroChildren ?? node.children;
++	return null;
++}
++function takeOverChildren(node) {
++	const children = node.children;
++	if (children.length === 0) return;
++	node.astroChildren = children;
++	node.children = [{
++		type: "JSXExpressionContainer",
++		start: node.start,
++		end: node.end,
++		[ownChildren]: true,
++		expression: {
++			type: "TemplateLiteral",
++			start: node.start,
++			end: node.end,
++			quasis: [],
++			expressions: []
++		}
++	}];
++}
++function walk(node, visit) {
++	if (Array.isArray(node)) {
++		for (const item of node) walk(item, visit);
++		return;
++	}
++	if (!isNode(node)) return;
++	visit(node);
++	for (const key of Object.keys(node)) if (key !== "type") walk(node[key], visit);
++}
++const rawTextElements = /* @__PURE__ */ new Set([
++	"pre",
++	"listing",
++	"iframe",
++	"noembed",
++	"noframes",
++	"math",
++	"plaintext",
++	"script",
++	"style",
++	"textarea",
++	"title",
++	"xmp"
++]);
++const voidElements = /* @__PURE__ */ new Set([
++	"area",
++	"base",
++	"basefont",
++	"bgsound",
++	"br",
++	"col",
++	"command",
++	"embed",
++	"frame",
++	"hr",
++	"image",
++	"img",
++	"input",
++	"isindex",
++	"keygen",
++	"link",
++	"menuitem",
++	"meta",
++	"nextid",
++	"param",
++	"source",
++	"track",
++	"wbr"
++]);
++const cssDisplay = {
++	area: "none",
++	base: "none",
++	basefont: "none",
++	datalist: "none",
++	head: "none",
++	link: "none",
++	meta: "none",
++	noembed: "none",
++	noframes: "none",
++	param: "block",
++	rp: "none",
++	script: "block",
++	style: "none",
++	template: "inline",
++	title: "none",
++	html: "block",
++	body: "block",
++	address: "block",
++	blockquote: "block",
++	center: "block",
++	dialog: "block",
++	div: "block",
++	figure: "block",
++	figcaption: "block",
++	footer: "block",
++	form: "block",
++	header: "block",
++	hr: "block",
++	legend: "block",
++	listing: "block",
++	main: "block",
++	p: "block",
++	plaintext: "block",
++	pre: "block",
++	search: "block",
++	xmp: "block",
++	slot: "contents",
++	ruby: "ruby",
++	rt: "ruby-text",
++	article: "block",
++	aside: "block",
++	h1: "block",
++	h2: "block",
++	h3: "block",
++	h4: "block",
++	h5: "block",
++	h6: "block",
++	hgroup: "block",
++	nav: "block",
++	section: "block",
++	dir: "block",
++	dd: "block",
++	dl: "block",
++	dt: "block",
++	menu: "block",
++	ol: "block",
++	ul: "block",
++	li: "list-item",
++	table: "table",
++	caption: "table-caption",
++	colgroup: "table-column-group",
++	col: "table-column",
++	thead: "table-header-group",
++	tbody: "table-row-group",
++	tfoot: "table-footer-group",
++	tr: "table-row",
++	td: "table-cell",
++	th: "table-cell",
++	input: "inline-block",
++	button: "inline-block",
++	fieldset: "block",
++	details: "block",
++	summary: "block",
++	marquee: "inline-block",
++	source: "block",
++	track: "block",
++	meter: "inline-block",
++	progress: "inline-block",
++	object: "inline-block",
++	video: "inline-block",
++	audio: "inline-block",
++	select: "inline-block",
++	option: "block",
++	optgroup: "block"
++};
++const inlineLevel = /* @__PURE__ */ new Set([
++	"inline",
++	"inline-block",
++	"ruby",
++	"ruby-text",
++	"contents"
++]);
++function displayOfTag(tag) {
++	return cssDisplay[tag] ?? "inline";
++}
++function isInlineDisplay(display) {
++	return inlineLevel.has(display);
++}
++const { group: group$3, ifBreak, indent: indent$3, join: join$1, line: line$2, softline: softline$3 } = builders;
++function manualDedent(input) {
++	let minTabSize = Infinity;
++	let result = input;
++	result = result.replace(/\r\n/g, "\n");
++	let char = "";
++	for (const row of result.split("\n")) {
++		if (!row) continue;
++		if (row[0] && /^\S/.test(row[0])) {
++			minTabSize = 0;
++			break;
++		}
++		const match = /^(\s+)\S+/.exec(row);
++		if (match) {
++			if (match[1] && !char) char = match[1][0];
++			if (match[1].length < minTabSize) minTabSize = match[1].length;
++		}
++	}
++	if (minTabSize > 0 && Number.isFinite(minTabSize)) result = result.replace(new RegExp(`^${new Array(minTabSize + 1).join(char)}`, "gm"), "");
++	return {
++		tabSize: minTabSize === Infinity ? 0 : minTabSize,
++		char,
++		result
++	};
++}
++function printSrcset(value) {
++	const candidates = parseSrcset(decodeQuoteEntities(value));
++	const descriptorUnits = {
++		width: "w",
++		height: "h",
++		density: "x"
++	};
++	const descriptorTypes = Object.keys(descriptorUnits).filter((type) => candidates.some((candidate) => candidate[type]));
++	if (descriptorTypes.length > 1) throw new Error("Mixed descriptor in srcset is not supported");
++	const descriptorType = descriptorTypes[0];
++	const unit = descriptorType ? descriptorUnits[descriptorType] : "";
++	const urls = candidates.map((candidate) => candidate.source.value);
++	const widestUrl = Math.max(...urls.map((url) => url.length));
++	const descriptors = candidates.map((candidate) => descriptorType && candidate[descriptorType] ? String(candidate[descriptorType].value) : "");
++	const descriptorLeftLengths = descriptors.map((descriptor) => {
++		const decimal = descriptor.indexOf(".");
++		return decimal === -1 ? descriptor.length : decimal;
++	});
++	const widestDescriptorLeft = Math.max(...descriptorLeftLengths);
++	const printed = urls.map((url, index) => {
++		const parts = [url.replaceAll("\"", "&quot;")];
++		const descriptor = descriptors[index];
++		if (descriptor) {
++			const padding = widestUrl - url.length + 1 + widestDescriptorLeft - descriptorLeftLengths[index];
++			parts.push(ifBreak(" ".repeat(padding), " "), descriptor + unit);
++		}
++		return parts;
++	});
++	return group$3([indent$3([softline$3, join$1([",", line$2], printed)]), softline$3]);
++}
++const decodeQuoteEntities = (text) => text.replaceAll("&apos;", "'").replaceAll("&quot;", "\"");
++function printClassNames(value) {
++	return value.trim().split(/[\r\n]+/).map((row) => {
++		const spaces = /^\s+/.exec(row);
++		return (spaces ? spaces[0] : "") + row.trim().split(/\s+/).join(" ");
++	}).join("\n");
++}
++const leadingWhitespace$1 = /^[\t\n\f\r ]+/;
++const trailingWhitespace$1 = /[\t\n\f\r ]+$/;
++const hasNewline = (run) => /[\n\r]/.test(run);
++const isText = (node) => node?.type === "JSXText";
++const isComment = (node) => node?.type === "AstroComment";
++const rawTextOf = (node) => node.raw ?? "";
++const isWhitespaceOnly = (node) => isText(node) && rawTextOf(node).trim().length === 0;
++function opensRawSubtree(node) {
++	if (node.type !== "JSXElement") return false;
++	if (node.astroPreserveWhitespace) return true;
++	if (hasAttribute(node, "is:raw")) return true;
++	const tag = tagNameOf(node);
++	return tag !== null && !isComponentName(tag) && rawTextElements.has(tag);
++}
++const isExtractedStyle = (node) => node !== null && tagNameOf(node) === "style" && !hasAttribute(node, "is:inline");
++function displayOf(node) {
++	if (node.type !== "JSXElement") return "inline";
++	const tag = tagNameOf(node);
++	if (tag === null || isComponentName(tag) || tag.includes("-")) return "inline";
++	if (node.astroSvg) return tag === "svg" ? "inline-block" : node.astroSvgText ? "inline" : "block";
++	return displayOfTag(tag);
++}
++const isBlockBox = (node) => node !== null && node.type !== "JSXText" && !isInlineDisplay(displayOf(node));
++const swallowsEdgeWhitespace = (node) => {
++	const display = displayOf(node);
++	return display === "inline-block" || !isInlineDisplay(display);
++};
++const breaksOwnChildren = /* @__PURE__ */ new Set([
++	"html",
++	"head",
++	"ul",
++	"ol",
++	"select"
++]);
++const breaksOwnContent = /* @__PURE__ */ new Set([
++	"body",
++	"script",
++	"style"
++]);
++function breaksChildren(node) {
++	const tag = node.type === "JSXElement" ? tagNameOf(node) : null;
++	if (tag === null || isComponentName(tag)) return false;
++	if (breaksOwnChildren.has(tag)) return true;
++	const display = displayOfTag(tag);
++	return display.startsWith("table") && display !== "table-cell";
++}
++const hasElementChild = (node) => childrenOf(node)?.some((child) => child.type === "JSXElement") ?? false;
++const runBefore = (node) => node && isText(node) ? trailingWhitespace$1.exec(rawTextOf(node))?.[0] ?? "" : "";
++const runAfter = (node) => node && isText(node) ? leadingWhitespace$1.exec(rawTextOf(node))?.[0] ?? "" : "";
++function sitsOnItsOwnLine(container, child) {
++	if (child === null || isText(child)) return false;
++	const children = childrenOf(container);
++	const index = children?.indexOf(child) ?? -1;
++	if (index === -1) return false;
++	return hasNewline(runBefore(children[index - 1])) && hasNewline(runAfter(children[index + 1]));
++}
++const hasChildOnItsOwnLine = (node) => childrenOf(node)?.some((child) => sitsOnItsOwnLine(node, child)) ?? false;
++function forcesBreak(node) {
++	if (breaksChildren(node)) return true;
++	const children = childrenOf(node);
++	if (children === null) return false;
++	const tag = node.type === "JSXElement" ? tagNameOf(node) : null;
++	if (tag !== null && breaksOwnContent.has(tag)) return true;
++	return children.some(hasElementChild) || hasChildOnItsOwnLine(node);
++}
++const isBlankRun = (run) => /[\n\r][^\S\n\r]*[\n\r]/.test(run);
++const isEmptySlot = (node) => node.type === "JSXElement" && tagNameOf(node) === "slot" && (childrenOf(node)?.length ?? 0) === 0;
++function canRenderEmpty(container) {
++	const tag = container.type === "JSXElement" ? tagNameOf(container) : null;
++	if (tag === null || isComponentName(tag)) return false;
++	const children = childrenOf(container);
++	if (children === null) return false;
++	const content = children.filter((child) => !isWhitespaceOnly(child) && !isComment(child));
++	return children.some((child) => isComment(child) || isEmptySlot(child)) && content.every(isEmptySlot);
++}
++function sidesFor(boundary) {
++	if (boundary.edge) return [null];
++	const sides = [];
++	if (boundary.prev === null) sides.push(null);
++	else if (boundary.prev.type !== "JSXText") sides.push(boundary.prev);
++	if (boundary.next === null) sides.push(null);
++	else if (boundary.next.type !== "JSXText") sides.push(boundary.next);
++	return sides.length > 0 ? sides : null;
++}
++function blankContentIsFree(container, isRoot, settings) {
++	const tag = container.type === "JSXElement" ? tagNameOf(container) : null;
++	if (tag === "slot") return false;
++	if (tag !== null && !isComponentName(tag) && tag.includes("-")) return false;
++	const boundary = {
++		container,
++		context: {
++			...settings,
++			isRoot,
++			inRaw: false
++		},
++		prev: null,
++		next: null,
++		sides: [null],
++		atStart: true,
++		atEnd: true,
++		loneChild: true
++	};
++	return isFree(boundary) || mayAlterRenderedWhitespace(boundary);
++}
++function separatorFor(run, boundary, settings) {
++	const sides = sidesFor(boundary);
++	const internal = {
++		container: boundary.container,
++		context: {
++			...settings,
++			isRoot: boundary.isRoot,
++			inRaw: false
++		},
++		prev: boundary.prev,
++		next: boundary.next,
++		sides: sides ?? [],
++		atStart: boundary.prev === null,
++		atEnd: boundary.next === null,
++		loneChild: boundary.loneChild
++	};
++	if (isSlotFallback(internal)) return run === "" ? "none" : "space";
++	const free = isFree(internal) || sides !== null && mayAlterRenderedWhitespace(internal);
++	if (boundary.edge) {
++		if (settings.sensitivity !== "ignore" && canRenderEmpty(boundary.container)) return run === "" ? "none" : "space";
++		if (free) return "soft";
++		return run === "" ? "none" : "space";
++	}
++	if (isBlankRun(run)) return "blank";
++	if (settings.sensitivity === "ignore") return "break";
++	if (hasNewline(run) && (sitsOnItsOwnLine(boundary.container, boundary.prev) || sitsOnItsOwnLine(boundary.container, boundary.next))) return "break";
++	if (run !== "" && (isComment(boundary.prev) || isComment(boundary.next))) return "break";
++	if (free) return isBlockBox(boundary.prev) || isBlockBox(boundary.next) ? "break" : "soft";
++	return run === "" ? "none" : "space";
++}
++function normalizeWhitespace(template, options) {
++	visit(template, {
++		...options,
++		isRoot: true,
++		inRaw: false
++	});
++}
++function visit(container, context) {
++	const children = childrenOf(container);
++	if (children === null) return;
++	if (!context.inRaw) collapseRuns(container, children, context);
++	for (const child of children) visit(child, {
++		...context,
++		isRoot: false,
++		inRaw: context.inRaw || opensRawSubtree(child)
++	});
++}
++function collapseRuns(container, children, context) {
++	const dropped = /* @__PURE__ */ new Set();
++	for (const [index, child] of children.entries()) {
++		if (!isText(child)) continue;
++		const prev = children[index - 1] ?? null;
++		const next = children[index + 1] ?? null;
++		if (isWhitespaceOnly(child)) {
++			const decision = decide(rawTextOf(child), {
++				container,
++				context,
++				prev,
++				next,
++				sides: [prev, next],
++				atStart: prev === null,
++				atEnd: next === null,
++				loneChild: children.length === 1
++			});
++			const text = resolve(rawTextOf(child), decision);
++			if (text === "") dropped.add(child);
++			else setText(child, text);
++			continue;
++		}
++		const raw = rawTextOf(child);
++		const lead = leadingWhitespace$1.exec(raw)?.[0] ?? "";
++		const trail = trailingWhitespace$1.exec(raw)?.[0] ?? "";
++		const body = raw.slice(lead.length, raw.length - trail.length);
++		const leadDecision = decide(lead, {
++			container,
++			context,
++			prev,
++			next: child,
++			sides: [prev],
++			atStart: prev === null,
++			atEnd: false,
++			loneChild: false
++		});
++		const trailDecision = decide(trail, {
++			container,
++			context,
++			prev: child,
++			next,
++			sides: [next],
++			atStart: false,
++			atEnd: next === null,
++			loneChild: false
++		});
++		setText(child, resolve(lead, leadDecision) + body + resolve(trail, trailDecision));
++	}
++	if (dropped.size > 0) {
++		const kept = children.filter((child) => !dropped.has(child));
++		children.length = 0;
++		children.push(...kept);
++	}
++}
++function resolve(run, decision) {
++	if (decision === "drop") return hasNewline(run) ? run : "";
++	if (decision === "space") return " ";
++	return run;
++}
++function setText(node, text) {
++	node.raw = text;
++	node.value = text;
++}
++function decide(run, boundary) {
++	if (run === "") return "keep";
++	const { mode } = boundary.context;
++	if (isSlotFallback(boundary)) return "space";
++	if (boundary.context.sensitivity !== "ignore" && canRenderEmpty(boundary.container)) return "keep";
++	if (isFree(boundary)) return "drop";
++	if (mayAlterRenderedWhitespace(boundary)) return "drop";
++	if (mode === "jsx") return hasNewline(run) ? "keep" : "space";
++	return boundary.atStart || boundary.atEnd ? "space" : "keep";
++}
++function isFree(boundary) {
++	const { container, context, atStart, atEnd, loneChild } = boundary;
++	const { mode } = context;
++	if (context.isRoot && (atStart || atEnd)) return true;
++	if (container.type === "JSXElement" && hasSetDirective(container)) return true;
++	if (isExtractedStyle(boundary.prev) || isExtractedStyle(boundary.next)) return true;
++	const tag = container.type === "JSXElement" ? tagNameOf(container) : null;
++	if (loneChild && tag !== null && isComponentName(tag)) return true;
++	if (context.sensitivity !== "strict" && breaksChildren(container)) return true;
++	if (mode === "html") {
++		if (loneChild) return true;
++	}
++	return false;
++}
++function mayAlterRenderedWhitespace(boundary) {
++	const { sensitivity } = boundary.context;
++	if (sensitivity === "ignore") return true;
++	if (sensitivity === "strict") return false;
++	return boundary.sides.some((side) => side === null ? swallowsEdgeWhitespace(boundary.container) : isBlockBox(side));
++}
++function isSlotFallback(boundary) {
++	return boundary.container.type === "JSXElement" && tagNameOf(boundary.container) === "slot" && boundary.loneChild;
++}
++function parse$1(source, options) {
++	const { ast, diagnostics } = parse(source);
++	const failure = diagnostics.find((diagnostic) => diagnostic.severity === "error");
++	if (failure) throw syntaxError(failure);
++	stripParentheses(ast);
++	repairSpans(ast);
++	markAttributes(ast, source);
++	markSvgNamespace(ast);
++	applyPrettierIgnore(ast);
++	const body = ast.body;
++	const template = templateFragment(ast, body);
++	const settings = {
++		mode: options.astroCompressHTML,
++		sensitivity: options.htmlWhitespaceSensitivity
++	};
++	if (settings.mode === "jsx") normalizeWhitespace(template.node, settings);
++	else resolveBlankContainers(template.node, settings);
++	normalizeTagPairs(body, source);
++	if (settings.mode !== "jsx") claimChildren(template.node);
++	ast.template = template;
++	delete ast.body;
++	ast.comments = printableComments(ast);
++	return ast;
++}
++function syntaxError(diagnostic) {
++	const label = diagnostic.labels[0];
++	const line = label?.line ?? 1;
++	const column = (label?.column ?? 0) + 1;
++	const error = /* @__PURE__ */ new SyntaxError(`${diagnostic.text} (${line}:${column})`);
++	error.loc = { start: {
++		line,
++		column
++	} };
++	return error;
++}
++function stripParentheses(root) {
++	walk(root, (node) => {
++		for (const key of Object.keys(node)) {
++			const value = node[key];
++			if (Array.isArray(value)) for (const [index, item] of value.entries()) value[index] = unwrapParens(item);
++			else if (isNode(value)) node[key] = unwrapParens(value);
++		}
++	});
++}
++function unwrapParens(node) {
++	let current = node;
++	while (isNode(current)) if (current.type === "ParenthesizedExpression") current = current.expression;
++	else if (current.type === "TSParenthesizedType") current = current.typeAnnotation;
++	else break;
++	return current;
++}
++function repairSpans(root) {
++	walk(root, (node) => {
++		if (node.type !== "JSXElement") return;
++		const script = node.children.find((child) => child.type === "AstroScript");
++		if (!script) return;
++		script.start = node.openingElement.end;
++		script.end = node.closingElement?.start ?? node.end;
++	});
++}
++function markAttributes(root, source) {
++	walk(root, (node) => {
++		if (node.type !== "JSXElement") return;
++		const tag = tagNameOf(node);
++		const htmlElement = tag !== null && !isComponentName(tag);
++		for (const attribute of attributesOf(node)) {
++			if (attribute.type !== "JSXAttribute") continue;
++			const name = String(attribute.name.name).toLowerCase();
++			if (htmlElement && name === "style") attribute.astroStyleAttribute = true;
++			if ((tag === "img" || tag === "source") && name === "srcset") attribute.astroSrcsetAttribute = true;
++			markAttribute(attribute, source);
++		}
++	});
++}
++function markAttribute(node, source) {
++	const value = node.value;
++	if (!value) return;
++	if (value.type === "Literal" && typeof value.value === "string") {
++		const text = node.name.name === "class" ? printClassNames(value.value) : value.value;
++		if (value.raw === null || text !== value.value) {
++			value.value = text;
++			value.raw = `"${text.replaceAll("\"", "&quot;")}"`;
++		}
++		return;
++	}
++	if (value.type !== "JSXExpressionContainer") return;
++	if (source[node.start] === "{") node.astroShorthand = true;
++	if (source[value.start] === "`") node.astroBacktick = true;
++}
++function applyPrettierIgnore(root) {
++	walk(root, (node) => {
++		const children = node.type === "AstroRoot" ? node.body : childrenOf(node);
++		if (children === null) return;
++		for (const [index, child] of children.entries()) {
++			if (child.type !== "AstroComment") continue;
++			if (String(child.value).trim() !== "prettier-ignore") continue;
++			const target = children.slice(index + 1).find((sibling) => sibling.type !== "JSXText");
++			if (target) target.astroIgnored = true;
++		}
++	});
++}
++const svgTextElements = /* @__PURE__ */ new Set([
++	"text",
++	"textPath",
++	"tspan"
++]);
++function markSvgNamespace(root) {
++	const mark = (node, inText = false, inheritedPreserve = false) => {
++		node.astroSvg = true;
++		const textContent = inText || svgTextElements.has(tagNameOf(node) ?? "");
++		const whitespace = attributeStringValue(node, "xml:space");
++		const preserve = whitespace === "preserve" || inheritedPreserve && whitespace !== "default";
++		if (textContent) node.astroSvgText = true;
++		if (textContent && preserve) node.astroPreserveWhitespace = true;
++		for (const child of childrenOf(node) ?? []) {
++			if (child.type !== "JSXElement" || tagNameOf(child) === "foreignObject") continue;
++			mark(child, textContent, preserve);
++		}
++	};
++	walk(root, (node) => {
++		if (node.type === "JSXElement" && tagNameOf(node) === "svg") mark(node);
++	});
++}
++function templateFragment(root, body) {
++	const start = body[0]?.start ?? root.end;
++	const end = body.at(-1)?.end ?? root.end;
++	return {
++		type: "JsExpressionRoot",
++		start,
++		end,
++		node: {
++			type: "JSXFragment",
++			start,
++			end,
++			astroRoot: true,
++			openingFragment: {
++				type: "JSXOpeningFragment",
++				start,
++				end: start,
++				[synthetic]: true
++			},
++			children: body,
++			closingFragment: {
++				type: "JSXClosingFragment",
++				start: end,
++				end,
++				[synthetic]: true
++			}
++		}
++	};
++}
++function pairUp(node, tag) {
++	node.openingElement.selfClosing = false;
++	node.closingElement = {
++		type: "JSXClosingElement",
++		start: node.end,
++		end: node.end,
++		name: {
++			type: "JSXIdentifier",
++			name: tag,
++			start: node.end,
++			end: node.end
++		}
++	};
++}
++function printsNothing(child) {
++	const raw = String(child.raw ?? "");
++	return child.type === "JSXText" && raw.trim() === "" && /[\n\r]/.test(raw);
++}
++function normalizeTagPairs(body, source) {
++	walk(body, (node) => {
++		if (node.type !== "JSXElement") return;
++		const tag = tagNameOf(node);
++		if (tag === null) return;
++		const children = node.children;
++		const closing = node.closingElement;
++		const component = isComponentName(tag);
++		if (rawTextElements.has(tag) && !component) {
++			if (!closing) {
++				if (node.openingElement.selfClosing) children.length = 0;
++				else pairUp(node, tag);
++			} else if (source.slice(node.openingElement.end, closing.start).trim() === "") children.length = 0;
++			return;
++		}
++		const selfClosable = component || voidElements.has(tag) || tag === "slot" || hasSetDirective(node);
++		if (children.every(printsNothing) && selfClosable && closing) {
++			node.openingElement.selfClosing = true;
++			node.closingElement = null;
++		}
++	});
++}
++function resolveBlankContainers(template, settings) {
++	walk(template, (node) => {
++		if (node.type !== "JSXElement" && node.type !== "JSXFragment") return;
++		if (node.type === "JSXElement" && opensRawSubtree(node)) return;
++		const children = node.children;
++		if (children.length === 0) return;
++		if (!children.every((child) => child.type === "JSXText" && String(child.raw ?? "").trim() === "")) return;
++		const free = blankContentIsFree(node, node.astroRoot === true, settings);
++		children.length = 0;
++		if (!free) children.push({
++			type: "JSXText",
++			start: node.start,
++			end: node.start,
++			raw: " ",
++			value: " "
++		});
++	});
++}
++function claimChildren(template) {
++	walk(template, (node) => {
++		if (node.type !== "JSXElement" && node.type !== "JSXFragment") return;
++		if (node.type === "JSXElement" && opensRawSubtree(node)) return;
++		takeOverChildren(node);
++	});
++}
++function printableComments(root) {
++	const comments = root.comments ?? [];
++	if (comments.length === 0) return comments;
++	const frontmatter = root.frontmatter;
++	const skipped = [];
++	if (frontmatter.end > 0) skipped.push([frontmatter.start, frontmatter.end]);
++	walk(root, (node) => {
++		if (node.astroIgnored) {
++			skipped.push([node.start, node.end]);
++			return;
++		}
++		if (!opensRawSubtree(node)) return;
++		const closing = node.closingElement;
++		skipped.push([node.openingElement.end, closing?.start ?? node.end]);
++	});
++	return comments.filter((comment) => !skipped.some(([start, end]) => comment.start >= start && comment.end <= end));
++}
++const estree = ly.estree;
++const { fill, group: group$2, hardline: hardline$2, indent: indent$2, line: line$1, softline: softline$2 } = builders;
++const leadingWhitespace = /^[\t\n\f\r ]+/;
++const trailingWhitespace = /[\t\n\f\r ]+$/;
++const whitespaceRun = /[\t\n\f\r ]+/;
++const lends = "lends-closing-bracket";
++const withholdsClosingBracket = (node) => node.type === "JSXElement" && !node.astroIgnored && Boolean(node.closingElement) && Boolean(node.astroChildren) && !opensRawSubtree(node);
++function docFor(separator) {
++	switch (separator) {
++		case "none": return null;
++		case "soft": return softline$2;
++		case "space": return line$1;
++		case "break": return hardline$2;
++		case "blank": return [hardline$2, hardline$2];
++	}
++}
++function collect(children) {
++	const items = [];
++	const runs = [];
++	let pending = "";
++	for (const [index, child] of children.entries()) {
++		if (child.type !== "JSXText") {
++			runs.push(pending);
++			items.push({
++				node: child,
++				index,
++				words: null,
++				doc: ""
++			});
++			pending = "";
++			continue;
++		}
++		const raw = String(child.raw ?? "");
++		if (raw.trim() === "") {
++			pending += raw;
++			continue;
++		}
++		const lead = leadingWhitespace.exec(raw)?.[0] ?? "";
++		const trail = trailingWhitespace.exec(raw)?.[0] ?? "";
++		runs.push(pending + lead);
++		items.push({
++			node: child,
++			index,
++			words: raw.slice(lead.length, raw.length - trail.length).split(whitespaceRun),
++			doc: ""
++		});
++		pending = trail;
++	}
++	runs.push(pending);
++	return {
++		items,
++		runs
++	};
++}
++function printChildren(path, options, print, childrenOptions = {}) {
++	const { mode, suffix } = childrenOptions;
++	const container = path.node;
++	const children = container.astroChildren;
++	const { items, runs } = collect(children);
++	if (items.length === 0) return runs[0] === "" ? "" : " ";
++	const isRoot = container.astroRoot === true;
++	const settings = {
++		mode: options.astroCompressHTML,
++		sensitivity: options.htmlWhitespaceSensitivity
++	};
++	const separatorAt = (index, edge) => docFor(separatorFor(runs[index], {
++		container,
++		prev: items[index - 1]?.node ?? null,
++		next: items[index]?.node ?? null,
++		isRoot,
++		loneChild: false,
++		edge
++	}, settings));
++	const lenders = /* @__PURE__ */ new Set();
++	const lending = /* @__PURE__ */ new Set();
++	for (let position = 1; position < items.length; position++) {
++		if (separatorAt(position, false) !== null) continue;
++		if (!withholdsClosingBracket(items[position - 1].node)) continue;
++		lenders.add(position);
++		lending.add(items[position - 1].index);
++	}
++	if (mode === "fill-lending") lending.add(items.at(-1).index);
++	const printed = /* @__PURE__ */ new Map();
++	path.each((child, index) => {
++		if (child.node.type === "JSXText") return;
++		printed.set(index, print(void 0, lending.has(index) ? lends : void 0));
++	}, "astroChildren");
++	for (const item of items) if (item.words === null) item.doc = printed.get(item.index) ?? "";
++	const parts = [""];
++	const append = (content) => parts.push([parts.pop(), content]);
++	const separate = (separator) => {
++		if (separator !== null) parts.push(separator, "");
++	};
++	for (const [position, item] of items.entries()) {
++		if (position > 0) {
++			if (lenders.has(position)) {
++				parts.push(softline$2, "");
++				append(">");
++			} else separate(separatorAt(position, false));
++		}
++		if (item.words === null) {
++			append(item.doc);
++			continue;
++		}
++		for (const [wordPosition, word] of item.words.entries()) {
++			if (wordPosition > 0) separate(line$1);
++			append(word);
++		}
++	}
++	if (suffix) append(suffix);
++	const body = fill(parts);
++	if (isRoot || mode === "fill" || mode === "fill-lending") return body;
++	const content = [indent$2([separatorAt(0, true) ?? "", body]), separatorAt(items.length, true) ?? ""];
++	if (mode === "loose") return content;
++	return group$2(content, { shouldBreak: forcesBreak(container) });
++}
++const { dedentToRoot, group: group$1, hardline: hardline$1, indent: indent$1, join, markAsRoot, softline: softline$1 } = builders;
++const { mapDoc, replaceEndOfLine: replaceEndOfLine$1 } = utils;
++const escapeQuotes = (value) => mapDoc(value, (part) => typeof part === "string" ? part.replaceAll("\"", "&quot;") : part);
++const styleParsers = {
++	css: "css",
++	scss: "scss",
++	less: "less"
++};
++async function surfacingErrors(textToDoc, text, options) {
++	try {
++		return await textToDoc(text, options);
++	} catch (error) {
++		process.env.PRETTIER_DEBUG = "true";
++		throw error;
++	}
++}
++function inferParserByTypeAttribute(type) {
++	switch (type) {
++		case null:
++		case "module":
++		case "text/javascript":
++		case "text/babel":
++		case "application/javascript": return "babel";
++		case "application/x-typescript": return "babel-ts";
++		case "text/markdown": return "markdown";
++		case "text/html": return "html";
++		case "text/x-handlebars-template": return "glimmer";
++		default:
++			if (type.endsWith("json") || type.endsWith("importmap") || type === "speculationrules") return "json";
++			return "babel-ts";
++	}
++}
++function inferScriptParser(node) {
++	if (attributesOf(node).every((attribute) => attribute.type === "JSXAttribute" && attribute.name.name === "src")) return "babel-ts";
++	return inferParserByTypeAttribute(attributeStringValue(node, "type"));
++}
++function styleAttributeValue(node) {
++	if (!node.astroStyleAttribute) return null;
++	const value = node.value;
++	if (value?.type !== "Literal" || typeof value.value !== "string") return null;
++	return value.value.trim() === "" ? null : value.value;
++}
++function contentOf(node, options) {
++	const start = node.openingElement.end;
++	const end = node.closingElement?.start ?? node.end;
++	return options.originalText.slice(start, end);
++}
++function wrapContent(print, content, isEmpty) {
++	return [
++		print("openingElement"),
++		indent$1([hardline$1, content]),
++		isEmpty ? "" : hardline$1,
++		print("closingElement")
++	];
++}
++function embedSass(source, options) {
++	const sassOptions = {
++		tabSize: options.tabWidth,
++		insertSpaces: !options.useTabs,
++		lineEnding: options.endOfLine.toUpperCase() === "CRLF" ? "CRLF" : "LF"
++	};
++	const { result } = manualDedent(source);
++	return join(hardline$1, import_dist.SassFormatter.Format(result, sassOptions).trim().split("\n"));
++}
++function embed(path, options) {
++	const node = path.node;
++	if (node.astroIgnored) return void 0;
++	if (node.type === "AstroFrontmatter") {
++		if (node.end === 0 || options.astroSkipFrontmatter) return void 0;
++		const fence = options.originalText.indexOf("---", node.start);
++		const source = options.originalText.slice(fence + 3, node.end - 3);
++		if (!source.trim()) return void 0;
++		return async (textToDoc) => [
++			"---",
++			hardline$1,
++			await surfacingErrors(textToDoc, source, {
++				...options,
++				parser: "babel-ts"
++			}),
++			hardline$1,
++			"---"
++		];
++	}
++	if (node.type === "JSXAttribute" && options.astroCompressHTML !== "jsx") {
++		const style = styleAttributeValue(node);
++		if (style !== null) return async (textToDoc) => {
++			const declarations = await textToDoc(decodeQuoteEntities(style), {
++				...options,
++				parser: "css",
++				__isHTMLStyleAttribute: true
++			});
++			const value = escapeQuotes(declarations);
++			return [
++				"style=\"",
++				group$1([indent$1([softline$1, value]), softline$1]),
++				"\""
++			];
++		};
++	}
++	if (node.type !== "JSXElement") return estree.embed(path, options);
++	const tag = tagNameOf(node);
++	if (tag === null || !node.closingElement) return estree.embed(path, options);
++	const source = contentOf(node, options);
++	const isEmpty = source.trim() === "";
++	if (tag === "script") {
++		if (isEmpty) return estree.embed(path, options);
++		const parser = inferScriptParser(node);
++		return async (textToDoc, print) => wrapContent(print, await surfacingErrors(textToDoc, source, {
++			...options,
++			parser
++		}), false);
++	}
++	if (tag === "style") {
++		if (isEmpty) return estree.embed(path, options);
++		const lang = attributeStringValue(node, "lang")?.toLowerCase() ?? "css";
++		if (lang === "sass") return (_textToDoc, print) => wrapContent(print, embedSass(source, options), false);
++		const parser = styleParsers[lang];
++		if (!parser) return printVerbatim(source);
++		return async (textToDoc, print) => {
++			const content = await surfacingErrors(textToDoc, manualDedent(source).result, {
++				...options,
++				parser
++			});
++			return wrapContent(print, markAsRoot(group$1(replaceEndOfLine$1(content, dedentToRoot(hardline$1)), { shouldBreak: true })), false);
++		};
++	}
++	if (opensRawSubtree(node)) return (_textToDoc, print) => [
++		print("openingElement"),
++		replaceEndOfLine$1(source),
++		print("closingElement")
++	];
++	return estree.embed(path, options);
++}
++function printVerbatim(source) {
++	return (_textToDoc, print) => group$1([
++		print("openingElement"),
++		replaceEndOfLine$1(source),
++		print("closingElement")
++	]);
++}
++const { group, hardline, indent, line, softline } = builders;
++const { replaceEndOfLine } = utils;
++function printDoctype(value) {
++	const trimmed = value.trim();
++	const space = trimmed.search(/\s/);
++	const name = space === -1 ? trimmed : trimmed.slice(0, space);
++	const rest = space === -1 ? "" : trimmed.slice(space);
++	return `<!doctype ${name.toLowerCase()}${rest}>`;
++}
++function printAstroNode(path, options, print) {
++	const node = path.node;
++	switch (node.type) {
++		case "AstroRoot": {
++			const hasTemplate = node.template.node.children.length > 0;
++			const parts = [];
++			if (node.frontmatter.end > 0) {
++				parts.push(print("frontmatter"));
++				if (hasTemplate) parts.push(hardline, hardline);
++			}
++			if (hasTemplate) parts.push(print("template"));
++			return [parts, hardline];
++		}
++		case "AstroFrontmatter": {
++			const body = node.program.body;
++			if (options.astroSkipFrontmatter) {
++				const fence = options.originalText.indexOf("---", node.start);
++				return replaceEndOfLine(options.originalText.slice(fence, node.end));
++			}
++			return body.length > 0 ? [
++				"---",
++				hardline,
++				print("program"),
++				"---"
++			] : [
++				"---",
++				hardline,
++				"---"
++			];
++		}
++		case "AstroScript": return node.program.body.length > 0 ? print("program") : "";
++		case "AstroDoctype": return printDoctype(node.value);
++		case "AstroComment": return `<!--${node.value}-->`;
++		default: return "";
++	}
++}
++function printAttribute(path, options, print) {
++	const node = path.node;
++	const name = node.name.name;
++	const value = node.value;
++	if (node.astroShorthand) {
++		const expression = value?.type === "JSXExpressionContainer" ? value.expression : null;
++		if (options.astroAllowShorthand !== false || expression?.type !== "Identifier" || expression.name !== name) return [
++			"{",
++			print(["value", "expression"]),
++			"}"
++		];
++		return [
++			name,
++			"={",
++			print(["value", "expression"]),
++			"}"
++		];
++	}
++	if (node.astroBacktick) return [
++		name,
++		"=",
++		print(["value", "expression"])
++	];
++	if (options.astroCompressHTML !== "jsx" && node.astroSrcsetAttribute && value?.type === "Literal" && typeof value.value === "string" && value.value.trim() !== "") try {
++		return [
++			"srcset=\"",
++			printSrcset(value.value),
++			"\""
++		];
++	} catch {
++		return [
++			"srcset=\"",
++			value.value.replaceAll("\"", "&quot;"),
++			"\""
++		];
++	}
++	const expression = value?.type === "JSXExpressionContainer" ? value.expression : null;
++	if (options.astroAllowShorthand && expression?.type === "Identifier" && expression.name === name) return [
++		"{",
++		print(["value", "expression"]),
++		"}"
++	];
++	return null;
++}
++function printBreakableOpeningTag(path, options, print) {
++	const node = path.node;
++	const attributes = node.attributes;
++	if (attributes.length !== 1) return null;
++	const value = attributes[0].value;
++	if (value?.type !== "Literal" || typeof value.value !== "string") return null;
++	if (value.value.includes("\n")) return null;
++	const end = node.selfClosing ? options.bracketSameLine ? [" />"] : [line, "/>"] : options.bracketSameLine ? [">"] : [softline, ">"];
++	return group([
++		"<",
++		print("name"),
++		indent([line, print(["attributes", 0])]),
++		...end
++	]);
++}
++function printWithDanglingBrackets(path, print, lending) {
++	const node = path.node;
++	const children = node.astroChildren;
++	if (!children?.length || !node.closingElement) return null;
++	if (swallowsEdgeWhitespace(node)) return null;
++	if (startsWithSpace(children[0]) || endsWithSpace(children.at(-1))) return null;
++	const opening = print("openingElement");
++	if (opening.type !== "group" || !Array.isArray(opening.contents)) return null;
++	const contents = opening.contents.filter((part) => part !== "");
++	if (contents.at(-1) !== ">") return null;
++	const withoutBracket = contents.slice(0, -1);
++	if (withoutBracket.at(-1)?.type === "line") withoutBracket.pop();
++	const tag = jsxNameOf(node.closingElement.name);
++	if (tag === null) return null;
++	const head = {
++		...opening,
++		contents: withoutBracket
++	};
++	const shouldBreak = forcesBreak(node);
++	if (isSelfClosing(children.at(-1)) && !children.at(-1).astroIgnored) {
++		const lentBody = print(["children", 0], { mode: "fill-lending" });
++		return group([
++			head,
++			indent([
++				softline,
++				">",
++				lentBody
++			]),
++			line,
++			"/>",
++			"</",
++			tag,
++			lending ? "" : ">"
++		], { shouldBreak });
++	}
++	const body = print(["children", 0], {
++		mode: "fill",
++		suffix: ["</", tag]
++	});
++	return group([
++		head,
++		indent([
++			softline,
++			">",
++			body
++		]),
++		lending ? "" : [softline, ">"]
++	], { shouldBreak });
++}
++const isSelfClosing = (node) => node.type === "JSXElement" && !node.closingElement;
++function withoutSelfClosingMarker(printed) {
++	if (Array.isArray(printed)) return printed.at(-1) === " />" ? printed.slice(0, -1) : printed;
++	const tag = printed;
++	if (tag.type !== "group" || !Array.isArray(tag.contents)) return printed;
++	if (tag.contents.at(-1) === " />") return {
++		...tag,
++		contents: tag.contents.slice(0, -1)
++	};
++	if (tag.contents.at(-1) !== "/>") return printed;
++	return {
++		...tag,
++		contents: tag.contents.slice(0, -2)
++	};
++}
++const startsWithSpace = (child) => child.type === "JSXText" && /^[\t\n\f\r ]/.test(String(child.raw ?? ""));
++const endsWithSpace = (child) => child.type === "JSXText" && /[\t\n\f\r ]$/.test(String(child.raw ?? ""));
++function unwrapFragmentIndent(printed) {
++	const fragment = printed;
++	if (fragment.type !== "group") return printed;
++	if (fragment.expandedStates) {
++		const states = fragment.expandedStates.map(unwrapFragmentIndent);
++		return {
++			...fragment,
++			contents: states[0],
++			expandedStates: states
++		};
++	}
++	const parts = fragment.contents;
++	if (!Array.isArray(parts) || parts.length !== 4) return printed;
++	const indented = parts[1];
++	if (indented.type !== "indent" || !indented.contents) return printed;
++	return indented.contents[1];
++}
++function delegatesJsxCommentsToPrettier(node, options) {
++	if (node.type !== "JSXElement") return true;
++	if (node.astroIgnored) return false;
++	const raw = opensRawSubtree(node);
++	if (node.astroChildren && !raw) return false;
++	if (!raw) return true;
++	const closing = node.closingElement;
++	if (!closing) return true;
++	const tag = tagNameOf(node);
++	const source = closing ? options.originalText.slice(node.openingElement.end, closing.start) : "";
++	const children = node.children;
++	return (tag === "script" || tag === "style") && source.trim() === "" && children.length === 0;
++}
++const printer = {
++	...estree,
++	embed,
++	willPrintOwnComments(path, options) {
++		return delegatesJsxCommentsToPrettier(path.node, options) ? estree.willPrintOwnComments?.(path) ?? false : false;
++	},
++	getVisitorKeys(node, nonTraversableKeys) {
++		const keys = astroVisitorKeys[node.type] ?? estree.getVisitorKeys(node, nonTraversableKeys);
++		return node.astroChildren ? keys.map((key) => key === "children" ? "astroChildren" : key) : keys;
++	},
++	print(path, options, print, args) {
++		const node = path.node;
++		if (node[ownChildren]) return path.callParent(() => printChildren(path, options, print, args ?? {}));
++		if (node[synthetic]) return "";
++		if (node.astroIgnored) return replaceEndOfLine(options.originalText.slice(node.start, node.end));
++		if (astroVisitorKeys[node.type]) return printAstroNode(path, options, print);
++		if (node.type === "JSXAttribute") {
++			const attribute = printAttribute(path, options, print);
++			if (attribute) return attribute;
++		}
++		if (node.type === "JSXOpeningElement" && options.astroCompressHTML !== "jsx") {
++			const opening = printBreakableOpeningTag(path, options, print);
++			if (opening) return opening;
++		}
++		if (node.type === "JSXElement" && args === lends && isSelfClosing(node)) return withoutSelfClosingMarker(print("openingElement"));
++		if (node.type === "JSXElement" && node.astroChildren && !opensRawSubtree(node)) {
++			const dangling = printWithDanglingBrackets(path, print, args === lends);
++			if (dangling) return dangling;
++			const tag = jsxNameOf(node.closingElement.name);
++			return group([
++				print("openingElement"),
++				print(["children", 0], { mode: "loose" }),
++				args === lends && tag !== null ? ["</", tag] : print("closingElement")
++			], { shouldBreak: forcesBreak(node) });
++		}
++		if (node.type === "JSXElement" && node.closingElement && node.children.length > 0 && opensRawSubtree(node)) {
++			const start = node.openingElement.end;
++			const end = node.closingElement.start;
++			return [
++				print("openingElement"),
++				replaceEndOfLine(options.originalText.slice(start, end)),
++				print("closingElement")
++			];
++		}
++		const printed = estree.print(path, options, print, args);
++		if (node.openingFragment?.[synthetic]) return unwrapFragmentIndent(printed);
++		return printed;
++	}
++};
++const languages = [{
++	name: "astro",
++	parsers: ["astro"],
++	extensions: [".astro"],
++	vscodeLanguageIds: ["astro"]
++}];
++const parsers = { astro: {
++	parse: parse$1,
++	astFormat: "astro",
++	locStart: (node) => node.start,
++	locEnd: (node) => node.end
++} };
++const printers = { astro: printer };
++const defaultOptions = { tabWidth: 2 };
++//#endregion
++export { defaultOptions, languages, options, parsers, printers };
+diff --git a/dist/cli.js b/dist/cli.js
+index b7cc683d34322b2cd19f0903e5e608db81f8d1e1..d613331c1605b261eb8533606b54b5362e97c398 100644
+--- a/dist/cli.js
++++ b/dist/cli.js
+@@ -167,7 +167,7 @@ async function loadVitePlusConfig(path) {
+ }
+ //#endregion
+ //#region src-js/cli.ts
+-(async () => {
++const cliComplete = (async () => {
+ 	const args = process.argv.slice(2);
+ 	if (!process.stdout.isTTY) process.stdout._handle?.setBlocking?.(true);
+ 	if (!process.stdin.isTTY) process.stdin._handle?.setBlocking?.(true);
+@@ -191,4 +191,4 @@ async function loadVitePlusConfig(path) {
+ 	if (!(major === 24 && (minor > 13 || minor === 13 && patch >= 1)) && (major < 25 || major === 25 && minor < 4)) setTimeout(() => process.exit(), 50);
+ })();
+ //#endregion
+-export {};
++export { cliComplete };
+diff --git a/dist/index.js b/dist/index.js
+index 6c3ef6bc57c617bc175c014b36ea301706ef7c83..8a3c7aad03dc27f126195f5a35de195a876b1672 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -1,5 +1,6 @@
+ import { i as sortTailwindClasses, n as formatEmbeddedDoc, r as formatFile, t as formatEmbeddedCode } from "./apis-DtS_vBce.js";
+ import { n as toNullable, t as toFormatFileResult } from "./napi-callbacks-Sb-usWTs.js";
++import { formatAstro } from "./astro-format.js";
+ //#region src-js/index.ts
+ /**
+ * Define an oxfmt configuration with type inference.
+@@ -14,7 +15,7 @@ let BINDINGS_CACHE = null;
+ * Config files are not discovered, `options` are used as is.
+ * Relative paths in `options` (e.g. `sortTailwindcss.config`) are resolved against `process.cwd()`.
+ */
+-async function format(fileName, sourceText, options) {
++async function formatNative(fileName, sourceText, options) {
+ 	if (typeof fileName !== "string") throw new TypeError("`fileName` must be a string");
+ 	if (typeof sourceText !== "string") throw new TypeError("`sourceText` must be a string");
+ 	BINDINGS_CACHE ??= await import("./bindings-B29RK3Za.js").then((n) => n.t);
+@@ -32,6 +33,10 @@ async function format(fileName, sourceText, options) {
+ 		classes
+ 	})));
+ }
++async function format(fileName, sourceText, options) {
++	if (fileName.endsWith(".astro")) return formatAstro(fileName, sourceText, options);
++	return formatNative(fileName, sourceText, options);
++}
+ /**
+ * Format a JS/TS snippet for Prettier `textToDoc()` plugin flow.
+ */
+@@ -49,4 +54,4 @@ async function jsTextToDoc(sourceExt, sourceText, oxfmtPluginOptionsJson, parent
+ 	})));
+ }
+ //#endregion
+-export { defineConfig, format, jsTextToDoc };
++export { defineConfig, format, formatNative, jsTextToDoc };

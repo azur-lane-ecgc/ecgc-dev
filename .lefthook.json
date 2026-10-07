@@ -4,28 +4,29 @@
     "commands": {
       "knip": {
         "glob": [
-          "packages/dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
-          "packages/frontend/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
-          "packages/gsheets2img/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
+          "packages/dev/**/*.{astro,html,md,ts,tsx,json,css}",
+          "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/compress/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/image-downloader/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
         "run": "bun knip --fix"
       },
       "oxlint": {
-        "glob": [
-          "packages/dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
-          "packages/frontend/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
-          "packages/gsheets2img/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
-        ],
+        "glob": ["**/*.{js,jsx,ts,tsx}"],
         "run": "bunx --bun oxlint --fix {staged_files}",
         "stage_fixed": true
       },
-      "prettier": {
+      "oxfmt": {
         "glob": [
-          "packages/dev/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
-          "packages/frontend/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}",
-          "packages/gsheets2img/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json,css}"
+          "packages/dev/**/*.{astro,html,md,ts,tsx,json,css}",
+          "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/compress/**/*.{astro,html,md,ts,tsx,json,css}",
+          "packages/image-downloader/**/*.{astro,html,md,ts,tsx,json,css}",
+          "patches/oxfmt/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
-        "run": "bunx --bun prettier --write {staged_files}",
+        "run": "bunx oxfmt --write {staged_files}",
         "stage_fixed": true
       }
     }

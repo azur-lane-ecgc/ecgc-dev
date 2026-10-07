@@ -24,4 +24,4 @@ Or run directly in the package:
 
 ## Processing Behavior
 
-- Google Sheets processing uses hardcoded sheet IDs and outputs to `../frontend/public/images/equip_misc/`
+- Google Sheets processing uses hardcoded sheet IDs and outputs to `../../apps/web/src/assets/equip_misc/`

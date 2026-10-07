@@ -17,24 +17,23 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
         with:
           submodules: recursive
           token: ${{ secrets.SUBMODULE_PAT }}
 
       - name: Set up Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7.0.0
         with:
-          node-version: "22.2.0"
+          node-version: "26.10.0"
 
       - name: Set up Bun
-        uses: oven-sh/setup-bun@v2
+        uses: oven-sh/setup-bun@v2.2.0
         with:
-          bun-version: "1.3.1"
+          bun-version-file: "package.json"
 
       - name: Install dependencies
-        run: |
-          bun ci
+        run: bun install --frozen-lockfile
 
       - name: Restore credentials
         run: |
@@ -44,7 +43,7 @@ jobs:
 
       - name: Run gsheets2img
         run: |
-          rm -rf packages/frontend/public/images/equip_misc/*
+          rm -rf apps/web/src/assets/equip_misc/*
           bun run gsheets2img
 
       - name: Run devtools
@@ -74,10 +73,10 @@ jobs:
 
       - name: Upload generated images
         id: upload
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: equip-misc-images
-          path: packages/frontend/public/images/equip_misc/
+          path: apps/web/src/assets/equip_misc/
           retention-days: 1
 
       - name: Print artifact URL

@@ -66,3 +66,8 @@ _backup
 .opencode
 .serena
 .sisyphus
+.oxfmtrc*
+!.oxfmtrc.json
+
+# opensrc - source code for packages
+opensrc/

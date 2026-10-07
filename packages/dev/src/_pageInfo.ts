@@ -1,58 +1,58 @@
 export const pageInfo = [
   {
     name: "Changelog2023",
-    path: "../frontend/src/components/Changelog/Changelog2023Content.astro",
+    path: "../../apps/web/src/components/Changelog/Changelog2023Content.astro",
   },
   {
     name: "Changelog2024",
-    path: "../frontend/src/components/Changelog/Changelog2024Content.astro",
+    path: "../../apps/web/src/components/Changelog/Changelog2024Content.astro",
   },
   {
     name: "Changelog2025",
-    path: "../frontend/src/components/Changelog/Changelog2025Content.astro",
+    path: "../../apps/web/src/components/Changelog/Changelog2025Content.astro",
   },
   {
     name: "Common Resource Guide",
-    path: "../frontend/src/components/CommonResource/CommonResourceContent.astro",
+    path: "../../apps/web/src/components/CommonResource/CommonResourceContent.astro",
   },
   {
     name: "Early Ship Recommendations",
-    path: "../frontend/src/components/EarlyShipRecs/EarlyShipRecsContent.astro",
+    path: "../../apps/web/src/components/EarlyShipRecs/EarlyShipRecsContent.astro",
   },
   {
     name: "Equipment",
-    path: "../frontend/src/components/Equipment/EquipmentContent.astro",
+    path: "../../apps/web/src/components/Equipment/EquipmentContent.astro",
   },
   {
     name: "Farming Guide",
-    path: "../frontend/src/components/Farming/FarmingGuideContent.astro",
+    path: "../../apps/web/src/components/Farming/FarmingGuideContent.astro",
   },
   {
     name: "Fleetbuilding Guide",
-    path: "../frontend/src/components/Fleetbuilding/FleetbuildingContent.astro",
+    path: "../../apps/web/src/components/Fleetbuilding/FleetbuildingContent.astro",
   },
   {
     name: "Fleet Technology Guide",
-    path: "../frontend/src/components/FleetTechnology/FleetTechnologyContent.astro",
+    path: "../../apps/web/src/components/FleetTechnology/FleetTechnologyContent.astro",
   },
   {
     name: "Newbie Tips",
-    path: "../frontend/src/components/NewbieTips/NewbieTipsContent.astro",
+    path: "../../apps/web/src/components/NewbieTips/NewbieTipsContent.astro",
   },
   {
     name: "Research Guide",
-    path: "../frontend/src/components/Research/ResearchGuideContent.astro",
+    path: "../../apps/web/src/components/Research/ResearchGuideContent.astro",
   },
   {
     name: "Shop Priority Guide",
-    path: "../frontend/src/components/ShopPriority/ShopPriorityContent.astro",
+    path: "../../apps/web/src/components/ShopPriority/ShopPriorityContent.astro",
   },
   {
     name: "Samvaluations",
-    path: "../frontend/src/components/Samvaluations/SamvaluationContent.astro",
+    path: "../../apps/web/src/components/Samvaluations/SamvaluationContent.astro",
   },
   {
     name: "Tools",
-    path: "../frontend/src/components/Tools/ToolsContent.astro",
+    path: "../../apps/web/src/components/Tools/ToolsContent.astro",
   },
 ]

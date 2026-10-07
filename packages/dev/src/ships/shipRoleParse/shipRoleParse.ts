@@ -1,3 +1,19 @@
+import type {
+  ShipEHPProps,
+  MainFleetRankingProps,
+  VanguardFleetRankingProps,
+  SSFleetRankingProps,
+} from "@/db/types"
+import type { ShipAAProps } from "@/tools/aa_parsing/types"
+
+import {
+  isDecentMainFleet,
+  isDecentSSFleet,
+  isDecentVG,
+  isGoodMainFleet,
+  isGoodVGFleet,
+  isGoodSSFleet,
+} from "./decentShips"
 import {
   tankRole,
   superTankRole,
@@ -14,21 +30,6 @@ import {
   defensiveSupport,
   mainHealSupport,
 } from "./roleDefs"
-import {
-  isDecentMainFleet,
-  isDecentSSFleet,
-  isDecentVG,
-  isGoodMainFleet,
-  isGoodVGFleet,
-  isGoodSSFleet,
-} from "./decentShips"
-import type {
-  ShipEHPProps,
-  MainFleetRankingProps,
-  VanguardFleetRankingProps,
-  SSFleetRankingProps,
-} from "@/db/types"
-import type { ShipAAProps } from "@/tools/aa_parsing/types"
 
 export const shipRoleParse = (
   ship: string,

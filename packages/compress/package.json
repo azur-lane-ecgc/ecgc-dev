@@ -1,0 +1,22 @@
+{
+  "name": "compress",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Image compression utilities for build optimization",
+  "type": "module",
+  "module": "main.ts",
+  "scripts": {
+    "compress": "bun main.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/node": "^26.6.4"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
