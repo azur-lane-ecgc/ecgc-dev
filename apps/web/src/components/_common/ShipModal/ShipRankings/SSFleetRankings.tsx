@@ -3,28 +3,14 @@ import { useState } from "react"
 import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
 import type { SSFleetRankingProps } from "@/db/types"
+import { createDamageRankScales } from "@/utils/ships"
 const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
   .default as Record<string, SSFleetRankingProps[]>
 const allSSFleetRankings = Object.values(ssFleetRankings).flat()
-const ssFleetDamageColorScales = {
-  lightdmg: createDamageColorScale(
-    allSSFleetRankings.map(({ lightdmg }) => lightdmg),
-  ),
-  mediumdmg: createDamageColorScale(
-    allSSFleetRankings.map(({ mediumdmg }) => mediumdmg),
-  ),
-  heavydmg: createDamageColorScale(
-    allSSFleetRankings.map(({ heavydmg }) => heavydmg),
-  ),
-}
+const ssFleetDamageScales = createDamageRankScales(allSSFleetRankings)
 
 import { RankingHeader } from "./RankingHeader"
-import {
-  createDamageColorScale,
-  damageRankColor,
-  letterRankColor,
-  numberRankColor,
-} from "./styles"
+import { damageRankColor, letterRankColor, numberRankColor } from "./styles"
 
 interface SSFleetRankingComponentProps {
   ship: string
@@ -141,7 +127,7 @@ export const SSFleetRanking: React.FC<SSFleetRankingComponentProps> = ({
               <td
                 className={`${damageRankColor(
                   ranking.lightdmg,
-                  ssFleetDamageColorScales.lightdmg,
+                  ssFleetDamageScales.lightdmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.lightdmg ?? "\u200B"}
@@ -149,7 +135,7 @@ export const SSFleetRanking: React.FC<SSFleetRankingComponentProps> = ({
               <td
                 className={`${damageRankColor(
                   ranking.mediumdmg,
-                  ssFleetDamageColorScales.mediumdmg,
+                  ssFleetDamageScales.mediumdmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.mediumdmg ?? "\u200B"}
@@ -157,7 +143,7 @@ export const SSFleetRanking: React.FC<SSFleetRankingComponentProps> = ({
               <td
                 className={`${damageRankColor(
                   ranking.heavydmg,
-                  ssFleetDamageColorScales.heavydmg,
+                  ssFleetDamageScales.heavydmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.heavydmg ?? "\u200B"}
