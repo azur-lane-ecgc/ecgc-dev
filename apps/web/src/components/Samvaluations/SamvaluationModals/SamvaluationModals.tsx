@@ -8,16 +8,35 @@ import type {
 } from "@/db/types"
 const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
   .default as Record<string, MainFleetRankingProps[]>
+const mainFleetDamageScales = createDamageRankScales(
+  Object.values(mainFleetRankings).flat(),
+)
 const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
   .default as Record<string, VanguardFleetRankingProps[]>
+const vanguardFleetDamageScales = createDamageRankScales(
+  Object.values(vgFleetRankings).flat(),
+)
 const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
   .default as Record<string, SSFleetRankingProps[]>
+const ssFleetDamageScales = createDamageRankScales(
+  Object.values(ssFleetRankings).flat(),
+)
 
 import {
   initialFilters,
   useShipFilter,
 } from "@/store/Samvaluation/useShipFilter"
-import { getHighestValue, numberToLetterRank } from "@/utils/ships"
+import {
+  createDamageRankScales,
+  formatRankValue,
+  getHighestValue,
+} from "@/utils/ships"
+
+const damageRankScales = {
+  main: mainFleetDamageScales,
+  vg: vanguardFleetDamageScales,
+  ss: ssFleetDamageScales,
+}
 
 import { SamvaluationModalFilters } from "./SamvaluationModalFilters"
 
@@ -64,12 +83,14 @@ export const SamvaluationModals: React.FC = () => {
             }
 
             const rankNote = state.filters.rankingSort.value
-              ? `Rank: ${numberToLetterRank(
+              ? `Rank: ${formatRankValue(
                   getHighestValue(
                     ship.fleetType,
                     { mfRankings, vgRankings, ssRankings },
                     state.filters.rankingSort,
                   ),
+                  state.filters.rankingSort.value,
+                  damageRankScales[ship.fleetType],
                 )}`
               : null
 
