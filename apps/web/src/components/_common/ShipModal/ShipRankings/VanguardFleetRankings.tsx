@@ -3,28 +3,16 @@ import { useState } from "react"
 import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
 import type { VanguardFleetRankingProps } from "@/db/types"
+import { createDamageRankScales } from "@/utils/ships"
 const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
   .default as Record<string, VanguardFleetRankingProps[]>
 const allVanguardFleetRankings = Object.values(vgFleetRankings).flat()
-const vanguardFleetDamageColorScales = {
-  lightdmg: createDamageColorScale(
-    allVanguardFleetRankings.map(({ lightdmg }) => lightdmg),
-  ),
-  mediumdmg: createDamageColorScale(
-    allVanguardFleetRankings.map(({ mediumdmg }) => mediumdmg),
-  ),
-  heavydmg: createDamageColorScale(
-    allVanguardFleetRankings.map(({ heavydmg }) => heavydmg),
-  ),
-}
+const vanguardFleetDamageScales = createDamageRankScales(
+  allVanguardFleetRankings,
+)
 
 import { RankingHeader } from "./RankingHeader"
-import {
-  createDamageColorScale,
-  damageRankColor,
-  letterRankColor,
-  numberRankColor,
-} from "./styles"
+import { damageRankColor, letterRankColor, numberRankColor } from "./styles"
 
 interface VGFleetComponentRankingProps {
   ship: string
@@ -185,7 +173,7 @@ export const VanguardFleetRanking: React.FC<VGFleetComponentRankingProps> = ({
               <td
                 className={`${damageRankColor(
                   ranking.lightdmg,
-                  vanguardFleetDamageColorScales.lightdmg,
+                  vanguardFleetDamageScales.lightdmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.lightdmg ?? "\u200B"}
@@ -193,7 +181,7 @@ export const VanguardFleetRanking: React.FC<VGFleetComponentRankingProps> = ({
               <td
                 className={`${damageRankColor(
                   ranking.mediumdmg,
-                  vanguardFleetDamageColorScales.mediumdmg,
+                  vanguardFleetDamageScales.mediumdmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.mediumdmg ?? "\u200B"}
@@ -201,7 +189,7 @@ export const VanguardFleetRanking: React.FC<VGFleetComponentRankingProps> = ({
               <td
                 className={`${damageRankColor(
                   ranking.heavydmg,
-                  vanguardFleetDamageColorScales.heavydmg,
+                  vanguardFleetDamageScales.heavydmg,
                 )} font-semibold !text-black`}
               >
                 {ranking.heavydmg ?? "\u200B"}

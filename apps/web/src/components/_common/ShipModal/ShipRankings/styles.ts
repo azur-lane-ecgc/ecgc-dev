@@ -1,3 +1,5 @@
+import type { RankPercentileScale } from "@/utils/ships"
+
 // rank color helper functions
 export const letterRankColor = (rank: string | null | undefined): string => {
   const getLetterRankColor: { [key: string]: string } = {
@@ -38,42 +40,10 @@ export const numberRankColor = (
   return rank !== null ? (getNumberRankColor[rank?.toString() ?? ""] ?? "") : ""
 }
 
-interface DamageColorScale {
-  tenthPercentile: number
-  quarterPercentile: number
-  median: number
-  threeQuarterPercentile: number
-  ninetiethPercentile: number
-  ninetyNinthPercentile: number
-}
-
-/** Create a damage color scale from the values in one fleet ranking column. */
-export const createDamageColorScale = (
-  damageValues: Array<number | null | undefined>,
-): DamageColorScale => {
-  const sortedDamageValues = damageValues
-    .filter((damage): damage is number => typeof damage === "number")
-    .sort((firstDamage, secondDamage) => firstDamage - secondDamage)
-
-  const percentile = (percent: number): number => {
-    const index = Math.floor((sortedDamageValues.length - 1) * percent)
-    return sortedDamageValues[index] ?? 0
-  }
-
-  return {
-    tenthPercentile: percentile(0.1),
-    quarterPercentile: percentile(0.25),
-    median: percentile(0.5),
-    threeQuarterPercentile: percentile(0.75),
-    ninetiethPercentile: percentile(0.9),
-    ninetyNinthPercentile: percentile(0.99),
-  }
-}
-
 /** Color a numeric damage value by its percentile within its ranking column. */
 export const damageRankColor = (
   damage: number | null | undefined,
-  damageScale: DamageColorScale,
+  damageScale: RankPercentileScale,
 ): string => {
   if (damage === null || damage === undefined) {
     return ""
