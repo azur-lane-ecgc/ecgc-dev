@@ -5,9 +5,26 @@ import { ItemTable } from "@/components/_common/ItemTable"
 import type { MainFleetRankingProps } from "@/db/types"
 const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
   .default as Record<string, MainFleetRankingProps[]>
+const allMainFleetRankings = Object.values(mainFleetRankings).flat()
+const mainFleetDamageColorScales = {
+  lightdmg: createDamageColorScale(
+    allMainFleetRankings.map(({ lightdmg }) => lightdmg),
+  ),
+  mediumdmg: createDamageColorScale(
+    allMainFleetRankings.map(({ mediumdmg }) => mediumdmg),
+  ),
+  heavydmg: createDamageColorScale(
+    allMainFleetRankings.map(({ heavydmg }) => heavydmg),
+  ),
+}
 
 import { RankingHeader } from "./RankingHeader"
-import { letterRankColor, numberRankColor } from "./styles"
+import {
+  createDamageColorScale,
+  damageRankColor,
+  letterRankColor,
+  numberRankColor,
+} from "./styles"
 
 interface MainFleetRankingComponentProps {
   ship: string
@@ -177,22 +194,25 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
             >
               <tr className="*:text-base">
                 <td
-                  className={`${numberRankColor(
+                  className={`${damageRankColor(
                     ranking.lightdmg,
+                    mainFleetDamageColorScales.lightdmg,
                   )} font-semibold !text-black`}
                 >
                   {ranking.lightdmg ?? "\u200B"}
                 </td>
                 <td
-                  className={`${numberRankColor(
+                  className={`${damageRankColor(
                     ranking.mediumdmg,
+                    mainFleetDamageColorScales.mediumdmg,
                   )} font-semibold !text-black`}
                 >
                   {ranking.mediumdmg ?? "\u200B"}
                 </td>
                 <td
-                  className={`${numberRankColor(
+                  className={`${damageRankColor(
                     ranking.heavydmg,
+                    mainFleetDamageColorScales.heavydmg,
                   )} font-semibold !text-black`}
                 >
                   {ranking.heavydmg ?? "\u200B"}

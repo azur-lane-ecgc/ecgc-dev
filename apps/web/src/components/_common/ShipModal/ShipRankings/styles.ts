@@ -37,3 +37,66 @@ export const numberRankColor = (
 
   return rank !== null ? (getNumberRankColor[rank?.toString() ?? ""] ?? "") : ""
 }
+
+interface DamageColorScale {
+  tenthPercentile: number
+  quarterPercentile: number
+  median: number
+  threeQuarterPercentile: number
+  ninetiethPercentile: number
+  ninetyNinthPercentile: number
+}
+
+/** Create a damage color scale from the values in one fleet ranking column. */
+export const createDamageColorScale = (
+  damageValues: Array<number | null | undefined>,
+): DamageColorScale => {
+  const sortedDamageValues = damageValues
+    .filter((damage): damage is number => typeof damage === "number")
+    .sort((firstDamage, secondDamage) => firstDamage - secondDamage)
+
+  const percentile = (percent: number): number => {
+    const index = Math.floor((sortedDamageValues.length - 1) * percent)
+    return sortedDamageValues[index] ?? 0
+  }
+
+  return {
+    tenthPercentile: percentile(0.1),
+    quarterPercentile: percentile(0.25),
+    median: percentile(0.5),
+    threeQuarterPercentile: percentile(0.75),
+    ninetiethPercentile: percentile(0.9),
+    ninetyNinthPercentile: percentile(0.99),
+  }
+}
+
+/** Color a numeric damage value by its percentile within its ranking column. */
+export const damageRankColor = (
+  damage: number | null | undefined,
+  damageScale: DamageColorScale,
+): string => {
+  if (damage === null || damage === undefined) {
+    return ""
+  }
+
+  if (damage <= damageScale.tenthPercentile) {
+    return "bg-red-100"
+  }
+  if (damage <= damageScale.quarterPercentile) {
+    return "bg-red-200"
+  }
+  if (damage <= damageScale.median) {
+    return "bg-red-300"
+  }
+  if (damage <= damageScale.threeQuarterPercentile) {
+    return "bg-red-400"
+  }
+  if (damage <= damageScale.ninetiethPercentile) {
+    return "bg-red-500"
+  }
+  if (damage <= damageScale.ninetyNinthPercentile) {
+    return "bg-red-600"
+  }
+
+  return "bg-red-700"
+}
