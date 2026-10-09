@@ -26845,7 +26845,7 @@
         "mounts": 1
       }
     ],
-    "augments": ["Dual Swords", "Hammer"],
+    "augments": ["Signorina GB's Hat", "Dual Swords", "Hammer"],
     "samEval": "Vincenzo Gioberti is a damage-oriented DD with bad stats and skills. Collection only.",
     "fastLoad": null,
     "roles": ["DmgDealer", "TopDmg"],
@@ -31780,7 +31780,7 @@
         "mounts": 1
       }
     ],
-    "augments": null,
+    "augments": ["Seafarer's Code"],
     "samEval": "Royal Fortune is a Frigate (basically Submarine), that surfaces instantly and shoots guns at enemies instead of staying underwater and shooting torpedoes like normal Submarines.<br /><b >Positives</b >: Assuming she is on the field for the full 60s duration, her damage on paper vs Light/Med enemies is really strong/comparable to traditional Submarines (especially in the first 30s), and extra support in the form of the slow is always nice to see.<br /><b >Negatives</b >': Her damage against heavy armor is very mediocre/bad compared to traditional Submarines. Her bulk is also on the lower side, so how long she stays on the field in practice is to be determined.<br /><b>Verdict</b>': Top non-faction dependent submarine.",
     "fastLoad": null,
     "roles": ["DmgDealer", "OffSupport"],
