@@ -512,16 +512,16 @@
   "Royal Fortune": [
     {
       "nameNote": "Base",
-      "notes": "Can slow boss if put in middle position. IXs are not suitable for use against high-damage enemies.",
-      "hardarbiter": "B*",
-      "cm": "A*",
-      "campaign": "B",
+      "notes": "Royal Fortune can slow the boss every 20 seconds if put in middle position. IXs are not suitable for use against high-damage enemies.",
+      "hardarbiter": "A",
+      "cm": "S*",
+      "campaign": "A",
       "consistency": null,
       "fleetreq": null,
-      "flagreq": -2,
-      "lightdmg": 3,
-      "mediumdmg": 2,
-      "heavydmg": 1,
+      "flagreq": -4,
+      "lightdmg": 5,
+      "mediumdmg": 4,
+      "heavydmg": 3,
       "offensivebuff": 1
     }
   ],
