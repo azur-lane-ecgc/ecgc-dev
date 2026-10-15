@@ -13,8 +13,8 @@
     "googleapis": "^183.0.0"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.2",
-    "@types/node": "^26.6.4"
+    "@types/bun": "^1.4.3",
+    "@types/node": "^26.6.5"
   },
   "peerDependencies": {
     "typescript": "^6.0.3"
