@@ -22,6 +22,7 @@
     "format": "bunx oxfmt --write packages apps patches",
     "format:check": "bunx oxfmt --check packages apps patches",
     "lint": "bunx --bun oxlint --fix packages apps patches",
+    "e2e": "scripts/e2e/website-e2e.sh",
     "devtools": "bun run submodule && bun --filter dev main && bun run format",
     "build": "bun --filter frontend build",
     "check": "bun --filter frontend check && bun --filter dev check && bun --filter gsheets2img check && bun --filter compress check && bun --filter image-downloader check",
