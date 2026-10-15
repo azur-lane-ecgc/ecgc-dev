@@ -31,6 +31,10 @@ export default defineConfig({
     layout: "constrained",
   },
   vite: {
+    build: {
+      // Ship data is one cacheable 766 KB raw, 87 KB gzip request.
+      chunkSizeWarningLimit: 800,
+    },
     json: {
       stringify: true,
     },
