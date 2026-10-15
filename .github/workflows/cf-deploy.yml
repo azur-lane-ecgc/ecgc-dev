@@ -22,18 +22,28 @@ jobs:
           submodules: recursive
           token: ${{ secrets.SUBMODULE_PAT}}
 
-      - name: Set up Node
-        uses: actions/setup-node@v7.0.0
-        with:
-          node-version: "26.10.0"
+      - parallel:
+          - name: Set up Node
+            uses: actions/setup-node@v7.1.0
+            with:
+              node-version: "26.12.0"
 
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@v2.2.0
-        with:
-          bun-version-file: "package.json"
+          - name: Set up Bun
+            uses: oven-sh/setup-bun@v2.2.0
+            with:
+              bun-version-file: "package.json"
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      - name: Restore Astro image cache
+        uses: actions/cache@v6.1.0
+        with:
+          path: apps/web/node_modules/.astro
+          key: astro-images-${{ runner.os }}-${{ hashFiles('bun.lock') }}-${{ github.sha }}
+          restore-keys: |
+            astro-images-${{ runner.os }}-${{ hashFiles('bun.lock') }}-
+            astro-images-${{ runner.os }}-
 
       - name: Compress Build
         run: bun run cf-build

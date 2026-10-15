@@ -33,7 +33,7 @@
     "deploy": "bun run cf-build && bunx wrangler deploy"
   },
   "devDependencies": {
-    "@astrojs/compiler-rs": "0.4.0",
+    "@astrojs/compiler-rs": "0.5.2",
     "knip": "^6.41.0",
     "lefthook": "^2.2.2",
     "oxlint": "^1.88.0",
