@@ -4,7 +4,7 @@
 # The run records a local MP4 and reads no private configuration.
 set -Eeuo pipefail
 
-repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
 work_directory=""
 dev_server_pid=""
 recording_started=0
