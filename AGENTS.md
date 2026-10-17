@@ -4,62 +4,119 @@
 
 **Root level:**
 
-- `bun run devtools` - Run all data processing scripts (dev package)
+- `bun run devtools` - Run all data processing scripts
 - `bun run build` - Build frontend for production
-- `bun run lint` - Run oxlint with auto-fix (enforced by pre-commit)
-- `bun run format` - Format code with Prettier (enforced by pre-commit)
+- `bun run lint` - Run oxlint with auto-fix
+- `bun run format` - Format code with oxfmt
+- `bun run format:check` - Check formatting with oxfmt
 - `bun run check` - Type check all packages
-- `bun run dev` - Start development server (http://localhost:4321)
+- `bun run dev` - Start dev server (http://localhost:4321)
+- `bun run plan-ship-icons` - List missing ship icons
+- `bun run download-ship-icons` - Download missing original ship icons
 
 **Package-specific:**
 
 - Frontend: `bun --filter frontend build/check/dev`
-- Dev: `bun --filter dev main/compress/check`
-
-## Code Style
-
-**Formatting:**
-
-- No semicolons, double quotes, trailing commas
-- 2-space tabs, LF line endings
-- Prettier with import organization (auto-runs on commit)
-
-**TypeScript:**
-
-- Strict mode enabled, no implicit any
-- Interfaces for all props/objects
-- Arrow functions preferred
-- Path aliases: `@/packages/*`, `@/tools/*`
-
-**React/Astro:**
-
-- Functional components with TypeScript
-- `React.FC` for components, strong typing
-- React hooks (useState, useEffect, etc.)
-- `.astro` for static, `.tsx` for interactive
-
-**Error Handling:**
-
-- Validate inputs before processing
-- Handle null/undefined data
-- Graceful error boundaries in React
-- Log with context for debugging
-
-**Data Processing:**
-
-- Never commit credentials.json
-- Use Maps/Sets for large datasets
-- Implement lazy loading where appropriate
-- Cache static data in memory
+- Dev: `bun --filter dev main/check`
+- Compress: `bun --filter compress compress/check`
+- GSheets2Img: `bun run gsheets2img` (from root)
+- Image Downloader: `bun --filter image-downloader plan/download/check`
 
 ## Project Structure
 
-- `packages/frontend/` - Astro/React frontend
-- `packages/dev/` - Data processing scripts
-- `packages/gsheets2img/` - Image processing
-- `packages/AzurLaneData/` - Raw game data (submodule)
+- `apps/web/` - Astro/React frontend. Static site for Azur Lane game data, ship databases, equipment guides, farming calculators. Consumes JSON data from dev package. Built for Cloudflare Workers.
+- `packages/dev/` - Data processing pipeline. TypeScript scripts that fetch/transform game data from Google Sheets, calculate EHP/rankings, generate ship databases. Outputs JSON to apps/web/src/db/.
+- `packages/gsheets2img/` - Converts Google Sheets to images. Uses Playwright to screenshot published sheets as JPEGs for documentation tables. Outputs to apps/web/src/assets/equip_misc/.
+- `packages/compress/` - Image compression utilities. Compresses built images in apps/web/dist/ using Sharp with optimized settings.
+- `packages/image-downloader/` - Ship icon downloader. Uses agent-browser to capture original wiki icons for ship records with listed stats. Outputs to apps/web/src/assets/ship_icons/.
+- `packages/AzurLaneData/` - Raw game data submodule. Git submodule containing official Azur Lane game data (ships.json, skills.json, etc.). Must be kept up-to-date.
+- `patches/` - The oxfmt patch that supports `.astro` formatting lives here.
 
-## Quality Gates
+## Critical
 
-Pre-commit hooks run automatically: knip → oxlint → prettier
-All must pass before commits are allowed.
+- Never commit credentials.json (Google Cloud service account key)
+- Pre-commit hooks run: knip → oxlint → oxfmt
+
+## Red flags in a React codebase
+
+🚩 functions like <button onClick={handleClick}
+or handleSubmit
+
+- handleClick / handleSubmit doesn't explain what it does
+- you lose colocation
+- need new names for each callback
+
+Inline callbacks can call multiple functions with good names
+
+onClick={() => {
+analytics.event('this-button')
+openModal()
+
+🚩 useMemo
+
+React devs are terrified of renders and often overuseMemo
+
+- memoize things that you pass as props to components that may have expensive children
+- it's ok for leaf components to over-render
+
+useMemo does not fix bugs, it just makes them happen less often
+
+React Compiler will automatically handle memoization when enabled, making manual useMemo less necessary.
+
+🚩 <div onClick
+
+divs are not interactive elements and adding onClick requires implementing keyboard control, screen reader announcement, etc
+
+This is almost never the right move, and anyone capable of doing it right (the new tweet button) isn't going to be swayed by this prompt anyways
+
+🚩 preventDefault
+
+This is javascript and only runs once javascript loads. if you click a link / submit a form before that, preventDefault will not run. It's a necessary tool for progressive enhancement, but this flag should make you look closer for unexpected behavior
+
+🚩 fetch inside useEffect
+
+React code requires fetch to be in useEffect, but most things should use TanstackQuery or other provider instead.
+
+- the effect runs more often than you think
+- attempts to hook into the fetch lifecycle are usually buggy
+
+🚩 unecessary useEffects
+
+[https://react.dev/learn/you-might-not-need-an-effect] Read this article. You might not need an effect, so don't use it if you don't need it.
+
+🚩 a "hooks" directory
+
+A context provider and its useContext hook belog together, not split up into components and hooks directories
+Sorting your codebase by what each function looks like means small changes will span many directories.
+
+<!--
+Ignored rules:
+
+🚩 css files
+
+One CSS file for global styling (ex. when using shadcn/ui) is fine. If you need more CSS files, that's the red flag.
+
+-->
+
+<!-- opensrc:start -->
+
+## Source Code Reference
+
+Source code for dependencies is available in `opensrc/` for deeper understanding of implementation details.
+
+See `opensrc/sources.json` for the list of available packages and their versions.
+
+Use this source code when you need to understand how a package works internally, not just its types/interface.
+
+### Fetching Additional Source Code
+
+To fetch source code for a package or repository you need to understand, run:
+
+```bash
+npx opensrc <package>           # npm package (e.g., npx opensrc zod)
+npx opensrc pypi:<package>      # Python package (e.g., npx opensrc pypi:requests)
+npx opensrc crates:<package>    # Rust crate (e.g., npx opensrc crates:serde)
+npx opensrc <owner>/<repo>      # GitHub repo (e.g., npx opensrc vercel/ai)
+```
+
+<!-- opensrc:end -->

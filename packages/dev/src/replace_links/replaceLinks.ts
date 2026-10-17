@@ -1,7 +1,9 @@
+import { readFile, writeFile } from "node:fs/promises"
+
 import { pageInfo } from "../_pageInfo"
 
 const hardCodedPaths = [
-  "../frontend/src/components/Equipment/AugmentModules.astro",
+  "../../apps/web/src/components/Equipment/AugmentModules.astro",
 ]
 
 const replaceWikiLinks = (content: string): string => {
@@ -23,12 +25,12 @@ const replaceWikiLinksTwo = (content: string): string => {
 
 const processFile = async (inputFilePath: string, outputFilePath: string) => {
   try {
-    const data = await Bun.file(inputFilePath).text()
+    const data = await readFile(inputFilePath, "utf8")
 
     let updatedContent = replaceWikiLinks(data)
     updatedContent = replaceWikiLinksTwo(updatedContent)
 
-    await Bun.write(outputFilePath, updatedContent)
+    await writeFile(outputFilePath, updatedContent)
     console.log(`Successfully updated file: ${outputFilePath}`)
   } catch (err) {
     console.error(`Error: ${err}`)

@@ -1,8 +1,9 @@
-import { dirname } from "path"
 import { existsSync, mkdirSync } from "fs"
+import { writeFile } from "fs/promises"
+import { dirname } from "path"
 
-import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 import type { AugmentData } from "@/packages/AzurLaneData/types/augments"
+import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 const ships: Record<number, ShipData> =
   (await import("@/packages/AzurLaneData/data/ships.json").then(
     (module) => module.default,
@@ -21,6 +22,7 @@ import type {
   SSFleetRankingProps,
 } from "@/db/types"
 import type { ShipAAProps } from "@/tools/aa_parsing/types"
+
 import {
   isPermanent,
   shipDefaultAugmentParse,
@@ -36,7 +38,7 @@ import {
   shipSlotParse,
 } from "../ships"
 
-const OUTPUT_PATH = "../frontend/src/db/ship_data/ship_data.json"
+const OUTPUT_PATH = "../../apps/web/src/db/ship_data/ship_data.json"
 
 export const main = async (
   shipEHPData: Record<string, ShipEHPProps[]>,
@@ -125,7 +127,7 @@ export const main = async (
     mkdirSync(dirname(OUTPUT_PATH), { recursive: true })
   }
 
-  await Bun.write(OUTPUT_PATH, JSON.stringify(processedData, null, 2) + "\n")
+  await writeFile(OUTPUT_PATH, JSON.stringify(processedData, null, 2) + "\n")
 
   console.log(`Ship data has been written to ${OUTPUT_PATH}`)
 }

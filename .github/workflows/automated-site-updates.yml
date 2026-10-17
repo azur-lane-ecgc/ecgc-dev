@@ -17,38 +17,48 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
         with:
           submodules: recursive
           token: ${{ secrets.SUBMODULE_PAT }}
 
-      - name: Set up Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: "22.2.0"
+      - parallel:
+          - name: Set up Node
+            uses: actions/setup-node@v7.1.0
+            with:
+              node-version: "26.12.0"
 
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: "1.3.1"
+          - name: Set up Bun
+            uses: oven-sh/setup-bun@v2.2.0
+            with:
+              bun-version-file: "package.json"
+
+          - name: Restore credentials
+            run: |
+              echo "$GOOGLE_CREDENTIALS_BASE64" | base64 --decode > packages/credentials.json
+            env:
+              GOOGLE_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
 
       - name: Install dependencies
-        run: |
-          bun ci
+        run: bun install --frozen-lockfile
 
-      - name: Restore credentials
-        run: |
-          echo "$GOOGLE_CREDENTIALS_BASE64" | base64 --decode > packages/credentials.json
-        env:
-          GOOGLE_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
+      - name: Restore Astro image cache
+        uses: actions/cache@v6.1.0
+        with:
+          path: apps/web/node_modules/.astro
+          key: astro-images-${{ runner.os }}-${{ hashFiles('bun.lock') }}-${{ github.sha }}
+          restore-keys: |
+            astro-images-${{ runner.os }}-${{ hashFiles('bun.lock') }}-
+            astro-images-${{ runner.os }}-
 
-      - name: Run gsheets2img
-        run: |
-          rm -rf packages/frontend/public/images/equip_misc/*
-          bun run gsheets2img
+      - parallel:
+          - name: Run gsheets2img
+            run: |
+              rm -rf apps/web/src/assets/equip_misc/*
+              bun run gsheets2img
 
-      - name: Run devtools
-        run: bun run devtools
+          - name: Run devtools
+            run: bun run devtools
 
       - name: Commit and push changes if any
         id: commit
@@ -74,10 +84,10 @@ jobs:
 
       - name: Upload generated images
         id: upload
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: equip-misc-images
-          path: packages/frontend/public/images/equip_misc/
+          path: apps/web/src/assets/equip_misc/
           retention-days: 1
 
       - name: Print artifact URL

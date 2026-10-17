@@ -1,7 +1,8 @@
 {
-  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "ignoreDependencies": ["@astrojs/compiler-rs"],
   "workspaces": {
-    "packages/frontend": {
+    "apps/web": {
       "entry": ["src/pages/**/*.astro", "src/pages/**/*.ts"],
       "project": ["**/*"]
     },
@@ -10,8 +11,13 @@
     },
     "packages/gsheets2img": {
       "project": ["**/*"]
+    },
+    "packages/compress": {
+      "project": ["**/*"]
+    },
+    "packages/image-downloader": {
+      "project": ["**/*"]
     }
   },
-  "ignoreWorkspaces": ["packages/AzurLaneData"],
-  "ignoreDependencies": ["oxlint"]
+  "ignoreWorkspaces": ["packages/AzurLaneData"]
 }

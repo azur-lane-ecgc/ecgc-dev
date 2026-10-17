@@ -1,0 +1,631 @@
+---
+import { Image } from "astro:assets"
+
+import imageEquipMisc13Priority from "@/assets/equip_misc/+13_Priority.jpeg"
+import imageEquipMiscAAGuns from "@/assets/equip_misc/AA_Guns.jpeg"
+import imageEquipMiscAARangeChart from "@/assets/equip_misc/AA_Range_Chart.jpeg"
+import imageEquipMiscAEAuxes from "@/assets/equip_misc/AE_Auxes.jpeg"
+import imageEquipMiscARAuxes from "@/assets/equip_misc/AR_Auxes.jpeg"
+import imageEquipMiscASWEquips from "@/assets/equip_misc/ASW_Equips.jpeg"
+import imageEquipMiscBBBCBBVAuxes from "@/assets/equip_misc/BB_BC_BBV_Auxes.jpeg"
+import imageEquipMiscBBBCBBVGuns from "@/assets/equip_misc/BB_BC_BBV_Guns.jpeg"
+import imageEquipMiscCAGuns from "@/assets/equip_misc/CA_Guns.jpeg"
+import imageEquipMiscCBCACLAuxes from "@/assets/equip_misc/CB_CA_CL_Auxes.jpeg"
+import imageEquipMiscCBGuns from "@/assets/equip_misc/CB_Guns.jpeg"
+import imageEquipMiscCLGuns from "@/assets/equip_misc/CL_Guns.jpeg"
+import imageEquipMiscCosmeticDecorativeAuxes from "@/assets/equip_misc/Cosmetic_Decorative_Auxes.jpeg"
+import imageEquipMiscCVCVLAuxes from "@/assets/equip_misc/CV_CVL_Auxes.jpeg"
+import imageEquipMiscDDAuxes from "@/assets/equip_misc/DD_Auxes.jpeg"
+import imageEquipMiscDDGuns from "@/assets/equip_misc/DD_Guns.jpeg"
+import imageEquipMiscDiveBombers from "@/assets/equip_misc/Dive_Bombers.jpeg"
+import imageEquipMiscFighters from "@/assets/equip_misc/Fighters.jpeg"
+import imageEquipMiscGearLabPriority from "@/assets/equip_misc/Gear_Lab_Priority.jpeg"
+import imageEquipMiscGenAmmoOverview from "@/assets/equip_misc/Gen._Ammo_Overview.jpeg"
+import imageEquipMiscGlossary from "@/assets/equip_misc/Glossary.jpeg"
+import imageEquipMiscIXAuxes from "@/assets/equip_misc/IX_Auxes.jpeg"
+import imageEquipMiscIXGuns from "@/assets/equip_misc/IX_Guns.jpeg"
+import imageEquipMiscMainFleetAuxGuns from "@/assets/equip_misc/Main_Fleet_Aux_Guns.jpeg"
+import imageEquipMiscReconPlanes from "@/assets/equip_misc/Recon_Planes.jpeg"
+import imageEquipMiscShipTypeAbbrev from "@/assets/equip_misc/Ship_Type_Abbrev..jpeg"
+import imageEquipMiscSSAuxes from "@/assets/equip_misc/SS_Auxes.jpeg"
+import imageEquipMiscSSTorpedoes from "@/assets/equip_misc/SS_Torpedoes.jpeg"
+import imageEquipMiscSurfaceTorpedoes from "@/assets/equip_misc/Surface_Torpedoes.jpeg"
+import imageEquipMiscTorpedoBombers from "@/assets/equip_misc/Torpedo_Bombers.jpeg"
+import { HR } from "@/components/_common/HR"
+import WikiLink from "@/components/_common/WikiLink.astro"
+
+import AugmentModules from "./AugmentModules.astro"
+import EquipmentLinkButtons from "./EquipmentLinkButtons.astro"
+---
+
+<h2 id="introduction">Introduction</h2>
+<HR />
+<p>
+  This guide gives a comprehensive overview of the best equipment in Azur Lane!
+</p>
+<br />
+
+<h4>Notes:</h4>
+<ul>
+  <li>
+    <p>You can click on an image to open it in a new tab.</p>
+  </li>
+  <li>
+    <p>
+      If the images are not loading, click the 'Spreadsheet' link below to open
+      a Google Sheets version of this page.
+    </p>
+  </li>
+  <li>
+    <p>
+      For a less comprehensive but simpler gear guide, you can read Suchiguma's
+      Quick Gear Guide linked below.
+    </p>
+  </li>
+</ul>
+<br />
+
+<EquipmentLinkButtons />
+<br />
+
+<h2 id="legend">Legend</h2>
+<HR />
+
+<h3 id="ship_types">Ship Type Abbreviations</h3>
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscShipTypeAbbrev.src}
+  title="Ship Type Abbreviations"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscShipTypeAbbrev}
+    alt="Ship Type Abbrev."
+  />
+</a>
+<br />
+<br />
+
+<h3 id="ammo_types">Ammo Type Abbreviations</h3>
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscGenAmmoOverview.src}
+  title="Ammo Type Abbreviations"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscGenAmmoOverview}
+    alt="Gen. Ammo Overview"
+  />
+</a>
+<br />
+<br />
+
+<h3 id="glossary">Guide Glossary</h3>
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscGlossary.src}
+  title="Glossary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscGlossary}
+    alt="Glossary"
+  />
+</a>
+<br />
+<br />
+<br />
+
+<h2 id="priority_guides">Priority Guides</h2>
+<HR />
+
+<h3 id="gear_lab">Gear Lab Priority</h3>
+<p>
+  Optimal gear to craft in
+  <WikiLink page="Gear Lab">Gear Lab</WikiLink>.
+</p>
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscGearLabPriority.src}
+  title="Gear Lab Priority"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscGearLabPriority}
+    alt="Gear Lab Priority"
+  />
+</a>
+<br />
+
+<ul>
+  <li>
+    <p>
+      <b>Do NOT craft more gear than you need.</b>
+    </p>
+  </li>
+</ul>
+<br />
+
+<h3 id="plus13">+13 Priority</h3>
+<p>Optimal gear to enhance to +13.</p>
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMisc13Priority.src}
+  title="Gear Lab Priority"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMisc13Priority}
+    alt="+13 Priority"
+  />
+</a>
+<br />
+<br />
+<br />
+
+<h2 id="bb_guns">BB / BC / BBV Guns</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscBBBCBBVGuns.src}
+  title="BB / BC / BBV Guns"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscBBBCBBVGuns}
+    alt="BB BC BBV Guns"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="bb_auxiliary">BB / BC / BBV Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscBBBCBBVAuxes.src}
+  title="BB / BC / BBV Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscBBBCBBVAuxes}
+    alt="BB BC BBV Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="main_fleet_secondary_guns">Main Fleet Secondary Guns</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscMainFleetAuxGuns.src}
+  title="Main Fleet Secondary Guns"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscMainFleetAuxGuns}
+    alt="Main Fleet Aux Guns"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="cb_guns">CB Guns</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscCBGuns.src}
+  title="CB Guns"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscCBGuns}
+    alt="CB Guns"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="ca_guns">CA Guns</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscCAGuns.src}
+  title="CA Guns"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscCAGuns}
+    alt="CA Guns"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="cl_guns">CL Guns</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscCLGuns.src}
+  title="CL Guns"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscCLGuns}
+    alt="CL Guns"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="cruiser_auxiliary">CB / CA / CL Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscCBCACLAuxes.src}
+  title="CB / CA / CL Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscCBCACLAuxes}
+    alt="CB CA CL Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="dd_guns">DD Guns</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscDDGuns.src}
+  title="DD Guns"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscDDGuns}
+    alt="DD Guns"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="dd_auxiliary">DD Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscDDAuxes.src}
+  title="DD Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscDDAuxes}
+    alt="DD Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="surface_torpedoes">Surface Torpedoes</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscSurfaceTorpedoes.src}
+  title="Surface Torpedoes"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscSurfaceTorpedoes}
+    alt="Surface Torpedoes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="aa_guns">AA Guns</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscAAGuns.src}
+  title="AA Guns"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscAAGuns}
+    alt="AA Guns"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="aa_range_chart">AA Range Chart</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscAARangeChart.src}
+  title="AA Range Chart"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscAARangeChart}
+    alt="AA Range Chart"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="fighters">Fighters</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscFighters.src}
+  title="Fighters"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscFighters}
+    alt="Fighters"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="dive_bombers">Dive Bombers</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscDiveBombers.src}
+  title="Dive Bombers"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscDiveBombers}
+    alt="Dive Bombers"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="torpedo_bombers">Torpedo Bombers</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscTorpedoBombers.src}
+  title="Torpedo Bombers"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscTorpedoBombers}
+    alt="Torpedo Bombers"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="cv_auxiliary">CV / CVL Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscCVCVLAuxes.src}
+  title="CV / CVL Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscCVCVLAuxes}
+    alt="CV CVL Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="ss_torpedo">SS Torpedoes</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscSSTorpedoes.src}
+  title="SS Torpedo"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscSSTorpedoes}
+    alt="SS Torpedoes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="ss_auxiliary">SS Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscSSAuxes.src}
+  title="SS Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscSSAuxes}
+    alt="SS Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="ix_guns">IX Guns</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscIXGuns.src}
+  title="IX Guns"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscIXGuns}
+    alt="IX Guns"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="ix_auxiliary">IX Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscIXAuxes.src}
+  title="IX Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscIXAuxes}
+    alt="IX Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="recon_planes">Recon Planes</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscReconPlanes.src}
+  title="Recon Planes"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscReconPlanes}
+    alt="Recon Planes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="asw_equipment">ASW Equipment</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscASWEquips.src}
+  title="ASW Equipment"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscASWEquips}
+    alt="ASW Equips"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="ae_auxiliary">AE Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscAEAuxes.src}
+  title="AE Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscAEAuxes}
+    alt="AE Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="ar_auxiliary">AR Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscARAuxes.src}
+  title="AR Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscARAuxes}
+    alt="AR Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="cosmetic_auxiliary">Cosmetic Auxiliary</h2>
+<HR />
+<a
+  rel="noopener noreferrer"
+  target="_blank"
+  href={imageEquipMiscCosmeticDecorativeAuxes.src}
+  title="Cosmetic Auxiliary"
+>
+  <Image
+    loading="lazy"
+    class="equip-misc-img"
+    src={imageEquipMiscCosmeticDecorativeAuxes}
+    alt="Cosmetic Decorative Auxes"
+  />
+</a>
+<br />
+<br />
+
+<h2 id="augment_module">Augment Modules</h2>
+<HR />
+
+<AugmentModules />
+<br />

@@ -2,7 +2,7 @@
 
 First off, thank you for considering contributing to this project! Any and all help is greatly appreciated.
 
-This is a monorepo, which means that it contains multiple packages in the `packages` directory. Each package has its own `package.json` file and can be managed independently.
+This repository contains Bun workspaces in the `packages` and `apps` directories. Install dependencies from the repository root with the shared `bun.lock` file.
 
 > **Note**: For detailed development guidelines including build commands, code style, and quality assurance practices, see [AGENTS.md](./AGENTS.md).
 
@@ -12,12 +12,20 @@ The project is a monorepo with the following structure:
 
 - `packages/AzurLaneData`: A [submodule](https://github.com/MrLar/AzurLaneData) containing data for the game Azur Lane.
 - `packages/dev`: Contains development scripts and tools for the project.
-- `packages/frontend`: The frontend of the project, built with Astro.
+- `apps/web`: The frontend of the project, built with Astro.
 - `packages/gsheets2img`: A TypeScript script to convert google sheets to images.
+- `packages/image-downloader`: A TypeScript tool that downloads missing original ship icons.
 - `CONTRIBUTING.md`: This file.
 - `README.md`: The main README file for the project.
 
 ## Local Setup
+
+Use Bun 1.4.2 and Node.js 22.12.0 or later. CI uses Node.js 26.10.0.
+
+Keep TypeScript on version 6 until Astro's checker and patched oxfmt Astro formatter support version 7.
+These tools require the JavaScript compiler API that TypeScript 7 removes.
+Run `bun run update` to update all workspaces within their supported version ranges.
+Review breaking changes before you change those ranges.
 
 1.  **Clone the repository:**
 
@@ -81,20 +89,20 @@ The `package.json` file contains a number of scripts for common tasks:
 
 - `dev`: Starts the Astro development server at `http://localhost:4321`
 - `build`: Builds the frontend with type checking
-- `compress-build`: Builds the frontend and compresses the output
+- `cf-build`: Builds the frontend and compresses the output
 - `cf-dev`: Starts the development server with Cloudflare Wrangler
 - `start`: Starts the production server
 
 ### Code Quality
 
 - `lint`: Lints the code with oxlint
-- `format`: Formats the code with prettier (includes astro, tailwindcss, and import organization)
-- `smol-format`: Formats specific file types with prettier
+- `format`: Formats the code with oxfmt (includes Astro and import organization)
+- `format:check`: Checks formatting with oxfmt
 
 ### Maintenance
 
 - `prepare`: Installs lefthook git hooks manager
-- `update`: Updates all dependencies
+- `update`: Updates dependencies within supported version ranges
 - `rebuild`: Removes all `node_modules` and build artifacts, then reinstalls
 - `reset`: Full rebuild and runs devtools
 - `submodule`: Updates git submodules
@@ -109,7 +117,7 @@ The `package.json` file contains a number of scripts for common tasks:
 
 ### Code Style
 
-- Follow the formatting rules defined in `.prettierrc.json`
+- Follow the formatting rules defined in `.oxfmtrc.json`
 - Use path aliases (`@/components/*`, `@/utils/*`, etc.) for imports
 - Prefer async/await over promises
 - Use TypeScript strict mode with proper type definitions
