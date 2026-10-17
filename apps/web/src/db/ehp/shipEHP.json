@@ -151,6 +151,23 @@
       "std": "54.98%"
     }
   ],
+  "Z52": [
+    {
+      "name": "Z52 (pewpew) (Z1)",
+      "totalEHP": "153.67%",
+      "std": "54.11%"
+    },
+    {
+      "name": "Z52 (pewpew)",
+      "totalEHP": "127.18%",
+      "std": "43.32%"
+    },
+    {
+      "name": "Z52 (Twin 100)",
+      "totalEHP": "121.12%",
+      "std": "42.28%"
+    }
+  ],
   "Moskva": [
     {
       "name": "Moskva",
@@ -297,18 +314,6 @@
       "std": "38.17%"
     }
   ],
-  "Z52": [
-    {
-      "name": "Z52 (pewpew)",
-      "totalEHP": "127.18%",
-      "std": "43.32%"
-    },
-    {
-      "name": "Z52 (Twin 100)",
-      "totalEHP": "121.12%",
-      "std": "42.28%"
-    }
-  ],
   "Azuma": [
     {
       "name": "Azuma (Fate) (VH)",
@@ -393,6 +398,13 @@
       "std": "39.09%"
     }
   ],
+  "Amatsukaze": [
+    {
+      "name": "Amatsukaze",
+      "totalEHP": "122.26%",
+      "std": "48.63%"
+    }
+  ],
   "Prinz Eugen": [
     {
       "name": "Prinz Eugen",
@@ -464,6 +476,13 @@
       "std": "35.42%"
     }
   ],
+  "Tallinn": [
+    {
+      "name": "Tallinn",
+      "totalEHP": "116.29%",
+      "std": "27.87%"
+    }
+  ],
   "Marseillaise": [
     {
       "name": "Marseillaise (Richelieu)",
@@ -474,13 +493,6 @@
       "name": "Marseillaise",
       "totalEHP": "108.99%",
       "std": "35.54%"
-    }
-  ],
-  "Tallinn": [
-    {
-      "name": "Tallinn",
-      "totalEHP": "115.67%",
-      "std": "27.75%"
     }
   ],
   "Kaguya Yamai and Yuzuru Yamai": [
@@ -552,6 +564,13 @@
       "name": "Hindenburg (CA)",
       "totalEHP": "98.84%",
       "std": "25.40%"
+    }
+  ],
+  "Tiger": [
+    {
+      "name": "Tiger",
+      "totalEHP": "113.28%",
+      "std": "30.46%"
     }
   ],
   "Adventure Galley": [
@@ -1688,18 +1707,23 @@
       "std": "24.35%"
     }
   ],
-  "Soobrazitelny": [
-    {
-      "name": "Soobrazitelny",
-      "totalEHP": "87.72%",
-      "std": "33.04%"
-    }
-  ],
   "Denver": [
     {
       "name": "Denver",
       "totalEHP": "87.65%",
       "std": "25.61%"
+    }
+  ],
+  "Kitakaze": [
+    {
+      "name": "Kitakaze (Fate)",
+      "totalEHP": "87.49%",
+      "std": "29.30%"
+    },
+    {
+      "name": "Kitakaze",
+      "totalEHP": "70.56%",
+      "std": "24.78%"
     }
   ],
   "Portsmouth Adventure": [
@@ -1754,6 +1778,13 @@
       "name": "Blücher",
       "totalEHP": "86.67%",
       "std": "25.52%"
+    }
+  ],
+  "Soobrazitelny": [
+    {
+      "name": "Soobrazitelny",
+      "totalEHP": "86.67%",
+      "std": "32.91%"
     }
   ],
   "Algérie": [
@@ -1844,6 +1875,13 @@
       "name": "Duquesne",
       "totalEHP": "85.50%",
       "std": "29.37%"
+    }
+  ],
+  "Soobrazitelny META": [
+    {
+      "name": "Soobrazitelny META",
+      "totalEHP": "85.49%",
+      "std": "33.55%"
     }
   ],
   "Clevelad": [
@@ -1993,6 +2031,18 @@
       "name": "Bremerton (Not Front)",
       "totalEHP": "79.69%",
       "std": "21.76%"
+    }
+  ],
+  "Hardy": [
+    {
+      "name": "Hardy (Retrofit)",
+      "totalEHP": "83.98%",
+      "std": "31.60%"
+    },
+    {
+      "name": "Hardy",
+      "totalEHP": "63.26%",
+      "std": "26.45%"
     }
   ],
   "Sheffield μ": [
@@ -2787,18 +2837,6 @@
       "std": "28.02%"
     }
   ],
-  "Kitakaze": [
-    {
-      "name": "Kitakaze (Fate)",
-      "totalEHP": "75.14%",
-      "std": "26.95%"
-    },
-    {
-      "name": "Kitakaze",
-      "totalEHP": "70.56%",
-      "std": "24.78%"
-    }
-  ],
   "Southampton": [
     {
       "name": "Southampton",
@@ -3012,6 +3050,13 @@
       "name": "Naganami",
       "totalEHP": "73.43%",
       "std": "29.37%"
+    }
+  ],
+  "Vincenzo Gioberti": [
+    {
+      "name": "Vincenzo Gioberti",
+      "totalEHP": "73.37%",
+      "std": "30.40%"
     }
   ],
   "Raleigh": [
@@ -3919,13 +3964,6 @@
       "std": "28.31%"
     }
   ],
-  "Vincenzo Gioberti": [
-    {
-      "name": "Vincenzo Gioberti",
-      "totalEHP": "65.02%",
-      "std": "27.16%"
-    }
-  ],
   "Kinugasa": [
     {
       "name": "Kinugasa",
@@ -3983,6 +4021,13 @@
       "name": "Nagara",
       "totalEHP": "64.50%",
       "std": "21.89%"
+    }
+  ],
+  "Hasty": [
+    {
+      "name": "Hasty",
+      "totalEHP": "64.17%",
+      "std": "25.78%"
     }
   ],
   "Le Téméraire": [
@@ -4047,6 +4092,13 @@
       "name": "Miller",
       "totalEHP": "63.87%",
       "std": "24.73%"
+    }
+  ],
+  "Hostile": [
+    {
+      "name": "Hostile",
+      "totalEHP": "63.84%",
+      "std": "25.31%"
     }
   ],
   "Z28": [
@@ -4122,13 +4174,6 @@
       "name": "Quincy",
       "totalEHP": "63.28%",
       "std": "18.19%"
-    }
-  ],
-  "Hardy": [
-    {
-      "name": "Hardy",
-      "totalEHP": "63.26%",
-      "std": "26.45%"
     }
   ],
   "Z14": [
