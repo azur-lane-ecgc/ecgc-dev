@@ -42152,6 +42152,286 @@
       "isCollab": false
     }
   },
+  "760": {
+    "id": 760,
+    "ship": "Ormrinn Langi",
+    "faction": "MOT",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "IXv",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Abyssal Summons"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Unobtainable",
+          "href": "Category:Ships"
+        }
+      ]
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "761": {
+    "id": 761,
+    "ship": "Riyala Bey",
+    "faction": "MOT",
+    "rarity": 3,
+    "isKai": false,
+    "hullType": "IXm",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.1,
+        "mounts": 6
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.75,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.75,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Mizrak of Trials"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Unobtainable",
+          "href": "Category:Ships"
+        }
+      ]
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "762": {
+    "id": 762,
+    "ship": "Járnbarðinn",
+    "faction": "MOT",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "IXs",
+    "fleetType": "ss",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.25,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Silent Scythe"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Unobtainable",
+          "href": "Category:Ships"
+        }
+      ]
+    },
+    "permanent": {
+      "isPermanent": true,
+      "isCollab": false
+    }
+  },
+  "763": {
+    "id": 763,
+    "ship": "Merkuriy",
+    "faction": "MOT",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "IXv",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.35,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Greatstaff of the Lodestar"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Tank", "SuperTank", "Bad"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Unobtainable",
+          "href": "Category:Ships"
+        }
+      ]
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "764": {
+    "id": 764,
+    "ship": "Selimiye",
+    "faction": "MOT",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "IXm",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["BB Main Gun"],
+        "efficiency": 1.1,
+        "mounts": 6
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.75,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 1.75,
+        "mounts": 2
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Fate's Choice"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [],
+      "other": [],
+      "construction": [],
+      "permanent": [
+        {
+          "name": "Unobtainable",
+          "href": "Category:Ships"
+        }
+      ]
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
   "10001": {
     "id": 10001,
     "ship": "Neptune (Neptunia)",
