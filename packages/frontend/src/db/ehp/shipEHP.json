@@ -1,18 +1,4 @@
 {
-  "22": [
-    {
-      "name": "22",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
-    }
-  ],
-  "33": [
-    {
-      "name": "33",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
-    }
-  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -45,6 +31,18 @@
       "name": "Ning Hai (NotBack)",
       "totalEHP": "82.21%",
       "std": "39.01%"
+    }
+  ],
+  "Merkuriy": [
+    {
+      "name": "Merkuriy (3 gear)",
+      "totalEHP": "166.10%",
+      "std": "44.21%"
+    },
+    {
+      "name": "Merkuriy (2 gear)",
+      "totalEHP": "147.08%",
+      "std": "41.60%"
     }
   ],
   "Felix Schultz": [
@@ -967,6 +965,18 @@
       "name": "Surrey",
       "totalEHP": "100.38%",
       "std": "29.93%"
+    }
+  ],
+  "Ormrinn Langi": [
+    {
+      "name": "Ormrinn Langi (3 gear)",
+      "totalEHP": "100.30%",
+      "std": "25.98%"
+    },
+    {
+      "name": "Ormrinn Langi (2 gear)",
+      "totalEHP": "87.91%",
+      "std": "24.32%"
     }
   ],
   "De Zeven Provinciën": [
@@ -4362,6 +4372,13 @@
       "std": "18.30%"
     }
   ],
+  "3300.00%": [
+    {
+      "name": "3300.00%",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Z20": [
     {
       "name": "Z20",
@@ -4438,6 +4455,13 @@
       "name": "Shiranui",
       "totalEHP": "56.79%",
       "std": "22.88%"
+    }
+  ],
+  "2200.00%": [
+    {
+      "name": "2200.00%",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
     }
   ],
   "Jersey": [
