@@ -34248,7 +34248,7 @@
     "augments": ["Handwritten Note"],
     "samEval": "Adventure Galley is a damage-oriented IXV with good stats and skills. Her damage is alright due to MGM+1, as well as a decent skill barrage. Her bulk is on the frailer side, but 3 auxiliary equipment slots somewhat offset that. In addition, she has no AA support, and has very decreased bulk against AVI damage due to her 0 base AA stat. Overall, she is a good ship, but at best she is a sidegrade to more easily accessible options.",
     "fastLoad": null,
-    "roles": ["Tank", "DmgDealer", "TopDmg", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -42359,7 +42359,7 @@
     "augments": ["Greatstaff of the Lodestar"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "SuperTank", "Bad"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
