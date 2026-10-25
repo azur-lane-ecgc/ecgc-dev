@@ -6026,6 +6026,35 @@
       "vgsurvival": null
     }
   ],
+  "Ookami Mio": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "D",
+      "meta": "F",
+      "cm": "D",
+      "w14mob": "F",
+      "w14boss": "F",
+      "w15mob": "F",
+      "w15boss": "F",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1400,
+      "mediumdmg": 1689,
+      "heavydmg": 1652,
+      "aoedmg": 1,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": null,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
   "Origami Tobiichi": [
     {
       "nameNote": "",
@@ -9272,35 +9301,6 @@
       "mediumdmg": 3137,
       "heavydmg": 3113,
       "aoedmg": 3,
-      "dmguptime": null,
-      "offensivebuff": null,
-      "selfsurvival": null,
-      "aa": null,
-      "rammers": null,
-      "othermain": null,
-      "vgsurvival": null
-    }
-  ],
-  "Ōkami Mio": [
-    {
-      "nameNote": "",
-      "notes": null,
-      "hardarbiter": "D",
-      "meta": "F",
-      "cm": "D",
-      "w14mob": "F",
-      "w14boss": "F",
-      "w15mob": "F",
-      "w15boss": "F",
-      "ex": "D",
-      "consistency": null,
-      "fleetreq": null,
-      "gearreq": null,
-      "flagreq": null,
-      "lightdmg": 1400,
-      "mediumdmg": 1689,
-      "heavydmg": 1652,
-      "aoedmg": 1,
       "dmguptime": null,
       "offensivebuff": null,
       "selfsurvival": null,

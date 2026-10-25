@@ -53,14 +53,17 @@ const hasListedStats = (stats: unknown): boolean =>
 
 /** Finds ship icons required by Samvaluation records with listed game stats. */
 export const findMissingShipIcons = async (): Promise<ShipIconInventory> => {
-  const processedShips = await readJsonObject<ProcessedShipRecord>(
-    new URL("apps/web/src/db/ship_data/ship_data.json", monorepoRoot),
-  )
-  const rawShips = await readJsonObject<RawShipRecord>(
-    new URL("packages/AzurLaneData/data/ships.json", monorepoRoot),
-  )
   const iconDirectory = new URL(shipIconOutputDirectory, monorepoRoot)
-  const iconFiles = (await readdir(iconDirectory)).filter((name) =>
+  const [processedShips, rawShips, directoryNames] = await Promise.all([
+    readJsonObject<ProcessedShipRecord>(
+      new URL("apps/web/src/db/ship_data/ship_data.json", monorepoRoot),
+    ),
+    readJsonObject<RawShipRecord>(
+      new URL("packages/AzurLaneData/data/ships.json", monorepoRoot),
+    ),
+    readdir(iconDirectory),
+  ])
+  const iconFiles = directoryNames.filter((name) =>
     name.toLowerCase().endsWith(".png"),
   )
   const existingIconNames = new Set(

@@ -47,7 +47,7 @@
       "std": "39.01%"
     }
   ],
-  "Mercury": [
+  "Merkuriy": [
     {
       "name": "Mercury (3 gear)",
       "totalEHP": "166.10%",
@@ -187,7 +187,7 @@
       "std": "36.52%"
     }
   ],
-  "Tokisaki Kurumi": [
+  "Kurumi Tokisaki": [
     {
       "name": "Tokisaki Kurumi (Mob)",
       "totalEHP": "152.51%",
@@ -507,7 +507,7 @@
       "std": "35.54%"
     }
   ],
-  "Kaguya Yamai and Yuzuru Yamai": [
+  "Kaguya Yamai・Yuzuru Yamai": [
     {
       "name": "Kaguya Yamai and Yuzuru Yamai",
       "totalEHP": "114.57%",
@@ -1908,13 +1908,6 @@
       "std": "29.37%"
     }
   ],
-  "Soobrazitelny META": [
-    {
-      "name": "Soobrazitelny META",
-      "totalEHP": "85.49%",
-      "std": "33.55%"
-    }
-  ],
   "Clevelad": [
     {
       "name": "Clevelad",
@@ -1936,7 +1929,7 @@
       "std": "38.69%"
     }
   ],
-  "Unzen Chan": [
+  "Unzen-chan": [
     {
       "name": "Unzen Chan",
       "totalEHP": "85.35%",
@@ -2797,7 +2790,7 @@
       "std": "28.42%"
     }
   ],
-  "Koln META": [
+  "Köln META": [
     {
       "name": "Koln META",
       "totalEHP": "75.75%",
@@ -3541,7 +3534,7 @@
       "std": "29.22%"
     }
   ],
-  "Giosue Carducci": [
+  "Giosuè Carducci": [
     {
       "name": "Giosue Carducci",
       "totalEHP": "68.88%",

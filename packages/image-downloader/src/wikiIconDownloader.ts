@@ -5,12 +5,7 @@ import {
   shipIconOutputDirectory,
   type MissingShipIcon,
 } from "./missingShipIcons"
-
-interface BrowserResult {
-  success: boolean
-  data?: any
-  error?: string | null
-}
+import { runWikiBrowserCommand } from "./wikiBrowserCommand"
 
 interface DownloadMetadata {
   id: number
@@ -33,38 +28,7 @@ interface DownloadMetadata {
 const monorepoRoot = new URL("../../../", import.meta.url)
 const evidenceRoot = new URL(".agents/evidence/image-downloader/", monorepoRoot)
 const destinationRoot = new URL(shipIconOutputDirectory, monorepoRoot)
-const browserSession = "ecgc-wiki-icons"
 const minimumDelayMs = 60_000
-
-const browser = async (args: string[], headed = false): Promise<any> => {
-  const proc = Bun.spawn(
-    [
-      "bunx",
-      "--package",
-      "agent-browser@0.38.2",
-      "agent-browser",
-      ...(headed ? ["--headed"] : []),
-      "--session",
-      browserSession,
-      ...args,
-      "--json",
-    ],
-    { stdout: "pipe", stderr: "pipe" },
-  )
-  const stdout = await new Response(proc.stdout).text()
-  const stderr = await new Response(proc.stderr).text()
-  if ((await proc.exited) !== 0) {
-    throw new Error(`agent-browser ${args.join(" ")}: ${stderr || stdout}`)
-  }
-
-  const result = JSON.parse(stdout) as BrowserResult
-  if (!result.success) {
-    throw new Error(
-      `agent-browser ${args.join(" ")}: ${JSON.stringify(result)}`,
-    )
-  }
-  return result.data
-}
 
 const readPngDimensions = (bytes: Uint8Array) => {
   const pngSignature = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]
@@ -80,7 +44,9 @@ const readPngDimensions = (bytes: Uint8Array) => {
 
 const waitForFileTitle = async (expectedTitle: string) => {
   for (let attempt = 0; attempt < 10; attempt++) {
-    const title = String((await browser(["get", "title"])).title ?? "")
+    const title = String(
+      (await runWikiBrowserCommand(["get", "title"])).title ?? "",
+    )
     if (/Oh noes|Access Denied|Too Many Requests|HTTP 429/i.test(title)) {
       throw new Error(`Wiki protection or rate limit detected: ${title}`)
     }
@@ -189,20 +155,20 @@ export const downloadMissingShipIcons = async (
     await Bun.sleep(minimumDelayMs)
 
     const filePage = `https://azurlane.koumakan.jp/wiki/File:${encodeURIComponent(target.iconFile)}`
-    await browser(["open", filePage], true)
-    await browser(["wait", "--load", "domcontentloaded"])
+    await runWikiBrowserCommand(["open", filePage], true)
+    await runWikiBrowserCommand(["wait", "--load", "domcontentloaded"])
     await Bun.sleep(5000)
     await waitForFileTitle(target.iconFile)
 
     const harPath = new URL(`har/${target.iconFile}.har`, evidenceRoot)
-    await browser(["network", "har", "start", "--content", "all"])
+    await runWikiBrowserCommand(["network", "har", "start", "--content", "all"])
     let harData: any
     try {
-      await browser(["find", "text", "Original file", "click"])
-      await browser(["wait", "--load", "domcontentloaded"])
+      await runWikiBrowserCommand(["find", "text", "Original file", "click"])
+      await runWikiBrowserCommand(["wait", "--load", "domcontentloaded"])
       await Bun.sleep(3000)
     } finally {
-      harData = await browser([
+      harData = await runWikiBrowserCommand([
         "network",
         "har",
         "stop",
