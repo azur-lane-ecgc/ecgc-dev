@@ -9,51 +9,31 @@ import { main as replaceLinksMain } from "@/tools/replace_links/replaceLinks"
 import { main as shipDataMain } from "@/tools/ship_data/ship_json_generator"
 import { main as tocMain } from "@/tools/toc_generator/TocGenerator"
 
-const main = async () => {
-  console.log("Running ehp.ts")
-  const ehpData = await ehpMain()
-  console.log()
+const updateShipDatabase = async () => {
+  const [ehpData, aaData, mainFleetData, vgFleetData, ssFleetData] =
+    await Promise.all([
+      ehpMain(),
+      aaMain(),
+      mainFleetMain(),
+      vgFleetMain(),
+      ssFleetMain(),
+    ])
 
-  console.log("Running aa_parsing.ts")
-  const aaData = await aaMain()
-  console.log()
-
-  console.log("Running mainfleetrankings.ts")
-  const mainFleetData = await mainFleetMain()
-  console.log()
-
-  console.log("Running vgfleetrankings.ts")
-  const vgFleetData = await vgFleetMain()
-  console.log()
-
-  console.log("Running ssfleetrankings.ts")
-  const ssFleetData = await ssFleetMain()
-  console.log()
-
-  console.log("Running azurLaneEvents.ts")
-  await eventsMain()
-  console.log()
-
-  console.log("Running replaceLinks.ts")
-  await replaceLinksMain()
-  console.log()
-
-  console.log("Running TocGenerator.ts")
-  await tocMain()
-  console.log()
-
-  console.log("Running changelog.ts")
-  await changelogMain()
-  console.log()
-
-  console.log("Running ship_json_generator.ts")
   await shipDataMain(ehpData, aaData, mainFleetData, vgFleetData, ssFleetData)
-  console.log()
+}
+
+const main = async () => {
+  await Promise.all([
+    updateShipDatabase(),
+    eventsMain(),
+    replaceLinksMain().then(tocMain),
+    changelogMain(),
+  ])
 
   console.log("All standard TypeScript tools have been run successfully.")
 }
 
 main().catch((err) => {
   console.error("An error occurred while running TypeScript tools:", err)
-  process.exit(1)
+  process.exitCode = 1
 })

@@ -7,6 +7,7 @@ import {
   getGoogleSheetColumn,
   parseGoogleSheetHeaders,
 } from "../googleSheetSchema"
+import { normalizeSpreadsheetShipName } from "../ships/shipNameParse/spreadsheetShipName"
 
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "1rb_uXVmDnK2YKe-0YRTrf3VUcQi8mKwEMYKCBFmVXCc"
@@ -47,11 +48,12 @@ const extractBaseName = (shipName: string): string => {
 
 const processSheet = async (sheetName: string, auth: any) => {
   const sheets = google.sheets({ version: "v4", auth })
-  const headerResult = await sheets.spreadsheets.values.get({
+  const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `${sheetName}!A1:ZZ1`,
+    range: `${sheetName}!A1:ZZ`,
   })
-  const columns = parseGoogleSheetHeaders(headerResult.data.values?.[0] ?? [])
+  const values = res.data.values ?? []
+  const columns = parseGoogleSheetHeaders(values[0] ?? [])
   const columnIndexes = Object.fromEntries(
     REQUIRED_HEADERS.map((headerName) => [
       headerName,
@@ -59,22 +61,13 @@ const processSheet = async (sheetName: string, auth: any) => {
     ]),
   )
 
-  const res = await sheets.spreadsheets.values.get({
-    spreadsheetId: SPREADSHEET_ID,
-    range: `${sheetName}!A2:ZZ`,
-  })
-
-  const values = res.data.values
-  if (!values) {
-    return {} as Record<string, any[]>
-  }
-
   const dataDict: Record<string, any[]> = {}
 
-  for (const row of values) {
+  for (let rowIndex = 1; rowIndex < values.length; rowIndex++) {
+    const row = values[rowIndex]!
     const originalName = String(row[columnIndexes["Ship"] ?? -1] ?? "").trim()
     if (!originalName) continue
-    const baseName = extractBaseName(originalName)
+    const baseName = normalizeSpreadsheetShipName(extractBaseName(originalName))
     const percentSD = String(row[columnIndexes["%SD"] ?? -1] ?? "").trim()
     const aaSum = String(row[columnIndexes["Sum"] ?? -1] ?? "").trim()
 
@@ -93,6 +86,7 @@ const processSheet = async (sheetName: string, auth: any) => {
   return dataDict
 }
 
+/** Reads anti-air headers and ship data in one sheet request. */
 export const main = async (): Promise<Record<string, any[]>> => {
   if (SHEET_NAMES.length !== OUTPUT_PATHS.length) {
     throw new Error("Number of sheet names must match number of output paths")

@@ -45,6 +45,25 @@ const collabEvents = [
 
 const exceptionShips = ["Formidable", "Mary Celeste", "Amity"]
 
+const qualifiesAsPermanent = (ship: ShipDropData): boolean =>
+  Boolean(
+    (ship.timer && (ship.light || ship.heavy || ship.special)) ||
+    ship.other.some((code) => code !== 11 && code !== 13) ||
+    ship.maps.length > 0,
+  )
+
+const getShipEventKey = (events: Set<string>): string =>
+  JSON.stringify([...events].sort())
+
+const permanentEventKeys = new Set<string>()
+for (const ship of Object.values(shipDropData)) {
+  if (!qualifiesAsPermanent(ship) || ship.events.length === 0) continue
+  const events = new Set(ship.events)
+  if (events.size === ship.events.length) {
+    permanentEventKeys.add(getShipEventKey(events))
+  }
+}
+
 const OTHER_LOCATIONS: Record<number, string | null> = {
   0: "Guild Shop",
   1: "Medal Shop",
@@ -193,54 +212,29 @@ export const shipLocationParse = (
   return { events, other, construction, permanent }
 }
 
+/** Checks permanent ship availability through direct sources and matching event groups. */
 export const isPermanent = (
   id: number,
 ): { isPermanent: boolean; isCollab: boolean } => {
   const dropData = shipDropData[id]
   if (!dropData) return { isPermanent: false, isCollab: false }
 
-  const qualifies = (ship: ShipDropData | undefined): boolean => {
-    if (!ship) return false
-
-    // rule 1: ship is available in light / heavy / special construction
-    const r1 = !!ship.timer && (ship.light || ship.heavy || ship.special)
-
-    // rule 2: ship is available from permanent not map-drop or not build sources (ex. shops)
-    const r2 =
-      ship.other.length > 0 &&
-      ship.other.some((code) => code !== 11 && code !== 13)
-
-    // rule 3: ship is available from campaign map-drop
-    const r3 = ship.maps.length > 0
-
-    return r1 || r2 || r3
-  }
-
-  // rule 4: other event ships from this ship's events are permanent (through rules 1-3)
-  const events: Set<string> = new Set(dropData.events)
-
-  const rule4 =
-    events.size > 0 &&
-    Object.entries(shipDropData).some(([k, ship]) => {
-      if (Number(k) === id) return false // skip self
-
-      const ev = ship.events
-      if (ev.length !== events.size) return false
-      const evSet = new Set(ev)
-      if (evSet.size !== events.size) return false
-
-      for (const e of events) if (!evSet.has(e)) return false
-
-      return qualifies(ship)
-    })
-
   // collab flag
   const isCollab =
     dropData.events.length > 0 &&
     dropData.events.some((ev) => collabEvents.includes(ev))
 
+  if (qualifiesAsPermanent(dropData)) {
+    return { isPermanent: true, isCollab }
+  }
+
+  // Only qualifying ships enter the index, so this ship cannot match itself.
+  const matchesPermanentEvent =
+    dropData.events.length > 0 &&
+    permanentEventKeys.has(getShipEventKey(new Set(dropData.events)))
+
   return {
-    isPermanent: qualifies(dropData) || rule4,
+    isPermanent: matchesPermanentEvent,
     isCollab: isCollab,
   }
 }

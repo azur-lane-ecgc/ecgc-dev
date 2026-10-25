@@ -33,13 +33,14 @@ import {
   shipLocationParse,
   shipNameParse,
   shipRarityParse,
-  shipRoleParse,
+  createShipRoleParser,
   shipSamvaluationParse,
   shipSlotParse,
 } from "../ships"
 
 const OUTPUT_PATH = "../../apps/web/src/db/ship_data/ship_data.json"
 
+/** Generates ship records from game data and normalized spreadsheet values. */
 export const main = async (
   shipEHPData: Record<string, ShipEHPProps[]>,
   shipAAData: Record<string, ShipAAProps[]>,
@@ -48,6 +49,13 @@ export const main = async (
   ssFleetRankingData: Record<string, SSFleetRankingProps[]>,
 ): Promise<void> => {
   const processedData: Record<number, ProcessedShipData> = {}
+  const parseShipRoles = createShipRoleParser(
+    shipEHPData,
+    shipAAData,
+    mainFleetRankingData,
+    vgFleetRankingData,
+    ssFleetRankingData,
+  )
 
   Object.keys(ships).forEach((id) => {
     const mrLarData = ships[+id]
@@ -93,16 +101,7 @@ export const main = async (
     const samvaluationData = shipSamvaluationParse(ship)
     const samEval = samvaluationData.evaluation
     const fastLoad = samvaluationData?.preload2 || null
-    const roles = shipRoleParse(
-      ship,
-      fleetType,
-      hullType,
-      shipEHPData,
-      shipAAData,
-      mainFleetRankingData,
-      vgFleetRankingData,
-      ssFleetRankingData,
-    )
+    const roles = parseShipRoles(ship, fleetType, hullType)
 
     processedData[+id] = {
       id: +id,

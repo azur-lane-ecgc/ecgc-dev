@@ -7,6 +7,7 @@ import {
   getGoogleSheetColumn,
   parseGoogleSheetHeaders,
 } from "../googleSheetSchema"
+import { normalizeSpreadsheetShipName } from "../ships/shipNameParse/spreadsheetShipName"
 
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
@@ -80,39 +81,30 @@ const parseFleetKey = (
     : { shipName: fleetKey.trim(), nameNote: "" }
 }
 
-const getColumnIndexes = async (auth: any): Promise<Record<string, number>> => {
+const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
   const sheets = google.sheets({ version: "v4", auth })
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `${SHEET_NAME}!A2:ZZ2`,
+    range: `${SHEET_NAME}!A2:ZZ`,
   })
-  const columns = parseGoogleSheetHeaders(res.data.values?.[0] ?? [])
-
-  return Object.fromEntries(
+  const values = res.data.values ?? []
+  const columns = parseGoogleSheetHeaders(values[0] ?? [])
+  const columnIndexes = Object.fromEntries(
     EXPECTED_HEADERS.map((headerName) => [
       headerName,
       getGoogleSheetColumn(columns, SHEET_NAME, headerName),
     ]),
   )
-}
-
-const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
-  const columnIndexes = await getColumnIndexes(auth)
-  const sheets = google.sheets({ version: "v4", auth })
-  const res = await sheets.spreadsheets.values.get({
-    spreadsheetId: SPREADSHEET_ID,
-    range: `${SHEET_NAME}!A3:ZZ`,
-  })
-
-  const values = res.data.values || []
   const dataDict: Record<string, any[]> = {}
 
-  for (const row of values) {
+  for (let rowIndex = 1; rowIndex < values.length; rowIndex++) {
+    const row = values[rowIndex]!
     if (row.length < 1) continue
 
     const fleetKey = String(row[columnIndexes["Name"] ?? -1] ?? "").trim()
     if (!fleetKey) continue
     const parsedKey = parseFleetKey(fleetKey)
+    const shipName = normalizeSpreadsheetShipName(parsedKey.shipName)
 
     const rowData: Record<string, string | null> = {}
     for (const headerName of EXPECTED_HEADERS) {
@@ -124,8 +116,8 @@ const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
           : String(cellValue).trim()
     }
 
-    if (!dataDict[parsedKey.shipName]) {
-      dataDict[parsedKey.shipName] = []
+    if (!dataDict[shipName]) {
+      dataDict[shipName] = []
     }
 
     const ranking = {
@@ -165,9 +157,9 @@ const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
     }
 
     if (parsedKey.nameNote === "") {
-      dataDict[parsedKey.shipName]?.unshift(ranking)
+      dataDict[shipName]?.unshift(ranking)
     } else {
-      dataDict[parsedKey.shipName]?.push(ranking)
+      dataDict[shipName]?.push(ranking)
     }
   }
 
@@ -182,6 +174,7 @@ const processSheet = async (auth: any): Promise<Record<string, any[]>> => {
   return dataDict
 }
 
+/** Reads fleet ranking headers and data in one sheet request. */
 export const main = async (): Promise<Record<string, any[]>> => {
   const auth = await getAuthToken()
   const sheetData = await processSheet(auth)

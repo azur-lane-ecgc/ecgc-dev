@@ -34,6 +34,8 @@ The compressor scans `apps/web/dist/` recursively for images and re-encodes them
 - Lossless compression for AVIF and HEIF
 - Optimized lossy settings for JPEG (mozjpeg encoder, 4:4:4 chroma)
 - Preserves an original file when recompression would increase its size
+- Processes at most two images concurrently
+- Uses buffer lengths for size reports instead of additional file metadata reads
 - Reports size savings per file
 
 ## Compression Results
