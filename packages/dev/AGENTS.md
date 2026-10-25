@@ -6,7 +6,7 @@ This package contains TypeScript development scripts and tools for processing Az
 
 ## Build & Run Commands
 
-- **Run all dev tools**: `bun run devtools` (executes all data processing scripts sequentially)
+- **Run all dev tools**: `bun run devtools` (runs independent data processing tasks concurrently)
 
 ## Key Scripts and Directories
 

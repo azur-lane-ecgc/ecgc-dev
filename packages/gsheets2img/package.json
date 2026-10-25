@@ -6,7 +6,7 @@
   "type": "module",
   "module": "main.ts",
   "scripts": {
-    "main": "bun run postinstall && bun main.ts",
+    "main": "bun main.ts",
     "check": "tsc --noEmit",
     "postinstall": "bunx playwright install firefox"
   },

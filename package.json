@@ -23,6 +23,7 @@
     "format:check": "bunx oxfmt --check packages apps patches",
     "lint": "bunx --bun oxlint --fix packages apps patches",
     "e2e": "apps/web/tests/website-e2e.sh",
+    "test:tools": "bun test packages/dev packages/compress packages/gsheets2img packages/image-downloader",
     "devtools": "bun run submodule && bun --filter dev main && bun run format",
     "build": "bun --filter frontend build",
     "check": "bun --filter frontend check && bun --filter dev check && bun --filter gsheets2img check && bun --filter compress check && bun --filter image-downloader check",
