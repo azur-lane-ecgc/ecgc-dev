@@ -2,7 +2,7 @@
   "Adventure": [
     {
       "nameNote": "Base",
-      "notes": "IXs are not suitable for use against high-damage enemies.",
+      "notes": "Submarine fleet Tempesta ships are not suitable for use against high-damage enemies because unlike submarines, they fight on the surface and take a lot of damage, and they leave the battle upon taking too much damage. Much of their best gear require core data or excessive farming. Due to the available guns, Tempesta ships are stronger against light armor enemies than heavy, in contrast to submarines being stronger against heavy than light.",
       "hardarbiter": "D",
       "cm": "D",
       "campaign": "D",
@@ -66,9 +66,9 @@
   "Amity": [
     {
       "nameNote": "Base",
-      "notes": "Buffs fleet as long as she gets hit. IXs are not suitable for use against high-damage enemies.",
-      "hardarbiter": "A*",
-      "cm": "A*",
+      "notes": "Amity buffs fleet damage as long as she gets hit. Submarine fleet Tempesta ships are not suitable for use against high-damage enemies because unlike submarines, they fight on the surface and take a lot of damage, and they leave the battle upon taking too much damage. Much of their best gear require core data or excessive farming. Due to the available guns, Tempesta ships are stronger against light armor enemies than heavy, in contrast to submarines being stronger against heavy than light.",
+      "hardarbiter": "A",
+      "cm": "A",
       "campaign": "C",
       "consistency": null,
       "fleetreq": null,
@@ -146,8 +146,8 @@
   "Dolphin": [
     {
       "nameNote": "Base",
-      "notes": "One-time 8% fleet buff for 8s. IXs are not suitable for use against high-damage enemies.",
-      "hardarbiter": "C*",
+      "notes": "Dolphin contributes a one-time 8% fleet buff for 8s. Submarine fleet Tempesta ships are not suitable for use against high-damage enemies because unlike submarines, they fight on the surface and take a lot of damage, and they leave the battle upon taking too much damage. Much of their best gear require core data or excessive farming. Due to the available guns, Tempesta ships are stronger against light armor enemies than heavy, in contrast to submarines being stronger against heavy than light.",
+      "hardarbiter": "C",
       "cm": "D",
       "campaign": "D",
       "consistency": null,
@@ -397,6 +397,22 @@
       "offensivebuff": 1
     }
   ],
+  "Járnbarðinn": [
+    {
+      "nameNote": "Base",
+      "notes": "Járnbarðinn is a glass cannon for mobbing because she has insane damage but barely any healing. Once she gets down to low HP, she will just enter the battle, ram an enemy, and leave without doing much gun damage or healing. However, she's great even without +13 guns because her barrage is very strong, and Járnbarðinn can do double the damage of a fully decked out UR submarine if she survives a campaign battle. In a single boss battle, she is one of the strongest choices for an off-flag slot, especially the top slot.\nSubmarine fleet Tempesta ships are not suitable for use against high-damage enemies because unlike submarines, they fight on the surface and take a lot of damage, and they leave the battle upon taking too much damage. Much of their best gear require core data or excessive farming. Due to the available guns, Tempesta ships are stronger against light armor enemies than heavy, in contrast to submarines being stronger against heavy than light.",
+      "hardarbiter": "A",
+      "cm": "S",
+      "campaign": "B",
+      "consistency": null,
+      "fleetreq": null,
+      "flagreq": -1,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 3,
+      "offensivebuff": null
+    }
+  ],
   "Leonardo da Vinci": [
     {
       "nameNote": "Base",
@@ -448,9 +464,9 @@
   "Mary Celeste": [
     {
       "nameNote": "Base",
-      "notes": "IXs are not suitable for use against high-damage enemies.",
-      "hardarbiter": "C*",
-      "cm": "B*",
+      "notes": "Submarine fleet Tempesta ships are not suitable for use against high-damage enemies because unlike submarines, they fight on the surface and take a lot of damage, and they leave the battle upon taking too much damage. Much of their best gear require core data or excessive farming. Due to the available guns, Tempesta ships are stronger against light armor enemies than heavy, in contrast to submarines being stronger against heavy than light.",
+      "hardarbiter": "C",
+      "cm": "B",
       "campaign": "B",
       "consistency": null,
       "fleetreq": null,
@@ -512,16 +528,16 @@
   "Royal Fortune": [
     {
       "nameNote": "Base",
-      "notes": "Royal Fortune can slow the boss every 20 seconds if put in middle position. IXs are not suitable for use against high-damage enemies.",
+      "notes": "Royal Fortune can slow the boss every 10 seconds if put in middle position. Submarine fleet Tempesta ships are not suitable for use against high-damage enemies because unlike submarines, they fight on the surface and take a lot of damage, and they leave the battle upon taking too much damage. Much of their best gear require core data or excessive farming. Due to the available guns, Tempesta ships are stronger against light armor enemies than heavy, in contrast to submarines being stronger against heavy than light.",
       "hardarbiter": "A",
-      "cm": "S*",
+      "cm": "S",
       "campaign": "A",
       "consistency": null,
       "fleetreq": null,
       "flagreq": -4,
-      "lightdmg": 5,
+      "lightdmg": 4,
       "mediumdmg": 4,
-      "heavydmg": 3,
+      "heavydmg": 2,
       "offensivebuff": 1
     }
   ],
@@ -576,16 +592,16 @@
   "Tempestack": [
     {
       "nameNote": "Base",
-      "notes": "Royal Fortune, Amity, Mary Celeste. ONLY good against light armor.",
-      "hardarbiter": "B*",
-      "cm": "B*",
-      "campaign": "C",
+      "notes": "Royal Fortune, Járnbarðinn, Amity. ONLY good against light or medium armor.",
+      "hardarbiter": "A",
+      "cm": "A",
+      "campaign": "B",
       "consistency": null,
       "fleetreq": null,
       "flagreq": null,
-      "lightdmg": 3,
-      "mediumdmg": 2,
-      "heavydmg": 1,
+      "lightdmg": 4,
+      "mediumdmg": 4,
+      "heavydmg": 2,
       "offensivebuff": 1
     }
   ],
@@ -864,14 +880,14 @@
   "UR pack": [
     {
       "nameNote": "Base",
-      "notes": "U-2501 flag, I-404 bottom. Top is Flasher, Homura, Amity(light only), or U-81. Secondary options I-58, or U-96. Yes, ignore Flasher's flag requirement.",
+      "notes": "U-2501 flag, I-404 bottom. Top is Flasher/Homura/U-81 or Amity/Royal Fortune/Járnbarðinn(light/medium only). Secondary options I-58, or U-96. Yes, ignore Flasher's flag requirement.",
       "hardarbiter": "S",
       "cm": "S",
       "campaign": "S",
       "consistency": -1,
       "fleetreq": null,
       "flagreq": null,
-      "lightdmg": 3,
+      "lightdmg": 4,
       "mediumdmg": 5,
       "heavydmg": 6,
       "offensivebuff": 2
@@ -880,7 +896,7 @@
   "Whydah": [
     {
       "nameNote": "Base",
-      "notes": "IXs are not suitable for use against high-damage enemies.",
+      "notes": "Submarine fleet Tempesta ships are not suitable for use against high-damage enemies because unlike submarines, they fight on the surface and take a lot of damage, and they leave the battle upon taking too much damage. Much of their best gear require core data or excessive farming. Due to the available guns, Tempesta ships are stronger against light armor enemies than heavy, in contrast to submarines being stronger against heavy than light.",
       "hardarbiter": "D",
       "cm": "D",
       "campaign": "D",

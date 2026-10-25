@@ -270,7 +270,7 @@
   "Adventure Galley": [
     {
       "nameNote": "",
-      "notes": "Can +1 ammo, but is weak to planes and uses IX-exclusive guns.",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. A vanguard Tempesta ship in a Campaign mob fleet can bring Round Shot to give the fleet one more ammo. The Damage and Self Survival ratings assume she is using two defensive auxiliaries and one offensive auxiliary like Round Shot. Also, having zero base AA stat, Tempesta ships take a lot of damage from enemy airplanes and obviously also do not contribute to shooting the airplanes.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -3924,7 +3924,7 @@
   "Fancy": [
     {
       "nameNote": "",
-      "notes": "Can +1 ammo, but is weak to planes and uses IX-exclusive guns.",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. A vanguard Tempesta ship in a Campaign mob fleet can bring Round Shot to give the fleet one more ammo. The Damage and Self Survival ratings assume she is using two defensive auxiliaries and one offensive auxiliary like Round Shot. Also, having zero base AA stat, Tempesta ships take a lot of damage from enemy airplanes and obviously also do not contribute to shooting the airplanes.",
       "hardarbiter": "C",
       "meta": "C",
       "cm": "B",
@@ -4730,7 +4730,7 @@
   "Golden Hind": [
     {
       "nameNote": "",
-      "notes": "Can +1 ammo, but is weak to planes and uses IX-exclusive guns. Buffs MOT ships.",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. A vanguard Tempesta ship in a Campaign mob fleet can bring Round Shot to give the fleet one more ammo. The Damage and Self Survival ratings assume she is using two defensive auxiliaries and one offensive auxiliary like Round Shot. Also, having zero base AA stat, Tempesta ships take a lot of damage from enemy airplanes and obviously also do not contribute to shooting the airplanes.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "C",
@@ -8822,7 +8822,7 @@
   "Lyme": [
     {
       "nameNote": "",
-      "notes": "Can +1 ammo, but is weak to planes and uses IX-exclusive guns.",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. A vanguard Tempesta ship in a Campaign mob fleet can bring Round Shot to give the fleet one more ammo. The Damage and Self Survival ratings assume she is using two defensive auxiliaries and one offensive auxiliary like Round Shot. Also, having zero base AA stat, Tempesta ships take a lot of damage from enemy airplanes and obviously also do not contribute to shooting the airplanes.",
       "hardarbiter": "B",
       "meta": "B",
       "cm": "B",
@@ -10921,6 +10921,33 @@
       "defensivebuff": null
     }
   ],
+  "Ormrinn Langi": [
+    {
+      "nameNote": "",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. A vanguard Tempesta ship in a Campaign mob fleet can bring Round Shot to give the fleet one more ammo. The Damage and Self Survival ratings assume she is using two defensive auxiliaries and one offensive auxiliary like Round Shot. Also, having zero base AA stat, Tempesta ships take a lot of damage from enemy airplanes and obviously also do not contribute to shooting the airplanes.",
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "D",
+      "w14boss": "D",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": -4,
+      "flagreq": null,
+      "lightdmg": 950,
+      "mediumdmg": 800,
+      "heavydmg": 531,
+      "aoedmg": null,
+      "offensivebuff": null,
+      "selfsurvival": 88,
+      "aa": -1,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Otto von Alvensleben": [
     {
       "nameNote": "",
@@ -11379,7 +11406,7 @@
   "Portsmouth Adventure": [
     {
       "nameNote": "",
-      "notes": "Can +1 ammo, but is weak to planes and uses IX-exclusive guns.",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. A vanguard Tempesta ship in a Campaign mob fleet can bring Round Shot to give the fleet one more ammo. The Damage and Self Survival ratings assume she is using two defensive auxiliaries and one offensive auxiliary like Round Shot. Also, having zero base AA stat, Tempesta ships take a lot of damage from enemy airplanes and obviously also do not contribute to shooting the airplanes.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -11946,7 +11973,7 @@
   "Royal James": [
     {
       "nameNote": "",
-      "notes": "Can +1 ammo, but is weak to planes and uses IX-exclusive guns.",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. A vanguard Tempesta ship in a Campaign mob fleet can bring Round Shot to give the fleet one more ammo. The Damage and Self Survival ratings assume she is using two defensive auxiliaries and one offensive auxiliary like Round Shot. Also, having zero base AA stat, Tempesta ships take a lot of damage from enemy airplanes and obviously also do not contribute to shooting the airplanes.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",

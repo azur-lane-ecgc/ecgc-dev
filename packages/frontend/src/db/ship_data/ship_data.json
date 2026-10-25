@@ -42191,7 +42191,7 @@
     "augments": ["Abyssal Summons"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
@@ -42247,7 +42247,7 @@
     "augments": ["Mizrak of Trials"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
@@ -42303,7 +42303,7 @@
     "augments": ["Silent Scythe"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
@@ -42359,7 +42359,7 @@
     "augments": ["Greatstaff of the Lodestar"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
@@ -42415,7 +42415,7 @@
     "augments": ["Fate's Choice"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
