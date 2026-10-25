@@ -1,21 +1,24 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
-  "ignoreDependencies": ["@astrojs/compiler-rs"],
   "workspaces": {
     "apps/web": {
       "entry": ["src/pages/**/*.astro", "src/pages/**/*.ts"],
       "project": ["**/*"]
     },
     "packages/dev": {
+      "entry": ["src/**/*.test.ts"],
       "project": ["**/*"]
     },
     "packages/gsheets2img": {
+      "entry": ["src/**/*.test.ts"],
       "project": ["**/*"]
     },
     "packages/compress": {
+      "entry": ["src/**/*.test.ts"],
       "project": ["**/*"]
     },
     "packages/image-downloader": {
+      "entry": ["src/**/*.test.ts"],
       "project": ["**/*"]
     }
   },
