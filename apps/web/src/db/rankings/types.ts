@@ -18,6 +18,7 @@ interface BaseFleetRankingProps {
   offensivebuff?: number | null
 }
 
+/** Describes main fleet rankings, including empty area damage cells. */
 export interface MainFleetRankingProps extends BaseFleetRankingProps {
   // Rank
   meta: string
@@ -31,7 +32,7 @@ export interface MainFleetRankingProps extends BaseFleetRankingProps {
   flagreq?: number | null
 
   // Offense
-  aoedmg: number
+  aoedmg: number | null
   dmguptime?: number | null
 
   // Defense
@@ -42,6 +43,7 @@ export interface MainFleetRankingProps extends BaseFleetRankingProps {
   vgsurvival?: number | null
 }
 
+/** Describes vanguard fleet rankings, including empty area damage cells. */
 export interface VanguardFleetRankingProps extends BaseFleetRankingProps {
   // Rank
   meta: string
@@ -52,7 +54,7 @@ export interface VanguardFleetRankingProps extends BaseFleetRankingProps {
   ex: string
 
   // Offense
-  aoedmg: number
+  aoedmg: number | null
 
   // Defense
   selfsurvival?: number | null

@@ -714,7 +714,7 @@
     "augments": ["Dual Swords", "Hammer"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["ASW", "DmgDealer", "TopDmg", "OffSupport"],
+    "roles": ["ASW", "DmgDealer", "TopDmg", "AA", "AACarry", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -42426,7 +42426,7 @@
     "augments": ["Greatstaff of the Lodestar"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg"],
     "locations": {
       "events": [],
       "other": [],
@@ -44162,7 +44162,7 @@
     "augments": ["Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
@@ -47390,7 +47390,7 @@
     "augments": ["Zafkiel", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
+    "roles": ["Tank", "SuperTank", "DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {
@@ -47446,7 +47446,7 @@
     "augments": ["Raphael", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["DmgDealer", "TopDmg", "OffSupport"],
+    "roles": ["Tank", "DmgDealer", "TopDmg", "OffSupport"],
     "locations": {
       "events": [
         {

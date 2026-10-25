@@ -1,8 +1,9 @@
-import { readdir, stat, readFile, writeFile } from "fs/promises"
+import { readdir, realpath, stat, readFile, writeFile } from "fs/promises"
 import { join, extname, resolve, relative } from "path"
-import { fileURLToPath } from "url"
 
 import sharp from "sharp"
+
+const compressionConcurrency = 2
 
 const extensionMap: Record<string, string> = {
   avci: "avif",
@@ -37,13 +38,14 @@ const supported = Object.keys(compressionSettings)
 
 const getAllImages = async (dir: string): Promise<string[]> => {
   const out: string[] = []
-  for (const name of await readdir(dir)) {
-    const path = join(dir, name)
-    const pathStat = await stat(path)
-    if (pathStat.isDirectory()) {
+  for (const entry of await readdir(dir, { withFileTypes: true })) {
+    const entryPath = join(dir, entry.name)
+    const path = entry.isSymbolicLink() ? await realpath(entryPath) : entryPath
+    const pathType = entry.isSymbolicLink() ? await stat(path) : entry
+    if (pathType.isDirectory()) {
       out.push(...(await getAllImages(path)))
     } else {
-      const ext = extname(name).slice(1).toLowerCase()
+      const ext = extname(entry.name).slice(1).toLowerCase()
       const format = extensionMap[ext] || ext
       if (supported.includes(format)) {
         out.push(resolve(path))
@@ -70,8 +72,8 @@ const compressImage = async (
     return "preserved"
   }
 
-  const originalSize = (await stat(file)).size
   const inputBuffer = await readFile(file)
+  const originalSize = inputBuffer.length
   let image = sharp(inputBuffer, {
     failOn: "error",
     sequentialRead: true,
@@ -117,7 +119,7 @@ const compressImage = async (
   }
 
   await writeFile(file, outputBuffer)
-  const newSize = (await stat(file)).size
+  const newSize = outputBuffer.length
   const savedPercent = (
     ((originalSize - newSize) / originalSize) *
     100
@@ -131,14 +133,16 @@ const compressImage = async (
   return "compressed"
 }
 
-/** Compresses every supported image in the website production build. */
-export const compressImages = async (): Promise<void> => {
-  const base = fileURLToPath(new URL("../../../apps/web/dist", import.meta.url))
-  console.log("Scanning for images under", base)
+/** Compresses build images with at most two active image jobs. */
+export const compressImages = async (directory: string): Promise<void> => {
+  console.log("Scanning for images under", directory)
 
+  let base = directory
   let images: string[] = []
   try {
-    images = await getAllImages(base)
+    base = await realpath(directory)
+    // Resolve symbolic links before scheduling to avoid concurrent writes to one file.
+    images = [...new Set(await getAllImages(base))]
   } catch (error) {
     console.error(`Error reading build output: ${error}`)
     process.exitCode = 1
@@ -154,14 +158,33 @@ export const compressImages = async (): Promise<void> => {
   let compressedCount = 0
   let preservedCount = 0
 
-  for (const image of images) {
-    const result = await compressImage(image, base)
-    if (result === "compressed") {
-      compressedCount++
-    } else {
-      preservedCount++
+  let nextImageIndex = 0
+  let compressionFailed = false
+  const compressNextImages = async () => {
+    try {
+      while (!compressionFailed && nextImageIndex < images.length) {
+        const image = images[nextImageIndex++]!
+        const result = await compressImage(image, base)
+        if (result === "compressed") {
+          compressedCount++
+        } else {
+          preservedCount++
+        }
+      }
+    } catch (error) {
+      compressionFailed = true
+      throw error
     }
   }
+
+  const results = await Promise.allSettled(
+    Array.from(
+      { length: Math.min(compressionConcurrency, images.length) },
+      compressNextImages,
+    ),
+  )
+  const failure = results.find((result) => result.status === "rejected")
+  if (failure) throw failure.reason
 
   console.log(
     `Done compressing images. Compressed: ${compressedCount}. Preserved: ${preservedCount}.`,

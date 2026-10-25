@@ -7,6 +7,7 @@ import {
   getGoogleSheetColumn,
   parseGoogleSheetHeaders,
 } from "../googleSheetSchema"
+import { normalizeSpreadsheetShipName } from "../ships/shipNameParse/spreadsheetShipName"
 
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
@@ -47,11 +48,12 @@ const extractBaseName = (shipName: string): string => {
 
 const processSheet = async (sheetName: string, auth: any) => {
   const sheets = google.sheets({ version: "v4", auth })
-  const headerResult = await sheets.spreadsheets.values.get({
+  const result = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `${sheetName}!A1:ZZ1`,
+    range: `${sheetName}!A1:ZZ`,
   })
-  const columns = parseGoogleSheetHeaders(headerResult.data.values?.[0] ?? [])
+  const values = result.data.values ?? []
+  const columns = parseGoogleSheetHeaders(values[0] ?? [])
   const columnIndexes = Object.fromEntries(
     REQUIRED_HEADERS.map((headerName) => [
       headerName,
@@ -59,22 +61,13 @@ const processSheet = async (sheetName: string, auth: any) => {
     ]),
   )
 
-  const result = await sheets.spreadsheets.values.get({
-    spreadsheetId: SPREADSHEET_ID,
-    range: `${sheetName}!A2:ZZ`,
-  })
-
-  const values = result.data.values
-  if (!values) {
-    return {}
-  }
-
   const dataDict: Record<string, any[]> = {}
 
-  for (const row of values) {
+  for (let rowIndex = 1; rowIndex < values.length; rowIndex++) {
+    const row = values[rowIndex]!
     const originalName = String(row[columnIndexes["Ship"] ?? -1] ?? "").trim()
     if (!originalName) continue
-    const baseName = extractBaseName(originalName)
+    const baseName = normalizeSpreadsheetShipName(extractBaseName(originalName))
     const totalEHP = String(
       row[columnIndexes["Average eHP"] ?? -1] ?? "",
     ).trim()
@@ -98,6 +91,7 @@ const processSheet = async (sheetName: string, auth: any) => {
   return dataDict
 }
 
+/** Reads effective HP headers and ship data in one sheet request. */
 export const main = async (): Promise<Record<string, any[]>> => {
   if (SHEET_NAMES.length !== OUTPUT_PATHS.length) {
     throw new Error("Number of sheet names must match number of output paths")

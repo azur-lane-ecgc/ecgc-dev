@@ -106,19 +106,21 @@ const updateConstantsFile = async (updates: Record<string, string>) => {
   await writeFile(CHANGELOG_PATH, fileContent)
 }
 
+/** Reads independent changelog dates concurrently before writing update constants. */
 export const main = async (): Promise<Record<string, string>> => {
-  const updates: Record<string, string> = {}
-
-  for (const sheetConfig of SPREADSHEETS) {
-    const changelogDate = await getChangelogDate(
-      sheetConfig.spreadsheet_id,
-      sheetConfig.sheet_name,
-      sheetConfig.cell_range,
-      sheetConfig.date_header,
-      sheetConfig.date_format,
-    )
-    updates[sheetConfig.update_key] = changelogDate
-  }
+  const entries = await Promise.all(
+    SPREADSHEETS.map(async (sheetConfig) => {
+      const changelogDate = await getChangelogDate(
+        sheetConfig.spreadsheet_id,
+        sheetConfig.sheet_name,
+        sheetConfig.cell_range,
+        sheetConfig.date_header,
+        sheetConfig.date_format,
+      )
+      return [sheetConfig.update_key, changelogDate] as const
+    }),
+  )
+  const updates = Object.fromEntries(entries)
 
   await updateConstantsFile(updates)
   console.log(`Updated dates: ${JSON.stringify(updates)}`)
