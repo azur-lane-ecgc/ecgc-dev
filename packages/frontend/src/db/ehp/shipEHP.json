@@ -1,4 +1,18 @@
 {
+  "22": [
+    {
+      "name": "22",
+      "totalEHP": "60.24%",
+      "std": "25.51%"
+    }
+  ],
+  "33": [
+    {
+      "name": "33",
+      "totalEHP": "60.98%",
+      "std": "26.30%"
+    }
+  ],
   "Napoli": [
     {
       "name": "Napoli (with VV)",
@@ -33,14 +47,14 @@
       "std": "39.01%"
     }
   ],
-  "Merkuriy": [
+  "Mercury": [
     {
-      "name": "Merkuriy (3 gear)",
+      "name": "Mercury (3 gear)",
       "totalEHP": "166.10%",
       "std": "44.21%"
     },
     {
-      "name": "Merkuriy (2 gear)",
+      "name": "Mercury (2 gear)",
       "totalEHP": "147.08%",
       "std": "41.60%"
     }
@@ -1115,6 +1129,13 @@
       "std": "26.25%"
     }
   ],
+  "Soobrazitelny META": [
+    {
+      "name": "Soobrazitelny META",
+      "totalEHP": "97.65%",
+      "std": "36.96%"
+    }
+  ],
   "Nana Astar Deviluke": [
     {
       "name": "Nana Astar Deviluke",
@@ -1885,13 +1906,6 @@
       "name": "Duquesne",
       "totalEHP": "85.50%",
       "std": "29.37%"
-    }
-  ],
-  "Soobrazitelny META": [
-    {
-      "name": "Soobrazitelny META",
-      "totalEHP": "85.49%",
-      "std": "33.55%"
     }
   ],
   "Clevelad": [
@@ -4372,13 +4386,6 @@
       "std": "18.30%"
     }
   ],
-  "3300.00%": [
-    {
-      "name": "3300.00%",
-      "totalEHP": "60.98%",
-      "std": "26.30%"
-    }
-  ],
   "Z20": [
     {
       "name": "Z20",
@@ -4455,13 +4462,6 @@
       "name": "Shiranui",
       "totalEHP": "56.79%",
       "std": "22.88%"
-    }
-  ],
-  "2200.00%": [
-    {
-      "name": "2200.00%",
-      "totalEHP": "60.24%",
-      "std": "25.51%"
     }
   ],
   "Jersey": [

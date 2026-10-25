@@ -2654,7 +2654,7 @@
   "Ganj-i-Sawai": [
     {
       "nameNote": "",
-      "notes": "Does not have access to good guns and auxiliaries. Assumes there is another Tempesta ship for better healing.",
+      "notes": "Ganj-i-Sawai's ratings assume there is another Tempesta ship for better healing. Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. In bossing, main fleet Tempesta ships have no way of reloading fast enough to sync with the other ships or get an extra salvo in META Showdown. Furthermore, their poor accuracy against moving enemies and longer salvo duration mean that they are much weaker in reality than battleships with similar damage calculations. In campaign, zero AA stat means that they sink if an enemy airplane so much as nuts—uhhh... drops a loose nut or bolt on them.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6174,7 +6174,7 @@
   "Pearl": [
     {
       "nameNote": "",
-      "notes": "Does not have access to good guns and auxiliaries.",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. In bossing, main fleet Tempesta ships have no way of reloading fast enough to sync with the other ships or get an extra salvo in META Showdown. Furthermore, their poor accuracy against moving enemies and longer salvo duration mean that they are much weaker in reality than battleships with similar damage calculations. In campaign, zero AA stat means that they sink if an enemy airplane so much as nuts—uhhh... drops a loose nut or bolt on them.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6435,7 +6435,7 @@
   "Queen Anne's Revenge": [
     {
       "nameNote": "",
-      "notes": "Does not have access to good guns and auxiliaries. Assumed to be with another Tempesta ship. Buffs Tempesta ships.",
+      "notes": "We assume Queen Anne's Revenge is with another Tempesta ship in the fleet. She buffs Tempesta ships. Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. In bossing, main fleet Tempesta ships have no way of reloading fast enough to sync with the other ships or get an extra salvo in META Showdown. Furthermore, their poor accuracy against moving enemies and longer salvo duration mean that they are much weaker in reality than battleships with similar damage calculations. In campaign, zero AA stat means that they sink if an enemy airplane so much as nuts—uhhh... drops a loose nut or bolt on them.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
@@ -6775,6 +6775,35 @@
       "aa": null,
       "rammers": null,
       "othermain": 1,
+      "vgsurvival": null
+    }
+  ],
+  "Riyala Bey": [
+    {
+      "nameNote": "",
+      "notes": "Not assumed here, but Riyala Bey would be slightly stronger the more Tempesta ships there are in the fleet.\nTempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. In bossing, main fleet Tempesta ships have no way of reloading fast enough to sync with the other ships or get an extra salvo in META Showdown. Furthermore, their poor accuracy against moving enemies and longer salvo duration mean that they are much weaker in reality than battleships with similar damage calculations. In campaign, zero AA stat means that they sink if an enemy airplane so much as nuts—uhhh... drops a loose nut or bolt on them.",
+      "hardarbiter": "F",
+      "meta": "F",
+      "cm": "F",
+      "w14mob": "F",
+      "w14boss": "F",
+      "w15mob": "F",
+      "w15boss": "F",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": -5,
+      "flagreq": null,
+      "lightdmg": 1863,
+      "mediumdmg": 1562,
+      "heavydmg": 1189,
+      "aoedmg": 1,
+      "dmguptime": null,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": -1,
+      "rammers": null,
+      "othermain": null,
       "vgsurvival": null
     }
   ],
@@ -7120,6 +7149,35 @@
       "selfsurvival": null,
       "aa": null,
       "rammers": 1,
+      "othermain": null,
+      "vgsurvival": null
+    }
+  ],
+  "Selimiye": [
+    {
+      "nameNote": "",
+      "notes": "Selimiye's desynced carpet cannonballing(?) gives her good damage uptime and coverage in campaign.\nTempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. In bossing, main fleet Tempesta ships have no way of reloading fast enough to sync with the other ships or get an extra salvo in META Showdown. Furthermore, their poor accuracy against moving enemies and longer salvo duration mean that they are much weaker in reality than battleships with similar damage calculations. In campaign, zero AA stat means that they sink if an enemy airplane so much as nuts—uhhh... drops a loose nut or bolt on them.",
+      "hardarbiter": "C",
+      "meta": "D",
+      "cm": "C",
+      "w14mob": "C",
+      "w14boss": "C",
+      "w15mob": "D",
+      "w15boss": "D",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": -5,
+      "flagreq": null,
+      "lightdmg": 3249,
+      "mediumdmg": 2732,
+      "heavydmg": 2082,
+      "aoedmg": 3,
+      "dmguptime": 1,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": -1,
+      "rammers": null,
       "othermain": null,
       "vgsurvival": null
     }
@@ -7757,7 +7815,7 @@
   "São Martinho": [
     {
       "nameNote": "",
-      "notes": "Does not have access to good guns and auxiliaries.",
+      "notes": "Tempesta ships do not have access to good guns and auxiliary gear, and much of their best gear require core data or excessive farming. In bossing, main fleet Tempesta ships have no way of reloading fast enough to sync with the other ships or get an extra salvo in META Showdown. Furthermore, their poor accuracy against moving enemies and longer salvo duration mean that they are much weaker in reality than battleships with similar damage calculations. In campaign, zero AA stat means that they sink if an enemy airplane so much as nuts—uhhh... drops a loose nut or bolt on them.",
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
