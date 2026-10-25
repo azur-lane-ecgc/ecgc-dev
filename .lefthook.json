@@ -23,8 +23,7 @@
           "apps/web/**/*.{astro,html,md,ts,tsx,json,css}",
           "packages/gsheets2img/**/*.{astro,html,md,ts,tsx,json,css}",
           "packages/compress/**/*.{astro,html,md,ts,tsx,json,css}",
-          "packages/image-downloader/**/*.{astro,html,md,ts,tsx,json,css}",
-          "patches/oxfmt/**/*.{astro,html,md,ts,tsx,json,css}"
+          "packages/image-downloader/**/*.{astro,html,md,ts,tsx,json,css}"
         ],
         "run": "bunx oxfmt --write {staged_files}",
         "stage_fixed": true

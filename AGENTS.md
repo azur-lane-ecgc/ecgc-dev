@@ -30,7 +30,8 @@
 - `packages/compress/` - Image compression utilities. Compresses built images in apps/web/dist/ using Sharp with optimized settings.
 - `packages/image-downloader/` - Ship icon downloader. Uses agent-browser to capture original wiki icons for ship records with listed stats. Outputs to apps/web/src/assets/ship_icons/.
 - `packages/AzurLaneData/` - Raw game data submodule. Git submodule containing official Azur Lane game data (ships.json, skills.json, etc.). Must be kept up-to-date.
-- `patches/` - The oxfmt patch that supports `.astro` formatting lives here.
+- Oxfmt formats `.astro` files through its upstream Astro support and `@astrojs/compiler-rs`.
+- The Miniflare Undici override excludes versions affected by CVE-2026-109869, GHSA-4qv8-2p9j-2685, and GHSA-f72v-6w45-q472.
 
 ## Critical
 

@@ -5,6 +5,10 @@ interface BrowserResult {
 }
 
 const browserSession = "ecgc-wiki-icons"
+const agentBrowserCliPath = Bun.resolveSync(
+  "agent-browser/bin/agent-browser.js",
+  import.meta.dir,
+)
 
 /** Runs a wiki browser command while reading both process output streams. */
 export const runWikiBrowserCommand = async (
@@ -13,10 +17,8 @@ export const runWikiBrowserCommand = async (
 ): Promise<any> => {
   const proc = Bun.spawn(
     [
-      "bunx",
-      "--package",
-      "agent-browser@0.38.2",
-      "agent-browser",
+      "node",
+      agentBrowserCliPath,
       ...(headed ? ["--headed"] : []),
       "--session",
       browserSession,

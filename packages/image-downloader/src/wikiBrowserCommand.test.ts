@@ -19,6 +19,15 @@ test("reads stderr while the wiki browser process waits to write stdout", async 
       title: "Local test",
     })
     expect(spawn).toHaveBeenCalledTimes(1)
+    expect(spawn.mock.calls[0]?.[0]).toEqual([
+      "node",
+      Bun.resolveSync("agent-browser/bin/agent-browser.js", import.meta.dir),
+      "--session",
+      "ecgc-wiki-icons",
+      "get",
+      "title",
+      "--json",
+    ])
   } finally {
     child.kill()
     spawn.mockRestore()
