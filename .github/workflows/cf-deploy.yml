@@ -26,7 +26,7 @@ jobs:
           - name: Set up Node
             uses: actions/setup-node@v7.1.0
             with:
-              node-version: "26.12.0"
+              node-version: "26.12.1"
 
           - name: Set up Bun
             uses: oven-sh/setup-bun@v2.2.0
