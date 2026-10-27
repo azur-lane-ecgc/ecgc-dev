@@ -20,10 +20,12 @@ The project is a monorepo with the following structure:
 
 ## Local Setup
 
-Use Bun 1.4.2 and Node.js 22.12.0 or later. CI uses Node.js 26.10.0.
+Use Bun 1.4.4 or later in version 1. CI uses Node.js 26.12.1.
+Use Node.js 26.12.1 or later in version 26.
 
-Keep TypeScript on version 6 until Astro's checker and patched oxfmt Astro formatter support version 7.
-These tools require the JavaScript compiler API that TypeScript 7 removes.
+Keep TypeScript on version 6 until Astro's checker supports version 7.
+Astro's checker requires the JavaScript compiler API that TypeScript 7 removes.
+Use upstream Oxfmt with its built-in Astro support and `@astrojs/compiler-rs`.
 Run `bun run update` to update all workspaces within their supported version ranges.
 Review breaking changes before you change those ranges.
 
