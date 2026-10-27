@@ -12,7 +12,7 @@
     "check": "tsc --noEmit"
   },
   "dependencies": {
-    "agent-browser": "0.39.2"
+    "agent-browser": "0.39.4"
   },
   "devDependencies": {
     "@types/bun": "^1.4.4",
