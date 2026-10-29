@@ -40,7 +40,7 @@
     "oxlint": "^1.90.0",
     "oxfmt": "0.75.0",
     "typescript": "^6.0.3",
-    "wrangler": "^4.153.0"
+    "wrangler": "^4.155.0"
   },
   "trustedDependencies": [
     "agent-browser",
