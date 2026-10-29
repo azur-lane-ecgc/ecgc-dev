@@ -1,4 +1,7 @@
+import { writeFile } from "node:fs/promises"
+
 import type { ShipData } from "@/packages/AzurLaneData/types/ships"
+
 import { shipNameParse, shipLocationParse } from "../ships"
 
 export const main = async (): Promise<any[]> => {
@@ -7,7 +10,8 @@ export const main = async (): Promise<any[]> => {
       (m) => m.default,
     )) as Record<number, ShipData>
 
-  const OUTPUT_PATH = "../frontend/src/utils/ships/events/azurLaneEvents.json"
+  const OUTPUT_PATH =
+    "../../apps/web/src/utils/ships/events/azurLaneEvents.json"
 
   // Bucket: href -> { location, dates[] }
   const bucket = new Map<
@@ -52,7 +56,7 @@ export const main = async (): Promise<any[]> => {
     .sort((a, b) => (b.modeDate || 0) - (a.modeDate || 0))
     .map(({ location }) => location)
 
-  await Bun.write(OUTPUT_PATH, JSON.stringify(sortedLocations, null, 2) + "\n")
+  await writeFile(OUTPUT_PATH, JSON.stringify(sortedLocations, null, 2) + "\n")
 
   console.log(
     `Wrote ${sortedLocations.length} unique event locations to ${OUTPUT_PATH}`,

@@ -14,19 +14,18 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "types": ["bun"],
-    "allowJs": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
     "paths": {
-      "@/packages/*": ["packages/*"],
-      "@/tools/*": ["packages/dev/src/*"]
+      "@/packages/*": ["./packages/*"],
+      "@/tools/*": ["./packages/dev/src/*"]
     }
   },
   "exclude": [
-    "packages/frontend/dist",
-    "packages/frontend/.astro",
+    "apps/web/dist",
+    "apps/web/.astro",
     "packages/AzurLaneData",
-    "node_modules"
+    "node_modules",
+    "opensrc"
   ]
 }

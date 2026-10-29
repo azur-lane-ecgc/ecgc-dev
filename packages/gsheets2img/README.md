@@ -20,8 +20,11 @@ Or run directly in the package:
 ## File Structure
 
 - `main.ts`: Google Sheets to image conversion using Playwright
+- `src/sheetImageCapture.ts`: Image capture with at most five reusable browser pages
 - `package.json`: Dependencies and scripts
 
 ## Processing Behavior
 
-- Google Sheets processing uses hardcoded sheet IDs and outputs to `../frontend/public/images/equip_misc/`
+- Google Sheets processing uses hardcoded sheet IDs and outputs to `../../apps/web/src/assets/equip_misc/`
+- Each page resets its viewport before loading the next sheet
+- Browser installation runs during package setup, rather than each image generation run

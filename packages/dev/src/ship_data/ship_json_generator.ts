@@ -1,8 +1,9 @@
-import { dirname } from "path"
 import { existsSync, mkdirSync } from "fs"
+import { writeFile } from "fs/promises"
+import { dirname } from "path"
 
-import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 import type { AugmentData } from "@/packages/AzurLaneData/types/augments"
+import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 const ships: Record<number, ShipData> =
   (await import("@/packages/AzurLaneData/data/ships.json").then(
     (module) => module.default,
@@ -21,6 +22,7 @@ import type {
   SSFleetRankingProps,
 } from "@/db/types"
 import type { ShipAAProps } from "@/tools/aa_parsing/types"
+
 import {
   isPermanent,
   shipDefaultAugmentParse,
@@ -31,13 +33,14 @@ import {
   shipLocationParse,
   shipNameParse,
   shipRarityParse,
-  shipRoleParse,
+  createShipRoleParser,
   shipSamvaluationParse,
   shipSlotParse,
 } from "../ships"
 
-const OUTPUT_PATH = "../frontend/src/db/ship_data/ship_data.json"
+const OUTPUT_PATH = "../../apps/web/src/db/ship_data/ship_data.json"
 
+/** Generates ship records from game data and normalized spreadsheet values. */
 export const main = async (
   shipEHPData: Record<string, ShipEHPProps[]>,
   shipAAData: Record<string, ShipAAProps[]>,
@@ -46,6 +49,13 @@ export const main = async (
   ssFleetRankingData: Record<string, SSFleetRankingProps[]>,
 ): Promise<void> => {
   const processedData: Record<number, ProcessedShipData> = {}
+  const parseShipRoles = createShipRoleParser(
+    shipEHPData,
+    shipAAData,
+    mainFleetRankingData,
+    vgFleetRankingData,
+    ssFleetRankingData,
+  )
 
   Object.keys(ships).forEach((id) => {
     const mrLarData = ships[+id]
@@ -91,16 +101,7 @@ export const main = async (
     const samvaluationData = shipSamvaluationParse(ship)
     const samEval = samvaluationData.evaluation
     const fastLoad = samvaluationData?.preload2 || null
-    const roles = shipRoleParse(
-      ship,
-      fleetType,
-      hullType,
-      shipEHPData,
-      shipAAData,
-      mainFleetRankingData,
-      vgFleetRankingData,
-      ssFleetRankingData,
-    )
+    const roles = parseShipRoles(ship, fleetType, hullType)
 
     processedData[+id] = {
       id: +id,
@@ -125,7 +126,7 @@ export const main = async (
     mkdirSync(dirname(OUTPUT_PATH), { recursive: true })
   }
 
-  await Bun.write(OUTPUT_PATH, JSON.stringify(processedData, null, 2) + "\n")
+  await writeFile(OUTPUT_PATH, JSON.stringify(processedData, null, 2) + "\n")
 
   console.log(`Ship data has been written to ${OUTPUT_PATH}`)
 }

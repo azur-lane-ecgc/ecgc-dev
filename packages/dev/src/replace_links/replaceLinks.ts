@@ -1,8 +1,16 @@
+import { readFile, writeFile } from "node:fs/promises"
+
 import { pageInfo } from "../_pageInfo"
 
 const hardCodedPaths = [
-  "../frontend/src/components/Equipment/AugmentModules.astro",
+  "../../apps/web/src/components/Equipment/AugmentModules.astro",
 ]
+
+/** Contains guide page content after wiki link replacement. */
+export interface GuidePageContent {
+  fileName: string
+  content: string
+}
 
 const replaceWikiLinks = (content: string): string => {
   const regex =
@@ -21,23 +29,29 @@ const replaceWikiLinksTwo = (content: string): string => {
   })
 }
 
-const processFile = async (inputFilePath: string, outputFilePath: string) => {
-  try {
-    const data = await Bun.file(inputFilePath).text()
+const updateGuideFile = async (filePath: string): Promise<string> => {
+  const data = await readFile(filePath, "utf8")
 
-    let updatedContent = replaceWikiLinks(data)
-    updatedContent = replaceWikiLinksTwo(updatedContent)
+  let updatedContent = replaceWikiLinks(data)
+  updatedContent = replaceWikiLinksTwo(updatedContent)
 
-    await Bun.write(outputFilePath, updatedContent)
-    console.log(`Successfully updated file: ${outputFilePath}`)
-  } catch (err) {
-    console.error(`Error: ${err}`)
+  if (updatedContent !== data) {
+    await writeFile(filePath, updatedContent)
+    console.log(`Updated wiki links: ${filePath}`)
   }
+  return updatedContent
 }
 
-export const main = async (): Promise<void> => {
-  await Promise.all([
-    ...pageInfo.map((page) => processFile(page.path, page.path)),
-    ...hardCodedPaths.map((path) => processFile(path, path)),
+/** Updates guide wiki links and returns content for table of contents generation. */
+export const main = async (): Promise<GuidePageContent[]> => {
+  const [guidePages] = await Promise.all([
+    Promise.all(
+      pageInfo.map(async (page) => ({
+        fileName: page.name,
+        content: await updateGuideFile(page.path),
+      })),
+    ),
+    Promise.all(hardCodedPaths.map(updateGuideFile)),
   ])
+  return guidePages
 }
