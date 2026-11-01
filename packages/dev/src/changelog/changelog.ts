@@ -30,10 +30,8 @@ const SPREADSHEETS = [
   },
 ] as const
 
-const auth = new google.auth.GoogleAuth({
-  keyFile: SERVICE_ACCOUNT_FILE,
-  scopes: SCOPES,
-})
+const auth = new google.auth.JWT({ scopes: SCOPES })
+auth.fromJSON(await Bun.file(SERVICE_ACCOUNT_FILE).json())
 
 const sheets = google.sheets({ version: "v4", auth })
 

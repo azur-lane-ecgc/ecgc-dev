@@ -44,11 +44,9 @@ const EXPECTED_HEADERS = [
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 const getAuthToken = async () => {
-  const auth = new google.auth.GoogleAuth({
-    keyFile: SERVICE_ACCOUNT_FILE,
-    scopes: SCOPES,
-  })
-  return auth.getClient()
+  const auth = new google.auth.JWT({ scopes: SCOPES })
+  auth.fromJSON(await Bun.file(SERVICE_ACCOUNT_FILE).json())
+  return auth
 }
 
 const parseFleetKey = (
