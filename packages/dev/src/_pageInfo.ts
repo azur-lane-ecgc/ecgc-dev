@@ -1,3 +1,4 @@
+/** Lists guide pages for wiki links and table of contents generation. */
 export const pageInfo = [
   {
     name: "Changelog2023",
@@ -10,6 +11,10 @@ export const pageInfo = [
   {
     name: "Changelog2025",
     path: "../../apps/web/src/components/Changelog/Changelog2025Content.astro",
+  },
+  {
+    name: "Changelog2026",
+    path: "../../apps/web/src/components/Changelog/Changelog2026Content.astro",
   },
   {
     name: "Common Resource Guide",
