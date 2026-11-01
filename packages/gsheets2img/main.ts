@@ -1,4 +1,4 @@
-import { mkdir, readFile } from "node:fs/promises"
+import { mkdir } from "node:fs/promises"
 import { join } from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -32,12 +32,12 @@ const getAuthClient = async () => {
     fileURLToPath(new URL("..", import.meta.url)),
     "credentials.json",
   )
-  const credentials = JSON.parse(await readFile(credentialsPath, "utf-8"))
 
-  return new google.auth.GoogleAuth({
-    credentials,
+  const auth = new google.auth.JWT({
     scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
   })
+  auth.fromJSON(await Bun.file(credentialsPath).json())
+  return auth
 }
 
 const getSheets = async (sheetID: string): Promise<SheetInfo[]> => {

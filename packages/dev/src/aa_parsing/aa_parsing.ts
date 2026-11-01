@@ -18,12 +18,9 @@ const REQUIRED_HEADERS = ["Ship", "%SD", "Sum"]
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 const getAuthToken = async () => {
-  const auth = new google.auth.GoogleAuth({
-    keyFile: SERVICE_ACCOUNT_FILE,
-    scopes: SCOPES,
-  })
-  const authToken = await auth.getClient()
-  return authToken
+  const auth = new google.auth.JWT({ scopes: SCOPES })
+  auth.fromJSON(await Bun.file(SERVICE_ACCOUNT_FILE).json())
+  return auth
 }
 
 const extractBaseName = (shipName: string): string => {
