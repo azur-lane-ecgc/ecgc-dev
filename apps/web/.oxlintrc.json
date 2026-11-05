@@ -1,0 +1,12 @@
+{
+  "extends": ["../../.oxlintrc.json"],
+  "plugins": ["react", "react-perf", "jsdoc"],
+  "rules": {
+    "no-extra-boolean-cast": "off"
+  },
+  "env": {
+    "builtin": true,
+    "browser": true
+  },
+  "ignorePatterns": ["**/node_modules/**", "**/*.astro"]
+}
