@@ -1,8 +1,11 @@
+import vgFleetRankingsJson from "@/db/rankings/vgFleetRankings.json"
+import shipDataJson from "@/db/ship_data/ship_data.json"
 import type { ShipData, VanguardFleetRankingProps } from "@/db/types"
-const shipData = (await import("@/db/ship_data/ship_data.json"))
-  .default as Record<number, ShipData>
-const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
-  .default as Record<string, VanguardFleetRankingProps[]>
+const shipData = shipDataJson as Record<number, ShipData>
+const vgFleetRankings = vgFleetRankingsJson as Record<
+  string,
+  VanguardFleetRankingProps[]
+>
 
 // damage dealer ships
 const entryDamage = (r: VanguardFleetRankingProps): number =>

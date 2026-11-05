@@ -2,17 +2,16 @@ import { existsSync, mkdirSync } from "fs"
 import { writeFile } from "fs/promises"
 import { dirname } from "path"
 
+import augmentDataJson from "@/packages/AzurLaneData/data/augments.json"
+import shipsJson from "@/packages/AzurLaneData/data/ships.json"
 import type { AugmentData } from "@/packages/AzurLaneData/types/augments"
 import type { ShipData } from "@/packages/AzurLaneData/types/ships"
-const ships: Record<number, ShipData> =
-  (await import("@/packages/AzurLaneData/data/ships.json").then(
-    (module) => module.default,
-  )) as Record<number, ShipData>
+const ships: Record<number, ShipData> = shipsJson as Record<number, ShipData>
 
-const augmentData: Record<number, AugmentData> =
-  (await import("@/packages/AzurLaneData/data/augments.json").then(
-    (module) => module.default,
-  )) as Record<number, AugmentData>
+const augmentData: Record<number, AugmentData> = augmentDataJson as Record<
+  number,
+  AugmentData
+>
 
 import type { ShipData as ProcessedShipData } from "@/db/types"
 import type {

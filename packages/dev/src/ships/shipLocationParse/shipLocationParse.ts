@@ -1,13 +1,12 @@
 import type { shipLocation, ShipLocationData } from "@/db/types"
+import shipDropDataJson from "@/packages/AzurLaneData/data/ship_drops.json"
 import type { ShipDropData } from "@/packages/AzurLaneData/types/ships"
 import { parseLocation } from "@/utils/parseLocation"
 
 import { shipSeriesMap } from "./shipSeriesMap"
 
 const shipDropData: Record<number, ShipDropData> =
-  (await import("@/packages/AzurLaneData/data/ship_drops.json").then(
-    (module) => module.default,
-  )) as Record<number, ShipDropData>
+  shipDropDataJson as unknown as Record<number, ShipDropData>
 
 const excludedEvents = [
   "Opposite-Colored",
@@ -136,7 +135,7 @@ const parseEvents = (
   // Hard-coded exceptions
   if (exceptionShips.includes(name)) {
     return filteredEvents.map((event) => ({
-      name: event.replace(/Rerun/g, "").trim(),
+      name: event.replaceAll("Rerun", "").trim(),
       href: parseLocation(event),
     }))
   }
@@ -156,7 +155,7 @@ const parseEvents = (
   // Rest of ships
   return [
     {
-      name: firstEvent.replace(/Rerun/g, "").trim(),
+      name: firstEvent.replaceAll("Rerun", "").trim(),
       href: parseLocation(firstEvent),
     },
   ]
@@ -167,7 +166,7 @@ export const shipLocationParse = (
   id: number,
 ): ShipLocationData => {
   // Bulin Exception
-  if (name.match(/Bulin/)) {
+  if (name.includes("Bulin")) {
     return {
       events: [],
       other: [],

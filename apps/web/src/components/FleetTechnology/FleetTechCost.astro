@@ -7,6 +7,8 @@ import WikiLink from "@/components/_common/WikiLink.astro"
 
 import { allFactionData } from "./factionTech"
 
+const fleetTechCostPattern = /(\d{1,3}(?:,\d{3})*)/
+
 interface Props {
   faction: string
 }
@@ -39,9 +41,9 @@ const MATERIAL_MAPPINGS = {
 }
 
 const extractCost = (stage: string): number => {
-  const match = stage.match(/(\d{1,3}(?:,\d{3})*)/)
+  const match = stage.match(fleetTechCostPattern)
   if (match) {
-    return parseInt(match[1].replace(/,/g, ""))
+    return parseInt(match[1].replaceAll(",", ""))
   }
   return 0
 }

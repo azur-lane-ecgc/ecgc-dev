@@ -1,14 +1,12 @@
 import { writeFile } from "node:fs/promises"
 
+import shipsJson from "@/packages/AzurLaneData/data/ships.json"
 import type { ShipData } from "@/packages/AzurLaneData/types/ships"
 
 import { shipNameParse, shipLocationParse } from "../ships"
 
 export const main = async (): Promise<any[]> => {
-  const ships: Record<number, ShipData> =
-    (await import("@/packages/AzurLaneData/data/ships.json").then(
-      (m) => m.default,
-    )) as Record<number, ShipData>
+  const ships: Record<number, ShipData> = shipsJson as Record<number, ShipData>
 
   const OUTPUT_PATH =
     "../../apps/web/src/utils/ships/events/azurLaneEvents.json"

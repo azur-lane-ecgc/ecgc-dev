@@ -1,11 +1,9 @@
 import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
 import { ehpUpdateDate } from "@/constants/index"
+import ehpJson from "@/db/ehp/shipEHP.json"
 import type { ShipEHPProps } from "@/db/types"
-const ehp = (await import("@/db/ehp/shipEHP.json")).default as Record<
-  string,
-  ShipEHPProps[]
->
+const ehp = ehpJson as Record<string, ShipEHPProps[]>
 
 import { formatDate } from "@/utils/formatDate"
 

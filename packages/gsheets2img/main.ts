@@ -8,6 +8,8 @@ import { firefox } from "playwright"
 import { captureSheetImages } from "./src/sheetImageCapture"
 
 // Hardcoded constants
+const sheetFilenameSeparatorPattern = /[ /]/g
+
 const sheetId = "1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM"
 const publishedId =
   "2PACX-1vRbKeR7WCSeg1FUx_jQ0e972FtA9tvgW8jHaiLQCPGtJEokVrSGBEZznr2qptelhxF-TXHh86yYQEUa"
@@ -84,7 +86,7 @@ getSheets(sheetId)
         name: sheet.name,
         gid: sheet.gid,
         url: `https://docs.google.com/spreadsheets/u/0/d/e/${publishedId}/pubhtml/sheet?headers=false&gid=${sheet.gid}`,
-        outputName: sheet.name.replace(/[ /]/g, "_"),
+        outputName: sheet.name.replace(sheetFilenameSeparatorPattern, "_"),
       }))
 
     const outputPaths = sheets.map((sheet) =>

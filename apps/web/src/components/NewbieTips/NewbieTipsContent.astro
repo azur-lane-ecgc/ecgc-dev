@@ -10,10 +10,10 @@ import { ItemTable } from "@/components/_common/ItemTable"
 import { ShipModal } from "@/components/_common/ShipModal"
 import { LocationItem } from "@/components/_common/ShipModal/ShipLocations"
 import WikiLink from "@/components/_common/WikiLink.astro"
+import shipDataJson from "@/db/ship_data/ship_data.json"
 import type { ShipData } from "@/db/types"
 
-const shipData = (await import("@/db/ship_data/ship_data.json"))
-  .default as Record<number, ShipData>
+const shipData = shipDataJson as Record<number, ShipData>
 
 const newJerseyData = shipData[68]
 const shinanoData = shipData[231]
