@@ -67,7 +67,7 @@ export const findMissingShipIcons = async (): Promise<ShipIconInventory> => {
     name.toLowerCase().endsWith(".png"),
   )
   const existingIconNames = new Set(
-    iconFiles.map((name) => name.replace(/\.png$/iu, "").normalize("NFC")),
+    iconFiles.map((name) => name.slice(0, -4).normalize("NFC")),
   )
 
   const missingShipIcons: MissingShipIcon[] = []

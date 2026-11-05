@@ -1,26 +1,29 @@
 import { HR } from "@/components/_common/HR"
 import { ItemContainer } from "@/components/_common/ItemCell"
 import { ShipModal } from "@/components/_common/ShipModal"
+import mainFleetRankingsJson from "@/db/rankings/mainFleetRankings.json"
+import ssFleetRankingsJson from "@/db/rankings/ssFleetRankings.json"
+import vgFleetRankingsJson from "@/db/rankings/vgFleetRankings.json"
 import type {
   MainFleetRankingProps,
   VanguardFleetRankingProps,
   SSFleetRankingProps,
 } from "@/db/types"
-const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
-  .default as Record<string, MainFleetRankingProps[]>
-const mainFleetDamageScales = createDamageRankScales(
-  Object.values(mainFleetRankings).flat(),
-)
-const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
-  .default as Record<string, VanguardFleetRankingProps[]>
-const vanguardFleetDamageScales = createDamageRankScales(
-  Object.values(vgFleetRankings).flat(),
-)
-const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
-  .default as Record<string, SSFleetRankingProps[]>
-const ssFleetDamageScales = createDamageRankScales(
-  Object.values(ssFleetRankings).flat(),
-)
+const mainFleetRankings = mainFleetRankingsJson as Record<
+  string,
+  MainFleetRankingProps[]
+>
+const mainFleetDamageScales = createDamageRankScales(mainFleetRankings, "main")
+const vgFleetRankings = vgFleetRankingsJson as Record<
+  string,
+  VanguardFleetRankingProps[]
+>
+const vanguardFleetDamageScales = createDamageRankScales(vgFleetRankings, "vg")
+const ssFleetRankings = ssFleetRankingsJson as Record<
+  string,
+  SSFleetRankingProps[]
+>
+const ssFleetDamageScales = createDamageRankScales(ssFleetRankings, "ss")
 
 import {
   initialFilters,

@@ -9,6 +9,9 @@ import {
 } from "../googleSheetSchema"
 import { normalizeSpreadsheetShipName } from "../ships/shipNameParse/spreadsheetShipName"
 
+const fleetNoteParenthesesPattern = /\(|\)/g
+const fleetNameNotePattern = /^(.*?)\s*\((.*?)\)$/
+
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "13YbPw3dM2eN6hr3YfVABIK9LVuCWnVZF0Zp2BGOZXc0"
 const SHEET_NAME = "MAIN (no img)"
@@ -68,12 +71,15 @@ const parseFleetKey = (
     if (fleetKey.startsWith(exception)) {
       return {
         shipName: exception,
-        nameNote: fleetKey.slice(exception.length).trim().replace(/\(|\)/g, ""),
+        nameNote: fleetKey
+          .slice(exception.length)
+          .trim()
+          .replace(fleetNoteParenthesesPattern, ""),
       }
     }
   }
 
-  const match = fleetKey.match(/^(.*?)\s*\((.*?)\)$/)
+  const match = fleetKey.match(fleetNameNotePattern)
   return match && match[1] && match[2]
     ? { shipName: match[1].trim(), nameNote: match[2].trim() }
     : { shipName: fleetKey.trim(), nameNote: "" }

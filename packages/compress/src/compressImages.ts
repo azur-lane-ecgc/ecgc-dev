@@ -61,7 +61,7 @@ const compressImage = async (
   file: string,
   base: string,
 ): Promise<CompressionResult> => {
-  const relativePath = relative(base, file).replace(/\\/g, "/")
+  const relativePath = relative(base, file).replaceAll("\\", "/")
   console.log(`Processing: ${relativePath}`)
 
   const ext = extname(file).slice(1).toLowerCase()

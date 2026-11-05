@@ -2,14 +2,14 @@ import { useState } from "react"
 
 import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
+import vgFleetRankingsJson from "@/db/rankings/vgFleetRankings.json"
 import type { VanguardFleetRankingProps } from "@/db/types"
-import { createDamageRankScales } from "@/utils/ships"
-const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
-  .default as Record<string, VanguardFleetRankingProps[]>
-const allVanguardFleetRankings = Object.values(vgFleetRankings).flat()
-const vanguardFleetDamageScales = createDamageRankScales(
-  allVanguardFleetRankings,
-)
+import { createDamageRankScales, hasLowTierFallback } from "@/utils/ships"
+const vgFleetRankings = vgFleetRankingsJson as Record<
+  string,
+  VanguardFleetRankingProps[]
+>
+const vanguardFleetDamageScales = createDamageRankScales(vgFleetRankings, "vg")
 
 import { RankingHeader } from "./RankingHeader"
 import { damageRankColor, letterRankColor, numberRankColor } from "./styles"
@@ -26,6 +26,13 @@ export const VanguardFleetRanking: React.FC<VGFleetComponentRankingProps> = ({
   const rankings = vgFleetRankings[ship]
 
   if (!rankings) {
+    if (hasLowTierFallback(ship)) {
+      return (
+        <p>
+          No spreadsheet entry is available. Assigned D tier for all rankings.
+        </p>
+      )
+    }
     return <p>This ship doesn't have rankings currently. Come back later!</p>
   }
 

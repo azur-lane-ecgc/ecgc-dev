@@ -301,10 +301,10 @@ verify_samvaluation_interactions() {
   printf 'Checking both Samvaluation sort directions\n'
   set_ranking_sort_direction ↓
   assert_browser_condition \
-    "descending light damage starts with SS ranks" \
+    "descending light damage starts with high tiers" \
     "(() => {
       const ships = [...document.querySelectorAll('[aria-label^=\"Open modal for \"]')].slice(0, 5)
-      return ships.length === 5 && ships.every(ship => ship.textContent.includes('Rank: SS'))
+      return ships.length === 5 && ships[0].textContent.includes('Rank: SS') && ships.every(ship => ship.textContent.includes('Rank: S'))
     })()"
 
   set_ranking_sort_direction ↑
@@ -324,6 +324,20 @@ verify_samvaluation_interactions() {
       const ships = [...document.querySelectorAll('[aria-label^=\"Open modal for \"]')]
       return ships.length > 0 && ships.every(ship => ship.getAttribute('aria-label').includes('Baltimore'))
     })()"
+
+  printf 'Checking assigned low-tier collaboration rankings\n'
+  browser_command fill 'input[placeholder="Base Name ONLY"]' 'Kuon' >/dev/null
+  browser_command wait '[aria-label="Open modal for Kuon"]' >/dev/null
+  browser_command find role button click --name 'Open modal for Kuon' >/dev/null
+  browser_command wait '[role="dialog"]' >/dev/null
+  assert_browser_condition \
+    "missing collaboration rankings show their assigned tier" \
+    "(() => {
+      const dialog = document.querySelector('[role=\"dialog\"]')
+      return Boolean(dialog && dialog.textContent.includes('Assigned D tier for all rankings.'))
+    })()"
+  browser_command click '[role="dialog"] button' >/dev/null
+
   browser_command find text 'Clear Filters' click --exact >/dev/null
   sleep 0.3
 }

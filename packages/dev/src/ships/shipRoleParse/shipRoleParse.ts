@@ -5,6 +5,14 @@ import type {
   SSFleetRankingProps,
 } from "@/db/types"
 import type { ShipAAProps } from "@/tools/aa_parsing/types"
+import {
+  createDamageRankScales,
+  createSurvivalRankScale,
+  getRankingTier,
+  hasLowTierFallback,
+  type DamageRankKey,
+  type RankingTierScale,
+} from "@/utils/ships/props/rankings"
 
 import {
   isDecentMainFleet,
@@ -31,14 +39,45 @@ import {
   mainHealSupport,
 } from "./roleDefs"
 
-/** Builds ship role sets once for each data processing run. */
+const normalizeRoleRankings = <
+  Ranking extends MainFleetRankingProps | VanguardFleetRankingProps,
+>(
+  rankings: Record<string, Ranking[]>,
+  damageScales: Record<DamageRankKey, RankingTierScale>,
+  survivalScale?: RankingTierScale,
+): Record<string, Ranking[]> =>
+  Object.fromEntries(
+    Object.entries(rankings).map(([ship, variants]) => [
+      ship,
+      variants.map((ranking) => ({
+        ...ranking,
+        lightdmg: getRankingTier(ranking.lightdmg, damageScales.lightdmg),
+        mediumdmg: getRankingTier(ranking.mediumdmg, damageScales.mediumdmg),
+        heavydmg: getRankingTier(ranking.heavydmg, damageScales.heavydmg),
+        selfsurvival: survivalScale
+          ? getRankingTier(ranking.selfsurvival, survivalScale)
+          : ranking.selfsurvival,
+      })),
+    ]),
+  )
+
+/** Builds role sets from normalized rating tiers without changing measured source values. */
 export const createShipRoleParser = (
   shipEHPData: Record<string, ShipEHPProps[]>,
   shipAAData: Record<string, ShipAAProps[]>,
-  mainFleetRankingData: Record<string, MainFleetRankingProps[]>,
-  vgFleetRankingData: Record<string, VanguardFleetRankingProps[]>,
+  sourceMainFleetRankings: Record<string, MainFleetRankingProps[]>,
+  sourceVanguardRankings: Record<string, VanguardFleetRankingProps[]>,
   ssFleetRankingData: Record<string, SSFleetRankingProps[]>,
 ) => {
+  const mainFleetRankingData = normalizeRoleRankings(
+    sourceMainFleetRankings,
+    createDamageRankScales(sourceMainFleetRankings, "main"),
+  )
+  const vgFleetRankingData = normalizeRoleRankings(
+    sourceVanguardRankings,
+    createDamageRankScales(sourceVanguardRankings, "vg"),
+    createSurvivalRankScale(sourceVanguardRankings),
+  )
   const tanks = tankRole(shipEHPData)
   const superTanks = superTankRole(shipEHPData)
   const fastLoadShips = fastLoadRole()
@@ -74,6 +113,16 @@ export const createShipRoleParser = (
     fleetType: string | undefined,
     hullType: string | undefined,
   ): string[] => {
+    const fleetRankings =
+      fleetType === "main"
+        ? mainFleetRankingData
+        : fleetType === "vg"
+          ? vgFleetRankingData
+          : ssFleetRankingData
+    if (hasLowTierFallback(ship) && !fleetRankings[ship]?.length) {
+      return ["Bad"]
+    }
+
     const roles: string[] = []
 
     // vanguard roles

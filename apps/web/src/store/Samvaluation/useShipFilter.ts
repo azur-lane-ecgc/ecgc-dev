@@ -1,5 +1,9 @@
 import { useEffect, useReducer } from "react"
 
+import mainFleetRankingsJson from "@/db/rankings/mainFleetRankings.json"
+import ssFleetRankingsJson from "@/db/rankings/ssFleetRankings.json"
+import vgFleetRankingsJson from "@/db/rankings/vgFleetRankings.json"
+import shipDataJson from "@/db/ship_data/ship_data.json"
 import type {
   ShipData,
   MainFleetRankingProps,
@@ -7,14 +11,19 @@ import type {
   SSFleetRankingProps,
   // ShipEHPProps,
 } from "@/db/types"
-const shipData = (await import("@/db/ship_data/ship_data.json"))
-  .default as Record<number, ShipData>
-const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
-  .default as Record<string, MainFleetRankingProps[]>
-const vgFleetRankings = (await import("@/db/rankings/vgFleetRankings.json"))
-  .default as Record<string, VanguardFleetRankingProps[]>
-const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
-  .default as Record<string, SSFleetRankingProps[]>
+const shipData = shipDataJson as Record<number, ShipData>
+const mainFleetRankings = mainFleetRankingsJson as Record<
+  string,
+  MainFleetRankingProps[]
+>
+const vgFleetRankings = vgFleetRankingsJson as Record<
+  string,
+  VanguardFleetRankingProps[]
+>
+const ssFleetRankings = ssFleetRankingsJson as Record<
+  string,
+  SSFleetRankingProps[]
+>
 // const ehp = (await import("@/db/ehp/shipEHP.json")).default as Record<
 //   string,
 //   ShipEHPProps[]
