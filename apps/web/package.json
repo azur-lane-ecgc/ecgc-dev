@@ -8,6 +8,7 @@
     "dev": "bunx astro dev",
     "build": "bunx astro check && bunx astro build",
     "check": "bunx astro check",
+    "test": "bun test src",
     "preview": "bunx astro preview",
     "astro": "bunx astro"
   },
@@ -21,6 +22,7 @@
     "tailwindcss": "^4.3.4"
   },
   "devDependencies": {
+    "@types/bun": "^1.4.4",
     "@astrojs/check": "^0.9.12",
     "@astrojs/sitemap": "^3.7.4",
     "@tailwindcss/vite": "^4.3.4",

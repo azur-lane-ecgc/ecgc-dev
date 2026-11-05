@@ -1,3 +1,5 @@
+const shipyardLocationPattern = /Shipyard \(PR(\d+)\)/
+
 export const parseLocation = (location: string) => {
   // Divergent Chessboard (EN)
   if (location === "Divergent Chessboard" || location === "Opposite-Colored") {
@@ -5,7 +7,7 @@ export const parseLocation = (location: string) => {
   }
 
   // Air Raid Drills w/ Essex
-  else if (location.match(/Air Raid Drills with Essex/)) {
+  else if (location.includes("Air Raid Drills with Essex")) {
     location = "Air Raid Drills with Essex Rerun"
   }
 
@@ -23,8 +25,8 @@ export const parseLocation = (location: string) => {
   }
 
   // Shipyard
-  else if (location.match(/Shipyard \(PR(\d+)\)/)) {
-    location = location.replace(/Shipyard \(PR(\d+)\)/, "Shipyard#Series_$1")
+  else if (shipyardLocationPattern.test(location)) {
+    location = location.replace(shipyardLocationPattern, "Shipyard#Series_$1")
   }
 
   // Memento -> Collection
@@ -48,7 +50,7 @@ export const parseLocation = (location: string) => {
   }
 
   // Dossier Analysis
-  else if (location.match(/Dossier/)) {
+  else if (location.includes("Dossier")) {
     location = "META_Showdown#Dossier_Analysis"
   }
 

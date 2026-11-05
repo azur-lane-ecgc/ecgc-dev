@@ -9,6 +9,8 @@ import {
 } from "../googleSheetSchema"
 import { normalizeSpreadsheetShipName } from "../ships/shipNameParse/spreadsheetShipName"
 
+const shipNameNotePattern = /\((.*?)\)/
+
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "1rb_uXVmDnK2YKe-0YRTrf3VUcQi8mKwEMYKCBFmVXCc"
 const SHEET_NAMES = ["List"]
@@ -24,7 +26,7 @@ const getAuthToken = async () => {
 }
 
 const extractBaseName = (shipName: string): string => {
-  const match = shipName.match(/\((.*?)\)/)
+  const match = shipName.match(shipNameNotePattern)
 
   if (match && match[1] !== undefined && match.index !== undefined) {
     const note = match[1]

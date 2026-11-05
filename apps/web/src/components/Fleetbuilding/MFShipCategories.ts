@@ -1,8 +1,11 @@
+import mainFleetRankingsJson from "@/db/rankings/mainFleetRankings.json"
+import shipDataJson from "@/db/ship_data/ship_data.json"
 import type { ShipData, MainFleetRankingProps } from "@/db/types"
-const shipData = (await import("@/db/ship_data/ship_data.json"))
-  .default as Record<number, ShipData>
-const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
-  .default as Record<string, MainFleetRankingProps[]>
+const shipData = shipDataJson as Record<number, ShipData>
+const mainFleetRankings = mainFleetRankingsJson as Record<
+  string,
+  MainFleetRankingProps[]
+>
 
 import { shipSort } from "@/utils/ships"
 

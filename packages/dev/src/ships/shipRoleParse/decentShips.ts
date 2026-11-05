@@ -4,6 +4,8 @@ import type {
   SSFleetRankingProps,
 } from "@/db/types"
 
+const rankingNonLetterPattern = /[^a-zA-Z]/g
+
 const priorityOrder: Record<string, number> = {
   SS: 5,
   S: 4,
@@ -16,7 +18,7 @@ const priorityOrder: Record<string, number> = {
 
 const sanitizeString = (str: string | null | undefined): string | null => {
   if (!str) return null
-  return str.replace(/[^a-zA-Z]/g, "")
+  return str.replace(rankingNonLetterPattern, "")
 }
 
 /* Decent helpers (≥ 1) */
@@ -29,7 +31,8 @@ export const isDecentVG = (
   if (!rankings) return false
 
   for (const ranking of rankings) {
-    for (const [, value] of Object.entries(ranking)) {
+    for (const [key, value] of Object.entries(ranking)) {
+      if (key === "notes" || key === "nameNote") continue
       if (typeof value === "number" && value - 1 >= 1) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
@@ -49,7 +52,8 @@ export const isDecentMainFleet = (
   if (!rankings) return false
 
   for (const ranking of rankings) {
-    for (const [, value] of Object.entries(ranking)) {
+    for (const [key, value] of Object.entries(ranking)) {
+      if (key === "notes" || key === "nameNote") continue
       if (typeof value === "number" && value - 1 >= 1) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
@@ -69,7 +73,8 @@ export const isDecentSSFleet = (
   if (!rankings) return false
 
   for (const ranking of rankings) {
-    for (const [, value] of Object.entries(ranking)) {
+    for (const [key, value] of Object.entries(ranking)) {
+      if (key === "notes" || key === "nameNote") continue
       if (typeof value === "number" && value - 1 >= 1) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
@@ -91,7 +96,8 @@ export const isGoodVGFleet = (
   if (!rankings) return false
 
   for (const ranking of rankings) {
-    for (const [, value] of Object.entries(ranking)) {
+    for (const [key, value] of Object.entries(ranking)) {
+      if (key === "notes" || key === "nameNote") continue
       if (typeof value === "number" && value - 1 >= 3) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
@@ -111,7 +117,8 @@ export const isGoodMainFleet = (
   if (!rankings) return false
 
   for (const ranking of rankings) {
-    for (const [, value] of Object.entries(ranking)) {
+    for (const [key, value] of Object.entries(ranking)) {
+      if (key === "notes" || key === "nameNote") continue
       if (typeof value === "number" && value - 1 >= 3) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)
@@ -131,7 +138,8 @@ export const isGoodSSFleet = (
   if (!rankings) return false
 
   for (const ranking of rankings) {
-    for (const [, value] of Object.entries(ranking)) {
+    for (const [key, value] of Object.entries(ranking)) {
+      if (key === "notes" || key === "nameNote") continue
       if (typeof value === "number" && value - 1 >= 3) return true
       if (typeof value === "string") {
         const s = sanitizeString(value)

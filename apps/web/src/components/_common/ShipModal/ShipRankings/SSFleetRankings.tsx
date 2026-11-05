@@ -2,12 +2,14 @@ import { useState } from "react"
 
 import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
+import ssFleetRankingsJson from "@/db/rankings/ssFleetRankings.json"
 import type { SSFleetRankingProps } from "@/db/types"
 import { createDamageRankScales } from "@/utils/ships"
-const ssFleetRankings = (await import("@/db/rankings/ssFleetRankings.json"))
-  .default as Record<string, SSFleetRankingProps[]>
-const allSSFleetRankings = Object.values(ssFleetRankings).flat()
-const ssFleetDamageScales = createDamageRankScales(allSSFleetRankings)
+const ssFleetRankings = ssFleetRankingsJson as Record<
+  string,
+  SSFleetRankingProps[]
+>
+const ssFleetDamageScales = createDamageRankScales(ssFleetRankings, "ss")
 
 import { RankingHeader } from "./RankingHeader"
 import { damageRankColor, letterRankColor, numberRankColor } from "./styles"

@@ -2,6 +2,12 @@ import { writeFile } from "node:fs/promises"
 
 import type { GuidePageContent } from "../replace_links/replaceLinks"
 
+const headingSpacePattern = /\{"\s*"\}/g
+const headingTagPattern = /<[^>]*>/g
+const headingWhitespacePattern = /\s+/g
+const guideHeadingPattern =
+  /<h([23])[^>]*\sid="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g
+
 const outputFilePath =
   "../../apps/web/src/components/_common/Sidenav/TocContent.json"
 
@@ -18,18 +24,16 @@ type Subheading = {
 
 const extractHeadingText = (headingContent: string): string =>
   headingContent
-    .replace(/\{"\s*"\}/g, " ")
-    .replace(/<[^>]*>/g, "")
-    .replace(/\s+/g, " ")
+    .replace(headingSpacePattern, " ")
+    .replace(headingTagPattern, "")
+    .replace(headingWhitespacePattern, " ")
     .trim()
 
 const extractGuideHeadings = (content: string): Heading[] => {
   const headings: Heading[] = []
   let section: Heading | undefined
 
-  for (const match of content.matchAll(
-    /<h([23])[^>]*\sid="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g,
-  )) {
+  for (const match of content.matchAll(guideHeadingPattern)) {
     const heading = {
       id: match[2]!,
       content: extractHeadingText(match[3]!),

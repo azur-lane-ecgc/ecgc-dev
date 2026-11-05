@@ -2,12 +2,14 @@ import { useState } from "react"
 
 import { HR } from "@/components/_common/HR"
 import { ItemTable } from "@/components/_common/ItemTable"
+import mainFleetRankingsJson from "@/db/rankings/mainFleetRankings.json"
 import type { MainFleetRankingProps } from "@/db/types"
-import { createDamageRankScales } from "@/utils/ships"
-const mainFleetRankings = (await import("@/db/rankings/mainFleetRankings.json"))
-  .default as Record<string, MainFleetRankingProps[]>
-const allMainFleetRankings = Object.values(mainFleetRankings).flat()
-const mainFleetDamageScales = createDamageRankScales(allMainFleetRankings)
+import { createDamageRankScales, hasLowTierFallback } from "@/utils/ships"
+const mainFleetRankings = mainFleetRankingsJson as Record<
+  string,
+  MainFleetRankingProps[]
+>
+const mainFleetDamageScales = createDamageRankScales(mainFleetRankings, "main")
 
 import { RankingHeader } from "./RankingHeader"
 import { damageRankColor, letterRankColor, numberRankColor } from "./styles"
@@ -24,6 +26,13 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
   const rankings = mainFleetRankings[ship]
 
   if (!!!rankings) {
+    if (hasLowTierFallback(ship)) {
+      return (
+        <p>
+          No spreadsheet entry is available. Assigned D tier for all rankings.
+        </p>
+      )
+    }
     return <p>This ship doesn't have rankings currently. Come back later!</p>
   }
 

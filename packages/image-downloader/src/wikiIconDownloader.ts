@@ -7,6 +7,9 @@ import {
 } from "./missingShipIcons"
 import { runWikiBrowserCommand } from "./wikiBrowserCommand"
 
+const wikiProtectionPattern =
+  /Oh noes|Access Denied|Too Many Requests|HTTP 429/i
+
 interface DownloadMetadata {
   id: number
   ship: string
@@ -47,7 +50,7 @@ const waitForFileTitle = async (expectedTitle: string) => {
     const title = String(
       (await runWikiBrowserCommand(["get", "title"])).title ?? "",
     )
-    if (/Oh noes|Access Denied|Too Many Requests|HTTP 429/i.test(title)) {
+    if (wikiProtectionPattern.test(title)) {
       throw new Error(`Wiki protection or rate limit detected: ${title}`)
     }
     if (title.includes(expectedTitle)) return
@@ -59,10 +62,14 @@ const waitForFileTitle = async (expectedTitle: string) => {
 const extractOriginalPng = async (harPath: URL, target: MissingShipIcon) => {
   const har = await Bun.file(harPath).json()
   const originalPngEntries = har.log.entries.filter((entry: any) => {
+    if (
+      entry.response.status !== 200 ||
+      entry.response.content.mimeType !== "image/png"
+    ) {
+      return false
+    }
     const requestUrl = new URL(entry.request.url)
     return (
-      entry.response.status === 200 &&
-      entry.response.content.mimeType === "image/png" &&
       requestUrl.hostname === "azurlane.netojuu.com" &&
       requestUrl.pathname.startsWith("/images/")
     )
@@ -120,9 +127,11 @@ const extractOriginalPng = async (harPath: URL, target: MissingShipIcon) => {
 export const downloadMissingShipIcons = async (
   targets: MissingShipIcon[],
 ): Promise<void> => {
-  await mkdir(new URL("har", evidenceRoot), { recursive: true })
-  await mkdir(new URL("metadata", evidenceRoot), { recursive: true })
-  await mkdir(destinationRoot, { recursive: true })
+  await Promise.all([
+    mkdir(new URL("har", evidenceRoot), { recursive: true }),
+    mkdir(new URL("metadata", evidenceRoot), { recursive: true }),
+    mkdir(destinationRoot, { recursive: true }),
+  ])
 
   const progressPath = new URL("download-progress.json", evidenceRoot)
   const progress = await Bun.file(progressPath)
