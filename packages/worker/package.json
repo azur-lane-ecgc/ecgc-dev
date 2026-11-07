@@ -1,0 +1,14 @@
+{
+  "name": "worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node node_modules/cf/bin/cf build",
+    "dev": "node node_modules/cf/bin/cf dev",
+    "deploy": "node node_modules/cf/bin/cf deploy"
+  },
+  "devDependencies": {
+    "cf": "1.0.0-beta.27",
+    "wrangler": "^4.157.0"
+  }
+}
