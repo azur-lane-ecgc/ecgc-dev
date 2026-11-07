@@ -36,6 +36,7 @@
 
 - Never commit credentials.json (Google Cloud service account key)
 - Pre-commit hooks run: knip → oxlint → oxfmt
+- Do not add test files or test runners to this repository. Use temporary verification files outside the repository and remove them after use.
 
 ## Red flags in a React codebase
 
