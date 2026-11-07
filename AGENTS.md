@@ -37,6 +37,7 @@
 - Never commit credentials.json (Google Cloud service account key)
 - Pre-commit hooks run: knip → oxlint → oxfmt
 - Do not add test files or test runners to this repository. Use temporary verification files outside the repository and remove them after use.
+- Store browser captures in worktree-local `.agent-screenshots/<feature>/screenshots/`, `videos/`, or `artifacts/` directories. Global Git excludes keep these files untracked.
 
 ## Red flags in a React codebase
 
