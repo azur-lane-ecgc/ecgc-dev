@@ -29,7 +29,10 @@ interface DownloadMetadata {
 }
 
 const monorepoRoot = new URL("../../../", import.meta.url)
-const evidenceRoot = new URL(".agents/evidence/image-downloader/", monorepoRoot)
+const evidenceRoot = new URL(
+  ".agent-screenshots/image-downloader/artifacts/",
+  monorepoRoot,
+)
 const destinationRoot = new URL(shipIconOutputDirectory, monorepoRoot)
 const minimumDelayMs = 60_000
 

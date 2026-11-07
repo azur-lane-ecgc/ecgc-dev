@@ -25,7 +25,7 @@ bun --filter image-downloader check
 - `main.ts` is the entrypoint.
 - `src/missingShipIcons.ts` derives required icons from ship records with listed stats.
 - `src/wikiIconDownloader.ts` downloads originals through headed agent-browser.
-- Download evidence stays under the ignored `.agents/evidence/image-downloader/` directory.
+- Download evidence stays under the globally ignored `.agent-screenshots/image-downloader/artifacts/` directory.
 
 ## Safety
 
