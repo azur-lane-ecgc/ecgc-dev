@@ -8,7 +8,6 @@
     "dev": "bunx astro dev",
     "build": "bunx astro check && bunx astro build",
     "check": "bunx astro check",
-    "test": "bun test src",
     "preview": "bunx astro preview",
     "astro": "bunx astro"
   },
