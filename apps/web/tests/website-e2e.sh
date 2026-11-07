@@ -298,6 +298,19 @@ verify_samvaluation_interactions() {
   select_combobox_option 'Fleet Type' 'Main Fleet' main-fleet
   select_combobox_option 'Ranking Sort' 'Light DMG' light-damage
 
+  printf 'Checking ranking sort cannot compare fleet categories\n'
+  select_combobox_option 'Fleet Type' 'Vanguard Fleet' vanguard-fleet
+  assert_browser_condition \
+    "selecting multiple fleet categories clears ranking sort" \
+    "(() => {
+      const rankingControl = document.getElementById('Ranking Sort_input')
+      const ships = [...document.querySelectorAll('[aria-label^=\"Open modal for \"]')]
+      return rankingControl?.classList.contains('cursor-not-allowed') && ships.length > 0 && ships.every(ship => !ship.textContent.includes('Rank:'))
+    })()"
+  browser_command click "[id='Ranking Sort_input']" >/dev/null
+  select_combobox_option 'Fleet Type' 'Vanguard Fleet' remove-vanguard-fleet
+  select_combobox_option 'Ranking Sort' 'Light DMG' restore-light-damage
+
   printf 'Checking both Samvaluation sort directions\n'
   set_ranking_sort_direction ↓
   assert_browser_condition \

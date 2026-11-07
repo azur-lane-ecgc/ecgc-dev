@@ -2,6 +2,8 @@
 
 import { expect, test } from "bun:test"
 
+import type { VanguardFleetRankingProps } from "@/db/types"
+
 import {
   createDamageRankScales,
   createSurvivalRankScale,
@@ -66,6 +68,82 @@ test("uses separate historical populations for each fleet and armor type", () =>
 
   expect(main.lightdmg).not.toEqual(vanguard.lightdmg)
   expect(vanguard.lightdmg).not.toEqual(vanguard.heavydmg)
+})
+
+test("keeps raw measured damage for sorting across ship variants", () => {
+  const variants: VanguardFleetRankingProps[] = [1050, 1970].map((damage) => ({
+    hardarbiter: "D",
+    meta: "D",
+    cm: "D",
+    w14mob: "D",
+    w14boss: "D",
+    w15mob: "D",
+    w15boss: "D",
+    ex: "D",
+    lightdmg: damage,
+    mediumdmg: 1152,
+    heavydmg: 968,
+    aoedmg: 1,
+  }))
+  const original = structuredClone(variants)
+  const scales = createDamageRankScales({ Ship: variants }, "vg")
+  const highest = getHighestValue(
+    "vg",
+    { mfRankings: null, vgRankings: variants, ssRankings: null },
+    { value: "Light DMG" },
+  )
+
+  expect(highest).toBe(1970)
+  expect(formatRankValue(highest, "Light DMG", scales)).toBe("D")
+  expect(variants).toEqual(original)
+})
+
+test("keeps damage tiers monotonic across fleets and armor columns", () => {
+  const ships = createRankedShips()
+  for (const fleet of ["main", "vg"] as const) {
+    const scales = createDamageRankScales(ships, fleet)
+    for (const scale of Object.values(scales)) {
+      let previous = 0
+      for (let damage = 0; damage <= 1000; damage++) {
+        const tier = getRankingTier(damage, scale)
+        expect(tier).toBeGreaterThanOrEqual(previous)
+        expect(tier).toBeLessThanOrEqual(6)
+        previous = tier
+      }
+    }
+  }
+})
+
+test("reads ranking values only from the selected fleet category", () => {
+  const createFleetRanking = (damage: number) => ({
+    hardarbiter: "D",
+    meta: "D",
+    cm: "D",
+    w14mob: "D",
+    w14boss: "D",
+    w15mob: "D",
+    w15boss: "D",
+    ex: "D",
+    lightdmg: damage,
+    mediumdmg: damage,
+    heavydmg: damage,
+    aoedmg: 1,
+  })
+  const rankings = {
+    mfRankings: [createFleetRanking(5338)],
+    vgRankings: [createFleetRanking(1050)],
+    ssRankings: [createFleetRanking(4)],
+  }
+
+  for (const [fleet, expected] of [
+    ["main", 5338],
+    ["vg", 1050],
+    ["ss", 4],
+  ] as const) {
+    expect(getHighestValue(fleet, rankings, { value: "Light DMG" })).toBe(
+      expected,
+    )
+  }
 })
 
 test("preserves the submarine sheet's ordinal damage scores", () => {
