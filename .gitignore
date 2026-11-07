@@ -72,3 +72,6 @@ _backup
 
 # opensrc - source code for packages
 opensrc/
+
+# Cloudflare build output
+.cloudflare/

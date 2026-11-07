@@ -98,6 +98,6 @@ jobs:
         if: steps.commit.outputs.has_changes == 'true'
         run: |
           bun run cf-build
-          bunx wrangler deploy
+          (cd packages/worker && node node_modules/cf/bin/cf deploy)
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
