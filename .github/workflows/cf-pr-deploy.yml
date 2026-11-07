@@ -62,10 +62,10 @@ jobs:
           echo "Sanitized alias: $SANITIZED_ALIAS"
 
           # Upload new version with branch-based alias for consistent preview URL
-          VERSION_OUTPUT=$(bunx wrangler versions upload --preview-alias "$SANITIZED_ALIAS" 2>&1)
+          VERSION_OUTPUT=$(cd packages/worker && node node_modules/cf/bin/cf workers versions create --preview-alias "$SANITIZED_ALIAS" 2>&1)
           echo "$VERSION_OUTPUT"
 
-          # Extract preview URL from wrangler output (format: <alias>-ecgc-dev.samheart564.workers.dev)
+          # Extract preview URL from cf output (format: <alias>-ecgc-dev.samheart564.workers.dev)
           PREVIEW_URL=$(echo "$VERSION_OUTPUT" | grep -o "https://$SANITIZED_ALIAS-ecgc-dev\.samheart564\.workers\.dev" | head -1)
 
           if [ -z "$PREVIEW_URL" ]; then

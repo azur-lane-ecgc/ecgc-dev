@@ -6,7 +6,7 @@ on:
   #   paths:
   #     - "apps/web/**"
   #     - "packages/AzurLaneData/**"
-  #     # - "wrangler.jsonc"
+  #     # - "cloudflare.config.ts"
   #     # - "package.json"
   #     # - ".github/workflows/cf-deploy.yml"
   workflow_dispatch:
@@ -49,6 +49,6 @@ jobs:
         run: bun run cf-build
 
       - name: Deploy to Cloudflare Workers
-        run: bunx wrangler deploy
+        run: (cd packages/worker && node node_modules/cf/bin/cf deploy)
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
