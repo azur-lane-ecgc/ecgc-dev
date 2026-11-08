@@ -25,7 +25,7 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
 
   const rankings = mainFleetRankings[ship]
 
-  if (!!!rankings) {
+  if (!rankings) {
     if (hasLowTierFallback(ship)) {
       return (
         <p>
