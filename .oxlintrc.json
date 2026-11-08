@@ -1,11 +1,11 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["unicorn", "typescript", "oxc"],
   "env": {
     "builtin": true
   },
   "ignorePatterns": [
     "packages/AzurLaneData/**",
-    "**/node_modules/**",
-    "**/*.astro"
+    "**/node_modules/**"
   ]
 }

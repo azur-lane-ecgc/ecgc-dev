@@ -13,8 +13,8 @@
         "run": "bun knip --fix"
       },
       "oxlint": {
-        "glob": ["**/*.{js,jsx,ts,tsx}"],
-        "run": "bunx --bun oxlint --fix {staged_files}",
+        "glob": ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,astro}"],
+        "run": "bunx --bun oxlint --fix --deny-warnings {staged_files}",
         "stage_fixed": true
       },
       "oxfmt": {

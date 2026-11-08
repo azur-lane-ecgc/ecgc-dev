@@ -4,7 +4,7 @@ export const hasUniqueAugment = (
   augments: ShipData["augments"] | null,
   hullType: string,
 ): boolean => {
-  if (!!!augments) return false
+  if (!augments) return false
 
   if (hullType.startsWith("AR") || hullType.startsWith("BM")) {
     return augments.length > 1

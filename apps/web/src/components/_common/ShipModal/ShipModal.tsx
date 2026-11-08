@@ -118,7 +118,7 @@ export const ShipModal: React.FC<ShipModalProps> = ({
       <div
         id={`${uniqueID ?? id}`}
         className={`${modalTriggerStyle} ${
-          !!trigger?.hasBorder ? "border-gray-400" : "border-transparent"
+          trigger?.hasBorder ? "border-gray-400" : "border-transparent"
         }`}
         onClick={handleOpen}
         tabIndex={0}

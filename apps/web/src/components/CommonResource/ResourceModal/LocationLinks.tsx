@@ -24,7 +24,7 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
   locations,
   className = "",
 }) => {
-  if (!!!locations) {
+  if (!locations) {
     return false
   }
   return (

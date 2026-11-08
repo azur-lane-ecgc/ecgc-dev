@@ -22,7 +22,7 @@
     "smol-format": "bunx oxfmt --write \"packages/**/*.{astro,json}\" \"apps/**/*.{astro,json}\"",
     "format": "bunx oxfmt --write packages apps",
     "format:check": "bunx oxfmt --check packages apps",
-    "lint": "bunx --bun oxlint --fix packages apps",
+    "lint": "bunx --bun oxlint --fix --deny-warnings packages apps",
     "devtools": "bun run submodule && bun run --filter dev main && bun run format",
     "build": "bun run --filter frontend build",
     "check": "bun run --filter frontend check && bun run --filter dev check && bun run --filter gsheets2img check && bun run --filter compress check && bun run --filter image-downloader check",
