@@ -6,12 +6,13 @@ import imageMiscSiteIconIco from "@/assets/misc/SiteIcon.ico"
 import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
 // components
 import Footer from "@/components/_common/Footer.astro"
+import { Navbar } from "@/components/_common/Navbar"
 
 // user style sheets
 import "@/styles/guide_page.css"
 
-import { Navbar } from "@/components/_common/Navbar"
 import { SidenavPage } from "@/components/_common/Sidenav"
+import UmamiAnalytics from "@/components/_common/UmamiAnalytics.astro"
 import { pageInfo } from "@/constants/index"
 import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 
@@ -41,6 +42,7 @@ const {
 <!doctype html>
 <html lang="en">
   <head>
+    <UmamiAnalytics />
     <!-- for google search -->
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link

@@ -20,3 +20,18 @@ Read [LICENSE.md](./LICENSE.md) for Copyright / License related information.
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=azur-lane-ecgc/ecgc-dev&type=Date" />
  </picture>
 </a>
+
+## Configure Umami analytics
+
+Set `PUBLIC_UMAMI_BASE_URL` to your Umami HTTPS origin and
+`PUBLIC_UMAMI_WEBSITE_ID` to the ECGC website ID before building. For local
+builds, use the ignored `apps/web/.env.local` file. For production GitHub
+Actions builds, set repository secrets with these names. Missing values
+disable analytics. The origin and website ID become public in built HTML;
+never use an administrator password or API token here.
+
+Both page layouts load the same deferred Umami tracker. The tracker records
+page views and client-side navigation without cookies. It runs only on
+`azurlaneecgc.com` and `www.azurlaneecgc.com`, so local and preview visits
+do not enter production statistics. Astro preserves the script during page
+transitions to prevent duplicate tracker initialization.
