@@ -47,6 +47,9 @@ jobs:
 
       - name: Compress Build
         run: bun run cf-build
+        env:
+          PUBLIC_UMAMI_BASE_URL: ${{ secrets.PUBLIC_UMAMI_BASE_URL }}
+          PUBLIC_UMAMI_WEBSITE_ID: ${{ secrets.PUBLIC_UMAMI_WEBSITE_ID }}
 
       - name: Deploy to Cloudflare Workers
         run: (cd packages/worker && node node_modules/cf/bin/cf deploy)

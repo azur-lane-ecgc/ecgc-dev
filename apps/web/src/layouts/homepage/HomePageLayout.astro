@@ -5,11 +5,12 @@ import imageMiscSiteIconIco from "@/assets/misc/SiteIcon.ico"
 import imageMiscSiteIcon from "@/assets/misc/SiteIcon.png"
 // components
 import Footer from "@/components/_common/Footer.astro"
+import { Navbar } from "@/components/_common/Navbar"
 
 // user style sheets
 import "@/styles/home_page.css"
 
-import { Navbar } from "@/components/_common/Navbar"
+import UmamiAnalytics from "@/components/_common/UmamiAnalytics.astro"
 import { getImageAssetUrl } from "@/utils/images/imageAssetUrl"
 
 interface Props {
@@ -28,6 +29,7 @@ const { title, activePage, canonical, metaUrl, metaImage, metaDescription } =
 <!doctype html>
 <html lang="en">
   <head>
+    <UmamiAnalytics />
     <!-- for google search -->
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link
