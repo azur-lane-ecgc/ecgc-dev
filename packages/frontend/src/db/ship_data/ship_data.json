@@ -47370,6 +47370,118 @@
       "isCollab": false
     }
   },
+  "10181": {
+    "id": 10181,
+    "ship": "Liliel Angel Paratroopers/Ririsa",
+    "faction": "Universal",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CVL",
+    "fleetType": "main",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["Fighter"],
+        "efficiency": 1.45,
+        "mounts": 3
+      },
+      {
+        "type": ["Torpedo Bomber"],
+        "efficiency": 1.45,
+        "mounts": 3
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 0.8,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Plane"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Plane"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Liliel's Rod", "Scepter", "Hunting Bow"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "It's Showtime! Angels' Azur Stage",
+          "href": "It's_Showtime!_Angels'_Azur_Stage"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
+  "10182": {
+    "id": 10182,
+    "ship": "Miriella Angel Paratroopers/Mikari",
+    "faction": "Universal",
+    "rarity": 4,
+    "isKai": false,
+    "hullType": "CL",
+    "fleetType": "vg",
+    "LBBonus": null,
+    "slots": [
+      {
+        "type": ["CL Main Gun"],
+        "efficiency": 1.15,
+        "mounts": 2
+      },
+      {
+        "type": ["DD Main Gun"],
+        "efficiency": 0.65,
+        "mounts": 1
+      },
+      {
+        "type": ["AA Gun"],
+        "efficiency": 1.2,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      },
+      {
+        "type": ["Auxiliary", "ASW Equipment"],
+        "efficiency": 1,
+        "mounts": 1
+      }
+    ],
+    "augments": ["Miriella's Bow", "Crossbow", "Sword"],
+    "samEval": "N/A. Will get updated at a later time.",
+    "fastLoad": null,
+    "roles": ["Bad"],
+    "locations": {
+      "events": [
+        {
+          "name": "It's Showtime! Angels' Azur Stage",
+          "href": "It's_Showtime!_Angels'_Azur_Stage"
+        }
+      ],
+      "other": [],
+      "construction": [],
+      "permanent": []
+    },
+    "permanent": {
+      "isPermanent": false,
+      "isCollab": false
+    }
+  },
   "10990": {
     "id": 10990,
     "ship": "Elise",
