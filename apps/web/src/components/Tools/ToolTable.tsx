@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react"
 
+import { SortableTableHead } from "@/components/_common/ItemTable/SortableTableHead"
+
 import { ToolData } from "./toolData"
 
 import "@/components/_common/ItemTable/styles.css"
@@ -105,54 +107,20 @@ export const ToolTable: React.FC<ToolTableProps> = ({ category }) => {
     <div className="table-responsive">
       <table className="table-sm table-dark table-bordered border-secondary table text-center align-middle">
         <colgroup>
-          {tableInfo.map((col, index) => (
-            <col key={index} width={col.colWidth} />
+          {tableInfo.map((col) => (
+            <col key={col.key} width={col.colWidth} />
           ))}
         </colgroup>
 
-        <thead>
-          <tr>
-            {tableInfo.map((col, index) => (
-              <th
-                key={index}
-                className={`${
-                  col?.limiter && "ship_table_limiter"
-                } relative px-1`}
-                onClick={() => handleSort(col.key)}
-              >
-                <div className="flex cursor-pointer">
-                  <span className="w-full flex-1 justify-center pr-2 pl-[8.75px] text-center align-middle">
-                    {col.colName}
-                  </span>
-                  <div className="m-0 flex flex-col justify-center space-y-0 space-x-0 *:leading-[0.35]!">
-                    <i
-                      className={`fa fa-caret-up text-sm ${
-                        sortConfig.column === col.key
-                          ? sortConfig.order === "asc"
-                            ? "text-cyan-300"
-                            : "invisible"
-                          : ""
-                      }`}
-                    ></i>
-                    <i
-                      className={`fa fa-caret-down text-sm ${
-                        sortConfig.column === col.key
-                          ? sortConfig.order === "desc"
-                            ? "text-cyan-300"
-                            : "invisible"
-                          : ""
-                      }`}
-                    ></i>
-                  </div>
-                </div>
-              </th>
-            ))}
-          </tr>
-        </thead>
+        <SortableTableHead
+          columns={tableInfo}
+          sortConfig={sortConfig}
+          onSort={handleSort}
+        />
 
         <tbody>
-          {sortedData.map((row, index) => (
-            <tr key={index}>
+          {sortedData.map((row) => (
+            <tr key={row.toolLink}>
               <td className="py-4!">
                 <span className="text-lg">
                   <a

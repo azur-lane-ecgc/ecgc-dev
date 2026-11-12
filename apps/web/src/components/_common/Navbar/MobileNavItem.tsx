@@ -38,10 +38,10 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({
         </button>
         {isOpen && (
           <div className="pl-4">
-            {page.dropdownItems?.map((item, idx) => (
+            {page.dropdownItems?.map((item) => (
               <a
                 aria-label={item.href}
-                key={idx}
+                key={item.href}
                 href={item?.external ? `${item.href}` : `/${item.href}`}
                 className={`block rounded-md px-3 py-2 text-base font-normal ${
                   activePage === item.href ? "navbar-active text-white!" : ""

@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react"
 
 import { ShipCell } from "@/components/_common/ItemCell"
+import { SortableTableHead } from "@/components/_common/ItemTable/SortableTableHead"
 import { parseLocation } from "@/utils/parseLocation"
 
 import { allFactionData } from "./factionTech"
@@ -145,54 +146,20 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
         <div className="table-responsive">
           <table className="table-sm table-dark table-bordered border-secondary table text-center align-middle">
             <colgroup>
-              {tableInfo.map((col, index) => (
-                <col key={index} width={col.colWidth ? col.colWidth : ""} />
+              {tableInfo.map((col) => (
+                <col key={col.key} width={col.colWidth ? col.colWidth : ""} />
               ))}
             </colgroup>
 
-            <thead>
-              <tr>
-                {tableInfo.map((col, index) => (
-                  <th
-                    key={index}
-                    className={`${
-                      col?.limiter && "ship_table_limiter"
-                    } relative px-1`}
-                    onClick={() => handleSort(col.key)}
-                  >
-                    <div className="flex cursor-pointer">
-                      <span className="w-full flex-1 justify-center pr-2 pl-[8.75px] text-center align-middle">
-                        {col.colName}
-                      </span>
-                      <div className="m-0 flex flex-col justify-center space-y-0 space-x-0 *:leading-[0.35]!">
-                        <i
-                          className={`fa fa-caret-up text-sm ${
-                            sortConfig.column === col.key
-                              ? sortConfig.order === "asc"
-                                ? "text-cyan-300"
-                                : "invisible"
-                              : ""
-                          }`}
-                        ></i>
-                        <i
-                          className={`fa fa-caret-down text-sm ${
-                            sortConfig.column === col.key
-                              ? sortConfig.order === "desc"
-                                ? "text-cyan-300"
-                                : "invisible"
-                              : ""
-                          }`}
-                        ></i>
-                      </div>
-                    </div>
-                  </th>
-                ))}
-              </tr>
-            </thead>
+            <SortableTableHead
+              columns={tableInfo}
+              sortConfig={sortConfig}
+              onSort={handleSort}
+            />
 
             <tbody>
-              {sortedData.map((row, index) => (
-                <tr key={index}>
+              {sortedData.map((row) => (
+                <tr key={row.ship}>
                   <td className="py-2!">
                     <ShipCell
                       ship={row.ship}
@@ -204,7 +171,7 @@ export const FleetTechTable: React.FC<FleetTechTableProps> = ({
                     <p>
                       {row.location.map((entry, index) => {
                         return (
-                          <span key={index}>
+                          <span key={entry.event}>
                             <a
                               rel="noopener noreferrer"
                               target="_blank"

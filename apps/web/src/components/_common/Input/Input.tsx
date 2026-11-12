@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef } from "react"
 
-import { useDebounce } from "@/utils/useDebounce"
+import { useDebouncedCallback } from "@/utils/useDebouncedCallback"
 
 interface InputProps {
   className?: string
@@ -13,11 +13,7 @@ interface InputProps {
   reset?: string
 }
 
-interface InputBaseProps extends Omit<InputProps, "reset"> {
-  resetOnMount: boolean
-}
-
-const InputBase: React.FC<InputBaseProps> = ({
+const InputBase: React.FC<Omit<InputProps, "reset">> = ({
   className,
   title,
   visibleTitle = true,
@@ -25,47 +21,36 @@ const InputBase: React.FC<InputBaseProps> = ({
   placeholder,
   debounceTimer = 300,
   onSelect,
-  resetOnMount,
 }) => {
   const [searchTerm, setSearchTerm] = useState<string>(initialValue)
   const inputRef = useRef<HTMLInputElement | null>(null)
-  const onSelectRef = useRef(onSelect)
-  const debouncedSearchTerm = useDebounce(searchTerm, debounceTimer)
-
-  useEffect(() => {
-    onSelectRef.current = onSelect
-  }, [onSelect])
-
-  useEffect(() => {
-    onSelectRef.current(debouncedSearchTerm)
-  }, [debouncedSearchTerm])
-
-  useEffect(() => {
-    if (!resetOnMount) {
-      return
-    }
-
-    onSelectRef.current("")
-    inputRef.current?.blur()
-  }, [resetOnMount])
+  const { schedule, cancel } = useDebouncedCallback(onSelect, debounceTimer)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value)
+    schedule(event.target.value)
   }
 
   const handleClear = () => {
     setSearchTerm("")
-    onSelectRef.current("")
+    cancel()
+    onSelect("")
     inputRef.current?.focus()
   }
 
   return (
     <div>
       {!!visibleTitle && (
-        <p className="mb-2! font-bold text-fuchsia-400">{title}</p>
+        <label
+          htmlFor={`${title}SearchBar`}
+          className="mb-2! block font-bold text-fuchsia-400"
+        >
+          {title}
+        </label>
       )}
       <div className={`relative ${className}`}>
         <input
+          aria-label={title}
           name={`${title}SearchBar`}
           id={`${title}SearchBar`}
           ref={inputRef}
@@ -77,6 +62,8 @@ const InputBase: React.FC<InputBaseProps> = ({
         />
         {searchTerm && (
           <button
+            type="button"
+            aria-label={`Clear ${title.toLowerCase()}`}
             onClick={handleClear}
             className="absolute top-1/2 right-2 -translate-y-1/2 text-lg text-pink-300 hover:text-red-400"
           >
@@ -90,5 +77,5 @@ const InputBase: React.FC<InputBaseProps> = ({
 
 /** Renders a search input that clears itself when its reset value changes. */
 export const Input: React.FC<InputProps> = ({ reset, ...props }) => (
-  <InputBase key={String(reset)} {...props} resetOnMount={Boolean(reset)} />
+  <InputBase key={String(reset)} {...props} />
 )

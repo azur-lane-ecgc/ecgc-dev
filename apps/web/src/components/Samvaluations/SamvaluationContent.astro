@@ -139,19 +139,27 @@ import { SamvaluationModals } from "./SamvaluationModals"
   id="evaluationScrollBtn"
   onclick="document.getElementById('samvaluationModalScroll').scrollIntoView({ behavior: 'smooth' })"
   class="fixed right-4 hidden rounded bg-pink-300 px-2 py-1 text-black shadow-lg transition-opacity duration-300"
-  aria-label="button"
+  aria-label="Scroll to ship evaluations"
 >
   <i class="fa fa-arrow-up"></i>
 </button>
 
 <script>
-  document.addEventListener("scroll", () => {
-    const button = document.getElementById("evaluationScrollBtn")
-    const scrollY = window.scrollY
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight
-    const threshold = 70
+  let removeScrollListener: (() => void) | undefined
 
-    if (button) {
+  document.addEventListener("astro:page-load", () => {
+    removeScrollListener?.()
+    removeScrollListener = undefined
+    const button = document.getElementById("evaluationScrollBtn")
+    if (!button) return
+
+    let scrollTimer: ReturnType<typeof setTimeout> | undefined
+    const updateScrollButton = () => {
+      const scrollY = window.scrollY
+      const maxScroll =
+        document.documentElement.scrollHeight - window.innerHeight
+      const threshold = 70
+
       if (scrollY > 100) {
         button.classList.remove("hidden")
         button.classList.add("opacity-100")
@@ -166,5 +174,25 @@ import { SamvaluationModals } from "./SamvaluationModals"
         button.style.bottom = "1rem"
       }
     }
+
+    const scheduleScrollUpdate = () => {
+      if (scrollTimer !== undefined) return
+      scrollTimer = setTimeout(() => {
+        scrollTimer = undefined
+        updateScrollButton()
+      }, 40)
+    }
+
+    document.addEventListener("scroll", scheduleScrollUpdate, { passive: true })
+    updateScrollButton()
+    removeScrollListener = () => {
+      document.removeEventListener("scroll", scheduleScrollUpdate)
+      clearTimeout(scrollTimer)
+    }
+  })
+
+  document.addEventListener("astro:before-swap", () => {
+    removeScrollListener?.()
+    removeScrollListener = undefined
   })
 </script>

@@ -1,35 +1,4 @@
-import { useEffect, useRef } from "react"
-
-// hook for modal focus handling
-export const useModalFocus = (
-  open: boolean,
-  triggerButtonID: string,
-  modalID: string,
-  shipID?: string,
-) => {
-  const hasMounted = useRef(false)
-  const prevOpen = useRef(open)
-
-  useEffect(() => {
-    if (!hasMounted.current) {
-      hasMounted.current = true
-    }
-  }, [shipID, triggerButtonID])
-
-  useEffect(() => {
-    if (hasMounted.current) {
-      if (open && !prevOpen.current) {
-        const modal = document.getElementById(modalID)
-        if (modal) modal.focus()
-      } else if (!open && prevOpen.current) {
-        const trigger = document.getElementById(triggerButtonID)
-        if (trigger) trigger.focus()
-      }
-
-      prevOpen.current = open
-    }
-  }, [open, modalID, triggerButtonID])
-}
+import { useEffect } from "react"
 
 // hook to manage history and popstate
 export const useModalHistory = (
@@ -61,20 +30,4 @@ export const useModalHistory = (
       }
     }
   }, [id, open, setOpen])
-}
-
-// hook to manage body overflow
-export const useBodyOverflow = (open: boolean) => {
-  useEffect(() => {
-    const bodyClass = document.body.classList
-    if (open) {
-      if (!bodyClass.contains("overflow-hidden")) {
-        bodyClass.add("overflow-hidden")
-      }
-    } else {
-      if (bodyClass.contains("overflow-hidden")) {
-        bodyClass.remove("overflow-hidden")
-      }
-    }
-  }, [open])
 }

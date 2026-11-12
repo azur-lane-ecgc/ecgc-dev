@@ -82,13 +82,15 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
             </a>
             {/* Desktop Nav Items */}
             <div className="hidden items-center md:flex">
-              {navbarPages.map((page, index) => (
-                <NavItem key={index} page={page} activePage={activePage} />
+              {navbarPages.map((page) => (
+                <NavItem key={page.name} page={page} activePage={activePage} />
               ))}
             </div>
             {/* Mobile Menu Button */}
             <button
               className="flex items-center justify-center rounded p-2 text-white hover:bg-white/15 hover:shadow-lg focus:outline-hidden md:hidden"
+              aria-label="Toggle navigation"
+              aria-expanded={!isNavCollapsed}
               onClick={toggleNavCollapse}
             >
               <i className="fas fa-bars text-xl" />
@@ -104,9 +106,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage = "" }) => {
           }`}
         >
           <div className="container mx-auto space-y-1 pt-2 pb-3">
-            {navbarPages.map((page, index) => (
+            {navbarPages.map((page) => (
               <MobileNavItem
-                key={index}
+                key={page.name}
                 page={page}
                 activePage={activePage}
                 activeDropdown={activeDropdown}

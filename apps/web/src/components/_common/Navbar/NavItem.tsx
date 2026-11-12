@@ -57,10 +57,10 @@ export const NavItem: React.FC<NavItemProps> = ({ page, activePage }) => {
               aria-labelledby="options-menu"
               className="py-1 whitespace-nowrap"
             >
-              {page.dropdownItems?.map((item, idx) => (
+              {page.dropdownItems?.map((item) => (
                 <a
                   aria-label={item.href}
-                  key={idx}
+                  key={item.href}
                   href={item?.external ? `${item.href}` : `/${item.href}`}
                   className={`block px-3 py-1 text-[1rem] ${
                     activePage === item.href ? "navbar-active text-white!" : ""

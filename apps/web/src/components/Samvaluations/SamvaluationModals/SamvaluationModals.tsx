@@ -107,7 +107,6 @@ export const SamvaluationModals: React.FC = () => {
                   largeDescNote: false,
                   hasBorder: false,
                 }}
-                loading={state.loading}
               />
             )
           })}

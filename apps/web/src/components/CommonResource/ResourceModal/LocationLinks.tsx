@@ -29,9 +29,9 @@ export const LocationLinks: React.FC<LocationLinksProps> = ({
   }
   return (
     <div className={`${className}`}>
-      {locations.map((location, index) => (
+      {locations.map((location) => (
         <div
-          key={index}
+          key={`${location.wikiLink}:${location.name}:${location.quantity.timeFrame ?? ""}:${location.notes ?? ""}`}
           className="text-[12px] leading-normal md:text-[12.5px] lg:text-[13px]"
         >
           <a
