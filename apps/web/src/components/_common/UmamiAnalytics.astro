@@ -1,0 +1,15 @@
+---
+const baseUrl = import.meta.env.PUBLIC_UMAMI_BASE_URL?.trim().replace(/\/$/, "")
+const websiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID?.trim()
+---
+
+{baseUrl && websiteId && (
+  <script
+    is:inline
+    defer
+    src={`${baseUrl}/script.js`}
+    data-website-id={websiteId}
+    data-domains="azurlaneecgc.com,www.azurlaneecgc.com"
+    transition:persist="umami-analytics"
+  />
+)}

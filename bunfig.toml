@@ -1,5 +1,0 @@
-telemetry = false
-
-[install]
-minimumReleaseAge = 259200
-minimumReleaseAgeExcludes = ["@types/bun", "typescript", "bun-types"]

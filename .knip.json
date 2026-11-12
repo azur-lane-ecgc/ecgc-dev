@@ -1,8 +1,13 @@
 {
-  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "$schema": "https://unpkg.com/knip@6/schema.json",
   "workspaces": {
-    "packages/frontend": {
-      "entry": ["src/pages/**/*.astro", "src/pages/**/*.ts"],
+    "apps/web": {
+      "entry": [
+        "src/pages/**/*.astro",
+        "src/pages/**/*.ts",
+        "cloudflare.config.ts",
+        "wrangler.config.ts"
+      ],
       "project": ["**/*"]
     },
     "packages/dev": {
@@ -10,8 +15,13 @@
     },
     "packages/gsheets2img": {
       "project": ["**/*"]
+    },
+    "packages/compress": {
+      "project": ["**/*"]
+    },
+    "packages/image-downloader": {
+      "project": ["**/*"]
     }
   },
-  "ignoreWorkspaces": ["packages/AzurLaneData"],
-  "ignoreDependencies": ["oxlint"]
+  "ignoreWorkspaces": ["packages/AzurLaneData"]
 }

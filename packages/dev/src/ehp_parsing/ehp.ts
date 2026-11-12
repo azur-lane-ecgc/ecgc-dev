@@ -1,24 +1,32 @@
-import { google } from "googleapis"
+import { writeFile } from "node:fs/promises"
 import path from "path"
+
+import { google } from "googleapis"
+
+import {
+  getGoogleSheetColumn,
+  parseGoogleSheetHeaders,
+} from "../googleSheetSchema"
+import { normalizeSpreadsheetShipName } from "../ships/shipNameParse/spreadsheetShipName"
+
+const shipNameNotePattern = /\((.*?)\)/
 
 const SERVICE_ACCOUNT_FILE = "../credentials.json"
 const SPREADSHEET_ID = "1HF6_hLEB8m_v0stp4DLGnIoDjgojvo7fjYz-cysjTMc"
 const SHEET_NAMES = ["eHP 3"]
-const OUTPUT_PATHS = ["../frontend/src/db/ehp/shipEHP.json"]
+const OUTPUT_PATHS = ["../../apps/web/src/db/ehp/shipEHP.json"]
+const REQUIRED_HEADERS = ["Ship", "Average eHP", "3 STD (ABS)"]
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 const getAuthToken = async () => {
-  const auth = new google.auth.GoogleAuth({
-    keyFile: SERVICE_ACCOUNT_FILE,
-    scopes: SCOPES,
-  })
-  const authToken = await auth.getClient()
-  return authToken
+  const auth = new google.auth.JWT({ scopes: SCOPES })
+  auth.fromJSON(await Bun.file(SERVICE_ACCOUNT_FILE).json())
+  return auth
 }
 
 const extractBaseName = (shipName: string): string => {
-  const match = shipName.match(/\((.*?)\)/)
+  const match = shipName.match(shipNameNotePattern)
 
   if (match && match[1] !== undefined && match.index !== undefined) {
     const note = match[1]
@@ -41,26 +49,28 @@ const processSheet = async (sheetName: string, auth: any) => {
   const sheets = google.sheets({ version: "v4", auth })
   const result = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `${sheetName}!A2:D`,
+    range: `${sheetName}!A1:ZZ`,
   })
-
-  const values = result.data.values
-  if (!values) {
-    return {}
-  }
+  const values = result.data.values ?? []
+  const columns = parseGoogleSheetHeaders(values[0] ?? [])
+  const columnIndexes = Object.fromEntries(
+    REQUIRED_HEADERS.map((headerName) => [
+      headerName,
+      getGoogleSheetColumn(columns, sheetName, headerName),
+    ]),
+  )
 
   const dataDict: Record<string, any[]> = {}
 
-  for (const row of values) {
-    if (row.length < 3) {
-      continue
-    }
-
-    const originalName = row[0]?.trim()
+  for (let rowIndex = 1; rowIndex < values.length; rowIndex++) {
+    const row = values[rowIndex]!
+    const originalName = String(row[columnIndexes["Ship"] ?? -1] ?? "").trim()
     if (!originalName) continue
-    const baseName = extractBaseName(originalName)
-    const totalEHP = row[1]?.trim()
-    const std = row[3]?.trim()
+    const baseName = normalizeSpreadsheetShipName(extractBaseName(originalName))
+    const totalEHP = String(
+      row[columnIndexes["Average eHP"] ?? -1] ?? "",
+    ).trim()
+    const std = String(row[columnIndexes["3 STD (ABS)"] ?? -1] ?? "").trim()
 
     const entry = {
       name: originalName,
@@ -80,6 +90,7 @@ const processSheet = async (sheetName: string, auth: any) => {
   return dataDict
 }
 
+/** Reads effective HP headers and ship data in one sheet request. */
 export const main = async (): Promise<Record<string, any[]>> => {
   if (SHEET_NAMES.length !== OUTPUT_PATHS.length) {
     throw new Error("Number of sheet names must match number of output paths")
@@ -97,7 +108,7 @@ export const main = async (): Promise<Record<string, any[]>> => {
 
     const sheetData = await processSheet(sheetName, auth)
 
-    await Bun.write(outputPath, JSON.stringify(sheetData, null, 2) + "\n")
+    await writeFile(outputPath, JSON.stringify(sheetData, null, 2) + "\n")
 
     console.log(
       `Data from sheet '${sheetName}' has been written to ${path.relative(
