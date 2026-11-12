@@ -9,16 +9,13 @@
     "plan": "bun main.ts --plan",
     "download": "bun main.ts --download",
     "browser": "agent-browser install",
-    "check": "tsc --noEmit"
+    "check": "bun check"
   },
   "dependencies": {
-    "agent-browser": "0.41.2"
+    "agent-browser": "0.42.0"
   },
   "devDependencies": {
     "@types/bun": "^1.4.4",
     "@types/node": "^26.6.6"
-  },
-  "peerDependencies": {
-    "typescript": "^6.0.3"
   }
 }

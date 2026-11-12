@@ -62,7 +62,7 @@ jobs:
           echo "Sanitized alias: $SANITIZED_ALIAS"
 
           # Upload new version with branch-based alias for consistent preview URL
-          VERSION_OUTPUT=$(cd packages/worker && node node_modules/cf/bin/cf workers versions create --preview-alias "$SANITIZED_ALIAS" 2>&1)
+          VERSION_OUTPUT=$(cd apps/web && node node_modules/cf/bin/cf workers versions create --prebuilt --preview-alias "$SANITIZED_ALIAS" 2>&1)
           echo "$VERSION_OUTPUT"
 
           # Extract preview URL from cf output (format: <alias>-ecgc-dev.samheart564.workers.dev)

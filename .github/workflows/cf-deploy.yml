@@ -52,6 +52,6 @@ jobs:
           PUBLIC_UMAMI_WEBSITE_ID: ${{ secrets.PUBLIC_UMAMI_WEBSITE_ID }}
 
       - name: Deploy to Cloudflare Workers
-        run: (cd packages/worker && node node_modules/cf/bin/cf deploy)
+        run: bun run --filter frontend deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

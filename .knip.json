@@ -2,7 +2,12 @@
   "$schema": "https://unpkg.com/knip@6/schema.json",
   "workspaces": {
     "apps/web": {
-      "entry": ["src/pages/**/*.astro", "src/pages/**/*.ts"],
+      "entry": [
+        "src/pages/**/*.astro",
+        "src/pages/**/*.ts",
+        "cloudflare.config.ts",
+        "wrangler.config.ts"
+      ],
       "project": ["**/*"]
     },
     "packages/dev": {
@@ -16,9 +21,6 @@
     },
     "packages/image-downloader": {
       "project": ["**/*"]
-    },
-    "packages/worker": {
-      "entry": ["cloudflare.config.ts", "wrangler.config.ts"]
     }
   },
   "ignoreWorkspaces": ["packages/AzurLaneData"]

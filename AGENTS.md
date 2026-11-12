@@ -25,12 +25,16 @@
 ## Project Structure
 
 - `apps/web/` - Astro/React frontend. Static site for Azur Lane game data, ship databases, equipment guides, farming calculators. Consumes JSON data from dev package. Built for Cloudflare Workers.
+- Cloudflare configuration lives in `apps/web/`. Run `bun run cf-build` for a local build. Run `bun run deploy` to upload.
 - `packages/dev/` - Data processing pipeline. TypeScript scripts that fetch/transform game data from Google Sheets, calculate EHP/rankings, generate ship databases. Outputs JSON to apps/web/src/db/.
 - `packages/gsheets2img/` - Converts Google Sheets to images. Uses Playwright to screenshot published sheets as JPEGs for documentation tables. Outputs to apps/web/src/assets/equip_misc/.
 - `packages/compress/` - Image compression utilities. Compresses built images in apps/web/dist/ using Sharp with optimized settings.
 - `packages/image-downloader/` - Ship icon downloader. Uses agent-browser to capture original wiki icons for ship records with listed stats. Outputs to apps/web/src/assets/ship_icons/.
 - `packages/AzurLaneData/` - Raw game data submodule. Git submodule containing official Azur Lane game data (ships.json, skills.json, etc.). Must be kept up-to-date.
 - Oxfmt formats `.astro` files through its upstream Astro support and `@astrojs/compiler-rs`.
+- Tooling packages use native `bun check`. The frontend uses `astro check` and requires TypeScript.
+- Keep Oxfmt for formatting. Bun 1.4.4's native formatter skips `.astro` files.
+- Accept chunk-size warnings for dense generated JSON. Keep these warnings visible.
 
 ## Critical
 

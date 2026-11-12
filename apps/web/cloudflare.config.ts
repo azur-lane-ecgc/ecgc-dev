@@ -1,6 +1,6 @@
 import { defineConfig } from "cf/config"
 
-// Configure the ECGC static website Worker and version previews.
+// Configure the static website and version previews.
 export default defineConfig({
   worker: {
     name: "ecgc-dev",
