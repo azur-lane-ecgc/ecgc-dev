@@ -21,6 +21,8 @@ export const ShipTags: React.FC<ShipTags> = ({ hullType, faction, roles }) => {
     <>
       {/* Small Screen Tag Trigger */}
       <button
+        aria-label="Toggle ship tags"
+        aria-expanded={roleDropdownOpen}
         onClick={() => setRoleDropdown(!roleDropdownOpen)}
         className={`absolute top-0 left-0 flex items-center space-x-2 rounded-lg border-2 border-gray-400 bg-[#3b444bb9] p-[4px] text-base text-gray-300 ${
           roleDropdownOpen ? "border-pink-300 text-amber-500" : ""

@@ -22,27 +22,27 @@ export const ItemTable: React.FC<React.PropsWithChildren<ItemTableProps>> = ({
     <div className="table-responsive">
       <table className="table-sm table-dark table-bordered border-secondary table text-center align-middle">
         <colgroup>
-          {tableInfo.map((col, index) =>
+          {tableInfo.map((col) =>
             col.colSpan ? (
               Array(col.colSpan)
                 .fill(null)
                 .map((_, i) => (
                   <col
-                    key={`${index}-${i}`}
+                    key={`${col.colName}-${i}`}
                     width={col.colWidth ? col.colWidth : ""}
                   />
                 ))
             ) : (
-              <col key={index} width={col.colWidth ? col.colWidth : ""} />
+              <col key={col.colName} width={col.colWidth ? col.colWidth : ""} />
             ),
           )}
         </colgroup>
 
         <thead>
           <tr className={`${allActive ? "bg-[#373b3e]" : ""}`}>
-            {tableInfo.map((col, index) => (
+            {tableInfo.map((col) => (
               <th
-                key={index}
+                key={col.colName}
                 colSpan={col?.colSpan || 1}
                 className={`${col.active ? "bg-[#373b3e]" : ""} ${
                   col?.limiter ? "ship_table_limiter" : ""

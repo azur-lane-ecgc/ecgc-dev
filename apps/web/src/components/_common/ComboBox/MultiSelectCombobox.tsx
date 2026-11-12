@@ -1,8 +1,9 @@
-import { useState, useRef, useEffect } from "react"
+import { useState } from "react"
 
 import { truncateArray } from "@/utils/string"
-import { useDebounce } from "@/utils/useDebounce"
+import { useDebouncedCallback } from "@/utils/useDebouncedCallback"
 
+import { ComboBoxMenu } from "./ComboBoxMenu"
 import { useComboBoxMenu } from "./useComboBoxMenu"
 
 interface MultiComboBoxProps {
@@ -12,7 +13,7 @@ interface MultiComboBoxProps {
   initialOptions?: string[]
   forceSelect?: boolean
   moveSelectedToTop?: boolean
-  onSelect: (option: string[] | null) => void
+  onSelect: (option: string[]) => void
   disabled?: boolean
   disabledMessage?: string
   reset?: string
@@ -33,27 +34,11 @@ const MultiSelectComboboxBase: React.FC<Omit<MultiComboBoxProps, "reset">> = ({
   const [input, setInput] = useState<string>("")
   const [selected, setSelected] = useState<string[]>(initialOptions || [])
 
-  const onSelectRef = useRef(onSelect)
+  const { schedule } = useDebouncedCallback(onSelect, 190)
+  const selectedOptions = new Set(selected)
 
-  const debouncedSelected: string[] = useDebounce(selected, 190)
-
-  useEffect(() => {
-    onSelectRef.current = onSelect
-  }, [onSelect])
-
-  useEffect(() => {
-    onSelectRef.current(debouncedSelected.length > 0 ? debouncedSelected : [])
-  }, [debouncedSelected])
-
-  const {
-    wrapperRef,
-    inputRef,
-    showOptions,
-    shouldRenderMobile,
-    isVisible,
-    toggleOptions,
-    closeOptions,
-  } = useComboBoxMenu()
+  const menu = useComboBoxMenu()
+  const { wrapperRef, showOptions, toggleOptions } = menu
 
   const filteredOptions = (() => {
     const baseOptions = input
@@ -64,10 +49,10 @@ const MultiSelectComboboxBase: React.FC<Omit<MultiComboBoxProps, "reset">> = ({
 
     if (moveSelectedToTop) {
       const selectedInBase = baseOptions.filter((item) =>
-        selected.includes(item),
+        selectedOptions.has(item),
       )
       const nonSelectedInBase = baseOptions.filter(
-        (item) => !selected.includes(item),
+        (item) => !selectedOptions.has(item),
       )
 
       return [...selectedInBase, ...nonSelectedInBase]
@@ -79,15 +64,16 @@ const MultiSelectComboboxBase: React.FC<Omit<MultiComboBoxProps, "reset">> = ({
   const handleSelect = (name: string) => {
     let newSelected: string[]
 
-    if (forceSelect && selected.includes(name) && selected.length === 1) {
+    if (forceSelect && selectedOptions.has(name) && selected.length === 1) {
       newSelected = [name]
     } else {
-      newSelected = selected.includes(name)
+      newSelected = selectedOptions.has(name)
         ? selected.filter((item) => item !== name)
         : [...selected, name]
     }
 
     setSelected(newSelected)
+    schedule(newSelected)
 
     if (newSelected.length === 0) {
       setInput("")
@@ -104,6 +90,10 @@ const MultiSelectComboboxBase: React.FC<Omit<MultiComboBoxProps, "reset">> = ({
         {title}
       </p>
       <button
+        type="button"
+        aria-label={title}
+        aria-expanded={showOptions}
+        disabled={disabled}
         id={`${title}_input`}
         className={`w-48 max-w-48 px-1 py-2 ${
           showOptions ? "bg-[#2e343a]" : "bg-[#212529]"
@@ -134,111 +124,15 @@ const MultiSelectComboboxBase: React.FC<Omit<MultiComboBoxProps, "reset">> = ({
         </div>
       </button>
 
-      {/* combobox menu (desktop) */}
-      {showOptions && (
-        <div className="absolute z-10 mt-1 hidden w-48 max-w-48 rounded-xl border-gray-500 bg-[#212529] shadow-md sm:block">
-          <input
-            id={`${title}ComboBoxDesktop`}
-            ref={inputRef}
-            type="text"
-            placeholder={`Search ${title.toLowerCase()}...`}
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            className="w-full rounded-t-xl border-transparent bg-[#444d55] py-1 pl-2 text-gray-200 focus:outline-hidden"
-          />
-          <div className="my-1 max-h-64 overflow-auto px-1">
-            {filteredOptions.length === 0 ? (
-              <div className="mx-auto my-auto flex h-8 cursor-default items-center justify-center rounded-md p-1 text-sm text-gray-300 italic">
-                Nothing found.
-              </div>
-            ) : (
-              filteredOptions.map((item, index) => (
-                <div
-                  key={index}
-                  onClick={() => handleSelect(item)}
-                  className={`${
-                    selected.includes(item)
-                      ? "text-orange-400"
-                      : "text-gray-300"
-                  } flex h-fit cursor-pointer items-center justify-between rounded-md p-1 font-semibold hover:bg-[#444d55]`}
-                >
-                  {item}
-                  {selected.includes(item) && (
-                    <span className="text-cyan-400">{"\u2713"}</span>
-                  )}
-                </div>
-              ))
-            )}
-          </div>
-        </div>
-      )}
-
-      {/* Combobox menu (mobile) */}
-      {shouldRenderMobile && (
-        <div className="fixed inset-0 z-80 block sm:hidden">
-          {/* Overlay with fade animation */}
-          <div
-            className={`fixed inset-0 bg-black transition-all duration-300 ease-in-out ${
-              isVisible ? "opacity-50" : "opacity-0"
-            }`}
-            onClick={closeOptions}
-          />
-
-          {/* Close message */}
-          <span
-            className={`pointer-events-none fixed top-1.75 left-1/2 z-30 w-full -translate-x-1/2 transform bg-transparent py-2 text-center font-bold text-fuchsia-400 transition-all duration-300 ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-4 opacity-0"
-            }`}
-          >
-            Click Outside to Exit
-          </span>
-
-          {/* Bottom menu with slide animation */}
-          <div
-            className={`absolute bottom-0 left-0 w-full transform rounded-t-xl bg-[#212529] transition-all duration-300 ease-in-out ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-full opacity-0"
-            }`}
-          >
-            <input
-              id={`${title}ComboBoxMobile`}
-              ref={inputRef}
-              type="text"
-              placeholder={`Search ${title.toLowerCase()}...`}
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              className="w-full rounded-t-xl border-transparent bg-[#444d55] py-3 pl-2 text-gray-200 focus:outline-hidden"
-            />
-            <div className="h-72 max-h-72 overflow-auto px-1 py-2">
-              {filteredOptions.length === 0 ? (
-                <div className="mx-auto my-auto flex h-12.5 cursor-default items-center justify-center rounded-md p-1 text-sm text-gray-300 italic">
-                  Nothing found.
-                </div>
-              ) : (
-                filteredOptions.map((item, index) => (
-                  <div
-                    key={index}
-                    onClick={() => handleSelect(item)}
-                    className={`${
-                      selected.includes(item)
-                        ? "text-orange-400"
-                        : "text-gray-300"
-                    } flex h-10 cursor-pointer items-center justify-between rounded-md p-3 font-semibold hover:bg-[#444d55]`}
-                  >
-                    {item}
-                    {selected.includes(item) && (
-                      <span className="text-cyan-400">{"\u2713"}</span>
-                    )}
-                  </div>
-                ))
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+      <ComboBoxMenu
+        menu={menu}
+        title={title}
+        input={input}
+        options={filteredOptions}
+        selected={selectedOptions}
+        onInput={setInput}
+        onSelect={handleSelect}
+      />
     </div>
   )
 }

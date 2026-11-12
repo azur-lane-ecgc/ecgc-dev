@@ -31,6 +31,8 @@ const collaborationFactions = [
   "Date A Live",
 ]
 
+const collaborationFactionCodes = new Set(collaborationFactions)
+
 export const allianceFactionsMap: Record<string, string[]> = {
   "Azur Lane": azurLaneFactions,
   "Crimson Axis": crimsonAxisFactions,
@@ -40,6 +42,8 @@ export const allianceFactionsMap: Record<string, string[]> = {
   Collaboration: collaborationFactions,
 }
 
+const allianceFactionCodes = new Set(Object.values(allianceFactionsMap).flat())
+
 export const allFactionOptions = [
   ...Object.keys(allianceFactionsMap).map((alliance) => ({
     label: alliance,
@@ -48,8 +52,8 @@ export const allFactionOptions = [
   ...allFactions
     .filter((faction) => {
       return (
-        !Object.values(allianceFactionsMap).flat().includes(faction) ||
-        collaborationFactions.includes(faction)
+        !allianceFactionCodes.has(faction) ||
+        collaborationFactionCodes.has(faction)
       )
     })
     .map((faction) => ({

@@ -2,7 +2,6 @@ import { useCallback, useEffect, useRef, useState } from "react"
 
 interface ComboBoxMenuState {
   wrapperRef: React.RefObject<HTMLDivElement | null>
-  inputRef: React.RefObject<HTMLInputElement | null>
   showOptions: boolean
   shouldRenderMobile: boolean
   isVisible: boolean
@@ -17,7 +16,6 @@ export const useComboBoxMenu = (): ComboBoxMenuState => {
   const [shouldRenderMobile, setShouldRenderMobile] = useState(false)
 
   const wrapperRef = useRef<HTMLDivElement | null>(null)
-  const inputRef = useRef<HTMLInputElement | null>(null)
   const closeTimerRef = useRef<number | null>(null)
 
   const clearCloseTimer = useCallback(() => {
@@ -61,9 +59,10 @@ export const useComboBoxMenu = (): ComboBoxMenuState => {
 
     const openTimer = window.setTimeout(() => setIsVisible(true), 75)
 
-    if (inputRef.current) {
-      inputRef.current.focus()
-    }
+    const searchInput = Array.from(
+      wrapperRef.current?.querySelectorAll("input") ?? [],
+    ).find((element) => element.getClientRects().length > 0)
+    searchInput?.focus()
 
     return () => window.clearTimeout(openTimer)
   }, [showOptions])
@@ -88,7 +87,6 @@ export const useComboBoxMenu = (): ComboBoxMenuState => {
 
   return {
     wrapperRef,
-    inputRef,
     showOptions,
     shouldRenderMobile,
     isVisible,

@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react"
+import { useEffect, useState } from "react"
 
 import "./styles.css"
 
@@ -12,29 +12,26 @@ interface ImageCarouselProps {
   data: ImageData[]
 }
 
+// Show an image carousel with keyboard-accessible playback and caption controls.
 export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
   const isOneElement = data.length <= 1
   const [slide, setSlide] = useState(0)
   const [play, setPlay] = useState(true)
   const [caption, setCaption] = useState(true)
-  const [userInteract, setuserInteract] = useState(false)
+  const [userInteract, setUserInteract] = useState(false)
 
-  const slideChange = useCallback(
-    (newIndex: number) => {
-      setSlide((slide) => (slide + newIndex + data.length) % data.length)
-    },
-    [data],
-  )
+  const changeSlide = (offset: number) =>
+    setSlide((current) => (current + offset + data.length) % data.length)
 
   // automatic looping
   useEffect(() => {
-    if (play) {
+    if (play && data.length > 1) {
       const interval = window.setInterval(() => {
-        slideChange(1)
+        setSlide((current) => (current + 1) % data.length)
       }, 6000)
       return () => window.clearInterval(interval)
     }
-  }, [play, slideChange])
+  }, [play, data.length])
 
   // automatically disable / enable caption at small screen size transition
   useEffect(() => {
@@ -60,7 +57,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
         {data.map((item, index) => (
           <div
             className={`slide ${slide === index ? "active" : ""}`}
-            key={index}
+            key={item.src}
           >
             <img
               loading="lazy"
@@ -77,39 +74,52 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ data }) => {
         ))}
       </div>
 
-      <i
+      <button
+        type="button"
+        aria-label={caption ? "Hide captions" : "Show captions"}
+        aria-pressed={caption}
         className={`carousel-toggle cc fa-solid ${
           caption ? "fa-eye" : "fa-eye-slash"
         }`}
         onClick={() => {
           setCaption((prev) => !prev)
-          setuserInteract(true)
+          setUserInteract(true)
         }}
       />
       {!isOneElement && (
         <>
-          <i
+          <button
+            type="button"
+            aria-label={play ? "Pause slideshow" : "Play slideshow"}
+            aria-pressed={play}
             className={`carousel-toggle cycle fa-solid ${
               play ? "fa-pause" : "fa-play"
             }`}
             onClick={() => setPlay((prev) => !prev)}
           />
-          <i
+          <button
+            type="button"
+            aria-label="Previous slide"
             className="fa-solid fa-chevron-left arrow"
-            onClick={() => slideChange(-1)}
+            onClick={() => changeSlide(-1)}
           />
-          <i
+          <button
+            type="button"
+            aria-label="Next slide"
             className="fa-solid fa-chevron-right arrow"
-            onClick={() => slideChange(1)}
+            onClick={() => changeSlide(1)}
           />
           {data.length <= 5 && (
             <span className="indicators">
-              {data.map((_, index) => (
-                <span
-                  key={index}
+              {data.map((item, index) => (
+                <button
+                  type="button"
+                  key={item.src}
+                  aria-label={`Show slide ${index + 1}`}
+                  aria-current={slide === index ? "true" : undefined}
                   onClick={() => setSlide(index)}
                   className={slide === index ? "indicator active" : "indicator"}
-                ></span>
+                />
               ))}
             </span>
           )}

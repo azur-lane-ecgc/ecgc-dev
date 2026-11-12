@@ -18,14 +18,16 @@ import {
   allRarityOptions,
   allRoles,
   allEvents,
-  rankingTypes,
 } from "@/utils/ships"
+
+import { SamvaluationRankingFilter } from "./SamvaluationRankingFilter"
 
 interface ModalFilterProps {
   state: ShipFilterProps
   dispatch: (action: ShipAction) => void
 }
 
+// Select ship filters for the evaluation list.
 export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
   state,
   dispatch,
@@ -85,7 +87,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
                         (option) => option.label === label,
                       )?.value
                     })
-                    .filter(Boolean) || [],
+                    .filter((value) => value !== undefined) || [],
               },
             })
           }
@@ -151,67 +153,7 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
             reset={state.reset}
           />
         </div>
-        <div className="relative">
-          <ComboBox
-            title="Ranking Sort"
-            options={Object.keys(rankingTypes)}
-            initialOption={initialFilters.rankingSort.value}
-            onSelect={(role) => {
-              const isFirstSelection =
-                state.filters.rankingSort.value.length === 0
-
-              dispatch({
-                type: "SET_FILTER",
-                payload: {
-                  rankingSort: {
-                    value: role ?? "",
-                    logic: isFirstSelection
-                      ? true
-                      : state.filters.rankingSort.logic,
-                  },
-                },
-              })
-            }}
-            disabled={state.filters.fleetType.length !== 1}
-            disabledMessage="Need ONLY 1 Fleet Type Selected"
-            reset={state.reset}
-          />
-
-          <CustomToggleButton
-            className={`absolute top-[37.5px] left-0 m-1 flex justify-center rounded bg-fuchsia-200 px-1.5 py-1 text-xs ${
-              !state.filters.rankingSort.value
-                ? "pointer-events-none hidden select-none"
-                : ""
-            }`}
-            options={[
-              { title: "DESC", payload: "true", symbol: "\u2193" },
-              { title: "ASC", payload: "false", symbol: "\u2191" },
-            ]}
-            initialValue={state.filters.rankingSort.logic === true ? 0 : 1}
-            onSelect={(trigger) => {
-              let newLogic: boolean | null
-
-              if (trigger === "true") {
-                newLogic = true
-              } else if (trigger === "false") {
-                newLogic = false
-              } else {
-                newLogic = null
-              }
-
-              dispatch({
-                type: "SET_FILTER",
-                payload: {
-                  rankingSort: {
-                    ...state.filters.rankingSort,
-                    logic: newLogic,
-                  },
-                },
-              })
-            }}
-            reset={state.reset}
-          />
-        </div>
+        <SamvaluationRankingFilter state={state} dispatch={dispatch} />
         <div className="relative">
           <ComboBox
             title="Events"
@@ -227,36 +169,6 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
           />
         </div>
       </div>
-
-      {/* conditional filters */}
-      {/* {state.filters.fleetType.includes("Main Fleet") && (
-          <div className="mb-3 flex flex-row flex-wrap gap-3.5">
-            <MultiSelectCombobox
-              title="Fleet Type"
-              options={["Main Fleet", "Vanguard Fleet", "Submarine Fleet"]}
-              initialOptions={initialFilters.fleetType}
-              onSelect={(fleetType) => {
-                console.log("hi")
-                return false
-              }}
-              reset={state.filters.fleetType.includes("Main Fleet")}
-            />
-            <ThreeToggleButton
-              title="Sort"
-              options={[
-                { title: "None", payload: "" },
-                { title: "Ascending", payload: "asc" },
-                { title: "Descending", payload: "desc" },
-              ]}
-              initialValue={0}
-              onSelect={(fleetType) => {
-                console.log("hi")
-                return false
-              }}
-              reset={state.reset}
-            />
-          </div>
-        )} */}
 
       {/* Scroll Marker */}
       <div
@@ -278,7 +190,12 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
           onSelect={(nextOption) =>
             dispatch({
               type: "SET_FILTER",
-              payload: { hasUniqueAugment: nextOption },
+              payload: {
+                hasUniqueAugment:
+                  nextOption === "true" || nextOption === "false"
+                    ? nextOption
+                    : "",
+              },
             })
           }
           reset={state.reset}
@@ -296,7 +213,12 @@ export const SamvaluationModalFilters: React.FC<ModalFilterProps> = ({
           onSelect={(nextOption) =>
             dispatch({
               type: "SET_FILTER",
-              payload: { isKai: nextOption },
+              payload: {
+                isKai:
+                  nextOption === "true" || nextOption === "false"
+                    ? nextOption
+                    : "",
+              },
             })
           }
           reset={state.reset}

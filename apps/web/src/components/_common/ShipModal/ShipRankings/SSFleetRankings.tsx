@@ -37,7 +37,7 @@ export const SSFleetRanking: React.FC<SSFleetRankingComponentProps> = ({
       <div className="mb-4 flex justify-start gap-2">
         {rankings.map((ranking, index) => (
           <button
-            key={index}
+            key={ranking.nameNote || "Base"}
             className={`rounded border px-4 py-2 font-semibold ${
               rankingIndex === index
                 ? "bg-fuchsia-600/60 text-white"

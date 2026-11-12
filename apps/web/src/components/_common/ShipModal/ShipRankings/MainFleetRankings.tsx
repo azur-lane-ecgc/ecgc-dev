@@ -1,10 +1,11 @@
 import { useState } from "react"
 
 import { HR } from "@/components/_common/HR"
-import { ItemTable } from "@/components/_common/ItemTable"
 import mainFleetRankingsJson from "@/db/rankings/mainFleetRankings.json"
 import type { MainFleetRankingProps } from "@/db/types"
 import { createDamageRankScales, hasLowTierFallback } from "@/utils/ships"
+
+import { RankingTable } from "./RankingTable"
 const mainFleetRankings = mainFleetRankingsJson as Record<
   string,
   MainFleetRankingProps[]
@@ -44,7 +45,7 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
       <div className="mb-4 flex justify-start gap-2">
         {rankings.map((ranking, index) => (
           <button
-            key={index}
+            key={ranking.nameNote || "Base"}
             className={`rounded border px-4 py-2 font-semibold ${
               rankingIndex === index
                 ? "bg-fuchsia-600/60 text-white"
@@ -61,230 +62,115 @@ export const MainFleetRanking: React.FC<MainFleetRankingComponentProps> = ({
         <>
           <div>
             {/* Rank */}
-            <ItemTable
-              tableInfo={[
-                { colName: "Hard Arbiter", colWidth: "5%" },
-                { colName: "Meta", colWidth: "5%" },
-                { colName: "CM", colWidth: "5%" },
-                { colName: "W14 Mob", colWidth: "5%" },
-                { colName: "W14 Boss", colWidth: "5%" },
-                { colName: "W15/16 Mob", colWidth: "5%" },
-                { colName: "W15/16 Boss", colWidth: "5%" },
+            <RankingTable
+              columns={[
+                [
+                  "Hard Arbiter",
+                  ranking.hardarbiter,
+                  letterRankColor(ranking.hardarbiter),
+                ],
+                ["Meta", ranking.meta, letterRankColor(ranking.meta)],
+                ["CM", ranking.cm, letterRankColor(ranking.cm)],
+                ["W14 Mob", ranking.w14mob, letterRankColor(ranking.w14mob)],
+                ["W14 Boss", ranking.w14boss, letterRankColor(ranking.w14boss)],
+                ["W15/16 Mob", ranking.w15mob, letterRankColor(ranking.w15mob)],
+                [
+                  "W15/16 Boss",
+                  ranking.w15boss,
+                  letterRankColor(ranking.w15boss),
+                ],
               ]}
-            >
-              <tr className="*:text-base">
-                <td
-                  className={`${letterRankColor(
-                    ranking.hardarbiter,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.hardarbiter ?? "\u200B"}
-                </td>
-                <td
-                  className={`${letterRankColor(
-                    ranking.meta,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.meta ?? "\u200B"}
-                </td>
-                <td
-                  className={`${letterRankColor(
-                    ranking.cm,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.cm ?? "\u200B"}
-                </td>
-                <td
-                  className={`${letterRankColor(
-                    ranking.w14mob,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.w14mob ?? "\u200B"}
-                </td>
-                <td
-                  className={`${letterRankColor(
-                    ranking.w14boss,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.w14boss ?? "\u200B"}
-                </td>
-                <td
-                  className={`${letterRankColor(
-                    ranking.w15mob,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.w15mob ?? "\u200B"}
-                </td>
-                <td
-                  className={`${letterRankColor(
-                    ranking.w15boss,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.w15boss ?? "\u200B"}
-                </td>
-              </tr>
-            </ItemTable>
+            />
             <br />
 
             {/* Usage */}
-            <ItemTable
-              tableInfo={[
-                { colName: "EX", colWidth: "5%" },
-                { colName: "Consistency", colWidth: "5%" },
-                { colName: "Fleet Req", colWidth: "5%" },
-                { colName: "Gear Req", colWidth: "5%" },
-                { colName: "Flag Req", colWidth: "5%" },
+            <RankingTable
+              columns={[
+                ["EX", ranking.ex, letterRankColor(ranking.ex)],
+                [
+                  "Consistency",
+                  ranking.consistency,
+                  numberRankColor(ranking.consistency),
+                ],
+                [
+                  "Fleet Req",
+                  ranking.fleetreq,
+                  numberRankColor(ranking.fleetreq),
+                ],
+                ["Gear Req", ranking.gearreq, numberRankColor(ranking.gearreq)],
+                [
+                  "Flag Req",
+                  ranking.flagreq,
+                  numberRankColor(ranking.flagreq || ""),
+                ],
               ]}
-            >
-              <tr className="*:text-base">
-                <td
-                  className={`${letterRankColor(
-                    ranking.ex,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.ex ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.consistency,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.consistency ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.fleetreq,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.fleetreq ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.gearreq,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.gearreq ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.flagreq || "",
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.flagreq ?? "\u200B"}
-                </td>
-              </tr>
-            </ItemTable>
+            />
             <br />
 
             {/* Offense */}
-            <ItemTable
-              tableInfo={[
-                { colName: "Light DMG", colWidth: "5%" },
-                { colName: "Medium DMG", colWidth: "5%" },
-                { colName: "Heavy DMG", colWidth: "5%" },
-                { colName: "Aoe DMG", colWidth: "5%" },
-                { colName: "DMG Uptime", colWidth: "5%" },
-                { colName: "Off. Buff", colWidth: "5%" },
-              ]}
-            >
-              <tr className="*:text-base">
-                <td
-                  className={`${damageRankColor(
+            <RankingTable
+              columns={[
+                [
+                  "Light DMG",
+                  ranking.lightdmg,
+                  damageRankColor(
                     ranking.lightdmg,
                     mainFleetDamageScales.lightdmg,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.lightdmg ?? "\u200B"}
-                </td>
-                <td
-                  className={`${damageRankColor(
+                  ),
+                ],
+                [
+                  "Medium DMG",
+                  ranking.mediumdmg,
+                  damageRankColor(
                     ranking.mediumdmg,
                     mainFleetDamageScales.mediumdmg,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.mediumdmg ?? "\u200B"}
-                </td>
-                <td
-                  className={`${damageRankColor(
+                  ),
+                ],
+                [
+                  "Heavy DMG",
+                  ranking.heavydmg,
+                  damageRankColor(
                     ranking.heavydmg,
                     mainFleetDamageScales.heavydmg,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.heavydmg ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.aoedmg,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.aoedmg ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.dmguptime,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.dmguptime ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.offensivebuff,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.offensivebuff ?? "\u200B"}
-                </td>
-              </tr>
-            </ItemTable>
+                  ),
+                ],
+                ["Aoe DMG", ranking.aoedmg, numberRankColor(ranking.aoedmg)],
+                [
+                  "DMG Uptime",
+                  ranking.dmguptime,
+                  numberRankColor(ranking.dmguptime),
+                ],
+                [
+                  "Off. Buff",
+                  ranking.offensivebuff,
+                  numberRankColor(ranking.offensivebuff),
+                ],
+              ]}
+            />
             <br />
 
             {/* Defense */}
-            <ItemTable
-              tableInfo={[
-                { colName: "Self Survival", colWidth: "5%" },
-                { colName: "AA", colWidth: "5%" },
-                { colName: "Rammers", colWidth: "5%" },
-                { colName: "Other Main", colWidth: "5%" },
-                { colName: "VG Survival", colWidth: "5%" },
+            <RankingTable
+              columns={[
+                [
+                  "Self Survival",
+                  ranking.selfsurvival,
+                  numberRankColor(ranking.selfsurvival),
+                ],
+                ["AA", ranking.aa, numberRankColor(ranking.aa)],
+                ["Rammers", ranking.rammers, numberRankColor(ranking.rammers)],
+                [
+                  "Other Main",
+                  ranking.othermain,
+                  numberRankColor(ranking.othermain),
+                ],
+                [
+                  "VG Survival",
+                  ranking.vgsurvival,
+                  numberRankColor(ranking.vgsurvival),
+                ],
               ]}
-            >
-              <tr className="*:text-base">
-                <td
-                  className={`${numberRankColor(
-                    ranking.selfsurvival,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.selfsurvival ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.aa,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.aa ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.rammers,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.rammers ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.othermain,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.othermain ?? "\u200B"}
-                </td>
-                <td
-                  className={`${numberRankColor(
-                    ranking.vgsurvival,
-                  )} font-semibold !text-black`}
-                >
-                  {ranking.vgsurvival ?? "\u200B"}
-                </td>
-              </tr>
-            </ItemTable>
+            />
           </div>
           <HR />
           {ranking.notes && (
