@@ -9,11 +9,14 @@
     "build": "bunx astro check && bunx astro build",
     "check": "bunx astro check",
     "preview": "bunx astro preview",
-    "astro": "bunx astro"
+    "astro": "bunx astro",
+    "cf-build": "node node_modules/wrangler/bin/cf-wrangler.js build",
+    "cf-dev": "node node_modules/wrangler/bin/cf-wrangler.js dev",
+    "deploy": "node node_modules/cf/bin/cf deploy --prebuilt"
   },
   "dependencies": {
-    "@astrojs/react": "^7.1.4",
-    "astro": "^7.4.7",
+    "@astrojs/react": "^7.1.8",
+    "astro": "^7.4.11",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-intersection-observer-hook": "^4.0.2",
@@ -28,6 +31,9 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "astro-meta-tags": "^0.4.1",
-    "vite": "^8.3.6"
+    "cf": "1.0.0-beta.30",
+    "vite": "^8.3.8",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.160.1"
   }
 }

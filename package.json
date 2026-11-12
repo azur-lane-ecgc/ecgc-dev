@@ -6,8 +6,7 @@
     "apps/web",
     "packages/gsheets2img",
     "packages/compress",
-    "packages/image-downloader",
-    "packages/worker"
+    "packages/image-downloader"
   ],
   "scripts": {
     "prepare": "bunx lefthook install",
@@ -26,19 +25,18 @@
     "devtools": "bun run submodule && bun run --filter dev main && bun run format",
     "build": "bun run --filter frontend build",
     "check": "bun run --filter frontend check && bun run --filter dev check && bun run --filter gsheets2img check && bun run --filter compress check && bun run --filter image-downloader check",
-    "cf-build": "bun run build && bun run compress",
+    "cf-build": "bun run build && bun run compress && bun run --filter frontend cf-build",
     "dev": "bun run --filter frontend dev",
-    "cf-dev": "bun run --filter worker dev",
+    "cf-dev": "bun run --filter frontend cf-dev",
     "start": "NODE_ENV=PRODUCTION bun run --filter frontend preview",
-    "deploy": "bun run cf-build && bun run --filter worker deploy"
+    "deploy": "bun run cf-build && bun run --filter frontend deploy"
   },
   "devDependencies": {
-    "@astrojs/compiler-rs": "0.5.2",
-    "knip": "^6.44.2",
+    "@astrojs/compiler-rs": "0.5.3",
+    "knip": "^6.45.1",
     "lefthook": "^2.2.2",
-    "oxfmt": "0.77.0",
-    "oxlint": "^1.92.0",
-    "typescript": "^6.0.3"
+    "oxfmt": "0.78.0",
+    "oxlint": "^1.93.0"
   },
   "trustedDependencies": [
     "agent-browser",
