@@ -4845,6 +4845,35 @@
       "vgsurvival": null
     }
   ],
+  "Liliel Angel Paratroopers/Ririsa": [
+    {
+      "nameNote": "",
+      "notes": "Liliel offers fast, staggered damage with her unique preloaded airstrike after 5 seconds. Because her damage comes soon after all of your preloaded barrages, airstrikes, and torpedoes, Liliel lets you farm easy content like Operation Siren faster. In serious mobbing, which is where healing is most impactful, Liliel provides solid healing and fleet defense...except when it matters the most. She works best when the fleet starts near full HP and there is another full-fleet preload healer such as Unicorn. However, after multiple mob battles, her 5% fleet defense and two sources of healing become mutually exclusive with each other in some combination. It is especially bad if any ship begins the battle with low HP.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "B",
+      "w14mob": "A",
+      "w14boss": "B",
+      "w15mob": "B",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 2200,
+      "mediumdmg": 2820,
+      "heavydmg": 2440,
+      "aoedmg": 2,
+      "dmguptime": 1,
+      "offensivebuff": null,
+      "selfsurvival": null,
+      "aa": null,
+      "rammers": 2,
+      "othermain": 2,
+      "vgsurvival": null
+    }
+  ],
   "Lion": [
     {
       "nameNote": "",
