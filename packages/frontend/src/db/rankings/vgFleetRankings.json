@@ -9546,6 +9546,33 @@
       "defensivebuff": 1
     }
   ],
+  "Miriella Angel Paratroopers/Mikari": [
+    {
+      "nameNote": "",
+      "notes": "Miriella gets a bonus for sortieing with another 2.5D ship, but this bonus is quite small.",
+      "hardarbiter": "B",
+      "meta": "B",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "B",
+      "w15mob": "C",
+      "w15boss": "C",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1770,
+      "mediumdmg": 1280,
+      "heavydmg": 960,
+      "aoedmg": 3,
+      "offensivebuff": null,
+      "selfsurvival": 107,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Misaki": [
     {
       "nameNote": "",

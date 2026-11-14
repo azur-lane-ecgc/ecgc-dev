@@ -47409,7 +47409,7 @@
     "augments": ["Liliel's Rod", "Scepter", "Hunting Bow"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg", "DefSupport"],
     "locations": {
       "events": [
         {
@@ -47465,7 +47465,7 @@
     "augments": ["Miriella's Bow", "Crossbow", "Sword"],
     "samEval": "N/A. Will get updated at a later time.",
     "fastLoad": null,
-    "roles": ["Bad"],
+    "roles": ["DmgDealer", "TopDmg"],
     "locations": {
       "events": [
         {
