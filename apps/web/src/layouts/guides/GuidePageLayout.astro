@@ -45,6 +45,7 @@ const canonicalUrl = new URL(
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <UmamiAnalytics />
     <!-- for google search -->
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -55,7 +56,6 @@ const canonicalUrl = new URL(
       content="English Community Guide Compendium, English Azur Lane, Azur, Lane, Azur Lane, ECGC, Azur Lane ECGC, Wiki, Guide, Guides, Help, Tool, Tools, Ship, Ships, Gear, Gears, Samheart564, Sam Heart, Sam"
     />
 
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{metaTitle || title} - ECGC</title>
 
@@ -73,6 +73,8 @@ const canonicalUrl = new URL(
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Azur Lane ECGC" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:url" content={canonicalUrl} />
     <meta
       property="og:image"
@@ -89,14 +91,13 @@ const canonicalUrl = new URL(
     <meta property="og:description" content={metaDescription} />
 
     <link rel="icon" type="image/x-icon" href={imageMiscSiteIconIco} />
+    <ClientRouter />
   </head>
-  <span data-astro-transition-persist="someId">
-    <noscript>Your browser does not support JavaScript!</noscript>
-  </span>
-
-  <ClientRouter />
-
   <body>
+    <span data-astro-transition-persist="someId">
+      <noscript>Your browser does not support JavaScript!</noscript>
+    </span>
+
     <Navbar activePage={activePage} client:load />
     {!!tocID && <SidenavPage page={tocID} client:load />}
     <div
@@ -105,8 +106,8 @@ const canonicalUrl = new URL(
     >
       <slot />
     </div>
+    <Footer />
   </body>
-  <Footer />
 
   <style is:global>
     @media screen and (min-width: 1016px) and (max-width: 2016px) {

@@ -6,5 +6,8 @@ export default defineConfig({
     name: "ecgc-dev",
     compatibilityDate: "2025-10-10",
     previewUrls: true,
+    assets: {
+      notFoundHandling: "404-page",
+    },
   },
 })

@@ -4,7 +4,6 @@
     "apps/web": {
       "entry": [
         "src/pages/**/*.astro",
-        "src/pages/**/*.ts",
         "cloudflare.config.ts",
         "wrangler.config.ts"
       ],

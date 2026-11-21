@@ -32,6 +32,7 @@ const canonicalUrl = new URL(
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <UmamiAnalytics />
     <!-- for google search -->
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -42,12 +43,13 @@ const canonicalUrl = new URL(
       content="English Community Guide Compendium, English Azur Lane, Azur, Lane, Azur Lane, ECGC, Azur Lane ECGC, Wiki, Guide, Guides, Help, Tool, Tools, Ship, Ships, Gear, Gears, Samheart564, Sam Heart, Sam"
     />
 
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} - ECGC</title>
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Azur Lane ECGC" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:url" content={canonicalUrl} />
     {metaImage ? (
       <meta
@@ -79,18 +81,17 @@ const canonicalUrl = new URL(
         image: new URL(imageMiscSiteIcon.src, "https://azurlaneecgc.com").href,
       })}
     />
+    <ClientRouter />
   </head>
-  <span data-astro-transition-persist="someId2">
-    <noscript data-astro-transition-persist="someId2">
-      Your browser does not support JavaScript!
-    </noscript>
-  </span>
-
-  <ClientRouter />
-
   <body>
+    <span data-astro-transition-persist="someId2">
+      <noscript data-astro-transition-persist="someId2">
+        Your browser does not support JavaScript!
+      </noscript>
+    </span>
+
     <Navbar activePage={activePage} client:idle />
     <slot />
+    <Footer />
   </body>
-  <Footer />
 </html>
