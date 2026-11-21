@@ -16,10 +16,8 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
-      serialize(item) {
-        item.url = item.url.replace(/\/$/, "")
-        return item
-      },
+      // Omit the changelog alias because its canonical URL is the 2026 page.
+      filter: (page) => page !== "https://azurlaneecgc.com/changelog/",
     }),
     metaTags(),
   ],

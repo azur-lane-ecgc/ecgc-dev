@@ -22,7 +22,6 @@ interface Props {
   activePage: string
   canonical?: string
   tocID?: string | null
-  metaUrl?: string
   metaImage?: string
   metaDescription: string
 }
@@ -33,10 +32,14 @@ const {
   activePage,
   canonical,
   tocID,
-  metaUrl,
   metaImage,
   metaDescription,
 } = Astro.props
+const canonicalPath = canonical ?? activePage
+const canonicalUrl = new URL(
+  canonicalPath ? `${canonicalPath}/` : "",
+  Astro.site,
+).href
 ---
 
 <!doctype html>
@@ -45,10 +48,7 @@ const {
     <UmamiAnalytics />
     <!-- for google search -->
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link
-      rel="canonical"
-      href={`https://azurlaneecgc.com${activePage ? `/${canonical ?? activePage}` : ""}`}
-    />
+    <link rel="canonical" href={canonicalUrl} />
 
     <meta
       name="keywords"
@@ -73,10 +73,7 @@ const {
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`https://azurlaneecgc.com/${metaUrl ? `/${metaUrl}` : ""}`}
-    />
+    <meta property="og:url" content={canonicalUrl} />
     <meta
       property="og:image"
       content={

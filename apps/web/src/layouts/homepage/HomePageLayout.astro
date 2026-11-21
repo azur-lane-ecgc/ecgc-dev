@@ -17,13 +17,16 @@ interface Props {
   title: string
   activePage: string
   canonical?: string
-  metaUrl?: string
   metaImage?: string
   metaDescription: string
 }
 
-const { title, activePage, canonical, metaUrl, metaImage, metaDescription } =
-  Astro.props
+const { title, activePage, canonical, metaImage, metaDescription } = Astro.props
+const canonicalPath = canonical ?? activePage
+const canonicalUrl = new URL(
+  canonicalPath ? `${canonicalPath}/` : "",
+  Astro.site,
+).href
 ---
 
 <!doctype html>
@@ -32,10 +35,7 @@ const { title, activePage, canonical, metaUrl, metaImage, metaDescription } =
     <UmamiAnalytics />
     <!-- for google search -->
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link
-      rel="canonical"
-      href={`https://azurlaneecgc.com${activePage ? `/${canonical ?? activePage}` : ""}`}
-    />
+    <link rel="canonical" href={canonicalUrl} />
 
     <meta
       name="keywords"
@@ -48,10 +48,7 @@ const { title, activePage, canonical, metaUrl, metaImage, metaDescription } =
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`https://azurlaneecgc.com/ECGC${metaUrl ? `/${metaUrl}` : ""}`}
-    />
+    <meta property="og:url" content={canonicalUrl} />
     {metaImage ? (
       <meta
         property="og:image"
@@ -67,7 +64,7 @@ const { title, activePage, canonical, metaUrl, metaImage, metaDescription } =
         }
       />
     )}
-    <meta name="og:description" content={metaDescription} />
+    <meta property="og:description" content={metaDescription} />
 
     <link rel="icon" type="image/x-icon" href={imageMiscSiteIconIco} />
 
