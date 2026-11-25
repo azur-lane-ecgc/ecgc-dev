@@ -490,7 +490,7 @@
       "hardarbiter": "D",
       "meta": "D",
       "cm": "D",
-      "w14mob": "D",
+      "w14mob": "C",
       "w14boss": "D",
       "w15mob": "C",
       "w15boss": "D",
@@ -1833,7 +1833,7 @@
       "meta": "D",
       "cm": "D",
       "w14mob": "D",
-      "w14boss": "D",
+      "w14boss": "C",
       "w15mob": "D",
       "w15boss": "D",
       "ex": "C*",
@@ -7230,6 +7230,33 @@
       "defensivebuff": null
     }
   ],
+  "Kersaint META": [
+    {
+      "nameNote": "",
+      "notes": null,
+      "hardarbiter": "D",
+      "meta": "D",
+      "cm": "D",
+      "w14mob": "F",
+      "w14boss": "F",
+      "w15mob": "F",
+      "w15boss": "F",
+      "ex": "D",
+      "consistency": -1,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 950,
+      "mediumdmg": 750,
+      "heavydmg": 650,
+      "aoedmg": 1,
+      "offensivebuff": null,
+      "selfsurvival": 62,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": null
+    }
+  ],
   "Kiev": [
     {
       "nameNote": "",
@@ -9679,6 +9706,33 @@
       "aa": null,
       "asw": null,
       "defensivebuff": null
+    }
+  ],
+  "Molotov": [
+    {
+      "nameNote": "",
+      "notes": "She throws Molotov cocktails. That is all you need to know.",
+      "hardarbiter": "C",
+      "meta": "C",
+      "cm": "B",
+      "w14mob": "B",
+      "w14boss": "A",
+      "w15mob": "B",
+      "w15boss": "B",
+      "ex": "D",
+      "consistency": null,
+      "fleetreq": null,
+      "gearreq": null,
+      "flagreq": null,
+      "lightdmg": 1200,
+      "mediumdmg": 1000,
+      "heavydmg": 1100,
+      "aoedmg": 2,
+      "offensivebuff": null,
+      "selfsurvival": 109,
+      "aa": null,
+      "asw": null,
+      "defensivebuff": 1
     }
   ],
   "Momo Belia Deviluke": [
