@@ -1,3 +1,9 @@
+import samvaluationDataJson from "@/tools/samvaluation/samvaluationData.json"
+const preloadQuantityPattern = /(\d+)\s*preloaded/i
+const preloadPercentPattern = /(\d+)%/
+const percentQuantityPattern = /%\s*(\d+)/
+const preloadConditionPattern = /\(([^)]+)\)/
+
 interface SamvaluationProps {
   event?: {
     name: string
@@ -13,10 +19,10 @@ interface SamvaluationProps {
   } | null
 }
 
-const samvaluationData =
-  (await import("@/tools/samvaluation/samvaluationData.json").then(
-    (module) => module.default,
-  )) as Record<string, SamvaluationProps>
+const samvaluationData = samvaluationDataJson as Record<
+  string,
+  SamvaluationProps
+>
 
 export const shipSamvaluationParse = (ship: string): SamvaluationProps => {
   const shipData = samvaluationData[ship] ?? {}
@@ -40,24 +46,24 @@ export const shipSamvaluationParse = (ship: string): SamvaluationProps => {
     const lower = preloadText.toLowerCase()
 
     // preload
-    if (/preloaded/.test(lower)) {
+    if (lower.includes("preloaded")) {
       reduction = 100
 
-      const qtyMatch = preloadText.match(/(\d+)\s*preloaded/i)
+      const qtyMatch = preloadText.match(preloadQuantityPattern)
       quantity = qtyMatch && qtyMatch[1] ? parseInt(qtyMatch[1], 10) : 0
     }
     // fast_load
     else {
-      const pctMatch = preloadText.match(/(\d+)%/)
+      const pctMatch = preloadText.match(preloadPercentPattern)
       reduction = pctMatch && pctMatch[1] ? parseInt(pctMatch[1], 10) : 0
 
-      const qtyAfterPct = preloadText.match(/%\s*(\d+)/)
+      const qtyAfterPct = preloadText.match(percentQuantityPattern)
       quantity =
         qtyAfterPct && qtyAfterPct[1] ? parseInt(qtyAfterPct[1], 10) : 0
     }
 
     // condition
-    const condMatch = preloadText.match(/\(([^)]+)\)/)
+    const condMatch = preloadText.match(preloadConditionPattern)
     conditional = condMatch && condMatch[1] ? condMatch[1].trim() : ""
   }
   let preload2 = null

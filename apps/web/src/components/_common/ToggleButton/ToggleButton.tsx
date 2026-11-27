@@ -1,0 +1,92 @@
+import { useState } from "react"
+
+export interface Option {
+  title: string
+  payload: string
+  symbol?: string
+}
+
+interface ToggleButtonProps {
+  className?: string
+  title: string
+  options: Option[]
+  initialValue?: number
+  onSelect: (payload: string) => void
+  reset?: any
+}
+
+const getDefaultSymbol = (index: number, optionsCount: number): string => {
+  if (optionsCount === 2) {
+    return index === 0 ? "\u2713" : "\u2717"
+  } else if (optionsCount === 3) {
+    return index === 0 ? "\u2713 \u2717" : index === 1 ? "\u2713" : "\u2717"
+  }
+  return ""
+}
+
+const ToggleButtonBase: React.FC<Omit<ToggleButtonProps, "reset">> = ({
+  className = "",
+  title,
+  options,
+  initialValue = 0,
+  onSelect,
+}) => {
+  const [selectedIndex, setSelectedIndex] = useState(initialValue)
+  const optionsCount = options.length
+
+  const selectNextOption = () => {
+    const nextIndex = (selectedIndex + 1) % optionsCount
+    setSelectedIndex(nextIndex)
+    onSelect(options[nextIndex].payload)
+  }
+
+  const getSymbol = (index: number): string => {
+    const option = options[index]
+    return option.symbol ?? getDefaultSymbol(index, optionsCount)
+  }
+
+  return (
+    <div className={className}>
+      <p className="mb-2! font-bold">{title}</p>
+      <button
+        className="w-36 rounded-xl border-green-800 bg-gray-950 px-1 py-2 shadow-lg hover:bg-gray-800 sm:w-40 md:w-48"
+        onClick={selectNextOption}
+      >
+        <div className="relative flex items-center">
+          <div className="absolute right-0 -left-2 text-center font-bold text-orange-400">
+            {options[selectedIndex].title}
+          </div>
+          <div className="flex w-full items-center justify-between">
+            <div className="invisible w-full text-center font-bold text-orange-400">
+              {/* invisible so takes up space */}
+              {options[selectedIndex].title}
+            </div>
+            <div className="m-0 flex w-10 flex-col items-end justify-center">
+              <span className="text-cyan-400">{getSymbol(selectedIndex)}</span>
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
+  )
+}
+
+interface TwoToggleButtonProps extends Omit<ToggleButtonProps, "options"> {
+  options: [Option, Option]
+}
+
+/** Renders a two-option toggle that resets when its reset value changes. */
+export const TwoToggleButton: React.FC<TwoToggleButtonProps> = ({
+  reset,
+  ...props
+}) => <ToggleButtonBase key={String(reset)} {...props} />
+
+interface ThreeToggleButtonProps extends Omit<ToggleButtonProps, "options"> {
+  options: [Option, Option, Option]
+}
+
+/** Renders a three-option toggle that resets when its reset value changes. */
+export const ThreeToggleButton: React.FC<ThreeToggleButtonProps> = ({
+  reset,
+  ...props
+}) => <ToggleButtonBase key={String(reset)} {...props} />
